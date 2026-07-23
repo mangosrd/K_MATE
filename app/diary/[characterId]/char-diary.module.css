@@ -1,0 +1,90 @@
+.header {
+  display: flex; align-items: center; gap: var(--space-sm);
+  padding: 10px var(--space-md);
+  background: rgba(255,255,255,0.97); border-bottom: 2px solid var(--blue);
+  position: sticky; top: 0; z-index: 50;
+}
+.backBtn { font-size: 28px; color: var(--text-secondary); flex-shrink: 0; }
+.headerCenter { display: flex; align-items: center; gap: var(--space-sm); flex: 1; }
+.headerAvatar {
+  width: 36px; height: 36px; border-radius: 50%;
+  background: var(--red-light); border: 2px solid var(--red-mid);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px; flex-shrink: 0;
+}
+.headerName { font-size: 15px; font-weight: 700; color: var(--text-primary); }
+.headerSub  { font-size: 11px; color: var(--text-muted); }
+
+.inner { padding: var(--space-md); display: flex; flex-direction: column; gap: var(--space-md); }
+
+/* 탭 */
+.tabs {
+  display: flex; background: var(--bg-surface);
+  border: 1px solid var(--border-subtle); border-radius: var(--radius-full); padding: 3px;
+}
+.tab {
+  flex: 1; padding: 6px 4px; border-radius: var(--radius-full);
+  font-family: var(--font-sans); cursor: pointer;
+  display: flex; flex-direction: column; align-items: center; gap: 1px;
+  transition: all var(--transition-fast);
+}
+.tabKo { font-size: 13px; font-weight: 600; color: var(--text-muted); }
+.tabEn { font-size: 10px; font-weight: 500; color: var(--text-muted); }
+.tabActive {
+  background: var(--bg-base);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-subtle);
+}
+.tabActive .tabKo { color: var(--blue); }
+.tabActive .tabEn { color: var(--blue-mid); }
+
+/* 비어있음 */
+.empty {
+  text-align: center; padding: var(--space-2xl) 0;
+  display: flex; flex-direction: column; gap: var(--space-sm);
+  align-items: center; font-size: 16px; font-weight: 600; color: var(--text-secondary);
+}
+.emptyEn { font-size: 13px; color: var(--text-muted); font-weight: 400; }
+
+/* 일기 아이템 */
+.diaryItem { display: flex; flex-direction: column; gap: var(--space-md); }
+.diaryMeta { display: flex; align-items: flex-start; justify-content: space-between; }
+.diaryDate  { font-size: 13px; font-weight: 700; color: var(--text-primary); margin-bottom: 2px; }
+.diaryPlace { font-size: 12px; color: var(--text-muted); }
+.diaryBodyBtn {
+  text-align: left; background: none; border: none; padding: 0; cursor: pointer;
+  display: flex; flex-direction: column; gap: var(--space-sm);
+}
+.readMore { font-size: 13px; color: var(--blue); font-weight: 600; }
+.lockedBody { display: flex; flex-direction: column; gap: var(--space-sm); }
+.unlockPrompt {
+  display: flex; align-items: center; justify-content: space-between;
+  padding-top: var(--space-sm); border-top: 1px solid var(--border-subtle);
+}
+.unlockCoin { font-size: 13px; font-weight: 600; color: var(--gold); }
+.unlockEn   { font-size: 11px; color: var(--text-muted); }
+
+/* 모달 */
+.modalTitle { font-size: 18px; font-weight: 800; color: var(--text-primary); margin-bottom: var(--space-sm); }
+.modalSub   { font-size: 14px; color: var(--text-secondary); margin-bottom: var(--space-md); }
+.modalCoins {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 12px var(--space-md); background: var(--bg-surface);
+  border-radius: var(--radius-md); font-size: 14px; color: var(--text-secondary);
+  margin-bottom: var(--space-md);
+}
+.modalActions { display: flex; flex-direction: column; gap: var(--space-sm); }
+
+/* 열람 뷰 */
+.reader {
+  width: 100%; max-width: var(--mobile-max);
+  background: var(--bg-base);
+  border-top-left-radius: var(--radius-xl); border-top-right-radius: var(--radius-xl);
+  border-top: 3px solid var(--blue);
+  padding: var(--space-lg); padding-bottom: 40px;
+  display: flex; flex-direction: column;
+  animation: sheet-up 0.32s cubic-bezier(0.32, 0.72, 0, 1);
+}
+@keyframes sheet-up { from { transform: translateY(100%); } to { transform: translateY(0); } }
+.readerDate  { font-size: 12px; color: var(--text-muted); font-weight: 600; }
+.readerPlace { font-size: 14px; color: var(--blue); font-weight: 600; margin-top: 3px; }

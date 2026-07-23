@@ -1,0 +1,175 @@
+/* ── 헤더 ──────────────────────────────────────────────── */
+.header {
+  position: sticky; top: 0; z-index: 50;
+  height: 56px; padding: 0 var(--space-md);
+  display: flex; align-items: center; justify-content: space-between;
+  background: rgba(255,255,255,0.96);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-subtle);
+}
+.headerTitle { font-size: 18px; font-weight: 800; color: var(--text-primary); letter-spacing: -0.02em; }
+.headerSub   { font-size: 11px; color: var(--text-muted); font-weight: 500; }
+
+/* ── 히어로 배너 ─────────────────────────────────────────── */
+.heroBanner {
+  background: var(--gradient-korea);
+  padding: 14px var(--space-lg);
+  display: flex; align-items: center; justify-content: space-between;
+}
+.bannerTitle { font-size: 17px; font-weight: 800; color: #fff; }
+.bannerSub   { font-size: 12px; color: rgba(255,255,255,0.75); margin-top: 2px; }
+.streakPill {
+  display: flex; align-items: center; gap: 5px;
+  background: rgba(255,255,255,0.18); border: 1px solid rgba(255,255,255,0.3);
+  border-radius: var(--radius-full); padding: 5px 12px;
+  font-size: 13px; font-weight: 700; color: #fff;
+}
+
+/* ── 통계 행 ─────────────────────────────────────────────── */
+.statsRow {
+  display: flex; align-items: center;
+  background: #fff; border-bottom: 1px solid var(--border-subtle);
+  padding: 10px var(--space-md);
+}
+.statItem { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 1px; }
+.statNum  { font-size: 18px; font-weight: 800; color: var(--text-primary); }
+.statKo   { font-size: 10px; color: var(--text-muted); font-weight: 600; }
+.statDivider { width: 1px; height: 28px; background: var(--border-subtle); }
+
+/* ── 섹션 레이블 ─────────────────────────────────────────── */
+.sectionLabel {
+  font-size: 10px; font-weight: 800; letter-spacing: 0.1em;
+  color: var(--text-muted); padding: var(--space-md) var(--space-md) var(--space-sm);
+}
+
+/* ── 탑승권 목록 ─────────────────────────────────────────── */
+.ticketList {
+  display: flex; flex-direction: column;
+  gap: var(--space-md);
+  padding: 0 var(--space-md) var(--space-md);
+}
+
+/* ── 탑승권 (Boarding Pass) ──────────────────────────────── */
+.ticket {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10), 0 0 0 1px rgba(0,0,0,0.05);
+  overflow: visible;
+  text-decoration: none;
+  display: block;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  position: relative;
+}
+.ticket:hover:not(.ticketLocked) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.14), 0 0 0 1px rgba(205,46,58,0.2);
+}
+
+.ticketLocked {
+  filter: grayscale(40%);
+  opacity: 0.75;
+}
+
+/* 탑승권 상단 */
+.ticketTop {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 18px 10px;
+  background: linear-gradient(135deg, var(--blue) 0%, #005bac 100%);
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.ticketOrigin { display: flex; flex-direction: column; align-items: flex-start; }
+.ticketCodeSmall { font-size: 11px; font-weight: 800; color: rgba(255,255,255,0.6); letter-spacing: 0.05em; }
+.ticketCitySmall { font-size: 10px; color: rgba(255,255,255,0.5); margin-top: 1px; }
+
+.ticketMid {
+  display: flex; flex-direction: column; align-items: center; gap: 4px; flex: 1;
+}
+.ticketEmoji { font-size: 22px; }
+.ticketFlight { display: flex; align-items: center; gap: 0; width: 80px; position: relative; }
+.flightLine {
+  flex: 1; height: 1px;
+  background: repeating-linear-gradient(90deg, rgba(255,255,255,0.5) 0px, rgba(255,255,255,0.5) 4px, transparent 4px, transparent 8px);
+}
+.planeIcon { font-size: 16px; color: #fff; margin: 0 4px; }
+.lockIcon  { font-size: 18px; }
+
+.ticketStatusBadge {
+  background: rgba(255,255,255,0.2);
+  border: 1px solid rgba(255,255,255,0.35);
+  border-radius: var(--radius-full);
+  font-size: 9px; font-weight: 800; letter-spacing: 0.08em;
+  color: #fff; padding: 2px 7px;
+}
+
+.ticketDest { display: flex; flex-direction: column; align-items: flex-end; }
+.ticketCode   { font-size: 22px; font-weight: 900; color: #fff; letter-spacing: -0.01em; line-height: 1; }
+.ticketCity   { font-size: 13px; font-weight: 700; color: rgba(255,255,255,0.9); margin-top: 2px; }
+.ticketCityEn { font-size: 10px; color: rgba(255,255,255,0.6); }
+
+/* 점선 구분선 */
+.ticketDivider {
+  display: flex; align-items: center;
+  position: relative; height: 0; margin: 0;
+}
+.notchLeft {
+  width: 20px; height: 20px; border-radius: 50%;
+  background: #F0F2F7;
+  margin-left: -10px; flex-shrink: 0;
+  box-shadow: inset 2px 0 4px rgba(0,0,0,0.06);
+}
+.notchRight {
+  width: 20px; height: 20px; border-radius: 50%;
+  background: #F0F2F7;
+  margin-right: -10px; flex-shrink: 0;
+  box-shadow: inset -2px 0 4px rgba(0,0,0,0.06);
+}
+.dashedLine {
+  flex: 1; height: 0;
+  border-top: 2px dashed #D1D5DB;
+  margin: 0 4px;
+}
+
+/* 탑승권 하단 */
+.ticketBottom {
+  padding: 12px 18px 14px;
+  display: flex; align-items: center; gap: var(--space-sm);
+  background: #fff;
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+}
+
+.ticketInfo {
+  display: flex; gap: var(--space-lg); flex: 1;
+}
+.ticketInfoItem { display: flex; flex-direction: column; gap: 2px; }
+.ticketLabel { font-size: 8px; font-weight: 800; letter-spacing: 0.08em; color: var(--text-muted); text-transform: uppercase; }
+.ticketValue { font-size: 12px; font-weight: 700; color: var(--text-primary); }
+
+.ticketProgress { flex: 1; }
+
+.ticketArrow {
+  font-size: 22px; color: var(--text-muted); flex-shrink: 0;
+}
+
+/* 잠긴 탑승권 — 프리미엄 안내 */
+.premiumNotice {
+  display: flex; align-items: center; gap: var(--space-sm); flex: 1;
+}
+.premiumIcon { font-size: 22px; }
+.premiumText { font-size: 13px; font-weight: 700; color: var(--gold); }
+.premiumSub  { font-size: 11px; color: var(--text-muted); margin-top: 1px; }
+
+/* ── 프리미엄 배너 ────────────────────────────────────────── */
+.premiumBanner {
+  display: flex; align-items: center; justify-content: space-between;
+  margin: 0 var(--space-md) var(--space-lg);
+  padding: var(--space-md) var(--space-lg);
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  box-shadow: var(--shadow-md);
+}
+.premiumBannerLeft  { display: flex; flex-direction: column; gap: 3px; }
+.premiumBannerTitle { font-size: 15px; font-weight: 800; color: #FFE068; }
+.premiumBannerSub   { font-size: 12px; color: rgba(255,255,255,0.65); }
+.premiumBannerArrow { font-size: 24px; color: rgba(255,255,255,0.5); }

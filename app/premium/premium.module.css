@@ -1,0 +1,98 @@
+.page {
+  min-height: 100dvh; background: #fff;
+  display: flex; flex-direction: column;
+  position: relative; overflow: hidden;
+}
+
+.topBg {
+  position: absolute; top: 0; left: 0; right: 0;
+  height: 240px;
+  background: linear-gradient(160deg, #1a1a2e 0%, var(--blue-dark) 50%, var(--blue) 100%);
+  clip-path: ellipse(120% 100% at 50% 0%);
+}
+
+.inner {
+  position: relative; z-index: 1;
+  padding: var(--space-2xl) var(--space-lg) var(--space-2xl);
+  display: flex; flex-direction: column; align-items: center;
+  gap: var(--space-lg);
+}
+
+.badge {
+  display: inline-flex; align-items: center; gap: 5px;
+  background: rgba(255,220,50,0.2); border: 1.5px solid rgba(255,220,50,0.4);
+  border-radius: var(--radius-full); padding: 5px 14px;
+  font-size: 12px; font-weight: 800; letter-spacing: 0.06em; color: #FFE068;
+}
+
+.title {
+  font-size: 30px; font-weight: 900; color: #fff;
+  text-align: center; line-height: 1.25; letter-spacing: -0.02em;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.3);
+}
+.subtitle { font-size: 14px; color: rgba(255,255,255,0.7); text-align: center; }
+
+/* 캐릭터 행 */
+.charRow {
+  display: flex; gap: var(--space-sm); justify-content: center;
+  flex-wrap: wrap;
+}
+.charChip {
+  display: flex; flex-direction: column; align-items: center; gap: 3px;
+  background: rgba(255,255,255,0.12); border: 1.5px solid rgba(255,255,255,0.25);
+  border-radius: var(--radius-md); padding: 10px 14px;
+  backdrop-filter: blur(8px);
+}
+.charEmoji  { font-size: 26px; }
+.charName   { font-size: 13px; font-weight: 700; color: #fff; }
+.charRegion { font-size: 10px; color: rgba(255,255,255,0.6); }
+
+/* 혜택 */
+.perks {
+  width: 100%;
+  background: var(--bg-surface); border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl); padding: var(--space-md);
+  display: flex; flex-direction: column; gap: var(--space-sm);
+  box-shadow: var(--shadow-xs);
+}
+.perkItem {
+  display: flex; align-items: center; gap: var(--space-md);
+  padding: var(--space-sm) 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+.perkItem:last-child { border-bottom: none; }
+.perkIcon  { font-size: 22px; flex-shrink: 0; }
+.perkKo    { font-size: 14px; font-weight: 700; color: var(--text-primary); }
+.perkEn    { font-size: 11px; color: var(--text-muted); margin-top: 1px; }
+
+/* 가격 카드 */
+.priceCard {
+  width: 100%;
+  background: linear-gradient(135deg, var(--red) 0%, var(--red-dark) 100%);
+  border-radius: var(--radius-xl); padding: var(--space-lg);
+  box-shadow: var(--shadow-red);
+}
+.priceTop { display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--space-sm); }
+.priceLabel  { font-size: 12px; color: rgba(255,255,255,0.75); font-weight: 600; }
+.priceAmount { font-size: 36px; font-weight: 900; color: #fff; line-height: 1; }
+.pricePer    { font-size: 16px; font-weight: 500; color: rgba(255,255,255,0.7); }
+.priceBadge  {
+  background: rgba(255,255,255,0.2); border: 1.5px solid rgba(255,255,255,0.35);
+  border-radius: var(--radius-full); padding: 4px 12px;
+  font-size: 11px; font-weight: 800; letter-spacing: 0.06em; color: #fff;
+}
+.priceSub { font-size: 12px; color: rgba(255,255,255,0.65); }
+
+/* CTA */
+.ctaBtn {
+  width: 100%;
+  background: linear-gradient(135deg, #FFD700 0%, var(--gold) 100%);
+  color: #1a1a2e; font-size: 17px; font-weight: 900;
+  padding: 16px; border-radius: var(--radius-full);
+  border: none; cursor: pointer; font-family: var(--font-sans);
+  box-shadow: 0 4px 20px rgba(201,150,42,0.4);
+  transition: all var(--transition-fast);
+  letter-spacing: -0.01em;
+}
+.ctaBtn:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(201,150,42,0.5); }
+.ctaSub { font-size: 12px; color: var(--text-muted); }

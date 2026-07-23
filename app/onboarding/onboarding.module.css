@@ -1,0 +1,137 @@
+.page {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--space-md);
+  gap: var(--space-lg);
+  background: #fff;
+}
+
+/* 진행 점 */
+.progressDots { display: flex; gap: 8px; padding-top: var(--space-md); }
+
+.dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-default);
+  transition: all var(--transition-base);
+}
+
+.dotActive {
+  background: var(--red);
+  border-color: var(--red);
+  box-shadow: 0 0 6px rgba(205,46,58,0.4);
+  width: 24px;
+  border-radius: 4px;
+}
+
+/* 섹션 */
+.section { width: 100%; flex: 1; display: flex; flex-direction: column; gap: var(--space-lg); }
+
+.stepHeader { display: flex; flex-direction: column; gap: 4px; }
+
+.stepNum {
+  font-size: 12px; font-weight: 700;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--red);
+}
+
+.stepTitle { font-size: 22px; font-weight: 800; color: var(--text-primary); line-height: 1.3; }
+.stepSub   { font-size: 14px; color: var(--text-secondary); line-height: 1.6; }
+
+/* 언어 그리드 */
+.langGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-sm);
+}
+
+.langItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: 12px var(--space-md);
+  background: var(--bg-base);
+  border: 1.5px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  box-shadow: var(--shadow-xs);
+  -webkit-tap-highlight-color: transparent;
+}
+.langItem:hover { border-color: var(--border-default); box-shadow: var(--shadow-sm); }
+.langSelected  { border-color: var(--red) !important; background: var(--red-light) !important; color: var(--red); }
+.langFlag { font-size: 20px; }
+.langName { font-size: 14px; }
+
+/* 캐릭터 미리보기 */
+.charPreview {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  background: var(--red-light);
+  border: 1.5px solid var(--red-mid);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md);
+}
+
+.charAvatarLg {
+  width: 62px; height: 62px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 32px;
+  border: 2.5px solid var(--red);
+  box-shadow: var(--shadow-red);
+  flex-shrink: 0;
+}
+
+.charPreviewName { font-size: 18px; font-weight: 800; color: var(--text-primary); margin-bottom: 4px; }
+.charPreviewDesc { font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin-bottom: var(--space-sm); }
+.charTags { display: flex; gap: 6px; flex-wrap: wrap; }
+
+/* 캐릭터 선택 */
+.charGrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-sm); }
+
+.charCard {
+  display: flex; flex-direction: column; align-items: center; gap: 4px;
+  padding: var(--space-sm);
+  background: var(--bg-base);
+  border: 1.5px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  position: relative;
+  box-shadow: var(--shadow-xs);
+  -webkit-tap-highlight-color: transparent;
+}
+.charCard:hover  { border-color: var(--border-default); box-shadow: var(--shadow-sm); }
+.charSelected    { border-color: var(--red) !important; background: var(--red-light) !important; }
+.charEmoji { font-size: 28px; }
+.charName  { font-size: 13px; font-weight: 700; color: var(--text-primary); }
+.charLoc   { font-size: 10px; color: var(--text-muted); }
+.charCheck { position: absolute; top: 4px; right: 6px; font-size: 12px; color: var(--red); font-weight: 800; }
+
+/* 튜토리얼 */
+.tutorialList { display: flex; flex-direction: column; gap: var(--space-sm); }
+
+.tutorialItem {
+  display: flex; align-items: flex-start; gap: var(--space-md);
+  padding: var(--space-md);
+  background: var(--bg-base);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-xs);
+}
+
+.tutorialIcon  { font-size: 26px; flex-shrink: 0; }
+.tutorialTitle { font-size: 15px; font-weight: 700; color: var(--text-primary); margin-bottom: 3px; }
+.tutorialDesc  { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+
+/* 네비 로우 */
+.navRow { display: flex; justify-content: space-between; align-items: center; margin-top: auto; padding-bottom: var(--space-md); }

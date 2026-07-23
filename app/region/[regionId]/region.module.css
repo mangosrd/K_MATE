@@ -1,0 +1,162 @@
+/* ── 여권 표지 ─────────────────────────────────────────── */
+.passportCover {
+  position: relative;
+  background: linear-gradient(160deg, var(--blue-dark) 0%, var(--blue) 50%, #1a3a6e 100%);
+  padding: 14px var(--space-md) 0;
+  overflow: hidden;
+  min-height: 160px;
+}
+
+/* 여권 배경 무늬 (원형 패턴) */
+.passportBg {
+  position: absolute;
+  inset: 0;
+  opacity: 0.06;
+  background-image:
+    radial-gradient(circle at 20% 50%, #fff 1px, transparent 1px),
+    radial-gradient(circle at 80% 20%, #fff 1px, transparent 1px),
+    radial-gradient(circle at 60% 80%, #fff 1px, transparent 1px);
+  background-size: 30px 30px, 40px 40px, 25px 25px;
+}
+
+.backBtn {
+  font-size: 30px; color: rgba(255,255,255,0.8);
+  line-height: 1; display: inline-block;
+  margin-bottom: var(--space-sm);
+}
+.backBtn:hover { color: #fff; }
+
+.passportHeader {
+  display: flex; align-items: center; gap: var(--space-md);
+  padding-bottom: var(--space-md);
+}
+
+.passportEmblem {
+  width: 64px; height: 64px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.4);
+  background: rgba(255,255,255,0.1);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.passportEmoji { font-size: 32px; }
+
+.passportInfo { flex: 1; }
+.passportCountry {
+  font-size: 9px; font-weight: 800; letter-spacing: 0.15em;
+  color: rgba(255,255,255,0.55); margin-bottom: 3px;
+}
+.passportRegion   { font-size: 22px; font-weight: 900; color: #fff; letter-spacing: -0.01em; line-height: 1.2; }
+.passportRegionEn { font-size: 12px; color: rgba(255,255,255,0.65); font-weight: 500; margin-top: 2px; }
+
+/* 여권 하단 OCR 라인 */
+.passportFooter {
+  background: rgba(0,0,0,0.2);
+  padding: 6px var(--space-md);
+  margin: 0 calc(-1 * var(--space-md));
+}
+.passportCode {
+  font-family: "Courier New", monospace;
+  font-size: 11px; letter-spacing: 0.05em;
+  color: rgba(255,255,255,0.4);
+}
+
+/* ── 내부 ───────────────────────────────────────────────── */
+.inner {
+  padding: var(--space-md);
+  display: flex; flex-direction: column; gap: var(--space-lg);
+}
+
+/* 지역 설명 */
+.regionDesc {
+  padding: var(--space-md);
+  background: var(--blue-light);
+  border-left: 4px solid var(--blue);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+.descKo { font-size: 14px; font-weight: 600; color: var(--blue); margin-bottom: 3px; }
+.descEn { font-size: 12px; color: var(--blue-mid); }
+
+/* 섹션 타이틀 */
+.sectionTitle { font-size: 15px; font-weight: 800; color: var(--text-primary); margin-bottom: var(--space-md); }
+.sectionSub   { font-size: 12px; font-weight: 500; color: var(--text-muted); }
+
+/* ── 캐릭터 카드 ─────────────────────────────────────────── */
+.characterList { display: flex; flex-direction: column; gap: var(--space-md); }
+
+.charCard {
+  display: flex; gap: var(--space-md);
+  background: #fff;
+  border: 1.5px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: var(--space-md);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition-fast);
+}
+.charCard:hover:not(.charLocked) { box-shadow: var(--shadow-md); }
+.charLocked { opacity: 0.7; }
+
+.charLeft { flex-shrink: 0; }
+
+.charAvatar {
+  width: 72px; height: 72px;
+  border-radius: var(--radius-lg);
+  background: var(--red-light);
+  border: 2px solid var(--red-mid);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 36px;
+  position: relative;
+  overflow: hidden;
+}
+
+.charImg {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  position: absolute; inset: 0;
+  z-index: 1;
+}
+
+.charEmojiBack {
+  font-size: 36px;
+  position: absolute;
+  z-index: 0;
+}
+
+.lockOverlay {
+  position: absolute; inset: 0;
+  background: rgba(0,0,0,0.4);
+  border-radius: var(--radius-lg);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 24px;
+  z-index: 2;
+}
+
+.charInfo { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 6px; }
+.charNameRow { display: flex; align-items: center; gap: var(--space-sm); flex-wrap: wrap; }
+.charName    { font-size: 18px; font-weight: 800; color: var(--text-primary); }
+.charDesc    { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.charDescEn  { font-size: 11px; color: var(--text-muted); }
+.charTags    { display: flex; gap: 5px; flex-wrap: wrap; }
+
+.affinityRow { display: flex; align-items: center; gap: 2px; }
+.affinityNum { font-size: 11px; color: var(--text-muted); margin-left: 4px; }
+
+.charActions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 2px; }
+
+/* ── 명소 그리드 ─────────────────────────────────────────── */
+.placeGrid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-sm);
+}
+.placeChip {
+  display: flex; flex-direction: column; align-items: center; gap: 3px;
+  padding: var(--space-sm);
+  background: #fff;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-xs);
+  text-align: center;
+}
+.placeEmoji   { font-size: 22px; }
+.placeName    { font-size: 12px; font-weight: 700; color: var(--text-primary); }
+.placeNameEn  { font-size: 10px; color: var(--text-muted); }

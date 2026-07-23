@@ -1,0 +1,164 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 100dvh;
+  padding: 32px var(--space-lg) 48px;
+  position: relative;
+  overflow: hidden;
+  gap: var(--space-lg);
+  background: #fff;
+}
+
+/* 배경 — 태극 테마 */
+.bgTop {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 45%;
+  background: linear-gradient(160deg, var(--blue) 0%, #005BAC 60%, var(--red) 100%);
+  clip-path: ellipse(120% 100% at 50% 0%);
+  pointer-events: none;
+}
+
+.bgPattern {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 45%;
+  opacity: 0.07;
+  pointer-events: none;
+  background-image: repeating-linear-gradient(
+    45deg,
+    #fff 0px, #fff 1px,
+    transparent 1px, transparent 20px
+  );
+}
+
+/* 히어로 */
+.hero {
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  padding-top: 60px;
+  position: relative;
+  z-index: 1;
+}
+
+.logoWrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: var(--space-sm);
+}
+
+.logoIcon {
+  font-size: 44px;
+  filter: drop-shadow(0 4px 12px rgba(255,255,255,0.5));
+}
+
+.logoText {
+  font-size: 42px;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  color: #fff;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.2);
+}
+
+.tagline {
+  font-size: 17px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.95);
+}
+
+.taglineKo {
+  font-size: 13px;
+  color: rgba(255,255,255,0.75);
+  margin-top: 2px;
+}
+
+/* 캐릭터 미리보기 */
+.characterRow {
+  display: flex;
+  gap: var(--space-sm);
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.characterChip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  background: rgba(255,255,255,0.15);
+  border: 1.5px solid rgba(255,255,255,0.3);
+  border-radius: var(--radius-md);
+  padding: 8px 12px;
+  backdrop-filter: blur(8px);
+}
+
+.characterEmoji { font-size: 22px; }
+
+.characterName {
+  font-size: 12px;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* 하단 카드 */
+.bottomCard {
+  width: 100%;
+  background: #fff;
+  border-radius: var(--radius-xl);
+  padding: var(--space-lg);
+  box-shadow: 0 -4px 0 0 var(--red), var(--shadow-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.cardTitle {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-align: center;
+  margin-bottom: var(--space-sm);
+}
+
+.cardTitleKo {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: var(--space-sm);
+}
+
+.dividerOr {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  color: var(--text-muted);
+  font-size: 12px;
+  font-weight: 600;
+}
+.dividerOr::before, .dividerOr::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--border-subtle);
+}
+
+/* 회원가입 힌트 */
+.signupHint {
+  font-size: 13px;
+  color: var(--text-muted);
+  text-align: center;
+}
+.signupLink {
+  color: var(--red);
+  font-weight: 700;
+}

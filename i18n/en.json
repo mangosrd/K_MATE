@@ -1,0 +1,110 @@
+{
+  "nav": {
+    "map": "Travel",
+    "chat": "Chat",
+    "vocab": "Vocab",
+    "diary": "Diary",
+    "me": "My"
+  },
+  "login": {
+    "title": "K-MATE",
+    "subtitle": "Travel Korea with your AI mate",
+    "continueEmail": "Continue with Email",
+    "continueGoogle": "Continue with Google",
+    "continueApple": "Continue with Apple",
+    "noAccount": "Don't have an account?",
+    "signup": "Sign Up"
+  },
+  "onboarding": {
+    "step1Title": "What's your native language?",
+    "step1Sub": "The app UI and your mate's replies will be set to this language.",
+    "step2Title": "Choose your K-MATE",
+    "step3Title": "Almost there!",
+    "next": "Next",
+    "back": "Back",
+    "start": "Start Exploring",
+    "skip": "Skip"
+  },
+  "map": {
+    "title": "Where to next?",
+    "subtitle": "Pick a region to start learning",
+    "visited": "Visited",
+    "locked": "Locked",
+    "myStats": "My Journey",
+    "placesVisited": "places visited",
+    "placesLeft": "not visited",
+    "streak": "day streak",
+    "todayReview": "Today's Review",
+    "wordsReady": "words ready",
+    "startReview": "Start Review"
+  },
+  "chat": {
+    "inputPlaceholder": "Type a message...",
+    "send": "Send",
+    "callbackLabel": "Memory",
+    "wordSaved": "Saved to vocab!",
+    "sessionEnd": "End Session",
+    "sessionEndConfirm": "Ending the session will generate today's diary. Continue?",
+    "keepChatting": "Keep Chatting",
+    "endAndDiary": "End & See Diary"
+  },
+  "vocab": {
+    "title": "Vocab",
+    "saved": "Saved",
+    "mastered": "Mastered",
+    "reviewDue": "Review Due",
+    "startReview": "Start Review",
+    "all": "All",
+    "new": "New",
+    "reviewing": "Reviewing",
+    "mastered": "Mastered"
+  },
+  "diary": {
+    "title": "Diary",
+    "all": "All",
+    "unlocked": "Unlocked",
+    "locked": "Locked",
+    "unlockWith": "Unlock with",
+    "coins": "coins",
+    "orStamp": "or stamp",
+    "unlockConfirm": "Unlock this diary for {cost} coins?",
+    "currentCoins": "Your coins",
+    "cancel": "Cancel",
+    "unlock": "Unlock",
+    "charge": "Get Coins"
+  },
+  "shop": {
+    "title": "Shop",
+    "balance": "Coins",
+    "charge": "Charge",
+    "buy": "Buy",
+    "confirmPurchase": "Purchase {item} for {cost} coins?",
+    "afterBalance": "Balance after: {balance} coins",
+    "cancel": "Cancel",
+    "confirm": "Confirm"
+  },
+  "me": {
+    "title": "My Page",
+    "level": "Lv.{level}",
+    "affinity": "Affinity",
+    "streak": "Streak",
+    "coins": "Coins",
+    "stats": "Stats",
+    "wordsLearned": "Words Learned",
+    "placesVisited": "Places Visited",
+    "diaryCount": "Diary Entries",
+    "settings": "Settings",
+    "language": "Language",
+    "notifications": "Notifications",
+    "logout": "Log Out",
+    "logoutConfirm": "Are you sure you want to log out?"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Retry",
+    "close": "Close",
+    "confirm": "Confirm",
+    "cancel": "Cancel"
+  }
+}
