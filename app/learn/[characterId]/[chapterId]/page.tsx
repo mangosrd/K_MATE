@@ -3,6 +3,8 @@
 import { useState, use, useEffect, useMemo } from "react";
 import Link from "next/link";
 import styles from "./session.module.css";
+import { getChapterContent } from "@/lib/content/chapters";
+import type { ChapterWord as Word, ChapterSentence as Sentence, DialogueScene, DialogueTurn } from "@/types/content";
 
 // ── 기장별 전용 음성 톤 조절 함수 (TTS) ─────────────────────────
 async function playCaptainVoice(text: string, characterId: string) {
@@ -65,66 +67,8 @@ const CAPTAIN_VOICE_NAMES: Record<string, string> = {
   yongwoo: "🌋 용우 기장 전용 보이스 (중저음 톤)",
 };
 
-// ── 데이터 구조 ─────────────────────────────────────────────
-type Word = {
-  id: string;
-  word: string;
-  reading: string; // 발음 그대로 (Romanization)
-  meaning: string;
-  example: string;
-  example_reading: string;
-  example_en: string;
-};
-
-type Sentence = {
-  id: string;
-  ko: string;
-  reading: string;
-  en: string;
-};
-
-const CHAPTER_DATA: Record<string, { title: string; emoji: string; words: Word[]; sentences: Sentence[] }> = {
-  "ch-k01": {
-    title: "조선의 궁궐과 경복궁",
-    emoji: "🏯",
-    words: [
-      { id: "w01", word: "경복궁", reading: "gyeong-bok-gung", meaning: "Gyeongbokgung Palace", example: "경복궁은 조선시대 정궁이에요.", example_reading: "gyeong-bok-gung-eun jo-seon-si-dae jeong-gung-i-e-yo", example_en: "Gyeongbokgung is the main Joseon palace." },
-      { id: "w02", word: "수문장", reading: "su-mun-jang", meaning: "Palace Gate Guard", example: "수문장 교대의식을 관람하세요.", example_reading: "su-mun-jang gyo-dae-ui-sik-eun gwan-ram-ha-se-yo", example_en: "Watch the Royal Guard Changing Ceremony." },
-      { id: "w03", word: "근정전", reading: "geun-jeong-jeon", meaning: "Main Throne Hall", example: "근정전은 국왕의 즉위식이 열린 곳입니다.", example_reading: "geun-jeong-jeon-eun guk-wang-ui jeuk-wi-sik-i yeol-rin got-im-ni-da", example_en: "Geunjeongjeon is where coronation held." },
-      { id: "w04", word: "광화문", reading: "gwang-hwa-mun", meaning: "Gwanghwamun Gate", example: "광화문 앞에서 만나요.", example_reading: "gwang-hwa-mun ap-e-seo man-na-yo", example_en: "Let's meet in front of Gwanghwamun." },
-      { id: "w05", word: "한복", reading: "han-bok", meaning: "Traditional Hanbok", example: "한복을 입으면 무료 입장입니다.", example_reading: "han-bok-eul ib-eu-myeon mu-ryo ib-jang-im-ni-da", example_en: "Admission is free if you wear Hanbok." },
-    ],
-    sentences: [
-      { id: "s01", ko: "경복궁은 조선의 으뜸 궁궐입니다.", reading: "gyeong-bok-gung-eun jo-seon-ui eu-tteum gung-gwol-im-ni-da", en: "Gyeongbokgung is the main palace of Joseon." },
-      { id: "s02", ko: "수문장 교대의식은 매일 열립니다.", reading: "su-mun-jang gyo-dae-ui-sik-eun mae-il yeol-rim-ni-da", en: "Guard Changing Ceremony is held daily." },
-      { id: "s03", ko: "한복을 입고 근정전을 걸어보세요.", reading: "han-bok-eul ib-go geun-jeong-jeon-eul geol-eo-bo-se-yo", en: "Walk through Geunjeongjeon in Hanbok." },
-      { id: "s04", ko: "광화문 광장은 서울의 중심입니다.", reading: "gwang-hwa-mun gwang-jang-eun seo-ul-ui jung-sim-im-ni-da", en: "Gwanghwamun Square is the heart of Seoul." },
-      { id: "s05", ko: "조선 왕조 600년 역사가 담겨 있습니다.", reading: "jo-seon wang-jo yuk-baek-nyeon yeok-sa-ga dam-gyeo it-seum-ni-da", en: "It holds 600 years of Joseon Dynasty history." },
-    ],
-  },
-};
-
-const DEFAULT_CHAPTER = {
-  title: "한국의 전통과 문화",
-  emoji: "🏮",
-  words: [
-    { id: "w01", word: "안녕하세요", reading: "an-nyeong-ha-se-yo", meaning: "Hello (formal)", example: "안녕하세요, 환영합니다!", example_reading: "an-nyeong-ha-se-yo, hwan-yeong-ham-ni-da!", example_en: "Hello, welcome!" },
-    { id: "w02", word: "전통", reading: "jeon-tong", meaning: "Tradition", example: "한국의 아름다운 전통입니다.", example_reading: "han-guk-ui a-reum-da-un jeon-tong-im-ni-da.", example_en: "It is a beautiful Korean tradition." },
-    { id: "w03", word: "문화", reading: "mun-hwa", meaning: "Culture", example: "전통 문화를 함께 배워요.", example_reading: "jeon-tong mun-hwa-reul ham-kke bae-wo-yo.", example_en: "Let's learn traditional culture together." },
-    { id: "w04", word: "감사합니다", reading: "gam-sa-ham-ni-da", meaning: "Thank you", example: "도와주셔서 감사합니다.", example_reading: "do-wa-ju-seo-seo gam-sa-ham-ni-da.", example_en: "Thank you for your help." },
-    { id: "w05", word: "아름답다", reading: "a-reum-dap-da", meaning: "Beautiful", example: "풍경이 정말 아름다워요.", example_reading: "pung-gyeong-i jeong-mal a-reum-da-wo-yo.", example_en: "The scenery is really beautiful." },
-  ],
-  sentences: [
-    { id: "s01", ko: "한국에 오신 것을 환영합니다.", reading: "han-guk-e o-sin geot-eul hwan-yeong-ham-ni-da", en: "Welcome to Korea." },
-    { id: "s02", ko: "전통 한옥이 참 아름답습니다.", reading: "jeon-tong han-ok-i cham a-reum-dap-seum-ni-da", en: "Traditional Hanok is really beautiful." },
-    { id: "s03", ko: "즐거운 여행이 되시기 바랍니다.", reading: "jeul-geo-un yeo-haeng-i doe-si-gi ba-ram-ni-da", en: "Have a pleasant journey." },
-    { id: "s04", ko: "안전하게 좌석 벨트를 착용하세요.", reading: "an-jeon-ha-ge jwa-seok bel-teu-reul chak-yong-ha-se-yo", en: "Fasten your seat belt safely." },
-    { id: "s05", ko: "한국어와 문화를 즐겁게 배워보세요.", reading: "han-guk-eo-wa mun-hwa-reul jeul-geb-ge bae-wo-bo-se-yo", en: "Enjoy learning Korean language and culture." },
-  ],
-};
-
-type Phase = "intro" | "session" | "complete";
-type ExerciseType = "flashcard" | "multiple_choice" | "fill_blank" | "sentence_match" | "listening_choice" | "speaking_practice";
+type Phase = "intro" | "story" | "session" | "complete";
+type ExerciseType = "flashcard" | "multiple_choice" | "fill_blank" | "sentence_match" | "listening_choice" | "speaking_practice" | "dialogue_comprehension";
 
 interface ExerciseItem {
   id: string;
@@ -136,14 +80,15 @@ interface ExerciseItem {
   hintText: string;
   explanation: string;
   options: string[];
-  originalData: Word | Sentence;
+  originalData: Word | Sentence | DialogueScene;
+  dialogueTurns?: DialogueTurn[]; // dialogue_comprehension 전용
 }
 
 function shuffle<T>(arr: T[]): T[] {
   return [...arr].sort(() => Math.random() - 0.5);
 }
 
-function generateExercises(words: Word[], sentences: Sentence[]): ExerciseItem[] {
+function generateExercises(words: Word[], sentences: Sentence[], dialogues: DialogueScene[] = []): ExerciseItem[] {
   const list: ExerciseItem[] = [];
 
   // 1. 플래시카드
@@ -255,7 +200,23 @@ function generateExercises(words: Word[], sentences: Sentence[]): ExerciseItem[]
     });
   });
 
-  return shuffle(list).slice(0, 10);
+  // 7. 💬 대화 상황 파악 (Dialogue Comprehension) — 프리미엄(중급~고급) 챕터 전용
+  const dialogueItems: ExerciseItem[] = dialogues.map((d) => ({
+    id: `dlg-${d.id}`,
+    type: "dialogue_comprehension",
+    questionText: d.question,
+    reading: "",
+    correctAnswer: d.correct_answer,
+    hintText: d.question_en,
+    explanation: d.explanation,
+    options: shuffle(d.options),
+    originalData: d,
+    dialogueTurns: d.turns,
+  }));
+
+  // 대화 문제는 항상 포함하고, 남은 자리를 다른 유형으로 무작위로 채운다
+  const otherItems = shuffle(list).slice(0, Math.max(0, 10 - dialogueItems.length));
+  return shuffle([...dialogueItems, ...otherItems]);
 }
 
 export default function LearningSessionPage({
@@ -264,15 +225,16 @@ export default function LearningSessionPage({
   params: Promise<{ characterId: string; chapterId: string }>;
 }) {
   const { characterId, chapterId } = use(params);
-  const chapter = CHAPTER_DATA[chapterId] ?? DEFAULT_CHAPTER;
+  const content = getChapterContent(chapterId);
 
   const exercises = useMemo(
-    () => generateExercises(chapter.words, chapter.sentences),
-    [chapterId]
+    () => (content ? generateExercises(content.words, content.sentences, content.dialogues ?? []) : []),
+    [chapterId, content]
   );
 
   const [phase, setPhase] = useState<Phase>("intro");
   const [currentIdx, setCurrentIdx] = useState(0);
+  const [storyIdx, setStoryIdx] = useState(0);
 
   // 다음 챕터 ID 계산 (e.g. ch-k01 ➔ ch-k02)
   const chapterPrefix = chapterId.slice(0, 4);
@@ -381,13 +343,29 @@ export default function LearningSessionPage({
     }
   };
 
+  // ── 콘텐츠 미준비 (아직 스토리/단어가 채워지지 않은 챕터) ──────
+  if (!content) {
+    return (
+      <main className={styles.page}>
+        <div className={styles.introCard}>
+          <div className={styles.introEmoji}>🚧</div>
+          <h1 className={styles.introTitle}>콘텐츠 준비 중이에요</h1>
+          <p className={styles.introTitleEn}>This chapter's content isn't ready yet.</p>
+          <Link href={`/learn/${characterId}`} className="btn btn-primary btn-lg" style={{ textAlign: "center" }}>
+            ‹ 챕터 목록으로
+          </Link>
+        </div>
+      </main>
+    );
+  }
+
   // ── 인트로 화면 ─────────────────────────────────────────
   if (phase === "intro") {
     return (
       <main className={styles.page}>
         <div className={styles.introCard}>
-          <div className={styles.introEmoji}>{chapter.emoji}</div>
-          <h1 className={styles.introTitle}>{chapter.title}</h1>
+          <div className={styles.introEmoji}>{content.emoji}</div>
+          <h1 className={styles.introTitle}>{content.title}</h1>
           <p className={styles.introTitleEn}>Interactive Culture & Language Session</p>
           <div className={styles.introStats}>
             <div className={styles.introStat}>
@@ -409,12 +387,75 @@ export default function LearningSessionPage({
             <span className={styles.introType}>💡 힌트 보기</span>
             <span className={styles.introType}>🗣️ {CAPTAIN_VOICE_NAMES[characterId]}</span>
           </div>
-          <button className="btn btn-primary btn-lg" onClick={() => setPhase("session")} id="btn-start-session">
+          <button
+            className="btn btn-primary btn-lg"
+            onClick={() => { setStoryIdx(0); setPhase("story"); }}
+            id="btn-start-session"
+          >
             🚀 학습 시작!
           </button>
           <Link href={`/learn/${characterId}`} className="btn btn-ghost" style={{ textAlign: "center" }}>
             ‹ 챕터 목록으로
           </Link>
+        </div>
+      </main>
+    );
+  }
+
+  // ── 스토리 브리핑 (카카오톡 대화창 스타일 사전지식 공유) ──────
+  if (phase === "story") {
+    const bubbles = content.story;
+    const visible = bubbles.slice(0, storyIdx + 1);
+    const isLastBubble = storyIdx >= bubbles.length - 1;
+    const highlightWord = (wordId?: string) =>
+      wordId ? content.words.find((w) => w.id === wordId) : undefined;
+
+    return (
+      <main className={styles.page}>
+        <div className={styles.storyCard}>
+          <div className={styles.storyHeader}>
+            <Link href={`/learn/${characterId}`} className={styles.closeBtn} aria-label="닫기">✕</Link>
+            <div className={styles.storyHeaderInfo}>
+              <span className={styles.storyHeaderEmoji}>{content.emoji}</span>
+              <span className={styles.storyHeaderTitle}>{content.title}</span>
+            </div>
+            <button className={styles.storySkipBtn} onClick={() => setPhase("session")}>
+              건너뛰기 ›
+            </button>
+          </div>
+
+          <div className={styles.storyThread}>
+            {visible.map((bubble, i) => {
+              const word = highlightWord(bubble.highlight_word_id);
+              return (
+                <div key={i} className={styles.storyRow}>
+                  <div className={styles.storyAvatar}>✈️</div>
+                  <div className={styles.storyBubbleCol}>
+                    <span className={styles.storySpeakerName}>규현 기장</span>
+                    <div className={styles.storyBubble}>
+                      <p className={styles.storyText}>{bubble.text}</p>
+                      {bubble.reading && <p className={styles.storyReading}>[{bubble.reading}]</p>}
+                      {bubble.en && <p className={styles.storyEn}>{bubble.en}</p>}
+                      {word && (
+                        <div className={styles.storyWordChip}>
+                          <span className={styles.storyWordChipWord}>{word.word}</span>
+                          <span className={styles.storyWordChipMeaning}>{word.meaning}</span>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+
+          <button
+            className="btn btn-primary btn-lg"
+            onClick={() => (isLastBubble ? setPhase("session") : setStoryIdx((i) => i + 1))}
+            id="btn-story-next"
+          >
+            {isLastBubble ? "🚀 문제 풀러 가기!" : "다음 ▾"}
+          </button>
         </div>
       </main>
     );
@@ -491,13 +532,21 @@ export default function LearningSessionPage({
               {currentEx.type === "sentence_match" && "🔗 문장 매칭 · Sentence Match"}
               {currentEx.type === "listening_choice" && (isSkipped ? "👁️ 시각 퀴즈 (스킵됨)" : "🎧 듣기 문제 · Listening")}
               {currentEx.type === "speaking_practice" && (isSkipped ? "👁️ 시각 퀴즈 (스킵됨)" : "🗣️ 문장 읽기 · Speaking Practice")}
+              {currentEx.type === "dialogue_comprehension" && "💬 대화 상황 파악 · Dialogue Comprehension"}
             </p>
 
             <div className={styles.headerBtnGroup}>
               <button
                 type="button"
                 className={styles.voicePlayBtn}
-                onClick={() => playCaptainVoice(currentEx.questionText, characterId)}
+                onClick={() =>
+                  playCaptainVoice(
+                    currentEx.type === "dialogue_comprehension" && currentEx.dialogueTurns
+                      ? currentEx.dialogueTurns.map((t) => t.text).join(". ")
+                      : currentEx.questionText,
+                    characterId
+                  )
+                }
                 title="용우 기장 목소리로 들려주기"
               >
                 🔊 들어보기
@@ -798,6 +847,80 @@ export default function LearningSessionPage({
               {!isSubmitted && attempts > 0 && attempts < 3 && (
                 <div className={styles.attemptNotice}>
                   ❌ 오답입니다! 다시 들어보고 선택하세요. (남은 기회: {3 - attempts}회)
+                </div>
+              )}
+
+              {!isSubmitted && (
+                <button
+                  className="btn btn-primary btn-lg"
+                  onClick={() => handleCheckAnswer()}
+                  disabled={!selectedOption}
+                >
+                  정답 확인 (기회 {3 - attempts}/3)
+                </button>
+              )}
+
+              {isSubmitted && (
+                <div className={styles.resultBox}>
+                  {isCorrect ? (
+                    <p className={styles.correctText}>🎉 정답입니다!</p>
+                  ) : (
+                    <p className={styles.wrongText}>💡 3회 실패 — 정답: <strong>{currentEx.correctAnswer}</strong></p>
+                  )}
+                  <p className={styles.explanation}>{currentEx.explanation}</p>
+                  <button className="btn btn-primary btn-lg" onClick={handleNext}>
+                    다음 문제 →
+                  </button>
+                </div>
+              )}
+            </>
+          )}
+
+          {/* 7. 💬 대화 상황 파악 (Dialogue Comprehension) — 프리미엄 챕터 전용 */}
+          {currentEx.type === "dialogue_comprehension" && (
+            <>
+              <div className={styles.dlgThread}>
+                {currentEx.dialogueTurns?.map((turn, i) => (
+                  <div key={i} className={`${styles.dlgTurn} ${i % 2 === 1 ? styles.dlgTurnRight : ""}`}>
+                    <span className={styles.dlgSpeaker}>{turn.speaker}</span>
+                    <div className={styles.dlgBubble}>
+                      <p className={styles.dlgText}>{turn.text}</p>
+                      {turn.reading && <p className={styles.dlgReading}>[{turn.reading}]</p>}
+                      {turn.en && <p className={styles.dlgEn}>{turn.en}</p>}
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <div className={styles.mcQuestion}>
+                <p className={styles.dlgQuestion}>{currentEx.questionText}</p>
+                <p className={styles.mcReading}>{currentEx.hintText}</p>
+              </div>
+
+              <div className={styles.mcOptions}>
+                {currentEx.options.map((opt) => {
+                  let cls = styles.mcOption;
+                  if (selectedOption === opt) cls += " " + styles.mcSelected;
+                  if (isSubmitted) {
+                    if (opt === currentEx.correctAnswer) cls += " " + styles.mcCorrect;
+                    else if (selectedOption === opt) cls += " " + styles.mcWrong;
+                  }
+                  return (
+                    <button
+                      key={opt}
+                      className={cls}
+                      onClick={() => !isSubmitted && setSelectedOption(opt)}
+                      disabled={isSubmitted}
+                    >
+                      {opt}
+                    </button>
+                  );
+                })}
+              </div>
+
+              {!isSubmitted && attempts > 0 && attempts < 3 && (
+                <div className={styles.attemptNotice}>
+                  ❌ 다시 한번 대화 내용을 살펴보세요! (남은 기회: {3 - attempts}회)
                 </div>
               )}
 

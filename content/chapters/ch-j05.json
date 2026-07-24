@@ -1,0 +1,93 @@
+{
+  "id": "ch-j05",
+  "character_id": "yongwoo",
+  "title": "제주 흑돼지와 돔베고기",
+  "emoji": "🥩",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "승객 여러분, 오늘은 제주의 맛을 이야기해 볼까 합니다. 바람과 함께 자란 이 섬의 고기 한 점에는 깊은 시간이 담겨 있지요.",
+      "reading": "seung-gaek yeo-reo-bun, o-neul-eun je-ju-ui mas-eul i-ya-gi-hae bol-kka ham-ni-da.",
+      "en": "Passengers, today let's talk about the taste of Jeju. A single piece of meat raised with this island's wind carries a deep sense of time."
+    },
+    {
+      "text": "그 주인공은 '흑돼지'입니다. 검은 털을 지닌 제주 토종 돼지로, 예로부터 귀하게 여겨져 왔습니다.",
+      "reading": "geu ju-in-gong-eun heuk-dwae-ji-im-ni-da.",
+      "en": "The star of this story is 'black pork'. A native Jeju pig with black hair, it has long been prized.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "흑돼지를 즐기는 방법 중 하나가 '돔베고기'입니다. 삶아낸 고기를 썰어 그대로 상에 올리는, 소박하지만 깊은 맛이지요.",
+      "reading": "heuk-dwae-ji-reul jeul-gi-neun bang-beop jung ha-na-ga dom-be-go-gi-im-ni-da.",
+      "en": "One way to enjoy black pork is 'dombegogi' — boiled meat sliced and served just as it is, a simple but deep flavor.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "그 이름은 고기를 써는 '도마'에서 왔습니다. 나무 향과 고기 향이 은은히 어우러지는 순간입니다.",
+      "reading": "geu i-reum-eun go-gi-reul sseo-neun do-ma-e-seo wass-seum-ni-da.",
+      "en": "Its name comes from the 'cutting board' the meat is sliced on — a moment when the scent of wood and meat gently blend.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "제주 사람들은 이 고기를 '멜젓'에 찍어 먹습니다. 멸치로 담근 젓갈인데, 짭짤한 감칠맛이 고기의 풍미를 살려주지요.",
+      "reading": "je-ju sa-ram-deul-eun i go-gi-reul mel-jeos-e jjig-eo meog-seum-ni-da.",
+      "en": "Jeju people dip this meat in 'meljeot'. Made from fermented anchovies, its salty umami brings out the meat's flavor.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "고기는 알맞은 '숙성'을 거쳐야 비로소 부드러워집니다. 시간이 빚어내는 맛이라 할 수 있겠습니다.",
+      "reading": "go-gi-neun al-maj-eun suk-seong-eul geo-chyeo-ya bi-ro-so bu-deu-reo-wo-jim-ni-da.",
+      "en": "Meat only becomes tender after proper 'aging'. It's a flavor crafted by time itself.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "제주의 맛, 잘 음미하셨습니까? 이제 이 고기를 두고 나눈 실제 대화를 읽으며 상황을 헤아려 보시죠.",
+      "reading": "je-ju-ui mat, jal eum-mi-ha-syeot-seum-ni-kka?",
+      "en": "Did you savor the taste of Jeju? Now let's read a real conversation about this meat and figure out the situation."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "흑돼지", "reading": "heuk-dwae-ji", "meaning": "Jeju black pork", "example": "흑돼지는 제주에서만 만날 수 있는 특별한 맛입니다.", "example_reading": "heuk-dwae-ji-neun je-ju-e-seo-man man-nal su it-neun teuk-byeol-han mas-im-ni-da", "example_en": "Black pork is a special taste you can only find in Jeju." },
+    { "id": "w02", "word": "돔베고기", "reading": "dom-be-go-gi", "meaning": "Dombe pork (sliced pork served on a wooden board)", "example": "돔베고기는 삶은 고기를 나무 도마 위에 그대로 썰어 냅니다.", "example_reading": "dom-be-go-gi-neun salm-eun go-gi-reul na-mu do-ma wi-e geu-dae-ro sseol-eo naem-ni-da", "example_en": "Dombegogi is boiled meat sliced right on a wooden board." },
+    { "id": "w03", "word": "도마", "reading": "do-ma", "meaning": "Cutting board", "example": "도마 위에 놓인 고기가 김을 모락모락 피워 올립니다.", "example_reading": "do-ma wi-e no-in go-gi-ga gim-eul mo-rak-mo-rak pi-wo ol-lim-ni-da", "example_en": "The meat on the cutting board gently steams." },
+    { "id": "w04", "word": "멜젓", "reading": "mel-jeot", "meaning": "Fermented anchovy sauce (Jeju dipping sauce)", "example": "멜젓에 찍어 먹으면 풍미가 한층 깊어집니다.", "example_reading": "mel-jeos-e jjig-eo meog-eu-myeon pung-mi-ga han-cheung gip-eo-jim-ni-da", "example_en": "Dipped in meljeot, the flavor becomes even deeper." },
+    { "id": "w05", "word": "숙성", "reading": "suk-seong", "meaning": "Aging / fermentation", "example": "숙성을 거친 고기일수록 육질이 부드럽습니다.", "example_reading": "suk-seong-eul geo-chin go-gi-il-su-rok yuk-jil-i bu-deu-reop-seum-ni-da", "example_en": "The more aged the meat, the more tender the texture." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "흑돼지는 제주에서만 만날 수 있는 특별한 맛입니다.", "reading": "heuk-dwae-ji-neun je-ju-e-seo-man man-nal su it-neun teuk-byeol-han mas-im-ni-da", "en": "Black pork is a special taste you can only find in Jeju." },
+    { "id": "s02", "ko": "돔베고기는 삶은 고기를 나무 도마 위에 그대로 썰어 냅니다.", "reading": "dom-be-go-gi-neun salm-eun go-gi-reul na-mu do-ma wi-e geu-dae-ro sseol-eo naem-ni-da", "en": "Dombegogi is boiled meat sliced right on a wooden board." },
+    { "id": "s03", "ko": "도마 위에 놓인 고기가 김을 모락모락 피워 올립니다.", "reading": "do-ma wi-e no-in go-gi-ga gim-eul mo-rak-mo-rak pi-wo ol-lim-ni-da", "en": "The meat on the cutting board gently steams." },
+    { "id": "s04", "ko": "멜젓에 찍어 먹으면 풍미가 한층 깊어집니다.", "reading": "mel-jeos-e jjig-eo meog-eu-myeon pung-mi-ga han-cheung gip-eo-jim-ni-da", "en": "Dipped in meljeot, the flavor becomes even deeper." },
+    { "id": "s05", "ko": "숙성을 거친 고기일수록 육질이 부드럽습니다.", "reading": "suk-seong-eul geo-chin go-gi-il-su-rok yuk-jil-i bu-deu-reop-seum-ni-da", "en": "The more aged the meat, the more tender the texture." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "손님", "text": "사장님, 이 고기는 어떻게 먹는 게 제일 맛있어요?", "reading": "sa-jang-nim, i go-gi-neun eo-tteo-ke meong-neun ge je-il mas-i-sseo-yo?", "en": "How's the best way to eat this meat?" },
+        { "speaker": "사장님", "text": "삶아서 도마째 내드리는데, 멜젓에 살짝 찍어 드시면 제일 맛있어요.", "reading": "salm-a-seo do-ma-jjae nae-deu-ri-neun-de, mel-jeos-e sal-jjak jjig-eo deu-si-myeon je-il mas-i-sseo-yo.", "en": "We serve it boiled on the cutting board — it's tastiest if you dip it lightly in meljeot." },
+        { "speaker": "손님", "text": "멜젓이 뭔가요? 처음 들어봐요.", "reading": "mel-jeos-i mwon-ga-yo? cheo-eum deul-eo-bwa-yo.", "en": "What's meljeot? I've never heard of it." },
+        { "speaker": "사장님", "text": "멸치를 오래 삭힌 젓갈이에요. 짭짤하면서도 감칠맛이 진해요.", "reading": "myeol-chi-reul o-rae sak-hin jeot-gal-i-e-yo.", "en": "It's a sauce made from anchovies fermented for a long time. It's salty but rich in umami." }
+      ],
+      "question": "사장님이 추천한 흑돼지를 가장 맛있게 먹는 방법은 무엇인가요?",
+      "question_en": "What did the owner recommend as the tastiest way to eat the black pork?",
+      "correct_answer": "멜젓에 살짝 찍어서 먹는 것",
+      "options": ["멜젓에 살짝 찍어서 먹는 것", "소금에만 찍어 먹는 것", "고추장에 볶아 먹는 것", "간장에 오래 재워 먹는 것"],
+      "explanation": "사장님은 '멜젓에 살짝 찍어 드시면 제일 맛있다'고 추천했습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "친구1", "text": "제주 가면 흑돼지 꼭 먹어보고 싶어.", "reading": "je-ju ga-myeon heuk-dwae-ji kkok meog-eo-bo-go sip-eo.", "en": "When we go to Jeju, I really want to try black pork." },
+        { "speaker": "친구2", "text": "그럼 돔베고기 파는 곳으로 가자. 도마 위에 그대로 썰어주는 게 되게 특이해.", "reading": "geu-reom dom-be-go-gi pa-neun gos-eu-ro ga-ja.", "en": "Then let's go somewhere that serves dombegogi. It's unusual how they slice it right on the cutting board." },
+        { "speaker": "친구1", "text": "숙성은 얼마나 된 고기가 맛있을까?", "reading": "suk-seong-eun eol-ma-na doen go-gi-ga mas-i-sseul-kka?", "en": "How much aging makes the meat taste best?" },
+        { "speaker": "친구2", "text": "적당히 숙성된 게 육질이 부드럽대. 식당에서 물어보면 알려줄 거야.", "reading": "jeok-dang-hi suk-seong-doen ge yuk-jil-i bu-deu-reop-dae.", "en": "I heard moderately aged meat has the most tender texture. The restaurant will tell us if we ask." }
+      ],
+      "question": "친구2가 제안한 것은 무엇인가요?",
+      "question_en": "What did Friend 2 suggest?",
+      "correct_answer": "돔베고기를 파는 식당에 가자는 것",
+      "options": ["돔베고기를 파는 식당에 가자는 것", "흑돼지 대신 다른 음식을 먹자는 것", "숙성 없이 바로 먹자는 것", "식당 예약을 취소하자는 것"],
+      "explanation": "친구2는 '돔베고기 파는 곳으로 가자'고 제안했습니다."
+    }
+  ]
+}

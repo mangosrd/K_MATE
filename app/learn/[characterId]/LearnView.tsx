@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import styles from "./learn.module.css";
 import { SpecialChapter, SPECIAL_CHAPTERS, MOCK_CHARACTERS } from "@/lib/db/mock";
+import { useLanguage } from "@/components/LanguageContext";
 import type { Character, Chapter } from "@/types/database";
 
 interface LearnViewProps {
@@ -13,6 +14,7 @@ interface LearnViewProps {
 }
 
 export default function LearnView({ char, chapters, currentStep }: LearnViewProps) {
+  const { t } = useLanguage();
   const [tab, setTab] = useState<"regional" | "special">("regional");
   const [specialCategory, setSpecialCategory] = useState<"romance" | "daily" | "friendship">("romance");
   const [selectedCaptainId, setSelectedCaptainId] = useState<string>(char.id);
@@ -31,12 +33,12 @@ export default function LearnView({ char, chapters, currentStep }: LearnViewProp
         <div className={styles.headerCenter}>
           <div className={styles.headerAvatar}>{activeCaptain.emoji}</div>
           <div>
-            <h1 className={styles.headerTitle}>{activeCaptain.name} 기장과 공부하기</h1>
+            <h1 className={styles.headerTitle}>{activeCaptain.name} {t("learnTitle")}</h1>
             <p className={styles.headerSub}>Study with Captain {activeCaptain.name}</p>
           </div>
         </div>
         <Link href={`/chat/${activeCaptain.id}`} className="btn btn-primary btn-sm" id="btn-go-chat">
-          💬 대화
+          💬 {t("chatTitle")}
         </Link>
       </header>
 
@@ -47,13 +49,13 @@ export default function LearnView({ char, chapters, currentStep }: LearnViewProp
             className={`${styles.tabBtn} ${tab === "regional" ? styles.tabActive : ""}`}
             onClick={() => setTab("regional")}
           >
-            🗺️ 지역 문화 (10대 챕터)
+            {t("tabRegional")}
           </button>
           <button
             className={`${styles.tabBtn} ${tab === "special" ? styles.tabActive : ""}`}
             onClick={() => setTab("special")}
           >
-            ⭐ 스페셜 주제별 (30대 챕터)
+            {t("tabSpecial")}
           </button>
         </div>
 
@@ -63,8 +65,8 @@ export default function LearnView({ char, chapters, currentStep }: LearnViewProp
             {/* 진도 요약 */}
             <div className={styles.progressCard}>
               <div className={styles.progressInfo}>
-                <p className={styles.progressLabel}>현재 진도</p>
-                <p className={styles.progressValue}>챕터 {Math.ceil(currentStep / 10)} · 단계 {currentStep}</p>
+                <p className={styles.progressLabel}>{t("progressLabel")}</p>
+                <p className={styles.progressValue}>{t("totalChapters")} {Math.ceil(currentStep / 10)} · {t("chapterCount")} {currentStep}</p>
               </div>
               <div className={styles.progressRing}>
                 <span className={styles.progressPct}>{Math.round((currentStep / (chapters.length * 10)) * 100)}%</span>
@@ -73,7 +75,7 @@ export default function LearnView({ char, chapters, currentStep }: LearnViewProp
 
             {/* 챕터 목록 */}
             <section>
-              <p className={styles.sectionLabel}>REGIONAL CHAPTERS · {char.name} 기장의 지역 문화 커리큘럼 (10단계)</p>
+              <p className={styles.sectionLabel}>REGIONAL CURRICULUM · {char.name} {t("regionalChaptersLabel")}</p>
               <div className={styles.chapterList}>
                 {chapters.map((chapter, idx) => {
                   const isCompleted = currentStep > (idx + 1) * 10;
@@ -99,13 +101,13 @@ export default function LearnView({ char, chapters, currentStep }: LearnViewProp
                         <div className={styles.chapterInfo}>
                           <div className={styles.chapterMeta}>
                             <div>
-                              <p className={styles.chapterNum}>챕터 {chapter.order}</p>
+                              <p className={styles.chapterNum}>{t("totalChapters")} {chapter.order}</p>
                               <p className={styles.chapterTitle}>{chapter.title}</p>
                               <p className={styles.chapterTitleEn}>{chapter.title_en}</p>
                             </div>
-                            {isActive && <span className="badge badge-red">진행중</span>}
-                            {isCompleted && <span className="badge badge-mint">완료</span>}
-                            {isLocked && <span className="badge badge-muted">잠김</span>}
+                            {isActive && <span className="badge badge-red">{t("ongoing")}</span>}
+                            {isCompleted && <span className="badge badge-mint">{t("completed")}</span>}
+                            {isLocked && <span className="badge badge-muted">{t("locked")}</span>}
                           </div>
                           <p className={styles.chapterDesc}>{chapter.description}</p>
 
@@ -122,10 +124,6 @@ export default function LearnView({ char, chapters, currentStep }: LearnViewProp
                               );
                             })}
                           </div>
-
-                          <p className={styles.chapterStats}>
-                            단어 20개 · 문장 30개 · {chapter.step_count}단계
-                          </p>
                         </div>
                       </Link>
                     </div>
@@ -136,11 +134,11 @@ export default function LearnView({ char, chapters, currentStep }: LearnViewProp
           </>
         )}
 
-        {/* 2. 스페셜 주제별 스토리 탭 (로맨스/일상/친구 30 챕터 - 유료모드) */}
+        {/* 2. 스페셜 주제별 스토리 탭 (로맨스/일상/친구 30 챕터) */}
         {tab === "special" && (
           <section className={styles.specialSection}>
             <div className={styles.captainSelectorBox}>
-              <p className={styles.selectorLabel}>👨‍✈️ 함께 공부할 남성 기장님 선택</p>
+              <p className={styles.selectorLabel}>{t("selectCaptainLearn")}</p>
               <div className={styles.captainPills}>
                 {MOCK_CHARACTERS.map((c) => (
                   <button
@@ -149,7 +147,7 @@ export default function LearnView({ char, chapters, currentStep }: LearnViewProp
                     onClick={() => setSelectedCaptainId(c.id)}
                   >
                     <span>{c.emoji}</span>
-                    <span>{c.name} 기장</span>
+                    <span>{c.name} {t("captainBadge")}</span>
                   </button>
                 ))}
               </div>
@@ -161,33 +159,30 @@ export default function LearnView({ char, chapters, currentStep }: LearnViewProp
                 className={`${styles.subTabBtn} ${specialCategory === "romance" ? styles.subTabActive : ""}`}
                 onClick={() => setSpecialCategory("romance")}
               >
-                ❤️ 로맨스 스토리 (10개)
+                {t("romanceStory")}
               </button>
               <button
                 className={`${styles.subTabBtn} ${specialCategory === "daily" ? styles.subTabActive : ""}`}
                 onClick={() => setSpecialCategory("daily")}
               >
-                ☕ 일상 스토리 (10개)
+                {t("dailyStory")}
               </button>
               <button
                 className={`${styles.subTabBtn} ${specialCategory === "friendship" ? styles.subTabActive : ""}`}
                 onClick={() => setSpecialCategory("friendship")}
               >
-                🤝 친구 스토리 (10개)
+                {t("friendshipStory")}
               </button>
             </div>
 
             {/* 카테고리 헤더 요약 */}
             <div className={styles.specialCategoryCard}>
-              <div className={styles.specialBadge}>⭐ 프리미엄 스페셜 모드</div>
+              <div className={styles.specialBadge}>{t("premiumSpecialMode")}</div>
               <h2 className={styles.specialTitle}>
-                {specialCategory === "romance" && "❤️ 로맨스 스토리 (Romance Story)"}
-                {specialCategory === "daily" && "☕ 일상 스토리 (Daily Life Story)"}
-                {specialCategory === "friendship" && "🤝 친구 스토리 (Friendship Story)"}
+                {specialCategory === "romance" && t("romanceStory")}
+                {specialCategory === "daily" && t("dailyStory")}
+                {specialCategory === "friendship" && t("friendshipStory")}
               </h2>
-              <p className={styles.specialMeta}>
-                총 10개 챕터 · 단어 100개 · 문장 50개 · {activeCaptain.name} 기장과 달콤한 실전 대화!
-              </p>
             </div>
 
             {/* 스페셜 챕터 목록 */}
@@ -205,17 +200,13 @@ export default function LearnView({ char, chapters, currentStep }: LearnViewProp
                     <div className={styles.chapterInfo}>
                       <div className={styles.chapterMeta}>
                         <div>
-                          <p className={styles.chapterNum}>스페셜 챕터 {sc.order}</p>
+                          <p className={styles.chapterNum}>{t("tabSpecial")} {sc.order}</p>
                           <p className={styles.chapterTitle}>{sc.title}</p>
                           <p className={styles.chapterTitleEn}>{sc.title_en}</p>
                         </div>
-                        <span className="badge badge-gold">⭐ 프리미엄</span>
+                        <span className="badge badge-gold">⭐ {t("premiumOnly")}</span>
                       </div>
                       <p className={styles.chapterDesc}>{sc.description}</p>
-
-                      <p className={styles.chapterStats}>
-                        단어 {sc.total_words}개 · 문장 {sc.total_sentences}개 · {sc.step_count}단계 (스페셜 모드)
-                      </p>
                     </div>
                   </Link>
                 </div>

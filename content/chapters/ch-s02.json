@@ -1,0 +1,93 @@
+{
+  "id": "ch-s02",
+  "character_id": "sunwoo",
+  "title": "자갈치 시장과 해산물 언어",
+  "emoji": "🐟",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "승객 여러분, 부산의 살아 숨 쉬는 삶의 현장, 자갈치 시장으로 모시겠습니다!",
+      "reading": "seung-gaek yeo-reo-bun, bu-san-ui sal-a sum swi-neun salm-ui hyeon-jang, ja-gal-chi si-jang-eu-ro mo-si-get-seum-ni-da!",
+      "en": "Passengers, let me take you to Jagalchi Market — the living, breathing heart of Busan life!"
+    },
+    {
+      "text": "저 아래 보이는 게 바로 '자갈치시장'이에요. 부산을 대표하는 수산시장이죠.",
+      "reading": "jeo a-rae bo-i-neun ge ba-ro ja-gal-chi-si-jang-i-e-yo.",
+      "en": "What you see down there is 'Jagalchi Market'. It's Busan's representative seafood market.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "시장 안에서는 '활어회'를 바로 주문해서 먹을 수 있어요. 싱싱함이 최고죠!",
+      "reading": "si-jang an-e-seo-neun hwal-eo-hoe-reul ba-ro ju-mun-hae-seo meog-eul su iss-eo-yo.",
+      "en": "Inside the market, you can order 'live raw fish' right on the spot. The freshness is the best!",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "새벽마다 '경매'가 열리는데, 그 활기찬 모습이 정말 볼 만해요.",
+      "reading": "sae-byeok-ma-da gyeong-mae-ga yeol-li-neun-de, geu hwal-gi-chan mo-seub-i jeong-mal bol man-hae-yo.",
+      "en": "Every dawn there's an 'auction', and the lively scene is really worth seeing.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "상인들과 '흥정'을 해보는 것도 재미있는 경험이 될 거예요.",
+      "reading": "sang-in-deul-gwa heung-jeong-eul hae-bo-neun geot-do jae-mi-iss-neun gyeong-heom-i doel geo-ye-yo.",
+      "en": "Trying 'haggling' with the vendors can be a fun experience too.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "'건어물' 골목도 꼭 들러보세요. 부산 특유의 마른 해산물이 가득해요.",
+      "reading": "geon-eo-mul gol-mok-do kkok deul-leo-bo-se-yo.",
+      "en": "Be sure to stop by the 'dried seafood' alley too. It's full of Busan's signature dried seafood.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "단어는 다 익히셨죠? 이번엔 시장에서 실제로 벌어지는 대화를 보고, 무슨 상황인지 맞혀보는 문제도 준비했어요!",
+      "reading": "dan-eo-neun da ig-hi-syeot-jyo?",
+      "en": "Got all the words down? This time I've also prepared questions where you read real market conversations and figure out the situation!"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "자갈치시장", "reading": "ja-gal-chi-si-jang", "meaning": "Jagalchi Market", "example": "자갈치시장은 부산을 대표하는 수산시장입니다.", "example_reading": "ja-gal-chi-si-jang-eun bu-san-eul dae-pyo-ha-neun su-san-si-jang-im-ni-da", "example_en": "Jagalchi Market is Busan's representative seafood market." },
+    { "id": "w02", "word": "활어회", "reading": "hwal-eo-hoe", "meaning": "Live raw fish (sashimi)", "example": "활어회를 주문하면 바로 눈앞에서 손질해 줍니다.", "example_reading": "hwal-eo-hoe-reul ju-mun-ha-myeon ba-ro nun-ap-e-seo son-jil-hae jum-ni-da", "example_en": "When you order live raw fish, they prepare it right in front of you." },
+    { "id": "w03", "word": "경매", "reading": "gyeong-mae", "meaning": "Auction", "example": "경매가 시작되면 시장 전체가 활기를 띱니다.", "example_reading": "gyeong-mae-ga si-jak-doe-myeon si-jang jeon-che-ga hwal-gi-reul ttim-ni-da", "example_en": "When the auction starts, the whole market comes alive." },
+    { "id": "w04", "word": "흥정", "reading": "heung-jeong", "meaning": "Haggling / bargaining", "example": "흥정을 잘하면 조금 더 저렴하게 살 수 있어요.", "example_reading": "heung-jeong-eul jal-ha-myeon jo-geum deo jeo-ryeom-ha-ge sal su iss-eo-yo", "example_en": "If you haggle well, you can buy it a bit cheaper." },
+    { "id": "w05", "word": "건어물", "reading": "geon-eo-mul", "meaning": "Dried seafood", "example": "건어물 가게에는 다양한 마른 생선이 진열되어 있습니다.", "example_reading": "geon-eo-mul ga-ge-e-neun da-yang-han ma-reun saeng-seon-i jin-yeol-doe-eo iss-seum-ni-da", "example_en": "The dried seafood shop displays various dried fish." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "자갈치시장은 부산을 대표하는 수산시장입니다.", "reading": "ja-gal-chi-si-jang-eun bu-san-eul dae-pyo-ha-neun su-san-si-jang-im-ni-da", "en": "Jagalchi Market is Busan's representative seafood market." },
+    { "id": "s02", "ko": "활어회를 주문하면 바로 눈앞에서 손질해 줍니다.", "reading": "hwal-eo-hoe-reul ju-mun-ha-myeon ba-ro nun-ap-e-seo son-jil-hae jum-ni-da", "en": "When you order live raw fish, they prepare it right in front of you." },
+    { "id": "s03", "ko": "경매가 시작되면 시장 전체가 활기를 띱니다.", "reading": "gyeong-mae-ga si-jak-doe-myeon si-jang jeon-che-ga hwal-gi-reul ttim-ni-da", "en": "When the auction starts, the whole market comes alive." },
+    { "id": "s04", "ko": "흥정을 잘하면 조금 더 저렴하게 살 수 있어요.", "reading": "heung-jeong-eul jal-ha-myeon jo-geum deo jeo-ryeom-ha-ge sal su iss-eo-yo", "en": "If you haggle well, you can buy it a bit cheaper." },
+    { "id": "s05", "ko": "건어물 가게에는 다양한 마른 생선이 진열되어 있습니다.", "reading": "geon-eo-mul ga-ge-e-neun da-yang-han ma-reun saeng-seon-i jin-yeol-doe-eo iss-seum-ni-da", "en": "The dried seafood shop displays various dried fish." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "관광객", "text": "아주머니, 이 광어 얼마예요?", "reading": "a-ju-meo-ni, i gwang-eo eol-ma-ye-yo?", "en": "Ma'am, how much is this flounder?" },
+        { "speaker": "자갈치 아지매", "text": "이거는 한 마리에 삼만 원인데, 두 마리 사면 오만 원에 드릴게요.", "reading": "i-geo-neun han ma-ri-e sam-man won-in-de, du ma-ri sa-myeon o-man won-e deu-ril-ge-yo.", "en": "This one is 30,000 won each, but if you buy two, I'll give them to you for 50,000 won." },
+        { "speaker": "관광객", "text": "조금만 더 깎아주시면 안 될까요?", "reading": "jo-geum-man deo kkakk-a-ju-si-myeon an doel-kka-yo?", "en": "Could you lower the price just a bit more?" },
+        { "speaker": "자갈치 아지매", "text": "그럼 사만오천 원에 드릴게요. 대신 많이 사가세요!", "reading": "geu-reom sa-man-o-cheon won-e deu-ril-ge-yo. dae-sin man-hi sa-ga-se-yo!", "en": "Alright, I'll give them to you for 45,000 won. But buy a lot from me next time!" }
+      ],
+      "question": "아주머니가 관광객에게 제안한 것은 무엇인가요?",
+      "question_en": "What did the vendor propose to the tourist?",
+      "correct_answer": "두 마리를 사면 더 싸게 준다",
+      "options": ["두 마리를 사면 더 싸게 준다", "한 마리를 무료로 준다", "회를 포장해서 배달해준다", "다음에 오면 할인해준다"],
+      "explanation": "아주머니가 두 마리를 사면 오만 원, 흥정 후에는 사만오천 원에 주겠다고 했으므로, 여러 마리를 사면 더 저렴하게 살 수 있다는 제안입니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "관광객", "text": "여기 경매는 몇 시에 시작하나요? 구경하고 싶어서요.", "reading": "yeo-gi gyeong-mae-neun myeot si-e si-jak-ha-na-yo? gu-gyeong-ha-go sip-eo-seo-yo.", "en": "What time does the auction start here? I'd like to watch it." },
+        { "speaker": "상인", "text": "새벽 경매는 아침 6시에 시작하고, 오후에도 작은 경매가 있어요.", "reading": "sae-byeok gyeong-mae-neun a-chim yeo-seot-si-e si-jak-ha-go, o-hu-e-do jag-eun gyeong-mae-ga iss-eo-yo.", "en": "The dawn auction starts at 6 AM, and there's a smaller one in the afternoon too." },
+        { "speaker": "관광객", "text": "새벽에도 시장이 열려 있나요?", "reading": "sae-byeok-e-do si-jang-i yeol-lyeo iss-na-yo?", "en": "Is the market open even at dawn?" },
+        { "speaker": "상인", "text": "그럼요, 새벽부터 배들이 들어와서 아주 활기차답니다.", "reading": "geu-reom-yo, sae-byeok-bu-teo bae-deul-i deul-eo-wa-seo a-ju hwal-gi-cha-dam-ni-da.", "en": "Of course, boats come in from dawn so it's very lively." }
+      ],
+      "question": "관광객이 알고 싶어 하는 것은 무엇인가요?",
+      "question_en": "What does the tourist want to know?",
+      "correct_answer": "경매가 시작되는 시간",
+      "options": ["경매가 시작되는 시간", "생선 가격을 흥정하는 법", "시장에서 가장 맛있는 식당", "주차장 위치"],
+      "explanation": "관광객이 '경매는 몇 시에 시작하나요?'라고 물었으므로 경매 시작 시간을 궁금해하고 있습니다."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "ch-k04",
+  "character_id": "kyuhyun",
+  "title": "인사동 찻집과 전통 다도",
+  "emoji": "🍵",
+  "story": [
+    {
+      "text": "승객 여러분, 이번엔 전통 문화가 살아 숨쉬는 '인사동' 상공입니다. 잠시 착륙해서 차 한 잔 어떠세요?",
+      "reading": "seung-gaek yeo-reo-bun, i-beon-en jeon-tong mun-hwa-ga sal-a sum-swi-neun in-sa-dong sang-gong-im-ni-da.",
+      "en": "Passengers, we're now above 'Insadong', where traditional culture is alive and well. How about landing for a cup of tea?",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "이 골목의 '찻집'들은 대부분 100년 넘은 한옥을 개조한 곳이에요. 분위기가 정말 특별하죠.",
+      "reading": "i gol-mog-ui chat-jib-deul-eun dae-bu-bun baeng-nyeon neom-eun han-og-eul gae-jo-han gos-i-e-yo.",
+      "en": "Most 'teahouses' in this alley are renovated hanok houses over 100 years old. The atmosphere is truly special.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "'오미자차'부터 드셔볼까요? 다섯 가지 맛(달고 짜고 맵고 쓰고 신맛)이 한 번에 느껴져요.",
+      "reading": "o-mi-ja-cha-bu-teo deu-syeo-bol-kka-yo?",
+      "en": "Shall we start with 'omija tea'? You can taste five flavors — sweet, salty, spicy, bitter, sour — all at once.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "몸이 으슬으슬할 땐 '쌍화차'가 최고예요. 한약재를 오래 끓여 만들어서 정말 따뜻해져요.",
+      "reading": "mom-i eu-seul-eu-seul-hal ttaen ssang-hwa-cha-ga choe-go-ye-yo.",
+      "en": "When you feel a chill, 'ssanghwa tea' is best. It's simmered from herbal medicine ingredients and really warms you up.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "차를 정성껏 우리고 나누는 과정 전체를 '다도'라고 해요. 마음을 가다듬는 전통 예술이죠.",
+      "reading": "cha-reul jeong-seong-kkeot u-ri-go na-nu-neun gwa-jeong jeon-che-reul da-do-ra-go hae-yo.",
+      "en": "The whole process of carefully brewing and sharing tea is called 'dado', the tea ceremony — a traditional art of calming the mind.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "차 한 잔 하며 마음이 편안해지셨나요? 이제 오늘 배운 단어들로 문제를 풀어봐요!",
+      "reading": "cha han jan ha-myeo ma-eum-i pyeon-an-hae-jyeo-sseo-na-yo?",
+      "en": "Did you feel your mind relax over a cup of tea? Now let's solve some questions with today's words!"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "인사동", "reading": "in-sa-dong", "meaning": "Insadong (traditional culture street)", "example": "인사동은 전통 문화 거리로 유명해요.", "example_reading": "in-sa-dong-eun jeon-tong mun-hwa geo-ri-ro yu-myeong-hae-yo", "example_en": "Insadong is famous as a traditional culture street." },
+    { "id": "w02", "word": "찻집", "reading": "chat-jip", "meaning": "Teahouse", "example": "이 찻집은 100년 된 한옥이에요.", "example_reading": "i chat-jib-eun baeng-nyeon doen han-og-i-e-yo", "example_en": "This teahouse is a 100-year-old hanok." },
+    { "id": "w03", "word": "오미자차", "reading": "o-mi-ja-cha", "meaning": "Omija (five-flavor berry) tea", "example": "오미자차는 다섯 가지 맛이 나요.", "example_reading": "o-mi-ja-cha-neun da-seot ga-ji mas-i na-yo", "example_en": "Omija tea has five distinct flavors." },
+    { "id": "w04", "word": "쌍화차", "reading": "ssang-hwa-cha", "meaning": "Ssanghwa (herbal) tea", "example": "쌍화차는 몸을 따뜻하게 해줘요.", "example_reading": "ssang-hwa-cha-neun mom-eul tta-tteus-ha-ge hae-jwo-yo", "example_en": "Ssanghwa tea warms up your body." },
+    { "id": "w05", "word": "다도", "reading": "da-do", "meaning": "Tea ceremony", "example": "다도는 마음을 가다듬는 전통이에요.", "example_reading": "da-do-neun ma-eum-eul ga-da-deum-neun jeon-tong-i-e-yo", "example_en": "Dado is a tradition that calms the mind." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "인사동은 전통과 예술이 공존하는 거리입니다.", "reading": "in-sa-dong-eun jeon-tong-gwa ye-sul-i gong-jon-ha-neun geo-ri-im-ni-da", "en": "Insadong is a street where tradition and art coexist." },
+    { "id": "s02", "ko": "찻집 분위기가 아늑하고 조용합니다.", "reading": "chat-jip bun-wi-gi-ga a-neu-ka-go jo-yong-ham-ni-da", "en": "The teahouse atmosphere is cozy and quiet." },
+    { "id": "s03", "ko": "오미자차는 새콤달콤한 맛이 특징입니다.", "reading": "o-mi-ja-cha-neun sae-kom-dal-kom-han mas-i teuk-jing-im-ni-da", "en": "Omija tea is characterized by a tangy-sweet taste." },
+    { "id": "s04", "ko": "쌍화차 한 잔이면 감기도 물러갑니다.", "reading": "ssang-hwa-cha han jan-i-myeon gam-gi-do mul-leo-gam-ni-da", "en": "One cup of ssanghwa tea can chase away a cold." },
+    { "id": "s05", "ko": "다도를 배우면 마음이 차분해집니다.", "reading": "da-do-reul bae-u-myeon ma-eum-i cha-bun-hae-jim-ni-da", "en": "Learning the tea ceremony makes your mind calmer." }
+  ]
+}

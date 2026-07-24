@@ -1,0 +1,62 @@
+{
+  "id": "ch-k03",
+  "character_id": "kyuhyun",
+  "title": "한복의 색채와 착용 예절",
+  "emoji": "👘",
+  "story": [
+    {
+      "text": "승객 여러분, 오늘은 한복 매장 상공을 지나고 있습니다. 한복의 색과 예절에 담긴 이야기를 들려드릴게요.",
+      "reading": "seung-gaek yeo-reo-bun, o-neul-eun han-bok mae-jang sang-gong-eul ji-na-go it-seum-ni-da.",
+      "en": "Passengers, today we're passing over a hanbok shop. Let me tell you the story behind hanbok's colors and etiquette."
+    },
+    {
+      "text": "한복의 색은 아무렇게나 정해진 게 아니에요. '오방색'이라는 다섯 방위의 색(파랑·빨강·노랑·하양·검정)을 기본으로 해요.",
+      "reading": "han-bok-ui saek-eun a-mu-reo-ke-na jeong-hae-jin ge a-ni-e-yo. o-bang-saek-i-ra-neun da-seot bang-wi-ui saek-eul gi-bon-eu-ro hae-yo.",
+      "en": "Hanbok's colors aren't chosen at random. They're based on 'obangsaek' — the five directional colors (blue, red, yellow, white, black).",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "위에 입는 짧은 상의는 '저고리'라고 해요. 소매의 곡선이 참 우아하죠.",
+      "reading": "wi-e ib-neun jjal-beun sang-ui-neun jeo-go-ri-ra-go hae-yo.",
+      "en": "The short top worn on the upper body is called 'jeogori'. The curve of the sleeve is quite elegant.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "아래에 넓게 퍼지는 치마는 그냥 '치마'라고 불러요. 걸을 때마다 우아하게 흔들리죠.",
+      "reading": "a-rae-e neol-ge peo-ji-neun chi-ma-neun geu-nyang chi-ma-ra-go bul-leo-yo.",
+      "en": "The wide, flowing skirt underneath is simply called 'chima'. It sways elegantly with every step.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "저고리를 여미는 긴 끈은 '옷고름'이라고 해요. 매듭을 예쁘게 묶는 것도 기술이랍니다.",
+      "reading": "jeo-go-ri-reul yeo-mi-neun gin kkeun-eun ot-go-reum-i-ra-go hae-yo.",
+      "en": "The long ribbon that ties the jeogori shut is called 'otgoreum'. Tying a pretty knot is quite a skill.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "한복을 입을 때는 '예절'도 중요해요. 앉을 때 치마를 정돈하는 것도 그중 하나죠.",
+      "reading": "han-bok-eul ib-eul ttae-neun ye-jeol-do jung-yo-hae-yo.",
+      "en": "'Etiquette' matters when wearing hanbok too — like neatly arranging your skirt when sitting down.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "자, 오늘 배운 다섯 단어로 문제를 풀어볼까요? 아름다운 한복 이야기, 재미있으셨죠?",
+      "reading": "ja, o-neul bae-un da-seot dan-eo-ro mun-je-reul pul-eo-bol-kka-yo?",
+      "en": "Now, shall we solve some questions with today's five words? Wasn't the story of beautiful hanbok fun?"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "오방색", "reading": "o-bang-saek", "meaning": "Five Directional Colors", "example": "한복은 오방색을 기본으로 만들어졌어요.", "example_reading": "han-bok-eun o-bang-saeg-eul gi-bon-eu-ro man-deu-reo-jyeo-sseo-yo", "example_en": "Hanbok is made based on the five directional colors." },
+    { "id": "w02", "word": "저고리", "reading": "jeo-go-ri", "meaning": "Hanbok jacket/top", "example": "저고리는 한복의 상의를 말해요.", "example_reading": "jeo-go-ri-neun han-bog-ui sang-ui-reul mal-hae-yo", "example_en": "Jeogori refers to the top part of hanbok." },
+    { "id": "w03", "word": "치마", "reading": "chi-ma", "meaning": "Hanbok skirt", "example": "치마는 넓게 퍼지는 형태로 만들어졌어요.", "example_reading": "chi-ma-neun neol-ge peo-ji-neun hyeong-tae-ro man-deu-reo-jyeo-sseo-yo", "example_en": "The chima skirt is made to flow wide." },
+    { "id": "w04", "word": "옷고름", "reading": "ot-go-reum", "meaning": "Hanbok ribbon tie", "example": "옷고름은 저고리를 여미는 끈이에요.", "example_reading": "ot-go-reum-eun jeo-go-ri-reul yeo-mi-neun kkeun-i-e-yo", "example_en": "Otgoreum is the ribbon that ties the jeogori shut." },
+    { "id": "w05", "word": "예절", "reading": "ye-jeol", "meaning": "Etiquette / manners", "example": "한복을 입을 때도 예절이 있어요.", "example_reading": "han-bog-eul ib-eul ttae-do ye-jeol-i i-sseo-yo", "example_en": "There is etiquette even when wearing hanbok." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "오방색은 한복의 아름다움을 완성합니다.", "reading": "o-bang-saeg-eun han-bog-ui a-reum-da-um-eul wan-seong-ham-ni-da", "en": "The five directional colors complete hanbok's beauty." },
+    { "id": "s02", "ko": "저고리는 소매의 곡선이 우아합니다.", "reading": "jeo-go-ri-neun so-mae-ui gok-seon-i u-a-ham-ni-da", "en": "The jeogori has an elegant sleeve curve." },
+    { "id": "s03", "ko": "치마는 걸을 때마다 우아하게 흔들립니다.", "reading": "chi-ma-neun geol-eul ttae-ma-da u-a-ha-ge heun-deul-lim-ni-da", "en": "The chima sways elegantly with every step." },
+    { "id": "s04", "ko": "옷고름을 예쁘게 묶는 것도 기술입니다.", "reading": "ot-go-reum-eul ye-ppeu-ge muk-neun geot-do gi-sul-im-ni-da", "en": "Tying a pretty otgoreum knot is also a skill." },
+    { "id": "s05", "ko": "예절을 지키며 한복을 입어보세요.", "reading": "ye-jeol-eul ji-ki-myeo han-bog-eul ib-eo-bo-se-yo", "en": "Try wearing hanbok while following its etiquette." }
+  ]
+}

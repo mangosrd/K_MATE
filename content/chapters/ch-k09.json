@@ -1,0 +1,57 @@
+{
+  "id": "ch-k09",
+  "character_id": "kyuhyun",
+  "title": "북한산과 서울 한양도성길",
+  "emoji": "🏔️",
+  "story": [
+    {
+      "text": "승객 여러분, 이번엔 도심 속 자연, '북한산' 상공을 지나갑니다. 산소가 가득한 공기를 느껴보세요.",
+      "reading": "seung-gaek yeo-reo-bun, i-beon-en do-sim sok ja-yeon, buk-han-san sang-gong-eul ji-na-gam-ni-da.",
+      "en": "Passengers, we're now flying over 'Bukhansan', nature in the heart of the city. Feel the fresh, oxygen-rich air.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "서울 시민들은 주말마다 '등산'을 즐겨요. 도심에서 이렇게 가까운 명산이 있다는 게 큰 행운이죠.",
+      "reading": "seo-ul si-min-deul-eun ju-mal-ma-da deung-san-eul jeul-gyeo-yo.",
+      "en": "Seoul citizens love 'hiking' every weekend. It's a real blessing to have such a fine mountain so close to downtown.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "산자락에는 조선시대에 쌓은 '성곽'이 있어요. 한양도성 성곽길을 따라 역사를 걸을 수 있죠.",
+      "reading": "san-ja-rag-e-neun jo-seon-si-dae-e ssa-eun seong-gwag-i i-sseo-yo.",
+      "en": "On the mountain's foot, there's a 'fortress wall' built in the Joseon era. You can walk through history along the Hanyang Fortress trail.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "힘들게 올라가면 '정상'에서 서울 전체가 한눈에 보이는 보상을 받아요.",
+      "reading": "him-deul-ge ol-la-ga-myeon jeong-sang-e-seo seo-ul jeon-che-ga han-nun-e bo-i-neun bo-sang-eul bad-a-yo.",
+      "en": "If you push through the climb, you're rewarded with a view of all of Seoul at once from the 'summit'.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "체력에 자신이 없다면 평평한 '둘레길'을 걸어도 좋아요. 숲의 향기만으로도 힐링이 되니까요.",
+      "reading": "che-ryeog-e ja-sin-i eop-da-myeon pyeong-pyeong-han dul-le-gil-eul geol-eo-do jo-a-yo.",
+      "en": "If you're not confident in your stamina, walking the flat 'loop trail' is also great — the scent of the forest alone is healing.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "맑은 공기 많이 마셨나요? 이제 산행에서 배운 단어로 문제를 풀어볼 시간이에요!",
+      "reading": "malg-eun gong-gi man-i ma-syeo-sseo-na-yo?",
+      "en": "Did you breathe in plenty of fresh air? Now it's time to solve some questions with the words from our hike!"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "북한산", "reading": "buk-han-san", "meaning": "Bukhansan (mountain)", "example": "북한산은 서울 근교의 명산이에요.", "example_reading": "buk-han-san-eun seo-ul geun-gyo-ui myeong-san-i-e-yo", "example_en": "Bukhansan is a famous mountain near Seoul." },
+    { "id": "w02", "word": "등산", "reading": "deung-san", "meaning": "Hiking / mountain climbing", "example": "주말에 등산을 자주 가요.", "example_reading": "ju-mal-e deung-san-eul ja-ju ga-yo", "example_en": "I often go hiking on weekends." },
+    { "id": "w03", "word": "성곽", "reading": "seong-gwak", "meaning": "Fortress wall", "example": "한양도성 성곽길을 따라 걸어요.", "example_reading": "han-yang-do-seong seong-gwak-gil-eul tta-ra geol-eo-yo", "example_en": "I walk along the Hanyang Fortress trail." },
+    { "id": "w04", "word": "정상", "reading": "jeong-sang", "meaning": "Summit / peak", "example": "정상에서 서울 전경이 보여요.", "example_reading": "jeong-sang-e-seo seo-ul jeon-gyeong-i bo-yeo-yo", "example_en": "You can see all of Seoul from the summit." },
+    { "id": "w05", "word": "둘레길", "reading": "dul-le-gil", "meaning": "Loop trail", "example": "둘레길을 천천히 걸으면 좋아요.", "example_reading": "dul-le-gil-eul cheon-cheon-hi geol-eu-myeon jo-a-yo", "example_en": "It's nice to slowly walk the loop trail." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "북한산은 사계절 내내 아름답습니다.", "reading": "buk-han-san-eun sa-gye-jeol nae-nae a-reum-dap-seum-ni-da", "en": "Bukhansan is beautiful in all four seasons." },
+    { "id": "s02", "ko": "등산을 하면 몸과 마음이 건강해집니다.", "reading": "deung-san-eul ha-myeon mom-gwa ma-eum-i geon-gang-hae-jim-ni-da", "en": "Hiking makes both body and mind healthier." },
+    { "id": "s03", "ko": "성곽을 따라 걸으면 역사가 느껴집니다.", "reading": "seong-gwag-eul tta-ra geol-eu-myeon yeok-sa-ga neu-kkyeo-jim-ni-da", "en": "Walking along the fortress wall, you feel the history." },
+    { "id": "s04", "ko": "정상에 오르면 성취감이 큽니다.", "reading": "jeong-sang-e o-reu-myeon seong-chwi-gam-i keum-ni-da", "en": "Reaching the summit brings a great sense of achievement." },
+    { "id": "s05", "ko": "둘레길은 남녀노소 누구나 걷기 좋습니다.", "reading": "dul-le-gil-eun nam-nyeo-no-so nu-gu-na geot-gi jo-seum-ni-da", "en": "The loop trail is easy walking for people of all ages." }
+  ]
+}

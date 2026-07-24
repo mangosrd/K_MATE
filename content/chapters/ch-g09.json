@@ -1,0 +1,93 @@
+{
+  "id": "ch-g09",
+  "character_id": "sangwoo",
+  "title": "태안 해안국립공원 갯벌",
+  "emoji": "🌿",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "승객 여러분, 이번엔 충청남도 서쪽 끝, 태안 해안으로 향합니다. 육지와 바다가 만나는 특별한 자연을 함께 보시죠.",
+      "reading": "seung-gaek yeo-reo-bun, i-beon-en chung-cheong-nam-do seo-jjok kkeut, tae-an hae-an-eu-ro hyang-ham-ni-da.",
+      "en": "Passengers, this time we're headed to the western edge of South Chungcheong — the Taean coast. Let's take a look at this special place where land meets sea."
+    },
+    {
+      "text": "저 아래 드넓게 펼쳐진 곳이 '갯벌'입니다. 밀물과 썰물이 드나들며 만들어낸, 살아있는 자연의 보고이지요.",
+      "reading": "jeo a-rae deu-neol-ge pyeol-cheo-jin gos-i gaet-beol-im-ni-da.",
+      "en": "That vast expanse below is the 'mudflat'. Shaped by the coming and going of the tides, it's a living treasury of nature.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "갯벌에서는 '조개'를 캐는 사람들의 모습을 흔히 볼 수 있습니다. 바지락과 굴이 특히 유명하답니다.",
+      "reading": "gaet-beol-e-seo-neun jo-gae-reul kae-neun sa-ram-deul-ui mo-seub-eul heun-hi bol su it-seum-ni-da.",
+      "en": "On the mudflats, you can often see people digging for 'clams'. Manila clams and oysters are especially famous here.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "해안을 따라서는 '사구'도 펼쳐져 있습니다. 오랜 세월 바람이 모래를 쌓아 만든 자연의 작품이지요.",
+      "reading": "hae-an-eul tta-ra-seo-neun sa-gu-do pyeol-cheo-jyeo it-seum-ni-da.",
+      "en": "Along the coast, 'sand dunes' also stretch out — a natural work of art built by the wind over long years.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "가을이 되면 수많은 '철새'들이 이곳을 찾습니다. 먼 길을 날아온 새들이 잠시 쉬어가는 안식처랍니다.",
+      "reading": "ga-eul-i doe-myeon su-man-eun cheol-sae-deul-i i-gos-eul chaj-seum-ni-da.",
+      "en": "When autumn comes, countless 'migratory birds' visit this place — a resting spot for birds that have flown a long way.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "이렇게 다양한 생물이 어우러진 곳을 우리는 '생태계'라고 부릅니다. 태안 갯벌은 그 자체로 소중한 자연 유산입니다.",
+      "reading": "i-reo-ke da-yang-han saeng-mul-i eo-u-reo-jin gos-eul u-ri-neun saeng-tae-gye-ra-go bu-reum-ni-da.",
+      "en": "A place where such diverse life comes together is what we call an 'ecosystem'. Taean's mudflats are, in themselves, a precious natural heritage.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "자연이 들려주는 이야기, 잘 담으셨습니까? 이제 갯벌에서 나눈 실제 대화를 읽고 상황을 헤아려 보시죠.",
+      "reading": "ja-yeon-i deul-lyeo-ju-neun i-ya-gi, jal dam-eu-syeot-seum-ni-kka?",
+      "en": "Did you take in the story nature was telling? Now let's read a real conversation from the mudflats and figure out the situation."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "갯벌", "reading": "gaet-beol", "meaning": "Mudflat", "example": "갯벌은 다양한 생명이 살아가는 삶의 터전입니다.", "example_reading": "gaet-beol-eun da-yang-han saeng-myeong-i sal-a-ga-neun salm-ui teo-jeon-im-ni-da", "example_en": "The mudflat is a home where diverse life thrives." },
+    { "id": "w02", "word": "조개", "reading": "jo-gae", "meaning": "Clam / shellfish", "example": "조개를 캐는 손길이 분주합니다.", "example_reading": "jo-gae-reul kae-neun son-gil-i bun-ju-ham-ni-da", "example_en": "Hands are busy digging for clams." },
+    { "id": "w03", "word": "사구", "reading": "sa-gu", "meaning": "Sand dune", "example": "사구는 바람이 만든 신비로운 모래언덕입니다.", "example_reading": "sa-gu-neun ba-ram-i man-deun sin-bi-ro-un mo-rae-eon-deog-im-ni-da", "example_en": "Sand dunes are mysterious mounds shaped by the wind." },
+    { "id": "w04", "word": "철새", "reading": "cheol-sae", "meaning": "Migratory bird", "example": "철새들이 갯벌에 잠시 내려앉아 쉬어 갑니다.", "example_reading": "cheol-sae-deul-i gaet-beol-e jam-si nae-ryeo-anj-a swi-eo gam-ni-da", "example_en": "Migratory birds briefly land on the mudflat to rest." },
+    { "id": "w05", "word": "생태계", "reading": "saeng-tae-gye", "meaning": "Ecosystem", "example": "생태계의 보고라 불릴 만큼 다양한 생물이 살고 있습니다.", "example_reading": "saeng-tae-gye-ui bo-go-ra bul-lil man-keum da-yang-han saeng-mul-i sal-go it-seum-ni-da", "example_en": "So many diverse creatures live here it's called a treasury of the ecosystem." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "갯벌은 다양한 생명이 살아가는 삶의 터전입니다.", "reading": "gaet-beol-eun da-yang-han saeng-myeong-i sal-a-ga-neun salm-ui teo-jeon-im-ni-da", "en": "The mudflat is a home where diverse life thrives." },
+    { "id": "s02", "ko": "조개를 캐는 손길이 분주합니다.", "reading": "jo-gae-reul kae-neun son-gil-i bun-ju-ham-ni-da", "en": "Hands are busy digging for clams." },
+    { "id": "s03", "ko": "사구는 바람이 만든 신비로운 모래언덕입니다.", "reading": "sa-gu-neun ba-ram-i man-deun sin-bi-ro-un mo-rae-eon-deog-im-ni-da", "en": "Sand dunes are mysterious mounds shaped by the wind." },
+    { "id": "s04", "ko": "철새들이 갯벌에 잠시 내려앉아 쉬어 갑니다.", "reading": "cheol-sae-deul-i gaet-beol-e jam-si nae-ryeo-anj-a swi-eo gam-ni-da", "en": "Migratory birds briefly land on the mudflat to rest." },
+    { "id": "s05", "ko": "생태계의 보고라 불릴 만큼 다양한 생물이 살고 있습니다.", "reading": "saeng-tae-gye-ui bo-go-ra bul-lil man-keum da-yang-han saeng-mul-i sal-go it-seum-ni-da", "en": "So many diverse creatures live here it's called a treasury of the ecosystem." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "방문객", "text": "여기서 조개를 직접 캘 수 있나요?", "reading": "yeo-gi-seo jo-gae-reul jik-jeop kael su it-na-yo?", "en": "Can I dig for clams here myself?" },
+        { "speaker": "가이드", "text": "네, 호미만 있으면 누구나 캘 수 있어요. 대신 갯벌 생태계를 위해 너무 많이 캐지는 말아주세요.", "reading": "ne, ho-mi-man iss-eu-myeon nu-gu-na kael su it-eo-yo.", "en": "Yes, anyone can dig with just a hand hoe. But please don't dig too many, for the sake of the mudflat ecosystem." },
+        { "speaker": "방문객", "text": "혹시 밀물 시간도 신경 써야 하나요?", "reading": "hok-si mil-mul si-gan-do sin-gyeong sseo-ya ha-na-yo?", "en": "Should I also pay attention to when the tide comes in?" },
+        { "speaker": "가이드", "text": "그럼요, 밀물이 들어오기 시작하면 바로 나오셔야 안전합니다.", "reading": "geu-reom-yo, mil-mul-i deul-eo-o-gi si-jak-ha-myeon ba-ro na-o-syeo-ya an-jeon-ham-ni-da.", "en": "Of course, you should come out right away once the tide starts coming in, for your safety." }
+      ],
+      "question": "가이드가 방문객에게 당부한 것은 무엇인가요?",
+      "question_en": "What did the guide ask the visitor to keep in mind?",
+      "correct_answer": "조개를 너무 많이 캐지 말고 밀물 시간을 확인할 것",
+      "options": ["조개를 너무 많이 캐지 말고 밀물 시간을 확인할 것", "호미를 반드시 준비해 올 것", "체험 시간을 1시간으로 제한할 것", "장화를 신지 말 것"],
+      "explanation": "가이드는 생태계 보호를 위해 조개를 너무 많이 캐지 말고, 안전을 위해 밀물 시간을 확인하라고 당부했습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "선생님", "text": "오늘 답사에서 가장 인상 깊었던 게 뭐였어요?", "reading": "o-neul dap-sa-e-seo ga-jang in-sang gip-eot-deon ge mwo-yeoss-eo-yo?", "en": "What made the biggest impression on today's field trip?" },
+        { "speaker": "학생", "text": "철새들이 갯벌에 내려앉는 모습이요! 정말 장관이었어요.", "reading": "cheol-sae-deul-i gaet-beol-e nae-ryeo-anj-neun mo-seub-i-yo!", "en": "The migratory birds landing on the mudflat! It was truly spectacular." },
+        { "speaker": "선생님", "text": "맞아요, 태안 갯벌이 철새들의 중요한 쉼터거든요.", "reading": "maj-a-yo, tae-an gaet-beol-i cheol-sae-deul-ui jung-yo-han swim-teo-geo-deun-yo.", "en": "That's right, Taean's mudflat is an important resting place for migratory birds." },
+        { "speaker": "학생", "text": "그럼 이곳을 계속 보호해야겠네요.", "reading": "geu-reom i-gos-eul gye-sok bo-ho-hae-ya-gen-ne-yo.", "en": "Then we should keep protecting this place." }
+      ],
+      "question": "학생이 가장 인상 깊었다고 말한 것은 무엇인가요?",
+      "question_en": "What did the student say made the biggest impression?",
+      "correct_answer": "철새들이 갯벌에 내려앉는 모습",
+      "options": ["철새들이 갯벌에 내려앉는 모습", "조개를 캐는 체험", "사구의 모래 색깔", "바닷물의 온도"],
+      "explanation": "학생은 '철새들이 갯벌에 내려앉는 모습이 정말 장관이었다'고 말했습니다."
+    }
+  ]
+}

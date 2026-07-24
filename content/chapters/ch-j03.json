@@ -1,0 +1,93 @@
+{
+  "id": "ch-j03",
+  "character_id": "yongwoo",
+  "title": "돌하르방과 삼다(三多) 문화",
+  "emoji": "🗿",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "승객 여러분, 제주 땅에 발을 내딛는 순간 가장 먼저 눈에 들어오는 것이 있습니다. 마을 입구를 지키고 선 검은 돌 조각상이지요.",
+      "reading": "seung-gaek yeo-reo-bun, je-ju ttang-e bal-eul nae-di-neun sun-gan ga-jang meon-jeo nun-e deul-eo-o-neun geot-i it-seum-ni-da.",
+      "en": "Passengers, the moment you set foot on Jeju soil, one thing catches your eye first — the black stone statues standing guard at village entrances."
+    },
+    {
+      "text": "그 조각상의 이름은 '돌하르방'입니다. 마을의 안녕을 빌며 입구를 지켜온 수호신입니다.",
+      "reading": "geu jo-gak-sang-ui i-reum-eun dol-ha-reu-bang-im-ni-da.",
+      "en": "That statue's name is 'dol hareubang'. It's a guardian deity that has watched over village entrances, wishing for the village's peace.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "제주에는 예로부터 '삼다'라는 말이 전해옵니다. 바람과 돌과 여자가 많다는 뜻이지요. 이 세 가지가 제주 사람들의 삶을 만들었습니다.",
+      "reading": "je-ju-e-neun ye-ro-bu-teo sam-da-ra-neun mal-i jeon-hae-om-ni-da.",
+      "en": "Jeju has long had a saying called 'samda' — it means there's an abundance of wind, stone, and women. These three things shaped the lives of Jeju people.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "돌하르방을 자세히 보시면, 구멍이 송송 뚫린 검은 돌입니다. 이것이 바로 '현무암', 용암이 식어 굳은 흔적입니다.",
+      "reading": "dol-ha-reu-bang-eul ja-se-hi bo-si-myeon, gu-meong-i song-song ttul-lin geom-eun dol-im-ni-da.",
+      "en": "Look closely at a dol hareubang and you'll see it's black stone riddled with little holes. This is 'basalt' — a trace of lava cooled and hardened.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "제주의 거센 바람을 막기 위해 사람들은 나무를 촘촘히 심었습니다. 그렇게 만들어진 숲이 '방풍림'입니다.",
+      "reading": "je-ju-ui geo-sen ba-ram-eul mak-gi wi-hae sa-ram-deul-eun na-mu-reul chom-chom-hi sim-eot-seum-ni-da.",
+      "en": "To block Jeju's fierce winds, people planted trees close together. The forest made that way is called 'bangpungnim', a windbreak forest.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "밭 사이사이, 검은 돌을 구불구불 쌓아 올린 담이 보이시죠? '밭담'입니다. 바람을 걸러내며 밭을 지키는 제주만의 지혜입니다.",
+      "reading": "bat sa-i-sa-i, geom-eun dol-eul gu-bul-gu-bul ssah-a ol-lin dam-i bo-i-si-jyo?",
+      "en": "See the winding walls of black stone stacked between the fields? Those are 'batdam'. They're Jeju's unique wisdom for filtering the wind while protecting the fields.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "돌 하나에도 바람과 세월이 스며있는 섬, 느껴지셨습니까? 이제 실제 대화 속에서 이 돌들의 이야기를 읽어보는 문제를 준비했습니다.",
+      "reading": "dol ha-na-e-do ba-ram-gwa se-wol-i seu-myeo-it-neun seom, neu-kkyeo-ji-syeot-seum-ni-kka?",
+      "en": "Did you feel it — an island where wind and time seep into even a single stone? Now I've prepared questions where you'll read the stories these stones tell through real conversations."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "돌하르방", "reading": "dol-ha-reu-bang", "meaning": "Stone grandfather statue, guardian figure", "example": "돌하르방은 제주를 지키는 수호신 역할을 하는 돌 조각상입니다.", "example_reading": "dol-ha-reu-bang-eun je-ju-reul ji-ki-neun su-ho-sin yeok-hal-eul ha-neun dol jo-gak-sang-im-ni-da", "example_en": "Dol hareubang are stone statues that serve as guardian deities protecting Jeju." },
+    { "id": "w02", "word": "삼다", "reading": "sam-da", "meaning": "\"Three abundances\" — wind, stone, women", "example": "삼다는 제주에 바람, 돌, 여자가 많다는 뜻에서 나온 말입니다.", "example_reading": "sam-da-neun je-ju-e ba-ram, dol, yeo-ja-ga man-ta-neun tteus-e-seo na-on mal-im-ni-da", "example_en": "Samda refers to the saying that Jeju has an abundance of wind, stone, and women." },
+    { "id": "w03", "word": "현무암", "reading": "hyeon-mu-am", "meaning": "Basalt", "example": "현무암은 제주 곳곳에서 볼 수 있는 검고 구멍이 많은 화산암입니다.", "example_reading": "hyeon-mu-am-eun je-ju got-got-e-seo bol su it-neun geom-go gu-meong-i man-eun hwa-san-am-im-ni-da", "example_en": "Basalt is the black, porous volcanic rock found all over Jeju." },
+    { "id": "w04", "word": "방풍림", "reading": "bang-pung-nim", "meaning": "Windbreak forest", "example": "방풍림은 세찬 바람으로부터 밭과 마을을 지키기 위해 심은 숲입니다.", "example_reading": "bang-pung-nim-eun se-chan ba-ram-eu-ro-bu-teo bat-gwa ma-eul-eul ji-ki-gi wi-hae sim-eun sup-im-ni-da", "example_en": "Bangpungnim are forests planted to protect fields and villages from strong winds." },
+    { "id": "w05", "word": "밭담", "reading": "bat-dam", "meaning": "Stone field walls", "example": "밭담은 돌을 쌓아 밭의 경계를 표시하고 바람을 막던 담입니다.", "example_reading": "bat-dam-eun dol-eul ssa-a bat-ui gyeong-gye-reul pyo-si-ha-go ba-ram-eul mak-deon dam-im-ni-da", "example_en": "Batdam are stone walls stacked to mark field boundaries and block the wind." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "돌하르방은 제주를 지키는 수호신 역할을 하는 돌 조각상입니다.", "reading": "dol-ha-reu-bang-eun je-ju-reul ji-ki-neun su-ho-sin yeok-hal-eul ha-neun dol jo-gak-sang-im-ni-da", "en": "Dol hareubang are stone statues that serve as guardian deities protecting Jeju." },
+    { "id": "s02", "ko": "삼다는 제주에 바람, 돌, 여자가 많다는 뜻에서 나온 말입니다.", "reading": "sam-da-neun je-ju-e ba-ram, dol, yeo-ja-ga man-ta-neun tteus-e-seo na-on mal-im-ni-da", "en": "Samda refers to the saying that Jeju has an abundance of wind, stone, and women." },
+    { "id": "s03", "ko": "현무암은 제주 곳곳에서 볼 수 있는 검고 구멍이 많은 화산암입니다.", "reading": "hyeon-mu-am-eun je-ju got-got-e-seo bol su it-neun geom-go gu-meong-i man-eun hwa-san-am-im-ni-da", "en": "Basalt is the black, porous volcanic rock found all over Jeju." },
+    { "id": "s04", "ko": "방풍림은 세찬 바람으로부터 밭과 마을을 지키기 위해 심은 숲입니다.", "reading": "bang-pung-nim-eun se-chan ba-ram-eu-ro-bu-teo bat-gwa ma-eul-eul ji-ki-gi wi-hae sim-eun sup-im-ni-da", "en": "Bangpungnim are forests planted to protect fields and villages from strong winds." },
+    { "id": "s05", "ko": "밭담은 돌을 쌓아 밭의 경계를 표시하고 바람을 막던 담입니다.", "reading": "bat-dam-eun dol-eul ssa-a bat-ui gyeong-gye-reul pyo-si-ha-go ba-ram-eul mak-deon dam-im-ni-da", "en": "Batdam are stone walls stacked to mark field boundaries and block the wind." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "관광객", "text": "사장님, 이 작은 돌하르방은 기념품인가요?", "reading": "sa-jang-nim, i jak-eun dol-ha-reu-bang-eun gi-nyeom-pum-in-ga-yo?", "en": "Sir, is this small dol hareubang a souvenir?" },
+        { "speaker": "기념품 가게 주인", "text": "네, 실제 돌하르방을 축소해서 만든 거예요. 코를 만지면 아들을 낳는다는 이야기도 있답니다.", "reading": "ne, sil-je dol-ha-reu-bang-eul chuk-so-hae-seo man-deun geo-ye-yo.", "en": "Yes, it's a miniature version of the real dol hareubang. There's also a story that touching the nose brings a son." },
+        { "speaker": "관광객", "text": "재미있네요. 원래 돌하르방은 어디에 세워져 있었나요?", "reading": "jae-mi-it-ne-yo. won-lae dol-ha-reu-bang-eun eo-di-e se-wo-jyeo it-eot-na-yo?", "en": "That's interesting. Where were the original dol hareubang placed?" },
+        { "speaker": "기념품 가게 주인", "text": "옛날에는 성문 앞이나 마을 입구에 세워서 잡귀를 막고 마을을 지켰다고 해요.", "reading": "yet-nal-e-neun seong-mun ap-i-na ma-eul ip-gu-e se-wo-seo jap-gwi-reul mak-go ma-eul-eul ji-kyeot-da-go hae-yo.", "en": "In the old days, they were placed in front of castle gates or village entrances to ward off evil spirits and protect the village." }
+      ],
+      "question": "돌하르방이 원래 세워졌던 목적은 무엇인가요?",
+      "question_en": "What was the original purpose of placing dol hareubang?",
+      "correct_answer": "잡귀를 막고 마을을 지키기 위해",
+      "options": ["잡귀를 막고 마을을 지키기 위해", "관광객을 모으기 위해", "농사의 풍년을 기록하기 위해", "왕의 명령을 전달하기 위해"],
+      "explanation": "주인은 돌하르방을 성문 앞이나 마을 입구에 세워 잡귀를 막고 마을을 지켰다고 설명했습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "손자", "text": "할머니, 왜 제주는 바람이 이렇게 세요?", "reading": "hal-meo-ni, wae je-ju-neun ba-ram-i i-reo-ke se-yo?", "en": "Grandma, why is the wind so strong in Jeju?" },
+        { "speaker": "할머니", "text": "섬이라 사방이 바다니까 바람을 막을 게 없어서 그렇단다. 그래서 예로부터 삼다라고 했지.", "reading": "seom-i-ra sa-bang-i ba-da-ni-kka ba-ram-eul mak-eul ge eop-eo-seo geu-reo-tan-da.", "en": "Since it's an island surrounded by sea, there's nothing to block the wind. That's why they've called it samda since long ago." },
+        { "speaker": "손자", "text": "삼다가 뭔데요?", "reading": "sam-da-ga mwon-de-yo?", "en": "What is samda?" },
+        { "speaker": "할머니", "text": "바람, 돌, 여자가 많다는 뜻이야. 바람이 세니까 돌담을 쌓았고, 그 돌이 이렇게 밭담이 된 거란다.", "reading": "ba-ram, dol, yeo-ja-ga man-ta-neun tteus-i-ya.", "en": "It means there's a lot of wind, stone, and women. Because the wind was strong, people stacked stone walls, and those stones became these field walls." }
+      ],
+      "question": "할머니가 설명한 '삼다'의 뜻은 무엇인가요?",
+      "question_en": "What does the grandmother explain 'samda' to mean?",
+      "correct_answer": "제주에 바람, 돌, 여자가 많다는 뜻",
+      "options": ["제주에 바람, 돌, 여자가 많다는 뜻", "제주에 세 개의 산이 있다는 뜻", "제주 음식이 세 가지라는 뜻", "제주에 세 개의 항구가 있다는 뜻"],
+      "explanation": "할머니는 삼다가 '바람, 돌, 여자가 많다'는 뜻이라고 직접 설명했습니다."
+    }
+  ]
+}

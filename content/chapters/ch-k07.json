@@ -1,0 +1,62 @@
+{
+  "id": "ch-k07",
+  "character_id": "kyuhyun",
+  "title": "한국의 분식과 길거리 음식",
+  "emoji": "🍱",
+  "story": [
+    {
+      "text": "승객 여러분, 이번엔 냄새만으로도 행복해지는 상공입니다. 한국의 길거리 음식 이야기, 배고프지 않게 잘 들어주세요!",
+      "reading": "seung-gaek yeo-reo-bun, i-beon-en naem-sae-man-eu-ro-do haeng-bok-hae-ji-neun sang-gong-im-ni-da.",
+      "en": "Passengers, this time we're flying over a place that makes you happy just from the smell. Please listen carefully — you might get hungry!"
+    },
+    {
+      "text": "가장 먼저, '떡볶이'! 맵고 달콤한 떡과 국물이 중독적이에요.",
+      "reading": "ga-jang meon-jeo, tteok-bok-i! maep-go dal-kom-han tteok-gwa gung-mul-i jung-dok-jeog-i-e-yo.",
+      "en": "First up, 'tteokbokki'! The spicy-sweet rice cakes and sauce are addictive.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "옆에는 항상 '튀김'이 함께해요. 떡볶이 국물에 찍어 먹으면 더 맛있답니다.",
+      "reading": "yeop-e-neun hang-sang twi-gim-i ham-kke-hae-yo.",
+      "en": "'Fried snacks' always come alongside. Dipping them in tteokbokki sauce makes them even tastier.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "겨울이라면 따끈한 '붕어빵'을 꼭 드셔보세요. 팥 앙금이 가득 들어있어요.",
+      "reading": "gyeo-ul-i-ra-myeon tta-kkeun-han bung-eo-ppang-eul kkok deu-syeo-bo-se-yo.",
+      "en": "If it's winter, be sure to try warm 'bungeoppang'. It's filled with sweet red bean paste.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "쫄깃한 식감을 원하신다면 '순대'도 좋아요. 소금이나 초장에 찍어 먹어요.",
+      "reading": "jjol-git-han sik-gam-eul won-ha-sin-da-myeon sun-dae-do jo-a-yo.",
+      "en": "If you want a chewy texture, 'sundae' is great too. Dip it in salt or vinegared gochujang.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "이 모든 음식은 '포장마차'에서 만날 수 있어요. 저녁이면 곳곳에 불이 켜지죠.",
+      "reading": "i mo-deun eum-sig-eun po-jang-ma-cha-e-seo man-nal su i-sseo-yo.",
+      "en": "You can find all of this food at 'street food tents'. In the evening, lights turn on everywhere.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "벌써 배가 고파지지 않나요? 오늘 배운 소울푸드 단어들로 문제를 풀어봅시다!",
+      "reading": "beol-sseo bae-ga go-pa-ji-ji an-na-yo?",
+      "en": "Are you already getting hungry? Let's solve some questions with today's soul food words!"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "떡볶이", "reading": "tteok-bok-i", "meaning": "Tteokbokki (spicy rice cakes)", "example": "떡볶이는 맵고 달콤해요.", "example_reading": "tteok-bok-i-neun maep-go dal-kom-hae-yo", "example_en": "Tteokbokki is spicy and sweet." },
+    { "id": "w02", "word": "튀김", "reading": "twi-gim", "meaning": "Korean fried snacks", "example": "튀김을 떡볶이 국물에 찍어 먹어요.", "example_reading": "twi-gim-eul tteok-bok-i gung-mul-e jjig-eo meog-eo-yo", "example_en": "You dip fried snacks in tteokbokki sauce." },
+    { "id": "w03", "word": "붕어빵", "reading": "bung-eo-ppang", "meaning": "Fish-shaped bread", "example": "겨울에 붕어빵이 정말 맛있어요.", "example_reading": "gyeo-ul-e bung-eo-ppang-i jeong-mal mas-i-sseo-yo", "example_en": "Bungeoppang is really delicious in winter." },
+    { "id": "w04", "word": "순대", "reading": "sun-dae", "meaning": "Sundae (Korean blood sausage)", "example": "순대도 같이 먹어볼까요?", "example_reading": "sun-dae-do gat-i meog-eo-bol-kka-yo", "example_en": "Shall we eat some sundae together too?" },
+    { "id": "w05", "word": "포장마차", "reading": "po-jang-ma-cha", "meaning": "Street food tent", "example": "포장마차에서 저녁을 먹어요.", "example_reading": "po-jang-ma-cha-e-seo jeo-nyeog-eul meog-eo-yo", "example_en": "I eat dinner at a street food tent." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "떡볶이는 한국인의 소울푸드입니다.", "reading": "tteok-bok-i-neun han-gug-in-ui so-ul-pu-deu-im-ni-da", "en": "Tteokbokki is the soul food of Koreans." },
+    { "id": "s02", "ko": "튀김 종류가 정말 다양합니다.", "reading": "twi-gim jong-ryu-ga jeong-mal da-yang-ham-ni-da", "en": "There are so many kinds of fried snacks." },
+    { "id": "s03", "ko": "붕어빵은 겨울철 대표 간식입니다.", "reading": "bung-eo-ppang-eun gyeo-ul-cheol dae-pyo gan-sig-im-ni-da", "en": "Bungeoppang is a representative winter snack." },
+    { "id": "s04", "ko": "순대를 소금에 찍어 먹어보세요.", "reading": "sun-dae-reul so-geum-e jjig-eo meog-eo-bo-se-yo", "en": "Try dipping sundae in salt before eating." },
+    { "id": "s05", "ko": "포장마차마다 저마다의 매력이 있습니다.", "reading": "po-jang-ma-cha-ma-da jeo-ma-da-ui mae-ryeog-i it-seum-ni-da", "en": "Every street food tent has its own charm." }
+  ]
+}

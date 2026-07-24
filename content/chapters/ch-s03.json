@@ -1,0 +1,93 @@
+{
+  "id": "ch-s03",
+  "character_id": "sunwoo",
+  "title": "광안대교와 부산의 밤",
+  "emoji": "🌉",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "승객 여러분, 이제 밤하늘 아래 반짝이는 부산의 낭만, 광안대교로 모시겠습니다!",
+      "reading": "seung-gaek yeo-reo-bun, i-je bam-ha-neul a-rae ban-jjak-i-neun bu-san-ui nang-man, gwang-an-dae-gyo-ro mo-si-get-seum-ni-da!",
+      "en": "Passengers, let me take you to Gwangan Bridge — Busan's romance sparkling under the night sky!"
+    },
+    {
+      "text": "저 다리에 불이 켜지면 부산 최고의 '야경'이 펼쳐져요. 정말 장관이랍니다.",
+      "reading": "jeo da-ri-e bul-i kyeo-ji-myeon bu-san choe-go-ui ya-gyeong-i pyeol-cheo-jyeo-yo.",
+      "en": "When the lights on that bridge turn on, Busan's best 'night view' unfolds. It's truly spectacular.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "다리를 밝히는 '조명'은 계절과 날씨에 따라 색깔이 바뀌기도 해요.",
+      "reading": "da-ri-reul balk-hi-neun jo-myeong-eun gye-jeol-gwa nal-ssi-e tta-ra saek-kkal-i ba-kkwi-gi-do hae-yo.",
+      "en": "The 'lighting' that illuminates the bridge sometimes changes color depending on the season and weather.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "해변가에는 '포장마차'가 줄지어 있어서 야식을 즐기기도 좋아요.",
+      "reading": "hae-byeon-ga-e-neun po-jang-ma-cha-ga jul-ji-eo iss-eo-seo ya-sig-eul jeul-gi-gi-do jo-a-yo.",
+      "en": "Along the beach, 'street food tents' line up, so it's also great for enjoying a late-night snack.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "이런 밤바다를 걷다 보면 누구나 '낭만'을 느끼게 될 거예요.",
+      "reading": "i-reon bam-ba-da-reul geot-da bo-myeon nu-gu-na nang-man-eul neu-kki-ge doel geo-ye-yo.",
+      "en": "If you walk along this night sea, anyone will start to feel 'romance'.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "'전망대'에 올라가면 다리 전체가 한눈에 내려다보인답니다.",
+      "reading": "jeon-mang-dae-e ol-la-ga-myeon da-ri jeon-che-ga han-nun-e nae-ryeo-da-bo-in-dam-ni-da.",
+      "en": "If you go up to the 'observation deck', you can see the whole bridge at a glance.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "단어는 다 익히셨죠? 이번엔 밤 부산의 실제 대화 장면을 보고 상황을 맞혀보는 문제도 준비했어요!",
+      "reading": "dan-eo-neun da ig-hi-syeot-jyo?",
+      "en": "Got all the words down? This time I've also prepared questions where you read real nighttime Busan conversations and figure out the situation!"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "야경", "reading": "ya-gyeong", "meaning": "Night view", "example": "야경을 보러 온 사람들이 다리 주변에 가득합니다.", "example_reading": "ya-gyeong-eul bo-reo on sa-ram-deul-i da-ri ju-byeon-e ga-deuk-ham-ni-da", "example_en": "People who came to see the night view fill the area around the bridge." },
+    { "id": "w02", "word": "조명", "reading": "jo-myeong", "meaning": "Lighting / illumination", "example": "조명이 켜지면 다리가 화려하게 빛납니다.", "example_reading": "jo-myeong-i kyeo-ji-myeon da-ri-ga hwa-ryeo-ha-ge bit-nam-ni-da", "example_en": "When the lighting turns on, the bridge shines brilliantly." },
+    { "id": "w03", "word": "포장마차", "reading": "po-jang-ma-cha", "meaning": "Street food tent (pojangmacha)", "example": "포장마차에서 어묵과 떡볶이를 즐길 수 있습니다.", "example_reading": "po-jang-ma-cha-e-seo eo-muk-gwa tteok-bokk-i-reul jeul-gil su iss-seum-ni-da", "example_en": "You can enjoy fish cake and tteokbokki at a street food tent." },
+    { "id": "w04", "word": "낭만", "reading": "nang-man", "meaning": "Romance / romanticism", "example": "낭만을 느끼고 싶다면 밤바다를 걸어보세요.", "example_reading": "nang-man-eul neu-kki-go sip-da-myeon bam-ba-da-reul geol-eo-bo-se-yo", "example_en": "If you want to feel romance, try walking along the night sea." },
+    { "id": "w05", "word": "전망대", "reading": "jeon-mang-dae", "meaning": "Observation deck", "example": "전망대에 올라가면 광안대교 전체가 한눈에 보입니다.", "example_reading": "jeon-mang-dae-e ol-la-ga-myeon gwang-an-dae-gyo jeon-che-ga han-nun-e bo-im-ni-da", "example_en": "If you go up to the observation deck, you can see all of Gwangan Bridge at a glance." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "야경을 보러 온 사람들이 다리 주변에 가득합니다.", "reading": "ya-gyeong-eul bo-reo on sa-ram-deul-i da-ri ju-byeon-e ga-deuk-ham-ni-da", "en": "People who came to see the night view fill the area around the bridge." },
+    { "id": "s02", "ko": "조명이 켜지면 다리가 화려하게 빛납니다.", "reading": "jo-myeong-i kyeo-ji-myeon da-ri-ga hwa-ryeo-ha-ge bit-nam-ni-da", "en": "When the lighting turns on, the bridge shines brilliantly." },
+    { "id": "s03", "ko": "포장마차에서 어묵과 떡볶이를 즐길 수 있습니다.", "reading": "po-jang-ma-cha-e-seo eo-muk-gwa tteok-bokk-i-reul jeul-gil su iss-seum-ni-da", "en": "You can enjoy fish cake and tteokbokki at a street food tent." },
+    { "id": "s04", "ko": "낭만을 느끼고 싶다면 밤바다를 걸어보세요.", "reading": "nang-man-eul neu-kki-go sip-da-myeon bam-ba-da-reul geol-eo-bo-se-yo", "en": "If you want to feel romance, try walking along the night sea." },
+    { "id": "s05", "ko": "전망대에 올라가면 광안대교 전체가 한눈에 보입니다.", "reading": "jeon-mang-dae-e ol-la-ga-myeon gwang-an-dae-gyo jeon-che-ga han-nun-e bo-im-ni-da", "en": "If you go up to the observation deck, you can see all of Gwangan Bridge at a glance." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "관광객", "text": "자전거를 빌리고 싶은데, 어디서 대여하나요?", "reading": "ja-jeon-geo-reul bil-li-go sip-eun-de, eo-di-seo dae-yeo-ha-na-yo?", "en": "I'd like to rent a bicycle — where can I do that?" },
+        { "speaker": "대여소 직원", "text": "저쪽 부스에서 신분증만 보여주시면 바로 빌릴 수 있어요.", "reading": "jeo-jjok bu-seu-e-seo sin-bun-jeung-man bo-yeo-ju-si-myeon ba-ro bil-lil su iss-eo-yo.", "en": "If you show your ID at that booth over there, you can rent one right away." },
+        { "speaker": "관광객", "text": "요금은 얼마인가요?", "reading": "yo-geum-eun eol-ma-in-ga-yo?", "en": "How much is the fee?" },
+        { "speaker": "대여소 직원", "text": "한 시간에 삼천 원이고, 두 시간부터는 할인이 있어요.", "reading": "han si-gan-e sam-cheon won-i-go, du si-gan-bu-teo-neun hal-in-i iss-eo-yo.", "en": "It's 3,000 won per hour, and there's a discount from two hours onward." }
+      ],
+      "question": "이 대화에서 관광객이 하려는 것은 무엇인가요?",
+      "question_en": "What is the tourist trying to do in this conversation?",
+      "correct_answer": "자전거 대여하기",
+      "options": ["자전거 대여하기", "야경 사진 찍는 법 배우기", "숙소 예약하기", "버스 시간표 확인하기"],
+      "explanation": "관광객이 '자전거를 빌리고 싶다'고 말했으므로 자전거 대여에 대해 묻고 있는 것입니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "손님", "text": "이모, 여기 오뎅 하나랑 떡볶이 하나 주세요.", "reading": "i-mo, yeo-gi o-deng ha-na-rang tteok-bokk-i ha-na ju-se-yo.", "en": "Ma'am, one fish cake skewer and one tteokbokki, please." },
+        { "speaker": "포장마차 이모", "text": "네, 매운 거 괜찮아요? 여기 떡볶이 좀 매워요.", "reading": "ne, mae-un geo gwaen-chan-a-yo? yeo-gi tteok-bokk-i jom mae-wo-yo.", "en": "Sure, is spicy food okay for you? Our tteokbokki is a bit spicy." },
+        { "speaker": "손님", "text": "괜찮아요, 매운 거 좋아해요.", "reading": "gwaen-chan-a-yo, mae-un geo jo-a-hae-yo.", "en": "That's fine, I like spicy food." },
+        { "speaker": "포장마차 이모", "text": "그럼 맛있게 만들어 드릴게요, 조금만 기다리세요.", "reading": "geu-reom mas-iss-ge man-deul-eo deu-ril-ge-yo, jo-geum-man gi-da-ri-se-yo.", "en": "Then I'll make it delicious for you, just wait a little." }
+      ],
+      "question": "이모가 손님에게 확인한 것은 무엇인가요?",
+      "question_en": "What did the vendor check with the customer?",
+      "correct_answer": "매운 음식을 먹을 수 있는지 여부",
+      "options": ["매운 음식을 먹을 수 있는지 여부", "결제 방법", "포장 여부", "몇 명이 먹을 것인지"],
+      "explanation": "이모가 '매운 거 괜찮아요?'라고 물었으므로 매운 음식을 먹을 수 있는지를 확인한 것입니다."
+    }
+  ]
+}

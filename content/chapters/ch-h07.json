@@ -1,0 +1,62 @@
+{
+  "id": "ch-h07",
+  "character_id": "haneul",
+  "title": "강진 청자와 도자기 장인",
+  "emoji": "🏺",
+  "story": [
+    {
+      "text": "승객 여러분, 이번엔 푸른 빛깔의 예술, 강진 상공이에요. 고려 도공들의 숨결을 느껴보세요.",
+      "reading": "seung-gaek yeo-reo-bun, i-beon-en pu-reun bit-kkal-ui ye-sul, gang-jin sang-gong-i-e-yo. go-ryeo do-gong-deul-ui sum-gyeol-eul neu-kkyeo-bo-se-yo.",
+      "en": "Passengers, this time it's the art of blue, above Gangjin. Feel the breath of the Goryeo potters."
+    },
+    {
+      "text": "강진 하면 떠오르는 것, 바로 '청자'예요. 옥처럼 은은한 푸른빛이 감도는 고려시대의 아름다운 도자기랍니다.",
+      "reading": "gang-jin ha-myeon tteo-o-reu-neun geot, ba-ro cheong-ja-ye-yo. ok-cheo-reom eun-eun-han pu-reun-bich-i gam-do-neun go-ryeo-si-dae-ui a-reum-da-un do-ja-gi-ram-ni-da.",
+      "en": "What comes to mind with Gangjin is 'celadon'. It's a beautiful Goryeo-era pottery with a soft blue-green glow like jade.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "청자도 결국은 '도자기'의 한 종류예요. 고운 흙을 빚고 구워 만드는 그릇을 도자기라고 부르지요.",
+      "reading": "cheong-ja-do gyeol-gug-eun do-ja-gi-ui han jong-nyu-ye-yo. go-un heulg-eul bij-go gu-wo man-deu-neun geu-reus-eul do-ja-gi-ra-go bu-reu-ji-yo.",
+      "en": "Celadon, too, is a type of 'pottery'. A bowl shaped and fired from fine clay is called pottery.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "도자기를 빚을 때는 '물레'를 돌려요. 빙글빙글 도는 물레 위에서 흙덩이가 둥근 그릇 모양으로 변한답니다.",
+      "reading": "do-ja-gi-reul bij-eul ttae-neun mul-le-reul dol-lyeo-yo. bing-geul-bing-geul do-neun mul-le wi-e-seo heuk-deong-i-ga dung-geun geu-reut mo-yang-eu-ro byeon-han-dam-ni-da.",
+      "en": "When shaping pottery, you spin the 'potter's wheel'. On the spinning wheel, a lump of clay turns into a round bowl shape.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "모양을 다 빚으면 '가마'에 넣어 구워요. 아주 뜨거운 불 속에서 하루 넘게 구워야 단단한 청자가 완성돼요.",
+      "reading": "mo-yang-eul da bij-eu-myeon ga-ma-e neoh-eo gu-wo-yo. a-ju tteu-geo-un bul sog-e-seo ha-ru neom-ge gu-wo-ya dan-dan-han cheong-ja-ga wan-seong-dwae-yo.",
+      "en": "Once fully shaped, it's put into a 'kiln' and fired. It must be fired in intense heat for over a day for a sturdy celadon to be completed.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "이 모든 과정을 이끄는 사람이 '장인'이에요. 오랜 세월 갈고닦은 손끝으로 영롱한 비색을 만들어낸답니다.",
+      "reading": "i mo-deun gwa-jeong-eul i-kkeu-neun sa-ram-i jang-in-i-e-yo. o-raen se-wol gal-go-dak-eun son-kkeut-eu-ro yeong-rong-han bi-saeg-eul man-deul-eo-nae-ndam-ni-da.",
+      "en": "The person who leads this whole process is the 'craftsman'. With fingertips honed over long years, they create the glittering jade-blue color.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "자, 푸른빛 다섯 단어를 마음에 새기셨나요? 이제 정성 가득 문제를 풀어볼까요!",
+      "reading": "ja, pu-reun-bit da-seot dan-eo-reul ma-eum-e sae-gi-syeot-na-yo? i-je jeong-seong ga-deuk mun-je-reul pul-eo-bol-kka-yo!",
+      "en": "Now, have you engraved the five blue words in your heart? Let's solve some questions with full care!"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "청자", "reading": "cheong-ja", "meaning": "Celadon", "example": "청자는 푸른빛이 도는 도자기예요.", "example_reading": "cheong-ja-neun pu-reun-bich-i do-neun do-ja-gi-ye-yo", "example_en": "Celadon is pottery with a blue-green glow." },
+    { "id": "w02", "word": "도자기", "reading": "do-ja-gi", "meaning": "Pottery", "example": "도자기는 흙으로 빚어 만들어요.", "example_reading": "do-ja-gi-neun heulg-eu-ro bij-eo man-deul-eo-yo", "example_en": "Pottery is shaped and made from clay." },
+    { "id": "w03", "word": "장인", "reading": "jang-in", "meaning": "Craftsman", "example": "장인이 정성껏 그릇을 만들어요.", "example_reading": "jang-in-i jeong-seong-kkeot geu-reus-eul man-deul-eo-yo", "example_en": "The craftsman makes bowls with great care." },
+    { "id": "w04", "word": "가마", "reading": "ga-ma", "meaning": "Kiln", "example": "가마에서 뜨겁게 구워요.", "example_reading": "ga-ma-e-seo tteu-geob-ge gu-wo-yo", "example_en": "It's fired at a high heat in the kiln." },
+    { "id": "w05", "word": "물레", "reading": "mul-le", "meaning": "Potter's Wheel", "example": "물레를 돌리며 모양을 잡아요.", "example_reading": "mul-le-reul dol-li-myeo mo-yang-eul jab-a-yo", "example_en": "You shape the clay while spinning the potter's wheel." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "청자는 고려시대에 크게 발달했어요.", "reading": "cheong-ja-neun go-ryeo-si-dae-e keu-ge bal-dal-hae-sseo-yo", "en": "Celadon greatly developed during the Goryeo period." },
+    { "id": "s02", "ko": "도자기는 천 도가 넘는 불에 구워요.", "reading": "do-ja-gi-neun cheon do-ga neom-neun bul-e gu-wo-yo", "en": "Pottery is fired at over a thousand degrees." },
+    { "id": "s03", "ko": "장인의 손끝에서 그릇이 태어나요.", "reading": "jang-in-ui son-kkeut-e-seo geu-reus-i tae-eo-na-yo", "en": "A bowl is born from the craftsman's fingertips." },
+    { "id": "s04", "ko": "가마 안의 온도가 매우 중요해요.", "reading": "ga-ma an-ui on-do-ga mae-u jung-yo-hae-yo", "en": "The temperature inside the kiln is very important." },
+    { "id": "s05", "ko": "물레 위에서 흙이 그릇 모양이 돼요.", "reading": "mul-le wi-e-seo heulg-i geu-reut mo-yang-i dwae-yo", "en": "On the wheel, clay becomes the shape of a bowl." }
+  ]
+}

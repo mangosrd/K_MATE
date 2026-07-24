@@ -1,0 +1,93 @@
+{
+  "id": "ch-s10",
+  "character_id": "sunwoo",
+  "title": "해동용궁사 바다 사찰",
+  "emoji": "⛩️",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "승객 여러분, 바다와 맞닿은 신비로운 절, 해동용궁사 상공을 지나고 있습니다!",
+      "reading": "seung-gaek yeo-reo-bun, ba-da-wa mat-dah-eun sin-bi-ro-un jeol, hae-dong-yong-gung-sa sang-gong-eul ji-na-go iss-seum-ni-da!",
+      "en": "Passengers, we're passing over Haedong Yonggungsa, a mysterious temple that meets the sea!"
+    },
+    {
+      "text": "이 '사찰'은 바다 바로 옆 절벽 위에 세워진 국내에서도 흔치 않은 절이에요.",
+      "reading": "i sa-chal-eun ba-da ba-ro yeop jeol-byeog wi-e se-wo-jin gug-nae-e-seo-do heun-chi anh-eun jeol-i-e-yo.",
+      "en": "This 'temple' is a rare one, built right on a cliff beside the sea, even within Korea.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "'소원'을 빌러 오는 사람들이 항상 많아서 이곳은 늘 활기가 넘쳐요.",
+      "reading": "so-won-eul bil-leo o-neun sa-ram-deul-i hang-sang man-h-a-seo i-gos-eun neul hwal-gi-ga neom-chyeo-yo.",
+      "en": "There are always many people who come to make a 'wish', so this place is always full of energy.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "새벽 일찍부터 '참배'를 하러 온 신자들의 모습도 자주 볼 수 있어요.",
+      "reading": "sae-byeok il-jjik-bu-teo cham-bae-reul ha-reo on sin-ja-deul-ui mo-seub-do ja-ju bol su iss-eo-yo.",
+      "en": "You can often see believers who came for 'worship' from early dawn.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "'절벽' 아래로 파도가 부딪히는 소리가 들려서 더욱 신비로운 분위기를 만들어요.",
+      "reading": "jeol-byeok a-rae-ro pa-do-ga bu-dit-hi-neun so-ri-ga deul-lyeo-seo deo-uk sin-bi-ro-un bun-wi-gi-reul man-deul-eo-yo.",
+      "en": "The sound of waves crashing below the 'cliff' can be heard, creating an even more mysterious atmosphere.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "황금빛 '불상' 앞에는 향을 피우며 기도하는 사람들이 늘 모여 있답니다.",
+      "reading": "hwang-geum-bit bul-sang ap-e-neun hyang-eul pi-u-myeo gi-do-ha-neun sa-ram-deul-i neul mo-yeo iss-dam-ni-da.",
+      "en": "In front of the golden 'Buddha statue', people burning incense and praying always gather.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "단어는 다 익히셨죠? 이번엔 사찰에서 실제로 벌어지는 대화를 보고 상황을 맞혀보는 문제도 준비했어요!",
+      "reading": "dan-eo-neun da ig-hi-syeot-jyo?",
+      "en": "Got all the words down? This time I've also prepared questions where you read real conversations from the temple and figure out the situation!"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "사찰", "reading": "sa-chal", "meaning": "Buddhist temple", "example": "사찰은 바다 바로 옆 절벽 위에 세워져 있습니다.", "example_reading": "sa-chal-eun ba-da ba-ro yeop jeol-byeok wi-e se-wo-jyeo iss-seum-ni-da", "example_en": "The temple is built right on a cliff beside the sea." },
+    { "id": "w02", "word": "소원", "reading": "so-won", "meaning": "Wish", "example": "소원을 빌러 오는 사람들이 항상 많습니다.", "example_reading": "so-won-eul bil-leo o-neun sa-ram-deul-i hang-sang man-heum-ni-da", "example_en": "There are always many people who come to make a wish." },
+    { "id": "w03", "word": "참배", "reading": "cham-bae", "meaning": "Worship / paying respects", "example": "참배를 마친 사람들은 계단을 따라 내려옵니다.", "example_reading": "cham-bae-reul ma-chin sa-ram-deul-eun gye-dan-eul tta-ra nae-ryeo-om-ni-da", "example_en": "People who finish paying their respects come back down the stairs." },
+    { "id": "w04", "word": "절벽", "reading": "jeol-byeok", "meaning": "Cliff", "example": "절벽 아래로 파도가 부딪히는 소리가 들립니다.", "example_reading": "jeol-byeok a-rae-ro pa-do-ga bu-dit-hi-neun so-ri-ga deul-lim-ni-da", "example_en": "The sound of waves crashing can be heard below the cliff." },
+    { "id": "w05", "word": "불상", "reading": "bul-sang", "meaning": "Buddha statue", "example": "불상 앞에는 향을 피우는 사람들이 모여 있어요.", "example_reading": "bul-sang ap-e-neun hyang-eul pi-u-neun sa-ram-deul-i mo-yeo iss-eo-yo", "example_en": "People burning incense gather in front of the Buddha statue." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "사찰은 바다 바로 옆 절벽 위에 세워져 있습니다.", "reading": "sa-chal-eun ba-da ba-ro yeop jeol-byeok wi-e se-wo-jyeo iss-seum-ni-da", "en": "The temple is built right on a cliff beside the sea." },
+    { "id": "s02", "ko": "소원을 빌러 오는 사람들이 항상 많습니다.", "reading": "so-won-eul bil-leo o-neun sa-ram-deul-i hang-sang man-heum-ni-da", "en": "There are always many people who come to make a wish." },
+    { "id": "s03", "ko": "참배를 마친 사람들은 계단을 따라 내려옵니다.", "reading": "cham-bae-reul ma-chin sa-ram-deul-eun gye-dan-eul tta-ra nae-ryeo-om-ni-da", "en": "People who finish paying their respects come back down the stairs." },
+    { "id": "s04", "ko": "절벽 아래로 파도가 부딪히는 소리가 들립니다.", "reading": "jeol-byeok a-rae-ro pa-do-ga bu-dit-hi-neun so-ri-ga deul-lim-ni-da", "en": "The sound of waves crashing can be heard below the cliff." },
+    { "id": "s05", "ko": "불상 앞에는 향을 피우는 사람들이 모여 있어요.", "reading": "bul-sang ap-e-neun hyang-eul pi-u-neun sa-ram-deul-i mo-yeo iss-eo-yo", "en": "People burning incense gather in front of the Buddha statue." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "관광객", "text": "여기 사람들이 동전을 던지는 걸 봤는데, 무슨 의미예요?", "reading": "yeo-gi sa-ram-deul-i dong-jeon-eul deon-ji-neun geol bwass-neun-de, mu-seun ui-mi-ye-yo?", "en": "I saw people throwing coins here — what does that mean?" },
+        { "speaker": "현지인", "text": "저기 불상 앞 그릇에 동전을 던져서 들어가면 소원이 이뤄진다는 말이 있어요.", "reading": "jeo-gi bul-sang ap geu-reus-e dong-jeon-eul deon-jyeo-seo deul-eo-ga-myeon so-won-i i-rwo-jin-da-neun mal-i iss-eo-yo.", "en": "There's a saying that if you throw a coin into that bowl in front of the Buddha statue and it goes in, your wish comes true." },
+        { "speaker": "관광객", "text": "저도 한번 해봐도 될까요?", "reading": "jeo-do han-beon hae-bwa-do doel-kka-yo?", "en": "Can I try it too?" },
+        { "speaker": "현지인", "text": "그럼요, 다들 그렇게 소원을 빌어요.", "reading": "geu-reom-yo, da-deul geu-reoh-ge so-won-eul bil-eo-yo.", "en": "Of course, everyone makes their wish that way." }
+      ],
+      "question": "동전을 던지는 행동에 담긴 의미는 무엇인가요?",
+      "question_en": "What is the meaning behind throwing the coin?",
+      "correct_answer": "그릇에 동전이 들어가면 소원이 이루어진다는 믿음",
+      "options": ["그릇에 동전이 들어가면 소원이 이루어진다는 믿음", "절 입장료를 내는 방법", "스님에게 인사하는 방법", "기념품을 사는 방법"],
+      "explanation": "현지인이 '동전을 던져서 들어가면 소원이 이뤄진다는 말이 있다'고 설명했으므로 이것이 동전을 던지는 이유입니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "관광객", "text": "여기서 참배할 때 특별히 조심해야 할 게 있나요?", "reading": "yeo-gi-seo cham-bae-hal ttae teuk-byeol-hi jo-sim-hae-ya hal ge iss-na-yo?", "en": "Is there anything I should be especially careful about when worshipping here?" },
+        { "speaker": "안내원", "text": "네, 절 안에서는 큰 소리로 이야기하지 않고 조용히 다녀주세요.", "reading": "ne, jeol an-e-seo-neun keun so-ri-ro i-ya-gi-ha-ji anh-go jo-yong-hi da-nyeo-ju-se-yo.", "en": "Yes, please don't talk loudly inside the temple, and move around quietly." },
+        { "speaker": "관광객", "text": "사진은 찍어도 되나요?", "reading": "sa-jin-eun jjig-eo-do doe-na-yo?", "en": "Can I take photos?" },
+        { "speaker": "안내원", "text": "불상 정면 촬영은 자제해 주시면 감사하겠습니다.", "reading": "bul-sang jeong-myeon chwal-yeong-eun ja-je-hae ju-si-myeon gam-sa-ha-get-seum-ni-da.", "en": "We'd appreciate it if you'd refrain from photographing the Buddha statue directly from the front." }
+      ],
+      "question": "안내원이 관광객에게 부탁한 것은 무엇인가요?",
+      "question_en": "What did the guide ask the tourist to do?",
+      "correct_answer": "조용히 다니고 불상 정면 촬영을 자제할 것",
+      "options": ["조용히 다니고 불상 정면 촬영을 자제할 것", "신발을 벗고 다닐 것", "향을 직접 피우지 말 것", "입장료를 미리 낼 것"],
+      "explanation": "안내원이 '조용히 다녀주세요'와 '불상 정면 촬영은 자제해 주세요'라고 요청했으므로 이 두 가지가 부탁한 내용입니다."
+    }
+  ]
+}

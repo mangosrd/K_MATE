@@ -1,0 +1,93 @@
+{
+  "id": "ch-s09",
+  "character_id": "sunwoo",
+  "title": "통영 꿀빵과 충무김밥",
+  "emoji": "🌺",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "승객 여러분, 이순신 장군의 흔적이 남은 남해안의 보석, 통영으로 안내해 드립니다!",
+      "reading": "seung-gaek yeo-reo-bun, i-sun-sin jang-gun-ui heun-jeog-i nam-eun nam-hae-an-ui bo-seok, tong-yeong-eu-ro an-nae-hae deu-rim-ni-da!",
+      "en": "Passengers, let me guide you to Tongyeong — a jewel of the south coast bearing the traces of Admiral Yi Sun-sin!"
+    },
+    {
+      "text": "달콤한 '꿀빵'은 통영을 대표하는 간식이에요. 한번 맛보면 계속 생각날 거예요.",
+      "reading": "dal-kom-han kkul-ppang-eun tong-yeong-eul dae-pyo-ha-neun gan-sig-i-e-yo.",
+      "en": "Sweet 'honey bread' is Tongyeong's representative snack. Once you try it, you'll keep thinking about it.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "'충무김밥'은 밥과 반찬을 따로 담아내는 독특한 김밥이에요. 유래를 들으면 더 재미있어요.",
+      "reading": "chung-mu-gim-bab-eun bab-gwa ban-chan-eul tta-ro dam-a-nae-neun dok-teuk-han gim-bab-i-e-yo.",
+      "en": "'Chungmu kimbap' is a unique kimbap where rice and side dishes are served separately. It's even more interesting once you hear its origin.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "통영 곳곳의 '유적지'에는 이순신 장군의 발자취가 고스란히 남아 있어요.",
+      "reading": "tong-yeong got-got-ui yu-jeok-ji-e-neun i-sun-sin jang-gun-ui bal-ja-chwi-ga go-seu-ran-hi nam-a iss-eo-yo.",
+      "en": "At 'historic sites' throughout Tongyeong, Admiral Yi Sun-sin's legacy remains intact.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "'뱃길'을 따라가면 한려수도의 아름다운 섬들을 만날 수 있답니다.",
+      "reading": "baet-gil-eul tta-ra-ga-myeon hal-lyeo-su-do-ui a-reum-da-un seom-deul-eul man-nal su iss-dam-ni-da.",
+      "en": "If you follow the 'sea route', you can encounter the beautiful islands of Hallyeosudo.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "통영 '특산물' 시장에서는 신선한 지역 먹거리를 저렴하게 살 수 있어요.",
+      "reading": "tong-yeong teuk-san-mul si-jang-e-seo-neun sin-seon-han ji-yeok meok-geo-ri-reul jeo-ryeom-ha-ge sal su iss-eo-yo.",
+      "en": "At Tongyeong's 'local specialty' market, you can buy fresh regional food at a low price.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "단어는 다 익히셨죠? 이번엔 통영 골목의 실제 대화를 보고 상황을 맞혀보는 문제도 준비했어요!",
+      "reading": "dan-eo-neun da ig-hi-syeot-jyo?",
+      "en": "Got all the words down? This time I've also prepared questions where you read real conversations from Tongyeong's streets and figure out the situation!"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "꿀빵", "reading": "kkul-ppang", "meaning": "Honey bread (Tongyeong specialty)", "example": "꿀빵은 통영을 대표하는 달콤한 간식입니다.", "example_reading": "kkul-ppang-eun tong-yeong-eul dae-pyo-ha-neun dal-kom-han gan-sig-im-ni-da", "example_en": "Honey bread is Tongyeong's representative sweet snack." },
+    { "id": "w02", "word": "충무김밥", "reading": "chung-mu-gim-bap", "meaning": "Chungmu-style kimbap (plain rice rolls served with side dishes)", "example": "충무김밥은 밥과 반찬을 따로 담아내는 것이 특징이에요.", "example_reading": "chung-mu-gim-bab-eun bab-gwa ban-chan-eul tta-ro dam-a-nae-neun geos-i teuk-jing-i-e-yo", "example_en": "Chungmu kimbap is characterized by serving rice and side dishes separately." },
+    { "id": "w03", "word": "유적지", "reading": "yu-jeok-ji", "meaning": "Historic site", "example": "유적지에는 이순신 장군의 발자취가 곳곳에 남아 있습니다.", "example_reading": "yu-jeok-ji-e-neun i-sun-sin jang-gun-ui bal-ja-chwi-ga got-got-e nam-a iss-seum-ni-da", "example_en": "Admiral Yi Sun-sin's legacy remains throughout the historic site." },
+    { "id": "w04", "word": "뱃길", "reading": "baet-gil", "meaning": "Sea route / boat route", "example": "뱃길을 따라가면 아름다운 섬들을 만날 수 있어요.", "example_reading": "baet-gil-eul tta-ra-ga-myeon a-reum-da-un seom-deul-eul man-nal su iss-eo-yo", "example_en": "If you follow the sea route, you can encounter beautiful islands." },
+    { "id": "w05", "word": "특산물", "reading": "teuk-san-mul", "meaning": "Local specialty product", "example": "특산물 시장에서 지역 먹거리를 저렴하게 살 수 있습니다.", "example_reading": "teuk-san-mul si-jang-e-seo ji-yeok meok-geo-ri-reul jeo-ryeom-ha-ge sal su iss-seum-ni-da", "example_en": "At the local specialty market, you can buy regional food cheaply." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "꿀빵은 통영을 대표하는 달콤한 간식입니다.", "reading": "kkul-ppang-eun tong-yeong-eul dae-pyo-ha-neun dal-kom-han gan-sig-im-ni-da", "en": "Honey bread is Tongyeong's representative sweet snack." },
+    { "id": "s02", "ko": "충무김밥은 밥과 반찬을 따로 담아내는 것이 특징이에요.", "reading": "chung-mu-gim-bab-eun bab-gwa ban-chan-eul tta-ro dam-a-nae-neun geos-i teuk-jing-i-e-yo", "en": "Chungmu kimbap is characterized by serving rice and side dishes separately." },
+    { "id": "s03", "ko": "유적지에는 이순신 장군의 발자취가 곳곳에 남아 있습니다.", "reading": "yu-jeok-ji-e-neun i-sun-sin jang-gun-ui bal-ja-chwi-ga got-got-e nam-a iss-seum-ni-da", "en": "Admiral Yi Sun-sin's legacy remains throughout the historic site." },
+    { "id": "s04", "ko": "뱃길을 따라가면 아름다운 섬들을 만날 수 있어요.", "reading": "baet-gil-eul tta-ra-ga-myeon a-reum-da-un seom-deul-eul man-nal su iss-eo-yo", "en": "If you follow the sea route, you can encounter beautiful islands." },
+    { "id": "s05", "ko": "특산물 시장에서 지역 먹거리를 저렴하게 살 수 있습니다.", "reading": "teuk-san-mul si-jang-e-seo ji-yeok meok-geo-ri-reul jeo-ryeom-ha-ge sal su iss-seum-ni-da", "en": "At the local specialty market, you can buy regional food cheaply." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "관광객", "text": "충무김밥 하나 주세요. 근데 왜 김밥에 반찬이 따로 나와요?", "reading": "chung-mu-gim-bap ha-na ju-se-yo. geun-de wae gim-bab-e ban-chan-i tta-ro na-wa-yo?", "en": "One Chungmu kimbap, please. But why do the side dishes come separately with the kimbap?" },
+        { "speaker": "가게 주인", "text": "옛날 뱃사람들이 밥이 쉬지 않게 김밥과 반찬을 따로 싸서 가져간 데서 유래했어요.", "reading": "yes-nal baet-sa-ram-deul-i bab-i swi-ji anh-ge gim-bap-gwa ban-chan-eul tta-ro ssa-seo ga-jyeo-gan de-seo yu-rae-haess-eo-yo.", "en": "It comes from long ago, when sailors packed the rice and side dishes separately so the rice wouldn't spoil." },
+        { "speaker": "관광객", "text": "아, 그래서 오징어무침이랑 어묵이 따로 나오는 거군요.", "reading": "a, geu-rae-seo o-jing-eo-mu-chim-i-rang eo-mug-i tta-ro na-o-neun geo-gu-nyo.", "en": "Oh, that's why the seasoned squid and fish cake come separately." },
+        { "speaker": "가게 주인", "text": "맞아요, 그게 충무김밥의 매력이죠.", "reading": "maj-a-yo, geu-ge chung-mu-gim-bab-ui mae-ryeog-i-jyo.", "en": "That's right, that's the charm of Chungmu kimbap." }
+      ],
+      "question": "충무김밥에서 반찬을 따로 담는 이유는 무엇인가요?",
+      "question_en": "Why are the side dishes served separately with Chungmu kimbap?",
+      "correct_answer": "뱃사람들이 밥이 상하지 않게 하려고 반찬을 따로 쌌기 때문",
+      "options": ["뱃사람들이 밥이 상하지 않게 하려고 반찬을 따로 쌌기 때문", "재료가 부족해서", "손님이 골라 먹게 하려고", "가격을 낮추기 위해서"],
+      "explanation": "주인이 '뱃사람들이 밥이 쉬지 않게 반찬을 따로 싸서 가져간 데서 유래했다'고 설명했으므로 이것이 이유입니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "친구A", "text": "이 꿀빵집이 통영에서 제일 유명하대, 우리도 사가자.", "reading": "i kkul-ppang-jib-i tong-yeong-e-seo je-il yu-myeong-ha-dae, u-ri-do sa-ga-ja.", "en": "This honey bread shop is supposedly the most famous in Tongyeong, let's buy some too." },
+        { "speaker": "친구B", "text": "얼마나 살까? 부모님 선물로도 좋을 것 같은데.", "reading": "eol-ma-na sal-kka? bu-mo-nim seon-mul-lo-do jo-eul geot gat-eun-de.", "en": "How much should we buy? It seems like it'd be a good gift for our parents too." },
+        { "speaker": "친구A", "text": "한 상자에 열 개 들었으니까 두 상자 사면 넉넉할 거야.", "reading": "han sang-ja-e yeol gae deul-eoss-eu-ni-kka du sang-ja sa-myeon neok-neog-hal geo-ya.", "en": "There are ten in a box, so buying two boxes should be plenty." },
+        { "speaker": "친구B", "text": "좋아, 그럼 계산은 내가 할게.", "reading": "jo-a, geu-reom gye-san-eun nae-ga hal-ge.", "en": "Sounds good, then I'll pay." }
+      ],
+      "question": "친구들이 꿀빵을 사려는 목적은 무엇인가요?",
+      "question_en": "What is the friends' purpose for buying honey bread?",
+      "correct_answer": "부모님께 드릴 선물로",
+      "options": ["부모님께 드릴 선물로", "저녁 식사 대용으로", "친구에게 팔기 위해서", "요리 재료로 쓰기 위해서"],
+      "explanation": "친구A가 '부모님 선물로도 좋을 것 같다'고 말했으므로 선물 목적으로 사려는 것입니다."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "id": "ch-k05",
+  "character_id": "kyuhyun",
+  "title": "한강과 서울 스카이라인",
+  "emoji": "🏙️",
+  "story": [
+    {
+      "text": "승객 여러분, 좌측 창문을 보시면 서울을 가로지르는 큰 물줄기가 보이실 거예요. 오늘은 서울의 하늘과 강을 함께 즐겨봐요.",
+      "reading": "seung-gaek yeo-reo-bun, jwa-cheuk chang-mun-eul bo-si-myeon seo-ul-eul ga-ro-ji-reu-neun keun mul-jul-gi-ga bo-i-sil geo-ye-yo.",
+      "en": "Passengers, if you look out the left window, you'll see a great river cutting through Seoul. Today let's enjoy Seoul's sky and river together."
+    },
+    {
+      "text": "저게 바로 '한강'이에요. 서울 시민들의 진짜 앞마당 같은 곳이죠.",
+      "reading": "jeo-ge ba-ro han-gang-i-e-yo. seo-ul si-min-deul-ui jin-jja ap-ma-dang gat-eun gos-i-jyo.",
+      "en": "That's the 'Han River'. It's like the real front yard of Seoul's citizens.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "저 멀리 높이 솟은 탑이 'N서울타워'예요. 서울의 야경을 한눈에 담을 수 있는 명소죠.",
+      "reading": "jeo meol-li nop-i sos-eun tab-i en-seo-ul-ta-wo-ye-yo.",
+      "en": "That tall tower in the distance is 'N Seoul Tower'. It's a landmark where you can take in Seoul's night view at a glance.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "N서울타워까지는 '케이블카'를 타고 올라갈 수 있어요. 남산 풍경을 즐기며 편하게 이동해요.",
+      "reading": "en-seo-ul-ta-wo-kka-ji-neun ke-i-beul-ka-reul ta-go ol-la-gal su i-sseo-yo.",
+      "en": "You can ride a 'cable car' up to N Seoul Tower, enjoying the scenery of Namsan along the way.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "한강공원에서는 '자전거'를 빌려서 강바람을 맞으며 달려볼 수도 있어요.",
+      "reading": "han-gang-gong-won-e-seo-neun ja-jeon-geo-reul bil-lyeo-seo gang-ba-ram-eul maj-eu-myeo dal-lyeo-bol su-do i-sseo-yo.",
+      "en": "At the Han River Park, you can also rent a 'bicycle' and ride along, feeling the river breeze.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "그리고 N서울타워의 '전망대'에 오르면, 서울 시내 전체가 발아래 펼쳐진답니다.",
+      "reading": "geu-ri-go en-seo-ul-ta-wo-ui jeon-mang-dae-e o-reu-myeon, seo-ul si-nae jeon-che-ga bal-a-rae pyeol-cheo-jin-dam-ni-da.",
+      "en": "And when you go up to the 'observatory' of N Seoul Tower, all of downtown Seoul unfolds beneath your feet.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "자, 이제 오늘 배운 다섯 단어로 서울의 스카이라인을 완성해볼까요?",
+      "reading": "ja, i-je o-neul bae-un da-seot dan-eo-ro seo-ul-ui seu-ka-i-la-in-eul wan-seong-hae-bol-kka-yo?",
+      "en": "Now, shall we complete Seoul's skyline with today's five words?"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "한강", "reading": "han-gang", "meaning": "Han River", "example": "한강은 서울을 가로지르는 강이에요.", "example_reading": "han-gang-eun seo-ul-eul ga-ro-ji-reu-neun gang-i-e-yo", "example_en": "The Han River is the river that cuts through Seoul." },
+    { "id": "w02", "word": "N서울타워", "reading": "en-seo-ul-ta-wo", "meaning": "N Seoul Tower", "example": "N서울타워에서 야경을 볼 수 있어요.", "example_reading": "en-seo-ul-ta-wo-e-seo ya-gyeong-eul bol su i-sseo-yo", "example_en": "You can see the night view from N Seoul Tower." },
+    { "id": "w03", "word": "케이블카", "reading": "ke-i-beul-ka", "meaning": "Cable car", "example": "케이블카를 타고 남산에 올라가요.", "example_reading": "ke-i-beul-ka-reul ta-go nam-san-e ol-la-ga-yo", "example_en": "You take a cable car up Namsan." },
+    { "id": "w04", "word": "자전거", "reading": "ja-jeon-geo", "meaning": "Bicycle", "example": "한강에서 자전거를 빌릴 수 있어요.", "example_reading": "han-gang-e-seo ja-jeon-geo-reul bil-lil su i-sseo-yo", "example_en": "You can rent a bicycle at the Han River." },
+    { "id": "w05", "word": "전망대", "reading": "jeon-mang-dae", "meaning": "Observatory", "example": "전망대에서 서울 시내가 다 보여요.", "example_reading": "jeon-mang-dae-e-seo seo-ul si-nae-ga da bo-yeo-yo", "example_en": "You can see all of downtown Seoul from the observatory." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "한강 공원에서 산책을 즐겨보세요.", "reading": "han-gang gong-won-e-seo san-chaeg-eul jeul-gyeo-bo-se-yo", "en": "Enjoy a walk at Han River Park." },
+    { "id": "s02", "ko": "N서울타워는 서울의 대표 랜드마크입니다.", "reading": "en-seo-ul-ta-wo-neun seo-ul-ui dae-pyo raen-deu-ma-keu-im-ni-da", "en": "N Seoul Tower is Seoul's iconic landmark." },
+    { "id": "s03", "ko": "케이블카에서 보는 풍경이 환상적입니다.", "reading": "ke-i-beul-ka-e-seo bo-neun pung-gyeong-i hwan-sang-jeog-im-ni-da", "en": "The view from the cable car is fantastic." },
+    { "id": "s04", "ko": "자전거로 한강을 따라 달려보세요.", "reading": "ja-jeon-geo-ro han-gang-eul tta-ra dal-lyeo-bo-se-yo", "en": "Try riding a bicycle along the Han River." },
+    { "id": "s05", "ko": "전망대에서 서울의 야경을 감상합니다.", "reading": "jeon-mang-dae-e-seo seo-ul-ui ya-gyeong-eul gam-sang-ham-ni-da", "en": "You take in Seoul's night view from the observatory." }
+  ]
+}

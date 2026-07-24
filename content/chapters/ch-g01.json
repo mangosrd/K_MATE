@@ -1,0 +1,93 @@
+{
+  "id": "ch-g01",
+  "character_id": "sangwoo",
+  "title": "백제 무령왕릉의 신비",
+  "emoji": "👑",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "승객 여러분, 충청남도 공주 상공에 진입하였습니다. 오늘은 천오백 년 전 백제 왕실의 비밀을 품은 곳으로 안내해 드리겠습니다.",
+      "reading": "seung-gaek yeo-reo-bun, chung-cheong-nam-do gong-ju sang-gong-e jin-ip-ha-yeot-seum-ni-da.",
+      "en": "Passengers, we've entered the skies above Gongju, South Chungcheong. Today I'll guide you to a place holding a 1,500-year-old secret of the Baekje royal family."
+    },
+    {
+      "text": "저 아래 야트막한 언덕이 '무령왕릉'입니다. 백제 25대 무령왕이 잠들어 계신 곳이지요.",
+      "reading": "jeo a-rae ya-tteu-mak-han eon-deok-i mu-ryeong-wang-neung-im-ni-da.",
+      "en": "That low hill down there is 'Muryeongwangneung', King Muryeong's Tomb — the resting place of Baekje's 25th king.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "이 일대를 '고분'이라 부릅니다. 무령왕릉을 포함해 여러 기의 옛 무덤이 모여 있는 곳입니다.",
+      "reading": "i il-dae-reul go-bun-i-ra bu-reum-ni-da.",
+      "en": "This whole area is called a 'gobun', an ancient tomb cluster. Several old tombs, including Muryeongwangneung, are gathered here.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "무덤 안에서 나온 '지석'이 결정적이었습니다. 이 돌판 덕분에 무덤의 주인이 누구인지 정확히 알 수 있었지요.",
+      "reading": "mu-deom an-e-seo na-on ji-seok-i gyeol-jeong-jeok-i-eot-seum-ni-da.",
+      "en": "The 'jiseok', an epitaph stone found inside the tomb, was decisive. Thanks to this stone tablet, we could know exactly who the tomb belonged to.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "함께 나온 '부장품'도 놀랍습니다. 금제 관식과 팔찌 등 4천 점이 넘는 유물이 쏟아져 나왔습니다.",
+      "reading": "ham-kke na-on bu-jang-pum-do nol-lap-seum-ni-da.",
+      "en": "The 'burial goods' found alongside are astonishing too. Over 4,000 artifacts, including gold crown ornaments and bracelets, poured out.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "무엇보다 '도굴' 없이 온전하게 발견되었다는 점이 중요합니다. 그래서 학계가 크게 술렁였지요.",
+      "reading": "mu-eot-bo-da do-gul eop-si on-jeon-ha-ge bal-gyeon-doe-eot-da-neun jeom-i jung-yo-ham-ni-da.",
+      "en": "Above all, it's significant that it was found intact, without any 'tomb robbing'. That's why the academic world was in an uproar.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "단어는 잘 익히셨습니까? 이번에는 박물관과 발굴 현장에서 나눈 실제 대화를 보고, 무슨 이야기인지 차분히 맞혀 보시기 바랍니다.",
+      "reading": "dan-eo-neun jal ig-hi-syeot-seum-ni-kka?",
+      "en": "Have you learned the vocabulary well? This time, please read real conversations from a museum and an excavation site, and calmly figure out what's being discussed."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "무령왕릉", "reading": "mu-ryeong-wang-neung", "meaning": "King Muryeong's Tomb (Baekje royal tomb)", "example": "무령왕릉은 1971년 장마철 배수로 공사 중 우연히 발견되었습니다.", "example_reading": "mu-ryeong-wang-neung-eun 1971-nyeon jang-ma-cheol bae-su-ro gong-sa jung u-yeon-hi bal-gyeon-doe-eot-seum-ni-da", "example_en": "King Muryeong's Tomb was discovered by chance in 1971 during drainage construction in the rainy season." },
+    { "id": "w02", "word": "고분", "reading": "go-bun", "meaning": "Ancient tomb / burial mound", "example": "고분에서 백제 왕실의 화려한 유물이 대거 출토되었습니다.", "example_reading": "go-bun-e-seo baek-je wang-sil-ui hwa-ryeo-han yu-mul-i dae-geo chul-to-doe-eot-seum-ni-da", "example_en": "A great number of splendid Baekje royal artifacts were excavated from the tomb cluster." },
+    { "id": "w03", "word": "지석", "reading": "ji-seok", "meaning": "Epitaph tablet (stone recording the deceased's identity)", "example": "지석은 무덤 주인의 이름과 생애를 알려줍니다.", "example_reading": "ji-seok-eun mu-deom ju-in-ui i-reum-gwa saeng-ae-reul al-lyeo-jum-ni-da", "example_en": "The epitaph stone tells us the tomb owner's name and life story." },
+    { "id": "w04", "word": "부장품", "reading": "bu-jang-pum", "meaning": "Burial goods / grave goods", "example": "부장품은 금제 관식과 팔찌 등 4천 점이 넘습니다.", "example_reading": "bu-jang-pum-eun geum-je gwan-sik-gwa pal-jji deung 4-cheon jeom-i neom-seum-ni-da", "example_en": "The burial goods exceed 4,000 pieces, including gold crown ornaments and bracelets." },
+    { "id": "w05", "word": "도굴", "reading": "do-gul", "meaning": "Tomb robbing / looting", "example": "도굴 없이 온전한 모습으로 발견되어 학계를 놀라게 했습니다.", "example_reading": "do-gul eop-si on-jeon-han mo-seub-eu-ro bal-gyeon-doe-eo hak-gye-reul nol-la-ge haet-seum-ni-da", "example_en": "It was discovered intact without looting, surprising the academic world." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "무령왕릉은 1971년 장마철 배수로 공사 중 우연히 발견되었습니다.", "reading": "mu-ryeong-wang-neung-eun 1971-nyeon jang-ma-cheol bae-su-ro gong-sa jung u-yeon-hi bal-gyeon-doe-eot-seum-ni-da", "en": "King Muryeong's Tomb was discovered by chance in 1971 during drainage construction in the rainy season." },
+    { "id": "s02", "ko": "고분에서 백제 왕실의 화려한 유물이 대거 출토되었습니다.", "reading": "go-bun-e-seo baek-je wang-sil-ui hwa-ryeo-han yu-mul-i dae-geo chul-to-doe-eot-seum-ni-da", "en": "A great number of splendid Baekje royal artifacts were excavated from the tomb cluster." },
+    { "id": "s03", "ko": "지석은 무덤 주인의 이름과 생애를 알려줍니다.", "reading": "ji-seok-eun mu-deom ju-in-ui i-reum-gwa saeng-ae-reul al-lyeo-jum-ni-da", "en": "The epitaph stone tells us the tomb owner's name and life story." },
+    { "id": "s04", "ko": "부장품은 금제 관식과 팔찌 등 4천 점이 넘습니다.", "reading": "bu-jang-pum-eun geum-je gwan-sik-gwa pal-jji deung 4-cheon jeom-i neom-seum-ni-da", "en": "The burial goods exceed 4,000 pieces, including gold crown ornaments and bracelets." },
+    { "id": "s05", "ko": "도굴 없이 온전한 모습으로 발견되어 학계를 놀라게 했습니다.", "reading": "do-gul eop-si on-jeon-han mo-seub-eu-ro bal-gyeon-doe-eo hak-gye-reul nol-la-ge haet-seum-ni-da", "en": "It was discovered intact without looting, surprising the academic world." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "관람객", "text": "이 금관 장식이 실제로 무령왕릉에서 나온 거예요?", "reading": "i geum-gwan jang-sik-i sil-je-ro mu-ryeong-wang-neung-e-seo na-on geo-ye-yo?", "en": "Did this gold crown ornament actually come from King Muryeong's Tomb?" },
+        { "speaker": "해설사", "text": "네, 1971년 무령왕릉에서 출토된 진품이 국보로 지정되어 있고, 지금 보시는 건 정교하게 복제한 것입니다.", "reading": "ne, 1971-nyeon mu-ryeong-wang-neung-e-seo chul-to-doen jin-pum-i guk-bo-ro ji-jeong-doe-eo it-go, ji-geum bo-si-neun geon jeong-gyo-ha-ge bok-je-han geot-im-ni-da.", "en": "Yes, the genuine piece excavated from the tomb in 1971 is designated a national treasure, and what you're looking at is a finely made replica." },
+        { "speaker": "관람객", "text": "그런데 무령왕릉은 어떻게 발견됐나요?", "reading": "geu-reon-de mu-ryeong-wang-neung-eun eo-tteo-ke bal-gyeon-dwaen-na-yo?", "en": "By the way, how was King Muryeong's Tomb discovered?" },
+        { "speaker": "해설사", "text": "배수로 공사를 하다가 우연히 벽돌무덤이 드러나면서 발견됐습니다.", "reading": "bae-su-ro gong-sa-reul ha-da-ga u-yeon-hi byeok-dol-mu-deom-i deu-reo-na-myeon-seo bal-gyeon-dwaet-seum-ni-da.", "en": "It was discovered when a brick tomb was accidentally exposed during drainage construction." }
+      ],
+      "question": "이 대화는 어디에서 이루어지고 있나요?",
+      "question_en": "Where is this conversation taking place?",
+      "correct_answer": "박물관 전시실",
+      "options": ["박물관 전시실", "무령왕릉 발굴 현장", "공항 안내데스크", "기차역 매표소"],
+      "explanation": "복제된 금관 장식을 보며 해설사가 유물과 발견 경위를 설명하는 내용으로 보아, 박물관 전시실에서 나누는 대화입니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "가이드", "text": "무령왕릉이 다른 백제 왕릉과 다르게 특별한 이유를 아세요?", "reading": "mu-ryeong-wang-neung-i da-reun baek-je wang-neung-gwa da-reu-ge teuk-byeol-han i-yu-reul a-se-yo?", "en": "Do you know why King Muryeong's Tomb is special compared to other Baekje royal tombs?" },
+        { "speaker": "여행자", "text": "글쎄요, 뭐가 그렇게 특별한 거죠?", "reading": "geul-sse-yo, mwo-ga geu-reo-ke teuk-byeol-han geo-jyo?", "en": "Well, what makes it so special?" },
+        { "speaker": "가이드", "text": "도굴되지 않은 채로 발견됐고, 지석 덕분에 무덤 주인이 누군지도 정확히 알 수 있었거든요.", "reading": "do-gul-doe-ji a-neun chae-ro bal-gyeon-dwaet-go, ji-seok deok-bun-e mu-deom ju-in-i nu-gun-ji-do jeong-hwak-hi al su i-sseot-geo-deun-yo.", "en": "It was found without ever being robbed, and thanks to the epitaph stone, we could know exactly whose tomb it was." },
+        { "speaker": "여행자", "text": "그래서 이 무덤이 그렇게 중요한 거군요!", "reading": "geu-rae-seo i mu-deom-i geu-reo-ke jung-yo-han geo-gun-yo!", "en": "So that's why this tomb is so important!" }
+      ],
+      "question": "가이드가 설명한, 무령왕릉이 특별한 이유는 무엇인가요?",
+      "question_en": "According to the guide, why is King Muryeong's Tomb special?",
+      "correct_answer": "도굴되지 않았고 지석으로 주인을 알 수 있어서",
+      "options": ["도굴되지 않았고 지석으로 주인을 알 수 있어서", "규모가 백제 왕릉 중 가장 커서", "가장 최근에 새로 지어져서", "왕릉 전체가 순금으로 만들어져서"],
+      "explanation": "가이드는 무령왕릉이 도굴되지 않은 채 발견되었고, 지석 덕분에 무덤 주인을 정확히 알 수 있다는 점을 특별한 이유로 설명합니다."
+    }
+  ]
+}

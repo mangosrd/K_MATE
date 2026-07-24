@@ -1,0 +1,62 @@
+{
+  "id": "ch-h01",
+  "character_id": "haneul",
+  "title": "전주 한옥마을과 구들장",
+  "emoji": "🏮",
+  "story": [
+    {
+      "text": "승객 여러분, 안녕하세요. 하늘 기장입니다. 지금부터 전주 한옥마을 상공으로 안내해 드리겠습니다.",
+      "reading": "seung-gaek yeo-reo-bun, an-nyeong-ha-se-yo. ha-neul gi-jang-im-ni-da. ji-geum-bu-teo jeon-ju han-ok-ma-eul sang-gong-eu-ro an-nae-hae deu-ri-get-seum-ni-da.",
+      "en": "Hello, passengers. This is Captain Haneul. I'll now guide you over Jeonju Hanok Village."
+    },
+    {
+      "text": "저 아래 기와지붕이 옹기종기 모인 곳, '한옥마을'이 보이시나요? 약 700여 채의 한옥이 모여 있어요.",
+      "reading": "jeo a-rae gi-wa-ji-bung-i ong-gi-jong-gi mo-in got, han-ok-ma-eul-i bo-i-si-na-yo? yak chil-baek-yeo chae-ui han-ok-i mo-yeo it-seo-yo.",
+      "en": "Do you see that place below where tiled roofs gather closely together? That's 'Hanok Village' — about 700 traditional houses are gathered there.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "'한옥'은 나무와 흙, 돌로 짓는 우리나라 전통 집이에요. 자연의 재료로만 지어서 사람에게 참 편안하답니다.",
+      "reading": "han-ok-eun na-mu-wa heuk, dol-lo jit-neun u-ri-na-ra jeon-tong jib-i-e-yo. ja-yeon-ui jae-ryo-ro-man ji-eo-seo sa-ram-e-ge cham pyeon-an-ha-dam-ni-da.",
+      "en": "'Hanok' is our country's traditional house, built with wood, clay, and stone. Made only from natural materials, it feels truly comfortable to people.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "한옥의 바닥 아래에는 '온돌'이 있어요. 아궁이에 불을 때면 바닥 전체가 따뜻해지는 지혜로운 난방법이지요.",
+      "reading": "han-ok-ui ba-dak a-rae-e-neun on-dol-i it-seo-yo. a-gung-i-e bul-eul ttae-myeon ba-dak jeon-che-ga tta-tteut-hae-ji-neun ji-hye-ro-un nan-bang-beob-i-ji-yo.",
+      "en": "Beneath a hanok's floor lies 'ondol'. When you light a fire in the furnace, the whole floor warms up — a wise heating method.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "지붕을 덮은 검은 기와도 눈여겨보세요. '기와'는 흙을 구워 만드는데, 비와 눈을 막아주는 튼튼한 지붕 재료예요.",
+      "reading": "ji-bung-eul deop-eun geom-eun gi-wa-do nun-yeo-gyeo-bo-se-yo. gi-wa-neun heulg-eul gu-wo man-deu-neun-de, bi-wa nun-eul mag-a-ju-neun teun-teun-han ji-bung jae-ryo-ye-yo.",
+      "en": "Take a closer look at the black roof tiles too. 'Giwa' (roof tile) is made by firing clay, and it's a sturdy roofing material that blocks rain and snow.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "한옥 가운데에는 시원한 나무 바닥, '마루'가 있어요. 여름에는 마루에 앉아 바람을 쐬며 쉬었답니다.",
+      "reading": "han-ok ga-un-de-e-neun si-won-han na-mu ba-dak, ma-ru-ga it-seo-yo. yeo-reum-e-neun ma-ru-e anj-a ba-ram-eul ssoe-myeo swi-eot-dam-ni-da.",
+      "en": "In the middle of a hanok there's a cool wooden floor called 'maru'. In summer, people would sit on the maru and rest in the breeze.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "자, 오늘 배운 다섯 단어로 전주 한옥마을을 함께 걸어볼까요? 문제를 풀며 확인해 보아요!",
+      "reading": "ja, o-neul bae-un da-seot dan-eo-ro jeon-ju han-ok-ma-eul-eul ham-kke geol-eo-bol-kka-yo? mun-je-reul pul-myeo hwag-in-hae bo-a-yo!",
+      "en": "Now, shall we walk through Jeonju Hanok Village together using the five words we learned today? Let's check by solving some questions!"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "한옥", "reading": "han-ok", "meaning": "Traditional Korean House", "example": "한옥은 나무와 흙으로 지은 집이에요.", "example_reading": "han-ok-eun na-mu-wa heulg-eu-ro ji-eun jib-i-e-yo", "example_en": "Hanok is a house built with wood and clay." },
+    { "id": "w02", "word": "한옥마을", "reading": "han-ok-ma-eul", "meaning": "Hanok Village", "example": "한옥마을에는 기와집이 많아요.", "example_reading": "han-ok-ma-eul-e-neun gi-wa-jib-i man-a-yo", "example_en": "There are many tile-roofed houses in Hanok Village." },
+    { "id": "w03", "word": "온돌", "reading": "on-dol", "meaning": "Ondol (Underfloor Heating)", "example": "온돌은 바닥을 따뜻하게 해요.", "example_reading": "on-dol-eun ba-dag-eul tta-tteut-ha-ge hae-yo", "example_en": "Ondol makes the floor warm." },
+    { "id": "w04", "word": "기와", "reading": "gi-wa", "meaning": "Roof Tile", "example": "기와는 지붕을 덮는 재료예요.", "example_reading": "gi-wa-neun ji-bung-eul deop-neun jae-ryo-ye-yo", "example_en": "Roof tiles are the material that covers the roof." },
+    { "id": "w05", "word": "마루", "reading": "ma-ru", "meaning": "Wooden Floor", "example": "마루에 앉아서 쉬어요.", "example_reading": "ma-ru-e anj-a-seo swi-eo-yo", "example_en": "I sit and rest on the wooden floor." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "한옥은 전주에 많이 있어요.", "reading": "han-ok-eun jeon-ju-e man-i it-seo-yo", "en": "Hanok houses are common in Jeonju." },
+    { "id": "s02", "ko": "한옥마을은 전주의 자랑이에요.", "reading": "han-ok-ma-eul-eun jeon-ju-ui ja-rang-i-e-yo", "en": "Hanok Village is Jeonju's pride." },
+    { "id": "s03", "ko": "온돌 덕분에 겨울에도 따뜻해요.", "reading": "on-dol deok-bun-e gyeo-ul-e-do tta-tteut-hae-yo", "en": "Thanks to ondol, it's warm even in winter." },
+    { "id": "s04", "ko": "기와 지붕이 아름다워요.", "reading": "gi-wa ji-bung-i a-reum-da-wo-yo", "en": "The tile roof is beautiful." },
+    { "id": "s05", "ko": "마루에서 손님을 맞이해요.", "reading": "ma-ru-e-seo son-nim-eul maj-i-hae-yo", "en": "We welcome guests on the wooden floor." }
+  ]
+}

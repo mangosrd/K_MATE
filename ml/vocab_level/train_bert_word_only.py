@@ -1,0 +1,106 @@
+"""KLUE-BERT를 '단어만'(용례 없이) 입력으로 파인튜닝 - 실제 서비스 배포용
+
+train_bert.py는 "단어 - 용례" 형식으로 학습해 test accuracy 0.671을 냈지만, 실제
+extract_word_suggestion에서는 용례 없이 단어만 들어오기 때문에 eval_bert_word_only.py로
+확인해보니 0.621로 떨어졌다 (train/inference 불일치). 처음부터 단어만으로 학습해서
+이 불일치를 없앤 배포용 모델을 만든다.
+"""
+import os
+os.environ.setdefault("KMP_DUPLICATE_LIB_OK", "TRUE")
+
+import numpy as np
+import torch
+from datasets import Dataset
+from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+from sklearn.model_selection import train_test_split
+from transformers import (
+    AutoModelForSequenceClassification,
+    AutoTokenizer,
+    DataCollatorWithPadding,
+    Trainer,
+    TrainingArguments,
+)
+
+from prepare_data import LEVEL_MAP, clean_word
+
+MODEL_NAME = "klue/bert-base"
+LEVELS = ["초급", "중급", "고급"]
+LABEL2ID = {l: i for i, l in enumerate(LEVELS)}
+ID2LABEL = {i: l for i, l in enumerate(LEVELS)}
+
+
+def load_word_only() -> "pd.DataFrame":
+    import pandas as pd
+    df = pd.read_csv("data/raw_combined_vocab.tsv", sep="\t")
+    df = df[df["topik_level"].isin(LEVEL_MAP.keys())].copy()
+    df["level"] = df["topik_level"].map(LEVEL_MAP)
+    df["text"] = df["word"].apply(clean_word)
+    df = df[df["text"].str.len() > 0]
+    df = df.drop_duplicates(subset=["text", "level"])
+    df["label"] = df["level"].map(LABEL2ID)
+    return df[["text", "label"]].reset_index(drop=True)
+
+
+def main():
+    print("CUDA available:", torch.cuda.is_available())
+    df = load_word_only()
+    train_df, test_df = train_test_split(
+        df, test_size=0.2, random_state=42, stratify=df["label"]
+    )
+    print(f"train={len(train_df)} test={len(test_df)}")
+
+    tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
+
+    def tokenize(batch):
+        return tokenizer(batch["text"], truncation=True, max_length=16)
+
+    train_ds = Dataset.from_pandas(train_df).map(tokenize, batched=True)
+    test_ds = Dataset.from_pandas(test_df).map(tokenize, batched=True)
+
+    model = AutoModelForSequenceClassification.from_pretrained(
+        MODEL_NAME, num_labels=len(LEVELS), id2label=ID2LABEL, label2id=LABEL2ID
+    )
+
+    def compute_metrics(eval_pred):
+        logits, labels = eval_pred
+        preds = np.argmax(logits, axis=-1)
+        return {"accuracy": accuracy_score(labels, preds)}
+
+    args = TrainingArguments(
+        output_dir="model/bert_word_only_ckpt",
+        per_device_train_batch_size=32,
+        per_device_eval_batch_size=64,
+        num_train_epochs=6,
+        learning_rate=3e-5,
+        eval_strategy="epoch",
+        save_strategy="no",
+        logging_steps=20,
+        report_to=[],
+    )
+
+    trainer = Trainer(
+        model=model,
+        args=args,
+        train_dataset=train_ds,
+        eval_dataset=test_ds,
+        data_collator=DataCollatorWithPadding(tokenizer),
+        compute_metrics=compute_metrics,
+    )
+    trainer.train()
+
+    preds = trainer.predict(test_ds)
+    y_pred = np.argmax(preds.predictions, axis=-1)
+    y_true = preds.label_ids
+    print("\n=== KLUE-BERT (단어만) test 결과 ===")
+    print(classification_report(y_true, y_pred, target_names=LEVELS))
+    print("혼동행렬:", LEVELS)
+    print(confusion_matrix(y_true, y_pred))
+
+    save_dir = "model/klue_bert_vocab_level_word_only"
+    trainer.save_model(save_dir)
+    tokenizer.save_pretrained(save_dir)
+    print(f"저장 완료: {save_dir}")
+
+
+if __name__ == "__main__":
+    main()

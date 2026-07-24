@@ -27,6 +27,7 @@ class WordSuggestion(BaseModel):
     word: str
     meaning: str
     sentence: str
+    level: Optional[str] = None
 
 
 class ChatResponse(BaseModel):

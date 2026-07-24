@@ -1,0 +1,93 @@
+{
+  "id": "ch-j07",
+  "character_id": "yongwoo",
+  "title": "제주 올레길과 느린 여행",
+  "emoji": "👣",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "승객 여러분, 오늘은 빠르게 지나치는 대신, 천천히 걸어보는 제주 이야기를 들려드리겠습니다.",
+      "reading": "seung-gaek yeo-reo-bun, o-neul-eun ppa-reu-ge ji-na-chi-neun dae-sin, cheon-cheon-hi geol-eo-bo-neun je-ju i-ya-gi-reul deul-lyeo-deu-ri-get-seum-ni-da.",
+      "en": "Passengers, today, instead of passing by quickly, let me tell you a story of Jeju best experienced by walking slowly."
+    },
+    {
+      "text": "그 길의 이름은 '올레길'입니다. 제주 해안과 마을을 잇는, 걷기 위해 태어난 길이지요.",
+      "reading": "geu gil-ui i-reum-eun ol-le-gil-im-ni-da.",
+      "en": "That path is called the 'Olle trail' — a path born for walking, connecting Jeju's coastline and villages.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "길을 걷다 보면 조랑말 모양의 '표지판'을 만나게 됩니다. 파란색과 주황색 리본이 방향을 알려주지요.",
+      "reading": "gil-eul geot-da bo-myeon jo-rang-mal mo-yang-ui pyo-ji-pan-eul man-na-ge doem-ni-da.",
+      "en": "As you walk, you'll come across pony-shaped 'trail markers'. Blue and orange ribbons show the way.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "지치면 언제든 '쉼터'에 앉아 쉴 수 있습니다. 바람 소리, 파도 소리를 벗 삼아 잠시 숨을 고르는 곳입니다.",
+      "reading": "ji-chi-myeon eon-je-deun swim-teo-e anj-a swil su it-seum-ni-da.",
+      "en": "Whenever you're tired, you can sit and rest at a 'resting spot' — a place to catch your breath with the wind and waves as company.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "전 코스를 '완주'하려면 꼬박 한 달 가까운 시간이 필요합니다. 서두르지 않는 이들만이 닿을 수 있는 성취이지요.",
+      "reading": "jeon ko-seu-reul wan-ju-ha-ryeo-myeon kko-bak han dal ga-kka-un si-gan-i pil-yo-ham-ni-da.",
+      "en": "'Completing' the entire course takes nearly a full month — an achievement only those who don't rush can reach.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "이렇게 걸어서 떠나는 '도보여행'은, 차로는 결코 만날 수 없는 제주의 얼굴을 보여줍니다.",
+      "reading": "i-reo-ke geol-eo-seo tteo-na-neun do-bo-yeo-haeng-eun, cha-ro-neun gyeol-ko man-nal su eop-neun je-ju-ui eol-gul-eul bo-yeo-jum-ni-da.",
+      "en": "A 'walking trip' taken like this shows a face of Jeju you could never meet by car.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "천천히 걷는 여행, 마음에 와닿으셨습니까? 이제 올레길 위에서 나눈 대화를 읽고 상황을 헤아려 보시죠.",
+      "reading": "cheon-cheon-hi geot-neun yeo-haeng, ma-eum-e wa-da-eu-syeot-seum-ni-kka?",
+      "en": "Did this slow-walking journey resonate with you? Now let's read a conversation shared on the Olle trail and figure out the situation."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "올레길", "reading": "ol-le-gil", "meaning": "Olle trail", "example": "올레길은 제주 해안을 따라 이어진 도보 여행길입니다.", "example_reading": "ol-le-gil-eun je-ju hae-an-eul tta-ra i-eo-jin do-bo yeo-haeng-gil-im-ni-da", "example_en": "The Olle trail is a walking path that follows Jeju's coastline." },
+    { "id": "w02", "word": "표지판", "reading": "pyo-ji-pan", "meaning": "Trail marker / signpost", "example": "표지판을 따라가면 길을 잃지 않습니다.", "example_reading": "pyo-ji-pan-eul tta-ra-ga-myeon gil-eul il-chi an-seum-ni-da", "example_en": "Following the trail markers, you won't get lost." },
+    { "id": "w03", "word": "쉼터", "reading": "swim-teo", "meaning": "Resting spot", "example": "쉼터에서 잠시 숨을 고르고 다시 걷습니다.", "example_reading": "swim-teo-e-seo jam-si sum-eul go-reu-go da-si geot-seum-ni-da", "example_en": "At the resting spot, you catch your breath and walk on." },
+    { "id": "w04", "word": "완주", "reading": "wan-ju", "meaning": "Completing the whole course", "example": "완주까지는 한 달 가까이 걸립니다.", "example_reading": "wan-ju-kka-ji-neun han dal ga-kka-i geol-lim-ni-da", "example_en": "Completing the whole course takes nearly a month." },
+    { "id": "w05", "word": "도보여행", "reading": "do-bo-yeo-haeng", "meaning": "Walking trip / trekking", "example": "도보여행은 제주를 가장 깊이 느끼는 방법입니다.", "example_reading": "do-bo-yeo-haeng-eun je-ju-reul ga-jang gip-i neu-kki-neun bang-beob-im-ni-da", "example_en": "Trekking is the deepest way to experience Jeju." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "올레길은 제주 해안을 따라 이어진 도보 여행길입니다.", "reading": "ol-le-gil-eun je-ju hae-an-eul tta-ra i-eo-jin do-bo yeo-haeng-gil-im-ni-da", "en": "The Olle trail is a walking path that follows Jeju's coastline." },
+    { "id": "s02", "ko": "표지판을 따라가면 길을 잃지 않습니다.", "reading": "pyo-ji-pan-eul tta-ra-ga-myeon gil-eul il-chi an-seum-ni-da", "en": "Following the trail markers, you won't get lost." },
+    { "id": "s03", "ko": "쉼터에서 잠시 숨을 고르고 다시 걷습니다.", "reading": "swim-teo-e-seo jam-si sum-eul go-reu-go da-si geot-seum-ni-da", "en": "At the resting spot, you catch your breath and walk on." },
+    { "id": "s04", "ko": "완주까지는 한 달 가까이 걸립니다.", "reading": "wan-ju-kka-ji-neun han dal ga-kka-i geol-lim-ni-da", "en": "Completing the whole course takes nearly a month." },
+    { "id": "s05", "ko": "도보여행은 제주를 가장 깊이 느끼는 방법입니다.", "reading": "do-bo-yeo-haeng-eun je-ju-reul ga-jang gip-i neu-kki-neun bang-beob-im-ni-da", "en": "Trekking is the deepest way to experience Jeju." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "여행자1", "text": "저기요, 다음 쉼터까지 얼마나 남았는지 아세요?", "reading": "jeo-gi-yo, da-eum swim-teo-kka-ji eol-ma-na nam-ass-neun-ji a-se-yo?", "en": "Excuse me, do you know how far it is to the next resting spot?" },
+        { "speaker": "여행자2", "text": "표지판 보니까 한 2킬로미터 정도 남은 것 같아요.", "reading": "pyo-ji-pan bo-ni-kka han i-kil-lo-mi-teo jeong-do nam-eun geot ga-ta-yo.", "en": "According to the marker, it looks like about 2 kilometers left." },
+        { "speaker": "여행자1", "text": "다행이다, 다리가 좀 아팠거든요.", "reading": "da-haeng-i-da, da-ri-ga jom a-pat-geo-deun-yo.", "en": "That's a relief, my legs were hurting a bit." },
+        { "speaker": "여행자2", "text": "저도요. 거기서 좀 쉬었다가 같이 걸을까요?", "reading": "jeo-do-yo. geo-gi-seo jom swi-eot-da-ga gat-i geol-eul-kka-yo?", "en": "Same here. Shall we rest there and walk together?" }
+      ],
+      "question": "여행자1이 궁금해한 것은 무엇인가요?",
+      "question_en": "What was Traveler 1 curious about?",
+      "correct_answer": "다음 쉼터까지 남은 거리",
+      "options": ["다음 쉼터까지 남은 거리", "올레길의 전체 코스 수", "표지판의 색깔 의미", "완주에 걸리는 총 시간"],
+      "explanation": "여행자1은 '다음 쉼터까지 얼마나 남았는지' 물었습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "친구1", "text": "너 진짜 올레길 전 코스 완주하는 거야?", "reading": "neo jin-jja ol-le-gil jeon ko-seu wan-ju-ha-neun geo-ya?", "en": "Are you really completing the whole Olle trail course?" },
+        { "speaker": "친구2", "text": "응, 이제 마지막 코스만 남았어. 거의 한 달 걸렸어.", "reading": "eung, i-je ma-ji-mak ko-seu-man nam-ass-eo.", "en": "Yeah, only the last course is left. It's taken almost a month." },
+        { "speaker": "친구1", "text": "대단하다. 힘들지 않았어?", "reading": "dae-dan-ha-da. him-deul-ji an-ass-eo?", "en": "That's amazing. Wasn't it hard?" },
+        { "speaker": "친구2", "text": "힘들었지만, 도보여행이라 그런지 제주를 훨씬 깊이 느낄 수 있었어.", "reading": "him-deul-eot-ji-man, do-bo-yeo-haeng-i-ra geu-reon-ji je-ju-reul hwol-ssin gip-i neu-kkil su iss-eoss-eo.", "en": "It was hard, but maybe because it was a walking trip, I got to feel Jeju much more deeply." }
+      ],
+      "question": "친구2가 도보여행을 통해 느낀 점은 무엇인가요?",
+      "question_en": "What did Friend 2 feel through the walking trip?",
+      "correct_answer": "제주를 훨씬 깊이 느낄 수 있었다",
+      "options": ["제주를 훨씬 깊이 느낄 수 있었다", "생각보다 쉬웠다", "다시는 걷고 싶지 않다", "차로 여행하는 게 더 낫다고 느꼈다"],
+      "explanation": "친구2는 '도보여행이라 그런지 제주를 훨씬 깊이 느낄 수 있었다'고 말했습니다."
+    }
+  ]
+}

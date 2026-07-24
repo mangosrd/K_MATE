@@ -4,28 +4,32 @@ import Link from "next/link";
 import Image from "next/image";
 import BottomNav from "@/components/ui/BottomNav";
 import { MOCK_CHARACTERS, MOCK_USER, MOCK_ALL_PROGRESS, canAccessCharacter } from "@/lib/db/mock";
+import { useLanguage } from "@/components/LanguageContext";
 import styles from "./chat-select.module.css";
 
-
-const REGION_NAMES: Record<string, string> = {
-  seoul:        "서울·경기",
-  jeonju:       "전주·전라",
-  busan:        "부산·경남",
-  chungcheong:  "충청·공주",
-  jeju:         "제주",
-};
-
 export default function ChatSelectPage() {
+  const { t } = useLanguage();
   const isPremium = MOCK_USER.membership === "premium";
+
+  const getRouteName = (regionId: string) => {
+    switch (regionId) {
+      case "seoul": return t("seoulRoute");
+      case "jeonju": return t("jeonjuRoute");
+      case "busan": return t("busanRoute");
+      case "chungcheong": return t("chungcheongRoute");
+      case "jeju": return t("jejuRoute");
+      default: return `${regionId} ${t("routeLabel")}`;
+    }
+  };
 
   return (
     <>
       <div className="page-content">
         <header className="page-header">
           <div>
-            <h1 className="page-title">대화하기</h1>
+            <h1 className="page-title">{t("chatTitle")}</h1>
             <p style={{ fontSize: 11, color: "var(--text-muted)", fontWeight: 500 }}>
-              Chat with your captain
+              {t("chatSub")}
             </p>
           </div>
         </header>
@@ -35,8 +39,8 @@ export default function ChatSelectPage() {
           <div className={styles.banner}>
             <span className={styles.bannerIcon}>✈️</span>
             <div>
-              <p className={styles.bannerTitle}>기장님을 선택하세요</p>
-              <p className={styles.bannerSub}>Choose your captain · 각 노선 기장과 대화해보세요</p>
+              <p className={styles.bannerTitle}>{t("selectCaptain")}</p>
+              <p className={styles.bannerSub}>{t("selectCaptainSub")}</p>
             </div>
           </div>
 
@@ -59,8 +63,8 @@ export default function ChatSelectPage() {
                   {/* 기장 배지 */}
                   <div className={styles.captainBadge}>
                     {canAccess
-                      ? <span className="badge badge-blue">✈️ 기장</span>
-                      : <span className="badge badge-gold">⭐ 프리미엄</span>}
+                      ? <span className="badge badge-blue">✈️ {t("captainBadge")}</span>
+                      : <span className="badge badge-gold">⭐ {t("premiumOnly")}</span>}
                   </div>
 
                   {/* 기장 일러스트 */}
@@ -68,7 +72,7 @@ export default function ChatSelectPage() {
                     <div className={`${styles.charIcon} ${!canAccess ? styles.charIconLocked : ""}`}>
                       <Image
                         src={`/characters/${char.id}.png`}
-                        alt={`${char.name} 기장`}
+                        alt={`${char.name} ${t("captainBadge")}`}
                         width={80}
                         height={80}
                         className={styles.charImg}
@@ -81,9 +85,9 @@ export default function ChatSelectPage() {
 
                   {/* 이름 & 노선 */}
                   <div className={styles.charMeta}>
-                    <p className={styles.charName}>{char.name} 기장</p>
+                    <p className={styles.charName}>{char.name} {t("captainBadge")}</p>
                     <p className={styles.charRoute}>
-                      🛫 {REGION_NAMES[char.region_id] ?? char.region_id} 노선
+                      🛫 {getRouteName(char.region_id)}
                     </p>
                   </div>
 
@@ -105,7 +109,7 @@ export default function ChatSelectPage() {
                       className={`btn btn-primary btn-sm ${styles.chatBtn}`}
                       id={`btn-chat-${char.id}`}
                     >
-                      💬 대화 시작
+                      {t("startChat")}
                     </Link>
                   ) : (
                     <button
@@ -114,7 +118,7 @@ export default function ChatSelectPage() {
                       id={`btn-unlock-${char.id}`}
                       style={{ opacity: 0.6, cursor: "not-allowed" }}
                     >
-                      🔒 잠금 (프리미엄)
+                      {t("lockedPremium")}
                     </button>
                   )}
                 </div>
@@ -126,10 +130,10 @@ export default function ChatSelectPage() {
           {!isPremium && (
             <div className={styles.freeNotice}>
               <p className={styles.freeNoticeText}>
-                🆓 무료: <strong>규현·하늘</strong> 기장과 대화 가능
+                🆓 OPEN: <strong>양규현 · 오하늘</strong> {t("captainBadge")}
               </p>
-              <Link href="/premium" className="btn btn-gold btn-sm">
-                ⭐ 프리미엄으로 전체 이용
+              <Link href="/premium" className={styles.freeNoticeLink}>
+                ⭐ {t("premiumOnly")} →
               </Link>
             </div>
           )}

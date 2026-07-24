@@ -1,0 +1,62 @@
+{
+  "id": "ch-h05",
+  "character_id": "haneul",
+  "title": "담양 죽녹원과 대나무 공예",
+  "emoji": "🎋",
+  "story": [
+    {
+      "text": "승객 여러분, 이번엔 초록빛 바람이 부는 담양으로 향합니다. 대나무의 고장이지요.",
+      "reading": "seung-gaek yeo-reo-bun, i-beon-en cho-rok-bit ba-ram-i bu-neun dam-yang-eu-ro hyang-ham-ni-da. dae-na-mu-ui go-jang-i-ji-yo.",
+      "en": "Passengers, this time we're heading to Damyang, where a green breeze blows. It's the land of bamboo."
+    },
+    {
+      "text": "저 아래 곧게 뻗은 초록 나무들, '대나무'예요. 사계절 내내 푸르러서 예로부터 곧은 선비의 마음에 비유되었답니다.",
+      "reading": "jeo a-rae got-ge ppeot-eun cho-rok na-mu-deul, dae-na-mu-ye-yo. sa-gye-jeol nae-nae pu-reo-reo-seo ye-ro-bu-teo got-eun seon-bi-ui ma-eum-e bi-yu-doe-eot-dam-ni-da.",
+      "en": "Those straight green trees below are 'bamboo'. Since it stays green all year round, it has long been compared to the upright heart of a scholar.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "담양에는 '죽녹원'이라는 큰 대나무 정원이 있어요. 울창한 대숲 사이로 여덟 갈래의 산책길이 나 있지요.",
+      "reading": "dam-yang-e-neun juk-nok-won-i-ra-neun keun dae-na-mu jeong-won-i it-seo-yo. ul-chang-han dae-sup sa-i-ro yeo-deol gal-lae-ui san-chaek-gil-i na it-ji-yo.",
+      "en": "In Damyang, there's a large bamboo garden called 'Juknokwon'. Eight walking trails run through the dense bamboo forest.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "'대나무숲' 속을 걸으면 바람에 댓잎이 사각사각 소리를 내요. 맑은 공기와 함께 마음까지 시원해진답니다.",
+      "reading": "dae-na-mu-sup sog-eul geol-eu-myeon ba-ram-e daet-ip-i sa-gag-sa-gag so-ri-reul nae-yo. malg-eun gong-gi-wa ham-kke ma-eum-kka-ji si-won-hae-jin-dam-ni-da.",
+      "en": "Walking through the 'bamboo forest', the leaves rustle softly in the wind. Along with clean air, your mind becomes refreshed too.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "담양은 대나무 공예로도 유명해요. 대나무를 가늘게 쪼개 엮은 '소쿠리'는 지금도 부엌에서 쓰인답니다.",
+      "reading": "dam-yang-eun dae-na-mu gong-ye-ro-do yu-myeong-hae-yo. dae-na-mu-reul ga-neul-ge jjo-gae yeog-eun so-ku-ri-neun ji-geum-do bu-eok-e-seo sseu-i-ndam-ni-da.",
+      "en": "Damyang is also famous for bamboo crafts. The 'sokuri' (bamboo basket), woven from thinly split bamboo, is still used in kitchens today.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "여름밤에는 '죽부인'을 안고 잤어요. 대나무로 엮은 길쭉한 통으로, 시원한 바람이 통하게 해 주는 지혜로운 물건이에요.",
+      "reading": "yeo-reum-bam-e-neun juk-bu-in-eul an-go ja-sseo-yo. dae-na-mu-ro yeog-eun gil-jjuk-han tong-eu-ro, si-won-han ba-ram-i tong-ha-ge hae ju-neun ji-hye-ro-un mul-geon-i-e-yo.",
+      "en": "On summer nights, people slept hugging a 'jukbuin' (bamboo body pillow). It's a wise woven bamboo cylinder that lets cool air flow through.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "자, 초록빛 다섯 단어를 마음에 담으셨나요? 이제 시원하게 문제를 풀어볼까요!",
+      "reading": "ja, cho-rok-bit da-seot dan-eo-reul ma-eum-e dam-eu-syeot-na-yo? i-je si-won-ha-ge mun-je-reul pul-eo-bol-kka-yo!",
+      "en": "Now, have you kept the five green words in your heart? Let's solve some questions and cool off!"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "대나무", "reading": "dae-na-mu", "meaning": "Bamboo", "example": "대나무는 곧고 푸르게 자라요.", "example_reading": "dae-na-mu-neun got-go pu-reu-ge ja-ra-yo", "example_en": "Bamboo grows straight and green." },
+    { "id": "w02", "word": "죽녹원", "reading": "juk-nok-won", "meaning": "Juknokwon (Bamboo Garden)", "example": "죽녹원은 담양의 대나무 정원이에요.", "example_reading": "juk-nok-won-eun dam-yang-ui dae-na-mu jeong-won-i-e-yo", "example_en": "Juknokwon is Damyang's bamboo garden." },
+    { "id": "w03", "word": "대나무숲", "reading": "dae-na-mu-sup", "meaning": "Bamboo Forest", "example": "대나무숲을 걸으면 마음이 시원해져요.", "example_reading": "dae-na-mu-sup-eul geol-eu-myeon ma-eum-i si-won-hae-jyeo-yo", "example_en": "Your mind refreshes when you walk through a bamboo forest." },
+    { "id": "w04", "word": "죽부인", "reading": "juk-bu-in", "meaning": "Bamboo Body Pillow", "example": "여름밤에는 죽부인을 안고 자요.", "example_reading": "yeo-reum-bam-e-neun juk-bu-in-eul an-go ja-yo", "example_en": "On summer nights, people sleep hugging a jukbuin." },
+    { "id": "w05", "word": "소쿠리", "reading": "so-ku-ri", "meaning": "Bamboo Basket", "example": "소쿠리에 과일을 담아요.", "example_reading": "so-ku-ri-e gwa-il-eul dam-a-yo", "example_en": "You put fruit in the bamboo basket." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "대나무는 사계절 내내 푸르러요.", "reading": "dae-na-mu-neun sa-gye-jeol nae-nae pu-reu-reo-yo", "en": "Bamboo stays green all year round." },
+    { "id": "s02", "ko": "죽녹원에는 여덟 개의 산책길이 있어요.", "reading": "juk-nok-won-e-neun yeo-deol gae-ui san-chaek-gil-i it-seo-yo", "en": "Juknokwon has eight walking trails." },
+    { "id": "s03", "ko": "대나무숲에서 맑은 공기를 마셔요.", "reading": "dae-na-mu-sup-e-seo malg-eun gong-gi-reul ma-syeo-yo", "en": "You breathe clean air in the bamboo forest." },
+    { "id": "s04", "ko": "죽부인은 대나무로 엮어 만들어요.", "reading": "juk-bu-in-eun dae-na-mu-ro yeog-eo man-deul-eo-yo", "en": "The bamboo body pillow is woven from bamboo." },
+    { "id": "s05", "ko": "소쿠리는 바구니처럼 물건을 담아요.", "reading": "so-ku-ri-neun ba-gu-ni-cheo-reom mul-geon-eul dam-a-yo", "en": "A bamboo basket holds things like a basket." }
+  ]
+}

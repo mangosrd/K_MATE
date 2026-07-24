@@ -1,0 +1,93 @@
+{
+  "id": "ch-g06",
+  "character_id": "sangwoo",
+  "title": "부여 정림사지 5층석탑",
+  "emoji": "🏺",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "승객 여러분, 이제 백제의 마지막 수도였던 부여 상공입니다. 천사백 년을 버텨온 석탑 하나를 소개해 드리려 합니다.",
+      "reading": "seung-gaek yeo-reo-bun, i-je baek-je-ui ma-ji-mak su-do-yeot-deon bu-yeo sang-gong-im-ni-da.",
+      "en": "Passengers, we're now over Buyeo, Baekje's last capital. I'd like to introduce a stone pagoda that has endured for 1,400 years."
+    },
+    {
+      "text": "저 절터가 '정림사지'입니다. 백제 사비 시대를 대표하는 사찰 자리였지요.",
+      "reading": "jeo jeol-teo-ga jeong-nim-sa-ji-im-ni-da.",
+      "en": "That temple site is 'Jeongnimsaji'. It was the site of a temple representing Baekje's Sabi period.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "그 한가운데 서 있는 '석탑'을 보십시오. 백제 석탑 중 온전히 남은 단 두 기 가운데 하나입니다.",
+      "reading": "geu han-ga-un-de seo it-neun seok-tab-eul bo-sip-si-o.",
+      "en": "Look at the 'stone pagoda' standing right in the center. It's one of only two Baekje stone pagodas to survive intact.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "본래 백제는 나무로 '목탑'을 짓던 나라였습니다. 이 석탑에는 그 목탑의 짜임새가 고스란히 새겨져 있지요.",
+      "reading": "bol-lae baek-je-neun na-mu-ro mok-tab-eul jit-deon na-ra-yeot-seum-ni-da.",
+      "en": "Baekje was originally a country that built wooden pagodas. This stone pagoda faithfully carries over the structure of those wooden pagodas.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "이곳이 바로 '사비'입니다. 백제가 마지막 순간까지 지키려 했던 도읍이었지요.",
+      "reading": "i-gos-i ba-ro sa-bi-im-ni-da.",
+      "en": "This is precisely 'Sabi'. It was the capital Baekje tried to protect until its very last moment.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "무엇보다 이 탑은 '비례미'가 뛰어납니다. 날렵하면서도 안정감 있는 균형이 감탄을 자아내지요.",
+      "reading": "mu-eot-bo-da i tab-eun bi-rye-mi-ga ttwi-eo-nam-ni-da.",
+      "en": "Above all, this pagoda excels in 'beauty of proportion'. Its balance — slender yet stable — is truly admirable.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "단어는 다 익히셨습니까? 이번에는 절터 앞에서 오간 실제 대화를 읽고, 무슨 이야기인지 헤아려 보시기 바랍니다.",
+      "reading": "dan-eo-neun da ig-hi-syeot-seum-ni-kka?",
+      "en": "Have you learned all the words? This time, please read a real conversation held in front of the temple site and work out what it's about."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "정림사지", "reading": "jeong-nim-sa-ji", "meaning": "Jeongnimsaji (temple site)", "example": "정림사지는 백제 사비 시대의 대표적인 절터입니다.", "example_reading": "jeong-nim-sa-ji-neun baek-je sa-bi si-dae-ui dae-pyo-jeog-in jeol-teo-im-ni-da", "example_en": "Jeongnimsaji is a representative temple site from Baekje's Sabi period." },
+    { "id": "w02", "word": "석탑", "reading": "seok-tap", "meaning": "Stone pagoda", "example": "석탑은 목탑 양식을 그대로 돌로 옮긴 백제만의 독창적 건축입니다.", "example_reading": "seok-tab-eun mok-tap yang-sig-eul geu-dae-ro dol-lo om-gin baek-je-man-ui dok-chang-jeok geon-chug-im-ni-da", "example_en": "The stone pagoda is Baekje's unique architecture, carrying the wooden pagoda style directly into stone." },
+    { "id": "w03", "word": "목탑", "reading": "mok-tap", "meaning": "Wooden pagoda", "example": "목탑에서 석탑으로 넘어가는 과도기적 특징이 잘 남아 있습니다.", "example_reading": "mok-tab-e-seo seok-tab-eu-ro neom-eo-ga-neun gwa-do-gi-jeok teuk-jing-i jal nam-a it-seum-ni-da", "example_en": "The transitional features from wooden to stone pagodas are well preserved." },
+    { "id": "w04", "word": "사비", "reading": "sa-bi", "meaning": "Sabi (Baekje's last capital, present-day Buyeo)", "example": "사비는 백제가 마지막까지 도읍으로 삼았던 곳입니다.", "example_reading": "sa-bi-neun baek-je-ga ma-ji-mak-kka-ji do-eub-eu-ro sam-at-deon gos-im-ni-da", "example_en": "Sabi was the place Baekje kept as its capital until the very end." },
+    { "id": "w05", "word": "비례미", "reading": "bi-rye-mi", "meaning": "Beauty of proportion", "example": "비례미가 뛰어나 후대 석탑 양식에 큰 영향을 주었습니다.", "example_reading": "bi-rye-mi-ga ttwi-eo-na hu-dae seok-tap yang-sig-e keun yeong-hyang-eul ju-eot-seum-ni-da", "example_en": "Its outstanding beauty of proportion greatly influenced later stone pagoda styles." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "정림사지는 백제 사비 시대의 대표적인 절터입니다.", "reading": "jeong-nim-sa-ji-neun baek-je sa-bi si-dae-ui dae-pyo-jeog-in jeol-teo-im-ni-da", "en": "Jeongnimsaji is a representative temple site from Baekje's Sabi period." },
+    { "id": "s02", "ko": "석탑은 목탑 양식을 그대로 돌로 옮긴 백제만의 독창적 건축입니다.", "reading": "seok-tab-eun mok-tap yang-sig-eul geu-dae-ro dol-lo om-gin baek-je-man-ui dok-chang-jeok geon-chug-im-ni-da", "en": "The stone pagoda is Baekje's unique architecture, carrying the wooden pagoda style directly into stone." },
+    { "id": "s03", "ko": "목탑에서 석탑으로 넘어가는 과도기적 특징이 잘 남아 있습니다.", "reading": "mok-tab-e-seo seok-tab-eu-ro neom-eo-ga-neun gwa-do-gi-jeok teuk-jing-i jal nam-a it-seum-ni-da", "en": "The transitional features from wooden to stone pagodas are well preserved." },
+    { "id": "s04", "ko": "사비는 백제가 마지막까지 도읍으로 삼았던 곳입니다.", "reading": "sa-bi-neun baek-je-ga ma-ji-mak-kka-ji do-eub-eu-ro sam-at-deon gos-im-ni-da", "en": "Sabi was the place Baekje kept as its capital until the very end." },
+    { "id": "s05", "ko": "비례미가 뛰어나 후대 석탑 양식에 큰 영향을 주었습니다.", "reading": "bi-rye-mi-ga ttwi-eo-na hu-dae seok-tap yang-sig-e keun yeong-hyang-eul ju-eot-seum-ni-da", "en": "Its outstanding beauty of proportion greatly influenced later stone pagoda styles." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "학생", "text": "선생님, 이 탑에 글자가 새겨져 있는데 무슨 내용이에요?", "reading": "seon-saeng-nim, i tab-e geul-ja-ga sae-gyeo-jyeo it-neun-de mu-seun nae-yong-i-e-yo?", "en": "Teacher, there are characters carved into this pagoda — what do they say?" },
+        { "speaker": "선생님", "text": "당나라 장수 소정방이 백제를 정벌한 걸 기념하며 새긴 글이란다. 그래서 한때 '평제탑'이라 불리기도 했지.", "reading": "dang-na-ra jang-su so-jeong-bang-i baek-je-reul jeong-beol-han geol gi-nyeom-ha-myeo sae-gin geul-i-ran-da.", "en": "It's an inscription carved by the Tang general Su Dingfang to commemorate his conquest of Baekje. That's why it was once also called the 'Pyeongje Pagoda'." },
+        { "speaker": "학생", "text": "탑은 백제 것인데 새겨진 글은 백제를 무너뜨린 나라의 것이라니 이상하네요.", "reading": "tab-eun baek-je geos-in-de sae-gyeo-jin geul-eun baek-je-reul mu-neo-tteu-rin na-ra-ui geos-i-ra-ni i-sang-ha-ne-yo.", "en": "It's strange that the pagoda itself is Baekje's, but the inscription belongs to the country that toppled Baekje." },
+        { "speaker": "선생님", "text": "그렇지, 그래서 이 탑은 백제의 아름다움과 아픈 역사를 동시에 품고 있는 셈이야.", "reading": "geu-reo-chi, geu-rae-seo i tab-eun baek-je-ui a-reum-da-um-gwa a-peun yeok-sa-reul dong-si-e pum-go in-neun sem-i-ya.", "en": "That's right — so this pagoda holds both Baekje's beauty and its painful history at the same time." }
+      ],
+      "question": "탑에 새겨진 글자는 무엇을 기념하기 위한 것인가요?",
+      "question_en": "What was the inscription carved on the pagoda made to commemorate?",
+      "correct_answer": "당나라 장수 소정방의 백제 정벌",
+      "options": ["당나라 장수 소정방의 백제 정벌", "탑을 세운 백제 왕의 즉위", "정림사지를 세운 승려의 업적", "백제와 신라의 화친"],
+      "explanation": "선생님은 탑에 새겨진 글자가 당나라 장수 소정방이 백제를 정벌한 것을 기념하기 위해 새긴 것이라고 설명합니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "관광객", "text": "이 탑, 다른 절의 탑들이랑 느낌이 좀 다른 것 같아요.", "reading": "i tap, da-reun jeol-ui tab-deul-i-rang neu-kkim-i jom da-reun geot gat-a-yo.", "en": "This pagoda feels a bit different from other temples' pagodas." },
+        { "speaker": "문화해설사", "text": "맞아요, 나무로 짓던 목탑의 짜임을 그대로 돌로 옮겨서 그래요. 그래서 훨씬 날렵해 보이죠.", "reading": "mat-a-yo, na-mu-ro jit-deon mok-tab-ui jja-im-eul geu-dae-ro dol-lo om-gyeo-seo geu-rae-yo.", "en": "That's right — it's because the structure of a wooden pagoda was carried directly into stone. That's why it looks so much more slender." },
+        { "speaker": "관광객", "text": "그럼 이 탑이 후대에도 영향을 줬나요?", "reading": "geu-reom i tab-i hu-dae-e-do yeong-hyang-eul jwot-na-yo?", "en": "So did this pagoda influence later periods too?" },
+        { "speaker": "문화해설사", "text": "그럼요, 비례미가 워낙 뛰어나서 통일신라 이후 석탑 양식에도 큰 영향을 주었습니다.", "reading": "geu-reom-yo, bi-rye-mi-ga wo-nak ttwi-eo-na-seo tong-il-sil-la i-hu seok-tap yang-sig-e-do keun yeong-hyang-eul ju-eot-seum-ni-da.", "en": "Of course — its proportions were so outstanding that it greatly influenced stone pagoda styles even after Unified Silla." }
+      ],
+      "question": "문화해설사가 설명한, 이 탑이 다르게 느껴지는 이유는 무엇인가요?",
+      "question_en": "According to the guide, why does this pagoda feel different?",
+      "correct_answer": "목탑의 짜임새를 그대로 돌로 옮겨 지었기 때문",
+      "options": ["목탑의 짜임새를 그대로 돌로 옮겨 지었기 때문", "다른 탑보다 훨씬 크게 지어졌기 때문", "색을 화려하게 칠했기 때문", "최근에 새로 복원되었기 때문"],
+      "explanation": "문화해설사는 이 석탑이 나무로 짓던 목탑의 짜임새를 그대로 돌로 옮겨 지었기 때문에 더 날렵해 보인다고 설명합니다."
+    }
+  ]
+}

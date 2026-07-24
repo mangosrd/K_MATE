@@ -1,0 +1,62 @@
+{
+  "id": "ch-h04",
+  "character_id": "haneul",
+  "title": "판소리와 한국의 소리",
+  "emoji": "🎶",
+  "story": [
+    {
+      "text": "승객 여러분, 이번엔 귀로 즐기는 우리 소리 여행이에요. 전라도는 판소리의 고향이랍니다.",
+      "reading": "seung-gaek yeo-reo-bun, i-beon-en gwi-ro jeul-gi-neun u-ri so-ri yeo-haeng-i-e-yo. jeol-la-do-neun pan-so-ri-ui go-hyang-i-ram-ni-da.",
+      "en": "Passengers, this time it's a journey of our sound to enjoy with your ears. Jeolla-do is the home of pansori."
+    },
+    {
+      "text": "'판소리'는 한 사람이 소리와 이야기, 몸짓으로 긴 이야기를 풀어내는 우리 전통 공연이에요.",
+      "reading": "pan-so-ri-neun han sa-ram-i so-ri-wa i-ya-gi, mom-jis-eu-ro gin i-ya-gi-reul pul-eo-nae-neun u-ri jeon-tong gong-yeon-i-e-yo.",
+      "en": "'Pansori' is our traditional performance where one person unfolds a long story through voice, narration, and gesture.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "그 이야기를 들려주는 사람을 '소리꾼'이라고 해요. 춘향가, 흥보가 같은 이야기를 목청껏 노래한답니다.",
+      "reading": "geu i-ya-gi-reul deul-lyeo-ju-neun sa-ram-eul so-ri-kkun-i-ra-go hae-yo. chun-hyang-ga, heung-bo-ga gat-eun i-ya-gi-reul mok-cheong-kkeot no-rae-han-dam-ni-da.",
+      "en": "The person who tells that story is called a 'sorikkun' (singer). They sing stories like Chunhyangga and Heungboga at the top of their voice.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "소리꾼 옆에는 '고수'가 앉아요. 북을 치며 소리꾼과 숨결을 맞추는 든든한 짝꿍이지요.",
+      "reading": "so-ri-kkun yeop-e-neun go-su-ga anj-a-yo. bug-eul chi-myeo so-ri-kkun-gwa sum-gyeol-eul mat-chu-neun deun-deun-han jjak-kkung-i-ji-yo.",
+      "en": "A 'gosu' (drummer) sits next to the singer. They're a reliable partner who beats the drum in rhythm with the singer's breath.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "고수가 치는 악기가 바로 '북'이에요. 북 장단에 맞춰 소리꾼의 노래가 힘을 얻는답니다.",
+      "reading": "go-su-ga chi-neun ak-gi-ga ba-ro bug-i-e-yo. buk jang-dan-e mat-chwo so-ri-kkun-ui no-rae-ga him-eul eod-neun-dam-ni-da.",
+      "en": "The instrument the drummer plays is the 'buk' (drum). Matched to the drumbeat, the singer's song gains power.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "관객들도 가만히 있지 않아요. '얼쑤', '좋다' 같은 '추임새'로 흥을 함께 나누지요.",
+      "reading": "gwan-gaek-deul-do ga-man-hi it-ji an-a-yo. eol-ssu, joh-da gat-eun chu-im-sae-ro heung-eul ham-kke na-nu-ji-yo.",
+      "en": "The audience doesn't just sit still either. They share the excitement with 'chuimsae' (encouraging shouts) like 'eolssu' and 'jota'.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "자, 우리 소리의 매력을 다섯 단어로 느껴 보셨나요? 이제 문제를 풀며 귀와 마음을 열어봐요!",
+      "reading": "ja, u-ri so-ri-ui mae-ryeog-eul da-seot dan-eo-ro neu-kkyeo bo-syeot-na-yo? i-je mun-je-reul pul-myeo gwi-wa ma-eum-eul yeol-eo-bwa-yo!",
+      "en": "Now, did you feel the charm of our sound through five words? Let's open our ears and hearts by solving some questions!"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "판소리", "reading": "pan-so-ri", "meaning": "Pansori (Korean Narrative Singing)", "example": "판소리는 소리와 이야기가 함께 있어요.", "example_reading": "pan-so-ri-neun so-ri-wa i-ya-gi-ga ham-kke it-seo-yo", "example_en": "Pansori combines voice and storytelling together." },
+    { "id": "w02", "word": "소리꾼", "reading": "so-ri-kkun", "meaning": "Pansori Singer", "example": "소리꾼이 이야기를 노래로 들려줘요.", "example_reading": "so-ri-kkun-i i-ya-gi-reul no-rae-ro deul-lyeo-jwo-yo", "example_en": "The singer tells the story through song." },
+    { "id": "w03", "word": "북", "reading": "buk", "meaning": "Drum", "example": "북 소리에 맞춰 노래해요.", "example_reading": "buk so-ri-e maj-chwo no-rae-hae-yo", "example_en": "You sing along to the beat of the drum." },
+    { "id": "w04", "word": "고수", "reading": "go-su", "meaning": "Drummer (Accompanist)", "example": "고수는 북을 치며 흥을 돋워요.", "example_reading": "go-su-neun bug-eul chi-myeo heung-eul dod-wo-yo", "example_en": "The drummer plays the drum to lift the mood." },
+    { "id": "w05", "word": "추임새", "reading": "chu-im-sae", "meaning": "Supportive Shout (Encouragement)", "example": "추임새로 흥을 더해요.", "example_reading": "chu-im-sae-ro heung-eul deo-hae-yo", "example_en": "Supportive shouts add to the excitement." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "판소리는 유네스코 무형유산이에요.", "reading": "pan-so-ri-neun yu-ne-seu-ko mu-hyeong-yu-san-i-e-yo", "en": "Pansori is a UNESCO Intangible Cultural Heritage." },
+    { "id": "s02", "ko": "소리꾼은 목청껏 노래를 불러요.", "reading": "so-ri-kkun-eun mok-cheong-kkeot no-rae-reul bul-leo-yo", "en": "The singer sings with all their voice." },
+    { "id": "s03", "ko": "북은 소리꾼과 호흡을 맞춰요.", "reading": "bug-eun so-ri-kkun-gwa ho-heub-eul mat-chwo-yo", "en": "The drum matches its breath with the singer." },
+    { "id": "s04", "ko": "고수는 소리꾼 옆에 앉아요.", "reading": "go-su-neun so-ri-kkun yeop-e anj-a-yo", "en": "The drummer sits next to the singer." },
+    { "id": "s05", "ko": "추임새가 흥겨운 분위기를 만들어요.", "reading": "chu-im-sae-ga heung-gyeo-un bun-wi-gi-reul man-deul-eo-yo", "en": "The supportive shouts create an exciting mood." }
+  ]
+}

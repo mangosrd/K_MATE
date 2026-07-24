@@ -1,0 +1,62 @@
+{
+  "id": "ch-h09",
+  "character_id": "haneul",
+  "title": "전통 탈춤과 마당놀이",
+  "emoji": "🎭",
+  "story": [
+    {
+      "text": "승객 여러분, 이번엔 웃음과 신명이 가득한 마당으로 안내해 드릴게요. 우리 조상들의 해학을 만나보세요.",
+      "reading": "seung-gaek yeo-reo-bun, i-beon-en us-eum-gwa sin-myeong-i ga-deuk-han ma-dang-eu-ro an-nae-hae deu-ril-ge-yo. u-ri jo-sang-deul-ui hae-hag-eul man-na-bo-se-yo.",
+      "en": "Passengers, this time let me guide you to a yard full of laughter and excitement. Come meet the wit of our ancestors."
+    },
+    {
+      "text": "옛사람들은 나무나 바가지로 얼굴 가면, '탈'을 만들었어요. 탈을 쓰면 신분과 상관없이 누구든 마음껏 말할 수 있었지요.",
+      "reading": "yet-sa-ram-deul-eun na-mu-na ba-ga-ji-ro eol-gul ga-myeon, tal-eul man-deul-eo-sseo-yo. tal-eul sseu-myeon sin-bun-gwa sang-gwan-eob-si nu-gu-deun ma-eum-kkeot mal-hal su it-seot-ji-yo.",
+      "en": "People long ago made face masks, called 'tal', from wood or gourds. Wearing a mask, anyone could speak freely regardless of social status.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "이 탈을 쓰고 추는 춤이 바로 '탈춤'이에요. 노래와 춤, 재치 있는 이야기가 어우러진 우리 전통 공연이랍니다.",
+      "reading": "i tal-eul sseu-go chu-neun chum-i ba-ro tal-chum-i-e-yo. no-rae-wa chum, jae-chi it-neun i-ya-gi-ga eo-u-reo-jin u-ri jeon-tong gong-yeon-i-ram-ni-da.",
+      "en": "The dance performed while wearing this mask is 'talchum' (mask dance). It's our traditional performance combining song, dance, and witty storytelling.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "탈춤에서 자주 놀림받는 인물이 바로 '양반'이에요. 백성들은 탈춤을 통해 신분 높은 양반을 재치 있게 풍자했답니다.",
+      "reading": "tal-chum-e-seo ja-ju nol-lim-bad-neun in-mul-i ba-ro yang-ban-i-e-yo. baek-seong-deul-eun tal-chum-eul tong-hae sin-bun nop-eun yang-ban-eul jae-chi it-ge pung-ja-haet-dam-ni-da.",
+      "en": "A character often mocked in mask dance is the 'yangban' (noble). Through mask dance, commoners wittily satirized the high-status yangban.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "신나는 춤에는 흥겨운 '장단'이 빠질 수 없어요. 장구와 꽹과리 소리에 맞춰 어깨가 절로 들썩인답니다.",
+      "reading": "sin-na-neun chum-e-neun heung-gyeo-un jang-dan-i ppa-jil su eob-seo-yo. jang-gu-wa kkwaeng-gwa-ri so-ri-e maj-chwo eo-kkae-ga jeol-lo deul-sseog-in-dam-ni-da.",
+      "en": "A lively 'rhythm' can't be missing from an exciting dance. Following the sound of the janggu and kkwaenggwari, shoulders naturally start to move.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "이런 놀이는 마을 '마당놀이'로 이어졌어요. 신분에 상관없이 온 마을 사람들이 함께 어울려 즐기는 축제였지요.",
+      "reading": "i-reon nol-i-neun ma-eul ma-dang-nol-i-ro i-eo-jyeo-sseo-yo. sin-bun-e sang-gwan-eob-si on ma-eul sa-ram-deul-i ham-kke eo-ul-lyeo jeul-gi-neun chuk-je-yeot-ji-yo.",
+      "en": "This kind of play carried on into the village's 'madangnori' (outdoor folk play). It was a festival where the whole village enjoyed themselves together, regardless of status.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "자, 웃음과 흥이 넘치는 다섯 단어를 배웠어요. 이제 신명 나게 문제를 풀어볼까요!",
+      "reading": "ja, us-eum-gwa heung-i neom-chi-neun da-seot dan-eo-reul bae-wo-sseo-yo. i-je sin-myeong na-ge mun-je-reul pul-eo-bol-kka-yo!",
+      "en": "Now, you've learned five words overflowing with laughter and excitement. Let's solve some questions with high spirits!"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "탈춤", "reading": "tal-chum", "meaning": "Mask Dance", "example": "탈춤은 탈을 쓰고 추는 춤이에요.", "example_reading": "tal-chum-eun tal-eul sseu-go chu-neun chum-i-e-yo", "example_en": "Mask dance is a dance performed while wearing a mask." },
+    { "id": "w02", "word": "탈", "reading": "tal", "meaning": "Mask", "example": "탈은 나무나 종이로 만들어요.", "example_reading": "tal-eun na-mu-na jong-i-ro man-deul-eo-yo", "example_en": "Masks are made of wood or paper." },
+    { "id": "w03", "word": "마당놀이", "reading": "ma-dang-nol-i", "meaning": "Madangnori (Outdoor Folk Play)", "example": "마당놀이는 마당에서 하는 공연이에요.", "example_reading": "ma-dang-nol-i-neun ma-dang-e-seo ha-neun gong-yeon-i-e-yo", "example_en": "Madangnori is a performance held in a yard." },
+    { "id": "w04", "word": "양반", "reading": "yang-ban", "meaning": "Yangban (Noble Class)", "example": "탈춤에서는 양반을 놀리기도 해요.", "example_reading": "tal-chum-e-seo-neun yang-ban-eul nol-li-gi-do hae-yo", "example_en": "In mask dance, the yangban is sometimes mocked." },
+    { "id": "w05", "word": "장단", "reading": "jang-dan", "meaning": "Rhythm/Beat", "example": "장단에 맞춰 춤을 춰요.", "example_reading": "jang-dan-e maj-chwo chum-eul chwo-yo", "example_en": "You dance in time with the rhythm." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "탈춤은 조상들의 재치가 담겨 있어요.", "reading": "tal-chum-eun jo-sang-deul-ui jae-chi-ga dam-gyeo it-seo-yo", "en": "Mask dance holds the wit of our ancestors." },
+    { "id": "s02", "ko": "탈을 쓰면 다른 사람이 된 듯해요.", "reading": "tal-eul sseu-myeon da-reun sa-ram-i doen deut-hae-yo", "en": "Wearing a mask feels like becoming someone else." },
+    { "id": "s03", "ko": "마당놀이는 누구나 함께 즐겼어요.", "reading": "ma-dang-nol-i-neun nu-gu-na ham-kke jeul-gyeo-sseo-yo", "en": "Everyone enjoyed madangnori together." },
+    { "id": "s04", "ko": "양반은 탈춤 속 웃음거리가 돼요.", "reading": "yang-ban-eun tal-chum sok us-eum-geo-ri-ga dwae-yo", "en": "The yangban becomes a laughingstock in mask dance." },
+    { "id": "s05", "ko": "장단이 빨라지면 춤도 흥겨워져요.", "reading": "jang-dan-i ppal-la-ji-myeon chum-do heung-gyeo-wo-jyeo-yo", "en": "As the rhythm speeds up, the dance gets more lively." }
+  ]
+}

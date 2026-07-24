@@ -1,0 +1,93 @@
+{
+  "id": "ch-j10",
+  "character_id": "yongwoo",
+  "title": "제주 방언 탐구 '혼저옵서예'",
+  "emoji": "🌌",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "승객 여러분, 우리의 제주 여정도 어느덧 마지막입니다. 오늘은 이 섬의 언어, 제주 방언 속으로 들어가 보겠습니다.",
+      "reading": "seung-gaek yeo-reo-bun, u-ri-ui je-ju yeo-jeong-do eo-neu-deot ma-ji-mag-im-ni-da.",
+      "en": "Passengers, our Jeju journey has finally reached its end. Today, let's step into the language of this island — the Jeju dialect."
+    },
+    {
+      "text": "제주에 도착하면 가장 먼저 듣게 되는 말이 '혼저옵서예'입니다. '어서 오세요'라는 뜻으로, 섬 전체의 환대가 담긴 인사말이지요.",
+      "reading": "je-ju-e do-chak-ha-myeon ga-jang meon-jeo deut-ge doe-neun mal-i hon-jeo-op-seo-ye-im-ni-da.",
+      "en": "The first words you hear upon arriving in Jeju are 'honjeoopseoye'. Meaning 'welcome, please come in', it's a greeting carrying the whole island's hospitality.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "아버지를 부르는 말은 '아방'입니다. 표준어보다 훨씬 정겹고 소박하게 들리지 않습니까.",
+      "reading": "a-beo-ji-reul bu-reu-neun mal-eun a-bang-im-ni-da.",
+      "en": "The word for father is 'abang'. Doesn't it sound much warmer and simpler than the standard word?",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "어머니는 '어멍'이라 부릅니다. 제주 사람들에게 이보다 더 따뜻한 단어는 없을 겁니다.",
+      "reading": "eo-meo-ni-neun eo-meong-i-ra bu-reum-ni-da.",
+      "en": "Mother is called 'eomeong'. For Jeju people, there may be no warmer word than this.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "마을 어귀에는 커다란 '폭낭'이 서 있곤 했습니다. 그 그늘 아래서 사람들이 모여 이야기를 나누었지요.",
+      "reading": "ma-eul eo-gwi-e-neun keo-da-ran pok-nang-i seo it-gon haess-seum-ni-da.",
+      "en": "A big 'poknang' tree used to stand at the village entrance. Beneath its shade, people gathered and talked.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "상대를 다정하게 부를 때는 '이녁'이라는 말을 씁니다. '당신'보다 훨씬 살가운 느낌이지요.",
+      "reading": "sang-dae-reul da-jeong-ha-ge bu-reul ttae-neun i-nyeog-i-ra-neun mal-eul sseum-ni-da.",
+      "en": "When addressing someone affectionately, they use the word 'inyeok'. It feels much warmer than the standard word for 'you'.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "제주의 말, 마음 깊이 와닿으셨습니까? 이제 이 방언으로 나눈 실제 대화를 읽고 상황을 헤아려 보는 것으로 우리의 여정을 마무리하겠습니다.",
+      "reading": "je-ju-ui mal, ma-eum gip-i wa-da-eu-syeot-seum-ni-kka?",
+      "en": "Did the language of Jeju touch your heart deeply? Let's finish our journey by reading real conversations in this dialect and figuring out the situations."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "혼저옵서예", "reading": "hon-jeo-op-seo-ye", "meaning": "Welcome / please come in (Jeju dialect for 어서 오세요)", "example": "혼저옵서예는 제주에서 가장 많이 쓰이는 환영 인사입니다.", "example_reading": "hon-jeo-op-seo-ye-neun je-ju-e-seo ga-jang man-i sseu-i-neun hwan-yeong in-sa-im-ni-da", "example_en": "Honjeoopseoye is the most commonly used welcome greeting in Jeju." },
+    { "id": "w02", "word": "아방", "reading": "a-bang", "meaning": "Father (Jeju dialect for 아버지)", "example": "아방이라는 말에는 정겨움이 가득 담겨 있습니다.", "example_reading": "a-bang-i-ra-neun mal-e-neun jeong-gyeo-um-i ga-deuk dam-gyeo it-seum-ni-da", "example_en": "The word 'abang' is full of warmth and affection." },
+    { "id": "w03", "word": "어멍", "reading": "eo-meong", "meaning": "Mother (Jeju dialect for 어머니)", "example": "어멍은 제주 사람들에게 가장 따뜻한 단어입니다.", "example_reading": "eo-meong-eun je-ju sa-ram-deul-e-ge ga-jang tta-tteus-han dan-eo-im-ni-da", "example_en": "Eomeong is the warmest word for Jeju people." },
+    { "id": "w04", "word": "폭낭", "reading": "pok-nang", "meaning": "Big banyan/nettle tree, village gathering tree (Jeju dialect)", "example": "폭낭 아래는 마을 사람들이 모이는 쉼터였습니다.", "example_reading": "pok-nang a-rae-neun ma-eul sa-ram-deul-i mo-i-neun swim-teo-yeoss-seum-ni-da", "example_en": "Under the poknang tree was a resting spot where villagers gathered." },
+    { "id": "w05", "word": "이녁", "reading": "i-nyeok", "meaning": "You (Jeju dialect, affectionate second-person)", "example": "이녁이라는 말은 상대를 부르는 다정한 표현입니다.", "example_reading": "i-nyeog-i-ra-neun mal-eun sang-dae-reul bu-reu-neun da-jeong-han pyo-hyeon-im-ni-da", "example_en": "Inyeok is an affectionate way of addressing someone." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "혼저옵서예는 제주에서 가장 많이 쓰이는 환영 인사입니다.", "reading": "hon-jeo-op-seo-ye-neun je-ju-e-seo ga-jang man-i sseu-i-neun hwan-yeong in-sa-im-ni-da", "en": "Honjeoopseoye is the most commonly used welcome greeting in Jeju." },
+    { "id": "s02", "ko": "아방이라는 말에는 정겨움이 가득 담겨 있습니다.", "reading": "a-bang-i-ra-neun mal-e-neun jeong-gyeo-um-i ga-deuk dam-gyeo it-seum-ni-da", "en": "The word 'abang' is full of warmth and affection." },
+    { "id": "s03", "ko": "어멍은 제주 사람들에게 가장 따뜻한 단어입니다.", "reading": "eo-meong-eun je-ju sa-ram-deul-e-ge ga-jang tta-tteus-han dan-eo-im-ni-da", "en": "Eomeong is the warmest word for Jeju people." },
+    { "id": "s04", "ko": "폭낭 아래는 마을 사람들이 모이는 쉼터였습니다.", "reading": "pok-nang a-rae-neun ma-eul sa-ram-deul-i mo-i-neun swim-teo-yeoss-seum-ni-da", "en": "Under the poknang tree was a resting spot where villagers gathered." },
+    { "id": "s05", "ko": "이녁이라는 말은 상대를 부르는 다정한 표현입니다.", "reading": "i-nyeog-i-ra-neun mal-eun sang-dae-reul bu-reu-neun da-jeong-han pyo-hyeon-im-ni-da", "en": "Inyeok is an affectionate way of addressing someone." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "손님", "text": "할머니, 저 왔어요!", "reading": "hal-meo-ni, jeo wass-eo-yo!", "en": "Grandma, I'm here!" },
+        { "speaker": "할머니", "text": "혼저옵서예! 먼 길 오느라 고생했주?", "reading": "hon-jeo-op-seo-ye! meon gil o-neu-ra go-saeng-haet-ju?", "en": "Welcome! You must be tired from coming such a long way?" },
+        { "speaker": "손님", "text": "네, 근데 아방이랑 어멍은 어디 가셨어요?", "reading": "ne, geun-de a-bang-i-rang eo-meong-eun eo-di ga-syeoss-eo-yo?", "en": "Yes, but where did father and mother go?" },
+        { "speaker": "할머니", "text": "밭에 일하러 가셨져. 곧 오실 거우다.", "reading": "bat-e il-ha-reo ga-syeoss-jyeo.", "en": "They went to work in the field. They'll be back soon." }
+      ],
+      "question": "할머니의 말에서 알 수 있는 것은 무엇인가요?",
+      "question_en": "What can be inferred from what the grandmother says?",
+      "correct_answer": "손님을 반갑게 맞이하고 있다",
+      "options": ["손님을 반갑게 맞이하고 있다", "손님을 못마땅해하고 있다", "손님이 늦게 왔다고 화를 내고 있다", "손님을 처음 만나 어색해하고 있다"],
+      "explanation": "할머니는 '혼저옵서예!'라며 반갑게 손님을 맞이하고, 먼 길 오느라 고생했다고 다정하게 말하고 있습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "어르신1", "text": "이녁, 여기 폭낭 그늘에 앉아서 좀 쉬었다 가.", "reading": "i-nyeok, yeo-gi pok-nang geu-neul-e anj-a-seo jom swi-eot-da ga.", "en": "You there, come sit in the shade of this poknang tree and rest a while." },
+        { "speaker": "어르신2", "text": "고마워요. 오늘 날이 참 덥네요.", "reading": "go-ma-wo-yo. o-neul nal-i cham deop-ne-yo.", "en": "Thank you. It's really hot today." },
+        { "speaker": "어르신1", "text": "그러게 말이야. 예전엔 다들 여기 모여서 얘기하고 그랬는디.", "reading": "geu-reo-ge mal-i-ya.", "en": "You're right about that. In the old days, everyone used to gather here and talk." },
+        { "speaker": "어르신2", "text": "요즘은 그런 모습 보기 힘들어졌지요.", "reading": "yo-jeum-eun geu-reon mo-seub bo-gi him-deul-eo-jyeot-ji-yo.", "en": "These days it's become hard to see that kind of scene." }
+      ],
+      "question": "어르신1이 폭낭에 대해 이야기한 것은 무엇인가요?",
+      "question_en": "What did Elder 1 say about the poknang tree?",
+      "correct_answer": "예전엔 마을 사람들이 모여 이야기하던 곳이었다는 것",
+      "options": ["예전엔 마을 사람들이 모여 이야기하던 곳이었다는 것", "폭낭이 최근에 새로 심어졌다는 것", "폭낭 아래는 위험해서 피해야 한다는 것", "폭낭이 곧 베어질 예정이라는 것"],
+      "explanation": "어르신1은 '예전엔 다들 여기 모여서 얘기하고 그랬는디'라며 폭낭이 마을 사람들의 모임 장소였음을 이야기했습니다."
+    }
+  ]
+}

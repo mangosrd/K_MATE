@@ -1,0 +1,93 @@
+{
+  "id": "ch-s01",
+  "character_id": "sunwoo",
+  "title": "해운대와 한국의 바다 문화",
+  "emoji": "🌊",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "승객 여러분, 곧 부산 김해공항에 착륙합니다! 오늘은 해운대와 부산의 바다 문화를 제대로 느껴보실 거예요.",
+      "reading": "seung-gaek yeo-reo-bun, got bu-san gim-hae-gong-hang-e chak-ryuk-ham-ni-da!",
+      "en": "Passengers, we're about to land at Busan's Gimhae Airport! Today you'll really get a feel for Haeundae and Busan's ocean culture."
+    },
+    {
+      "text": "저 아래 펼쳐진 게 '해수욕장'이에요. 여름마다 전국에서 몰려든 사람들로 발 디딜 틈이 없죠.",
+      "reading": "jeo a-rae pyeol-cheo-jin ge hae-su-yok-jang-i-e-yo.",
+      "en": "That's the 'beach' spread out below. Every summer it's packed with people from all over the country.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "해변 끝에 길게 뻗은 '방파제' 보이시죠? 낚시하는 사람도 많고, 산책하기도 그만이에요.",
+      "reading": "hae-byeon kkeut-e gil-ge ppeot-eun bang-pa-je bo-i-si-jyo?",
+      "en": "See the 'breakwater' stretching out at the edge of the beach? Lots of people fish there, and it's great for a walk too.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "밤이 되면 '유람선'을 꼭 타보세요. 광안대교가 보석처럼 반짝이는 걸 바다 위에서 볼 수 있어요.",
+      "reading": "bam-i doe-myeon yu-ram-seon-eul kkok ta-bo-se-yo.",
+      "en": "When night falls, you have to ride an 'excursion boat'. You can see Gwangan Bridge sparkling like a jewel from the water.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "부산은 정말 아름다운 '해안선'을 가진 도시예요. 어디를 봐도 그림 같은 풍경이 펼쳐지죠.",
+      "reading": "bu-san-eun jeong-mal a-reum-da-un hae-an-seon-eul ga-jin do-si-ye-yo.",
+      "en": "Busan is a city with a truly beautiful 'coastline'. Wherever you look, a picture-perfect scene unfolds.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "그리고 여름엔 역시 '물놀이'죠! 시원한 파도 속에서 하루 종일 놀아도 지치지 않아요.",
+      "reading": "geu-ri-go yeo-reum-en yeok-si mul-lo-ri-jyo!",
+      "en": "And of course, summer means 'water play'! You won't get tired of playing in the cool waves all day long.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "단어는 다 익히셨죠? 이번 챕터엔 특별히, 실제 대화 상황을 보고 무슨 일이 벌어지는지 맞혀보는 문제도 준비했어요. 한번 도전해보세요!",
+      "reading": "dan-eo-neun da ig-hi-syeot-jyo?",
+      "en": "Got all the words down? This chapter also has something special — questions where you read a real conversation and figure out what's happening. Give it a try!"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "해수욕장", "reading": "hae-su-yok-jang", "meaning": "Beach (bathing beach)", "example": "해수욕장에 사람들이 가득합니다.", "example_reading": "hae-su-yok-jang-e sa-ram-deul-i ga-deuk-ham-ni-da", "example_en": "The beach is packed with people." },
+    { "id": "w02", "word": "방파제", "reading": "bang-pa-je", "meaning": "Breakwater / pier", "example": "방파제에서 낚시를 하는 사람들이 보입니다.", "example_reading": "bang-pa-je-e-seo nak-si-reul ha-neun sa-ram-deul-i bo-im-ni-da", "example_en": "You can see people fishing at the breakwater." },
+    { "id": "w03", "word": "유람선", "reading": "yu-ram-seon", "meaning": "Excursion boat / cruise ship", "example": "유람선을 타고 바다 위를 둘러봅니다.", "example_reading": "yu-ram-seon-eul ta-go ba-da wi-reul dul-leo-bom-ni-da", "example_en": "We tour the sea aboard an excursion boat." },
+    { "id": "w04", "word": "해안선", "reading": "hae-an-seon", "meaning": "Coastline", "example": "해안선을 따라 드라이브를 즐깁니다.", "example_reading": "hae-an-seon-eul tta-ra deu-ra-i-beu-reul jeul-gim-ni-da", "example_en": "We enjoy a drive along the coastline." },
+    { "id": "w05", "word": "물놀이", "reading": "mul-lo-ri", "meaning": "Water play / swimming", "example": "물놀이를 하기 전에 준비운동을 합니다.", "example_reading": "mul-lo-ri-reul ha-gi jeon-e jun-bi-un-dong-eul ham-ni-da", "example_en": "We warm up before water play." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "해수욕장에 사람들이 가득합니다.", "reading": "hae-su-yok-jang-e sa-ram-deul-i ga-deuk-ham-ni-da", "en": "The beach is packed with people." },
+    { "id": "s02", "ko": "방파제에서 낚시를 하는 사람들이 보입니다.", "reading": "bang-pa-je-e-seo nak-si-reul ha-neun sa-ram-deul-i bo-im-ni-da", "en": "You can see people fishing at the breakwater." },
+    { "id": "s03", "ko": "유람선을 타고 바다 위를 둘러봅니다.", "reading": "yu-ram-seon-eul ta-go ba-da wi-reul dul-leo-bom-ni-da", "en": "We tour the sea aboard an excursion boat." },
+    { "id": "s04", "ko": "해안선을 따라 드라이브를 즐깁니다.", "reading": "hae-an-seon-eul tta-ra deu-ra-i-beu-reul jeul-gim-ni-da", "en": "We enjoy a drive along the coastline." },
+    { "id": "s05", "ko": "물놀이를 하기 전에 준비운동을 합니다.", "reading": "mul-lo-ri-reul ha-gi jeon-e jun-bi-un-dong-eul ham-ni-da", "en": "We warm up before water play." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "관광객", "text": "저기요, 파라솔이랑 돗자리 대여하고 싶은데요.", "reading": "jeo-gi-yo, pa-ra-sol-i-rang dot-ja-ri dae-yeo-ha-go sip-eun-de-yo.", "en": "Excuse me, I'd like to rent a parasol and a mat." },
+        { "speaker": "대여소 직원", "text": "네, 파라솔 하나에 만 원이고 돗자리는 오천 원이에요.", "reading": "ne, pa-ra-sol ha-na-e man won-i-go dot-ja-ri-neun o-cheon won-i-e-yo.", "en": "Sure, the parasol is 10,000 won and the mat is 5,000 won." },
+        { "speaker": "관광객", "text": "그럼 두 개 다 주세요. 몇 시까지 반납하면 되나요?", "reading": "geu-reom du gae da ju-se-yo. myeot si-kka-ji ban-nap-ha-myeon doe-na-yo?", "en": "I'll take both then. What time should I return them by?" },
+        { "speaker": "대여소 직원", "text": "저녁 6시까지 반납해 주시면 됩니다.", "reading": "jeo-nyeok yeo-seot si-kka-ji ban-nap-hae ju-si-myeon doem-ni-da.", "en": "Please return them by 6 PM." }
+      ],
+      "question": "이 대화가 일어나는 장소로 가장 알맞은 곳은 어디인가요?",
+      "question_en": "Where is this conversation most likely taking place?",
+      "correct_answer": "해수욕장의 대여소",
+      "options": ["해수욕장의 대여소", "지하철역 매표소", "식당 계산대", "병원 접수처"],
+      "explanation": "파라솔과 돗자리를 빌리고 반납 시간을 묻는 내용으로 보아, 해수욕장에 있는 대여소에서 나누는 대화입니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "관광객", "text": "저녁에 광안대교 야경을 보고 싶은데, 어디가 제일 좋아요?", "reading": "jeo-nyeog-e gwang-an-dae-gyo ya-gyeong-eul bo-go sip-eun-de, eo-di-ga je-il jo-a-yo?", "en": "I want to see Gwangan Bridge's night view this evening — where's the best spot?" },
+        { "speaker": "현지인", "text": "민락수변공원에서 보는 게 최고예요. 조명도 예쁘고 사람들도 많이 모여요.", "reading": "mil-lag-su-byeon-gong-won-e-seo bo-neun ge choe-go-ye-yo.", "en": "Watching from Millak Waterside Park is the best. The lighting is pretty and lots of people gather there." },
+        { "speaker": "관광객", "text": "거기까지 어떻게 가면 될까요?", "reading": "geo-gi-kka-ji eo-tteo-ke ga-myeon doel-kka-yo?", "en": "How do I get there?" },
+        { "speaker": "현지인", "text": "여기서 버스로 15분 정도 걸려요. 2호선 타고 민락역에서 내리시면 돼요.", "reading": "yeo-gi-seo beo-seu-ro sib-o-bun jeong-do geol-lyeo-yo.", "en": "It's about a 15-minute bus ride from here. Or take Line 2 and get off at Millak Station." }
+      ],
+      "question": "관광객이 궁금해하는 것은 무엇인가요?",
+      "question_en": "What is the tourist curious about?",
+      "correct_answer": "광안대교 야경을 보기 가장 좋은 장소",
+      "options": ["광안대교 야경을 보기 가장 좋은 장소", "부산의 대표 음식점", "지하철 요금", "숙소 위치"],
+      "explanation": "관광객이 '광안대교 야경을 보고 싶은데 어디가 제일 좋냐'고 물었으므로, 궁금해하는 것은 야경 감상 명소입니다."
+    }
+  ]
+}

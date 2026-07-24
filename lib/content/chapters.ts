@@ -1,0 +1,109 @@
+import type { ChapterContent } from "@/types/content";
+import chG01 from "@/content/chapters/ch-g01.json";
+import chG02 from "@/content/chapters/ch-g02.json";
+import chG03 from "@/content/chapters/ch-g03.json";
+import chG04 from "@/content/chapters/ch-g04.json";
+import chG05 from "@/content/chapters/ch-g05.json";
+import chG06 from "@/content/chapters/ch-g06.json";
+import chG07 from "@/content/chapters/ch-g07.json";
+import chG08 from "@/content/chapters/ch-g08.json";
+import chG09 from "@/content/chapters/ch-g09.json";
+import chG10 from "@/content/chapters/ch-g10.json";
+import chH01 from "@/content/chapters/ch-h01.json";
+import chH02 from "@/content/chapters/ch-h02.json";
+import chH03 from "@/content/chapters/ch-h03.json";
+import chH04 from "@/content/chapters/ch-h04.json";
+import chH05 from "@/content/chapters/ch-h05.json";
+import chH06 from "@/content/chapters/ch-h06.json";
+import chH07 from "@/content/chapters/ch-h07.json";
+import chH08 from "@/content/chapters/ch-h08.json";
+import chH09 from "@/content/chapters/ch-h09.json";
+import chH10 from "@/content/chapters/ch-h10.json";
+import chJ01 from "@/content/chapters/ch-j01.json";
+import chJ02 from "@/content/chapters/ch-j02.json";
+import chJ03 from "@/content/chapters/ch-j03.json";
+import chJ04 from "@/content/chapters/ch-j04.json";
+import chJ05 from "@/content/chapters/ch-j05.json";
+import chJ06 from "@/content/chapters/ch-j06.json";
+import chJ07 from "@/content/chapters/ch-j07.json";
+import chJ08 from "@/content/chapters/ch-j08.json";
+import chJ09 from "@/content/chapters/ch-j09.json";
+import chJ10 from "@/content/chapters/ch-j10.json";
+import chK01 from "@/content/chapters/ch-k01.json";
+import chK02 from "@/content/chapters/ch-k02.json";
+import chK03 from "@/content/chapters/ch-k03.json";
+import chK04 from "@/content/chapters/ch-k04.json";
+import chK05 from "@/content/chapters/ch-k05.json";
+import chK06 from "@/content/chapters/ch-k06.json";
+import chK07 from "@/content/chapters/ch-k07.json";
+import chK08 from "@/content/chapters/ch-k08.json";
+import chK09 from "@/content/chapters/ch-k09.json";
+import chK10 from "@/content/chapters/ch-k10.json";
+import chS01 from "@/content/chapters/ch-s01.json";
+import chS02 from "@/content/chapters/ch-s02.json";
+import chS03 from "@/content/chapters/ch-s03.json";
+import chS04 from "@/content/chapters/ch-s04.json";
+import chS05 from "@/content/chapters/ch-s05.json";
+import chS06 from "@/content/chapters/ch-s06.json";
+import chS07 from "@/content/chapters/ch-s07.json";
+import chS08 from "@/content/chapters/ch-s08.json";
+import chS09 from "@/content/chapters/ch-s09.json";
+import chS10 from "@/content/chapters/ch-s10.json";
+
+// Chapter.id("ch-k01" 등, lib/db/mock.ts MOCK_CHAPTERS와 동일한 체계) -> 콘텐츠 본문.
+const CHAPTER_CONTENT: Record<string, ChapterContent> = {
+  "ch-g01": chG01 as ChapterContent,
+  "ch-g02": chG02 as ChapterContent,
+  "ch-g03": chG03 as ChapterContent,
+  "ch-g04": chG04 as ChapterContent,
+  "ch-g05": chG05 as ChapterContent,
+  "ch-g06": chG06 as ChapterContent,
+  "ch-g07": chG07 as ChapterContent,
+  "ch-g08": chG08 as ChapterContent,
+  "ch-g09": chG09 as ChapterContent,
+  "ch-g10": chG10 as ChapterContent,
+  "ch-h01": chH01 as ChapterContent,
+  "ch-h02": chH02 as ChapterContent,
+  "ch-h03": chH03 as ChapterContent,
+  "ch-h04": chH04 as ChapterContent,
+  "ch-h05": chH05 as ChapterContent,
+  "ch-h06": chH06 as ChapterContent,
+  "ch-h07": chH07 as ChapterContent,
+  "ch-h08": chH08 as ChapterContent,
+  "ch-h09": chH09 as ChapterContent,
+  "ch-h10": chH10 as ChapterContent,
+  "ch-j01": chJ01 as ChapterContent,
+  "ch-j02": chJ02 as ChapterContent,
+  "ch-j03": chJ03 as ChapterContent,
+  "ch-j04": chJ04 as ChapterContent,
+  "ch-j05": chJ05 as ChapterContent,
+  "ch-j06": chJ06 as ChapterContent,
+  "ch-j07": chJ07 as ChapterContent,
+  "ch-j08": chJ08 as ChapterContent,
+  "ch-j09": chJ09 as ChapterContent,
+  "ch-j10": chJ10 as ChapterContent,
+  "ch-k01": chK01 as ChapterContent,
+  "ch-k02": chK02 as ChapterContent,
+  "ch-k03": chK03 as ChapterContent,
+  "ch-k04": chK04 as ChapterContent,
+  "ch-k05": chK05 as ChapterContent,
+  "ch-k06": chK06 as ChapterContent,
+  "ch-k07": chK07 as ChapterContent,
+  "ch-k08": chK08 as ChapterContent,
+  "ch-k09": chK09 as ChapterContent,
+  "ch-k10": chK10 as ChapterContent,
+  "ch-s01": chS01 as ChapterContent,
+  "ch-s02": chS02 as ChapterContent,
+  "ch-s03": chS03 as ChapterContent,
+  "ch-s04": chS04 as ChapterContent,
+  "ch-s05": chS05 as ChapterContent,
+  "ch-s06": chS06 as ChapterContent,
+  "ch-s07": chS07 as ChapterContent,
+  "ch-s08": chS08 as ChapterContent,
+  "ch-s09": chS09 as ChapterContent,
+  "ch-s10": chS10 as ChapterContent,
+};
+
+export function getChapterContent(chapterId: string): ChapterContent | null {
+  return CHAPTER_CONTENT[chapterId] ?? null;
+}

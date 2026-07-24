@@ -1,0 +1,93 @@
+{
+  "id": "ch-g04",
+  "character_id": "sangwoo",
+  "title": "충청도 양반 문화와 예의",
+  "emoji": "🍶",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "승객 여러분, 충청도는 예로부터 학문과 예의를 소중히 여긴 양반 고을이었습니다. 오늘은 그 정신을 함께 들여다보겠습니다.",
+      "reading": "seung-gaek yeo-reo-bun, chung-cheong-do-neun ye-ro-bu-teo hak-mun-gwa ye-ui-reul so-jung-hi yeo-gin yang-ban go-eul-i-eot-seum-ni-da.",
+      "en": "Passengers, Chungcheong has long been a yangban region that valued scholarship and propriety. Today let's look into that spirit together."
+    },
+    {
+      "text": "'양반'은 조선 시대 학문과 예의를 갖춘 지배 계층이었습니다. 충청도에는 유독 이름난 양반 가문이 많았지요.",
+      "reading": "yang-ban-eun jo-seon si-dae hak-mun-gwa ye-ui-reul gat-chun ji-bae gye-cheung-i-eot-seum-ni-da.",
+      "en": "'Yangban' were the ruling class of the Joseon era, equipped with learning and propriety. Chungcheong had an especially large number of renowned yangban clans.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "이 고장에는 '서원'도 많이 세워졌습니다. 선비들이 모여 유학을 공부하고 뜻을 나누던 곳이지요.",
+      "reading": "i go-jang-e-neun seo-won-do man-i se-wo-jyeot-seum-ni-da.",
+      "en": "Many 'seowon' academies were also built in this region. They were places where scholars gathered to study Confucianism and share their ideals.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "무엇보다 '예절'을 중시했습니다. 웃어른께 인사하는 법 하나에도 정성이 담겨 있었지요.",
+      "reading": "mu-eot-bo-da ye-jeol-eul jung-si-haet-seum-ni-da.",
+      "en": "Above all, 'etiquette' was highly valued. Even the manner of greeting an elder carried sincerity.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "그 중심에는 '선비'가 있었습니다. 청렴하고 신중한 삶을 살고자 했던 사람들이지요.",
+      "reading": "geu jung-sim-e-neun seon-bi-ga i-sseot-seum-ni-da.",
+      "en": "At the heart of it were the 'seonbi', men who strove to live an upright and prudent life.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "손님을 대하는 '접빈' 문화도 유명합니다. 형편이 넉넉하지 않아도 손님상만큼은 정성껏 차렸지요.",
+      "reading": "son-nim-eul dae-ha-neun jeop-bin mun-hwa-do yu-myeong-ham-ni-da.",
+      "en": "The 'hospitality' culture of treating guests is also famous. Even in modest circumstances, guests' tables were prepared with utmost care.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "단어는 잘 익히셨습니까? 이번에는 손님을 맞는 실제 대화를 읽고, 어떤 예절이 담겼는지 헤아려 보시기 바랍니다.",
+      "reading": "dan-eo-neun jal ig-hi-syeot-seum-ni-kka?",
+      "en": "Have you learned the vocabulary well? This time, please read a real conversation welcoming a guest and work out what etiquette it holds."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "양반", "reading": "yang-ban", "meaning": "Yangban (Joseon scholar-official class)", "example": "양반은 학문과 예의를 중시하던 조선의 지배 계층입니다.", "example_reading": "yang-ban-eun hak-mun-gwa ye-ui-reul jung-si-ha-deon jo-seon-ui ji-bae gye-cheung-im-ni-da", "example_en": "Yangban were Joseon's ruling class, who valued learning and propriety." },
+    { "id": "w02", "word": "서원", "reading": "seo-won", "meaning": "Seowon (private Confucian academy)", "example": "서원에서 선비들은 유학을 공부하고 학문을 나눴습니다.", "example_reading": "seo-won-e-seo seon-bi-deul-eun yu-hak-eul gong-bu-ha-go hak-mun-eul na-nwot-seum-ni-da", "example_en": "At the seowon, scholars studied Confucianism and shared their learning." },
+    { "id": "w03", "word": "예절", "reading": "ye-jeol", "meaning": "Etiquette / manners", "example": "예절을 지키는 것은 충청도 양반가의 오랜 전통입니다.", "example_reading": "ye-jeol-eul ji-ki-neun geos-eun chung-cheong-do yang-ban-ga-ui o-raen jeon-tong-im-ni-da", "example_en": "Keeping proper etiquette is an old tradition of Chungcheong's yangban households." },
+    { "id": "w04", "word": "선비", "reading": "seon-bi", "meaning": "Seonbi (Confucian scholar, man of integrity)", "example": "선비는 청렴함과 신중함을 삶의 원칙으로 삼았습니다.", "example_reading": "seon-bi-neun cheong-ryeom-ham-gwa sin-jung-ham-eul salm-ui won-chik-eu-ro sam-at-seum-ni-da", "example_en": "The seonbi made integrity and prudence the principles of their lives." },
+    { "id": "w05", "word": "접빈", "reading": "jeop-bin", "meaning": "Hospitality toward guests", "example": "접빈 문화는 손님을 정성껏 대접하는 충청도의 미덕입니다.", "example_reading": "jeop-bin mun-hwa-neun son-nim-eul jeong-seong-kkeot dae-jeop-ha-neun chung-cheong-do-ui mi-deog-im-ni-da", "example_en": "The hospitality culture is a Chungcheong virtue of treating guests with utmost sincerity." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "양반은 학문과 예의를 중시하던 조선의 지배 계층입니다.", "reading": "yang-ban-eun hak-mun-gwa ye-ui-reul jung-si-ha-deon jo-seon-ui ji-bae gye-cheung-im-ni-da", "en": "Yangban were Joseon's ruling class, who valued learning and propriety." },
+    { "id": "s02", "ko": "서원에서 선비들은 유학을 공부하고 학문을 나눴습니다.", "reading": "seo-won-e-seo seon-bi-deul-eun yu-hak-eul gong-bu-ha-go hak-mun-eul na-nwot-seum-ni-da", "en": "At the seowon, scholars studied Confucianism and shared their learning." },
+    { "id": "s03", "ko": "예절을 지키는 것은 충청도 양반가의 오랜 전통입니다.", "reading": "ye-jeol-eul ji-ki-neun geos-eun chung-cheong-do yang-ban-ga-ui o-raen jeon-tong-im-ni-da", "en": "Keeping proper etiquette is an old tradition of Chungcheong's yangban households." },
+    { "id": "s04", "ko": "선비는 청렴함과 신중함을 삶의 원칙으로 삼았습니다.", "reading": "seon-bi-neun cheong-ryeom-ham-gwa sin-jung-ham-eul salm-ui won-chik-eu-ro sam-at-seum-ni-da", "en": "The seonbi made integrity and prudence the principles of their lives." },
+    { "id": "s05", "ko": "접빈 문화는 손님을 정성껏 대접하는 충청도의 미덕입니다.", "reading": "jeop-bin mun-hwa-neun son-nim-eul jeong-seong-kkeot dae-jeop-ha-neun chung-cheong-do-ui mi-deog-im-ni-da", "en": "The hospitality culture is a Chungcheong virtue of treating guests with utmost sincerity." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "며느리", "text": "어머님, 어르신 진지상은 이렇게 놓으면 될까요?", "reading": "eo-meo-nim, eo-reu-sin jin-ji-sang-eun i-reo-ke no-eu-myeon doel-kka-yo?", "en": "Mother, is it alright to set the elder's meal table like this?" },
+        { "speaker": "시어머니", "text": "국은 어르신 오른쪽에, 밥은 왼쪽에 놓아야 예절에 맞는단다.", "reading": "gug-eun eo-reu-sin o-reun-jjog-e, bab-eun oen-jjog-e no-a-ya ye-jeol-e mat-neun-dan-da.", "en": "The soup should go on the elder's right and the rice on the left — that's proper etiquette." },
+        { "speaker": "며느리", "text": "아, 그렇군요. 수저는 어느 쪽에 놓아야 하나요?", "reading": "a, geu-reo-kun-yo. su-jeo-neun eo-neu jjog-e no-a-ya ha-na-yo?", "en": "Oh, I see. Which side should the spoon and chopsticks go on?" },
+        { "speaker": "시어머니", "text": "수저는 오른쪽 끝에 가지런히 놓고, 어르신이 먼저 수저를 드신 뒤에 우리도 먹기 시작하는 거야.", "reading": "su-jeo-neun o-reun-jjok kkeut-e ga-ji-reon-hi no-ko, eo-reu-sin-i meon-jeo su-jeo-reul deu-sin dwi-e u-ri-do meok-gi si-jak-ha-neun geo-ya.", "en": "Place the spoon and chopsticks neatly at the right end, and we start eating only after the elder picks up theirs first." }
+      ],
+      "question": "이 대화에서 시어머니가 강조하는 것은 무엇인가요?",
+      "question_en": "What does the mother-in-law emphasize in this conversation?",
+      "correct_answer": "어른을 공경하는 상차림과 식사 예절",
+      "options": ["어른을 공경하는 상차림과 식사 예절", "손님을 위한 특별한 요리법", "제사상을 차리는 순서", "명절에 입는 한복 예절"],
+      "explanation": "시어머니는 진지상을 놓는 위치와 어르신이 먼저 수저를 든 뒤 식사를 시작하는 순서를 통해 어른을 공경하는 예절을 강조하고 있습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "손님", "text": "이렇게 갑자기 찾아왔는데 이런 상까지 차려 주셔서 죄송하고 감사합니다.", "reading": "i-reo-ke gap-ja-gi chaj-a-wan-neun-de i-reon sang-kka-ji cha-ryeo ju-syeo-seo joe-song-ha-go gam-sa-ham-ni-da.", "en": "I'm sorry and thankful that you set such a table even though I came unannounced." },
+        { "speaker": "주인장", "text": "충청도에서는 손님이 오시면 형편껏이라도 정성을 다해 대접하는 게 도리랍니다.", "reading": "chung-cheong-do-e-seo-neun son-nim-i o-si-myeon hyeong-pyeon-kkeos-i-ra-do jeong-seong-eul da-hae dae-jeop-ha-neun ge do-ri-ram-ni-da.", "en": "In Chungcheong, when a guest arrives, it's proper courtesy to serve them with sincerity, however modest the means." },
+        { "speaker": "손님", "text": "그런 마음 씀씀이가 정말 감동적이네요.", "reading": "geu-reon ma-eum sseum-ssseum-i-ga jeong-mal gam-dong-jeog-i-ne-yo.", "en": "That kind of thoughtfulness is really touching." },
+        { "speaker": "주인장", "text": "저희 집안 어른들이 늘 그렇게 가르치셨거든요. 편하게 많이 드세요.", "reading": "jeo-hui jib-an eo-reun-deul-i neul geu-reo-ke ga-reu-chi-syeot-geo-deun-yo.", "en": "Our family elders always taught us to live that way. Please eat comfortably and have plenty." }
+      ],
+      "question": "주인장이 설명하는 충청도의 접빈 문화는 무엇인가요?",
+      "question_en": "What does the host describe as Chungcheong's hospitality culture?",
+      "correct_answer": "형편이 넉넉하지 않아도 정성을 다해 손님을 대접하는 것",
+      "options": ["형편이 넉넉하지 않아도 정성을 다해 손님을 대접하는 것", "손님에게 미리 예약을 요구하는 것", "제사 음식만 손님에게 대접하는 것", "손님을 반드시 하룻밤 재워 보내는 것"],
+      "explanation": "주인장은 손님이 오면 형편껏이라도 정성을 다해 대접하는 것이 충청도의 도리라고 설명하며 접빈 문화를 소개합니다."
+    }
+  ]
+}

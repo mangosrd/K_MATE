@@ -1,0 +1,62 @@
+{
+  "id": "ch-h02",
+  "character_id": "haneul",
+  "title": "12첩 반상과 전주 비빔밥",
+  "emoji": "🍚",
+  "story": [
+    {
+      "text": "승객 여러분, 환영합니다. 전주의 향기로운 밥상 위로 날아가 볼까요?",
+      "reading": "seung-gaek yeo-reo-bun, hwan-yeong-ham-ni-da. jeon-ju-ui hyang-gi-ro-un bap-sang wi-ro nal-a-ga bol-kka-yo?",
+      "en": "Welcome, passengers. Shall we fly over Jeonju's fragrant dining table?"
+    },
+    {
+      "text": "전주 하면 가장 먼저 떠오르는 음식, '비빔밥'이에요. 여러 나물과 고기, 달걀을 밥 위에 얹고 비벼 먹는답니다.",
+      "reading": "jeon-ju ha-myeon ga-jang meon-jeo tteo-o-reu-neun eum-sik, bi-bim-bap-i-e-yo. yeo-reo na-mul-gwa go-gi, dal-gyal-eul bap wi-e eonj-go bi-byeo meok-neun-dam-ni-da.",
+      "en": "The first food that comes to mind with Jeonju is 'bibimbap'. You put various namul, meat, and egg on rice and mix it all together before eating.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "전주 비빔밥에는 특별히 '콩나물'이 들어가요. 아삭한 식감과 고소한 맛을 더해주지요.",
+      "reading": "jeon-ju bi-bim-bap-e-neun teuk-byeol-hi kong-na-mul-i deul-eo-ga-yo. a-sak-han sik-gam-gwa go-so-han mas-eul deo-hae-ju-ji-yo.",
+      "en": "Jeonju bibimbap especially includes 'bean sprouts'. They add a crunchy texture and nutty flavor.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "그릇을 알록달록 채우는 건 바로 '나물'이에요. 고사리, 시금치처럼 손질한 채소를 양념해 무친 반찬이랍니다.",
+      "reading": "geu-reus-eul al-lok-dal-lok chae-u-neun geon ba-ro na-mul-i-e-yo. go-sa-ri, si-geum-chi-cheo-reom son-jil-han chae-so-reul yang-nyeom-hae mu-chin ban-chan-i-ram-ni-da.",
+      "en": "What fills the bowl with color is 'namul'. It's a seasoned side dish made from prepared vegetables like bracken and spinach.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "마지막으로 매콤한 '고추장'을 한 숟갈 넣어요. 전주는 예로부터 고추장 맛이 좋기로 유명한 고장이에요.",
+      "reading": "ma-ji-mag-eu-ro mae-kom-han go-chu-jang-eul han sut-gal neoh-eo-yo. jeon-ju-neun ye-ro-bu-teo go-chu-jang mas-i joh-gi-ro yu-myeong-han go-jang-i-e-yo.",
+      "en": "Finally, add a spoonful of spicy 'gochujang'. Jeonju has long been famous for its delicious gochujang.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "예로부터 전주에서는 '반찬'을 열두 가지나 차린 12첩 반상을 즐겼어요. 그만큼 음식을 정성껏 대접하는 고장이랍니다.",
+      "reading": "ye-ro-bu-teo jeon-ju-e-seo-neun ban-chan-eul yeol-du ga-ji-na cha-rin yeol-du-cheob ban-sang-eul jeulg-yeo-sseo-yo. geu-man-keum eum-sig-eul jeong-seong-kkeot dae-jeob-ha-neun go-jang-i-ram-ni-da.",
+      "en": "Since long ago, Jeonju enjoyed a 12-dish table set with as many as twelve 'banchan' (side dishes). That's how much this region takes pride in serving food with care.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "자, 맛있는 다섯 단어를 모두 맛보셨나요? 이제 문제를 풀며 꼭꼭 씹어 확인해봐요!",
+      "reading": "ja, mas-it-neun da-seot dan-eo-reul mo-du mat-bo-syeot-na-yo? i-je mun-je-reul pul-myeo kkok-kkok ssib-eo hwag-in-hae-bwa-yo!",
+      "en": "Now, have you tasted all five delicious words? Let's check by chewing through some questions!"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "비빔밥", "reading": "bi-bim-bap", "meaning": "Bibimbap (Mixed Rice)", "example": "비빔밥은 전주의 대표 음식이에요.", "example_reading": "bi-bim-bab-eun jeon-ju-ui dae-pyo eum-sig-i-e-yo", "example_en": "Bibimbap is Jeonju's representative food." },
+    { "id": "w02", "word": "나물", "reading": "na-mul", "meaning": "Namul (Seasoned Vegetables)", "example": "나물은 채소로 만든 반찬이에요.", "example_reading": "na-mul-eun chae-so-ro man-deun ban-chan-i-e-yo", "example_en": "Namul is a side dish made of vegetables." },
+    { "id": "w03", "word": "고추장", "reading": "go-chu-jang", "meaning": "Gochujang (Red Chili Paste)", "example": "고추장을 넣으면 매콤해요.", "example_reading": "go-chu-jang-eul neoh-eu-myeon mae-kom-hae-yo", "example_en": "It becomes spicy when you add gochujang." },
+    { "id": "w04", "word": "반찬", "reading": "ban-chan", "meaning": "Banchan (Side Dish)", "example": "반찬이 열두 가지나 있어요.", "example_reading": "ban-chan-i yeol-du ga-ji-na it-seo-yo", "example_en": "There are as many as twelve side dishes." },
+    { "id": "w05", "word": "콩나물", "reading": "kong-na-mul", "meaning": "Bean Sprouts", "example": "콩나물은 전주의 특별한 재료예요.", "example_reading": "kong-na-mul-eun jeon-ju-ui teuk-byeol-han jae-ryo-ye-yo", "example_en": "Bean sprouts are Jeonju's special ingredient." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "비빔밥은 여러 재료를 비벼 먹어요.", "reading": "bi-bim-bab-eun yeo-reo jae-ryo-reul bi-byeo meog-eo-yo", "en": "Bibimbap is eaten by mixing many ingredients." },
+    { "id": "s02", "ko": "나물은 몸에 좋은 채소예요.", "reading": "na-mul-eun mom-e joh-eun chae-so-ye-yo", "en": "Namul is a vegetable that is good for the body." },
+    { "id": "s03", "ko": "고추장은 매콤달콤한 맛이 나요.", "reading": "go-chu-jang-eun mae-kom-dal-kom-han mas-i na-yo", "en": "Gochujang tastes spicy and sweet." },
+    { "id": "s04", "ko": "반찬은 다양한 색깔로 놓여요.", "reading": "ban-chan-eun da-yang-han saek-kkal-lo noh-yeo-yo", "en": "Side dishes are arranged in various colors." },
+    { "id": "s05", "ko": "콩나물은 아삭아삭 씹혀요.", "reading": "kong-na-mul-eun a-sag-a-sak ssib-hyeo-yo", "en": "Bean sprouts crunch when chewed." }
+  ]
+}

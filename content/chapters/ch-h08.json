@@ -1,0 +1,62 @@
+{
+  "id": "ch-h08",
+  "character_id": "haneul",
+  "title": "남도 한정식과 발효 음식",
+  "emoji": "🍲",
+  "story": [
+    {
+      "text": "승객 여러분, 이번엔 깊고 구수한 맛의 고장, 남도 상공이에요. 정성 가득한 상차림을 만나보세요.",
+      "reading": "seung-gaek yeo-reo-bun, i-beon-en gip-go gu-su-han mas-ui go-jang, nam-do sang-gong-i-e-yo. jeong-seong ga-deuk-han sang-cha-rim-eul man-na-bo-se-yo.",
+      "en": "Passengers, this time it's above Namdo, a land of deep, savory flavor. Come meet a table setting full of care."
+    },
+    {
+      "text": "남도를 대표하는 밥상, '한정식'이에요. 밥과 국은 물론, 수십 가지 반찬이 정성스레 차려진답니다.",
+      "reading": "nam-do-reul dae-pyo-ha-neun bap-sang, han-jeong-sig-i-e-yo. bap-gwa gug-eun mul-lon, su-sip ga-ji ban-chan-i jeong-seong-seu-re cha-ryeo-jin-dam-ni-da.",
+      "en": "The table setting that represents Namdo is 'hanjeongsik'. Along with rice and soup, dozens of side dishes are carefully served.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "그 많은 반찬 중 빠질 수 없는 게 '김치'예요. 배추를 소금에 절이고 양념에 버무려 발효시킨 우리 대표 음식이지요.",
+      "reading": "geu manh-eun ban-chan jung ppa-jil su eob-neun ge gim-chi-ye-yo. bae-chu-reul so-geum-e jeol-i-go yang-nyeom-e beo-mu-ryeo bal-hyo-si-kin u-ri dae-pyo eum-sig-i-ji-yo.",
+      "en": "Among those many side dishes, one that can't be missed is 'kimchi'. It's our representative food, made by salting cabbage and fermenting it with seasoning.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "구수한 찌개의 비밀은 '된장'이에요. 콩을 삶아 메주로 띄운 뒤 오랫동안 발효시켜 만든답니다.",
+      "reading": "gu-su-han jji-gae-ui bi-mil-eun doen-jang-i-e-yo. kong-eul salm-a me-ju-ro ttui-un dwi o-raet-dong-an bal-hyo-si-kyeo man-deun-dam-ni-da.",
+      "en": "The secret of a savory stew is 'doenjang'. It's made by boiling soybeans, forming them into meju, and fermenting them for a long time.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "김치에 깊은 맛을 더하는 건 '젓갈'이에요. 생선이나 새우를 소금에 삭혀 만든 감칠맛 나는 양념이랍니다.",
+      "reading": "gim-chi-e gip-eun mas-eul deo-ha-neun geon jeot-gal-i-e-yo. saeng-seon-i-na sae-u-reul so-geum-e sak-hyeo man-deun gam-chil-mat na-neun yang-nyeom-i-ram-ni-da.",
+      "en": "What adds a deep flavor to kimchi is 'jeotgal'. It's a savory seasoning made by salting and fermenting fish or shrimp.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "이런 발효 음식들은 '장독대'에서 익어가요. 볕 잘 드는 마당에 항아리를 줄지어 놓고 시간을 담아낸답니다.",
+      "reading": "i-reon bal-hyo eum-sik-deul-eun jang-dok-dae-e-seo ig-eo-ga-yo. byeot jal deu-neun ma-dang-e hang-a-ri-reul jul-ji-eo noh-go si-gan-eul dam-a-nae-ndam-ni-da.",
+      "en": "These fermented foods ripen at the 'jangdokdae' (sauce jar terrace). Jars are lined up in a sunny yard, letting time do its work.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "자, 깊은 맛의 다섯 단어를 모두 맛보셨나요? 이제 구수하게 문제를 풀어봐요!",
+      "reading": "ja, gip-eun mas-ui da-seot dan-eo-reul mo-du mat-bo-syeot-na-yo? i-je gu-su-ha-ge mun-je-reul pul-eo-bwa-yo!",
+      "en": "Now, have you tasted all five deep-flavored words? Let's solve some questions with a savory spirit!"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "한정식", "reading": "han-jeong-sik", "meaning": "Korean Full-Course Meal", "example": "한정식에는 많은 반찬이 나와요.", "example_reading": "han-jeong-sig-e-neun manh-eun ban-chan-i na-wa-yo", "example_en": "Many side dishes are served with hanjeongsik." },
+    { "id": "w02", "word": "김치", "reading": "gim-chi", "meaning": "Kimchi", "example": "김치는 대표적인 발효 음식이에요.", "example_reading": "gim-chi-neun dae-pyo-jeog-in bal-hyo eum-sig-i-e-yo", "example_en": "Kimchi is a representative fermented food." },
+    { "id": "w03", "word": "된장", "reading": "doen-jang", "meaning": "Doenjang (Soybean Paste)", "example": "된장으로 구수한 찌개를 끓여요.", "example_reading": "doen-jang-eu-ro gu-su-han jji-gae-reul kkeul-yeo-yo", "example_en": "You make a savory stew with doenjang." },
+    { "id": "w04", "word": "젓갈", "reading": "jeot-gal", "meaning": "Jeotgal (Salted Seafood)", "example": "젓갈은 김치의 감칠맛을 더해요.", "example_reading": "jeot-gal-eun gim-chi-ui gam-chil-mas-eul deo-hae-yo", "example_en": "Jeotgal adds savory flavor to kimchi." },
+    { "id": "w05", "word": "장독대", "reading": "jang-dok-dae", "meaning": "Sauce Jar Terrace", "example": "장독대에 항아리가 줄지어 있어요.", "example_reading": "jang-dok-dae-e hang-a-ri-ga jul-ji-eo it-seo-yo", "example_en": "Jars are lined up on the sauce jar terrace." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "한정식은 정성이 가득한 상차림이에요.", "reading": "han-jeong-sig-eun jeong-seong-i ga-deuk-han sang-cha-rim-i-e-yo", "en": "Hanjeongsik is a table setting full of care." },
+    { "id": "s02", "ko": "김치는 오래 두어도 맛이 살아있어요.", "reading": "gim-chi-neun o-rae du-eo-do mas-i sal-a-it-seo-yo", "en": "Kimchi keeps its flavor even after a long time." },
+    { "id": "s03", "ko": "된장은 오랜 시간 발효시켜요.", "reading": "doen-jang-eun o-raen si-gan bal-hyo-si-kyeo-yo", "en": "Doenjang is fermented for a long time." },
+    { "id": "s04", "ko": "젓갈은 짭짤하고 감칠맛이 나요.", "reading": "jeot-gal-eun jjap-jjal-ha-go gam-chil-mas-i na-yo", "en": "Jeotgal is salty and full of savory flavor." },
+    { "id": "s05", "ko": "장독대는 햇볕 잘 드는 곳에 둬요.", "reading": "jang-dok-dae-neun haet-byeot jal deu-neun gos-e dwo-yo", "en": "The jar terrace is placed where sunlight reaches well." }
+  ]
+}

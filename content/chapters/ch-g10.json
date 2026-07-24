@@ -1,0 +1,93 @@
+{
+  "id": "ch-g10",
+  "character_id": "sangwoo",
+  "title": "공주 알밤과 충청 요리",
+  "emoji": "🌰",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "승객 여러분, 어느덧 충청 여정의 마지막 코스입니다. 이번엔 공주의 대표 먹거리로 여러분을 안내하겠습니다.",
+      "reading": "seung-gaek yeo-reo-bun, eo-neu-deot chung-cheong yeo-jeong-ui ma-ji-mak ko-seu-im-ni-da.",
+      "en": "Passengers, we've reached the final leg of our Chungcheong journey. This time I'll guide you to Gongju's signature food."
+    },
+    {
+      "text": "공주 하면 떠오르는 것이 바로 '알밤'입니다. 크고 속이 꽉 찬 것이 특징이라, 예로부터 진상품으로도 유명했지요.",
+      "reading": "gong-ju ha-myeon tteo-o-reu-neun geos-i ba-ro al-bam-im-ni-da.",
+      "en": "What comes to mind with Gongju is the 'plump chestnut'. Known for being large and full, it was famous as a royal tribute item since long ago.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "가을이 되면 거리마다 '군밤' 냄새가 진동합니다. 따끈하게 구워낸 밤 하나가 겨울 초입의 정취를 더해주지요.",
+      "reading": "ga-eul-i doe-myeon geo-ri-ma-da gun-bam naem-sae-ga jin-dong-ham-ni-da.",
+      "en": "When autumn comes, the smell of 'roasted chestnuts' fills every street. A single warm roasted chestnut adds to the atmosphere of early winter.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "밤으로 빚은 술도 있습니다. 바로 '밤막걸리'인데, 은은한 단맛이 목 넘김을 부드럽게 해줍니다.",
+      "reading": "bam-eu-ro bij-eun sul-do it-seum-ni-da.",
+      "en": "There's also a liquor brewed from chestnuts. It's called 'chestnut makgeolli', and its gentle sweetness makes it go down smoothly.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "이 밖에도 공주에는 다양한 '향토음식'이 있습니다. 지역의 재료로 오랜 세월 이어온 맛이지요.",
+      "reading": "i bakk-e-do gong-ju-e-neun da-yang-han hyang-to-eum-sig-i it-seum-ni-da.",
+      "en": "Besides this, Gongju has various 'local dishes' — flavors passed down over the years using regional ingredients.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "여행을 마치기 전, 공주의 '특산물'을 하나쯤 챙겨가시는 건 어떨까요? 알밤이야말로 최고의 선물이 될 겁니다.",
+      "reading": "yeo-haeng-eul ma-chi-gi jeon, gong-ju-ui teuk-san-mul-eul ha-na-jjeum chaeng-gyeo-ga-si-neun geon eo-tteol-kka-yo?",
+      "en": "Before finishing your trip, how about taking home one of Gongju's 'local specialties'? Plump chestnuts would make the best gift.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "달콤한 공주 이야기, 입맛 당기셨나요? 이제 시장에서 나눈 실제 대화를 읽고 상황을 맞혀보는 문제로 마무리해봅시다.",
+      "reading": "dal-kom-han gong-ju i-ya-gi, ib-mat dang-gi-syeot-na-yo?",
+      "en": "Did this sweet Gongju story whet your appetite? Let's wrap up with questions where you read a real market conversation and figure out the situation."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "알밤", "reading": "al-bam", "meaning": "Plump chestnut", "example": "알밤은 크고 달아서 공주의 자랑입니다.", "example_reading": "al-bam-eun keu-go dal-a-seo gong-ju-ui ja-rang-im-ni-da", "example_en": "Plump chestnuts are big and sweet, Gongju's pride." },
+    { "id": "w02", "word": "군밤", "reading": "gun-bam", "meaning": "Roasted chestnut", "example": "군밤 냄새가 거리 가득 퍼집니다.", "example_reading": "gun-bam naem-sae-ga geo-ri ga-deuk peo-jim-ni-da", "example_en": "The smell of roasted chestnuts fills the street." },
+    { "id": "w03", "word": "밤막걸리", "reading": "bam-mak-geol-li", "meaning": "Chestnut makgeolli", "example": "밤막걸리는 은은한 단맛이 일품입니다.", "example_reading": "bam-mak-geol-li-neun eun-eun-han dan-mas-i il-pum-im-ni-da", "example_en": "Chestnut makgeolli's gentle sweetness is exquisite." },
+    { "id": "w04", "word": "향토음식", "reading": "hyang-to-eum-sik", "meaning": "Local / regional cuisine", "example": "향토음식을 맛보는 것도 여행의 큰 즐거움입니다.", "example_reading": "hyang-to-eum-sig-eul mat-bo-neun geot-do yeo-haeng-ui keun jeul-geo-um-im-ni-da", "example_en": "Tasting local cuisine is also a great joy of traveling." },
+    { "id": "w05", "word": "특산물", "reading": "teuk-san-mul", "meaning": "Local specialty product", "example": "특산물을 사려는 사람들로 시장이 붐빕니다.", "example_reading": "teuk-san-mul-eul sa-ryeo-neun sa-ram-deul-lo si-jang-i bum-bim-ni-da", "example_en": "The market is crowded with people wanting to buy local specialties." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "알밤은 크고 달아서 공주의 자랑입니다.", "reading": "al-bam-eun keu-go dal-a-seo gong-ju-ui ja-rang-im-ni-da", "en": "Plump chestnuts are big and sweet, Gongju's pride." },
+    { "id": "s02", "ko": "군밤 냄새가 거리 가득 퍼집니다.", "reading": "gun-bam naem-sae-ga geo-ri ga-deuk peo-jim-ni-da", "en": "The smell of roasted chestnuts fills the street." },
+    { "id": "s03", "ko": "밤막걸리는 은은한 단맛이 일품입니다.", "reading": "bam-mak-geol-li-neun eun-eun-han dan-mas-i il-pum-im-ni-da", "en": "Chestnut makgeolli's gentle sweetness is exquisite." },
+    { "id": "s04", "ko": "향토음식을 맛보는 것도 여행의 큰 즐거움입니다.", "reading": "hyang-to-eum-sig-eul mat-bo-neun geot-do yeo-haeng-ui keun jeul-geo-um-im-ni-da", "en": "Tasting local cuisine is also a great joy of traveling." },
+    { "id": "s05", "ko": "특산물을 사려는 사람들로 시장이 붐빕니다.", "reading": "teuk-san-mul-eul sa-ryeo-neun sa-ram-deul-lo si-jang-i bum-bim-ni-da", "en": "The market is crowded with people wanting to buy local specialties." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "손님", "text": "사장님, 알밤이 진짜 크네요. 이거 얼마예요?", "reading": "sa-jang-nim, al-bam-i jin-jja keu-ne-yo. i-geo eol-ma-ye-yo?", "en": "Wow, these chestnuts are really big. How much are they?" },
+        { "speaker": "상인", "text": "한 되에 만 원인데, 공주 알밤이라 다른 데보다 알이 굵어요.", "reading": "han doe-e man won-in-de, gong-ju al-bam-i-ra da-reun de-bo-da al-i gulg-eo-yo.", "en": "It's 10,000 won a measure, but since they're Gongju chestnuts, they're plumper than elsewhere." },
+        { "speaker": "손님", "text": "그럼 두 되만 주세요. 선물용으로 포장도 되나요?", "reading": "geu-reom du doe-man ju-se-yo. seon-mul-lyong-eu-ro po-jang-do doe-na-yo?", "en": "I'll take two measures then. Can you gift-wrap it too?" },
+        { "speaker": "상인", "text": "그럼요, 예쁘게 포장해서 드릴게요.", "reading": "geu-reom-yo, ye-ppeu-ge po-jang-hae-seo deu-ril-ge-yo.", "en": "Of course, I'll wrap it up nicely for you." }
+      ],
+      "question": "손님이 상인에게 부탁한 것은 무엇인가요?",
+      "question_en": "What did the customer ask the merchant to do?",
+      "correct_answer": "알밤 두 되를 선물용으로 포장해 달라는 것",
+      "options": ["알밤 두 되를 선물용으로 포장해 달라는 것", "알밤 가격을 깎아 달라는 것", "군밤을 볶아 달라는 것", "밤막걸리를 시음해 달라는 것"],
+      "explanation": "손님은 알밤 두 되를 사면서 '선물용으로 포장도 되나요?'라고 물었습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "친구1", "text": "공주 여행 어땠어? 뭐가 제일 기억에 남아?", "reading": "gong-ju yeo-haeng eo-ttaess-eo? mwo-ga je-il gi-eog-e nam-a?", "en": "How was your Gongju trip? What do you remember most?" },
+        { "speaker": "친구2", "text": "밤막걸리! 처음엔 별 기대 안 했는데 진짜 부드럽고 맛있더라.", "reading": "bam-mak-geol-li! cheo-eum-en byeol gi-dae an haet-neun-de jin-jja bu-deu-reop-go mas-it-deo-ra.", "en": "The chestnut makgeolli! I didn't expect much at first, but it was really smooth and delicious." },
+        { "speaker": "친구1", "text": "나도 다음에 가면 꼭 마셔봐야겠다. 안주는 뭐 먹었어?", "reading": "na-do da-eum-e ga-myeon kkok ma-syeo-bwa-ya-get-da. an-ju-neun mwo meog-eoss-eo?", "en": "I should definitely try it next time I go. What did you eat with it?" },
+        { "speaker": "친구2", "text": "향토음식 정식을 시켰는데, 반찬 하나하나가 다 정성스러웠어.", "reading": "hyang-to-eum-sik jeong-sig-eul si-kyeoss-neun-de, ban-chan ha-na-ha-na-ga da jeong-seong-seu-reo-woss-eo.", "en": "I ordered the local-cuisine set meal, and every single side dish was made with care." }
+      ],
+      "question": "친구2가 공주 여행에서 가장 기억에 남는다고 말한 것은 무엇인가요?",
+      "question_en": "What did Friend 2 say was the most memorable part of the Gongju trip?",
+      "correct_answer": "밤막걸리의 부드러운 맛",
+      "options": ["밤막걸리의 부드러운 맛", "알밤의 가격", "시장의 규모", "숙소의 위치"],
+      "explanation": "친구2는 '밤막걸리! 처음엔 별 기대 안 했는데 진짜 부드럽고 맛있더라'라며 가장 기억에 남는다고 말했습니다."
+    }
+  ]
+}

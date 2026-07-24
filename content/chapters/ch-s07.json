@@ -1,0 +1,93 @@
+{
+  "id": "ch-s07",
+  "character_id": "sunwoo",
+  "title": "감천문화마을 알록달록 골목",
+  "emoji": "⛰️",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "승객 여러분, 한국의 마추픽추라 불리는 감천문화마을 상공입니다! 알록달록한 지붕들이 보이시나요?",
+      "reading": "seung-gaek yeo-reo-bun, han-gug-ui ma-chu-pik-chu-ra bul-li-neun gam-cheon-mun-hwa-ma-eul sang-gong-im-ni-da!",
+      "en": "Passengers, we're above Gamcheon Culture Village, known as Korea's Machu Picchu! Can you see the colorful rooftops?"
+    },
+    {
+      "text": "'골목길'을 따라 걷다 보면 마을 곳곳에 숨겨진 예쁜 그림들을 만날 수 있어요.",
+      "reading": "gol-mok-gil-eul tta-ra geot-da bo-myeon ma-eul got-got-e sum-gyeo-jin ye-ppeun geu-rim-deul-eul man-nal su iss-eo-yo.",
+      "en": "If you walk along the 'alleyway', you can find pretty artworks hidden throughout the village.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "골목 곳곳에 그려진 '벽화' 앞에서 사진을 찍는 게 이 마을의 큰 즐거움이죠.",
+      "reading": "gol-mok got-got-e geu-ryeo-jin byeok-hwa ap-e-seo sa-jin-eul jjik-neun ge i ma-eul-ui keun jeul-geo-um-i-jyo.",
+      "en": "Taking photos in front of the 'murals' painted throughout the alleys is one of the village's great pleasures.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "산비탈을 따라 늘어선 '계단식' 집들이 이 마을을 더욱 특별하게 만들어요.",
+      "reading": "san-bi-tal-eul tta-ra neul-eo-seon gye-dan-sig jip-deul-i i ma-eul-eul deo-uk teuk-byeol-ha-ge man-deul-eo-yo.",
+      "en": "The 'terraced' houses lined up along the hillside make this village even more special.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "높은 곳에 있는 '전망' 좋은 자리에 오르면 마을 전체가 한눈에 펼쳐져요.",
+      "reading": "nop-eun gos-e iss-neun jeon-mang jo-eun ja-ri-e ol-eu-myeon ma-eul jeon-che-ga han-nun-e pyeol-cheo-jyeo-yo.",
+      "en": "If you go up to a high spot with a good 'view', the whole village unfolds before your eyes.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "골목 사이사이에 작은 '소품샵'들이 숨어 있어서 구경하는 재미가 쏠쏠해요.",
+      "reading": "gol-mok sa-i-sa-i-e jag-eun so-pum-syap-deul-i sum-eo iss-eo-seo gu-gyeong-ha-neun jae-mi-ga ssol-ssol-hae-yo.",
+      "en": "Small 'gift shops' are tucked between the alleys, making it a lot of fun to browse.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "단어는 다 익히셨죠? 이번엔 마을 골목에서 실제로 벌어지는 대화를 보고 상황을 맞혀보는 문제도 준비했어요!",
+      "reading": "dan-eo-neun da ig-hi-syeot-jyo?",
+      "en": "Got all the words down? This time I've also prepared questions where you read real conversations from the village alleys and figure out the situation!"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "골목길", "reading": "gol-mok-gil", "meaning": "Alleyway", "example": "골목길을 따라 걸으면 예쁜 그림들을 만날 수 있어요.", "example_reading": "gol-mok-gil-eul tta-ra geol-eu-myeon ye-ppeun geu-rim-deul-eul man-nal su iss-eo-yo", "example_en": "If you walk along the alleyway, you can find pretty artworks." },
+    { "id": "w02", "word": "벽화", "reading": "byeok-hwa", "meaning": "Mural", "example": "벽화 앞에서 사진을 찍는 사람들이 많습니다.", "example_reading": "byeok-hwa ap-e-seo sa-jin-eul jjik-neun sa-ram-deul-i man-heum-ni-da", "example_en": "Many people take photos in front of the murals." },
+    { "id": "w03", "word": "계단식", "reading": "gye-dan-sik", "meaning": "Terraced / stepped", "example": "계단식 집들이 산비탈을 따라 알록달록하게 늘어서 있어요.", "example_reading": "gye-dan-sik jip-deul-i san-bi-tal-eul tta-ra al-lok-dal-lok-ha-ge neul-eo-seo iss-eo-yo", "example_en": "The terraced houses line up colorfully along the hillside." },
+    { "id": "w04", "word": "전망", "reading": "jeon-mang", "meaning": "View / vista", "example": "전망 좋은 곳에 오르면 마을 전체가 한눈에 보입니다.", "example_reading": "jeon-mang jo-eun gos-e ol-eu-myeon ma-eul jeon-che-ga han-nun-e bo-im-ni-da", "example_en": "If you go up to a spot with a good view, you can see the whole village at a glance." },
+    { "id": "w05", "word": "소품샵", "reading": "so-pum-syap", "meaning": "Small gift / souvenir shop", "example": "소품샵에서 아기자기한 기념품을 구경할 수 있어요.", "example_reading": "so-pum-syab-e-seo a-gi-ja-gi-han gi-nyeom-pum-eul gu-gyeong-hal su iss-eo-yo", "example_en": "At the gift shop, you can browse cute little souvenirs." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "골목길을 따라 걸으면 예쁜 그림들을 만날 수 있어요.", "reading": "gol-mok-gil-eul tta-ra geol-eu-myeon ye-ppeun geu-rim-deul-eul man-nal su iss-eo-yo", "en": "If you walk along the alleyway, you can find pretty artworks." },
+    { "id": "s02", "ko": "벽화 앞에서 사진을 찍는 사람들이 많습니다.", "reading": "byeok-hwa ap-e-seo sa-jin-eul jjik-neun sa-ram-deul-i man-heum-ni-da", "en": "Many people take photos in front of the murals." },
+    { "id": "s03", "ko": "계단식 집들이 산비탈을 따라 알록달록하게 늘어서 있어요.", "reading": "gye-dan-sik jip-deul-i san-bi-tal-eul tta-ra al-lok-dal-lok-ha-ge neul-eo-seo iss-eo-yo", "en": "The terraced houses line up colorfully along the hillside." },
+    { "id": "s04", "ko": "전망 좋은 곳에 오르면 마을 전체가 한눈에 보입니다.", "reading": "jeon-mang jo-eun gos-e ol-eu-myeon ma-eul jeon-che-ga han-nun-e bo-im-ni-da", "en": "If you go up to a spot with a good view, you can see the whole village at a glance." },
+    { "id": "s05", "ko": "소품샵에서 아기자기한 기념품을 구경할 수 있어요.", "reading": "so-pum-syab-e-seo a-gi-ja-gi-han gi-nyeom-pum-eul gu-gyeong-hal su iss-eo-yo", "en": "At the gift shop, you can browse cute little souvenirs." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "관광객", "text": "저, 어린왕자 동상이 있는 곳으로 어떻게 가나요?", "reading": "jeo, eo-rin-wang-ja dong-sang-i iss-neun gos-eu-ro eo-tteo-ke ga-na-yo?", "en": "Excuse me, how do I get to the Little Prince statue?" },
+        { "speaker": "마을 주민", "text": "이 골목길로 쭉 올라가시면 계단 끝에 있어요.", "reading": "i gol-mok-gil-lo jjuk ol-la-ga-si-myeon gye-dan kkeut-e iss-eo-yo.", "en": "If you go straight up this alley, it's at the top of the stairs." },
+        { "speaker": "관광객", "text": "얼마나 걸릴까요?", "reading": "eol-ma-na geol-lil-kka-yo?", "en": "How long will it take?" },
+        { "speaker": "마을 주민", "text": "천천히 걸으면 십 분 정도면 도착하실 거예요.", "reading": "cheon-cheon-hi geol-eu-myeon sip bun jeong-do-myeon do-chak-ha-sil geo-ye-yo.", "en": "If you walk slowly, you'll arrive in about ten minutes." }
+      ],
+      "question": "관광객이 찾고 있는 곳은 어디인가요?",
+      "question_en": "What is the tourist looking for?",
+      "correct_answer": "어린왕자 동상이 있는 곳",
+      "options": ["어린왕자 동상이 있는 곳", "소품샵이 모여 있는 거리", "가장 유명한 벽화 위치", "버스 정류장"],
+      "explanation": "관광객이 처음에 '어린왕자 동상이 있는 곳으로 어떻게 가나요?'라고 물었으므로 그 동상을 찾고 있는 것입니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "친구A", "text": "이 소품샵 진짜 예쁘다, 엽서 하나 살까?", "reading": "i so-pum-syap jin-jja ye-ppeu-da, yeop-seo ha-na sal-kka?", "en": "This gift shop is really pretty, should I buy a postcard?" },
+        { "speaker": "친구B", "text": "나는 여기 마그넷이 더 마음에 들어. 색깔이 알록달록해서 딱 감천마을 느낌이야.", "reading": "na-neun yeo-gi ma-geu-nes-i deo ma-eum-e deul-eo. saek-kkal-i al-lok-dal-lok-hae-seo ttak gam-cheon-ma-eul neu-kkim-i-ya.", "en": "I like the magnets here better. The colors are so vivid, it really feels like Gamcheon Village." },
+        { "speaker": "친구A", "text": "그럼 우리 각자 하나씩 사서 나눠 가지자.", "reading": "geu-reom u-ri gak-ja ha-na-ssik sa-seo na-nwo ga-ji-ja.", "en": "Then let's each buy one and share them." },
+        { "speaker": "친구B", "text": "좋아, 나중에 이거 보면서 오늘 추억할 수 있겠다.", "reading": "jo-a, na-jung-e i-geo bo-myeon-seo o-neul chu-eok-hal su gess-da.", "en": "Sounds good, later we can look at this and remember today." }
+      ],
+      "question": "친구B가 마음에 들어 하는 기념품은 무엇인가요?",
+      "question_en": "What souvenir does Friend B like?",
+      "correct_answer": "알록달록한 마그넷",
+      "options": ["알록달록한 마그넷", "엽서", "손수건", "열쇠고리"],
+      "explanation": "친구B가 '여기 마그넷이 더 마음에 들어'라고 말했으므로 정답은 마그넷입니다."
+    }
+  ]
+}

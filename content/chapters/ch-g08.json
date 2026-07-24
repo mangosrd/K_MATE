@@ -1,0 +1,93 @@
+{
+  "id": "ch-g08",
+  "character_id": "sangwoo",
+  "title": "백제 금동대향로의 걸작",
+  "emoji": "🍵",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "승객 여러분, 이번엔 백제 예술의 정수를 만나실 시간입니다. 진흙 속에서 천 년을 잠들어 있던 보물 이야기를 들려드리겠습니다.",
+      "reading": "seung-gaek yeo-reo-bun, i-beon-en baek-je ye-sul-ui jeong-su-reul man-na-sil si-gan-im-ni-da.",
+      "en": "Passengers, this time you'll encounter the essence of Baekje art. Let me tell you the story of a treasure that slept in the mud for a thousand years."
+    },
+    {
+      "text": "그 보물의 이름은 '금동대향로'입니다. 1993년 부여에서 발굴된, 백제 금속 공예의 최고봉이지요.",
+      "reading": "geu bo-mul-ui i-reum-eun geum-dong-dae-hyang-no-im-ni-da.",
+      "en": "That treasure's name is the 'Gilt-Bronze Incense Burner'. Excavated in Buyeo in 1993, it's the pinnacle of Baekje metal craftsmanship.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "본래 이것은 '향로', 즉 향을 피우던 제사 도구였습니다. 왕실의 중요한 의식에 쓰였을 것으로 추정됩니다.",
+      "reading": "bon-rae i-geos-eun hyang-no, jeuk hyang-eul pi-u-deon je-sa do-gu-yeot-seum-ni-da.",
+      "en": "Originally, this was an 'incense burner' — a ritual object used to burn incense. It's presumed to have been used in important royal ceremonies.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "표면을 가득 채운 '문양'을 보십시오. 산과 나무, 짐승과 신선들이 정교하게 새겨져 있습니다.",
+      "reading": "pyo-myeon-eul ga-deuk chae-un mun-yang-eul bo-sip-si-o.",
+      "en": "Look at the 'patterns' covering the surface. Mountains, trees, beasts, and immortals are all intricately carved.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "향로의 꼭대기에는 '봉황' 한 마리가 날개를 활짝 펴고 있습니다. 상서로움과 왕권을 상징하는 새이지요.",
+      "reading": "hyang-no-ui kkok-dae-gi-e-neun bong-hwang han ma-ri-ga nal-gae-reul hwal-jjak pyeo-go it-seum-ni-da.",
+      "en": "At the top of the burner, a 'phoenix' spreads its wings wide — a bird symbolizing good fortune and royal authority.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "이 정도의 정교함과 상징성을 갖춘 유물은 흔치 않습니다. 그야말로 시대를 초월한 '걸작'이라 할 수 있습니다.",
+      "reading": "i jeong-do-ui jeong-gyo-ham-gwa sang-jing-seong-eul gat-chun yu-mul-eun heun-chi an-seum-ni-da.",
+      "en": "Artifacts with this level of intricacy and symbolism are rare. It can truly be called a timeless 'masterpiece'.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "천 년의 시간을 건너온 이야기, 흥미로우셨나요? 이제 이 향로를 둘러싼 대화를 읽고 상황을 파악해 보시죠.",
+      "reading": "cheon nyeon-ui si-gan-eul geon-neo-on i-ya-gi, heung-mi-ro-u-syeot-na-yo?",
+      "en": "Was this story that crossed a thousand years interesting? Now let's read a conversation about this incense burner and figure out the situation."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "금동대향로", "reading": "geum-dong-dae-hyang-no", "meaning": "Gilt-bronze incense burner", "example": "금동대향로는 백제 최고의 금속 공예품입니다.", "example_reading": "geum-dong-dae-hyang-no-neun baek-je choe-go-ui geum-sok gong-ye-pum-im-ni-da", "example_en": "The gilt-bronze incense burner is Baekje's finest metal craftwork." },
+    { "id": "w02", "word": "향로", "reading": "hyang-no", "meaning": "Incense burner", "example": "향로에서 은은한 향이 피어오릅니다.", "example_reading": "hyang-no-e-seo eun-eun-han hyang-i pi-eo-o-reum-ni-da", "example_en": "A subtle fragrance rises from the incense burner." },
+    { "id": "w03", "word": "문양", "reading": "mun-yang", "meaning": "Pattern / design", "example": "문양 하나하나에 정교한 손길이 담겨 있습니다.", "example_reading": "mun-yang ha-na-ha-na-e jeong-gyo-han son-gil-i dam-gyeo it-seum-ni-da", "example_en": "Each individual pattern holds intricate craftsmanship." },
+    { "id": "w04", "word": "봉황", "reading": "bong-hwang", "meaning": "Phoenix", "example": "봉황이 향로 꼭대기에 날개를 펼치고 있습니다.", "example_reading": "bong-hwang-i hyang-no kkok-dae-gi-e nal-gae-reul pyeol-chi-go it-seum-ni-da", "example_en": "A phoenix spreads its wings at the top of the burner." },
+    { "id": "w05", "word": "걸작", "reading": "geol-jak", "meaning": "Masterpiece", "example": "걸작이라는 말이 아깝지 않은 작품입니다.", "example_reading": "geol-jag-i-ra-neun mal-i a-kkap-ji an-eun jak-pum-im-ni-da", "example_en": "It's a work worthy of the word 'masterpiece'." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "금동대향로는 백제 최고의 금속 공예품입니다.", "reading": "geum-dong-dae-hyang-no-neun baek-je choe-go-ui geum-sok gong-ye-pum-im-ni-da", "en": "The gilt-bronze incense burner is Baekje's finest metal craftwork." },
+    { "id": "s02", "ko": "향로에서 은은한 향이 피어오릅니다.", "reading": "hyang-no-e-seo eun-eun-han hyang-i pi-eo-o-reum-ni-da", "en": "A subtle fragrance rises from the incense burner." },
+    { "id": "s03", "ko": "문양 하나하나에 정교한 손길이 담겨 있습니다.", "reading": "mun-yang ha-na-ha-na-e jeong-gyo-han son-gil-i dam-gyeo it-seum-ni-da", "en": "Each individual pattern holds intricate craftsmanship." },
+    { "id": "s04", "ko": "봉황이 향로 꼭대기에 날개를 펼치고 있습니다.", "reading": "bong-hwang-i hyang-no kkok-dae-gi-e nal-gae-reul pyeol-chi-go it-seum-ni-da", "en": "A phoenix spreads its wings at the top of the burner." },
+    { "id": "s05", "ko": "걸작이라는 말이 아깝지 않은 작품입니다.", "reading": "geol-jag-i-ra-neun mal-i a-kkap-ji an-eun jak-pum-im-ni-da", "en": "It's a work worthy of the word 'masterpiece'." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "관람객", "text": "이 향로는 왜 이렇게 유명한 거예요?", "reading": "i hyang-no-neun wae i-reo-ke yu-myeong-han geo-ye-yo?", "en": "Why is this incense burner so famous?" },
+        { "speaker": "도슨트", "text": "문양이 정교하고 보존 상태가 뛰어나서 백제 공예 기술의 정수로 평가받고 있어요.", "reading": "mun-yang-i jeong-gyo-ha-go bo-jon sang-tae-ga ttwi-eo-na-seo baek-je gong-ye gi-sul-ui jeong-su-ro pyeong-ga-bat-go it-eo-yo.", "en": "The patterns are intricate and it's remarkably well preserved, so it's regarded as the essence of Baekje craftsmanship." },
+        { "speaker": "관람객", "text": "실제로 사용했던 물건인가요?", "reading": "sil-je-ro sa-yong-haet-deon mul-geon-in-ga-yo?", "en": "Was it actually used in real life?" },
+        { "speaker": "도슨트", "text": "네, 왕실 제사에서 향을 피우는 용도로 쓰였을 것으로 추정하고 있습니다.", "reading": "ne, wang-sil je-sa-e-seo hyang-eul pi-u-neun yong-do-ro sseu-yeoss-eul geos-eu-ro chu-jeong-ha-go it-seum-ni-da.", "en": "Yes, it's presumed to have been used to burn incense during royal ancestral rites." }
+      ],
+      "question": "도슨트가 설명한, 이 향로가 유명한 이유는 무엇인가요?",
+      "question_en": "According to the docent, why is this incense burner famous?",
+      "correct_answer": "문양이 정교하고 보존 상태가 뛰어나서",
+      "options": ["문양이 정교하고 보존 상태가 뛰어나서", "크기가 매우 커서", "최근에 만들어져서", "다른 나라에서 만들어져서"],
+      "explanation": "도슨트는 문양의 정교함과 뛰어난 보존 상태 때문에 백제 공예 기술의 정수로 평가받는다고 설명했습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "학생1", "text": "발표 주제를 백제 금동대향로로 정했는데, 뭘 중심으로 설명하지?", "reading": "bal-pyo ju-je-reul baek-je geum-dong-dae-hyang-no-ro jeong-haet-neun-de, mwol jung-sim-eu-ro seol-myeong-ha-ji?", "en": "We decided to make our presentation topic the Baekje gilt-bronze incense burner — what should we focus the explanation on?" },
+        { "speaker": "학생2", "text": "향로 꼭대기의 봉황 문양이 상징하는 의미부터 설명하면 좋을 것 같아.", "reading": "hyang-no kkok-dae-gi-ui bong-hwang mun-yang-i sang-jing-ha-neun ui-mi-bu-teo seol-myeong-ha-myeon jo-eul geot ga-ta.", "en": "I think it'd be good to start by explaining what the phoenix pattern on top symbolizes." },
+        { "speaker": "학생1", "text": "그럼 발굴된 장소랑 연도도 같이 넣을까?", "reading": "geu-reom bal-gul-doen jang-so-rang yeon-do-do gat-i neo-eul-kka?", "en": "Then should we also include where and when it was excavated?" },
+        { "speaker": "학생2", "text": "응, 1993년 부여에서 발굴됐다는 사실을 넣으면 신뢰도가 높아질 거야.", "reading": "eung, cheon-gu-baek-gu-sip-sam-nyeon bu-yeo-e-seo bal-gul-dwaet-da-neun sa-sil-eul neo-eu-myeon sin-roe-do-ga nop-a-jil geo-ya.", "en": "Yeah, adding that it was excavated in Buyeo in 1993 will make it more credible." }
+      ],
+      "question": "학생2가 발표에서 가장 먼저 설명하자고 제안한 것은 무엇인가요?",
+      "question_en": "What did Student 2 suggest explaining first in the presentation?",
+      "correct_answer": "봉황 문양이 상징하는 의미",
+      "options": ["봉황 문양이 상징하는 의미", "향로의 무게", "향로를 만든 사람의 이름", "향로의 가격"],
+      "explanation": "학생2는 '향로 꼭대기의 봉황 문양이 상징하는 의미부터 설명하면 좋겠다'고 제안했습니다."
+    }
+  ]
+}

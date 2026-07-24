@@ -1,0 +1,93 @@
+{
+  "id": "ch-g02",
+  "character_id": "sangwoo",
+  "title": "비단물결 금강 이야기",
+  "emoji": "🌊",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "승객 여러분, 이제 충청도의 젖줄인 금강 상공을 지나고 있습니다. 왜 '비단물결'이라 불리는지 함께 살펴보시죠.",
+      "reading": "seung-gaek yeo-reo-bun, i-je chung-cheong-do-ui jeot-jul-in geum-gang sang-gong-eul ji-na-go it-seum-ni-da.",
+      "en": "Passengers, we're now passing over the Geumgang, the lifeline of Chungcheong. Let's look at why it's called 'silk ripples'."
+    },
+    {
+      "text": "저 아래 굽이굽이 흐르는 강이 '금강'입니다. 비단결처럼 부드럽게 흐른다 하여 붙은 이름이지요.",
+      "reading": "jeo a-rae gup-i-gup-i heu-reu-neun gang-i geum-gang-im-ni-da.",
+      "en": "That winding river below is the 'Geumgang'. It's named for flowing as smoothly as silk.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "옛날에는 강가마다 '나루터'가 있었습니다. 배를 타고 강을 건너던 사람들의 발자취가 남아 있지요.",
+      "reading": "yen-nal-e-neun gang-ga-ma-da na-ru-teo-ga i-sseot-seum-ni-da.",
+      "en": "In the old days, there was a 'ferry crossing' along every riverbank. Traces remain of people who crossed the river by boat.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "백제는 '수운'을 적극 활용했습니다. 금강 뱃길을 따라 내륙과 서해가 자연스럽게 이어졌지요.",
+      "reading": "baek-je-neun su-un-eul jeok-geuk hwal-yong-haet-seum-ni-da.",
+      "en": "Baekje actively used 'water transport'. The inland region and the Yellow Sea were naturally connected along the Geumgang's shipping routes.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "지금의 공주는 백제 때 '웅진'이라 불렸습니다. 금강을 곁에 두고 방어에 유리한 도읍이었지요.",
+      "reading": "ji-geum-ui gong-ju-neun baek-je ttae ung-jin-i-ra bul-lyeot-seum-ni-da.",
+      "en": "Present-day Gongju was called 'Ungjin' during Baekje times. It was a capital advantageous for defense, with the Geumgang beside it.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "금강은 서천을 지나 '하구'에서 서해와 만납니다. 강물이 바다로 스며드는 그 경계가 참 아름답습니다.",
+      "reading": "geum-gang-eun seo-cheon-eul ji-na ha-gu-e-seo seo-hae-wa man-nam-ni-da.",
+      "en": "The Geumgang passes Seocheon and meets the Yellow Sea at its 'estuary'. The boundary where the river blends into the sea is truly beautiful.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "단어는 다 익히셨지요? 이번에는 강가에서 오가는 실제 대화를 읽고, 어떤 상황인지 천천히 헤아려 보시기 바랍니다.",
+      "reading": "dan-eo-neun da ig-hi-syeot-jyo?",
+      "en": "Have you learned all the words? This time, please read real conversations exchanged by the riverside and carefully work out the situation."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "금강", "reading": "geum-gang", "meaning": "Geumgang River", "example": "금강은 충청도를 가로지르며 비단결처럼 흐릅니다.", "example_reading": "geum-gang-eun chung-cheong-do-reul ga-ro-ji-reu-myeo bi-dan-gyeol-cheo-reom heu-reum-ni-da", "example_en": "The Geumgang crosses Chungcheong, flowing as smoothly as silk." },
+    { "id": "w02", "word": "나루터", "reading": "na-ru-teo", "meaning": "Ferry crossing / boat dock", "example": "나루터에서 사람과 물건이 강을 건넜습니다.", "example_reading": "na-ru-teo-e-seo sa-ram-gwa mul-geon-i gang-eul geon-neot-seum-ni-da", "example_en": "People and goods crossed the river at the ferry crossing." },
+    { "id": "w03", "word": "수운", "reading": "su-un", "meaning": "Water transport / river shipping", "example": "수운 덕분에 백제는 내륙과 바다를 편리하게 오갔습니다.", "example_reading": "su-un deok-bun-e baek-je-neun nae-ryuk-gwa ba-da-reul pyeol-li-ha-ge o-gat-seum-ni-da", "example_en": "Thanks to water transport, Baekje moved conveniently between the inland region and the sea." },
+    { "id": "w04", "word": "웅진", "reading": "ung-jin", "meaning": "Ungjin (old name of Gongju, Baekje's 2nd capital)", "example": "웅진은 금강을 낀 백제의 두 번째 수도였습니다.", "example_reading": "ung-jin-eun geum-gang-eul kkin baek-je-ui du beon-jjae su-do-yeot-seum-ni-da", "example_en": "Ungjin was Baekje's second capital, situated along the Geumgang." },
+    { "id": "w05", "word": "하구", "reading": "ha-gu", "meaning": "River mouth / estuary", "example": "하구에서 금강은 서해로 흘러듭니다.", "example_reading": "ha-gu-e-seo geum-gang-eun seo-hae-ro heul-leo-deum-ni-da", "example_en": "At the estuary, the Geumgang flows into the Yellow Sea." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "금강은 충청도를 가로지르며 비단결처럼 흐릅니다.", "reading": "geum-gang-eun chung-cheong-do-reul ga-ro-ji-reu-myeo bi-dan-gyeol-cheo-reom heu-reum-ni-da", "en": "The Geumgang crosses Chungcheong, flowing as smoothly as silk." },
+    { "id": "s02", "ko": "나루터에서 사람과 물건이 강을 건넜습니다.", "reading": "na-ru-teo-e-seo sa-ram-gwa mul-geon-i gang-eul geon-neot-seum-ni-da", "en": "People and goods crossed the river at the ferry crossing." },
+    { "id": "s03", "ko": "수운 덕분에 백제는 내륙과 바다를 편리하게 오갔습니다.", "reading": "su-un deok-bun-e baek-je-neun nae-ryuk-gwa ba-da-reul pyeol-li-ha-ge o-gat-seum-ni-da", "en": "Thanks to water transport, Baekje moved conveniently between the inland region and the sea." },
+    { "id": "s04", "ko": "웅진은 금강을 낀 백제의 두 번째 수도였습니다.", "reading": "ung-jin-eun geum-gang-eul kkin baek-je-ui du beon-jjae su-do-yeot-seum-ni-da", "en": "Ungjin was Baekje's second capital, situated along the Geumgang." },
+    { "id": "s05", "ko": "하구에서 금강은 서해로 흘러듭니다.", "reading": "ha-gu-e-seo geum-gang-eun seo-hae-ro heul-leo-deum-ni-da", "en": "At the estuary, the Geumgang flows into the Yellow Sea." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "여행자", "text": "여기 나루터가 예전에는 실제로 쓰이던 곳이에요?", "reading": "yeo-gi na-ru-teo-ga ye-jeon-e-neun sil-je-ro sseu-i-deon go-si-e-yo?", "en": "Was this ferry crossing actually in use in the past?" },
+        { "speaker": "뱃사공 후손", "text": "그럼요, 제 할아버지도 이곳에서 나룻배를 저으셨대요.", "reading": "geu-reom-yo, je hal-a-beo-ji-do i-gos-e-seo na-rut-bae-reul jeo-eu-syeot-dae-yo.", "en": "Of course. My grandfather also used to row a ferry boat right here." },
+        { "speaker": "여행자", "text": "다리도 없던 시절에는 다들 배로 강을 건넜겠네요.", "reading": "da-ri-do eop-deon si-jeol-e-neun da-deul bae-ro gang-eul geon-neot-get-ne-yo.", "en": "Back when there were no bridges yet, everyone must have crossed the river by boat." },
+        { "speaker": "뱃사공 후손", "text": "맞아요, 장에 갈 때도, 이웃 마을에 갈 때도 나루터가 유일한 길이었어요.", "reading": "mat-a-yo, jang-e gal ttae-do, i-ut ma-eul-e gal ttae-do na-ru-teo-ga yu-il-han gil-i-eot-seo-yo.", "en": "That's right — whether going to the market or a neighboring village, the ferry crossing was the only way." }
+      ],
+      "question": "두 사람이 이야기하는 나루터는 예전에 어떤 역할을 했나요?",
+      "question_en": "What role did the ferry crossing play in the past, according to the two speakers?",
+      "correct_answer": "다리가 없던 시절 강을 건너는 유일한 길이었다",
+      "options": ["다리가 없던 시절 강을 건너는 유일한 길이었다", "왕실 전용 낚시터였다", "군인들이 훈련하던 곳이었다", "장이 열리는 시장 부지였다"],
+      "explanation": "뱃사공 후손은 다리가 없던 시절 장이나 이웃 마을에 갈 때도 나루터가 강을 건너는 유일한 길이었다고 설명합니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "학생", "text": "선생님, 백제가 왜 하필 금강 옆에 도읍을 정했나요?", "reading": "seon-saeng-nim, baek-je-ga wae ha-pil geum-gang yeop-e do-eup-eul jeong-haet-na-yo?", "en": "Teacher, why did Baekje specifically choose a capital next to the Geumgang?" },
+        { "speaker": "선생님", "text": "강이 자연 방어선이 되어 주고, 수운을 이용해 물자를 나르기도 편했기 때문이지.", "reading": "gang-i ja-yeon bang-eo-seon-i doe-eo ju-go, su-un-eul i-yong-hae mul-ja-reul na-reu-gi-do pyeon-haet-gi ttae-mun-i-ji.", "en": "Because the river served as a natural defensive line, and it was also convenient for carrying goods using water transport." },
+        { "speaker": "학생", "text": "그럼 웅진도 그런 이유로 수도가 된 건가요?", "reading": "geu-reom ung-jin-do geu-reon i-yu-ro su-do-ga doen geon-ga-yo?", "en": "So did Ungjin become the capital for the same reason?" },
+        { "speaker": "선생님", "text": "그렇지, 웅진은 금강이 삼면을 감싸고 있어서 외적을 막기에 아주 유리했단다.", "reading": "geu-reo-chi, ung-jin-eun geum-gang-i sam-myeon-eul gam-ssa-go i-sseo-seo oe-jeog-eul mak-gi-e a-ju yu-ri-haet-dan-da.", "en": "Right — the Geumgang wrapped around Ungjin on three sides, making it very advantageous for blocking invaders." }
+      ],
+      "question": "선생님이 설명한 백제가 금강 옆에 도읍을 정한 이유는 무엇인가요?",
+      "question_en": "According to the teacher, why did Baekje set its capitals next to the Geumgang?",
+      "correct_answer": "자연 방어선이 되고 수운으로 물자를 나르기 편해서",
+      "options": ["자연 방어선이 되고 수운으로 물자를 나르기 편해서", "강물이 마시기에 가장 깨끗해서", "다른 나라와 국경을 맞대고 있어서", "왕이 낚시를 좋아해서"],
+      "explanation": "선생님은 금강이 자연 방어선이 되어 주고 수운으로 물자를 나르기 편리했기 때문에 백제가 강가에 도읍을 정했다고 설명합니다."
+    }
+  ]
+}

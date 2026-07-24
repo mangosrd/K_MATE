@@ -1,0 +1,62 @@
+{
+  "id": "ch-h03",
+  "character_id": "haneul",
+  "title": "천년 한지의 제작 기술",
+  "emoji": "📜",
+  "story": [
+    {
+      "text": "승객 여러분, 전주의 자랑, 천년 종이의 고장으로 안내해 드릴게요.",
+      "reading": "seung-gaek yeo-reo-bun, jeon-ju-ui ja-rang, cheon-nyeon jong-i-ui go-jang-eu-ro an-nae-hae deu-ril-ge-yo.",
+      "en": "Passengers, let me guide you to Jeonju's pride — the home of thousand-year paper."
+    },
+    {
+      "text": "전주는 '한지'로 유명한 고장이에요. 천 년이 지나도 색이 바래지 않는 우리 전통 종이랍니다.",
+      "reading": "jeon-ju-neun han-ji-ro yu-myeong-han go-jang-i-e-yo. cheon nyeon-i ji-na-do saeg-i ba-rae-ji an-neun u-ri jeon-tong jong-i-ram-ni-da.",
+      "en": "Jeonju is famous for 'hanji'. It's our traditional paper that doesn't fade in color even after a thousand years.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "한지는 '닥나무'라는 나무의 껍질로 만들어요. 껍질을 삶고 두드려서 고운 종이로 다시 태어나지요.",
+      "reading": "han-ji-neun dak-na-mu-ra-neun na-mu-ui kkeob-jil-lo man-deul-eo-yo. kkeob-jil-eul salm-go du-deu-ryeo-seo go-un jong-i-ro da-si tae-eo-na-ji-yo.",
+      "en": "Hanji is made from the bark of a tree called 'paper mulberry'. The bark is boiled and beaten, then reborn as fine paper.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "옛날에는 방문에 '창호지'를 발랐어요. 은은한 햇빛이 종이를 통과해 방 안을 따뜻하게 밝혀 주었답니다.",
+      "reading": "yen-nal-e-neun bang-mun-e chang-ho-ji-reul bal-la-sseo-yo. eun-eun-han haet-bich-i jong-i-reul tong-gwa-hae bang an-eul tta-tteut-ha-ge balk-hyeo ju-eot-dam-ni-da.",
+      "en": "In the old days, 'window paper' was pasted onto room doors. Soft sunlight would pass through the paper and warmly light up the room.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "한지 위에는 '먹'으로 글씨를 썼어요. 벼루에 먹을 갈면 은은한 향과 검은 먹물이 나온답니다.",
+      "reading": "han-ji wi-e-neun meog-eu-ro geul-ssi-reul sseo-sseo-yo. byeo-ru-e meog-eul gal-myeon eun-eun-han hyang-gwa geom-eun meok-mul-i na-o-ndam-ni-da.",
+      "en": "On hanji, people wrote with 'ink sticks'. Grinding the ink stick on an inkstone releases a soft scent and black ink.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "한지는 '부채'로도 만들어져요. 여름이면 한지 부채를 부치며 더위를 식혔지요.",
+      "reading": "han-ji-neun bu-chae-ro-do man-deul-eo-jyeo-yo. yeo-reum-i-myeon han-ji bu-chae-reul bu-chi-myeo deo-wi-reul sik-hyeot-ji-yo.",
+      "en": "Hanji is also made into 'fans'. In summer, people cooled off by fanning themselves with hanji fans.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "자, 천년의 종이 한지를 오늘 다섯 단어로 만나 보았어요. 이제 문제를 풀며 실력을 펼쳐볼까요?",
+      "reading": "ja, cheon-nyeon-ui jong-i han-ji-reul o-neul da-seot dan-eo-ro man-na bo-a-sseo-yo. i-je mun-je-reul pul-myeo sil-lyeog-eul pyeol-chyeo-bol-kka-yo?",
+      "en": "Now, you've met thousand-year-old hanji through five words today. Shall we spread out your skills by solving some questions?"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "한지", "reading": "han-ji", "meaning": "Hanji (Traditional Korean Paper)", "example": "한지는 우리나라 전통 종이예요.", "example_reading": "han-ji-neun u-ri-na-ra jeon-tong jong-i-ye-yo", "example_en": "Hanji is our country's traditional paper." },
+    { "id": "w02", "word": "닥나무", "reading": "dak-na-mu", "meaning": "Paper Mulberry Tree", "example": "닥나무로 한지를 만들어요.", "example_reading": "dak-na-mu-ro han-ji-reul man-deul-eo-yo", "example_en": "Hanji is made from paper mulberry trees." },
+    { "id": "w03", "word": "창호지", "reading": "chang-ho-ji", "meaning": "Window Paper", "example": "창호지는 문에 바르는 종이예요.", "example_reading": "chang-ho-ji-neun mun-e ba-reu-neun jong-i-ye-yo", "example_en": "Window paper is paper pasted onto doors." },
+    { "id": "w04", "word": "부채", "reading": "bu-chae", "meaning": "Fan", "example": "부채는 한지로도 만들어요.", "example_reading": "bu-chae-neun han-ji-ro-do man-deul-eo-yo", "example_en": "Fans are also made with hanji." },
+    { "id": "w05", "word": "먹", "reading": "meok", "meaning": "Ink Stick", "example": "먹으로 한지에 글씨를 써요.", "example_reading": "meog-eu-ro han-ji-e geul-ssi-reul sseo-yo", "example_en": "You write on hanji using an ink stick." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "한지는 천 년이 지나도 변하지 않아요.", "reading": "han-ji-neun cheon nyeon-i ji-na-do byeon-ha-ji an-a-yo", "en": "Hanji doesn't change even after a thousand years." },
+    { "id": "s02", "ko": "닥나무 껍질로 한지를 만들어요.", "reading": "dak-na-mu kkeob-jil-lo han-ji-reul man-deul-eo-yo", "en": "Hanji is made from paper mulberry bark." },
+    { "id": "s03", "ko": "창호지가 방 안을 은은하게 밝혀요.", "reading": "chang-ho-ji-ga bang an-eul eun-eun-ha-ge balk-hyeo-yo", "en": "Window paper softly lights up the room." },
+    { "id": "s04", "ko": "부채에 그림을 그려 넣어요.", "reading": "bu-chae-e geu-rim-eul geu-ryeo neoh-eo-yo", "en": "A picture is drawn onto the fan." },
+    { "id": "s05", "ko": "먹을 갈아서 글씨를 써요.", "reading": "meog-eul gal-a-seo geul-ssi-reul sseo-yo", "en": "You grind the ink stick and write with it." }
+  ]
+}

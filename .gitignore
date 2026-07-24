@@ -48,3 +48,7 @@ backend/__pycache__/
 *.pyc
 backend/venv/
 backend/.venv/
+
+# ml: trained model artifacts are regenerable (see ml/vocab_level/README.md) and too large for git
+ml/vocab_level/model/
+ml/vocab_level/*_log.txt

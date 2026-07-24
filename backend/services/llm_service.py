@@ -155,15 +155,98 @@ def build_system_prompt(
 
 
 # ── 단어 추출 ─────────────────────────────────────────────
+ML_VOCAB_DIR = BASE_DIR / "ml" / "vocab_level"
+BERT_MODEL_DIR = ML_VOCAB_DIR / "model" / "klue_bert_vocab_level_word_only"
+RF_MODEL_PATH = ML_VOCAB_DIR / "model" / "vocab_level_clf.joblib"
+_LEVEL_RANK = {"초급": 0, "중급": 1, "고급": 2}
+
+_bert_tokenizer = None
+_bert_model = None
+_rf_model = None
+
+
+def _get_word_candidates(text: str) -> list[str]:
+    """Kiwi 형태소 분석으로 조사/어미를 뗀 사전형 단어 후보 추출.
+
+    kiwipiepy가 없으면 예전 정규식 방식(조사가 붙어 나올 수 있음)으로 폴백한다.
+    """
+    import sys
+    if str(ML_VOCAB_DIR) not in sys.path:
+        sys.path.insert(0, str(ML_VOCAB_DIR))
+    try:
+        from kiwi_extract import extract_word_candidates
+        return extract_word_candidates(text)
+    except ImportError:
+        import re
+        return list(dict.fromkeys(re.findall(r"[가-힣]{2,4}", text)))
+
+
+def _load_bert():
+    """KLUE-BERT 파인튜닝 분류 모델(정확도 0.637) 지연 로드. 없으면 (None, None)."""
+    global _bert_tokenizer, _bert_model
+    if _bert_model is None and BERT_MODEL_DIR.exists():
+        from transformers import AutoModelForSequenceClassification, AutoTokenizer
+        _bert_tokenizer = AutoTokenizer.from_pretrained(BERT_MODEL_DIR)
+        _bert_model = AutoModelForSequenceClassification.from_pretrained(BERT_MODEL_DIR)
+        _bert_model.eval()
+    return _bert_tokenizer, _bert_model
+
+
+def _load_rf_model():
+    """RandomForest 베이스라인(정확도 0.496) 지연 로드. BERT가 없을 때만 쓰는 폴백."""
+    global _rf_model
+    if _rf_model is None and RF_MODEL_PATH.exists():
+        import joblib
+        _rf_model = joblib.load(RF_MODEL_PATH)
+    return _rf_model
+
+
+def predict_word_levels(words: list[str]) -> dict[str, str] | None:
+    """여러 단어의 난이도를 한 번에 예측. BERT 우선, 없으면 RandomForest, 둘 다 없으면 None."""
+    tokenizer, bert_model = _load_bert()
+    if bert_model is not None:
+        import torch
+        enc = tokenizer(words, truncation=True, max_length=16, padding=True, return_tensors="pt")
+        with torch.no_grad():
+            logits = bert_model(**enc).logits
+        pred_ids = logits.argmax(dim=-1).tolist()
+        id2label = bert_model.config.id2label
+        return {w: id2label[i] for w, i in zip(words, pred_ids)}
+
+    rf_model = _load_rf_model()
+    if rf_model is not None:
+        import pandas as pd
+        rows = pd.DataFrame([{
+            "word": w,
+            "pos_primary": "미상",
+            "has_hanja": 0,
+            "is_bound_morpheme": int(w.startswith("-")),
+            "syllable_count": len(w),
+        } for w in words])
+        return dict(zip(words, rf_model.predict(rows)))
+
+    return None
+
+
 def extract_word_suggestion(reply: str) -> dict | None:
-    """응답에서 핵심 한국어 단어 추출 (MVP)"""
-    import re
-    korean_words = re.findall(r"[가-힣]{2,4}", reply)
+    """응답에서 한국어 단어 후보를 뽑고, 난이도 분류 모델로 '배울 만한' 단어를 선택
+
+    분류 모델이 없거나 로드 실패 시 기존 방식(최단어 선택)으로 폴백한다.
+    """
+    korean_words = _get_word_candidates(reply)
     if not korean_words:
         return None
-    word = sorted(korean_words, key=len)[0]
+
+    levels = predict_word_levels(korean_words)
+    if levels is None:
+        word = sorted(korean_words, key=len)[0]
+        return {"word": word, "meaning": "", "sentence": reply[:60], "level": None}
+
+    # 초급(이미 알 법한 단어)보다 중급/고급을 우선 추천
+    best_word = max(korean_words, key=lambda w: _LEVEL_RANK.get(levels[w], 0))
     return {
-        "word": word,
+        "word": best_word,
         "meaning": "",
         "sentence": reply[:60],
+        "level": levels[best_word],
     }

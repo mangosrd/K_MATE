@@ -3,9 +3,12 @@
 import Link from "next/link";
 import BottomNav from "@/components/ui/BottomNav";
 import { MOCK_CHARACTERS, MOCK_USER, MOCK_DIARY, canAccessCharacter } from "@/lib/db/mock";
+import { useLanguage } from "@/components/LanguageContext";
 import styles from "./diary.module.css";
 
 export default function DiarySelectPage() {
+  const { t } = useLanguage();
+
   const diaryCountByChar = (charId: string) =>
     MOCK_DIARY.filter((d) => d.character_id === charId).length;
   const unlockedCount = (charId: string) =>
@@ -16,14 +19,13 @@ export default function DiarySelectPage() {
       <div className="page-content">
         <header className="page-header">
           <div>
-            <h1 className="page-title">메이트의 일기</h1>
-            <p style={{ fontSize: 11, color: "var(--text-muted)", fontWeight: 500 }}>Diary Collection</p>
+            <h1 className="page-title">{t("diaryTitle")}</h1>
+            <p style={{ fontSize: 11, color: "var(--text-muted)", fontWeight: 500 }}>{t("diarySub")}</p>
           </div>
         </header>
 
         <div className={styles.inner}>
-          <p className={styles.hint}>메이트를 선택해 일기를 확인하세요</p>
-          <p className={styles.hintEn}>Choose a mate to read their diary</p>
+          <p className={styles.hint}>{t("diarySub")}</p>
 
           <div className={styles.charList}>
             {MOCK_CHARACTERS.map((char) => {
@@ -39,8 +41,8 @@ export default function DiarySelectPage() {
                     <div className={styles.charNameRow}>
                       <p className={styles.charName}>{char.name}</p>
                       {char.requires_premium && !canAccess
-                        ? <span className="badge badge-gold">⭐ 프리미엄</span>
-                        : <span className="badge badge-mint">✓ 이용 가능</span>}
+                        ? <span className="badge badge-gold">⭐ {t("premiumOnly")}</span>
+                        : <span className="badge badge-mint">✓ OPEN</span>}
                     </div>
                     <p className={styles.charRegion}>📍 {
                       char.region_id === "seoul" ? "서울·경기" :
@@ -50,18 +52,18 @@ export default function DiarySelectPage() {
                     }</p>
                     {canAccess && (
                       <p className={styles.diaryCount}>
-                        일기 {unlocked}/{total}편 해금됨
+                        {t("diaryTitle")} {unlocked}/{total} {t("unlockedStatus")}
                       </p>
                     )}
                   </div>
 
                   {canAccess ? (
                     <Link href={`/diary/${char.id}`} className="btn btn-primary btn-sm" id={`btn-diary-${char.id}`}>
-                      보기 →
+                      {t("diaryTitle")} →
                     </Link>
                   ) : (
                     <button disabled className="btn btn-secondary btn-sm" id={`btn-premium-diary-${char.id}`} style={{ opacity: 0.6, cursor: "not-allowed" }}>
-                      🔒 잠금
+                      🔒 {t("lockedStatus")}
                     </button>
                   )}
                 </div>

@@ -1,0 +1,62 @@
+{
+  "id": "ch-h06",
+  "character_id": "haneul",
+  "title": "순천만 습지와 생태 보존",
+  "emoji": "🌾",
+  "story": [
+    {
+      "text": "승객 여러분, 이번엔 생명이 숨 쉬는 순천만 상공이에요. 자연의 소리에 귀 기울여 보세요.",
+      "reading": "seung-gaek yeo-reo-bun, i-beon-en saeng-myeong-i sum swi-neun sun-cheon-man sang-gong-i-e-yo. ja-yeon-ui so-ri-e gwi gi-ul-yeo bo-se-yo.",
+      "en": "Passengers, this time we're above Suncheon Bay, where life breathes. Please listen closely to the sounds of nature."
+    },
+    {
+      "text": "저 넓은 초록빛 땅, '습지'예요. 물과 땅이 만나 다양한 생물이 어우러져 사는 소중한 자연이랍니다.",
+      "reading": "jeo neolb-eun cho-rok-bit ttang, seup-ji-ye-yo. mul-gwa ttang-i man-na da-yang-han saeng-mul-i eo-u-reo-jyeo sa-neun so-jung-han ja-yeon-i-ram-ni-da.",
+      "en": "That wide green land is a 'wetland'. It's precious nature where water and land meet, and diverse creatures live together in harmony.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "습지를 가득 채운 건 '갈대'예요. 가을이면 황금빛으로 물들어 바람 따라 물결처럼 흔들린답니다.",
+      "reading": "seup-ji-reul ga-deuk chae-un geon gal-dae-ye-yo. ga-eul-i-myeon hwang-geum-bich-eu-ro mul-deul-eo ba-ram tta-ra mul-gyeol-cheo-reom heun-deul-lin-dam-ni-da.",
+      "en": "What fills the wetland is 'reeds'. In autumn they turn golden and sway like waves following the wind.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "갈대숲 너머로는 촉촉한 '갯벌'이 펼쳐져요. 짱뚱어와 게들이 숨쉬며 살아가는 생명의 터전이에요.",
+      "reading": "gal-dae-sup neo-meo-ro-neun chok-chok-han gaet-beol-i pyeol-chyeo-jyeo-yo. jjang-ttung-eo-wa ge-deul-i sum-swi-myeo sal-a-ga-neun saeng-myeong-ui teo-jeon-i-e-yo.",
+      "en": "Beyond the reed field, a moist 'tidal flat' spreads out. It's a home of life where mudskippers and crabs breathe and live.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "이 넓은 습지에는 계절마다 '철새'가 날아와요. 먼 나라에서 쉬어 가는 소중한 손님들이지요.",
+      "reading": "i neol-beun seup-ji-e-neun gye-jeol-ma-da cheol-sae-ga nal-a-wa-yo. meon na-ra-e-seo swi-eo ga-neun so-jung-han son-nim-deul-i-ji-yo.",
+      "en": "'Migratory birds' fly to this wide wetland with every season. They're precious guests resting on their way from faraway countries.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "겨울이면 귀한 손님, '흑두루미'가 찾아와요. 세계적으로 수가 적은 멸종위기 새라 순천만이 더욱 소중하답니다.",
+      "reading": "gyeo-ul-i-myeon gwi-han son-nim, heuk-du-ru-mi-ga chaj-a-wa-yo. se-gye-jeog-eu-ro su-ga jeog-eun myeol-jong-wi-gi sae-ra sun-cheon-man-i deo-uk so-jung-ha-dam-ni-da.",
+      "en": "In winter, a precious guest, the 'hooded crane', comes to visit. Since it's a globally rare, endangered bird, Suncheon Bay is even more precious.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "자, 생명이 가득한 다섯 단어를 만나 보았어요. 이제 문제를 풀며 자연을 다시 느껴봐요!",
+      "reading": "ja, saeng-myeong-i ga-deuk-han da-seot dan-eo-reul man-na bo-a-sseo-yo. i-je mun-je-reul pul-myeo ja-yeon-eul da-si neu-kkyeo-bwa-yo!",
+      "en": "Now, you've met five words full of life. Let's feel nature again by solving some questions!"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "습지", "reading": "seup-ji", "meaning": "Wetland", "example": "습지에는 다양한 생물이 살아요.", "example_reading": "seup-ji-e-neun da-yang-han saeng-mul-i sal-a-yo", "example_en": "Various creatures live in the wetland." },
+    { "id": "w02", "word": "갈대", "reading": "gal-dae", "meaning": "Reed", "example": "갈대가 바람에 흔들려요.", "example_reading": "gal-dae-ga ba-ram-e heun-deul-lyeo-yo", "example_en": "The reeds sway in the wind." },
+    { "id": "w03", "word": "흑두루미", "reading": "heuk-du-ru-mi", "meaning": "Hooded Crane", "example": "흑두루미가 겨울에 찾아와요.", "example_reading": "heuk-du-ru-mi-ga gyeo-ul-e chaj-a-wa-yo", "example_en": "The hooded crane comes to visit in winter." },
+    { "id": "w04", "word": "갯벌", "reading": "gaet-beol", "meaning": "Tidal Flat", "example": "갯벌에는 게와 조개가 살아요.", "example_reading": "gaet-beol-e-neun ge-wa jo-gae-ga sal-a-yo", "example_en": "Crabs and clams live in the tidal flat." },
+    { "id": "w05", "word": "철새", "reading": "cheol-sae", "meaning": "Migratory Bird", "example": "철새들이 하늘을 날아가요.", "example_reading": "cheol-sae-deul-i ha-neul-eul nal-a-ga-yo", "example_en": "Migratory birds fly across the sky." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "습지는 자연의 보물창고예요.", "reading": "seup-ji-neun ja-yeon-ui bo-mul-chang-go-ye-yo", "en": "A wetland is nature's treasure trove." },
+    { "id": "s02", "ko": "갈대숲 사이로 산책로가 있어요.", "reading": "gal-dae-sup sa-i-ro san-chaeng-no-ga it-seo-yo", "en": "There's a walking path through the reed field." },
+    { "id": "s03", "ko": "흑두루미는 멸종위기 동물이에요.", "reading": "heuk-du-ru-mi-neun myeol-jong-wi-gi dong-mul-i-e-yo", "en": "The hooded crane is an endangered animal." },
+    { "id": "s04", "ko": "갯벌은 짱뚱어의 보금자리예요.", "reading": "gaet-beol-eun jjang-ttung-eo-ui bo-geum-ja-ri-ye-yo", "en": "The tidal flat is home to mudskippers." },
+    { "id": "s05", "ko": "철새는 계절 따라 이동해요.", "reading": "cheol-sae-neun gye-jeol tta-ra i-dong-hae-yo", "en": "Migratory birds move with the seasons." }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "id": "ch-j04",
+  "character_id": "yongwoo",
+  "title": "제주 감귤과 한라봉이야기",
+  "emoji": "🍊",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "승객 여러분, 저 아래 밭들이 온통 주황빛으로 물들어 있는 게 보이십니까? 제주의 겨울을 알리는 신호입니다.",
+      "reading": "seung-gaek yeo-reo-bun, jeo a-rae bat-deul-i on-tong ju-hwang-bit-eu-ro mul-deul-eo it-neun ge bo-i-sim-ni-kka?",
+      "en": "Passengers, can you see the fields down below all dyed in orange? It's the signal that announces Jeju's winter."
+    },
+    {
+      "text": "그 주인공이 바로 '감귤'입니다. 제주의 따뜻한 햇볕과 바람을 받고 자란, 이 섬을 대표하는 열매이지요.",
+      "reading": "geu ju-in-gong-i ba-ro gam-gyul-im-ni-da.",
+      "en": "The main character here is the 'tangerine'. Grown under Jeju's warm sun and wind, it's the fruit that represents this island.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "그중에서도 꼭지가 볼록 솟은 귀한 품종이 있으니, '한라봉'입니다. 한라산의 봉우리를 닮았다 하여 붙여진 이름입니다.",
+      "reading": "geu-jung-e-seo-do kkok-ji-ga bol-lok sos-eun gwi-han pum-jong-i it-eu-ni, hal-la-bong-im-ni-da.",
+      "en": "Among them is a precious variety with a bulging top — 'hallabong'. It got its name for resembling the peak of Hallasan.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "밭마다 늘어선 '과수원'을 보십시오. 탐스러운 열매가 가지마다 주렁주렁 매달려 있습니다.",
+      "reading": "bat-ma-da neul-eo-seon gwa-su-won-eul bo-sip-si-o.",
+      "en": "Look at the 'orchards' lining every field. Plump, tempting fruit hangs heavy from every branch.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "지금은 '수확철'입니다. 제주 사람들의 손이 가장 바빠지는 계절이지요. 저 아래 분주한 손길들이 보이십니까.",
+      "reading": "ji-geum-eun su-hwak-cheol-im-ni-da.",
+      "en": "It's currently 'harvest season' — the busiest season for the hands of Jeju's people. Can you see all the bustling hands down below?",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "감귤 하나에는 '비타민'이 가득합니다. 겨울철 감기를 이겨내는 제주 사람들의 오랜 지혜이기도 하지요.",
+      "reading": "gam-gyul ha-na-e-neun bi-ta-min-i ga-deuk-ham-ni-da.",
+      "en": "A single tangerine is packed with 'vitamins'. It's also part of the age-old wisdom Jeju people use to fight off winter colds.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "달콤한 주황빛 이야기, 잘 익으셨습니까? 이제 감귤밭을 배경으로 한 실제 대화를 읽고 상황을 맞혀보는 문제를 준비했습니다.",
+      "reading": "dal-kom-han ju-hwang-bit i-ya-gi, jal ig-eu-syeot-seum-ni-kka?",
+      "en": "Has this sweet, orange story ripened well for you? Now I've prepared questions where you'll read real conversations set in a tangerine orchard and guess the situation."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "감귤", "reading": "gam-gyul", "meaning": "Tangerine / mandarin", "example": "감귤은 제주를 대표하는 과일로 겨울이면 밭마다 주황빛으로 물듭니다.", "example_reading": "gam-gyul-eun je-ju-reul dae-pyo-ha-neun gwa-il-lo gyeo-ul-i-myeon bat-ma-da ju-hwang-bit-eu-ro mul-deum-ni-da", "example_en": "Tangerines are Jeju's signature fruit, turning the orchards orange every winter." },
+    { "id": "w02", "word": "한라봉", "reading": "hal-la-bong", "meaning": "Hallabong (premium citrus variety)", "example": "한라봉은 꼭지가 볼록 튀어나온 것이 특징인 고급 감귤 품종입니다.", "example_reading": "hal-la-bong-eun kkok-ji-ga bol-lok twi-eo-na-on geot-i teuk-jing-in go-geup gam-gyul pum-jong-im-ni-da", "example_en": "Hallabong is a premium citrus variety known for its bulging top." },
+    { "id": "w03", "word": "과수원", "reading": "gwa-su-won", "meaning": "Orchard", "example": "과수원마다 탐스러운 감귤이 주렁주렁 매달려 있습니다.", "example_reading": "gwa-su-won-ma-da tam-seu-reo-un gam-gyul-i ju-reong-ju-reong mae-dal-lyeo it-seum-ni-da", "example_en": "Every orchard is heavy with plump, tempting tangerines." },
+    { "id": "w04", "word": "수확철", "reading": "su-hwak-cheol", "meaning": "Harvest season", "example": "수확철이 되면 제주 곳곳에서 감귤을 따는 손길이 바빠집니다.", "example_reading": "su-hwak-cheol-i doe-myeon je-ju got-got-e-seo gam-gyul-eul tta-neun son-gil-i ba-ppa-jim-ni-da", "example_en": "When harvest season arrives, hands busily pick tangerines all across Jeju." },
+    { "id": "w05", "word": "비타민", "reading": "bi-ta-min", "meaning": "Vitamin", "example": "비타민이 풍부한 감귤은 겨울철 건강 관리에 좋습니다.", "example_reading": "bi-ta-min-i pung-bu-han gam-gyul-eun gyeo-ul-cheol geon-gang gwal-li-e joh-seum-ni-da", "example_en": "Vitamin-rich tangerines are great for winter health management." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "감귤은 제주를 대표하는 과일로 겨울이면 밭마다 주황빛으로 물듭니다.", "reading": "gam-gyul-eun je-ju-reul dae-pyo-ha-neun gwa-il-lo gyeo-ul-i-myeon bat-ma-da ju-hwang-bit-eu-ro mul-deum-ni-da", "en": "Tangerines are Jeju's signature fruit, turning the orchards orange every winter." },
+    { "id": "s02", "ko": "한라봉은 꼭지가 볼록 튀어나온 것이 특징인 고급 감귤 품종입니다.", "reading": "hal-la-bong-eun kkok-ji-ga bol-lok twi-eo-na-on geot-i teuk-jing-in go-geup gam-gyul pum-jong-im-ni-da", "en": "Hallabong is a premium citrus variety known for its bulging top." },
+    { "id": "s03", "ko": "과수원마다 탐스러운 감귤이 주렁주렁 매달려 있습니다.", "reading": "gwa-su-won-ma-da tam-seu-reo-un gam-gyul-i ju-reong-ju-reong mae-dal-lyeo it-seum-ni-da", "en": "Every orchard is heavy with plump, tempting tangerines." },
+    { "id": "s04", "ko": "수확철이 되면 제주 곳곳에서 감귤을 따는 손길이 바빠집니다.", "reading": "su-hwak-cheol-i doe-myeon je-ju got-got-e-seo gam-gyul-eul tta-neun son-gil-i ba-ppa-jim-ni-da", "en": "When harvest season arrives, hands busily pick tangerines all across Jeju." },
+    { "id": "s05", "ko": "비타민이 풍부한 감귤은 겨울철 건강 관리에 좋습니다.", "reading": "bi-ta-min-i pung-bu-han gam-gyul-eun gyeo-ul-cheol geon-gang gwal-li-e joh-seum-ni-da", "en": "Vitamin-rich tangerines are great for winter health management." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "관광객", "text": "사장님, 감귤 체험은 처음인데 어떻게 따면 되나요?", "reading": "sa-jang-nim, gam-gyul che-heom-eun cheo-eum-in-de eo-tteo-ke tta-myeon doe-na-yo?", "en": "Sir, this is my first tangerine-picking experience — how do I pick them?" },
+        { "speaker": "농장 주인", "text": "가위로 꼭지를 잘라주시면 돼요. 손으로 잡아당기면 나무에 상처가 나거든요.", "reading": "ga-wi-ro kkok-ji-reul jal-la-ju-si-myeon dwae-yo.", "en": "Just cut the stem with scissors. If you pull with your hands, it can damage the tree." },
+        { "speaker": "관광객", "text": "한라봉이랑 일반 감귤이랑 어떻게 구분해요?", "reading": "hal-la-bong-i-rang il-ban gam-gyul-i-rang eo-tteo-ke gu-bun-hae-yo?", "en": "How do I tell hallabong apart from regular tangerines?" },
+        { "speaker": "농장 주인", "text": "한라봉은 꼭지 부분이 볼록 튀어나와 있어서 한눈에 알아보실 수 있어요.", "reading": "hal-la-bong-eun kkok-ji bu-bun-i bol-lok twi-eo-na-wa it-eo-seo han-nun-e al-a-bo-sil su it-eo-yo.", "en": "Hallabong has a bulging bump at the top, so you can spot it at a glance." }
+      ],
+      "question": "농장 주인이 감귤을 딸 때 주의하라고 한 것은 무엇인가요?",
+      "question_en": "What did the farm owner caution about when picking tangerines?",
+      "correct_answer": "손으로 잡아당기지 말고 가위로 꼭지를 잘라야 한다",
+      "options": ["손으로 잡아당기지 말고 가위로 꼭지를 잘라야 한다", "감귤을 하루에 열 개만 딸 수 있다", "비 오는 날에는 딸 수 없다", "장갑을 반드시 껴야 한다"],
+      "explanation": "농장 주인은 손으로 잡아당기면 나무에 상처가 나니 가위로 꼭지를 잘라야 한다고 설명했습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "친구1", "text": "이번에 서울 갈 때 뭘 선물로 사가면 좋을까?", "reading": "i-beon-e seo-ul gal ttae mwol seon-mul-lo sa-ga-myeon jo-eul-kka?", "en": "What should I buy as a gift when I go to Seoul this time?" },
+        { "speaker": "친구2", "text": "한라봉 어때? 당도도 높고 귀한 감귤이라 선물하기 딱 좋아.", "reading": "hal-la-bong eo-ttae?", "en": "How about hallabong? It's sweet and a premium citrus, so it's perfect for a gift." },
+        { "speaker": "친구1", "text": "일반 감귤보다 비싸지 않아?", "reading": "il-ban gam-gyul-bo-da bi-ssa-ji an-a?", "en": "Isn't it more expensive than regular tangerines?" },
+        { "speaker": "친구2", "text": "조금 비싸긴 한데, 그만큼 맛도 좋고 특별한 느낌을 줄 수 있어.", "reading": "jo-geum bi-ssa-gin han-de, geu-man-keum mat-do jo-ko teuk-byeol-han neu-kkim-eul jul su it-eo.", "en": "It's a bit pricier, but it tastes that much better and feels more special." }
+      ],
+      "question": "친구2가 한라봉을 선물로 추천하는 이유는 무엇인가요?",
+      "question_en": "Why does Friend 2 recommend hallabong as a gift?",
+      "correct_answer": "당도가 높고 귀한 감귤이라 특별한 느낌을 줄 수 있어서",
+      "options": ["당도가 높고 귀한 감귤이라 특별한 느낌을 줄 수 있어서", "가격이 가장 저렴해서", "보관 기간이 길어서", "포장이 예뻐서"],
+      "explanation": "친구2는 한라봉이 당도도 높고 귀한 감귤이라 선물하기 좋고 특별한 느낌을 준다고 말했습니다."
+    }
+  ]
+}

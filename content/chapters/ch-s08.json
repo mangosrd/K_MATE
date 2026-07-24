@@ -1,0 +1,93 @@
+{
+  "id": "ch-s08",
+  "character_id": "sunwoo",
+  "title": "영도다리와 도개식 문화",
+  "emoji": "⚓",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "승객 여러분, 한국에서 유일하게 다리가 들리는 영도다리 상공을 지나고 있습니다!",
+      "reading": "seung-gaek yeo-reo-bun, han-gug-e-seo yu-il-ha-ge da-ri-ga deul-li-neun yeong-do-da-ri sang-gong-eul ji-na-go iss-seum-ni-da!",
+      "en": "Passengers, we're passing over Yeongdo Bridge, the only bridge in Korea that lifts up!"
+    },
+    {
+      "text": "저 다리가 바로 '도개교'예요. 배가 지나갈 때 다리 일부가 하늘로 들려 올라가죠.",
+      "reading": "jeo da-ri-ga ba-ro do-gae-gyo-ye-yo.",
+      "en": "That bridge is a 'drawbridge'. When a ship passes, part of the bridge lifts up toward the sky.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "다리의 '상판'이 서서히 올라가는 모습은 정말 신기한 광경이랍니다.",
+      "reading": "da-ri-ui sang-pan-i seo-seo-hi ol-la-ga-neun mo-seub-eun jeong-mal sin-gi-han gwang-gyeong-i-dam-ni-da.",
+      "en": "The sight of the bridge's 'deck' slowly rising is truly a fascinating scene.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "전쟁 때 헤어진 '실향민'들이 이 다리에서 다시 만나자고 약속했다는 사연도 있어요.",
+      "reading": "jeon-jaeng ttae hae-eo-jin sil-hyang-min-deul-i i da-ri-e-seo da-si man-na-ja-go yak-sok-haet-da-neun sa-yeon-do iss-eo-yo.",
+      "en": "There's also a story that 'displaced people' who were separated during the war promised to reunite at this bridge.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "다리가 열리는 시간에는 차량 '통제'가 이루어져서 잠시 길이 막혀요.",
+      "reading": "da-ri-ga yeol-li-neun si-gan-e-neun cha-ryang tong-je-ga i-ru-eo-jyeo-seo jam-si gil-i mak-hyeo-yo.",
+      "en": "During the time the bridge opens, vehicle 'traffic control' is enforced, so the road is briefly blocked.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "다리의 '개폐' 행사는 정해진 시간에 맞춰 진행되니 미리 시간을 확인해두세요.",
+      "reading": "da-ri-ui gae-pye haeng-sa-neun jeong-hae-jin si-gan-e maj-chwo jin-haeng-doe-ni mi-ri si-gan-eul hwag-in-hae-du-se-yo.",
+      "en": "The bridge's 'opening and closing' event runs at a set time, so be sure to check the schedule in advance.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "단어는 다 익히셨죠? 이번엔 영도다리 앞에서 실제로 벌어지는 대화를 보고 상황을 맞혀보는 문제도 준비했어요!",
+      "reading": "dan-eo-neun da ig-hi-syeot-jyo?",
+      "en": "Got all the words down? This time I've also prepared questions where you read real conversations near Yeongdo Bridge and figure out the situation!"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "도개교", "reading": "do-gae-gyo", "meaning": "Drawbridge / bascule bridge", "example": "도개교는 배가 지나갈 때 다리 일부가 위로 들립니다.", "example_reading": "do-gae-gyo-neun bae-ga ji-na-gal ttae da-ri il-bu-ga wi-ro deul-lim-ni-da", "example_en": "On a drawbridge, part of the bridge lifts up when a ship passes." },
+    { "id": "w02", "word": "상판", "reading": "sang-pan", "meaning": "Bridge deck / roadway surface", "example": "상판이 서서히 올라가는 모습은 정말 신기한 광경이에요.", "example_reading": "sang-pan-i seo-seo-hi ol-la-ga-neun mo-seub-eun jeong-mal sin-gi-han gwang-gyeong-i-e-yo", "example_en": "The sight of the deck slowly rising is a truly fascinating scene." },
+    { "id": "w03", "word": "실향민", "reading": "sil-hyang-min", "meaning": "Displaced person (separated from hometown)", "example": "실향민들은 전쟁 때 영도다리를 만남의 장소로 삼았다고 해요.", "example_reading": "sil-hyang-min-deul-eun jeon-jaeng ttae yeong-do-da-ri-reul man-nam-ui jang-so-ro sam-at-da-go hae-yo", "example_en": "Displaced people are said to have made Yeongdo Bridge their meeting place during the war." },
+    { "id": "w04", "word": "통제", "reading": "tong-je", "meaning": "Traffic control / closure", "example": "통제 시간에는 차량이 다리를 건널 수 없습니다.", "example_reading": "tong-je si-gan-e-neun cha-ryang-i da-ri-reul geon-neol su eops-seum-ni-da", "example_en": "During the control period, vehicles cannot cross the bridge." },
+    { "id": "w05", "word": "개폐", "reading": "gae-pye", "meaning": "Opening and closing", "example": "개폐 행사는 정해진 시간에 맞춰 진행됩니다.", "example_reading": "gae-pye haeng-sa-neun jeong-hae-jin si-gan-e maj-chwo jin-haeng-doem-ni-da", "example_en": "The opening-and-closing event runs at a set time." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "도개교는 배가 지나갈 때 다리 일부가 위로 들립니다.", "reading": "do-gae-gyo-neun bae-ga ji-na-gal ttae da-ri il-bu-ga wi-ro deul-lim-ni-da", "en": "On a drawbridge, part of the bridge lifts up when a ship passes." },
+    { "id": "s02", "ko": "상판이 서서히 올라가는 모습은 정말 신기한 광경이에요.", "reading": "sang-pan-i seo-seo-hi ol-la-ga-neun mo-seub-eun jeong-mal sin-gi-han gwang-gyeong-i-e-yo", "en": "The sight of the deck slowly rising is a truly fascinating scene." },
+    { "id": "s03", "ko": "실향민들은 전쟁 때 영도다리를 만남의 장소로 삼았다고 해요.", "reading": "sil-hyang-min-deul-eun jeon-jaeng ttae yeong-do-da-ri-reul man-nam-ui jang-so-ro sam-at-da-go hae-yo", "en": "Displaced people are said to have made Yeongdo Bridge their meeting place during the war." },
+    { "id": "s04", "ko": "통제 시간에는 차량이 다리를 건널 수 없습니다.", "reading": "tong-je si-gan-e-neun cha-ryang-i da-ri-reul geon-neol su eops-seum-ni-da", "en": "During the control period, vehicles cannot cross the bridge." },
+    { "id": "s05", "ko": "개폐 행사는 정해진 시간에 맞춰 진행됩니다.", "reading": "gae-pye haeng-sa-neun jeong-hae-jin si-gan-e maj-chwo jin-haeng-doem-ni-da", "en": "The opening-and-closing event runs at a set time." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "관광객", "text": "영도다리가 들리는 걸 보고 싶은데, 언제 볼 수 있나요?", "reading": "yeong-do-da-ri-ga deul-li-neun geol bo-go sip-eun-de, eon-je bol su iss-na-yo?", "en": "I want to see Yeongdo Bridge lift up — when can I see it?" },
+        { "speaker": "안내원", "text": "매일 오후 2시에 개폐 행사가 있어요, 딱 15분 정도 진행됩니다.", "reading": "mae-il o-hu du-si-e gae-pye haeng-sa-ga iss-eo-yo, ttak sib-o-bun jeong-do jin-haeng-doem-ni-da.", "en": "There's an opening-and-closing event every day at 2 PM, lasting about 15 minutes." },
+        { "speaker": "관광객", "text": "그때는 차가 다리를 못 건너나요?", "reading": "geu-ttae-neun cha-ga da-ri-reul mot geon-neo-na-yo?", "en": "So can't cars cross the bridge at that time?" },
+        { "speaker": "안내원", "text": "네, 그 시간엔 통제돼서 차량 통행이 잠깐 멈춰요.", "reading": "ne, geu si-gan-en tong-je-dwae-seo cha-ryang tong-haeng-i jam-kkan meom-chwo-yo.", "en": "Right, during that time it's controlled so vehicle traffic briefly stops." }
+      ],
+      "question": "관광객이 궁금해한 것은 무엇인가요?",
+      "question_en": "What was the tourist curious about?",
+      "correct_answer": "다리가 들리는 행사를 볼 수 있는 시간",
+      "options": ["다리가 들리는 행사를 볼 수 있는 시간", "다리를 건너는 요금", "다리 근처 맛집", "다리의 길이"],
+      "explanation": "관광객이 '언제 볼 수 있나요?'라고 물었으므로 개폐 행사 시간을 궁금해하고 있습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "여행자", "text": "할아버지, 영도다리에 특별한 사연이 있다고 들었어요.", "reading": "hal-a-beo-ji, yeong-do-da-ri-e teuk-byeol-han sa-yeon-i iss-da-go deul-eoss-eo-yo.", "en": "Grandfather, I heard Yeongdo Bridge has a special story." },
+        { "speaker": "할아버지", "text": "그래, 전쟁 때 헤어진 가족들이 여기서 다시 만나자고 약속했었지.", "reading": "geu-rae, jeon-jaeng ttae hae-eo-jin ga-jok-deul-i yeo-gi-seo da-si man-na-ja-go yak-sok-haess-eot-ji.", "en": "That's right, families separated during the war used to promise to reunite here." },
+        { "speaker": "여행자", "text": "그럼 실향민들에게는 정말 의미가 큰 곳이겠네요.", "reading": "geu-reom sil-hyang-min-deul-e-ge-neun jeong-mal ui-mi-ga keun gos-i-get-ne-yo.", "en": "Then it must be a place of really great meaning for displaced people." },
+        { "speaker": "할아버지", "text": "맞아, 그래서 지금도 이 다리를 보면 마음이 뭉클해.", "reading": "maj-a, geu-rae-seo ji-geum-do i da-ri-reul bo-myeon ma-eum-i mung-keul-hae.", "en": "That's right, so even now, seeing this bridge moves my heart." }
+      ],
+      "question": "영도다리가 실향민들에게 특별한 이유는 무엇인가요?",
+      "question_en": "Why is Yeongdo Bridge special to displaced people?",
+      "correct_answer": "전쟁 때 헤어진 가족이 다시 만나기로 약속한 장소였기 때문에",
+      "options": ["전쟁 때 헤어진 가족이 다시 만나기로 약속한 장소였기 때문에", "다리 위에서 시장이 열렸기 때문에", "다리를 처음 만든 사람이 유명했기 때문에", "다리 근처에 병원이 있었기 때문에"],
+      "explanation": "할아버지가 '전쟁 때 헤어진 가족들이 여기서 다시 만나자고 약속했다'고 말했으므로 이것이 실향민들에게 특별한 이유입니다."
+    }
+  ]
+}

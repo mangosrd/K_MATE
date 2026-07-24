@@ -1,0 +1,93 @@
+{
+  "id": "ch-j02",
+  "character_id": "yongwoo",
+  "title": "한라산 백록담과 오름",
+  "emoji": "🌋",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "승객 여러분, 저 멀리 구름 위로 솟은 봉우리가 보이십니까? 대한민국에서 가장 높은 산, 한라산입니다.",
+      "reading": "seung-gaek yeo-reo-bun, jeo meol-li gu-reum wi-ro sos-eun bong-u-ri-ga bo-i-sim-ni-kka?",
+      "en": "Passengers, can you see that peak rising above the clouds in the distance? That is Hallasan, the highest mountain in South Korea."
+    },
+    {
+      "text": "해발 1,950미터, '한라산'은 남한에서 가장 높은 봉우리입니다. 저 산이 곧 제주도 그 자체라고도 할 수 있지요.",
+      "reading": "hae-bal cheon-gu-baek-o-sip mi-teo, han-la-san-eun nam-han-e-seo ga-jang nop-eun bong-u-ri-im-ni-da.",
+      "en": "At 1,950 meters above sea level, 'Hallasan' is the highest peak in South Korea. You could say that mountain is Jeju itself.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "정상에 오르면 맑고 깊은 호수, '백록담'을 만나게 됩니다. 흰 사슴이 물을 마시던 곳이라는 전설이 전해집니다.",
+      "reading": "jeong-sang-e o-reu-myeon malg-go gip-eun ho-su, baeng-nok-dam-eul man-na-ge doem-ni-da.",
+      "en": "When you reach the summit, you meet a clear, deep lake called 'Baengnokdam'. Legend says it's where a white deer once drank.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "한라산 자락에는 크고 작은 '오름'이 368개나 흩어져 있습니다. 저마다 다른 모양으로 제주의 능선을 그려내지요.",
+      "reading": "han-la-san ja-rag-e-neun keu-go jak-eun o-reum-i sam-baeg-yuk-sip-pal-gae-na heut-eo-jyeo it-seum-ni-da.",
+      "en": "Scattered across the foothills of Hallasan are 368 big and small 'oreum'. Each one draws a different shape into Jeju's ridgeline.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "제주는 수십만 년 전 용암이 쌓여 만들어진 '화산섬'입니다. 발밑의 검은 땅이 그 오랜 시간을 말해줍니다.",
+      "reading": "je-ju-neun su-sip-man nyeon jeon yong-am-i ssah-yeo man-deul-eo-jin hwa-san-seom-im-ni-da.",
+      "en": "Jeju is a 'volcanic island' formed hundreds of thousands of years ago from piled-up lava. The black earth beneath your feet speaks of that long span of time.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "정상까지 이어진 '등반로'를 따라 걷다 보면, 계절마다 다른 얼굴을 보여주는 숲을 만나게 됩니다.",
+      "reading": "jeong-sang-kka-ji i-eo-jin deung-ban-ro-reul tta-ra geot-da bo-myeon, gye-jeol-ma-da da-reun eol-gul-eul bo-yeo-ju-neun sup-eul man-na-ge doem-ni-da.",
+      "en": "If you walk along the 'trail' leading to the summit, you'll encounter a forest that shows a different face with each season.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "한라산이 품은 이야기, 조금 느껴지셨습니까? 이제 실제 탐방객들의 대화를 읽고 상황을 파악해보는 문제를 준비했습니다.",
+      "reading": "han-la-san-i pum-eun i-ya-gi, jo-geum neu-kkyeo-ji-syeot-seum-ni-kka?",
+      "en": "Did you get a small feel for the story Hallasan holds? Now I've prepared questions where you'll read real hikers' conversations and figure out the situation."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "한라산", "reading": "han-la-san", "meaning": "Hallasan, South Korea's highest mountain", "example": "한라산은 해발 1,950미터로 대한민국에서 가장 높은 산입니다.", "example_reading": "han-la-san-eun hae-bal cheon-gu-baek-o-sip mi-teo-ro dae-han-min-guk-e-seo ga-jang nop-eun san-im-ni-da", "example_en": "Hallasan, at 1,950 meters above sea level, is the highest mountain in South Korea." },
+    { "id": "w02", "word": "백록담", "reading": "baeng-nok-dam", "meaning": "Baengnokdam, the crater lake atop Hallasan", "example": "백록담은 한라산 정상에 자리한 화구호입니다.", "example_reading": "baeng-nok-dam-eun han-la-san jeong-sang-e ja-ri-han hwa-gu-ho-im-ni-da", "example_en": "Baengnokdam is the crater lake located at the summit of Hallasan." },
+    { "id": "w03", "word": "오름", "reading": "o-reum", "meaning": "Oreum, small parasitic volcanic cone", "example": "오름은 한라산 곳곳에 흩어진 작은 기생화산입니다.", "example_reading": "o-reum-eun han-la-san got-got-e heut-eo-jin jak-eun gi-saeng-hwa-san-im-ni-da", "example_en": "Oreum are small parasitic volcanic cones scattered across Hallasan." },
+    { "id": "w04", "word": "화산섬", "reading": "hwa-san-seom", "meaning": "Volcanic island", "example": "화산섬인 제주도는 용암이 굳어 만들어진 땅입니다.", "example_reading": "hwa-san-seom-in je-ju-do-neun yong-am-i gud-eo man-deul-eo-jin ttang-im-ni-da", "example_en": "Jeju, a volcanic island, is land formed from hardened lava." },
+    { "id": "w05", "word": "등반로", "reading": "deung-ban-ro", "meaning": "Climbing trail / hiking route", "example": "등반로를 따라 오르면 백록담까지 다다를 수 있습니다.", "example_reading": "deung-ban-ro-reul tta-ra o-reu-myeon baeng-nok-dam-kka-ji da-dal-eul su it-seum-ni-da", "example_en": "If you climb along the trail, you can reach Baengnokdam." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "한라산은 해발 1,950미터로 대한민국에서 가장 높은 산입니다.", "reading": "han-la-san-eun hae-bal cheon-gu-baek-o-sip mi-teo-ro dae-han-min-guk-e-seo ga-jang nop-eun san-im-ni-da", "en": "Hallasan, at 1,950 meters above sea level, is the highest mountain in South Korea." },
+    { "id": "s02", "ko": "백록담은 한라산 정상에 자리한 화구호입니다.", "reading": "baeng-nok-dam-eun han-la-san jeong-sang-e ja-ri-han hwa-gu-ho-im-ni-da", "en": "Baengnokdam is the crater lake located at the summit of Hallasan." },
+    { "id": "s03", "ko": "오름은 한라산 곳곳에 흩어진 작은 기생화산입니다.", "reading": "o-reum-eun han-la-san got-got-e heut-eo-jin jak-eun gi-saeng-hwa-san-im-ni-da", "en": "Oreum are small parasitic volcanic cones scattered across Hallasan." },
+    { "id": "s04", "ko": "화산섬인 제주도는 용암이 굳어 만들어진 땅입니다.", "reading": "hwa-san-seom-in je-ju-do-neun yong-am-i gud-eo man-deul-eo-jin ttang-im-ni-da", "en": "Jeju, a volcanic island, is land formed from hardened lava." },
+    { "id": "s05", "ko": "등반로를 따라 오르면 백록담까지 다다를 수 있습니다.", "reading": "deung-ban-ro-reul tta-ra o-reu-myeon baeng-nok-dam-kka-ji da-dal-eul su it-seum-ni-da", "en": "If you climb along the trail, you can reach Baengnokdam." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "등산객", "text": "백록담까지 오늘 올라갈 수 있을까요? 지금 출발하면요.", "reading": "baeng-nok-dam-kka-ji o-neul ol-la-gal su it-eul-kka-yo?", "en": "Can I reach Baengnokdam if I start now?" },
+        { "speaker": "국립공원 직원", "text": "지금 출발하시면 좀 늦어요. 성판악 코스는 정상까지 왕복 아홉 시간 정도 걸리거든요.", "reading": "ji-geum chul-bal-ha-si-myeon jom neuj-eo-yo.", "en": "If you start now, it'll be a bit late. The Seongpanak trail takes about nine hours round trip to the summit." },
+        { "speaker": "등산객", "text": "그럼 오늘은 어렵겠네요. 어디까지 갔다 오면 좋을까요?", "reading": "geu-reom o-neul-eun eo-ryeop-get-ne-yo.", "en": "Then today would be difficult. How far should I go and come back?" },
+        { "speaker": "국립공원 직원", "text": "진달래밭 대피소까지만 다녀오세요. 왕복 여섯 시간 정도면 충분히 안전하게 다녀오실 수 있어요.", "reading": "jin-dal-lae-bat dae-pi-so-kka-ji-man da-nyeo-o-se-yo.", "en": "Just go as far as the Jindallae Field shelter. A round trip of about six hours should be safe enough." }
+      ],
+      "question": "직원이 등산객에게 권한 것은 무엇인가요?",
+      "question_en": "What does the staff member recommend to the hiker?",
+      "correct_answer": "오늘은 백록담 대신 진달래밭 대피소까지만 다녀오기",
+      "options": ["오늘은 백록담 대신 진달래밭 대피소까지만 다녀오기", "내일 아침 일찍 다시 오기", "케이블카를 이용하기", "다른 산으로 가기"],
+      "explanation": "지금 출발하면 백록담 정상까지는 시간이 부족하다며, 직원은 진달래밭 대피소까지만 다녀오라고 권했습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "친구1", "text": "오늘은 어느 오름에 가볼까? 다랑쉬오름 어때?", "reading": "o-neul-eun eo-neu o-reum-e ga-bol-kka?", "en": "Which oreum should we visit today? How about Darangswi Oreum?" },
+        { "speaker": "친구2", "text": "거기 정상에서 보는 분화구가 정말 크고 아름답다던데.", "reading": "geo-gi jeong-sang-e-seo bo-neun bun-hwa-gu-ga jeong-mal keu-go a-reum-dap-da-deon-de.", "en": "I heard the crater seen from the summit there is really big and beautiful." },
+        { "speaker": "친구1", "text": "올라가는 데 얼마나 걸릴까?", "reading": "ol-la-ga-neun de eol-ma-na geol-lil-kka?", "en": "How long will it take to climb up?" },
+        { "speaker": "친구2", "text": "천천히 걸어도 삼십 분이면 충분해. 한라산보다 훨씬 부담 없어.", "reading": "cheon-cheon-hi geol-eo-do sam-sip bun-i-myeon chung-bun-hae.", "en": "Even walking slowly, thirty minutes is enough. It's much less demanding than Hallasan." }
+      ],
+      "question": "친구2가 다랑쉬오름을 추천하는 이유는 무엇인가요?",
+      "question_en": "Why does Friend 2 recommend Darangswi Oreum?",
+      "correct_answer": "분화구 경치가 아름답고 오르는 데 부담이 적어서",
+      "options": ["분화구 경치가 아름답고 오르는 데 부담이 적어서", "입장료가 무료여서", "정상에 카페가 있어서", "한라산보다 높아서"],
+      "explanation": "친구2는 정상에서 보는 분화구가 크고 아름다우며, 천천히 걸어도 삼십 분이면 충분해 한라산보다 부담 없다고 말했습니다."
+    }
+  ]
+}

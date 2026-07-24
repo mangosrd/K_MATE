@@ -1,0 +1,93 @@
+{
+  "id": "ch-s05",
+  "character_id": "sunwoo",
+  "title": "부산국제영화제(BIFF)",
+  "emoji": "🎬",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "승객 여러분, 아시아 최고의 영화 축제가 열리는 영화의 전당 상공을 지나고 있습니다!",
+      "reading": "seung-gaek yeo-reo-bun, a-si-a choe-go-ui yeong-hwa chuk-je-ga yeol-li-neun yeong-hwa-ui jeon-dang sang-gong-eul ji-na-go iss-seum-ni-da!",
+      "en": "Passengers, we're passing over the Busan Cinema Center, home to Asia's greatest film festival!"
+    },
+    {
+      "text": "올해 영화제의 '개막작'이 무엇인지 벌써부터 화제예요. 첫 상영작이라 의미가 크죠.",
+      "reading": "ol-hae yeong-hwa-je-ui gae-mak-jag-i mu-eos-in-ji beol-sseo-bu-teo hwa-je-ye-yo.",
+      "en": "What this year's 'opening film' will be is already a hot topic. Being the first screening, it carries great meaning.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "'레드카펫'에는 유명 배우들이 화려한 옷을 입고 등장해서 정말 볼거리예요.",
+      "reading": "re-deu-ka-pes-e-neun yu-myeong bae-u-deul-i hwa-ryeo-han os-eul ip-go deung-jang-hae-seo jeong-mal bol-geo-ri-ye-yo.",
+      "en": "On the 'red carpet', famous actors appear in glamorous outfits, and it's truly a sight to see.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "부산 곳곳의 '상영관'에서 세계 여러 나라의 영화를 만나볼 수 있어요.",
+      "reading": "bu-san got-got-ui sang-yeong-gwan-e-seo se-gye yeo-reo na-ra-ui yeong-hwa-reul man-na-bol su iss-eo-yo.",
+      "en": "At 'screening venues' all across Busan, you can experience films from many countries around the world.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "인기 있는 영화는 순식간에 매진되니, '예매'는 서두르는 게 좋아요.",
+      "reading": "in-gi iss-neun yeong-hwa-neun sun-sik-gan-e mae-jin-doe-ni, ye-mae-neun seo-du-reu-neun ge jo-a-yo.",
+      "en": "Popular films sell out in an instant, so it's best to hurry with 'advance booking'.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "상영이 끝나면 '관객'들이 큰 박수와 함께 감독에게 질문을 던지기도 해요.",
+      "reading": "sang-yeong-i kkeut-na-myeon gwan-gaek-deul-i keun bak-su-wa ham-kke gam-dok-e-ge jil-mun-eul deon-ji-gi-do hae-yo.",
+      "en": "When the screening ends, the 'audience' gives a big round of applause and sometimes asks the director questions.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "단어는 다 익히셨죠? 이번엔 영화제 현장의 실제 대화를 보고 상황을 맞혀보는 문제도 준비했어요!",
+      "reading": "dan-eo-neun da ig-hi-syeot-jyo?",
+      "en": "Got all the words down? This time I've also prepared questions where you read real conversations from the festival grounds and figure out the situation!"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "개막작", "reading": "gae-mak-jak", "meaning": "Opening film", "example": "개막작은 영화제의 첫 상영작으로 큰 주목을 받습니다.", "example_reading": "gae-mak-jag-eun yeong-hwa-je-ui cheot sang-yeong-jag-eu-ro keun ju-mog-eul bad-seum-ni-da", "example_en": "The opening film, as the festival's first screening, receives a great deal of attention." },
+    { "id": "w02", "word": "레드카펫", "reading": "re-deu-ka-pet", "meaning": "Red carpet", "example": "레드카펫에는 유명 배우들이 화려하게 등장합니다.", "example_reading": "re-deu-ka-pes-e-neun yu-myeong bae-u-deul-i hwa-ryeo-ha-ge deung-jang-ham-ni-da", "example_en": "Famous actors appear glamorously on the red carpet." },
+    { "id": "w03", "word": "상영관", "reading": "sang-yeong-gwan", "meaning": "Screening venue / theater", "example": "상영관마다 다른 나라의 영화가 상영됩니다.", "example_reading": "sang-yeong-gwan-ma-da da-reun na-ra-ui yeong-hwa-ga sang-yeong-doem-ni-da", "example_en": "A film from a different country is screened at each venue." },
+    { "id": "w04", "word": "예매", "reading": "ye-mae", "meaning": "Advance booking / reservation", "example": "예매를 미리 하지 않으면 인기 있는 영화는 보기 힘들어요.", "example_reading": "ye-mae-reul mi-ri ha-ji anh-eu-myeon in-gi iss-neun yeong-hwa-neun bo-gi him-deul-eo-yo", "example_en": "If you don't book in advance, it's hard to watch a popular film." },
+    { "id": "w05", "word": "관객", "reading": "gwan-gaek", "meaning": "Audience", "example": "관객들은 영화가 끝난 후 큰 박수를 보냅니다.", "example_reading": "gwan-gaek-deul-eun yeong-hwa-ga kkeut-nan hu keun bak-su-reul bo-naem-ni-da", "example_en": "The audience gives a big round of applause after the film ends." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "개막작은 영화제의 첫 상영작으로 큰 주목을 받습니다.", "reading": "gae-mak-jag-eun yeong-hwa-je-ui cheot sang-yeong-jag-eu-ro keun ju-mog-eul bad-seum-ni-da", "en": "The opening film, as the festival's first screening, receives a great deal of attention." },
+    { "id": "s02", "ko": "레드카펫에는 유명 배우들이 화려하게 등장합니다.", "reading": "re-deu-ka-pes-e-neun yu-myeong bae-u-deul-i hwa-ryeo-ha-ge deung-jang-ham-ni-da", "en": "Famous actors appear glamorously on the red carpet." },
+    { "id": "s03", "ko": "상영관마다 다른 나라의 영화가 상영됩니다.", "reading": "sang-yeong-gwan-ma-da da-reun na-ra-ui yeong-hwa-ga sang-yeong-doem-ni-da", "en": "A film from a different country is screened at each venue." },
+    { "id": "s04", "ko": "예매를 미리 하지 않으면 인기 있는 영화는 보기 힘들어요.", "reading": "ye-mae-reul mi-ri ha-ji anh-eu-myeon in-gi iss-neun yeong-hwa-neun bo-gi him-deul-eo-yo", "en": "If you don't book in advance, it's hard to watch a popular film." },
+    { "id": "s05", "ko": "관객들은 영화가 끝난 후 큰 박수를 보냅니다.", "reading": "gwan-gaek-deul-eun yeong-hwa-ga kkeut-nan hu keun bak-su-reul bo-naem-ni-da", "en": "The audience gives a big round of applause after the film ends." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "관광객", "text": "이 영화 예매하고 싶은데, 아직 자리가 남아 있나요?", "reading": "i yeong-hwa ye-mae-ha-go sip-eun-de, a-jik ja-ri-ga nam-a iss-na-yo?", "en": "I'd like to book this film — are there still seats left?" },
+        { "speaker": "매표소 직원", "text": "네, 저녁 7시 상영관에 몇 자리 남아 있어요.", "reading": "ne, jeo-nyeok il-gop-si sang-yeong-gwan-e myeot ja-ri nam-a iss-eo-yo.", "en": "Yes, there are a few seats left for the 7 PM screening." },
+        { "speaker": "관광객", "text": "그럼 두 자리 예매할게요. 상영관은 어디예요?", "reading": "geu-reom du ja-ri ye-mae-hal-ge-yo. sang-yeong-gwan-eun eo-di-ye-yo?", "en": "Then I'll book two seats. Where is the venue?" },
+        { "speaker": "매표소 직원", "text": "영화의 전당 3관이에요, 개막작이라 사람이 많을 거예요.", "reading": "yeong-hwa-ui jeon-dang sam-gwan-i-e-yo, gae-mak-jag-i-ra sa-ram-i man-heul geo-ye-yo.", "en": "It's Theater 3 at the Busan Cinema Center — it's the opening film, so it'll be crowded." }
+      ],
+      "question": "관광객이 예매하려는 것은 무엇인가요?",
+      "question_en": "What is the tourist trying to book?",
+      "correct_answer": "저녁 7시 상영 영화표 두 장",
+      "options": ["저녁 7시 상영 영화표 두 장", "레드카펫 입장권", "감독과의 대화 참가권", "포스터 기념품"],
+      "explanation": "관광객이 '두 자리 예매할게요'라고 말했고 직원이 안내한 시간은 저녁 7시이므로, 저녁 7시 영화표 두 장을 예매하려는 것입니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "관객A", "text": "저기 레드카펫에 배우들 들어오는 거 보여?", "reading": "jeo-gi re-deu-ka-pes-e bae-u-deul deul-eo-o-neun geo bo-yeo?", "en": "Can you see the actors coming in on the red carpet over there?" },
+        { "speaker": "관객B", "text": "어, 사람이 너무 많아서 잘 안 보여. 조금만 앞으로 가자.", "reading": "eo, sa-ram-i neo-mu man-h-a-seo jal an bo-yeo. jo-geum-man ap-eu-ro ga-ja.", "en": "Yeah, there are too many people so I can't see well. Let's move up a bit." },
+        { "speaker": "관객A", "text": "근데 오늘 개막작이 뭔지 알아?", "reading": "geun-de o-neul gae-mak-jag-i mwon-ji al-a?", "en": "By the way, do you know what today's opening film is?" },
+        { "speaker": "관객B", "text": "응, 올해는 한국 감독의 신작이 개막작이래.", "reading": "eung, ol-hae-neun han-guk gam-dog-ui sin-jag-i gae-mak-jag-i-rae.", "en": "Yeah, apparently this year's opening film is a new work by a Korean director." }
+      ],
+      "question": "두 사람이 지금 하고 있는 것은 무엇인가요?",
+      "question_en": "What are the two people currently doing?",
+      "correct_answer": "레드카펫에서 배우들을 구경하는 중",
+      "options": ["레드카펫에서 배우들을 구경하는 중", "영화표를 예매하는 중", "영화 리뷰를 쓰는 중", "감독과 인터뷰하는 중"],
+      "explanation": "두 사람이 레드카펫으로 들어오는 배우들을 보려 하고 있으므로 배우들을 구경하는 중임을 알 수 있습니다."
+    }
+  ]
+}

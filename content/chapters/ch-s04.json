@@ -1,0 +1,93 @@
+{
+  "id": "ch-s04",
+  "character_id": "sunwoo",
+  "title": "부산 정겨운 사투리 탐구",
+  "emoji": "🗣️",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "승객 여러분, 이번엔 특별히 부산 사투리 시간입니다! 부산 사람들의 정겨운 말투를 함께 배워볼까요?",
+      "reading": "seung-gaek yeo-reo-bun, i-beon-en teuk-byeol-hi bu-san sa-tu-ri si-gan-im-ni-da!",
+      "en": "Passengers, this time it's a special Busan dialect session! Shall we learn the warm, affectionate way Busan people speak?"
+    },
+    {
+      "text": "누가 하는 말을 못 알아들었다면 '뭐라카노?'라고 물어보세요. 표준어로는 '뭐라고 하는 거야?'라는 뜻이에요.",
+      "reading": "nu-ga ha-neun mal-eul mot al-a-deul-eot-da-myeon mwo-ra-ka-no-ra-go mul-eo-bo-se-yo.",
+      "en": "If you couldn't understand what someone said, ask '뭐라카노?'. In standard Korean, it means 'What are you saying?'.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "부산 사람들은 '아주', '많이' 대신 '억수로'라는 말을 자주 써요. '억수로 좋다'는 정말 좋다는 뜻이죠.",
+      "reading": "bu-san sa-ram-deul-eun a-ju, man-hi dae-sin eok-su-ro-ra-neun mal-eul ja-ju sseo-yo.",
+      "en": "Busan people often say '억수로' instead of 'a lot' or 'very'. '억수로 좋다' means 'really good'.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "'어디'는 부산 말로 '오데'예요. '오데 가노?'라고 하면 '어디 가?'라는 뜻이랍니다.",
+      "reading": "eo-di-neun bu-san mal-lo o-de-ye-yo.",
+      "en": "'Where' in Busan dialect is '오데'. '오데 가노?' means 'Where are you going?'.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "'마'는 문장 앞에 붙여서 감정을 실어주는 말이에요. '마, 됐다'처럼 쓰면 '아이, 됐어'라는 느낌이 나죠.",
+      "reading": "ma-neun mun-jang ap-e but-yeo-seo gam-jeong-eul sil-eo-ju-neun mal-i-e-yo.",
+      "en": "'마' is added at the start of a sentence to add emotional emphasis. Used like '마, 됐다', it feels like 'ugh, forget it'.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "친한 사이에 장난스럽게 쓰는 말 '문디'도 있어요. 화난 게 아니라 오히려 정겨움을 표현하는 말이랍니다.",
+      "reading": "chin-han sa-i-e jang-nan-seu-reop-ge sseu-neun mal mun-di-do iss-eo-yo.",
+      "en": "There's also '문디', a playful word used between close friends. Rather than anger, it actually expresses affection.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "사투리는 억양과 상황이 정말 중요해요! 이번 대화 문제에서 부산 사투리가 실제로 어떻게 쓰이는지 직접 확인해보세요.",
+      "reading": "sa-tu-ri-neun eog-yang-gwa sang-hwang-i jeong-mal jung-yo-hae-yo!",
+      "en": "For dialect, intonation and context really matter! In this chapter's dialogue questions, check for yourself how Busan dialect is actually used."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "뭐라카노", "reading": "mwo-ra-ka-no", "meaning": "\"What are you saying?\" (Busan dialect for 뭐라고 하는 거야)", "example": "뭐라카노 지금, 하나도 이해가 안 된다.", "example_reading": "mwo-ra-ka-no ji-geum, ha-na-do i-hae-ga an doen-da", "example_en": "What are you saying right now, I don't understand at all." },
+    { "id": "w02", "word": "억수로", "reading": "eok-su-ro", "meaning": "\"Very much, a lot\" (dialect for 아주 / 많이)", "example": "억수로 오랜만이다, 얼굴 좋아졌네!", "example_reading": "eok-su-ro o-raen-man-i-da, eol-gul jo-a-jyeon-ne!", "example_en": "It's been so long, you look great!" },
+    { "id": "w03", "word": "오데", "reading": "o-de", "meaning": "\"Where\" (dialect for 어디)", "example": "오데 가노 이렇게 급하게, 같이 가자!", "example_reading": "o-de ga-no i-reoh-ge geup-ha-ge, gat-i ga-ja!", "example_en": "Where are you going in such a hurry, let's go together!" },
+    { "id": "w04", "word": "마", "reading": "ma", "meaning": "Interjection \"hey / just / come on\" (softens or emphasizes a request)", "example": "마 됐다 그만해라, 밥이나 묵자.", "example_reading": "ma dwaet-da geu-man-hae-ra, bab-i-na muk-ja.", "example_en": "Come on, that's enough, let's just eat." },
+    { "id": "w05", "word": "문디", "reading": "mun-di", "meaning": "Playful, affectionate scolding term (\"you silly thing\"), used between close people", "example": "문디 자슥아 보고 싶었다 아이가.", "example_reading": "mun-di ja-seuk-a bo-go sip-eot-da a-i-ga", "example_en": "You silly thing, I really missed you." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "뭐라카노 지금, 하나도 이해가 안 된다.", "reading": "mwo-ra-ka-no ji-geum, ha-na-do i-hae-ga an doen-da", "en": "What are you saying right now, I don't understand at all." },
+    { "id": "s02", "ko": "억수로 오랜만이다, 얼굴 좋아졌네!", "reading": "eok-su-ro o-raen-man-i-da, eol-gul jo-a-jyeon-ne!", "en": "It's been so long, you look great!" },
+    { "id": "s03", "ko": "오데 가노 이렇게 급하게, 같이 가자!", "reading": "o-de ga-no i-reoh-ge geup-ha-ge, gat-i ga-ja!", "en": "Where are you going in such a hurry, let's go together!" },
+    { "id": "s04", "ko": "마 됐다 그만해라, 밥이나 묵자.", "reading": "ma dwaet-da geu-man-hae-ra, bab-i-na muk-ja.", "en": "Come on, that's enough, let's just eat." },
+    { "id": "s05", "ko": "문디 자슥아 보고 싶었다 아이가.", "reading": "mun-di ja-seuk-a bo-go sip-eot-da a-i-ga", "en": "You silly thing, I really missed you." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "부산친구", "text": "야, 오늘 억수로 덥다 아이가. 니는 안 덥나?", "reading": "ya, o-neul eok-su-ro deop-da a-i-ga. ni-neun an deop-na?", "en": "Hey, it's so hot today, isn't it. Aren't you hot?" },
+        { "speaker": "서울친구", "text": "어? 방금 뭐라고 했어? 사투리라 잘 못 알아들었어.", "reading": "eo? bang-geum mwo-ra-go haess-eo? sa-tu-ri-ra jal mot al-a-deul-eoss-eo.", "en": "Huh? What did you just say? It's dialect so I couldn't quite understand." },
+        { "speaker": "부산친구", "text": "아, 오늘 진짜 많이 덥다고! 너는 안 더워?", "reading": "a, o-neul jin-jja man-hi deop-da-go! neo-neun an deo-wo?", "en": "Oh, I said it's really hot today! Aren't you hot?" },
+        { "speaker": "서울친구", "text": "아하, 이제 알겠다. 응, 나도 진짜 더워.", "reading": "a-ha, i-je al-get-da. eung, na-do jin-jja deo-wo.", "en": "Ah, now I get it. Yeah, I'm really hot too." }
+      ],
+      "question": "부산친구가 처음에 한 말 '억수로 덥다 아이가'는 무슨 뜻인가요?",
+      "question_en": "What does the Busan friend's first line, '억수로 덥다 아이가', mean?",
+      "correct_answer": "오늘 정말 많이 덥다",
+      "options": ["오늘 정말 많이 덥다", "오늘 날씨가 시원하다", "오늘 비가 온다", "오늘 바람이 많이 분다"],
+      "explanation": "부산친구가 이어서 '오늘 진짜 많이 덥다고!'라고 표준어로 다시 말해주었으므로, '억수로 덥다'는 '정말 많이 덥다'는 뜻입니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "관광객", "text": "할머니, 자갈치시장으로 가려면 어디로 가야 하나요?", "reading": "hal-meo-ni, ja-gal-chi-si-jang-eu-ro ga-ryeo-myeon eo-di-ro ga-ya ha-na-yo?", "en": "Grandmother, which way should I go to get to Jagalchi Market?" },
+        { "speaker": "할머니", "text": "오데 간다꼬? 자갈치? 저 앞으로 쭉 가면 된다.", "reading": "o-de gan-da-kko? ja-gal-chi? jeo ap-eu-ro jjuk ga-myeon doen-da.", "en": "Where did you say you're going? Jagalchi? Just go straight ahead." },
+        { "speaker": "관광객", "text": "죄송한데, '오데 간다꼬'가 무슨 뜻이에요?", "reading": "joe-song-han-de, o-de gan-da-kko-ga mu-seun tteus-i-e-yo?", "en": "Sorry, but what does '오데 간다꼬' mean?" },
+        { "speaker": "할머니", "text": "하하, '어디 간다고?'라는 말이다. 사투리가 좀 셌제?", "reading": "ha-ha, eo-di gan-da-go-ra-neun mal-i-da. sa-tu-ri-ga jom saess-je?", "en": "Haha, it means 'Where did you say you're going?'. The dialect was pretty strong, huh?" }
+      ],
+      "question": "할머니가 말한 '오데 간다꼬'는 표준어로 무슨 뜻인가요?",
+      "question_en": "What does the grandmother's phrase '오데 간다꼬' mean in standard Korean?",
+      "correct_answer": "어디 간다고?",
+      "options": ["어디 간다고?", "언제 가니?", "왜 가니?", "누구랑 가니?"],
+      "explanation": "할머니가 직접 '오데 간다꼬는 어디 간다고?라는 말이다'라고 설명해 주었으므로 정답은 '어디 간다고?'입니다."
+    }
+  ]
+}

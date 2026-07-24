@@ -1,0 +1,93 @@
+{
+  "id": "ch-s06",
+  "character_id": "sunwoo",
+  "title": "돼지국밥과 부산 3대 밀면",
+  "emoji": "🍜",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "승객 여러분, 이번엔 부산 사람들의 소울 푸드를 소개해 드릴게요. 전쟁의 아픔 속에서 태어난 음식이랍니다.",
+      "reading": "seung-gaek yeo-reo-bun, i-beon-en bu-san sa-ram-deul-ui sol pu-deu-reul so-gae-hae deu-ril-ge-yo.",
+      "en": "Passengers, this time let me introduce Busan people's soul food. It's a dish born out of the pain of war."
+    },
+    {
+      "text": "'돼지국밥'은 뼈를 오래 고아낸 뽀얀 국물에 밥을 말아 먹는 음식이에요.",
+      "reading": "dwae-ji-guk-bab-eun ppyeo-reul o-rae go-a-naen ppo-yan guk-mul-e bab-eul mal-a meog-neun eum-sig-i-e-yo.",
+      "en": "'Dwaeji gukbap' is a dish where rice is mixed into a milky broth simmered from bones for a long time.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "여름엔 시원한 '밀면'도 꼭 드셔보세요. 부산 사람들이 정말 사랑하는 면 요리랍니다.",
+      "reading": "yeo-reum-en si-won-han mil-myeon-do kkok deu-syeo-bo-se-yo.",
+      "en": "In summer, be sure to try cool 'milmyeon' too. It's a noodle dish Busan people truly love.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "국밥에 곁들이는 '수육'도 인기예요. 부드럽게 삶은 돼지고기가 일품이죠.",
+      "reading": "guk-bab-e gyeot-deul-i-neun su-yug-do in-gi-ye-yo.",
+      "en": "'Suyuk', a side served with gukbap, is popular too. The tenderly boiled pork is excellent.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "'새우젓'을 조금 넣어 간을 맞추는 것도 부산식 국밥의 특징이에요.",
+      "reading": "sae-u-jeos-eul jo-geum neoh-eo gan-eul mat-chu-neun geot-do bu-san-sik guk-bab-ui teuk-jing-i-e-yo.",
+      "en": "Adding a little 'salted shrimp' to season it is also a feature of Busan-style gukbap.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "맛있는 '육수'를 내려면 뼈를 몇 시간이고 정성껏 끓여야 해요.",
+      "reading": "mas-iss-neun yuk-su-reul nae-ryeo-myeon ppyeo-reul myeot si-gan-i-go jeong-seong-kkeot kkeul-yeo-ya hae-yo.",
+      "en": "To make a delicious 'broth', the bones must be simmered carefully for many hours.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "단어는 다 익히셨죠? 이번엔 부산 식당에서 실제로 벌어지는 대화를 보고 상황을 맞혀보는 문제도 준비했어요!",
+      "reading": "dan-eo-neun da ig-hi-syeot-jyo?",
+      "en": "Got all the words down? This time I've also prepared questions where you read real conversations from a Busan restaurant and figure out the situation!"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "돼지국밥", "reading": "dwae-ji-guk-bap", "meaning": "Pork bone and rice soup", "example": "돼지국밥은 부산을 대표하는 서민 음식입니다.", "example_reading": "dwae-ji-guk-bab-eun bu-san-eul dae-pyo-ha-neun seo-min eum-sig-im-ni-da", "example_en": "Dwaeji gukbap is a beloved everyday dish representing Busan." },
+    { "id": "w02", "word": "밀면", "reading": "mil-myeon", "meaning": "Milmyeon (cold Busan-style wheat noodles)", "example": "밀면은 여름에 특히 인기가 많은 시원한 면 요리예요.", "example_reading": "mil-myeon-eun yeo-reum-e teuk-hi in-gi-ga man-heun si-won-han myeon yo-ri-ye-yo", "example_en": "Milmyeon is a cool noodle dish that's especially popular in summer." },
+    { "id": "w03", "word": "수육", "reading": "su-yuk", "meaning": "Boiled sliced pork", "example": "수육을 국밥과 함께 곁들여 먹으면 더 맛있습니다.", "example_reading": "su-yug-eul guk-bab-gwa ham-kke gyeot-deul-yeo meog-eu-myeon deo mas-iss-seum-ni-da", "example_en": "It's even more delicious to eat boiled pork alongside gukbap." },
+    { "id": "w04", "word": "새우젓", "reading": "sae-u-jeot", "meaning": "Salted shrimp (condiment)", "example": "새우젓을 조금 넣으면 국물 맛이 더 깊어져요.", "example_reading": "sae-u-jeos-eul jo-geum neoh-eu-myeon guk-mul mas-i deo gip-eo-jyeo-yo", "example_en": "Adding a little salted shrimp makes the broth's flavor deeper." },
+    { "id": "w05", "word": "육수", "reading": "yuk-su", "meaning": "Broth", "example": "육수는 오랜 시간 정성껏 끓여서 만듭니다.", "example_reading": "yuk-su-neun o-raen si-gan jeong-seong-kkeot kkeul-yeo-seo man-deum-ni-da", "example_en": "The broth is made by simmering it carefully for a long time." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "돼지국밥은 부산을 대표하는 서민 음식입니다.", "reading": "dwae-ji-guk-bab-eun bu-san-eul dae-pyo-ha-neun seo-min eum-sig-im-ni-da", "en": "Dwaeji gukbap is a beloved everyday dish representing Busan." },
+    { "id": "s02", "ko": "밀면은 여름에 특히 인기가 많은 시원한 면 요리예요.", "reading": "mil-myeon-eun yeo-reum-e teuk-hi in-gi-ga man-heun si-won-han myeon yo-ri-ye-yo", "en": "Milmyeon is a cool noodle dish that's especially popular in summer." },
+    { "id": "s03", "ko": "수육을 국밥과 함께 곁들여 먹으면 더 맛있습니다.", "reading": "su-yug-eul guk-bab-gwa ham-kke gyeot-deul-yeo meog-eu-myeon deo mas-iss-seum-ni-da", "en": "It's even more delicious to eat boiled pork alongside gukbap." },
+    { "id": "s04", "ko": "새우젓을 조금 넣으면 국물 맛이 더 깊어져요.", "reading": "sae-u-jeos-eul jo-geum neoh-eu-myeon guk-mul mas-i deo gip-eo-jyeo-yo", "en": "Adding a little salted shrimp makes the broth's flavor deeper." },
+    { "id": "s05", "ko": "육수는 오랜 시간 정성껏 끓여서 만듭니다.", "reading": "yuk-su-neun o-raen si-gan jeong-seong-kkeot kkeul-yeo-seo man-deum-ni-da", "en": "The broth is made by simmering it carefully for a long time." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "손님", "text": "사장님, 돼지국밥 하나랑 수육 한 접시 주세요.", "reading": "sa-jang-nim, dwae-ji-guk-bap ha-na-rang su-yuk han jeop-si ju-se-yo.", "en": "Sir, one pork gukbap and one plate of suyuk, please." },
+        { "speaker": "식당 사장님", "text": "네, 국밥은 맵게 해드릴까요, 아니면 순하게 해드릴까요?", "reading": "ne, guk-bab-eun maep-ge hae-deu-ril-kka-yo, a-ni-myeon sun-ha-ge hae-deu-ril-kka-yo?", "en": "Sure, would you like the gukbap spicy, or mild?" },
+        { "speaker": "손님", "text": "순하게 해주시고, 새우젓은 따로 주세요.", "reading": "sun-ha-ge hae-ju-si-go, sae-u-jeos-eun tta-ro ju-se-yo.", "en": "Please make it mild, and give the salted shrimp on the side." },
+        { "speaker": "식당 사장님", "text": "알겠습니다, 금방 준비해 드릴게요.", "reading": "al-get-seum-ni-da, geum-bang jun-bi-hae deu-ril-ge-yo.", "en": "Got it, I'll get it ready for you soon." }
+      ],
+      "question": "손님이 사장님께 특별히 요청한 것은 무엇인가요?",
+      "question_en": "What special request did the customer make to the owner?",
+      "correct_answer": "국밥을 순하게 해달라는 것과 새우젓을 따로 달라는 것",
+      "options": ["국밥을 순하게 해달라는 것과 새우젓을 따로 달라는 것", "면을 더 달라는 것", "고기를 빼달라는 것", "그릇을 두 개로 나눠달라는 것"],
+      "explanation": "손님이 '순하게 해주시고 새우젓은 따로 주세요'라고 말했으므로 이 두 가지를 요청한 것입니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "관광객", "text": "밀면이 냉면이랑 뭐가 다른 거예요?", "reading": "mil-myeon-i naeng-myeon-i-rang mwo-ga da-reun geo-ye-yo?", "en": "What's different between milmyeon and naengmyeon?" },
+        { "speaker": "현지인", "text": "면 재료가 달라요. 밀면은 밀가루로 만들고, 냉면보다 면이 좀 더 부드러워요.", "reading": "myeon jae-ryo-ga dal-la-yo. mil-myeon-eun mil-ga-ru-ro man-deul-go, naeng-myeon-bo-da myeon-i jom deo bu-deu-reo-wo-yo.", "en": "The noodle ingredients are different. Milmyeon is made from wheat flour, and the noodles are a bit softer than naengmyeon." },
+        { "speaker": "관광객", "text": "그럼 국물 맛도 다른가요?", "reading": "geu-reom guk-mul mas-do da-reun-ga-yo?", "en": "Then is the broth flavor different too?" },
+        { "speaker": "현지인", "text": "네, 육수가 더 새콤달콤해서 여름에 먹기 딱 좋아요.", "reading": "ne, yuk-su-ga deo sae-kom-dal-kom-hae-seo yeo-reum-e meok-gi ttak jo-a-yo.", "en": "Yes, the broth is more sweet and tangy, so it's perfect to eat in summer." }
+      ],
+      "question": "현지인이 설명한 밀면의 특징은 무엇인가요?",
+      "question_en": "What characteristic of milmyeon did the local explain?",
+      "correct_answer": "밀가루 면을 쓰고 육수가 새콤달콤하다",
+      "options": ["밀가루 면을 쓰고 육수가 새콤달콤하다", "고기가 들어가지 않는다", "차갑게 먹지 않는다", "매운 양념만 들어간다"],
+      "explanation": "현지인이 '밀가루로 만들고' '육수가 더 새콤달콤하다'고 설명했으므로 이 내용이 밀면의 특징입니다."
+    }
+  ]
+}
