@@ -420,13 +420,6 @@
   transform: scale(1.1);
 }
 
-.voiceBadge {
-  font-size: 11px;
-  color: var(--text-muted);
-  font-weight: 600;
-  margin-top: 4px;
-}
-
 
 /* ── 3회 기회 피드백 ─────────────────────────────────────── */
 .attemptNotice {

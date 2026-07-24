@@ -95,6 +95,32 @@ export default function LanguageModal({ isOpen, onClose }: LanguageModalProps) {
             </div>
             {language === "ja" && <span className={styles.checkIcon}>✓</span>}
           </button>
+
+          <button
+            type="button"
+            className={`${styles.langItem} ${language === "zh-TW" ? styles.selected : ""}`}
+            onClick={() => handleSelect("zh-TW")}
+          >
+            <span className={styles.flag}>🇹🇼</span>
+            <div className={styles.langTextWrap}>
+              <span className={styles.langName}>繁體中文</span>
+              <span className={styles.langNative}>대만어 (全部畫面轉為繁體中文)</span>
+            </div>
+            {language === "zh-TW" && <span className={styles.checkIcon}>✓</span>}
+          </button>
+
+          <button
+            type="button"
+            className={`${styles.langItem} ${language === "th" ? styles.selected : ""}`}
+            onClick={() => handleSelect("th")}
+          >
+            <span className={styles.flag}>🇹🇭</span>
+            <div className={styles.langTextWrap}>
+              <span className={styles.langName}>ภาษาไทย</span>
+              <span className={styles.langNative}>태국어 (แสดงผลทั้งหมดเป็นภาษาไทย)</span>
+            </div>
+            {language === "th" && <span className={styles.checkIcon}>✓</span>}
+          </button>
         </div>
       </div>
     </div>

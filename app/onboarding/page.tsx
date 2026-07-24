@@ -2,16 +2,17 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { useLanguage, Language } from "@/components/LanguageContext";
 import styles from "./onboarding.module.css";
 
-const LANGUAGES = [
+const LANGUAGES: { code: Language; flag: string; name: string }[] = [
+  { code: "ko", flag: "🇰🇷", name: "한국어" },
   { code: "en", flag: "🇺🇸", name: "English" },
   { code: "ja", flag: "🇯🇵", name: "日本語" },
-  { code: "zh", flag: "🇨🇳", name: "中文" },
-  { code: "vi", flag: "🇻🇳", name: "Tiếng Việt" },
+  { code: "zh", flag: "🇨🇳", name: "中文（简体）" },
+  { code: "zh-TW", flag: "🇹🇼", name: "繁體中文" },
   { code: "th", flag: "🇹🇭", name: "ภาษาไทย" },
-  { code: "id", flag: "🇮🇩", name: "Bahasa Indonesia" },
-  { code: "ko", flag: "🇰🇷", name: "한국어" },
+  { code: "ru", flag: "🇷🇺", name: "Русский" },
 ];
 
 const CHARACTERS = [
@@ -76,12 +77,12 @@ const TUTORIAL_STEPS = [
 
 export default function OnboardingPage() {
   const router = useRouter();
+  const { language, setLanguage } = useLanguage();
   const [step, setStep] = useState(0); // 0: 언어, 1: 메이트, 2: 튜토리얼
-  const [selectedLang, setSelectedLang] = useState("en");
   const [selectedChar, setSelectedChar] = useState("kyuhyun");
 
   const handleFinish = () => {
-    // TODO: 온보딩 데이터 저장
+    // TODO: 메이트 선택 등 나머지 온보딩 데이터 저장
     router.push("/map");
   };
 
@@ -107,9 +108,9 @@ export default function OnboardingPage() {
               <button
                 key={lang.code}
                 id={`lang-${lang.code}`}
-                className={`${styles.langItem} ${selectedLang === lang.code ? styles.langSelected : ""}`}
-                onClick={() => setSelectedLang(lang.code)}
-                aria-pressed={selectedLang === lang.code}
+                className={`${styles.langItem} ${language === lang.code ? styles.langSelected : ""}`}
+                onClick={() => setLanguage(lang.code)}
+                aria-pressed={language === lang.code}
               >
                 <span className={styles.langFlag}>{lang.flag}</span>
                 <span className={styles.langName}>{lang.name}</span>

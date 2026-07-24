@@ -3,7 +3,7 @@
   "name": "Seoul & Gyeonggi",
   "name_ko": "서울·경기",
   "description": "The heart of modern Korea — royal palaces, trendy streets, and endless cafés.",
-  "character_ids": ["jisoo"],
+  "character_ids": ["kyuhyun"],
   "place_ids": ["gyeongbokgung", "insadong", "bukchon"],
   "is_locked": false
 }

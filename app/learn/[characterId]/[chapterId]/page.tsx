@@ -4,6 +4,7 @@ import { useState, use, useEffect, useMemo } from "react";
 import Link from "next/link";
 import styles from "./session.module.css";
 import { getChapterContent } from "@/lib/content/chapters";
+import { useLanguage } from "@/components/LanguageContext";
 import type { ChapterWord as Word, ChapterSentence as Sentence, DialogueScene, DialogueTurn } from "@/types/content";
 
 // ── 기장별 전용 음성 톤 조절 함수 (TTS) ─────────────────────────
@@ -59,12 +60,8 @@ async function playCaptainVoice(text: string, characterId: string) {
   window.speechSynthesis.speak(utterance);
 }
 
-const CAPTAIN_VOICE_NAMES: Record<string, string> = {
-  kyuhyun: "🌋 용우 기장 전용 보이스 (중저음 톤)",
-  haneul: "🌋 용우 기장 전용 보이스 (중저음 톤)",
-  sunwoo: "🌋 용우 기장 전용 보이스 (중저음 톤)",
-  sangwoo: "🌋 용우 기장 전용 보이스 (중저음 톤)",
-  yongwoo: "🌋 용우 기장 전용 보이스 (중저음 톤)",
+const CAPTAIN_SHORT_NAME: Record<string, string> = {
+  kyuhyun: "규현", haneul: "하늘", sunwoo: "선우", sangwoo: "상우", yongwoo: "용우",
 };
 
 type Phase = "intro" | "story" | "session" | "complete";
@@ -225,6 +222,7 @@ export default function LearningSessionPage({
   params: Promise<{ characterId: string; chapterId: string }>;
 }) {
   const { characterId, chapterId } = use(params);
+  const { t } = useLanguage();
   const content = getChapterContent(chapterId);
 
   const exercises = useMemo(
@@ -349,10 +347,10 @@ export default function LearningSessionPage({
       <main className={styles.page}>
         <div className={styles.introCard}>
           <div className={styles.introEmoji}>🚧</div>
-          <h1 className={styles.introTitle}>콘텐츠 준비 중이에요</h1>
-          <p className={styles.introTitleEn}>This chapter's content isn't ready yet.</p>
+          <h1 className={styles.introTitle}>{t("contentNotReadyTitle")}</h1>
+          <p className={styles.introTitleEn}>{t("contentNotReadySub")}</p>
           <Link href={`/learn/${characterId}`} className="btn btn-primary btn-lg" style={{ textAlign: "center" }}>
-            ‹ 챕터 목록으로
+            {t("backToList")}
           </Link>
         </div>
       </main>
@@ -366,36 +364,35 @@ export default function LearningSessionPage({
         <div className={styles.introCard}>
           <div className={styles.introEmoji}>{content.emoji}</div>
           <h1 className={styles.introTitle}>{content.title}</h1>
-          <p className={styles.introTitleEn}>Interactive Culture & Language Session</p>
+          <p className={styles.introTitleEn}>{t("sessionTagline")}</p>
           <div className={styles.introStats}>
             <div className={styles.introStat}>
               <span className={styles.introStatNum}>10</span>
-              <span className={styles.introStatLabel}>단계</span>
+              <span className={styles.introStatLabel}>{t("chapterCount")}</span>
             </div>
             <div className={styles.introStat}>
               <span className={styles.introStatNum}>{totalExercises}</span>
-              <span className={styles.introStatLabel}>문제</span>
+              <span className={styles.introStatLabel}>{t("questionsLabel")}</span>
             </div>
             <div className={styles.introStat}>
-              <span className={styles.introStatNum}>3회</span>
-              <span className={styles.introStatLabel}>기회</span>
+              <span className={styles.introStatNum}>{t("chancesCount")}</span>
+              <span className={styles.introStatLabel}>{t("chancesLabel")}</span>
             </div>
           </div>
           <div className={styles.introTypes}>
-            <span className={styles.introType}>🔊 용우 기장 보이스</span>
-            <span className={styles.introType}>🔤 발음 그대로 (Romanization)</span>
-            <span className={styles.introType}>💡 힌트 보기</span>
-            <span className={styles.introType}>🗣️ {CAPTAIN_VOICE_NAMES[characterId]}</span>
+            <span className={styles.introType}>{t("listen")}</span>
+            <span className={styles.introType}>{t("romanizationChip")}</span>
+            <span className={styles.introType}>{t("hintChip")}</span>
           </div>
           <button
             className="btn btn-primary btn-lg"
             onClick={() => { setStoryIdx(0); setPhase("story"); }}
             id="btn-start-session"
           >
-            🚀 학습 시작!
+            {t("startLearn")}
           </button>
           <Link href={`/learn/${characterId}`} className="btn btn-ghost" style={{ textAlign: "center" }}>
-            ‹ 챕터 목록으로
+            {t("backToList")}
           </Link>
         </div>
       </main>
@@ -420,7 +417,7 @@ export default function LearningSessionPage({
               <span className={styles.storyHeaderTitle}>{content.title}</span>
             </div>
             <button className={styles.storySkipBtn} onClick={() => setPhase("session")}>
-              건너뛰기 ›
+              {t("storySkip")}
             </button>
           </div>
 
@@ -431,7 +428,9 @@ export default function LearningSessionPage({
                 <div key={i} className={styles.storyRow}>
                   <div className={styles.storyAvatar}>✈️</div>
                   <div className={styles.storyBubbleCol}>
-                    <span className={styles.storySpeakerName}>규현 기장</span>
+                    <span className={styles.storySpeakerName}>
+                      {CAPTAIN_SHORT_NAME[characterId] ?? content.title} {t("captainBadge")}
+                    </span>
                     <div className={styles.storyBubble}>
                       <p className={styles.storyText}>{bubble.text}</p>
                       {bubble.reading && <p className={styles.storyReading}>[{bubble.reading}]</p>}
@@ -454,7 +453,7 @@ export default function LearningSessionPage({
             onClick={() => (isLastBubble ? setPhase("session") : setStoryIdx((i) => i + 1))}
             id="btn-story-next"
           >
-            {isLastBubble ? "🚀 문제 풀러 가기!" : "다음 ▾"}
+            {isLastBubble ? t("storyGoToQuiz") : t("storyNext")}
           </button>
         </div>
       </main>
@@ -467,35 +466,35 @@ export default function LearningSessionPage({
       <main className={styles.page}>
         <div className={styles.completeCard}>
           <div className={styles.completeEmoji}>🎉</div>
-          <h1 className={styles.completeTitle}>학습 완료!</h1>
-          <p className={styles.completeSub}>Session Complete!</p>
+          <h1 className={styles.completeTitle}>{t("sessionComplete")}</h1>
+          <p className={styles.completeSub}>{t("sessionTagline")}</p>
           <div className={styles.resultScore}>
             <span className={styles.scoreNum}>+{score}</span>
-            <span className={styles.scoreLabel}>점수</span>
+            <span className={styles.scoreLabel}>{t("scoreLabel")}</span>
           </div>
           <div className={styles.resultStats}>
             <div className={styles.resultStat}>
               <span className={styles.rStatNum}>{correctCount}</span>
-              <span className={styles.rStatLabel}>정답</span>
+              <span className={styles.rStatLabel}>{t("correctLabel")}</span>
             </div>
             <div className={styles.resultStat}>
               <span className={styles.rStatNum}>{totalExercises - correctCount}</span>
-              <span className={styles.rStatLabel}>오답</span>
+              <span className={styles.rStatLabel}>{t("wrongLabel")}</span>
             </div>
             <div className={styles.resultStat}>
               <span className={styles.rStatNum}>🪙 +{Math.floor(score / 10)}</span>
-              <span className={styles.rStatLabel}>코인 획득</span>
+              <span className={styles.rStatLabel}>{t("coinEarned")}</span>
             </div>
           </div>
           <div className={styles.completeActions}>
             <Link href={`/learn/${characterId}/${nextChapterId}`} className="btn btn-primary btn-lg" id="btn-next-chapter">
-              ▶️ 다음 챕터 학습하기 (챕터 {nextNum})
+              {t("nextChapter")} ({t("totalChapters")} {nextNum})
             </Link>
             <Link href={`/learn/${characterId}`} className="btn btn-secondary btn-lg">
-              📖 챕터 목록으로
+              {t("backToChapterList")}
             </Link>
             <Link href={`/chat/${characterId}`} className="btn btn-blue btn-lg">
-              💬 기장님과 대화하기
+              {t("chatWithCaptain")}
             </Link>
           </div>
         </div>
@@ -547,7 +546,7 @@ export default function LearningSessionPage({
                     characterId
                   )
                 }
-                title="용우 기장 목소리로 들려주기"
+                title="소리 듣기"
               >
                 🔊 들어보기
               </button>
@@ -556,14 +555,14 @@ export default function LearningSessionPage({
                 type="button"
                 className={styles.hintToggleBtn}
                 onClick={() => setShowHint(!showHint)}
-                title="💡 힌트 보기"
+                title={t("hintChip")}
               >
-                💡 {showHint ? "힌트 닫기" : "힌트"}
+                💡 {showHint ? t("hintCloseShort") : t("hintShort")}
               </button>
 
               {(currentEx.type === "listening_choice" || currentEx.type === "speaking_practice") && !isSkipped && (
-                <button className={styles.skipBtn} onClick={() => setIsSkipped(true)} title="텍스트 문제로 스킵">
-                  ⏭️ 스킵
+                <button className={styles.skipBtn} onClick={() => setIsSkipped(true)} title={t("skip")}>
+                  {t("skip")}
                 </button>
               )}
             </div>
@@ -598,7 +597,7 @@ export default function LearningSessionPage({
               </button>
               {flipped && (
                 <button className="btn btn-primary btn-lg" onClick={handleNext} id="btn-next-flash">
-                  다음 문제 →
+                  {t("nextQuestion")}
                 </button>
               )}
             </>
@@ -620,7 +619,6 @@ export default function LearningSessionPage({
                   </button>
                 </div>
                 <p className={styles.mcReading}>[{currentEx.reading}]</p>
-                <p className={styles.voiceBadge}>{CAPTAIN_VOICE_NAMES[characterId]}</p>
               </div>
 
               <div className={styles.mcOptions}>
@@ -648,7 +646,7 @@ export default function LearningSessionPage({
 
               {!isSubmitted && attempts > 0 && attempts < 3 && (
                 <div className={styles.attemptNotice}>
-                  ❌ 오답입니다! 다시 시도해 보세요. (남은 기회: {3 - attempts}회)
+                  {t("attemptNoticeWithCount", { n: 3 - attempts })}
                 </div>
               )}
 
@@ -658,20 +656,20 @@ export default function LearningSessionPage({
                   onClick={() => handleCheckAnswer()}
                   disabled={!selectedOption}
                 >
-                  정답 확인 (기회 {3 - attempts}/3)
+                  {t("checkAnswerWithCount", { n: 3 - attempts })}
                 </button>
               )}
 
               {isSubmitted && (
                 <div className={styles.resultBox}>
                   {isCorrect ? (
-                    <p className={styles.correctText}>🎉 정답입니다!</p>
+                    <p className={styles.correctText}>{t("correctNotice")}</p>
                   ) : (
-                    <p className={styles.wrongText}>💡 3회 실패 — 정답: <strong>{currentEx.correctAnswer}</strong></p>
+                    <p className={styles.wrongText}>{t("wrongFinalPrefix")} <strong>{currentEx.correctAnswer}</strong></p>
                   )}
                   <p className={styles.explanation}>{currentEx.explanation}</p>
                   <button className="btn btn-primary btn-lg" onClick={handleNext}>
-                    다음 문제 →
+                    {t("nextQuestion")}
                   </button>
                 </div>
               )}
@@ -709,7 +707,7 @@ export default function LearningSessionPage({
 
               {!isSubmitted && attempts > 0 && attempts < 3 && (
                 <div className={styles.attemptNotice}>
-                  ❌ 오답입니다! 다시 입력해 보세요. (남은 기회: {3 - attempts}회)
+                  {t("attemptNoticeWithCount", { n: 3 - attempts })}
                 </div>
               )}
 
@@ -719,20 +717,20 @@ export default function LearningSessionPage({
                   onClick={() => handleCheckAnswer(inputText)}
                   disabled={!inputText.trim()}
                 >
-                  정답 확인 (기회 {3 - attempts}/3)
+                  {t("checkAnswerWithCount", { n: 3 - attempts })}
                 </button>
               )}
 
               {isSubmitted && (
                 <div className={styles.resultBox}>
                   {isCorrect ? (
-                    <p className={styles.correctText}>🎉 정답입니다!</p>
+                    <p className={styles.correctText}>{t("correctNotice")}</p>
                   ) : (
-                    <p className={styles.wrongText}>💡 3회 실패 — 정답: <strong>{currentEx.correctAnswer}</strong></p>
+                    <p className={styles.wrongText}>{t("wrongFinalPrefix")} <strong>{currentEx.correctAnswer}</strong></p>
                   )}
                   <p className={styles.explanation}>{currentEx.explanation}</p>
                   <button className="btn btn-primary btn-lg" onClick={handleNext}>
-                    다음 문제 →
+                    {t("nextQuestion")}
                   </button>
                 </div>
               )}
@@ -796,13 +794,13 @@ export default function LearningSessionPage({
               {isSubmitted && (
                 <div className={styles.resultBox}>
                   {isCorrect ? (
-                    <p className={styles.correctText}>🎉 훌륭한 한국어 발음입니다!</p>
+                    <p className={styles.correctText}>{t("speakingCorrect")}</p>
                   ) : (
-                    <p className={styles.wrongText}>💡 3회 시도 완료 — 올바른 문장: <strong>{currentEx.correctAnswer}</strong></p>
+                    <p className={styles.wrongText}>{t("wrongFinalPrefix")} <strong>{currentEx.correctAnswer}</strong></p>
                   )}
                   <p className={styles.explanation}>{currentEx.explanation}</p>
                   <button className="btn btn-primary btn-lg" onClick={handleNext}>
-                    다음 문제 →
+                    {t("nextQuestion")}
                   </button>
                 </div>
               )}
@@ -818,7 +816,7 @@ export default function LearningSessionPage({
                   className={styles.audioPlayBtn}
                   onClick={() => playCaptainVoice(currentEx.correctAnswer, characterId)}
                 >
-                  🔊 소리 듣기 (용우 기장 중저음 톤)
+                  🔊 소리 듣기
                 </button>
                 <p className={styles.audioHint}>들리는 한국어 단어를 선택하세요</p>
               </div>
@@ -846,7 +844,7 @@ export default function LearningSessionPage({
 
               {!isSubmitted && attempts > 0 && attempts < 3 && (
                 <div className={styles.attemptNotice}>
-                  ❌ 오답입니다! 다시 들어보고 선택하세요. (남은 기회: {3 - attempts}회)
+                  {t("attemptNoticeWithCount", { n: 3 - attempts })}
                 </div>
               )}
 
@@ -856,20 +854,20 @@ export default function LearningSessionPage({
                   onClick={() => handleCheckAnswer()}
                   disabled={!selectedOption}
                 >
-                  정답 확인 (기회 {3 - attempts}/3)
+                  {t("checkAnswerWithCount", { n: 3 - attempts })}
                 </button>
               )}
 
               {isSubmitted && (
                 <div className={styles.resultBox}>
                   {isCorrect ? (
-                    <p className={styles.correctText}>🎉 정답입니다!</p>
+                    <p className={styles.correctText}>{t("correctNotice")}</p>
                   ) : (
-                    <p className={styles.wrongText}>💡 3회 실패 — 정답: <strong>{currentEx.correctAnswer}</strong></p>
+                    <p className={styles.wrongText}>{t("wrongFinalPrefix")} <strong>{currentEx.correctAnswer}</strong></p>
                   )}
                   <p className={styles.explanation}>{currentEx.explanation}</p>
                   <button className="btn btn-primary btn-lg" onClick={handleNext}>
-                    다음 문제 →
+                    {t("nextQuestion")}
                   </button>
                 </div>
               )}
@@ -920,7 +918,7 @@ export default function LearningSessionPage({
 
               {!isSubmitted && attempts > 0 && attempts < 3 && (
                 <div className={styles.attemptNotice}>
-                  ❌ 다시 한번 대화 내용을 살펴보세요! (남은 기회: {3 - attempts}회)
+                  {t("attemptNoticeWithCount", { n: 3 - attempts })}
                 </div>
               )}
 
@@ -930,20 +928,20 @@ export default function LearningSessionPage({
                   onClick={() => handleCheckAnswer()}
                   disabled={!selectedOption}
                 >
-                  정답 확인 (기회 {3 - attempts}/3)
+                  {t("checkAnswerWithCount", { n: 3 - attempts })}
                 </button>
               )}
 
               {isSubmitted && (
                 <div className={styles.resultBox}>
                   {isCorrect ? (
-                    <p className={styles.correctText}>🎉 정답입니다!</p>
+                    <p className={styles.correctText}>{t("correctNotice")}</p>
                   ) : (
-                    <p className={styles.wrongText}>💡 3회 실패 — 정답: <strong>{currentEx.correctAnswer}</strong></p>
+                    <p className={styles.wrongText}>{t("wrongFinalPrefix")} <strong>{currentEx.correctAnswer}</strong></p>
                   )}
                   <p className={styles.explanation}>{currentEx.explanation}</p>
                   <button className="btn btn-primary btn-lg" onClick={handleNext}>
-                    다음 문제 →
+                    {t("nextQuestion")}
                   </button>
                 </div>
               )}
