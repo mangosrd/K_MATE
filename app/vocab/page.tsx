@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import BottomNav from "@/components/ui/BottomNav";
 import { MOCK_USER } from "@/lib/db/mock";
+import { getLocalVocab } from "@/lib/vocab/store";
 import { useLanguage } from "@/components/LanguageContext";
 import type { VocabItem } from "@/types/database";
 import styles from "./vocab.module.css";
@@ -35,10 +36,20 @@ export default function VocabPage() {
   ];
 
   useEffect(() => {
+    // 로컬(브라우저) 저장분을 우선 보여준다 — 백엔드가 꺼져 있어도 항상 동작
+    const local = getLocalVocab();
+    setVocab(local);
+
+    // 백엔드가 살아있으면 서버 저장분과 합쳐서(중복 단어 제외) 보여준다
     fetch(`${BACKEND_URL}/vocab/${MOCK_USER.id}`)
       .then((res) => (res.ok ? res.json() : []))
-      .then((data: VocabItem[]) => setVocab(data))
-      .catch(() => setVocab([]));
+      .then((remote: VocabItem[]) => {
+        if (remote.length === 0) return;
+        const localWords = new Set(local.map((v) => `${v.character_id}:${v.word}`));
+        const merged = [...local, ...remote.filter((v) => !localWords.has(`${v.character_id}:${v.word}`))];
+        setVocab(merged);
+      })
+      .catch(() => {});
   }, []);
 
   const filtered = selectedRegion === "all"

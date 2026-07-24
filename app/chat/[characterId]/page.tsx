@@ -8,6 +8,7 @@ import type { ChatMessage, ChatResponse } from "@/types/api";
 import styles from "./chat.module.css";
 
 import { MOCK_CHARACTERS, MOCK_USER, canAccessCharacter } from "@/lib/db/mock";
+import { addVocabWord } from "@/lib/vocab/store";
 
 const REGION_NAMES: Record<string, string> = {
   seoul: "서울·경기 노선",
@@ -87,25 +88,18 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
     setTimeout(() => setToast(null), 3000);
   }, []);
 
-  // 단어장에 실제로 영구 저장 (MySQL)
+  // 단어장에 영구 저장 — 로컬(브라우저)에 우선 저장하고, 백엔드가 살아있으면 함께 동기화
   const saveWordToVocab = useCallback(
     (word: string, meaning: string, sentence: string) => {
-      fetch(`${BACKEND_URL}/vocab`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          user_id: MOCK_USER.id,
-          character_id: characterId,
-          region_id: char.region_id,
-          word,
-          meaning,
-          sentence,
-        }),
-      }).catch(() => {
-        // 저장 실패해도 대화 흐름은 계속 진행
+      addVocabWord({
+        character_id: characterId,
+        word,
+        meaning,
+        sentence,
+        sentence_translation: "",
       });
     },
-    [characterId, char.region_id]
+    [characterId]
   );
 
   const sendMessage = async () => {

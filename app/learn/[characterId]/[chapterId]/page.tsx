@@ -4,6 +4,7 @@ import { useState, use, useEffect, useMemo } from "react";
 import Link from "next/link";
 import styles from "./session.module.css";
 import { getChapterContent } from "@/lib/content/chapters";
+import { addVocabWord } from "@/lib/vocab/store";
 import { useLanguage } from "@/components/LanguageContext";
 import type { ChapterWord as Word, ChapterSentence as Sentence, DialogueScene, DialogueTurn } from "@/types/content";
 
@@ -286,6 +287,19 @@ export default function LearningSessionPage({
       setIsSubmitted(true);
       setScore((s) => s + 10);
       setCorrectCount((c) => c + 1);
+
+      // 단어(플래시카드/객관식/듣기) 문제를 맞히면 단어장에 저장한다
+      const data = currentEx.originalData;
+      if ("word" in data && "meaning" in data) {
+        addVocabWord({
+          character_id: characterId,
+          word: data.word,
+          reading: data.reading,
+          meaning: data.meaning,
+          sentence: data.example,
+          sentence_translation: data.example_en,
+        });
+      }
     } else {
       const nextAttempts = attempts + 1;
       setAttempts(nextAttempts);
