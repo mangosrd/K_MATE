@@ -1,18 +1,48 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import BottomNav from "@/components/ui/BottomNav";
-import { MOCK_REGIONS, MOCK_ALL_PROGRESS, MOCK_ECONOMY, MOCK_USER } from "@/lib/db/mock";
+import { MOCK_REGIONS, MOCK_ALL_PROGRESS, MOCK_ECONOMY, MOCK_USER, MOCK_CHARACTERS } from "@/lib/db/mock";
+import { getEffectiveUserId } from "@/lib/auth/store";
 import { useLanguage } from "@/components/LanguageContext";
+import type { Progress } from "@/types/database";
 import styles from "./map.module.css";
+
+const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
 
 export default function MapPage() {
   const { t } = useLanguage();
-  const totalVisited = Object.values(MOCK_ALL_PROGRESS).reduce(
+  const [coins, setCoins] = useState(MOCK_ECONOMY.coins);
+  const [membership, setMembership] = useState(MOCK_USER.membership);
+  const [allProgress, setAllProgress] = useState<Record<string, Progress>>(MOCK_ALL_PROGRESS);
+
+  useEffect(() => {
+    const userId = getEffectiveUserId();
+
+    fetch(`${BACKEND_URL}/user/${userId}`)
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => { if (data) { setCoins(data.coins); setMembership(data.membership); } })
+      .catch(() => {});
+
+    Promise.all(
+      MOCK_CHARACTERS.map((c) =>
+        fetch(`${BACKEND_URL}/progress/${userId}/${c.id}`)
+          .then((res) => (res.ok ? res.json() : null))
+          .catch(() => null)
+      )
+    ).then((results) => {
+      const merged: Record<string, Progress> = {};
+      results.forEach((p) => { if (p) merged[p.character_id] = p; });
+      if (Object.keys(merged).length > 0) setAllProgress(merged);
+    });
+  }, []);
+
+  const totalVisited = Object.values(allProgress).reduce(
     (acc, p) => acc + p.visited_places.length, 0
   );
-  const streak = MOCK_ALL_PROGRESS["kyuhyun"]?.streak_days ?? 0;
-  const isPremium = MOCK_USER.membership === "premium";
+  const streak = allProgress["kyuhyun"]?.streak_days ?? 0;
+  const isPremium = membership === "premium";
 
   return (
     <>
@@ -25,7 +55,7 @@ export default function MapPage() {
           </div>
           <div className="coin-badge">
             <span className="coin-icon">🪙</span>
-            <span>{MOCK_ECONOMY.coins}</span>
+            <span>{coins}</span>
           </div>
         </header>
 
@@ -64,7 +94,7 @@ export default function MapPage() {
           <p className={styles.sectionLabel}>{t("boardingPass")}</p>
 
           {MOCK_REGIONS.map((region) => {
-            const progress = Object.values(MOCK_ALL_PROGRESS).find(
+            const progress = Object.values(allProgress).find(
               (p) => p.character_id === region.character_ids[0]
             );
             const visited = progress?.visited_places.length ?? 0;
