@@ -10,6 +10,7 @@ import styles from "./chat.module.css";
 import { MOCK_CHARACTERS, MOCK_USER, canAccessCharacter } from "@/lib/db/mock";
 import { addVocabWord } from "@/lib/vocab/store";
 import { addLocalDiary } from "@/lib/diary/store";
+import { getChatHistory, saveChatHistory, clearChatHistory } from "@/lib/chat/store";
 
 const REGION_NAMES: Record<string, string> = {
   seoul: "서울·경기 노선",
@@ -57,7 +58,28 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
   const [toast, setToast] = useState<string | null>(null);
   const [showEndModal, setShowEndModal] = useState(false);
   const [savedWords, setSavedWords] = useState<string[]>([]);
+  const [resumeChoice, setResumeChoice] = useState<"pending" | "resolved">(() =>
+    getChatHistory(characterId) ? "pending" : "resolved"
+  );
   const messagesEndRef = useRef<HTMLDivElement>(null);
+
+  // 이전 대화 이어서 하기 / 새로 시작하기 선택
+  const handleResume = () => {
+    const history = getChatHistory(characterId);
+    if (history) setMessages(history);
+    setResumeChoice("resolved");
+  };
+  const handleFreshStart = () => {
+    clearChatHistory(characterId);
+    setMessages(INITIAL_MESSAGES);
+    setResumeChoice("resolved");
+  };
+
+  // 대화 내용이 바뀔 때마다 로컬(브라우저)에 저장 — 재접속 시 이어서 할 수 있도록
+  useEffect(() => {
+    if (resumeChoice !== "resolved") return;
+    saveChatHistory(characterId, messages);
+  }, [messages, resumeChoice, characterId]);
 
   if (!canAccess) {
     return (
@@ -212,6 +234,8 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
       // 백엔드 미연결 — 일기가 생성/저장되지 않지만 화면 흐름은 막지 않는다
     }
 
+    // 대화가 마무리됐으므로 다음에 들어오면 새 대화로 시작한다
+    clearChatHistory(characterId);
     window.location.href = "/diary";
   };
 
@@ -386,6 +410,29 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
       {toast && (
         <div className="toast" role="status" aria-live="assertive">
           📖 {toast}
+        </div>
+      )}
+
+      {/* 이전 대화 이어서 하기 / 새로 시작하기 선택 */}
+      {resumeChoice === "pending" && (
+        <div className="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-resume-title">
+          <div className="modal-sheet" onClick={(e) => e.stopPropagation()}>
+            <div className="modal-handle" />
+            <h2 id="modal-resume-title" className={styles.modalTitle}>
+              이전 대화가 있어요
+            </h2>
+            <p className={styles.modalSub}>
+              {char.name} 기장님과 나눈 대화를 이어서 할까요, 새로 시작할까요?
+            </p>
+            <div className={styles.modalActions}>
+              <button className="btn btn-secondary" onClick={handleFreshStart} id="btn-chat-fresh">
+                새로 시작하기
+              </button>
+              <button className="btn btn-primary" onClick={handleResume} id="btn-chat-resume">
+                이어서 하기
+              </button>
+            </div>
+          </div>
         </div>
       )}
 
