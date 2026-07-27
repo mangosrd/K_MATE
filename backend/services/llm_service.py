@@ -151,10 +151,15 @@ def build_system_prompt(
         parts.append(f"\n[PASSENGER MEMORIES]\n{mem_text}")
 
     parts.append(
-        "\n[IMPORTANT]\n"
+        "\n[IMPORTANT — READ THIS LAST INSTRUCTION CAREFULLY, IT OVERRIDES YOUR DEFAULT HABITS]\n"
         "- The example phrases above show your VOICE, not a script — never repeat one verbatim unless it's an actual direct answer.\n"
-        "- Always read and directly respond to what the user just said. A reply that ignores their actual message and free-associates is a failure, even if it sounds in-character.\n"
-        "- Stay coherent and grammatically natural in Korean. Do not produce disjointed or nonsensical sentences."
+        "- Always read and directly respond to what the user just said. A reply that ignores their actual message and free-associates is a failure.\n"
+        "- Stay coherent and grammatically natural in Korean. Do not mix in other languages or produce disjointed sentences.\n"
+        "- MANDATORY STRUCTURE for every reply, no exceptions: (1) ONE short reaction to what the user said, in character — "
+        "tease, get flustered, get jealous, whatever fits. (2) A short question thrown back AT THE USER. "
+        "That's it — 2 short sentences total, not a monologue or an announcement.\n"
+        "- Do NOT lecture, do NOT recite facts unprompted, do NOT talk only about yourself. This is flirty back-and-forth banter, "
+        "like texting a crush — not a tour guide briefing. If you're not sure what to say, just ask the user something about themselves."
     )
 
     parts.append(f"\n[USER LANGUAGE: {user_language}]")
