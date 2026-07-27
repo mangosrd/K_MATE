@@ -21,7 +21,7 @@ export interface ChatMessage {
 
 export interface ChatResponse {
   reply: string;
-  callback_memory?: string | null; // 되짚기: 맥락에 맞는 과거 기억 한 줄 (현재 백엔드에서 항상 null)
+  callback_memory?: string | null; // 되짚기: 세션 초반 + 저장된 기억이 있을 때만 채워짐
   word_suggestion?: {
     word: string;
     meaning: string;
@@ -41,19 +41,6 @@ export interface MemoryResponse {
   savedMemories: Memory[];
 }
 
-// ---- /api/diary ----
-export interface DiaryRequest {
-  userId: string;
-  characterId: string;
-  sessionEvents: string[]; // 오늘 세션에서 일어난 주요 사건
-}
-
-export interface DiaryResponse {
-  diaryId: string;
-  bodyKo: string;
-  createdAt: string;
-}
-
 // ---- /api/unlock ----
 export interface UnlockRequest {
   userId: string;
@@ -64,18 +51,5 @@ export interface UnlockRequest {
 export interface UnlockResponse {
   success: boolean;
   remainingCoins?: number;
-  error?: string;
-}
-
-// ---- /api/purchase ----
-export interface PurchaseRequest {
-  userId: string;
-  itemId: string;
-  cost: number;
-}
-
-export interface PurchaseResponse {
-  success: boolean;
-  newBalance: number;
   error?: string;
 }
