@@ -98,6 +98,8 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     // Diary Page
     diaryTitle: "일기",
     diarySub: "기장님과의 추억 일기장",
+    diaryEmptyMsg: "아직 쓴 일기가 없어요. {name} 기장님과 대화를 나누면 일기가 쓰여요!",
+    diaryEmptyBtn: "{name} 기장님과 대화하러 가기",
     tabAll: "전체",
     tabUnlocked: "해금",
     tabLocked: "잠금",
@@ -242,6 +244,8 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
 
     diaryTitle: "Diary",
     diarySub: "Memories with Captain",
+    diaryEmptyMsg: "No diary entries yet. Chat with Captain {name} to write one!",
+    diaryEmptyBtn: "Chat with Captain {name}",
     tabAll: "All",
     tabUnlocked: "Unlocked",
     tabLocked: "Locked",
@@ -386,6 +390,8 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
 
     diaryTitle: "Дневник",
     diarySub: "Воспоминания с капитаном",
+    diaryEmptyMsg: "Записей пока нет. Поговорите с капитаном {name}, чтобы появилась запись!",
+    diaryEmptyBtn: "Поговорить с капитаном {name}",
     tabAll: "Все",
     tabUnlocked: "Открытые",
     tabLocked: "Заблокированные",
@@ -530,6 +536,8 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
 
     diaryTitle: "日记",
     diarySub: "与机长的回忆日记",
+    diaryEmptyMsg: "还没有日记。和{name}机长聊天就会写日记哦！",
+    diaryEmptyBtn: "去和{name}机长聊天",
     tabAll: "全部",
     tabUnlocked: "已解锁",
     tabLocked: "未解锁",
@@ -674,6 +682,8 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
 
     diaryTitle: "日記",
     diarySub: "キャプテンとの思い出日記",
+    diaryEmptyMsg: "まだ日記がありません。{name}機長と会話すると日記が書かれます！",
+    diaryEmptyBtn: "{name}機長と会話しに行く",
     tabAll: "すべて",
     tabUnlocked: "解放済み",
     tabLocked: "ロック中",
@@ -818,6 +828,8 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
 
     diaryTitle: "日記",
     diarySub: "與機長的回憶日記本",
+    diaryEmptyMsg: "還沒有日記。和{name}機長聊天就會寫日記喔！",
+    diaryEmptyBtn: "去和{name}機長聊天",
     tabAll: "全部",
     tabUnlocked: "已解鎖",
     tabLocked: "未解鎖",
@@ -962,6 +974,8 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
 
     diaryTitle: "ไดอารี",
     diarySub: "สมุดบันทึกความทรงจำกับกัปตัน",
+    diaryEmptyMsg: "ยังไม่มีไดอารี พูดคุยกับกัปตัน{name}เพื่อเขียนไดอารี!",
+    diaryEmptyBtn: "ไปพูดคุยกับกัปตัน{name}",
     tabAll: "ทั้งหมด",
     tabUnlocked: "ปลดล็อกแล้ว",
     tabLocked: "ล็อกอยู่",

@@ -117,9 +117,9 @@ export default function CharDiaryPage({ params }: { params: Promise<{ characterI
           {filtered.length === 0 && (
             <div className={styles.empty}>
               <p>📔</p>
-              <p>{t("diaryTitle")}</p>
+              <p>{t("diaryEmptyMsg", { name: char.name })}</p>
               <Link href={`/chat/${char.id}`} className="btn btn-primary btn-sm">
-                💬 {char.name}
+                💬 {t("diaryEmptyBtn", { name: char.name })}
               </Link>
             </div>
           )}
