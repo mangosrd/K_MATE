@@ -1,19 +1,44 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import BottomNav from "@/components/ui/BottomNav";
 import { MOCK_CHARACTERS, MOCK_USER, MOCK_DIARY, canAccessCharacter } from "@/lib/db/mock";
-import { getCurrentUser } from "@/lib/auth/store";
+import { getCurrentUser, getEffectiveUserId } from "@/lib/auth/store";
+import { getAllLocalDiaries } from "@/lib/diary/store";
 import { useLanguage } from "@/components/LanguageContext";
+import type { DiaryEntry } from "@/types/database";
 import styles from "./diary.module.css";
+
+const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
 
 export default function DiarySelectPage() {
   const { t } = useLanguage();
+  const [diaries, setDiaries] = useState<DiaryEntry[]>(MOCK_DIARY);
+
+  useEffect(() => {
+    const local = getAllLocalDiaries();
+    const userId = getEffectiveUserId();
+
+    Promise.all(
+      MOCK_CHARACTERS.map((c) =>
+        fetch(`${BACKEND_URL}/diary/${userId}/${c.id}`)
+          .then((res) => (res.ok ? res.json() : []))
+          .catch(() => [])
+      )
+    ).then((results: DiaryEntry[][]) => {
+      const remote = results.flat();
+      const remoteIds = new Set(remote.map((d) => d.id));
+      const real = [...remote, ...local.filter((d) => !remoteIds.has(d.id))];
+      // 실제로 생성된 일기가 있으면 그걸 쓰고, 없으면 데모용 mock 일기를 유지한다
+      if (real.length > 0) setDiaries(real);
+    });
+  }, []);
 
   const diaryCountByChar = (charId: string) =>
-    MOCK_DIARY.filter((d) => d.character_id === charId).length;
+    diaries.filter((d) => d.character_id === charId).length;
   const unlockedCount = (charId: string) =>
-    MOCK_DIARY.filter((d) => d.character_id === charId && d.unlocked).length;
+    diaries.filter((d) => d.character_id === charId && d.unlocked).length;
 
   return (
     <>
