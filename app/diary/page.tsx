@@ -3,6 +3,7 @@
 import Link from "next/link";
 import BottomNav from "@/components/ui/BottomNav";
 import { MOCK_CHARACTERS, MOCK_USER, MOCK_DIARY, canAccessCharacter } from "@/lib/db/mock";
+import { getCurrentUser } from "@/lib/auth/store";
 import { useLanguage } from "@/components/LanguageContext";
 import styles from "./diary.module.css";
 
@@ -29,7 +30,7 @@ export default function DiarySelectPage() {
 
           <div className={styles.charList}>
             {MOCK_CHARACTERS.map((char) => {
-              const canAccess = canAccessCharacter(char.id, MOCK_USER.membership, MOCK_USER.free_character_slots);
+              const canAccess = canAccessCharacter(char.id, getCurrentUser()?.membership ?? MOCK_USER.membership, MOCK_USER.free_character_slots);
               const total = diaryCountByChar(char.id);
               const unlocked = unlockedCount(char.id);
 

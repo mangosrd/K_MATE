@@ -11,7 +11,7 @@ import { MOCK_CHARACTERS, MOCK_USER, canAccessCharacter } from "@/lib/db/mock";
 import { addVocabWord } from "@/lib/vocab/store";
 import { addLocalDiary } from "@/lib/diary/store";
 import { getChatHistory, saveChatHistory, clearChatHistory } from "@/lib/chat/store";
-import { getEffectiveUserId } from "@/lib/auth/store";
+import { getEffectiveUserId, getCurrentUser } from "@/lib/auth/store";
 
 const REGION_NAMES: Record<string, string> = {
   seoul: "서울·경기 노선",
@@ -29,7 +29,7 @@ import { useLanguage } from "@/components/LanguageContext";
 export default function ChatPage({ params }: { params: Promise<{ characterId: string }> }) {
   const { characterId } = use(params);
   const { language } = useLanguage();
-  const canAccess = canAccessCharacter(characterId, MOCK_USER.membership, MOCK_USER.free_character_slots);
+  const canAccess = canAccessCharacter(characterId, getCurrentUser()?.membership ?? MOCK_USER.membership, MOCK_USER.free_character_slots);
 
   // 실제 캐릭터 데이터 조회
   const char = MOCK_CHARACTERS.find((c) => c.id === characterId) ?? {

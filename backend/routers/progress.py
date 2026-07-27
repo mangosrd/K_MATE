@@ -127,3 +127,23 @@ def get_user(user_id: str, db: Session = Depends(get_db)):
         free_char_slots=user.free_char_slots or [],
         coins=economy.coins if economy else 0,
     )
+
+
+@router.put("/user/{user_id}/membership", response_model=UserResponse)
+def upgrade_membership(user_id: str, db: Session = Depends(get_db)):
+    """프리미엄 구독 시작 (결제 연동 전 시뮬레이션 — 무료 체험 시작과 동일하게 즉시 업그레이드)"""
+    user = db.query(User).filter(User.id == user_id).first()
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
+
+    user.membership = "premium"
+    db.commit()
+    db.refresh(user)
+
+    economy = db.query(Economy).filter(Economy.user_id == user_id).first()
+    return UserResponse(
+        id=user.id, name=user.name, language=user.language,
+        level=user.level, membership=user.membership,
+        free_char_slots=user.free_char_slots or [],
+        coins=economy.coins if economy else 0,
+    )

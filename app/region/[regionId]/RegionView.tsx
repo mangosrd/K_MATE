@@ -8,7 +8,7 @@ import {
   getCharactersForRegion, MOCK_USER, MOCK_ALL_PROGRESS,
   canAccessCharacter,
 } from "@/lib/db/mock";
-import { getEffectiveUserId } from "@/lib/auth/store";
+import { getEffectiveUserId, getCurrentUser } from "@/lib/auth/store";
 import { useLanguage } from "@/components/LanguageContext";
 import type { Region, Progress } from "@/types/database";
 import styles from "./region.module.css";
@@ -118,7 +118,7 @@ export default function RegionView({ region }: { region: Region }) {
 
             <div className={styles.characterList}>
               {characters.map((char) => {
-                const canAccess = canAccessCharacter(char.id, MOCK_USER.membership, MOCK_USER.free_character_slots);
+                const canAccess = canAccessCharacter(char.id, getCurrentUser()?.membership ?? MOCK_USER.membership, MOCK_USER.free_character_slots);
                 const progress = allProgress[char.id];
                 const affinity = progress?.affinity ?? 0;
                 const affinityStars = Math.round(affinity / 20);

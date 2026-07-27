@@ -1,9 +1,14 @@
 "use client";
 
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { MOCK_CHARACTERS } from "@/lib/db/mock";
+import { getCurrentUser, setCurrentUser, getEffectiveUserId } from "@/lib/auth/store";
 import { useLanguage } from "@/components/LanguageContext";
 import styles from "./premium.module.css";
+
+const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
 
 const PERKS = [
   { icon: "🧑‍🤝‍🧑", ko: "모든 메이트 이용", en: "Unlimited access to all mates" },
@@ -16,7 +21,37 @@ const PERKS = [
 
 export default function PremiumView() {
   const { t } = useLanguage();
+  const router = useRouter();
   const premiumChars = MOCK_CHARACTERS.filter((c) => c.requires_premium);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  const handleSubscribe = async () => {
+    const authUser = getCurrentUser();
+    if (!authUser) {
+      router.push("/login");
+      return;
+    }
+
+    setLoading(true);
+    setError(null);
+    try {
+      const res = await fetch(`${BACKEND_URL}/user/${getEffectiveUserId()}/membership`, {
+        method: "PUT",
+      });
+      if (!res.ok) {
+        setError("구독 처리에 실패했습니다. 잠시 후 다시 시도해주세요.");
+        return;
+      }
+      const data = await res.json();
+      setCurrentUser({ ...authUser, membership: data.membership });
+      router.push("/map");
+    } catch {
+      setError("서버에 연결할 수 없습니다.");
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <main className={styles.page}>
@@ -72,8 +107,9 @@ export default function PremiumView() {
         </div>
 
         {/* CTA */}
-        <button className={styles.ctaBtn} id="btn-subscribe">
-          {t("startPremiumBtn")}
+        {error && <p style={{ color: "var(--red)", fontSize: 13, textAlign: "center", fontWeight: 600 }}>{error}</p>}
+        <button className={styles.ctaBtn} id="btn-subscribe" onClick={handleSubscribe} disabled={loading}>
+          {loading ? "처리 중..." : t("startPremiumBtn")}
         </button>
         <p className={styles.ctaSub}>{t("freeTrial")}</p>
 

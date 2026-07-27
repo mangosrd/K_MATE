@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import BottomNav from "@/components/ui/BottomNav";
 import { MOCK_CHARACTERS, MOCK_USER, MOCK_ALL_PROGRESS, canAccessCharacter } from "@/lib/db/mock";
-import { getEffectiveUserId } from "@/lib/auth/store";
+import { getEffectiveUserId, getCurrentUser } from "@/lib/auth/store";
 import { useLanguage } from "@/components/LanguageContext";
 import type { Progress } from "@/types/database";
 import styles from "./chat-select.module.css";
@@ -14,7 +14,8 @@ const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:800
 
 export default function ChatSelectPage() {
   const { t } = useLanguage();
-  const isPremium = MOCK_USER.membership === "premium";
+  const membership = getCurrentUser()?.membership ?? MOCK_USER.membership;
+  const isPremium = membership === "premium";
   const [allProgress, setAllProgress] = useState<Record<string, Progress>>(MOCK_ALL_PROGRESS);
 
   useEffect(() => {
@@ -69,7 +70,7 @@ export default function ChatSelectPage() {
           <div className={styles.charGrid}>
             {MOCK_CHARACTERS.map((char) => {
               const canAccess = canAccessCharacter(
-                char.id, MOCK_USER.membership, MOCK_USER.free_character_slots
+                char.id, membership, MOCK_USER.free_character_slots
               );
               const progress = allProgress[char.id];
               const affinity = progress?.affinity ?? 0;
