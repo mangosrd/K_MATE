@@ -256,6 +256,7 @@ export const MOCK_CHAPTERS: Chapter[] = [
 export interface SpecialChapter {
   id: string;
   category: "romance" | "daily" | "friendship";
+  character_id?: string; // 지정되어 있으면 그 기장 전용 스토리 (없으면 전 캐릭터 공용)
   order: number;
   title: string;
   title_en: string;
@@ -267,18 +268,71 @@ export interface SpecialChapter {
   is_locked: boolean;
 }
 
+// ❤️ 로맨스 스토리 — 기장별 성격에 맞춰 완전히 다른 스토리라인 (기장당 10개, 총 50개)
+const ROMANCE_CHAPTERS: SpecialChapter[] = [
+  // 규현 (친절·전문적인 서울 기장) — "완벽한 기장님의 서툰 진심"
+  { id: "sp-rom-kyuhyun-01", category: "romance", character_id: "kyuhyun", order: 1, title: "승객 명단 속 그 이름", title_en: "The Name on the Passenger List", description: "정중한 인사 뒤에 숨긴 떨림, 처음 눈이 마주친 순간", emoji: "💖", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-rom-kyuhyun-02", category: "romance", character_id: "kyuhyun", order: 2, title: "방송 중 말이 헛나온 날", title_en: "A Slip of the Tongue Mid-Announcement", description: "평소처럼 안내 방송을 하다 그만 말이 꼬여버린 기장님", emoji: "🎙️", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-rom-kyuhyun-03", category: "romance", character_id: "kyuhyun", order: 3, title: "비번인 날, 경복궁에서", title_en: "Off-Duty at Gyeongbokgung", description: "사복 차림으로 우연히 마주친 낯설고도 반가운 얼굴", emoji: "🏯", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-rom-kyuhyun-04", category: "romance", character_id: "kyuhyun", order: 4, title: "한강, 야근 뒤의 산책", title_en: "A Walk Along the Han River", description: "근무를 마치고 함께 걷는 조용하고 다정한 저녁", emoji: "🌃", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-rom-kyuhyun-05", category: "romance", character_id: "kyuhyun", order: 5, title: "서툰 손편지", title_en: "A Clumsy Handwritten Letter", description: "정갈한 성격답지 않게 몇 번이나 고쳐 쓴 편지 한 장", emoji: "💌", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-rom-kyuhyun-06", category: "romance", character_id: "kyuhyun", order: 6, title: "첫눈 오던 날의 약속", title_en: "A Promise on the First Snow", description: "겨울, 첫눈을 함께 보자는 조심스러운 다짐", emoji: "❄️", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-rom-kyuhyun-07", category: "romance", character_id: "kyuhyun", order: 7, title: "티가 나버린 질투", title_en: "Jealousy He Couldn't Hide", description: "다른 사람과 웃는 모습에 자기도 모르게 굳어진 표정", emoji: "😤", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-rom-kyuhyun-08", category: "romance", character_id: "kyuhyun", order: 8, title: "기내 방송으로 전한 고백", title_en: "A Confession Over the Intercom", description: "승객들 몰래, 방송 멘트에 살짝 담아낸 진심", emoji: "💬", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-rom-kyuhyun-09", category: "romance", character_id: "kyuhyun", order: 9, title: "우산 하나, 마음 하나", title_en: "One Umbrella, One Heart", description: "비 오는 날 씌워준 우산 속, 가까워진 거리", emoji: "☔", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-rom-kyuhyun-10", category: "romance", character_id: "kyuhyun", order: 10, title: "이 노선의 끝에서 다시", title_en: "Always at the End of This Route", description: "앞으로도 이 하늘 위에서 계속 만나자는 약속", emoji: "👑", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+
+  // 하늘 (따뜻하고 시적인 전주 기장) — "한옥마을의 잔잔한 사랑"
+  { id: "sp-rom-haneul-01", category: "romance", character_id: "haneul", order: 1, title: "처마 밑에서 만난 그대", title_en: "Sheltered Under the Eaves", description: "소나기를 피해 나란히 서 있던 첫 순간", emoji: "🌧️", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-rom-haneul-02", category: "romance", character_id: "haneul", order: 2, title: "전주 골목길을 걸으며", title_en: "Wandering Jeonju's Alleys", description: "나란히 걷다 스치듯 닿은 손끝", emoji: "🏮", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-rom-haneul-03", category: "romance", character_id: "haneul", order: 3, title: "한복을 입은 그대", title_en: "You in a Hanbok", description: "처음으로 마주한 낯설고 설레는 모습", emoji: "👘", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-rom-haneul-04", category: "romance", character_id: "haneul", order: 4, title: "경기전의 고요한 오후", title_en: "A Quiet Afternoon at Gyeonggijeon", description: "말이 없어도 어색하지 않은 편안한 시간", emoji: "🍃", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-rom-haneul-05", category: "romance", character_id: "haneul", order: 5, title: "나눠 먹는 비빔밥 한 그릇", title_en: "Sharing a Bowl of Bibimbap", description: "숟가락 두 개, 소박하게 오가는 정", emoji: "🥗", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-rom-haneul-06", category: "romance", character_id: "haneul", order: 6, title: "전통찻집의 밤", title_en: "A Night at the Tea House", description: "따뜻한 차 한 잔과 함께 꺼내는 속마음", emoji: "🍵", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-rom-haneul-07", category: "romance", character_id: "haneul", order: 7, title: "오래된 사진관에서", title_en: "At the Old Photo Studio", description: "함께 담은, 오래 간직하고 싶은 한 장", emoji: "📷", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-rom-haneul-08", category: "romance", character_id: "haneul", order: 8, title: "붓끝에 눌러 담은 마음", title_en: "A Feeling Pressed into Brushstrokes", description: "서예로 정성껏 전하는 하늘의 진심", emoji: "🖌️", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-rom-haneul-09", category: "romance", character_id: "haneul", order: 9, title: "대숲을 스치는 바람", title_en: "Wind Through the Bamboo Grove", description: "조용히, 그러나 분명하게 건넨 고백", emoji: "🎋", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-rom-haneul-10", category: "romance", character_id: "haneul", order: 10, title: "다시 돌아오는 계절처럼", title_en: "Like the Seasons That Return", description: "사계절이 지나도 변치 않을 마음의 약속", emoji: "🌸", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+
+  // 선우 (유쾌하고 활발한 부산 기장) — "밀당 넘치는 바다 사나이의 서툰 진심"
+  { id: "sp-rom-sunwoo-01", category: "romance", character_id: "sunwoo", order: 1, title: "해운대에서 생긴 일", title_en: "Something Happened at Haeundae", description: "능청스럽게 다가오지만 은근 서툰 첫 만남", emoji: "🏖️", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-rom-sunwoo-02", category: "romance", character_id: "sunwoo", order: 2, title: "광안리 밤바다 드라이브", title_en: "A Night Drive Along Gwangalli", description: "장난기 가득한 티키타카가 오가는 드라이브", emoji: "🚗", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-rom-sunwoo-03", category: "romance", character_id: "sunwoo", order: 3, title: "자갈치 시장 데이트", title_en: "A Date at Jagalchi Market", description: "먹으면서도 티격태격, 은근 잘 맞는 사이", emoji: "🐟", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-rom-sunwoo-04", category: "romance", character_id: "sunwoo", order: 4, title: "부산 사투리 과외", title_en: "Busan Dialect Lessons", description: "사투리를 가르쳐주다 문득 가까워진 거리", emoji: "🗣️", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-rom-sunwoo-05", category: "romance", character_id: "sunwoo", order: 5, title: "영화의 전당, 우리 둘의 스크린", title_en: "Just the Two of Us at the Cinema Center", description: "BIFF의 밤, 나란히 앉은 어두운 상영관", emoji: "🎬", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-rom-sunwoo-06", category: "romance", character_id: "sunwoo", order: 6, title: "숨기지 못한 질투", title_en: "Jealousy He Couldn't Play Cool About", description: "능청스러움 뒤에 감춘, 티 나버린 서툰 마음", emoji: "😳", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-rom-sunwoo-07", category: "romance", character_id: "sunwoo", order: 7, title: "파도처럼 밀려오는 마음", title_en: "A Heart Rushing In Like the Tide", description: "장난기가 사라지고 진지해지는 순간", emoji: "🌊", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-rom-sunwoo-08", category: "romance", character_id: "sunwoo", order: 8, title: "광안대교 불빛 아래", title_en: "Under the Lights of Gwangan Bridge", description: "장난기 대신 담긴, 낯설게 진지한 눈빛", emoji: "🌉", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-rom-sunwoo-09", category: "romance", character_id: "sunwoo", order: 9, title: "사투리로 건넨 고백", title_en: "A Confession in Busan Dialect", description: "\"니 내 좋아하나?\" 돌직구로 건넨 진심", emoji: "💥", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-rom-sunwoo-10", category: "romance", character_id: "sunwoo", order: 10, title: "우리 바다처럼 오래오래", title_en: "Forever Like Our Sea", description: "파도처럼 변치 않고 함께하자는 약속", emoji: "⚓", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+
+  // 상우 (침착하고 역사에 진심인 공주 기장) — "천천히, 그러나 깊게"
+  { id: "sp-rom-sangwoo-01", category: "romance", character_id: "sangwoo", order: 1, title: "무령왕릉 앞에서", title_en: "In Front of King Muryeong's Tomb", description: "역사를 설명하다 문득 마주친 눈빛", emoji: "🏺", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-rom-sangwoo-02", category: "romance", character_id: "sangwoo", order: 2, title: "금강을 따라 걷는 시간", title_en: "Walking Along the Geumgang River", description: "말이 없어도 어색하지 않은 편안한 동행", emoji: "🏞️", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-rom-sangwoo-03", category: "romance", character_id: "sangwoo", order: 3, title: "오래된 책방에서", title_en: "At an Old Bookshop", description: "고서 사이에서 우연히 시작된 짧은 대화", emoji: "📚", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-rom-sangwoo-04", category: "romance", character_id: "sangwoo", order: 4, title: "유물처럼 깊어지는 마음", title_en: "A Heart Deepening Like an Old Relic", description: "시간이 갈수록 조금씩 진해지는 감정", emoji: "🪶", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-rom-sangwoo-05", category: "romance", character_id: "sangwoo", order: 5, title: "계룡산을 함께 오르며", title_en: "Climbing Gyeryongsan Together", description: "땀 흘리며 서로의 걸음을 챙기는 시간", emoji: "⛰️", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-rom-sangwoo-06", category: "romance", character_id: "sangwoo", order: 6, title: "공주 야시장의 밤", title_en: "A Night at Gongju's Night Market", description: "평소와 다르게, 낯설도록 환하게 웃는 얼굴", emoji: "🏮", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-rom-sangwoo-07", category: "romance", character_id: "sangwoo", order: 7, title: "서두르지 않는 진심", title_en: "A Sincerity That Never Rushes", description: "침착함 뒤에 결국 들켜버린 마음", emoji: "🕰️", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-rom-sangwoo-08", category: "romance", character_id: "sangwoo", order: 8, title: "붓으로 눌러 쓴 편지", title_en: "A Letter Pressed in Ink", description: "고문서를 필사하듯 한 자 한 자 눌러쓴 진심", emoji: "✒️", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-rom-sangwoo-09", category: "romance", character_id: "sangwoo", order: 9, title: "천오백 년의 사랑처럼", title_en: "Like a Love a Thousand Years Old", description: "긴 역사에 빗대어 건네는 진지한 고백", emoji: "📜", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-rom-sangwoo-10", category: "romance", character_id: "sangwoo", order: 10, title: "변치 않는 유적처럼", title_en: "Like a Relic That Never Fades", description: "오래도록, 한결같이 함께하자는 다짐", emoji: "🏛️", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+
+  // 용우 (낭만적이고 철학적인 제주 기장) — "가장 로맨틱한 기장님"
+  { id: "sp-rom-yongwoo-01", category: "romance", character_id: "yongwoo", order: 1, title: "구름 위에서 만난 그대", title_en: "You, Met Above the Clouds", description: "시적인 분위기 속에서 시작된 첫 만남", emoji: "☁️", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-rom-yongwoo-02", category: "romance", character_id: "yongwoo", order: 2, title: "백록담, 둘만의 정상", title_en: "Baengnokdam, Just the Two of Us", description: "함께 오른 한라산 정상에서 나눈 숨결", emoji: "🌋", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-rom-yongwoo-03", category: "romance", character_id: "yongwoo", order: 3, title: "성산일출봉의 새벽", title_en: "Dawn at Seongsan Ilchulbong", description: "함께 맞이하는 첫 해, 그리고 첫 마음", emoji: "🌅", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-rom-yongwoo-04", category: "romance", character_id: "yongwoo", order: 4, title: "해녀 할머니의 바다 이야기", title_en: "A Haenyeo's Tales of the Sea", description: "제주 바다에 얽힌 이야기 속 낭만", emoji: "🌊", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-rom-yongwoo-05", category: "romance", character_id: "yongwoo", order: 5, title: "감귤빛으로 물든 오후", title_en: "An Afternoon Tinted Tangerine", description: "따뜻한 색感 가득한 감귤밭 데이트", emoji: "🍊", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-rom-yongwoo-06", category: "romance", character_id: "yongwoo", order: 6, title: "올레길, 말없이 걷는 길", title_en: "Olle Trail, Walking in Silence", description: "자연 속에서 말보다 깊어지는 마음", emoji: "🚶", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-rom-yongwoo-07", category: "romance", character_id: "yongwoo", order: 7, title: "별이 쏟아지던 밤", title_en: "A Night the Stars Poured Down", description: "고백을 앞둔, 두근거리는 밤하늘 아래", emoji: "🌌", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-rom-yongwoo-08", category: "romance", character_id: "yongwoo", order: 8, title: "바람이 전하는 마음", title_en: "A Heart Carried by the Wind", description: "제주 바람에 실어 보내는 조심스러운 진심", emoji: "🍃", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-rom-yongwoo-09", category: "romance", character_id: "yongwoo", order: 9, title: "파도 소리에 담은 고백", title_en: "A Confession in the Sound of Waves", description: "가장 로맨틱한 기장님의, 가장 진심 어린 순간", emoji: "💙", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-rom-yongwoo-10", category: "romance", character_id: "yongwoo", order: 10, title: "우리, 이 섬처럼 변함없이", title_en: "Us, Unchanging Like This Island", description: "제주도처럼 영원할 사랑을 약속하는 마지막 장", emoji: "🌺", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+];
+
 export const SPECIAL_CHAPTERS: SpecialChapter[] = [
-  // ❤️ 로맨스 스토리 (10개)
-  { id: "sp-rom-01", category: "romance", order: 1, title: "첫눈에 반한 기장님", title_en: "Love at First Sight", description: "비행기 안에서 시작된 설레는 첫 만남과 심쿵 표현", emoji: "💖", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
-  { id: "sp-rom-02", category: "romance", order: 2, title: "둘만의 밤하늘 비행", title_en: "Flight Under the Stars", description: "밤하늘의 별을 보며 나누는 로맨틱한 대화", emoji: "🌌", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
-  { id: "sp-rom-03", category: "romance", order: 3, title: "달콤한 카페 데이트", title_en: "Sweet Cafe Date", description: "예쁜 카페에서 고백하는 좋아하는 마음", emoji: "☕", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
-  { id: "sp-rom-04", category: "romance", order: 4, title: "손을 잡던 떨리던 날", title_en: "The Day We Held Hands", description: "처음 손을 잡을 때 쓰는 감정 및 애정 표현", emoji: "🤝", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
-  { id: "sp-rom-05", category: "romance", order: 5, title: "고백의 순간 '좋아해'", title_en: "Moment of Confession", description: "진심을 전하는 한국어 고백 멘트와 다정한 표현", emoji: "💌", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
-  { id: "sp-rom-06", category: "romance", order: 6, title: "남산타워 사랑의 자물쇠", title_en: "Namsan Love Lock", description: "영원한 사랑을 약속하며 걸어두는 자물쇠 메시지", emoji: "🔒", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
-  { id: "sp-rom-07", category: "romance", order: 7, title: "비 내리는 날의 우산", title_en: "Umbrella on a Rainy Day", description: "하나의 우산을 쓰고 나누는 따뜻한 소통", emoji: "☔", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
-  { id: "sp-rom-08", category: "romance", order: 8, title: "커플 링과 소중한 약속", title_en: "Couple Rings & Promises", description: "기념일과 약속을 나눌 때 쓰는 로맨틱한 단어", emoji: "💍", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
-  { id: "sp-rom-09", category: "romance", order: 9, title: "보고 싶을 때 쓰는 말", title_en: "When I Miss You", description: "그리움과 보고 싶은 마음을 표현하는 애칭", emoji: "🥺", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
-  { id: "sp-rom-10", category: "romance", order: 10, title: "영원한 해피 엔딩", title_en: "Eternal Happy Ending", description: "서로의 곁을 지켜주는 진실한 사랑과 미래", emoji: "👑", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  ...ROMANCE_CHAPTERS,
 
   // ☕ 일상 스토리 (10개)
   { id: "sp-day-01", category: "daily", order: 1, title: "아침 인사와 하루 시작", title_en: "Morning Greetings", description: "기분 좋은 아침 인사와 일상 안부 묻기", emoji: "🌅", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },

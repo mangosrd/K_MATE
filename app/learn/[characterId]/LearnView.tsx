@@ -22,7 +22,9 @@ export default function LearnView({ char, chapters, currentStep }: LearnViewProp
   const activeCaptain = MOCK_CHARACTERS.find((c) => c.id === selectedCaptainId) ?? char;
 
   const filteredSpecialChapters = SPECIAL_CHAPTERS.filter(
-    (sc) => sc.category === specialCategory
+    (sc) =>
+      sc.category === specialCategory &&
+      (!sc.character_id || sc.character_id === activeCaptain.id)
   );
 
   return (
