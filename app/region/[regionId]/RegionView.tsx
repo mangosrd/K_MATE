@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import BottomNav from "@/components/ui/BottomNav";
@@ -7,9 +8,12 @@ import {
   getCharactersForRegion, MOCK_USER, MOCK_ALL_PROGRESS,
   canAccessCharacter,
 } from "@/lib/db/mock";
+import { getEffectiveUserId } from "@/lib/auth/store";
 import { useLanguage } from "@/components/LanguageContext";
-import type { Region } from "@/types/database";
+import type { Region, Progress } from "@/types/database";
 import styles from "./region.module.css";
+
+const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
 
 interface RegionHighlight {
   id: string;
@@ -54,6 +58,23 @@ export default function RegionView({ region }: { region: Region }) {
   const { t } = useLanguage();
   const characters = getCharactersForRegion(region.id);
   const highlights = REGION_HIGHLIGHTS[region.id] ?? [];
+  const [allProgress, setAllProgress] = useState<Record<string, Progress>>(MOCK_ALL_PROGRESS);
+
+  useEffect(() => {
+    const userId = getEffectiveUserId();
+    Promise.all(
+      characters.map((c) =>
+        fetch(`${BACKEND_URL}/progress/${userId}/${c.id}`)
+          .then((res) => (res.ok ? res.json() : null))
+          .catch(() => null)
+      )
+    ).then((results) => {
+      const merged: Record<string, Progress> = {};
+      results.forEach((p) => { if (p) merged[p.character_id] = p; });
+      if (Object.keys(merged).length > 0) setAllProgress(merged);
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [region.id]);
 
   return (
     <>
@@ -98,7 +119,7 @@ export default function RegionView({ region }: { region: Region }) {
             <div className={styles.characterList}>
               {characters.map((char) => {
                 const canAccess = canAccessCharacter(char.id, MOCK_USER.membership, MOCK_USER.free_character_slots);
-                const progress = MOCK_ALL_PROGRESS[char.id];
+                const progress = allProgress[char.id];
                 const affinity = progress?.affinity ?? 0;
                 const affinityStars = Math.round(affinity / 20);
 
