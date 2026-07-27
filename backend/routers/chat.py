@@ -10,6 +10,7 @@ from services.llm_service import (
     load_persona, build_system_prompt, llm_chat, extract_word_suggestion
 )
 from models.models import Character, Memory, Progress
+from routers.progress import apply_streak
 import uuid
 
 router = APIRouter(prefix="/chat", tags=["chat"])
@@ -53,15 +54,19 @@ async def chat(req: ChatRequest, db: Session = Depends(get_db)):
     # 6. LLM 호출
     reply = await llm_chat(messages, temperature=0.6, max_tokens=256)
 
-    # 7. 호감도 업데이트
+    # 7. 호감도 업데이트 + 연속 일수 갱신
     progress = (
         db.query(Progress)
         .filter(Progress.user_id == req.user_id, Progress.character_id == req.character_id)
         .first()
     )
-    if progress:
-        progress.affinity = min(100, progress.affinity + 1)
-        db.commit()
+    if not progress:
+        progress = Progress(id=str(uuid.uuid4()), user_id=req.user_id, character_id=req.character_id)
+        db.add(progress)
+        db.flush()
+    progress.affinity = min(100, progress.affinity + 1)
+    apply_streak(progress)
+    db.commit()
 
     # 8. 단어 추출
     word_data = extract_word_suggestion(reply)

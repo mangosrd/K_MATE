@@ -10,9 +10,32 @@ from schemas.schemas import (
     RegionResponse, CharacterResponse, UserResponse
 )
 from models.models import Progress, Region, Character, User, Economy
+from datetime import datetime, timedelta
 import uuid
 
 router = APIRouter(tags=["progress"])
+
+
+def apply_streak(prog: Progress) -> None:
+    """오늘 활동을 기준으로 연속 일수(streak_days)를 갱신한다.
+
+    오늘 이미 활동했으면 그대로, 어제까지 활동했으면 +1, 그보다 오래됐으면 1로 리셋.
+    채팅(chat.py)과 챕터 완료(update_progress) 양쪽에서 공유해서 쓴다.
+    """
+    today = datetime.now().date()
+    last_date = prog.last_active_at.date() if prog.last_active_at else None
+
+    if prog.streak_days == 0:
+        # 이 캐릭터와 처음 활동하는 날 (last_active_at이 server_default로 이미 채워져
+        # 있어도 streak_days는 아직 0이므로 여기서 확실히 1로 시작한다)
+        prog.streak_days = 1
+    elif last_date == today:
+        pass
+    elif last_date == today - timedelta(days=1):
+        prog.streak_days += 1
+    else:
+        prog.streak_days = 1
+    prog.last_active_at = datetime.now()
 
 
 # ── 진도 ──────────────────────────────────────────────────
@@ -63,6 +86,7 @@ def update_progress(req: ProgressUpdate, db: Session = Depends(get_db)):
         prog.visited_places = (prog.visited_places or []) + [req.add_place]
     if req.add_stamp and req.add_stamp not in (prog.stamps or []):
         prog.stamps = (prog.stamps or []) + [req.add_stamp]
+    apply_streak(prog)
     db.commit()
     db.refresh(prog)
 
