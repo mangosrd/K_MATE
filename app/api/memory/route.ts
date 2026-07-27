@@ -1,12 +1,14 @@
 // ============================================================
-// POST /api/memory — 세션 요약 → 기억 추출·저장
-// 세션 종료 시 /api/chat 내부 또는 클라이언트에서 호출
+// POST /api/memory — 세션 요약 → 기억 추출 (LLM) → 백엔드(MySQL)에 저장
+// 세션 종료 시 클라이언트(채팅 화면)에서 호출
 // ============================================================
 
 import { NextRequest, NextResponse } from "next/server";
 import { extractMemories } from "@/lib/memory/extract";
 import type { MemoryRequest, MemoryResponse } from "@/types/api";
 import type { Memory } from "@/types/database";
+
+const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
 
 export async function POST(req: NextRequest) {
   try {
@@ -20,16 +22,16 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // 1. 기억 추출
+    // 1. 기억 추출 (LLM)
     const extracted = await extractMemories(sessionHistory);
 
     if (extracted.length === 0) {
       return NextResponse.json({ savedMemories: [] } satisfies MemoryResponse);
     }
 
-    // 2. DB 저장 (목 모드: 로그만 출력, Supabase 연결 시 실제 insert로 교체)
-    const savedMemories: Memory[] = extracted.map((m, i) => ({
-      id: `mem-${Date.now()}-${i}`,
+    // 2. 백엔드(FastAPI+MySQL)에 영구 저장 시도 — 백엔드가 꺼져 있어도 화면 흐름은 막지 않는다
+    let savedMemories: Memory[] = extracted.map((m, i) => ({
+      id: `local-mem-${Date.now()}-${i}`,
       user_id: userId,
       character_id: characterId,
       type: m.type,
@@ -37,9 +39,30 @@ export async function POST(req: NextRequest) {
       created_at: new Date().toISOString(),
     }));
 
-    console.log("[/api/memory] Saved memories:", savedMemories);
-    // TODO: Supabase 연결 시
-    // await supabase.from("memories").insert(savedMemories);
+    try {
+      const res = await fetch(`${BACKEND_URL}/memory`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          user_id: userId,
+          character_id: characterId,
+          memories: extracted.map((m) => ({ type: m.type, content: m.content })),
+        }),
+      });
+      if (res.ok) {
+        const data = await res.json();
+        savedMemories = data.saved_memories.map((m: any) => ({
+          id: m.id,
+          user_id: userId,
+          character_id: m.character_id,
+          type: m.type,
+          content: m.content,
+          created_at: m.created_at,
+        }));
+      }
+    } catch {
+      // 백엔드 미연결 — 추출된 기억은 반환하되 영구 저장은 되지 않음
+    }
 
     return NextResponse.json({ savedMemories } satisfies MemoryResponse);
   } catch (error) {

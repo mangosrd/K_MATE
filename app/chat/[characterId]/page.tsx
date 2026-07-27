@@ -9,6 +9,7 @@ import styles from "./chat.module.css";
 
 import { MOCK_CHARACTERS, MOCK_USER, canAccessCharacter } from "@/lib/db/mock";
 import { addVocabWord } from "@/lib/vocab/store";
+import { addLocalDiary } from "@/lib/diary/store";
 
 const REGION_NAMES: Record<string, string> = {
   seoul: "서울·경기 노선",
@@ -166,32 +167,51 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
   };
 
   const handleSessionEnd = async () => {
-    // 기억 추출 + 일기 생성
+    // 1. 기억 추출 + 저장 (LLM 추출 후 백엔드 MySQL에 best-effort 저장)
+    fetch("/api/memory", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        userId: MOCK_USER.id,
+        characterId,
+        sessionHistory: messages,
+      }),
+    }).catch(() => {});
+
+    // 2. 일기 생성 — 실제 백엔드(FastAPI)가 LLM 호출 + MySQL 저장까지 함께 수행
+    const sessionEvents = messages
+      .filter((m) => m.role === "assistant")
+      .slice(-3)
+      .map((m) => m.content);
+
     try {
-      await fetch("/api/memory", {
+      const res = await fetch(`${BACKEND_URL}/diary/generate`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          userId: "user-001",
-          characterId,
-          sessionHistory: messages,
+          user_id: MOCK_USER.id,
+          character_id: characterId,
+          session_events: sessionEvents,
+          place_name: REGION_NAMES[char.region_id] ?? "한국 여행",
+          unlock_cost: 5,
         }),
       });
-      await fetch("/api/diary", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          userId: "user-001",
-          characterId,
-          sessionEvents: messages
-            .filter((m) => m.role === "assistant")
-            .slice(-3)
-            .map((m) => m.content),
-        }),
-      });
+      if (res.ok) {
+        const data = await res.json();
+        addLocalDiary({
+          id: data.diary_id,
+          character_id: characterId,
+          body_ko: data.body_ko,
+          place_name: data.place_name,
+          unlocked: false,
+          unlock_cost: 5,
+          created_at: data.created_at,
+        });
+      }
     } catch {
-      // 실패해도 일기 화면으로 이동
+      // 백엔드 미연결 — 일기가 생성/저장되지 않지만 화면 흐름은 막지 않는다
     }
+
     window.location.href = "/diary";
   };
 

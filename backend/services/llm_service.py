@@ -182,13 +182,17 @@ def _get_word_candidates(text: str) -> list[str]:
 
 
 def _load_bert():
-    """KLUE-BERT 파인튜닝 분류 모델(정확도 0.637) 지연 로드. 없으면 (None, None)."""
+    """KLUE-BERT 파인튜닝 분류 모델(정확도 0.637) 지연 로드. 패키지/모델이 없으면 (None, None)으로 폴백."""
     global _bert_tokenizer, _bert_model
     if _bert_model is None and BERT_MODEL_DIR.exists():
-        from transformers import AutoModelForSequenceClassification, AutoTokenizer
-        _bert_tokenizer = AutoTokenizer.from_pretrained(BERT_MODEL_DIR)
-        _bert_model = AutoModelForSequenceClassification.from_pretrained(BERT_MODEL_DIR)
-        _bert_model.eval()
+        try:
+            from transformers import AutoModelForSequenceClassification, AutoTokenizer
+            _bert_tokenizer = AutoTokenizer.from_pretrained(BERT_MODEL_DIR)
+            _bert_model = AutoModelForSequenceClassification.from_pretrained(BERT_MODEL_DIR)
+            _bert_model.eval()
+        except Exception as e:
+            print(f"⚠️  KLUE-BERT 로드 실패 — RandomForest/기본 방식으로 폴백: {e}")
+            return None, None
     return _bert_tokenizer, _bert_model
 
 
@@ -196,8 +200,12 @@ def _load_rf_model():
     """RandomForest 베이스라인(정확도 0.496) 지연 로드. BERT가 없을 때만 쓰는 폴백."""
     global _rf_model
     if _rf_model is None and RF_MODEL_PATH.exists():
-        import joblib
-        _rf_model = joblib.load(RF_MODEL_PATH)
+        try:
+            import joblib
+            _rf_model = joblib.load(RF_MODEL_PATH)
+        except Exception as e:
+            print(f"⚠️  RandomForest 로드 실패 — 기본 방식으로 폴백: {e}")
+            return None
     return _rf_model
 
 

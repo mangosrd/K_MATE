@@ -12,7 +12,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 from database import check_connection, get_settings
-from routers import chat, diary, vocab, progress
+from routers import chat, diary, vocab, progress, memory
 from schemas.schemas import HealthResponse
 
 # Windows 콘솔(cp949)에서 이모지 print 시 UnicodeEncodeError로 서버가 죽는 것 방지
@@ -55,6 +55,7 @@ app.include_router(chat.router)
 app.include_router(diary.router)
 app.include_router(vocab.router)
 app.include_router(progress.router)
+app.include_router(memory.router)
 
 
 # ── 헬스체크 ──────────────────────────────────────────────

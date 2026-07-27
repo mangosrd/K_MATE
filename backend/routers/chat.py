@@ -67,8 +67,14 @@ async def chat(req: ChatRequest, db: Session = Depends(get_db)):
     word_data = extract_word_suggestion(reply)
     word_suggestion = WordSuggestion(**word_data) if word_data else None
 
+    # 9. 되짚기 카드 — 세션 초반(첫 대화)에만, 저장된 기억이 있으면 보여준다
+    callback_memory = (
+        memory_contents[0] if memory_contents and len(req.session_history) <= 1 else None
+    )
+
     return ChatResponse(
         reply=reply,
+        callback_memory=callback_memory,
         word_suggestion=word_suggestion,
         affinity_delta=1,
     )

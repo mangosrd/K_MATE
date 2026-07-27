@@ -37,6 +37,30 @@ class ChatResponse(BaseModel):
     affinity_delta: int = 1
 
 
+# ── 기억 ──────────────────────────────────────────────────
+class MemoryItem(BaseModel):
+    type: Literal["fact", "preference", "progress", "emotion"] = "fact"
+    content: str
+
+
+class MemoryCreateRequest(BaseModel):
+    user_id: str
+    character_id: str
+    memories: List[MemoryItem] = []
+
+
+class MemoryResponse(BaseModel):
+    id: str
+    character_id: str
+    type: str
+    content: str
+    created_at: str
+
+
+class MemoryCreateResponse(BaseModel):
+    saved_memories: List[MemoryResponse]
+
+
 # ── 일기 ──────────────────────────────────────────────────
 class DiaryGenerateRequest(BaseModel):
     user_id: str

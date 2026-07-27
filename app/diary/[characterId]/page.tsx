@@ -1,12 +1,15 @@
 "use client";
 
-import { useState, use } from "react";
+import { useState, useEffect, use } from "react";
 import Link from "next/link";
 import BottomNav from "@/components/ui/BottomNav";
-import { getCharacterById, getDiaryForCharacter, MOCK_ECONOMY } from "@/lib/db/mock";
+import { getCharacterById, getDiaryForCharacter, MOCK_USER, MOCK_ECONOMY } from "@/lib/db/mock";
+import { getLocalDiaries } from "@/lib/diary/store";
 import { useLanguage } from "@/components/LanguageContext";
 import type { DiaryEntry } from "@/types/database";
 import styles from "./char-diary.module.css";
+
+const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
 
 type Tab = "all" | "unlocked" | "locked";
 
@@ -22,6 +25,23 @@ export default function CharDiaryPage({ params }: { params: Promise<{ characterI
   const [unlockModal, setUnlockModal] = useState<DiaryEntry | null>(null);
   const [selected, setSelected] = useState<DiaryEntry | null>(null);
   const [unlockAnim, setUnlockAnim] = useState<string | null>(null);
+
+  useEffect(() => {
+    const local = getLocalDiaries(characterId);
+
+    fetch(`${BACKEND_URL}/diary/${MOCK_USER.id}/${characterId}`)
+      .then((res) => (res.ok ? res.json() : []))
+      .then((remote: DiaryEntry[]) => {
+        const remoteIds = new Set(remote.map((d) => d.id));
+        const merged = [...remote, ...local.filter((d) => !remoteIds.has(d.id))];
+        // 실제로 생성된 일기가 있으면 그걸 보여주고, 없으면 데모용 mock 일기를 유지한다
+        if (merged.length > 0) setDiaries(merged);
+      })
+      .catch(() => {
+        if (local.length > 0) setDiaries([...local, ...initialDiaries]);
+      });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [characterId]);
 
   const tabLabels: Record<Tab, string> = {
     all: t("tabAll"),
