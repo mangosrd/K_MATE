@@ -82,8 +82,11 @@ export default function OnboardingPage() {
   const [selectedChar, setSelectedChar] = useState("kyuhyun");
 
   const handleFinish = () => {
-    // TODO: 메이트 선택 등 나머지 온보딩 데이터 저장
-    router.push("/map");
+    // 선택한 메이트를 저장해두고, 바로 그 메이트와의 대화로 시작하게 한다
+    if (typeof window !== "undefined") {
+      localStorage.setItem("kmate_preferred_captain", selectedChar);
+    }
+    router.push(`/chat/${selectedChar}`);
   };
 
   return (
