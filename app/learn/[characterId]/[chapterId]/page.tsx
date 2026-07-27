@@ -322,6 +322,23 @@ export default function LearningSessionPage({
     }
   };
 
+  // 플래시카드는 정답 채점이 없어 handleCheckAnswer를 거치지 않으므로,
+  // 카드를 뒤집어 뜻까지 확인한 시점을 "학습 완료"로 보고 별도로 단어장에 저장한다.
+  const handleFlashcardNext = () => {
+    const data = currentEx.originalData;
+    if ("word" in data && "meaning" in data) {
+      addVocabWord({
+        character_id: characterId,
+        word: data.word,
+        reading: data.reading,
+        meaning: data.meaning,
+        sentence: data.example,
+        sentence_translation: data.example_en,
+      });
+    }
+    handleNext();
+  };
+
   const handleStartSTT = () => {
     if (typeof window === "undefined") return;
     const SpeechRecognition =
@@ -610,7 +627,7 @@ export default function LearningSessionPage({
                 </div>
               </button>
               {flipped && (
-                <button className="btn btn-primary btn-lg" onClick={handleNext} id="btn-next-flash">
+                <button className="btn btn-primary btn-lg" onClick={handleFlashcardNext} id="btn-next-flash">
                   {t("nextQuestion")}
                 </button>
               )}

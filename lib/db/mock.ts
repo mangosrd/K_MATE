@@ -145,6 +145,11 @@ export const MOCK_REGIONS: Region[] = [
   },
 ];
 
+// 개발자 테스트 모드 — 지역 잠금도 캐릭터 잠금과 함께 전부 무시 (.env.local의 NEXT_PUBLIC_DEV_MODE)
+if (process.env.NEXT_PUBLIC_DEV_MODE === "true") {
+  MOCK_REGIONS.forEach((r) => { r.is_locked = false; });
+}
+
 // ── 진도 (캐릭터별) ────────────────────────────────────
 export const MOCK_PROGRESS: Progress = {
   id: "prog-001",
@@ -381,6 +386,9 @@ export function getVocabForCharacter(characterId: string) {
 }
 
 export function canAccessCharacter(characterId: string, membership: string, freeSlots: string[]) {
+  // 개발자 테스트 모드 — 프리미엄 잠금 전부 무시 (.env.local의 NEXT_PUBLIC_DEV_MODE)
+  if (process.env.NEXT_PUBLIC_DEV_MODE === "true") return true;
+
   const char = getCharacterById(characterId);
   if (!char) return false;
   if (membership === "premium") return true;
