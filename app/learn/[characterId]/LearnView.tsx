@@ -190,7 +190,7 @@ export default function LearnView({ char, chapters, currentStep }: LearnViewProp
               {filteredSpecialChapters.map((sc) => (
                 <div key={sc.id} className={styles.chapterRow}>
                   <Link
-                    href={`/learn/${activeCaptain.id}/ch-k01`}
+                    href={`/learn/${activeCaptain.id}/${sc.id}`}
                     className={`${styles.chapterCard} ${styles.chapterLocked}`}
                   >
                     <div className={`${styles.chapterIcon} ${styles.iconLocked}`}>
