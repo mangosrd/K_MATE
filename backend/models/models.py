@@ -37,6 +37,7 @@ class User(Base):
     id              = Column(String(36), primary_key=True)
     name            = Column(String(100), nullable=False)
     email           = Column(String(255), unique=True)
+    password_hash   = Column(String(255))
     language        = Column(String(10), default="en", nullable=False)
     level           = Column(Integer, default=1, nullable=False)
     membership      = Column(Enum(MembershipEnum), default="free", nullable=False)

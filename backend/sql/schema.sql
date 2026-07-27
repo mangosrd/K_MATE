@@ -11,6 +11,7 @@ CREATE TABLE IF NOT EXISTS users (
   id            VARCHAR(36)  PRIMARY KEY DEFAULT (UUID()),
   name          VARCHAR(100) NOT NULL,
   email         VARCHAR(255) UNIQUE,
+  password_hash VARCHAR(255),
   language      VARCHAR(10)  NOT NULL DEFAULT 'en',
   level         INT          NOT NULL DEFAULT 1,
   membership    ENUM('free','premium') NOT NULL DEFAULT 'free',

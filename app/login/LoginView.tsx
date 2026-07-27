@@ -1,11 +1,73 @@
 "use client";
 
-import Link from "next/link";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { useLanguage } from "@/components/LanguageContext";
+import { setCurrentUser } from "@/lib/auth/store";
 import styles from "./login.module.css";
+
+const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
+
+type Mode = "start" | "login" | "signup";
 
 export default function LoginView() {
   const { t } = useLanguage();
+  const router = useRouter();
+  const [mode, setMode] = useState<Mode>("start");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState<string | null>(null);
+  const [loading, setLoading] = useState(false);
+
+  const resetForm = () => {
+    setName("");
+    setEmail("");
+    setPassword("");
+    setError(null);
+  };
+
+  const switchMode = (next: Mode) => {
+    resetForm();
+    setMode(next);
+  };
+
+  const submit = async () => {
+    setError(null);
+    if (!email.trim() || !password.trim() || (mode === "signup" && !name.trim())) {
+      setError("모든 항목을 입력해주세요.");
+      return;
+    }
+
+    setLoading(true);
+    try {
+      const endpoint = mode === "signup" ? "/auth/register" : "/auth/login";
+      const body =
+        mode === "signup"
+          ? { email: email.trim(), password, name: name.trim() }
+          : { email: email.trim(), password };
+
+      const res = await fetch(`${BACKEND_URL}${endpoint}`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body),
+      });
+
+      const data = await res.json();
+      if (!res.ok) {
+        setError(data.detail || "요청에 실패했습니다.");
+        return;
+      }
+
+      setCurrentUser(data);
+      router.push(mode === "signup" ? "/onboarding" : "/map");
+    } catch {
+      setError("서버에 연결할 수 없습니다. 잠시 후 다시 시도해주세요.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <main className={styles.page}>
       {/* 상단 그라디언트 배경 */}
@@ -23,46 +85,126 @@ export default function LoginView() {
       </section>
 
       {/* 캐릭터 미리보기 */}
-      <div className={styles.characterRow} aria-hidden="true">
-        {[
-          { emoji: "✈️", name: "규현" },
-          { emoji: "🛫", name: "하늘" },
-          { emoji: "⚓", name: "선우" },
-          { emoji: "🏛️", name: "상우" },
-          { emoji: "🌋", name: "용우" },
-        ].map((c) => (
-          <div key={c.name} className={styles.characterChip}>
-            <span className={styles.characterEmoji}>{c.emoji}</span>
-            <span className={styles.characterName}>{c.name}</span>
-          </div>
-        ))}
-      </div>
+      {mode === "start" && (
+        <div className={styles.characterRow} aria-hidden="true">
+          {[
+            { emoji: "✈️", name: "규현" },
+            { emoji: "🛫", name: "하늘" },
+            { emoji: "⚓", name: "선우" },
+            { emoji: "🏛️", name: "상우" },
+            { emoji: "🌋", name: "용우" },
+          ].map((c) => (
+            <div key={c.name} className={styles.characterChip}>
+              <span className={styles.characterEmoji}>{c.emoji}</span>
+              <span className={styles.characterName}>{c.name}</span>
+            </div>
+          ))}
+        </div>
+      )}
 
-      {/* 하단 로그인 카드 */}
+      {/* 하단 카드 */}
       <div className={styles.bottomCard}>
-        <p className={styles.cardTitle}>{t("startHere")}</p>
-        <p className={styles.cardTitleKo}>{t("continueWithAccount")}</p>
+        {mode === "start" && (
+          <>
+            <p className={styles.cardTitle}>{t("startHere")}</p>
+            <p className={styles.cardTitleKo}>{t("continueWithAccount")}</p>
 
-        <Link href="/onboarding" className="btn btn-primary btn-lg" id="btn-email-login">
-          {t("startWithEmail")}
-        </Link>
+            <button className="btn btn-primary btn-lg" id="btn-email-signup" onClick={() => switchMode("signup")}>
+              {t("startWithEmail")}
+            </button>
 
-        <div className={styles.dividerOr}>{t("orDivider")}</div>
+            <div className={styles.dividerOr}>{t("orDivider")}</div>
 
-        <button className="btn btn-secondary btn-lg" id="btn-google-login">
-          <GoogleIcon />
-          {t("continueGoogle")}
-        </button>
-        <button className="btn btn-secondary btn-lg" id="btn-apple-login">
-          {t("continueApple")}
-        </button>
+            <button className="btn btn-secondary btn-lg" id="btn-google-login">
+              <GoogleIcon />
+              {t("continueGoogle")}
+            </button>
+            <button className="btn btn-secondary btn-lg" id="btn-apple-login">
+              {t("continueApple")}
+            </button>
 
-        <p className={styles.signupHint}>
-          {t("noAccountYet")}{" "}
-          <Link href="/onboarding" className={styles.signupLink}>
-            {t("signUp")}
-          </Link>
-        </p>
+            <p className={styles.signupHint}>
+              이미 계정이 있으신가요?{" "}
+              <button type="button" className={styles.signupLink} onClick={() => switchMode("login")} id="btn-go-login">
+                로그인
+              </button>
+            </p>
+          </>
+        )}
+
+        {(mode === "login" || mode === "signup") && (
+          <>
+            <p className={styles.cardTitle}>{mode === "signup" ? "이메일로 회원가입" : "이메일로 로그인"}</p>
+
+            <div className={styles.formFields}>
+              {mode === "signup" && (
+                <input
+                  className={styles.formInput}
+                  placeholder="이름"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  id="input-signup-name"
+                  autoComplete="name"
+                />
+              )}
+              <input
+                className={styles.formInput}
+                type="email"
+                placeholder="이메일"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                id="input-auth-email"
+                autoComplete="email"
+              />
+              <input
+                className={styles.formInput}
+                type="password"
+                placeholder="비밀번호"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                onKeyDown={(e) => e.key === "Enter" && submit()}
+                id="input-auth-password"
+                autoComplete={mode === "signup" ? "new-password" : "current-password"}
+              />
+            </div>
+
+            {error && (
+              <p className={styles.formError} role="alert" id="auth-error">
+                {error}
+              </p>
+            )}
+
+            <button
+              className="btn btn-primary btn-lg"
+              onClick={submit}
+              disabled={loading}
+              id="btn-auth-submit"
+            >
+              {loading ? "처리 중..." : mode === "signup" ? "회원가입" : "로그인"}
+            </button>
+
+            <p className={styles.signupHint}>
+              {mode === "signup" ? (
+                <>
+                  이미 계정이 있으신가요?{" "}
+                  <button type="button" className={styles.signupLink} onClick={() => switchMode("login")} id="btn-switch-login">
+                    로그인
+                  </button>
+                </>
+              ) : (
+                <>
+                  {t("noAccountYet")}{" "}
+                  <button type="button" className={styles.signupLink} onClick={() => switchMode("signup")} id="btn-switch-signup">
+                    {t("signUp")}
+                  </button>
+                </>
+              )}
+            </p>
+            <button type="button" className={styles.backLink} onClick={() => switchMode("start")} id="btn-auth-back">
+              ← 뒤로
+            </button>
+          </>
+        )}
       </div>
     </main>
   );

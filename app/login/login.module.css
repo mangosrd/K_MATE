@@ -161,4 +161,51 @@
 .signupLink {
   color: var(--red);
   font-weight: 700;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
+  text-decoration: underline;
+}
+
+/* 로그인/회원가입 폼 */
+.formFields {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.formInput {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1.5px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  font-size: 15px;
+  font-family: inherit;
+  color: var(--text-primary);
+  background: #fff;
+}
+.formInput:focus {
+  outline: none;
+  border-color: var(--blue);
+}
+
+.formError {
+  font-size: 13px;
+  color: var(--red);
+  text-align: center;
+  font-weight: 600;
+}
+
+.backLink {
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  color: var(--text-muted);
+  font-size: 13px;
+  font-family: inherit;
+  text-align: center;
 }

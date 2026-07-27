@@ -188,6 +188,26 @@ class UserResponse(BaseModel):
     coins: int
 
 
+# ── 인증 ──────────────────────────────────────────────────
+class RegisterRequest(BaseModel):
+    email: str
+    password: str
+    name: str
+
+
+class LoginRequest(BaseModel):
+    email: str
+    password: str
+
+
+class AuthUserResponse(BaseModel):
+    id: str
+    name: str
+    email: str
+    language: str
+    membership: str
+
+
 # ── 헬스체크 ──────────────────────────────────────────────
 class HealthResponse(BaseModel):
     status: str
