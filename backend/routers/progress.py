@@ -82,8 +82,14 @@ def update_progress(req: ProgressUpdate, db: Session = Depends(get_db)):
 
     prog.affinity = min(100, max(0, prog.affinity + req.affinity_delta))
     prog.current_step = max(1, prog.current_step + req.step_delta)
-    if req.add_place and req.add_place not in (prog.visited_places or []):
-        prog.visited_places = (prog.visited_places or []) + [req.add_place]
+
+    new_places = list(req.add_places)
+    if req.add_place:
+        new_places.append(req.add_place)
+    if new_places:
+        visited = prog.visited_places or []
+        prog.visited_places = visited + [p for p in new_places if p not in visited]
+
     if req.add_stamp and req.add_stamp not in (prog.stamps or []):
         prog.stamps = (prog.stamps or []) + [req.add_stamp]
     apply_streak(prog)

@@ -73,6 +73,21 @@ export default function RegionView({ region }: { region: Region }) {
       results.forEach((p) => { if (p) merged[p.character_id] = p; });
       if (Object.keys(merged).length > 0) setAllProgress(merged);
     });
+
+    // 이 지역의 명소를 둘러봤으니 "방문 장소"로 한 번에 기록한다 (best-effort)
+    if (highlights.length > 0) {
+      characters.forEach((c) => {
+        fetch(`${BACKEND_URL}/progress`, {
+          method: "PUT",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            user_id: userId,
+            character_id: c.id,
+            add_places: highlights.map((place) => `${region.id}-${place.id}`),
+          }),
+        }).catch(() => {});
+      });
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [region.id]);
 

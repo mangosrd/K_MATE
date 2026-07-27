@@ -149,6 +149,7 @@ class ProgressUpdate(BaseModel):
     affinity_delta: int = 0
     step_delta: int = 0
     add_place: Optional[str] = None
+    add_places: List[str] = []
     add_stamp: Optional[str] = None
 
 
