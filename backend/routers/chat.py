@@ -51,7 +51,7 @@ async def chat(req: ChatRequest, db: Session = Depends(get_db)):
     messages.append({"role": "user", "content": req.user_message})
 
     # 6. LLM 호출
-    reply = await llm_chat(messages, temperature=0.75, max_tokens=256)
+    reply = await llm_chat(messages, temperature=0.6, max_tokens=256)
 
     # 7. 호감도 업데이트
     progress = (

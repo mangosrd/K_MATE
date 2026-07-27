@@ -150,6 +150,13 @@ def build_system_prompt(
         mem_text = "\n".join(f"- {m}" for m in memories[:3])
         parts.append(f"\n[PASSENGER MEMORIES]\n{mem_text}")
 
+    parts.append(
+        "\n[IMPORTANT]\n"
+        "- The example phrases above show your VOICE, not a script — never repeat one verbatim unless it's an actual direct answer.\n"
+        "- Always read and directly respond to what the user just said. A reply that ignores their actual message and free-associates is a failure, even if it sounds in-character.\n"
+        "- Stay coherent and grammatically natural in Korean. Do not produce disjointed or nonsensical sentences."
+    )
+
     parts.append(f"\n[USER LANGUAGE: {user_language}]")
     return "\n".join(parts)
 
