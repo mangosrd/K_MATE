@@ -52,7 +52,10 @@ def update_progress(req: ProgressUpdate, db: Session = Depends(get_db)):
         .first()
     )
     if not prog:
-        raise HTTPException(status_code=404, detail="Progress record not found")
+        # GET과 동일하게, 아직 진도 기록이 없으면 새로 만든다 (첫 챕터 완료 시에도 안전하게 기록되도록)
+        prog = Progress(id=str(uuid.uuid4()), user_id=req.user_id, character_id=req.character_id)
+        db.add(prog)
+        db.flush()
 
     prog.affinity = min(100, max(0, prog.affinity + req.affinity_delta))
     prog.current_step = max(1, prog.current_step + req.step_delta)

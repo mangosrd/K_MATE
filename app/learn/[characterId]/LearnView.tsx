@@ -1,11 +1,14 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import styles from "./learn.module.css";
 import { SpecialChapter, SPECIAL_CHAPTERS, MOCK_CHARACTERS } from "@/lib/db/mock";
+import { getEffectiveUserId } from "@/lib/auth/store";
 import { useLanguage } from "@/components/LanguageContext";
 import type { Character, Chapter } from "@/types/database";
+
+const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
 
 interface LearnViewProps {
   char: Character;
@@ -13,11 +16,19 @@ interface LearnViewProps {
   currentStep: number;
 }
 
-export default function LearnView({ char, chapters, currentStep }: LearnViewProps) {
+export default function LearnView({ char, chapters, currentStep: initialStep }: LearnViewProps) {
   const { t } = useLanguage();
   const [tab, setTab] = useState<"regional" | "special">("regional");
   const [specialCategory, setSpecialCategory] = useState<"romance" | "daily" | "friendship">("romance");
   const [selectedCaptainId, setSelectedCaptainId] = useState<string>(char.id);
+  const [currentStep, setCurrentStep] = useState(initialStep);
+
+  useEffect(() => {
+    fetch(`${BACKEND_URL}/progress/${getEffectiveUserId()}/${char.id}`)
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => { if (data) setCurrentStep(data.current_step); })
+      .catch(() => {});
+  }, [char.id]);
 
   const activeCaptain = MOCK_CHARACTERS.find((c) => c.id === selectedCaptainId) ?? char;
 

@@ -5,7 +5,10 @@ import Link from "next/link";
 import styles from "./session.module.css";
 import { getChapterContent } from "@/lib/content/chapters";
 import { addVocabWord } from "@/lib/vocab/store";
+import { getEffectiveUserId } from "@/lib/auth/store";
 import { useLanguage } from "@/components/LanguageContext";
+
+const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
 import type { ChapterWord as Word, ChapterSentence as Sentence, DialogueScene, DialogueTurn } from "@/types/content";
 
 // ── 기장별 전용 음성 톤 조절 함수 (TTS) ─────────────────────────
@@ -324,6 +327,17 @@ export default function LearningSessionPage({
   const handleNext = () => {
     if (currentIdx + 1 >= totalExercises) {
       setPhase("complete");
+      // 챕터 완료를 백엔드 진도에 기록 (best-effort — 실패해도 화면 흐름엔 영향 없음)
+      fetch(`${BACKEND_URL}/progress`, {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          user_id: getEffectiveUserId(),
+          character_id: characterId,
+          step_delta: totalExercises,
+          add_stamp: chapterId,
+        }),
+      }).catch(() => {});
     } else {
       setCurrentIdx((i) => i + 1);
     }
