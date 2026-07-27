@@ -10,15 +10,18 @@ const STORAGE_PREFIX = "kmate_diary_";
 // 백엔드 저장 성공 여부와 무관하게 로컬에도 캐시해 둔다.
 // 로그인한 계정별로 분리되도록 저장 키 자체에 사용자 id를 포함한다.
 
-export function getLocalDiaries(characterId: string): DiaryEntry[] {
+export function getAllLocalDiaries(): DiaryEntry[] {
   if (typeof window === "undefined") return [];
   try {
     const raw = localStorage.getItem(STORAGE_PREFIX + getEffectiveUserId());
-    const all = raw ? (JSON.parse(raw) as DiaryEntry[]) : [];
-    return all.filter((d) => d.character_id === characterId);
+    return raw ? (JSON.parse(raw) as DiaryEntry[]) : [];
   } catch {
     return [];
   }
+}
+
+export function getLocalDiaries(characterId: string): DiaryEntry[] {
+  return getAllLocalDiaries().filter((d) => d.character_id === characterId);
 }
 
 export function addLocalDiary(entry: Omit<DiaryEntry, "user_id">): DiaryEntry {

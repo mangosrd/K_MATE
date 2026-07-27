@@ -1,23 +1,53 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import BottomNav from "@/components/ui/BottomNav";
-import { MOCK_USER, MOCK_PROGRESS, MOCK_ECONOMY, MOCK_VOCAB, MOCK_DIARY } from "@/lib/db/mock";
+import { MOCK_USER, MOCK_PROGRESS, MOCK_ECONOMY } from "@/lib/db/mock";
+import { getLocalVocab } from "@/lib/vocab/store";
+import { getAllLocalDiaries } from "@/lib/diary/store";
+import { getCurrentUser, getEffectiveUserId, logout as clearSession } from "@/lib/auth/store";
 import { useLanguage } from "@/components/LanguageContext";
 import LanguageModal from "@/components/LanguageModal";
+import type { Progress } from "@/types/database";
 import styles from "./me.module.css";
+
+const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
 
 export default function MePage() {
   const router = useRouter();
   const { language, t } = useLanguage();
   const [showLangModal, setShowLangModal] = useState(false);
 
-  const affinityStars = Math.round(MOCK_PROGRESS.affinity / 20);
-  const masteredCount = MOCK_VOCAB.filter((v) => v.mastery === "mastered").length;
-  const unlockedDiaries = MOCK_DIARY.filter((d) => d.unlocked).length;
+  const authUser = getCurrentUser();
+  const displayName = authUser?.name ?? MOCK_USER.name;
+  const displayLevel = MOCK_USER.level; // 레벨 시스템은 아직 백엔드에 없어 목업 유지
+
+  const [coins, setCoins] = useState(MOCK_ECONOMY.coins);
+  const [progress, setProgress] = useState<Progress>(MOCK_PROGRESS);
+  const vocab = getLocalVocab();
+  const diaries = getAllLocalDiaries();
+  const masteredCount = vocab.filter((v) => v.mastery === "mastered").length;
+  const unlockedDiaries = diaries.filter((d) => d.unlocked).length;
+
+  useEffect(() => {
+    const userId = getEffectiveUserId();
+
+    fetch(`${BACKEND_URL}/user/${userId}`)
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => { if (data) setCoins(data.coins); })
+      .catch(() => {});
+
+    fetch(`${BACKEND_URL}/progress/${userId}/kyuhyun`)
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => { if (data) setProgress(data); })
+      .catch(() => {});
+  }, []);
+
+  const affinityStars = Math.round(progress.affinity / 20);
 
   const handleLogout = () => {
+    clearSession();
     router.push("/login");
   };
 
@@ -49,14 +79,14 @@ export default function MePage() {
             <div className={styles.profileBg} aria-hidden="true" />
             <div className={styles.profileContent}>
               <div className={styles.profileAvatar}>
-                {MOCK_USER.name.charAt(0).toUpperCase()}
+                {displayName.charAt(0).toUpperCase()}
               </div>
               <div className={styles.profileInfo}>
-                <p className={styles.profileName}>{MOCK_USER.name}</p>
-                <p className={styles.profileLevel}>{t("beginnerLearner")} · Lv.{MOCK_USER.level}</p>
+                <p className={styles.profileName}>{displayName}</p>
+                <p className={styles.profileLevel}>{t("beginnerLearner")} · Lv.{displayLevel}</p>
               </div>
               <div className={styles.profileCoin}>
-                <p className={styles.coinNum}>🪙 {MOCK_ECONOMY.coins}</p>
+                <p className={styles.coinNum}>🪙 {coins}</p>
                 <p className={styles.coinLabel}>{t("coins")}</p>
               </div>
             </div>
@@ -77,12 +107,12 @@ export default function MePage() {
                   </span>
                 ))}
                 <span style={{ fontSize: 12, color: "var(--text-muted)", marginLeft: 4 }}>
-                  {MOCK_PROGRESS.affinity} / 100
+                  {progress.affinity} / 100
                 </span>
               </div>
               <div className={styles.streakRow}>
                 <span>🔥</span>
-                <span className={styles.streakNum}>{MOCK_PROGRESS.streak_days}일 연속</span>
+                <span className={styles.streakNum}>{progress.streak_days}일 연속</span>
               </div>
             </div>
           </div>
@@ -92,9 +122,9 @@ export default function MePage() {
             <p className="section-title">{t("learningStats")}</p>
             <div className={styles.statsGrid}>
               {[
-                { icon: "📖", num: MOCK_VOCAB.length,                        labelKey: "learnedWords" },
+                { icon: "📖", num: vocab.length,                             labelKey: "learnedWords" },
                 { icon: "✅", num: masteredCount,                             labelKey: "mastered" },
-                { icon: "🗺️", num: MOCK_PROGRESS.visited_places.length,      labelKey: "visitedPlaces" },
+                { icon: "🗺️", num: progress.visited_places.length,           labelKey: "visitedPlaces" },
                 { icon: "📔", num: unlockedDiaries,                           labelKey: "diaries" },
               ].map((stat) => (
                 <div key={stat.labelKey} className={styles.statItem}>
