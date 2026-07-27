@@ -3,8 +3,8 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import BottomNav from "@/components/ui/BottomNav";
-import { MOCK_USER } from "@/lib/db/mock";
 import { getLocalVocab } from "@/lib/vocab/store";
+import { getEffectiveUserId } from "@/lib/auth/store";
 import { useLanguage } from "@/components/LanguageContext";
 import type { VocabItem } from "@/types/database";
 import styles from "./vocab.module.css";
@@ -41,7 +41,7 @@ export default function VocabPage() {
     setVocab(local);
 
     // 백엔드가 살아있으면 서버 저장분과 합쳐서(중복 단어 제외) 보여준다
-    fetch(`${BACKEND_URL}/vocab/${MOCK_USER.id}`)
+    fetch(`${BACKEND_URL}/vocab/${getEffectiveUserId()}`)
       .then((res) => (res.ok ? res.json() : []))
       .then((remote: VocabItem[]) => {
         if (remote.length === 0) return;

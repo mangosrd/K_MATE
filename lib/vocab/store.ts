@@ -1,19 +1,20 @@
 "use client";
 
 import type { VocabItem } from "@/types/database";
-import { MOCK_USER } from "@/lib/db/mock";
+import { getEffectiveUserId } from "@/lib/auth/store";
 
-const STORAGE_KEY = "kmate_vocab";
+const STORAGE_PREFIX = "kmate_vocab_";
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
 
 // 학습 퀴즈/채팅에서 맞힌 단어를 로컬(브라우저)에 영구 저장한다.
 // 백엔드(FastAPI+MySQL)가 꺼져 있어도 단어장이 항상 동작하도록, localStorage를 1차 저장소로 쓰고
 // 백엔드가 살아있으면 best-effort로 함께 동기화한다 (실패해도 로컬 저장에는 영향 없음).
+// 로그인한 계정별로 분리되도록 저장 키 자체에 사용자 id를 포함한다.
 
 export function getLocalVocab(): VocabItem[] {
   if (typeof window === "undefined") return [];
   try {
-    const raw = localStorage.getItem(STORAGE_KEY);
+    const raw = localStorage.getItem(STORAGE_PREFIX + getEffectiveUserId());
     return raw ? (JSON.parse(raw) as VocabItem[]) : [];
   } catch {
     return [];
@@ -22,7 +23,7 @@ export function getLocalVocab(): VocabItem[] {
 
 function saveLocalVocab(items: VocabItem[]) {
   if (typeof window === "undefined") return;
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
+  localStorage.setItem(STORAGE_PREFIX + getEffectiveUserId(), JSON.stringify(items));
 }
 
 interface AddVocabInput {
@@ -35,6 +36,7 @@ interface AddVocabInput {
 }
 
 export function addVocabWord(input: AddVocabInput): VocabItem {
+  const userId = getEffectiveUserId();
   const items = getLocalVocab();
   const existing = items.find(
     (v) => v.word === input.word && v.character_id === input.character_id
@@ -55,7 +57,7 @@ export function addVocabWord(input: AddVocabInput): VocabItem {
 
   const newItem: VocabItem = {
     id: `local-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
-    user_id: MOCK_USER.id,
+    user_id: userId,
     character_id: input.character_id,
     word: input.word,
     reading: input.reading,
@@ -76,7 +78,7 @@ export function addVocabWord(input: AddVocabInput): VocabItem {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
-      user_id: MOCK_USER.id,
+      user_id: userId,
       character_id: input.character_id,
       region_id: "",
       word: input.word,

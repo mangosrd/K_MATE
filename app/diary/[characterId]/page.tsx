@@ -3,8 +3,9 @@
 import { useState, useEffect, use } from "react";
 import Link from "next/link";
 import BottomNav from "@/components/ui/BottomNav";
-import { getCharacterById, getDiaryForCharacter, MOCK_USER, MOCK_ECONOMY } from "@/lib/db/mock";
+import { getCharacterById, getDiaryForCharacter, MOCK_ECONOMY } from "@/lib/db/mock";
 import { getLocalDiaries } from "@/lib/diary/store";
+import { getEffectiveUserId } from "@/lib/auth/store";
 import { useLanguage } from "@/components/LanguageContext";
 import type { DiaryEntry } from "@/types/database";
 import styles from "./char-diary.module.css";
@@ -29,7 +30,7 @@ export default function CharDiaryPage({ params }: { params: Promise<{ characterI
   useEffect(() => {
     const local = getLocalDiaries(characterId);
 
-    fetch(`${BACKEND_URL}/diary/${MOCK_USER.id}/${characterId}`)
+    fetch(`${BACKEND_URL}/diary/${getEffectiveUserId()}/${characterId}`)
       .then((res) => (res.ok ? res.json() : []))
       .then((remote: DiaryEntry[]) => {
         const remoteIds = new Set(remote.map((d) => d.id));
@@ -59,7 +60,7 @@ export default function CharDiaryPage({ params }: { params: Promise<{ characterI
       const res = await fetch("/api/unlock", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ userId: "user-001", diaryId: unlockModal.id, method: "coin" }),
+        body: JSON.stringify({ userId: getEffectiveUserId(), diaryId: unlockModal.id, method: "coin" }),
       });
       const data = await res.json();
       if (data.success) {

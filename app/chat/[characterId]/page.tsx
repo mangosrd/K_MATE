@@ -11,6 +11,7 @@ import { MOCK_CHARACTERS, MOCK_USER, canAccessCharacter } from "@/lib/db/mock";
 import { addVocabWord } from "@/lib/vocab/store";
 import { addLocalDiary } from "@/lib/diary/store";
 import { getChatHistory, saveChatHistory, clearChatHistory } from "@/lib/chat/store";
+import { getEffectiveUserId } from "@/lib/auth/store";
 
 const REGION_NAMES: Record<string, string> = {
   seoul: "서울·경기 노선",
@@ -147,7 +148,7 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
           character_id: characterId,
           user_message: userMessage,
           session_history: messages,
-          user_id: MOCK_USER.id,
+          user_id: getEffectiveUserId(),
           user_language: language,
         }),
       });
@@ -189,12 +190,14 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
   };
 
   const handleSessionEnd = async () => {
+    const userId = getEffectiveUserId();
+
     // 1. 기억 추출 + 저장 (LLM 추출 후 백엔드 MySQL에 best-effort 저장)
     fetch("/api/memory", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        userId: MOCK_USER.id,
+        userId,
         characterId,
         sessionHistory: messages,
       }),
@@ -211,7 +214,7 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          user_id: MOCK_USER.id,
+          user_id: userId,
           character_id: characterId,
           session_events: sessionEvents,
           place_name: REGION_NAMES[char.region_id] ?? "한국 여행",
