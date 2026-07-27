@@ -125,9 +125,16 @@ function generateExercises(words: Word[], sentences: Sentence[], dialogues: Dial
   // 3. 빈칸 채우기
   sentences.forEach((s) => {
     const parts = s.ko.split(" ");
-    const targetWord = parts[0];
+    const firstToken = parts[0];
     const rest = parts.slice(1).join(" ");
-    const blankSentence = `____ ${rest}`;
+
+    // 조사(는/은/을/를 등)가 단어에 붙어 있으면 실제 단어만 정답으로 삼는다 — 조사는 단어와 무관하므로
+    const matchedWord = words.find(
+      (w) => firstToken.startsWith(w.word) && firstToken.length > w.word.length
+    );
+    const targetWord = matchedWord ? matchedWord.word : firstToken;
+    const particleSuffix = matchedWord ? firstToken.slice(matchedWord.word.length) : "";
+    const blankSentence = `____${particleSuffix} ${rest}`;
 
     list.push({
       id: `fb-${s.id}`,
