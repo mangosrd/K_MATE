@@ -11,9 +11,9 @@
       "en": "Today we're at Geumgang Singwan Park. It's a night when the bridge lights across the river reflect perfectly on the water. Tonight, I'd like to formally request contact."
     },
     {
-      "text": "지금부터 드리는 말씀은 무전 멘트가 아니라, 정식 '고백'입니다. 끝까지 들어 주시겠습니까.",
-      "reading": "ji-geum-bu-teo deu-ri-neun mal-sseum-eun mu-jeon men-teu-ga a-ni-ra, jeong-sik 'go-baek'-im-ni-da. kkeut-kka-ji deul-eo ju-si-get-seum-ni-kka.",
-      "en": "What I'm about to say isn't a radio phrase—it's a formal 'confession'. Would you hear me out to the end?",
+      "text": "위기 앞에서도 흔들린 적 없던 제가, 지금 이 '고백'을 앞두고는 심장이 미친 듯이 뜁니다. 끝까지 들어 주시겠습니까.",
+      "reading": "wi-gi ap-e-seo-do heun-deul-lin jeok eop-deon je-ga, ji-geum i 'go-baek'-eul ap-du-go-neun sim-jang-i mi-chin deu-si ttwim-ni-da. kkeut-kka-ji deul-eo ju-si-get-seum-ni-kka.",
+      "en": "I, who never wavered even in the face of a crisis, find my heart racing wildly before this 'confession'. Would you hear me out to the end?",
       "highlight_word_id": "w01"
     },
     {
@@ -29,9 +29,9 @@
       "highlight_word_id": "w03"
     },
     {
-      "text": "당신의 '승낙' 하나면, 저는 이 노선을 평생 자원하겠습니다.",
-      "reading": "dang-sin-ui 'seung-nak' ha-na-myeon, jeo-neun i no-seon-eul pyeong-saeng ja-won-ha-get-seum-ni-da.",
-      "en": "With just your 'consent', I'd volunteer for this route for the rest of my life.",
+      "text": "이제 더 이상, 되묻지 않아도 될 것 같습니다. 당신의 '승낙' 하나면, 저는 이 노선을 평생 자원하겠습니다.",
+      "reading": "i-je deo i-sang, doe-mut-ji an-a-do doel geot gat-seum-ni-da. dang-sin-ui 'seung-nak' ha-na-myeon, jeo-neun i no-seon-eul pyeong-saeng ja-won-ha-get-seum-ni-da.",
+      "en": "I don't think I'll need to ask you to repeat yourself anymore, from here on. With just your 'consent', I'd volunteer for this route for the rest of my life.",
       "highlight_word_id": "w04"
     },
     {
@@ -47,14 +47,14 @@
     }
   ],
   "words": [
-    { "id": "w01", "word": "고백", "reading": "go-baek", "meaning": "Confession", "example": "지금부터 드리는 말씀은 정식 고백입니다.", "example_reading": "ji-geum-bu-teo deu-ri-neun mal-sseum-eun jeong-sik go-baeg-im-ni-da", "example_en": "What I'm about to say is a formal confession." },
+    { "id": "w01", "word": "고백", "reading": "go-baek", "meaning": "Confession", "example": "위기 앞에서도 흔들린 적 없던 제가, 이 고백 앞에서는 심장이 뜁니다.", "example_reading": "wi-gi ap-e-seo-do heun-deul-lin jeok eop-deon je-ga, i go-baek ap-e-seo-neun sim-jang-i ttwim-ni-da", "example_en": "I, who never wavered even in a crisis, find my heart racing before this confession." },
     { "id": "w02", "word": "영원", "reading": "yeong-won", "meaning": "Eternity", "example": "저는 당신과의 영원한 항로를 원합니다.", "example_reading": "jeo-neun dang-sin-gwa-ui yeong-won-han hang-no-reul won-ham-ni-da", "example_en": "I want an eternal flight path with you." },
     { "id": "w03", "word": "동승", "reading": "dong-seung", "meaning": "Riding along together", "example": "남은 항로, 저와 계속 동승해 주시겠습니까.", "example_reading": "nam-eun hang-no, jeo-wa gye-sok dong-seung-hae ju-si-get-seum-ni-kka", "example_en": "Would you ride along with me for the rest of the route?" },
     { "id": "w04", "word": "승낙", "reading": "seung-nak", "meaning": "Consent / acceptance", "example": "당신의 승낙 하나면 이 노선을 평생 자원하겠습니다.", "example_reading": "dang-sin-ui seung-nak ha-na-myeon i no-seon-eul pyeong-saeng ja-won-ha-get-seum-ni-da", "example_en": "With just your consent, I'd volunteer for this route for the rest of my life." },
     { "id": "w05", "word": "목적지", "reading": "mok-jeok-ji", "meaning": "Destination", "example": "제 마지막 목적지가 되어 주시겠습니까.", "example_reading": "je ma-ji-mak mok-jeok-ji-ga doe-eo ju-si-get-seum-ni-kka", "example_en": "Will you be my final destination?" }
   ],
   "sentences": [
-    { "id": "s01", "ko": "지금부터 드리는 말씀은 정식 고백입니다.", "reading": "ji-geum-bu-teo deu-ri-neun mal-sseum-eun jeong-sik go-baeg-im-ni-da", "en": "What I'm about to say is a formal confession." },
+    { "id": "s01", "ko": "위기 앞에서도 흔들린 적 없던 제가, 이 고백 앞에서는 심장이 뜁니다.", "reading": "wi-gi ap-e-seo-do heun-deul-lin jeok eop-deon je-ga, i go-baek ap-e-seo-neun sim-jang-i ttwim-ni-da", "en": "I, who never wavered even in a crisis, find my heart racing before this confession." },
     { "id": "s02", "ko": "저는 당신과의 영원한 항로를 원합니다.", "reading": "jeo-neun dang-sin-gwa-ui yeong-won-han hang-no-reul won-ham-ni-da", "en": "I want an eternal flight path with you." },
     { "id": "s03", "ko": "남은 항로, 저와 계속 동승해 주시겠습니까.", "reading": "nam-eun hang-no, jeo-wa gye-sok dong-seung-hae ju-si-get-seum-ni-kka", "en": "Would you ride along with me for the rest of the route?" },
     { "id": "s04", "ko": "당신의 승낙 하나면 이 노선을 평생 자원하겠습니다.", "reading": "dang-sin-ui seung-nak ha-na-myeon i no-seon-eul pyeong-saeng ja-won-ha-get-seum-ni-da", "en": "With just your consent, I'd volunteer for this route for the rest of my life." },

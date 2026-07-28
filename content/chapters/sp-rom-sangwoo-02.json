@@ -6,38 +6,38 @@
   "level": "intermediate_advanced",
   "story": [
     {
-      "text": "지금 저희는 공산성 위 하늘을 순항 중입니다. 백제 왕이 도읍을 지켰던 이 성벽을 내려다보며, 오늘은 조금 다른 이야기를 전해 드리고 싶습니다.",
-      "reading": "ji-geum jeo-hui-neun gong-san-seong wi ha-neul-eul sun-hang jung-im-ni-da. baek-je wang-i do-eup-eul ji-kyeot-deon i seong-byeok-eul nae-ryeo-da-bo-myeo, o-neul-eun jo-geum da-reun i-ya-gi-reul jeon-hae deu-ri-go sip-seum-ni-da.",
-      "en": "We're currently cruising over the sky above Gongsanseong Fortress. Looking down at these walls that once protected the Baekje capital, today I'd like to tell you something a little different."
+      "text": "지금 저희는 공산성 위 하늘을 순항 중입니다. 오늘은 제 오래된 별명 하나를 소개해 드리고 싶습니다.",
+      "reading": "ji-geum jeo-hui-neun gong-san-seong wi ha-neul-eul sun-hang jung-im-ni-da. o-neul-eun je o-rae-doen byeol-myeong ha-na-reul so-gae-hae deu-ri-go sip-seum-ni-da.",
+      "en": "We're currently cruising over the sky above Gongsanseong Fortress. Today I'd like to introduce you to one of my old nicknames."
     },
     {
-      "text": "'착륙'이란 비행기가 땅에 안전하게 내려앉는 것을 말합니다. 저는 지금, 다른 곳이 아니라 당신 마음에 착륙하고 싶다는 생각을 하고 있습니다.",
-      "reading": "'chang-nyuk'-i-ran bi-haeng-gi-ga ttang-e an-jeon-ha-ge nae-ryeo-an-neun geo-seul mal-ham-ni-da. jeo-neun ji-geum, da-reun go-si a-ni-ra dang-sin ma-eum-e chang-nyuk-ha-go sip-da-neun saeng-gak-eul ha-go it-seum-ni-da.",
-      "en": "'Landing' means an aircraft safely coming down onto the ground. Right now, I find myself thinking I'd like to land somewhere else—in your heart.",
+      "text": "동료들 사이에서 저는 십 년 넘게 이 항로를 지킨 '관록' 있는 기장으로 통합니다. …그런데 알고 보니, 플러팅에도 관록이 있다고들 하더군요.",
+      "reading": "dong-nyo-deul sa-i-e-seo jeo-neun sip nyeon neom-ge i hang-no-reul ji-kin 'gwal-lok' it-neun gi-jang-eu-ro tong-ham-ni-da. …geu-reon-de al-go bo-ni, peul-leo-ting-e-do gwal-lo-gi it-da-go-deul ha-deo-gun-yo.",
+      "en": "Among my colleagues, I'm known as a captain with the 'seasoned skill' of over ten years on this route. ...But apparently, I have the same seasoned skill in flirting too.",
       "highlight_word_id": "w01"
     },
     {
-      "text": "이런 '요청'은 규정에 없는 것이라 조금 망설여집니다. 그래도 오늘만은, 정식으로 요청드리겠습니다.",
-      "reading": "i-reon 'yo-cheong'-eun gyu-jeong-e eop-neun geo-si-ra jo-geum mang-seol-yeo-jim-ni-da. geu-rae-do o-neul-man-eun, jeong-sik-eu-ro yo-cheong-deu-ri-get-seum-ni-da.",
-      "en": "This kind of 'request' isn't in the manual, so I hesitate a little. But just for today, I'll make it formally.",
+      "text": "격식 있는 말투 뒤에 마음을 숨기는 '능청'이 제 특기입니다. 그런데 당신 앞에서는 이 능청이 자꾸 서툴러집니다.",
+      "reading": "gyeok-sik it-neun mal-tu dwi-e ma-eum-eul sum-gi-neun 'neung-cheong'-i je teuk-gi-im-ni-da. geu-reon-de dang-sin ap-e-seo-neun i neung-cheong-i ja-kku seo-tul-leo-jim-ni-da.",
+      "en": "Hiding my feelings behind formal speech with a perfectly straight face—'nonchalant cunning'—is my specialty. But in front of you, this act keeps slipping.",
       "highlight_word_id": "w02"
     },
     {
-      "text": "관제탑의 '허가' 없이는 어떤 착륙도 이루어지지 않습니다. 당신의 허가를, 기다려도 되겠습니까.",
-      "reading": "gwan-je-tap-ui 'heo-ga' eop-si-neun eo-tteon chang-nyuk-do i-ru-eo-ji-ji an-seum-ni-da. dang-sin-ui heo-ga-reul, gi-da-ryeo-do doe-get-seum-ni-kka.",
-      "en": "No landing happens without the tower's 'permission'. May I wait for yours?",
+      "text": "방금 당신 얼굴이 살짝 붉어진 것 같은데, 이 정도 '무장해제'는 사실 계획된 것입니다. 사과는 하지 않겠습니다.",
+      "reading": "bang-geum dang-sin eol-gul-i sal-jjak bulg-eo-jin geot gat-neun-de, i jeong-do 'mu-jang-hae-je'-neun sa-sil gye-hoek-doen geo-sim-ni-da. sa-gwa-neun ha-ji an-ket-seum-ni-da.",
+      "en": "Your face just seemed to flush slightly—but this much 'disarming' is, in fact, entirely planned. I won't apologize for it.",
       "highlight_word_id": "w03"
     },
     {
-      "text": "지금까지 제 마음은 언제나 '순항' 중이었습니다. 그런데 당신을 만난 뒤로, 항로가 자꾸 흔들립니다.",
-      "reading": "ji-geum-kka-ji je ma-eum-eun eon-je-na 'sun-hang' jung-i-eot-seum-ni-da. geu-reon-de dang-sin-eul man-nan dwi-ro, hang-no-ga ja-kku heun-deul-lim-ni-da.",
-      "en": "Until now, my heart had always been on a 'smooth cruise'. But since meeting you, the flight path keeps wavering.",
+      "text": "'착륙'이란 비행기가 땅에 안전하게 내려앉는 것을 말합니다. 사실 저는, 다른 곳이 아니라 당신 마음에 착륙하고 싶다는 생각을 자주 합니다.",
+      "reading": "'chang-nyuk'-i-ran bi-haeng-gi-ga ttang-e an-jeon-ha-ge nae-ryeo-an-neun geo-seul mal-ham-ni-da. sa-sil jeo-neun, da-reun go-si a-ni-ra dang-sin ma-eum-e chang-nyuk-ha-go sip-da-neun saeng-gag-eul ja-ju ham-ni-da.",
+      "en": "'Landing' means an aircraft safely coming down onto the ground. Truthfully, I often find myself thinking I'd like to land somewhere else—in your heart.",
       "highlight_word_id": "w04"
     },
     {
-      "text": "이건 아마 마음이 만든 '기류' 때문일 겁니다. 예상치 못한 흔들림이지만, 나쁘지 않습니다.",
-      "reading": "i-geon a-ma ma-eum-i man-deun 'gi-ryu' ttae-mun-il geom-ni-da. ye-sang-chi mot-han heun-deul-lim-i-ji-man, na-ppeu-ji an-seum-ni-da.",
-      "en": "This is probably because of an 'air current' my heart created. An unexpected turbulence—but not an unpleasant one.",
+      "text": "이런 '요청'은 교범에 없는 것이라 조금 망설여집니다. 그래도 오늘은, 정식으로 요청드리고 싶습니다.",
+      "reading": "i-reon 'yo-cheong'-eun gyo-beom-e eop-neun geo-si-ra jo-geum mang-seol-yeo-jim-ni-da. geu-rae-do o-neul-eun, jeong-sig-eu-ro yo-cheong-deu-ri-go sip-seum-ni-da.",
+      "en": "This kind of 'request' isn't written in any manual, so I hesitate a little. But today, I'd like to make it formally.",
       "highlight_word_id": "w05"
     },
     {
@@ -47,47 +47,47 @@
     }
   ],
   "words": [
-    { "id": "w01", "word": "착륙", "reading": "chang-nyuk", "meaning": "Landing", "example": "저는 지금 당신 마음에 착륙하고 싶습니다.", "example_reading": "jeo-neun ji-geum dang-sin ma-eum-e chang-nyuk-ha-go sip-seum-ni-da", "example_en": "Right now, I want to land in your heart." },
-    { "id": "w02", "word": "요청", "reading": "yo-cheong", "meaning": "Request", "example": "오늘만은 정식으로 요청드리겠습니다.", "example_reading": "o-neul-man-eun jeong-sik-eu-ro yo-cheong-deu-ri-get-seum-ni-da", "example_en": "Just for today, I'll make this request formally." },
-    { "id": "w03", "word": "허가", "reading": "heo-ga", "meaning": "Permission", "example": "당신의 허가를 기다려도 되겠습니까.", "example_reading": "dang-sin-ui heo-ga-reul gi-da-ryeo-do doe-get-seum-ni-kka", "example_en": "May I wait for your permission?" },
-    { "id": "w04", "word": "순항", "reading": "sun-hang", "meaning": "Smooth cruising", "example": "제 마음은 언제나 순항 중이었습니다.", "example_reading": "je ma-eum-eun eon-je-na sun-hang jung-i-eot-seum-ni-da", "example_en": "My heart had always been cruising smoothly." },
-    { "id": "w05", "word": "기류", "reading": "gi-ryu", "meaning": "Air current / turbulence", "example": "이건 아마 마음이 만든 기류 때문일 겁니다.", "example_reading": "i-geon a-ma ma-eum-i man-deun gi-ryu ttae-mun-il geom-ni-da", "example_en": "This is probably because of an air current my heart created." }
+    { "id": "w01", "word": "관록", "reading": "gwal-lok", "meaning": "Seasoned skill / finesse from experience", "example": "십 년 넘게 이 항로를 지킨 관록 있는 기장으로 통합니다.", "example_reading": "sip nyeon neom-ge i hang-no-reul ji-kin gwal-lok it-neun gi-jang-eu-ro tong-ham-ni-da", "example_en": "I'm known as a captain with the seasoned skill of over ten years on this route." },
+    { "id": "w02", "word": "능청", "reading": "neung-cheong", "meaning": "Feigned innocence / nonchalant cunning", "example": "격식 있는 말투 뒤에 마음을 숨기는 능청이 제 특기입니다.", "example_reading": "gyeok-sik it-neun mal-tu dwi-e ma-eum-eul sum-gi-neun neung-cheong-i je teuk-gi-im-ni-da", "example_en": "Hiding my feelings behind formal speech with a straight face is my specialty." },
+    { "id": "w03", "word": "무장해제", "reading": "mu-jang-hae-je", "meaning": "Disarming (someone)", "example": "이 정도 무장해제는 사실 계획된 것입니다.", "example_reading": "i jeong-do mu-jang-hae-je-neun sa-sil gye-hoek-doen geo-sim-ni-da", "example_en": "This much disarming is, in fact, entirely planned." },
+    { "id": "w04", "word": "착륙", "reading": "chang-nyuk", "meaning": "Landing", "example": "저는 다른 곳이 아니라 당신 마음에 착륙하고 싶습니다.", "example_reading": "jeo-neun da-reun go-si a-ni-ra dang-sin ma-eum-e chang-nyuk-ha-go sip-seum-ni-da", "example_en": "I'd like to land somewhere else—in your heart." },
+    { "id": "w05", "word": "요청", "reading": "yo-cheong", "meaning": "Request", "example": "오늘은 정식으로 요청드리고 싶습니다.", "example_reading": "o-neul-eun jeong-sig-eu-ro yo-cheong-deu-ri-go sip-seum-ni-da", "example_en": "Today, I'd like to make this request formally." }
   ],
   "sentences": [
-    { "id": "s01", "ko": "저는 지금 당신 마음에 착륙하고 싶습니다.", "reading": "jeo-neun ji-geum dang-sin ma-eum-e chang-nyuk-ha-go sip-seum-ni-da", "en": "Right now, I want to land in your heart." },
-    { "id": "s02", "ko": "오늘만은 정식으로 요청드리겠습니다.", "reading": "o-neul-man-eun jeong-sik-eu-ro yo-cheong-deu-ri-get-seum-ni-da", "en": "Just for today, I'll make this request formally." },
-    { "id": "s03", "ko": "당신의 허가를 기다려도 되겠습니까.", "reading": "dang-sin-ui heo-ga-reul gi-da-ryeo-do doe-get-seum-ni-kka", "en": "May I wait for your permission?" },
-    { "id": "s04", "ko": "제 마음은 언제나 순항 중이었습니다.", "reading": "je ma-eum-eun eon-je-na sun-hang jung-i-eot-seum-ni-da", "en": "My heart had always been cruising smoothly." },
-    { "id": "s05", "ko": "이건 아마 마음이 만든 기류 때문일 겁니다.", "reading": "i-geon a-ma ma-eum-i man-deun gi-ryu ttae-mun-il geom-ni-da", "en": "This is probably because of an air current my heart created." }
+    { "id": "s01", "ko": "십 년 넘게 이 항로를 지킨 관록 있는 기장으로 통합니다.", "reading": "sip nyeon neom-ge i hang-no-reul ji-kin gwal-lok it-neun gi-jang-eu-ro tong-ham-ni-da", "en": "I'm known as a captain with the seasoned skill of over ten years on this route." },
+    { "id": "s02", "ko": "격식 있는 말투 뒤에 마음을 숨기는 능청이 제 특기입니다.", "reading": "gyeok-sik it-neun mal-tu dwi-e ma-eum-eul sum-gi-neun neung-cheong-i je teuk-gi-im-ni-da", "en": "Hiding my feelings behind formal speech with a straight face is my specialty." },
+    { "id": "s03", "ko": "이 정도 무장해제는 사실 계획된 것입니다.", "reading": "i jeong-do mu-jang-hae-je-neun sa-sil gye-hoek-doen geo-sim-ni-da", "en": "This much disarming is, in fact, entirely planned." },
+    { "id": "s04", "ko": "저는 다른 곳이 아니라 당신 마음에 착륙하고 싶습니다.", "reading": "jeo-neun da-reun go-si a-ni-ra dang-sin ma-eum-e chang-nyuk-ha-go sip-seum-ni-da", "en": "I'd like to land somewhere else—in your heart." },
+    { "id": "s05", "ko": "오늘은 정식으로 요청드리고 싶습니다.", "reading": "o-neul-eun jeong-sig-eu-ro yo-cheong-deu-ri-go sip-seum-ni-da", "en": "Today, I'd like to make this request formally." }
   ],
   "dialogues": [
     {
       "id": "d01",
       "turns": [
-        { "speaker": "천상우 기장", "text": "공산성에서 보는 노을이 유독 아름답습니다.", "reading": "gong-san-seong-e-seo bo-neun no-eul-i yu-dok a-reum-dap-seum-ni-da.", "en": "The sunset seen from Gongsanseong Fortress is especially beautiful." },
-        { "speaker": "승객", "text": "기장님이랑 같이 보니까 더 그런 것 같아요.", "reading": "gi-jang-nim-i-rang ga-chi bo-ni-kka deo geu-reon geot gat-a-yo.", "en": "I think it's even more so because I'm watching it with you, Captain." },
-        { "speaker": "천상우 기장", "text": "그 말씀, 착륙 허가로 받아들여도 되겠습니까.", "reading": "geu mal-sseum, chang-nyuk heo-ga-ro bad-a-deu-ryeo-do doe-get-seum-ni-kka.", "en": "May I take that remark as landing clearance?" },
-        { "speaker": "승객", "text": "그게 무슨 착륙 허가예요, 그냥 풍경 얘기잖아요.", "reading": "geu-ge mu-seun chang-nyuk heo-ga-ye-yo, geu-nyang pung-gyeong yae-gi-ja-na-yo.", "en": "What landing clearance? I was just talking about the scenery." }
+        { "speaker": "천상우 기장", "text": "방금 그 말, 설레셨습니까?", "reading": "bang-geum geu mal, seol-le-syeot-seum-ni-kka?", "en": "That thing I just said—did it make your heart flutter?" },
+        { "speaker": "승객", "text": "네? 아니 무슨 그런 걸 대놓고 물어보세요.", "reading": "ne? a-ni mu-seun geu-reon geol dae-no-ko mul-eo-bo-se-yo.", "en": "What? Why would you ask something like that so openly?" },
+        { "speaker": "천상우 기장", "text": "관제탑의 반응을 확인하는 것도 기장의 절차입니다.", "reading": "gwan-je-tap-ui ban-eung-eul hwag-in-ha-neun geot-do gi-jang-ui jeol-cha-im-ni-da.", "en": "Confirming the tower's reaction is also part of a captain's procedure." },
+        { "speaker": "승객", "text": "그거 핑계인 거 다 알아요, 능청스럽게.", "reading": "geu-geo ping-gye-in geo da al-a-yo, neung-cheong-seu-reop-ge.", "en": "I know that's just an excuse—so nonchalantly, too." }
       ],
-      "question": "기장이 \"착륙 허가로 받아들여도 되겠습니까\"라고 말한 의도는?",
-      "question_en": "What is the captain's intention behind saying, 'May I take that as landing clearance?'",
-      "correct_answer": "승객의 호감을 마음의 허락으로 여기고 싶어서",
-      "options": ["승객의 호감을 마음의 허락으로 여기고 싶어서", "실제로 비행기 착륙 허가가 필요해서", "관제탑에 규정을 확인하려고", "공산성 방문 허가를 받으려고"],
-      "explanation": "기장은 승객의 호의적인 말을 '착륙 허가'라는 무전 용어에 빗대어, 마음을 받아들이고 싶은 심정을 표현하고 있습니다."
+      "question": "승객의 마지막 반응이 보여주는 것은?",
+      "question_en": "What does the passenger's last reaction show?",
+      "correct_answer": "기장의 능청스러운 플러팅에 못 이기는 척 넘어가고 있다",
+      "options": ["기장의 능청스러운 플러팅에 못 이기는 척 넘어가고 있다", "기장의 말이 무례하다고 화를 내고 있다", "기장의 절차 설명을 진지하게 믿고 있다", "대화를 그만 끝내고 싶어 한다"],
+      "explanation": "승객은 기장의 능청스러운 핑계를 다 알아채면서도, 그 플러팅에 못 이기는 척 슬쩍 넘어가고 있습니다."
     },
     {
       "id": "d02",
       "turns": [
-        { "speaker": "천상우 기장", "text": "요즘 제 항로에 자꾸 기류가 생깁니다.", "reading": "yo-jeum je hang-no-e ja-kku gi-ryu-ga saeng-gim-ni-da.", "en": "Lately, air currents keep forming along my flight path." },
-        { "speaker": "승객", "text": "무슨 기류요? 날씨가 안 좋아요?", "reading": "mu-seun gi-ryu-yo? nal-ssi-ga an jo-a-yo?", "en": "What air current? Is the weather bad?" },
-        { "speaker": "천상우 기장", "text": "날씨보다는... 당신을 만난 뒤로 생긴 기류입니다.", "reading": "nal-ssi-bo-da-neun... dang-sin-eul man-nan dwi-ro saeng-gin gi-ryu-im-ni-da.", "en": "More than the weather... it's a current that appeared after meeting you." },
-        { "speaker": "승객", "text": "그게 무슨 뜻인지 조금 알 것 같아요.", "reading": "geu-ge mu-seun tteu-sin-ji jo-geum al geot gat-a-yo.", "en": "I think I understand a little what that means." }
+        { "speaker": "천상우 기장", "text": "당신 마음에 착륙 허가를 요청해도 되겠습니까.", "reading": "dang-sin ma-eum-e chang-nyuk heo-ga-reul yo-cheong-hae-do doe-get-seum-ni-kka.", "en": "May I request landing clearance to your heart?" },
+        { "speaker": "승객", "text": "또 그 착륙 얘기예요? 기장님 그거 몇 번째예요.", "reading": "tto geu chang-nyuk yae-gi-ye-yo? gi-jang-nim geu-geo myeot beon-jjae-ye-yo.", "en": "That landing thing again? Captain, how many times is that now?" },
+        { "speaker": "천상우 기장", "text": "몇 번을 말해도 부족한 것 같아서 말입니다.", "reading": "myeot beon-eul mal-hae-do bu-jok-han geot gat-a-seo mal-im-ni-da.", "en": "It seems like no matter how many times I say it, it's not enough." },
+        { "speaker": "승객", "text": "…정말 못 당해내겠네요, 이 능청은.", "reading": "…jeong-mal mot dang-hae-nae-get-ne-yo, i neung-cheong-eun.", "en": "...I really can't win against this nonchalant charm of yours." }
       ],
-      "question": "기장이 말한 \"기류\"가 실제로 의미하는 것은?",
-      "question_en": "What does the 'air current' the captain mentions actually refer to?",
-      "correct_answer": "승객으로 인해 흔들리는 자신의 마음",
-      "options": ["승객으로 인해 흔들리는 자신의 마음", "비행에 방해되는 실제 기상 현상", "공산성 근처의 강한 바람", "관제탑과의 통신 장애"],
-      "explanation": "기장은 실제 기상이 아니라, 승객을 만난 뒤 흔들리기 시작한 자신의 감정을 '기류'에 비유하고 있습니다."
+      "question": "승객의 마지막 대답이 나타내는 감정은?",
+      "question_en": "What emotion does the passenger's final response show?",
+      "correct_answer": "기장의 능청스러운 애정 표현에 두 손 든 듯한 감정",
+      "options": ["기장의 능청스러운 애정 표현에 두 손 든 듯한 감정", "기장의 반복되는 말에 화가 난 감정", "기장을 놀리고 싶은 짓궂은 감정", "기장의 말을 전혀 믿지 않는 감정"],
+      "explanation": "승객은 기장의 능청스러운 애정 표현을 당해낼 수 없다는 듯, 반쯤 포기한 웃음 섞인 감정을 드러내고 있습니다."
     }
   ]
 }

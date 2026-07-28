@@ -35,9 +35,9 @@
       "highlight_word_id": "w04"
     },
     {
-      "text": "완벽하던 매뉴얼에 처음으로 '균열'이 생겼습니다. 이상하게도, 이 균열이 싫지 않습니다.",
-      "reading": "wan-byeok-ha-deon mae-nyu-eol-e cheo-eum-eu-ro 'gyu-nyeol'-i saeng-gyeot-seum-ni-da. i-sang-ha-ge-do, i gyu-nyeol-i sil-chi an-seum-ni-da.",
-      "en": "A 'crack' has appeared for the first time in what used to be a perfect manual. Strangely, I don't dislike this crack.",
+      "text": "완벽하던 매뉴얼에 처음으로 '균열'이 생겼습니다. 사실 콜사인을 몇 번이고 되물었던 것도, 전부 당신 목소리가 다시 듣고 싶어서였습니다. 이제는 인정하겠습니다.",
+      "reading": "wan-byeok-ha-deon mae-nyu-eol-e cheo-eum-eu-ro 'gyu-nyeol'-i saeng-gyeot-seum-ni-da. sa-sil kol-ssa-in-eul myeot beon-i-go doe-mul-eot-deon geot-do, jeon-bu dang-sin mok-so-ri-ga da-si deut-go sip-eo-seo-yeot-seum-ni-da. i-je-neun in-jeong-ha-get-seum-ni-da.",
+      "en": "A 'crack' has appeared for the first time in what used to be a perfect manual. The truth is, every time I asked you to repeat your callsign, it was because I wanted to hear your voice again. I'll admit it now.",
       "highlight_word_id": "w05"
     },
     {
@@ -78,16 +78,16 @@
     {
       "id": "d02",
       "turns": [
-        { "speaker": "승객", "text": "기장님도 흔들릴 때가 있네요? 되게 의외예요.", "reading": "gi-jang-nim-do heun-deul-lil ttae-ga it-ne-yo? doe-ge ui-oe-ye-yo.", "en": "So even you have moments of wavering, Captain? That's quite unexpected." },
-        { "speaker": "천상우 기장", "text": "저도 몰랐던 사실입니다. 늘 침착하다고 자부했는데 말입니다.", "reading": "jeo-do mol-lat-deon sa-sil-im-ni-da. neul chim-chak-ha-da-go ja-bu-haet-neun-de mal-im-ni-da.", "en": "It's a fact even I didn't know. I always prided myself on being composed." },
-        { "speaker": "승객", "text": "그럼 지금은요? 아직도 흔들려요?", "reading": "geu-reom ji-geum-eun-yo? a-jik-do heun-deul-lyeo-yo?", "en": "So what about now? Are you still wavering?" },
-        { "speaker": "천상우 기장", "text": "…네. 아무래도 당신 앞에서는 계속 그럴 것 같습니다.", "reading": "…ne. a-mu-rae-do dang-sin ap-e-seo-neun gye-sok geu-reol geot gat-seum-ni-da.", "en": "...Yes. It seems I'll probably keep being this way in front of you." }
+        { "speaker": "승객", "text": "기장님, 그러고 보니 저한테 유독 다시 말해달라는 거 많이 하셨죠?", "reading": "gi-jang-nim, geu-reo-go bo-ni jeo-han-te yu-dok da-si mal-hae-dal-la-neun geo man-i ha-syeot-jyo?", "en": "Captain, now that I think about it, you've asked me to repeat myself a lot, haven't you?" },
+        { "speaker": "천상우 기장", "text": "…네. 이제 솔직히 말씀드리겠습니다.", "reading": "…ne. i-je sol-jik-hi mal-sseum-deu-ri-get-seum-ni-da.", "en": "...Yes. I'll be honest with you now." },
+        { "speaker": "승객", "text": "설마 그것도 다 듣고 계셨으면서 일부러 그러신 거예요?", "reading": "seol-ma geu-geot-do da deut-go gye-syeo-sseu-myeon-seo il-bu-reo geu-reo-sin geo-ye-yo?", "en": "Don't tell me you did that on purpose even though you heard everything?" },
+        { "speaker": "천상우 기장", "text": "맞습니다. 당신 목소리가, 몇 번을 들어도 안 질려서 그랬습니다.", "reading": "mat-seum-ni-da. dang-sin mok-so-ri-ga, myeot beon-eul deul-eo-do an jil-lyeo-seo geu-raet-seum-ni-da.", "en": "That's right. It's because I never get tired of your voice, no matter how many times I hear it." }
       ],
-      "question": "기장의 마지막 대답이 암시하는 것은?",
-      "question_en": "What does the captain's last answer imply?",
-      "correct_answer": "승객 앞에서는 앞으로도 평정심을 유지하기 어려울 것 같다는 인정",
-      "options": ["승객 앞에서는 앞으로도 평정심을 유지하기 어려울 것 같다는 인정", "산 정상의 바람이 세서 몸이 흔들린다는 뜻", "비행 스케줄이 불안정하다는 뜻", "무전기 상태가 계속 나쁠 거라는 예측"],
-      "explanation": "기장은 앞으로도 승객 앞에서는 평정심을 유지하기 어려울 것 같다는 사실을 솔직하게 인정하고 있습니다."
+      "question": "기장이 되묻던 진짜 이유를 스스로 인정한 것이 뜻하는 바는?",
+      "question_en": "What does it mean that the captain himself finally admits the real reason he kept asking her to repeat herself?",
+      "correct_answer": "그동안 숨겨온 마음을 더 이상 숨기지 않기로 했다는 것",
+      "options": ["그동안 숨겨온 마음을 더 이상 숨기지 않기로 했다는 것", "앞으로는 절대 되묻지 않겠다는 다짐", "승객의 목소리에 문제가 있었다는 지적", "그저 무전 절차를 설명하려는 것"],
+      "explanation": "기장은 그동안 절차라는 핑계 뒤에 숨겨왔던 진짜 마음을, 더 이상 감추지 않고 솔직하게 인정하고 있습니다."
     }
   ]
 }

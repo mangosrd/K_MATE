@@ -23,9 +23,9 @@
       "highlight_word_id": "w02"
     },
     {
-      "text": "타워라는 애칭 대신, 이제는 다른 이름으로 부르고 싶습니다. 제 평생의 '반려'로 말입니다.",
-      "reading": "ta-wo-ra-neun ae-ching dae-sin, i-je-neun da-reun i-reum-eu-ro bu-reu-go sip-seum-ni-da. je pyeong-saeng-ui 'ban-nyeo'-ro mal-im-ni-da.",
-      "en": "Instead of the nickname 'tower', I'd like to call you by another name now—as my lifelong 'companion'.",
+      "text": "타워라는 애칭 대신, 이제는 다른 이름으로 부르고 싶습니다. 제 평생의 '반려'로 말입니다. 동기들도 이제 이 얘기를 들으면, 두 손 드는 정도로는 안 끝날 겁니다.",
+      "reading": "ta-wo-ra-neun ae-ching dae-sin, i-je-neun da-reun i-reum-eu-ro bu-reu-go sip-seum-ni-da. je pyeong-saeng-ui 'ban-nyeo'-ro mal-im-ni-da. dong-gi-deul-do i-je i yae-gi-reul deul-eu-myeon, du son deu-neun jeong-do-ro-neun an kkeun-nal geom-ni-da.",
+      "en": "Instead of the nickname 'tower', I'd like to call you by another name now—as my lifelong 'companion'. Once my classmates hear this, giving up trying to out-charm me won't be the end of it.",
       "highlight_word_id": "w03"
     },
     {
@@ -49,14 +49,14 @@
   "words": [
     { "id": "w01", "word": "동행", "reading": "dong-haeng", "meaning": "Companion / accompanying", "example": "당신이라는 동행이 있어 유독 즐거웠습니다.", "example_reading": "dang-sin-i-ra-neun dong-haeng-i i-sseo yu-dok jeul-geo-wot-seum-ni-da", "example_en": "Having you as my companion made it especially enjoyable." },
     { "id": "w02", "word": "여정", "reading": "yeo-jeong", "meaning": "Journey", "example": "앞으로 남은 여정도 당신과 함께라면 두렵지 않습니다.", "example_reading": "ap-eu-ro nam-eun yeo-jeong-do dang-sin-gwa ham-kke-ra-myeon du-ryeop-ji an-seum-ni-da", "example_en": "The journey still ahead won't be frightening if it's with you." },
-    { "id": "w03", "word": "반려", "reading": "ban-nyeo", "meaning": "Life companion / partner", "example": "제 평생의 반려로 부르고 싶습니다.", "example_reading": "je pyeong-saeng-ui ban-nyeo-ro bu-reu-go sip-seum-ni-da", "example_en": "I want to call you my lifelong companion." },
+    { "id": "w03", "word": "반려", "reading": "ban-nyeo", "meaning": "Life companion / partner", "example": "제 평생의 반려로 부르고 싶습니다. 동기들도 이 얘기를 들으면 두 손 들 겁니다.", "example_reading": "je pyeong-saeng-ui ban-nyeo-ro bu-reu-go sip-seum-ni-da. dong-gi-deul-do i yae-gi-reul deul-eu-myeon du son deul geom-ni-da", "example_en": "I want to call you my lifelong companion. Even my classmates will give up once they hear this." },
     { "id": "w04", "word": "정착", "reading": "jeong-chak", "meaning": "Settling down", "example": "처음으로 어딘가에 정착하고 싶다는 생각을 합니다.", "example_reading": "cheo-eum-eu-ro eo-din-ga-e jeong-chak-ha-go sip-da-neun saeng-gag-eul ham-ni-da", "example_en": "For the first time, I think about wanting to settle down somewhere." },
     { "id": "w05", "word": "귀항", "reading": "gwi-hang", "meaning": "Returning to home port / homecoming", "example": "제 모든 귀항의 목적지를 당신으로 등록합니다.", "example_reading": "je mo-deun gwi-hang-ui mok-jeok-ji-reul dang-sin-eu-ro deung-nok-ham-ni-da", "example_en": "I'm registering you as the destination of every homecoming I make." }
   ],
   "sentences": [
     { "id": "s01", "ko": "당신이라는 동행이 있어 유독 즐거웠습니다.", "reading": "dang-sin-i-ra-neun dong-haeng-i i-sseo yu-dok jeul-geo-wot-seum-ni-da", "en": "Having you as my companion made it especially enjoyable." },
     { "id": "s02", "ko": "앞으로 남은 여정도 당신과 함께라면 두렵지 않습니다.", "reading": "ap-eu-ro nam-eun yeo-jeong-do dang-sin-gwa ham-kke-ra-myeon du-ryeop-ji an-seum-ni-da", "en": "The journey still ahead won't be frightening if it's with you." },
-    { "id": "s03", "ko": "제 평생의 반려로 부르고 싶습니다.", "reading": "je pyeong-saeng-ui ban-nyeo-ro bu-reu-go sip-seum-ni-da", "en": "I want to call you my lifelong companion." },
+    { "id": "s03", "ko": "제 평생의 반려로 부르고 싶습니다. 동기들도 이 얘기를 들으면 두 손 들 겁니다.", "reading": "je pyeong-saeng-ui ban-nyeo-ro bu-reu-go sip-seum-ni-da. dong-gi-deul-do i yae-gi-reul deul-eu-myeon du son deul geom-ni-da", "en": "I want to call you my lifelong companion. Even my classmates will give up once they hear this." },
     { "id": "s04", "ko": "처음으로 어딘가에 정착하고 싶다는 생각을 합니다.", "reading": "cheo-eum-eu-ro eo-din-ga-e jeong-chak-ha-go sip-da-neun saeng-gag-eul ham-ni-da", "en": "For the first time, I think about wanting to settle down somewhere." },
     { "id": "s05", "ko": "제 모든 귀항의 목적지를 당신으로 등록합니다.", "reading": "je mo-deun gwi-hang-ui mok-jeok-ji-reul dang-sin-eu-ro deung-nok-ham-ni-da", "en": "I'm registering you as the destination of every homecoming I make." }
   ],

@@ -23,9 +23,9 @@
       "highlight_word_id": "w02"
     },
     {
-      "text": "십 년을 지켜온 '집중'력이 요즘처럼 흔들린 적이 없습니다. 원인은... 아무래도 승객님인 것 같습니다.",
-      "reading": "sip nyeon-eul ji-kyeo-on 'jip-jung'-yeog-i yo-jeum-cheo-reom heun-deul-lin jeog-i eop-seum-ni-da. won-in-eun... a-mu-rae-do seung-gaek-nim-in geot gat-seum-ni-da.",
-      "en": "My ten years of hard-won 'concentration' has never wavered like this before. The cause is... you, I'm afraid.",
+      "text": "당신은 제 말투가 너무 태연해서 오히려 얄밉다고 하셨지요. 십 년을 지켜온 '집중'력도, 요즘처럼 흔들린 적이 없습니다.",
+      "reading": "dang-sin-eun je mal-tu-ga neo-mu tae-yeon-hae-seo o-hi-ryeo yal-mip-da-go ha-syeot-ji-yo. sip nyeon-eul ji-kyeo-on 'jip-jung'-yeog-i, yo-jeum-cheo-reom heun-deul-lin jeog-i eop-seum-ni-da.",
+      "en": "You said my tone was so calm and unbothered that it was almost infuriating. My ten years of hard-won 'concentration' has never wavered like this before either.",
       "highlight_word_id": "w03"
     },
     {
@@ -64,30 +64,30 @@
     {
       "id": "d01",
       "turns": [
-        { "speaker": "승객", "text": "기장님, 아까부터 저만 보고 계신 거 아니에요?", "reading": "gi-jang-nim, a-kka-bu-teo jeo-man bo-go gye-sin geo a-ni-e-yo?", "en": "Captain, haven't you been looking only at me this whole time?" },
-        { "speaker": "천상우 기장", "text": "…시선 처리에 조금 문제가 있었던 것 같습니다.", "reading": "…si-seon cheo-ri-e jo-geum mun-je-ga i-sseot-deon geot gat-seum-ni-da.", "en": "...It seems there was a small problem with where I was directing my gaze." },
-        { "speaker": "승객", "text": "문제요? 일부러 보신 거 같은데.", "reading": "mun-je-yo? il-bu-reo bo-sin geo gat-eun-de.", "en": "A problem? It seemed like you were looking on purpose." },
-        { "speaker": "천상우 기장", "text": "…부인하지 않겠습니다. 계기판보다 그쪽이 더 잘 보여서 말입니다.", "reading": "…bu-in-ha-ji an-ket-seum-ni-da. gye-gi-pan-bo-da geu-jjog-i deo jal bo-yeo-seo mal-im-ni-da.", "en": "...I won't deny it. Because that direction is clearer to see than the instrument panel." }
+        { "speaker": "승객", "text": "기장님 때문에 저 요즘 계속 정신이 없어요. 그렇게 태연하게 그런 말 하시는 거, 반칙이에요.", "reading": "gi-jang-nim ttae-mun-e jeo yo-jeum gye-sok jeong-sin-i eop-seo-yo. geu-reo-ke tae-yeon-ha-ge geu-reon mal ha-si-neun geo, ban-chig-i-e-yo.", "en": "I've been a complete mess lately because of you, Captain. Saying things like that so calmly—it's not fair." },
+        { "speaker": "천상우 기장", "text": "반칙이라니, 섭섭합니다. 저는 늘 진심만 말씀드리는데 말입니다.", "reading": "ban-chig-i-ra-ni, seop-seop-ham-ni-da. jeo-neun neul jin-sim-man mal-sseum-deu-ri-neun-de mal-im-ni-da.", "en": "'Not fair'—that hurts. I only ever say what I truly mean, you know." },
+        { "speaker": "승객", "text": "그 진심이 문제라니까요. 하나도 안 어색하게 그런 말을 하시니까.", "reading": "geu jin-sim-i mun-je-ra-ni-kka-yo. ha-na-do an eo-saek-ha-ge geu-reon mal-eul ha-si-ni-kka.", "en": "That sincerity is exactly the problem. You say things like that without a single trace of awkwardness." },
+        { "speaker": "천상우 기장", "text": "…그렇다면 다행입니다. 능청스럽지 않다는 뜻이니까요.", "reading": "…geu-reo-ta-myeon da-haeng-im-ni-da. neung-cheong-seu-rop-ji an-neun-da-neun tteu-si-ni-kka-yo.", "en": "...That's a relief, then. It means it doesn't come off as a put-on act." }
       ],
-      "question": "기장이 승객을 계속 쳐다본 이유로 가장 적절한 것은?",
-      "question_en": "What is the most appropriate reason the captain kept looking at the passenger?",
-      "correct_answer": "업무 중에도 승객에게 마음이 쓰였기 때문에",
-      "options": ["업무 중에도 승객에게 마음이 쓰였기 때문에", "계기판이 고장 나서 확인할 것이 없어서", "승객이 위험한 행동을 해서 감시한 것", "관제탑에서 승객을 지켜보라고 지시해서"],
-      "explanation": "기장은 업무 중에도 승객에게 마음이 쓰여 시선이 자꾸 그쪽으로 향했다고 솔직하게 인정합니다."
+      "question": "승객이 \"반칙\"이라고 말한 이유는?",
+      "question_en": "Why does the passenger say it's 'not fair'?",
+      "correct_answer": "기장이 능청스러운 플러팅을 너무 자연스럽게 해서 자꾸 흔들리기 때문",
+      "options": ["기장이 능청스러운 플러팅을 너무 자연스럽게 해서 자꾸 흔들리기 때문", "기장이 규정을 지키지 않아서 화가 나서", "기장이 다른 승객에게도 똑같이 대해서", "기장이 대화를 갑자기 끊어서"],
+      "explanation": "승객은 기장이 너무 자연스럽고 태연하게 애정 표현을 건네는 탓에 자꾸만 마음이 흔들린다는 것을 '반칙'이라는 말로 표현하고 있습니다."
     },
     {
       "id": "d02",
       "turns": [
-        { "speaker": "승객", "text": "요즘 기장님답지 않게 자주 멍하시던데요?", "reading": "yo-jeum gi-jang-nim-dap-ji an-ke ja-ju meong-ha-si-deon-de-yo?", "en": "Lately you've been spacing out a lot, unlike your usual self, Captain." },
-        { "speaker": "천상우 기장", "text": "…솔직히, 최근에 집중력이 예전 같지 않습니다.", "reading": "…sol-jik-hi, choe-geun-e jip-jung-yeog-i ye-jeon gat-ji an-seum-ni-da.", "en": "...To be honest, my concentration hasn't been like before lately." },
-        { "speaker": "승객", "text": "왜요? 무슨 일 있으세요?", "reading": "wae-yo? mu-seun il i-sseu-se-yo?", "en": "Why? Is something wrong?" },
-        { "speaker": "천상우 기장", "text": "당신 얼굴이 자꾸 눈앞에 아른거려서, 그런 것 같습니다.", "reading": "dang-sin eol-gul-i ja-kku nun-ap-e a-reun-geo-ryeo-seo, geu-reon geot gat-seum-ni-da.", "en": "I think it's because your face keeps flickering before my eyes." }
+        { "speaker": "승객", "text": "기장님도 제 얼굴 자꾸 떠올리세요? 그럼 피차일반이네요.", "reading": "gi-jang-nim-do je eol-gul ja-kku tteo-ol-li-se-yo? geu-reom pi-cha-il-ban-i-ne-yo.", "en": "You keep picturing my face too? Then we're even." },
+        { "speaker": "천상우 기장", "text": "피차일반이라니, 다행입니다. 저 혼자만 이런 줄 알았습니다.", "reading": "pi-cha-il-ban-i-ra-ni, da-haeng-im-ni-da. jeo hon-ja-man i-reon jul al-at-seum-ni-da.", "en": "'We're even'—what a relief. I thought I was the only one." },
+        { "speaker": "승객", "text": "그러니까 그런 말을 아무렇지 않게 하시는 게 얄밉다는 거예요.", "reading": "geu-reo-ni-kka geu-reon mal-eul a-mu-reo-chi an-ke ha-si-neun ge yal-mip-da-neun geo-ye-yo.", "en": "That's exactly why it's infuriating that you say things like that so effortlessly." },
+        { "speaker": "천상우 기장", "text": "…노력해도 잘 안 됩니다. 이건 타고난 것 같습니다.", "reading": "…no-ryeok-hae-do jal an doem-ni-da. i-geon ta-go-nan geot gat-seum-ni-da.", "en": "...Even when I try to hold back, it doesn't quite work. I think this might just be who I am." }
       ],
-      "question": "기장이 최근 집중력이 떨어진 이유로 말한 것은?",
-      "question_en": "What reason does the captain give for his recent lack of concentration?",
-      "correct_answer": "승객의 얼굴이 계속 떠올라서",
-      "options": ["승객의 얼굴이 계속 떠올라서", "업무량이 갑자기 늘어서", "비행 일정이 불규칙해져서", "건강에 문제가 생겨서"],
-      "explanation": "기장은 업무량이나 건강 문제가 아니라, 승객의 얼굴이 계속 떠올라 집중력이 흐트러졌다고 말합니다."
+      "question": "두 사람의 대화가 보여주는 것은?",
+      "question_en": "What does this exchange between the two of them reveal?",
+      "correct_answer": "서로 비슷하게 상대를 신경 쓰고 있다는 사실이 드러난다",
+      "options": ["서로 비슷하게 상대를 신경 쓰고 있다는 사실이 드러난다", "승객이 기장에게 전혀 관심이 없다는 것을 보여준다", "기장이 일부러 승객을 피곤하게 만들려 한다는 것을 보여준다", "둘 사이에 오해가 생겼다는 것을 보여준다"],
+      "explanation": "두 사람 모두 서로의 얼굴이 자꾸 떠오른다고 인정하면서, 비슷한 마음을 품고 있다는 사실이 자연스럽게 드러납니다."
     }
   ]
 }

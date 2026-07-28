@@ -6,8 +6,8 @@
   "level": "intermediate_advanced",
   "story": [
     {
-      "text": "오늘은 공주 한옥마을과 제민천을 따라 걷는 여정입니다. 조용한 물소리를 들으며, 승객님의 하루도 궁금해졌습니다.",
-      "reading": "o-neul-eun gong-ju han-ok-ma-eul-gwa je-min-cheon-eul tta-ra geot-neun yeo-jeong-im-ni-da. jo-yong-han mul-so-ri-reul deul-eu-myeo, seung-gaek-nim-ui ha-ru-do gung-geum-hae-jyeot-seum-ni-da.",
+      "text": "오늘은 공주 한옥마을과 제민천을 따라 걷는 여정입니다. 조용한 물소리를 들으며, 당신의 하루도 궁금해졌습니다.",
+      "reading": "o-neul-eun gong-ju han-ok-ma-eul-gwa je-min-cheon-eul tta-ra geot-neun yeo-jeong-im-ni-da. jo-yong-han mul-so-ri-reul deul-eu-myeo, dang-sin-ui ha-ru-do gung-geum-hae-jyeot-seum-ni-da.",
       "en": "Today's journey follows Gongju Hanok Village and Jemincheon Stream. Listening to the quiet sound of the water, I found myself curious about your day too."
     },
     {
@@ -17,27 +17,27 @@
       "highlight_word_id": "w01"
     },
     {
-      "text": "직접 '안부'를 묻는 건 아직 어색합니다. 그래서 자꾸 무전 멘트 뒤에 숨어서 묻게 됩니다.",
-      "reading": "jik-jeop 'an-bu'-reul mut-neun geon a-jik eo-saek-ham-ni-da. geu-rae-seo ja-kku mu-jeon men-teu dwi-e sum-eo-seo mut-ge doem-ni-da.",
-      "en": "Asking after your 'well-being' directly still feels awkward. So I keep hiding behind radio phrases to ask.",
+      "text": "'확인차' 다시 여쭙습니다. 오늘 컨디션, 정말 양호하십니까. …실은 방금 대답도 다 들었으면서 또 여쭤봤습니다.",
+      "reading": "'hwag-in-cha' da-si yeo-jjum-ni-da. o-neul keon-di-syeon, jeong-mal yang-ho-ha-sim-ni-kka. …sil-eun bang-geum dae-dap-do da deul-eot-seu-myeon-seo tto yeo-jjeo-bwat-seum-ni-da.",
+      "en": "'For confirmation's sake', I'll ask once more. Is your condition today really good? ...In truth, I heard your answer just now perfectly, and asked again anyway.",
       "highlight_word_id": "w02"
     },
     {
-      "text": "제민천을 걷다가, 저도 모르게 당신 표정을 '점검'하고 있었습니다. 컨디션이 괜찮으신지 살피는 버릇 같습니다.",
-      "reading": "je-min-cheon-eul geot-da-ga, jeo-do mo-reu-ge dang-sin pyo-jeong-eul 'jeom-geom'-ha-go i-sseot-seum-ni-da. keon-di-syeon-i gwaen-chan-eu-sin-ji sal-pi-neun beo-reut gat-seum-ni-da.",
-      "en": "Walking along Jemincheon, I found myself 'checking' your expression without realizing. It seems to be a habit of mine, watching to see if you're doing well.",
+      "text": "가끔 '딴청' 부리듯 다시 여쭤보는 버릇이 있습니다. 목소리가 좋아서 자꾸 더 듣고 싶은 것뿐입니다.",
+      "reading": "ga-kkeum 'ttan-cheong' bu-ri-deut da-si yeo-jjeo-bo-neun beo-reu-si it-seum-ni-da. mok-so-ri-ga jo-a-seo ja-kku deo deut-go sip-eun geot-ppun-im-ni-da.",
+      "en": "I sometimes have a habit of asking again, feigning that I misheard. It's simply that I want to keep hearing your voice more.",
       "highlight_word_id": "w03"
     },
     {
-      "text": "당신의 작은 한숨 하나까지도 저에게는 또렷하게 '수신'됩니다. 무전기보다 정확한 것 같습니다.",
-      "reading": "dang-sin-ui jak-eun han-sum ha-na-kka-ji-do jeo-e-ge-neun tto-ryeot-ha-ge 'su-sin'-doem-ni-da. mu-jeon-gi-bo-da jeong-hwak-han geot gat-seum-ni-da.",
-      "en": "Even your smallest sigh comes through clearly as a 'reception' to me. More accurate than any radio, it seems.",
+      "text": "당신은 이제 제 '눈치'를 채신 것 같습니다. 더는 숨기기 어렵겠군요.",
+      "reading": "dang-sin-eun i-je je 'nun-chi'-reul chae-sin geot gat-seum-ni-da. deo-neun sum-gi-gi eo-ryeop-get-gun-yo.",
+      "en": "It seems you've caught 'wind' of it now. It'll be hard to hide much longer.",
       "highlight_word_id": "w04"
     },
     {
-      "text": "그래서 묻습니다. 요즘 '근황'은 어떠십니까. 이 질문, 오늘은 무전 멘트가 아니라 진심으로 드리는 말씀입니다.",
-      "reading": "geu-rae-seo mut-seum-ni-da. yo-jeum 'geun-hwang'-eun eo-tteo-sim-ni-kka. i jil-mun, o-neul-eun mu-jeon men-teu-ga a-ni-ra jin-sim-eu-ro deu-ri-neun mal-sseum-im-ni-da.",
-      "en": "So I'll ask. How have you been lately, your 'recent news'? This question—today it's not a radio phrase, but something I mean sincerely.",
+      "text": "같은 질문을 '재차' 드리는 게 실례라는 걸 압니다. 그래도 오늘 하루가 정말 궁금해서 그렇습니다.",
+      "reading": "gat-eun jil-mun-eul 'jae-cha' deu-ri-neun ge sil-lye-ra-neun geol am-ni-da. geu-rae-do o-neul ha-ru-ga jeong-mal gung-geum-hae-seo geu-reo-seum-ni-da.",
+      "en": "I know it's rude to ask the same question 'once again'. But it's because I'm genuinely curious about your day today.",
       "highlight_word_id": "w05"
     },
     {
@@ -47,47 +47,47 @@
     }
   ],
   "words": [
-    { "id": "w01", "word": "양호", "reading": "yang-ho", "meaning": "Good / fine (condition)", "example": "교신 상태 양호. 오늘 하루도 양호하셨습니까.", "example_reading": "gyo-sin sang-tae yang-ho. o-neul ha-ru-do yang-ho-ha-syeot-seum-ni-kka", "example_en": "Communication status good. Was your day good too?" },
-    { "id": "w02", "word": "안부", "reading": "an-bu", "meaning": "Well-being / regards", "example": "직접 안부를 묻는 건 아직 어색합니다.", "example_reading": "jik-jeop an-bu-reul mut-neun geon a-jik eo-saek-ham-ni-da", "example_en": "Asking after your well-being directly still feels awkward." },
-    { "id": "w03", "word": "점검", "reading": "jeom-geom", "meaning": "Check / inspection", "example": "저도 모르게 당신 표정을 점검하고 있었습니다.", "example_reading": "jeo-do mo-reu-ge dang-sin pyo-jeong-eul jeom-geom-ha-go i-sseot-seum-ni-da", "example_en": "I found myself checking your expression without realizing." },
-    { "id": "w04", "word": "수신", "reading": "su-sin", "meaning": "Reception (of a signal)", "example": "당신의 작은 한숨 하나까지도 또렷하게 수신됩니다.", "example_reading": "dang-sin-ui jak-eun han-sum ha-na-kka-ji-do tto-ryeot-ha-ge su-sin-doem-ni-da", "example_en": "Even your smallest sigh comes through clearly as a reception." },
-    { "id": "w05", "word": "근황", "reading": "geun-hwang", "meaning": "Recent news / status", "example": "요즘 근황은 어떠십니까.", "example_reading": "yo-jeum geun-hwang-eun eo-tteo-sim-ni-kka", "example_en": "How have you been lately?" }
+    { "id": "w01", "word": "양호", "reading": "yang-ho", "meaning": "Good / fine (condition)", "example": "교신 상태 양호. 당신의 하루도 양호했습니까.", "example_reading": "gyo-sin sang-tae yang-ho. dang-sin-ui ha-ru-do yang-ho-haet-seum-ni-kka", "example_en": "Communication status good. Was your day good too?" },
+    { "id": "w02", "word": "확인차", "reading": "hwag-in-cha", "meaning": "For the sake of confirming", "example": "확인차 다시 여쭙습니다. 오늘 컨디션 정말 양호하십니까.", "example_reading": "hwag-in-cha da-si yeo-jjum-ni-da. o-neul keon-di-syeon jeong-mal yang-ho-ha-sim-ni-kka", "example_en": "For confirmation's sake, I'll ask once more—is your condition really good today?" },
+    { "id": "w03", "word": "딴청", "reading": "ttan-cheong", "meaning": "Feigning not to notice / playing dumb", "example": "가끔 딴청 부리듯 다시 여쭤보는 버릇이 있습니다.", "example_reading": "ga-kkeum ttan-cheong bu-ri-deut da-si yeo-jjeo-bo-neun beo-reu-si it-seum-ni-da", "example_en": "I sometimes have a habit of asking again, feigning that I misheard." },
+    { "id": "w04", "word": "눈치", "reading": "nun-chi", "meaning": "Perceptiveness / catching on to something", "example": "당신은 이제 제 눈치를 채신 것 같습니다.", "example_reading": "dang-sin-eun i-je je nun-chi-reul chae-sin geot gat-seum-ni-da", "example_en": "It seems you've caught wind of it now." },
+    { "id": "w05", "word": "재차", "reading": "jae-cha", "meaning": "Once again / repeatedly", "example": "같은 질문을 재차 드리는 게 실례라는 걸 압니다.", "example_reading": "gat-eun jil-mun-eul jae-cha deu-ri-neun ge sil-lye-ra-neun geol am-ni-da", "example_en": "I know it's rude to ask the same question once again." }
   ],
   "sentences": [
-    { "id": "s01", "ko": "교신 상태 양호. 오늘 하루도 양호하셨습니까.", "reading": "gyo-sin sang-tae yang-ho. o-neul ha-ru-do yang-ho-ha-syeot-seum-ni-kka", "en": "Communication status good. Was your day good too?" },
-    { "id": "s02", "ko": "직접 안부를 묻는 건 아직 어색합니다.", "reading": "jik-jeop an-bu-reul mut-neun geon a-jik eo-saek-ham-ni-da", "en": "Asking after your well-being directly still feels awkward." },
-    { "id": "s03", "ko": "저도 모르게 당신 표정을 점검하고 있었습니다.", "reading": "jeo-do mo-reu-ge dang-sin pyo-jeong-eul jeom-geom-ha-go i-sseot-seum-ni-da", "en": "I found myself checking your expression without realizing." },
-    { "id": "s04", "ko": "당신의 작은 한숨 하나까지도 또렷하게 수신됩니다.", "reading": "dang-sin-ui jak-eun han-sum ha-na-kka-ji-do tto-ryeot-ha-ge su-sin-doem-ni-da", "en": "Even your smallest sigh comes through clearly as a reception." },
-    { "id": "s05", "ko": "요즘 근황은 어떠십니까.", "reading": "yo-jeum geun-hwang-eun eo-tteo-sim-ni-kka", "en": "How have you been lately?" }
+    { "id": "s01", "ko": "교신 상태 양호. 당신의 하루도 양호했습니까.", "reading": "gyo-sin sang-tae yang-ho. dang-sin-ui ha-ru-do yang-ho-haet-seum-ni-kka", "en": "Communication status good. Was your day good too?" },
+    { "id": "s02", "ko": "확인차 다시 여쭙습니다. 오늘 컨디션 정말 양호하십니까.", "reading": "hwag-in-cha da-si yeo-jjum-ni-da. o-neul keon-di-syeon jeong-mal yang-ho-ha-sim-ni-kka", "en": "For confirmation's sake, I'll ask once more—is your condition really good today?" },
+    { "id": "s03", "ko": "가끔 딴청 부리듯 다시 여쭤보는 버릇이 있습니다.", "reading": "ga-kkeum ttan-cheong bu-ri-deut da-si yeo-jjeo-bo-neun beo-reu-si it-seum-ni-da", "en": "I sometimes have a habit of asking again, feigning that I misheard." },
+    { "id": "s04", "ko": "당신은 이제 제 눈치를 채신 것 같습니다.", "reading": "dang-sin-eun i-je je nun-chi-reul chae-sin geot gat-seum-ni-da", "en": "It seems you've caught wind of it now." },
+    { "id": "s05", "ko": "같은 질문을 재차 드리는 게 실례라는 걸 압니다.", "reading": "gat-eun jil-mun-eul jae-cha deu-ri-neun ge sil-lye-ra-neun geol am-ni-da", "en": "I know it's rude to ask the same question once again." }
   ],
   "dialogues": [
     {
       "id": "d01",
       "turns": [
-        { "speaker": "천상우 기장", "text": "교신 상태 양호. …오늘 컨디션은 어떠십니까.", "reading": "gyo-sin sang-tae yang-ho. …o-neul keon-di-syeon-eun eo-tteo-sim-ni-kka.", "en": "Communication status good. ...How's your condition today?" },
-        { "speaker": "승객", "text": "네? 갑자기 그렇게 물으시니까 웃기네요.", "reading": "ne? gap-ja-gi geu-reo-ke mul-eu-si-ni-kka ut-gi-ne-yo.", "en": "What? It's funny that you're suddenly asking that." },
-        { "speaker": "천상우 기장", "text": "웃기려던 건 아니고, 진짜로 궁금해서 그렇습니다.", "reading": "ut-gi-ryeo-deon geon a-ni-go, jin-jja-ro gung-geum-hae-seo geu-reo-seum-ni-da.", "en": "I wasn't trying to be funny—I genuinely wanted to know." },
-        { "speaker": "승객", "text": "저는 좋아요. 기장님 목소리 들으니까 더 좋아졌어요.", "reading": "jeo-neun jo-a-yo. gi-jang-nim mok-so-ri deul-eu-ni-kka deo jo-a-jyeo-sseo-yo.", "en": "I'm good. Hearing your voice, Captain, made it even better." }
+        { "speaker": "천상우 기장", "text": "교신 상태 양호. …방금 대답, 다시 한번 말씀해 주시겠습니까.", "reading": "gyo-sin sang-tae yang-ho. …bang-geum dae-dap, da-si han-beon mal-sseum-hae ju-si-get-seum-ni-kka.", "en": "Communication status good. ...Could you say your answer once more?" },
+        { "speaker": "승객", "text": "방금 저 좋았다고 분명히 말했는데요? 또 못 들은 척이에요?", "reading": "bang-geum jeo jo-at-da-go bun-myeong-hi mal-haet-neun-de-yo? tto mot deul-eun cheog-i-e-yo?", "en": "I clearly just said I felt good—are you pretending not to hear again?" },
+        { "speaker": "천상우 기장", "text": "…확인차 여쭤본 겁니다.", "reading": "…hwag-in-cha yeo-jjeo-bon geom-ni-da.", "en": "...I asked purely for confirmation's sake." },
+        { "speaker": "승객", "text": "그 확인차, 벌써 세 번째예요 기장님.", "reading": "geu hwag-in-cha, beol-sseo se beon-jjae-ye-yo gi-jang-nim.", "en": "That 'for confirmation's sake' has already happened three times, Captain." }
       ],
-      "question": "기장이 \"교신 상태 양호\"라고 물은 진짜 의도는?",
-      "question_en": "What is the real intention behind the captain saying, 'Communication status good'?",
-      "correct_answer": "승객의 안부를 무전 멘트로 돌려 물은 것",
-      "options": ["승객의 안부를 무전 멘트로 돌려 물은 것", "실제 무전 장비 상태를 점검하려고", "관제탑에 보고할 자료가 필요해서", "인사말을 잘못 알고 있어서"],
-      "explanation": "기장은 무전 상태를 점검하려는 게 아니라, 승객의 안부를 무전 멘트에 빗대어 완곡하게 묻고 있습니다."
+      "question": "승객이 \"세 번째예요\"라고 지적한 이유는?",
+      "question_en": "Why does the passenger point out, 'that's already the third time'?",
+      "correct_answer": "기장이 반복해서 못 들은 척하며 그녀의 말을 다시 듣고 싶어한다는 것을 눈치챘기 때문",
+      "options": ["기장이 반복해서 못 들은 척하며 그녀의 말을 다시 듣고 싶어한다는 것을 눈치챘기 때문", "기장이 무전 장비를 세 번이나 고장 냈기 때문", "기장이 규정을 세 번 어겼다고 생각해서", "대화가 너무 길어져서 지루하다는 뜻으로"],
+      "explanation": "승객은 기장이 이미 다 들은 대답을 매번 '확인차'라는 핑계로 다시 묻는다는 사실을 눈치채고 이를 지적하고 있습니다."
     },
     {
       "id": "d02",
       "turns": [
-        { "speaker": "승객", "text": "요즘 계속 바쁘셨죠? 근황이 궁금했어요.", "reading": "yo-jeum gye-sok ba-ppeu-syeot-jyo? geun-hwang-i gung-geum-hae-sseo-yo.", "en": "You've been busy lately, right? I was curious how you've been." },
-        { "speaker": "천상우 기장", "text": "바빴지만, 당신 생각이 자꾸 수신되어서 힘들지는 않았습니다.", "reading": "ba-ppat-ji-man, dang-sin saeng-gag-i ja-kku su-sin-doe-eo-seo him-deul-ji-neun an-a-sseum-ni-da.", "en": "I was busy, but thoughts of you kept coming through, so it wasn't hard." },
-        { "speaker": "승객", "text": "그거 혹시 저 보고 싶었다는 말이에요?", "reading": "geu-geo hok-si jeo bo-go sip-eot-da-neun mal-i-e-yo?", "en": "Does that mean you missed me, by any chance?" },
-        { "speaker": "천상우 기장", "text": "…부인은 하지 않겠습니다.", "reading": "…bu-in-eun ha-ji an-ket-seum-ni-da.", "en": "...I won't deny it." }
+        { "speaker": "승객", "text": "기장님, 사실 저 다 들었으면서 되묻는 거 알고 있어요.", "reading": "gi-jang-nim, sa-sil jeo da deul-eo-sseu-myeon-seo doe-mut-neun geo al-go i-sseo-yo.", "en": "Captain, I actually know you're asking again even though you heard everything." },
+        { "speaker": "천상우 기장", "text": "…언제부터 눈치채셨습니까.", "reading": "…eon-je-bu-teo nun-chi-chae-syeot-seum-ni-kka.", "en": "...Since when did you catch on?" },
+        { "speaker": "승객", "text": "꽤 됐어요. 그 절차, 웬만하면 그만두시죠?", "reading": "kkwae dwae-sseo-yo. geu jeol-cha, wen-man-ha-myeon geu-man-du-si-jyo?", "en": "It's been a while. Maybe you should just drop that procedure?" },
+        { "speaker": "천상우 기장", "text": "그건 좀 곤란합니다. 이 절차 덕분에 당신 목소리를 몇 번이고 더 들을 수 있어서 말입니다.", "reading": "geu-geon jom gol-lan-ham-ni-da. i jeol-cha deok-bun-e dang-sin mok-so-ri-reul myeot beon-i-go deo deul-eul su i-sseo-seo mal-im-ni-da.", "en": "That's a bit difficult. Thanks to this procedure, I get to hear your voice over and over again." }
       ],
-      "question": "기장의 마지막 말 \"부인은 하지 않겠습니다\"가 뜻하는 것은?",
-      "question_en": "What does the captain's last remark, 'I won't deny it,' mean?",
-      "correct_answer": "승객이 보고 싶었다는 사실을 완곡하게 인정한다",
-      "options": ["승객이 보고 싶었다는 사실을 완곡하게 인정한다", "질문 자체를 이해하지 못했다", "규정상 답할 수 없다는 뜻이다", "전혀 보고 싶지 않았다는 뜻이다"],
-      "explanation": "'부인하지 않겠다'는 말은 완곡하게 긍정하는 표현으로, 기장이 승객을 그리워했음을 에둘러 인정하는 것입니다."
+      "question": "기장이 \"절차를 그만두기 곤란하다\"고 말한 이유는?",
+      "question_en": "Why does the captain say it's 'difficult' to drop the procedure?",
+      "correct_answer": "그 핑계 덕분에 그녀의 목소리를 더 들을 수 있어서",
+      "options": ["그 핑계 덕분에 그녀의 목소리를 더 들을 수 있어서", "규정상 반드시 지켜야 하는 절차라서", "습관을 고치는 게 실제로 어려워서", "다른 승객들에게도 똑같이 적용해야 해서"],
+      "explanation": "기장은 규정 때문이 아니라, 그 핑계 덕분에 좋아하는 목소리를 더 들을 수 있다는 솔직한 이유를 밝히고 있습니다."
     }
   ]
 }

@@ -29,9 +29,9 @@
       "highlight_word_id": "w03"
     },
     {
-      "text": "이건 아무에게나 건네는 말이 아닙니다. 당신을 향한 '신뢰'가 없었다면 하지 못했을 말입니다.",
-      "reading": "i-geon a-mu-e-ge-na geon-ne-neun mal-i a-nim-ni-da. dang-sin-eul hyang-han 'sin-roe'-ga eop-seot-da-myeon ha-ji mot-hae-sseul mal-im-ni-da.",
-      "en": "This isn't something I'd say to just anyone. Without 'trust' in you, I couldn't have said it.",
+      "text": "항공대 동기들도 제 능청은 익히 알지만, 이런 '신뢰'까지 내보인 적은 없습니다. 당신을 향한 신뢰가 없었다면 하지 못했을 말입니다.",
+      "reading": "hang-gong-dae dong-gi-deul-do je neung-cheong-eun i-ki al-ji-man, i-reon 'sin-roe'-kka-ji nae-bo-in jeog-eun eop-seum-ni-da. dang-sin-eul hyang-han sin-roe-ga eop-seot-da-myeon ha-ji mot-hae-sseul mal-im-ni-da.",
+      "en": "Even my academy classmates know my nonchalant charm well, but I've never shown this kind of 'trust' before. Without trust in you, I couldn't have said this.",
       "highlight_word_id": "w04"
     },
     {
@@ -50,14 +50,14 @@
     { "id": "w01", "word": "전파", "reading": "jeon-pa", "meaning": "Radio wave", "example": "제 목소리는 정해진 항로로만 전파를 보냅니다.", "example_reading": "je mok-so-ri-neun jeong-hae-jin hang-no-ro-man jeon-pa-reul bo-naem-ni-da", "example_en": "My voice normally sends radio waves only along fixed routes." },
     { "id": "w02", "word": "주파수", "reading": "ju-pa-su", "meaning": "Frequency", "example": "당신과는 처음부터 주파수가 잘 맞았습니다.", "example_reading": "dang-sin-gwa-neun cheo-eum-bu-teo ju-pa-su-ga jal mat-at-seum-ni-da", "example_en": "With you, the frequency matched from the very start." },
     { "id": "w03", "word": "개방", "reading": "gae-bang", "meaning": "Opening (up)", "example": "이 채널을 당신에게만 개방하겠습니다.", "example_reading": "i chae-neol-eul dang-sin-e-ge-man gae-bang-ha-get-seum-ni-da", "example_en": "I'll open this channel to you alone." },
-    { "id": "w04", "word": "신뢰", "reading": "sin-roe", "meaning": "Trust", "example": "당신을 향한 신뢰가 없었다면 하지 못했을 말입니다.", "example_reading": "dang-sin-eul hyang-han sin-roe-ga eop-seot-da-myeon ha-ji mot-hae-sseul mal-im-ni-da", "example_en": "Without trust in you, I couldn't have said this." },
+    { "id": "w04", "word": "신뢰", "reading": "sin-roe", "meaning": "Trust", "example": "동기들도 익히 아는 능청과 달리, 이런 신뢰까지 내보인 적은 없습니다.", "example_reading": "dong-gi-deul-do i-ki a-neun neung-cheong-gwa dal-li, i-reon sin-roe-kka-ji nae-bo-in jeog-eun eop-seum-ni-da", "example_en": "Unlike the nonchalant charm my classmates know well, I've never shown this kind of trust before." },
     { "id": "w05", "word": "진심", "reading": "jin-sim", "meaning": "Sincerity / true heart", "example": "이번엔 진심으로 말씀드립니다.", "example_reading": "i-beon-en jin-sim-eu-ro mal-sseum-deu-rim-ni-da", "example_en": "This time, I'll say it with sincerity." }
   ],
   "sentences": [
     { "id": "s01", "ko": "제 목소리는 정해진 항로로만 전파를 보냅니다.", "reading": "je mok-so-ri-neun jeong-hae-jin hang-no-ro-man jeon-pa-reul bo-naem-ni-da", "en": "My voice normally sends radio waves only along fixed routes." },
     { "id": "s02", "ko": "당신과는 처음부터 주파수가 잘 맞았습니다.", "reading": "dang-sin-gwa-neun cheo-eum-bu-teo ju-pa-su-ga jal mat-at-seum-ni-da", "en": "With you, the frequency matched from the very start." },
     { "id": "s03", "ko": "이 채널을 당신에게만 개방하겠습니다.", "reading": "i chae-neol-eul dang-sin-e-ge-man gae-bang-ha-get-seum-ni-da", "en": "I'll open this channel to you alone." },
-    { "id": "s04", "ko": "당신을 향한 신뢰가 없었다면 하지 못했을 말입니다.", "reading": "dang-sin-eul hyang-han sin-roe-ga eop-seot-da-myeon ha-ji mot-hae-sseul mal-im-ni-da", "en": "Without trust in you, I couldn't have said this." },
+    { "id": "s04", "ko": "동기들도 익히 아는 능청과 달리, 이런 신뢰까지 내보인 적은 없습니다.", "reading": "dong-gi-deul-do i-ki a-neun neung-cheong-gwa dal-li, i-reon sin-roe-kka-ji nae-bo-in jeog-eun eop-seum-ni-da", "en": "Unlike the nonchalant charm my classmates know well, I've never shown this kind of trust before." },
     { "id": "s05", "ko": "이번엔 진심으로 말씀드립니다.", "reading": "i-beon-en jin-sim-eu-ro mal-sseum-deu-rim-ni-da", "en": "This time, I'll say it with sincerity." }
   ],
   "dialogues": [
@@ -66,7 +66,7 @@
       "turns": [
         { "speaker": "천상우 기장", "text": "이 채널, 오늘부터 당신에게만 개방하겠습니다.", "reading": "i chae-neol, o-neul-bu-teo dang-sin-e-ge-man gae-bang-ha-get-seum-ni-da.", "en": "This channel, from today, I'll open it to you alone." },
         { "speaker": "승객", "text": "채널을 개방한다는 게... 무슨 뜻이에요?", "reading": "chae-neol-eul gae-bang-han-da-neun ge... mu-seun tteu-si-e-yo?", "en": "What do you mean by 'opening the channel'...?" },
-        { "speaker": "천상우 기장", "text": "제 진심을 숨기지 않고 전하겠다는 뜻입니다.", "reading": "je jin-sim-eul sum-gi-ji an-ko jeon-ha-get-da-neun tteu-sim-ni-da.", "en": "It means I'll convey my sincerity without hiding it." },
+        { "speaker": "천상우 기장", "text": "제 진심을 숨기지 않고 전하겠다는 뜻입니다. 동기들 앞에서도 이렇게까지는 못 했습니다.", "reading": "je jin-sim-eul sum-gi-ji an-ko jeon-ha-get-da-neun tteu-sim-ni-da. dong-gi-deul ap-e-seo-do i-reo-ke-kka-ji-neun mot haet-seum-ni-da.", "en": "It means I'll convey my sincerity without hiding it. I've never gone this far, even in front of my classmates." },
         { "speaker": "승객", "text": "…기장님, 지금 되게 로맨틱한 거 아세요?", "reading": "…gi-jang-nim, ji-geum doe-ge ro-maen-tik-han geo a-se-yo?", "en": "...Captain, do you realize how romantic you're being right now?" }
       ],
       "question": "기장이 \"채널을 개방하겠다\"라고 말한 진짜 의미는?",
