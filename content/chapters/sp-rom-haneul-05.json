@@ -10,21 +10,21 @@
       "en": "...You're cold, right. Let's step in here for a moment."
     },
     {
-      "text": "이 '찻집', 저 혼자 올 때도 가끔 와요. 조용해서.",
-      "reading": "i 'chat-jip', jeo hon-ja ol ttae-do ga-kkeum wa-yo. jo-yong-hae-seo.",
-      "en": "I sometimes come to this 'tea house' alone too. It's quiet.",
+      "text": "이 '찻집', 저 혼자 책 읽으러 가끔 와요. 조용해서.",
+      "reading": "i 'chat-jip', jeo hon-ja chaek ilg-eu-reo ga-kkeum wa-yo. jo-yong-hae-seo.",
+      "en": "I sometimes come to this 'tea house' alone to read. It's quiet.",
       "highlight_word_id": "w01"
+    },
+    {
+      "text": "여기 앉아서 '책' 읽으면 시간 잘 가요. …오늘은 손님이 있어서 다행이지만요.",
+      "reading": "yeo-gi anj-a-seo 'chaek' ilg-eu-myeon si-gan jal ga-yo. …o-neul-eun son-nim-i iss-eo-seo da-haeng-i-ji-man-yo.",
+      "en": "Sitting here reading a 'book', time flies. ...Though today I'm glad you're here instead.",
+      "highlight_word_id": "w02"
     },
     {
       "text": "이 '차' 마셔봐요. 여기 대추차가 유명해요.",
       "reading": "i 'cha' ma-syeo-bwa-yo. yeo-gi dae-chu-cha-ga yu-myeong-hae-yo.",
       "en": "Try this 'tea'. Their jujube tea is famous here.",
-      "highlight_word_id": "w02"
-    },
-    {
-      "text": "…좋은 '향기' 나네요. 차 말이에요, 딴 거 아니고.",
-      "reading": "…jo-eun 'hyang-gi' na-ne-yo. cha mal-i-e-yo, ttan geo a-ni-go.",
-      "en": "...That's a nice 'fragrance'. I mean the tea, nothing else.",
       "highlight_word_id": "w03"
     },
     {
@@ -47,16 +47,16 @@
   ],
   "words": [
     { "id": "w01", "word": "찻집", "reading": "chat-jip", "meaning": "Tea house", "example": "이 찻집은 분위기가 좋아요.", "example_reading": "i chat-jib-eun bun-wi-gi-ga jo-a-yo", "example_en": "This tea house has a nice atmosphere." },
-    { "id": "w02", "word": "차", "reading": "cha", "meaning": "Tea", "example": "따뜻한 차 한잔 마셔요.", "example_reading": "tta-tteut-han cha han-jan ma-syeo-yo", "example_en": "Let's have a warm cup of tea." },
-    { "id": "w03", "word": "향기", "reading": "hyang-gi", "meaning": "Fragrance / Scent", "example": "차에서 좋은 향기가 나요.", "example_reading": "cha-e-seo jo-eun hyang-gi-ga na-yo", "example_en": "A nice fragrance comes from the tea." },
+    { "id": "w02", "word": "책", "reading": "chaek", "meaning": "Book", "example": "여기서 책 읽는 걸 좋아해요.", "example_reading": "yeo-gi-seo chaek ilg-neun geol jo-a-hae-yo", "example_en": "I like reading books here." },
+    { "id": "w03", "word": "차", "reading": "cha", "meaning": "Tea", "example": "따뜻한 차 한잔 마셔요.", "example_reading": "tta-tteut-han cha han-jan ma-syeo-yo", "example_en": "Let's have a warm cup of tea." },
     { "id": "w04", "word": "마음", "reading": "ma-eum", "meaning": "Heart / Mind", "example": "제 마음을 알아줬으면 좋겠어요.", "example_reading": "je ma-eum-eul al-a-jwoss-eu-myeon jo-ket-seo-yo", "example_en": "I wish you'd understand my heart." },
     { "id": "w05", "word": "미소", "reading": "mi-so", "meaning": "Smile", "example": "그 미소가 참 예뻐요.", "example_reading": "geu mi-so-ga cham ye-ppeo-yo", "example_en": "That smile is really pretty." }
   ],
   "sentences": [
-    { "id": "s01", "ko": "찻집에서 차를 마셔요.", "reading": "chat-jib-e-seo cha-reul ma-syeo-yo", "en": "I drink tea at the tea house." },
-    { "id": "s02", "ko": "차에서 좋은 향기가 나요.", "reading": "cha-e-seo jo-eun hyang-gi-ga na-yo", "en": "The tea gives off a nice fragrance." },
+    { "id": "s01", "ko": "찻집에서 책을 읽어요.", "reading": "chat-jib-e-seo chaeg-eul ilg-eo-yo", "en": "I read a book at the tea house." },
+    { "id": "s02", "ko": "책과 차가 잘 어울려요.", "reading": "chaeg-gwa cha-ga jal eo-ul-lyeo-yo", "en": "Books and tea go well together." },
     { "id": "s03", "ko": "제 마음이 편해졌어요.", "reading": "je ma-eum-i pyeon-hae-jyeoss-eo-yo", "en": "My heart feels at ease now." },
     { "id": "s04", "ko": "미소를 지으며 인사해요.", "reading": "mi-so-reul ji-eu-myeo in-sa-hae-yo", "en": "I greet you with a smile." },
-    { "id": "s05", "ko": "향기로운 차 한잔이 마음을 편안하게 해요.", "reading": "hyang-gi-ro-un cha han-jan-i ma-eum-eul pyeon-an-ha-ge hae-yo", "en": "A fragrant cup of tea puts the heart at ease." }
+    { "id": "s05", "ko": "조용한 찻집에서 마음이 편해요.", "reading": "jo-yong-han chat-jib-e-seo ma-eum-i pyeon-hae-yo", "en": "My heart feels at ease in the quiet tea house." }
   ]
 }

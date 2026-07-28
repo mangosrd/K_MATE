@@ -28,9 +28,9 @@
       "highlight_word_id": "w03"
     },
     {
-      "text": "이런 '오후'에 여기 걷는 거, 나쁘지 않네요.",
-      "reading": "i-reon 'o-hu'e yeo-gi geot-neun geo, na-ppeu-ji anh-ne-yo.",
-      "en": "Walking here on an 'afternoon' like this isn't bad.",
+      "text": "실은 오늘 '오후', 일부러 스케줄 비워뒀어요. …그냥, 어쩌다 보니까요.",
+      "reading": "sil-eun o-neul 'o-hu', il-bu-reo seu-ke-jul bi-wo-dwoss-eo-yo. …geu-nyang, eo-jjeo-da bo-ni-kka-yo.",
+      "en": "Actually, I deliberately cleared my 'afternoon' today. ...It just... happened that way, that's all.",
       "highlight_word_id": "w04"
     },
     {
@@ -55,7 +55,7 @@
   "sentences": [
     { "id": "s01", "ko": "연못에 연꽃이 피었어요.", "reading": "yeon-mos-e yeon-kkoch-i pi-eoss-eo-yo", "en": "Lotus flowers have bloomed in the pond." },
     { "id": "s02", "ko": "다리를 건너서 산책해요.", "reading": "da-ri-reul geon-neo-seo san-chaeg-hae-yo", "en": "I take a walk across the bridge." },
-    { "id": "s03", "ko": "오후 햇살이 따뜻해요.", "reading": "o-hu haet-sal-i tta-tteut-hae-yo", "en": "The afternoon sunlight is warm." },
+    { "id": "s03", "ko": "오늘 오후는 일부러 비워뒀어요.", "reading": "o-neul o-hu-neun il-bu-reo bi-wo-dwoss-eo-yo", "en": "I deliberately cleared today's afternoon." },
     { "id": "s04", "ko": "그림자가 길게 늘어졌어요.", "reading": "geu-rim-ja-ga gil-ge neul-eo-jyeoss-eo-yo", "en": "The shadow has stretched out long." },
     { "id": "s05", "ko": "연못가에서 오후를 함께 보내요.", "reading": "yeon-mot-ga-e-seo o-hu-reul ham-kke bo-nae-yo", "en": "We spend the afternoon together by the pond." }
   ]

@@ -10,33 +10,33 @@
       "en": "...Oh. We meet again. Don't tell me you followed me."
     },
     {
-      "text": "비행기에서는 그냥 '손님'이었는데, 여기서 보니까 좀 다르네요.",
-      "reading": "bi-haeng-gi-e-seo-neun geu-nyang 'son-nim'i-eoss-neun-de, yeo-gi-seo bo-ni-kka jom da-reu-ne-yo.",
-      "en": "On the plane you were just a 'passenger', but seeing you here, it's a bit different.",
+      "text": "비행기에서 '목소리' 다르다고 했죠? …여기선 방송 안 하니까 그런가 봐요.",
+      "reading": "bi-haeng-gi-e-seo 'mok-so-ri' da-reu-da-go haess-jyo? …yeo-gi-seon bang-song an ha-ni-kka geu-reon-ga bwa-yo.",
+      "en": "You said my 'voice' sounds different on the plane, right? ...Guess it's because I'm not making an announcement here.",
       "highlight_word_id": "w01"
     },
     {
-      "text": "그래서, 그게 왜 궁금해요? '이유'가 뭔데요.",
-      "reading": "geu-rae-seo, geu-ge wae gung-geum-hae-yo? 'i-yu'ga mwon-de-yo.",
-      "en": "So why are you curious about that? What's your 'reason'?",
+      "text": "'방송'할 땐 원래 이런 목소리예요. 차분하게, 흔들림 없이. 손님들 불안하게 하면 안 되니까.",
+      "reading": "'bang-song'hal ttaen won-lae i-reon mok-so-ri-ye-yo. cha-bun-ha-ge, heun-deul-lim eobs-i. son-nim-deul bul-an-ha-ge ha-myeon an doe-ni-kka.",
+      "en": "When I do the 'announcement', this is just my normal voice. Calm, steady. Can't make the passengers anxious.",
       "highlight_word_id": "w02"
     },
     {
-      "text": "아… 그 '사진' 찍어달라는 거예요? 됐고, 빨리 서요. 한 장만이에요.",
-      "reading": "a... geu 'sa-jin' jjig-eo-dal-la-neun geo-ye-yo? dwaet-go, ppal-li seo-yo. han jang-man-i-e-yo.",
-      "en": "Oh... you want me to take a 'photo'? Fine, hurry up and stand there. Just one shot.",
+      "text": "'평소'엔... 이것보다 좀 낮아요, 목소리. 지금처럼요.",
+      "reading": "'pyeong-so'en... i-geot-bo-da jom naj-a-yo, mok-so-ri. ji-geum-cheo-reom-yo.",
+      "en": "'Normally'... it's a bit lower than that. Like right now.",
       "highlight_word_id": "w03"
     },
     {
-      "text": "'저녁'은 먹었어요? …아니, 그냥 물어본 거예요. 신경 쓰지 마요.",
-      "reading": "'jeo-nyeog'eun meog-eoss-eo-yo? …a-ni, geu-nyang mul-eo-bon geo-ye-yo. sin-gyeong sseu-ji ma-yo.",
-      "en": "Have you had 'dinner'? ...No, I just asked. Don't read into it.",
+      "text": "왜 그런지 '이유'는 나도 몰라요. …손님 앞이라 그런가.",
+      "reading": "wae geu-reon-ji 'i-yu'neun na-do mol-la-yo. …son-nim ap-i-ra geu-reon-ga.",
+      "en": "I don't even know the 'reason' why. ...Maybe it's because I'm in front of you.",
       "highlight_word_id": "w04"
     },
     {
-      "text": "손님이랑 이렇게 오래 얘기하는 거, '처음'이에요. 착각하지 말아요.",
-      "reading": "son-nim-i-rang i-reoh-ge o-rae yae-gi-ha-neun geo, 'cheo-eum'i-e-yo. chak-gak-ha-ji mal-a-yo.",
-      "en": "This is the 'first' time I've talked to a passenger this long. Don't get the wrong idea.",
+      "text": "이런 얘기, '처음' 해봐요. 그래서, 그게 왜 궁금해요?",
+      "reading": "i-reon yae-gi, 'cheo-eum' hae-bwa-yo. geu-rae-seo, geu-ge wae gung-geum-hae-yo?",
+      "en": "This is the 'first' time I've talked about this. So, why are you curious about that anyway?",
       "highlight_word_id": "w05"
     },
     {
@@ -46,17 +46,17 @@
     }
   ],
   "words": [
-    { "id": "w01", "word": "손님", "reading": "son-nim", "meaning": "Guest / Customer", "example": "저 손님은 매일 이 비행기를 타요.", "example_reading": "jeo son-nim-eun mae-il i bi-haeng-gi-reul ta-yo", "example_en": "That guest takes this flight every day." },
-    { "id": "w02", "word": "이유", "reading": "i-yu", "meaning": "Reason", "example": "이유 없이 그런 건 아니에요.", "example_reading": "i-yu eobs-i geu-reon geon a-ni-e-yo", "example_en": "It's not without a reason." },
-    { "id": "w03", "word": "사진", "reading": "sa-jin", "meaning": "Photo", "example": "여기서 사진 한 장 찍어요.", "example_reading": "yeo-gi-seo sa-jin han jang jjig-eo-yo", "example_en": "Let's take a photo here." },
-    { "id": "w04", "word": "저녁", "reading": "jeo-nyeok", "meaning": "Evening / Dinner", "example": "저녁에 한옥마을은 더 예뻐요.", "example_reading": "jeo-nyeog-e han-ok-ma-eul-eun deo ye-ppeo-yo", "example_en": "Hanok Village is even prettier in the evening." },
+    { "id": "w01", "word": "목소리", "reading": "mok-so-ri", "meaning": "Voice", "example": "그 사람 목소리가 참 차분해요.", "example_reading": "geu sa-ram mok-so-ri-ga cham cha-bun-hae-yo", "example_en": "That person's voice is very calm." },
+    { "id": "w02", "word": "방송", "reading": "bang-song", "meaning": "Broadcast / Announcement", "example": "기장님이 방송을 시작했어요.", "example_reading": "gi-jang-nim-i bang-song-eul si-jag-haess-eo-yo", "example_en": "The captain started the announcement." },
+    { "id": "w03", "word": "평소", "reading": "pyeong-so", "meaning": "Usually / Normal times", "example": "평소보다 오늘 더 조용해요.", "example_reading": "pyeong-so-bo-da o-neul deo jo-yong-hae-yo", "example_en": "It's quieter than usual today." },
+    { "id": "w04", "word": "이유", "reading": "i-yu", "meaning": "Reason", "example": "이유 없이 그런 건 아니에요.", "example_reading": "i-yu eobs-i geu-reon geon a-ni-e-yo", "example_en": "It's not without a reason." },
     { "id": "w05", "word": "처음", "reading": "cheo-eum", "meaning": "First time", "example": "전주는 처음이에요?", "example_reading": "jeon-ju-neun cheo-eum-i-e-yo", "example_en": "Is this your first time in Jeonju?" }
   ],
   "sentences": [
-    { "id": "s01", "ko": "손님, 여기 앉으세요.", "reading": "son-nim, yeo-gi anj-eu-se-yo", "en": "Please have a seat here, guest." },
-    { "id": "s02", "ko": "이유는 나중에 말해줄게요.", "reading": "i-yu-neun na-jung-e mal-hae-jul-ge-yo", "en": "I'll tell you the reason later." },
-    { "id": "s03", "ko": "사진이 정말 잘 나왔어요.", "reading": "sa-jin-i jeong-mal jal na-wass-eo-yo", "en": "The photo turned out really well." },
-    { "id": "s04", "ko": "저녁 같이 먹을래요?", "reading": "jeo-nyeok gat-i meog-eul-lae-yo", "en": "Want to eat dinner together?" },
+    { "id": "s01", "ko": "목소리가 평소보다 낮아요.", "reading": "mok-so-ri-ga pyeong-so-bo-da naj-a-yo", "en": "Your voice is lower than usual." },
+    { "id": "s02", "ko": "방송을 듣고 안심했어요.", "reading": "bang-song-eul deut-go an-sim-haess-eo-yo", "en": "I felt reassured after hearing the announcement." },
+    { "id": "s03", "ko": "평소에는 조용한 편이에요.", "reading": "pyeong-so-e-neun jo-yong-han pyeon-i-e-yo", "en": "I'm usually the quiet type." },
+    { "id": "s04", "ko": "이유는 나중에 말해줄게요.", "reading": "i-yu-neun na-jung-e mal-hae-jul-ge-yo", "en": "I'll tell you the reason later." },
     { "id": "s05", "ko": "이건 저한테 처음 있는 일이에요.", "reading": "i-geon jeo-han-te cheo-eum it-neun il-i-e-yo", "en": "This is a first for me." }
   ]
 }

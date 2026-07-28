@@ -10,15 +10,15 @@
       "en": "...Where have you been all this time. You weren't answering."
     },
     {
-      "text": "남부 '시장'까지 혼자 간 거예요? 위험하게.",
-      "reading": "nam-bu 'si-jang'kka-ji hon-ja gan geo-ye-yo? wi-heom-ha-ge.",
-      "en": "You went all the way to Nambu 'Market' alone? That's dangerous.",
+      "text": "남부 '시장'까지 혼자 간 거예요? 즉흥적으로. 위험하잖아요.",
+      "reading": "nam-bu 'si-jang'kka-ji hon-ja gan geo-ye-yo? jeuk-heung-jeog-eu-ro. wi-heom-ha-jan-a-yo.",
+      "en": "You went all the way to Nambu 'Market' alone? On a whim, no less. That's dangerous.",
       "highlight_word_id": "w01"
     },
     {
-      "text": "'친구'? …누구요. 그런 얘기 안 했잖아요.",
-      "reading": "'chin-gu'? …nu-gu-yo. geu-reon yae-gi an haess-jan-a-yo.",
-      "en": "A 'friend'? ...Who? You never mentioned that.",
+      "text": "'친구'? …누구요. 말투가 왜 그렇게 편해요, 그 사람한테.",
+      "reading": "'chin-gu'? …nu-gu-yo. mal-tu-ga wae geu-reoh-ge pyeon-hae-yo, geu sa-ram-han-te.",
+      "en": "A 'friend'? ...Who? Why do you sound so comfortable talking about that person.",
       "highlight_word_id": "w02"
     },
     {
@@ -35,7 +35,7 @@
     },
     {
       "text": "됐어요. 왜 그런 '표정'으로 봐요. 신경 안 써요, 진짜.",
-      "reading": "dwaess-eo-yo. wae geu-reon 'pyo-jeong'eu-ro bwa-yo. sin-gyeong an sseo-yo, jin-jja.",
+      "reading": "dwaess-eo-yo. wae geu-reoh-ge 'pyo-jeong'eu-ro bwa-yo. sin-gyeong an sseo-yo, jin-jja.",
       "en": "Never mind. Why are you looking at me with that 'expression'. I really don't care.",
       "highlight_word_id": "w05"
     },

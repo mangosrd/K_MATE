@@ -16,15 +16,15 @@
       "highlight_word_id": "w01"
     },
     {
-      "text": "이 오래된 '나무' 좀 봐요. 몇 백 년은 됐을걸요.",
-      "reading": "i o-rae-doen 'na-mu' jom bwa-yo. myeot baeng nyeon-eun dwaess-eul-geol-lyo.",
-      "en": "Look at this old 'tree'. It must be a few hundred years old.",
+      "text": "저는 '예보' 미리 확인하는 습관 있어요. 즉흥적으로 나왔다가 낭패 보기 싫어서.",
+      "reading": "jeo-neun 'ye-bo' mi-ri hwag-in-ha-neun seup-gwan iss-eo-yo. jeuk-heung-jeog-eu-ro na-wass-da-ga nang-pae bo-gi silh-eo-seo.",
+      "en": "I have a habit of checking the 'forecast' ahead of time. I hate stepping out on a whim and getting caught off guard.",
       "highlight_word_id": "w02"
     },
     {
-      "text": "'비' 온다고 했잖아요. 그러게 왜 우산을 안 챙겨요, 진짜.",
-      "reading": "'bi' on-da-go haess-jan-a-yo. geu-reo-ge wae u-san-eul an chaeng-gyeo-yo, jin-jja.",
-      "en": "I told you it would 'rain'. Seriously, why didn't you bring an umbrella.",
+      "text": "'비' 온다고 했잖아요. 그래서 미리 챙겨온 거예요, 이거.",
+      "reading": "'bi' on-da-go haess-jan-a-yo. geu-rae-seo mi-ri chaeng-gyeo-on geo-ye-yo, i-geo.",
+      "en": "I told you it would 'rain'. That's why I brought this ahead of time.",
       "highlight_word_id": "w03"
     },
     {
@@ -34,9 +34,9 @@
       "highlight_word_id": "w04"
     },
     {
-      "text": "저기 '그늘'에서 좀 쉬었다 가요. 비 그칠 때까지.",
-      "reading": "jeo-gi 'geu-neul'e-seo jom swi-eott-da ga-yo. bi geu-chil ttae-kka-ji.",
-      "en": "Let's rest under that 'shade' for a bit. Until the rain stops.",
+      "text": "이런 '습관', 웃기죠. 근데 덕분에 손님 안 젖었잖아요.",
+      "reading": "i-reon 'seup-gwan', us-gi-jyo. geun-de deok-bun-e son-nim an jeoj-eoss-jan-a-yo.",
+      "en": "This 'habit' is kind of funny, I know. But thanks to it, you didn't get soaked.",
       "highlight_word_id": "w05"
     },
     {
@@ -47,16 +47,16 @@
   ],
   "words": [
     { "id": "w01", "word": "경기전", "reading": "gyeong-gi-jeon", "meaning": "Gyeonggijeon Shrine", "example": "경기전은 전주에 있는 유명한 곳이에요.", "example_reading": "gyeong-gi-jeon-eun jeon-ju-e it-neun yu-myeong-han gos-i-e-yo", "example_en": "Gyeonggijeon is a famous place in Jeonju." },
-    { "id": "w02", "word": "나무", "reading": "na-mu", "meaning": "Tree", "example": "나무 아래에서 쉬어요.", "example_reading": "na-mu a-rae-e-seo swi-eo-yo", "example_en": "Let's rest under the tree." },
+    { "id": "w02", "word": "예보", "reading": "ye-bo", "meaning": "Forecast", "example": "일기예보를 보고 우산을 챙겼어요.", "example_reading": "il-gi-ye-bo-reul bo-go u-san-eul chaeng-gyeoss-eo-yo", "example_en": "I checked the weather forecast and brought an umbrella." },
     { "id": "w03", "word": "비", "reading": "bi", "meaning": "Rain", "example": "오늘 비가 많이 와요.", "example_reading": "o-neul bi-ga man-i wa-yo", "example_en": "It's raining a lot today." },
     { "id": "w04", "word": "우산", "reading": "u-san", "meaning": "Umbrella", "example": "우산을 가져왔어요.", "example_reading": "u-san-eul ga-jyeo-wass-eo-yo", "example_en": "I brought an umbrella." },
-    { "id": "w05", "word": "그늘", "reading": "geu-neul", "meaning": "Shade", "example": "그늘에 앉아서 쉬어요.", "example_reading": "geu-neul-e anj-a-seo swi-eo-yo", "example_en": "I sit and rest in the shade." }
+    { "id": "w05", "word": "습관", "reading": "seup-gwan", "meaning": "Habit", "example": "미리 준비하는 게 제 습관이에요.", "example_reading": "mi-ri jun-bi-ha-neun ge je seup-gwan-i-e-yo", "example_en": "Preparing in advance is my habit." }
   ],
   "sentences": [
-    { "id": "s01", "ko": "경기전 근처에 나무가 많아요.", "reading": "gyeong-gi-jeon geun-cheo-e na-mu-ga man-a-yo", "en": "There are many trees near Gyeonggijeon." },
-    { "id": "s02", "ko": "비가 오면 우산을 써요.", "reading": "bi-ga o-myeon u-san-eul sseo-yo", "en": "When it rains, I use an umbrella." },
-    { "id": "s03", "ko": "나무 그늘이 시원해요.", "reading": "na-mu geu-neul-i si-won-hae-yo", "en": "The shade of the tree is cool." },
+    { "id": "s01", "ko": "경기전에 가기 전에 예보를 확인해요.", "reading": "gyeong-gi-jeon-e ga-gi jeon-e ye-bo-reul hwag-in-hae-yo", "en": "I check the forecast before going to Gyeonggijeon." },
+    { "id": "s02", "ko": "예보를 보고 미리 준비해요.", "reading": "ye-bo-reul bo-go mi-ri jun-bi-hae-yo", "en": "I check the forecast and prepare in advance." },
+    { "id": "s03", "ko": "비가 오면 우산을 써요.", "reading": "bi-ga o-myeon u-san-eul sseo-yo", "en": "When it rains, I use an umbrella." },
     { "id": "s04", "ko": "우산 없이 비를 맞았어요.", "reading": "u-san eobs-i bi-reul maj-ass-eo-yo", "en": "I got caught in the rain without an umbrella." },
-    { "id": "s05", "ko": "그늘에서 비가 그치기를 기다려요.", "reading": "geu-neul-e-seo bi-ga geu-chi-gi-reul gi-da-ryeo-yo", "en": "I wait in the shade for the rain to stop." }
+    { "id": "s05", "ko": "이런 습관 덕분에 안 젖었어요.", "reading": "i-reon seup-gwan deok-bun-e an jeoj-eoss-eo-yo", "en": "Thanks to this habit, I didn't get wet." }
   ]
 }
