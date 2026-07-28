@@ -1,0 +1,98 @@
+{
+  "id": "sp-rom-sunwoo-03",
+  "character_id": "sunwoo",
+  "title": "어릴 때 사진 들이밀며",
+  "emoji": "📸",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "남포동 이 골목, 우리 옛날에 맨날 왔던 데다.",
+      "reading": "nam-po-dong i gol-mok, u-ri yen-nal-e maen-nal wat-deon de-da.",
+      "en": "This alley in Nampo-dong, we used to come here all the time back then."
+    },
+    {
+      "text": "이거 봐라, 어릴 때 우리 사진. 이 '추억'이 아직도 여 있더라.",
+      "reading": "i-geo bwa-ra, eo-ril ttae u-ri sa-jin. i chu-eok-i a-jik-do yeo it-deo-ra.",
+      "en": "Look at this, a picture of us as kids. This memory is still right here.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "이 동네 오니까 갑자기 '그립네', 그때가.",
+      "reading": "i dong-ne o-ni-kka gap-ja-gi geu-rim-ne, geu-ttae-ga.",
+      "en": "Coming to this neighborhood, I suddenly miss those days.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "근데 사진 속 니랑 지금 니랑 보니까... 좀 '낯설다', 이상하게.",
+      "reading": "geun-de sa-jin sok ni-rang ji-geum ni-rang bo-ni-kka... jom nat-seol-da, i-sang-ha-ge.",
+      "en": "But comparing the you in the photo and the you now... it feels strangely unfamiliar.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "'새삼' 니가 많이 컸구나 싶고... 아니 뭐, 그냥 그렇다고.",
+      "reading": "sae-sam ni-ga man-i keot-gu-na sip-go... a-ni mwo, geu-nyang geu-reo-ta-go.",
+      "en": "I realize all over again how much you've grown up... I mean, whatever, just saying.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "와 갑자기 말하다가 '어색해지노', 내가.",
+      "reading": "wa gap-ja-gi mal-ha-da-ga eo-saek-hae-ji-no, nae-ga.",
+      "en": "Whoa, why am I suddenly getting awkward mid-sentence.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "자갈치 쪽으로 걸으면서 옛날 얘기나 더 하자.",
+      "reading": "ja-gal-chi jjok-eu-ro geol-eu-myeon-seo yen-nal yae-gi-na deo ha-ja.",
+      "en": "Let's walk toward Jagalchi and talk more about the old days."
+    },
+    {
+      "text": "단어는 다 봤제? 대화 문제도 있으니까 잘 읽어봐라.",
+      "reading": "dan-eo-neun da bwat-je? dae-hwa mun-je-do it-eu-ni-kka jal ilg-eo-bwa-ra.",
+      "en": "Got a look at all the words? There's a conversation question too, so read it carefully."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "추억", "reading": "chu-eok", "meaning": "Memory, reminiscence", "example": "이 사진은 소중한 추억이다.", "example_reading": "i sa-jin-eun so-jung-han chu-eok-i-da", "example_en": "This photo is a precious memory." },
+    { "id": "w02", "word": "그립다", "reading": "geu-rip-da", "meaning": "To miss, feel nostalgic for", "example": "고향이 그리울 때가 있다.", "example_reading": "go-hyang-i geu-ri-ul ttae-ga it-da", "example_en": "There are times I miss my hometown." },
+    { "id": "w03", "word": "낯설다", "reading": "nat-seol-da", "meaning": "To be unfamiliar, strange", "example": "처음 간 도시는 모든 게 낯설었다.", "example_reading": "cheo-eum gan do-si-neun mo-deun ge nat-seol-eot-da", "example_en": "In the city I visited for the first time, everything felt unfamiliar." },
+    { "id": "w04", "word": "새삼", "reading": "sae-sam", "meaning": "Anew, freshly (realize again)", "example": "그의 배려에 새삼 고마움을 느꼈다.", "example_reading": "geu-ui bae-ryeo-e sae-sam go-ma-um-eul neu-kkyeot-da", "example_en": "I felt gratitude anew for his consideration." },
+    { "id": "w05", "word": "어색하다", "reading": "eo-saek-ha-da", "meaning": "To be awkward", "example": "오랜만에 만나니 조금 어색했다.", "example_reading": "o-raen-man-e man-na-ni jo-geum eo-saek-haet-da", "example_en": "Meeting after a long time, it was a bit awkward." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "이 사진을 보니 어릴 적 추억이 떠올랐다.", "reading": "i sa-jin-eul bo-ni eo-ril jeok chu-eok-i tteo-ol-lat-da", "en": "Looking at this photo, memories from my childhood came to mind." },
+    { "id": "s02", "ko": "고향 친구들이 가끔 그립다.", "reading": "go-hyang chin-gu-deul-i ga-kkeum geu-rip-da", "en": "I sometimes miss my hometown friends." },
+    { "id": "s03", "ko": "오랜만에 만난 그가 왠지 낯설게 느껴졌다.", "reading": "o-raen-man-e man-nan geu-ga waen-ji nat-seol-ge neu-kkyeo-jyeot-da", "en": "Somehow, meeting him after so long felt unfamiliar." },
+    { "id": "s04", "ko": "그의 변한 모습에 새삼 놀랐다.", "reading": "geu-ui byeon-han mo-seup-e sae-sam nol-lat-da", "en": "I was struck anew by how much he had changed." },
+    { "id": "s05", "ko": "갑자기 조용해져서 분위기가 어색해졌다.", "reading": "gap-ja-gi jo-yong-hae-jyeo-seo bun-wi-gi-ga eo-saek-hae-jyeot-da", "en": "It suddenly got quiet and the mood became awkward." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "선우", "text": "이거 봐라, 니 초등학교 때 사진. 머리 이거 뭐고?", "reading": "i-geo bwa-ra, ni cho-deung-hak-gyo ttae sa-jin. meo-ri i-geo mwo-go?", "en": "Look at this, your elementary school picture. What's with this hair?" },
+        { "speaker": "승객", "text": "아 그거 지우라 캤잖아! 어디서 났노 그건.", "reading": "a geu-geo ji-u-ra kaet-jan-a! eo-di-seo nan-no geu-geon.", "en": "I told you to delete that! Where did you even get it." },
+        { "speaker": "선우", "text": "내가 몰래 간직하고 있었지. 니 놀릴 일 있을까 봐.", "reading": "nae-ga mol-lae gan-jik-ha-go it-eot-ji. ni nol-lil il it-eul-kka bwa.", "en": "I've been secretly keeping it, in case I ever needed to tease you." },
+        { "speaker": "승객", "text": "와 진짜 못됐다, 니.", "reading": "wa jin-jja mot-dwaet-da, ni.", "en": "Wow, you're really mean, you know that." }
+      ],
+      "question": "선우가 사진을 간직해 온 이유는 무엇인가요?",
+      "question_en": "Why has Sunwoo been keeping the photo?",
+      "correct_answer": "나중에 승객을 놀릴 때 쓰려고",
+      "options": ["나중에 승객을 놀릴 때 쓰려고", "사진관에 맡기려고", "승객에게 선물하려고", "부모님께 보여드리려고"],
+      "explanation": "선우는 승객을 놀릴 목적으로 어릴 적 사진을 몰래 간직해 왔다고 말하고 있습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "선우", "text": "이 골목, 그대로네. 우리 여서 많이 놀았는데.", "reading": "i gol-mok, geu-dae-ro-ne. u-ri yeo-seo man-i nol-at-neun-de.", "en": "This alley, it's just the same. We used to play here so much." },
+        { "speaker": "승객", "text": "맞다, 그땐 매일 여기서 만났잖아.", "reading": "mat-da, geu-ttaen mae-il yeo-gi-seo man-nat-jan-a.", "en": "Right, we used to meet here every day back then." },
+        { "speaker": "선우", "text": "...니랑 계속 이래 지낼 수 있으면 좋겠다.", "reading": "...ni-rang gye-sok i-rae ji-nael su it-eu-myeon jo-ket-da.", "en": "...I wish we could keep going on like this together." },
+        { "speaker": "승객", "text": "어? 갑자기 뭔 말이고?", "reading": "eo? gap-ja-gi mwon mal-i-go?", "en": "Huh? What's this sudden talk about?" }
+      ],
+      "question": "이 대화에서 선우의 태도 변화로 알 수 있는 것은 무엇인가요?",
+      "question_en": "What does the shift in Sunwoo's tone in this conversation suggest?",
+      "correct_answer": "잠깐 진심이 드러났다가 당황해하는 모습",
+      "options": ["잠깐 진심이 드러났다가 당황해하는 모습", "골목길을 잃어버려 당황한 모습", "옛 친구가 보고 싶어 슬퍼하는 모습", "저녁 메뉴를 고민하는 모습"],
+      "explanation": "평소 장난스럽던 선우가 순간 진지해지며 속마음을 내비쳤다가, 승객의 반응에 당황하는 장면입니다."
+    }
+  ]
+}

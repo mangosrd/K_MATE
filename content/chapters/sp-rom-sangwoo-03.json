@@ -1,0 +1,93 @@
+{
+  "id": "sp-rom-sangwoo-03",
+  "character_id": "sangwoo",
+  "title": "Roger That, 알겠습니다",
+  "emoji": "🎙️",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "지금 저희는 금강 철교 위를 지나고 있습니다. 강물을 보고 있으니, 오늘은 제 오래된 버릇 하나를 고백해야 할 것 같습니다.",
+      "reading": "ji-geum jeo-hui-neun geum-gang cheol-gyo wi-reul ji-na-go it-seum-ni-da. gang-mul-eul bo-go i-sseu-ni, o-neul-eun je o-rae-doen beo-reut ha-na-reul go-baek-hae-ya hal geot gat-seum-ni-da.",
+      "en": "We're currently passing over the Geumgang Railroad Bridge. Looking at the river, I feel I should confess one of my old habits today."
+    },
+    {
+      "text": "누가 무슨 말을 해도, 제 '응답'은 늘 'Roger that, 알겠습니다'입니다. 감정을 숨기기엔 이만한 대답이 없더군요.",
+      "reading": "nu-ga mu-seun mal-eul hae-do, je 'eung-dap'-eun neul 'Roger that, al-get-seum-ni-da'-im-ni-da. gam-jeong-eul sum-gi-gi-en i-man-han dae-dab-i eop-deo-gun-yo.",
+      "en": "Whatever anyone says, my 'response' is always 'Roger that, understood.' There's no better answer for hiding feelings.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "'교범'대로만 말하면 마음이 들킬 일이 없습니다. 그래서 저는 늘 교범 같은 사람이라는 말을 듣습니다.",
+      "reading": "'gyo-beom'-dae-ro-man mal-ha-myeon ma-eum-i deul-kil il-i eop-seum-ni-da. geu-rae-seo jeo-neun neul gyo-beom gat-eun sa-ram-i-ra-neun mal-eul deut-seum-ni-da.",
+      "en": "If I only speak by the 'manual', my feelings never get exposed. That's why people always say I'm like a walking manual.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "그런데 당신 앞에서는 이 '절차'가 자꾸 엉킵니다. 정해진 순서대로 말이 나오지 않습니다.",
+      "reading": "geu-reon-de dang-sin ap-e-seo-neun i 'jeol-cha'-ga ja-kku eong-kim-ni-da. jeong-hae-jin sun-seo-dae-ro mal-i na-o-ji an-seum-ni-da.",
+      "en": "But in front of you, this 'procedure' keeps getting tangled. The words don't come out in the proper order.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "당신이 웃을 때마다, 제 안에서 이상한 '신호'가 잡힙니다. 무시하려 해도 자꾸 수신됩니다.",
+      "reading": "dang-sin-i us-eul ttae-ma-da, je an-e-seo i-sang-han 'sin-ho'-ga jap-him-ni-da. mu-si-ha-ryeo hae-do ja-kku su-sin-doem-ni-da.",
+      "en": "Every time you smile, a strange 'signal' picks up inside me. I try to ignore it, but it keeps coming through.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "'무전기' 너머로도 이 신호가 전해질까 궁금합니다. 오늘은 유독, 대답이 평소보다 늦게 나갑니다.",
+      "reading": "'mu-jeon-gi' neo-meo-ro-do i sin-ho-ga jeon-hae-jil-kka gung-geum-ham-ni-da. o-neul-eun yu-dok, dae-dab-i pyeong-so-bo-da neut-ge na-gam-ni-da.",
+      "en": "I wonder if this signal comes through even over the 'radio'. Today, my replies are coming out later than usual.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "…실례했습니다. 다시 절차대로 돌아가, 실제 무전 대화를 보여드리겠습니다. 상황을 잘 살펴 맞혀 보시기 바랍니다.",
+      "reading": "…sil-lye-haet-seum-ni-da. da-si jeol-cha-dae-ro dol-a-ga, sil-je mu-jeon dae-hwa-reul bo-yeo-deu-ri-get-seum-ni-da. sang-hwang-eul jal sal-pyeo mach-yeo bo-si-gi ba-ram-ni-da.",
+      "en": "...My apologies. Let me return to procedure and show you an actual radio conversation. Please look closely and figure out the situation."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "응답", "reading": "eung-dap", "meaning": "Response / reply", "example": "누가 무슨 말을 해도 제 응답은 늘 같습니다.", "example_reading": "nu-ga mu-seun mal-eul hae-do je eung-dap-eun neul gat-seum-ni-da", "example_en": "Whatever anyone says, my response is always the same." },
+    { "id": "w02", "word": "교범", "reading": "gyo-beom", "meaning": "Manual / field manual", "example": "저는 늘 교범 같은 사람이라는 말을 듣습니다.", "example_reading": "jeo-neun neul gyo-beom gat-eun sa-ram-i-ra-neun mal-eul deut-seum-ni-da", "example_en": "I'm always told I'm like a walking manual." },
+    { "id": "w03", "word": "절차", "reading": "jeol-cha", "meaning": "Procedure", "example": "당신 앞에서는 이 절차가 자꾸 엉킵니다.", "example_reading": "dang-sin ap-e-seo-neun i jeol-cha-ga ja-kku eong-kim-ni-da", "example_en": "In front of you, this procedure keeps getting tangled." },
+    { "id": "w04", "word": "신호", "reading": "sin-ho", "meaning": "Signal", "example": "당신이 웃을 때마다 이상한 신호가 잡힙니다.", "example_reading": "dang-sin-i us-eul ttae-ma-da i-sang-han sin-ho-ga jap-him-ni-da", "example_en": "Every time you smile, a strange signal picks up." },
+    { "id": "w05", "word": "무전기", "reading": "mu-jeon-gi", "meaning": "Radio / walkie-talkie", "example": "무전기 너머로도 이 신호가 전해질까 궁금합니다.", "example_reading": "mu-jeon-gi neo-meo-ro-do i sin-ho-ga jeon-hae-jil-kka gung-geum-ham-ni-da", "example_en": "I wonder if this signal comes through even over the radio." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "누가 무슨 말을 해도 제 응답은 늘 같습니다.", "reading": "nu-ga mu-seun mal-eul hae-do je eung-dap-eun neul gat-seum-ni-da", "en": "Whatever anyone says, my response is always the same." },
+    { "id": "s02", "ko": "저는 늘 교범 같은 사람이라는 말을 듣습니다.", "reading": "jeo-neun neul gyo-beom gat-eun sa-ram-i-ra-neun mal-eul deut-seum-ni-da", "en": "I'm always told I'm like a walking manual." },
+    { "id": "s03", "ko": "당신 앞에서는 이 절차가 자꾸 엉킵니다.", "reading": "dang-sin ap-e-seo-neun i jeol-cha-ga ja-kku eong-kim-ni-da", "en": "In front of you, this procedure keeps getting tangled." },
+    { "id": "s04", "ko": "당신이 웃을 때마다 이상한 신호가 잡힙니다.", "reading": "dang-sin-i us-eul ttae-ma-da i-sang-han sin-ho-ga jap-him-ni-da", "en": "Every time you smile, a strange signal picks up." },
+    { "id": "s05", "ko": "무전기 너머로도 이 신호가 전해질까 궁금합니다.", "reading": "mu-jeon-gi neo-meo-ro-do i sin-ho-ga jeon-hae-jil-kka gung-geum-ham-ni-da", "en": "I wonder if this signal comes through even over the radio." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "승객", "text": "기장님은 무슨 말을 해도 'Roger that'이라고만 하시네요.", "reading": "gi-jang-nim-eun mu-seun mal-eul hae-do 'Roger that'-i-ra-go-man ha-si-ne-yo.", "en": "Captain, you say 'Roger that' no matter what I say." },
+        { "speaker": "천상우 기장", "text": "네, 로저. 그게 제일 안전한 응답이라서 말입니다.", "reading": "ne, ro-jeo. geu-ge je-il an-jeon-han eung-dab-i-ra-seo mal-im-ni-da.", "en": "Yes, roger. Because that's the safest response, you see." },
+        { "speaker": "승객", "text": "안전한 응답이요? 그냥 습관 아니에요?", "reading": "an-jeon-han eung-dab-i-yo? geu-nyang seup-gwan a-ni-e-yo?", "en": "The safest response? Isn't it just a habit?" },
+        { "speaker": "천상우 기장", "text": "…습관이자, 마음을 들키지 않으려는 절차이기도 합니다.", "reading": "…seup-gwan-i-ja, ma-eum-eul deul-ki-ji an-eu-ryeo-neun jeol-cha-i-gi-do ham-ni-da.", "en": "...It's a habit, but also a procedure to keep from giving away my feelings." }
+      ],
+      "question": "기장이 \"Roger that\"만 반복하는 진짜 이유는?",
+      "question_en": "What is the captain's real reason for repeating only 'Roger that'?",
+      "correct_answer": "감정을 숨기기 위한 그만의 방식이라서",
+      "options": ["감정을 숨기기 위한 그만의 방식이라서", "정해진 규정이라서 반드시 그렇게 답해야 해서", "한국어 표현을 잘 몰라서", "무전기 상태가 좋지 않아서"],
+      "explanation": "기장은 정해진 규정 때문이 아니라, 자신의 감정을 들키지 않기 위한 개인적인 방식으로 'Roger that'을 반복해서 씁니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "승객", "text": "오늘따라 대답이 조금 늦으시네요?", "reading": "o-neul-tta-ra dae-dab-i jo-geum neu-jeu-si-ne-yo?", "en": "Your replies are a bit slow today, aren't they?" },
+        { "speaker": "천상우 기장", "text": "죄송합니다. 신호가... 평소와 다르게 들어와서 그렇습니다.", "reading": "joe-song-ham-ni-da. sin-ho-ga... pyeong-so-wa da-reu-ge deul-eo-wa-seo geu-reo-seum-ni-da.", "en": "My apologies. The signal... has been coming in differently than usual." },
+        { "speaker": "승객", "text": "무슨 신호요? 무전기에 문제 있어요?", "reading": "mu-seun sin-ho-yo? mu-jeon-gi-e mun-je i-sseo-yo?", "en": "What signal? Is something wrong with the radio?" },
+        { "speaker": "천상우 기장", "text": "무전기가 아니라, 제 마음 쪽 신호인 것 같습니다.", "reading": "mu-jeon-gi-ga a-ni-ra, je ma-eum jjok sin-ho-in geot gat-seum-ni-da.", "en": "Not the radio—it seems to be a signal from my heart." }
+      ],
+      "question": "기장이 말한 \"신호\"는 무엇을 의미하는가?",
+      "question_en": "What does the 'signal' the captain mentions mean?",
+      "correct_answer": "승객에게 끌리는 자신의 감정",
+      "options": ["승객에게 끌리는 자신의 감정", "무전 장비의 기계적 결함", "기상 악화로 인한 통신 잡음", "관제탑에서 보내는 긴급 신호"],
+      "explanation": "기장은 무전기 고장이 아니라, 승객에게 끌리는 자신의 감정을 '신호'라는 무전 용어로 완곡하게 표현하고 있습니다."
+    }
+  ]
+}

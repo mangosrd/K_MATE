@@ -1,0 +1,62 @@
+{
+  "id": "sp-rom-kyuhyun-05",
+  "character_id": "kyuhyun",
+  "title": "다른 항공사 기장은 만나지 마요",
+  "emoji": "🙅",
+  "story": [
+    {
+      "text": "북촌 골목 걷다가 딴 데 정신 팔린 거 다 봤어요. 누구 생각하는 거예요?",
+      "reading": "buk-chon gol-mok geot-da-ga ttan de jeong-sin pal-lin geo da bwa-sseo-yo. nu-gu saeng-gak-ha-neun geo-ye-yo?",
+      "en": "I saw you totally distracted while we were walking through Bukchon. Who were you thinking about?"
+    },
+    {
+      "text": "설마 지난번에 만났다는 그 다른 '항공사' 기장, 그 사람 생각하는 거 아니죠?",
+      "reading": "seol-ma ji-nan-beon-e man-nat-da-neun geu da-reun hang-gong-sa gi-jang, geu sa-ram saeng-gak-ha-neun geo a-ni-jyo?",
+      "en": "You're not thinking about that captain from another 'airline' you mentioned meeting before, are you?",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "여기 '한옥' 지붕선 좀 보세요. 예쁘죠? ...저도 나름 볼만한데, 자꾸 딴 데만 보시네요.",
+      "reading": "yeo-gi han-ok ji-bung-seon jom bo-se-yo. ye-ppeu-jyo? ...jeo-do na-reum bol-man-han-de, ja-kku ttan de-man bo-si-ne-yo.",
+      "en": "Look at the roofline of this 'hanok'. Pretty, right? ...I'm decent to look at too, but you keep glancing elsewhere.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "이 '골목' 끝까지 손 놓지 말고 따라오세요. 길 잃어버리면 저만 손해거든요.",
+      "reading": "i gol-mok kkeut-kka-ji son no-chi mal-go tta-ra-o-se-yo. gil il-eo-beo-ri-myeon jeo-man son-hae-geo-deun-yo.",
+      "en": "Don't let go of my hand till the end of this 'alley'. If you get lost, I'm the one who loses out.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "저 지금 완전 '질투'하는 거 티 나요? 안 그런 척하기가 은근히 힘드네요.",
+      "reading": "jeo ji-geum wan-jeon jil-tu-ha-neun geo ti na-yo? an geu-reon cheok-ha-gi-ga eun-geun-hi him-deu-ne-yo.",
+      "en": "Is it obvious I'm totally 'jealous' right now? It's surprisingly hard to pretend I'm not.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "장난 반, 진심 반으로 하나만 '약속'해요. 다른 항공사 기장은 만나지 마요.",
+      "reading": "jang-nan ban, jin-sim ban-eu-ro ha-na-man yak-sok-hae-yo. da-reun hang-gong-sa gi-jang-eun man-na-ji ma-yo.",
+      "en": "Half joking, half serious — just make me one 'promise'. Don't go meeting captains from other airlines.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "자, 이 골목 다 돌았으니까 이제 문제로 넘어가 볼까요? 오늘 단어들 기억나죠?",
+      "reading": "ja, i gol-mok da dol-at-eu-ni-kka i-je mun-je-ro neom-eo-ga bol-kka-yo? o-neul dan-eo-deul gi-eok-na-jyo?",
+      "en": "Alright, we've walked the whole alley, so shall we move on to the questions? You remember today's words, right?"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "항공사", "reading": "hang-gong-sa", "meaning": "airline", "example": "다른 항공사 기장은 만나지 마요.", "example_reading": "da-reun hang-gong-sa gi-jang-eun man-na-ji ma-yo", "example_en": "Don't go meeting captains from other airlines." },
+    { "id": "w02", "word": "한옥", "reading": "han-ok", "meaning": "traditional Korean house", "example": "북촌 한옥 마을이 정말 예뻐요.", "example_reading": "buk-chon han-ok ma-eul-i jeong-mal ye-ppeo-yo", "example_en": "Bukchon Hanok Village is really pretty." },
+    { "id": "w03", "word": "골목", "reading": "gol-mok", "meaning": "alley", "example": "이 골목은 사진 찍기 좋아요.", "example_reading": "i gol-mok-eun sa-jin jjik-gi jo-a-yo", "example_en": "This alley is great for taking pictures." },
+    { "id": "w04", "word": "질투", "reading": "jil-tu", "meaning": "jealousy", "example": "저 지금 질투하고 있어요.", "example_reading": "jeo ji-geum jil-tu-ha-go it-seo-yo", "example_en": "I'm feeling jealous right now." },
+    { "id": "w05", "word": "약속", "reading": "yak-sok", "meaning": "promise", "example": "우리 약속 하나 해요.", "example_reading": "u-ri yak-sok ha-na hae-yo", "example_en": "Let's make a promise." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "다른 항공사 기장은 만나지 마요.", "reading": "da-reun hang-gong-sa gi-jang-eun man-na-ji ma-yo", "en": "Don't go meeting captains from other airlines." },
+    { "id": "s02", "ko": "북촌 한옥 마을이 정말 예뻐요.", "reading": "buk-chon han-ok ma-eul-i jeong-mal ye-ppeo-yo", "en": "Bukchon Hanok Village is really pretty." },
+    { "id": "s03", "ko": "이 골목은 사진 찍기 좋아요.", "reading": "i gol-mok-eun sa-jin jjik-gi jo-a-yo", "en": "This alley is great for taking pictures." },
+    { "id": "s04", "ko": "저 지금 질투하고 있어요.", "reading": "jeo ji-geum jil-tu-ha-go it-seo-yo", "en": "I'm feeling jealous right now." },
+    { "id": "s05", "ko": "우리 약속 하나 해요.", "reading": "u-ri yak-sok ha-na hae-yo", "en": "Let's make a promise." }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "id": "sp-rom-yongwoo-01",
+  "character_id": "yongwoo",
+  "title": "또 칠칠맞게 굴지 마라",
+  "emoji": "🙄",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "게이트를 나서자마자, 익숙한 목소리가 들려왔다. '야, 너 왜 이렇게 늦게 나와.' 용우가 팔짱을 끼고 서 있었다.",
+      "reading": "ge-i-teu-reul na-seo-ja-ma-ja, ik-suk-an mok-so-ri-ga deul-lyeo-wat-da. ya, neo wae i-reo-ke neut-ge na-wa. yong-u-ga pal-jjang-eul kki-go seo iss-eot-da.",
+      "en": "The moment I stepped out of the gate, a familiar voice called out. 'Hey, why are you so late.' Yongwoo stood there with his arms crossed."
+    },
+    {
+      "text": "'캐리어 바퀴 하나는 또 왜 저래. 너 진짜 또 칠칠맞게 굴지 마라. 내가 몇 번을 말해.'",
+      "reading": "kae-ri-eo ba-kwi ha-na-neun tto wae jeo-rae. neo jin-jja tto chil-chil-mat-ge gul-ji ma-ra. nae-ga myeot beon-eul mal-hae.",
+      "en": "'What's wrong with one of your suitcase wheels again. Seriously, don't be so careless again. How many times do I have to tell you.'",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "쉬는 날인데도 굳이 마중을 나온 걸 아니까, 고맙다고 하려는데 용우가 먼저 말을 자른다. '착각하지 마라. 지나가는 길이었다.'",
+      "reading": "swi-neun nal-in-de-do gud-i ma-jung-eul na-on geol a-ni-kka, go-map-da-go ha-ryeo-neun-de yong-u-ga meon-jeo mal-eul ja-reun-da. chak-gak-a-ji ma-ra. ji-na-ga-neun gil-i-eot-da.",
+      "en": "I knew he'd come out to meet me even on his day off, and I was about to say thanks, but Yongwoo cut me off first. 'Don't get the wrong idea. I just happened to be passing by.'",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "말은 그렇게 하면서 벌써 짐을 양손 가득 들고 앞장서 걷고 있다. 뒷모습이 꼭 오빠 같다.",
+      "reading": "mal-eun geu-reo-ke ha-myeon-seo beol-sseo jim-eul yang-son ga-deuk deul-go ap-jang-seo geot-go it-da. dwit-mo-seub-i kkok o-ppa gat-da.",
+      "en": "Even as he says that, he's already walking ahead with both hands full of my luggage. From behind, he looks just like an older brother.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "'여권은. 지갑은. 핸드폰 배터리는 챙겼어?' 차에 타기도 전에 확인 목록이 끝도 없다.",
+      "reading": "yeo-gwon-eun. ji-gab-eun. haen-deu-pon bae-teo-ri-neun chaeng-gyeoss-eo? cha-e ta-gi-do jeon-e hwak-in mok-rok-i kkeut-do eop-da.",
+      "en": "'Your passport. Your wallet. Did you charge your phone battery?' The checklist goes on before I've even gotten in the car.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "'그만 좀 물어봐, 잔소리쟁이.' 웃으며 놀리자 용우가 살짝 눈을 흘긴다. '이게 잔소리로 보이나. 걱정이지.'",
+      "reading": "geu-man jom mul-eo-bwa, jan-so-ri-jaeng-i. us-eu-myeo nol-li-ja yong-u-ga sal-jjak nun-eul heul-gin-da. i-ge jan-so-ri-ro bo-i-na. geok-jeong-i-ji.",
+      "en": "'Stop asking already, you nag.' I teased him with a laugh, and Yongwoo shot me a look. 'You call this nagging? It's called worrying.'",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "차 문을 열어주며 용우가 씩 웃는다. '일단 타라. 오늘 대화 몇 개 들려줄 테니까, 잘 듣고 무슨 상황인지 맞혀봐라.'",
+      "reading": "cha mun-eul yeol-eo-ju-myeo yong-u-ga ssik us-neun-da. il-dan ta-ra. o-neul dae-hwa myeot gae deul-lyeo-jul te-ni-kka, jal deut-go mu-seun sang-hwang-in-ji mac-hyeo-bwa-ra.",
+      "en": "Yongwoo grins as he opens the car door for me. 'Get in first. I'll play you a couple of conversations today — listen carefully and figure out what's going on.'"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "칠칠맞다", "reading": "chil-chil-mat-da", "meaning": "Careless, clumsy (informal, often scolding)", "example": "짐을 자꾸 흘리고 다니다니, 진짜 칠칠맞구나.", "example_reading": "jim-eul ja-kku heul-li-go da-ni-da-ni, jin-jja chil-chil-mat-gu-na", "example_en": "Dropping your things all over the place like that — you're really careless." },
+    { "id": "w02", "word": "마중", "reading": "ma-jung", "meaning": "Going out to meet/greet someone arriving", "example": "바쁜데도 공항까지 마중을 나와 줬다.", "example_reading": "ba-ppeun-de-do gong-hang-kka-ji ma-jung-eul na-wa jwot-da", "example_en": "Even though he was busy, he came all the way to the airport to meet me." },
+    { "id": "w03", "word": "짐", "reading": "jim", "meaning": "Luggage, baggage, load", "example": "짐이 무거워 보이니까 내가 들어줄게.", "example_reading": "jim-i mu-geo-wo bo-i-ni-kka nae-ga deul-eo-jul-ge", "example_en": "Your luggage looks heavy, so let me carry it." },
+    { "id": "w04", "word": "챙기다", "reading": "chaeng-gi-da", "meaning": "To look after, take care of, pack/prepare", "example": "출발하기 전에 여권부터 챙겨라.", "example_reading": "chul-bal-ha-gi jeon-e yeo-gwon-bu-teo chaeng-gyeo-ra", "example_en": "Grab your passport before we leave." },
+    { "id": "w05", "word": "잔소리", "reading": "jan-so-ri", "meaning": "Nagging", "example": "잔소리처럼 들려도 다 널 위해서 하는 말이야.", "example_reading": "jan-so-ri-cheo-reom deul-lyeo-do da neol wi-hae-seo ha-neun mal-i-ya", "example_en": "Even if it sounds like nagging, I'm only saying it for your sake." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "공항에 마중 나온 용우는 팔짱을 낀 채 나를 기다리고 있었다.", "reading": "gong-hang-e ma-jung na-on yong-u-neun pal-jjang-eul kkin chae na-reul gi-da-ri-go iss-eot-da", "en": "Yongwoo, who'd come to meet me at the airport, was waiting for me with his arms crossed." },
+    { "id": "s02", "ko": "그는 잔소리를 하면서도 이미 내 짐을 양손 가득 들고 있었다.", "reading": "geu-neun jan-so-ri-reul ha-myeon-seo-do i-mi nae jim-eul yang-son ga-deuk deul-go iss-eot-da", "en": "Even while nagging, he was already carrying my luggage with both hands." },
+    { "id": "s03", "ko": "여권이랑 지갑은 잘 챙겼냐고 그는 차에 타기도 전에 물었다.", "reading": "yeo-gwon-i-rang ji-gab-eun jal chaeng-gyeon-nya-go geu-neun cha-e ta-gi-do jeon-e mul-eot-da", "en": "He asked if I'd properly packed my passport and wallet before we'd even gotten in the car." },
+    { "id": "s04", "ko": "또 칠칠맞게 짐을 흘리고 다니지 말라고 그는 몇 번이나 말했다.", "reading": "tto chil-chil-mat-ge jim-eul heul-li-go da-ni-ji mal-la-go geu-neun myeot beon-i-na mal-haet-da", "en": "He told me over and over not to be careless and drop my things again." },
+    { "id": "s05", "ko": "걱정이지 잔소리가 아니라며 그는 살짝 눈을 흘겼다.", "reading": "geok-jeong-i-ji jan-so-ri-ga a-ni-ra-myeo geu-neun sal-jjak nun-eul heul-gyeot-da", "en": "He shot me a look, saying it was worry, not nagging." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "권용우 기장", "text": "야, 짐은 그거 다야? 무거워 보이는데 내가 들게.", "reading": "ya, jim-eun geu-geo da-ya? mu-geo-wo bo-i-neun-de nae-ga deul-ge.", "en": "Hey, is that all your luggage? Looks heavy, let me carry it." },
+        { "speaker": "손님", "text": "괜찮아요, 저 혼자 들 수 있어요.", "reading": "gwaen-chan-a-yo, jeo hon-ja deul su iss-eo-yo.", "en": "It's fine, I can carry it myself." },
+        { "speaker": "권용우 기장", "text": "됐고, 이리 줘봐. 너 팔 힘도 없으면서 또 무리하지 말고.", "reading": "dwaet-go, i-ri jwo-bwa. neo pal him-do eops-eu-myeon-seo tto mu-ri-ha-ji mal-go.", "en": "Never mind, just hand it over. You've got no arm strength, don't push yourself." },
+        { "speaker": "손님", "text": "…고마워요. 그런데 오늘 쉬는 날 아니었어요?", "reading": "go-ma-wo-yo. geu-reon-de o-neul swi-neun nal a-ni-eoss-eo-yo?", "en": "…Thanks. But wasn't today your day off?" }
+      ],
+      "question": "용우가 손님의 짐을 직접 들어준 이유는 무엇인가요?",
+      "question_en": "Why did Yongwoo carry the passenger's luggage himself?",
+      "correct_answer": "손님이 무리할까 봐 걱정돼서",
+      "options": ["손님이 무리할까 봐 걱정돼서", "자기 짐이 없어서 심심해서", "공항 규정 때문에", "다른 승객과 착각해서"],
+      "explanation": "용우는 손님이 무거운 짐을 혼자 드는 걸 걱정해 먼저 나서서 짐을 들어주었습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "손님", "text": "기장님, 저 여권이랑 지갑 잘 챙겼는지 다시 확인해봐야겠어요.", "reading": "gi-jang-nim, jeo yeo-gwon-i-rang ji-gap jal chaeng-gyeon-neun-ji da-si hwak-in-hae-bwa-ya-gess-eo-yo.", "en": "Captain, I should double check I've got my passport and wallet." },
+        { "speaker": "권용우 기장", "text": "그러니까 내가 아까부터 물어봤잖아. 미리미리 좀 챙겨라.", "reading": "geu-reo-ni-kka nae-ga a-kka-bu-teo mul-eo-bwat-jan-a. mi-ri-mi-ri jom chaeng-gyeo-ra.", "en": "That's why I kept asking earlier. Take care of things ahead of time." },
+        { "speaker": "손님", "text": "잔소리 그만하세요, 저 다 컸거든요?", "reading": "jan-so-ri geu-man-ha-se-yo, jeo da keot-geo-deun-yo?", "en": "Stop nagging, I'm a grown-up, you know?" },
+        { "speaker": "권용우 기장", "text": "다 컸어도 허당인 건 여전하네. 이게 잔소리로 보이면 어쩔 수 없고.", "reading": "da keoss-eo-do heo-dang-in geon yeo-jeon-ha-ne. i-ge jan-so-ri-ro bo-i-myeon eo-jjeol su eop-go.", "en": "Grown-up or not, you're still scatterbrained. If this looks like nagging to you, so be it." }
+      ],
+      "question": "용우가 손님에게 여권과 지갑을 확인하라고 한 이유는 무엇인가요?",
+      "question_en": "Why did Yongwoo tell the passenger to check her passport and wallet?",
+      "correct_answer": "손님이 물건을 잘 못 챙길까 봐 걱정돼서",
+      "options": ["손님이 물건을 잘 못 챙길까 봐 걱정돼서", "공항 보안 검색 때문에", "여권 사진이 마음에 안 들어서", "지갑을 빌리고 싶어서"],
+      "explanation": "용우는 손님이 덜렁대는 성격을 알기에 미리 여권과 지갑을 챙기라고 잔소리했습니다."
+    }
+  ]
+}

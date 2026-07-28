@@ -1,0 +1,98 @@
+{
+  "id": "sp-rom-sunwoo-06",
+  "character_id": "sunwoo",
+  "title": "장난이 아니게 되어버린 순간",
+  "emoji": "😳",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "동백섬 산책로 좀 걷자. 해 지는 거 보면서.",
+      "reading": "dong-baek-seom san-chaek-ro jom geot-ja. hae ji-neun geo bo-myeon-seo.",
+      "en": "Let's walk the Dongbaekseom trail a bit. While watching the sun go down."
+    },
+    {
+      "text": "'문득' 니 옆얼굴 보는데 이상하게 심장이 이상하더라.",
+      "reading": "mun-deuk ni yeop-eol-gul bo-neun-de i-sang-ha-ge sim-jang-i i-sang-ha-deo-ra.",
+      "en": "Out of nowhere, I looked at your profile and my heart felt strange.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "장난으로 시작했는데... 이게 '진심'이 되뿌면 우짜노.",
+      "reading": "jang-nan-eu-ro si-jak-haet-neun-de... i-ge jin-sim-i doe-ppu-myeon u-jja-no.",
+      "en": "It started as a joke... what do I do if this turns into something real.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "지금도 이래 니 보고 있으니까 '심장이 뛰네', 와이러노 진짜.",
+      "reading": "ji-geum-do i-rae ni bo-go it-eu-ni-kka sim-jang-i ttwi-ne, wa-i-reo-no jin-jja.",
+      "en": "Even now, just looking at you like this, my heart's racing, what's wrong with me.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "내가 이런 말 하니까 스스로도 '당황스럽다'.",
+      "reading": "nae-ga i-reon mal ha-ni-kka seu-seu-ro-do dang-hwang-seu-reop-da.",
+      "en": "Even I'm flustered hearing myself say this.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "이 '순간'은... 그냥 넘기지 말고 기억해도, 나쁘지 않겠제?",
+      "reading": "i sun-gan-eun... geu-nyang neom-gi-ji mal-go gi-eok-hae-do, na-ppeu-ji an-ket-je?",
+      "en": "This moment... it wouldn't be so bad to remember it instead of just letting it pass, right?",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "저 노을 색 봐라. 니 보다가 저것도 놓칠 뻔했다.",
+      "reading": "jeo no-eul saek bwa-ra. ni bo-da-ga jeo-geot-do noch-il ppeon-haet-da.",
+      "en": "Look at that sunset color. I almost missed it while looking at you."
+    },
+    {
+      "text": "단어는 다 챙겼제? 오늘 대화 문제도 놓치지 말고 풀어봐라.",
+      "reading": "dan-eo-neun da chaeng-gyeot-je? o-neul dae-hwa mun-je-do noch-i-ji mal-go pul-eo-bwa-ra.",
+      "en": "Got all the words down? Don't miss today's conversation question either — give it a try."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "문득", "reading": "mun-deuk", "meaning": "Suddenly, out of the blue", "example": "문득 옛날 생각이 났다.", "example_reading": "mun-deuk yen-nal saeng-gak-i nat-da", "example_en": "Suddenly, I thought of the old days." },
+    { "id": "w02", "word": "진심", "reading": "jin-sim", "meaning": "Sincerity, true feelings", "example": "그의 진심이 느껴졌다.", "example_reading": "geu-ui jin-sim-i neu-kkyeo-jyeot-da", "example_en": "I could feel his sincerity." },
+    { "id": "w03", "word": "심장이 뛰다", "reading": "sim-jang-i ttwi-da", "meaning": "For one's heart to pound or race", "example": "그를 보자 심장이 뛰기 시작했다.", "example_reading": "geu-reul bo-ja sim-jang-i ttwi-gi si-jak-haet-da", "example_en": "The moment I saw him, my heart started racing." },
+    { "id": "w04", "word": "당황하다", "reading": "dang-hwang-ha-da", "meaning": "To be flustered, embarrassed", "example": "갑작스러운 질문에 당황했다.", "example_reading": "gap-jak-seu-reo-un jil-mun-e dang-hwang-haet-da", "example_en": "I was flustered by the sudden question." },
+    { "id": "w05", "word": "순간", "reading": "sun-gan", "meaning": "Moment, instant", "example": "그 순간을 잊을 수 없다.", "example_reading": "geu sun-gan-eul it-eul su eop-da", "example_en": "I can't forget that moment." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "문득 그 사람 생각이 났다.", "reading": "mun-deuk geu sa-ram saeng-gak-i nat-da", "en": "Suddenly, I thought of that person." },
+    { "id": "s02", "ko": "그의 말에서 진심이 느껴졌다.", "reading": "geu-ui mal-e-seo jin-sim-i neu-kkyeo-jyeot-da", "en": "I could feel sincerity in his words." },
+    { "id": "s03", "ko": "그를 보자 갑자기 심장이 뛰었다.", "reading": "geu-reul bo-ja gap-ja-gi sim-jang-i ttwi-eot-da", "en": "The moment I saw him, my heart suddenly raced." },
+    { "id": "s04", "ko": "갑작스러운 고백에 당황했다.", "reading": "gap-jak-seu-reo-un go-baek-e dang-hwang-haet-da", "en": "I was flustered by the sudden confession." },
+    { "id": "s05", "ko": "그 순간을 오래도록 잊지 못할 것 같다.", "reading": "geu sun-gan-eul o-rae-do-rok it-ji mot-hal geot gat-da", "en": "I don't think I'll be able to forget that moment for a long time." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "선우", "text": "니 옆에 있으면 원래 웃긴 말만 나왔는데... 오늘은 좀 이상하네.", "reading": "ni yeop-e it-eu-myeon won-lae ut-gin mal-man na-wat-neun-de... o-neul-eun jom i-sang-ha-ne.", "en": "Whenever I'm next to you, only funny things usually come out... but today feels a bit strange." },
+        { "speaker": "승객", "text": "뭐가 이상한데?", "reading": "mwo-ga i-sang-han-de?", "en": "What's strange about it?" },
+        { "speaker": "선우", "text": "말이... 잘 안 나온다. 장난도 안 나오고.", "reading": "mal-i... jal an na-on-da. jang-nan-do an na-o-go.", "en": "Words... aren't coming out easily. Not even jokes." },
+        { "speaker": "승객", "text": "선우야, 너 지금 얼굴 빨개졌어.", "reading": "seon-u-ya, neo ji-geum eol-gul ppal-gae-jyeot-eo.", "en": "Sunwoo, your face just turned red." }
+      ],
+      "question": "이 장면에서 선우의 상태를 가장 잘 나타내는 것은 무엇인가요?",
+      "question_en": "What best describes Sunwoo's state in this scene?",
+      "correct_answer": "평소와 달리 장난기 없이 진심으로 당황하고 있는 상태",
+      "options": ["평소와 달리 장난기 없이 진심으로 당황하고 있는 상태", "농담을 준비하며 여유로운 상태", "피곤해서 말수가 줄어든 상태", "화가 나서 말을 아끼는 상태"],
+      "explanation": "평소 장난스럽던 선우가 갑자기 말을 잇지 못하고 얼굴이 붉어지는 모습에서, 장난이 아닌 진심이 드러나고 있음을 알 수 있습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "승객", "text": "우리 이렇게 조용히 있어본 적 있었나?", "reading": "u-ri i-reo-ke jo-yong-hi it-eo-bon jeok it-eon-na?", "en": "Have we ever been quiet together like this before?" },
+        { "speaker": "선우", "text": "...없었제. 맨날 장난만 쳤으니까.", "reading": "...eop-seot-je. maen-nal jang-nan-man chyeot-eu-ni-kka.", "en": "...We haven't. We always just joked around." },
+        { "speaker": "승객", "text": "근데 지금은 왜 이래 조용하노?", "reading": "geun-de ji-geum-eun wae i-rae jo-yong-ha-no?", "en": "So why are you so quiet right now?" },
+        { "speaker": "선우", "text": "그냥... 이 순간이 깨지는 게 아까워서 그렇다.", "reading": "geu-nyang... i sun-gan-i kkae-ji-neun ge a-kka-wo-seo geu-ro-ta.", "en": "Just... I don't want to ruin this moment, that's all." }
+      ],
+      "question": "선우가 조용히 있는 이유로 가장 알맞은 것은 무엇인가요?",
+      "question_en": "What is the best reason for why Sunwoo is being quiet?",
+      "correct_answer": "지금 이 순간의 분위기를 소중히 여기고 있어서",
+      "options": ["지금 이 순간의 분위기를 소중히 여기고 있어서", "할 말이 생각나지 않아서", "승객에게 화가 나서", "졸려서 말하기 귀찮아서"],
+      "explanation": "선우는 평소와 달리 이 순간을 깨고 싶지 않다고 말하며, 그만큼 지금의 분위기를 소중하게 여기고 있음을 보여줍니다."
+    }
+  ]
+}

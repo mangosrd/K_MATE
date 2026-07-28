@@ -49,6 +49,56 @@ import chS07 from "@/content/chapters/ch-s07.json";
 import chS08 from "@/content/chapters/ch-s08.json";
 import chS09 from "@/content/chapters/ch-s09.json";
 import chS10 from "@/content/chapters/ch-s10.json";
+import spRomHaneul01 from "@/content/chapters/sp-rom-haneul-01.json";
+import spRomHaneul02 from "@/content/chapters/sp-rom-haneul-02.json";
+import spRomHaneul03 from "@/content/chapters/sp-rom-haneul-03.json";
+import spRomHaneul04 from "@/content/chapters/sp-rom-haneul-04.json";
+import spRomHaneul05 from "@/content/chapters/sp-rom-haneul-05.json";
+import spRomHaneul06 from "@/content/chapters/sp-rom-haneul-06.json";
+import spRomHaneul07 from "@/content/chapters/sp-rom-haneul-07.json";
+import spRomHaneul08 from "@/content/chapters/sp-rom-haneul-08.json";
+import spRomHaneul09 from "@/content/chapters/sp-rom-haneul-09.json";
+import spRomHaneul10 from "@/content/chapters/sp-rom-haneul-10.json";
+import spRomKyuhyun01 from "@/content/chapters/sp-rom-kyuhyun-01.json";
+import spRomKyuhyun02 from "@/content/chapters/sp-rom-kyuhyun-02.json";
+import spRomKyuhyun03 from "@/content/chapters/sp-rom-kyuhyun-03.json";
+import spRomKyuhyun04 from "@/content/chapters/sp-rom-kyuhyun-04.json";
+import spRomKyuhyun05 from "@/content/chapters/sp-rom-kyuhyun-05.json";
+import spRomKyuhyun06 from "@/content/chapters/sp-rom-kyuhyun-06.json";
+import spRomKyuhyun07 from "@/content/chapters/sp-rom-kyuhyun-07.json";
+import spRomKyuhyun08 from "@/content/chapters/sp-rom-kyuhyun-08.json";
+import spRomKyuhyun09 from "@/content/chapters/sp-rom-kyuhyun-09.json";
+import spRomKyuhyun10 from "@/content/chapters/sp-rom-kyuhyun-10.json";
+import spRomSangwoo01 from "@/content/chapters/sp-rom-sangwoo-01.json";
+import spRomSangwoo02 from "@/content/chapters/sp-rom-sangwoo-02.json";
+import spRomSangwoo03 from "@/content/chapters/sp-rom-sangwoo-03.json";
+import spRomSangwoo04 from "@/content/chapters/sp-rom-sangwoo-04.json";
+import spRomSangwoo05 from "@/content/chapters/sp-rom-sangwoo-05.json";
+import spRomSangwoo06 from "@/content/chapters/sp-rom-sangwoo-06.json";
+import spRomSangwoo07 from "@/content/chapters/sp-rom-sangwoo-07.json";
+import spRomSangwoo08 from "@/content/chapters/sp-rom-sangwoo-08.json";
+import spRomSangwoo09 from "@/content/chapters/sp-rom-sangwoo-09.json";
+import spRomSangwoo10 from "@/content/chapters/sp-rom-sangwoo-10.json";
+import spRomSunwoo01 from "@/content/chapters/sp-rom-sunwoo-01.json";
+import spRomSunwoo02 from "@/content/chapters/sp-rom-sunwoo-02.json";
+import spRomSunwoo03 from "@/content/chapters/sp-rom-sunwoo-03.json";
+import spRomSunwoo04 from "@/content/chapters/sp-rom-sunwoo-04.json";
+import spRomSunwoo05 from "@/content/chapters/sp-rom-sunwoo-05.json";
+import spRomSunwoo06 from "@/content/chapters/sp-rom-sunwoo-06.json";
+import spRomSunwoo07 from "@/content/chapters/sp-rom-sunwoo-07.json";
+import spRomSunwoo08 from "@/content/chapters/sp-rom-sunwoo-08.json";
+import spRomSunwoo09 from "@/content/chapters/sp-rom-sunwoo-09.json";
+import spRomSunwoo10 from "@/content/chapters/sp-rom-sunwoo-10.json";
+import spRomYongwoo01 from "@/content/chapters/sp-rom-yongwoo-01.json";
+import spRomYongwoo02 from "@/content/chapters/sp-rom-yongwoo-02.json";
+import spRomYongwoo03 from "@/content/chapters/sp-rom-yongwoo-03.json";
+import spRomYongwoo04 from "@/content/chapters/sp-rom-yongwoo-04.json";
+import spRomYongwoo05 from "@/content/chapters/sp-rom-yongwoo-05.json";
+import spRomYongwoo06 from "@/content/chapters/sp-rom-yongwoo-06.json";
+import spRomYongwoo07 from "@/content/chapters/sp-rom-yongwoo-07.json";
+import spRomYongwoo08 from "@/content/chapters/sp-rom-yongwoo-08.json";
+import spRomYongwoo09 from "@/content/chapters/sp-rom-yongwoo-09.json";
+import spRomYongwoo10 from "@/content/chapters/sp-rom-yongwoo-10.json";
 
 // Chapter.id("ch-k01" 등, lib/db/mock.ts MOCK_CHAPTERS와 동일한 체계) -> 콘텐츠 본문.
 const CHAPTER_CONTENT: Record<string, ChapterContent> = {
@@ -102,6 +152,56 @@ const CHAPTER_CONTENT: Record<string, ChapterContent> = {
   "ch-s08": chS08 as ChapterContent,
   "ch-s09": chS09 as ChapterContent,
   "ch-s10": chS10 as ChapterContent,
+  "sp-rom-haneul-01": spRomHaneul01 as ChapterContent,
+  "sp-rom-haneul-02": spRomHaneul02 as ChapterContent,
+  "sp-rom-haneul-03": spRomHaneul03 as ChapterContent,
+  "sp-rom-haneul-04": spRomHaneul04 as ChapterContent,
+  "sp-rom-haneul-05": spRomHaneul05 as ChapterContent,
+  "sp-rom-haneul-06": spRomHaneul06 as ChapterContent,
+  "sp-rom-haneul-07": spRomHaneul07 as ChapterContent,
+  "sp-rom-haneul-08": spRomHaneul08 as ChapterContent,
+  "sp-rom-haneul-09": spRomHaneul09 as ChapterContent,
+  "sp-rom-haneul-10": spRomHaneul10 as ChapterContent,
+  "sp-rom-kyuhyun-01": spRomKyuhyun01 as ChapterContent,
+  "sp-rom-kyuhyun-02": spRomKyuhyun02 as ChapterContent,
+  "sp-rom-kyuhyun-03": spRomKyuhyun03 as ChapterContent,
+  "sp-rom-kyuhyun-04": spRomKyuhyun04 as ChapterContent,
+  "sp-rom-kyuhyun-05": spRomKyuhyun05 as ChapterContent,
+  "sp-rom-kyuhyun-06": spRomKyuhyun06 as ChapterContent,
+  "sp-rom-kyuhyun-07": spRomKyuhyun07 as ChapterContent,
+  "sp-rom-kyuhyun-08": spRomKyuhyun08 as ChapterContent,
+  "sp-rom-kyuhyun-09": spRomKyuhyun09 as ChapterContent,
+  "sp-rom-kyuhyun-10": spRomKyuhyun10 as ChapterContent,
+  "sp-rom-sangwoo-01": spRomSangwoo01 as ChapterContent,
+  "sp-rom-sangwoo-02": spRomSangwoo02 as ChapterContent,
+  "sp-rom-sangwoo-03": spRomSangwoo03 as ChapterContent,
+  "sp-rom-sangwoo-04": spRomSangwoo04 as ChapterContent,
+  "sp-rom-sangwoo-05": spRomSangwoo05 as ChapterContent,
+  "sp-rom-sangwoo-06": spRomSangwoo06 as ChapterContent,
+  "sp-rom-sangwoo-07": spRomSangwoo07 as ChapterContent,
+  "sp-rom-sangwoo-08": spRomSangwoo08 as ChapterContent,
+  "sp-rom-sangwoo-09": spRomSangwoo09 as ChapterContent,
+  "sp-rom-sangwoo-10": spRomSangwoo10 as ChapterContent,
+  "sp-rom-sunwoo-01": spRomSunwoo01 as ChapterContent,
+  "sp-rom-sunwoo-02": spRomSunwoo02 as ChapterContent,
+  "sp-rom-sunwoo-03": spRomSunwoo03 as ChapterContent,
+  "sp-rom-sunwoo-04": spRomSunwoo04 as ChapterContent,
+  "sp-rom-sunwoo-05": spRomSunwoo05 as ChapterContent,
+  "sp-rom-sunwoo-06": spRomSunwoo06 as ChapterContent,
+  "sp-rom-sunwoo-07": spRomSunwoo07 as ChapterContent,
+  "sp-rom-sunwoo-08": spRomSunwoo08 as ChapterContent,
+  "sp-rom-sunwoo-09": spRomSunwoo09 as ChapterContent,
+  "sp-rom-sunwoo-10": spRomSunwoo10 as ChapterContent,
+  "sp-rom-yongwoo-01": spRomYongwoo01 as ChapterContent,
+  "sp-rom-yongwoo-02": spRomYongwoo02 as ChapterContent,
+  "sp-rom-yongwoo-03": spRomYongwoo03 as ChapterContent,
+  "sp-rom-yongwoo-04": spRomYongwoo04 as ChapterContent,
+  "sp-rom-yongwoo-05": spRomYongwoo05 as ChapterContent,
+  "sp-rom-yongwoo-06": spRomYongwoo06 as ChapterContent,
+  "sp-rom-yongwoo-07": spRomYongwoo07 as ChapterContent,
+  "sp-rom-yongwoo-08": spRomYongwoo08 as ChapterContent,
+  "sp-rom-yongwoo-09": spRomYongwoo09 as ChapterContent,
+  "sp-rom-yongwoo-10": spRomYongwoo10 as ChapterContent,
 };
 
 export function getChapterContent(chapterId: string): ChapterContent | null {

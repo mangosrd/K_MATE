@@ -1,0 +1,62 @@
+{
+  "id": "sp-rom-haneul-02",
+  "character_id": "haneul",
+  "title": "안전벨트나 매요",
+  "emoji": "🙄",
+  "story": [
+    {
+      "text": "…뭐 하는 거예요, 지금. 자리에 똑바로 앉아요.",
+      "reading": "…mwo ha-neun geo-ye-yo, ji-geum. ja-ri-e ttok-ba-ro anj-a-yo.",
+      "en": "...What are you doing right now. Sit properly in your seat."
+    },
+    {
+      "text": "됐고, '안전벨트'나 매요. 흔들릴 수도 있으니까.",
+      "reading": "dwaet-go, 'an-jeon-bel-teu'na mae-yo. heun-deul-lil su-do iss-eu-ni-kka.",
+      "en": "Never mind, just fasten your 'seatbelt'. It might get bumpy.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "'창가' 자리 좋아하죠? …아까 보니까 계속 밖만 보길래요.",
+      "reading": "'chang-ga' ja-ri jo-a-ha-jyo? …a-kka bo-ni-kka gye-sok bakk-man bo-gil-lae-yo.",
+      "en": "You like the 'window seat', don't you? ...I noticed you kept looking outside earlier.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "오늘 '날씨'가 좀 안 좋아서 그래요. 별거 아니에요.",
+      "reading": "o-neul 'nal-ssi'ga jom an jo-a-seo geu-rae-yo. byeol-geo a-ni-e-yo.",
+      "en": "It's just because today's 'weather' isn't great. It's nothing.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "저 '구름' 사이로 전주 시내가 보이네요. …신기해하는 표정, 귀엽다고는 안 했어요.",
+      "reading": "jeo 'gu-reum' sa-i-ro jeon-ju si-nae-ga bo-i-ne-yo. …sin-gi-hae-ha-neun pyo-jeong, gwi-yeop-da-go-neun an haess-eo-yo.",
+      "en": "You can see downtown Jeonju through those 'clouds'. ...I didn't say that curious face is cute.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "'걱정' 마요. 이 노선 몇 년째 몰아요. 나만 믿어요.",
+      "reading": "'geok-jeong' ma-yo. i no-seon myeot nyeon-jjae mol-a-yo. na-man mid-eo-yo.",
+      "en": "Don't 'worry'. I've flown this route for years. Just trust me.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "…왜 자꾸 쳐다봐요. 착륙할 때까지 얌전히 있어요.",
+      "reading": "…wae ja-kku chyeo-da-bwa-yo. chang-nyug-hal ttae-kka-ji yam-jeon-hi iss-eo-yo.",
+      "en": "...Why do you keep staring. Just sit tight until we land."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "안전벨트", "reading": "an-jeon-bel-teu", "meaning": "Seatbelt", "example": "안전벨트를 꼭 매세요.", "example_reading": "an-jeon-bel-teu-reul kkok mae-se-yo", "example_en": "Please be sure to fasten your seatbelt." },
+    { "id": "w02", "word": "창가", "reading": "chang-ga", "meaning": "By the window", "example": "저는 창가 자리가 좋아요.", "example_reading": "jeo-neun chang-ga ja-ri-ga jo-a-yo", "example_en": "I like the window seat." },
+    { "id": "w03", "word": "날씨", "reading": "nal-ssi", "meaning": "Weather", "example": "오늘 날씨가 맑아요.", "example_reading": "o-neul nal-ssi-ga malg-a-yo", "example_en": "The weather is clear today." },
+    { "id": "w04", "word": "구름", "reading": "gu-reum", "meaning": "Cloud", "example": "하늘에 구름이 많아요.", "example_reading": "ha-neul-e gu-reum-i man-a-yo", "example_en": "There are many clouds in the sky." },
+    { "id": "w05", "word": "걱정", "reading": "geok-jeong", "meaning": "Worry", "example": "걱정하지 마세요.", "example_reading": "geok-jeong-ha-ji ma-se-yo", "example_en": "Please don't worry." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "안전벨트를 매고 기다려요.", "reading": "an-jeon-bel-teu-reul mae-go gi-da-ryeo-yo", "en": "Fasten your seatbelt and wait." },
+    { "id": "s02", "ko": "창가 자리에서 구름을 봐요.", "reading": "chang-ga ja-ri-e-seo gu-reum-eul bwa-yo", "en": "I watch the clouds from the window seat." },
+    { "id": "s03", "ko": "날씨가 좋아서 다행이에요.", "reading": "nal-ssi-ga jo-a-seo da-haeng-i-e-yo", "en": "I'm glad the weather is nice." },
+    { "id": "s04", "ko": "구름 위를 날고 있어요.", "reading": "gu-reum wi-reul nal-go iss-eo-yo", "en": "We're flying above the clouds." },
+    { "id": "s05", "ko": "걱정 말고 저만 믿어요.", "reading": "geok-jeong mal-go jeo-man mid-eo-yo", "en": "Don't worry, just trust me." }
+  ]
+}

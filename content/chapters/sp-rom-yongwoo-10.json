@@ -1,0 +1,93 @@
+{
+  "id": "sp-rom-yongwoo-10",
+  "character_id": "yongwoo",
+  "title": "이제는 그냥, 내 사람",
+  "emoji": "💙",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "새벽부터 오른 한라산, 마침내 백록담이 눈앞에 펼쳐졌다. 구름 위로 솟은 물빛이 고요했다.",
+      "reading": "sae-byeok-bu-teo o-reun hal-la-san, ma-chim-nae baek-rok-dam-i nun-ap-e pyeol-cheo-jyeot-da. gu-reum wi-ro sos-eun mul-bit-i go-yo-haet-da.",
+      "en": "Having climbed Hallasan since dawn, Baengnokdam finally spread out before us. The water, rising above the clouds, was perfectly still."
+    },
+    {
+      "text": "'백록담 이렇게 맑게 보이는 날 흔치 않다. 너랑 같이 보고 싶어서 새벽부터 서둘렀어.' 용우가 숨을 고르며 웃는다.",
+      "reading": "baek-rok-dam i-reo-ke malg-ge bo-i-neun nal heun-chi an-ta. neo-rang gat-i bo-go sip-eo-seo sae-byeok-bu-teo seo-dul-leoss-eo. yong-u-ga sum-eul go-reu-myeo us-neun-da.",
+      "en": "'It's rare to see Baengnokdam this clear. I rushed us out from dawn because I wanted to see it with you.' Yongwoo catches his breath and smiles.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "정상에 서니 바람이 세게 불었다. 용우가 말없이 자신의 재킷을 벗어 내 어깨에 둘러준다.",
+      "reading": "jeong-sang-e seo-ni ba-ram-i se-ge bul-eot-da. yong-u-ga mal-eop-si ja-sin-ui jae-kis-eul beos-eo nae eo-kkae-e dul-leo-jun-da.",
+      "en": "Standing at the summit, the wind blew hard. Without a word, Yongwoo takes off his jacket and drapes it over my shoulders.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "'지난번에 못다 한 말, 오늘 여기서 끝내자.' 그가 내 손을 잡으며 말한다. '나랑, 약속 하나 해줄래.'",
+      "reading": "ji-nan-beon-e mot-da han mal, o-neul yeo-gi-seo kkeut-nae-ja. geu-ga nae son-eul jab-eu-myeo mal-han-da. na-rang, yak-sok ha-na hae-jul-lae.",
+      "en": "'Let's finish what I couldn't say last time, here, today.' He takes my hand. 'Will you make a promise with me.'",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "해가 완전히 지고 별빛이 하나둘 쏟아지기 시작하자, 용우가 하늘을 가리키며 나지막이 속삭인다.",
+      "reading": "hae-ga wan-jeon-hi ji-go byeol-bit-i ha-na-dul sso-da-ji-gi si-jak-ha-ja, yong-u-ga ha-neul-eul ga-ri-ki-myeo na-ji-mag-i sok-sak-in-da.",
+      "en": "As the sun fully set and starlight began pouring down one by one, Yongwoo points at the sky and whispers softly.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "'저 별빛처럼 변치 않을 자신 있다. 형도 동생도 아니고, 이제는 그냥… 내 사람으로.'",
+      "reading": "jeo byeol-bit-cheo-reom byeon-chi an-eul ja-sin it-da. hyeong-do dong-saeng-do a-ni-go, i-je-neun geu-nyang, nae sa-ram-eu-ro.",
+      "en": "'I can be as unchanging as that starlight. Not as older brother or younger sibling anymore — just... as my person.'",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "눈물이 핑 도는 걸 감추려 별만 올려다보는데, 용우가 손을 꼭 잡아온다. '대답 대신, 오늘 마지막 대화들 잘 들어봐라. 우리처럼 오래도록 변치 않은 것들 얘기니까.'",
+      "reading": "nun-mul-i ping do-neun geol gam-chu-ryeo byeol-man ol-lyeo-da-bo-neun-de, yong-u-ga son-eul kkok jab-a-on-da. dae-dab dae-sin, o-neul ma-ji-mak dae-hwa-deul jal deul-eo-bwa-ra. u-ri-cheo-reom o-rae-do-rok byeon-chi an-eun geot-deul yae-gi-ni-kka.",
+      "en": "Trying to hide the tears welling up by staring at the stars, I feel Yongwoo squeeze my hand tight. 'Instead of an answer, listen to today's last conversations. They're about things that, like us, have stayed unchanged for a long time.'"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "백록담", "reading": "baek-rok-dam", "meaning": "Baengnokdam, the crater lake atop Hallasan", "example": "맑은 날에만 백록담 물빛을 온전히 볼 수 있다.", "example_reading": "malg-eun nal-e-man baek-rok-dam mul-bit-eul on-jeon-hi bol su it-da", "example_en": "You can only fully see Baengnokdam's water on clear days." },
+    { "id": "w02", "word": "정상", "reading": "jeong-sang", "meaning": "Summit, peak", "example": "정상에 오르니 바람이 훨씬 세게 불었다.", "example_reading": "jeong-sang-e o-reu-ni ba-ram-i hwol-ssin se-ge bul-eot-da", "example_en": "Once we reached the summit, the wind blew much harder." },
+    { "id": "w03", "word": "별빛", "reading": "byeol-bit", "meaning": "Starlight", "example": "한라산 정상에서 본 별빛은 유난히 밝았다.", "example_reading": "hal-la-san jeong-sang-e-seo bon byeol-bit-eun yu-nan-hi balg-at-da", "example_en": "The starlight seen from Hallasan's summit was unusually bright." },
+    { "id": "w04", "word": "약속하다", "reading": "yak-sok-a-da", "meaning": "To promise", "example": "그는 절대 변하지 않겠다고 약속했다.", "example_reading": "geu-neun jeol-dae byeon-ha-ji an-get-da-go yak-sok-aet-da", "example_en": "He promised he would never change." },
+    { "id": "w05", "word": "변치 않다", "reading": "byeon-chi an-ta", "meaning": "To remain unchanged, never change", "example": "그의 진심은 오랜 시간이 지나도 변치 않았다.", "example_reading": "geu-ui jin-sim-eun o-raen si-gan-i ji-na-do byeon-chi an-at-da", "example_en": "His true feelings remained unchanged even after a long time." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "새벽부터 오른 한라산 정상에서 마침내 백록담이 눈앞에 펼쳐졌다.", "reading": "sae-byeok-bu-teo o-reun hal-la-san jeong-sang-e-seo ma-chim-nae baek-rok-dam-i nun-ap-e pyeol-cheo-jyeot-da", "en": "At the summit of Hallasan, climbed since dawn, Baengnokdam finally spread out before us." },
+    { "id": "s02", "ko": "정상에서 바람이 세게 불자 그는 말없이 재킷을 벗어 내게 둘러주었다.", "reading": "jeong-sang-e-seo ba-ram-i se-ge bul-ja geu-neun mal-eop-si jae-kis-eul beos-eo nae-ge dul-leo-ju-eot-da", "en": "When the wind blew hard at the summit, he silently took off his jacket and draped it over me." },
+    { "id": "s03", "ko": "그는 내 손을 잡으며 약속 하나를 해달라고 말했다.", "reading": "geu-neun nae son-eul jab-eu-myeo yak-sok ha-na-reul hae-dal-la-go mal-haet-da", "en": "He took my hand and asked me to make a promise with him." },
+    { "id": "s04", "ko": "별빛이 하나둘 쏟아지자 그는 하늘을 가리키며 나지막이 속삭였다.", "reading": "byeol-bit-i ha-na-dul sso-da-ji-ja geu-neun ha-neul-eul ga-ri-ki-myeo na-ji-mag-i sok-sak-yeot-da", "en": "As starlight began pouring down, he pointed at the sky and whispered softly." },
+    { "id": "s05", "ko": "저 별빛처럼 변치 않겠다는 그의 말이 오래도록 마음에 남았다.", "reading": "jeo byeol-bit-cheo-reom byeon-chi an-get-da-neun geu-ui mal-i o-rae-do-rok ma-eum-e nam-at-da", "en": "His words, that he'd stay unchanging like that starlight, stayed in my heart for a long time." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "손님", "text": "여기까지 오는 거 힘들지 않았어요? 새벽부터 서둘렀잖아요.", "reading": "yeo-gi-kka-ji o-neun geo him-deul-ji an-ass-eo-yo? sae-byeok-bu-teo seo-dul-leot-jan-a-yo.", "en": "Wasn't it hard getting all the way up here? We rushed from dawn." },
+        { "speaker": "권용우 기장", "text": "하나도 안 힘들었다. 백록담, 너랑 같이 보고 싶었던 것뿐이야.", "reading": "ha-na-do an him-deul-eot-da. baek-rok-dam, neo-rang gat-i bo-go sip-eot-deon geot-ppun-i-ya.", "en": "Not hard at all. I just wanted to see Baengnokdam with you." },
+        { "speaker": "손님", "text": "저 주려고 재킷까지 벗어주고, 안 추워요?", "reading": "jeo ju-ryeo-go jae-kis-kka-ji beos-eo-ju-go, an chu-wo-yo?", "en": "You even gave me your jacket, aren't you cold?" },
+        { "speaker": "권용우 기장", "text": "너 떨고 있는 거 보는 게 더 춥다, 나는.", "reading": "neo tteol-go it-neun geo bo-neun ge deo chup-da, na-neun.", "en": "Seeing you shiver is colder for me." }
+      ],
+      "question": "용우가 재킷을 벗어준 이유로 가장 알맞은 것은?",
+      "question_en": "What best explains why Yongwoo took off his jacket for the passenger?",
+      "correct_answer": "손님이 추워하는 모습을 보는 것이 더 견디기 힘들어서",
+      "options": ["손님이 추워하는 모습을 보는 것이 더 견디기 힘들어서", "자신은 원래 추위를 안 타서", "재킷이 무거워서 벗은 것뿐이라서", "정상 규정 때문에"],
+      "explanation": "용우는 손님이 추워하는 모습을 보는 것이 자신이 추운 것보다 더 힘들다며 재킷을 벗어주었습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "권용우 기장", "text": "형도 동생도 아니고, 이제는 그냥 내 사람으로 있어줄래.", "reading": "hyeong-do dong-saeng-do a-ni-go, i-je-neun geu-nyang nae sa-ram-eu-ro iss-eo-jul-lae.", "en": "Not as older brother or younger sibling — will you just be my person now." },
+        { "speaker": "손님", "text": "…그 말, 진심이죠?", "reading": "geu mal, jin-sim-i-jyo?", "en": "...That's how you really feel, right?" },
+        { "speaker": "권용우 기장", "text": "저 별빛만큼 변치 않을 진심이다. 의심하지 마라.", "reading": "jeo byeol-bit-man-keum byeon-chi an-eul jin-sim-i-da. ui-sim-ha-ji ma-ra.", "en": "It's a truth as unchanging as that starlight. Don't doubt it." },
+        { "speaker": "손님", "text": "그럼 저도 약속할게요. 이제 다른 말로 안 부를게요.", "reading": "geu-reom jeo-do yak-sok-al-ge-yo. i-je da-reun mal-lo an bu-reul-ge-yo.", "en": "Then I'll promise too. I won't call you anything else from now on." }
+      ],
+      "question": "이 대화에서 두 사람이 나눈 약속의 의미로 가장 알맞은 것은?",
+      "question_en": "What best describes the meaning of the promise the two make in this conversation?",
+      "correct_answer": "형제자매 같은 관계를 넘어 서로에게 변치 않는 사람이 되겠다는 다짐",
+      "options": ["형제자매 같은 관계를 넘어 서로에게 변치 않는 사람이 되겠다는 다짐", "앞으로 매년 한라산에 같이 오르자는 약속", "서로에게 존댓말을 쓰지 말자는 약속", "다음 여행지를 정하는 약속"],
+      "explanation": "두 사람은 형제자매 같은 호칭을 넘어, 서로에게 변치 않는 사람이 되겠다는 진심 어린 다짐을 나누었습니다."
+    }
+  ]
+}

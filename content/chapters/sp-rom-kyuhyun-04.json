@@ -1,0 +1,62 @@
+{
+  "id": "sp-rom-kyuhyun-04",
+  "character_id": "kyuhyun",
+  "title": "비번인 날의 사복 차림",
+  "emoji": "🧥",
+  "story": [
+    {
+      "text": "어? 여기서 다 만나네요. 오늘 완전 편한 날인데, 이렇게 우연히 마주칠 줄은 몰랐어요.",
+      "reading": "eo? yeo-gi-seo da man-na-ne-yo. o-neul wan-jeon pyeon-han nal-in-de, i-reo-ke u-yeon-hi ma-ju-chil jul-eun mol-lat-seo-yo.",
+      "en": "Oh? Fancy meeting you here. Today's my totally free day, but I didn't expect to run into you like this."
+    },
+    {
+      "text": "'비번'인 날은 이렇게 입어요. 제복 아닌 저는 좀 낯설죠?",
+      "reading": "bi-beon-in nal-eun i-reo-ke ib-eo-yo. je-bok a-nin jeo-neun jom nat-seol-jyo?",
+      "en": "This is how I dress on my 'day off'. I probably look unfamiliar without the uniform, huh?",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "'사복' 입은 모습 처음 보죠? 반응이 나쁘지 않은 것 같아서 다행이네요.",
+      "reading": "sa-bok ib-eun mo-seup cheo-eum bo-jyo? ban-eung-i na-ppeu-ji an-eun geot gat-a-seo da-haeng-i-ne-yo.",
+      "en": "This is the first time you're seeing me in 'casual clothes', right? Glad your reaction doesn't seem bad.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "'홍대' 거리, 저 사실 잘 안 다니는데 오늘은 발이 여기로 왔네요. 신기하죠.",
+      "reading": "hong-dae geo-ri, jeo sa-sil jal an da-ni-neun-de o-neul-eun bal-i yeo-gi-ro wan-ne-yo. sin-gi-ha-jyo.",
+      "en": "I don't usually walk around 'Hongdae', but today my feet just brought me here. Funny, isn't it.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "저 골목 '카페' 커피 진짜 맛있는데, 시간 괜찮으면 같이 갈래요?",
+      "reading": "jeo gol-mok ka-pe keo-pi jin-jja ma-sit-neun-de, si-gan gwaen-chan-eu-myeon ga-chi gal-lae-yo?",
+      "en": "The coffee at that 'cafe' down the alley is really good — if you have time, want to go together?",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "...어, 잠깐만요. 이거 완전 '데이트' 신청 아닌가요? 저도 모르게 이런 말이.",
+      "reading": "...eo, jam-kkan-man-yo. i-geo wan-jeon de-i-teu sin-cheong a-nin-ga-yo? jeo-do mo-reu-ge i-reon mal-i.",
+      "en": "...wait a second. Isn't this basically asking you on a 'date'? I said it without even realizing.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "크흠, 아무튼 그렇다고요. 자, 오늘 배운 표현들 문제 풀면서 확인해볼까요?",
+      "reading": "keu-heum, a-mu-teun geu-reo-ta-go-yo. ja, o-neul bae-un pyo-hyeon-deul mun-je pul-myeon-seo hwa-gin-hae-bol-kka-yo?",
+      "en": "Ahem, anyway, that's how it is. Now, shall we check what we learned today by solving some questions?"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "비번", "reading": "bi-beon", "meaning": "day off, off-duty", "example": "오늘은 제 비번인 날이에요.", "example_reading": "o-neul-eun je bi-beon-in nal-i-e-yo", "example_en": "Today is my day off." },
+    { "id": "w02", "word": "사복", "reading": "sa-bok", "meaning": "casual clothes", "example": "사복을 입으니까 느낌이 다르네요.", "example_reading": "sa-bok-eul ib-eu-ni-kka neu-kkim-i da-reu-ne-yo", "example_en": "Wearing casual clothes feels different." },
+    { "id": "w03", "word": "홍대", "reading": "hong-dae", "meaning": "Hongdae", "example": "홍대에는 예쁜 카페가 많아요.", "example_reading": "hong-dae-e-neun ye-ppeun ka-pe-ga man-a-yo", "example_en": "There are many pretty cafes in Hongdae." },
+    { "id": "w04", "word": "카페", "reading": "ka-pe", "meaning": "cafe", "example": "저 카페에서 커피 마실까요?", "example_reading": "jeo ka-pe-e-seo keo-pi ma-sil-kka-yo", "example_en": "Shall we drink coffee at that cafe?" },
+    { "id": "w05", "word": "데이트", "reading": "de-i-teu", "meaning": "date", "example": "이거 데이트 신청 맞죠?", "example_reading": "i-geo de-i-teu sin-cheong mat-jyo", "example_en": "This is a date invitation, right?" }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "오늘은 제 비번인 날이에요.", "reading": "o-neul-eun je bi-beon-in nal-i-e-yo", "en": "Today is my day off." },
+    { "id": "s02", "ko": "사복을 입으니까 느낌이 다르네요.", "reading": "sa-bok-eul ib-eu-ni-kka neu-kkim-i da-reu-ne-yo", "en": "Wearing casual clothes feels different." },
+    { "id": "s03", "ko": "홍대에는 예쁜 카페가 많아요.", "reading": "hong-dae-e-neun ye-ppeun ka-pe-ga man-a-yo", "en": "There are many pretty cafes in Hongdae." },
+    { "id": "s04", "ko": "저 카페에서 커피 마실까요?", "reading": "jeo ka-pe-e-seo keo-pi ma-sil-kka-yo", "en": "Shall we drink coffee at that cafe?" },
+    { "id": "s05", "ko": "이거 데이트 신청 맞죠?", "reading": "i-geo de-i-teu sin-cheong mat-jyo", "en": "This is a date invitation, right?" }
+  ]
+}

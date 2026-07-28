@@ -1,0 +1,93 @@
+{
+  "id": "sp-rom-sangwoo-10",
+  "character_id": "sangwoo",
+  "title": "영원히 이 항로를 함께",
+  "emoji": "🏛️",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "오늘은 공주 산성시장 야시장입니다. 노점 불빛과 사람들 소리로 가득한 밤이지요. 화려한 유적지보다, 오늘은 이런 평범한 풍경을 당신과 함께 걷고 싶었습니다.",
+      "reading": "o-neul-eun gong-ju san-seong-si-jang ya-si-jang-im-ni-da. no-jeom bul-bit-gwa sa-ram-deul so-ri-ro ga-deuk-han bam-i-ji-yo. hwa-ryeo-han yu-jeok-ji-bo-da, o-neul-eun i-reon pyeong-beom-han pung-gyeong-eul dang-sin-gwa ham-kke geot-go sip-eot-seum-ni-da.",
+      "en": "Tonight we're at the Sanseong Market night market in Gongju, full of stall lights and the sound of people. More than any grand historic site, tonight I wanted to walk through this ordinary scene with you."
+    },
+    {
+      "text": "지금까지의 모든 노선에, 당신이라는 '동행'이 있어 유독 즐거웠습니다.",
+      "reading": "ji-geum-kka-ji-ui mo-deun no-seon-e, dang-sin-i-ra-neun 'dong-haeng'-i i-sseo yu-dok jeul-geo-wot-seum-ni-da.",
+      "en": "On every route so far, having you as my 'companion' made it especially enjoyable.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "앞으로 남은 '여정'도, 당신과 함께라면 두렵지 않을 것 같습니다.",
+      "reading": "ap-eu-ro nam-eun 'yeo-jeong'-do, dang-sin-gwa ham-kke-ra-myeon du-ryeop-ji an-eul geot gat-seum-ni-da.",
+      "en": "For the 'journey' still ahead, if it's with you, I don't think I'll be afraid.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "타워라는 애칭 대신, 이제는 다른 이름으로 부르고 싶습니다. 제 평생의 '반려'로 말입니다.",
+      "reading": "ta-wo-ra-neun ae-ching dae-sin, i-je-neun da-reun i-reum-eu-ro bu-reu-go sip-seum-ni-da. je pyeong-saeng-ui 'ban-nyeo'-ro mal-im-ni-da.",
+      "en": "Instead of the nickname 'tower', I'd like to call you by another name now—as my lifelong 'companion'.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "늘 하늘 위를 떠돌던 제가, 처음으로 어딘가에 '정착'하고 싶다는 생각을 합니다. 바로 당신 곁입니다.",
+      "reading": "neul ha-neul wi-reul tteo-dol-deon je-ga, cheo-eum-eu-ro eo-din-ga-e 'jeong-chak'-ha-go sip-da-neun saeng-gag-eul ham-ni-da. ba-ro dang-sin gyeot-im-ni-da.",
+      "en": "I, who always drifted through the sky, am thinking for the first time of 'settling down' somewhere. Right beside you.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "타워, 여기는 상우 기장. 오늘부로, 제 모든 '귀항'의 목적지를 당신으로 등록합니다. Roger that이라 답해 주시겠습니까.",
+      "reading": "ta-wo, yeo-gi-neun sang-u gi-jang. o-neul-bu-ro, je mo-deun 'gwi-hang'-ui mok-jeok-ji-reul dang-sin-eu-ro deung-nok-ham-ni-da. ro-jeo dat-i-ra dap-hae ju-si-get-seum-ni-kka.",
+      "en": "Tower, this is Captain Sangwoo. From today, I'm registering you as the destination of every 'homecoming' I make. Will you answer 'Roger that'?",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "…이 교신은, 앞으로도 계속 이어질 예정입니다. 마지막으로 산성시장에서 나눈 대화를 보여드릴 테니, 두 사람의 앞날을 헤아려 봐 주시기 바랍니다.",
+      "reading": "…i gyo-sin-eun, ap-eu-ro-do gye-sok i-eo-jil ye-jeong-im-ni-da. ma-ji-mag-eu-ro san-seong-si-jang-e-seo na-nun dae-hwa-reul bo-yeo-deu-ril te-ni, du sa-ram-ui ap-nal-eul he-a-ryeo bwa ju-si-gi ba-ram-ni-da.",
+      "en": "...This transmission is set to continue on, from here. Finally, I'll show you a conversation from Sanseong Market—please imagine what lies ahead for these two."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "동행", "reading": "dong-haeng", "meaning": "Companion / accompanying", "example": "당신이라는 동행이 있어 유독 즐거웠습니다.", "example_reading": "dang-sin-i-ra-neun dong-haeng-i i-sseo yu-dok jeul-geo-wot-seum-ni-da", "example_en": "Having you as my companion made it especially enjoyable." },
+    { "id": "w02", "word": "여정", "reading": "yeo-jeong", "meaning": "Journey", "example": "앞으로 남은 여정도 당신과 함께라면 두렵지 않습니다.", "example_reading": "ap-eu-ro nam-eun yeo-jeong-do dang-sin-gwa ham-kke-ra-myeon du-ryeop-ji an-seum-ni-da", "example_en": "The journey still ahead won't be frightening if it's with you." },
+    { "id": "w03", "word": "반려", "reading": "ban-nyeo", "meaning": "Life companion / partner", "example": "제 평생의 반려로 부르고 싶습니다.", "example_reading": "je pyeong-saeng-ui ban-nyeo-ro bu-reu-go sip-seum-ni-da", "example_en": "I want to call you my lifelong companion." },
+    { "id": "w04", "word": "정착", "reading": "jeong-chak", "meaning": "Settling down", "example": "처음으로 어딘가에 정착하고 싶다는 생각을 합니다.", "example_reading": "cheo-eum-eu-ro eo-din-ga-e jeong-chak-ha-go sip-da-neun saeng-gag-eul ham-ni-da", "example_en": "For the first time, I think about wanting to settle down somewhere." },
+    { "id": "w05", "word": "귀항", "reading": "gwi-hang", "meaning": "Returning to home port / homecoming", "example": "제 모든 귀항의 목적지를 당신으로 등록합니다.", "example_reading": "je mo-deun gwi-hang-ui mok-jeok-ji-reul dang-sin-eu-ro deung-nok-ham-ni-da", "example_en": "I'm registering you as the destination of every homecoming I make." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "당신이라는 동행이 있어 유독 즐거웠습니다.", "reading": "dang-sin-i-ra-neun dong-haeng-i i-sseo yu-dok jeul-geo-wot-seum-ni-da", "en": "Having you as my companion made it especially enjoyable." },
+    { "id": "s02", "ko": "앞으로 남은 여정도 당신과 함께라면 두렵지 않습니다.", "reading": "ap-eu-ro nam-eun yeo-jeong-do dang-sin-gwa ham-kke-ra-myeon du-ryeop-ji an-seum-ni-da", "en": "The journey still ahead won't be frightening if it's with you." },
+    { "id": "s03", "ko": "제 평생의 반려로 부르고 싶습니다.", "reading": "je pyeong-saeng-ui ban-nyeo-ro bu-reu-go sip-seum-ni-da", "en": "I want to call you my lifelong companion." },
+    { "id": "s04", "ko": "처음으로 어딘가에 정착하고 싶다는 생각을 합니다.", "reading": "cheo-eum-eu-ro eo-din-ga-e jeong-chak-ha-go sip-da-neun saeng-gag-eul ham-ni-da", "en": "For the first time, I think about wanting to settle down somewhere." },
+    { "id": "s05", "ko": "제 모든 귀항의 목적지를 당신으로 등록합니다.", "reading": "je mo-deun gwi-hang-ui mok-jeok-ji-reul dang-sin-eu-ro deung-nok-ham-ni-da", "en": "I'm registering you as the destination of every homecoming I make." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "승객", "text": "기장님이랑 야시장 오니까 되게 낯설어요, 이런 모습.", "reading": "gi-jang-nim-i-rang ya-si-jang o-ni-kka doe-ge nat-seol-eo-yo, i-reon mo-seub.", "en": "Coming to the night market with you feels really unfamiliar—seeing you like this." },
+        { "speaker": "천상우 기장", "text": "격식 차리지 않은 모습도, 앞으로는 자주 보여드리고 싶습니다.", "reading": "gyeok-sik cha-ri-ji an-eun mo-seub-do, ap-eu-ro-neun ja-ju bo-yeo-deu-ri-go sip-seum-ni-da.", "en": "I'd like to show you this unguarded side of me more often from now on." },
+        { "speaker": "승객", "text": "그럼 이제 타워라고만 부르지 마시고, 제 이름도 좀 불러주세요.", "reading": "geu-reom i-je ta-wo-ra-go-man bu-reu-ji ma-si-go, je i-reum-do jom bul-leo-ju-se-yo.", "en": "Then don't just call me 'tower' anymore—call me by my name too, sometimes." },
+        { "speaker": "천상우 기장", "text": "…네, 앞으로는 그렇게 하겠습니다. 로저.", "reading": "…ne, ap-eu-ro-neun geu-reo-ke ha-get-seum-ni-da. ro-jeo.", "en": "...Yes, I'll do that from now on. Roger." }
+      ],
+      "question": "기장이 앞으로 \"격식 차리지 않은 모습\"을 자주 보여주고 싶다고 한 이유는?",
+      "question_en": "Why does the captain say he wants to show his 'unguarded side' more often from now on?",
+      "correct_answer": "승객과 더 편안하고 가까운 관계로 지내고 싶어서",
+      "options": ["승객과 더 편안하고 가까운 관계로 지내고 싶어서", "기장 업무에서 완전히 은퇴하려고 해서", "규정이 바뀌어서 사복을 입어야 해서", "야시장에서는 항상 격식을 차리면 안 되기 때문에"],
+      "explanation": "기장은 승객과 더 편안하고 가까운 사이로 지내고 싶은 마음에서, 격식을 내려놓은 모습을 자주 보여주고 싶다고 말합니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "천상우 기장", "text": "타워, 여기는 상우 기장. 오늘부로 제 모든 귀항의 목적지를 당신으로 등록합니다.", "reading": "ta-wo, yeo-gi-neun sang-u gi-jang. o-neul-bu-ro je mo-deun gwi-hang-ui mok-jeok-ji-reul dang-sin-eu-ro deung-nok-ham-ni-da.", "en": "Tower, this is Captain Sangwoo. From today, I'm registering you as the destination of every homecoming I make." },
+        { "speaker": "승객", "text": "그거, 평생 저한테 돌아오겠다는 말이죠?", "reading": "geu-geo, pyeong-saeng jeo-han-te dol-a-o-get-da-neun mal-i-jyo?", "en": "That means you'll come back to me for the rest of your life, right?" },
+        { "speaker": "천상우 기장", "text": "정확한 해석입니다. Roger that이라 답해 주시겠습니까.", "reading": "jeong-hwak-han hae-seog-im-ni-da. ro-jeo dat-i-ra dap-hae ju-si-get-seum-ni-kka.", "en": "That's the correct interpretation. Would you answer 'Roger that'?" },
+        { "speaker": "승객", "text": "Roger that. 언제든 환영이에요, 기장님.", "reading": "ro-jeo dat. eon-je-deun hwan-yeong-i-e-yo, gi-jang-nim.", "en": "Roger that. You're welcome anytime, Captain." }
+      ],
+      "question": "기장의 \"모든 귀항의 목적지를 당신으로 등록합니다\"라는 말이 뜻하는 것은?",
+      "question_en": "What does the captain's statement, 'I'm registering you as the destination of every homecoming,' mean?",
+      "correct_answer": "앞으로 평생 승객에게 돌아오겠다는 약속",
+      "options": ["앞으로 평생 승객에게 돌아오겠다는 약속", "공항 등록 시스템을 변경하겠다는 뜻", "다음 비행 노선을 새로 지정하겠다는 뜻", "야시장을 자주 방문하겠다는 뜻"],
+      "explanation": "기장은 무전 등록 절차에 빗대어, 앞으로 평생 승객에게 돌아오겠다는 약속을 전하고 있습니다."
+    }
+  ]
+}

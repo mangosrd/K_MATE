@@ -1,0 +1,62 @@
+{
+  "id": "sp-rom-kyuhyun-10",
+  "character_id": "kyuhyun",
+  "title": "이 항로 위, 여유를 벗어던지고",
+  "emoji": "👑",
+  "story": [
+    {
+      "text": "여기까지 올라오느라 고생했어요. 오늘은 서울에서 제일 좋아하는 자리로 데려오고 싶었어요.",
+      "reading": "yeo-gi-kka-ji ol-la-o-neu-ra go-saeng-hae-sseo-yo. o-neul-eun seo-ul-e-seo je-il jo-a-ha-neun ja-ri-ro de-ryeo-o-go si-peot-seo-yo.",
+      "en": "Thanks for making it all the way up here. Today I wanted to bring you to my favorite spot in all of Seoul."
+    },
+    {
+      "text": "이 '전망대'에서 보면 서울이 다 발아래 있잖아요. 근데 오늘은 승객님밖에 안 보이네요.",
+      "reading": "i jeon-mang-dae-e-seo bo-myeon seo-ul-i da bal-a-rae i-sseo-jan-a-yo. geun-de o-neul-eun seung-gaek-nim-bak-e an bo-i-ne-yo.",
+      "en": "From this 'observation deck', all of Seoul is right beneath us. But today, I only see you.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "저기 걸린 '자물쇠'들 보이죠? 저도 하나 준비했어요. 승객님이랑 같이 걸고 싶어서.",
+      "reading": "jeo-gi geol-lin ja-mul-soe-deul bo-i-jyo? jeo-do ha-na jun-bi-hae-sseo-yo. seung-gaek-nim-i-rang ga-chi geol-go si-peo-seo.",
+      "en": "See all those 'padlocks' hanging there? I brought one too. I wanted to hang it together with you.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "능글맞은 농담 뒤에 숨겼던 '고백', 오늘은 제대로 다시 할게요.",
+      "reading": "neung-geul-maj-eun nong-dam dwi-e sum-gyeot-deon go-baek, o-neul-eun je-dae-ro da-si hal-ge-yo.",
+      "en": "The 'confession' I kept hiding behind smooth jokes — today I'll do it properly, for real.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "이 항로 위에서, 저는 이제 여유를 다 벗어던지고 '진심'만 남기려고요.",
+      "reading": "i hang-no wi-e-seo, jeo-neun i-je yeo-yu-reul da beo-seo-deon-ji-go jin-sim-man nam-gi-ryeo-go-yo.",
+      "en": "Up here on this route, I'm shedding all my usual composure and leaving only 'sincerity' behind.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "승객님, 저 이거 진짜 '사랑'인 것 같아요. 저랑 이 항로, 앞으로도 계속 같이 갈래요?",
+      "reading": "seung-gaek-nim, jeo i-geo jin-jja sa-rang-in geot gat-a-yo. jeo-rang i hang-no, ap-eu-ro-do gye-sok ga-chi gal-lae-yo?",
+      "en": "You know, I think this is really 'love'. Will you keep flying this route with me from now on?",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "...크흠, 대답은 나중에 들어도 되니까. 일단 오늘 배운 단어들부터 문제로 확인해볼까요?",
+      "reading": "...keu-heum, dae-dab-eun na-jung-e deul-eo-do doe-ni-kka. il-dan o-neul bae-un dan-eo-deul-bu-teo mun-je-ro hwa-gin-hae-bol-kka-yo?",
+      "en": "...ahem, you can give me your answer later. For now, shall we check today's words with some questions first?"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "전망대", "reading": "jeon-mang-dae", "meaning": "observation deck", "example": "남산타워 전망대에서 서울이 다 보여요.", "example_reading": "nam-san-ta-wo jeon-mang-dae-e-seo seo-ul-i da bo-yeo-yo", "example_en": "You can see all of Seoul from the N Seoul Tower observation deck." },
+    { "id": "w02", "word": "자물쇠", "reading": "ja-mul-soe", "meaning": "padlock", "example": "우리도 자물쇠 하나 걸어요.", "example_reading": "u-ri-do ja-mul-soe ha-na geol-eo-yo", "example_en": "Let's hang a padlock too." },
+    { "id": "w03", "word": "고백", "reading": "go-baek", "meaning": "confession", "example": "드디어 진심을 담아 고백했어요.", "example_reading": "deu-di-eo jin-sim-eul dam-a go-baek-hae-sseo-yo", "example_en": "I finally confessed with sincerity." },
+    { "id": "w04", "word": "진심", "reading": "jin-sim", "meaning": "sincerity, true feelings", "example": "이건 진심이에요.", "example_reading": "i-geon jin-sim-i-e-yo", "example_en": "This is sincere." },
+    { "id": "w05", "word": "사랑", "reading": "sa-rang", "meaning": "love", "example": "저는 승객님을 사랑해요.", "example_reading": "jeo-neun seung-gaek-nim-eul sa-rang-hae-yo", "example_en": "I love you." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "남산타워 전망대에서 서울이 다 보여요.", "reading": "nam-san-ta-wo jeon-mang-dae-e-seo seo-ul-i da bo-yeo-yo", "en": "You can see all of Seoul from the N Seoul Tower observation deck." },
+    { "id": "s02", "ko": "우리도 자물쇠 하나 걸어요.", "reading": "u-ri-do ja-mul-soe ha-na geol-eo-yo", "en": "Let's hang a padlock too." },
+    { "id": "s03", "ko": "드디어 진심을 담아 고백했어요.", "reading": "deu-di-eo jin-sim-eul dam-a go-baek-hae-sseo-yo", "en": "I finally confessed with sincerity." },
+    { "id": "s04", "ko": "이건 진심이에요.", "reading": "i-geon jin-sim-i-e-yo", "en": "This is sincere." },
+    { "id": "s05", "ko": "저는 승객님을 사랑해요.", "reading": "jeo-neun seung-gaek-nim-eul sa-rang-hae-yo", "en": "I love you." }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "id": "sp-rom-sunwoo-08",
+  "character_id": "sunwoo",
+  "title": "니 내 좋아하나",
+  "emoji": "💥",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "'솔직히' 말해봐라. 니 내한테 마음 있제?",
+      "reading": "sol-jik-hi mal-hae-bwa-ra. ni nae-han-te ma-eum it-je?",
+      "en": "Tell me honestly. You have feelings for me, don't you?",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "내는 이제 '확신한다', 이게 그냥 소꿉친구 감정이 아니라는 거.",
+      "reading": "nae-neun i-je hwak-sin-han-da, i-ge geu-nyang so-kkup-chin-gu gam-jeong-i a-ni-ra-neun geo.",
+      "en": "I'm certain now, that this isn't just childhood-friend feelings.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "와 대답 안 하고 자꾸 '얼버무리노'.",
+      "reading": "wa dae-dap an ha-go ja-kku eol-beo-mu-ri-no.",
+      "en": "Why do you keep mumbling and avoiding the answer instead of just replying.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "오늘은 '용기' 내가꼬 확실히 물어볼란다.",
+      "reading": "o-neul-eun yong-gi nae-ga-kko hwak-sil-hi mul-eo-bol-lan-da.",
+      "en": "Today I'm gathering my courage to ask you clearly.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "돌려 말 안 하고 그냥 '직진할게'. 니 내 좋아하나?",
+      "reading": "dol-lyeo mal an ha-go geu-nyang jik-jin-hal-ge. ni nae jo-a-ha-na?",
+      "en": "I won't beat around the bush, I'll just go straight for it. Do you like me?",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "태종대 파도 소리 들리제? 대답 들을 때까지 안 움직인다, 내.",
+      "reading": "tae-jong-dae pa-do so-ri deul-li-je? dae-dap deul-eul ttae-kka-ji an um-jik-in-da, nae.",
+      "en": "You can hear the waves at Taejongdae, right? I'm not moving until I hear your answer."
+    },
+    {
+      "text": "단어 다 봤제? 오늘 대화 문제도 집중해서 풀어봐라.",
+      "reading": "dan-eo da bwat-je? o-neul dae-hwa mun-je-do jip-jung-hae-seo pul-eo-bwa-ra.",
+      "en": "Got a look at all the words? Focus and give today's conversation question a try too."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "솔직히", "reading": "sol-jik-hi", "meaning": "Honestly, frankly", "example": "솔직히 말하면 나도 잘 모르겠다.", "example_reading": "sol-jik-hi mal-ha-myeon na-do jal mo-reu-get-da", "example_en": "Honestly speaking, I'm not sure either." },
+    { "id": "w02", "word": "확신하다", "reading": "hwak-sin-ha-da", "meaning": "To be certain, sure", "example": "나는 그의 진심을 확신했다.", "example_reading": "na-neun geu-ui jin-sim-eul hwak-sin-haet-da", "example_en": "I was certain of his sincerity." },
+    { "id": "w03", "word": "얼버무리다", "reading": "eol-beo-mu-ri-da", "meaning": "To mumble, evade giving a clear answer", "example": "그는 질문에 얼버무리며 대답을 피했다.", "example_reading": "geu-neun jil-mun-e eol-beo-mu-ri-myeo dae-dap-eul pi-haet-da", "example_en": "He mumbled and avoided answering the question." },
+    { "id": "w04", "word": "용기", "reading": "yong-gi", "meaning": "Courage", "example": "그는 용기를 내서 고백했다.", "example_reading": "geu-neun yong-gi-reul nae-seo go-baek-haet-da", "example_en": "He mustered courage and confessed." },
+    { "id": "w05", "word": "직진하다", "reading": "jik-jin-ha-da", "meaning": "To go straight for it, be direct", "example": "그는 고민하지 않고 직진하는 성격이다.", "example_reading": "geu-neun go-min-ha-ji an-ko jik-jin-ha-neun seong-gyeok-i-da", "example_en": "He's the type to go straight for it without hesitation." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "솔직히 말해서 나도 잘 모르겠다.", "reading": "sol-jik-hi mal-hae-seo na-do jal mo-reu-get-da", "en": "Honestly speaking, I don't really know either." },
+    { "id": "s02", "ko": "나는 그가 진심이라고 확신했다.", "reading": "na-neun geu-ga jin-sim-i-ra-go hwak-sin-haet-da", "en": "I was certain that he was sincere." },
+    { "id": "s03", "ko": "그는 질문에 대답하지 않고 얼버무렸다.", "reading": "geu-neun jil-mun-e dae-dap-ha-ji an-ko eol-beo-mu-ryeot-da", "en": "He didn't answer the question and just mumbled." },
+    { "id": "s04", "ko": "용기를 내서 마음을 전했다.", "reading": "yong-gi-reul nae-seo ma-eum-eul jeon-haet-da", "en": "I mustered courage and conveyed my feelings." },
+    { "id": "s05", "ko": "그는 고민하지 않고 직진하는 성격이다.", "reading": "geu-neun go-min-ha-ji an-ko jik-jin-ha-neun seong-gyeok-i-da", "en": "He's the type of person who goes straight for it without hesitation." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "선우", "text": "니 내 좋아하나? 오늘은 얼버무리지 말고 대답해라.", "reading": "ni nae jo-a-ha-na? o-neul-eun eol-beo-mu-ri-ji mal-go dae-dap-hae-ra.", "en": "Do you like me? Don't mumble around it today, just answer." },
+        { "speaker": "승객", "text": "가, 갑자기 그런 걸 왜 묻노...", "reading": "ga, gap-ja-gi geu-reon geol wae mut-no...", "en": "W-why are you suddenly asking that..." },
+        { "speaker": "선우", "text": "됐다, 대답 피하지 마라. 나는 진지하다.", "reading": "dwaet-da, dae-dap pi-ha-ji ma-ra. na-neun jin-ji-ha-da.", "en": "Come on, don't avoid the answer. I'm serious." },
+        { "speaker": "승객", "text": "...맞다. 좋아한다, 오래전부터.", "reading": "...mat-da. jo-a-han-da, o-rae-jeon-bu-teo.", "en": "...That's right. I like you, and have for a long time." }
+      ],
+      "question": "이 대화의 결과로 알 수 있는 것은 무엇인가요?",
+      "question_en": "What can be concluded from the outcome of this conversation?",
+      "correct_answer": "승객이 선우에 대한 자신의 마음을 솔직하게 인정했다",
+      "options": ["승객이 선우에 대한 자신의 마음을 솔직하게 인정했다", "승객이 화가 나서 자리를 떠났다", "선우가 질문을 취소했다", "두 사람이 다투기 시작했다"],
+      "explanation": "승객은 처음엔 당황하지만 결국 선우를 오래전부터 좋아해 왔다고 솔직하게 인정합니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "선우", "text": "...진짜가? 장난 아니고?", "reading": "...jin-jja-ga? jang-nan a-ni-go?", "en": "...Really? Not a joke?" },
+        { "speaker": "승객", "text": "장난 아니다. 니는? 니는 어떤데.", "reading": "jang-nan a-ni-da. ni-neun? ni-neun eo-tteon-de.", "en": "Not a joke. What about you? How do you feel." },
+        { "speaker": "선우", "text": "내가 먼저 물어봤는데 이래 되뿌네. 하... 내도 마찬가지다.", "reading": "nae-ga meon-jeo mul-eo-bwat-neun-de i-rae doe-ppu-ne. ha... nae-do ma-chan-ga-ji-da.", "en": "I was the one who asked first, and now this happens. Ha... I feel the same way." },
+        { "speaker": "승객", "text": "그럼 우리 이제 뭐가 되는 거고?", "reading": "geu-reom u-ri i-je mwo-ga doe-neun geo-go?", "en": "So what are we now, then?" }
+      ],
+      "question": "선우의 반응에서 알 수 있는 그의 마음은 무엇인가요?",
+      "question_en": "What does Sunwoo's reaction reveal about his feelings?",
+      "correct_answer": "승객과 같은 마음이라는 것을 인정하며 기뻐하는 마음",
+      "options": ["승객과 같은 마음이라는 것을 인정하며 기뻐하는 마음", "예상치 못한 대답에 화가 난 마음", "승객을 놀리려는 장난스러운 마음", "빨리 이 상황을 피하고 싶은 마음"],
+      "explanation": "선우는 놀란 듯하면서도 자신도 같은 마음이라고 인정하며, 서로의 진심이 확인되는 순간입니다."
+    }
+  ]
+}

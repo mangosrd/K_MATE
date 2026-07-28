@@ -1,0 +1,93 @@
+{
+  "id": "sp-rom-sunwoo-01",
+  "character_id": "sunwoo",
+  "title": "코흘리개가 예뻐졌다?",
+  "emoji": "😜",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "어? 니 진짜 왔나? '오랜만'이다 진짜!",
+      "reading": "eo? ni jin-jja wan-na? o-raen-man-i-da jin-jja!",
+      "en": "Huh? You actually came? It's really been a while!",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "와... '몰라볼' 뻔했다. 어릴 땐 코흘리개였는데 이래 예뻐질 줄 몰랐네.",
+      "reading": "wa... mol-la-bol ppeon-haet-da. eo-ril ttaen ko-heul-li-gae-yeon-neun-de i-rae ye-ppeo-jil jul mol-lan-ne.",
+      "en": "Whoa... I almost didn't recognize you. You were a snot-nosed kid, I didn't know you'd turn out this pretty.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "와 이래 빤히 보노? 오랜만에 '놀리는' 재미가 쏠쏠하다.",
+      "reading": "wa i-rae ppan-hi bo-no? o-raen-man-e nol-li-neun jae-mi-ga ssol-ssol-ha-da.",
+      "en": "Why are you staring at me like that? Teasing you after so long is way too fun.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "사실... 니 온다는 소식 듣고 좀 '설레긴' 했다. 티 내진 마라이.",
+      "reading": "sa-sil... ni on-da-neun so-sik deut-go jom seol-le-gin haet-da. ti nae-jin ma-ra-i.",
+      "en": "Actually... when I heard you were coming, I got a little excited. Don't go around telling people though.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "와 또 딴청 피우네. 내가 이래 '능청스럽게' 넘어가는 거 알제?",
+      "reading": "wa tto ttan-cheong pi-u-ne. nae-ga i-rae neung-cheong-seu-reop-ge neo-meo-ga-neun geo al-je?",
+      "en": "See, dodging the subject again. You know I'm good at playing it cool, right?",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "해운대 바닷바람이나 좀 쐬자. 오랜만에 옛날 얘기도 좀 하고.",
+      "reading": "hae-un-dae ba-dat-ba-ram-i-na jom ssoe-ja. o-raen-man-e yen-nal yae-gi-do jom ha-go.",
+      "en": "Let's go feel the sea breeze at Haeundae. We can catch up on old times too."
+    },
+    {
+      "text": "단어는 다 챙겼제? 이번엔 대화 상황 문제도 있으니까, 무슨 일이 벌어지는지 한번 맞혀봐라.",
+      "reading": "dan-eo-neun da chaeng-gyeot-je? i-beon-en dae-hwa sang-hwang mun-je-do it-eu-ni-kka, mu-seun il-i beol-eo-ji-neun-ji han-beon mach-yeo-bwa-ra.",
+      "en": "Got all the words down? This chapter also has a conversation question — try to figure out what's going on."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "오랜만", "reading": "o-raen-man", "meaning": "Long time (no see)", "example": "오랜만에 친구를 만나서 정말 반가웠다.", "example_reading": "o-raen-man-e chin-gu-reul man-na-seo jeong-mal ban-ga-wo-tta", "example_en": "I was so glad to meet my friend after a long time." },
+    { "id": "w02", "word": "몰라보다", "reading": "mol-la-bo-da", "meaning": "To not recognize someone", "example": "오랜만에 만난 친구를 몰라볼 뻔했다.", "example_reading": "o-raen-man-e man-nan chin-gu-reul mol-la-bol ppeon-haet-da", "example_en": "I almost didn't recognize my friend after not seeing them for so long." },
+    { "id": "w03", "word": "놀리다", "reading": "nol-li-da", "meaning": "To tease, make fun of", "example": "형이 자꾸 나를 놀려서 화가 났다.", "example_reading": "hyeong-i ja-kku na-reul nol-lyeo-seo hwa-ga nat-da", "example_en": "My older brother kept teasing me, so I got upset." },
+    { "id": "w04", "word": "설레다", "reading": "seol-le-da", "meaning": "To flutter, feel excited/nervous", "example": "여행 가기 전날 밤은 마음이 설렌다.", "example_reading": "yeo-haeng ga-gi jeon-nal bam-eun ma-eum-i seol-len-da", "example_en": "The night before a trip, my heart flutters with excitement." },
+    { "id": "w05", "word": "능청스럽다", "reading": "neung-cheong-seu-reop-da", "meaning": "To act nonchalant, feign innocence", "example": "그는 능청스럽게 모르는 척했다.", "example_reading": "geu-neun neung-cheong-seu-reop-ge mo-reu-neun cheok-haet-da", "example_en": "He nonchalantly acted like he didn't know." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "오랜만에 만난 친구가 무척 반가웠다.", "reading": "o-raen-man-e man-nan chin-gu-ga mu-cheok ban-ga-wo-tta", "en": "I was very glad to meet my friend after a long time." },
+    { "id": "s02", "ko": "그는 나를 몰라보고 지나쳐 갔다.", "reading": "geu-neun na-reul mol-la-bo-go ji-na-chyeo gat-da", "en": "He walked right past me without recognizing me." },
+    { "id": "s03", "ko": "선우는 나를 자꾸 놀리면서 웃었다.", "reading": "seon-u-neun na-reul ja-kku nol-li-myeon-seo u-seot-da", "en": "Sunwoo kept teasing me and laughing." },
+    { "id": "s04", "ko": "그 소식을 듣고 마음이 설렜다.", "reading": "geu so-sik-eul deut-go ma-eum-i seol-let-da", "en": "My heart fluttered when I heard the news." },
+    { "id": "s05", "ko": "그는 능청스럽게 딴청을 피웠다.", "reading": "geu-neun neung-cheong-seu-reop-ge ttan-cheong-eul pi-wot-da", "en": "He nonchalantly acted like nothing was going on." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "선우", "text": "야! 니 진짜 오랜만이다. 공항에서 여까지 혼자 잘 찾아왔나?", "reading": "ya! ni jin-jja o-raen-man-i-da. gong-hang-e-seo yeo-kka-ji hon-ja jal chaj-a-wan-na?", "en": "Hey! It's really been a while. Did you find your way here alone okay from the airport?" },
+        { "speaker": "승객", "text": "어, 어렵지 않았어. 근데 너 하나도 안 변했네.", "reading": "eo, eo-ryeop-ji an-a-sseo. geun-de neo ha-na-do an byeon-haen-ne.", "en": "Yeah, it wasn't hard. But you haven't changed a bit." },
+        { "speaker": "선우", "text": "내는 그대로지. 근데 니는... 마 몰라볼 뻔했다. 많이 예뻐졌네.", "reading": "nae-neun geu-dae-ro-ji. geun-de ni-neun... ma mol-la-bol ppeon-haet-da. man-i ye-ppeo-jyeon-ne.", "en": "I'm the same as always. But you... I almost didn't recognize you. You've gotten really pretty." },
+        { "speaker": "승객", "text": "뭐라카노, 그런 말을 그렇게 갑자기 하나.", "reading": "mwo-ra-ka-no, geu-reon mal-eul geu-reo-ke gap-ja-gi ha-na.", "en": "What are you saying, blurting that out so suddenly." }
+      ],
+      "question": "선우가 승객에게 이런 말을 한 이유는 무엇인가요?",
+      "question_en": "Why does Sunwoo say this to the passenger?",
+      "correct_answer": "오랜만에 만난 승객이 많이 예뻐져서 놀라서",
+      "options": ["오랜만에 만난 승객이 많이 예뻐져서 놀라서", "승객이 길을 잃어서 화가 나서", "승객이 비행기를 놓쳐서", "승객이 다른 사람과 착각해서"],
+      "explanation": "선우는 오랜만에 본 승객이 몰라볼 정도로 예뻐진 것에 놀라 놀리듯 말하고 있습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "선우", "text": "니 옛날에 여기서 아이스크림 흘리가 울고불고 난리쳤던 거 기억나나?", "reading": "ni yen-nal-e yeo-gi-seo a-i-seu-keu-rim heul-li-ga ul-go-bul-go nal-li-chyeot-deon geo gi-eok-na-na?", "en": "Do you remember crying and making a huge fuss here as a kid because you dropped your ice cream?" },
+        { "speaker": "승객", "text": "그, 그건 언제 적 얘기를 아직도 하나!", "reading": "geu, geu-geon eon-je jeok yae-gi-reul a-jik-do ha-na!", "en": "Th-that's ancient history, why bring it up now!" },
+        { "speaker": "선우", "text": "하하, 니가 하도 웃겨가 아직도 생생하다. 지금도 그리 잘 흘리나?", "reading": "ha-ha, ni-ga ha-do ut-gyeo-ga a-jik-do saeng-saeng-ha-da. ji-geum-do geu-ri jal heul-li-na?", "en": "Haha, you were so funny that I still remember it vividly. Do you still drop things that easily?" },
+        { "speaker": "승객", "text": "안 흘려! 그만 놀려라 좀.", "reading": "an heul-lyeo! geu-man nol-lyeo-ra jom.", "en": "I don't drop things! Stop teasing me already." }
+      ],
+      "question": "선우는 왜 옛날 이야기를 꺼냈나요?",
+      "question_en": "Why does Sunwoo bring up an old story?",
+      "correct_answer": "승객의 어릴 적 모습을 떠올리며 놀리려고",
+      "options": ["승객의 어릴 적 모습을 떠올리며 놀리려고", "아이스크림 가게를 추천하려고", "비행 일정을 설명하려고", "승객에게 화를 내려고"],
+      "explanation": "선우는 어릴 때 아이스크림을 흘리며 울었던 승객의 모습을 떠올리며 장난스럽게 놀리고 있습니다."
+    }
+  ]
+}

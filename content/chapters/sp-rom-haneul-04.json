@@ -1,0 +1,62 @@
+{
+  "id": "sp-rom-haneul-04",
+  "character_id": "haneul",
+  "title": "딴 사람이랑 뭐 했어요",
+  "emoji": "😤",
+  "story": [
+    {
+      "text": "…여태 어디 있었어요. 연락도 안 되고.",
+      "reading": "…yeo-tae eo-di iss-eoss-eo-yo. yeol-lak-do an doe-go.",
+      "en": "...Where have you been all this time. You weren't answering."
+    },
+    {
+      "text": "남부 '시장'까지 혼자 간 거예요? 위험하게.",
+      "reading": "nam-bu 'si-jang'kka-ji hon-ja gan geo-ye-yo? wi-heom-ha-ge.",
+      "en": "You went all the way to Nambu 'Market' alone? That's dangerous.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "'친구'? …누구요. 그런 얘기 안 했잖아요.",
+      "reading": "'chin-gu'? …nu-gu-yo. geu-reon yae-gi an haess-jan-a-yo.",
+      "en": "A 'friend'? ...Who? You never mentioned that.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "'밤'늦게 낯선 사람이랑 다니지 마요. 이 동네 어두운 골목 많아요.",
+      "reading": "'bam'neuj-ge nach-seon sa-ram-i-rang da-ni-ji ma-yo. i dong-ne eo-du-un gol-mok man-a-yo.",
+      "en": "Don't wander around late at 'night' with strangers. This neighborhood has a lot of dark alleys.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "…아까 그 '사람'이랑 뭐 했어요. 그냥 궁금해서 그래요.",
+      "reading": "…a-kka geu 'sa-ram'i-rang mwo haess-eo-yo. geu-nyang gung-geum-hae-seo geu-rae-yo.",
+      "en": "...What were you doing with that 'person' earlier. I'm just curious, that's all.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "됐어요. 왜 그런 '표정'으로 봐요. 신경 안 써요, 진짜.",
+      "reading": "dwaess-eo-yo. wae geu-reon 'pyo-jeong'eu-ro bwa-yo. sin-gyeong an sseo-yo, jin-jja.",
+      "en": "Never mind. Why are you looking at me with that 'expression'. I really don't care.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "…아니다, 신경 쓰여요. 자, 오늘은 여기까지만 해요.",
+      "reading": "…a-ni-da, sin-gyeong sseu-yeo-yo. ja, o-neul-eun yeo-gi-kka-ji-man hae-yo.",
+      "en": "...No, actually, I do care. Alright, let's stop here for today."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "시장", "reading": "si-jang", "meaning": "Market", "example": "시장에서 맛있는 음식을 팔아요.", "example_reading": "si-jang-e-seo mas-iss-neun eum-sig-eul pal-a-yo", "example_en": "They sell delicious food at the market." },
+    { "id": "w02", "word": "친구", "reading": "chin-gu", "meaning": "Friend", "example": "저 사람은 제 친구예요.", "example_reading": "jeo sa-ram-eun je chin-gu-ye-yo", "example_en": "That person is my friend." },
+    { "id": "w03", "word": "밤", "reading": "bam", "meaning": "Night", "example": "밤에는 시장이 더 활기차요.", "example_reading": "bam-e-neun si-jang-i deo hwal-gi-cha-yo", "example_en": "The market is livelier at night." },
+    { "id": "w04", "word": "사람", "reading": "sa-ram", "meaning": "Person", "example": "저 사람은 누구예요?", "example_reading": "jeo sa-ram-eun nu-gu-ye-yo", "example_en": "Who is that person?" },
+    { "id": "w05", "word": "표정", "reading": "pyo-jeong", "meaning": "Expression (face)", "example": "표정이 왜 그래요?", "example_reading": "pyo-jeong-i wae geu-rae-yo", "example_en": "Why do you have that expression?" }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "시장에 사람이 정말 많아요.", "reading": "si-jang-e sa-ram-i jeong-mal man-a-yo", "en": "There are so many people at the market." },
+    { "id": "s02", "ko": "친구랑 같이 밤 시장에 갔어요.", "reading": "chin-gu-rang gat-i bam si-jang-e gass-eo-yo", "en": "I went to the night market with a friend." },
+    { "id": "s03", "ko": "밤이 되니까 불빛이 예뻐요.", "reading": "bam-i doe-ni-kka bul-bich-i ye-ppeo-yo", "en": "Now that it's night, the lights are pretty." },
+    { "id": "s04", "ko": "그 사람 표정이 좀 이상해요.", "reading": "geu sa-ram pyo-jeong-i jom i-sang-hae-yo", "en": "That person's expression looks a bit strange." },
+    { "id": "s05", "ko": "표정 관리 좀 해요.", "reading": "pyo-jeong gwal-li jom hae-yo", "en": "Try to manage your expression a little." }
+  ]
+}

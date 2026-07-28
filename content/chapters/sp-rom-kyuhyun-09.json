@@ -1,0 +1,62 @@
+{
+  "id": "sp-rom-kyuhyun-09",
+  "character_id": "kyuhyun",
+  "title": "서툴게 고쳐 쓴 고백 멘트",
+  "emoji": "📝",
+  "story": [
+    {
+      "text": "오늘 여기로 오자고 한 거, 사실 다 이유가 있어요. 잠깐 제 얘기 좀 들어줄래요?",
+      "reading": "o-neul yeo-gi-ro o-ja-go han geo, sa-sil da i-yu-ga i-sseo-yo. jam-kkan je yae-gi jom deul-eo-jul-lae-yo?",
+      "en": "There's actually a reason I asked you to come here today. Can you listen to me for a moment?"
+    },
+    {
+      "text": "저 사실... 어제부터 계속 '고백' 멘트를 준비했거든요. 근데 이게 생각보다 어렵네요.",
+      "reading": "jeo sa-sil... eo-je-bu-teo gye-sok go-baek men-teu-reul jun-bi-haet-geo-deun-yo. geun-de i-ge saeng-gak-bo-da eo-ryeop-ne-yo.",
+      "en": "Actually... I've been preparing a 'confession' line since yesterday. But it's way harder than I thought.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "핸드폰에 '편지'처럼 써놨는데, 막상 꺼내려니까 손이 떨리네요.",
+      "reading": "haen-deu-pon-e pyeon-ji-cheo-reom sseo-nwat-neun-de, mak-sang kkeo-nae-ryeo-ni-kka son-i tteol-li-ne-yo.",
+      "en": "I wrote it out like a 'letter' on my phone, but now that I actually want to pull it out, my hands are shaking.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "덕수궁 '돌담길' 걸으면 헤어진다는 얘기 있잖아요. 그래서 오늘, 저는 반대로 걸어보려고요.",
+      "reading": "deok-su-gung dol-dam-gil geol-eu-myeon hae-eo-jin-da-neun yae-gi it-jan-a-yo. geu-rae-seo o-neul, jeo-neun ban-dae-ro geol-eo-bo-ryeo-go-yo.",
+      "en": "They say couples break up walking this 'stone wall path' at Deoksugung. So today, I'm trying to walk it the opposite way.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "'연습'까지 했는데 왜 하나도 기억이 안 나죠? 능글맞던 규현 기장 다 어디 갔나 몰라요.",
+      "reading": "yeon-seup-kka-ji haet-neun-de wae ha-na-do gi-eok-i an na-jyo? neung-geul-maj-deon gyu-hyeon gi-jang da eo-di gan-na mol-la-yo.",
+      "en": "I even did 'practice', so why can't I remember any of it? Where did smooth Captain Kyuhyun go, I have no idea.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "그냥 지금 이 '떨림' 그대로 말할게요. 저... 승객님이 진짜 좋아요.",
+      "reading": "geu-nyang ji-geum i tteol-lim geu-dae-ro mal-hal-ge-yo. jeo... seung-gaek-nim-i jin-jja jo-a-yo.",
+      "en": "I'll just say it with this 'trembling', just as it is. I... I really like you.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "...아, 이렇게 말해버렸네요. 크흠, 자, 오늘 배운 단어들 문제로 확인해볼까요?",
+      "reading": "...a, i-reo-ke mal-hae-beo-ryeot-ne-yo. keu-heum, ja, o-neul bae-un dan-eo-deul mun-je-ro hwa-gin-hae-bol-kka-yo?",
+      "en": "...ah, I just said it, just like that. Ahem, well, shall we check today's words with some questions?"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "고백", "reading": "go-baek", "meaning": "confession", "example": "드디어 고백을 했어요.", "example_reading": "deu-di-eo go-baek-eul hae-sseo-yo", "example_en": "I finally confessed." },
+    { "id": "w02", "word": "편지", "reading": "pyeon-ji", "meaning": "letter", "example": "편지에 제 마음을 다 적었어요.", "example_reading": "pyeon-ji-e je ma-eum-eul da jeog-eo-sseo-yo", "example_en": "I wrote all my feelings in the letter." },
+    { "id": "w03", "word": "돌담길", "reading": "dol-dam-gil", "meaning": "stone wall path", "example": "덕수궁 돌담길을 같이 걸었어요.", "example_reading": "deok-su-gung dol-dam-gil-eul ga-chi geol-eo-sseo-yo", "example_en": "We walked the Deoksugung stone wall path together." },
+    { "id": "w04", "word": "연습", "reading": "yeon-seup", "meaning": "practice", "example": "고백 연습을 많이 했어요.", "example_reading": "go-baek yeon-seup-eul man-i hae-sseo-yo", "example_en": "I practiced my confession a lot." },
+    { "id": "w05", "word": "떨림", "reading": "tteol-lim", "meaning": "trembling, nervousness", "example": "손이 떨림을 감출 수 없었어요.", "example_reading": "son-i tteol-lim-eul gam-chul su eop-seo-sseo-yo", "example_en": "I couldn't hide the trembling of my hands." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "드디어 고백을 했어요.", "reading": "deu-di-eo go-baek-eul hae-sseo-yo", "en": "I finally confessed." },
+    { "id": "s02", "ko": "편지에 제 마음을 다 적었어요.", "reading": "pyeon-ji-e je ma-eum-eul da jeog-eo-sseo-yo", "en": "I wrote all my feelings in the letter." },
+    { "id": "s03", "ko": "덕수궁 돌담길을 같이 걸었어요.", "reading": "deok-su-gung dol-dam-gil-eul ga-chi geol-eo-sseo-yo", "en": "We walked the Deoksugung stone wall path together." },
+    { "id": "s04", "ko": "고백 연습을 많이 했어요.", "reading": "go-baek yeon-seup-eul man-i hae-sseo-yo", "en": "I practiced my confession a lot." },
+    { "id": "s05", "ko": "손이 떨림을 감출 수 없었어요.", "reading": "son-i tteol-lim-eul gam-chul su eop-seo-sseo-yo", "en": "I couldn't hide the trembling of my hands." }
+  ]
+}

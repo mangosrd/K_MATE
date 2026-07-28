@@ -1,0 +1,93 @@
+{
+  "id": "sp-rom-sangwoo-08",
+  "character_id": "sangwoo",
+  "title": "이 채널, 당신에게만 열어둘게요",
+  "emoji": "📻",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "오늘은 부여 낙화암과 백마강입니다. 노을이 강물 위로 붉게 번지는 시간이지요. 오늘은 격식을 조금 내려놓고 말씀드리고 싶습니다.",
+      "reading": "o-neul-eun bu-yeo nak-hwa-am-gwa baeng-ma-gang-im-ni-da. no-eul-i gang-mul wi-ro bulg-ge beon-ji-neun si-gan-i-ji-yo. o-neul-eun gyeok-sig-eul jo-geum nae-ryeo-no-ko mal-sseum-deu-ri-go sip-seum-ni-da.",
+      "en": "Today we're at Nakhwaam Rock and the Baengma River in Buyeo, at the hour when the sunset spreads red across the water. Today, I'd like to set aside a bit of formality and speak to you."
+    },
+    {
+      "text": "제 목소리는 원래 정해진 항로로만 '전파'를 보냅니다. 그런데 지금은, 당신에게만 닿길 바라며 보내고 있습니다.",
+      "reading": "je mok-so-ri-neun won-lae jeong-hae-jin hang-no-ro-man 'jeon-pa'-reul bo-naem-ni-da. geu-reon-de ji-geum-eun, dang-sin-e-ge-man da-kkil ba-ra-myeo bo-nae-go it-seum-ni-da.",
+      "en": "My voice normally sends 'radio waves' only along fixed routes. But right now, I'm sending it hoping it reaches only you.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "누구와도 맞춰본 적 없는 '주파수'입니다. 당신과는 이상하게, 처음부터 잘 맞았습니다.",
+      "reading": "nu-gu-wa-do mat-chwo-bon jeog eop-neun 'ju-pa-su'-im-ni-da. dang-sin-gwa-neun i-sang-ha-ge, cheo-eum-bu-teo jal mat-at-seum-ni-da.",
+      "en": "This is a 'frequency' I've never tuned with anyone before. With you, strangely, it matched from the very start.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "그래서 결심했습니다. 이 채널을, 당신에게만 '개방'하겠습니다.",
+      "reading": "geu-rae-seo gyeol-sim-haet-seum-ni-da. i chae-neol-eul, dang-sin-e-ge-man 'gae-bang'-ha-get-seum-ni-da.",
+      "en": "So I've decided. I'll 'open' this channel to you alone.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "이건 아무에게나 건네는 말이 아닙니다. 당신을 향한 '신뢰'가 없었다면 하지 못했을 말입니다.",
+      "reading": "i-geon a-mu-e-ge-na geon-ne-neun mal-i a-nim-ni-da. dang-sin-eul hyang-han 'sin-roe'-ga eop-seot-da-myeon ha-ji mot-hae-sseul mal-im-ni-da.",
+      "en": "This isn't something I'd say to just anyone. Without 'trust' in you, I couldn't have said it.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "무전 멘트 뒤에 숨기지 않고, 이번엔 '진심'으로 말씀드립니다. 이 채널, 당신에게만 열어두겠습니다.",
+      "reading": "mu-jeon men-teu dwi-e sum-gi-ji an-ko, i-beon-en 'jin-sim'-eu-ro mal-sseum-deu-rim-ni-da. i chae-neol, dang-sin-e-ge-man yeol-eo-du-get-seum-ni-da.",
+      "en": "Not hiding behind radio phrases this time, I'll say it with 'sincerity'. I'll keep this channel open for you alone.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "…말이 길어졌습니다. 백마강에서 나눈 대화를 보여드릴 테니, 두 사람의 마음이 어디쯤 있는지 짚어 보시기 바랍니다.",
+      "reading": "…mal-i gil-eo-jyeot-seum-ni-da. baeng-ma-gang-e-seo na-nun dae-hwa-reul bo-yeo-deu-ril te-ni, du sa-ram-ui ma-eum-i eo-di-jjeum it-neun-ji jip-eo bo-si-gi ba-ram-ni-da.",
+      "en": "...I've gone on a bit long. I'll show you a conversation shared by the Baengma River—please work out where the two hearts stand."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "전파", "reading": "jeon-pa", "meaning": "Radio wave", "example": "제 목소리는 정해진 항로로만 전파를 보냅니다.", "example_reading": "je mok-so-ri-neun jeong-hae-jin hang-no-ro-man jeon-pa-reul bo-naem-ni-da", "example_en": "My voice normally sends radio waves only along fixed routes." },
+    { "id": "w02", "word": "주파수", "reading": "ju-pa-su", "meaning": "Frequency", "example": "당신과는 처음부터 주파수가 잘 맞았습니다.", "example_reading": "dang-sin-gwa-neun cheo-eum-bu-teo ju-pa-su-ga jal mat-at-seum-ni-da", "example_en": "With you, the frequency matched from the very start." },
+    { "id": "w03", "word": "개방", "reading": "gae-bang", "meaning": "Opening (up)", "example": "이 채널을 당신에게만 개방하겠습니다.", "example_reading": "i chae-neol-eul dang-sin-e-ge-man gae-bang-ha-get-seum-ni-da", "example_en": "I'll open this channel to you alone." },
+    { "id": "w04", "word": "신뢰", "reading": "sin-roe", "meaning": "Trust", "example": "당신을 향한 신뢰가 없었다면 하지 못했을 말입니다.", "example_reading": "dang-sin-eul hyang-han sin-roe-ga eop-seot-da-myeon ha-ji mot-hae-sseul mal-im-ni-da", "example_en": "Without trust in you, I couldn't have said this." },
+    { "id": "w05", "word": "진심", "reading": "jin-sim", "meaning": "Sincerity / true heart", "example": "이번엔 진심으로 말씀드립니다.", "example_reading": "i-beon-en jin-sim-eu-ro mal-sseum-deu-rim-ni-da", "example_en": "This time, I'll say it with sincerity." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "제 목소리는 정해진 항로로만 전파를 보냅니다.", "reading": "je mok-so-ri-neun jeong-hae-jin hang-no-ro-man jeon-pa-reul bo-naem-ni-da", "en": "My voice normally sends radio waves only along fixed routes." },
+    { "id": "s02", "ko": "당신과는 처음부터 주파수가 잘 맞았습니다.", "reading": "dang-sin-gwa-neun cheo-eum-bu-teo ju-pa-su-ga jal mat-at-seum-ni-da", "en": "With you, the frequency matched from the very start." },
+    { "id": "s03", "ko": "이 채널을 당신에게만 개방하겠습니다.", "reading": "i chae-neol-eul dang-sin-e-ge-man gae-bang-ha-get-seum-ni-da", "en": "I'll open this channel to you alone." },
+    { "id": "s04", "ko": "당신을 향한 신뢰가 없었다면 하지 못했을 말입니다.", "reading": "dang-sin-eul hyang-han sin-roe-ga eop-seot-da-myeon ha-ji mot-hae-sseul mal-im-ni-da", "en": "Without trust in you, I couldn't have said this." },
+    { "id": "s05", "ko": "이번엔 진심으로 말씀드립니다.", "reading": "i-beon-en jin-sim-eu-ro mal-sseum-deu-rim-ni-da", "en": "This time, I'll say it with sincerity." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "천상우 기장", "text": "이 채널, 오늘부터 당신에게만 개방하겠습니다.", "reading": "i chae-neol, o-neul-bu-teo dang-sin-e-ge-man gae-bang-ha-get-seum-ni-da.", "en": "This channel, from today, I'll open it to you alone." },
+        { "speaker": "승객", "text": "채널을 개방한다는 게... 무슨 뜻이에요?", "reading": "chae-neol-eul gae-bang-han-da-neun ge... mu-seun tteu-si-e-yo?", "en": "What do you mean by 'opening the channel'...?" },
+        { "speaker": "천상우 기장", "text": "제 진심을 숨기지 않고 전하겠다는 뜻입니다.", "reading": "je jin-sim-eul sum-gi-ji an-ko jeon-ha-get-da-neun tteu-sim-ni-da.", "en": "It means I'll convey my sincerity without hiding it." },
+        { "speaker": "승객", "text": "…기장님, 지금 되게 로맨틱한 거 아세요?", "reading": "…gi-jang-nim, ji-geum doe-ge ro-maen-tik-han geo a-se-yo?", "en": "...Captain, do you realize how romantic you're being right now?" }
+      ],
+      "question": "기장이 \"채널을 개방하겠다\"라고 말한 진짜 의미는?",
+      "question_en": "What is the real meaning behind the captain saying, 'I'll open the channel'?",
+      "correct_answer": "승객에게 자신의 진심을 숨기지 않고 보여주겠다는 뜻",
+      "options": ["승객에게 자신의 진심을 숨기지 않고 보여주겠다는 뜻", "새로운 무전 주파수를 공식적으로 등록하겠다는 뜻", "회사 규정을 변경하겠다는 뜻", "다른 승객들에게도 같은 채널을 쓰겠다는 뜻"],
+      "explanation": "기장은 실제 무전 채널이 아니라, 승객에게 자신의 진심을 숨김없이 보여주겠다는 마음을 '개방'이라는 말로 표현하고 있습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "승객", "text": "기장님은 아무한테나 이런 말 안 하실 것 같은데.", "reading": "gi-jang-nim-eun a-mu-han-te-na i-reon mal an ha-sil geot gat-eun-de.", "en": "You don't seem like the type to say this kind of thing to just anyone." },
+        { "speaker": "천상우 기장", "text": "맞습니다. 신뢰가 없는 사람에게는 이 주파수를 맞추지 않습니다.", "reading": "mat-seum-ni-da. sin-roe-ga eop-neun sa-ram-e-ge-neun i ju-pa-su-reul mat-chu-ji an-seum-ni-da.", "en": "That's right. I don't tune this frequency for someone I don't trust." },
+        { "speaker": "승객", "text": "그럼 저는 특별한 사람인 거예요?", "reading": "geu-reom jeo-neun teuk-byeol-han sa-ram-in geo-ye-yo?", "en": "So am I a special person to you, then?" },
+        { "speaker": "천상우 기장", "text": "…부정하면, 지금까지의 제 말이 다 거짓말이 됩니다.", "reading": "…bu-jeong-ha-myeon, ji-geum-kka-ji-ui je mal-i da geo-jit-mal-i doem-ni-da.", "en": "...If I deny it, everything I've said so far becomes a lie." }
+      ],
+      "question": "기장의 마지막 대답이 뜻하는 바는?",
+      "question_en": "What does the captain's last answer mean?",
+      "correct_answer": "승객이 자신에게 특별한 사람이라는 것을 인정한다",
+      "options": ["승객이 자신에게 특별한 사람이라는 것을 인정한다", "지금까지 한 말이 전부 거짓이었다는 뜻", "질문에 대답을 회피하려는 뜻", "규정상 답할 수 없다는 뜻"],
+      "explanation": "기장은 부정하면 이전의 진심 어린 말들이 거짓이 되어버린다고 말하며, 승객이 특별한 사람임을 완곡하게 인정합니다."
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "id": "sp-rom-sunwoo-07",
+  "character_id": "sunwoo",
+  "title": "광안대교 불빛 아래, 장난기 없이",
+  "emoji": "🌉",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "광안대교 '야경' 진짜 오랜만에 여서 보네, 니랑.",
+      "reading": "gwang-an-dae-gyo ya-gyeong jin-jja o-raen-man-e yeo-seo bo-ne, ni-rang.",
+      "en": "It's really been a while since I've seen Gwangan Bridge's night view here, with you.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "오늘따라 내가 좀 '진지하다', 그자?",
+      "reading": "o-neul-tta-ra nae-ga jom jin-ji-ha-da, geu-ja?",
+      "en": "I'm being unusually serious today, aren't I?",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "니 그렇게 '눈빛'으로 쳐다보면 내 진짜 말 다 해버릴지도 모른다.",
+      "reading": "ni geu-reo-ke nun-bit-eu-ro chyeo-da-bo-myeon nae jin-jja mal da hae-beo-ril-ji-do mo-reun-da.",
+      "en": "If you keep looking at me with that gaze, I might just end up saying everything.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "이상하게 손이 다 '떨리네', 이 나이에.",
+      "reading": "i-sang-ha-ge son-i da tteol-li-ne, i na-i-e.",
+      "en": "Strangely, my hands are trembling, at my age.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "이거 무슨 '고백'도 아니고... 아니, 고백 맞는 갑다.",
+      "reading": "i-geo mu-seun go-baek-do a-ni-go... a-ni, go-baek man-neun gap-da.",
+      "en": "This isn't some confession or anything... no, actually, I guess it is.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "조금만 더 여기 있다 가자. 아직 할 말 남았다.",
+      "reading": "jo-geum-man deo yeo-gi it-da ga-ja. a-jik hal mal nam-at-da.",
+      "en": "Let's stay here just a little longer. I still have more to say."
+    },
+    {
+      "text": "단어는 다 봤제? 오늘 대화 문제도 잘 읽어보고 풀어봐라.",
+      "reading": "dan-eo-neun da bwat-je? o-neul dae-hwa mun-je-do jal ilg-eo-bo-go pul-eo-bwa-ra.",
+      "en": "Got a look at all the words? Read today's conversation question carefully and try it too."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "야경", "reading": "ya-gyeong", "meaning": "Night view", "example": "부산의 야경은 정말 아름답다.", "example_reading": "bu-san-ui ya-gyeong-eun jeong-mal a-reum-dap-da", "example_en": "Busan's night view is truly beautiful." },
+    { "id": "w02", "word": "진지하다", "reading": "jin-ji-ha-da", "meaning": "To be serious", "example": "그는 진지한 얼굴로 이야기했다.", "example_reading": "geu-neun jin-ji-han eol-gul-lo i-ya-gi-haet-da", "example_en": "He spoke with a serious expression." },
+    { "id": "w03", "word": "눈빛", "reading": "nun-bit", "meaning": "Look in one's eyes, gaze", "example": "그의 눈빛이 따뜻했다.", "example_reading": "geu-ui nun-bit-i tta-tteut-haet-da", "example_en": "His gaze was warm." },
+    { "id": "w04", "word": "떨리다", "reading": "tteol-li-da", "meaning": "To tremble, shake (be nervous)", "example": "긴장해서 목소리가 떨렸다.", "example_reading": "gin-jang-hae-seo mok-so-ri-ga tteol-lyeot-da", "example_en": "I was so nervous my voice trembled." },
+    { "id": "w05", "word": "고백", "reading": "go-baek", "meaning": "Confession", "example": "그는 용기를 내어 고백을 했다.", "example_reading": "geu-neun yong-gi-reul nae-eo go-baek-eul haet-da", "example_en": "He mustered courage and confessed." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "광안대교의 야경이 정말 아름다웠다.", "reading": "gwang-an-dae-gyo-ui ya-gyeong-i jeong-mal a-reum-da-wot-da", "en": "Gwangan Bridge's night view was truly beautiful." },
+    { "id": "s02", "ko": "그는 평소와 달리 진지한 얼굴이었다.", "reading": "geu-neun pyeong-so-wa dal-li jin-ji-han eol-gul-i-eot-da", "en": "Unlike usual, he had a serious face." },
+    { "id": "s03", "ko": "그의 눈빛이 예전과 다르게 느껴졌다.", "reading": "geu-ui nun-bit-i ye-jeon-gwa da-reu-ge neu-kkyeo-jyeot-da", "en": "His gaze felt different from before." },
+    { "id": "s04", "ko": "긴장해서 목소리가 떨렸다.", "reading": "gin-jang-hae-seo mok-so-ri-ga tteol-lyeot-da", "en": "I was so nervous that my voice trembled." },
+    { "id": "s05", "ko": "그는 결국 고백을 준비하고 있었다.", "reading": "geu-neun gyeol-guk go-baek-eul jun-bi-ha-go it-eot-da", "en": "He was, in the end, preparing to confess." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "승객", "text": "오늘 왜 이렇게 조용하노? 장난도 안 치고.", "reading": "o-neul wae i-reo-ke jo-yong-ha-no? jang-nan-do an chi-go.", "en": "Why are you so quiet today? Not even joking around." },
+        { "speaker": "선우", "text": "오늘은... 장난치고 싶은 기분이 아니라서.", "reading": "o-neul-eun... jang-nan-chi-go sip-eun gi-bun-i a-ni-ra-seo.", "en": "Today... I'm just not in the mood to joke." },
+        { "speaker": "승객", "text": "무슨 일 있나? 얼굴이 왜 그렇노.", "reading": "mu-seun il it-na? eol-gul-i wae geu-ron-no.", "en": "Is something wrong? Why do you look like that." },
+        { "speaker": "선우", "text": "할 말이 있는데, 오늘은 진지하게 하고 싶어서 그렇다.", "reading": "hal mal-i it-neun-de, o-neul-eun jin-ji-ha-ge ha-go sip-eo-seo geu-ro-ta.", "en": "There's something I want to say, and today I want to say it seriously." }
+      ],
+      "question": "이 대화를 통해 짐작할 수 있는 선우의 의도는 무엇인가요?",
+      "question_en": "What can you infer is Sunwoo's intention from this conversation?",
+      "correct_answer": "평소와 다르게 진지한 이야기를 하려고 마음먹은 것",
+      "options": ["평소와 다르게 진지한 이야기를 하려고 마음먹은 것", "몸이 아파서 기운이 없는 것", "일 때문에 스트레스를 받은 것", "빨리 집에 가고 싶어 하는 것"],
+      "explanation": "선우는 장난치고 싶지 않다며 평소와 다른 태도를 보이는데, 이는 진지하게 할 말이 있다는 의도를 나타냅니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "선우", "text": "니한테 예전부터 하고 싶었던 말이 있는데.", "reading": "ni-han-te ye-jeon-bu-teo ha-go sip-eot-deon mal-i it-neun-de.", "en": "There's something I've wanted to say to you for a long time." },
+        { "speaker": "승객", "text": "뭔데? 왜 이래 뜸을 들이노.", "reading": "mwon-de? wae i-rae tteum-eul deul-i-no.", "en": "What is it? Why are you dragging it out like this." },
+        { "speaker": "선우", "text": "아니다, 다음에... 아니, 그냥 지금 할란다.", "reading": "a-ni-da, da-eum-e... a-ni, geu-nyang ji-geum hal-lan-da.", "en": "Never mind, next time... no, I'll just say it now." },
+        { "speaker": "승객", "text": "선우야, 나 좀 떨린다. 빨리 말해봐.", "reading": "seon-u-ya, na jom tteol-lin-da. ppal-li mal-hae-bwa.", "en": "Sunwoo, I'm getting nervous. Just say it already." }
+      ],
+      "question": "이 장면의 분위기로 가장 알맞은 것은 무엇인가요?",
+      "question_en": "What best describes the mood of this scene?",
+      "correct_answer": "고백을 앞두고 긴장되고 설레는 분위기",
+      "options": ["고백을 앞두고 긴장되고 설레는 분위기", "다투기 직전의 긴장된 분위기", "이별을 앞둔 슬픈 분위기", "가벼운 농담을 주고받는 분위기"],
+      "explanation": "선우가 망설이며 진지하게 할 말을 꺼내려 하고, 승객도 떨린다고 말하는 것에서 고백을 앞둔 설레는 분위기를 알 수 있습니다."
+    }
+  ]
+}

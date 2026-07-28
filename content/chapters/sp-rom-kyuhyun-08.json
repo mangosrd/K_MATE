@@ -1,0 +1,62 @@
+{
+  "id": "sp-rom-kyuhyun-08",
+  "character_id": "kyuhyun",
+  "title": "우리 승객님이라 부르는 이유",
+  "emoji": "💌",
+  "story": [
+    {
+      "text": "광장시장 먹거리 골목, 사람 많은데 손 놓치면 안 돼요. 꼭 잡고 다녀요.",
+      "reading": "gwang-jang-si-jang meok-geo-ri gol-mok, sa-ram man-eun-de son not-chi-myeon an dwae-yo. kkok jab-go da-nyeo-yo.",
+      "en": "The food alleys of Gwangjang Market are crowded — don't let go of my hand. Hold on tight."
+    },
+    {
+      "text": "제가 승객님 부를 때 이름 대신 '애칭' 쓰는 거 눈치채셨죠? 다 이유가 있어요.",
+      "reading": "je-ga seung-gaek-nim bu-reul ttae i-reum dae-sin ae-ching sseu-neun geo nun-chi-chae-syeot-jyo? da i-yu-ga i-sseo-yo.",
+      "en": "You noticed I use a 'pet name' instead of your real name, right? There's a reason for that.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "이 '시장' 안에서는 승객님도 그냥 저만의 손님이잖아요. 그래서 더 다정하게 부르고 싶어졌어요.",
+      "reading": "i si-jang an-e-seo-neun seung-gaek-nim-do geu-nyang jeo-man-ui son-nim-i-jan-a-yo. geu-rae-seo deo da-jeong-ha-ge bu-reu-go si-peo-jyeo-sseo-yo.",
+      "en": "Inside this 'market', you're just my own guest, aren't you. So I wanted to call you more affectionately.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "'손님'이라고 부르면 너무 멀게 느껴지고, 이름 부르면 너무 티 날 것 같고. 그래서 애칭이었어요.",
+      "reading": "son-nim-i-ra-go bu-reu-myeon neo-mu meol-ge neu-kkyeo-ji-go, i-reum bu-reu-myeon neo-mu ti nal geot gat-go. geu-rae-seo ae-ching-i-eot-seo-yo.",
+      "en": "Calling you a 'guest' feels too distant, and using your name feels too obvious. So a pet name it was.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "'우리 승객님'이라고 부르는 진짜 '이유', 궁금하지 않아요?",
+      "reading": "u-ri seung-gaek-nim-i-ra-go bu-reu-neun jin-jja i-yu, gung-geum-ha-ji an-a-yo?",
+      "en": "Curious about the real 'reason' I call you 'my passenger'?",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "'우리'라는 말 붙이는 순간, 이미 제 '마음'속엔 승객님이 들어와 있다는 뜻이거든요.",
+      "reading": "u-ri-ra-neun mal but-i-neun sun-gan, i-mi je ma-eum-sok-en seung-gaek-nim-i deul-eo-wa it-da-neun tteus-i-geo-deun-yo.",
+      "en": "The moment I add the word 'our', it means you've already made your way into my 'heart'.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "자, 떡볶이도 먹었으니 이제 문제 풀 힘도 났겠죠? 오늘 배운 단어들 확인해볼까요?",
+      "reading": "ja, tteok-bo-kki-do meok-eo-sseu-ni i-je mun-je pul him-do nat-get-jyo? o-neul bae-un dan-eo-deul hwa-gin-hae-bol-kka-yo?",
+      "en": "Alright, now that you've eaten some tteokbokki, you should have the energy for some questions, right? Shall we check today's words?"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "애칭", "reading": "ae-ching", "meaning": "pet name, nickname", "example": "저는 승객님을 애칭으로 불러요.", "example_reading": "jeo-neun seung-gaek-nim-eul ae-ching-eu-ro bul-leo-yo", "example_en": "I call you by a pet name." },
+    { "id": "w02", "word": "시장", "reading": "si-jang", "meaning": "market", "example": "광장시장에는 맛있는 음식이 많아요.", "example_reading": "gwang-jang-si-jang-e-neun ma-sit-neun eum-sik-i man-a-yo", "example_en": "Gwangjang Market has lots of delicious food." },
+    { "id": "w03", "word": "손님", "reading": "son-nim", "meaning": "guest, customer", "example": "오늘은 특별한 손님이 왔어요.", "example_reading": "o-neul-eun teuk-byeol-han son-nim-i wa-sseo-yo", "example_en": "A special guest came today." },
+    { "id": "w04", "word": "이유", "reading": "i-yu", "meaning": "reason", "example": "그렇게 부르는 이유가 있어요.", "example_reading": "geu-reo-ke bu-reu-neun i-yu-ga i-sseo-yo", "example_en": "There's a reason I call you that." },
+    { "id": "w05", "word": "마음", "reading": "ma-eum", "meaning": "heart, mind", "example": "제 마음속에 승객님이 있어요.", "example_reading": "je ma-eum-sok-e seung-gaek-nim-i i-sseo-yo", "example_en": "You're in my heart." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "저는 승객님을 애칭으로 불러요.", "reading": "jeo-neun seung-gaek-nim-eul ae-ching-eu-ro bul-leo-yo", "en": "I call you by a pet name." },
+    { "id": "s02", "ko": "광장시장에는 맛있는 음식이 많아요.", "reading": "gwang-jang-si-jang-e-neun ma-sit-neun eum-sik-i man-a-yo", "en": "Gwangjang Market has lots of delicious food." },
+    { "id": "s03", "ko": "오늘은 특별한 손님이 왔어요.", "reading": "o-neul-eun teuk-byeol-han son-nim-i wa-sseo-yo", "en": "A special guest came today." },
+    { "id": "s04", "ko": "그렇게 부르는 이유가 있어요.", "reading": "geu-reo-ke bu-reu-neun i-yu-ga i-sseo-yo", "en": "There's a reason I call you that." },
+    { "id": "s05", "ko": "제 마음속에 승객님이 있어요.", "reading": "je ma-eum-sok-e seung-gaek-nim-i i-sseo-yo", "en": "You're in my heart." }
+  ]
+}

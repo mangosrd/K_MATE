@@ -1,0 +1,98 @@
+{
+  "id": "sp-rom-sunwoo-09",
+  "character_id": "sunwoo",
+  "title": "사투리로 툭 던진 진심",
+  "emoji": "🗣️",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "이기대 산책로 걸으면서 이 얘기 하고 싶었다.",
+      "reading": "i-gi-dae san-chaek-ro geol-eu-myeon-seo i yae-gi ha-go sip-eot-da.",
+      "en": "I wanted to tell you this while walking the Igidae trail."
+    },
+    {
+      "text": "내가 원래 좀 '무뚝뚝하다' 아이가. 그래도 오늘은 말해야 될 거 같아서.",
+      "reading": "nae-ga won-lae jom mu-ttuk-ttuk-ha-da a-i-ga. geu-rae-do o-neul-eun mal-hae-ya doel geo gat-a-seo.",
+      "en": "I'm pretty blunt by nature, you know. But today felt like I had to say it.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "마음 '표현하는' 거 진짜 어색한데... 그래도 해본다.",
+      "reading": "ma-eum pyo-hyeon-ha-neun geo jin-jja eo-saek-han-de... geu-rae-do hae-bon-da.",
+      "en": "Expressing my feelings is really awkward for me... but I'll give it a try anyway.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "이런 거 '서투른' 거 니도 알제. 그래도 참고 들어봐라.",
+      "reading": "i-reon geo seo-tu-reun geo ni-do al-je. geu-rae-do cham-go deul-eo-bwa-ra.",
+      "en": "You know I'm clumsy at this kind of thing. Still, bear with me and listen.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "니한테는 진짜 '다정하게' 잘해주고 싶다, 앞으로.",
+      "reading": "ni-han-te-neun jin-jja da-jeong-ha-ge jal-hae-ju-go sip-da, ap-eu-ro.",
+      "en": "I really want to be warm and treat you well, from now on.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "'평생' 이래 니 옆에서 놀리고 챙기고 하면서 살고 싶다.",
+      "reading": "pyeong-saeng i-rae ni yeop-e-seo nol-li-go chaeng-gi-go ha-myeon-seo sal-go sip-da.",
+      "en": "I want to live my whole life like this, teasing and taking care of you by your side.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "부끄러버서 죽겠다 진짜. 그래도 후회는 없다.",
+      "reading": "bu-kkeu-reo-beo-seo juk-get-da jin-jja. geu-rae-do hu-hoe-neun eop-da.",
+      "en": "I'm so embarrassed I could die, seriously. But I don't regret it."
+    },
+    {
+      "text": "단어는 다 봤제? 이번 대화 문제도 마지막까지 잘 풀어봐라.",
+      "reading": "dan-eo-neun da bwat-je? i-beon dae-hwa mun-je-do ma-ji-mak-kka-ji jal pul-eo-bwa-ra.",
+      "en": "Got a look at all the words? Give this conversation question a good try too."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "무뚝뚝하다", "reading": "mu-ttuk-ttuk-ha-da", "meaning": "To be blunt, curt", "example": "그는 무뚝뚝하지만 속은 따뜻하다.", "example_reading": "geu-neun mu-ttuk-ttuk-ha-ji-man sok-eun tta-tteut-ha-da", "example_en": "He's blunt, but warm on the inside." },
+    { "id": "w02", "word": "표현하다", "reading": "pyo-hyeon-ha-da", "meaning": "To express", "example": "감정을 표현하는 게 서툴다.", "example_reading": "gam-jeong-eul pyo-hyeon-ha-neun ge seo-tul-da", "example_en": "I'm clumsy at expressing my emotions." },
+    { "id": "w03", "word": "서투르다", "reading": "seo-tu-reu-da", "meaning": "To be clumsy, unskilled", "example": "그는 요리에 서투르다.", "example_reading": "geu-neun yo-ri-e seo-tu-reu-da", "example_en": "He's clumsy at cooking." },
+    { "id": "w04", "word": "다정하다", "reading": "da-jeong-ha-da", "meaning": "To be affectionate, warm", "example": "그는 항상 다정하게 말한다.", "example_reading": "geu-neun hang-sang da-jeong-ha-ge mal-han-da", "example_en": "He always speaks warmly." },
+    { "id": "w05", "word": "평생", "reading": "pyeong-saeng", "meaning": "Whole life, lifetime", "example": "그는 평생 이 일을 기억할 것이다.", "example_reading": "geu-neun pyeong-saeng i il-eul gi-eok-hal geot-i-da", "example_en": "He will remember this for his whole life." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "그는 무뚝뚝하지만 속은 따뜻한 사람이다.", "reading": "geu-neun mu-ttuk-ttuk-ha-ji-man sok-eun tta-tteut-han sa-ram-i-da", "en": "He's blunt, but a warm person on the inside." },
+    { "id": "s02", "ko": "마음을 표현하는 게 쉽지 않았다.", "reading": "ma-eum-eul pyo-hyeon-ha-neun ge swip-ji an-at-da", "en": "Expressing my feelings wasn't easy." },
+    { "id": "s03", "ko": "그는 감정 표현에 서투른 편이다.", "reading": "geu-neun gam-jeong pyo-hyeon-e seo-tu-reun pyeon-i-da", "en": "He tends to be clumsy at expressing emotions." },
+    { "id": "s04", "ko": "그는 항상 다정하게 나를 챙겨줬다.", "reading": "geu-neun hang-sang da-jeong-ha-ge na-reul chaeng-gyeo-jwot-da", "en": "He always warmly took care of me." },
+    { "id": "s05", "ko": "우리는 평생 함께하기로 약속했다.", "reading": "u-ri-neun pyeong-saeng ham-kke-ha-gi-ro yak-sok-haet-da", "en": "We promised to be together for life." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "선우", "text": "내가 원래 이런 말 잘 못 하는데... 니 진짜 좋아한다, 오래전부터.", "reading": "nae-ga won-lae i-reon mal jal mot ha-neun-de... ni jin-jja jo-a-han-da, o-rae-jeon-bu-teo.", "en": "I'm not usually good at saying things like this... but I really like you, and have for a long time." },
+        { "speaker": "승객", "text": "선우야...", "reading": "seon-u-ya...", "en": "Sunwoo..." },
+        { "speaker": "선우", "text": "무뚝뚝해서 표현을 못 했다 뿐이지, 마음은 계속 그랬다.", "reading": "mu-ttuk-ttuk-hae-seo pyo-hyeon-eul mot haet-da ppun-i-ji, ma-eum-eun gye-sok geu-raet-da.", "en": "I was just too blunt to express it, but my feelings have been like this all along." },
+        { "speaker": "승객", "text": "나도 니 그런 거 다 알고 있었다, 사실.", "reading": "na-do ni geu-reon geo da al-go it-eot-da, sa-sil.", "en": "Actually, I already knew all of that about you." }
+      ],
+      "question": "선우의 말에서 알 수 있는 그의 성격은 무엇인가요?",
+      "question_en": "What does Sunwoo's speech reveal about his personality?",
+      "correct_answer": "표현이 서툴지만 진심은 깊은 성격",
+      "options": ["표현이 서툴지만 진심은 깊은 성격", "감정 표현이 풍부하고 능숙한 성격", "무심하고 관심이 없는 성격", "말이 많고 계획적인 성격"],
+      "explanation": "선우는 자신이 무뚝뚝해서 표현을 못 했을 뿐 마음은 오래전부터 그랬다고 말하며, 서툴지만 진심 어린 성격을 드러냅니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "승객", "text": "이제 우리 뭐라고 불러야 되노, 이 사이를.", "reading": "i-je u-ri mwo-ra-go bul-leo-ya doe-no, i sa-i-reul.", "en": "So what should we call this now, this thing between us." },
+        { "speaker": "선우", "text": "그냥... 평생 니 옆에 있을 사람, 이라 카면 안 되나.", "reading": "geu-nyang... pyeong-saeng ni yeop-e it-eul sa-ram, i-ra ka-myeon an doe-na.", "en": "Just... how about calling me the person who'll be by your side for life." },
+        { "speaker": "승객", "text": "와, 오늘따라 되게 다정하네.", "reading": "wa, o-neul-tta-ra doe-ge da-jeong-ha-ne.", "en": "Wow, you're being especially sweet today." },
+        { "speaker": "선우", "text": "오늘만 특별히 그런 거다. 내일부터는 또 놀릴 거니까 각오해라.", "reading": "o-neul-man teuk-byeol-hi geu-ron geo-da. nae-il-bu-teo-neun tto nol-lil geo-ni-kka gak-o-hae-ra.", "en": "It's only special today. Starting tomorrow I'll go back to teasing you, so brace yourself." }
+      ],
+      "question": "선우의 마지막 말이 의미하는 바로 가장 알맞은 것은 무엇인가요?",
+      "question_en": "What is the best interpretation of Sunwoo's last line?",
+      "correct_answer": "진지한 고백 후에도 원래의 장난스러운 성격은 여전할 것이라는 것",
+      "options": ["진지한 고백 후에도 원래의 장난스러운 성격은 여전할 것이라는 것", "오늘 이후로 다시는 만나지 않겠다는 것", "장난은 이제 완전히 그만두겠다는 것", "승객에게 화가 났다는 것"],
+      "explanation": "선우는 오늘만 다정했던 것이라며, 앞으로도 장난스러운 모습은 여전할 것임을 유쾌하게 예고하고 있습니다."
+    }
+  ]
+}

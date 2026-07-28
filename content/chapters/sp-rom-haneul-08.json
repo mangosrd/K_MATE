@@ -1,0 +1,62 @@
+{
+  "id": "sp-rom-haneul-08",
+  "character_id": "haneul",
+  "title": "됐고, 그냥 옆에 있어요",
+  "emoji": "🤗",
+  "story": [
+    {
+      "text": "덕진공원 와본 적 있어요? …없으면 오늘 처음이네요.",
+      "reading": "deok-jin-gong-won wa-bon jeog iss-eo-yo? …eobs-eu-myeon o-neul cheo-eum-i-ne-yo.",
+      "en": "Have you been to Deokjin Park before? ...If not, today's your first time."
+    },
+    {
+      "text": "이 '연못'이 여름엔 진짜 예뻐요. 지금도 나쁘지 않지만.",
+      "reading": "i 'yeon-mos'i yeo-reum-en jin-jja ye-ppeo-yo. ji-geum-do na-ppeu-ji anh-ji-man.",
+      "en": "This 'pond' is really pretty in summer. Though it's not bad now either.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "저기 핀 게 '연꽃'이에요. …좋아하는 것 같아서 데려왔어요.",
+      "reading": "jeo-gi pin ge 'yeon-kkoch'i-e-yo. …jo-a-ha-neun geot gat-a-seo de-ryeo-wass-eo-yo.",
+      "en": "Those blooming there are 'lotus flowers'. ...You seemed to like them, so I brought you here.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "이 '다리' 건너면 반대편이에요. 넘어지지 말고 천천히 와요.",
+      "reading": "i 'da-ri' geon-neo-myeon ban-dae-pyeon-i-e-yo. neom-eo-ji-ji mal-go cheon-cheon-hi wa-yo.",
+      "en": "Cross this 'bridge' and you're on the other side. Don't trip, take it slow.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "이런 '오후'에 여기 걷는 거, 나쁘지 않네요.",
+      "reading": "i-reon 'o-hu'e yeo-gi geot-neun geo, na-ppeu-ji anh-ne-yo.",
+      "en": "Walking here on an 'afternoon' like this isn't bad.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "우리 '그림자' 봐요, 나란히 붙어 있네요. …그게 뭐 어때서요.",
+      "reading": "u-ri 'geu-rim-ja' bwa-yo, na-ran-hi but-eo it-ne-yo. …geu-ge mwo eo-ttae-seo-yo.",
+      "en": "Look at our 'shadows', they're side by side. ...So what if they are.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "…됐고, 그냥 옆에 있어요. 이유 같은 거 묻지 말고요.",
+      "reading": "…dwaet-go, geu-nyang yeop-e iss-eo-yo. i-yu gat-eun geo mut-ji mal-go-yo.",
+      "en": "...Never mind, just stay by my side. Don't ask for a reason."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "연못", "reading": "yeon-mot", "meaning": "Pond", "example": "연못에 물고기가 헤엄쳐요.", "example_reading": "yeon-mos-e mul-go-gi-ga he-eom-chyeo-yo", "example_en": "Fish swim in the pond." },
+    { "id": "w02", "word": "연꽃", "reading": "yeon-kkot", "meaning": "Lotus flower", "example": "여름에는 연꽃이 활짝 피어요.", "example_reading": "yeo-reum-e-neun yeon-kkoch-i hwal-jjak pi-eo-yo", "example_en": "Lotus flowers bloom fully in summer." },
+    { "id": "w03", "word": "다리", "reading": "da-ri", "meaning": "Bridge", "example": "다리를 건너면 공원이 나와요.", "example_reading": "da-ri-reul geon-neo-myeon gong-won-i na-wa-yo", "example_en": "Cross the bridge and you'll find the park." },
+    { "id": "w04", "word": "오후", "reading": "o-hu", "meaning": "Afternoon", "example": "오후에 산책하는 걸 좋아해요.", "example_reading": "o-hu-e san-chaeg-ha-neun geol jo-a-hae-yo", "example_en": "I like taking walks in the afternoon." },
+    { "id": "w05", "word": "그림자", "reading": "geu-rim-ja", "meaning": "Shadow", "example": "두 사람의 그림자가 나란히 있어요.", "example_reading": "du sa-ram-ui geu-rim-ja-ga na-ran-hi iss-eo-yo", "example_en": "The two people's shadows are side by side." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "연못에 연꽃이 피었어요.", "reading": "yeon-mos-e yeon-kkoch-i pi-eoss-eo-yo", "en": "Lotus flowers have bloomed in the pond." },
+    { "id": "s02", "ko": "다리를 건너서 산책해요.", "reading": "da-ri-reul geon-neo-seo san-chaeg-hae-yo", "en": "I take a walk across the bridge." },
+    { "id": "s03", "ko": "오후 햇살이 따뜻해요.", "reading": "o-hu haet-sal-i tta-tteut-hae-yo", "en": "The afternoon sunlight is warm." },
+    { "id": "s04", "ko": "그림자가 길게 늘어졌어요.", "reading": "geu-rim-ja-ga gil-ge neul-eo-jyeoss-eo-yo", "en": "The shadow has stretched out long." },
+    { "id": "s05", "ko": "연못가에서 오후를 함께 보내요.", "reading": "yeon-mot-ga-e-seo o-hu-reul ham-kke bo-nae-yo", "en": "We spend the afternoon together by the pond." }
+  ]
+}

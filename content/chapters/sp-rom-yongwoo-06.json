@@ -1,0 +1,93 @@
+{
+  "id": "sp-rom-yongwoo-06",
+  "character_id": "yongwoo",
+  "title": "일부러 선을 긋는 서툰 마음",
+  "emoji": "🙅",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "삼나무가 빽빽하게 늘어선 사려니숲길, 초록빛 그늘 사이로 바람이 지나간다. 용우가 평소보다 두 걸음쯤 앞서 걷는다.",
+      "reading": "sam-na-mu-ga ppaek-ppaek-ha-ge neul-eo-seon sa-ryeo-ni-sup-gil, cho-rok-bit geu-neul sa-i-ro ba-ram-i ji-na-gan-da. yong-u-ga pyeong-so-bo-da du geol-eum-jjeum ap-seo geot-neun-da.",
+      "en": "Along Saryeoni Forest Trail lined thick with cedar trees, the wind passes through the green shade. Yongwoo walks about two steps ahead of usual."
+    },
+    {
+      "text": "'삼나무 숲은 원래 좀 떨어져서 걸어야 제맛이다.' 애꿎은 이유를 대며 자꾸 앞서 나간다.",
+      "reading": "sam-na-mu sup-eun won-lae jom tteol-eo-jyeo-seo geol-eo-ya je-mas-i-da. ae-kkuj-eun i-yu-reul dae-myeo ja-kku ap-seo na-gan-da.",
+      "en": "'You're supposed to walk a bit apart to really enjoy a cedar forest.' He gives a flimsy excuse, keeps walking ahead.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "요 며칠 용우는 괜히 거리를 두려는 듯 굴었다. 먼저 팔을 잡던 손도, 먼저 챙기던 잔소리도 조금씩 줄어 있었다.",
+      "reading": "yo myeo-chil yong-u-neun gwaen-hi geo-ri-reul du-ryeo-neun deut gul-eot-da. meon-jeo pal-eul jap-deon son-do, meon-jeo chaeng-gi-deon jan-so-ri-do jo-geum-ssik jul-eo iss-eot-da.",
+      "en": "These past few days, Yongwoo had been acting like he was trying to keep some distance. The hand that used to grab my arm first, the nagging that used to come first — both had quietly grown less.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "'지난번엔 내가 좀 오해할 만한 말을 했나 본데, 신경 쓸 거 없다. 원래 하던 대로 하는 거니까.'",
+      "reading": "ji-nan-beon-en nae-ga jom o-hae-hal man-han mal-eul haess-na bon-de, sin-gyeong sseul geo eop-da. won-lae ha-deon dae-ro ha-neun geo-ni-kka.",
+      "en": "'Guess I said something last time that might've caused a misunderstanding. Don't worry about it. I'm just doing what I always do.'",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "정작 숲길 갈림길에서 내가 조금 뒤처지자 못 참고 돌아와 손을 내미는 걸 보면, 마음을 감추는 게 여전히 서툴다.",
+      "reading": "jeong-jak sup-gil gal-lim-gil-e-seo nae-ga jo-geum dwi-cheo-ji-ja mot cham-go dol-a-wa son-eul nae-mi-neun geol bo-myeon, ma-eum-eul gam-chu-neun ge yeo-jeon-hi seo-tul-da.",
+      "en": "Yet when I fell a little behind at a fork in the trail, he couldn't help but turn back and hold out his hand — proof he's still clumsy at hiding how he feels.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "'왜 자꾸 뒤처져, 괜스레 사람 신경 쓰이게.' 손을 잡아주면서도 눈은 안 마주친다.",
+      "reading": "wae ja-kku dwi-cheo-jyeo, gwaen-seu-re sa-ram sin-gyeong sseu-i-ge. son-eul jab-a-ju-myeon-seo-do nun-eun an ma-ju-chin-da.",
+      "en": "'Why do you keep falling behind, making me worry for no reason.' He holds my hand but won't meet my eyes.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "선을 그으려 할수록 자꾸만 곁을 맴도는 그를 보며 웃음이 났다. '그럼 오늘 대화도 잘 들어봐요, 신경 쓰이게 만들어드릴게요.'",
+      "reading": "seon-eul geu-eu-ryeo hal-su-rok ja-kku-man gyeot-eul maem-do-neun geu-reul bo-myeo us-eum-i nat-da. geu-reom o-neul dae-hwa-do jal deul-eo-bwa-yo, sin-gyeong sseu-i-ge man-deul-eo-deu-ril-ge-yo.",
+      "en": "Watching him hover close even as he tried to draw a line, I couldn't help but smile. 'Then listen carefully to today's conversations too — I'll make sure to keep you on your toes.'"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "삼나무", "reading": "sam-na-mu", "meaning": "Cedar tree", "example": "사려니숲길은 삼나무가 빽빽하게 우거져 있다.", "example_reading": "sa-ryeo-ni-sup-gil-eun sam-na-mu-ga ppaek-ppaek-ha-ge u-geo-jyeo it-da", "example_en": "Saryeoni Forest Trail is thickly overgrown with cedar trees." },
+    { "id": "w02", "word": "거리를 두다", "reading": "geo-ri-reul du-da", "meaning": "To keep/put distance (from someone)", "example": "그는 요즘 부쩍 나와 거리를 두려는 것 같다.", "example_reading": "geu-neun yo-jeum bu-jjeok na-wa geo-ri-reul du-ryeo-neun geot gat-da", "example_en": "Lately he seems to be trying to keep his distance from me." },
+    { "id": "w03", "word": "오해", "reading": "o-hae", "meaning": "Misunderstanding", "example": "괜한 오해를 살까 봐 미리 설명했다.", "example_reading": "gwaen-han o-hae-reul sal-kka bwa mi-ri seol-myeong-haet-da", "example_en": "I explained beforehand so as not to cause any misunderstanding." },
+    { "id": "w04", "word": "괜스레", "reading": "gwaen-seu-re", "meaning": "For no particular reason, needlessly", "example": "괜스레 신경 쓰여서 자꾸 뒤를 돌아봤다.", "example_reading": "gwaen-seu-re sin-gyeong sseu-yeo-seo ja-kku dwi-reul dol-a-bwat-da", "example_en": "For no particular reason, it kept bothering me and I kept looking back." },
+    { "id": "w05", "word": "서툴다", "reading": "seo-tul-da", "meaning": "To be clumsy, unskilled (often emotionally)", "example": "그는 자기 마음을 표현하는 데 늘 서툴렀다.", "example_reading": "geu-neun ja-gi ma-eum-eul pyo-hyeon-ha-neun de neul seo-tul-leot-da", "example_en": "He was always clumsy at expressing his own feelings." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "삼나무가 빽빽한 사려니숲길을 걸으며 그는 평소보다 앞서 걸었다.", "reading": "sam-na-mu-ga ppaek-ppaek-han sa-ryeo-ni-sup-gil-eul geol-eu-myeo geu-neun pyeong-so-bo-da ap-seo geol-eot-da", "en": "Walking through Saryeoni Forest thick with cedar trees, he walked ahead of me more than usual." },
+    { "id": "s02", "ko": "그는 괜히 거리를 두려는 듯 며칠째 무뚝뚝하게 굴었다.", "reading": "geu-neun gwaen-hi geo-ri-reul du-ryeo-neun deut myeo-chil-jjae mu-ttuk-ttuk-ha-ge gul-eot-da", "en": "He'd been acting curt for days, as if trying to keep his distance for no reason." },
+    { "id": "s03", "ko": "오해할 만한 말을 했다며 그는 별일 아니라는 듯 넘기려 했다.", "reading": "o-hae-hal man-han mal-eul haet-da-myeo geu-neun byeol-il a-ni-ra-neun deut neom-gi-ryeo haet-da", "en": "Saying he might've caused a misunderstanding, he tried to brush it off as nothing." },
+    { "id": "s04", "ko": "갈림길에서 뒤처지자 그는 결국 참지 못하고 돌아왔다.", "reading": "gal-lim-gil-e-seo dwi-cheo-ji-ja geu-neun gyeol-guk cham-ji mot-ha-go dol-a-wat-da", "en": "When I fell behind at the fork, he couldn't hold out and came back for me." },
+    { "id": "s05", "ko": "마음을 감추는 게 서툰 그를 보며 나는 웃음을 참을 수 없었다.", "reading": "ma-eum-eul gam-chu-neun ge seo-tun geu-reul bo-myeo na-neun us-eum-eul cham-eul su eop-seot-da", "en": "Watching him, so clumsy at hiding his feelings, I couldn't help but smile." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "손님", "text": "요즘 왜 이렇게 멀리 걸으세요? 저랑 거리 두시는 거예요?", "reading": "yo-jeum wae i-reo-ke meol-li geol-eo-yo? jeo-rang geo-ri du-si-neun geo-ye-yo?", "en": "Why have you been walking so far away lately? Are you keeping your distance from me?" },
+        { "speaker": "권용우 기장", "text": "그런 거 아니다. 숲길은 원래 이렇게 걷는 거야.", "reading": "geu-reon geo a-ni-da. sup-gil-eun won-lae i-reo-ke geot-neun geo-ya.", "en": "It's not that. This is just how you walk a forest trail." },
+        { "speaker": "손님", "text": "그럼 왜 눈은 못 마주쳐요?", "reading": "geu-reom wae nun-eun mot ma-ju-chyeo-yo?", "en": "Then why can't you look me in the eye?" },
+        { "speaker": "권용우 기장", "text": "…햇빛이 세서 그렇다. 괜한 오해 말고 앞이나 잘 보고 걸어라.", "reading": "haet-bit-i se-seo geu-reo-ta. gwaen-han o-hae mal-go ap-i-na jal bo-go geol-eo-ra.", "en": "...The sunlight's strong, that's all. Don't get the wrong idea, just watch where you're walking." }
+      ],
+      "question": "이 대화에서 용우의 행동에 대한 가장 알맞은 설명은?",
+      "question_en": "What best explains Yongwoo's behavior in this conversation?",
+      "correct_answer": "자신의 감정을 들킬까 봐 일부러 핑계를 대며 거리를 두려 한다",
+      "options": ["자신의 감정을 들킬까 봐 일부러 핑계를 대며 거리를 두려 한다", "숲길 규칙을 지키려는 것이다", "손님에게 정말 화가 나 있다", "눈병이 나서 앞을 잘 못 본다"],
+      "explanation": "용우는 감정을 들킬까 봐 핑계를 대며 거리를 두려 하지만, 어색한 변명이 오히려 마음을 드러내고 있습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "권용우 기장", "text": "왜 자꾸 뒤처져, 괜스레 사람 신경 쓰이게.", "reading": "wae ja-kku dwi-cheo-jyeo, gwaen-seu-re sa-ram sin-gyeong sseu-i-ge.", "en": "Why do you keep falling behind, making me worry for no reason." },
+        { "speaker": "손님", "text": "거리 두려던 거 아니었어요? 신경 안 쓰셔도 되는데.", "reading": "geo-ri du-ryeo-deon geo a-ni-eoss-eo-yo? sin-gyeong an sseu-syeo-do doe-neun-de.", "en": "Weren't you trying to keep your distance? You don't have to worry." },
+        { "speaker": "권용우 기장", "text": "그거랑 이거랑 다르지. 넘어지는 거랑 내 마음이랑 무슨 상관이야.", "reading": "geu-geo-rang i-geo-rang da-reu-ji. neom-eo-ji-neun geo-rang nae ma-eum-i-rang mu-seun sang-gwan-i-ya.", "en": "That's different from this. What does falling have to do with my feelings." },
+        { "speaker": "손님", "text": "…말은 그렇게 하면서 손은 계속 잡고 계시네요.", "reading": "mal-eun geu-reo-ke ha-myeon-seo son-eun gye-sok jap-go gye-si-ne-yo.", "en": "...You say that, but you're still holding my hand." }
+      ],
+      "question": "이 대화가 보여주는 용우의 모순된 태도로 가장 알맞은 것은?",
+      "question_en": "What best captures the contradiction in Yongwoo's attitude here?",
+      "correct_answer": "거리를 두려 하면서도 결국 손님을 챙기는 행동은 멈추지 못한다",
+      "options": ["거리를 두려 하면서도 결국 손님을 챙기는 행동은 멈추지 못한다", "손님에게 화가 나서 일부러 차갑게 군다", "손을 놓고 싶어 하지만 손님이 놓아주지 않는다", "길을 몰라서 손님의 도움이 필요하다"],
+      "explanation": "용우는 거리를 두려 했지만 정작 손님이 뒤처지자 손을 잡아주는 등, 말과 행동이 모순되는 서툰 모습을 보입니다."
+    }
+  ]
+}

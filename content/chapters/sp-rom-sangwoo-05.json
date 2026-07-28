@@ -1,0 +1,93 @@
+{
+  "id": "sp-rom-sangwoo-05",
+  "character_id": "sangwoo",
+  "title": "다른 채널과의 교신 종료 요망",
+  "emoji": "🚫",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "오늘은 부여 정림사지입니다. 오래된 석탑 하나가 천 년 넘게 이 자리를 지키고 있습니다. 그런데 오늘은, 탑보다 다른 게 더 신경 쓰입니다.",
+      "reading": "o-neul-eun bu-yeo jeong-nim-sa-ji-im-ni-da. o-rae-doen seok-tap ha-na-ga cheon nyeon neom-ge i ja-ri-reul ji-ki-go it-seum-ni-da. geu-reon-de o-neul-eun, tap-bo-da da-reun ge deo sin-gyeong sseu-im-ni-da.",
+      "en": "Today we're at the Jeongnimsa Temple Site in Buyeo. An ancient stone pagoda has guarded this spot for over a thousand years. But today, something other than the pagoda is bothering me more."
+    },
+    {
+      "text": "아까 다른 가이드와 웃으며 이야기하시더군요. 저도 모르게 그 '채널'을 유심히 지켜보고 있었습니다.",
+      "reading": "a-kka da-reun ga-i-deu-wa us-eu-myeo i-ya-gi-ha-si-deo-gun-yo. jeo-do mo-reu-ge geu 'chae-neol'-eul yu-sim-hi ji-kyeo-bo-go i-sseot-seum-ni-da.",
+      "en": "Earlier, I saw you laughing and talking with another guide. Without meaning to, I found myself watching that 'channel' closely.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "…교신 상태 불량. 다른 채널과의 교신 '종료'를 요망합니다.",
+      "reading": "…gyo-sin sang-tae bul-lyang. da-reun chae-neol-gwa-ui gyo-sin 'jong-nyo'-reul yo-mang-ham-ni-da.",
+      "en": "...Communication status poor. I request 'termination' of contact with other channels.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "이런 식으로 '요망'이라는 딱딱한 단어를 쓰는 게, 사실은 질투를 감추는 저만의 방식입니다.",
+      "reading": "i-reon sig-eu-ro 'yo-mang'-i-ra-neun ttak-ttak-han dan-eo-reul sseu-neun ge, sa-sil-eun jil-tu-reul gam-chu-neun jeo-man-ui bang-sig-im-ni-da.",
+      "en": "Using a stiff word like 'requested' this way is, in truth, my own way of hiding jealousy.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "다른 채널이 제 항로에 '간섭'하는 게 이렇게 신경 쓰일 줄 몰랐습니다. 처음 겪는 기류입니다.",
+      "reading": "da-reun chae-neol-i je hang-no-e 'gan-seop'-ha-neun ge i-reo-ke sin-gyeong sseu-il jul mol-lat-seum-ni-da. cheo-eum gyeok-neun gi-ryu-im-ni-da.",
+      "en": "I never expected another channel's 'interference' with my route to bother me this much. It's a turbulence I'm feeling for the first time.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "솔직히 말씀드리면, 이 채널을 제 '전용'으로 하고 싶습니다. 규정에는 없는 욕심이라는 걸 압니다.",
+      "reading": "sol-jik-hi mal-sseum-deu-ri-myeon, i chae-neol-eul je 'jeon-yong'-eu-ro ha-go sip-seum-ni-da. gyu-jeong-e-neun eop-neun yok-sim-i-ra-neun geol am-ni-da.",
+      "en": "To be honest, I'd like to make this channel 'exclusively' mine. I know it's a greed not written in any manual.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "…실례했습니다, 평정심을 되찾겠습니다. 정림사지에서 오간 대화를 보여드릴 테니, 상황을 차분히 파악해 보시기 바랍니다.",
+      "reading": "…sil-lye-haet-seum-ni-da, pyeong-jeong-sim-eul doe-chat-get-seum-ni-da. jeong-nim-sa-ji-e-seo o-gan dae-hwa-reul bo-yeo-deu-ril te-ni, sang-hwang-eul cha-bun-hi pa-ak-hae bo-si-gi ba-ram-ni-da.",
+      "en": "...My apologies, I'll regain my composure. I'll show you a conversation from Jeongnimsa Temple Site—please calmly work out the situation."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "채널", "reading": "chae-neol", "meaning": "Channel", "example": "다른 가이드와의 채널을 유심히 지켜보고 있었습니다.", "example_reading": "da-reun ga-i-deu-wa-ui chae-neol-eul yu-sim-hi ji-kyeo-bo-go i-sseot-seum-ni-da", "example_en": "I found myself watching the channel with the other guide closely." },
+    { "id": "w02", "word": "종료", "reading": "jong-nyo", "meaning": "Termination / end", "example": "다른 채널과의 교신 종료를 요망합니다.", "example_reading": "da-reun chae-neol-gwa-ui gyo-sin jong-nyo-reul yo-mang-ham-ni-da", "example_en": "I request termination of contact with other channels." },
+    { "id": "w03", "word": "요망", "reading": "yo-mang", "meaning": "(Formal) request / desired", "example": "딱딱한 단어 '요망'으로 질투를 감춥니다.", "example_reading": "ttak-ttak-han dan-eo 'yo-mang'-eu-ro jil-tu-reul gam-chum-ni-da", "example_en": "I hide my jealousy behind the stiff word 'requested'." },
+    { "id": "w04", "word": "간섭", "reading": "gan-seop", "meaning": "Interference", "example": "다른 채널이 제 항로에 간섭하는 게 신경 쓰입니다.", "example_reading": "da-reun chae-neol-i je hang-no-e gan-seop-ha-neun ge sin-gyeong sseu-im-ni-da", "example_en": "It bothers me that another channel is interfering with my route." },
+    { "id": "w05", "word": "전용", "reading": "jeon-yong", "meaning": "Exclusive / dedicated", "example": "이 채널을 제 전용으로 하고 싶습니다.", "example_reading": "i chae-neol-eul je jeon-yong-eu-ro ha-go sip-seum-ni-da", "example_en": "I'd like to make this channel exclusively mine." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "다른 가이드와의 채널을 유심히 지켜보고 있었습니다.", "reading": "da-reun ga-i-deu-wa-ui chae-neol-eul yu-sim-hi ji-kyeo-bo-go i-sseot-seum-ni-da", "en": "I found myself watching the channel with the other guide closely." },
+    { "id": "s02", "ko": "다른 채널과의 교신 종료를 요망합니다.", "reading": "da-reun chae-neol-gwa-ui gyo-sin jong-nyo-reul yo-mang-ham-ni-da", "en": "I request termination of contact with other channels." },
+    { "id": "s03", "ko": "딱딱한 단어 '요망'으로 질투를 감춥니다.", "reading": "ttak-ttak-han dan-eo 'yo-mang'-eu-ro jil-tu-reul gam-chum-ni-da", "en": "I hide my jealousy behind the stiff word 'requested'." },
+    { "id": "s04", "ko": "다른 채널이 제 항로에 간섭하는 게 신경 쓰입니다.", "reading": "da-reun chae-neol-i je hang-no-e gan-seop-ha-neun ge sin-gyeong sseu-im-ni-da", "en": "It bothers me that another channel is interfering with my route." },
+    { "id": "s05", "ko": "이 채널을 제 전용으로 하고 싶습니다.", "reading": "i chae-neol-eul je jeon-yong-eu-ro ha-go sip-seum-ni-da", "en": "I'd like to make this channel exclusively mine." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "천상우 기장", "text": "아까 그 가이드분과 꽤 즐거워 보이셨습니다.", "reading": "a-kka geu ga-i-deu-bun-gwa kkwae jeul-geo-wo bo-i-syeot-seum-ni-da.", "en": "You looked quite happy with that guide earlier." },
+        { "speaker": "승객", "text": "아, 그냥 정림사지 설명해 주셔서 감사 인사한 거예요.", "reading": "a, geu-nyang jeong-nim-sa-ji seol-myeong-hae ju-syeo-seo gam-sa in-sa-han geo-ye-yo.", "en": "Oh, I was just thanking them for explaining Jeongnimsa Temple Site." },
+        { "speaker": "천상우 기장", "text": "…교신 상태 불량. 다른 채널과의 교신 종료를 요망합니다.", "reading": "…gyo-sin sang-tae bul-lyang. da-reun chae-neol-gwa-ui gyo-sin jong-nyo-reul yo-mang-ham-ni-da.", "en": "...Communication status poor. I request termination of contact with other channels." },
+        { "speaker": "승객", "text": "그게 무슨 말이에요, 지금 질투하시는 거예요?", "reading": "geu-ge mu-seun mal-i-e-yo, ji-geum jil-tu-ha-si-neun geo-ye-yo?", "en": "What does that mean—are you jealous right now?" }
+      ],
+      "question": "기장의 \"교신 상태 불량\" 발언이 실제로 뜻하는 것은?",
+      "question_en": "What does the captain's remark 'communication status poor' actually mean?",
+      "correct_answer": "다른 사람과 친하게 지내는 것에 대한 질투",
+      "options": ["다른 사람과 친하게 지내는 것에 대한 질투", "실제 무전 장비의 고장", "정림사지 주변 통신 방해", "가이드의 설명이 틀렸다는 지적"],
+      "explanation": "기장은 실제 무전 문제가 아니라, 승객이 다른 사람과 가깝게 지내는 모습에 질투를 느껴 이를 무전 용어로 표현하고 있습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "승객", "text": "기장님, 은근히 질투 많으시죠?", "reading": "gi-jang-nim, eun-geun-hi jil-tu man-eu-si-jyo?", "en": "Captain, you're kind of jealous, aren't you?" },
+        { "speaker": "천상우 기장", "text": "…부정하지는 않겠습니다. 이 채널만은 전용으로 하고 싶은 욕심이 있습니다.", "reading": "…bu-jeong-ha-ji-neun an-ket-seum-ni-da. i chae-neol-man-eun jeon-yong-eu-ro ha-go sip-eun yok-sim-i it-seum-ni-da.", "en": "...I won't deny it. I have a greed to make this channel alone exclusively mine." },
+        { "speaker": "승객", "text": "전용 채널이요? 되게 딱딱하게 말씀하시네요.", "reading": "jeon-yong chae-neol-i-yo? doe-ge ttak-ttak-ha-ge mal-sseum-ha-si-ne-yo.", "en": "An exclusive channel? You're saying that pretty stiffly." },
+        { "speaker": "천상우 기장", "text": "표현이 서툴러도, 마음은 분명합니다.", "reading": "pyo-hyeon-i seo-tul-leo-do, ma-eum-eun bun-myeong-ham-ni-da.", "en": "Even if the expression is clumsy, the feeling is clear." }
+      ],
+      "question": "기장이 \"전용 채널\"이라고 표현한 것이 의미하는 바는?",
+      "question_en": "What does the captain mean by 'exclusive channel'?",
+      "correct_answer": "승객과 자신만의 특별한 관계를 원한다",
+      "options": ["승객과 자신만의 특별한 관계를 원한다", "업무용 무전 채널을 새로 만들고 싶다", "정림사지 관광 코스를 독점하고 싶다", "다른 기장들과 경쟁하고 싶다"],
+      "explanation": "기장은 무전 채널이 아니라, 승객과 자신만의 특별한 관계를 원한다는 마음을 '전용 채널'이라는 표현에 담아 전하고 있습니다."
+    }
+  ]
+}

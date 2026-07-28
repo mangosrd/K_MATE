@@ -1,0 +1,62 @@
+{
+  "id": "sp-rom-haneul-07",
+  "character_id": "haneul",
+  "title": "나한텐 언제 궁금해할 건데요",
+  "emoji": "❓",
+  "story": [
+    {
+      "text": "말없이 왜 자꾸 여기저기 궁금해해요. 오늘은 또 뭐가 궁금한 건데요.",
+      "reading": "mal-eobs-i wae ja-kku yeo-gi-jeo-gi gung-geum-hae-hae-yo. o-neul-eun tto mwo-ga gung-geum-han geon-de-yo.",
+      "en": "Why are you always curious about everywhere without saying a word. What are you curious about today."
+    },
+    {
+      "text": "이 '벽화' 마을, 골목마다 그림이 달라요. 천천히 보고 가요.",
+      "reading": "i 'byeok-hwa' ma-eul, gol-mok-ma-da geu-rim-i dal-la-yo. cheon-cheon-hi bo-go ga-yo.",
+      "en": "In this 'mural' village, every alley has a different painting. Take your time looking around.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "이 '골목' 안쪽으로 가면 사람도 적고 조용해요.",
+      "reading": "i 'gol-mok' an-jjog-eu-ro ga-myeon sa-ram-do jeok-go jo-yong-hae-yo.",
+      "en": "If you go further into this 'alley', there are fewer people and it's quiet.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "…아까부터 '질문'이 많네요. 오늘따라 왜 그래요.",
+      "reading": "…a-kka-bu-teo 'jil-mun'i man-ne-yo. o-neul-tta-ra wae geu-rae-yo.",
+      "en": "...You've had a lot of 'questions' since earlier. Why is that, today especially.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "…그 '대답', 지금 꼭 들어야 돼요? 나중에 하면 안 돼요?",
+      "reading": "…geu 'dae-dap', ji-geum kkok deul-eo-ya dwae-yo? na-jung-e ha-myeon an dwae-yo?",
+      "en": "...Do you really need that 'answer' right now? Can't it wait for later?",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "우리가 무슨 '사이'냐고요? …그건 제가 묻고 싶은 말이에요.",
+      "reading": "u-ri-ga mu-seun 'sa-i'nya-go-yo? …geu-geon je-ga mut-go sip-eun mal-i-e-yo.",
+      "en": "What kind of 'relationship' are we, you ask? ...That's exactly what I want to ask you.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "그래서, 나한텐 언제 궁금해할 건데요. …답 안 해도 돼요, 표정 보니까 알겠어요.",
+      "reading": "geu-rae-seo, na-han-ten eon-je gung-geum-hae-hal geon-de-yo. …dap an hae-do dwae-yo, pyo-jeong bo-ni-kka al-get-seo-yo.",
+      "en": "So, when are you going to be curious about me. ...You don't have to answer, I can tell from your face."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "벽화", "reading": "byeok-hwa", "meaning": "Mural", "example": "이 골목에는 예쁜 벽화가 많아요.", "example_reading": "i gol-mog-e-neun ye-ppeun byeok-hwa-ga man-a-yo", "example_en": "There are many pretty murals in this alley." },
+    { "id": "w02", "word": "골목", "reading": "gol-mok", "meaning": "Alley", "example": "좁은 골목을 따라 걸어요.", "example_reading": "job-eun gol-mog-eul tta-ra geol-eo-yo", "example_en": "I walk along the narrow alley." },
+    { "id": "w03", "word": "질문", "reading": "jil-mun", "meaning": "Question", "example": "질문이 있으면 물어보세요.", "example_reading": "jil-mun-i iss-eu-myeon mul-eo-bo-se-yo", "example_en": "If you have a question, ask me." },
+    { "id": "w04", "word": "대답", "reading": "dae-dap", "meaning": "Answer", "example": "대답을 못 하고 웃기만 했어요.", "example_reading": "dae-dab-eul mos ha-go us-gi-man haess-eo-yo", "example_en": "I couldn't answer and just smiled." },
+    { "id": "w05", "word": "사이", "reading": "sa-i", "meaning": "Relationship / Between", "example": "우리는 어떤 사이일까요?", "example_reading": "u-ri-neun eo-tteon sa-i-il-kka-yo", "example_en": "What kind of relationship are we?" }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "골목마다 벽화가 그려져 있어요.", "reading": "gol-mok-ma-da byeok-hwa-ga geu-ryeo-jyeo iss-eo-yo", "en": "There's a mural in every alley." },
+    { "id": "s02", "ko": "질문에 대답을 못 했어요.", "reading": "jil-mun-e dae-dab-eul mos haess-eo-yo", "en": "I couldn't answer the question." },
+    { "id": "s03", "ko": "이 벽화 마을은 골목이 예뻐요.", "reading": "i byeok-hwa ma-eul-eun gol-mog-i ye-ppeo-yo", "en": "This mural village has pretty alleys." },
+    { "id": "s04", "ko": "우리 사이가 궁금해요.", "reading": "u-ri sa-i-ga gung-geum-hae-yo", "en": "I'm curious about our relationship." },
+    { "id": "s05", "ko": "제 질문에 솔직하게 대답해 줘요.", "reading": "je jil-mun-e sol-jik-ha-ge dae-dap-hae jwo-yo", "en": "Please answer my question honestly." }
+  ]
+}

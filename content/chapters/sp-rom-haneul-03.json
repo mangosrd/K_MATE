@@ -1,0 +1,62 @@
+{
+  "id": "sp-rom-haneul-03",
+  "character_id": "haneul",
+  "title": "눈에 밟혀서 그래요",
+  "emoji": "🫣",
+  "story": [
+    {
+      "text": "…비 온다면서요. 우산도 없이 어디 가요.",
+      "reading": "…bi on-da-myeon-seo-yo. u-san-do eobs-i eo-di ga-yo.",
+      "en": "...I heard it's going to rain. Where are you going without an umbrella."
+    },
+    {
+      "text": "'경기전' 안 가봤어요? 조선 태조 어진 모셔둔 곳인데. 마침 가는 길이니까 따라오든가.",
+      "reading": "'gyeong-gi-jeon' an ga-bwass-eo-yo? jo-seon tae-jo eo-jin mo-syeo-dun gos-in-de. ma-chim ga-neun gil-i-ni-kka tta-ra-o-deun-ga.",
+      "en": "You haven't been to 'Gyeonggijeon'? It's where King Taejo's portrait is enshrined. I'm headed there anyway, so come along if you want.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "이 오래된 '나무' 좀 봐요. 몇 백 년은 됐을걸요.",
+      "reading": "i o-rae-doen 'na-mu' jom bwa-yo. myeot baeng nyeon-eun dwaess-eul-geol-lyo.",
+      "en": "Look at this old 'tree'. It must be a few hundred years old.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "'비' 온다고 했잖아요. 그러게 왜 우산을 안 챙겨요, 진짜.",
+      "reading": "'bi' on-da-go haess-jan-a-yo. geu-reo-ge wae u-san-eul an chaeng-gyeo-yo, jin-jja.",
+      "en": "I told you it would 'rain'. Seriously, why didn't you bring an umbrella.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "…이거 써요. 저는 하나 더 있으니까. '우산' 뺏는 거 아니에요.",
+      "reading": "…i-geo sseo-yo. jeo-neun ha-na deo iss-eu-ni-kka. 'u-san' ppaes-neun geo a-ni-e-yo.",
+      "en": "...Use this. I have another one. I'm not taking your 'umbrella' away.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "저기 '그늘'에서 좀 쉬었다 가요. 비 그칠 때까지.",
+      "reading": "jeo-gi 'geu-neul'e-seo jom swi-eott-da ga-yo. bi geu-chil ttae-kka-ji.",
+      "en": "Let's rest under that 'shade' for a bit. Until the rain stops.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "…누가 걱정하래요. 그냥, 눈에 밟혀서 그래요.",
+      "reading": "…nu-ga geok-jeong-ha-rae-yo. geu-nyang, nun-e balp-hyeo-seo geu-rae-yo.",
+      "en": "...Who said I was worried. It's just... you were on my mind, that's all."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "경기전", "reading": "gyeong-gi-jeon", "meaning": "Gyeonggijeon Shrine", "example": "경기전은 전주에 있는 유명한 곳이에요.", "example_reading": "gyeong-gi-jeon-eun jeon-ju-e it-neun yu-myeong-han gos-i-e-yo", "example_en": "Gyeonggijeon is a famous place in Jeonju." },
+    { "id": "w02", "word": "나무", "reading": "na-mu", "meaning": "Tree", "example": "나무 아래에서 쉬어요.", "example_reading": "na-mu a-rae-e-seo swi-eo-yo", "example_en": "Let's rest under the tree." },
+    { "id": "w03", "word": "비", "reading": "bi", "meaning": "Rain", "example": "오늘 비가 많이 와요.", "example_reading": "o-neul bi-ga man-i wa-yo", "example_en": "It's raining a lot today." },
+    { "id": "w04", "word": "우산", "reading": "u-san", "meaning": "Umbrella", "example": "우산을 가져왔어요.", "example_reading": "u-san-eul ga-jyeo-wass-eo-yo", "example_en": "I brought an umbrella." },
+    { "id": "w05", "word": "그늘", "reading": "geu-neul", "meaning": "Shade", "example": "그늘에 앉아서 쉬어요.", "example_reading": "geu-neul-e anj-a-seo swi-eo-yo", "example_en": "I sit and rest in the shade." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "경기전 근처에 나무가 많아요.", "reading": "gyeong-gi-jeon geun-cheo-e na-mu-ga man-a-yo", "en": "There are many trees near Gyeonggijeon." },
+    { "id": "s02", "ko": "비가 오면 우산을 써요.", "reading": "bi-ga o-myeon u-san-eul sseo-yo", "en": "When it rains, I use an umbrella." },
+    { "id": "s03", "ko": "나무 그늘이 시원해요.", "reading": "na-mu geu-neul-i si-won-hae-yo", "en": "The shade of the tree is cool." },
+    { "id": "s04", "ko": "우산 없이 비를 맞았어요.", "reading": "u-san eobs-i bi-reul maj-ass-eo-yo", "en": "I got caught in the rain without an umbrella." },
+    { "id": "s05", "ko": "그늘에서 비가 그치기를 기다려요.", "reading": "geu-neul-e-seo bi-ga geu-chi-gi-reul gi-da-ryeo-yo", "en": "I wait in the shade for the rain to stop." }
+  ]
+}

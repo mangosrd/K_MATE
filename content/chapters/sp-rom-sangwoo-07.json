@@ -1,0 +1,93 @@
+{
+  "id": "sp-rom-sangwoo-07",
+  "character_id": "sangwoo",
+  "title": "계기판보다 자꾸 보이는 얼굴",
+  "emoji": "🧭",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "오늘은 고마나루입니다. 곰 전설이 전해지는 금강의 나루터지요. 그런데 오늘은 나루터보다, 자꾸 다른 게 눈앞에 아른거립니다.",
+      "reading": "o-neul-eun go-ma-na-ru-im-ni-da. gom jeon-seol-i jeon-hae-ji-neun geum-gang-ui na-ru-teo-ji-yo. geu-reon-de o-neul-eun na-ru-teo-bo-da, ja-kku da-reun ge nun-ap-e a-reun-geo-rim-ni-da.",
+      "en": "Today we're at Gomanaru, the ferry crossing on the Geumgang River where the bear legend is told. But today, something other than the ferry crossing keeps flickering before my eyes."
+    },
+    {
+      "text": "비행 중에는 '계기판'만 봐야 한다고 배웠습니다. 그런데 요즘은 계기판 위로 자꾸 당신 얼굴이 겹쳐 보입니다.",
+      "reading": "bi-haeng jung-e-neun 'gye-gi-pan'-man bwa-ya han-da-go bae-wot-seum-ni-da. geu-reon-de yo-jeum-eun gye-gi-pan wi-ro ja-kku dang-sin eol-gul-i gyeop-chyeo bo-im-ni-da.",
+      "en": "I was taught that during flight, I should only look at the 'instrument panel'. But lately, your face keeps overlapping on it.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "제 '시선'이 자꾸 엉뚱한 곳으로 흐릅니다. 정확히는, 당신이 있는 방향으로 말입니다.",
+      "reading": "je 'si-seon'-i ja-kku eong-ttung-han gos-eu-ro heu-reum-ni-da. jeong-hwak-hi-neun, dang-sin-i it-neun bang-hyang-eu-ro mal-im-ni-da.",
+      "en": "My 'gaze' keeps drifting somewhere it shouldn't. To be precise, toward wherever you are.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "십 년을 지켜온 '집중'력이 요즘처럼 흔들린 적이 없습니다. 원인은... 아무래도 승객님인 것 같습니다.",
+      "reading": "sip nyeon-eul ji-kyeo-on 'jip-jung'-yeog-i yo-jeum-cheo-reom heun-deul-lin jeog-i eop-seum-ni-da. won-in-eun... a-mu-rae-do seung-gaek-nim-in geot gat-seum-ni-da.",
+      "en": "My ten years of hard-won 'concentration' has never wavered like this before. The cause is... you, I'm afraid.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "눈을 감아도 당신 얼굴의 '잔상'이 사라지지 않습니다. 이런 증상은 교범에도 나와 있지 않더군요.",
+      "reading": "nun-eul gam-a-do dang-sin eol-gul-ui 'jan-sang'-i sa-ra-ji-ji an-seum-ni-da. i-reon jeung-sang-eun gyo-beom-e-do na-wa it-ji an-teo-gun-yo.",
+      "en": "Even with my eyes closed, the 'afterimage' of your face won't fade. This symptom isn't written in any manual.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "'무의식'중에 당신 이름을 부를 뻔한 적도 있습니다. 관제탑 대신 말입니다.",
+      "reading": "'mu-ui-sik'-jung-e dang-sin i-reum-eul bu-reul ppeon-han jeok-do it-seum-ni-da. gwan-je-tap dae-sin mal-im-ni-da.",
+      "en": "There have been moments I almost said your name 'unconsciously'—instead of saying 'tower'.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "…이만 계기판으로 돌아가겠습니다. 고마나루에서 오간 대화를 보여드릴 테니, 상황을 잘 살펴봐 주시기 바랍니다.",
+      "reading": "…i-man gye-gi-pan-eu-ro dol-a-ga-get-seum-ni-da. go-ma-na-ru-e-seo o-gan dae-hwa-reul bo-yeo-deu-ril te-ni, sang-hwang-eul jal sal-pyeo-bwa ju-si-gi ba-ram-ni-da.",
+      "en": "...I'll return to the instrument panel now. I'll show you a conversation from Gomanaru—please look closely at the situation."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "계기판", "reading": "gye-gi-pan", "meaning": "Instrument panel", "example": "계기판 위로 자꾸 당신 얼굴이 겹쳐 보입니다.", "example_reading": "gye-gi-pan wi-ro ja-kku dang-sin eol-gul-i gyeop-chyeo bo-im-ni-da", "example_en": "Your face keeps overlapping on the instrument panel." },
+    { "id": "w02", "word": "시선", "reading": "si-seon", "meaning": "Gaze", "example": "제 시선이 자꾸 당신이 있는 방향으로 흐릅니다.", "example_reading": "je si-seon-i ja-kku dang-sin-i it-neun bang-hyang-eu-ro heu-reum-ni-da", "example_en": "My gaze keeps drifting toward wherever you are." },
+    { "id": "w03", "word": "집중", "reading": "jip-jung", "meaning": "Concentration", "example": "십 년을 지켜온 집중력이 요즘처럼 흔들린 적이 없습니다.", "example_reading": "sip nyeon-eul ji-kyeo-on jip-jung-yeog-i yo-jeum-cheo-reom heun-deul-lin jeog-i eop-seum-ni-da", "example_en": "My ten years of hard-won concentration has never wavered like this before." },
+    { "id": "w04", "word": "잔상", "reading": "jan-sang", "meaning": "Afterimage", "example": "눈을 감아도 당신 얼굴의 잔상이 사라지지 않습니다.", "example_reading": "nun-eul gam-a-do dang-sin eol-gul-ui jan-sang-i sa-ra-ji-ji an-seum-ni-da", "example_en": "Even with my eyes closed, the afterimage of your face won't fade." },
+    { "id": "w05", "word": "무의식", "reading": "mu-ui-sik", "meaning": "Unconscious / subconscious", "example": "무의식중에 당신 이름을 부를 뻔했습니다.", "example_reading": "mu-ui-sik-jung-e dang-sin i-reum-eul bu-reul ppeon-haet-seum-ni-da", "example_en": "I almost said your name unconsciously." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "계기판 위로 자꾸 당신 얼굴이 겹쳐 보입니다.", "reading": "gye-gi-pan wi-ro ja-kku dang-sin eol-gul-i gyeop-chyeo bo-im-ni-da", "en": "Your face keeps overlapping on the instrument panel." },
+    { "id": "s02", "ko": "제 시선이 자꾸 당신이 있는 방향으로 흐릅니다.", "reading": "je si-seon-i ja-kku dang-sin-i it-neun bang-hyang-eu-ro heu-reum-ni-da", "en": "My gaze keeps drifting toward wherever you are." },
+    { "id": "s03", "ko": "십 년을 지켜온 집중력이 요즘처럼 흔들린 적이 없습니다.", "reading": "sip nyeon-eul ji-kyeo-on jip-jung-yeog-i yo-jeum-cheo-reom heun-deul-lin jeog-i eop-seum-ni-da", "en": "My ten years of hard-won concentration has never wavered like this before." },
+    { "id": "s04", "ko": "눈을 감아도 당신 얼굴의 잔상이 사라지지 않습니다.", "reading": "nun-eul gam-a-do dang-sin eol-gul-ui jan-sang-i sa-ra-ji-ji an-seum-ni-da", "en": "Even with my eyes closed, the afterimage of your face won't fade." },
+    { "id": "s05", "ko": "무의식중에 당신 이름을 부를 뻔했습니다.", "reading": "mu-ui-sik-jung-e dang-sin i-reum-eul bu-reul ppeon-haet-seum-ni-da", "en": "I almost said your name unconsciously." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "승객", "text": "기장님, 아까부터 저만 보고 계신 거 아니에요?", "reading": "gi-jang-nim, a-kka-bu-teo jeo-man bo-go gye-sin geo a-ni-e-yo?", "en": "Captain, haven't you been looking only at me this whole time?" },
+        { "speaker": "천상우 기장", "text": "…시선 처리에 조금 문제가 있었던 것 같습니다.", "reading": "…si-seon cheo-ri-e jo-geum mun-je-ga i-sseot-deon geot gat-seum-ni-da.", "en": "...It seems there was a small problem with where I was directing my gaze." },
+        { "speaker": "승객", "text": "문제요? 일부러 보신 거 같은데.", "reading": "mun-je-yo? il-bu-reo bo-sin geo gat-eun-de.", "en": "A problem? It seemed like you were looking on purpose." },
+        { "speaker": "천상우 기장", "text": "…부인하지 않겠습니다. 계기판보다 그쪽이 더 잘 보여서 말입니다.", "reading": "…bu-in-ha-ji an-ket-seum-ni-da. gye-gi-pan-bo-da geu-jjog-i deo jal bo-yeo-seo mal-im-ni-da.", "en": "...I won't deny it. Because that direction is clearer to see than the instrument panel." }
+      ],
+      "question": "기장이 승객을 계속 쳐다본 이유로 가장 적절한 것은?",
+      "question_en": "What is the most appropriate reason the captain kept looking at the passenger?",
+      "correct_answer": "업무 중에도 승객에게 마음이 쓰였기 때문에",
+      "options": ["업무 중에도 승객에게 마음이 쓰였기 때문에", "계기판이 고장 나서 확인할 것이 없어서", "승객이 위험한 행동을 해서 감시한 것", "관제탑에서 승객을 지켜보라고 지시해서"],
+      "explanation": "기장은 업무 중에도 승객에게 마음이 쓰여 시선이 자꾸 그쪽으로 향했다고 솔직하게 인정합니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "승객", "text": "요즘 기장님답지 않게 자주 멍하시던데요?", "reading": "yo-jeum gi-jang-nim-dap-ji an-ke ja-ju meong-ha-si-deon-de-yo?", "en": "Lately you've been spacing out a lot, unlike your usual self, Captain." },
+        { "speaker": "천상우 기장", "text": "…솔직히, 최근에 집중력이 예전 같지 않습니다.", "reading": "…sol-jik-hi, choe-geun-e jip-jung-yeog-i ye-jeon gat-ji an-seum-ni-da.", "en": "...To be honest, my concentration hasn't been like before lately." },
+        { "speaker": "승객", "text": "왜요? 무슨 일 있으세요?", "reading": "wae-yo? mu-seun il i-sseu-se-yo?", "en": "Why? Is something wrong?" },
+        { "speaker": "천상우 기장", "text": "당신 얼굴이 자꾸 눈앞에 아른거려서, 그런 것 같습니다.", "reading": "dang-sin eol-gul-i ja-kku nun-ap-e a-reun-geo-ryeo-seo, geu-reon geot gat-seum-ni-da.", "en": "I think it's because your face keeps flickering before my eyes." }
+      ],
+      "question": "기장이 최근 집중력이 떨어진 이유로 말한 것은?",
+      "question_en": "What reason does the captain give for his recent lack of concentration?",
+      "correct_answer": "승객의 얼굴이 계속 떠올라서",
+      "options": ["승객의 얼굴이 계속 떠올라서", "업무량이 갑자기 늘어서", "비행 일정이 불규칙해져서", "건강에 문제가 생겨서"],
+      "explanation": "기장은 업무량이나 건강 문제가 아니라, 승객의 얼굴이 계속 떠올라 집중력이 흐트러졌다고 말합니다."
+    }
+  ]
+}

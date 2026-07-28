@@ -1,0 +1,62 @@
+{
+  "id": "sp-rom-kyuhyun-01",
+  "character_id": "kyuhyun",
+  "title": "오늘따라 왜 이렇게 예뻐 보이지",
+  "emoji": "😏",
+  "story": [
+    {
+      "text": "오늘따라 왜 이렇게 예뻐 보이지... 아, 실례. 규현 기장입니다. 오늘 기장을 맡게 됐어요.",
+      "reading": "o-neul-tta-ra wae i-reo-ke ye-ppeo bo-i-ji... a, sil-lye. gyu-hyeon gi-jang-im-ni-da. o-neul gi-jang-eul mat-ge dwae-sseo-yo.",
+      "en": "Why do you look so pretty today... oh, excuse me. I'm Captain Kyuhyun. I'll be your captain today."
+    },
+    {
+      "text": "'승객' 여러분 중에 이렇게 눈에 띄는 분은 오랜만이라서요. 놀라지 마세요, 그냥 사실을 말한 거니까.",
+      "reading": "seung-gaek yeo-reo-bun jung-e i-reo-ke nun-e ttui-neun bun-eun o-raen-man-i-ra-seo-yo. nol-la-ji ma-se-yo, geu-nyang sa-sil-eul mal-han geo-ni-kka.",
+      "en": "It's been a while since a 'passenger' stood out to me like this. Don't be startled — I'm just stating a fact.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "이 '공항'에서 몇 년을 일했는데, 오늘처럼 설레는 탑승구는 처음이네요.",
+      "reading": "i gong-hang-e-seo myeot nyeon-eul il-haet-neun-de, o-neul-cheo-reom seol-le-neun tap-seung-gu-neun cheo-eum-i-ne-yo.",
+      "en": "I've worked at this 'airport' for years, but this is the first time a boarding gate has ever made me nervous like this.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "이번 '여행', 저랑 같은 노선이라니 이건 운명 아닌가요? 서울 하늘길, 제가 제일 잘 알거든요.",
+      "reading": "i-beon yeo-haeng, jeo-rang gat-eun no-seon-i-ra-ni i-geon un-myeong a-nin-ga-yo? seo-ul ha-neul-gil, je-ga je-il jal al-geo-deun-yo.",
+      "en": "This 'trip' just happens to be on my route? Isn't that fate? I know the Seoul skyway better than anyone.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "탑승하시면서 저 한 번 보고 웃으셨죠? 그 '미소' 때문에 오늘 비행 내내 기분이 좋을 것 같은데요.",
+      "reading": "tap-seung-ha-si-myeon-seo jeo han beon bo-go u-seu-syeot-jyo? geu mi-so ttae-mun-e o-neul bi-haeng nae-nae gi-bun-i jo-eul geot gat-eun-de-yo.",
+      "en": "You smiled at me when you boarded, didn't you? That 'smile' alone is probably going to keep me in a good mood the whole flight.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "기장이 승객 앞에서 이런 '설렘'을 느끼면 안 되는 건데... 뭐, 오늘만 봐주세요.",
+      "reading": "gi-jang-i seung-gaek ap-e-seo i-reon seol-lem-eul neu-kki-myeon an doe-neun geon-de... mwo, o-neul-man bwa-ju-se-yo.",
+      "en": "A captain isn't supposed to feel this kind of 'flutter' in front of a passenger... well, just let it slide for today.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "자, 이런 얘기만 하다간 이륙 못 하겠네요. 오늘 배운 표현들, 문제 풀면서 제대로 확인해볼까요?",
+      "reading": "ja, i-reon yae-gi-man ha-da-gan i-ryuk mot ha-get-ne-yo. o-neul bae-un pyo-hyeon-deul, mun-je pul-myeon-seo je-dae-ro hwa-gin-hae-bol-kka-yo?",
+      "en": "Alright, if I keep talking like this we'll never take off. Shall we check what we learned today by solving some questions?"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "승객", "reading": "seung-gaek", "meaning": "passenger", "example": "오늘 이 비행기에는 특별한 승객이 타셨네요.", "example_reading": "o-neul i bi-haeng-gi-e-neun teuk-byeol-han seung-gaek-i ta-syeon-ne-yo", "example_en": "There's a special passenger on this flight today." },
+    { "id": "w02", "word": "공항", "reading": "gong-hang", "meaning": "airport", "example": "공항에서 규현 기장을 처음 만났어요.", "example_reading": "gong-hang-e-seo gyu-hyeon gi-jang-eul cheo-eum man-na-sseo-yo", "example_en": "I first met Captain Kyuhyun at the airport." },
+    { "id": "w03", "word": "여행", "reading": "yeo-haeng", "meaning": "trip, travel", "example": "이번 여행은 오래 기억날 것 같아요.", "example_reading": "i-beon yeo-haeng-eun o-rae gi-eok-nal geot gat-a-yo", "example_en": "I think I'll remember this trip for a long time." },
+    { "id": "w04", "word": "미소", "reading": "mi-so", "meaning": "smile", "example": "그의 미소가 자꾸 생각나요.", "example_reading": "geu-ui mi-so-ga ja-kku saeng-gak-na-yo", "example_en": "I keep thinking about his smile." },
+    { "id": "w05", "word": "설렘", "reading": "seol-lem", "meaning": "flutter, excitement", "example": "탑승구 앞에서 설렘이 시작됐어요.", "example_reading": "tap-seung-gu ap-e-seo seol-lem-i si-jak-dwae-sseo-yo", "example_en": "The flutter began in front of the boarding gate." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "오늘따라 왜 이렇게 예뻐 보이지.", "reading": "o-neul-tta-ra wae i-reo-ke ye-ppeo bo-i-ji", "en": "Why do you look so pretty today." },
+    { "id": "s02", "ko": "승객 여러분, 좋은 하루 되세요.", "reading": "seung-gaek yeo-reo-bun, jo-eun ha-ru doe-se-yo", "en": "Have a good day, passengers." },
+    { "id": "s03", "ko": "공항에서 우연히 다시 만났어요.", "reading": "gong-hang-e-seo u-yeon-hi da-si man-na-sseo-yo", "en": "We met again by chance at the airport." },
+    { "id": "s04", "ko": "이번 여행이 특별해질 것 같아요.", "reading": "i-beon yeo-haeng-i teuk-byeol-hae-jil geot gat-a-yo", "en": "This trip seems like it's going to be special." },
+    { "id": "s05", "ko": "그의 미소를 보면 설렘이 느껴져요.", "reading": "geu-ui mi-so-reul bo-myeon seol-lem-i neu-kkyeo-jyeo-yo", "en": "Seeing his smile, I feel a flutter." }
+  ]
+}

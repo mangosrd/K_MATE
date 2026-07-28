@@ -1,0 +1,93 @@
+{
+  "id": "sp-rom-sunwoo-10",
+  "character_id": "sunwoo",
+  "title": "우리 바다처럼 변치 말자",
+  "emoji": "⚓",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "바다는 몇 년이 지나도 잘 안 '변하네', 그자?",
+      "reading": "ba-da-neun myeot nyeon-i ji-na-do jal an byeon-ha-ne, geu-ja?",
+      "en": "The sea doesn't really change even after years pass, does it?",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "우리도 이 바다처럼 '한결같이' 이래 지내면 좋겠다.",
+      "reading": "u-ri-do i ba-da-cheo-reom han-gyeol-gat-i i-rae ji-nae-myeon jo-ket-da.",
+      "en": "I hope we can stay consistent like this sea, just like this.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "그래서 내가 오늘 하나 '약속하고' 싶은 게 있다.",
+      "reading": "geu-rae-seo nae-ga o-neul ha-na yak-sok-ha-go sip-eun ge it-da.",
+      "en": "So there's one thing I want to promise today.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "저 '파도'처럼 말이다, 밀려왔다 나갔다 안 하고, 계속 니 곁에 있을 거다.",
+      "reading": "jeo pa-do-cheo-reom mal-i-da, mil-lyeo-wat-da na-gat-da an ha-go, gye-sok ni gyeot-e it-eul geo-da.",
+      "en": "Like those waves, I won't come and go — I'll just keep staying by your side.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "앞으로도 계속 이래 '함께하자', 장난치고 놀리면서.",
+      "reading": "ap-eu-ro-do gye-sok i-rae ham-kke-ha-ja, jang-nan-chi-go nol-li-myeon-seo.",
+      "en": "Let's keep being together like this, teasing and joking around.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "해운대에서 처음 만났던 것처럼, 여서 다시 약속한다.",
+      "reading": "hae-un-dae-e-seo cheo-eum man-nat-deon geot-cheo-reom, yeo-seo da-si yak-sok-han-da.",
+      "en": "Just like when we first met at Haeundae, I'm making this promise again, right here."
+    },
+    {
+      "text": "단어는 다 챙겼제? 마지막으로 대화 상황 문제도 있으니까 끝까지 잘 풀어봐라. 고생했다, 진짜.",
+      "reading": "dan-eo-neun da chaeng-gyeot-je? ma-ji-mak-eu-ro dae-hwa sang-hwang mun-je-do it-eu-ni-kka kkeut-kka-ji jal pul-eo-bwa-ra. go-saeng-haet-da, jin-jja.",
+      "en": "Got all the words down? There's a final conversation question too, so finish it up well. You did great, seriously."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "변하다", "reading": "byeon-ha-da", "meaning": "To change", "example": "시간이 지나도 그의 마음은 변하지 않았다.", "example_reading": "si-gan-i ji-na-do geu-ui ma-eum-eun byeon-ha-ji an-at-da", "example_en": "His feelings didn't change even as time passed." },
+    { "id": "w02", "word": "한결같다", "reading": "han-gyeol-gat-da", "meaning": "To be consistent, unwavering", "example": "그는 언제나 한결같은 사람이다.", "example_reading": "geu-neun eon-je-na han-gyeol-gat-eun sa-ram-i-da", "example_en": "He is always a consistent person." },
+    { "id": "w03", "word": "약속하다", "reading": "yak-sok-ha-da", "meaning": "To promise", "example": "우리는 다시 만나기로 약속했다.", "example_reading": "u-ri-neun da-si man-na-gi-ro yak-sok-haet-da", "example_en": "We promised to meet again." },
+    { "id": "w04", "word": "파도", "reading": "pa-do", "meaning": "Wave", "example": "파도가 끊임없이 밀려왔다.", "example_reading": "pa-do-ga kkeun-im-eop-si mil-lyeo-wat-da", "example_en": "The waves kept rolling in endlessly." },
+    { "id": "w05", "word": "함께하다", "reading": "ham-kke-ha-da", "meaning": "To be together, share life together", "example": "이 두 사람은 오랫동안 함께해 왔다.", "example_reading": "i du sa-ram-eun o-raet-dong-an ham-kke-hae wat-da", "example_en": "These two have been together for a long time." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "그의 마음은 시간이 지나도 변하지 않았다.", "reading": "geu-ui ma-eum-eun si-gan-i ji-na-do byeon-ha-ji an-at-da", "en": "His feelings didn't change even as time passed." },
+    { "id": "s02", "ko": "그는 언제나 한결같은 사람이었다.", "reading": "geu-neun eon-je-na han-gyeol-gat-eun sa-ram-i-eot-da", "en": "He was always a consistent person." },
+    { "id": "s03", "ko": "우리는 다시 만나기로 약속했다.", "reading": "u-ri-neun da-si man-na-gi-ro yak-sok-haet-da", "en": "We promised to meet again." },
+    { "id": "s04", "ko": "파도가 끊임없이 밀려왔다.", "reading": "pa-do-ga kkeun-im-eop-si mil-lyeo-wat-da", "en": "The waves kept rolling in endlessly." },
+    { "id": "s05", "ko": "우리는 앞으로도 함께하기로 했다.", "reading": "u-ri-neun ap-eu-ro-do ham-kke-ha-gi-ro haet-da", "en": "We decided to be together going forward." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "선우", "text": "여서 처음 니 만났을 때 기억나나? 그때부터 지금까지 참 많이 왔다.", "reading": "yeo-seo cheo-eum ni man-nat-eul ttae gi-eok-na-na? geu-ttae-bu-teo ji-geum-kka-ji cham man-i wat-da.", "en": "Do you remember when we first met here? We've come a long way since then." },
+        { "speaker": "승객", "text": "맞다, 그때 니는 맨날 나 놀리기만 했었는데.", "reading": "mat-da, geu-ttae ni-neun maen-nal na nol-li-gi-man haet-eon-neun-de.", "en": "Right, back then you only ever teased me." },
+        { "speaker": "선우", "text": "그거는 지금도 똑같다. 그래도 마음은 그때부터 한결같았다.", "reading": "geu-geo-neun ji-geum-do ttok-gat-da. geu-rae-do ma-eum-eun geu-ttae-bu-teo han-gyeol-gat-at-da.", "en": "That part's still the same now. But my heart's been consistent since back then." },
+        { "speaker": "승객", "text": "그럼 앞으로도 계속 이렇게 지내는 거제?", "reading": "geu-reom ap-eu-ro-do gye-sok i-reo-ke ji-nae-neun geo-je?", "en": "So we'll keep going on like this from now on too, right?" }
+      ],
+      "question": "이 대화에서 두 사람의 관계에 대해 알 수 있는 것은 무엇인가요?",
+      "question_en": "What does this conversation reveal about the couple's relationship?",
+      "correct_answer": "오랜 시간 변하지 않은 마음으로 계속 함께하기로 한 관계",
+      "options": ["오랜 시간 변하지 않은 마음으로 계속 함께하기로 한 관계", "곧 헤어지기로 한 관계", "이제 막 처음 만난 관계", "서로를 오해하고 있는 관계"],
+      "explanation": "두 사람은 처음 만났을 때부터 지금까지의 시간을 돌아보며, 변치 않은 마음으로 앞으로도 함께하기로 다짐하고 있습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "선우", "text": "저 파도 봐라. 계속 왔다 갔다 해도 결국 여 바다는 그대로 있제.", "reading": "jeo pa-do bwa-ra. gye-sok wat-da gat-da hae-do gyeol-guk yeo ba-da-neun geu-dae-ro it-je.", "en": "Look at those waves. Even though they keep coming and going, in the end this sea stays just the same." },
+        { "speaker": "승객", "text": "그러네. 신기하게 안 변한다.", "reading": "geu-reo-ne. sin-gi-ha-ge an byeon-han-da.", "en": "You're right. It's strange how it doesn't change." },
+        { "speaker": "선우", "text": "우리도 저래 살자. 가끔 투닥거려도, 결국 서로 곁에 있는 거로.", "reading": "u-ri-do jeo-rae sal-ja. ga-kkeum tu-dak-geo-ryeo-do, gyeol-guk seo-ro gyeot-e it-neun geo-ro.", "en": "Let's live like that too. Even if we bicker sometimes, in the end we're by each other's side." },
+        { "speaker": "승객", "text": "좋다. 우리 바다처럼 변치 말자.", "reading": "jo-ta. u-ri ba-da-cheo-reom byeon-chi mal-ja.", "en": "Good. Let's not change, just like the sea." }
+      ],
+      "question": "이 대화가 전달하고자 하는 의미는 무엇인가요?",
+      "question_en": "What meaning does this conversation convey?",
+      "correct_answer": "파도처럼 변함없이 서로의 곁을 지키자는 다짐",
+      "options": ["파도처럼 변함없이 서로의 곁을 지키자는 다짐", "바다 여행을 자주 가자는 약속", "다투지 말고 조용히 살자는 다짐", "부산을 떠나 다른 곳에 살자는 계획"],
+      "explanation": "변하지 않는 바다에 빗대어, 앞으로도 다투더라도 결국 서로의 곁을 지키겠다는 다짐을 나누는 장면입니다."
+    }
+  ]
+}

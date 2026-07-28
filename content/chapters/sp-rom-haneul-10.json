@@ -1,0 +1,62 @@
+{
+  "id": "sp-rom-haneul-10",
+  "character_id": "haneul",
+  "title": "서툴지만 분명하게",
+  "emoji": "🌸",
+  "story": [
+    {
+      "text": "…따라와요. 오늘은 딴 데 안 가고, 할 말 있어서 불렀어요.",
+      "reading": "…tta-ra-wa-yo. o-neul-eun ttan de an ga-go, hal mal iss-eo-seo bul-leoss-eo-yo.",
+      "en": "...Come with me. We're not going anywhere else today, I called you here because I have something to say."
+    },
+    {
+      "text": "저기 '별' 보여요? 한옥마을 지붕 위로 뜬 거. …오늘따라 잘 보이네요.",
+      "reading": "jeo-gi 'byeol' bo-yeo-yo? han-ok-ma-eul ji-bung wi-ro tteun geo. …o-neul-tta-ra jal bo-i-ne-yo.",
+      "en": "Can you see that 'star'? Rising above the Hanok Village roofs. ...It's especially clear tonight.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "…이런 거 잘 못 해요, 원래. 그래도 오늘은 '고백' 좀 하려고요.",
+      "reading": "…i-reon geo jal mos hae-yo, won-lae. geu-rae-do o-neul-eun 'go-baek' jom ha-ryeo-go-yo.",
+      "en": "...I'm not good at this sort of thing, usually. But today I'm going to make a 'confession'.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "…무뚝뚝해서 몰랐겠지만, 다 '진심'이었어요. 처음부터.",
+      "reading": "…mu-ttuk-ttuk-hae-seo mol-lass-get-ji-man, da 'jin-sim'i-eoss-eo-yo. cheo-eum-bu-teo.",
+      "en": "...You probably didn't know because I'm so blunt, but it was all 'sincere'. From the very beginning.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "…'손' 좀 줘봐요. 이렇게 잡고 있는 게, 훨씬 나아서요.",
+      "reading": "…'son' jom jwo-bwa-yo. i-reoh-ge jap-go it-neun ge, hwol-ssin na-a-seo-yo.",
+      "en": "...Give me your 'hand'. Holding it like this feels so much better.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "앞으로도 곁에 있을게요. 이거 하나는 '약속'해요.",
+      "reading": "ap-eu-ro-do gyeot-e iss-eul-ge-yo. i-geo ha-na-neun 'yak-sok'hae-yo.",
+      "en": "I'll stay by your side from now on too. This much, I 'promise'.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "…서툴어도, 이 정도면 분명하죠? 자, 이제 진짜 마지막 문제예요.",
+      "reading": "…seo-tul-eo-do, i jeong-do-myeon bun-myeong-ha-jyo? ja, i-je jin-jja ma-ji-mak mun-je-ye-yo.",
+      "en": "...Even if I'm clumsy at this, this much is clear, right? Alright, this is really the last question now."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "별", "reading": "byeol", "meaning": "Star", "example": "밤하늘에 별이 반짝여요.", "example_reading": "bam-ha-neul-e byeol-i ban-jjag-yeo-yo", "example_en": "The stars twinkle in the night sky." },
+    { "id": "w02", "word": "고백", "reading": "go-baek", "meaning": "Confession", "example": "드디어 고백을 했어요.", "example_reading": "deu-di-eo go-baeg-eul haess-eo-yo", "example_en": "I finally made a confession." },
+    { "id": "w03", "word": "진심", "reading": "jin-sim", "meaning": "Sincerity / True heart", "example": "제 진심을 알아줘요.", "example_reading": "je jin-sim-eul al-a-jwo-yo", "example_en": "Please understand my sincerity." },
+    { "id": "w04", "word": "손", "reading": "son", "meaning": "Hand", "example": "손을 꼭 잡아요.", "example_reading": "son-eul kkok jab-a-yo", "example_en": "Hold my hand tightly." },
+    { "id": "w05", "word": "약속", "reading": "yak-sok", "meaning": "Promise", "example": "우리 약속 지켜요.", "example_reading": "u-ri yak-sok ji-kyeo-yo", "example_en": "Let's keep our promise." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "별이 가득한 밤이에요.", "reading": "byeol-i ga-deug-han bam-i-e-yo", "en": "It's a night full of stars." },
+    { "id": "s02", "ko": "용기를 내서 고백했어요.", "reading": "yong-gi-reul nae-seo go-baeg-haess-eo-yo", "en": "I gathered courage and confessed." },
+    { "id": "s03", "ko": "제 진심이 전해졌으면 좋겠어요.", "reading": "je jin-sim-i jeon-hae-jyeoss-eu-myeon jo-ket-seo-yo", "en": "I hope my sincerity gets through to you." },
+    { "id": "s04", "ko": "손을 잡고 별을 봐요.", "reading": "son-eul jap-go byeol-eul bwa-yo", "en": "We hold hands and look at the stars." },
+    { "id": "s05", "ko": "이 약속, 꼭 지킬게요.", "reading": "i yak-sok, kkok ji-kil-ge-yo", "en": "I'll definitely keep this promise." }
+  ]
+}

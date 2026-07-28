@@ -1,0 +1,93 @@
+{
+  "id": "sp-rom-sangwoo-01",
+  "character_id": "sangwoo",
+  "title": "타워, 여기는 상우 기장",
+  "emoji": "📡",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "승객 여러분, 즐거운 탑승이 되셨습니까. 저는 이 노선을 맡은 상우 기장입니다. 오늘도 관제탑에 정식으로 교신을 요청하며 인사드립니다.",
+      "reading": "seung-gaek yeo-reo-bun, jeul-geo-un tap-seung-i doe-syeot-seum-ni-kka. jeo-neun i no-seon-eul mat-eun sang-u gi-jang-im-ni-da. o-neul-do gwan-je-tap-e jeong-sik-eu-ro gyo-sin-eul yo-cheong-ha-myeo in-sa-deu-rim-ni-da.",
+      "en": "Passengers, I hope you're enjoying the flight. I'm Captain Sangwoo, in charge of this route. Today too, I formally request radio contact with the tower as my greeting."
+    },
+    {
+      "text": "승객 여러분과의 '교신'은 언제나 이렇게 격식을 갖춰 시작합니다. 편한 인사말보다 이쪽이 저에게는 훨씬 자연스럽습니다.",
+      "reading": "seung-gaek yeo-reo-bun-gwa-ui 'gyo-sin'-eun eon-je-na i-reo-ke gyeok-sik-eul gat-chwo si-jak-ham-ni-da. pyeon-han in-sa-mal-bo-da i-jjok-i jeo-e-ge-neun hwol-ssin ja-yeon-seu-reop-seum-ni-da.",
+      "en": "My 'radio contact' with passengers always begins this formally. This feels far more natural to me than a casual greeting.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "사실 오늘부터 승객님을 제 개인 '관제탑'이라고 부르고 싶습니다. 허락해 주시겠습니까.",
+      "reading": "sa-sil o-neul-bu-teo seung-gaek-nim-eul je gae-in 'gwan-je-tap'-i-ra-go bu-reu-go sip-seum-ni-da. heo-rak-hae ju-si-get-seum-ni-kka.",
+      "en": "Actually, from today, I'd like to call you my personal 'control tower'. Would you allow that?",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "지금 저희는 공주 '상공'을 지나고 있습니다. 천오백 년 전 백제의 하늘도 이렇게 맑았을까 궁금해집니다.",
+      "reading": "ji-geum jeo-hui-neun gong-ju 'sang-gong'-eul ji-na-go it-seum-ni-da. cheon-o-baek nyeon jeon baek-je-ui ha-neul-do i-reo-ke mal-ga-sseul-kka gung-geum-hae-jim-ni-da.",
+      "en": "Right now we're passing through the 'airspace' above Gongju. I wonder if the sky of Baekje 1,500 years ago was this clear too.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "관제탑의 '승인' 없이는 어떤 기장도 함부로 이 항로에 들어설 수 없습니다. 오늘 이 교신도, 승객님의 승인을 기다리겠습니다.",
+      "reading": "gwan-je-tap-ui 'seung-in' eop-si-neun eo-tteon gi-jang-do ham-bu-ro i hang-no-e deu-reo-seol su eop-seum-ni-da. o-neul i gyo-sin-do, seung-gaek-nim-ui seung-in-eul gi-da-ri-get-seum-ni-da.",
+      "en": "No captain may enter this route without the tower's 'approval'. For today's contact too, I'll wait for your approval.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "충청·공주 '노선'은 제가 가장 아끼는 항로입니다. 이 노선에, 이제 승객님도 함께 있다는 사실이 낯설고도 반갑습니다.",
+      "reading": "chung-cheong-gong-ju 'no-seon'-eun je-ga ga-jang a-kki-neun hang-no-im-ni-da. i no-seon-e, i-je seung-gaek-nim-do ham-kke it-da-neun sa-sil-i nat-seol-go-do ban-gap-seum-ni-da.",
+      "en": "The Chungcheong-Gongju 'route' is the flight path I cherish most. It feels strange yet welcome that you're now part of this route too.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "교신은 여기까지입니다. 이어서 실제 무전 상황을 담은 대화를 보여드릴 테니, 상황을 차분히 파악해 보시기 바랍니다.",
+      "reading": "gyo-sin-eun yeo-gi-kka-ji-im-ni-da. i-eo-seo sil-je mu-jeon sang-hwang-eul dam-eun dae-hwa-reul bo-yeo-deu-ril te-ni, sang-hwang-eul cha-bun-hi pa-ak-hae bo-si-gi ba-ram-ni-da.",
+      "en": "That concludes this transmission. Next, I'll show you a conversation from an actual radio situation—please calmly work out what's happening."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "교신", "reading": "gyo-sin", "meaning": "Radio communication / contact (exchanging signals)", "example": "승객과의 교신은 언제나 정중하게 시작합니다.", "example_reading": "seung-gaek-gwa-ui gyo-sin-eun eon-je-na jeong-jung-ha-ge si-jak-ham-ni-da", "example_en": "Radio contact with passengers always begins formally." },
+    { "id": "w02", "word": "관제탑", "reading": "gwan-je-tap", "meaning": "Control tower", "example": "오늘부터 당신을 제 관제탑이라고 부르고 싶습니다.", "example_reading": "o-neul-bu-teo dang-sin-eul je gwan-je-tap-i-ra-go bu-reu-go sip-seum-ni-da", "example_en": "From today, I'd like to call you my control tower." },
+    { "id": "w03", "word": "상공", "reading": "sang-gong", "meaning": "The sky above / airspace", "example": "지금 비행기는 공주 상공을 지나고 있습니다.", "example_reading": "ji-geum bi-haeng-gi-neun gong-ju sang-gong-eul ji-na-go it-seum-ni-da", "example_en": "Right now the plane is passing through the airspace above Gongju." },
+    { "id": "w04", "word": "승인", "reading": "seung-in", "meaning": "Approval", "example": "관제탑의 승인 없이는 이 항로에 들어설 수 없습니다.", "example_reading": "gwan-je-tap-ui seung-in eop-si-neun i hang-no-e deu-reo-seol su eop-seum-ni-da", "example_en": "Without the tower's approval, no one can enter this route." },
+    { "id": "w05", "word": "노선", "reading": "no-seon", "meaning": "Route / line", "example": "충청·공주 노선은 제가 가장 아끼는 항로입니다.", "example_reading": "chung-cheong-gong-ju no-seon-eun je-ga ga-jang a-kki-neun hang-no-im-ni-da", "example_en": "The Chungcheong-Gongju route is the flight path I cherish most." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "승객과의 교신은 언제나 정중하게 시작합니다.", "reading": "seung-gaek-gwa-ui gyo-sin-eun eon-je-na jeong-jung-ha-ge si-jak-ham-ni-da", "en": "Radio contact with passengers always begins formally." },
+    { "id": "s02", "ko": "오늘부터 당신을 제 관제탑이라고 부르고 싶습니다.", "reading": "o-neul-bu-teo dang-sin-eul je gwan-je-tap-i-ra-go bu-reu-go sip-seum-ni-da", "en": "From today, I'd like to call you my control tower." },
+    { "id": "s03", "ko": "지금 비행기는 공주 상공을 지나고 있습니다.", "reading": "ji-geum bi-haeng-gi-neun gong-ju sang-gong-eul ji-na-go it-seum-ni-da", "en": "Right now the plane is passing through the airspace above Gongju." },
+    { "id": "s04", "ko": "관제탑의 승인 없이는 이 항로에 들어설 수 없습니다.", "reading": "gwan-je-tap-ui seung-in eop-si-neun i hang-no-e deu-reo-seol su eop-seum-ni-da", "en": "Without the tower's approval, no one can enter this route." },
+    { "id": "s05", "ko": "충청·공주 노선은 제가 가장 아끼는 항로입니다.", "reading": "chung-cheong-gong-ju no-seon-eun je-ga ga-jang a-kki-neun hang-no-im-ni-da", "en": "The Chungcheong-Gongju route is the flight path I cherish most." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "천상우 기장", "text": "탑승을 환영합니다. 저는 이 노선의 기장, 천상우입니다. 오늘 교신은 순조롭게 진행될 예정입니다.", "reading": "tap-seung-eul hwan-yeong-ham-ni-da. jeo-neun i no-seon-ui gi-jang, cheon-sang-u-im-ni-da. o-neul gyo-sin-eun sun-jo-rop-ge jin-haeng-doel ye-jeong-im-ni-da.", "en": "Welcome aboard. I'm the captain of this route, Cheon Sangwoo. Today's transmission is expected to proceed smoothly." },
+        { "speaker": "승객", "text": "기장님이 직접 인사해 주시는 건 처음이라 좀 놀랐어요.", "reading": "gi-jang-nim-i jik-jeop in-sa-hae ju-si-neun geon cheo-eum-i-ra jom nol-la-sseo-yo.", "en": "This is the first time a captain has greeted me personally, so I was a bit surprised." },
+        { "speaker": "천상우 기장", "text": "특별한 승객이 탑승하셨다는 관제탑의 보고를 받아서 말입니다.", "reading": "teuk-byeol-han seung-gaek-i tap-seung-ha-syeot-da-neun gwan-je-tap-ui bo-go-reul bad-a-seo mal-im-ni-da.", "en": "It's because I received a report from the tower that a special passenger had boarded." },
+        { "speaker": "승객", "text": "그거, 혹시 저를 말씀하시는 거예요?", "reading": "geu-geo, hok-si jeo-reul mal-sseum-ha-si-neun geo-ye-yo?", "en": "That—are you by any chance talking about me?" }
+      ],
+      "question": "기장이 승객에게 특별히 인사를 건넨 이유로 가장 적절한 것은?",
+      "question_en": "What is the most appropriate reason the captain personally greeted the passenger?",
+      "correct_answer": "승객을 특별하게 여기는 마음을 무전 멘트로 표현해서",
+      "options": ["승객을 특별하게 여기는 마음을 무전 멘트로 표현해서", "규정상 모든 승객에게 인사해야 해서", "기내 방송 점검 중이어서", "관제탑에서 지시를 받아서"],
+      "explanation": "기장은 '관제탑의 보고'라는 무전 표현을 빌려, 승객에게 느끼는 특별한 마음을 은근히 드러내고 있습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "천상우 기장", "text": "오늘 상공에서 특별히 편안하셨습니까.", "reading": "o-neul sang-gong-e-seo teuk-byeol-hi pyeon-an-ha-syeot-seum-ni-kka.", "en": "Were you especially comfortable in the sky today?" },
+        { "speaker": "승객", "text": "네, 기장님 목소리 덕분에 마음이 편했어요.", "reading": "ne, gi-jang-nim mok-so-ri deok-bun-e ma-eum-i pyeon-hae-sseo-yo.", "en": "Yes, your voice, Captain, made me feel at ease." },
+        { "speaker": "천상우 기장", "text": "그 말씀, 이 노선을 계속 맡을 이유가 되겠습니다.", "reading": "geu mal-sseum, i no-seon-eul gye-sok mat-eul i-yu-ga doe-get-seum-ni-da.", "en": "That remark just became my reason to keep flying this route." },
+        { "speaker": "승객", "text": "다음에도 이 노선, 기장님이 맡아 주시는 거죠?", "reading": "da-eum-e-do i no-seon, gi-jang-nim-i mat-a ju-si-neun geo-jyo?", "en": "You'll keep flying this route next time too, right, Captain?" }
+      ],
+      "question": "승객의 마지막 말이 암시하는 것은?",
+      "question_en": "What does the passenger's last remark imply?",
+      "correct_answer": "기장과 다시 만나고 싶어 한다",
+      "options": ["기장과 다시 만나고 싶어 한다", "노선이 자주 바뀌길 원한다", "다른 기장으로 바뀌길 원한다", "비행이 불편했다고 말한다"],
+      "explanation": "승객은 다음에도 같은 기장이 이 노선을 맡아주길 바란다고 말하며, 다시 만나고 싶은 마음을 은근히 드러냅니다."
+    }
+  ]
+}

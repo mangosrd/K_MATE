@@ -1,0 +1,93 @@
+{
+  "id": "sp-rom-sangwoo-09",
+  "character_id": "sangwoo",
+  "title": "당신 마음에 착륙 허가를 요청합니다",
+  "emoji": "💍",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "오늘은 금강신관공원입니다. 강 건너 다리 불빛이 물 위에 그대로 비치는 밤이지요. 오늘, 정식으로 교신을 요청하고 싶습니다.",
+      "reading": "o-neul-eun geum-gang-sin-gwan-gong-won-im-ni-da. gang geon-neo da-ri bul-bit-i mul wi-e geu-dae-ro bi-chi-neun bam-i-ji-yo. o-neul, jeong-sig-eu-ro gyo-sin-eul yo-cheong-ha-go sip-seum-ni-da.",
+      "en": "Today we're at Geumgang Singwan Park. It's a night when the bridge lights across the river reflect perfectly on the water. Tonight, I'd like to formally request contact."
+    },
+    {
+      "text": "지금부터 드리는 말씀은 무전 멘트가 아니라, 정식 '고백'입니다. 끝까지 들어 주시겠습니까.",
+      "reading": "ji-geum-bu-teo deu-ri-neun mal-sseum-eun mu-jeon men-teu-ga a-ni-ra, jeong-sik 'go-baek'-im-ni-da. kkeut-kka-ji deul-eo ju-si-get-seum-ni-kka.",
+      "en": "What I'm about to say isn't a radio phrase—it's a formal 'confession'. Would you hear me out to the end?",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "저는 짧은 순항보다, 당신과의 '영원'한 항로를 원합니다.",
+      "reading": "jeo-neun jjalb-eun sun-hang-bo-da, dang-sin-gwa-ui 'yeong-won'-han hang-no-reul won-ham-ni-da.",
+      "en": "I want an 'eternal' flight path with you, not just a short cruise.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "남은 항로, 저와 계속 '동승'해 주시겠습니까. 이 요청에는 규정도, 매뉴얼도 없습니다. 오직 제 진심뿐입니다.",
+      "reading": "nam-eun hang-no, jeo-wa gye-sok 'dong-seung'-hae ju-si-get-seum-ni-kka. i yo-cheong-e-neun gyu-jeong-do, mae-nyu-eol-do eop-seum-ni-da. o-jik je jin-sim-ppun-im-ni-da.",
+      "en": "Would you 'ride along' with me for the rest of the route? There's no regulation, no manual for this request. Only my sincerity.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "당신의 '승낙' 하나면, 저는 이 노선을 평생 자원하겠습니다.",
+      "reading": "dang-sin-ui 'seung-nak' ha-na-myeon, jeo-neun i no-seon-eul pyeong-saeng ja-won-ha-get-seum-ni-da.",
+      "en": "With just your 'consent', I'd volunteer for this route for the rest of my life.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "타워, 여기는 상우 기장. 당신 마음에 착륙 허가를 요청합니다. 제 마지막 '목적지'가 되어 주시겠습니까.",
+      "reading": "ta-wo, yeo-gi-neun sang-u gi-jang. dang-sin ma-eum-e chang-nyuk heo-ga-reul yo-cheong-ham-ni-da. je ma-ji-mak 'mok-jeok-ji'-ga doe-eo ju-si-get-seum-ni-kka.",
+      "en": "Tower, this is Captain Sangwoo. I request landing clearance to your heart. Will you be my final 'destination'?",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "…대답은 잠시 미뤄 두셔도 좋습니다. 먼저, 금강신관공원에서 나눈 대화를 보시고 상황을 헤아려 봐 주시기 바랍니다.",
+      "reading": "…dae-dab-eun jam-si mi-rwo du-syeo-do jo-sseum-ni-da. meon-jeo, geum-gang-sin-gwan-gong-won-e-seo na-nun dae-hwa-reul bo-si-go sang-hwang-eul he-a-ryeo bwa ju-si-gi ba-ram-ni-da.",
+      "en": "...You may hold your answer for a moment. First, please look at a conversation from Geumgang Singwan Park and work out the situation."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "고백", "reading": "go-baek", "meaning": "Confession", "example": "지금부터 드리는 말씀은 정식 고백입니다.", "example_reading": "ji-geum-bu-teo deu-ri-neun mal-sseum-eun jeong-sik go-baeg-im-ni-da", "example_en": "What I'm about to say is a formal confession." },
+    { "id": "w02", "word": "영원", "reading": "yeong-won", "meaning": "Eternity", "example": "저는 당신과의 영원한 항로를 원합니다.", "example_reading": "jeo-neun dang-sin-gwa-ui yeong-won-han hang-no-reul won-ham-ni-da", "example_en": "I want an eternal flight path with you." },
+    { "id": "w03", "word": "동승", "reading": "dong-seung", "meaning": "Riding along together", "example": "남은 항로, 저와 계속 동승해 주시겠습니까.", "example_reading": "nam-eun hang-no, jeo-wa gye-sok dong-seung-hae ju-si-get-seum-ni-kka", "example_en": "Would you ride along with me for the rest of the route?" },
+    { "id": "w04", "word": "승낙", "reading": "seung-nak", "meaning": "Consent / acceptance", "example": "당신의 승낙 하나면 이 노선을 평생 자원하겠습니다.", "example_reading": "dang-sin-ui seung-nak ha-na-myeon i no-seon-eul pyeong-saeng ja-won-ha-get-seum-ni-da", "example_en": "With just your consent, I'd volunteer for this route for the rest of my life." },
+    { "id": "w05", "word": "목적지", "reading": "mok-jeok-ji", "meaning": "Destination", "example": "제 마지막 목적지가 되어 주시겠습니까.", "example_reading": "je ma-ji-mak mok-jeok-ji-ga doe-eo ju-si-get-seum-ni-kka", "example_en": "Will you be my final destination?" }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "지금부터 드리는 말씀은 정식 고백입니다.", "reading": "ji-geum-bu-teo deu-ri-neun mal-sseum-eun jeong-sik go-baeg-im-ni-da", "en": "What I'm about to say is a formal confession." },
+    { "id": "s02", "ko": "저는 당신과의 영원한 항로를 원합니다.", "reading": "jeo-neun dang-sin-gwa-ui yeong-won-han hang-no-reul won-ham-ni-da", "en": "I want an eternal flight path with you." },
+    { "id": "s03", "ko": "남은 항로, 저와 계속 동승해 주시겠습니까.", "reading": "nam-eun hang-no, jeo-wa gye-sok dong-seung-hae ju-si-get-seum-ni-kka", "en": "Would you ride along with me for the rest of the route?" },
+    { "id": "s04", "ko": "당신의 승낙 하나면 이 노선을 평생 자원하겠습니다.", "reading": "dang-sin-ui seung-nak ha-na-myeon i no-seon-eul pyeong-saeng ja-won-ha-get-seum-ni-da", "en": "With just your consent, I'd volunteer for this route for the rest of my life." },
+    { "id": "s05", "ko": "제 마지막 목적지가 되어 주시겠습니까.", "reading": "je ma-ji-mak mok-jeok-ji-ga doe-eo ju-si-get-seum-ni-kka", "en": "Will you be my final destination?" }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "천상우 기장", "text": "오늘은 평소보다 긴 교신을 요청해도 되겠습니까.", "reading": "o-neul-eun pyeong-so-bo-da gin gyo-sin-eul yo-cheong-hae-do doe-get-seum-ni-kka.", "en": "May I request a longer transmission than usual today?" },
+        { "speaker": "승객", "text": "네, 오늘따라 왜 이렇게 진지하세요?", "reading": "ne, o-neul-tta-ra wae i-reo-ke jin-ji-ha-se-yo?", "en": "Sure, why are you so serious today?" },
+        { "speaker": "천상우 기장", "text": "…드릴 말씀이 있습니다. 정식으로 준비한 말입니다.", "reading": "…deu-ril mal-sseum-i it-seum-ni-da. jeong-sig-eu-ro jun-bi-han mal-im-ni-da.", "en": "...There's something I need to say. Something I've formally prepared." },
+        { "speaker": "승객", "text": "왠지 떨리네요, 무슨 얘긴데요?", "reading": "waen-ji tteol-li-ne-yo, mu-seun yae-gin-de-yo?", "en": "I'm nervous for some reason—what is it?" }
+      ],
+      "question": "기장이 \"긴 교신\"과 \"정식으로 준비한 말\"을 언급한 이유로 가장 알맞은 것은?",
+      "question_en": "What is the best reason the captain mentions a 'longer transmission' and 'something formally prepared'?",
+      "correct_answer": "중요한 고백을 하려고 마음의 준비를 하고 있다",
+      "options": ["중요한 고백을 하려고 마음의 준비를 하고 있다", "업무 관련 보고를 길게 해야 해서", "비행 일정 변경을 설명하려고", "관제탑에 제출할 서류를 검토 중이라서"],
+      "explanation": "기장은 실제 업무 보고가 아니라, 중요한 고백을 앞두고 진지하게 마음의 준비를 하고 있는 것입니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "천상우 기장", "text": "타워, 여기는 상우 기장. 당신 마음에 착륙 허가를 요청합니다.", "reading": "ta-wo, yeo-gi-neun sang-u gi-jang. dang-sin ma-eum-e chang-nyuk heo-ga-reul yo-cheong-ham-ni-da.", "en": "Tower, this is Captain Sangwoo. I request landing clearance to your heart." },
+        { "speaker": "승객", "text": "…그거, 저한테 고백하시는 거예요?", "reading": "…geu-geo, jeo-han-te go-baek-ha-si-neun geo-ye-yo?", "en": "...Is that you confessing to me?" },
+        { "speaker": "천상우 기장", "text": "네. 로저, 정확합니다. 승낙해 주시겠습니까.", "reading": "ne. ro-jeo, jeong-hwak-ham-ni-da. seung-nak-hae ju-si-get-seum-ni-kka.", "en": "Yes. Roger, that's correct. Will you consent?" },
+        { "speaker": "승객", "text": "Roger that. 착륙 허가합니다.", "reading": "ro-jeo dat. chang-nyuk heo-ga-ham-ni-da.", "en": "Roger that. Landing clearance granted." }
+      ],
+      "question": "승객의 마지막 대답 \"Roger that. 착륙 허가합니다\"가 의미하는 것은?",
+      "question_en": "What does the passenger's final answer, 'Roger that, landing clearance granted,' mean?",
+      "correct_answer": "기장의 고백을 받아들인다",
+      "options": ["기장의 고백을 받아들인다", "실제 비행기 착륙을 허가한다", "무전 교신을 종료하겠다는 뜻", "질문을 이해하지 못해 대충 대답한 것"],
+      "explanation": "승객은 기장의 무전 용어에 맞춰 같은 말투로 답하며, 그의 고백을 받아들이고 있습니다."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "id": "sp-rom-haneul-05",
+  "character_id": "haneul",
+  "title": "왜 자꾸 챙겨주냐고 묻는다면",
+  "emoji": "🤨",
+  "story": [
+    {
+      "text": "…춥죠. 잠깐 여기 들어가요.",
+      "reading": "…chub-jyo. jam-kkan yeo-gi deul-eo-ga-yo.",
+      "en": "...You're cold, right. Let's step in here for a moment."
+    },
+    {
+      "text": "이 '찻집', 저 혼자 올 때도 가끔 와요. 조용해서.",
+      "reading": "i 'chat-jip', jeo hon-ja ol ttae-do ga-kkeum wa-yo. jo-yong-hae-seo.",
+      "en": "I sometimes come to this 'tea house' alone too. It's quiet.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "이 '차' 마셔봐요. 여기 대추차가 유명해요.",
+      "reading": "i 'cha' ma-syeo-bwa-yo. yeo-gi dae-chu-cha-ga yu-myeong-hae-yo.",
+      "en": "Try this 'tea'. Their jujube tea is famous here.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "…좋은 '향기' 나네요. 차 말이에요, 딴 거 아니고.",
+      "reading": "…jo-eun 'hyang-gi' na-ne-yo. cha mal-i-e-yo, ttan geo a-ni-go.",
+      "en": "...That's a nice 'fragrance'. I mean the tea, nothing else.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "자꾸 챙겨준다고 묻는다면… 그냥 '마음'이 그래요. 별 뜻 없어요.",
+      "reading": "ja-kku chaeng-gyeo-jun-da-go mud-neun-da-myeon… geu-nyang 'ma-eum'i geu-rae-yo. byeol tteus eobs-eo-yo.",
+      "en": "If you ask why I keep looking out for you... it's just how my 'heart' is. No special meaning.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "…왜 그렇게 '미소' 지어요. 사람 이상하게 만들지 말고.",
+      "reading": "…wae geu-reoh-ge 'mi-so' ji-eo-yo. sa-ram i-sang-ha-ge man-deul-ji mal-go.",
+      "en": "...Why are you 'smiling' like that. Don't make me feel strange.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "…됐어요, 그만 물어봐요. 차 식기 전에 마셔요.",
+      "reading": "…dwaess-eo-yo, geu-man mul-eo-bwa-yo. cha sik-gi jeon-e ma-syeo-yo.",
+      "en": "...Enough, stop asking. Drink the tea before it gets cold."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "찻집", "reading": "chat-jip", "meaning": "Tea house", "example": "이 찻집은 분위기가 좋아요.", "example_reading": "i chat-jib-eun bun-wi-gi-ga jo-a-yo", "example_en": "This tea house has a nice atmosphere." },
+    { "id": "w02", "word": "차", "reading": "cha", "meaning": "Tea", "example": "따뜻한 차 한잔 마셔요.", "example_reading": "tta-tteut-han cha han-jan ma-syeo-yo", "example_en": "Let's have a warm cup of tea." },
+    { "id": "w03", "word": "향기", "reading": "hyang-gi", "meaning": "Fragrance / Scent", "example": "차에서 좋은 향기가 나요.", "example_reading": "cha-e-seo jo-eun hyang-gi-ga na-yo", "example_en": "A nice fragrance comes from the tea." },
+    { "id": "w04", "word": "마음", "reading": "ma-eum", "meaning": "Heart / Mind", "example": "제 마음을 알아줬으면 좋겠어요.", "example_reading": "je ma-eum-eul al-a-jwoss-eu-myeon jo-ket-seo-yo", "example_en": "I wish you'd understand my heart." },
+    { "id": "w05", "word": "미소", "reading": "mi-so", "meaning": "Smile", "example": "그 미소가 참 예뻐요.", "example_reading": "geu mi-so-ga cham ye-ppeo-yo", "example_en": "That smile is really pretty." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "찻집에서 차를 마셔요.", "reading": "chat-jib-e-seo cha-reul ma-syeo-yo", "en": "I drink tea at the tea house." },
+    { "id": "s02", "ko": "차에서 좋은 향기가 나요.", "reading": "cha-e-seo jo-eun hyang-gi-ga na-yo", "en": "The tea gives off a nice fragrance." },
+    { "id": "s03", "ko": "제 마음이 편해졌어요.", "reading": "je ma-eum-i pyeon-hae-jyeoss-eo-yo", "en": "My heart feels at ease now." },
+    { "id": "s04", "ko": "미소를 지으며 인사해요.", "reading": "mi-so-reul ji-eu-myeo in-sa-hae-yo", "en": "I greet you with a smile." },
+    { "id": "s05", "ko": "향기로운 차 한잔이 마음을 편안하게 해요.", "reading": "hyang-gi-ro-un cha han-jan-i ma-eum-eul pyeon-an-ha-ge hae-yo", "en": "A fragrant cup of tea puts the heart at ease." }
+  ]
+}

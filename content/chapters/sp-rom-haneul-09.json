@@ -1,0 +1,62 @@
+{
+  "id": "sp-rom-haneul-09",
+  "character_id": "haneul",
+  "title": "처음으로 먼저 건넨 말",
+  "emoji": "💭",
+  "story": [
+    {
+      "text": "왜 그렇게 서 있어요. 안 들어가요?",
+      "reading": "wae geu-reoh-ge seo iss-eo-yo. an deul-eo-ga-yo?",
+      "en": "Why are you just standing there. Aren't you coming in?"
+    },
+    {
+      "text": "'한복' 입어보기로 했잖아요. 저기 사장님이 골라주실 거예요.",
+      "reading": "'han-bok' ib-eo-bo-gi-ro haess-jan-a-yo. jeo-gi sa-jang-nim-i gol-la-ju-sil geo-ye-yo.",
+      "en": "We agreed you'd try on a 'hanbok'. The owner over there will pick one for you.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "이 '사진관', 오래된 곳이에요. 옛날 사진처럼 나온대요.",
+      "reading": "i 'sa-jin-gwan', o-rae-doen gos-i-e-yo. yen-nal sa-jin-cheo-reom na-on-dae-yo.",
+      "en": "This 'photo studio' is an old place. They say the photos come out like old-fashioned ones.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "'거울' 앞에서 뭘 그렇게 봐요. …잘 어울려요, 그 색.",
+      "reading": "'geo-ul' ap-e-seo mwol geu-reoh-ge bwa-yo. …jal eo-ul-lyeo-yo, geu saek.",
+      "en": "What are you looking at so much in the 'mirror'. ...It suits you, that color.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "그 '색깔' 저고리, 잘 골랐네요. …나쁘지 않다고요, 진심으로.",
+      "reading": "geu 'saek-kkal' jeo-go-ri, jal gol-lass-ne-yo. …na-ppeu-ji anh-da-go-yo, jin-sim-eu-ro.",
+      "en": "That 'color' jeogori, you picked well. ...I mean it, it's not bad at all.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "사실… 먼저 말 거는 거, 저한테는 '용기'가 좀 필요했어요.",
+      "reading": "sa-sil… meon-jeo mal geo-neun geo, jeo-han-te-neun 'yong-gi'ga jom pil-yo-haess-eo-yo.",
+      "en": "Honestly... speaking to you first took a bit of 'courage' for me.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "…뭘 그렇게 봐요. 사진이나 찍으러 가요, 시간 없어요.",
+      "reading": "…mwol geu-reoh-ge bwa-yo. sa-jin-i-na jjig-eu-reo ga-yo, si-gan eobs-eo-yo.",
+      "en": "...What are you staring at. Let's go take a photo, we don't have much time."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "한복", "reading": "han-bok", "meaning": "Hanbok", "example": "한복을 입고 사진을 찍어요.", "example_reading": "han-bog-eul ip-go sa-jin-eul jjig-eo-yo", "example_en": "I wear a hanbok and take a photo." },
+    { "id": "w02", "word": "사진관", "reading": "sa-jin-gwan", "meaning": "Photo studio", "example": "이 사진관은 아주 오래됐어요.", "example_reading": "i sa-jin-gwan-eun a-ju o-rae-dwaess-eo-yo", "example_en": "This photo studio is very old." },
+    { "id": "w03", "word": "거울", "reading": "geo-ul", "meaning": "Mirror", "example": "거울을 보면서 옷을 입어요.", "example_reading": "geo-ul-eul bo-myeon-seo os-eul ib-eo-yo", "example_en": "I look in the mirror while getting dressed." },
+    { "id": "w04", "word": "색깔", "reading": "saek-kkal", "meaning": "Color", "example": "어떤 색깔이 좋아요?", "example_reading": "eo-tteon saek-kkal-i jo-a-yo", "example_en": "Which color do you like?" },
+    { "id": "w05", "word": "용기", "reading": "yong-gi", "meaning": "Courage", "example": "용기를 내서 말했어요.", "example_reading": "yong-gi-reul nae-seo mal-haess-eo-yo", "example_en": "I gathered the courage to speak up." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "한복을 입고 사진관에 가요.", "reading": "han-bog-eul ip-go sa-jin-gwan-e ga-yo", "en": "I go to the photo studio wearing hanbok." },
+    { "id": "s02", "ko": "거울 앞에서 한복을 입어봐요.", "reading": "geo-ul ap-e-seo han-bog-eul ib-eo-bwa-yo", "en": "I try on the hanbok in front of the mirror." },
+    { "id": "s03", "ko": "어떤 색깔 한복이 좋아요?", "reading": "eo-tteon saek-kkal han-bog-i jo-a-yo", "en": "Which color hanbok do you like?" },
+    { "id": "s04", "ko": "용기를 내서 먼저 말을 걸었어요.", "reading": "yong-gi-reul nae-seo meon-jeo mal-eul geol-eoss-eo-yo", "en": "I gathered courage and spoke to you first." },
+    { "id": "s05", "ko": "사진관 거울에 우리 둘이 비쳐요.", "reading": "sa-jin-gwan geo-ul-e u-ri dul-i bi-chyeo-yo", "en": "The two of us are reflected in the photo studio's mirror." }
+  ]
+}

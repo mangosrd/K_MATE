@@ -1,0 +1,62 @@
+{
+  "id": "sp-rom-haneul-06",
+  "character_id": "haneul",
+  "title": "말은 없어도 곁을 지키는",
+  "emoji": "🤍",
+  "story": [
+    {
+      "text": "다리 아파요? …천천히 올라가요, 안 급해요.",
+      "reading": "da-ri a-pa-yo? …cheon-cheon-hi ol-la-ga-yo, an geup-hae-yo.",
+      "en": "Do your legs hurt? ...Let's go up slowly, there's no rush."
+    },
+    {
+      "text": "여기가 '오목대'예요. 한옥마을 전체가 다 보이는 곳이에요.",
+      "reading": "yeo-gi-ga 'o-mok-dae'ye-yo. han-ok-ma-eul jeon-che-ga da bo-i-neun gos-i-e-yo.",
+      "en": "This is 'Omokdae'. A place where you can see the whole Hanok Village.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "'계단' 꽤 되죠. 힘들면 말해요, 천천히 가면 되니까.",
+      "reading": "'gye-dan' kkwae doe-jyo. him-deul-myeon mal-hae-yo, cheon-cheon-hi ga-myeon doe-ni-kka.",
+      "en": "Quite a lot of 'stairs', right. Tell me if it's hard, we can go slowly.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "저 '노을' 좀 봐요. 기와지붕이 다 붉게 물들었어요.",
+      "reading": "jeo 'no-eul' jom bwa-yo. gi-wa-ji-bung-i da bulg-ge mul-deul-eoss-eo-yo.",
+      "en": "Look at that 'sunset glow'. The tiled roofs have all turned red.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "…넘어질 뻔했잖아요. '손' 잡아요, 그냥 잡으라니까요.",
+      "reading": "…neom-eo-jil ppeon-haess-jan-a-yo. 'son' jab-a-yo, geu-nyang jab-eu-ra-ni-kka-yo.",
+      "en": "...You almost tripped. Just take my 'hand', just take it.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "'바람' 차죠. …말은 안 해도, 옆에 있을게요.",
+      "reading": "'ba-ram' cha-jyo. …mal-eun an hae-do, yeop-e iss-eul-ge-yo.",
+      "en": "The 'wind' is cold, right. ...I may not say much, but I'll stay by your side.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "…뭘 그렇게 봐요. 그냥, 곁에 있는 거예요.",
+      "reading": "…mwol geu-reoh-ge bwa-yo. geu-nyang, gyeot-e it-neun geo-ye-yo.",
+      "en": "...What are you looking at like that. I'm just... staying close, that's all."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "오목대", "reading": "o-mok-dae", "meaning": "Omokdae", "example": "오목대에서 노을을 봐요.", "example_reading": "o-mok-dae-e-seo no-eul-eul bwa-yo", "example_en": "I watch the sunset from Omokdae." },
+    { "id": "w02", "word": "계단", "reading": "gye-dan", "meaning": "Stairs", "example": "계단을 천천히 올라가요.", "example_reading": "gye-dan-eul cheon-cheon-hi ol-la-ga-yo", "example_en": "I go up the stairs slowly." },
+    { "id": "w03", "word": "노을", "reading": "no-eul", "meaning": "Sunset glow", "example": "노을이 정말 아름다워요.", "example_reading": "no-eul-i jeong-mal a-reum-da-wo-yo", "example_en": "The sunset glow is truly beautiful." },
+    { "id": "w04", "word": "손", "reading": "son", "meaning": "Hand", "example": "제 손을 잡아요.", "example_reading": "je son-eul jab-a-yo", "example_en": "Take my hand." },
+    { "id": "w05", "word": "바람", "reading": "ba-ram", "meaning": "Wind", "example": "바람이 시원하게 불어요.", "example_reading": "ba-ram-i si-won-ha-ge bul-eo-yo", "example_en": "The wind blows refreshingly." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "오목대까지 계단이 많아요.", "reading": "o-mok-dae-kka-ji gye-dan-i man-a-yo", "en": "There are many stairs up to Omokdae." },
+    { "id": "s02", "ko": "노을이 질 때 바람이 불어요.", "reading": "no-eul-i jil ttae ba-ram-i bul-eo-yo", "en": "The wind blows as the sunset falls." },
+    { "id": "s03", "ko": "손을 잡고 계단을 올라가요.", "reading": "son-eul jap-go gye-dan-eul ol-la-ga-yo", "en": "We climb the stairs holding hands." },
+    { "id": "s04", "ko": "바람이 불어서 조금 추워요.", "reading": "ba-ram-i bul-eo-seo jo-geum chu-wo-yo", "en": "It's a bit cold because the wind is blowing." },
+    { "id": "s05", "ko": "노을이 참 따뜻해 보여요.", "reading": "no-eul-i cham tta-tteut-hae bo-yeo-yo", "en": "The sunset glow looks so warm." }
+  ]
+}

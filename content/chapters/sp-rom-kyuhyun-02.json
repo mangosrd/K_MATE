@@ -1,0 +1,62 @@
+{
+  "id": "sp-rom-kyuhyun-02",
+  "character_id": "kyuhyun",
+  "title": "이거 규정 위반인가요",
+  "emoji": "💖",
+  "story": [
+    {
+      "text": "어, 진짜 오셨네요? 비번인 날 저랑 차 마시자고 했더니 진짜 나오실 줄은 몰랐는데.",
+      "reading": "eo, jin-jja o-syeon-ne-yo? bi-beon-in nal jeo-rang cha ma-si-ja-go haet-deo-ni jin-jja na-o-sil jul-eun mol-lat-neun-de.",
+      "en": "Oh, you actually came? I asked you to grab tea with me on my day off, but I didn't think you'd really show up."
+    },
+    {
+      "text": "기장이 승객한테 이렇게 개인적으로 연락하는 거, 이거 '규정' 위반인가요?",
+      "reading": "gi-jang-i seung-gaek-han-te i-reo-ke gae-in-jeok-eu-ro yeol-lak-ha-neun geo, i-geo gyu-jeong wi-ban-in-ga-yo?",
+      "en": "A captain contacting a passenger privately like this — is this a 'regulation' violation?",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "'인사동' 골목에 숨어 있는 이 찻집, 아무한테나 안 알려주는 곳인데 승객님한테는 특별히.",
+      "reading": "in-sa-dong gol-mok-e sum-eo it-neun i chat-jip, a-mu-han-te-na an al-lyeo-ju-neun got-in-de seung-gaek-nim-han-te-neun teuk-byeol-hi.",
+      "en": "This tea house hidden in the 'Insadong' alleys — I don't usually tell people about it, but for you, an exception.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "이 '찻집' 자리, 창가 쪽으로 앉으면 인사동 거리가 다 보여요. 근데 전 승객님만 보이네요.",
+      "reading": "i chat-jip ja-ri, chang-ga jjok-eu-ro anj-eu-myeon in-sa-dong geo-ri-ga da bo-yeo-yo. geun-de jeon seung-gaek-nim-man bo-i-ne-yo.",
+      "en": "This 'tea house' — if you sit by the window, you can see all of Insadong. But somehow I only see you.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "아, 방금 건 '농담'이었어요. ...절반 정도는.",
+      "reading": "a, bang-geum geon nong-dam-i-eot-seo-yo. ...jeol-ban jeong-do-neun.",
+      "en": "Ah, that last part was a 'joke'. ...Half of it, anyway.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "농담처럼 던졌지만, 사실 요즘 승객님 생각하면 이게 '진심'인지 저도 헷갈려요.",
+      "reading": "nong-dam-cheo-reom deon-jyeot-ji-man, sa-sil yo-jeum seung-gaek-nim saeng-gak-ha-myeon i-ge jin-sim-in-ji jeo-do het-gal-lyeo-yo.",
+      "en": "I threw it out like a joke, but honestly, when I think about you these days, even I can't tell if it's 'sincerity'.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "자, 이런 얘기는 여기까지 하고. 오늘 배운 단어들 잊기 전에 문제로 확인해볼까요?",
+      "reading": "ja, i-reon yae-gi-neun yeo-gi-kka-ji ha-go. o-neul bae-un dan-eo-deul it-gi jeon-e mun-je-ro hwa-gin-hae-bol-kka-yo?",
+      "en": "Alright, let's leave it there for now. Shall we check today's words with some questions before you forget them?"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "규정", "reading": "gyu-jeong", "meaning": "regulation, rule", "example": "이거 규정 위반 아닌가요?", "example_reading": "i-geo gyu-jeong wi-ban a-nin-ga-yo", "example_en": "Isn't this a violation of regulations?" },
+    { "id": "w02", "word": "인사동", "reading": "in-sa-dong", "meaning": "Insadong", "example": "인사동에는 예쁜 골목이 많아요.", "example_reading": "in-sa-dong-e-neun ye-ppeun gol-mok-i man-a-yo", "example_en": "Insadong has many pretty alleys." },
+    { "id": "w03", "word": "찻집", "reading": "chat-jip", "meaning": "tea house", "example": "저 찻집에서 차 한잔 할까요?", "example_reading": "jeo chat-jip-e-seo cha han-jan hal-kka-yo", "example_en": "Shall we have a cup of tea at that tea house?" },
+    { "id": "w04", "word": "농담", "reading": "nong-dam", "meaning": "joke", "example": "그건 농담이 아니라 진심이었어요.", "example_reading": "geu-geon nong-dam-i a-ni-ra jin-sim-i-eot-seo-yo", "example_en": "That wasn't a joke, it was sincere." },
+    { "id": "w05", "word": "진심", "reading": "jin-sim", "meaning": "sincerity, true feelings", "example": "진심을 말하면 조금 부끄러워요.", "example_reading": "jin-sim-eul mal-ha-myeon jo-geum bu-kkeu-reo-wo-yo", "example_en": "Telling the truth makes me a little embarrassed." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "이거 규정 위반 아닌가요?", "reading": "i-geo gyu-jeong wi-ban a-nin-ga-yo", "en": "Isn't this a violation of regulations?" },
+    { "id": "s02", "ko": "인사동에는 예쁜 골목이 많아요.", "reading": "in-sa-dong-e-neun ye-ppeun gol-mok-i man-a-yo", "en": "Insadong has many pretty alleys." },
+    { "id": "s03", "ko": "저 찻집에서 차 한잔 할까요?", "reading": "jeo chat-jip-e-seo cha han-jan hal-kka-yo", "en": "Shall we have a cup of tea at that tea house?" },
+    { "id": "s04", "ko": "그건 농담이 아니라 진심이었어요.", "reading": "geu-geon nong-dam-i a-ni-ra jin-sim-i-eot-seo-yo", "en": "That wasn't a joke, it was sincere." },
+    { "id": "s05", "ko": "진심을 말하면 조금 부끄러워요.", "reading": "jin-sim-eul mal-ha-myeon jo-geum bu-kkeu-reo-wo-yo", "en": "Telling the truth makes me a little embarrassed." }
+  ]
+}
