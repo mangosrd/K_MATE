@@ -82,11 +82,11 @@ export default function OnboardingPage() {
   const [selectedChar, setSelectedChar] = useState("kyuhyun");
 
   const handleFinish = () => {
-    // 선택한 메이트를 저장해두고, 바로 그 메이트와의 대화로 시작하게 한다
+    // 선택한 메이트를 저장해두고, 메인 여행(지도) 화면으로 이동
     if (typeof window !== "undefined") {
       localStorage.setItem("kmate_preferred_captain", selectedChar);
     }
-    router.push(`/chat/${selectedChar}`);
+    router.push("/map");
   };
 
   return (
@@ -178,7 +178,7 @@ export default function OnboardingPage() {
 
           <div className={styles.navRow}>
             <button className="btn btn-secondary" onClick={() => setStep(0)}>← Back</button>
-            <button className="btn btn-primary" onClick={() => setStep(2)} id="btn-char-next">
+            <button className="btn btn-secondary" onClick={() => setStep(2)} id="btn-char-next">
               Next →
             </button>
           </div>
