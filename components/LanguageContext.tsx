@@ -86,6 +86,9 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     skip: "⏭️ 스킵",
     checkAnswer: "정답 확인",
     nextQuestion: "다음 문제 →",
+    nextWord: "다음 단어 →",
+    practiceCompleteTitle: "복습 완료!",
+    practiceCompleteSub: "단어 {n}개를 모두 복습했어요.",
     attemptNotice: "❌ 오답입니다! 다시 시도해 보세요.",
     correctNotice: "🎉 정답입니다!",
 
@@ -251,6 +254,9 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     skip: "⏭️ Skip",
     checkAnswer: "Check Answer",
     nextQuestion: "Next Question →",
+    nextWord: "Next Word →",
+    practiceCompleteTitle: "Review Complete!",
+    practiceCompleteSub: "You reviewed all {n} words.",
     attemptNotice: "❌ Incorrect! Try again.",
     correctNotice: "🎉 Correct!",
 
@@ -414,6 +420,9 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     skip: "⏭️ Пропустить",
     checkAnswer: "Проверить ответ",
     nextQuestion: "Следующий вопрос →",
+    nextWord: "Следующее слово →",
+    practiceCompleteTitle: "Повторение завершено!",
+    practiceCompleteSub: "Вы повторили все {n} слов.",
     attemptNotice: "❌ Неверно! Попробуйте еще раз.",
     correctNotice: "🎉 Верно!",
 
@@ -577,6 +586,9 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     skip: "⏭️ 跳过",
     checkAnswer: "核对答案",
     nextQuestion: "下一题 →",
+    nextWord: "下一个单词 →",
+    practiceCompleteTitle: "复习完成！",
+    practiceCompleteSub: "已复习全部 {n} 个单词。",
     attemptNotice: "❌ 回答错误！请再试一次。",
     correctNotice: "🎉 回答正确！",
 
@@ -740,6 +752,9 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     skip: "⏭️ スキップ",
     checkAnswer: "正解を確認",
     nextQuestion: "次の問題 →",
+    nextWord: "次の単語 →",
+    practiceCompleteTitle: "復習完了！",
+    practiceCompleteSub: "単語{n}個をすべて復習しました。",
     attemptNotice: "❌ 不正解です！もう一度お試しください。",
     correctNotice: "🎉 正解です！",
 
@@ -903,6 +918,9 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     skip: "⏭️ 跳過",
     checkAnswer: "核對答案",
     nextQuestion: "下一題 →",
+    nextWord: "下一個單字 →",
+    practiceCompleteTitle: "複習完成！",
+    practiceCompleteSub: "已複習全部 {n} 個單字。",
     attemptNotice: "❌ 答錯了！請再試一次。",
     correctNotice: "🎉 答對了！",
 
@@ -1066,6 +1084,9 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     skip: "⏭️ ข้าม",
     checkAnswer: "ตรวจคำตอบ",
     nextQuestion: "ข้อถัดไป →",
+    nextWord: "คำถัดไป →",
+    practiceCompleteTitle: "ทบทวนเสร็จแล้ว!",
+    practiceCompleteSub: "คุณทบทวนคำศัพท์ครบทั้ง {n} คำแล้ว",
     attemptNotice: "❌ คำตอบผิด! ลองใหม่อีกครั้ง",
     correctNotice: "🎉 ถูกต้อง!",
 

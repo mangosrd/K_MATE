@@ -65,13 +65,55 @@ export default function VocabPage() {
   const mastered = filtered.filter((v) => v.mastery === "mastered").length;
   const reviewing = filtered.filter((v) => v.mastery === "reviewing").length;
 
+  const exitPractice = () => {
+    setPracticeMode(false);
+    setShowAnswer(false);
+    setPracticeIdx(0);
+  };
+
+  const handlePracticeNext = () => {
+    setShowAnswer(false);
+    setPracticeIdx((i) => i + 1);
+  };
+
   if (practiceMode && filtered.length > 0) {
-    const word = filtered[practiceIdx % filtered.length];
+    // 카드를 다 돌면(practiceIdx가 목록 끝을 넘어가면) 완료 화면을 보여준다 — 예전엔 "다음"으로
+    // 넘어갈 방법 자체가 없어서(카드를 뒤집는 것 말고는 아무 인터랙션도 없었음) 첫 단어에서
+    // 멈춘 채 진행이 안 되는 버그가 있었다.
+    const isFinished = practiceIdx >= filtered.length;
+
+    if (isFinished) {
+      return (
+        <>
+          <div className="page-content">
+            <header className={styles.practiceHeader}>
+              <button onClick={exitPractice} className={styles.closeBtn}>✕</button>
+              <div>
+                <p className={styles.practiceTitle}>{t("practiceVocab")}</p>
+              </div>
+            </header>
+            <div className={styles.practiceArea} style={{ textAlign: "center" }}>
+              <p style={{ fontSize: 48 }}>🎉</p>
+              <h2 style={{ fontSize: 20, fontWeight: 800, marginBottom: 8 }}>{t("practiceCompleteTitle")}</h2>
+              <p style={{ fontSize: 14, color: "var(--text-muted)", marginBottom: 24 }}>
+                {t("practiceCompleteSub", { n: filtered.length })}
+              </p>
+              <button className="btn btn-primary btn-lg" onClick={exitPractice} id="btn-practice-done">
+                {t("backToList")}
+              </button>
+            </div>
+          </div>
+          <BottomNav />
+        </>
+      );
+    }
+
+    const word = filtered[practiceIdx];
     return (
       <>
         <div className="page-content">
           <header className={styles.practiceHeader}>
-            <button onClick={() => { setPracticeMode(false); setShowAnswer(false); setPracticeIdx(0); }} className={styles.closeBtn}>✕</button>
+            <button onClick={exitPractice} className={styles.closeBtn}>✕</button>
             <div>
               <p className={styles.practiceTitle}>{t("practiceVocab")}</p>
               <p className={styles.practiceSub}>{practiceIdx + 1} / {filtered.length}</p>
@@ -101,6 +143,12 @@ export default function VocabPage() {
                 </div>
               </div>
             </button>
+
+            {showAnswer && (
+              <button className="btn btn-primary btn-lg" onClick={handlePracticeNext} id="btn-next-word">
+                {t("nextWord")}
+              </button>
+            )}
           </div>
         </div>
         <BottomNav />
