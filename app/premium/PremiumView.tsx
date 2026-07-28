@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { MOCK_CHARACTERS } from "@/lib/db/mock";
 import { getCurrentUser, setCurrentUser, getEffectiveUserId } from "@/lib/auth/store";
 import { useLanguage } from "@/components/LanguageContext";
@@ -72,7 +73,9 @@ export default function PremiumView() {
         <div className={styles.charRow}>
           {premiumChars.map((char) => (
             <div key={char.id} className={styles.charChip}>
-              <span className={styles.charEmoji}>{char.emoji}</span>
+              <span className={styles.charEmoji}>
+                <Image src={`/characters/${char.id}.png`} alt={char.name} width={48} height={48} className={styles.charEmojiImg} />
+              </span>
               <span className={styles.charName}>{char.name}</span>
               <span className={styles.charRegion}>
                 {char.region_id === "busan" ? "부산" : char.region_id === "chungcheong" ? "충청" : "제주"}

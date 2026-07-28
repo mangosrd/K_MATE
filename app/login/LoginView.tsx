@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 import { useLanguage } from "@/components/LanguageContext";
 import { setCurrentUser } from "@/lib/auth/store";
 import styles from "./login.module.css";
@@ -88,14 +89,16 @@ export default function LoginView() {
       {mode === "start" && (
         <div className={styles.characterRow} aria-hidden="true">
           {[
-            { emoji: "✈️", name: "규현" },
-            { emoji: "🛫", name: "하늘" },
-            { emoji: "⚓", name: "선우" },
-            { emoji: "🏛️", name: "상우" },
-            { emoji: "🌋", name: "용우" },
+            { id: "kyuhyun", name: "규현" },
+            { id: "haneul", name: "하늘" },
+            { id: "sunwoo", name: "선우" },
+            { id: "sangwoo", name: "상우" },
+            { id: "yongwoo", name: "용우" },
           ].map((c) => (
             <div key={c.name} className={styles.characterChip}>
-              <span className={styles.characterEmoji}>{c.emoji}</span>
+              <span className={styles.characterEmoji}>
+                <Image src={`/characters/${c.id}.png`} alt={c.name} width={48} height={48} className={styles.characterEmojiImg} />
+              </span>
               <span className={styles.characterName}>{c.name}</span>
             </div>
           ))}

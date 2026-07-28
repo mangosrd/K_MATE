@@ -343,7 +343,9 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
               className={`${styles.msgRow} ${msg.role === "user" ? styles.msgRowUser : styles.msgRowAi}`}
             >
               {msg.role === "assistant" && (
-                <div className={styles.msgAvatar}>{char.emoji}</div>
+                <div className={styles.msgAvatar}>
+                  <Image src={`/characters/${char.id}.png`} alt={char.name} width={32} height={32} className={styles.msgAvatarImg} />
+                </div>
               )}
               <div
                 className={`chat-bubble ${msg.role === "user" ? "chat-bubble-user" : "chat-bubble-ai"}`}

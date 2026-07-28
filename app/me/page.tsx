@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 import BottomNav from "@/components/ui/BottomNav";
 import { MOCK_USER, MOCK_PROGRESS, MOCK_ECONOMY } from "@/lib/db/mock";
 import { getLocalVocab } from "@/lib/vocab/store";
@@ -96,7 +97,9 @@ export default function MePage() {
 
           {/* 메이트 카드 */}
           <div className={styles.mateCard}>
-            <div className={styles.mateAvatar}>✈️</div>
+            <div className={styles.mateAvatar}>
+              <Image src="/characters/kyuhyun.png" alt="양규현 기장" width={50} height={50} className={styles.mateAvatarImg} />
+            </div>
             <div className={styles.mateInfo}>
               <div>
                 <p className={styles.mateName}>양규현 기장과의 노선</p>

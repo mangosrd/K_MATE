@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import styles from "./learn.module.css";
 import { SPECIAL_CHAPTERS, MOCK_CHARACTERS, isChapterUnlocked } from "@/lib/db/mock";
 import { getEffectiveUserId } from "@/lib/auth/store";
@@ -52,7 +53,9 @@ export default function LearnView({ char, chapters }: LearnViewProps) {
       <header className={styles.header}>
         <Link href={`/region/${char.region_id}`} className={styles.backBtn}>‹</Link>
         <div className={styles.headerCenter}>
-          <div className={styles.headerAvatar}>{activeCaptain.emoji}</div>
+          <div className={styles.headerAvatar}>
+            <Image src={`/characters/${activeCaptain.id}.png`} alt={activeCaptain.name} width={44} height={44} className={styles.headerAvatarImg} />
+          </div>
           <div>
             <h1 className={styles.headerTitle}>{activeCaptain.name} {t("learnTitle")}</h1>
             <p className={styles.headerSub}>Study with Captain {activeCaptain.name}</p>

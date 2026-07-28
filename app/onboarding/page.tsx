@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 import { useLanguage, Language } from "@/components/LanguageContext";
 import styles from "./onboarding.module.css";
 
@@ -139,7 +140,9 @@ export default function OnboardingPage() {
             const char = CHARACTERS.find((c) => c.id === selectedChar)!;
             return (
               <div className={styles.charPreview}>
-                <div className={styles.charAvatarLg}>{char.emoji}</div>
+                <div className={styles.charAvatarLg}>
+                  <Image src={`/characters/${char.id}.png`} alt={char.name} width={72} height={72} className={styles.charAvatarLgImg} />
+                </div>
                 <div>
                   <p className={styles.charPreviewName}>{char.name}</p>
                   <p className={styles.charPreviewDesc}>{char.description}</p>
@@ -167,7 +170,9 @@ export default function OnboardingPage() {
                   disabled={isLocked}
                   aria-disabled={isLocked}
                 >
-                  <span className={styles.charEmoji}>{char.emoji}</span>
+                  <span className={styles.charEmoji}>
+                    <Image src={`/characters/${char.id}.png`} alt={char.name} width={48} height={48} className={styles.charEmojiImg} />
+                  </span>
                   <span className={styles.charName}>{char.name}</span>
                   <span className={styles.charLoc}>{isLocked ? "🔒 프리미엄" : char.location}</span>
                   {selectedChar === char.id && <span className={styles.charCheck}>✓</span>}

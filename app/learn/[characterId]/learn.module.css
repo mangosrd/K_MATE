@@ -12,7 +12,9 @@
   background: var(--blue-light); border: 2px solid var(--blue-mid);
   display: flex; align-items: center; justify-content: center;
   font-size: 18px; flex-shrink: 0;
+  overflow: hidden;
 }
+.headerAvatarImg { width: 100%; height: 100%; object-fit: cover; }
 .headerTitle { font-size: 15px; font-weight: 700; color: var(--text-primary); }
 .headerSub   { font-size: 11px; color: var(--text-muted); }
 

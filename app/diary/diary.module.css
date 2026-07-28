@@ -21,7 +21,9 @@
   background: var(--red-light); border: 2px solid var(--red-mid);
   display: flex; align-items: center; justify-content: center;
   font-size: 26px; flex-shrink: 0;
+  overflow: hidden;
 }
+.charAvatarImg { width: 100%; height: 100%; object-fit: cover; }
 .charInfo { flex: 1; display: flex; flex-direction: column; gap: 3px; }
 .charNameRow { display: flex; align-items: center; gap: var(--space-sm); }
 .charName    { font-size: 16px; font-weight: 800; color: var(--text-primary); }

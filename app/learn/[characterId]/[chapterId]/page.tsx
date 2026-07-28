@@ -2,6 +2,7 @@
 
 import { useState, use, useEffect, useMemo } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import styles from "./session.module.css";
 import { getChapterContent } from "@/lib/content/chapters";
 import { addVocabWord } from "@/lib/vocab/store";
@@ -651,7 +652,15 @@ export default function LearningSessionPage({
               const word = highlightWord(bubble.highlight_word_id);
               return (
                 <div key={i} className={styles.storyRow}>
-                  <div className={styles.storyAvatar}>✈️</div>
+                  <div className={styles.storyAvatar}>
+                    <Image
+                      src={`/characters/${characterId}.png`}
+                      alt={CAPTAIN_SHORT_NAME[characterId] ?? content.title}
+                      width={40}
+                      height={40}
+                      className={styles.storyAvatarImg}
+                    />
+                  </div>
                   <div className={styles.storyBubbleCol}>
                     <span className={styles.storySpeakerName}>
                       {CAPTAIN_SHORT_NAME[characterId] ?? content.title} {t("captainBadge")}

@@ -2,6 +2,7 @@
 
 import { useState, useEffect, use } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import BottomNav from "@/components/ui/BottomNav";
 import { getCharacterById, getDiaryForCharacter, MOCK_ECONOMY } from "@/lib/db/mock";
 import { getLocalDiaries } from "@/lib/diary/store";
@@ -88,7 +89,9 @@ export default function CharDiaryPage({ params }: { params: Promise<{ characterI
         <header className={styles.header}>
           <Link href="/diary" className={styles.backBtn}>‹</Link>
           <div className={styles.headerCenter}>
-            <div className={styles.headerAvatar}>{char.emoji}</div>
+            <div className={styles.headerAvatar}>
+              <Image src={`/characters/${char.id}.png`} alt={char.name} width={44} height={44} className={styles.headerAvatarImg} />
+            </div>
             <div>
               <p className={styles.headerName}>{char.name} {t("diaryTitle")}</p>
               <p className={styles.headerSub}>{char.name}&apos;s Diary</p>

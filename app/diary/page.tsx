@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import BottomNav from "@/components/ui/BottomNav";
 import { MOCK_CHARACTERS, MOCK_USER, MOCK_DIARY, canAccessCharacter } from "@/lib/db/mock";
 import { getCurrentUser, getEffectiveUserId } from "@/lib/auth/store";
@@ -61,7 +62,9 @@ export default function DiarySelectPage() {
 
               return (
                 <div key={char.id} className={`${styles.charCard} ${!canAccess ? styles.charLocked : ""}`}>
-                  <div className={styles.charAvatar}>{char.emoji}</div>
+                  <div className={styles.charAvatar}>
+                    <Image src={`/characters/${char.id}.png`} alt={char.name} width={56} height={56} className={styles.charAvatarImg} />
+                  </div>
 
                   <div className={styles.charInfo}>
                     <div className={styles.charNameRow}>
