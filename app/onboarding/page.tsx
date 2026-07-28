@@ -156,7 +156,8 @@ export default function OnboardingPage() {
           {/* 캐릭터 리스트 */}
           <div className={styles.charGrid}>
             {CHARACTERS.map((char) => {
-              const isLocked = char.requires_premium;
+              // 개발자 테스트 모드 — 프리미엄 잠금 무시 (.env.local의 NEXT_PUBLIC_DEV_MODE)
+              const isLocked = char.requires_premium && process.env.NEXT_PUBLIC_DEV_MODE !== "true";
               return (
                 <button
                   key={char.id}
@@ -176,7 +177,7 @@ export default function OnboardingPage() {
           </div>
 
           <div className={styles.navRow}>
-            <button className="btn btn-ghost" onClick={() => setStep(0)}>← Back</button>
+            <button className="btn btn-secondary" onClick={() => setStep(0)}>← Back</button>
             <button className="btn btn-primary" onClick={() => setStep(2)} id="btn-char-next">
               Next →
             </button>
@@ -204,7 +205,7 @@ export default function OnboardingPage() {
             ))}
           </div>
           <div className={styles.navRow}>
-            <button className="btn btn-ghost" onClick={() => setStep(1)}>← Back</button>
+            <button className="btn btn-secondary" onClick={() => setStep(1)}>← Back</button>
             <button className="btn btn-primary" onClick={handleFinish} id="btn-start">
               🗺️ Start Exploring
             </button>
