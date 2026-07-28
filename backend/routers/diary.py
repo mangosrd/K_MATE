@@ -81,12 +81,16 @@ def unlock_diary(req: DiaryUnlockRequest, db: Session = Depends(get_db)):
     entry = db.query(DiaryEntry).filter(DiaryEntry.id == req.diary_id).first()
     if not entry:
         raise HTTPException(status_code=404, detail="Diary entry not found")
-    if entry.unlocked:
-        return DiaryUnlockResponse(success=True, remaining_coins=-1, message="이미 해금된 일기입니다")
 
     economy = db.query(Economy).filter(Economy.user_id == req.user_id).first()
     if not economy:
         raise HTTPException(status_code=404, detail="Economy record not found")
+
+    if entry.unlocked:
+        # 이미 해금된 일기를 다시 요청한 경우(연타 등) — 코인은 다시 차감하지 않되,
+        # 실제 잔여 코인을 그대로 돌려줘야 한다. 예전엔 -1을 sentinel로 반환했는데,
+        # 프론트에서 그 값을 그대로 코인 잔액에 표시해버려 🪙 -1이 뜨는 버그가 있었다.
+        return DiaryUnlockResponse(success=True, remaining_coins=economy.coins, message="이미 해금된 일기입니다")
 
     if economy.coins < entry.unlock_cost:
         raise HTTPException(status_code=400, detail="코인이 부족합니다")

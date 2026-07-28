@@ -62,6 +62,7 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
   const [resumeChoice, setResumeChoice] = useState<"pending" | "resolved">(() =>
     getChatHistory(characterId) ? "pending" : "resolved"
   );
+  const [isListening, setIsListening] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   // 이전 대화 이어서 하기 / 새로 시작하기 선택
@@ -81,25 +82,6 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
     if (resumeChoice !== "resolved") return;
     saveChatHistory(characterId, messages);
   }, [messages, resumeChoice, characterId]);
-
-  if (!canAccess) {
-    return (
-      <>
-        <div className="page-content" style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", minHeight: "80vh", padding: "20px", textAlign: "center" }}>
-          <div style={{ fontSize: "64px", marginBottom: "16px" }}>🔒</div>
-          <h2 style={{ fontSize: "20px", fontWeight: "800", marginBottom: "8px" }}>{char.name} 기장 노선 잠금</h2>
-          <p style={{ fontSize: "14px", color: "var(--text-muted)", marginBottom: "24px", maxWidth: "300px" }}>
-            이 노선은 프리미엄 전용입니다. 구독 후 대화를 이용하실 수 있습니다.
-          </p>
-          <div style={{ display: "flex", gap: "12px" }}>
-            <Link href="/chat" className="btn btn-secondary">← 목록으로</Link>
-            <Link href="/premium" className="btn btn-gold">⭐ 프리미엄 보기</Link>
-          </div>
-        </div>
-        <BottomNav />
-      </>
-    );
-  }
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -242,8 +224,6 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
     window.location.href = "/diary";
   };
 
-  const [isListening, setIsListening] = useState(false);
-
   const startListening = () => {
     if (typeof window === "undefined") return;
     const SpeechRecognition =
@@ -287,6 +267,30 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
       setIsListening(false);
     }
   };
+
+  // 접근 제어 체크는 반드시 모든 훅 호출(useState/useRef/useEffect/useCallback) 이후,
+  // 즉 컴포넌트 로직 마지막에서 해야 한다. 예전엔 이 return이 훅 선언 중간에 있어서
+  // (이 아래로 useEffect 1개, useCallback 2개, useState 1개가 더 있었음) 리렌더링 시점에
+  // canAccess 값이 달라지면(예: 다른 탭에서 프리미엄 결제 후 돌아왔을 때) 훅 호출 순서가
+  // 바뀌어 "Rendered fewer hooks than expected" 런타임 에러로 채팅 화면이 통째로 깨질 수 있었다.
+  if (!canAccess) {
+    return (
+      <>
+        <div className="page-content" style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", minHeight: "80vh", padding: "20px", textAlign: "center" }}>
+          <div style={{ fontSize: "64px", marginBottom: "16px" }}>🔒</div>
+          <h2 style={{ fontSize: "20px", fontWeight: "800", marginBottom: "8px" }}>{char.name} 기장 노선 잠금</h2>
+          <p style={{ fontSize: "14px", color: "var(--text-muted)", marginBottom: "24px", maxWidth: "300px" }}>
+            이 노선은 프리미엄 전용입니다. 구독 후 대화를 이용하실 수 있습니다.
+          </p>
+          <div style={{ display: "flex", gap: "12px" }}>
+            <Link href="/chat" className="btn btn-secondary">← 목록으로</Link>
+            <Link href="/premium" className="btn btn-gold">⭐ 프리미엄 보기</Link>
+          </div>
+        </div>
+        <BottomNav />
+      </>
+    );
+  }
 
   return (
     <>

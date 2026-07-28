@@ -5,8 +5,9 @@ import Link from "next/link";
 import styles from "./session.module.css";
 import { getChapterContent } from "@/lib/content/chapters";
 import { addVocabWord } from "@/lib/vocab/store";
-import { getEffectiveUserId } from "@/lib/auth/store";
+import { getEffectiveUserId, getCurrentUser } from "@/lib/auth/store";
 import { useLanguage } from "@/components/LanguageContext";
+import { MOCK_USER, canAccessCharacter } from "@/lib/db/mock";
 
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
 import type { ChapterWord as Word, ChapterSentence as Sentence, DialogueScene, DialogueTurn } from "@/types/content";
@@ -395,6 +396,33 @@ export default function LearningSessionPage({
       setIsListeningSTT(false);
     }
   };
+
+  // ── 프리미엄 접근 제어 ──────────────────────────────────
+  // 이전엔 이 페이지(실제 챕터 콘텐츠)에는 프리미엄 체크가 전혀 없었다. 목록 페이지
+  // (/learn/[characterId])에서만 막고 있어서, 무료 회원도 프리미엄 캐릭터의 챕터 URL을
+  // 직접 알면(주소창 입력, 공유 링크 등) 그대로 들어가 전체 콘텐츠를 볼 수 있었다.
+  const canAccess = canAccessCharacter(
+    characterId,
+    getCurrentUser()?.membership ?? MOCK_USER.membership,
+    MOCK_USER.free_character_slots
+  );
+  if (!canAccess) {
+    return (
+      <main className={styles.page}>
+        <div className={styles.introCard}>
+          <div className={styles.introEmoji}>🔒</div>
+          <h1 className={styles.introTitle}>{t("premiumLockedTitle")}</h1>
+          <p className={styles.introTitleEn}>{t("premiumLockedSub")}</p>
+          <Link href="/premium" className="btn btn-gold btn-lg" style={{ textAlign: "center" }}>
+            ⭐ {t("premiumOnly")}
+          </Link>
+          <Link href={`/learn/${characterId}`} className="btn btn-secondary btn-lg" style={{ textAlign: "center", marginTop: 8 }}>
+            {t("backToList")}
+          </Link>
+        </div>
+      </main>
+    );
+  }
 
   // ── 콘텐츠 미준비 (아직 스토리/단어가 채워지지 않은 챕터) ──────
   if (!content) {
