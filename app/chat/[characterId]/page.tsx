@@ -432,10 +432,10 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
               {char.name} 기장님과 나눈 대화를 이어서 할까요, 새로 시작할까요?
             </p>
             <div className={styles.modalActions}>
-              <button className="btn btn-secondary" onClick={handleFreshStart} id="btn-chat-fresh">
+              <button className={`btn btn-secondary btn-lg ${styles.pillBtn}`} onClick={handleFreshStart} id="btn-chat-fresh">
                 새로 시작하기
               </button>
-              <button className="btn btn-primary" onClick={handleResume} id="btn-chat-resume">
+              <button className={`btn btn-primary btn-lg ${styles.pillBtn}`} onClick={handleResume} id="btn-chat-resume">
                 이어서 하기
               </button>
             </div>
@@ -462,14 +462,14 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
             </p>
             <div className={styles.modalActions}>
               <button
-                className="btn btn-secondary"
+                className={`btn btn-secondary btn-lg ${styles.pillBtn}`}
                 onClick={() => setShowEndModal(false)}
                 id="btn-keep-chatting"
               >
                 계속 대화하기
               </button>
               <button
-                className="btn btn-primary"
+                className={`btn btn-primary btn-lg ${styles.pillBtn}`}
                 onClick={handleSessionEnd}
                 id="btn-end-and-diary"
               >
