@@ -154,6 +154,80 @@
   margin: var(--space-md);
 }
 
+/* ── 소설형 스토리 (로맨스/일상/친구 스페셜 챕터 전용) ──────────
+   말풍선으로 끊지 않고, 한 화면에 글만 쭉 채워서 소설처럼 읽게 한다. */
+.novelCard {
+  width: 100%; max-width: var(--mobile-max);
+  min-height: 100dvh;
+  display: flex; flex-direction: column;
+  background: #fdfaf5;
+}
+
+.novelBody {
+  flex: 1; width: 100%;
+  padding: var(--space-xl) var(--space-lg) var(--space-lg);
+  overflow-y: auto;
+}
+
+.novelPara {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.9;
+  color: var(--text-primary);
+  margin-bottom: var(--space-md);
+  letter-spacing: -0.01em;
+}
+
+.novelReading {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 2px;
+  margin-bottom: 4px;
+}
+
+.novelTranslation {
+  font-size: 13px;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin-bottom: var(--space-lg);
+  line-height: 1.5;
+}
+
+/* ── 오늘의 단어 (소설형 스토리를 다 읽은 뒤, 등장 단어를 모아서 학습) ── */
+.vocabReviewCard {
+  width: 100%; max-width: var(--mobile-max);
+  min-height: 100dvh;
+  display: flex; flex-direction: column;
+  background: var(--bg-surface);
+}
+
+.vocabReviewIntro {
+  padding: var(--space-lg) var(--space-lg) var(--space-sm);
+  text-align: center;
+}
+.vocabReviewIntroEmoji { font-size: 36px; margin-bottom: 8px; }
+.vocabReviewIntroTitle { font-size: 18px; font-weight: 800; color: var(--text-primary); }
+.vocabReviewIntroSub   { font-size: 13px; color: var(--text-muted); margin-top: 4px; }
+
+.vocabReviewList {
+  flex: 1;
+  padding: var(--space-sm) var(--space-lg);
+  display: flex; flex-direction: column; gap: var(--space-sm);
+  overflow-y: auto;
+}
+
+.vocabReviewItem {
+  background: #fff;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 14px 16px;
+  box-shadow: var(--shadow-xs);
+}
+.vocabReviewWord    { font-size: 18px; font-weight: 900; color: var(--blue); }
+.vocabReviewReading { font-size: 12px; color: var(--text-muted); margin-left: 6px; }
+.vocabReviewMeaning { font-size: 14px; font-weight: 600; color: var(--text-primary); margin-top: 4px; }
+.vocabReviewExample { font-size: 12px; color: var(--text-secondary); margin-top: 8px; line-height: 1.5; }
+
 /* ── 💬 대화 상황 파악 (Dialogue Comprehension, 프리미엄 챕터) ──── */
 .dlgThread {
   display: flex; flex-direction: column; gap: var(--space-sm);

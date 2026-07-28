@@ -68,7 +68,7 @@ const CAPTAIN_SHORT_NAME: Record<string, string> = {
   kyuhyun: "규현", haneul: "하늘", sunwoo: "선우", sangwoo: "상우", yongwoo: "용우",
 };
 
-type Phase = "intro" | "story" | "session" | "complete";
+type Phase = "intro" | "story" | "vocab_review" | "session" | "complete";
 type ExerciseType = "flashcard" | "multiple_choice" | "fill_blank" | "sentence_match" | "listening_choice" | "speaking_practice" | "dialogue_comprehension";
 
 interface ExerciseItem {
@@ -451,7 +451,105 @@ export default function LearningSessionPage({
     );
   }
 
-  // ── 스토리 브리핑 (카카오톡 대화창 스타일 사전지식 공유) ──────
+  // ── 스토리 브리핑 ──────────────────────────────────────────
+  // 로맨스/일상/친구 스페셜 챕터(sp-*)는 말풍선으로 끊지 않고 소설처럼 한 화면에 쭉 읽게 하고,
+  // 등장 단어는 다 읽은 뒤 "오늘의 단어" 화면에서 모아서 학습+저장한다.
+  // 지역 문화 챕터(ch-*)는 기존 카카오톡 버블 스타일(단어별 하이라이트 칩)을 그대로 유지한다.
+  const isNarrativeChapter = chapterId.startsWith("sp-");
+
+  if (phase === "story" && isNarrativeChapter) {
+    return (
+      <main className={styles.page}>
+        <div className={styles.novelCard}>
+          <div className={styles.storyHeader}>
+            <Link href={`/learn/${characterId}`} className={styles.closeBtn} aria-label="닫기">✕</Link>
+            <div className={styles.storyHeaderInfo}>
+              <span className={styles.storyHeaderEmoji}>{content.emoji}</span>
+              <span className={styles.storyHeaderTitle}>{content.title}</span>
+            </div>
+            <button className={styles.storySkipBtn} onClick={() => setPhase("session")}>
+              {t("storySkip")}
+            </button>
+          </div>
+
+          <div className={styles.novelBody}>
+            {content.story.map((bubble, i) => (
+              <div key={i}>
+                <p className={styles.novelPara}>{bubble.text}</p>
+                {bubble.reading && <p className={styles.novelReading}>[{bubble.reading}]</p>}
+                {bubble.en && <p className={styles.novelTranslation}>{bubble.en}</p>}
+              </div>
+            ))}
+          </div>
+
+          <button
+            className="btn btn-primary btn-lg"
+            onClick={() => setPhase("vocab_review")}
+            id="btn-story-next"
+          >
+            {t("todaysWords")}
+          </button>
+        </div>
+      </main>
+    );
+  }
+
+  if (phase === "vocab_review") {
+    const saveAllAndContinue = () => {
+      content.words.forEach((w) => {
+        addVocabWord({
+          character_id: characterId,
+          word: w.word,
+          reading: w.reading,
+          meaning: w.meaning,
+          sentence: w.example,
+          sentence_translation: w.example_en,
+        });
+      });
+      setPhase("session");
+    };
+
+    return (
+      <main className={styles.page}>
+        <div className={styles.vocabReviewCard}>
+          <div className={styles.storyHeader}>
+            <Link href={`/learn/${characterId}`} className={styles.closeBtn} aria-label="닫기">✕</Link>
+            <div className={styles.storyHeaderInfo}>
+              <span className={styles.storyHeaderEmoji}>{content.emoji}</span>
+              <span className={styles.storyHeaderTitle}>{content.title}</span>
+            </div>
+          </div>
+
+          <div className={styles.vocabReviewIntro}>
+            <p className={styles.vocabReviewIntroEmoji}>📖</p>
+            <p className={styles.vocabReviewIntroTitle}>{t("todaysWords")}</p>
+            <p className={styles.vocabReviewIntroSub}>{t("todaysWordsSub")}</p>
+          </div>
+
+          <div className={styles.vocabReviewList}>
+            {content.words.map((w) => (
+              <div key={w.id} className={styles.vocabReviewItem}>
+                <span className={styles.vocabReviewWord}>{w.word}</span>
+                <span className={styles.vocabReviewReading}>[{w.reading}]</span>
+                <p className={styles.vocabReviewMeaning}>{w.meaning}</p>
+                <p className={styles.vocabReviewExample}>
+                  {w.example}
+                  <br />
+                  {w.example_en}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <button className="btn btn-primary btn-lg" onClick={saveAllAndContinue} id="btn-vocab-review-next">
+            {t("saveWordsAndQuiz")}
+          </button>
+        </div>
+      </main>
+    );
+  }
+
+  // ── 스토리 브리핑 (카카오톡 대화창 스타일 사전지식 공유, 지역 문화 챕터 전용) ──
   if (phase === "story") {
     const bubbles = content.story;
     const visible = bubbles.slice(0, storyIdx + 1);
