@@ -11,16 +11,22 @@
       "en": "We boarded the ferry from Seongsan Port to Udo Island. Yongwoo leaned on the railing in silence, gazing at the sea."
     },
     {
-      "text": "여객선이 흔들릴 때마다 용우가 반사적으로 내 팔을 붙잡았다. 손을 놓을 생각은 하지 않는 것 같았다.",
-      "reading": "yeo-gaek-seon-i heun-deul-lil ttae-ma-da yong-u-ga ban-sa-jeok-eu-ro nae pal-eul but-jab-at-da. son-eul noh-eul saeng-gak-eun ha-ji an-neun geot gat-at-da.",
-      "en": "Every time the ferry rocked, Yongwoo reflexively grabbed my arm. He didn't seem to be thinking about letting go.",
+      "text": "외국인 관광객이 다가와 표를 보여주며 길을 물었다. 용우가 망설임 없이 유창한 영어로 대답해준다. 억양 하나 어색함 없이 술술 나온다.",
+      "reading": "oe-gug-in gwan-gwang-gaeg-i da-ga-wa pyo-reul bo-yeo-ju-myeo gil-eul mul-eot-da. yong-u-ga mang-seol-im eop-si yu-chang-han yeong-eo-ro dae-dab-hae-jun-da. eog-yang ha-na eo-saek-am eop-si sul-sul na-on-da.",
+      "en": "A foreign tourist came over, showing his ticket and asking for directions. Without hesitation, Yongwoo answered in fluent English, the accent smooth and unforced.",
       "highlight_word_id": "w01"
     },
     {
-      "text": "하얗게 부서지는 파도를 보며 용우가 문득 말했다. '여기 물빛 좋제. 너 데려오고 싶었다, 계속.'",
-      "reading": "ha-yat-ge bu-seo-ji-neun pa-do-reul bo-myeo yong-u-ga mun-deuk mal-haet-da. yeo-gi mul-bit jo-che. neo de-ryeo-o-go sip-eot-da, gye-sok.",
-      "en": "Watching the waves break white, Yongwoo suddenly spoke. 'The water color's nice here, isn't it. I've wanted to bring you here for a while.'",
+      "text": "'미국에서 고등학교 3년 다녔거든.' 놀란 내 표정을 보더니 씩 웃으며 덧붙인다. 'Prego. …아, 이탈리아어도 좀 한다.' 무심코 튀어나온 말에 스스로도 살짝 머쓱해한다.",
+      "reading": "mi-guk-e-seo go-deung-hak-gyo sam-nyeon da-nyeot-geo-deun. nol-lan nae pyo-jeong-eul bo-deo-ni ssig us-eu-myeo deot-buch-in-da. peu-re-go. a, i-tal-li-a-eo-do jom han-da. mu-sim-ko twi-eo-na-on mal-e seu-seu-ro-do sal-jjak meo-sseu-gae-han-da.",
+      "en": "'I did three years of high school in the US.' Seeing my surprised face, he grins and adds, '‘Prego.’ ...Ah, I speak a bit of Italian too.' He looks faintly sheepish, as if the phrase had slipped out on its own.",
       "highlight_word_id": "w02"
+    },
+    {
+      "text": "여객선이 흔들릴 때마다 용우가 반사적으로 내 팔을 붙잡았다. 손을 놓을 생각은 하지 않는 것 같았다.",
+      "reading": "yeo-gaek-seon-i heun-deul-lil ttae-ma-da yong-u-ga ban-sa-jeok-eu-ro nae pal-eul but-jab-at-da. son-eul noh-eul saeng-gak-eun ha-ji an-neun geot gat-at-da.",
+      "en": "Every time the ferry rocked, Yongwoo reflexively grabbed my arm. He didn't seem to be thinking about letting go.",
+      "highlight_word_id": "w03"
     },
     {
       "text": "'동생 데려오고 싶었다는 말이…' 하다가 용우가 말끝을 흐린다. 스스로도 그 말이 어색한 눈치였다.",
@@ -29,16 +35,10 @@
       "highlight_word_id": "w05"
     },
     {
-      "text": "바람에 머리카락이 얼굴을 스치자, 용우가 무심코 손을 뻗어 넘겨준다. 그러다 손끝이 잠깐 멈췄다.",
-      "reading": "ba-ram-e meo-ri-ka-rak-i eol-gul-eul seu-chi-ja, yong-u-ga mu-sim-ko son-eul ppeot-eo neom-gyeo-jun-da. geu-reo-da son-kkeut-i jam-kkan meom-chwot-da.",
-      "en": "When my hair brushed across my face in the wind, Yongwoo reached out without thinking to brush it back. Then his fingertips paused for a moment.",
-      "highlight_word_id": "w04"
-    },
-    {
       "text": "'…이상하네.' 용우가 혼잣말처럼 중얼거린다. '동생이라는 말이, 오늘따라 되게 낯설다.'",
       "reading": "i-sang-ha-ne. yong-u-ga hon-jan-mal-cheo-reom jung-eol-geo-rin-da. dong-saeng-i-ra-neun mal-i, o-neul-tta-ra doe-ge nat-seol-da.",
       "en": "'...It's strange.' Yongwoo mutters, almost to himself. 'The word 'sibling' feels really unfamiliar today, somehow.'",
-      "highlight_word_id": "w03"
+      "highlight_word_id": "w04"
     },
     {
       "text": "그는 한참 바다만 바라보다 헛기침을 하며 화제를 돌렸다. '…뭐, 신경 쓰지 마라. 그것보다 우도 대화 몇 개 들려줄 테니까 잘 들어봐.'",
@@ -47,33 +47,33 @@
     }
   ],
   "words": [
-    { "id": "w01", "word": "여객선", "reading": "yeo-gaek-seon", "meaning": "Passenger ferry", "en": "Passenger ferry", "example": "여객선을 타고 우도까지 십오 분이면 도착한다.", "example_reading": "yeo-gaek-seon-eul ta-go u-do-kka-ji sib-o bun-i-myeon do-chak-an-da", "example_en": "It only takes fifteen minutes to reach Udo by ferry." },
-    { "id": "w02", "word": "파도", "reading": "pa-do", "meaning": "Wave", "example": "하얀 파도가 뱃머리에 부딪혀 부서졌다.", "example_reading": "ha-yan pa-do-ga baen-meo-ri-e bu-dich-yeo bu-seo-jyeot-da", "example_en": "White waves crashed and broke against the bow." },
-    { "id": "w03", "word": "낯설다", "reading": "nat-seol-da", "meaning": "To feel unfamiliar, strange", "example": "익숙했던 그 말이 오늘따라 낯설게 들렸다.", "example_reading": "ik-suk-aet-deon geu mal-i o-neul-tta-ra nat-seol-ge deul-lyeot-da", "example_en": "That once-familiar word sounded strange to me today, somehow." },
-    { "id": "w04", "word": "스치다", "reading": "seu-chi-da", "meaning": "To brush against, pass by lightly", "example": "바람에 머리카락이 얼굴을 스치고 지나갔다.", "example_reading": "ba-ram-e meo-ri-ka-rak-i eol-gul-eul seu-chi-go ji-na-gat-da", "example_en": "My hair brushed across my face in the wind." },
-    { "id": "w05", "word": "어색하다", "reading": "eo-saek-a-da", "meaning": "To feel awkward", "example": "갑자기 분위기가 어색해져서 아무도 말을 못 했다.", "example_reading": "gap-ja-gi bun-wi-gi-ga eo-saek-ae-jyeo-seo a-mu-do mal-eul mot haet-da", "example_en": "The mood suddenly turned awkward and no one could say anything." }
+    { "id": "w01", "word": "유창하다", "reading": "yu-chang-ha-da", "meaning": "To be fluent (in a language)", "example": "그는 영어를 유창하게 구사한다.", "example_reading": "geu-neun yeong-eo-reul yu-chang-ha-ge gu-sa-han-da", "example_en": "He speaks English fluently." },
+    { "id": "w02", "word": "무심코", "reading": "mu-sim-ko", "meaning": "Without thinking, unintentionally", "example": "그는 무심코 이탈리아어 한마디를 뱉었다.", "example_reading": "geu-neun mu-sim-ko i-tal-li-a-eo han-ma-di-reul baet-eot-da", "example_en": "He let slip a phrase of Italian without meaning to." },
+    { "id": "w03", "word": "반사적", "reading": "ban-sa-jeok", "meaning": "Reflexive, instinctive", "example": "배가 흔들리자 그는 반사적으로 내 팔을 붙잡았다.", "example_reading": "bae-ga heun-deul-li-ja geu-neun ban-sa-jeog-eu-ro nae pal-eul but-jab-at-da", "example_en": "When the boat rocked, he grabbed my arm reflexively." },
+    { "id": "w04", "word": "낯설다", "reading": "nat-seol-da", "meaning": "To feel unfamiliar, strange", "example": "익숙했던 그 말이 오늘따라 낯설게 들렸다.", "example_reading": "ik-suk-aet-deon geu mal-i o-neul-tta-ra nat-seol-ge deul-lyeot-da", "example_en": "That once-familiar word sounded strange to me today, somehow." },
+    { "id": "w05", "word": "말끝을 흐리다", "reading": "mal-kkeut-eul heu-ri-da", "meaning": "To trail off mid-sentence", "example": "그는 뭔가 말하려다 말끝을 흐렸다.", "example_reading": "geu-neun mwon-ga mal-ha-ryeo-da mal-kkeut-eul heu-ryeot-da", "example_en": "He started to say something, then trailed off." }
   ],
   "sentences": [
-    { "id": "s01", "ko": "성산항에서 우도로 향하는 여객선은 파도에 조금씩 흔들렸다.", "reading": "seong-san-hang-e-seo u-do-ro hyang-ha-neun yeo-gaek-seon-eun pa-do-e jo-geum-ssik heun-deul-lyeot-da", "en": "The ferry heading from Seongsan Port to Udo rocked gently with the waves." },
-    { "id": "s02", "ko": "하얗게 부서지는 파도를 보며 그는 문득 말이 없어졌다.", "reading": "ha-yat-ge bu-seo-ji-neun pa-do-reul bo-myeo geu-neun mun-deuk mal-i eop-seo-jyeot-da", "en": "Watching the waves break white, he suddenly fell silent." },
-    { "id": "s03", "ko": "바람에 머리카락이 얼굴을 스치자 그가 무심코 손을 뻗었다.", "reading": "ba-ram-e meo-ri-ka-rak-i eol-gul-eul seu-chi-ja geu-ga mu-sim-ko son-eul ppeot-eot-da", "en": "When my hair brushed my face in the wind, he reached out without thinking." },
+    { "id": "s01", "ko": "외국인 관광객의 질문에 그는 유창한 영어로 막힘없이 대답했다.", "reading": "oe-gug-in gwan-gwang-gaeg-ui jil-mun-e geu-neun yu-chang-han yeong-eo-ro mak-him-eop-si dae-dab-aet-da", "en": "He answered the foreign tourist's question fluently in English, without a hitch." },
+    { "id": "s02", "ko": "그는 무심코 이탈리아어까지 튀어나와 스스로 머쓱해했다.", "reading": "geu-neun mu-sim-ko i-tal-li-a-eo-kka-ji twi-eo-na-wa seu-seu-ro meo-sseu-gae-haet-da", "en": "A phrase of Italian even slipped out of him unintentionally, and he looked faintly sheepish about it." },
+    { "id": "s03", "ko": "배가 흔들릴 때마다 그는 반사적으로 내 팔을 붙잡았다.", "reading": "bae-ga heun-deul-lil ttae-ma-da geu-neun ban-sa-jeog-eu-ro nae pal-eul but-jab-at-da", "en": "Every time the boat rocked, he grabbed my arm reflexively." },
     { "id": "s04", "ko": "'동생이라는 말이 낯설다'는 그의 혼잣말이 오래 귓가에 맴돌았다.", "reading": "dong-saeng-i-ra-neun mal-i nat-seol-da-neun geu-ui hon-jan-mal-i o-rae gwit-ga-e maem-dol-at-da", "en": "His murmur, 'the word sibling feels unfamiliar,' lingered in my ears for a long time." },
-    { "id": "s05", "ko": "그는 어색해진 그 말을 다시 입 밖에 내지 못했다.", "reading": "geu-neun eo-saek-ae-jin geu mal-eul da-si ip bakk-e nae-ji mot-haet-da", "en": "He couldn't bring himself to say that now-awkward word again." }
+    { "id": "s05", "ko": "그는 동생이라는 말을 하려다 말끝을 흐리고 말았다.", "reading": "geu-neun dong-saeng-i-ra-neun mal-eul ha-ryeo-da mal-kkeut-eul heu-ri-go mal-at-da", "en": "He started to say the word 'sibling' but trailed off before finishing." }
   ],
   "dialogues": [
     {
       "id": "d01",
       "turns": [
-        { "speaker": "손님", "text": "기장님, 여객선 많이 타보셨어요? 하나도 안 흔들리시네요.", "reading": "gi-jang-nim, yeo-gaek-seon man-i ta-bo-syeoss-eo-yo? ha-na-do an heun-deul-li-si-ne-yo.", "en": "Captain, have you ridden ferries a lot? You don't seem to sway at all." },
-        { "speaker": "권용우 기장", "text": "조종사가 배 멀미하면 쓰나. 그보다 너나 잘 잡아, 파도 세다.", "reading": "jo-jong-sa-ga bae meol-mi-ha-myeon sseu-na. geu-bo-da neo-na jal jab-a, pa-do se-da.", "en": "What kind of pilot gets seasick. More importantly, hold on tight, the waves are strong." },
-        { "speaker": "손님", "text": "잡을 데가 없는데요.", "reading": "jab-eul de-ga eop-neun-de-yo.", "en": "There's nothing to hold onto though." },
-        { "speaker": "권용우 기장", "text": "(팔을 내밀며) 여기 있잖아. …딴 데 잡지 말고 이거 잡아라.", "reading": "pal-eul nae-mil-myeo, yeo-gi it-jan-a. ttan de jap-ji mal-go i-geo jab-a-ra.", "en": "(holding out his arm) Right here. ...Don't grab anything else, just hold this." }
+        { "speaker": "외국인 관광객", "text": "Excuse me, does this ferry stop at Udo Island?", "reading": "eks-kyu-jeu mi, deoz dis pe-ri seu-tap aet u-do ai-leon-deu?", "en": "Excuse me, does this ferry stop at Udo Island?" },
+        { "speaker": "권용우 기장", "text": "Yes, fifteen minutes from here. Follow the signs at the pier.", "reading": "yes, pip-tin mi-neot peu-reom hi-eo. pal-lo dae sa-ins aet deo pi-eo.", "en": "Yes, fifteen minutes from here. Follow the signs at the pier." },
+        { "speaker": "손님", "text": "기장님, 영어 진짜 유창하시네요?", "reading": "gi-jang-nim, yeong-eo jin-jja yu-chang-ha-si-ne-yo?", "en": "Captain, your English is really fluent, isn't it?" },
+        { "speaker": "권용우 기장", "text": "미국에서 고등학교 다녔거든. 그 정도는 기본이지.", "reading": "mi-guk-e-seo go-deung-hak-gyo da-nyeot-geo-deun. geu jeong-do-neun gi-bon-i-ji.", "en": "I went to high school in the US. That much is basic." }
       ],
-      "question": "용우가 자신의 팔을 내민 이유로 가장 알맞은 것은?",
-      "question_en": "What best explains why Yongwoo held out his own arm?",
-      "correct_answer": "파도에 흔들리는 손님이 걱정되어 붙잡을 곳을 마련해주려고",
-      "options": ["파도에 흔들리는 손님이 걱정되어 붙잡을 곳을 마련해주려고", "자신도 균형을 잡기 위해서", "손님과 사진을 찍으려고", "배가 곧 멈춰서"],
-      "explanation": "용우는 파도에 흔들리는 손님을 걱정해 자신의 팔을 붙잡으라고 내밀었습니다."
+      "question": "용우가 영어를 유창하게 구사할 수 있는 이유는 무엇인가요?",
+      "question_en": "Why is Yongwoo able to speak English so fluently?",
+      "correct_answer": "미국에서 고등학교를 3년간 다녔기 때문에",
+      "options": ["미국에서 고등학교를 3년간 다녔기 때문에", "항공사 어학연수 프로그램 덕분에", "외국인 친구가 많아서", "통역 자격증이 있어서"],
+      "explanation": "용우는 미국에서 고등학교 3년을 다닌 경험 덕분에 영어를 유창하게 구사합니다."
     },
     {
       "id": "d02",

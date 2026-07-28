@@ -35,29 +35,29 @@
       "highlight_word_id": "w05"
     },
     {
-      "text": "'솔직히 말할게. 이제 형이라고, 동생이라고 부르지 마라. 그 말로는… 내 마음이 설명이 안 된다.'",
-      "reading": "sol-jik-i mal-hal-ge. i-je hyeong-i-ra-go, dong-saeng-i-ra-go bu-reu-ji ma-ra. geu mal-lo-neun, nae ma-eum-i seol-myeong-i an doen-da.",
-      "en": "'I'll be honest. Don't call me 'older brother' anymore, and don't call yourself my 'younger sibling.' That word... doesn't explain what I feel.'",
+      "text": "'솔직히 말할게. 이제 형이라고, 동생이라고 부르지 마라. 그 말로는… 아 몰라, 내 마음이 그기 아이라니까.' 방송에서도 안 흔들리던 서울말 톤이 순식간에 무너지며 낯선 억양이 튀어나온다. 스스로도 놀란 듯 잠깐 숨을 고른다.",
+      "reading": "sol-jik-i mal-hal-ge. i-je hyeong-i-ra-go, dong-saeng-i-ra-go bu-reu-ji ma-ra. geu mal-lo-neun, a mol-la, nae ma-eum-i geu-gi a-i-ra-ni-kka. bang-song-e-seo-do an heun-deul-lideon seo-ul-mal ton-i sun-sik-gan-e mu-neo-ji-myeon-seo nat-seon eog-yang-i twi-eo-na-on-da. seu-seu-ro-do nol-lan deut jam-kkan sum-eul go-reun-da.",
+      "en": "'I'll be honest. Don't call me 'older brother' anymore, and don't call yourself my 'younger sibling.' That word... ah, I don't know, it's just not it, that's not what this is.' The composed standard-Korean cadence that never wavered even over the cabin intercom cracked in an instant, and an unfamiliar accent slipped out. Even he seemed startled, catching his breath for a moment.",
       "highlight_word_id": "w04"
     },
     {
-      "text": "심장이 쿵 내려앉았다. 뭐라고 답해야 할지 몰라 그저 노을만 바라보는데, 용우가 다시 시동을 건다. '오늘은 여기까지. 대화 몇 개 남았으니까 마저 들어봐라. 나머지는… 나중에 말하자.'",
-      "reading": "sim-jang-i kung nae-ryeo-anj-at-da. mwo-ra-go dab-ae-ya hal-ji mol-la geu-jeo no-eul-man ba-ra-bo-neun-de, yong-u-ga da-si si-dong-eul geon-da. o-neul-eun yeo-gi-kka-ji. dae-hwa myeot gae nam-ass-eu-ni-kka ma-jeo deul-eo-bwa-ra. na-meo-ji-neun, na-jung-e mal-ha-ja.",
-      "en": "My heart skipped a beat. Not knowing how to respond, I just kept staring at the sunset, when Yongwoo started the car again. 'That's enough for today. There are a few conversations left, go ahead and listen. The rest... let's talk later.'"
+      "text": "심장이 쿵 내려앉았다. 뭐라고 답해야 할지 몰라 그저 노을만 바라보는데, 용우가 다시 시동을 건다. 목소리는 다시 원래대로 차분해져 있었다. '오늘은 여기까지. 대화 몇 개 남았으니까 마저 들어봐라. 나머지는… 나중에 말하자.'",
+      "reading": "sim-jang-i kung nae-ryeo-anj-at-da. mwo-ra-go dab-ae-ya hal-ji mol-la geu-jeo no-eul-man ba-ra-bo-neun-de, yong-u-ga da-si si-dong-eul geon-da. mok-so-ri-neun da-si won-lae-dae-ro cha-bun-hae-jyeo iss-eot-da. o-neul-eun yeo-gi-kka-ji. dae-hwa myeot gae nam-ass-eu-ni-kka ma-jeo deul-eo-bwa-ra. na-meo-ji-neun, na-jung-e mal-ha-ja.",
+      "en": "My heart skipped a beat. Not knowing how to respond, I just kept staring at the sunset, when Yongwoo started the car again. His voice had already smoothed back into its usual calm. 'That's enough for today. There are a few conversations left, go ahead and listen. The rest... let's talk later.'"
     }
   ],
   "words": [
     { "id": "w01", "word": "노을", "reading": "no-eul", "meaning": "Sunset glow", "example": "애월 해안도로는 노을 명소로 유명하다.", "example_reading": "ae-wol hae-an-do-ro-neun no-eul myeong-so-ro yu-myeong-ha-da", "example_en": "Aewol's coastal road is famous as a sunset spot." },
     { "id": "w02", "word": "해안도로", "reading": "hae-an-do-ro", "meaning": "Coastal road", "example": "해안도로를 따라 드라이브하면 바다가 계속 보인다.", "example_reading": "hae-an-do-ro-reul tta-ra deu-ra-i-beu-ha-myeon ba-da-ga gye-sok bo-in-da", "example_en": "Driving along the coastal road, you can see the sea the whole way." },
     { "id": "w03", "word": "창문", "reading": "chang-mun", "meaning": "Window", "example": "그는 창문을 내리고 바닷바람을 맞았다.", "example_reading": "geu-neun chang-mun-eul nae-ri-go ba-dat-ba-ram-eul mat-at-da", "example_en": "He rolled down the window and felt the sea breeze." },
-    { "id": "w04", "word": "솔직하다", "reading": "sol-jik-a-da", "meaning": "To be honest, frank", "example": "그는 솔직하게 자기 마음을 털어놓았다.", "example_reading": "geu-neun sol-jik-a-ge ja-gi ma-eum-eul teol-eo-noh-at-da", "example_en": "He honestly opened up about his feelings." },
+    { "id": "w04", "word": "무너지다", "reading": "mu-neo-ji-da", "meaning": "To collapse, crumble (here: composure breaking down)", "example": "당황하자 평소의 차분한 말투가 순식간에 무너졌다.", "example_reading": "dang-hwang-ha-ja pyeong-so-ui cha-bun-han mal-tu-ga sun-sik-gan-e mu-neo-jyeot-da", "example_en": "The moment he flustered, his usual composed tone collapsed instantly." },
     { "id": "w05", "word": "관계", "reading": "gwan-gye", "meaning": "Relationship", "example": "그는 우리 관계를 분명히 하고 싶어 했다.", "example_reading": "geu-neun u-ri gwan-gye-reul bun-myeong-hi ha-go sip-eo haet-da", "example_en": "He wanted to make our relationship clear." }
   ],
   "sentences": [
     { "id": "s01", "ko": "애월 해안도로를 따라 붉은 노을이 바다 위로 번지고 있었다.", "reading": "ae-wol hae-an-do-ro-reul tta-ra bulg-eun no-eul-i ba-da wi-ro beon-ji-go iss-eot-da", "en": "A red sunset glow was spreading over the sea along Aewol's coastal road." },
     { "id": "s02", "ko": "그는 갓길에 차를 세우고 창문을 내려 바닷바람을 맞았다.", "reading": "geu-neun gat-gil-e cha-reul se-u-go chang-mun-eul nae-ryeo ba-dat-ba-ram-eul mat-at-da", "en": "He pulled over on the shoulder and rolled down the window to feel the sea breeze." },
     { "id": "s03", "ko": "'우리 관계를 확실히 해야겠다'는 그의 말에 심장이 내려앉았다.", "reading": "u-ri gwan-gye-reul hwak-sil-hi hae-ya-get-da-neun geu-ui mal-e sim-jang-i nae-ryeo-anj-at-da", "en": "My heart dropped at his words, 'I think we need to make our relationship clear.'" },
-    { "id": "s04", "ko": "그는 솔직히 말하겠다며 평소와 다른 진지한 목소리를 냈다.", "reading": "geu-neun sol-jik-i mal-ha-gess-da-myeo pyeong-so-wa da-reun jin-ji-han mok-so-ri-reul naet-da", "en": "Saying he'd be honest, he spoke in an unusually serious voice." },
+    { "id": "s04", "ko": "당황한 순간 그의 차분하던 말투가 순식간에 무너졌다.", "reading": "dang-hwang-han sun-gan geu-ui cha-bun-ha-deon mal-tu-ga sun-sik-gan-e mu-neo-jyeot-da", "en": "In that flustered moment, his usually composed way of speaking collapsed in an instant." },
     { "id": "s05", "ko": "이제 형이라고 부르지 말라는 그의 말이 오래도록 귓가에 맴돌았다.", "reading": "i-je hyeong-i-ra-go bu-reu-ji mal-la-neun geu-ui mal-i o-rae-do-rok gwit-ga-e maem-dol-at-da", "en": "His words, telling me not to call him 'older brother' anymore, lingered in my ears for a long time." }
   ],
   "dialogues": [
@@ -80,14 +80,14 @@
       "turns": [
         { "speaker": "손님", "text": "그럼 이제 뭐라고 불러요?", "reading": "geu-reom i-je mwo-ra-go bul-leo-yo?", "en": "So what should I call you now?" },
         { "speaker": "권용우 기장", "text": "…그건 나도 아직. 근데 형이라는 말은 이제 아닌 것 같다.", "reading": "geu-geon na-do a-jik. geun-de hyeong-i-ra-neun mal-eun i-je a-nin geot gat-da.", "en": "...I'm still not sure myself. But I don't think 'older brother' fits anymore." },
-        { "speaker": "손님", "text": "그렇게 말해놓고 답은 안 주기예요?", "reading": "geu-reo-ke mal-hae-noh-go dab-eun an ju-gi-ye-yo?", "en": "You say all that and just leave me without an answer?" },
-        { "speaker": "권용우 기장", "text": "오늘은 여기까지. 나머지는 다음에 제대로 말할게, 약속한다.", "reading": "o-neul-eun yeo-gi-kka-ji. na-meo-ji-neun da-eum-e je-dae-ro mal-hal-ge, yak-sok-an-da.", "en": "That's it for today. I'll say the rest properly next time, I promise." }
+        { "speaker": "손님", "text": "방금 사투리 살짝 나온 거 알아요? 되게 당황하셨나 봐요.", "reading": "bang-geum sa-tu-ri sal-jjak na-on geo al-a-yo? doe-ge dang-hwang-ha-syeon-na bwa-yo.", "en": "You know a little dialect just slipped out, right? You must be really flustered." },
+        { "speaker": "권용우 기장", "text": "…들었나. 그, 그건 진짜 어쩌다 그런 거고. 나머지는 다음에 제대로 말할게, 약속한다.", "reading": "deul-eon-na. geu, geu-geon jin-jja eo-jjeo-da geu-reon geo-go. na-meo-ji-neun da-eum-e je-dae-ro mal-hal-ge, yak-sok-an-da.", "en": "...You heard that. Th-that was just a fluke, seriously. I'll say the rest properly next time, I promise." }
       ],
-      "question": "이 대화에서 용우의 태도로 가장 알맞은 설명은?",
-      "question_en": "What best describes Yongwoo's attitude in this conversation?",
-      "correct_answer": "마음의 정리가 아직 덜 되었지만 진지하게 관계를 다시 생각하고 있다",
-      "options": ["마음의 정리가 아직 덜 되었지만 진지하게 관계를 다시 생각하고 있다", "손님을 놀리며 장난을 치고 있다", "화가 나서 대화를 피하고 있다", "다른 승객과 헷갈려서 하는 말이다"],
-      "explanation": "용우는 아직 정리되지 않은 마음이지만, '형'이라는 호칭을 그만두자고 하며 관계를 진지하게 다시 생각하고 있습니다."
+      "question": "이 대화에서 용우가 사투리를 쓴 것이 의미하는 바로 가장 알맞은 것은?",
+      "question_en": "What does Yongwoo's slip into dialect signal in this conversation?",
+      "correct_answer": "평소의 침착한 모습과 달리 진심으로 크게 당황했다는 뜻이다",
+      "options": ["평소의 침착한 모습과 달리 진심으로 크게 당황했다는 뜻이다", "일부러 장난삼아 사투리를 흉내 낸 것이다", "고향 친구와 통화하던 습관이 남은 것이다", "피곤해서 발음이 꼬인 것뿐이다"],
+      "explanation": "평소 또박또박한 말투를 유지하던 용우가 사투리를 쓴 것은, 그만큼 진심으로 당황하고 감정이 북받쳤다는 신호입니다."
     }
   ]
 }

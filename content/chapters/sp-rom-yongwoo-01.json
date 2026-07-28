@@ -6,20 +6,20 @@
   "level": "intermediate_advanced",
   "story": [
     {
-      "text": "게이트를 나서자마자, 익숙한 목소리가 들려왔다. '야, 너 왜 이렇게 늦게 나와.' 용우가 팔짱을 끼고 서 있었다.",
-      "reading": "ge-i-teu-reul na-seo-ja-ma-ja, ik-suk-an mok-so-ri-ga deul-lyeo-wat-da. ya, neo wae i-reo-ke neut-ge na-wa. yong-u-ga pal-jjang-eul kki-go seo iss-eot-da.",
-      "en": "The moment I stepped out of the gate, a familiar voice called out. 'Hey, why are you so late.' Yongwoo stood there with his arms crossed."
+      "text": "게이트를 나서자마자 낯익은 실루엣이 눈에 들어왔다. 196cm는 됨직한 큰 키에 다부진 어깨, 팔짱을 낀 채 미동도 없이 서 있는 모습이 꼭 호랑이 같았다. 발치엔 태권도 도복 가방까지. '야, 너 왜 이렇게 늦게 나와.' 낮고 또렷한 목소리가 울렸다.",
+      "reading": "ge-i-teu-reul na-seo-ja-ma-ja nat-ik-eun sil-lu-et-i nun-e deul-eo-wat-da. baek-gu-sib-yuk-sen-ti-neun doem-jik-han keun ki-e da-bu-jin eo-kkae, pal-jjang-eul kkin chae mi-dong-do eop-si seo it-neun mo-seub-i kkok ho-rang-i gat-at-da. bal-chi-en tae-kwon-do do-bok ga-bang-kka-ji. ya, neo wae i-reo-ke neut-ge na-wa. naj-go tto-ryeot-han mok-so-ri-ga ul-lyeot-da.",
+      "en": "The moment I stepped out of the gate, a familiar silhouette caught my eye — a good 196cm tall, broad and built through the shoulders, standing perfectly still with his arms crossed, exactly like a tiger at rest. A taekwondo dobok bag sat at his feet. 'Hey, why are you so late.' His voice rang out low and unusually clear."
     },
     {
-      "text": "'캐리어 바퀴 하나는 또 왜 저래. 너 진짜 또 칠칠맞게 굴지 마라. 내가 몇 번을 말해.'",
-      "reading": "kae-ri-eo ba-kwi ha-na-neun tto wae jeo-rae. neo jin-jja tto chil-chil-mat-ge gul-ji ma-ra. nae-ga myeot beon-eul mal-hae.",
-      "en": "'What's wrong with one of your suitcase wheels again. Seriously, don't be so careless again. How many times do I have to tell you.'",
+      "text": "'캐리어 바퀴 하나는 또 왜 저래. 너 진짜 또 칠칠맞게 굴지 마라. 내가 몇 번을 말해.' 잔소리하면서도 목소리 톤 하나 안 흐트러진다 — 방송 멘트라도 하듯 또박또박하다.",
+      "reading": "kae-ri-eo ba-kwi ha-na-neun tto wae jeo-rae. neo jin-jja tto chil-chil-mat-ge gul-ji ma-ra. nae-ga myeot beon-eul mal-hae. jan-so-ri-ha-myeon-seo-do mok-so-ri ton ha-na an heu-teu-reo-jin-da, bang-song men-teu-ra-do ha-deut tto-bak-tto-bak-a-da.",
+      "en": "'What's wrong with one of your suitcase wheels again. Seriously, don't be so careless again. How many times do I have to tell you.' Even mid-scolding his tone never wavers — crisp and clipped, like he's reading out a cabin announcement.",
       "highlight_word_id": "w01"
     },
     {
-      "text": "쉬는 날인데도 굳이 마중을 나온 걸 아니까, 고맙다고 하려는데 용우가 먼저 말을 자른다. '착각하지 마라. 지나가는 길이었다.'",
-      "reading": "swi-neun nal-in-de-do gud-i ma-jung-eul na-on geol a-ni-kka, go-map-da-go ha-ryeo-neun-de yong-u-ga meon-jeo mal-eul ja-reun-da. chak-gak-a-ji ma-ra. ji-na-ga-neun gil-i-eot-da.",
-      "en": "I knew he'd come out to meet me even on his day off, and I was about to say thanks, but Yongwoo cut me off first. 'Don't get the wrong idea. I just happened to be passing by.'",
+      "text": "쉬는 날인데도 굳이 마중을 나온 걸 아니까 고맙다고 하려는데 용우가 먼저 말을 자른다. '착각하지 마라. 지나가는 길이었다.' 그러면서 이미 캐리어 두 개를 한 손에 가볍게 들어 올렸다.",
+      "reading": "swi-neun nal-in-de-do gud-i ma-jung-eul na-on geol a-ni-kka go-map-da-go ha-ryeo-neun-de yong-u-ga meon-jeo mal-eul ja-reun-da. chak-gak-a-ji ma-ra. ji-na-ga-neun gil-i-eot-da. geu-reo-myeon-seo i-mi kae-ri-eo du gae-reul han son-e ga-byeop-ge deul-eo ol-lyeot-da.",
+      "en": "I knew he'd come out to meet me even on his day off, and I was about to say thanks, but Yongwoo cut me off first. 'Don't get the wrong idea. I just happened to be passing by.' Even as he said it, he'd already lifted both suitcases with one hand like they weighed nothing.",
       "highlight_word_id": "w02"
     },
     {
@@ -35,9 +35,9 @@
       "highlight_word_id": "w04"
     },
     {
-      "text": "'그만 좀 물어봐, 잔소리쟁이.' 웃으며 놀리자 용우가 살짝 눈을 흘긴다. '이게 잔소리로 보이나. 걱정이지.'",
-      "reading": "geu-man jom mul-eo-bwa, jan-so-ri-jaeng-i. us-eu-myeo nol-li-ja yong-u-ga sal-jjak nun-eul heul-gin-da. i-ge jan-so-ri-ro bo-i-na. geok-jeong-i-ji.",
-      "en": "'Stop asking already, you nag.' I teased him with a laugh, and Yongwoo shot me a look. 'You call this nagging? It's called worrying.'",
+      "text": "'그만 좀 물어봐, 잔소리쟁이.' 웃으며 놀리자 용우가 살짝 눈을 흘긴다. '이게 잔소리로 보이나. 걱정이지.' 눈매는 서늘한데 말투는 여전히 흐트러짐 없이 차분하다.",
+      "reading": "geu-man jom mul-eo-bwa, jan-so-ri-jaeng-i. us-eu-myeo nol-li-ja yong-u-ga sal-jjak nun-eul heul-gin-da. i-ge jan-so-ri-ro bo-i-na. geok-jeong-i-ji. nun-mae-neun seo-neul-han-de mal-tu-neun yeo-jeon-hi heu-teu-reo-jim eop-si cha-bun-ha-da.",
+      "en": "'Stop asking already, you nag.' I teased him with a laugh, and Yongwoo shot me a look. 'You call this nagging? It's called worrying.' His eyes are cold and sharp, but his tone stays perfectly composed regardless.",
       "highlight_word_id": "w05"
     },
     {
@@ -54,11 +54,11 @@
     { "id": "w05", "word": "잔소리", "reading": "jan-so-ri", "meaning": "Nagging", "example": "잔소리처럼 들려도 다 널 위해서 하는 말이야.", "example_reading": "jan-so-ri-cheo-reom deul-lyeo-do da neol wi-hae-seo ha-neun mal-i-ya", "example_en": "Even if it sounds like nagging, I'm only saying it for your sake." }
   ],
   "sentences": [
-    { "id": "s01", "ko": "공항에 마중 나온 용우는 팔짱을 낀 채 나를 기다리고 있었다.", "reading": "gong-hang-e ma-jung na-on yong-u-neun pal-jjang-eul kkin chae na-reul gi-da-ri-go iss-eot-da", "en": "Yongwoo, who'd come to meet me at the airport, was waiting for me with his arms crossed." },
+    { "id": "s01", "ko": "196cm의 다부진 체격으로 팔짱을 낀 그는 미동도 없이 호랑이처럼 서 있었다.", "reading": "baek-gu-sib-yuk-sen-ti-ui da-bu-jin che-gyeok-eu-ro pal-jjang-eul kkin geu-neun mi-dong-do eop-si ho-rang-i-cheo-reom seo iss-eot-da", "en": "Standing at 196cm with a built frame, arms crossed, he was perfectly still, like a tiger." },
     { "id": "s02", "ko": "그는 잔소리를 하면서도 이미 내 짐을 양손 가득 들고 있었다.", "reading": "geu-neun jan-so-ri-reul ha-myeon-seo-do i-mi nae jim-eul yang-son ga-deuk deul-go iss-eot-da", "en": "Even while nagging, he was already carrying my luggage with both hands." },
     { "id": "s03", "ko": "여권이랑 지갑은 잘 챙겼냐고 그는 차에 타기도 전에 물었다.", "reading": "yeo-gwon-i-rang ji-gab-eun jal chaeng-gyeon-nya-go geu-neun cha-e ta-gi-do jeon-e mul-eot-da", "en": "He asked if I'd properly packed my passport and wallet before we'd even gotten in the car." },
     { "id": "s04", "ko": "또 칠칠맞게 짐을 흘리고 다니지 말라고 그는 몇 번이나 말했다.", "reading": "tto chil-chil-mat-ge jim-eul heul-li-go da-ni-ji mal-la-go geu-neun myeot beon-i-na mal-haet-da", "en": "He told me over and over not to be careless and drop my things again." },
-    { "id": "s05", "ko": "걱정이지 잔소리가 아니라며 그는 살짝 눈을 흘겼다.", "reading": "geok-jeong-i-ji jan-so-ri-ga a-ni-ra-myeo geu-neun sal-jjak nun-eul heul-gyeot-da", "en": "He shot me a look, saying it was worry, not nagging." }
+    { "id": "s05", "ko": "걱정이지 잔소리가 아니라며 그는 서늘한 눈으로 살짝 눈을 흘겼다.", "reading": "geok-jeong-i-ji jan-so-ri-ga a-ni-ra-myeo geu-neun seo-neul-han nun-eu-ro sal-jjak nun-eul heul-gyeot-da", "en": "He shot me a cool, sharp look, saying it was worry, not nagging." }
   ],
   "dialogues": [
     {

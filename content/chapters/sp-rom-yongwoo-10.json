@@ -11,9 +11,9 @@
       "en": "Having climbed Hallasan since dawn, Baengnokdam finally spread out before us. The water, rising above the clouds, was perfectly still."
     },
     {
-      "text": "'백록담 이렇게 맑게 보이는 날 흔치 않다. 너랑 같이 보고 싶어서 새벽부터 서둘렀어.' 용우가 숨을 고르며 웃는다.",
-      "reading": "baek-rok-dam i-reo-ke malg-ge bo-i-neun nal heun-chi an-ta. neo-rang gat-i bo-go sip-eo-seo sae-byeok-bu-teo seo-dul-leoss-eo. yong-u-ga sum-eul go-reu-myeo us-neun-da.",
-      "en": "'It's rare to see Baengnokdam this clear. I rushed us out from dawn because I wanted to see it with you.' Yongwoo catches his breath and smiles.",
+      "text": "'백록담 이렇게 맑게 보이는 날 흔치 않다. 너랑 같이 보고 싶어서 새벽부터 서둘렀어.' 용우가 숨을 고르며 웃는다. 국가대표 지망생 시절 다져진 체력 덕분인지, 힘든 산행에도 표정 하나 흐트러지지 않았다.",
+      "reading": "baek-rok-dam i-reo-ke malg-ge bo-i-neun nal heun-chi an-ta. neo-rang gat-i bo-go sip-eo-seo sae-byeok-bu-teo seo-dul-leoss-eo. yong-u-ga sum-eul go-reu-myeo us-neun-da. guk-ga-dae-pyo ji-mang-saeng si-jeol da-jyeo-jin che-ryeok deok-bun-in-ji, him-deun san-haeng-e-do pyo-jeong ha-na heu-teu-reo-ji-ji an-at-da.",
+      "en": "'It's rare to see Baengnokdam this clear. I rushed us out from dawn because I wanted to see it with you.' Yongwoo catches his breath and smiles. Maybe thanks to the stamina built up in his national-team-hopeful days, not a hint of strain showed on his face despite the grueling climb.",
       "highlight_word_id": "w01"
     },
     {
@@ -23,9 +23,9 @@
       "highlight_word_id": "w02"
     },
     {
-      "text": "'지난번에 못다 한 말, 오늘 여기서 끝내자.' 그가 내 손을 잡으며 말한다. '나랑, 약속 하나 해줄래.'",
-      "reading": "ji-nan-beon-e mot-da han mal, o-neul yeo-gi-seo kkeut-nae-ja. geu-ga nae son-eul jab-eu-myeo mal-han-da. na-rang, yak-sok ha-na hae-jul-lae.",
-      "en": "'Let's finish what I couldn't say last time, here, today.' He takes my hand. 'Will you make a promise with me.'",
+      "text": "'지난번에 못다 한 말, 오늘 여기서 끝내자.' 그가 내 손을 잡으며 말한다. '나랑, 약속 하나 해줄래.' 목소리는 다시 방송처럼 또렷하고 침착했다. 이제는 흔들려도 도망치지 않겠다는 다짐 같았다.",
+      "reading": "ji-nan-beon-e mot-da han mal, o-neul yeo-gi-seo kkeut-nae-ja. geu-ga nae son-eul jab-eu-myeo mal-han-da. na-rang, yak-sok ha-na hae-jul-lae. mok-so-ri-neun da-si bang-song-cheo-reom tto-ryeot-ha-go cham-chak-haet-da. i-je-neun heun-deul-lyeo-do do-mang-chi-ji an-get-da-neun da-jim gat-at-da.",
+      "en": "'Let's finish what I couldn't say last time, here, today.' He takes my hand. 'Will you make a promise with me.' His voice was composed and clear again, radio-steady. It felt like a quiet vow that, even shaken, he wouldn't run from it anymore.",
       "highlight_word_id": "w04"
     },
     {
@@ -35,9 +35,9 @@
       "highlight_word_id": "w03"
     },
     {
-      "text": "'저 별빛처럼 변치 않을 자신 있다. 형도 동생도 아니고, 이제는 그냥… 내 사람으로.'",
-      "reading": "jeo byeol-bit-cheo-reom byeon-chi an-eul ja-sin it-da. hyeong-do dong-saeng-do a-ni-go, i-je-neun geu-nyang, nae sa-ram-eu-ro.",
-      "en": "'I can be as unchanging as that starlight. Not as older brother or younger sibling anymore — just... as my person.'",
+      "text": "'저 별빛처럼 변치 않을 자신 있다. 형도 동생도 아니고, 이제는 그냥… 내 사람으로.' 그러곤 장난스레 덧붙인다. 'Ti amo, 라고 하면 좀 재수 없나. …아, 이건 이탈리아어로 그, 그런 뜻이다.' 귀가 발개진 채로 괜히 헛기침을 한다.",
+      "reading": "jeo byeol-bit-cheo-reom byeon-chi an-eul ja-sin it-da. hyeong-do dong-saeng-do a-ni-go, i-je-neun geu-nyang, nae sa-ram-eu-ro. geu-reo-gon jang-nan-seu-re deot-buch-in-da. ti a-mo, ra-go ha-myeon jom jae-su eop-na. a, i-geon i-tal-li-a-eo-ro geu, geu-reon tteus-i-da. gwi-ga bal-gae-jin chae-ro gwaen-hi heot-gi-chim-eul han-da.",
+      "en": "'I can be as unchanging as that starlight. Not as older brother or younger sibling anymore — just... as my person.' Then he adds, half-joking, ''Ti amo' — would that come off a little much? ...Ah, that's Italian for, well, that.' His ears go red as he clears his throat for no reason.",
       "highlight_word_id": "w05"
     },
     {
@@ -80,7 +80,7 @@
       "turns": [
         { "speaker": "권용우 기장", "text": "형도 동생도 아니고, 이제는 그냥 내 사람으로 있어줄래.", "reading": "hyeong-do dong-saeng-do a-ni-go, i-je-neun geu-nyang nae sa-ram-eu-ro iss-eo-jul-lae.", "en": "Not as older brother or younger sibling — will you just be my person now." },
         { "speaker": "손님", "text": "…그 말, 진심이죠?", "reading": "geu mal, jin-sim-i-jyo?", "en": "...That's how you really feel, right?" },
-        { "speaker": "권용우 기장", "text": "저 별빛만큼 변치 않을 진심이다. 의심하지 마라.", "reading": "jeo byeol-bit-man-keum byeon-chi an-eul jin-sim-i-da. ui-sim-ha-ji ma-ra.", "en": "It's a truth as unchanging as that starlight. Don't doubt it." },
+        { "speaker": "권용우 기장", "text": "저 별빛만큼 변치 않을 진심이다. Ti amo, 라는 말도 있는데… 아무튼 의심하지 마라.", "reading": "jeo byeol-bit-man-keum byeon-chi an-eul jin-sim-i-da. ti a-mo, ra-neun mal-do it-neun-de, a-mu-teun ui-sim-ha-ji ma-ra.", "en": "It's a truth as unchanging as that starlight. There's also a saying, 'Ti amo'... anyway, don't doubt it." },
         { "speaker": "손님", "text": "그럼 저도 약속할게요. 이제 다른 말로 안 부를게요.", "reading": "geu-reom jeo-do yak-sok-al-ge-yo. i-je da-reun mal-lo an bu-reul-ge-yo.", "en": "Then I'll promise too. I won't call you anything else from now on." }
       ],
       "question": "이 대화에서 두 사람이 나눈 약속의 의미로 가장 알맞은 것은?",
