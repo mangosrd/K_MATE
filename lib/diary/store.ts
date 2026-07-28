@@ -24,6 +24,11 @@ export function getLocalDiaries(characterId: string): DiaryEntry[] {
   return getAllLocalDiaries().filter((d) => d.character_id === characterId);
 }
 
+export function clearLocalDiaries(userId: string) {
+  if (typeof window === "undefined") return;
+  localStorage.removeItem(STORAGE_PREFIX + userId);
+}
+
 export function addLocalDiary(entry: Omit<DiaryEntry, "user_id">): DiaryEntry {
   const userId = getEffectiveUserId();
   if (typeof window === "undefined") {

@@ -9,6 +9,7 @@ import { getAllLocalDiaries } from "@/lib/diary/store";
 import { getCurrentUser, getEffectiveUserId, logout as clearSession } from "@/lib/auth/store";
 import { useLanguage } from "@/components/LanguageContext";
 import LanguageModal from "@/components/LanguageModal";
+import WithdrawModal from "@/components/WithdrawModal";
 import type { Progress } from "@/types/database";
 import styles from "./me.module.css";
 
@@ -18,6 +19,7 @@ export default function MePage() {
   const router = useRouter();
   const { language, t } = useLanguage();
   const [showLangModal, setShowLangModal] = useState(false);
+  const [showWithdrawModal, setShowWithdrawModal] = useState(false);
 
   const authUser = getCurrentUser();
   const displayName = authUser?.name ?? MOCK_USER.name;
@@ -152,6 +154,17 @@ export default function MePage() {
               <button className={styles.settingItem} onClick={handleLogout} style={{ color: "#ef4444" }}>
                 <span>🚪 {t("logout")}</span>
               </button>
+
+              {authUser && (
+                <button
+                  className={styles.settingItem}
+                  onClick={() => setShowWithdrawModal(true)}
+                  style={{ color: "#94a3b8", fontSize: 13, fontWeight: 500 }}
+                  id="btn-withdraw-account"
+                >
+                  <span>{t("withdrawAccount")}</span>
+                </button>
+              )}
             </div>
           </div>
         </div>
@@ -161,6 +174,9 @@ export default function MePage() {
 
       {/* 🌐 언어 선택 모달 */}
       <LanguageModal isOpen={showLangModal} onClose={() => setShowLangModal(false)} />
+
+      {/* ⚠️ 회원 탈퇴 모달 */}
+      <WithdrawModal isOpen={showWithdrawModal} onClose={() => setShowWithdrawModal(false)} />
     </>
   );
 }

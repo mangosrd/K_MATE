@@ -16,10 +16,15 @@ CREATE TABLE IF NOT EXISTS users (
   level         INT          NOT NULL DEFAULT 1,
   membership    ENUM('free','premium') NOT NULL DEFAULT 'free',
   free_char_slots JSON       DEFAULT ('[]'),
+  is_withdrawn  BOOLEAN      NOT NULL DEFAULT FALSE,
+  withdrawn_at  DATETIME,
   created_at    DATETIME     NOT NULL DEFAULT CURRENT_TIMESTAMP,
   updated_at    DATETIME     NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   INDEX idx_email (email)
 ) ENGINE=InnoDB;
+-- 회원탈퇴 시 id/email(식별 정보)만 남기고 나머지 개인 데이터는 하드 삭제된다.
+-- 전자상거래법 시행령 제6조에 따라 결제 관련 기록은 5년간 보관 필요 — is_withdrawn/withdrawn_at으로
+-- 탈퇴 시점을 기록해두고, 보관기간 경과 후 별도 배치로 완전 파기한다 (routers/auth.py withdraw 참고).
 
 -- ── 권역 ─────────────────────────────────────────────────────
 CREATE TABLE IF NOT EXISTS regions (

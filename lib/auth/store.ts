@@ -36,6 +36,16 @@ export function logout() {
   document.cookie = "kmate_uid=; path=/; max-age=0";
 }
 
+// 회원 탈퇴 시 이 계정으로 남아있던 로컬 캐시(단어장/일기/선호 메이트/세션)를 모두 지운다.
+// 서버 쪽 개인 데이터 삭제는 /auth/withdraw 호출자가 별도로 처리한다.
+export function clearWithdrawnUserLocalData(userId: string) {
+  if (typeof window === "undefined") return;
+  localStorage.removeItem(`kmate_vocab_${userId}`);
+  localStorage.removeItem(`kmate_diary_${userId}`);
+  localStorage.removeItem("kmate_preferred_captain");
+  logout();
+}
+
 // 로그인 상태면 실제 계정 id를, 아니면 게스트용 공용 목업 id를 반환한다.
 // 로그인 없이도 앱이 계속 동작하게 하면서, 로그인한 사용자는 각자의 데이터로 분리되도록 함.
 export function getEffectiveUserId(): string {

@@ -26,6 +26,11 @@ function saveLocalVocab(items: VocabItem[]) {
   localStorage.setItem(STORAGE_PREFIX + getEffectiveUserId(), JSON.stringify(items));
 }
 
+export function clearLocalVocab(userId: string) {
+  if (typeof window === "undefined") return;
+  localStorage.removeItem(STORAGE_PREFIX + userId);
+}
+
 interface AddVocabInput {
   character_id: string;
   word: string;

@@ -42,6 +42,8 @@ class User(Base):
     level           = Column(Integer, default=1, nullable=False)
     membership      = Column(Enum(MembershipEnum), default="free", nullable=False)
     free_char_slots = Column(JSON, default=list)
+    is_withdrawn    = Column(Boolean, default=False, nullable=False)
+    withdrawn_at    = Column(DateTime, nullable=True)
     created_at      = Column(DateTime, server_default=func.now())
     updated_at      = Column(DateTime, server_default=func.now(), onupdate=func.now())
 

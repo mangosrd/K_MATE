@@ -209,6 +209,16 @@ class AuthUserResponse(BaseModel):
     membership: str
 
 
+class WithdrawRequest(BaseModel):
+    user_id: str
+    password: str
+
+
+class WithdrawResponse(BaseModel):
+    success: bool
+    message: str
+
+
 # ── 헬스체크 ──────────────────────────────────────────────
 class HealthResponse(BaseModel):
     status: str
