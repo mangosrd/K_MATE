@@ -196,10 +196,10 @@ export default function CharDiaryPage({ params }: { params: Promise<{ characterI
               <span style={{ color: "var(--gold)", fontWeight: 700 }}>🪙 {coins}</span>
             </div>
             <div className={styles.modalActions}>
-              <button className="btn btn-secondary" onClick={() => setUnlockModal(null)}>✕</button>
+              <button className={`btn btn-secondary btn-lg ${styles.pillBtn}`} onClick={() => setUnlockModal(null)}>✕</button>
               {coins >= unlockModal.unlock_cost
-                ? <button className="btn btn-gold" onClick={handleUnlock}>🪙 {unlockModal.unlock_cost} {t("unlockBtn")}</button>
-                : <Link href="/premium" className="btn btn-primary">SHOP</Link>}
+                ? <button className={`btn btn-gold btn-lg ${styles.pillBtn}`} onClick={handleUnlock}>🪙 {unlockModal.unlock_cost} {t("unlockBtn")}</button>
+                : <Link href="/premium" className={`btn btn-primary btn-lg ${styles.pillBtn}`}>SHOP</Link>}
             </div>
           </div>
         </div>

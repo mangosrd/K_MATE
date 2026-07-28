@@ -186,10 +186,14 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
     }).catch(() => {});
 
     // 2. 일기 생성 — 실제 백엔드(FastAPI)가 LLM 호출 + MySQL 저장까지 함께 수행
+    // 예전엔 기장 자신의 마지막 대사 3개만 넘겨서, AI가 실제 대화 주제를 전혀 모른 채
+    // 일기를 썼다(그래서 늘 뻔한 내용만 나오고, 승객을 "여행자" 같은 일반 호칭으로만 부름).
+    // 승객 발언까지 포함한 전체 대화(+실명)를 넘겨서 실제로 오간 얘기에서 소재를 골라
+    // 승객 이름을 부르며 쓰게 한다.
+    const userName = getCurrentUser()?.name;
     const sessionEvents = messages
-      .filter((m) => m.role === "assistant")
-      .slice(-3)
-      .map((m) => m.content);
+      .slice(-20)
+      .map((m) => `${m.role === "user" ? "승객" : `${char.name} 기장`}: ${m.content}`);
 
     try {
       const res = await fetch(`${BACKEND_URL}/diary/generate`, {
@@ -199,6 +203,7 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
           user_id: userId,
           character_id: characterId,
           session_events: sessionEvents,
+          user_name: userName,
           place_name: REGION_NAMES[char.region_id] ?? "한국 여행",
           unlock_cost: 5,
         }),

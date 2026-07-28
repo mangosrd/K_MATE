@@ -17,14 +17,22 @@ from datetime import datetime
 
 router = APIRouter(prefix="/diary", tags=["diary"])
 
-DIARY_SYSTEM_PROMPT = """You are a Korean airline captain writing a personal flight diary entry.
+DIARY_SYSTEM_PROMPT = """You are a Korean airline captain writing a personal flight diary entry
+about today's passenger.
 
 Rules:
 - Write EXACTLY around 100 Korean characters (한글 기준)
 - Write in first person, from the captain's perspective
-- Reference the flight route and landmarks below the plane
-- Use warm, reflective tone — like a captain's log entry
-- Include a specific moment or passenger interaction from today
+- Below is today's actual conversation transcript with the passenger. Read it, pick ONE real topic,
+  moment, or thing the passenger said that actually came up, and write about THAT specifically —
+  never write generic filler that could apply to any random day. If the transcript is empty or too
+  short to find a real topic, only then fall back to a generic reflective entry about the route.
+- If a passenger name is given below, address/refer to them BY THAT NAME (e.g. '민준 씨', '수아
+  님') — never use generic placeholder terms like '승객', '여행자', or '그분' when a real name is
+  available.
+- Reference the flight route/landmarks only if they naturally fit the moment you're writing about —
+  don't force them in.
+- Use a warm, reflective tone — like a captain's personal log entry.
 - Write in Korean ONLY. No English.
 - Output ONLY the diary text. No title, no date, no explanation."""
 
@@ -36,8 +44,9 @@ async def generate_diary(req: DiaryGenerateRequest, db: Session = Depends(get_db
 
     events_text = (
         "\n".join(req.session_events) if req.session_events
-        else "오늘도 승객들과 함께 한국의 하늘을 날았다."
+        else "(오늘은 특별히 나눈 대화가 없었다.)"
     )
+    name_line = f"Passenger's name: {req.user_name}" if req.user_name else "Passenger's name: (not given — use a generic warm address instead)"
 
     messages = [
         {"role": "system", "content": DIARY_SYSTEM_PROMPT},
@@ -46,8 +55,9 @@ async def generate_diary(req: DiaryGenerateRequest, db: Session = Depends(get_db
             "content": (
                 f"Captain context:\n{persona[:400]}\n\n"
                 f"Today's route: {req.place_name}\n"
-                f"Today's events:\n{events_text}\n\n"
-                "Write a ~100 Korean character captain's diary entry."
+                f"{name_line}\n\n"
+                f"Today's conversation transcript:\n{events_text}\n\n"
+                "Write a ~100 Korean character captain's diary entry about a real moment from this conversation."
             ),
         },
     ]

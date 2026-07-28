@@ -66,6 +66,7 @@ class DiaryGenerateRequest(BaseModel):
     user_id: str
     character_id: str
     session_events: List[str] = []
+    user_name: Optional[str] = None
     place_name: str = "한국 여행"
     unlock_cost: int = 5
 

@@ -76,6 +76,7 @@
   margin-bottom: var(--space-md);
 }
 .modalActions { display: flex; flex-direction: column; gap: var(--space-sm); }
+.pillBtn { border-radius: var(--radius-full); }
 
 /* 열람 뷰 */
 .reader {
