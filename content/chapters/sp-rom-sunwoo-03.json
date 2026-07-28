@@ -23,27 +23,22 @@
       "highlight_word_id": "w02"
     },
     {
-      "text": "근데 사진 속 니랑 지금 니랑 보니까... 좀 '낯설다', 이상하게.",
-      "reading": "geun-de sa-jin sok ni-rang ji-geum ni-rang bo-ni-kka... jom nat-seol-da, i-sang-ha-ge.",
-      "en": "But comparing the you in the photo and the you now... it feels strangely unfamiliar.",
+      "text": "근데 사진 속 니랑 지금 니랑 보니까... 좀 '낯설다', 이상하게. 이래 옆에 계속 있고 싶어질 정도로.",
+      "reading": "geun-de sa-jin sok ni-rang ji-geum ni-rang bo-ni-kka... jom nat-seol-da, i-sang-ha-ge. i-rae yeop-e gye-sok it-go sip-eo-jil jeong-do-ro.",
+      "en": "But comparing the you in the photo and the you now... it feels strangely unfamiliar. Unfamiliar enough that I want to keep you by my side like this.",
       "highlight_word_id": "w03"
     },
     {
-      "text": "'새삼' 니가 많이 컸구나 싶고... 아니 뭐, 그냥 그렇다고.",
-      "reading": "sae-sam ni-ga man-i keot-gu-na sip-go... a-ni mwo, geu-nyang geu-reo-ta-go.",
-      "en": "I realize all over again how much you've grown up... I mean, whatever, just saying.",
+      "text": "'새삼' 니가 많이 컸구나 싶고... 아니, 그, 우리 친구잖아, 근데 아니 근데— 에엥, 내가 지금 뭔 말을 하고 있노.",
+      "reading": "sae-sam ni-ga man-i keot-gu-na sip-go... a-ni, geu, u-ri chin-gu-jan-a, geun-de a-ni geun-de— e-eng, nae-ga ji-geum mwon mal-eul ha-go it-no.",
+      "en": "I realize all over again how much you've grown up... I mean, we're friends, but— wait no— eh, what am I even saying right now.",
       "highlight_word_id": "w04"
     },
     {
-      "text": "와 갑자기 말하다가 '어색해지노', 내가.",
-      "reading": "wa gap-ja-gi mal-ha-da-ga eo-saek-hae-ji-no, nae-ga.",
-      "en": "Whoa, why am I suddenly getting awkward mid-sentence.",
+      "text": "와 갑자기 말하다가 '어색해지노', 내가. 아이다! 아무 말도 안 했다, 방금! 자갈치나 가자, 배고프다!",
+      "reading": "wa gap-ja-gi mal-ha-da-ga eo-saek-hae-ji-no, nae-ga. a-i-da! a-mu mal-do an haet-da, bang-geum! ja-gal-chi-na ga-ja, bae-go-peu-da!",
+      "en": "Whoa, why am I suddenly getting awkward mid-sentence. No wait! I didn't say anything just now! Let's just go to Jagalchi, I'm hungry!",
       "highlight_word_id": "w05"
-    },
-    {
-      "text": "자갈치 쪽으로 걸으면서 옛날 얘기나 더 하자.",
-      "reading": "ja-gal-chi jjok-eu-ro geol-eu-myeon-seo yen-nal yae-gi-na deo ha-ja.",
-      "en": "Let's walk toward Jagalchi and talk more about the old days."
     },
     {
       "text": "단어는 다 봤제? 대화 문제도 있으니까 잘 읽어봐라.",
@@ -69,30 +64,30 @@
     {
       "id": "d01",
       "turns": [
-        { "speaker": "선우", "text": "이거 봐라, 니 초등학교 때 사진. 머리 이거 뭐고?", "reading": "i-geo bwa-ra, ni cho-deung-hak-gyo ttae sa-jin. meo-ri i-geo mwo-go?", "en": "Look at this, your elementary school picture. What's with this hair?" },
-        { "speaker": "승객", "text": "아 그거 지우라 캤잖아! 어디서 났노 그건.", "reading": "a geu-geo ji-u-ra kaet-jan-a! eo-di-seo nan-no geu-geon.", "en": "I told you to delete that! Where did you even get it." },
-        { "speaker": "선우", "text": "내가 몰래 간직하고 있었지. 니 놀릴 일 있을까 봐.", "reading": "nae-ga mol-lae gan-jik-ha-go it-eot-ji. ni nol-lil il it-eul-kka bwa.", "en": "I've been secretly keeping it, in case I ever needed to tease you." },
-        { "speaker": "승객", "text": "와 진짜 못됐다, 니.", "reading": "wa jin-jja mot-dwaet-da, ni.", "en": "Wow, you're really mean, you know that." }
+        { "speaker": "선우", "text": "...니랑 계속 이래 지낼 수 있으면 좋겠다. 그, 그니까 내 말은—", "reading": "...ni-rang gye-sok i-rae ji-nael su it-eu-myeon jo-ket-da. geu, geu-ni-kka nae mal-eun—", "en": "...I wish we could keep going on like this together. I mean, what I'm trying to say is—" },
+        { "speaker": "승객", "text": "어? 갑자기 뭔 말이고? 너 얼굴 왜 그래?", "reading": "eo? gap-ja-gi mwon mal-i-go? neo eol-gul wae geu-rae?", "en": "Huh? What's this sudden talk about? Why does your face look like that?" },
+        { "speaker": "선우", "text": "얼, 얼굴이 뭐! 아무렇지도 않다! …아니 잠깐만, 더워서 그렇다. 여름이잖아, 지금.", "reading": "eol, eol-gul-i mwo! a-mu-reo-chi-do an-ta! …a-ni jam-kkan-man, deo-wo-seo geu-ro-ta. yeo-reum-i-jan-a, ji-geum.", "en": "Wh-what's wrong with my face! I'm totally fine! …No wait, hold on, it's just hot out. It's summer right now." },
+        { "speaker": "승객", "text": "지금 겨울인데?", "reading": "ji-geum gyeo-ul-in-de?", "en": "It's winter right now though?" }
       ],
-      "question": "선우가 사진을 간직해 온 이유는 무엇인가요?",
-      "question_en": "Why has Sunwoo been keeping the photo?",
-      "correct_answer": "나중에 승객을 놀릴 때 쓰려고",
-      "options": ["나중에 승객을 놀릴 때 쓰려고", "사진관에 맡기려고", "승객에게 선물하려고", "부모님께 보여드리려고"],
-      "explanation": "선우는 승객을 놀릴 목적으로 어릴 적 사진을 몰래 간직해 왔다고 말하고 있습니다."
+      "question": "선우가 갑자기 날씨 핑계를 댄 이유는 무엇인가요?",
+      "question_en": "Why does Sunwoo suddenly make an excuse about the weather?",
+      "correct_answer": "얼굴이 빨개진 진짜 이유를 숨기려고 급하게 둘러대서",
+      "options": ["얼굴이 빨개진 진짜 이유를 숨기려고 급하게 둘러대서", "정말 날씨가 더워서", "승객이 추워 보여서", "다음 대화 주제를 정하려고"],
+      "explanation": "선우는 진심이 튀어나올 뻔하자 당황해 얼굴이 빨개졌고, 그걸 감추려 앞뒤 안 맞는 날씨 핑계까지 댑니다."
     },
     {
       "id": "d02",
       "turns": [
-        { "speaker": "선우", "text": "이 골목, 그대로네. 우리 여서 많이 놀았는데.", "reading": "i gol-mok, geu-dae-ro-ne. u-ri yeo-seo man-i nol-at-neun-de.", "en": "This alley, it's just the same. We used to play here so much." },
-        { "speaker": "승객", "text": "맞다, 그땐 매일 여기서 만났잖아.", "reading": "mat-da, geu-ttaen mae-il yeo-gi-seo man-nat-jan-a.", "en": "Right, we used to meet here every day back then." },
-        { "speaker": "선우", "text": "...니랑 계속 이래 지낼 수 있으면 좋겠다.", "reading": "...ni-rang gye-sok i-rae ji-nael su it-eu-myeon jo-ket-da.", "en": "...I wish we could keep going on like this together." },
-        { "speaker": "승객", "text": "어? 갑자기 뭔 말이고?", "reading": "eo? gap-ja-gi mwon mal-i-go?", "en": "Huh? What's this sudden talk about?" }
+        { "speaker": "승객", "text": "방금 진지했다가 갑자기 왜 딴소리하노?", "reading": "bang-geum jin-ji-haet-da-ga gap-ja-gi wae ttan-so-ri-ha-no?", "en": "You were being serious just now, why are you suddenly changing the subject?" },
+        { "speaker": "선우", "text": "내가 언제? 안 그랬다! 자갈치 가서 씨앗호떡이나 무자, 어?", "reading": "nae-ga eon-je? an geu-raet-da! ja-gal-chi ga-seo ssi-at-ho-tteok-i-na mu-ja, eo?", "en": "When did I? I didn't do that! Let's just go to Jagalchi and eat some seed hotteok, okay?" },
+        { "speaker": "승객", "text": "능청은. 방금 니 표정 봤으면서.", "reading": "neung-cheong-eun. bang-geum ni pyo-jeong bwa-sseu-myeon-seo.", "en": "So nonchalant. I saw your face just a second ago." },
+        { "speaker": "선우", "text": "봤어도 몬 본 척해도라, 쫌. 이런 거 진짜 부끄러버 죽겠다 내가.", "reading": "bwa-sseo-do mon bon cheo-kae-do-ra, jjom. i-reon geo jin-jja bu-kkeu-reo-beo juk-get-da nae-ga.", "en": "Even if you saw it, just pretend you didn't, seriously. This kind of thing seriously embarrasses me to death." }
       ],
-      "question": "이 대화에서 선우의 태도 변화로 알 수 있는 것은 무엇인가요?",
-      "question_en": "What does the shift in Sunwoo's tone in this conversation suggest?",
-      "correct_answer": "잠깐 진심이 드러났다가 당황해하는 모습",
-      "options": ["잠깐 진심이 드러났다가 당황해하는 모습", "골목길을 잃어버려 당황한 모습", "옛 친구가 보고 싶어 슬퍼하는 모습", "저녁 메뉴를 고민하는 모습"],
-      "explanation": "평소 장난스럽던 선우가 순간 진지해지며 속마음을 내비쳤다가, 승객의 반응에 당황하는 장면입니다."
+      "question": "이 대화에서 선우의 태도로 알 수 있는 것은 무엇인가요?",
+      "question_en": "What does Sunwoo's attitude in this conversation reveal?",
+      "correct_answer": "진심이 들킬까 봐 장난과 딴소리로 급히 넘기려는 모습",
+      "options": ["진심이 들킬까 봐 장난과 딴소리로 급히 넘기려는 모습", "호떡이 먹고 싶어서 급한 모습", "승객에게 화가 난 모습", "길을 몰라서 당황한 모습"],
+      "explanation": "평소 장난스럽던 선우가 순간 진지해지며 속마음을 내비쳤다가, 들킨 걸 눈치채자 장난과 화제 전환으로 서둘러 얼버무리고 있습니다."
     }
   ]
 }

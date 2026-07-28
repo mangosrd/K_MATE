@@ -23,21 +23,21 @@
       "highlight_word_id": "w02"
     },
     {
-      "text": "됐다, 마. 내는 그냥 여서 니 '맴돌면서' 회나 먹고 있으께.",
-      "reading": "dwaet-da, ma. nae-neun geu-nyang yeo-seo ni maem-dol-myeon-seo hoe-na meok-go it-eu-kke.",
-      "en": "Forget it. I'll just hang around you here eating raw fish.",
+      "text": "됐다, 마. 내는 그냥 여서 니 '맴돌면서' 회나 먹고 있으께. 우리 친구잖아, 내가 뭐 어쩌겠노.",
+      "reading": "dwaet-da, ma. nae-neun geu-nyang yeo-seo ni maem-dol-myeon-seo hoe-na meok-go it-eu-kke. u-ri chin-gu-jan-a, nae-ga mwo eo-jjeo-ket-no.",
+      "en": "Forget it. I'll just hang around you here eating raw fish. We're friends, right — what else am I supposed to do.",
       "highlight_word_id": "w03"
     },
     {
-      "text": "표정이 이래 '못마땅해' 보이나? 마 티 나나 그리.",
-      "reading": "pyo-jeong-i i-rae mot-ma-ttang-hae bo-i-na? ma ti na-na geu-ri.",
-      "en": "Do I look this displeased? Guess it's that obvious.",
+      "text": "표정이 이래 '못마땅해' 보이나? 마 티 나나 그리. 아니, 사실 나도 내가 와 이라는지 모르겠다.",
+      "reading": "pyo-jeong-i i-rae mot-ma-ttang-hae bo-i-na? ma ti na-na geu-ri. a-ni, sa-sil na-do nae-ga wa i-ra-neun-ji mo-reu-get-da.",
+      "en": "Do I look this displeased? Guess it's that obvious. Actually, honestly, even I don't know why I'm like this.",
       "highlight_word_id": "w04"
     },
     {
-      "text": "됐다, 회 한 점 무보라. 이라면 좀 '마음이 풀리네'.",
-      "reading": "dwaet-da, hoe han jeom mu-bo-ra. i-ra-myeon jom ma-eum-i pul-li-ne.",
-      "en": "Fine, try a piece of this raw fish. That kind of helps my mood soften a bit.",
+      "text": "됐다, 회 한 점 무보라. 이라면 좀 '마음이 풀리네'. …근데 진짜 웃고 있으니까 다행이다, 니.",
+      "reading": "dwaet-da, hoe han jeom mu-bo-ra. i-ra-myeon jom ma-eum-i pul-li-ne. …geun-de jin-jja ut-go it-eu-ni-kka da-haeng-i-da, ni.",
+      "en": "Fine, try a piece of this raw fish. That kind of helps my mood soften a bit. …But it's a relief seeing you actually smiling.",
       "highlight_word_id": "w05"
     },
     {
@@ -67,27 +67,27 @@
         { "speaker": "승객", "text": "선우야, 이 아저씨가 회 진짜 맛있게 잘 뜨신다, 신기하다!", "reading": "seon-u-ya, i a-jeo-ssi-ga hoe jin-jja ma-sit-ge jal tteu-sin-da, sin-gi-ha-da!", "en": "Sunwoo, this ajusshi slices raw fish so well, it's amazing!" },
         { "speaker": "선우", "text": "...그렇나.", "reading": "...geu-ron-na.", "en": "...Is that so." },
         { "speaker": "승객", "text": "와 갑자기 왜 그러노, 삐졌나?", "reading": "wa gap-ja-gi wae geu-reo-no, ppi-jyeon-na?", "en": "Why are you suddenly like this, are you sulking?" },
-        { "speaker": "선우", "text": "누가 삐진다 캤나. 그냥 배고파서 그렇다.", "reading": "nu-ga ppi-jin-da kaen-na. geu-nyang bae-go-pa-seo geu-ro-ta.", "en": "Who said I'm sulking. I'm just hungry, that's all." }
+        { "speaker": "선우", "text": "누가 삐진다 캤나. 그냥 배고파서 그렇다. …아이다, 사실 니가 딴 사람만 보고 있어가 그렇다.", "reading": "nu-ga ppi-jin-da kaen-na. geu-nyang bae-go-pa-seo geu-ro-ta. …a-i-da, sa-sil ni-ga ttan sa-ram-man bo-go it-eo-ga geu-ro-ta.", "en": "Who said I'm sulking. I'm just hungry, that's all. …No, actually, it's because you keep looking only at someone else." }
       ],
-      "question": "선우가 무뚝뚝하게 대답한 진짜 이유는 무엇일까요?",
-      "question_en": "What's the real reason Sunwoo answers so curtly?",
-      "correct_answer": "승객이 다른 사람에게 관심을 보인 것에 서운하고 삐져서",
-      "options": ["승객이 다른 사람에게 관심을 보인 것에 서운하고 삐져서", "배가 너무 고파서 예민해져서", "회를 먹기 싫어서", "시장이 너무 시끄러워서"],
-      "explanation": "선우는 배가 고프다고 둘러대지만, 실제로는 승객이 다른 사람과 즐겁게 이야기한 것에 서운해 삐진 상태입니다."
+      "question": "선우가 처음 둘러댄 이유와 결국 인정한 진짜 이유는 각각 무엇인가요?",
+      "question_en": "What excuse does Sunwoo first give, and what real reason does he end up admitting?",
+      "correct_answer": "배가 고파서라고 둘러댔지만, 실제로는 승객이 자신을 보지 않아 서운했던 것",
+      "options": ["배가 고파서라고 둘러댔지만, 실제로는 승객이 자신을 보지 않아 서운했던 것", "시장이 시끄러워서라고 했지만, 실제로는 다리가 아팠던 것", "일 생각이 나서라고 했지만, 실제로는 피곤했던 것", "회가 싫다고 했지만, 실제로는 배가 불렀던 것"],
+      "explanation": "선우는 처음엔 배고프다고 둘러대지만, 결국 승객이 다른 사람만 보고 있는 것이 서운했다고 솔직히 인정합니다."
     },
     {
       "id": "d02",
       "turns": [
         { "speaker": "선우", "text": "됐다 마, 니는 딴 사람이랑 놀아라. 내는 신경 쓰지 말고.", "reading": "dwaet-da ma, ni-neun ttan sa-ram-i-rang nol-a-ra. nae-neun sin-gyeong sseu-ji mal-go.", "en": "Forget it, go hang out with someone else. Don't worry about me." },
         { "speaker": "승객", "text": "그래 놓고 옆에 계속 붙어 있네.", "reading": "geu-rae no-ko yeop-e gye-sok but-eo it-ne.", "en": "You say that but you keep staying right beside me." },
-        { "speaker": "선우", "text": "...이거나 무봐라. 여서 제일 맛있는 거로 시켰다.", "reading": "...i-geo-na mu-bwa-ra. yeo-seo je-il ma-sit-neun geo-ro si-kyeot-da.", "en": "...Just eat this. I ordered the best thing here." },
-        { "speaker": "승객", "text": "삐졌다면서 이런 건 또 챙겨주네.", "reading": "ppi-jyeot-da-myeon-seo i-reon geon tto chaeng-gyeo-ju-ne.", "en": "You said you were sulking but you're still looking out for me." }
+        { "speaker": "선우", "text": "...이거나 무봐라. 여서 제일 맛있는 거로 시켰다. 이런 거라도 안 챙겨주면 내 마음이 편치를 안타.", "reading": "...i-geo-na mu-bwa-ra. yeo-seo je-il ma-sit-neun geo-ro si-kyeot-da. i-reon geo-ra-do an chaeng-gyeo-ju-myeon nae ma-eum-i pyeon-chi-reul an-ta.", "en": "...Just eat this. I ordered the best thing here. If I don't at least take care of you like this, I can't settle down." },
+        { "speaker": "승객", "text": "삐졌다면서 이런 건 또 챙겨주네. 방금 그 말 좀 다정했다?", "reading": "ppi-jyeot-da-myeon-seo i-reon geon tto chaeng-gyeo-ju-ne. bang-geum geu mal jom da-jeong-haet-da?", "en": "You said you were sulking but you're still looking out for me. That last line was kind of sweet?" }
       ],
       "question": "선우의 행동에서 드러나는 그의 진짜 마음은 무엇인가요?",
       "question_en": "What does Sunwoo's behavior reveal about his true feelings?",
       "correct_answer": "말과 달리 승객 곁을 떠나지 못하고 계속 챙겨주는 마음",
       "options": ["말과 달리 승객 곁을 떠나지 못하고 계속 챙겨주는 마음", "빨리 시장을 떠나고 싶은 마음", "회를 직접 먹고 싶은 마음", "장사를 방해받아 화난 마음"],
-      "explanation": "선우는 됐다며 말은 튕기지만 실제로는 승객 곁을 맴돌며 계속 챙겨주는 모습으로 속마음을 드러내고 있습니다."
+      "explanation": "선우는 됐다며 말은 튕기지만 실제로는 승객 곁을 맴돌며 계속 챙겨주고, 무심코 다정한 말까지 흘리며 속마음을 드러내고 있습니다."
     }
   ]
 }

@@ -6,39 +6,39 @@
   "level": "intermediate_advanced",
   "story": [
     {
-      "text": "어? 니 진짜 왔나? '오랜만'이다 진짜!",
-      "reading": "eo? ni jin-jja wan-na? o-raen-man-i-da jin-jja!",
-      "en": "Huh? You actually came? It's really been a while!",
+      "text": "야! 니 진짜 왔나? 나 활주로 저짝에서 신형기 사진 찍다가 급하게 뛰어왔다. 내가 이래 봬도 '순혈' 비행기 마니아 아이가.",
+      "reading": "ya! ni jin-jja wan-na? na hwal-ju-ro jeo-jjak-e-seo sin-hyeong-gi sa-jin jjik-da-ga geup-ha-ge ttwi-eo-wat-da. nae-ga i-rae bwae-do sun-hyeol bi-haeng-gi ma-ni-a a-i-ga.",
+      "en": "Hey! You actually came? I was on the other side of the runway taking pictures of the new aircraft model and had to run over. I might not look it, but I'm a through-and-through aviation nerd.",
       "highlight_word_id": "w01"
     },
     {
-      "text": "와... '몰라볼' 뻔했다. 어릴 땐 코흘리개였는데 이래 예뻐질 줄 몰랐네.",
-      "reading": "wa... mol-la-bol ppeon-haet-da. eo-ril ttaen ko-heul-li-gae-yeon-neun-de i-rae ye-ppeo-jil jul mol-lan-ne.",
-      "en": "Whoa... I almost didn't recognize you. You were a snot-nosed kid, I didn't know you'd turn out this pretty.",
+      "text": "비행기라카믄 내가 '사족을 못 쓴다' 아이가. 기장 된 것도 그냥 비행기가 좋아서지, 폼 나 보일라고 한 거 아이다.",
+      "reading": "bi-haeng-gi-ra-ka-myeon nae-ga sa-jok-eul mot sseun-da a-i-ga. gi-jang doen geot-do geu-nyang bi-haeng-gi-ga jo-a-seo-ji, pom na bo-il-la-go han geo a-i-da.",
+      "en": "When it comes to planes, I just can't help myself. I only became a captain because I love planes — not to look cool or anything.",
       "highlight_word_id": "w02"
     },
     {
-      "text": "와 이래 빤히 보노? 오랜만에 '놀리는' 재미가 쏠쏠하다.",
-      "reading": "wa i-rae ppan-hi bo-no? o-raen-man-e nol-li-neun jae-mi-ga ssol-ssol-ha-da.",
-      "en": "Why are you staring at me like that? Teasing you after so long is way too fun.",
+      "text": "근데 니는... 와 이래 '몰라볼' 정도로 예뻐졌노. 코흘리개 그 코흘리개 맞나?",
+      "reading": "geun-de ni-neun... wa i-rae mol-la-bol jeong-do-ro ye-ppeo-jyeon-no. ko-heul-li-gae geu ko-heul-li-gae man-na?",
+      "en": "But you... why'd you get so pretty I almost didn't recognize you. Is that really the same snot-nosed kid?",
       "highlight_word_id": "w03"
     },
     {
-      "text": "사실... 니 온다는 소식 듣고 좀 '설레긴' 했다. 티 내진 마라이.",
-      "reading": "sa-sil... ni on-da-neun so-sik deut-go jom seol-le-gin haet-da. ti nae-jin ma-ra-i.",
-      "en": "Actually... when I heard you were coming, I got a little excited. Don't go around telling people though.",
+      "text": "와 이래 빤히 보노, 부끄럽구로. ...아니 뭐, 내가 원래 이래 '능청스럽게' 잘 넘기는 편이다.",
+      "reading": "wa i-rae ppan-hi bo-no, bu-kkeu-reop-gu-ro. ...a-ni mwo, nae-ga won-lae i-rae neung-cheong-seu-reop-ge jal neom-gi-neun pyeon-i-da.",
+      "en": "Why are you staring at me like that, it's embarrassing... I mean, well, I'm usually pretty good at playing it cool like this.",
       "highlight_word_id": "w04"
     },
     {
-      "text": "와 또 딴청 피우네. 내가 이래 '능청스럽게' 넘어가는 거 알제?",
-      "reading": "wa tto ttan-cheong pi-u-ne. nae-ga i-rae neung-cheong-seu-reop-ge neo-meo-ga-neun geo al-je?",
-      "en": "See, dodging the subject again. You know I'm good at playing it cool, right?",
+      "text": "사실 니 온다는 얘기 듣고 좀 '설레긴' 했다. 에엥, 아니 그— 우리 친구잖아, 그런 거로 설레고 그런 거 아이고!",
+      "reading": "sa-sil ni on-da-neun yae-gi deut-go jom seol-le-gin haet-da. e-eng, a-ni geu— u-ri chin-gu-jan-a, geu-reon geo-ro seol-le-go geu-reon geo a-i-go!",
+      "en": "Honestly, when I heard you were coming, I got a little excited. Eh— no wait, I mean, we're friends, it's not like I get excited over that kind of thing!",
       "highlight_word_id": "w05"
     },
     {
-      "text": "해운대 바닷바람이나 좀 쐬자. 오랜만에 옛날 얘기도 좀 하고.",
-      "reading": "hae-un-dae ba-dat-ba-ram-i-na jom ssoe-ja. o-raen-man-e yen-nal yae-gi-do jom ha-go.",
-      "en": "Let's go feel the sea breeze at Haeundae. We can catch up on old times too."
+      "text": "아 몰라, 아무튼 해운대 바람이나 쐬러 가자. 오랜만에 옛날 얘기도 하고.",
+      "reading": "a mol-la, a-mu-teun hae-un-dae ba-ram-i-na ssoe-reo ga-ja. o-raen-man-e yen-nal yae-gi-do ha-go.",
+      "en": "Ugh, whatever, let's just go get some sea breeze at Haeundae. We can catch up on old times too."
     },
     {
       "text": "단어는 다 챙겼제? 이번엔 대화 상황 문제도 있으니까, 무슨 일이 벌어지는지 한번 맞혀봐라.",
@@ -47,47 +47,47 @@
     }
   ],
   "words": [
-    { "id": "w01", "word": "오랜만", "reading": "o-raen-man", "meaning": "Long time (no see)", "example": "오랜만에 친구를 만나서 정말 반가웠다.", "example_reading": "o-raen-man-e chin-gu-reul man-na-seo jeong-mal ban-ga-wo-tta", "example_en": "I was so glad to meet my friend after a long time." },
-    { "id": "w02", "word": "몰라보다", "reading": "mol-la-bo-da", "meaning": "To not recognize someone", "example": "오랜만에 만난 친구를 몰라볼 뻔했다.", "example_reading": "o-raen-man-e man-nan chin-gu-reul mol-la-bol ppeon-haet-da", "example_en": "I almost didn't recognize my friend after not seeing them for so long." },
-    { "id": "w03", "word": "놀리다", "reading": "nol-li-da", "meaning": "To tease, make fun of", "example": "형이 자꾸 나를 놀려서 화가 났다.", "example_reading": "hyeong-i ja-kku na-reul nol-lyeo-seo hwa-ga nat-da", "example_en": "My older brother kept teasing me, so I got upset." },
-    { "id": "w04", "word": "설레다", "reading": "seol-le-da", "meaning": "To flutter, feel excited/nervous", "example": "여행 가기 전날 밤은 마음이 설렌다.", "example_reading": "yeo-haeng ga-gi jeon-nal bam-eun ma-eum-i seol-len-da", "example_en": "The night before a trip, my heart flutters with excitement." },
-    { "id": "w05", "word": "능청스럽다", "reading": "neung-cheong-seu-reop-da", "meaning": "To act nonchalant, feign innocence", "example": "그는 능청스럽게 모르는 척했다.", "example_reading": "geu-neun neung-cheong-seu-reop-ge mo-reu-neun cheok-haet-da", "example_en": "He nonchalantly acted like he didn't know." }
+    { "id": "w01", "word": "순혈", "reading": "sun-hyeol", "meaning": "Pure-blooded, through-and-through (enthusiast)", "example": "그는 순혈 축구 마니아라 경기를 하나도 안 놓친다.", "example_reading": "geu-neun sun-hyeol chuk-gu ma-ni-a-ra gyeong-gi-reul ha-na-do an non-chin-da", "example_en": "He's a through-and-through soccer fan, he doesn't miss a single game." },
+    { "id": "w02", "word": "사족을 못 쓰다", "reading": "sa-jok-eul mot sseu-da", "meaning": "To be unable to resist, be crazy about something", "example": "그는 초콜릿이라면 사족을 못 쓴다.", "example_reading": "geu-neun cho-kol-lit-i-ra-myeon sa-jok-eul mot sseun-da", "example_en": "He can't resist chocolate at all." },
+    { "id": "w03", "word": "몰라보다", "reading": "mol-la-bo-da", "meaning": "To fail to recognize someone", "example": "오랜만에 만난 친구를 몰라볼 뻔했다.", "example_reading": "o-raen-man-e man-nan chin-gu-reul mol-la-bol ppeon-haet-da", "example_en": "I almost didn't recognize my friend after not seeing them for so long." },
+    { "id": "w04", "word": "능청스럽다", "reading": "neung-cheong-seu-reop-da", "meaning": "To act nonchalant, feign innocence", "example": "그는 능청스럽게 모르는 척했다.", "example_reading": "geu-neun neung-cheong-seu-reop-ge mo-reu-neun cheok-haet-da", "example_en": "He nonchalantly acted like he didn't know." },
+    { "id": "w05", "word": "설레다", "reading": "seol-le-da", "meaning": "To flutter, feel excited/nervous", "example": "여행 가기 전날 밤은 마음이 설렌다.", "example_reading": "yeo-haeng ga-gi jeon-nal bam-eun ma-eum-i seol-len-da", "example_en": "The night before a trip, my heart flutters with excitement." }
   ],
   "sentences": [
-    { "id": "s01", "ko": "오랜만에 만난 친구가 무척 반가웠다.", "reading": "o-raen-man-e man-nan chin-gu-ga mu-cheok ban-ga-wo-tta", "en": "I was very glad to meet my friend after a long time." },
-    { "id": "s02", "ko": "그는 나를 몰라보고 지나쳐 갔다.", "reading": "geu-neun na-reul mol-la-bo-go ji-na-chyeo gat-da", "en": "He walked right past me without recognizing me." },
-    { "id": "s03", "ko": "선우는 나를 자꾸 놀리면서 웃었다.", "reading": "seon-u-neun na-reul ja-kku nol-li-myeon-seo u-seot-da", "en": "Sunwoo kept teasing me and laughing." },
-    { "id": "s04", "ko": "그 소식을 듣고 마음이 설렜다.", "reading": "geu so-sik-eul deut-go ma-eum-i seol-let-da", "en": "My heart fluttered when I heard the news." },
-    { "id": "s05", "ko": "그는 능청스럽게 딴청을 피웠다.", "reading": "geu-neun neung-cheong-seu-reop-ge ttan-cheong-eul pi-wot-da", "en": "He nonchalantly acted like nothing was going on." }
+    { "id": "s01", "ko": "그는 순혈 비행기 마니아라 어릴 때부터 공항 근처를 떠나지 않았다.", "reading": "geu-neun sun-hyeol bi-haeng-gi ma-ni-a-ra eo-ril ttae-bu-teo gong-hang geun-cheo-reul tteo-na-ji an-at-da", "en": "He's such a through-and-through plane nerd that he never left the area near the airport, even as a kid." },
+    { "id": "s02", "ko": "그는 신형 비행기 이야기만 나오면 사족을 못 쓴다.", "reading": "geu-neun sin-hyeong bi-haeng-gi i-ya-gi-man na-o-myeon sa-jok-eul mot sseun-da", "en": "The moment new aircraft come up, he can't help himself." },
+    { "id": "s03", "ko": "그는 나를 몰라보고 그냥 지나쳐 갔다.", "reading": "geu-neun na-reul mol-la-bo-go geu-nyang ji-na-chyeo gat-da", "en": "He walked right past me without recognizing me." },
+    { "id": "s04", "ko": "선우는 능청스럽게 딴청을 피우며 웃었다.", "reading": "seon-u-neun neung-cheong-seu-reop-ge ttan-cheong-eul pi-u-myeo u-seot-da", "en": "Sunwoo laughed, nonchalantly playing dumb." },
+    { "id": "s05", "ko": "그 소식을 듣고 나도 모르게 마음이 설렜다.", "reading": "geu so-sik-eul deut-go na-do mo-reu-ge ma-eum-i seol-let-da", "en": "Hearing that news, my heart fluttered before I even realized it." }
   ],
   "dialogues": [
     {
       "id": "d01",
       "turns": [
-        { "speaker": "선우", "text": "야! 니 진짜 오랜만이다. 공항에서 여까지 혼자 잘 찾아왔나?", "reading": "ya! ni jin-jja o-raen-man-i-da. gong-hang-e-seo yeo-kka-ji hon-ja jal chaj-a-wan-na?", "en": "Hey! It's really been a while. Did you find your way here alone okay from the airport?" },
-        { "speaker": "승객", "text": "어, 어렵지 않았어. 근데 너 하나도 안 변했네.", "reading": "eo, eo-ryeop-ji an-a-sseo. geun-de neo ha-na-do an byeon-haen-ne.", "en": "Yeah, it wasn't hard. But you haven't changed a bit." },
-        { "speaker": "선우", "text": "내는 그대로지. 근데 니는... 마 몰라볼 뻔했다. 많이 예뻐졌네.", "reading": "nae-neun geu-dae-ro-ji. geun-de ni-neun... ma mol-la-bol ppeon-haet-da. man-i ye-ppeo-jyeon-ne.", "en": "I'm the same as always. But you... I almost didn't recognize you. You've gotten really pretty." },
-        { "speaker": "승객", "text": "뭐라카노, 그런 말을 그렇게 갑자기 하나.", "reading": "mwo-ra-ka-no, geu-reon mal-eul geu-reo-ke gap-ja-gi ha-na.", "en": "What are you saying, blurting that out so suddenly." }
+        { "speaker": "선우", "text": "헥, 헥. 미안하다 늦어가. 저짝 활주로에 오늘 처음 들어온 신형기가 있어가 사진 찍느라.", "reading": "hek, hek. mi-an-ha-da neuj-eo-ga. jeo-jjak hwal-ju-ro-e o-neul cheo-eum deul-eo-on sin-hyeong-gi-ga it-eo-ga sa-jin jjik-neu-ra.", "en": "Huff, huff. Sorry I'm late. There was a new aircraft model that just came in on that runway over there, so I was taking pictures." },
+        { "speaker": "승객", "text": "기장이 무슨 비행기 사진을 그렇게 열심히 찍어?", "reading": "gi-jang-i mu-seun bi-haeng-gi sa-jin-eul geu-reo-ke yeol-sim-hi jjig-eo?", "en": "Why does a captain take pictures of planes that eagerly?" },
+        { "speaker": "선우", "text": "몰라서 묻나. 내는 원래 비행기라카믄 정신 못 차린다. 이거 매일 봐도 안 질린다니까.", "reading": "mol-la-seo mut-na. nae-neun won-lae bi-haeng-gi-ra-ka-myeon jeong-sin mot cha-rin-da. i-geo mae-il bwa-do an jil-lin-da-ni-kka.", "en": "You're asking like you don't know. I lose my mind whenever it's about planes. I don't get tired of it even seeing it every day." },
+        { "speaker": "승객", "text": "기장 된 이유가 진짜 그거 하나였구나.", "reading": "gi-jang doen i-yu-ga jin-jja geu-geo ha-na-yeot-gu-na.", "en": "So that's really the whole reason you became a captain." }
       ],
-      "question": "선우가 승객에게 이런 말을 한 이유는 무엇인가요?",
-      "question_en": "Why does Sunwoo say this to the passenger?",
-      "correct_answer": "오랜만에 만난 승객이 많이 예뻐져서 놀라서",
-      "options": ["오랜만에 만난 승객이 많이 예뻐져서 놀라서", "승객이 길을 잃어서 화가 나서", "승객이 비행기를 놓쳐서", "승객이 다른 사람과 착각해서"],
-      "explanation": "선우는 오랜만에 본 승객이 몰라볼 정도로 예뻐진 것에 놀라 놀리듯 말하고 있습니다."
+      "question": "선우가 늦게 도착한 이유는 무엇인가요?",
+      "question_en": "Why does Sunwoo arrive late?",
+      "correct_answer": "활주로에 새로 들어온 비행기 사진을 찍느라 정신이 팔려서",
+      "options": ["활주로에 새로 들어온 비행기 사진을 찍느라 정신이 팔려서", "길을 잘못 들어서", "다른 승객을 응대하느라", "비행 일정이 갑자기 바뀌어서"],
+      "explanation": "선우는 새로 들어온 신형 비행기를 보고 사진을 찍느라 시간 가는 줄 모르고 늦었다고 말하고 있습니다."
     },
     {
       "id": "d02",
       "turns": [
-        { "speaker": "선우", "text": "니 옛날에 여기서 아이스크림 흘리가 울고불고 난리쳤던 거 기억나나?", "reading": "ni yen-nal-e yeo-gi-seo a-i-seu-keu-rim heul-li-ga ul-go-bul-go nal-li-chyeot-deon geo gi-eok-na-na?", "en": "Do you remember crying and making a huge fuss here as a kid because you dropped your ice cream?" },
-        { "speaker": "승객", "text": "그, 그건 언제 적 얘기를 아직도 하나!", "reading": "geu, geu-geon eon-je jeok yae-gi-reul a-jik-do ha-na!", "en": "Th-that's ancient history, why bring it up now!" },
-        { "speaker": "선우", "text": "하하, 니가 하도 웃겨가 아직도 생생하다. 지금도 그리 잘 흘리나?", "reading": "ha-ha, ni-ga ha-do ut-gyeo-ga a-jik-do saeng-saeng-ha-da. ji-geum-do geu-ri jal heul-li-na?", "en": "Haha, you were so funny that I still remember it vividly. Do you still drop things that easily?" },
-        { "speaker": "승객", "text": "안 흘려! 그만 놀려라 좀.", "reading": "an heul-lyeo! geu-man nol-lyeo-ra jom.", "en": "I don't drop things! Stop teasing me already." }
+        { "speaker": "승객", "text": "오프 날엔 뭐하고 지내? 그때도 비행기 생각해?", "reading": "o-peu nal-en mwo-ha-go ji-nae? geu-ttae-do bi-haeng-gi saeng-gak-hae?", "en": "What do you do on your days off? Do you think about planes then too?" },
+        { "speaker": "선우", "text": "당연하지. 항공 커뮤니티 들어가가 신기종 정보 찾아보고, 격납고 구경도 가고 그란다.", "reading": "dang-yeon-ha-ji. hang-gong keo-myu-ni-ti deul-eo-ga-ga sin-gi-jong jeong-bo chaj-a-bo-go, gyeok-nap-go gu-gyeong-do ga-go geu-ran-da.", "en": "Of course. I go into aviation communities to look up info on new models, and I go check out hangars too." },
+        { "speaker": "승객", "text": "와, 진짜 못 말리는 마니아네.", "reading": "wa, jin-jja mot mal-li-neun ma-ni-a-ne.", "en": "Wow, you're seriously an unstoppable nerd." },
+        { "speaker": "선우", "text": "됐다, 놀리지 마라. …근데 니가 알아주니까 은근 기분 좋네. 우리 친구잖아, 딴 사람은 몰라도 니는 좀 알아도라.", "reading": "dwaet-da, nol-li-ji ma-ra. …geun-de ni-ga a-ra-ju-ni-kka eun-geun gi-bun jo-ne. u-ri chin-gu-jan-a, ttan sa-ram-eun mol-la-do ni-neun jom a-ra-do-ra.", "en": "Stop it, don't tease me. …But it kinda feels nice that you get it. We're friends, right — other people don't have to know, but you should." }
       ],
-      "question": "선우는 왜 옛날 이야기를 꺼냈나요?",
-      "question_en": "Why does Sunwoo bring up an old story?",
-      "correct_answer": "승객의 어릴 적 모습을 떠올리며 놀리려고",
-      "options": ["승객의 어릴 적 모습을 떠올리며 놀리려고", "아이스크림 가게를 추천하려고", "비행 일정을 설명하려고", "승객에게 화를 내려고"],
-      "explanation": "선우는 어릴 때 아이스크림을 흘리며 울었던 승객의 모습을 떠올리며 장난스럽게 놀리고 있습니다."
+      "question": "선우는 오프 날에 주로 무엇을 하나요?",
+      "question_en": "What does Sunwoo mainly do on his days off?",
+      "correct_answer": "항공 커뮤니티를 찾아보거나 격납고를 구경하며 비행기에 대한 관심을 이어간다",
+      "options": ["항공 커뮤니티를 찾아보거나 격납고를 구경하며 비행기에 대한 관심을 이어간다", "온종일 잠만 잔다", "친구들과 절대 만나지 않는다", "다른 항공사로 이직을 준비한다"],
+      "explanation": "선우는 쉬는 날에도 항공 커뮤니티나 격납고를 찾아다닐 만큼 진심으로 비행기를 좋아하는 순혈 마니아입니다."
     }
   ]
 }

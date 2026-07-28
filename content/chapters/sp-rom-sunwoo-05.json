@@ -11,27 +11,32 @@
       "en": "Let's walk in front of the Busan Cinema Center today. I've got something to say too."
     },
     {
-      "text": "야, 니 진짜 '눈치가 없다' 싶을 정도다. 몰랐나 진짜?",
-      "reading": "ya, ni jin-jja nun-chi-ga eop-da sip-eul jeong-do-da. mol-lan-na jin-jja?",
-      "en": "Hey, you're seriously oblivious. Did you really not know?",
+      "text": "아까 내 브리핑하는 거 봤제? 비행 전엔 '철저하게' 다 점검 안 하면 마음이 안 놓인다.",
+      "reading": "a-kka nae beu-ri-ping-ha-neun geo bwat-je? bi-haeng jeon-en cheol-jeo-ha-ge da jeom-geom an ha-myeon ma-eum-i an noh-in-da.",
+      "en": "You saw me briefing earlier, right? Before a flight, if I don't check everything thoroughly, I can't settle down.",
       "highlight_word_id": "w01"
     },
     {
-      "text": "우리 사이에 '소문' 다 났다 아이가, 아는 사람은 다 안다.",
-      "reading": "u-ri sa-i-e so-mun da nat-da a-i-ga, a-neun sa-ram-eun da an-da.",
-      "en": "There's already a rumor going around about us — everyone who knows, knows.",
+      "text": "장난끼는 그때 하나도 없었제? 안전 앞에서는 농담 한마디도 안 한다, 내가.",
+      "reading": "jang-nan-kki-neun geu-ttae ha-na-do eop-seot-je? an-jeon ap-e-seo-neun nong-dam han-ma-di-do an han-da, nae-ga.",
+      "en": "There wasn't a hint of joking around then, right? I don't crack a single joke when it comes to safety."
+    },
+    {
+      "text": "평소랑 완전 '딴판'이라 놀랐제? 이런 얼굴 아무한테나 안 보여준다.",
+      "reading": "pyeong-so-rang wan-jeon ttan-pan-i-ra nol-lat-je? i-reon eol-gul a-mu-han-te-na an bo-yeo-jun-da.",
+      "en": "You were surprised because it's completely different from usual, huh? I don't show this face to just anyone.",
       "highlight_word_id": "w02"
     },
     {
-      "text": "내가 그래 '티 나게' 굴었는데 니만 몰랐제.",
-      "reading": "nae-ga geu-rae ti na-ge gul-eot-neun-de ni-man mol-lat-je.",
-      "en": "I acted so obviously that everyone noticed except you.",
+      "text": "니는 진짜 '눈치가 없다' 싶을 정도다. 이런 것도 몰랐제, 내 원래 이런 놈인 거.",
+      "reading": "ni-neun jin-jja nun-chi-ga eop-da sip-eul jeong-do-da. i-reon geot-do mol-lat-je, nae won-lae i-reon nom-in geo.",
+      "en": "You're seriously oblivious. Did you not even know this — that this is who I really am underneath.",
       "highlight_word_id": "w03"
     },
     {
-      "text": "친구들도 진작에 다 '짐작하고' 있었다카더라.",
-      "reading": "chin-gu-deul-do jin-jak-e da jim-jak-ha-go it-eot-da-ka-deo-ra.",
-      "en": "Even my friends had already guessed it long ago, apparently.",
+      "text": "친구들도 진작에 다 '짐작하고' 있었다카더라, 내가 니 얼마나 챙기는지.",
+      "reading": "chin-gu-deul-do jin-jak-e da jim-jak-ha-go it-eot-da-ka-deo-ra, nae-ga ni eol-ma-na chaeng-gi-neun-ji.",
+      "en": "Even my friends had already guessed it long ago, apparently — how much I take care of you.",
       "highlight_word_id": "w04"
     },
     {
@@ -41,27 +46,22 @@
       "highlight_word_id": "w05"
     },
     {
-      "text": "영화의 전당 앞에서 이런 얘기하니까 이상하게 떨리네, 진짜.",
-      "reading": "yeong-hwa-ui jeon-dang ap-e-seo i-reon yae-gi-ha-ni-kka i-sang-ha-ge tteol-li-ne, jin-jja.",
-      "en": "Talking about this in front of the Cinema Center, I'm oddly nervous, seriously."
-    },
-    {
       "text": "단어는 다 봤제? 이번 대화 문제도 잘 읽고 풀어봐라.",
       "reading": "dan-eo-neun da bwat-je? i-beon dae-hwa mun-je-do jal ilg-go pul-eo-bwa-ra.",
       "en": "Got a look at all the words? Read this conversation question carefully and give it a try."
     }
   ],
   "words": [
-    { "id": "w01", "word": "눈치가 없다", "reading": "nun-chi-ga eop-da", "meaning": "To be oblivious, clueless", "example": "그는 눈치가 없어서 분위기를 못 읽는다.", "example_reading": "geu-neun nun-chi-ga eop-seo-seo bun-wi-gi-reul mot ilg-neun-da", "example_en": "He's oblivious, so he can't read the room." },
-    { "id": "w02", "word": "소문", "reading": "so-mun", "meaning": "Rumor", "example": "그 소문은 금방 퍼졌다.", "example_reading": "geu so-mun-eun geum-bang peo-jyeot-da", "example_en": "That rumor spread quickly." },
-    { "id": "w03", "word": "티가 나다", "reading": "ti-ga na-da", "meaning": "To show, be obvious", "example": "그가 긴장한 티가 났다.", "example_reading": "geu-ga gin-jang-han ti-ga nat-da", "example_en": "It was obvious that he was nervous." },
+    { "id": "w01", "word": "철저하다", "reading": "cheol-jeo-ha-da", "meaning": "To be thorough, meticulous", "example": "그는 일할 때만큼은 철저하게 준비한다.", "example_reading": "geu-neun il-hal ttae-man-keum cheol-jeo-ha-ge jun-bi-han-da", "example_en": "When it comes to work, he prepares thoroughly." },
+    { "id": "w02", "word": "딴판", "reading": "ttan-pan", "meaning": "A completely different appearance/state", "example": "일할 때 그의 모습은 평소와 딴판이다.", "example_reading": "il-hal ttae geu-ui mo-seup-eun pyeong-so-wa ttan-pan-i-da", "example_en": "His demeanor at work is a completely different thing from usual." },
+    { "id": "w03", "word": "눈치가 없다", "reading": "nun-chi-ga eop-da", "meaning": "To be oblivious, clueless", "example": "그는 눈치가 없어서 분위기를 못 읽는다.", "example_reading": "geu-neun nun-chi-ga eop-seo-seo bun-wi-gi-reul mot ilg-neun-da", "example_en": "He's oblivious, so he can't read the room." },
     { "id": "w04", "word": "짐작하다", "reading": "jim-jak-ha-da", "meaning": "To guess, presume", "example": "그의 표정만 봐도 짐작할 수 있었다.", "example_reading": "geu-ui pyo-jeong-man bwa-do jim-jak-hal su it-eot-da", "example_en": "I could guess just from his expression." },
     { "id": "w05", "word": "속마음", "reading": "sok-ma-eum", "meaning": "Inner feelings, true heart", "example": "그는 속마음을 잘 드러내지 않는다.", "example_reading": "geu-neun sok-ma-eum-eul jal deu-reo-nae-ji an-neun-da", "example_en": "He doesn't easily reveal his true feelings." }
   ],
   "sentences": [
-    { "id": "s01", "ko": "그는 눈치가 없어서 분위기를 잘 못 읽는다.", "reading": "geu-neun nun-chi-ga eop-seo-seo bun-wi-gi-reul jal mot ilg-neun-da", "en": "He's oblivious, so he doesn't read the room well." },
-    { "id": "s02", "ko": "두 사람 사이에 이상한 소문이 돌았다.", "reading": "du sa-ram sa-i-e i-sang-han so-mun-i dol-at-da", "en": "A strange rumor went around about the two of them." },
-    { "id": "s03", "ko": "그의 표정에서 티가 났다.", "reading": "geu-ui pyo-jeong-e-seo ti-ga nat-da", "en": "It showed clearly in his expression." },
+    { "id": "s01", "ko": "그는 비행 전 점검만큼은 철저하게 한다.", "reading": "geu-neun bi-haeng jeon jeom-geom-man-keum-eun cheol-jeo-ha-ge han-da", "en": "He's thorough, at least when it comes to preflight checks." },
+    { "id": "s02", "ko": "일할 때 그의 모습은 평소와 딴판이었다.", "reading": "il-hal ttae geu-ui mo-seup-eun pyeong-so-wa ttan-pan-i-eot-da", "en": "His demeanor at work was completely different from usual." },
+    { "id": "s03", "ko": "그는 눈치가 없어서 분위기를 잘 못 읽는다.", "reading": "geu-neun nun-chi-ga eop-seo-seo bun-wi-gi-reul jal mot ilg-neun-da", "en": "He's oblivious, so he doesn't read the room well." },
     { "id": "s04", "ko": "나는 그의 마음을 어느 정도 짐작하고 있었다.", "reading": "na-neun geu-ui ma-eum-eul eo-neu jeong-do jim-jak-ha-go it-eot-da", "en": "I had already guessed his feelings to some extent." },
     { "id": "s05", "ko": "그는 속마음을 쉽게 드러내지 않는 사람이다.", "reading": "geu-neun sok-ma-eum-eul swip-ge deu-reo-nae-ji an-neun sa-ram-i-da", "en": "He's a person who doesn't easily reveal his true feelings." }
   ],
@@ -69,30 +69,30 @@
     {
       "id": "d01",
       "turns": [
-        { "speaker": "친구", "text": "선우가 니 얘기만 하면 얼굴이 발개지는 거, 진짜 몰랐나?", "reading": "seon-u-ga ni yae-gi-man ha-myeon eol-gul-i bal-gae-ji-neun geo, jin-jja mol-lan-na?", "en": "Did you seriously not know Sunwoo's face turns red whenever he talks about you?" },
-        { "speaker": "승객", "text": "어? 그게 진짜가?", "reading": "eo? geu-ge jin-jja-ga?", "en": "Huh? Is that really true?" },
-        { "speaker": "선우", "text": "야! 쓸데없는 소리 하지 마라!", "reading": "ya! sseul-de-eop-neun so-ri ha-ji ma-ra!", "en": "Hey! Don't say useless things!" },
-        { "speaker": "친구", "text": "봐라, 지금도 얼굴 빨개지네.", "reading": "bwa-ra, ji-geum-do eol-gul ppal-gae-ji-ne.", "en": "See, your face is turning red right now too." }
+        { "speaker": "승객", "text": "아까 브리핑할 때 완전 딴사람 같더라. 목소리도 낮고, 표정도 진짜 진지하고.", "reading": "a-kka beu-ri-ping-hal ttae wan-jeon ttan-sa-ram gat-deo-ra. mok-so-ri-do naj-go, pyo-jeong-do jin-jja jin-ji-ha-go.", "en": "Earlier during the briefing you seemed like a completely different person. Your voice was low, your expression was so serious." },
+        { "speaker": "선우", "text": "당연하지. 그거는 사람 목숨 걸린 일인데, 장난치면 안 되지 그때는.", "reading": "dang-yeon-ha-ji. geu-geo-neun sa-ram mok-sum geol-lin il-in-de, jang-nan-chi-myeon an doe-ji geu-ttae-neun.", "en": "Of course. That's something people's lives depend on, I can't be joking around during that." },
+        { "speaker": "승객", "text": "몰랐다, 니가 그렇게 철저한 사람인 줄. 맨날 장난만 치는 줄 알았는데.", "reading": "mol-lat-da, ni-ga geu-reo-ke cheol-jeo-han sa-ram-in jul. maen-nal jang-nan-man chi-neun jul al-at-neun-de.", "en": "I didn't know you were such a thorough person. I thought you only ever joked around." },
+        { "speaker": "선우", "text": "니만 몰랐제. 딴 사람들은 다 안다, 내 이런 거.", "reading": "ni-man mol-lat-je. ttan sa-ram-deul-eun da an-da, nae i-reon geo.", "en": "You're the only one who didn't know. Everyone else already knows this side of me." }
       ],
-      "question": "친구의 말에서 알 수 있는 사실은 무엇인가요?",
-      "question_en": "What fact can be inferred from the friend's words?",
-      "correct_answer": "선우가 승객을 좋아한다는 것을 주변 사람들은 이미 알고 있었다는 것",
-      "options": ["선우가 승객을 좋아한다는 것을 주변 사람들은 이미 알고 있었다는 것", "선우가 원래 얼굴이 잘 빨개지는 체질이라는 것", "친구가 승객을 좋아한다는 것", "선우가 곧 부산을 떠난다는 것"],
-      "explanation": "친구의 말과 선우의 반응으로 보아, 선우가 승객을 좋아한다는 사실은 이미 주변 사람들 사이에 알려져 있었습니다."
+      "question": "승객이 선우에게 놀란 이유는 무엇인가요?",
+      "question_en": "Why is the passenger surprised by Sunwoo?",
+      "correct_answer": "평소 장난스러운 모습과 달리 브리핑 때 완전히 진지하고 철저한 모습을 보여서",
+      "options": ["평소 장난스러운 모습과 달리 브리핑 때 완전히 진지하고 철저한 모습을 보여서", "선우가 비행을 그만둔다고 해서", "선우가 다른 노선으로 옮긴다고 해서", "선우가 갑자기 화를 내서"],
+      "explanation": "승객은 평소 장난기 많은 선우가 비행 브리핑 때는 완전히 다른 사람처럼 진지하고 철저한 모습을 보여 놀랐습니다."
     },
     {
       "id": "d02",
       "turns": [
-        { "speaker": "승객", "text": "아까 친구가 한 말, 진짜가?", "reading": "a-kka chin-gu-ga han mal, jin-jja-ga?", "en": "What your friend said earlier, is it true?" },
-        { "speaker": "선우", "text": "무슨 말?", "reading": "mu-seun mal?", "en": "What are you talking about?" },
-        { "speaker": "승객", "text": "내 얘기만 하면 얼굴 빨개진다는 거.", "reading": "nae yae-gi-man ha-myeon eol-gul ppal-gae-jin-da-neun geo.", "en": "About your face turning red whenever you talk about me." },
-        { "speaker": "선우", "text": "...몰라도 된다, 그런 거. 밥이나 무러 가자.", "reading": "...mol-la-do doen-da, geu-reon geo. bap-i-na mu-reo ga-ja.", "en": "...You don't need to know that. Let's just go eat." }
+        { "speaker": "친구", "text": "선우가 브리핑 때 얼마나 철저한지 니는 모르제. 후배들 사이에서 완전 유명하다.", "reading": "seon-u-ga beu-ri-ping ttae eol-ma-na cheol-jeo-han-ji ni-neun mo-reu-je. hu-bae-deul sa-i-e-seo wan-jeon yu-myeong-ha-da.", "en": "You have no idea how thorough Sunwoo is during briefings. He's totally famous for it among the junior crew." },
+        { "speaker": "승객", "text": "진짜? 나만 몰랐네, 그런 거.", "reading": "jin-jja? na-man mol-lan-ne, geu-reon geo.", "en": "Really? I guess I'm the only one who didn't know that." },
+        { "speaker": "친구", "text": "니 얼마나 좋아하는지도 우리는 진작에 다 짐작했다. 정작 니만 몰랐던 거 아이가?", "reading": "ni eol-ma-na jo-a-ha-neun-ji-do u-ri-neun jin-jak-e da jim-jak-haet-da. jeong-jak ni-man mol-lat-deon geo a-i-ga?", "en": "We'd all already guessed how much he likes you too. Isn't it really just you who didn't know?" },
+        { "speaker": "선우", "text": "야! 그건 또 무슨 소리고! ...아이, 됐다, 밥이나 무러 가자, 다들.", "reading": "ya! geu-geon tto mu-seun so-ri-go! ...a-i, dwaet-da, bap-i-na mu-reo ga-ja, da-deul.", "en": "Hey! What's that supposed to mean now! ...Ugh, forget it, let's all just go eat." }
       ],
-      "question": "선우의 마지막 대답이 의미하는 바로 가장 알맞은 것은 무엇인가요?",
-      "question_en": "What is the best interpretation of Sunwoo's final answer?",
-      "correct_answer": "대답을 회피하며 화제를 돌리려는 것",
-      "options": ["대답을 회피하며 화제를 돌리려는 것", "정말 아무 감정이 없다는 것", "배가 고파서 대화를 끝내려는 것", "화가 나서 자리를 피하려는 것"],
-      "explanation": "선우는 직접적인 답을 피하고 화제를 돌리는 것으로, 사실상 부정하지 않는 모습을 보이고 있습니다."
+      "question": "친구의 말에서 알 수 있는 사실은 무엇인가요?",
+      "question_en": "What fact can be inferred from the friend's words?",
+      "correct_answer": "선우의 철저한 성격과 승객을 향한 마음 모두 주변 사람들은 이미 알고 있었다는 것",
+      "options": ["선우의 철저한 성격과 승객을 향한 마음 모두 주변 사람들은 이미 알고 있었다는 것", "선우가 곧 이직할 예정이라는 것", "친구가 승객을 좋아한다는 것", "선우가 비행을 무서워한다는 것"],
+      "explanation": "친구는 선우의 프로다운 면모와 승객을 향한 마음 둘 다 주변에서는 이미 다 알고 있었다는 사실을 알려주며 선우를 놀립니다."
     }
   ]
 }

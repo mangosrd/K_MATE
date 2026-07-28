@@ -11,9 +11,9 @@
       "en": "Let's walk the Dongbaekseom trail a bit. While watching the sun go down."
     },
     {
-      "text": "'문득' 니 옆얼굴 보는데 이상하게 심장이 이상하더라.",
-      "reading": "mun-deuk ni yeop-eol-gul bo-neun-de i-sang-ha-ge sim-jang-i i-sang-ha-deo-ra.",
-      "en": "Out of nowhere, I looked at your profile and my heart felt strange.",
+      "text": "'문득' 니 옆얼굴 보는데 이상하게 심장이 이상하더라. 에엥, 뭐고 이거.",
+      "reading": "mun-deuk ni yeop-eol-gul bo-neun-de i-sang-ha-ge sim-jang-i i-sang-ha-deo-ra. e-eng, mwo-go i-geo.",
+      "en": "Out of nowhere, I looked at your profile and my heart felt strange. Eh, what is this.",
       "highlight_word_id": "w01"
     },
     {
@@ -23,9 +23,9 @@
       "highlight_word_id": "w02"
     },
     {
-      "text": "지금도 이래 니 보고 있으니까 '심장이 뛰네', 와이러노 진짜.",
-      "reading": "ji-geum-do i-rae ni bo-go it-eu-ni-kka sim-jang-i ttwi-ne, wa-i-reo-no jin-jja.",
-      "en": "Even now, just looking at you like this, my heart's racing, what's wrong with me.",
+      "text": "지금도 이래 니 보고 있으니까 '심장이 뛰네', 와이러노 진짜. 농담 하나 던지가 넘어가야 되는데 말이 하나도 안 나온다.",
+      "reading": "ji-geum-do i-rae ni bo-go it-eu-ni-kka sim-jang-i ttwi-ne, wa-i-reo-no jin-jja. nong-dam ha-na deon-ji-ga neom-eo-ga-ya doe-neun-de mal-i ha-na-do an na-on-da.",
+      "en": "Even now, just looking at you like this, my heart's racing, what's wrong with me. I should crack a joke and move on but I can't get a single word out.",
       "highlight_word_id": "w03"
     },
     {
@@ -71,7 +71,7 @@
       "turns": [
         { "speaker": "선우", "text": "니 옆에 있으면 원래 웃긴 말만 나왔는데... 오늘은 좀 이상하네.", "reading": "ni yeop-e it-eu-myeon won-lae ut-gin mal-man na-wat-neun-de... o-neul-eun jom i-sang-ha-ne.", "en": "Whenever I'm next to you, only funny things usually come out... but today feels a bit strange." },
         { "speaker": "승객", "text": "뭐가 이상한데?", "reading": "mwo-ga i-sang-han-de?", "en": "What's strange about it?" },
-        { "speaker": "선우", "text": "말이... 잘 안 나온다. 장난도 안 나오고.", "reading": "mal-i... jal an na-on-da. jang-nan-do an na-o-go.", "en": "Words... aren't coming out easily. Not even jokes." },
+        { "speaker": "선우", "text": "말이... 잘 안 나온다. 장난도 안 나오고. 나 원래 이런 놈 아닌데.", "reading": "mal-i... jal an na-on-da. jang-nan-do an na-o-go. na won-lae i-reon nom a-nin-de.", "en": "Words... aren't coming out easily. Not even jokes. I'm not usually like this." },
         { "speaker": "승객", "text": "선우야, 너 지금 얼굴 빨개졌어.", "reading": "seon-u-ya, neo ji-geum eol-gul ppal-gae-jyeot-eo.", "en": "Sunwoo, your face just turned red." }
       ],
       "question": "이 장면에서 선우의 상태를 가장 잘 나타내는 것은 무엇인가요?",
@@ -86,7 +86,7 @@
         { "speaker": "승객", "text": "우리 이렇게 조용히 있어본 적 있었나?", "reading": "u-ri i-reo-ke jo-yong-hi it-eo-bon jeok it-eon-na?", "en": "Have we ever been quiet together like this before?" },
         { "speaker": "선우", "text": "...없었제. 맨날 장난만 쳤으니까.", "reading": "...eop-seot-je. maen-nal jang-nan-man chyeot-eu-ni-kka.", "en": "...We haven't. We always just joked around." },
         { "speaker": "승객", "text": "근데 지금은 왜 이래 조용하노?", "reading": "geun-de ji-geum-eun wae i-rae jo-yong-ha-no?", "en": "So why are you so quiet right now?" },
-        { "speaker": "선우", "text": "그냥... 이 순간이 깨지는 게 아까워서 그렇다.", "reading": "geu-nyang... i sun-gan-i kkae-ji-neun ge a-kka-wo-seo geu-ro-ta.", "en": "Just... I don't want to ruin this moment, that's all." }
+        { "speaker": "선우", "text": "그냥... 이 순간이 깨지는 게 아까워서 그렇다. 농담 하나라도 잘못 던지면 이 기분이 확 날아갈 거 같아가.", "reading": "geu-nyang... i sun-gan-i kkae-ji-neun ge a-kka-wo-seo geu-ro-ta. nong-dam ha-na-ra-do jal-mot deon-ji-myeon i gi-bun-i hwak nal-a-gal geo gat-a-ga.", "en": "Just... I don't want to ruin this moment, that's all. Feels like if I throw out even one wrong joke, this feeling will fly away." }
       ],
       "question": "선우가 조용히 있는 이유로 가장 알맞은 것은 무엇인가요?",
       "question_en": "What is the best reason for why Sunwoo is being quiet?",

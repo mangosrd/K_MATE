@@ -12,9 +12,9 @@
       "highlight_word_id": "w01"
     },
     {
-      "text": "오늘따라 내가 좀 '진지하다', 그자?",
-      "reading": "o-neul-tta-ra nae-ga jom jin-ji-ha-da, geu-ja?",
-      "en": "I'm being unusually serious today, aren't I?",
+      "text": "오늘따라 내가 좀 '진지하다', 그자? 평소 같았으면 벌써 농담 세 개는 던졌을 텐데.",
+      "reading": "o-neul-tta-ra nae-ga jom jin-ji-ha-da, geu-ja? pyeong-so gat-at-eu-myeon beol-sseo nong-dam se gae-neun deon-jyeot-eul ten-de.",
+      "en": "I'm being unusually serious today, aren't I? Normally I'd have already thrown out three jokes by now.",
       "highlight_word_id": "w02"
     },
     {
@@ -24,9 +24,9 @@
       "highlight_word_id": "w03"
     },
     {
-      "text": "이상하게 손이 다 '떨리네', 이 나이에.",
-      "reading": "i-sang-ha-ge son-i da tteol-li-ne, i na-i-e.",
-      "en": "Strangely, my hands are trembling, at my age.",
+      "text": "이상하게 손이 다 '떨리네', 이 나이에. 비행할 때도 이래 안 떨리는데.",
+      "reading": "i-sang-ha-ge son-i da tteol-li-ne, i na-i-e. bi-haeng-hal ttae-do i-rae an tteol-li-neun-de.",
+      "en": "Strangely, my hands are trembling, at my age. Not even when I'm flying do I shake like this.",
       "highlight_word_id": "w04"
     },
     {
@@ -65,7 +65,7 @@
       "id": "d01",
       "turns": [
         { "speaker": "승객", "text": "오늘 왜 이렇게 조용하노? 장난도 안 치고.", "reading": "o-neul wae i-reo-ke jo-yong-ha-no? jang-nan-do an chi-go.", "en": "Why are you so quiet today? Not even joking around." },
-        { "speaker": "선우", "text": "오늘은... 장난치고 싶은 기분이 아니라서.", "reading": "o-neul-eun... jang-nan-chi-go sip-eun gi-bun-i a-ni-ra-seo.", "en": "Today... I'm just not in the mood to joke." },
+        { "speaker": "선우", "text": "오늘은... 장난치고 싶은 기분이 아니라서. 장난치면 이 말을 영영 못 할 거 같아서.", "reading": "o-neul-eun... jang-nan-chi-go sip-eun gi-bun-i a-ni-ra-seo. jang-nan-chi-myeon i mal-eul yeong-yeong mot hal geo gat-a-seo.", "en": "Today... I'm just not in the mood to joke. If I joke around, I feel like I'll never get to say this." },
         { "speaker": "승객", "text": "무슨 일 있나? 얼굴이 왜 그렇노.", "reading": "mu-seun il it-na? eol-gul-i wae geu-ron-no.", "en": "Is something wrong? Why do you look like that." },
         { "speaker": "선우", "text": "할 말이 있는데, 오늘은 진지하게 하고 싶어서 그렇다.", "reading": "hal mal-i it-neun-de, o-neul-eun jin-ji-ha-ge ha-go sip-eo-seo geu-ro-ta.", "en": "There's something I want to say, and today I want to say it seriously." }
       ],
@@ -80,7 +80,7 @@
       "turns": [
         { "speaker": "선우", "text": "니한테 예전부터 하고 싶었던 말이 있는데.", "reading": "ni-han-te ye-jeon-bu-teo ha-go sip-eot-deon mal-i it-neun-de.", "en": "There's something I've wanted to say to you for a long time." },
         { "speaker": "승객", "text": "뭔데? 왜 이래 뜸을 들이노.", "reading": "mwon-de? wae i-rae tteum-eul deul-i-no.", "en": "What is it? Why are you dragging it out like this." },
-        { "speaker": "선우", "text": "아니다, 다음에... 아니, 그냥 지금 할란다.", "reading": "a-ni-da, da-eum-e... a-ni, geu-nyang ji-geum hal-lan-da.", "en": "Never mind, next time... no, I'll just say it now." },
+        { "speaker": "선우", "text": "아니다, 다음에... 아니, 그냥 지금 할란다. 도망 안 간다, 오늘은.", "reading": "a-ni-da, da-eum-e... a-ni, geu-nyang ji-geum hal-lan-da. do-mang an gan-da, o-neul-eun.", "en": "Never mind, next time... no, I'll just say it now. I'm not running away today." },
         { "speaker": "승객", "text": "선우야, 나 좀 떨린다. 빨리 말해봐.", "reading": "seon-u-ya, na jom tteol-lin-da. ppal-li mal-hae-bwa.", "en": "Sunwoo, I'm getting nervous. Just say it already." }
       ],
       "question": "이 장면의 분위기로 가장 알맞은 것은 무엇인가요?",
