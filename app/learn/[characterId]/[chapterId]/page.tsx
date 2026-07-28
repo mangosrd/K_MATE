@@ -7,7 +7,7 @@ import { getChapterContent } from "@/lib/content/chapters";
 import { addVocabWord } from "@/lib/vocab/store";
 import { getEffectiveUserId, getCurrentUser } from "@/lib/auth/store";
 import { useLanguage } from "@/components/LanguageContext";
-import { MOCK_USER, canAccessCharacter } from "@/lib/db/mock";
+import { MOCK_USER, canAccessCharacter, isChapterUnlocked } from "@/lib/db/mock";
 
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
 import type { ChapterWord as Word, ChapterSentence as Sentence, DialogueScene, DialogueTurn } from "@/types/content";
@@ -282,6 +282,20 @@ export default function LearningSessionPage({
     setIsListeningSTT(false);
   }, [currentIdx]);
 
+  // 챕터 순서 잠금(이전 챕터 완료 여부) 확인용 — 목록 페이지에서만 막던 걸 콘텐츠 페이지에서도
+  // 다시 한번 검증한다. 목록의 Link가 href="#"로 막아주긴 하지만, URL을 직접 입력하면
+  // 그 차단을 그냥 우회할 수 있었다.
+  const [stamps, setStamps] = useState<string[]>([]);
+  const [stampsLoaded, setStampsLoaded] = useState(false);
+
+  useEffect(() => {
+    fetch(`${BACKEND_URL}/progress/${getEffectiveUserId()}/${characterId}`)
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => { if (data) setStamps(data.stamps ?? []); })
+      .catch(() => {})
+      .finally(() => setStampsLoaded(true));
+  }, [characterId]);
+
   const handleCheckAnswer = (answerToTest?: string) => {
     if (isSubmitted && isCorrect) return;
 
@@ -417,6 +431,36 @@ export default function LearningSessionPage({
             ⭐ {t("premiumOnly")}
           </Link>
           <Link href={`/learn/${characterId}`} className="btn btn-secondary btn-lg" style={{ textAlign: "center", marginTop: 8 }}>
+            {t("backToList")}
+          </Link>
+        </div>
+      </main>
+    );
+  }
+
+  // ── 챕터 순서 잠금 (이전 챕터를 완료해야 진입 가능) ────────────
+  // stamps를 fetch로 받아와야만 잠금 여부를 판단할 수 있는데, 그 전에 곧바로 아래 인트로/본문
+  // JSX를 렌더링해버리면 그 첫 렌더(서버사이드 렌더링 결과 + 하이드레이션 페이로드)에 실제
+  // 챕터 콘텐츠가 이미 포함돼버린다 — 화면엔 잠깐 뒤 잠금 화면이 떠도, 페이지 소스/네트워크
+  // 응답에는 잠긴 챕터의 내용이 그대로 노출되는 문제가 있었다. fetch가 끝날 때까지는 아무
+  // 콘텐츠도 그리지 않고 로딩 화면만 보여줘서 이 노출을 막는다.
+  if (!stampsLoaded) {
+    return (
+      <main className={styles.page}>
+        <div className={styles.introCard}>
+          <div className={styles.introEmoji}>⏳</div>
+        </div>
+      </main>
+    );
+  }
+
+  if (!isChapterUnlocked(chapterId, characterId, stamps)) {
+    return (
+      <main className={styles.page}>
+        <div className={styles.introCard}>
+          <div className={styles.introEmoji}>🔒</div>
+          <h1 className={styles.introTitle}>{t("chapterLockedHint")}</h1>
+          <Link href={`/learn/${characterId}`} className="btn btn-primary btn-lg" style={{ textAlign: "center" }}>
             {t("backToList")}
           </Link>
         </div>

@@ -449,3 +449,33 @@ export function canAccessCharacter(characterId: string, membership: string, free
   if (!char.requires_premium) return true;
   return freeSlots.includes(characterId);
 }
+
+// ── 챕터 순차 잠금 ────────────────────────────────────────
+// 지역(ch-*)/스페셜(sp-*) 챕터 모두, 바로 이전 챕터를 완료(stamps에 기록)하기 전까지는
+// 다음 챕터에 접근할 수 없다. 첫 챕터는 항상 열려 있음. 프리미엄 잠금과는 별개의 게이트라
+// NEXT_PUBLIC_DEV_MODE로 우회하지 않는다 — 커리큘럼 순서는 테스트 모드에서도 지켜져야 한다.
+export function getChapterSequence(
+  chapterId: string,
+  characterId: string
+): { id: string; order: number }[] {
+  if (chapterId.startsWith("ch-")) {
+    return getChaptersForCharacter(characterId)
+      .slice()
+      .sort((a, b) => a.order - b.order);
+  }
+  const entry = SPECIAL_CHAPTERS.find((sc) => sc.id === chapterId);
+  if (!entry) return [];
+  return SPECIAL_CHAPTERS.filter(
+    (sc) => sc.category === entry.category && (!sc.character_id || sc.character_id === characterId)
+  )
+    .slice()
+    .sort((a, b) => a.order - b.order);
+}
+
+export function isChapterUnlocked(chapterId: string, characterId: string, stamps: string[]): boolean {
+  const seq = getChapterSequence(chapterId, characterId);
+  const idx = seq.findIndex((c) => c.id === chapterId);
+  // 첫 챕터거나 시퀀스에서 못 찾은 경우(안전 기본값)엔 잠그지 않는다
+  if (idx <= 0) return true;
+  return stamps.includes(seq[idx - 1].id);
+}

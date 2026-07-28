@@ -104,6 +104,7 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     ongoing: "진행중",
     completed: "완료",
     locked: "잠김",
+    chapterLockedHint: "이전 챕터를 먼저 완료해주세요",
     regionalChaptersLabel: "기장의 지역 문화 커리큘럼",
 
     // Diary Page
@@ -267,6 +268,7 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     ongoing: "Ongoing",
     completed: "Done",
     locked: "Locked",
+    chapterLockedHint: "Complete the previous chapter first",
     regionalChaptersLabel: "Regional Culture Curriculum",
 
     diaryTitle: "Diary",
@@ -429,6 +431,7 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     ongoing: "В процессе",
     completed: "Готово",
     locked: "Закрыто",
+    chapterLockedHint: "Сначала завершите предыдущую главу",
     regionalChaptersLabel: "Курс региональной культуры",
 
     diaryTitle: "Дневник",
@@ -591,6 +594,7 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     ongoing: "进行中",
     completed: "已完成",
     locked: "未解锁",
+    chapterLockedHint: "请先完成上一章节",
     regionalChaptersLabel: "地区文化课程",
 
     diaryTitle: "日记",
@@ -753,6 +757,7 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     ongoing: "進行中",
     completed: "完了",
     locked: "ロック",
+    chapterLockedHint: "前のチャプターを先に完了してください",
     regionalChaptersLabel: "地域文化カリキュラム",
 
     diaryTitle: "日記",
@@ -915,6 +920,7 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     ongoing: "進行中",
     completed: "已完成",
     locked: "未解鎖",
+    chapterLockedHint: "請先完成上一章節",
     regionalChaptersLabel: "機長的地區文化課程",
 
     diaryTitle: "日記",
@@ -1077,6 +1083,7 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     ongoing: "กำลังดำเนินการ",
     completed: "เสร็จสมบูรณ์",
     locked: "ล็อก",
+    chapterLockedHint: "กรุณาเรียนบทก่อนหน้าให้จบก่อน",
     regionalChaptersLabel: "หลักสูตรวัฒนธรรมท้องถิ่นของกัปตัน",
 
     diaryTitle: "ไดอารี",

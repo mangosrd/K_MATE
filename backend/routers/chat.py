@@ -68,8 +68,8 @@ async def chat(req: ChatRequest, db: Session = Depends(get_db)):
     apply_streak(progress)
     db.commit()
 
-    # 8. 단어 추출
-    word_data = extract_word_suggestion(reply)
+    # 8. 단어 추출 (+ LLM 사전 조회로 뜻 채우기)
+    word_data = await extract_word_suggestion(reply)
     word_suggestion = WordSuggestion(**word_data) if word_data else None
 
     # 9. 되짚기 카드 — 세션 초반(첫 대화)에만, 저장된 기억이 있으면 보여준다

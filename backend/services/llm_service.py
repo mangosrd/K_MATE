@@ -258,10 +258,37 @@ def predict_word_levels(words: list[str]) -> dict[str, str] | None:
     return None
 
 
-def extract_word_suggestion(reply: str) -> dict | None:
-    """응답에서 한국어 단어 후보를 뽑고, 난이도 분류 모델로 '배울 만한' 단어를 선택
+async def _lookup_word_meaning(word: str) -> str:
+    """단어의 간단한 영어 뜻을 LLM(사전 API 대신)으로 조회한다.
 
-    분류 모델이 없거나 로드 실패 시 기존 방식(최단어 선택)으로 폴백한다.
+    별도 사전 API 없이 이미 연동돼 있는 Groq만으로 처리 — 실패해도 빈 문자열을
+    돌려줄 뿐, 단어/난이도 추천 자체(extract_word_suggestion)를 막지 않는다.
+    """
+    try:
+        messages = [
+            {
+                "role": "system",
+                "content": (
+                    "You are a Korean-English dictionary. Given a single Korean word or short "
+                    "phrase, reply with ONLY its most common English meaning in 1-4 words. "
+                    "No explanation, no Korean, no surrounding punctuation or quotes."
+                ),
+            },
+            {"role": "user", "content": word},
+        ]
+        meaning = await llm_chat(messages, temperature=0.0, max_tokens=16)
+        return meaning.strip().strip(".\"'“”' ")
+    except Exception:
+        return ""
+
+
+async def extract_word_suggestion(reply: str) -> dict | None:
+    """응답에서 한국어 단어 후보를 뽑고, 난이도 분류 모델로 '배울 만한' 단어를 선택하고,
+    LLM으로 간단한 영어 뜻을 붙인다.
+
+    분류 모델이 없거나 로드 실패 시 기존 방식(최단어 선택)으로 폴백하되, 뜻 조회는
+    두 경로 모두에서 시도한다 — 예전엔 meaning이 항상 빈 문자열이라 채팅 중 자동
+    저장되는 단어장 항목에 뜻이 하나도 안 붙어 있었다.
     """
     korean_words = _get_word_candidates(reply)
     if not korean_words:
@@ -270,13 +297,15 @@ def extract_word_suggestion(reply: str) -> dict | None:
     levels = predict_word_levels(korean_words)
     if levels is None:
         word = sorted(korean_words, key=len)[0]
-        return {"word": word, "meaning": "", "sentence": reply[:60], "level": None}
+        meaning = await _lookup_word_meaning(word)
+        return {"word": word, "meaning": meaning, "sentence": reply[:60], "level": None}
 
     # 초급(이미 알 법한 단어)보다 중급/고급을 우선 추천
     best_word = max(korean_words, key=lambda w: _LEVEL_RANK.get(levels[w], 0))
+    meaning = await _lookup_word_meaning(best_word)
     return {
         "word": best_word,
-        "meaning": "",
+        "meaning": meaning,
         "sentence": reply[:60],
         "level": levels[best_word],
     }

@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import styles from "./learn.module.css";
-import { SPECIAL_CHAPTERS, MOCK_CHARACTERS } from "@/lib/db/mock";
+import { SPECIAL_CHAPTERS, MOCK_CHARACTERS, isChapterUnlocked } from "@/lib/db/mock";
 import { getEffectiveUserId } from "@/lib/auth/store";
 import { useLanguage } from "@/components/LanguageContext";
 import type { Character, Chapter } from "@/types/database";
@@ -102,8 +102,11 @@ export default function LearnView({ char, chapters }: LearnViewProps) {
               <div className={styles.chapterList}>
                 {chapters.map((chapter, idx) => {
                   const isCompleted = stamps.includes(chapter.id);
-                  const isActive = !chapter.is_locked && !isCompleted;
-                  const isLocked = chapter.is_locked;
+                  // 정적 chapter.is_locked는 항상 false라 실질적으로 아무 챕터나 순서 없이 열려
+                  // 있었다 — 반드시 바로 이전 챕터를 완료해야 다음 챕터가 열리도록 stamps 기반으로
+                  // 판단한다.
+                  const isLocked = !isCompleted && !isChapterUnlocked(chapter.id, char.id, stamps);
+                  const isActive = !isLocked && !isCompleted;
 
                   return (
                     <div key={chapter.id} className={styles.chapterRow}>
@@ -116,6 +119,7 @@ export default function LearnView({ char, chapters }: LearnViewProps) {
                         id={`chapter-${chapter.id}`}
                         className={`${styles.chapterCard} ${isCompleted ? styles.chapterDone : ""} ${isActive ? styles.chapterActive : ""} ${isLocked ? styles.chapterLocked : ""}`}
                         aria-disabled={isLocked}
+                        title={isLocked ? t("chapterLockedHint") : undefined}
                       >
                         <div className={`${styles.chapterIcon} ${isCompleted ? styles.iconDone : ""} ${isActive ? styles.iconActive : ""} ${isLocked ? styles.iconLocked : ""}`}>
                           {isCompleted ? "✓" : isLocked ? "🔒" : chapter.emoji}
@@ -215,11 +219,17 @@ export default function LearnView({ char, chapters }: LearnViewProps) {
                 // 지역 챕터와 절대 섞이지 않음), 완료 배지를 보여줄 수 있다 — 예전엔 이 탭이
                 // 진행 상태를 아예 보여주지 않고 항상 🔒만 표시했다.
                 const isCompleted = stamps.includes(sc.id);
+                // 프리미엄 잠금(⭐)과는 별개로, 같은 캐릭터·같은 카테고리 안에서 이전 챕터를
+                // 완료하기 전까지는 다음 챕터로 못 넘어가게 막는다 — 예전엔 잠금 아이콘만
+                // 보여줄 뿐 실제로는 아무 챕터나 순서 없이 자유롭게 들어갈 수 있었다.
+                const isSequenceLocked = !isCompleted && !isChapterUnlocked(sc.id, activeCaptain.id, stamps);
                 return (
                   <div key={sc.id} className={styles.chapterRow}>
                     <Link
-                      href={`/learn/${activeCaptain.id}/${sc.id}`}
+                      href={isSequenceLocked ? "#" : `/learn/${activeCaptain.id}/${sc.id}`}
                       className={`${styles.chapterCard} ${isCompleted ? styles.chapterDone : styles.chapterLocked}`}
+                      aria-disabled={isSequenceLocked}
+                      title={isSequenceLocked ? t("chapterLockedHint") : undefined}
                     >
                       <div className={`${styles.chapterIcon} ${isCompleted ? styles.iconDone : styles.iconLocked}`}>
                         {isCompleted ? "✓" : "🔒"} {sc.emoji}
@@ -234,7 +244,9 @@ export default function LearnView({ char, chapters }: LearnViewProps) {
                           </div>
                           {isCompleted
                             ? <span className="badge badge-mint">{t("completed")}</span>
-                            : <span className="badge badge-gold">⭐ {t("premiumOnly")}</span>}
+                            : isSequenceLocked
+                              ? <span className="badge badge-muted">{t("locked")}</span>
+                              : <span className="badge badge-gold">⭐ {t("premiumOnly")}</span>}
                         </div>
                         <p className={styles.chapterDesc}>{sc.description}</p>
                       </div>
