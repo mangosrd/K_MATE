@@ -80,8 +80,8 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
 
     // Learn Main Page
     learnTitle: "기장과 공부하기",
-    tabRegional: "🗺️ 지역 문화 (10대 챕터)",
-    tabSpecial: "⭐ 스페셜 주제별 (30대 챕터)",
+    tabRegional: "🗺️ 지역 문화",
+    tabSpecial: "⭐ 스페셜 주제별",
     selectCaptainLearn: "👨‍✈️ 함께 공부할 남성 기장님 선택",
     romanceStory: "❤️ 로맨스 스토리 (10개)",
     dailyStory: "☕ 일상 스토리 (10개)",
