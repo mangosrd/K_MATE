@@ -288,8 +288,11 @@ export default function LearningSessionPage({
     if (!answer) return;
 
     const correct = currentEx.correctAnswer.trim();
-    const cleanAnswer = answer.replace(/\s+/g, "").toLowerCase();
-    const cleanCorrect = correct.replace(/\s+/g, "").toLowerCase();
+    // 공백뿐 아니라 문장부호도 제거 — 음성 인식(STT) 결과는 마침표/물음표 등을 포함하지 않으므로,
+    // 부호를 안 지우면 정답을 정확히 발음해도 정답 문장의 마침표 때문에 항상 오답 처리되는 문제가 있었다.
+    const normalize = (s: string) => s.replace(/[\s.,!?~…"'"'`.]/g, "").toLowerCase();
+    const cleanAnswer = normalize(answer);
+    const cleanCorrect = normalize(correct);
     const matches = cleanAnswer === cleanCorrect || cleanAnswer.includes(cleanCorrect);
 
     if (matches) {
@@ -652,6 +655,24 @@ export default function LearningSessionPage({
     );
   }
 
+  // 🎧🗣️ 스킵된 듣기/말하기 문제는 객관식 카드로 대체되는데, 그대로 questionText를 보여주면
+  // (듣기: questionText===정답 단어, 말하기: questionText===정답 문장) 정답이 그대로 노출돼
+  // 보기 중 "똑같이 생긴 걸 고르기"만 하면 되는 무의미한 문제가 된다. 스킵 시에는 정답 텍스트
+  // 대신 뜻/번역을 보여주고, 🔊 버튼은 그대로 정답 오디오를 재생하게 해서 듣기·의미 단서로
+  // 정답을 고르는 정상적인 문제로 바꾼다.
+  const isFallbackVisualQuiz =
+    (currentEx.type === "listening_choice" || currentEx.type === "speaking_practice") && isSkipped;
+  const fallbackPrompt = isFallbackVisualQuiz
+    ? currentEx.type === "speaking_practice"
+      ? (currentEx.originalData as Sentence).en
+      : (currentEx.originalData as Word).meaning
+    : null;
+  const fallbackHintText = isFallbackVisualQuiz
+    ? currentEx.type === "speaking_practice"
+      ? `발음: [${currentEx.reading}]`
+      : `발음: [${currentEx.reading}] · 예문: ${(currentEx.originalData as Word).example}`
+    : null;
+
   // ── 세션 진행 화면 ───────────────────────────────────────
   return (
     <main className={styles.page}>
@@ -721,7 +742,7 @@ export default function LearningSessionPage({
           {showHint && (
             <div className={styles.hintCard}>
               <span className={styles.hintIcon}>💡</span>
-              <p>{currentEx.hintText}</p>
+              <p>{fallbackHintText ?? currentEx.hintText}</p>
             </div>
           )}
 
@@ -758,7 +779,7 @@ export default function LearningSessionPage({
             <>
               <div className={styles.mcQuestion}>
                 <div className={styles.wordAudioRow}>
-                  <h2 className={styles.mcWord}>{currentEx.questionText}</h2>
+                  <h2 className={styles.mcWord}>{fallbackPrompt ?? currentEx.questionText}</h2>
                   <button
                     type="button"
                     className={styles.inlineListenBtn}
@@ -768,7 +789,10 @@ export default function LearningSessionPage({
                     🔊
                   </button>
                 </div>
-                <p className={styles.mcReading}>[{currentEx.reading}]</p>
+                {!isFallbackVisualQuiz && <p className={styles.mcReading}>[{currentEx.reading}]</p>}
+                {isFallbackVisualQuiz && (
+                  <p className={styles.audioHint}>👆 🔊 버튼을 눌러 듣고 알맞은 답을 골라보세요</p>
+                )}
               </div>
 
               <div className={styles.mcOptions}>
