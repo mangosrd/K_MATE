@@ -10,33 +10,33 @@
       "en": "Why do you look so pretty today... oh, excuse me. I'm Captain Kyuhyun. I'll be your captain today."
     },
     {
-      "text": "'승객' 여러분 중에 이렇게 눈에 띄는 분은 오랜만이라서요. 놀라지 마세요, 그냥 사실을 말한 거니까.",
-      "reading": "seung-gaek yeo-reo-bun jung-e i-reo-ke nun-e ttui-neun bun-eun o-raen-man-i-ra-seo-yo. nol-la-ji ma-se-yo, geu-nyang sa-sil-eul mal-han geo-ni-kka.",
-      "en": "It's been a while since a 'passenger' stood out to me like this. Don't be startled — I'm just stating a fact.",
+      "text": "사실 '승객' 여러분께 드리는 인사말, 저는 정해진 멘트 그대로 안 읽어요. 그때 기분 따라, 끌리는 대로 하거든요.",
+      "reading": "sa-sil seung-gaek yeo-reo-bun-kke deu-ri-neun in-sa-mal, jeo-neun jeong-hae-jin men-teu geu-dae-ro an il-geo-yo. geu-ttae gi-bun tta-ra, kkeul-li-neun dae-ro ha-geo-deun-yo.",
+      "en": "Actually, I don't read the standard greeting script for 'passengers' word for word. I just go with whatever feels right in the moment.",
       "highlight_word_id": "w01"
     },
     {
-      "text": "이 '공항'에서 몇 년을 일했는데, 오늘처럼 설레는 탑승구는 처음이네요.",
-      "reading": "i gong-hang-e-seo myeot nyeon-eul il-haet-neun-de, o-neul-cheo-reom seol-le-neun tap-seung-gu-neun cheo-eum-i-ne-yo.",
-      "en": "I've worked at this 'airport' for years, but this is the first time a boarding gate has ever made me nervous like this.",
+      "text": "이 '공항'에서 몇 년 일했는데, 매뉴얼보다 감으로 움직인 날이 훨씬 많았죠. 근데 오늘 감은 진짜 확실하네요.",
+      "reading": "i gong-hang-e-seo myeot nyeon il-haet-neun-de, mae-nyu-eol-bo-da gam-eu-ro um-jik-in nal-i hwol-ssin man-at-jyo. geun-de o-neul gam-eun jin-jja hwak-sil-ha-ne-yo.",
+      "en": "I've worked at this 'airport' for years, and more often than not I've moved on instinct rather than the manual. But today my instinct is dead certain.",
       "highlight_word_id": "w02"
     },
     {
-      "text": "이번 '여행', 저랑 같은 노선이라니 이건 운명 아닌가요? 서울 하늘길, 제가 제일 잘 알거든요.",
-      "reading": "i-beon yeo-haeng, jeo-rang gat-eun no-seon-i-ra-ni i-geon un-myeong a-nin-ga-yo? seo-ul ha-neul-gil, je-ga je-il jal al-geo-deun-yo.",
-      "en": "This 'trip' just happens to be on my route? Isn't that fate? I know the Seoul skyway better than anyone.",
+      "text": "이번 '여행', 저랑 같은 노선이라니 이건 운명 아닌가요? 규정집엔 없는 확률이지만, 제 감은 믿을 만하거든요.",
+      "reading": "i-beon yeo-haeng, jeo-rang gat-eun no-seon-i-ra-ni i-geon un-myeong a-nin-ga-yo? gyu-jeong-jib-en eop-neun hwang-nyul-i-ji-man, je gam-eun mid-eul man-ha-geo-deun-yo.",
+      "en": "This 'trip' just happens to be on my route? Isn't that fate? The rulebook doesn't cover odds like that, but my gut's usually right.",
       "highlight_word_id": "w03"
     },
     {
-      "text": "탑승하시면서 저 한 번 보고 웃으셨죠? 그 '미소' 때문에 오늘 비행 내내 기분이 좋을 것 같은데요.",
-      "reading": "tap-seung-ha-si-myeon-seo jeo han beon bo-go u-seu-syeot-jyo? geu mi-so ttae-mun-e o-neul bi-haeng nae-nae gi-bun-i jo-eul geot gat-eun-de-yo.",
-      "en": "You smiled at me when you boarded, didn't you? That 'smile' alone is probably going to keep me in a good mood the whole flight.",
+      "text": "탑승하시면서 저 한 번 보고 웃으셨죠? 그 '미소' 보자마자 오늘 비행은 다르게 흘러갈 것 같다는 감이 왔어요.",
+      "reading": "tap-seung-ha-si-myeon-seo jeo han beon bo-go us-eu-syeot-jyo? geu mi-so bo-ja-ma-ja o-neul bi-haeng-eun da-reu-ge heul-leo-gal geot gat-da-neun gam-i wa-sseo-yo.",
+      "en": "You smiled at me when you boarded, didn't you? The moment I saw that 'smile', I had a feeling today's flight would go differently.",
       "highlight_word_id": "w04"
     },
     {
-      "text": "기장이 승객 앞에서 이런 '설렘'을 느끼면 안 되는 건데... 뭐, 오늘만 봐주세요.",
-      "reading": "gi-jang-i seung-gaek ap-e-seo i-reon seol-lem-eul neu-kki-myeon an doe-neun geon-de... mwo, o-neul-man bwa-ju-se-yo.",
-      "en": "A captain isn't supposed to feel this kind of 'flutter' in front of a passenger... well, just let it slide for today.",
+      "text": "기장이 승객 앞에서 이런 '설렘'을 느끼면 안 되는 건데... 뭐, 규정 위반이면 오늘만 봐주세요.",
+      "reading": "gi-jang-i seung-gaek ap-e-seo i-reon seol-lem-eul neu-kki-myeon an doe-neun geon-de... mwo, gyu-jeong wi-ban-i-myeon o-neul-man bwa-ju-se-yo.",
+      "en": "A captain isn't supposed to feel this kind of 'flutter' in front of a passenger... well, if it's against the rules, just let it slide for today.",
       "highlight_word_id": "w05"
     },
     {
