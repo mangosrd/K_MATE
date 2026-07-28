@@ -5,8 +5,8 @@
   "emoji": "😉",
   "story": [
     {
-      "text": "승객님, 이제 곧 이륙합니다. 벨트 확인 좀 도와드릴까요? 아, 이건 진짜 업무예요.",
-      "reading": "seung-gaek-nim, i-je got i-ryuk-ham-ni-da. bel-teu hwa-gin jom do-wa-deu-ril-kka-yo? a, i-geon jin-jja eop-mu-ye-yo.",
+      "text": "아가씨, 이제 곧 이륙합니다. 벨트 확인 좀 도와드릴까요? 아, 이건 진짜 업무예요.",
+      "reading": "a-ga-ssi, i-je got i-ryuk-ham-ni-da. bel-teu hwa-gin jom do-wa-deu-ril-kka-yo? a, i-geon jin-jja eop-mu-ye-yo.",
       "en": "We're about to take off. Shall I help you check your belt? Ah, this part is actually my real job."
     },
     {
@@ -16,8 +16,8 @@
       "highlight_word_id": "w01"
     },
     {
-      "text": "지금 창밖으로 '한강'이 보이네요. 저 강물보다 승객님 눈이 더 반짝이는데요. 이런 말, 아무한테나 막 하는 거 아니에요.",
-      "reading": "ji-geum chang-bak-eu-ro han-gang-i bo-i-ne-yo. jeo gang-mul-bo-da seung-gaek-nim nun-i deo ban-jjak-i-neun-de-yo. i-reon mal, a-mu-han-te-na mak ha-neun geo a-ni-e-yo.",
+      "text": "지금 창밖으로 '한강'이 보이네요. 저 강물보다 아가씨 눈이 더 반짝이는데요. 이런 말, 아무한테나 막 하는 거 아니에요.",
+      "reading": "ji-geum chang-bak-eu-ro han-gang-i bo-i-ne-yo. jeo gang-mul-bo-da a-ga-ssi nun-i deo ban-jjak-i-neun-de-yo. i-reon mal, a-mu-han-te-na mak ha-neun geo a-ni-e-yo.",
       "en": "You can see the 'Han River' out the window right now. But your eyes sparkle more than that river. I don't just say this to anyone, you know.",
       "highlight_word_id": "w02"
     },
@@ -28,8 +28,8 @@
       "highlight_word_id": "w03"
     },
     {
-      "text": "이 '기내'에 승객님 웃음소리만 울리면 좋겠는데, 그건 기장 욕심이겠죠? 소문처럼 여기저기 다 그러는 거 아니고요.",
-      "reading": "i gi-nae-e seung-gaek-nim us-eum-so-ri-man ul-li-myeon jo-ket-neun-de, geu-geon gi-jang yok-sim-i-get-jyo? so-mun-cheo-reom yeo-gi-jeo-gi da geu-reo-neun geo a-ni-go-yo.",
+      "text": "이 '기내'에 아가씨 웃음소리만 울리면 좋겠는데, 그건 기장 욕심이겠죠? 소문처럼 여기저기 다 그러는 거 아니고요.",
+      "reading": "i gi-nae-e a-ga-ssi us-eum-so-ri-man ul-li-myeon jo-ket-neun-de, geu-geon gi-jang yok-sim-i-get-jyo? so-mun-cheo-reom yeo-gi-jeo-gi da geu-reo-neun geo a-ni-go-yo.",
       "en": "I wish the only sound in this 'cabin' were your laughter — but that's probably just a captain's wishful thinking, right? And no, I'm not like that with everyone, whatever the rumors say.",
       "highlight_word_id": "w04"
     },
@@ -50,13 +50,13 @@
     { "id": "w02", "word": "한강", "reading": "han-gang", "meaning": "Han River", "example": "한강 위로 비행기가 지나가요.", "example_reading": "han-gang wi-ro bi-haeng-gi-ga ji-na-ga-yo", "example_en": "The plane passes over the Han River." },
     { "id": "w03", "word": "창밖", "reading": "chang-bak", "meaning": "outside the window", "example": "창밖 풍경이 정말 아름다워요.", "example_reading": "chang-bak pung-gyeong-i jeong-mal a-reum-da-wo-yo", "example_en": "The view outside the window is truly beautiful." },
     { "id": "w04", "word": "기내", "reading": "gi-nae", "meaning": "cabin, in-flight", "example": "기내에서 편하게 쉬세요.", "example_reading": "gi-nae-e-seo pyeon-ha-ge swi-se-yo", "example_en": "Please rest comfortably in the cabin." },
-    { "id": "w05", "word": "마음", "reading": "ma-eum", "meaning": "heart, mind", "example": "제 마음이 자꾸 승객님께 기울어요.", "example_reading": "je ma-eum-i ja-kku seung-gaek-nim-kke gi-ul-eo-yo", "example_en": "My heart keeps leaning toward you." }
+    { "id": "w05", "word": "마음", "reading": "ma-eum", "meaning": "heart, mind", "example": "제 마음이 자꾸 아가씨께 기울어요.", "example_reading": "je ma-eum-i ja-kku a-ga-ssi-kke gi-ul-eo-yo", "example_en": "My heart keeps leaning toward you." }
   ],
   "sentences": [
     { "id": "s01", "ko": "안전벨트를 꼭 매주세요.", "reading": "an-jeon-bel-teu-reul kkok mae-ju-se-yo", "en": "Please be sure to fasten your seatbelt." },
     { "id": "s02", "ko": "한강 위로 비행기가 지나가요.", "reading": "han-gang wi-ro bi-haeng-gi-ga ji-na-ga-yo", "en": "The plane passes over the Han River." },
     { "id": "s03", "ko": "창밖 풍경이 정말 아름다워요.", "reading": "chang-bak pung-gyeong-i jeong-mal a-reum-da-wo-yo", "en": "The view outside the window is truly beautiful." },
     { "id": "s04", "ko": "기내에서 편하게 쉬세요.", "reading": "gi-nae-e-seo pyeon-ha-ge swi-se-yo", "en": "Please rest comfortably in the cabin." },
-    { "id": "s05", "ko": "제 마음이 자꾸 승객님께 기울어요.", "reading": "je ma-eum-i ja-kku seung-gaek-nim-kke gi-ul-eo-yo", "en": "My heart keeps leaning toward you." }
+    { "id": "s05", "ko": "제 마음이 자꾸 아가씨께 기울어요.", "reading": "je ma-eum-i ja-kku a-ga-ssi-kke gi-ul-eo-yo", "en": "My heart keeps leaning toward you." }
   ]
 }
