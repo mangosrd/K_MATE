@@ -1,93 +1,98 @@
 {
   "id": "sp-rom-sunwoo-02",
   "character_id": "sunwoo",
-  "title": "딴 놈 쳐다보지 마라",
-  "emoji": "👀",
+  "title": "내가 가이드 해준다 아이가",
+  "emoji": "🏖️",
   "level": "intermediate_advanced",
   "story": [
     {
-      "text": "광안리 좀 걷자. 야경 예술이다, 여기. 오늘 비행 준비하느라 정신없었는데 니 보니까 좀 풀리네.",
-      "reading": "gwang-an-ri jom geot-ja. ya-gyeong ye-sul-i-da, yeo-gi. o-neul bi-haeng jun-bi-ha-neu-ra jeong-sin-eop-seot-neun-de ni bo-ni-kka jom pul-li-ne.",
-      "en": "Let's walk around Gwangalli a bit. The night view here is a work of art. I was so busy with flight prep today, but seeing you loosens me up a bit."
+      "text": "해운대 백사장은 늦은 오후 햇살을 받아 그대로 반짝인다. 파도 소리 사이로 익숙한 발걸음이 다가온다. 유니폼 대신 편한 티셔츠 차림의 선우다.",
+      "reading": "hae-un-dae baek-sa-jang-eun neu-jeun o-hu haet-sal-eul bad-a geu-dae-ro ban-jjak-in-da. pa-do so-ri sa-i-ro ik-suk-han bal-geol-eum-i da-ga-on-da. yu-ni-pom dae-sin pyeon-han ti-syeo-cheu cha-rim-ui seon-u-da.",
+      "en": "Haeundae's sandy beach glitters under the late afternoon sun. Amid the sound of the waves, a familiar set of footsteps approaches. It's Sunwoo, in a comfortable t-shirt instead of his uniform."
     },
     {
-      "text": "저 앞에 서 있는 놈, 니한테 자꾸 말 걸라카는 거 '눈치챘나'?",
-      "reading": "jeo ap-e seo it-neun nom, ni-han-te ja-kku mal geol-la-ka-neun geo nun-chi-chaen-na?",
-      "en": "That guy standing over there — did you notice he keeps trying to talk to you?",
+      "text": "\"오늘부터 내가 니 가이드 해준다 아이가. 부산 바닥은 내가 제일 잘 안다, 이 동네가 딱 내 구역이니까.\"",
+      "reading": "o-neul-bu-teo nae-ga ni ga-i-deu hae-jun-da a-i-ga. bu-san ba-dak-eun nae-ga je-il jal an-da, i dong-ne-ga ttak nae gu-yeok-i-ni-kka.",
+      "en": "\"Starting today, I'll be your guide, alright? I know Busan better than anyone — this neighborhood's literally my territory.\"",
       "highlight_word_id": "w01"
     },
     {
-      "text": "아까부터 계속 니 쪽 보는 거 '신경 쓰여가' 혼났다.",
-      "reading": "a-kka-bu-teo gye-sok ni jjok bo-neun geo sin-gyeong sseu-yeo-ga hon-nat-da.",
-      "en": "He's been looking your way this whole time, it's been bugging me.",
+      "text": "해변을 따라 걸으며 그는 손가락으로 이곳저곳을 가리킨다. 파도가 부서질 때마다 햇빛이 잘게 쪼개져 물 위에서 반짝인다.",
+      "reading": "hae-byeon-eul tta-ra geol-eu-myeo geu-neun son-ga-rak-eu-ro i-got-jeo-got-eul ga-ri-kin-da. pa-do-ga bu-seo-jil ttae-ma-da haet-bit-i jal-ge jjo-gae-jyeo mul wi-e-seo ban-jjak-in-da.",
+      "en": "Walking along the shore, he points here and there. Every time a wave breaks, the sunlight scatters into little pieces, glittering across the water."
+    },
+    {
+      "text": "\"저 반짝이는 거 봐라, '눈부시제'? 이 시간대 해운대가 제일 이쁘다. 니 딱 좋은 때 왔다.\"",
+      "reading": "jeo ban-jjak-i-neun geo bwa-ra, nun-bu-si-je? i si-gan-dae hae-un-dae-ga je-il i-ppeu-da. ni ttak jo-eun ttae wat-da.",
+      "en": "\"Look at that sparkle, dazzling, right? Haeundae's prettiest at this hour. You came at just the right time.\"",
       "highlight_word_id": "w02"
     },
     {
-      "text": "'괜스레' 기분이 나빠지는 게, 이거 와이라노 진짜. 에엥, 내가 와 이라지?",
-      "reading": "gwaen-seu-re gi-bun-i na-ppa-ji-neun ge, i-geo wa-i-ra-no jin-jja. e-eng, nae-ga wa i-ra-ji?",
-      "en": "For no reason I'm getting annoyed, seriously what is this. Eh— why am I like this?",
+      "text": "\"니가 모르는 맛집도 싹 다 '알려줄' 테니까 걱정 말고 따라만 온나. 관광객처럼 지도 보고 헤맬 필요 없다.\"",
+      "reading": "ni-ga mo-reu-neun mat-jip-do ssak da al-lyeo-jul te-ni-kka geok-jeong mal-go tta-ra-man on-na. gwan-gwang-gaek-cheo-reom ji-do bo-go he-mael pil-yo eop-da.",
+      "en": "\"I'll fill you in on every good restaurant you don't know about, so don't worry, just follow me. No need to wander around staring at a map like a tourist.\"",
       "highlight_word_id": "w03"
     },
     {
-      "text": "야, 딴 놈 그래 '쳐다보지' 마라. 내 옆에 딱 붙어 있어라.",
-      "reading": "ya, ttan nom geu-rae chyeo-da-bo-ji ma-ra. nae yeop-e ttak but-eo it-eo-ra.",
-      "en": "Hey, don't go staring at other guys like that. Just stick right beside me.",
+      "text": "앞장서서 걷는 그의 뒷모습이 왠지 든든하게 느껴져 나도 모르게 한참 쳐다본다. \"와 그래 쳐다보노? …아이, 아무것도 아이다. 그냥 내가 있으니까 '든든하다'는 표정 같아가.\"",
+      "reading": "ap-jang-seo-seo geot-neun geu-ui dwit-mo-seub-i wen-ji deun-deun-ha-ge neu-kkyeo-jyeo na-do mo-reu-ge han-cham chyeo-da-bon-da. wa geu-rae chyeo-da-bo-no? …a-i, a-mu-geot-do a-i-da. geu-nyang nae-ga it-eu-ni-kka deun-deun-ha-da-neun pyo-jeong gat-a-ga.",
+      "en": "Watching him walk ahead, his back somehow feels reassuring, and without realizing it I'm staring for a while. \"Why're you staring at me like that? …No, it's nothing. Just looked like the kind of face someone makes when they feel reassured having me around.\"",
       "highlight_word_id": "w04"
     },
     {
-      "text": "이거 무슨 '소유욕'이고 뭐고, 그냥... 니가 다른 놈 보는 게 진짜 싫— 아, 아니다, 아무것도 아이다. 밥이나 무러 가자.",
-      "reading": "i-geo mu-seun so-yu-yok-i-go mwo-go, geu-nyang... ni-ga da-reun nom bo-neun ge jin-jja sil— a, a-ni-da, a-mu-geot-do a-i-da. bap-i-na mu-reo ga-ja.",
-      "en": "This isn't possessiveness or whatever, I just... really hate it when you look at other guys— ah, never mind, it's nothing. Let's go eat.",
+      "text": "\"'괜히' 혼자 설레발치는 거 아이다, 이거. 그냥... 니 여행 재밌게 해주고 싶어서 그렇다. 우리 친구잖아, 이 정도는 해줄 수 있지.\"",
+      "reading": "gwaen-hi hon-ja seol-le-bal-chi-neun geo a-i-da, i-geo. geu-nyang... ni yeo-haeng jae-mit-ge hae-ju-go sip-eo-seo geu-ro-ta. u-ri chin-gu-jan-a, i jeong-do-neun hae-jul su it-ji.",
+      "en": "\"I'm not getting worked up over nothing here, alright. It's just... I want to make your trip fun, that's all. We're friends — I can do at least this much.\"",
       "highlight_word_id": "w05"
     },
     {
-      "text": "단어 다 익혔제? 이번에도 대화 상황 문제 있으니까 잘 읽고 맞혀봐라.",
-      "reading": "dan-eo da ig-hyeot-je? i-beon-e-do dae-hwa sang-hwang mun-je it-eu-ni-kka jal ilg-go mach-yeo-bwa-ra.",
-      "en": "Got all the words down? This time there's a conversation question too, so read carefully and figure it out."
+      "text": "\"자, 단어 먼저 챙기자. 오늘 대화 문제도 있으니까 잘 읽어보고 풀어봐라.\"",
+      "reading": "ja, dan-eo meon-jeo chaeng-gi-ja. o-neul dae-hwa mun-je-do it-eu-ni-kka jal ilg-eo-bo-go pul-eo-bwa-ra.",
+      "en": "\"Alright, let's grab the vocab first. There's a conversation question today too, so read it carefully and give it a try.\""
     }
   ],
   "words": [
-    { "id": "w01", "word": "눈치채다", "reading": "nun-chi-chae-da", "meaning": "To notice, realize (something implied)", "example": "그녀는 그의 거짓말을 금방 눈치챘다.", "example_reading": "geu-nyeo-neun geu-ui geo-jit-mal-eul geum-bang nun-chi-chaet-da", "example_en": "She quickly noticed his lie." },
-    { "id": "w02", "word": "신경 쓰이다", "reading": "sin-gyeong sseu-i-da", "meaning": "To be bothered or concerned about something", "example": "그 일이 자꾸 신경 쓰인다.", "example_reading": "geu il-i ja-kku sin-gyeong sseu-in-da", "example_en": "That matter keeps bothering me." },
-    { "id": "w03", "word": "괜스레", "reading": "gwaen-seu-re", "meaning": "For no particular reason", "example": "괜스레 마음이 불안했다.", "example_reading": "gwaen-seu-re ma-eum-i bul-an-haet-da", "example_en": "For no reason, I felt uneasy." },
-    { "id": "w04", "word": "쳐다보다", "reading": "chyeo-da-bo-da", "meaning": "To stare at, look at", "example": "그는 나를 한참 동안 쳐다봤다.", "example_reading": "geu-neun na-reul han-cham dong-an chyeo-da-bwat-da", "example_en": "He stared at me for a long while." },
-    { "id": "w05", "word": "소유욕", "reading": "so-yu-yok", "meaning": "Possessiveness", "example": "그는 은근히 소유욕이 강한 사람이다.", "example_reading": "geu-neun eun-geun-hi so-yu-yok-i gang-han sa-ram-i-da", "example_en": "He's a person with a subtly strong possessive streak." }
+    { "id": "w01", "word": "가이드", "reading": "ga-i-deu", "meaning": "Guide", "example": "그는 여행객들에게 인기 있는 가이드다.", "example_reading": "geu-neun yeo-haeng-gaek-deul-e-ge in-gi it-neun ga-i-deu-da", "example_en": "He's a guide who's popular with tourists." },
+    { "id": "w02", "word": "눈부시다", "reading": "nun-bu-si-da", "meaning": "To be dazzling, blindingly bright", "example": "아침 햇살이 눈부시게 쏟아졌다.", "example_reading": "a-chim haet-sal-i nun-bu-si-ge sso-da-jyeot-da", "example_en": "The morning sunlight poured down, dazzlingly bright." },
+    { "id": "w03", "word": "알려주다", "reading": "al-lyeo-ju-da", "meaning": "To let someone know, inform", "example": "그는 나에게 맛있는 식당을 알려주었다.", "example_reading": "geu-neun na-e-ge ma-sit-neun sik-dang-eul al-lyeo-ju-eot-da", "example_en": "He let me know about a delicious restaurant." },
+    { "id": "w04", "word": "든든하다", "reading": "deun-deun-ha-da", "meaning": "To feel reassuring, dependable", "example": "그가 옆에 있으면 왠지 든든하다.", "example_reading": "geu-ga yeop-e it-eu-myeon wen-ji deun-deun-ha-da", "example_en": "Somehow it feels reassuring when he's around." },
+    { "id": "w05", "word": "괜히", "reading": "gwaen-hi", "meaning": "For no good reason, needlessly", "example": "괜히 걱정했나 보다.", "example_reading": "gwaen-hi geok-jeong-haet-na bo-da", "example_en": "Guess I worried for nothing." }
   ],
   "sentences": [
-    { "id": "s01", "ko": "나는 그의 표정에서 뭔가 이상한 걸 눈치챘다.", "reading": "na-neun geu-ui pyo-jeong-e-seo mwon-ga i-sang-han geol nun-chi-chaet-da", "en": "I noticed something strange in his expression." },
-    { "id": "s02", "ko": "자꾸 그 사람이 신경 쓰여서 집중이 안 됐다.", "reading": "ja-kku geu sa-ram-i sin-gyeong sseu-yeo-seo jip-jung-i an dwaet-da", "en": "I couldn't concentrate because that person kept bothering my mind." },
-    { "id": "s03", "ko": "괜스레 마음이 불편해서 자리를 피했다.", "reading": "gwaen-seu-re ma-eum-i bul-pyeon-hae-seo ja-ri-reul pi-haet-da", "en": "I felt uneasy for no reason, so I left the spot." },
-    { "id": "s04", "ko": "그는 낯선 사람을 자꾸 쳐다봤다.", "reading": "geu-neun nat-seon sa-ram-eul ja-kku chyeo-da-bwat-da", "en": "He kept staring at the stranger." },
-    { "id": "s05", "ko": "그의 소유욕이 살짝 느껴지는 순간이었다.", "reading": "geu-ui so-yu-yok-i sal-jjak neu-kkyeo-ji-neun sun-gan-i-eot-da", "en": "It was a moment when his possessiveness was subtly felt." }
+    { "id": "s01", "ko": "이번 여행에는 현지인 가이드가 큰 도움이 됐다.", "reading": "i-beon yeo-haeng-e-neun hyeon-ji-in ga-i-deu-ga keun do-um-i dwaet-da", "en": "A local guide was a big help on this trip." },
+    { "id": "s02", "ko": "바다 위로 쏟아지는 햇살이 눈부셨다.", "reading": "ba-da wi-ro sso-da-ji-neun haet-sal-i nun-bu-syeot-da", "en": "The sunlight pouring over the sea was dazzling." },
+    { "id": "s03", "ko": "그는 나에게 가까운 맛집을 알려주었다.", "reading": "geu-neun na-e-ge ga-kka-un mat-jip-eul al-lyeo-ju-eot-da", "en": "He let me know about a good restaurant nearby." },
+    { "id": "s04", "ko": "그가 앞장서 주니 왠지 든든했다.", "reading": "geu-ga ap-jang-seo ju-ni wen-ji deun-deun-haet-da", "en": "With him leading the way, it somehow felt reassuring." },
+    { "id": "s05", "ko": "괜히 긴장돼서 말이 잘 안 나왔다.", "reading": "gwaen-hi gin-jang-dwae-seo mal-i jal an na-wat-da", "en": "I got nervous for no reason and the words wouldn't come out right." }
   ],
   "dialogues": [
     {
       "id": "d01",
       "turns": [
-        { "speaker": "다른 남자", "text": "저기, 혹시 사진 좀 같이 찍어도 될까요? 너무 예쁘셔서요.", "reading": "jeo-gi, hok-si sa-jin jom gat-i jjig-eo-do doel-kka-yo? neo-mu ye-ppeu-syeo-seo-yo.", "en": "Excuse me, could I take a photo with you? You're so pretty." },
-        { "speaker": "승객", "text": "아, 저는 괜찮은데...", "reading": "a, jeo-neun gwaen-chan-eun-de...", "en": "Oh, I guess that's fine with me..." },
-        { "speaker": "선우", "text": "죄송한데예, 이 사람 저랑 일행입니다. 다른 데 가서 찍으이소.", "reading": "joe-song-han-de-ye, i sa-ram jeo-rang il-haeng-im-ni-da. da-reun de ga-seo jjig-eu-i-so.", "en": "Sorry, but this person is with me. Please go take photos somewhere else." },
-        { "speaker": "다른 남자", "text": "아, 네... 죄송합니다.", "reading": "a, ne... joe-song-hap-ni-da.", "en": "Oh, okay... sorry about that." }
+        { "speaker": "승객", "text": "여기 지도 앱 켜야 되나? 어디로 가야 될지 모르겠는데.", "reading": "yeo-gi ji-do aeb kyeo-ya doe-na? eo-di-ro ga-ya doel-ji mo-reu-get-neun-de.", "en": "Should I pull up a map app here? I have no idea which way to go." },
+        { "speaker": "선우", "text": "지도는 무슨. 내가 가이드라 캤제. 그냥 내 뒤만 따라오면 된다.", "reading": "ji-do-neun mu-seun. nae-ga ga-i-deu-ra kaet-je. geu-nyang nae dwi-man tta-ra-o-myeon doen-da.", "en": "Map, what map. I told you I'm the guide. Just follow behind me." },
+        { "speaker": "승객", "text": "그렇게 자신만만하게 말하니까 좀 든든하긴 하네.", "reading": "geu-reo-ke ja-sin-man-man-ha-ge mal-ha-ni-kka jom deun-deun-ha-gin ha-ne.", "en": "Hearing you say it that confidently does make me feel a bit reassured." },
+        { "speaker": "선우", "text": "그렇지, 그래야제. 나만 믿고 따라오면 후회 안 시킨다.", "reading": "geu-reo-chi, geu-rae-ya-je. na-man mit-go tta-ra-o-myeon hu-hoe an si-kin-da.", "en": "That's right, that's how it should be. Just trust me and follow along, I won't let you regret it." }
       ],
-      "question": "선우는 왜 갑자기 대화에 끼어들었나요?",
-      "question_en": "Why does Sunwoo suddenly interrupt the conversation?",
-      "correct_answer": "다른 남자가 승객에게 관심을 보이는 게 신경 쓰여서",
-      "options": ["다른 남자가 승객에게 관심을 보이는 게 신경 쓰여서", "사진 찍는 것을 도와주려고", "다른 남자가 길을 잘못 알려줘서", "승객이 위험한 상황이라서"],
-      "explanation": "선우는 다른 남자가 승객에게 접근하는 것이 신경 쓰여 은근히 질투하며 끼어들었습니다."
+      "question": "이 대화에서 선우의 태도로 알 수 있는 것은 무엇인가요?",
+      "question_en": "What does Sunwoo's attitude in this conversation reveal?",
+      "correct_answer": "지도 없이도 자신 있게 승객을 안내하려는 모습",
+      "options": ["지도 없이도 자신 있게 승객을 안내하려는 모습", "길을 몰라서 당황한 모습", "빨리 자리를 뜨고 싶어 하는 모습", "승객에게 화가 난 모습"],
+      "explanation": "선우는 지도 없이도 자신만만하게 승객을 안내하겠다며 든든한 가이드 역할을 자처하고 있습니다."
     },
     {
       "id": "d02",
       "turns": [
-        { "speaker": "승객", "text": "니는 와 모르는 사람한테 그래 예민하게 구노.", "reading": "ni-neun wa mo-reu-neun sa-ram-han-te geu-rae ye-min-ha-ge gu-no.", "en": "Why are you being so sensitive about a total stranger." },
-        { "speaker": "선우", "text": "예민한 게 아이고... 그냥 딴 놈이 니 쳐다보는 게 싫— 아이, 신경 쓰인다고, 그냥.", "reading": "ye-min-han ge a-i-go... geu-nyang ttan nom-i ni chyeo-da-bo-neun ge sil— a-i, sin-gyeong sseu-in-da-go, geu-nyang.", "en": "It's not that I'm sensitive... I just hate it when other guys look at you— no, I mean it bugs me, that's all." },
-        { "speaker": "승객", "text": "방금 딴 말 하려다가 멈췄제? 뭐라 캐려고 했는데?", "reading": "bang-geum ttan mal ha-ryeo-da-ga meom-chwot-je? mwo-ra kae-ryeo-go haet-neun-de?", "en": "You just stopped yourself mid-sentence, right? What were you about to say?" },
-        { "speaker": "선우", "text": "몰라도 된다, 그런 거! 아 됐다 마, 얼굴 뜨거버서 안 되겠다. 자, 회나 사줄 테니까 딴생각 마라.", "reading": "mol-la-do doen-da, geu-reon geo! a dwaet-da ma, eol-gul tteu-geo-beo-seo an doe-get-da. ja, hoe-na sa-jul te-ni-kka ttan-saeng-gak ma-ra.", "en": "You don't need to know that! Ugh, forget it, my face is too hot for this. Here, I'll buy you raw fish, so don't think too much." }
+        { "speaker": "행인", "text": "저기, 혹시 이 근처에 맛있는 밀면집 있나요?", "reading": "jeo-gi, hok-si i geun-cheo-e ma-sit-neun mil-myeon-jip it-na-yo?", "en": "Excuse me, is there a good milmyeon place near here?" },
+        { "speaker": "선우", "text": "아, 이 골목 끝에 하나 있는데예, 거기가 진국입니다. 제가 여기 토박이라 잘 압니다.", "reading": "a, i gol-mok kkeut-e ha-na it-neun-de-ye, geo-gi-ga jin-guk-im-ni-da. je-ga yeo-gi to-ba-gi-ra jal am-ni-da.", "en": "Oh, there's one at the end of this alley, that place is the real deal. I'm a local here so I know well." },
+        { "speaker": "행인", "text": "우와, 완전 든든하네요. 감사합니다!", "reading": "u-wa, wan-jeon deun-deun-ha-ne-yo. gam-sa-ham-ni-da!", "en": "Wow, that's really reassuring. Thank you!" },
+        { "speaker": "승객", "text": "니 완전 프로 가이드 다 됐네, 방금.", "reading": "ni wan-jeon peu-ro ga-i-deu da dwaen-ne, bang-geum.", "en": "You just turned into a total pro guide, just now." }
       ],
-      "question": "선우가 갑자기 말을 멈추고 화제를 돌린 이유는 무엇일까요?",
-      "question_en": "Why does Sunwoo suddenly stop mid-sentence and change the subject?",
-      "correct_answer": "속마음이 튀어나올 뻔해서 당황했기 때문에",
-      "options": ["속마음이 튀어나올 뻔해서 당황했기 때문에", "회를 빨리 먹고 싶어서", "승객의 질문이 이해가 안 돼서", "비행 시간이 다가와서"],
-      "explanation": "선우는 질투 섞인 진심이 무심코 튀어나올 뻔하자 당황해서 얼굴이 붉어지고 서둘러 화제를 돌립니다."
+      "question": "이 장면에서 선우가 보여준 모습은 무엇인가요?",
+      "question_en": "What does Sunwoo show in this scene?",
+      "correct_answer": "지나가던 행인에게도 자연스럽게 부산 맛집을 안내해 주는 모습",
+      "options": ["지나가던 행인에게도 자연스럽게 부산 맛집을 안내해 주는 모습", "행인에게 길을 잘못 알려주는 모습", "낯선 사람과 대화를 피하는 모습", "밀면을 먹고 싶어 조급해하는 모습"],
+      "explanation": "선우는 지나가던 행인의 질문에도 자연스럽게 부산 맛집을 알려주며, 자칭 가이드다운 모습을 보여줍니다."
     }
   ]
 }

@@ -1,62 +1,67 @@
 {
   "id": "sp-rom-kyuhyun-10",
   "character_id": "kyuhyun",
-  "title": "이 항로 위, 여유를 벗어던지고",
-  "emoji": "👑",
+  "title": "그날, 열쇠고리를 줍던 순간부터",
+  "emoji": "💛",
   "story": [
     {
-      "text": "여기까지 올라오느라 고생했어요. 오늘은 서울에서 제일 좋아하는 자리로 데려오고 싶었어요.",
-      "reading": "yeo-gi-kka-ji ol-la-o-neu-ra go-saeng-hae-sseo-yo. o-neul-eun seo-ul-e-seo je-il jo-a-ha-neun ja-ri-ro de-ryeo-o-go si-peot-seo-yo.",
-      "en": "Thanks for making it all the way up here. Today I wanted to bring you to my favorite spot in all of Seoul."
+      "text": "규현은 대뜸 나를 인천공항 도착장으로 불러냈다. 이유도 말해주지 않은 채로.",
+      "reading": "gyu-hyeon-eun dae-tteut na-reul in-cheon-gong-hang do-chak-jang-eu-ro bul-leo-naet-da. i-yu-do mal-hae-ju-ji an-eun chae-ro.",
+      "en": "Out of nowhere, Kyuhyun asked me to meet him at Incheon Airport's arrival hall — without telling me why."
     },
     {
-      "text": "이 '전망대'에서 보면 서울이 다 발아래 있잖아요. 근데 오늘은 아가씨밖에 안 보이네요.",
-      "reading": "i jeon-mang-dae-e-seo bo-myeon seo-ul-i da bal-a-rae i-sseo-jan-a-yo. geun-de o-neul-eun a-ga-ssi-bak-e an bo-i-ne-yo.",
-      "en": "From this 'observation deck', all of Seoul is right beneath us. But today, I only see you.",
-      "highlight_word_id": "w01"
+      "text": "며칠 전 열쇠고리를 처음 주웠던, 바로 그 자리였다. 그는 주머니에서 뭔가를 꺼내 손바닥 위에 올렸다.",
+      "reading": "myeo-chil jeon yeol-soe-go-ri-reul cheo-eum ju-wot-deon, ba-ro geu ja-ri-eot-da. geu-neun ju-meo-ni-e-seo mwon-ga-reul kkeo-nae son-ba-dak wi-e ol-lyeot-da.",
+      "en": "It was the very same spot where he'd picked up my keychain that first day. He pulled something out of his pocket and set it in his open palm."
     },
     {
-      "text": "저기 걸린 '자물쇠'들 보이죠? 저도 하나 준비했어요. 아가씨랑 같이 걸고 싶어서.",
-      "reading": "jeo-gi geol-lin ja-mul-soe-deul bo-i-jyo? jeo-do ha-na jun-bi-hae-sseo-yo. a-ga-ssi-rang ga-chi geol-go si-peo-seo.",
-      "en": "See all those 'padlocks' hanging there? I brought one too. I wanted to hang it together with you.",
-      "highlight_word_id": "w02"
-    },
-    {
-      "text": "능글맞은 농담 뒤에 숨겼던 '고백', 오늘은 제대로 다시 할게요. 다들 저를 바람둥이라고 불렀지만, 사실 전 이 순간이 무서워서 늘 도망쳤던 거예요.",
-      "reading": "neung-geul-maj-eun nong-dam dwi-e sum-gyeot-deon go-baek, o-neul-eun je-dae-ro da-si hal-ge-yo. da-deul jeo-reul ba-ram-dung-i-ra-go bul-leot-ji-man, sa-sil jeon i sun-gan-i mu-seo-wo-seo neul do-mang-chyeot-deon geo-ye-yo.",
-      "en": "The 'confession' I kept hiding behind smooth jokes — today I'll do it properly, for real. Everyone called me a player, but honestly, I always ran from moments like this because they scared me.",
+      "text": "작은 별 모양 장식이 조명 아래 반짝였다. '이 열쇠고리, 기억나요? 사실 그날 이후로 계속 생각났어요 — 열쇠고리가 아니라, 아가씨가요.'",
+      "reading": "jak-eun byeol mo-yang jang-sik-i jo-myeong a-rae ban-jjag-yeot-da. i yeol-soe-go-ri, gi-eok-na-yo? sa-sil geu-nal i-hu-ro gye-sok saeng-gak-nass-eo-yo — yeol-soe-go-ri-ga a-ni-ra, a-ga-ssi-ga-yo.",
+      "en": "The little star charm glinted under the lights. \"Do you remember this keychain? Honestly, ever since that day, I couldn't stop thinking about it — well, not the keychain. You.\"",
       "highlight_word_id": "w03"
     },
     {
-      "text": "이 항로 위에서, 저는 이제 여유를 다 벗어던지고 '진심'만 남기려고요.",
-      "reading": "i hang-no wi-e-seo, jeo-neun i-je yeo-yu-reul da beo-seo-deon-ji-go jin-sim-man nam-gi-ryeo-go-yo.",
-      "en": "Up here on this route, I'm shedding all my usual composure and leaving only 'sincerity' behind.",
+      "text": "그는 잠깐 숨을 고르더니, 그 순간을 처음부터 다시 짚어나가기 시작했다.",
+      "reading": "geu-neun jam-kkan sum-eul go-reu-deo-ni, geu sun-gan-eul cheo-eum-bu-teo da-si jip-eo-na-ga-gi si-jak-haet-da.",
+      "en": "He paused to steady his breath, then began retracing that entire moment from the very beginning.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "'바닥에 떨어진 열쇠고리 하나 주운 게 다였는데, 그날 저는 이상하게 아가씨한테서 눈을 뗄 수가 없었어요. 그때부터였던 것 같아요, 제가 자꾸 우연을 만들어서라도 아가씨 앞에 나타나고 싶었던 거.'",
+      "reading": "ba-dak-e tteol-eo-jin yeol-soe-go-ri ha-na ju-un ge da-yeon-neun-de, geu-nal jeo-neun i-sang-ha-ge a-ga-ssi-han-te-seo nun-eul ttel su-ga eop-seot-seo-yo. geu-ttae-bu-teo-yeot-deon geot gat-a-yo, je-ga ja-kku u-yeon-eul man-deul-eo-seo-ra-do a-ga-ssi ap-e na-ta-na-go sip-eot-deon geo.",
+      "en": "\"All I did was pick up a keychain that had fallen on the floor, but that day, I strangely couldn't take my eyes off you. I think that's when it started — me wanting to show up in front of you, even if it meant manufacturing coincidences.\""
+    },
+    {
+      "text": "'다들 저를 바람둥이라고 불렀지만, 사실 전 누군가한테 진심을 준 적이 별로 없어요. 무서웠거든요. 근데 아가씨한테는, 자꾸 진심이 새어 나오더라고요.'",
+      "reading": "da-deul jeo-reul ba-ram-dung-i-ra-go bul-leot-ji-man, sa-sil jeon nu-gu-ga-han-te jin-sim-eul jun jeog-i byeol-lo eop-seo-yo. mu-seo-wot-geo-deun-yo. geun-de a-ga-ssi-han-te-neun, ja-kku jin-sim-i sae-eo na-o-deo-ra-go-yo.",
+      "en": "\"Everyone called me a player, but honestly, I've rarely given anyone my true heart. It scared me. But around you, it kept slipping out anyway.\"",
       "highlight_word_id": "w04"
     },
     {
-      "text": "아가씨, 저 이거 진짜 '사랑'인 것 같아요. 저랑 이 항로, 앞으로도 계속 같이 갈래요?",
-      "reading": "a-ga-ssi, jeo i-geo jin-jja sa-rang-in geot gat-a-yo. jeo-rang i hang-no, ap-eu-ro-do gye-sok ga-chi gal-lae-yo?",
-      "en": "You know, I think this is really 'love'. Will you keep flying this route with me from now on?",
+      "text": "그는 내 손을 가만히 잡고, 낮고 떨리는 목소리로 말했다. '저 아가씨, 진짜 사랑하는 것 같아요. 그 열쇠고리를 줍던 순간부터, 지금까지 쭉.'",
+      "reading": "geu-neun nae son-eul ga-man-hi jap-go, nat-go tteol-li-neun mok-so-ri-ro mal-haet-da. jeo a-ga-ssi, jin-jja sa-rang-ha-neun geot gat-a-yo. geu yeol-soe-go-ri-reul jup-deon sun-gan-bu-teo, ji-geum-kka-ji jjuk.",
+      "en": "He quietly took my hand and spoke in a low, trembling voice. \"Agassi, I think I really love you. From the moment I picked up that keychain, all the way until now.\"",
       "highlight_word_id": "w05"
     },
     {
-      "text": "...크흠, 대답은 나중에 들어도 되니까. 일단 오늘 배운 단어들부터 문제로 확인해볼까요?",
-      "reading": "...keu-heum, dae-dab-eun na-jung-e deul-eo-do doe-ni-kka. il-dan o-neul bae-un dan-eo-deul-bu-teo mun-je-ro hwa-gin-hae-bol-kka-yo?",
-      "en": "...ahem, you can give me your answer later. For now, shall we check today's words with some questions first?"
+      "text": "늘 여유롭던 그의 첫 고백은, 그 어떤 능청스러운 농담보다도 서툴고, 그래서 더 진짜 같았다. 나는 그의 손을 마주 잡으며, 조용히 고개를 끄덕였다.",
+      "reading": "neul yeo-yu-rop-deon geu-ui cheot go-baeg-eun, geu eo-tteon neung-cheong-seu-reo-un nong-dam-bo-da-do seo-tul-go, geu-rae-seo deo jin-jja gat-at-da. na-neun geu-ui son-eul ma-ju jap-eu-myeo, jo-yong-hi go-gae-reul kkeu-deok-yeot-da.",
+      "en": "His first confession — from someone always so composed — was clumsier than any of his usual smooth jokes, and precisely because of that, it felt more real than anything. I held his hand back and quietly nodded.",
+      "highlight_word_id": "w01"
     }
   ],
   "words": [
-    { "id": "w01", "word": "전망대", "reading": "jeon-mang-dae", "meaning": "observation deck", "example": "남산타워 전망대에서 서울이 다 보여요.", "example_reading": "nam-san-ta-wo jeon-mang-dae-e-seo seo-ul-i da bo-yeo-yo", "example_en": "You can see all of Seoul from the N Seoul Tower observation deck." },
-    { "id": "w02", "word": "자물쇠", "reading": "ja-mul-soe", "meaning": "padlock", "example": "우리도 자물쇠 하나 걸어요.", "example_reading": "u-ri-do ja-mul-soe ha-na geol-eo-yo", "example_en": "Let's hang a padlock too." },
-    { "id": "w03", "word": "고백", "reading": "go-baek", "meaning": "confession", "example": "드디어 진심을 담아 고백했어요.", "example_reading": "deu-di-eo jin-sim-eul dam-a go-baek-hae-sseo-yo", "example_en": "I finally confessed with sincerity." },
-    { "id": "w04", "word": "진심", "reading": "jin-sim", "meaning": "sincerity, true feelings", "example": "이건 진심이에요.", "example_reading": "i-geon jin-sim-i-e-yo", "example_en": "This is sincere." },
+    { "id": "w01", "word": "고백", "reading": "go-baek", "meaning": "confession", "example": "드디어 그가 고백을 했다.", "example_reading": "deu-di-eo geu-ga go-baeg-eul haet-da", "example_en": "He finally confessed." },
+    { "id": "w02", "word": "순간", "reading": "sun-gan", "meaning": "moment", "example": "그 순간을 오래 기억할 것 같다.", "example_reading": "geu sun-gan-eul o-rae gi-eok-hal geot gat-da", "example_en": "I think I'll remember that moment for a long time." },
+    { "id": "w03", "word": "열쇠고리", "reading": "yeol-soe-go-ri", "meaning": "keychain", "example": "그는 그 열쇠고리를 아직도 기억하고 있었다.", "example_reading": "geu-neun geu yeol-soe-go-ri-reul a-jik-do gi-eok-ha-go iss-eot-da", "example_en": "He still remembered that keychain." },
+    { "id": "w04", "word": "진심", "reading": "jin-sim", "meaning": "true feelings, sincerity", "example": "그의 진심이 마침내 전해졌다.", "example_reading": "geu-ui jin-sim-i ma-chim-nae jeon-hae-jyeot-da", "example_en": "His true feelings finally came through." },
     { "id": "w05", "word": "사랑", "reading": "sa-rang", "meaning": "love", "example": "저는 아가씨를 사랑해요.", "example_reading": "jeo-neun a-ga-ssi-reul sa-rang-hae-yo", "example_en": "I love you." }
   ],
   "sentences": [
-    { "id": "s01", "ko": "남산타워 전망대에서 서울이 다 보여요.", "reading": "nam-san-ta-wo jeon-mang-dae-e-seo seo-ul-i da bo-yeo-yo", "en": "You can see all of Seoul from the N Seoul Tower observation deck." },
-    { "id": "s02", "ko": "우리도 자물쇠 하나 걸어요.", "reading": "u-ri-do ja-mul-soe ha-na geol-eo-yo", "en": "Let's hang a padlock too." },
-    { "id": "s03", "ko": "드디어 진심을 담아 고백했어요.", "reading": "deu-di-eo jin-sim-eul dam-a go-baek-hae-sseo-yo", "en": "I finally confessed with sincerity." },
-    { "id": "s04", "ko": "이건 진심이에요.", "reading": "i-geon jin-sim-i-e-yo", "en": "This is sincere." },
+    { "id": "s01", "ko": "드디어 그가 고백을 했다.", "reading": "deu-di-eo geu-ga go-baeg-eul haet-da", "en": "He finally confessed." },
+    { "id": "s02", "ko": "그 순간을 오래 기억할 것 같다.", "reading": "geu sun-gan-eul o-rae gi-eok-hal geot gat-da", "en": "I think I'll remember that moment for a long time." },
+    { "id": "s03", "ko": "그는 그 열쇠고리를 아직도 기억하고 있었다.", "reading": "geu-neun geu yeol-soe-go-ri-reul a-jik-do gi-eok-ha-go iss-eot-da", "en": "He still remembered that keychain." },
+    { "id": "s04", "ko": "그의 진심이 마침내 전해졌다.", "reading": "geu-ui jin-sim-i ma-chim-nae jeon-hae-jyeot-da", "en": "His true feelings finally came through." },
     { "id": "s05", "ko": "저는 아가씨를 사랑해요.", "reading": "jeo-neun a-ga-ssi-reul sa-rang-hae-yo", "en": "I love you." }
   ]
 }

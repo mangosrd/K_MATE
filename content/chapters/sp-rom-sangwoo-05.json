@@ -1,93 +1,93 @@
 {
   "id": "sp-rom-sangwoo-05",
   "character_id": "sangwoo",
-  "title": "다른 채널과의 교신 종료 요망",
-  "emoji": "🚫",
+  "title": "다시 한번 불러주시겠습니까",
+  "emoji": "🎙️",
   "level": "intermediate_advanced",
   "story": [
     {
-      "text": "오늘은 부여 정림사지입니다. 오래된 석탑 하나가 천 년 넘게 이 자리를 지키고 있습니다. 그런데 오늘은, 탑보다 다른 게 더 신경 쓰입니다.",
-      "reading": "o-neul-eun bu-yeo jeong-nim-sa-ji-im-ni-da. o-rae-doen seok-tap ha-na-ga cheon nyeon neom-ge i ja-ri-reul ji-ki-go it-seum-ni-da. geu-reon-de o-neul-eun, tap-bo-da da-reun ge deo sin-gyeong sseu-im-ni-da.",
-      "en": "Today we're at the Jeongnimsa Temple Site in Buyeo. An ancient stone pagoda has guarded this spot for over a thousand years. But today, something other than the pagoda is bothering me more."
+      "text": "오늘은 계룡산 자락입니다. 능선을 따라 걷는 길이 제법 가파르지만, 당신과 함께라면 숨이 차는 것도 나쁘지 않습니다.",
+      "reading": "o-neul-eun gye-ryong-san ja-rag-im-ni-da. neung-seon-eul tta-ra geon-neun gil-i je-beop ga-pa-reu-ji-man, dang-sin-gwa ham-kke-ra-myeon sum-i cha-neun geot-do na-ppeu-ji an-seum-ni-da.",
+      "en": "Today, the foot of Gyeryongsan Mountain. The trail along the ridge is fairly steep, but with you beside me, even getting out of breath doesn't feel so bad."
     },
     {
-      "text": "아까 다른 가이드와 웃으며 이야기하시더군요. 저도 모르게 그 '채널'을 유심히 지켜보고 있었습니다.",
-      "reading": "a-kka da-reun ga-i-deu-wa us-eu-myeo i-ya-gi-ha-si-deo-gun-yo. jeo-do mo-reu-ge geu 'chae-neol'-eul yu-sim-hi ji-kyeo-bo-go i-sseot-seum-ni-da.",
-      "en": "Earlier, I saw you laughing and talking with another guide. Without meaning to, I found myself watching that 'channel' closely.",
+      "text": "'방금 뭐라고 하셨습니까.' 오늘도 저는 이 말을 몇 번이나 반복했습니다. 매번 '절차'상 확인이라고 우기면서 말입니다.",
+      "reading": "'bang-geum mwo-ra-go ha-syeot-seum-ni-kka.' o-neul-do jeo-neun i mal-eul myeot beon-i-na ban-bok-haet-seum-ni-da. mae-beon 'jeol-cha'-sang hwag-in-i-ra-go u-gi-myeon-seo mal-im-ni-da.",
+      "en": "'What did you just say?' Today, too, I repeated that line more than a few times. Each time, insisting it was for 'procedural' confirmation.",
       "highlight_word_id": "w01"
     },
     {
-      "text": "…교신 상태 불량. 다른 채널과의 교신 '종료'를 요망합니다.",
-      "reading": "…gyo-sin sang-tae bul-lyang. da-reun chae-neol-gwa-ui gyo-sin 'jong-nyo'-reul yo-mang-ham-ni-da.",
-      "en": "...Communication status poor. I request 'termination' of contact with other channels.",
+      "text": "사실 저는 처음부터 정확히 들었습니다. 그런데도 굳이 '확인'이 필요하다며 되묻습니다. 이제는 이 핑계도 슬슬 바닥나고 있습니다.",
+      "reading": "sa-sil jeo-neun cheo-eum-bu-teo jeong-hwak-hi deul-eot-seum-ni-da. geu-reon-de-do gud-i 'hwag-in'-i pil-yo-ha-da-myeo doe-mut-seum-ni-da. i-je-neun i ping-gye-do seul-seul ba-dak-na-go it-seum-ni-da.",
+      "en": "In truth, I heard you perfectly clearly, the first time. And yet I still insist I need to 'confirm', and ask again. This excuse of mine is starting to run thin.",
       "highlight_word_id": "w02"
     },
     {
-      "text": "이런 식으로 '요망'이라는 딱딱한 단어를 쓰는 게, 질투를 감추는 저만의 방식입니다. 항공대 동기들도 다 아는 버릇이지요.",
-      "reading": "i-reon sig-eu-ro 'yo-mang'-i-ra-neun ttak-ttak-han dan-eo-reul sseu-neun ge, jil-tu-reul gam-chu-neun jeo-man-ui bang-sig-im-ni-da. hang-gong-dae dong-gi-deul-do da a-neun beo-reu-si-ji-yo.",
-      "en": "Using a stiff word like 'requested' this way is my own way of hiding jealousy. Even my flight academy classmates know this habit of mine well.",
+      "text": "십 년 넘게 무전 '청취'로 단련된 귀입니다. 놓치는 말이 있을 리 없습니다. 그런데도 자꾸, 당신 목소리만은 한 번 더 듣고 싶어집니다.",
+      "reading": "sip nyeon neom-ge mu-jeon 'cheong-chwi'-ro dan-lyeon-doen gwi-im-ni-da. noch-chi-neun mal-i i-sseul ri eop-seum-ni-da. geu-reon-de-do ja-kku, dang-sin mok-so-ri-man-eun han beon deo deut-go sip-eo-jim-ni-da.",
+      "en": "These ears have been trained for over ten years on radio 'listening'. There's no way I'd miss a word. And yet, again and again, I find myself wanting to hear your voice just one more time.",
       "highlight_word_id": "w03"
     },
     {
-      "text": "다른 채널이 제 항로에 '간섭'하는 게 이렇게 신경 쓰일 줄 몰랐습니다. 처음 겪는 기류입니다.",
-      "reading": "da-reun chae-neol-i je hang-no-e 'gan-seop'-ha-neun ge i-reo-ke sin-gyeong sseu-il jul mol-lat-seum-ni-da. cheo-eum gyeok-neun gi-ryu-im-ni-da.",
-      "en": "I never expected another channel's 'interference' with my route to bother me this much. It's a turbulence I'm feeling for the first time.",
+      "text": "이 '습관'이 언제부터 시작되었는지는 저도 정확히 모르겠습니다. 다만 짐작건대, 아마도 당신의 첫 무전을 들은 그 순간부터였을 겁니다.",
+      "reading": "i 'seup-gwan'-i eon-je-bu-teo si-jak-doe-eot-neun-ji-neun jeo-do jeong-hwak-hi mo-reu-get-seum-ni-da. da-man jim-jak-geon-de, a-ma-do dang-sin-ui cheot mu-jeon-eul deul-eun geu sun-gan-bu-teo-yeot-eul geom-ni-da.",
+      "en": "Even I'm not entirely sure when this 'habit' started. Though if I had to guess, it was probably from the very first transmission of yours I ever heard.",
       "highlight_word_id": "w04"
     },
     {
-      "text": "솔직히 말씀드리면, 이 채널을 제 '전용'으로 하고 싶습니다. 규정에는 없는 욕심이라는 걸 압니다.",
-      "reading": "sol-jik-hi mal-sseum-deu-ri-myeon, i chae-neol-eul je 'jeon-yong'-eu-ro ha-go sip-seum-ni-da. gyu-jeong-e-neun eop-neun yok-sim-i-ra-neun geol am-ni-da.",
-      "en": "To be honest, I'd like to make this channel 'exclusively' mine. I know it's a greed not written in any manual.",
+      "text": "'딴청' 부리듯 다시 여쭤보면, 당신은 매번 어이없다는 듯 웃으며 다시 말해줍니다. 그 웃음마저, 사실 제가 원했던 답일지도 모릅니다.",
+      "reading": "'ttan-cheong' bu-ri-deut da-si yeo-jjeo-bo-myeon, dang-sin-eun mae-beon eo-i-eop-da-neun deut us-eu-myeo da-si mal-hae-jum-ni-da. geu us-eum-ma-jeo, sa-sil je-ga won-haet-deon dab-il-ji-do mo-reum-ni-da.",
+      "en": "When I feign not to catch it and ask again — 'playing dumb' — you laugh in exasperation and say it again, every time. That laugh, too, might honestly be the very answer I was hoping for.",
       "highlight_word_id": "w05"
     },
     {
-      "text": "…실례했습니다, 평정심을 되찾겠습니다. 정림사지에서 오간 대화를 보여드릴 테니, 상황을 차분히 파악해 보시기 바랍니다.",
-      "reading": "…sil-lye-haet-seum-ni-da, pyeong-jeong-sim-eul doe-chat-get-seum-ni-da. jeong-nim-sa-ji-e-seo o-gan dae-hwa-reul bo-yeo-deu-ril te-ni, sang-hwang-eul cha-bun-hi pa-ak-hae bo-si-gi ba-ram-ni-da.",
-      "en": "...My apologies, I'll regain my composure. I'll show you a conversation from Jeongnimsa Temple Site—please calmly work out the situation."
+      "text": "…실은, 오늘도 산 정상에서 하신 말씀 다 들었습니다. 되묻지 않고 넘어가는 건, 오늘은 이만 여기까지 하겠습니다. 계룡산에서 나눈 대화를 보여드릴 테니, 이 버릇의 정체를 함께 밝혀 봐 주시기 바랍니다.",
+      "reading": "…sil-eun, o-neul-do san jeong-sang-e-seo ha-sin mal-sseum da deul-eot-seum-ni-da. doe-mut-ji an-ko neom-eo-ga-neun geon, o-neul-eun i-man yeo-gi-kka-ji ha-get-seum-ni-da. gye-ryong-san-e-seo na-nun dae-hwa-reul bo-yeo-deu-ril te-ni, i beo-reu-sui jeong-che-reul ham-kke bal-kyeo bwa ju-si-gi ba-ram-ni-da.",
+      "en": "...Truthfully, I heard everything you said at the summit today too. I'll let it go without asking again — just for today, that much I'll manage. I'll show you the conversation we had on Gyeryongsan — please help me get to the bottom of this habit of mine."
     }
   ],
   "words": [
-    { "id": "w01", "word": "채널", "reading": "chae-neol", "meaning": "Channel", "example": "다른 가이드와의 채널을 유심히 지켜보고 있었습니다.", "example_reading": "da-reun ga-i-deu-wa-ui chae-neol-eul yu-sim-hi ji-kyeo-bo-go i-sseot-seum-ni-da", "example_en": "I found myself watching the channel with the other guide closely." },
-    { "id": "w02", "word": "종료", "reading": "jong-nyo", "meaning": "Termination / end", "example": "다른 채널과의 교신 종료를 요망합니다.", "example_reading": "da-reun chae-neol-gwa-ui gyo-sin jong-nyo-reul yo-mang-ham-ni-da", "example_en": "I request termination of contact with other channels." },
-    { "id": "w03", "word": "요망", "reading": "yo-mang", "meaning": "(Formal) request / desired", "example": "딱딱한 단어 요망으로 질투를 감춥니다. 동기들도 다 아는 버릇입니다.", "example_reading": "ttak-ttak-han dan-eo yo-mang-eu-ro jil-tu-reul gam-chum-ni-da. dong-gi-deul-do da a-neun beo-reu-sim-ni-da", "example_en": "I hide my jealousy behind the stiff word 'requested'. Even my classmates know this habit." },
-    { "id": "w04", "word": "간섭", "reading": "gan-seop", "meaning": "Interference", "example": "다른 채널이 제 항로에 간섭하는 게 신경 쓰입니다.", "example_reading": "da-reun chae-neol-i je hang-no-e gan-seop-ha-neun ge sin-gyeong sseu-im-ni-da", "example_en": "It bothers me that another channel is interfering with my route." },
-    { "id": "w05", "word": "전용", "reading": "jeon-yong", "meaning": "Exclusive / dedicated", "example": "이 채널을 제 전용으로 하고 싶습니다.", "example_reading": "i chae-neol-eul je jeon-yong-eu-ro ha-go sip-seum-ni-da", "example_en": "I'd like to make this channel exclusively mine." }
+    { "id": "w01", "word": "절차", "reading": "jeol-cha", "meaning": "Procedure", "example": "매번 절차상 확인이라고 우깁니다.", "example_reading": "mae-beon jeol-cha-sang hwag-in-i-ra-go u-gim-ni-da", "example_en": "Every time, I insist it's for procedural confirmation." },
+    { "id": "w02", "word": "확인", "reading": "hwag-in", "meaning": "Confirmation", "example": "굳이 확인이 필요하다며 되묻습니다.", "example_reading": "gud-i hwag-in-i pil-yo-ha-da-myeo doe-mut-seum-ni-da", "example_en": "I insist I need to confirm, and ask again." },
+    { "id": "w03", "word": "청취", "reading": "cheong-chwi", "meaning": "Listening (esp. radio)", "example": "십 년 넘게 무전 청취로 단련된 귀입니다.", "example_reading": "sip nyeon neom-ge mu-jeon cheong-chwi-ro dan-lyeon-doen gwi-im-ni-da", "example_en": "These ears have been trained for over ten years on radio listening." },
+    { "id": "w04", "word": "습관", "reading": "seup-gwan", "meaning": "Habit", "example": "이 습관이 언제부터 시작되었는지 모르겠습니다.", "example_reading": "i seup-gwan-i eon-je-bu-teo si-jak-doe-eot-neun-ji mo-reu-get-seum-ni-da", "example_en": "I'm not sure when this habit started." },
+    { "id": "w05", "word": "딴청", "reading": "ttan-cheong", "meaning": "Feigning not to notice", "example": "딴청 부리듯 다시 여쭤봅니다.", "example_reading": "ttan-cheong bu-ri-deut da-si yeo-jjeo-bom-ni-da", "example_en": "I feign not to catch it and ask again." }
   ],
   "sentences": [
-    { "id": "s01", "ko": "다른 가이드와의 채널을 유심히 지켜보고 있었습니다.", "reading": "da-reun ga-i-deu-wa-ui chae-neol-eul yu-sim-hi ji-kyeo-bo-go i-sseot-seum-ni-da", "en": "I found myself watching the channel with the other guide closely." },
-    { "id": "s02", "ko": "다른 채널과의 교신 종료를 요망합니다.", "reading": "da-reun chae-neol-gwa-ui gyo-sin jong-nyo-reul yo-mang-ham-ni-da", "en": "I request termination of contact with other channels." },
-    { "id": "s03", "ko": "딱딱한 단어 요망으로 질투를 감춥니다. 동기들도 다 아는 버릇입니다.", "reading": "ttak-ttak-han dan-eo yo-mang-eu-ro jil-tu-reul gam-chum-ni-da. dong-gi-deul-do da a-neun beo-reu-sim-ni-da", "en": "I hide my jealousy behind the stiff word 'requested'. Even my classmates know this habit." },
-    { "id": "s04", "ko": "다른 채널이 제 항로에 간섭하는 게 신경 쓰입니다.", "reading": "da-reun chae-neol-i je hang-no-e gan-seop-ha-neun ge sin-gyeong sseu-im-ni-da", "en": "It bothers me that another channel is interfering with my route." },
-    { "id": "s05", "ko": "이 채널을 제 전용으로 하고 싶습니다.", "reading": "i chae-neol-eul je jeon-yong-eu-ro ha-go sip-seum-ni-da", "en": "I'd like to make this channel exclusively mine." }
+    { "id": "s01", "ko": "매번 절차상 확인이라고 우깁니다.", "reading": "mae-beon jeol-cha-sang hwag-in-i-ra-go u-gim-ni-da", "en": "Every time, I insist it's for procedural confirmation." },
+    { "id": "s02", "ko": "굳이 확인이 필요하다며 되묻습니다.", "reading": "gud-i hwag-in-i pil-yo-ha-da-myeo doe-mut-seum-ni-da", "en": "I insist I need to confirm, and ask again." },
+    { "id": "s03", "ko": "십 년 넘게 무전 청취로 단련된 귀입니다.", "reading": "sip nyeon neom-ge mu-jeon cheong-chwi-ro dan-lyeon-doen gwi-im-ni-da", "en": "These ears have been trained for over ten years on radio listening." },
+    { "id": "s04", "ko": "이 습관이 언제부터 시작되었는지 모르겠습니다.", "reading": "i seup-gwan-i eon-je-bu-teo si-jak-doe-eot-neun-ji mo-reu-get-seum-ni-da", "en": "I'm not sure when this habit started." },
+    { "id": "s05", "ko": "딴청 부리듯 다시 여쭤봅니다.", "reading": "ttan-cheong bu-ri-deut da-si yeo-jjeo-bom-ni-da", "en": "I feign not to catch it and ask again." }
   ],
   "dialogues": [
     {
       "id": "d01",
       "turns": [
-        { "speaker": "천상우 기장", "text": "아까 그 가이드분과 꽤 즐거워 보이셨습니다.", "reading": "a-kka geu ga-i-deu-bun-gwa kkwae jeul-geo-wo bo-i-syeot-seum-ni-da.", "en": "You looked quite happy with that guide earlier." },
-        { "speaker": "승객", "text": "아, 그냥 정림사지 설명해 주셔서 감사 인사한 거예요.", "reading": "a, geu-nyang jeong-nim-sa-ji seol-myeong-hae ju-syeo-seo gam-sa in-sa-han geo-ye-yo.", "en": "Oh, I was just thanking them for explaining Jeongnimsa Temple Site." },
-        { "speaker": "천상우 기장", "text": "…교신 상태 불량. 다른 채널과의 교신 종료를 요망합니다.", "reading": "…gyo-sin sang-tae bul-lyang. da-reun chae-neol-gwa-ui gyo-sin jong-nyo-reul yo-mang-ham-ni-da.", "en": "...Communication status poor. I request termination of contact with other channels." },
-        { "speaker": "승객", "text": "그게 무슨 말이에요, 지금 질투하시는 거예요?", "reading": "geu-ge mu-seun mal-i-e-yo, ji-geum jil-tu-ha-si-neun geo-ye-yo?", "en": "What does that mean—are you jealous right now?" }
+        { "speaker": "손님", "text": "방금 저 다 얘기했는데, 또 뭐라고 하셨냐고 물어보시네요?", "reading": "bang-geum jeo da yae-gi-haet-neun-de, tto mwo-ra-go ha-syeon-nya-go mul-eo-bo-si-ne-yo?", "en": "I just finished saying everything, and you're asking me to repeat it again?" },
+        { "speaker": "천상우 기장", "text": "산바람 소리에 잘 안 들려서 그렇습니다. 절차상 확인이 필요했습니다.", "reading": "san-ba-ram so-ri-e jal an deul-lyeo-seo geu-reo-seum-ni-da. jeol-cha-sang hwag-in-i pil-yo-haet-seum-ni-da.", "en": "It's because the mountain wind made it hard to hear. I needed procedural confirmation." },
+        { "speaker": "손님", "text": "바람 별로 안 부는데요, 지금.", "reading": "ba-ram byeol-lo an bu-neun-de-yo, ji-geum.", "en": "There's barely any wind right now, though." },
+        { "speaker": "천상우 기장", "text": "…그렇습니까. 그래도 한 번 더 듣고 싶었던 건 사실입니다.", "reading": "…geu-reo-sum-ni-kka. geu-rae-do han beon deo deut-go sip-eot-deon geon sa-sil-im-ni-da.", "en": "...Is that so. Still, wanting to hear it one more time was true, regardless." }
       ],
-      "question": "기장의 \"교신 상태 불량\" 발언이 실제로 뜻하는 것은?",
-      "question_en": "What does the captain's remark 'communication status poor' actually mean?",
-      "correct_answer": "다른 사람과 친하게 지내는 것에 대한 질투",
-      "options": ["다른 사람과 친하게 지내는 것에 대한 질투", "실제 무전 장비의 고장", "정림사지 주변 통신 방해", "가이드의 설명이 틀렸다는 지적"],
-      "explanation": "기장은 실제 무전 문제가 아니라, 승객이 다른 사람과 가깝게 지내는 모습에 질투를 느껴 이를 무전 용어로 표현하고 있습니다."
+      "question": "기장이 \"바람 소리\" 핑계를 댄 이유로 가장 적절한 것은?",
+      "question_en": "What is the most appropriate reason the captain uses the excuse of the 'wind noise'?",
+      "correct_answer": "실제로는 다 들었지만 그녀의 목소리를 한 번 더 듣고 싶어서",
+      "options": ["실제로는 다 들었지만 그녀의 목소리를 한 번 더 듣고 싶어서", "정말로 바람 소리 때문에 못 들어서", "손님의 발음이 부정확해서", "산에서는 항상 두 번씩 확인해야 하는 규정이 있어서"],
+      "explanation": "기장은 실제로는 다 들었으면서도, 그녀의 목소리를 한 번 더 듣고 싶은 마음에 바람 소리를 핑계로 되물었습니다."
     },
     {
       "id": "d02",
       "turns": [
-        { "speaker": "승객", "text": "기장님, 은근히 질투 많으시죠?", "reading": "gi-jang-nim, eun-geun-hi jil-tu man-eu-si-jyo?", "en": "Captain, you're kind of jealous, aren't you?" },
-        { "speaker": "천상우 기장", "text": "…동기들도 항상 그렇게 놀립니다. 능청은 부리면서 질투는 다 티 난다고.", "reading": "…dong-gi-deul-do hang-sang geu-reo-ke nol-lim-ni-da. neung-cheong-eun bu-ri-myeon-seo jil-tu-neun da ti nan-da-go.", "en": "...My classmates always tease me about the same thing—that I act nonchalant, but my jealousy shows through completely." },
-        { "speaker": "승객", "text": "그 동기분들 말이 맞나 보네요.", "reading": "geu dong-gi-bun-deul mal-i mat-na bo-ne-yo.", "en": "Sounds like your classmates are right." },
-        { "speaker": "천상우 기장", "text": "부정할 수가 없어서 곤란합니다.", "reading": "bu-jeong-hal su-ga eop-seo-seo gol-lan-ham-ni-da.", "en": "It's troublesome that I can't deny it." }
+        { "speaker": "천상우 기장", "text": "…방금 하신 말씀, 다시 한번 말씀해 주시겠습니까.", "reading": "…bang-geum ha-sin mal-sseum, da-si han-beon mal-sseum-hae ju-si-get-seum-ni-kka.", "en": "...What you just said — could you say it once more for me?" },
+        { "speaker": "손님", "text": "기장님, 이거 벌써 오늘 다섯 번째예요. 저 이제 다 알아요.", "reading": "gi-jang-nim, i-geo beol-sseo o-neul da-seot beon-jjae-ye-yo. jeo i-je da al-a-yo.", "en": "Captain, this is already the fifth time today. I've caught on completely by now." },
+        { "speaker": "천상우 기장", "text": "…들켰다면 어쩔 수 없습니다. 그냥, 당신 목소리가 몇 번을 들어도 안 질려서 그렇습니다.", "reading": "…deul-kyeot-da-myeon eo-jjeol su eop-seum-ni-da. geu-nyang, dang-sin mok-so-ri-ga myeot beon-eul deul-eo-do an jil-lyeo-seo geu-reo-seum-ni-da.", "en": "...If I've been found out, it can't be helped. It's simply that I never get tired of your voice, no matter how many times I hear it." },
+        { "speaker": "손님", "text": "…정말 못 말리는 분이시네요, 기장님은.", "reading": "…jeong-mal mot mal-li-neun bun-i-si-ne-yo, gi-jang-nim-eun.", "en": "...You really are impossible to argue with, Captain." }
       ],
-      "question": "기장의 마지막 대답이 보여주는 것은?",
-      "question_en": "What does the captain's final response show?",
-      "correct_answer": "동료들도 이미 알 정도로 그의 질투가 티가 난다는 것을 인정하는 반응",
-      "options": ["동료들도 이미 알 정도로 그의 질투가 티가 난다는 것을 인정하는 반응", "질투한 적이 전혀 없다고 부인하는 반응", "동기들과 다투었다는 뜻", "질투라는 감정 자체를 이해하지 못한다는 뜻"],
-      "explanation": "기장은 동료들조차 눈치챌 만큼 자신의 질투가 잘 티 난다는 사실을 부정하지 못하고 순순히 인정하고 있습니다."
+      "question": "기장이 되묻던 진짜 이유를 인정한 것이 뜻하는 바는?",
+      "question_en": "What does it mean that the captain admits the real reason he kept asking her to repeat herself?",
+      "correct_answer": "절차라는 핑계 없이도 그녀의 목소리를 향한 진심을 있는 그대로 인정한 것",
+      "options": ["절차라는 핑계 없이도 그녀의 목소리를 향한 진심을 있는 그대로 인정한 것", "앞으로는 다시는 되묻지 않겠다는 다짐", "손님의 목소리에 문제가 있다는 지적", "그저 무전 절차를 다시 설명하려는 것"],
+      "explanation": "기장은 더 이상 절차를 핑계 삼지 않고, 그녀의 목소리를 몇 번이고 듣고 싶어 하는 진심을 있는 그대로 인정하고 있습니다."
     }
   ]
 }

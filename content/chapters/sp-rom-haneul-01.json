@@ -1,62 +1,62 @@
 {
   "id": "sp-rom-haneul-01",
   "character_id": "haneul",
-  "title": "그래서 그게 왜 궁금해요",
-  "emoji": "😐",
+  "title": "인파 속에서 마주친 얼굴",
+  "emoji": "👀",
   "story": [
     {
-      "text": "…어. 또 만났네요. 설마 따라온 거예요?",
-      "reading": "...eo. tto man-nass-ne-yo. seol-ma tta-ra-on geo-ye-yo?",
-      "en": "...Oh. We meet again. Don't tell me you followed me."
+      "text": "성수기 공항은 정신이 없었다. 안내 방송이 쉴 새 없이 울리고, 캐리어 바퀴 소리와 사람들 말소리가 뒤엉켜 사방에서 부딪혔다.",
+      "reading": "seong-su-gi gong-hang-eun jeong-sin-i eobs-eot-da. an-nae bang-song-i swil sae eobs-i ul-li-go, kae-ri-eo ba-kwi so-ri-wa sa-ram-deul mal-so-ri-ga dwi-eong-kyeo sa-bang-e-seo bu-dich-yeoss-da.",
+      "en": "The airport during peak season was chaos. Announcements rang out without pause, and the sound of suitcase wheels tangled with a hundred voices, colliding from every direction."
     },
     {
-      "text": "비행기에서 '목소리' 다르다고 했죠? …여기선 방송 안 하니까 그런가 봐요.",
-      "reading": "bi-haeng-gi-e-seo 'mok-so-ri' da-reu-da-go haess-jyo? …yeo-gi-seon bang-song an ha-ni-kka geu-reon-ga bwa-yo.",
-      "en": "You said my 'voice' sounds different on the plane, right? ...Guess it's because I'm not making an announcement here.",
+      "text": "하늘은 그 인파 사이를 가로질러 게이트로 향하던 중이었다. 원래는 앞만 보고 걷는 사람이었는데, 그날은 이상하게 걸음이 멈췄다.",
+      "reading": "ha-neul-eun geu in-pa sa-i-reul ga-ro-jil-leo ge-i-teu-ro hyang-ha-deon jung-i-eoss-da. won-lae-neun ap-man bo-go geol-neun sa-ram-i-eoss-neun-de, geu-nal-eun i-sang-ha-ge geol-eum-i meom-chwoss-da.",
+      "en": "Haneul was cutting through that crowd on his way to the gate. He normally walked straight ahead without a second glance — but that day, for no reason he could explain, his steps stopped.",
       "highlight_word_id": "w01"
     },
     {
-      "text": "'방송'할 땐 원래 이런 목소리예요. 차분하게, 흔들림 없이. 손님들 불안하게 하면 안 되니까.",
-      "reading": "'bang-song'hal ttaen won-lae i-reon mok-so-ri-ye-yo. cha-bun-ha-ge, heun-deul-lim eobs-i. son-nim-deul bul-an-ha-ge ha-myeon an doe-ni-kka.",
-      "en": "When I do the 'announcement', this is just my normal voice. Calm, steady. Can't make the passengers anxious.",
+      "text": "사람들 틈으로 딱 한 순간, 얼굴 하나가 스쳤다. 몇 초도 안 되는 짧은 시간이었는데, 그 얼굴만 이상하리만치 또렷하게 남았다.",
+      "reading": "sa-ram-deul teum-eu-ro ttak han sun-gan, eol-gul ha-na-ga sseu-chyeoss-da. myeoch cho-do an doe-neun jjalb-eun si-gan-i-eoss-neun-de, geu eol-gul-man i-sang-ha-ri-man-chi tto-ryeot-ha-ge nam-ass-da.",
+      "en": "For just one moment, through a gap in the crowd, a face flickered past. It lasted only a few seconds, yet that one face stayed strangely vivid.",
       "highlight_word_id": "w02"
     },
     {
-      "text": "'평소'엔... 이것보다 좀 낮아요, 목소리. 지금처럼요.",
-      "reading": "'pyeong-so'en... i-geot-bo-da jom naj-a-yo, mok-so-ri. ji-geum-cheo-reom-yo.",
-      "en": "'Normally'... it's a bit lower than that. Like right now.",
-      "highlight_word_id": "w03"
-    },
-    {
-      "text": "왜 그런지 '이유'는 나도 몰라요. …손님 앞이라 그런가.",
-      "reading": "wae geu-reon-ji 'i-yu'neun na-do mol-la-yo. …son-nim ap-i-ra geu-reon-ga.",
-      "en": "I don't even know the 'reason' why. ...Maybe it's because I'm in front of you.",
+      "text": "서두르던 그녀의 캐리어 바퀴가 턱에 걸리며 휘청였다. 하늘이 반사적으로 손을 뻗어 캐리어를 붙잡고, 떨어진 탑승권까지 주워 건넸다.",
+      "reading": "seo-du-reu-deon geu-nyeo-ui kae-ri-eo ba-kwi-ga teog-e geol-li-myeo hwi-cheong-yeoss-da. ha-neul-i ban-sa-jeog-eu-ro son-eul ppeod-eo kae-ri-eo-reul but-jab-go, tteol-eo-jin tap-seung-gwon-kka-ji ju-weo geon-neass-da.",
+      "en": "In her hurry, the wheel of her suitcase caught on a step and she stumbled. Haneul's hand shot out on reflex, catching the suitcase and picking up her fallen boarding pass in nearly the same motion.",
       "highlight_word_id": "w04"
     },
     {
-      "text": "이런 얘기, '처음' 해봐요. 그래서, 그게 왜 궁금해요?",
-      "reading": "i-reon yae-gi, 'cheo-eum' hae-bwa-yo. geu-rae-seo, geu-ge wae gung-geum-hae-yo?",
-      "en": "This is the 'first' time I've talked about this. So, why are you curious about that anyway?",
+      "text": "'괜찮아요?' 짧게 건넨 말과 달리, 그의 시선은 좀처럼 그녀의 얼굴에서 떨어지지 않았다.",
+      "reading": "'gwaen-chan-a-yo?' jjalb-ge geon-nen mal-gwa dal-li, geu-ui si-seon-eun jom-cheo-reom geu-nyeo-ui eol-gul-e-seo tteol-eo-ji-ji anh-ass-da.",
+      "en": "'Are you all right?' Unlike his brief, clipped words, his gaze was slow to leave her face.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "인사도 제대로 못 하고 사람들 틈으로 사라지는 뒷모습을 보며, 하늘은 잠깐 멍하니 서 있었다. 낯선 얼굴인데도 이상하게 낯익다는 느낌이 떠나지 않았다.",
+      "reading": "in-sa-do je-dae-ro mos ha-go sa-ram-deul teum-eu-ro sa-ra-ji-neun dwit-mo-seub-eul bo-myeo, ha-neul-eun jam-kkan meong-ha-ni seo iss-eoss-da. nach-seon eol-gul-in-de-do i-sang-ha-ge nach-ik-da-neun neu-kkim-i tteo-na-ji anh-ass-da.",
+      "en": "Watching her disappear back into the crowd before he could even manage a proper goodbye, Haneul stood there blankly for a moment. Even though hers was a stranger's face, the strange sense that it looked familiar wouldn't leave him.",
       "highlight_word_id": "w05"
     },
     {
-      "text": "…뭘 그렇게 웃어요. 자, 오늘 배운 단어들 문제로 확인해 봐요.",
-      "reading": "…mwol geu-reoh-ge us-eo-yo. ja, o-neul bae-un dan-eo-deul mun-je-ro hwag-in-hae bwa-yo.",
-      "en": "...What are you smiling about. Come on, let's check today's words with some questions."
+      "text": "그날 밤, 그는 혼자 중얼거렸다. '…왜 자꾸 생각나지.' 몇 년 만에 처음으로, 같은 얼굴을 다시 보고 싶다는 생각이 들었다. 이유는 몰랐다. 그냥, 다시 마주치면 좋겠다고만 생각했다.",
+      "reading": "geu-nal bam, geu-neun hon-ja jung-eol-geo-ryeoss-da. '…wae ja-kku saeng-gak-na-ji.' myeoch nyeon man-e cheo-eum-eu-ro, gat-eun eol-gul-eul da-si bo-go sip-da-neun saeng-gag-i deul-eoss-da. i-yu-neun mol-lass-da. geu-nyang, da-si ma-ju-chi-myeon jo-ket-da-go-man saeng-gag-haess-da.",
+      "en": "That night, alone, he muttered to himself. '...Why can't I stop thinking about it.' For the first time in years, he found himself wanting to see that same face again. He didn't know why. He just hoped, somehow, their paths would cross once more."
     }
   ],
   "words": [
-    { "id": "w01", "word": "목소리", "reading": "mok-so-ri", "meaning": "Voice", "example": "그 사람 목소리가 참 차분해요.", "example_reading": "geu sa-ram mok-so-ri-ga cham cha-bun-hae-yo", "example_en": "That person's voice is very calm." },
-    { "id": "w02", "word": "방송", "reading": "bang-song", "meaning": "Broadcast / Announcement", "example": "기장님이 방송을 시작했어요.", "example_reading": "gi-jang-nim-i bang-song-eul si-jag-haess-eo-yo", "example_en": "The captain started the announcement." },
-    { "id": "w03", "word": "평소", "reading": "pyeong-so", "meaning": "Usually / Normal times", "example": "평소보다 오늘 더 조용해요.", "example_reading": "pyeong-so-bo-da o-neul deo jo-yong-hae-yo", "example_en": "It's quieter than usual today." },
-    { "id": "w04", "word": "이유", "reading": "i-yu", "meaning": "Reason", "example": "이유 없이 그런 건 아니에요.", "example_reading": "i-yu eobs-i geu-reon geon a-ni-e-yo", "example_en": "It's not without a reason." },
-    { "id": "w05", "word": "처음", "reading": "cheo-eum", "meaning": "First time", "example": "전주는 처음이에요?", "example_reading": "jeon-ju-neun cheo-eum-i-e-yo", "example_en": "Is this your first time in Jeonju?" }
+    { "id": "w01", "word": "인파", "reading": "in-pa", "meaning": "Crowd", "example": "공항은 인파로 가득했다.", "example_reading": "gong-hang-eun in-pa-ro ga-deuk-haet-da", "example_en": "The airport was packed with crowds." },
+    { "id": "w02", "word": "순간", "reading": "sun-gan", "meaning": "Moment / instant", "example": "그 순간, 시간이 멈춘 것 같았다.", "example_reading": "geu sun-gan, si-gan-i meom-chun geot gat-at-da", "example_en": "In that moment, time seemed to stop." },
+    { "id": "w03", "word": "시선", "reading": "si-seon", "meaning": "Gaze / eyes (attention)", "example": "그의 시선이 자꾸 그쪽으로 향했다.", "example_reading": "geu-ui si-seon-i ja-kku geu-jjog-eu-ro hyang-haet-da", "example_en": "His gaze kept turning that way." },
+    { "id": "w04", "word": "캐리어", "reading": "kae-ri-eo", "meaning": "Suitcase / carry-on", "example": "캐리어를 끌고 게이트로 갔다.", "example_reading": "kae-ri-eo-reul kkeul-go ge-i-teu-ro gat-da", "example_en": "I pulled my suitcase toward the gate." },
+    { "id": "w05", "word": "낯익다", "reading": "nach-ik-da", "meaning": "To look familiar", "example": "왠지 낯익은 얼굴이었다.", "example_reading": "waen-ji nach-ig-eun eol-gul-i-eot-da", "example_en": "For some reason, the face looked familiar." }
   ],
   "sentences": [
-    { "id": "s01", "ko": "목소리가 평소보다 낮아요.", "reading": "mok-so-ri-ga pyeong-so-bo-da naj-a-yo", "en": "Your voice is lower than usual." },
-    { "id": "s02", "ko": "방송을 듣고 안심했어요.", "reading": "bang-song-eul deut-go an-sim-haess-eo-yo", "en": "I felt reassured after hearing the announcement." },
-    { "id": "s03", "ko": "평소에는 조용한 편이에요.", "reading": "pyeong-so-e-neun jo-yong-han pyeon-i-e-yo", "en": "I'm usually the quiet type." },
-    { "id": "s04", "ko": "이유는 나중에 말해줄게요.", "reading": "i-yu-neun na-jung-e mal-hae-jul-ge-yo", "en": "I'll tell you the reason later." },
-    { "id": "s05", "ko": "이건 저한테 처음 있는 일이에요.", "reading": "i-geon jeo-han-te cheo-eum it-neun il-i-e-yo", "en": "This is a first for me." }
+    { "id": "s01", "ko": "공항은 인파로 정신이 없었다.", "reading": "gong-hang-eun in-pa-ro jeong-sin-i eobs-eot-da", "en": "The airport was chaos with crowds." },
+    { "id": "s02", "ko": "그 순간, 얼굴 하나가 눈에 들어왔다.", "reading": "geu sun-gan, eol-gul ha-na-ga nun-e deul-eo-wat-da", "en": "In that moment, one face caught my eye." },
+    { "id": "s03", "ko": "그의 시선이 자꾸 그쪽으로 향했다.", "reading": "geu-ui si-seon-i ja-kku geu-jjog-eu-ro hyang-haet-da", "en": "His gaze kept drifting that way." },
+    { "id": "s04", "ko": "캐리어를 놓고 잠깐 멈춰 섰다.", "reading": "kae-ri-eo-reul noh-go jam-kkan meom-chwo seot-da", "en": "I set down my suitcase and paused for a moment." },
+    { "id": "s05", "ko": "왠지 낯익은 얼굴이라고 생각했다.", "reading": "waen-ji nach-ig-eun eol-gul-i-ra-go saeng-gak-aet-da", "en": "I thought, somehow, the face looked familiar." }
   ]
 }

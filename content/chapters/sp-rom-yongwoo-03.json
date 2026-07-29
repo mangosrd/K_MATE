@@ -1,93 +1,93 @@
 {
   "id": "sp-rom-yongwoo-03",
   "character_id": "yongwoo",
-  "title": "누가 니 그렇게 놔둬",
-  "emoji": "😤",
+  "title": "매표소에서 튀어나온 사투리",
+  "emoji": "😅",
   "level": "intermediate_advanced",
   "story": [
     {
-      "text": "제주 올레길, 파란 화살표를 따라 우리는 말없이 걷고 있었다. 바람에 억새가 흔들렸다.",
-      "reading": "je-ju ol-le-gil, pa-ran hwa-sal-pyo-reul tta-ra u-ri-neun mal-eop-si geot-go iss-eot-da. ba-ram-e eok-sae-ga heun-deul-lyeot-da.",
-      "en": "Following the blue arrows of Jeju's Olle trail, we walked in silence. Silver grass swayed in the wind."
+      "text": "부산에 도착하자마자 향한 곳은 송도해상케이블카 매표소였다. 평일인데도 줄이 꽤 길었다. 용우는 익숙한 걸음으로 줄 맨 끝에 자리를 잡았다.",
+      "reading": "bu-san-e do-chak-ha-ja-ma-ja hyang-han got-eun song-do-hae-sang-ke-i-beul-ka mae-pyo-so-yeot-da. pyeong-il-in-de-do jul-i kkwae gil-eot-da. yong-u-neun ig-suk-han geol-eum-eu-ro jul maen kkeut-e ja-ri-reul jab-at-da.",
+      "en": "The moment we landed in Busan, we headed straight for the Songdo Marine Cable Car ticket booth. Even on a weekday, the line was long. Yongwoo settled into the back of it with an easy, familiar stride."
     },
     {
-      "text": "갑자기 나타난 오르막에 숨이 턱까지 차오르자, 용우가 뒤도 안 돌아보고 손부터 내밀었다. 정작 자신은 숨 한 번 안 흐트러진 채였다.",
-      "reading": "gap-ja-gi na-ta-nan o-reu-mak-e sum-i teok-kka-ji cha-o-reu-ja, yong-u-ga dwi-do an dol-a-bo-go son-bu-teo nae-mil-eot-da. jeong-jak ja-sin-eun sum han beon an heu-teu-reo-jin chae-eot-da.",
-      "en": "When a sudden uphill left me breathless, Yongwoo reached his hand back without even turning around. He himself hadn't broken a sweat.",
+      "text": "누군가 슬쩍 새치기를 하려던 순간, 용우가 말없이 한 걸음 옆으로 움직여 자리를 막아섰다. 별다른 말도 없었는데 그 큰 체격 앞에서 남자는 슬그머니 뒤로 물러났다.",
+      "reading": "nu-gun-ga seul-jjak sae-chi-gi-reul ha-ryeo-deon sun-gan, yong-u-ga mal-eop-si han geol-eum yeop-eu-ro um-jig-yeo ja-ri-reul mag-a-seot-da. byeol-da-reun mal-do eop-seon-neun-de geu keun che-gyeok ap-e-seo nam-ja-neun seul-geu-meo-ni dwi-ro mul-leo-nat-da.",
+      "en": "The moment someone tried to slip into line ahead of us, Yongwoo silently shifted a step sideways, blocking the gap. He said nothing at all, but the man quietly backed off in front of that formidable build.",
       "highlight_word_id": "w01"
     },
     {
-      "text": "'헐떡이지 말고 천천히 와. 뭘 그렇게 급하게 걸어, 넘어지면 어쩌려고.' '기장님은 안 힘드세요?' 묻자 씩 웃는다. '오프 날마다 도장 나가서 몸 만드는데 이 정도로 힘들면 태권도 관장님한테 혼난다.'",
-      "reading": "heol-tteok-i-ji mal-go cheon-cheon-hi wa. mwol geu-reo-ke geup-ha-ge geol-eo, neom-eo-ji-myeon eo-jjeo-ryeo-go. gi-jang-nim-eun an him-deu-se-yo? mut-ja ssik us-neun-da. o-peu nal-ma-da do-jang na-ga-seo mom man-deu-neun-de i jeong-do-ro him-deul-myeon tae-kwon-do gwan-jang-nim-han-te hon-nan-da.",
-      "en": "'Don't pant like that, come slowly. Why walk so fast, what if you fall.' 'Aren't you tired, Captain?' I ask, and he grins. 'I train at the dojang every day off — if this wore me out, my taekwondo instructor would chew me out.'",
-      "highlight_word_id": "w03"
-    },
-    {
-      "text": "신발을 벗어보니 뒤꿈치에 물집이 잡혀 있었다. 용우가 미간을 찌푸리며 배낭에서 밴드부터 꺼낸다. 굳은살 박인 손끝이 야무지게 물집 주변을 소독한다.",
-      "reading": "sin-bal-eul beos-eo-bo-ni dwi-kkum-chi-e mul-jip-i jap-hyeo iss-eot-da. yong-u-ga mi-gan-eul jji-pu-ri-myeo bae-nang-e-seo baen-deu-bu-teo kkeo-naen-da. gud-eun-sal bag-in son-kkeut-i ya-mu-ji-ge mul-jip ju-byeon-eul so-dok-han-da.",
-      "en": "When I took off my shoe, there was a blister on my heel. Yongwoo frowned and pulled a bandage out of his backpack first. His fingertips, calloused from years of training, cleaned around the blister with practiced ease.",
+      "text": "'질서는 지켜야지.' 그가 대수롭지 않게 중얼거렸다. 태권도로 다져진 자세 하나만으로 상황이 정리되는 걸 보며 나는 살짝 웃었다.",
+      "reading": "jil-seo-neun ji-kyeo-ya-ji. geu-ga dae-su-rop-ji an-ke jung-eol-geo-ryeot-da. tae-kwon-do-ro da-jyeo-jin ja-se ha-na-man-eu-ro sang-hwang-i jeong-ni-doe-neun geol bo-myeo na-neun sal-jjak us-eot-da.",
+      "en": "'People should wait their turn.' He muttered it like it was nothing. Watching the situation resolve itself with just his taekwondo-honed posture, I couldn't help but smile a little.",
       "highlight_word_id": "w02"
     },
     {
-      "text": "'이 지경이 되도록 왜 말을 안 해. 누가 니 그렇게 놔둬. 내가 있는 이상 그런 일 없다.'",
-      "reading": "i ji-gyeong-i doe-do-rok wae mal-eul an hae. nu-ga ni geu-reo-ke nwa-dwo. nae-ga it-neun i-sang geu-reon il eop-da.",
-      "en": "'Why didn't you say anything before it got this bad. Nobody's letting you go through that on my watch. Not while I'm here.'",
-      "highlight_word_id": "w05"
+      "text": "매표소 아저씨가 표를 건네며 무심코 물었다. '오빠야, 둘이요?' 부산 특유의 억양이었다. 용우가 별생각 없이 곧바로 대답했다. '예, 둘이요. 왕복으로 주이소.'",
+      "reading": "mae-pyo-so a-jeo-ssi-ga pyo-reul geon-ne-myeo mu-sim-ko mul-eot-da. o-ppa-ya, dul-i-yo? bu-san teuk-yu-ui eog-yang-i-eot-da. yong-u-ga byeol-saeng-gak eop-si got-ba-ro dae-dab-aet-da. ye, dul-i-yo. wang-bog-eu-ro ju-i-so.",
+      "en": "The man at the booth handed over the tickets, asking offhandedly, 'Just the two of you, bro?' — with that unmistakable Busan lilt. Without thinking, Yongwoo answered right back. 'Yeah, two of us. Round trip, please.'",
+      "highlight_word_id": "w03"
     },
     {
-      "text": "발이 아프다고 하자 용우가 두말없이 나를 등에 업었다. 국가대표 지망생 시절 다져진 등이 흔들림 하나 없이 단단했다. '기대. 아니, 업혀. 창피할 것도 없다.'",
-      "reading": "bal-i a-peu-da-go ha-ja yong-u-ga du-mal-eop-si na-reul deung-e eob-eot-da. guk-ga-dae-pyo ji-mang-saeng si-jeol da-jyeo-jin deung-i heun-deul-lim ha-na eop-si dan-dan-haet-da. gi-dae. a-ni, eob-hyeo. chang-pi-hal geot-do eop-da.",
-      "en": "When I said my foot hurt, Yongwoo scooped me onto his back without a word. His back — built up during his days as a national-team hopeful — didn't waver an inch. 'Lean on me. No, just get on. There's nothing to be embarrassed about.'",
+      "text": "낯선 억양에 놀라 쳐다보자, 용우가 그제야 자기 말투를 눈치챈 듯 헛기침을 했다. '…어, 아니. 그, 여기 사투리가 옮았나 보다.' 서둘러 방송 멘트 같은 또박또박한 톤으로 돌아온다.",
+      "reading": "nat-seon eog-yang-e nol-la chyeo-da-bo-ja, yong-u-ga geu-je-ya ja-gi mal-tu-reul nun-chi-chaen deut heot-gi-chim-eul haet-da. eo, a-ni. geu, yeo-gi sa-tu-ri-ga om-at-na bo-da. seo-dul-leo bang-song men-teu gat-eun tto-bak-tto-bak-an ton-eu-ro dol-a-on-da.",
+      "en": "I turned to look, startled by the unfamiliar accent, and only then did Yongwoo seem to notice it himself, clearing his throat. '...Uh, no. Must've caught the local accent or something.' He hurried back into his usual crisp, radio-announcer cadence.",
       "highlight_word_id": "w04"
     },
     {
-      "text": "'쉬었다 가자. 그동안 대화 몇 개 들려줄 테니까, 상황 잘 파악해봐라.'",
-      "reading": "swi-eot-da ga-ja. geu-dong-an dae-hwa myeot gae deul-lyeo-jul te-ni-kka, sang-hwang jal pa-ak-hae-bwa-ra.",
-      "en": "'Let's rest a while. I'll play you a couple of conversations meanwhile — figure out the situation properly.'"
+      "text": "'옮았다'기엔 너무 자연스러웠다. 뭔가 캐묻고 싶었지만, 용우가 벌써 케이블카 쪽으로 성큼성큼 걸어가고 있었다.",
+      "reading": "om-at-da-gi-en neo-mu ja-yeon-seu-reo-wot-da. mwon-ga kae-mut-go sip-eot-ji-man, yong-u-ga beol-sseo ke-i-beul-ka jjog-eu-ro seong-keum-seong-keum geol-eo-ga-go iss-eot-da.",
+      "en": "That was far too smooth to be something he'd just 'caught.' I wanted to press him on it, but Yongwoo was already striding off toward the cable car."
+    },
+    {
+      "text": "'뭘 그렇게 봐. 케이블카 놓치겠다, 빨리 와.' 뒤도 안 돌아보고 재촉하는 목소리에 서둘러 따라나섰다. '가는 동안 대화나 들어봐라.'",
+      "reading": "mwol geu-reo-ke bwa. ke-i-beul-ka noch-i-get-da, ppal-li wa. dwi-do an dol-a-bo-go jae-chok-ha-neun mok-so-ri-e seo-dul-leo tta-ra-na-seot-da. ga-neun dong-an dae-hwa-na deul-eo-bwa-ra.",
+      "en": "'What are you staring at. We'll miss the cable car, hurry up.' Not even turning around, he hurried me along, and I scrambled to catch up. 'Listen to some conversations on the way.'",
+      "highlight_word_id": "w05"
     }
   ],
   "words": [
-    { "id": "w01", "word": "오르막", "reading": "o-reu-mak", "meaning": "Uphill slope", "example": "이 올레길은 초반에 가파른 오르막이 있다.", "example_reading": "i ol-le-gil-eun cho-ban-e ga-pa-reun o-reu-mak-i it-da", "example_en": "This Olle trail has a steep uphill near the start." },
-    { "id": "w02", "word": "물집", "reading": "mul-jip", "meaning": "Blister", "example": "새 신발을 신었더니 발뒤꿈치에 물집이 생겼다.", "example_reading": "sae sin-bal-eul sin-eot-deo-ni bal-dwi-kkum-chi-e mul-jip-i saeng-gyeot-da", "example_en": "I got a blister on my heel from wearing new shoes." },
-    { "id": "w03", "word": "도장", "reading": "do-jang", "meaning": "Dojang, martial arts training hall", "example": "그는 오프인 날에도 태권도 도장에 나가 훈련한다.", "example_reading": "geu-neun o-peu-in nal-e-do tae-kwon-do do-jang-e na-ga hun-lyeon-han-da", "example_en": "Even on his days off, he goes to the taekwondo dojang to train." },
-    { "id": "w04", "word": "업다", "reading": "eop-da", "meaning": "To carry someone on one's back", "example": "다리를 다친 친구를 업고 병원까지 걸어갔다.", "example_reading": "da-ri-reul da-chin chin-gu-reul eop-go byeong-won-kka-ji geol-eo-gat-da", "example_en": "I carried my friend, who'd hurt her leg, on my back all the way to the hospital." },
-    { "id": "w05", "word": "놔두다", "reading": "nwa-du-da", "meaning": "To leave (something/someone) alone, let be", "example": "그렇게 힘든데 왜 혼자 놔뒀어?", "example_reading": "geu-reo-ke him-deun-de wae hon-ja nwa-dwoss-eo?", "example_en": "Why did you leave her alone when she was struggling that much?" }
+    { "id": "w01", "word": "새치기", "reading": "sae-chi-gi", "meaning": "Cutting in line", "example": "새치기하다가 눈총을 받았다.", "example_reading": "sae-chi-gi-ha-da-ga nun-chong-eul bad-at-da", "example_en": "He got dirty looks for cutting in line." },
+    { "id": "w02", "word": "대수롭지 않다", "reading": "dae-su-rop-ji an-ta", "meaning": "To be nothing much, unremarkable", "example": "그는 대수롭지 않다는 듯 어깨를 으쓱했다.", "example_reading": "geu-neun dae-su-rop-ji an-ta-neun deut eo-kkae-reul eu-sseuk-aet-da", "example_en": "He shrugged as if it were nothing much." },
+    { "id": "w03", "word": "억양", "reading": "eog-yang", "meaning": "Accent, intonation", "example": "그의 억양에서 고향이 느껴졌다.", "example_reading": "geu-ui eog-yang-e-seo go-hyang-i neu-kkyeo-jyeot-da", "example_en": "His accent gave away where he was from." },
+    { "id": "w04", "word": "옮다", "reading": "om-da", "meaning": "To be caught/transferred (a habit, an accent, an illness, etc.)", "example": "친구 말버릇이 옮았나 보다.", "example_reading": "chin-gu mal-beo-reut-i om-at-na bo-da", "example_en": "I guess I caught my friend's speech habit." },
+    { "id": "w05", "word": "재촉하다", "reading": "jae-chok-ha-da", "meaning": "To hurry/urge someone", "example": "그는 늦었다며 나를 재촉했다.", "example_reading": "geu-neun neuj-eot-da-myeo na-reul jae-chok-aet-da", "example_en": "He hurried me along, saying we were late." }
   ],
   "sentences": [
-    { "id": "s01", "ko": "갑자기 나타난 오르막에도 그는 숨 한 번 흐트러지지 않았다.", "reading": "gap-ja-gi na-ta-nan o-reu-mak-e-do geu-neun sum han beon heu-teu-reo-ji-ji an-at-da", "en": "Even on a sudden steep uphill, he didn't break a single breath." },
-    { "id": "s02", "ko": "오프 날마다 도장에서 몸을 만든다는 그의 말에 고개가 끄덕여졌다.", "reading": "o-peu nal-ma-da do-jang-e-seo mom-eul man-deun-da-neun geu-ui mal-e go-gae-ga kkeu-deok-yeo-jyeot-da", "en": "His words, that he trains at the dojang every day off, made total sense." },
-    { "id": "s03", "ko": "뒤꿈치에 잡힌 물집을 보고 그는 굳은살 박인 손으로 밴드를 붙여주었다.", "reading": "dwi-kkum-chi-e jap-hin mul-jip-eul bo-go geu-neun gud-eun-sal bag-in son-eu-ro baen-deu-reul but-yeo-ju-eot-da", "en": "Seeing the blister on my heel, he bandaged it with hands calloused from years of training." },
-    { "id": "s04", "ko": "누가 니 그렇게 놔두냐며 그는 살짝 화가 난 목소리로 말했다.", "reading": "nu-ga ni geu-reo-ke nwa-du-nya-myeo geu-neun sal-jjak hwa-ga nan mok-so-ri-ro mal-haet-da", "en": "'Who's letting you go through that,' he said, his voice tinged with anger." },
-    { "id": "s05", "ko": "발이 아프다고 하자 그는 두말없이 나를 업고 걸었다.", "reading": "bal-i a-peu-da-go ha-ja geu-neun du-mal-eop-si na-reul eop-go geol-eot-da", "en": "When I said my foot hurt, he carried me on his back without a second word." }
+    { "id": "s01", "ko": "매표소 앞에 긴 줄이 늘어서 있었고, 용우는 익숙하게 줄 끝에 섰다.", "reading": "mae-pyo-so ap-e gin jul-i neul-eo-seo iss-eot-go, yong-u-neun ig-suk-ha-ge jul kkeut-e seot-da", "en": "A long line stretched in front of the ticket booth, and Yongwoo took his place at the end of it, at ease." },
+    { "id": "s02", "ko": "누군가 새치기를 하려 하자 그는 말없이 자리를 막아섰다.", "reading": "nu-gun-ga sae-chi-gi-reul ha-ryeo ha-ja geu-neun mal-eop-si ja-ri-reul mag-a-seot-da", "en": "When someone tried to cut in line, he silently blocked the spot." },
+    { "id": "s03", "ko": "매표소 직원의 사투리 섞인 말에 그는 대수롭지 않게 사투리로 답했다.", "reading": "mae-pyo-so jig-won-ui sa-tu-ri seokk-in mal-e geu-neun dae-su-rop-ji an-ke sa-tu-ri-ro dab-aet-da", "en": "In response to the booth clerk's dialect-tinged question, he answered back in dialect without a second thought." },
+    { "id": "s04", "ko": "낯선 억양을 눈치채고 놀라자 그는 사투리가 옮았다며 얼버무렸다.", "reading": "nat-seon eog-yang-eul nun-chi-chae-go nol-la-ja geu-neun sa-tu-ri-ga om-at-da-myeo eol-beo-mu-ryeot-da", "en": "When I looked startled at the unfamiliar accent, he brushed it off, saying he must've caught the local dialect." },
+    { "id": "s05", "ko": "그는 나를 재촉하며 케이블카 쪽으로 성큼성큼 걸어갔다.", "reading": "geu-neun na-reul jae-chok-ha-myeo ke-i-beul-ka jjog-eu-ro seong-keum-seong-keum geol-eo-gat-da", "en": "He hurried me along, striding briskly toward the cable car." }
   ],
   "dialogues": [
     {
       "id": "d01",
       "turns": [
-        { "speaker": "손님", "text": "저 괜찮아요, 조금만 쉬면 다시 걸을 수 있어요.", "reading": "jeo gwaen-chan-a-yo, jo-geum-man swi-myeon da-si geol-eul su iss-eo-yo.", "en": "I'm fine, I can walk again after a short rest." },
-        { "speaker": "권용우 기장", "text": "됐고, 물집 그거 방치하면 더 심해져. 밴드 붙이고 가자.", "reading": "dwaet-go, mul-jip geu-geo bang-chi-ha-myeon deo sim-hae-jyeo. baen-deu but-i-go ga-ja.", "en": "Never mind, leaving that blister alone will only make it worse. Let's put a bandage on it and go." },
-        { "speaker": "손님", "text": "이런 것까지 챙겨 다니세요? 준비성 좋으시네요.", "reading": "i-reon geot-kka-ji chaeng-gyeo da-ni-se-yo? jun-bi-seong jo-eu-si-ne-yo.", "en": "You even carry these around? You're really prepared." },
-        { "speaker": "권용우 기장", "text": "너랑 다닐 땐 이 정도는 기본이지. …별 뜻 없다, 그냥 습관이야.", "reading": "neo-rang da-nil ttaen i jeong-do-neun gi-bon-i-ji. byeol tteut eop-da, geu-nyang seup-gwan-i-ya.", "en": "When I'm out with you, this much is basic. ...It doesn't mean anything, just habit." }
+        { "speaker": "매표소 직원", "text": "오빠야, 둘이요? 왕복으로 드릴까예?", "reading": "o-ppa-ya, dul-i-yo? wang-bog-eu-ro deu-ril-kka-ye?", "en": "You two together? Should I do round trip?" },
+        { "speaker": "권용우 기장", "text": "예, 둘이요. 왕복으로 주이소.", "reading": "ye, dul-i-yo. wang-bog-eu-ro ju-i-so.", "en": "Yeah, two of us. Round trip, please." },
+        { "speaker": "손님", "text": "…방금 사투리 쓴 거 맞죠?", "reading": "bang-geum sa-tu-ri sseun geo mat-jyo?", "en": "...You just spoke in dialect, didn't you?" },
+        { "speaker": "권용우 기장", "text": "무, 무슨 소리야. 잘못 들었다, 그거.", "reading": "mu, mu-seun so-ri-ya. jal-mot deul-eot-da, geu-geo.", "en": "Wh-what are you talking about. You must've misheard." }
       ],
-      "question": "용우가 배낭에 밴드를 챙겨 다닌 이유로 가장 알맞은 것은?",
-      "question_en": "What best explains why Yongwoo carries bandages in his backpack?",
-      "correct_answer": "손님이 다칠까 봐 평소에도 챙기는 습관이 생겨서",
-      "options": ["손님이 다칠까 봐 평소에도 챙기는 습관이 생겨서", "등산 동호회 규칙이라서", "판매하려고", "자기 발이 자주 다쳐서"],
-      "explanation": "용우는 별 뜻 없다고 하지만, 손님과 다닐 때를 대비해 밴드를 챙기는 습관이 생겼다고 말했습니다."
+      "question": "이 대화에서 용우가 사투리로 대답한 이유로 가장 알맞은 것은?",
+      "question_en": "What best explains why Yongwoo answered in dialect in this exchange?",
+      "correct_answer": "부산이 고향이라 무의식중에 사투리가 튀어나왔다",
+      "options": ["부산이 고향이라 무의식중에 사투리가 튀어나왔다", "매표소 직원을 놀리려고 일부러 흉내 냈다", "손님을 웃기려고 장난친 것이다", "사투리를 배운 적이 있어서 연습해 본 것이다"],
+      "explanation": "용우는 부산이 고향이라, 방심한 순간 무의식중에 사투리가 튀어나왔습니다."
     },
     {
       "id": "d02",
       "turns": [
-        { "speaker": "권용우 기장", "text": "업히라니까. 왜 굳이 혼자 걸으려고 해.", "reading": "eob-hi-ra-ni-kka. wae gud-i hon-ja geol-eu-ryeo-go hae.", "en": "I told you to get on my back. Why do you insist on walking alone." },
-        { "speaker": "손님", "text": "무거우실까 봐요. 저 생각보다 안 가벼운데.", "reading": "mu-geo-u-sil-kka bwa-yo. jeo saeng-gak-bo-da an ga-byeo-un-de.", "en": "I didn't want to be too heavy for you. I'm not as light as you'd think." },
-        { "speaker": "권용우 기장", "text": "누가 니 그렇게 놔둬. 태권도로 다져진 등이야, 그 정도로 안 무너진다.", "reading": "nu-ga ni geu-reo-ke nwa-dwo. tae-kwon-do-ro da-jyeo-jin deung-i-ya, geu jeong-do-ro an mu-neo-jin-da.", "en": "Nobody's letting you struggle like that. This back was built by years of taekwondo, it's not going to buckle from that." },
-        { "speaker": "손님", "text": "…네, 알겠어요.", "reading": "ne, al-gess-eo-yo.", "en": "...Okay." }
+        { "speaker": "손님", "text": "질서 지키라고 한마디만 했는데 그 사람이 왜 그렇게 순순히 물러났을까요?", "reading": "jil-seo ji-ki-ra-go han-ma-di-man haen-neun-de geu sa-ram-i wae geu-reo-ke sun-sun-hi mul-leo-nass-eul-kka-yo?", "en": "You only said one thing about keeping order — why did he back off so easily?" },
+        { "speaker": "권용우 기장", "text": "내가 좀, 그런 쪽으로 자세가 나오나 보다.", "reading": "nae-ga jom, geu-reon jjog-eu-ro ja-se-ga na-o-na bo-da.", "en": "I guess I've just got that kind of stance, in that department." },
+        { "speaker": "손님", "text": "태권도 자세요? 그런 걸로 사람이 물러나요?", "reading": "tae-kwon-do ja-se-yo? geu-reon geol-lo sa-ram-i mul-leo-na-yo?", "en": "Your taekwondo stance? People back off from that?" },
+        { "speaker": "권용우 기장", "text": "국가대표 준비하던 게 어디 가겠냐. 몸이 먼저 기억하는 거지.", "reading": "guk-ga-dae-pyo jun-bi-ha-deon ge eo-di ga-get-nya. mom-i meon-jeo gi-eok-a-neun geo-ji.", "en": "Years of national-team training don't just disappear. My body remembers before I do." }
       ],
-      "question": "이 대화에서 용우의 태도로 가장 알맞은 설명은?",
-      "question_en": "What best describes Yongwoo's attitude in this conversation?",
-      "correct_answer": "무심한 척하지만 실제로는 손님을 세심하게 챙기고 있다",
-      "options": ["무심한 척하지만 실제로는 손님을 세심하게 챙기고 있다", "손님에게 화가 나서 거리를 두고 있다", "규정 때문에 어쩔 수 없이 돕고 있다", "손님을 놀리려고 장난치고 있다"],
-      "explanation": "용우는 무뚝뚝하게 말하지만 자신의 단련된 체격을 이유로 들며 손님이 무거울까 걱정하지 말라고 세심하게 챙기는 모습을 보입니다."
+      "question": "새치기하던 사람이 순순히 물러난 이유로 가장 알맞은 것은?",
+      "question_en": "What best explains why the person trying to cut in line backed off so easily?",
+      "correct_answer": "용우의 다부진 태권도 자세와 존재감에 위압감을 느껴서",
+      "options": ["용우의 다부진 태권도 자세와 존재감에 위압감을 느껴서", "용우가 큰 소리로 화를 내서", "직원이 대신 제지해서", "원래 새치기를 하려던 게 아니었어서"],
+      "explanation": "용우는 별다른 말 없이도 태권도로 다져진 자세와 존재감만으로 상황을 정리했습니다."
     }
   ]
 }

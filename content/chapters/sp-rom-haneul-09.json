@@ -1,62 +1,62 @@
 {
   "id": "sp-rom-haneul-09",
   "character_id": "haneul",
-  "title": "처음으로 먼저 건넨 말",
-  "emoji": "💭",
+  "title": "팬이 아니게 된 지 오래됐어요",
+  "emoji": "😌",
   "story": [
     {
-      "text": "왜 그렇게 서 있어요. 안 들어가요?",
-      "reading": "wae geu-reoh-ge seo iss-eo-yo. an deul-eo-ga-yo?",
-      "en": "Why are you just standing there. Aren't you coming in?"
+      "text": "팬사인회에 다녀온 지도, 콘서트를 보러 갔던 것도 이제는 꽤 지난 일이 되었다. 그런데도 하늘의 마음은 여전히 그 자리에 머물러 있었다.",
+      "reading": "paen-sa-in-hoe-e da-nyeo-on ji-do, kon-seo-teu-reul bo-reo gass-deon geot-do i-je-neun kkwae ji-nan il-i doe-eoss-da. geu-reon-de-do ha-neul-ui ma-eum-eun yeo-jeon-hi geu ja-ri-e meo-mul-leo iss-eoss-da.",
+      "en": "It had been a while since the fan-signing, longer still since the concert. And yet, Haneul's feelings had stayed rooted right where they'd started."
     },
     {
-      "text": "'한복' 입어보기로 했잖아요. 저기 사장님이 골라주실 거예요.",
-      "reading": "'han-bok' ib-eo-bo-gi-ro haess-jan-a-yo. jeo-gi sa-jang-nim-i gol-la-ju-sil geo-ye-yo.",
-      "en": "We agreed you'd try on a 'hanbok'. The owner over there will pick one for you.",
+      "text": "처음엔 분명 팬으로서의 호기심이었다. 그런데 어느새, 그는 그녀가 무대 위에 있을 때보다 이렇게 마주 앉아 있는 순간을 더 기다리고 있었다.",
+      "reading": "cheo-eum-en bun-myeong paen-eu-ro-seo-ui ho-gi-sim-i-eoss-da. geu-reon-de eo-neu-sae, geu-neun geu-nyeo-ga mu-dae wi-e iss-eul ttae-bo-da i-reoh-ge ma-ju anj-a it-neun sun-gan-eul deo gi-da-ri-go iss-eoss-da.",
+      "en": "At first, it had clearly been fan-like curiosity. But at some point along the way, he found himself looking forward to moments like this — just sitting across from her — more than any moment of her up on stage.",
       "highlight_word_id": "w01"
     },
     {
-      "text": "이 '사진관', 오래된 곳이에요. 옛날 사진처럼 나온대요.",
-      "reading": "i 'sa-jin-gwan', o-rae-doen gos-i-e-yo. yen-nal sa-jin-cheo-reom na-on-dae-yo.",
-      "en": "This 'photo studio' is an old place. They say the photos come out like old-fashioned ones.",
-      "highlight_word_id": "w02"
-    },
-    {
-      "text": "'거울' 앞에서 뭘 그렇게 봐요. …잘 어울려요, 그 색.",
-      "reading": "'geo-ul' ap-e-seo mwol geu-reoh-ge bwa-yo. …jal eo-ul-lyeo-yo, geu saek.",
-      "en": "What are you looking at so much in the 'mirror'. ...It suits you, that color.",
+      "text": "'…솔직히 말할게요.' 하늘이 드물게 먼저 입을 열었다. '저, 팬이 아니게 된 지, 꽤 오래전 같아요.'",
+      "reading": "'…sol-jik-hi mal-hal-ge-yo.' ha-neul-i deu-mul-ge meon-jeo ib-eul yeol-eoss-da. 'jeo, paen-i a-ni-ge doen ji, kkwae o-rae-jeon gat-a-yo.'",
+      "en": "'...I'll be honest with you.' Haneul spoke first, which was rare for him. 'I think I stopped being just a fan — a while ago now. A good while.'",
       "highlight_word_id": "w03"
     },
     {
-      "text": "그 '색깔' 저고리, 잘 골랐네요. …나쁘지 않다고요, 진심으로.",
-      "reading": "geu 'saek-kkal' jeo-go-ri, jal gol-lass-ne-yo. …na-ppeu-ji anh-da-go-yo, jin-sim-eu-ro.",
-      "en": "That 'color' jeogori, you picked well. ...I mean it, it's not bad at all.",
-      "highlight_word_id": "w04"
-    },
-    {
-      "text": "사실… 먼저 말 거는 거, 저한테는 '용기'가 좀 필요했어요.",
-      "reading": "sa-sil… meon-jeo mal geo-neun geo, jeo-han-te-neun 'yong-gi'ga jom pil-yo-haess-eo-yo.",
-      "en": "Honestly... speaking to you first took a bit of 'courage' for me.",
+      "text": "'언제부터 달라졌는지는 정확히 모르겠어요. 팬사인회였는지, 콘서트였는지, 아니면 그보다 훨씬 전이었는지.'",
+      "reading": "'eon-je-bu-teo dal-la-jyeoss-neun-ji-neun jeong-hwag-hi mo-reu-gess-eo-yo. paen-sa-in-hoe-yeoss-neun-ji, kon-seo-teu-yeoss-neun-ji, a-ni-myeon geu-bo-da hwol-ssin jeon-i-eoss-neun-ji.'",
+      "en": "'I don't know exactly when it changed. Whether it was the fan-signing, or the concert, or something even earlier than that.'",
       "highlight_word_id": "w05"
     },
     {
-      "text": "…뭘 그렇게 봐요. 사진이나 찍으러 가요, 시간 없어요. …내일은, 진짜 할 말 있어요.",
-      "reading": "…mwol geu-reoh-ge bwa-yo. sa-jin-i-na jjig-eu-reo ga-yo, si-gan eobs-eo-yo. …nae-il-eun, jin-jja hal mal iss-eo-yo.",
-      "en": "...What are you staring at. Let's go take a photo, we don't have much time. ...Tomorrow, I really do have something to say."
+      "text": "스스로도 놀랄 만큼 순순히 인정하는 자신이 낯설었다. 원래라면 절대 먼저 이런 말을 꺼낼 사람이 아니었으니까.",
+      "reading": "seu-seu-ro-do nol-lal man-keum sun-sun-hi in-jeong-ha-neun ja-sin-i nach-seol-eoss-da. won-lae-ra-myeon jeol-dae meon-jeo i-reon mal-eul kkeo-nael sa-ram-i a-ni-eoss-eu-ni-kka.",
+      "en": "Even he was surprised at how easily he'd admitted it. He wasn't the type who ever brought something like this up first, not normally.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "'이거 하나는 확실해요. 지금 저한테 손님은, 그냥 손님이 아니에요. 그리고 어느 유명한 사람도 아니고요.'",
+      "reading": "'i-geo ha-na-neun hwag-sil-hae-yo. ji-geum jeo-han-te son-nim-eun, geu-nyang son-nim-i a-ni-e-yo. geu-ri-go eo-neu yu-myeong-han sa-ram-do a-ni-go-yo.'",
+      "en": "'One thing is certain, though. To me, right now, you're not just a passenger. And you're not some famous stranger, either.'",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "말을 마친 하늘의 귀는 이미 새빨갛게 물들어 있었다. 그런데도 그는 시선을 피하지 않았다. 오랜만에, 아주 오랜만에.",
+      "reading": "mal-eul ma-chin ha-neul-ui gwi-neun i-mi sae-ppal-gat-ge mul-deul-eo iss-eoss-da. geu-reon-de-do geu-neun si-seon-eul pi-ha-ji anh-ass-da. o-raen-man-e, a-ju o-raen-man-e.",
+      "en": "By the time he finished speaking, Haneul's ears had already gone bright red. And yet, this time, he didn't look away. For the first time in a long, long while."
     }
   ],
   "words": [
-    { "id": "w01", "word": "한복", "reading": "han-bok", "meaning": "Hanbok", "example": "한복을 입고 사진을 찍어요.", "example_reading": "han-bog-eul ip-go sa-jin-eul jjig-eo-yo", "example_en": "I wear a hanbok and take a photo." },
-    { "id": "w02", "word": "사진관", "reading": "sa-jin-gwan", "meaning": "Photo studio", "example": "이 사진관은 아주 오래됐어요.", "example_reading": "i sa-jin-gwan-eun a-ju o-rae-dwaess-eo-yo", "example_en": "This photo studio is very old." },
-    { "id": "w03", "word": "거울", "reading": "geo-ul", "meaning": "Mirror", "example": "거울을 보면서 옷을 입어요.", "example_reading": "geo-ul-eul bo-myeon-seo os-eul ib-eo-yo", "example_en": "I look in the mirror while getting dressed." },
-    { "id": "w04", "word": "색깔", "reading": "saek-kkal", "meaning": "Color", "example": "어떤 색깔이 좋아요?", "example_reading": "eo-tteon saek-kkal-i jo-a-yo", "example_en": "Which color do you like?" },
-    { "id": "w05", "word": "용기", "reading": "yong-gi", "meaning": "Courage", "example": "용기를 내서 말했어요.", "example_reading": "yong-gi-reul nae-seo mal-haess-eo-yo", "example_en": "I gathered the courage to speak up." }
+    { "id": "w01", "word": "어느새", "reading": "eo-neu-sae", "meaning": "At some point (unnoticed)", "example": "어느새 마음이 달라져 있었다.", "example_reading": "eo-neu-sae ma-eum-i dal-la-jyeo iss-eot-da", "example_en": "Before he knew it, his feelings had changed." },
+    { "id": "w02", "word": "인정하다", "reading": "in-jeong-ha-da", "meaning": "To admit", "example": "그는 조용히 진심을 인정했다.", "example_reading": "geu-neun jo-yong-hi jin-sim-eul in-jeong-haet-da", "example_en": "He quietly admitted his true feelings." },
+    { "id": "w03", "word": "오래전", "reading": "o-rae-jeon", "meaning": "A while ago / long ago", "example": "이미 오래전에 결정된 마음이었다.", "example_reading": "i-mi o-rae-jeon-e gyeol-jeong-doen ma-eum-i-eot-da", "example_en": "His feelings had already been decided a while ago." },
+    { "id": "w04", "word": "확실하다", "reading": "hwag-sil-ha-da", "meaning": "Certain / sure", "example": "이 마음만은 확실했다.", "example_reading": "i ma-eum-man-eun hwag-sil-haet-da", "example_en": "This feeling, at least, was certain." },
+    { "id": "w05", "word": "달라지다", "reading": "dal-la-ji-da", "meaning": "To change / become different", "example": "그날 이후로 모든 게 달라졌다.", "example_reading": "geu-nal i-hu-ro mo-deun ge dal-la-jyeot-da", "example_en": "Everything changed after that day." }
   ],
   "sentences": [
-    { "id": "s01", "ko": "한복을 입고 사진관에 가요.", "reading": "han-bog-eul ip-go sa-jin-gwan-e ga-yo", "en": "I go to the photo studio wearing hanbok." },
-    { "id": "s02", "ko": "거울 앞에서 한복을 입어봐요.", "reading": "geo-ul ap-e-seo han-bog-eul ib-eo-bwa-yo", "en": "I try on the hanbok in front of the mirror." },
-    { "id": "s03", "ko": "어떤 색깔 한복이 좋아요?", "reading": "eo-tteon saek-kkal han-bog-i jo-a-yo", "en": "Which color hanbok do you like?" },
-    { "id": "s04", "ko": "용기를 내서 먼저 말을 걸었어요.", "reading": "yong-gi-reul nae-seo meon-jeo mal-eul geol-eoss-eo-yo", "en": "I gathered courage and spoke to you first." },
-    { "id": "s05", "ko": "사진관 거울에 우리 둘이 비쳐요.", "reading": "sa-jin-gwan geo-ul-e u-ri dul-i bi-chyeo-yo", "en": "The two of us are reflected in the photo studio's mirror." }
+    { "id": "s01", "ko": "어느새 마음이 완전히 달라져 있었다.", "reading": "eo-neu-sae ma-eum-i wan-jeon-hi dal-la-jyeo iss-eot-da", "en": "Before he knew it, his feelings had changed completely." },
+    { "id": "s02", "ko": "그는 처음으로 진심을 인정했다.", "reading": "geu-neun cheo-eum-eu-ro jin-sim-eul in-jeong-haet-da", "en": "He admitted his true feelings for the first time." },
+    { "id": "s03", "ko": "이미 오래전에 정해진 마음이었다.", "reading": "i-mi o-rae-jeon-e jeong-hae-jin ma-eum-i-eot-da", "en": "His feelings had already been settled a while ago." },
+    { "id": "s04", "ko": "이 마음 하나는 확실했다.", "reading": "i ma-eum ha-na-neun hwag-sil-haet-da", "en": "This one feeling, at least, was certain." },
+    { "id": "s05", "ko": "그날 이후 모든 게 달라졌다.", "reading": "geu-nal i-hu mo-deun ge dal-la-jyeot-da", "en": "Everything changed after that day." }
   ]
 }

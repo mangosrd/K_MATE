@@ -1,93 +1,98 @@
 {
   "id": "sp-rom-sunwoo-10",
   "character_id": "sunwoo",
-  "title": "우리 바다처럼 변치 말자",
-  "emoji": "⚓",
+  "title": "우리 이제 이런 사이다",
+  "emoji": "🌅",
   "level": "intermediate_advanced",
   "story": [
     {
-      "text": "바다는 몇 년이 지나도 잘 안 '변하네', 그자?",
-      "reading": "ba-da-neun myeot nyeon-i ji-na-do jal an byeon-ha-ne, geu-ja?",
-      "en": "The sea doesn't really change even after years pass, does it?",
+      "text": "이른 아침 해운대 백사장, 파도 소리만 낮게 깔린 시간이다. 그날 공항에서 우연히 마주쳤던 게 벌써 몇 달 전 일이 됐다.",
+      "reading": "i-reun a-chim hae-un-dae baek-sa-jang, pa-do so-ri-man naj-ge kkal-lin si-gan-i-da. geu-nal gong-hang-e-seo u-yeon-hi ma-ju-chyeot-deon ge beol-sseo myeot dal jeon il-i dwaet-da.",
+      "en": "Early morning at Haeundae's sandy beach, only the low sound of waves fills the air. That day we ran into each other by chance at the airport already feels like months ago."
+    },
+    {
+      "text": "\"아직도 니 손 잡을 때마다 살짝 '설렌다'. 사귄 지가 언젠데 아직도 이라노, 내가.\"",
+      "reading": "a-jik-do ni son jab-eul ttae-ma-da sal-jjak seol-len-da. sa-gwin ji-ga eon-jen-de a-jik-do i-ra-no, nae-ga.",
+      "en": "\"My heart still flutters a little every time I hold your hand. We've been together for a while now, why am I still like this.\"",
       "highlight_word_id": "w01"
     },
     {
-      "text": "우리도 이 바다처럼 '한결같이' 이래 지내면 좋겠다. 내 비행기 좋아하는 마음이랑 똑같이, 변함없이.",
-      "reading": "u-ri-do i ba-da-cheo-reom han-gyeol-gat-i i-rae ji-nae-myeon jo-ket-da. nae bi-haeng-gi jo-a-ha-neun ma-eum-i-rang ttok-gat-i, byeon-ham-eop-si.",
-      "en": "I hope we can stay consistent like this sea, just like this. Same as how I feel about planes — unwavering.",
+      "text": "손을 맞잡고 걷는 게 이제는 제법 '익숙해졌는데도', 그의 귀는 여전히 붉어질 때가 많다.",
+      "reading": "son-eul maj-jap-go geot-neun ge i-je-neun je-beop ik-suk-hae-jyeot-neun-de-do, geu-ui gwi-neun yeo-jeon-hi bulg-eo-jil ttae-ga man-ta.",
+      "en": "Even though walking hand in hand has become fairly natural by now, his ears still turn red more often than not.",
       "highlight_word_id": "w02"
     },
     {
-      "text": "그래서 내가 오늘 하나 '약속하고' 싶은 게 있다.",
-      "reading": "geu-rae-seo nae-ga o-neul ha-na yak-sok-ha-go sip-eun ge it-da.",
-      "en": "So there's one thing I want to promise today.",
+      "text": "\"니 춥나? 이거 걸치라.\" 겉옷을 벗어 어깨에 걸쳐주는 손길이 제법 '다정하다'. \"…아니, 딱히 다정하게 굴려던 건 아이고, 그냥.\"",
+      "reading": "ni chup-na? i-geo geol-chi-ra. geot-ot-eul beos-eo eo-kkae-e geol-chyeo-ju-neun son-gil-i je-beop da-jeong-ha-da. …a-ni, ttak-hi da-jeong-ha-ge gul-lyeo-deon geon a-i-go, geu-nyang.",
+      "en": "\"Are you cold? Here, put this on.\" He takes off his jacket and drapes it over my shoulders, the gesture quite affectionate. \"…No, I wasn't specifically trying to be sweet about it, just.\"",
       "highlight_word_id": "w03"
     },
     {
-      "text": "저 '파도'처럼 말이다, 밀려왔다 나갔다 안 하고, 계속 니 곁에 있을 거다. 장난은 계속 칠 거지만.",
-      "reading": "jeo pa-do-cheo-reom mal-i-da, mil-lyeo-wat-da na-gat-da an ha-go, gye-sok ni gyeot-e it-eul geo-da. jang-nan-eun gye-sok chil geo-ji-man.",
-      "en": "Like those waves, I won't come and go — I'll just keep staying by your side. Though I'll definitely keep teasing you.",
+      "text": "\"장난은 여전히 칠 거다, 걱정 마라. 그건 못 고친다 내가. 그래도 이런 것도 좀 챙겨줄 줄 안다, 요즘은.\"",
+      "reading": "jang-nan-eun yeo-jeon-hi chil geo-da, geok-jeong ma-ra. geu-geon mot go-chin-da nae-ga. geu-rae-do i-reon geot-do jom chaeng-gyeo-jul jul an-da, yo-jeum-eun.",
+      "en": "\"I'll still tease you plenty, don't worry. Can't fix that about myself. But these days I've also learned to take care of you like this a bit.\""
+    },
+    {
+      "text": "\"비행기 좋아하는 마음도, 니 좋아하는 마음도 다 '변함없다', 내는. 그건 하나는 확실하게 약속한다.\"",
+      "reading": "bi-haeng-gi jo-a-ha-neun ma-eum-do, ni jo-a-ha-neun ma-eum-do da byeon-ham-eop-da, nae-neun. geu-geon ha-na-neun hwak-sil-ha-ge yak-sok-han-da.",
+      "en": "\"How I feel about planes, how I feel about you — both are unchanging for me. That much, at least, I can promise for certain.\"",
       "highlight_word_id": "w04"
     },
     {
-      "text": "앞으로도 계속 이래 '함께하자', 장난치고 놀리면서. 얼굴 빨개지는 것도 아직 안 고쳐졌지만 그것도 그대로 데리고 가께.",
-      "reading": "ap-eu-ro-do gye-sok i-rae ham-kke-ha-ja, jang-nan-chi-go nol-li-myeon-seo. eol-gul ppal-gae-ji-neun geot-do a-jik an go-chyeo-jyeot-ji-man geu-geot-do geu-dae-ro de-ri-go ga-kke.",
-      "en": "Let's keep being together like this, teasing and joking around. My face still turns red without fail, but I'll just bring that along too.",
+      "text": "'나란히' 앉아 떠오르는 해를 바라보는 이 순간이, 예전 그 어떤 장난보다도 편안하다.",
+      "reading": "na-ran-hi anj-a tteo-o-reu-neun hae-reul ba-ra-bo-neun i sun-gan-i, ye-jeon geu eo-tteon jang-nan-bo-da-do pyeon-an-ha-da.",
+      "en": "Sitting side by side, watching the sun rise, this moment feels more at ease than any joke he's ever thrown my way.",
       "highlight_word_id": "w05"
     },
     {
-      "text": "해운대에서 처음 만났던 것처럼, 여서 다시 약속한다.",
-      "reading": "hae-un-dae-e-seo cheo-eum man-nat-deon geot-cheo-reom, yeo-seo da-si yak-sok-han-da.",
-      "en": "Just like when we first met at Haeundae, I'm making this promise again, right here."
-    },
-    {
-      "text": "단어는 다 챙겼제? 마지막으로 대화 상황 문제도 있으니까 끝까지 잘 풀어봐라. 고생했다, 진짜.",
+      "text": "\"단어는 다 챙겼제? 마지막으로 대화 상황 문제도 있으니까 끝까지 잘 풀어봐라. 고생했다, 진짜.\"",
       "reading": "dan-eo-neun da chaeng-gyeot-je? ma-ji-mak-eu-ro dae-hwa sang-hwang mun-je-do it-eu-ni-kka kkeut-kka-ji jal pul-eo-bwa-ra. go-saeng-haet-da, jin-jja.",
-      "en": "Got all the words down? There's a final conversation question too, so finish it up well. You did great, seriously."
+      "en": "\"Got all the words down? There's a final conversation question too, so finish it up well. You did great, seriously.\""
     }
   ],
   "words": [
-    { "id": "w01", "word": "변하다", "reading": "byeon-ha-da", "meaning": "To change", "example": "시간이 지나도 그의 마음은 변하지 않았다.", "example_reading": "si-gan-i ji-na-do geu-ui ma-eum-eun byeon-ha-ji an-at-da", "example_en": "His feelings didn't change even as time passed." },
-    { "id": "w02", "word": "한결같다", "reading": "han-gyeol-gat-da", "meaning": "To be consistent, unwavering", "example": "그는 언제나 한결같은 사람이다.", "example_reading": "geu-neun eon-je-na han-gyeol-gat-eun sa-ram-i-da", "example_en": "He is always a consistent person." },
-    { "id": "w03", "word": "약속하다", "reading": "yak-sok-ha-da", "meaning": "To promise", "example": "우리는 다시 만나기로 약속했다.", "example_reading": "u-ri-neun da-si man-na-gi-ro yak-sok-haet-da", "example_en": "We promised to meet again." },
-    { "id": "w04", "word": "파도", "reading": "pa-do", "meaning": "Wave", "example": "파도가 끊임없이 밀려왔다.", "example_reading": "pa-do-ga kkeun-im-eop-si mil-lyeo-wat-da", "example_en": "The waves kept rolling in endlessly." },
-    { "id": "w05", "word": "함께하다", "reading": "ham-kke-ha-da", "meaning": "To be together, share life together", "example": "이 두 사람은 오랫동안 함께해 왔다.", "example_reading": "i du sa-ram-eun o-raet-dong-an ham-kke-hae wat-da", "example_en": "These two have been together for a long time." }
+    { "id": "w01", "word": "설레다", "reading": "seol-le-da", "meaning": "To flutter, feel excited/nervous", "example": "그를 볼 때마다 마음이 설렌다.", "example_reading": "geu-reul bol ttae-ma-da ma-eum-i seol-len-da", "example_en": "My heart flutters every time I see him." },
+    { "id": "w02", "word": "익숙해지다", "reading": "ik-suk-hae-ji-da", "meaning": "To become used to, grow accustomed", "example": "이제는 그의 사투리에 익숙해졌다.", "example_reading": "i-je-neun geu-ui sa-tu-ri-e ik-suk-hae-jyeot-da", "example_en": "I've grown used to his dialect by now." },
+    { "id": "w03", "word": "다정하다", "reading": "da-jeong-ha-da", "meaning": "To be affectionate, warm", "example": "그는 항상 다정하게 나를 챙긴다.", "example_reading": "geu-neun hang-sang da-jeong-ha-ge na-reul chaeng-gin-da", "example_en": "He always takes care of me so warmly." },
+    { "id": "w04", "word": "변함없다", "reading": "byeon-ham-eop-da", "meaning": "To be unchanging, constant", "example": "몇 년이 지나도 그의 마음은 변함없다.", "example_reading": "myeot nyeon-i ji-na-do geu-ui ma-eum-eun byeon-ham-eop-da", "example_en": "Even after years, his feelings remain unchanging." },
+    { "id": "w05", "word": "나란히", "reading": "na-ran-hi", "meaning": "Side by side", "example": "우리는 나란히 앉아 바다를 봤다.", "example_reading": "u-ri-neun na-ran-hi anj-a ba-da-reul bwat-da", "example_en": "We sat side by side and watched the sea." }
   ],
   "sentences": [
-    { "id": "s01", "ko": "그의 마음은 시간이 지나도 변하지 않았다.", "reading": "geu-ui ma-eum-eun si-gan-i ji-na-do byeon-ha-ji an-at-da", "en": "His feelings didn't change even as time passed." },
-    { "id": "s02", "ko": "그는 언제나 한결같은 사람이었다.", "reading": "geu-neun eon-je-na han-gyeol-gat-eun sa-ram-i-eot-da", "en": "He was always a consistent person." },
-    { "id": "s03", "ko": "우리는 다시 만나기로 약속했다.", "reading": "u-ri-neun da-si man-na-gi-ro yak-sok-haet-da", "en": "We promised to meet again." },
-    { "id": "s04", "ko": "파도가 끊임없이 밀려왔다.", "reading": "pa-do-ga kkeun-im-eop-si mil-lyeo-wat-da", "en": "The waves kept rolling in endlessly." },
-    { "id": "s05", "ko": "우리는 앞으로도 함께하기로 했다.", "reading": "u-ri-neun ap-eu-ro-do ham-kke-ha-gi-ro haet-da", "en": "We decided to be together going forward." }
+    { "id": "s01", "ko": "오랜 시간이 지나도 그를 볼 때마다 설렌다.", "reading": "o-raen si-gan-i ji-na-do geu-reul bol ttae-ma-da seol-len-da", "en": "Even after a long time, my heart flutters every time I see him." },
+    { "id": "s02", "ko": "이제는 그의 장난스러운 말투에 익숙해졌다.", "reading": "i-je-neun geu-ui jang-nan-seu-reo-un mal-tu-e ik-suk-hae-jyeot-da", "en": "I've grown used to his teasing way of talking by now." },
+    { "id": "s03", "ko": "그는 겉으로는 무뚝뚝해도 속은 다정한 사람이다.", "reading": "geu-neun geot-eu-ro-neun mu-ttuk-ttuk-hae-do sok-eun da-jeong-han sa-ram-i-da", "en": "He may seem blunt on the outside, but he's affectionate underneath." },
+    { "id": "s04", "ko": "그의 마음은 처음부터 지금까지 변함없다.", "reading": "geu-ui ma-eum-eun cheo-eum-bu-teo ji-geum-kka-ji byeon-ham-eop-da", "en": "His feelings have been unchanging from the start until now." },
+    { "id": "s05", "ko": "우리는 해가 뜨는 걸 나란히 앉아 지켜봤다.", "reading": "u-ri-neun hae-ga tteu-neun geol na-ran-hi anj-a ji-kyeo-bwat-da", "en": "We sat side by side and watched the sun rise." }
   ],
   "dialogues": [
     {
       "id": "d01",
       "turns": [
-        { "speaker": "선우", "text": "여서 처음 니 만났을 때 기억나나? 그때부터 지금까지 참 많이 왔다.", "reading": "yeo-seo cheo-eum ni man-nat-eul ttae gi-eok-na-na? geu-ttae-bu-teo ji-geum-kka-ji cham man-i wat-da.", "en": "Do you remember when we first met here? We've come a long way since then." },
-        { "speaker": "승객", "text": "맞다, 그때 니는 맨날 나 놀리기만 했었는데.", "reading": "mat-da, geu-ttae ni-neun maen-nal na nol-li-gi-man haet-eon-neun-de.", "en": "Right, back then you only ever teased me." },
-        { "speaker": "선우", "text": "그거는 지금도 똑같다. 그래도 마음은 그때부터 한결같았다. 비행기 좋아하는 마음이랑 똑같이 안 변한다, 이거는.", "reading": "geu-geo-neun ji-geum-do ttok-gat-da. geu-rae-do ma-eum-eun geu-ttae-bu-teo han-gyeol-gat-at-da. bi-haeng-gi jo-a-ha-neun ma-eum-i-rang ttok-gat-i an byeon-han-da, i-geo-neun.", "en": "That part's still the same now. But my heart's been consistent since back then. It doesn't change, just like how I feel about planes." },
-        { "speaker": "승객", "text": "그럼 앞으로도 계속 이렇게 지내는 거제?", "reading": "geu-reom ap-eu-ro-do gye-sok i-reo-ke ji-nae-neun geo-je?", "en": "So we'll keep going on like this from now on too, right?" }
+        { "speaker": "승객", "text": "생각해보면 그날 공항에서 안 마주쳤으면 우리 어떻게 됐을까?", "reading": "saeng-gak-hae-bo-myeon geu-nal gong-hang-e-seo an ma-ju-chyeot-eu-myeon u-ri eo-tteo-ke dwaet-eul-kka?", "en": "If we hadn't run into each other at the airport that day, thinking about it, what would've happened to us?" },
+        { "speaker": "선우", "text": "몰라, 근데 어차피 마주쳤을 거다. 이게 인연이면 어떻게든 됐겠지.", "reading": "mol-la, geun-de eo-cha-pi ma-ju-chyeot-eul geo-da. i-ge in-yeon-i-myeon eo-tteo-ke-deun dwaet-get-ji.", "en": "I don't know, but we probably would've run into each other anyway. If it's fate, it would've worked out somehow." },
+        { "speaker": "승객", "text": "그때 유니폼도 안 갈아입고 뛰어왔잖아.", "reading": "geu-ttae yu-ni-pom-do an gal-a-ip-go ttwi-eo-wat-jan-a.", "en": "You ran over back then without even changing out of your uniform." },
+        { "speaker": "선우", "text": "그거는… 그만 좀 놀려라. 벌써 몇 달째 우려먹노, 그 얘기.", "reading": "geu-geo-neun… geu-man jom nol-lyeo-ra. beol-sseo myeot dal-jjae u-ryeo-meok-no, geu yae-gi.", "en": "That's… okay, quit teasing me about it already. You've been milking that story for months now." }
       ],
-      "question": "이 대화에서 두 사람의 관계에 대해 알 수 있는 것은 무엇인가요?",
-      "question_en": "What does this conversation reveal about the couple's relationship?",
-      "correct_answer": "오랜 시간 변하지 않은 마음으로 계속 함께하기로 한 관계",
-      "options": ["오랜 시간 변하지 않은 마음으로 계속 함께하기로 한 관계", "곧 헤어지기로 한 관계", "이제 막 처음 만난 관계", "서로를 오해하고 있는 관계"],
-      "explanation": "두 사람은 처음 만났을 때부터 지금까지의 시간을 돌아보며, 변치 않은 마음으로 앞으로도 함께하기로 다짐하고 있습니다."
+      "question": "이 대화에서 두 사람이 이야기하고 있는 것은 무엇인가요?",
+      "question_en": "What are the two talking about in this conversation?",
+      "correct_answer": "처음 공항에서 우연히 마주쳤던 순간을 추억하며 이야기하고 있다",
+      "options": ["처음 공항에서 우연히 마주쳤던 순간을 추억하며 이야기하고 있다", "다음 여행지를 새로 정하고 있다", "공항에 다시 갈 계획을 세우고 있다", "선우의 근무 일정을 확인하고 있다"],
+      "explanation": "두 사람은 이 관계가 시작된 공항에서의 첫 만남을 추억하며 다정하게 이야기를 나누고 있습니다."
     },
     {
       "id": "d02",
       "turns": [
-        { "speaker": "선우", "text": "저 파도 봐라. 계속 왔다 갔다 해도 결국 여 바다는 그대로 있제.", "reading": "jeo pa-do bwa-ra. gye-sok wat-da gat-da hae-do gyeol-guk yeo ba-da-neun geu-dae-ro it-je.", "en": "Look at those waves. Even though they keep coming and going, in the end this sea stays just the same." },
-        { "speaker": "승객", "text": "그러네. 신기하게 안 변한다.", "reading": "geu-reo-ne. sin-gi-ha-ge an byeon-han-da.", "en": "You're right. It's strange how it doesn't change." },
-        { "speaker": "선우", "text": "우리도 저래 살자. 가끔 투닥거려도, 내가 장난치다가 또 얼굴 빨개져도, 결국 서로 곁에 있는 거로.", "reading": "u-ri-do jeo-rae sal-ja. ga-kkeum tu-dak-geo-ryeo-do, nae-ga jang-nan-chi-da-ga tto eol-gul ppal-gae-jyeo-do, gyeol-guk seo-ro gyeot-e it-neun geo-ro.", "en": "Let's live like that too. Even if we bicker sometimes, even if I joke around and my face turns red again, in the end we're by each other's side." },
-        { "speaker": "승객", "text": "좋다. 우리 바다처럼 변치 말자.", "reading": "jo-ta. u-ri ba-da-cheo-reom byeon-chi mal-ja.", "en": "Good. Let's not change, just like the sea." }
+        { "speaker": "선우", "text": "이래 나란히 앉아 있으니까 좋다, 그냥.", "reading": "i-rae na-ran-hi anj-a it-eu-ni-kka jo-ta, geu-nyang.", "en": "Just sitting here side by side like this, it's nice." },
+        { "speaker": "승객", "text": "장난기 어디 갔어? 오늘따라 순둥순둥하네.", "reading": "jang-nan-gi eo-di gass-eo? o-neul-tta-ra sun-dung-sun-dung-ha-ne.", "en": "Where'd your playful side go? You're being extra gentle today." },
+        { "speaker": "선우", "text": "장난은 이따 실컷 칠 거니까 걱정 마라. 지금은 그냥 이 순간이 좋아서 그렇다.", "reading": "jang-nan-eun i-tta sil-keot chil geo-ni-kka geok-jeong ma-ra. ji-geum-eun geu-nyang i sun-gan-i jo-a-seo geu-ro-ta.", "en": "I'll tease you plenty later, don't worry. Right now I just like this moment, that's all." },
+        { "speaker": "승객", "text": "그런 말은 또 잘하네.", "reading": "geu-reon mal-eun tto jal-ha-ne.", "en": "You're pretty good at saying stuff like that too, huh." }
       ],
-      "question": "이 대화가 전달하고자 하는 의미는 무엇인가요?",
-      "question_en": "What meaning does this conversation convey?",
-      "correct_answer": "파도처럼 변함없이 서로의 곁을 지키자는 다짐",
-      "options": ["파도처럼 변함없이 서로의 곁을 지키자는 다짐", "바다 여행을 자주 가자는 약속", "다투지 말고 조용히 살자는 다짐", "부산을 떠나 다른 곳에 살자는 계획"],
-      "explanation": "변하지 않는 바다에 빗대어, 앞으로도 다투거나 선우가 장난스러운 모습을 보이더라도 결국 서로의 곁을 지키겠다는 다짐을 나누는 장면입니다."
+      "question": "이 대화가 보여주는 두 사람의 관계는 무엇인가요?",
+      "question_en": "What does this conversation show about their relationship?",
+      "correct_answer": "장난기는 여전하지만 편안하고 다정해진 연인 사이",
+      "options": ["장난기는 여전하지만 편안하고 다정해진 연인 사이", "다시 서먹해진 친구 사이", "곧 헤어질 위기의 사이", "아직 서로의 마음을 확인하지 못한 사이"],
+      "explanation": "선우 특유의 장난기는 여전하지만, 예전보다 훨씬 편안하고 다정해진 두 사람의 관계를 보여줍니다."
     }
   ]
 }

@@ -1,62 +1,62 @@
 {
   "id": "sp-rom-kyuhyun-06",
   "character_id": "kyuhyun",
-  "title": "헛기침으로 얼버무린 진심",
-  "emoji": "😳",
+  "title": "발이 알아서 그리 가던데요",
+  "emoji": "😅",
   "story": [
     {
-      "text": "청계천 물소리 들으면서 걸으니까 좋네요. ...저 지금 좀 이상한 말 해도 돼요?",
-      "reading": "cheong-gye-cheon mul-so-ri deul-eu-myeon-seo geol-eu-ni-kka jo-eun-ne-yo. ...jeo ji-geum jom i-sang-han mal hae-do dwae-yo?",
-      "en": "It's nice walking here listening to the Cheonggyecheon stream. ...can I say something a little strange right now?"
-    },
-    {
-      "text": "아가씨가 제 손을 살짝 잡았을 때, 저도 모르게 '헛기침'이 나오더라고요.",
-      "reading": "a-ga-ssi-ga je son-eul sal-jjak jab-at-eul ttae, jeo-do mo-reu-ge heot-gi-chim-i na-o-deo-ra-go-yo.",
-      "en": "When you lightly held my hand just now, an 'ahem' just slipped out of me without me realizing.",
+      "text": "며칠 사이, 나는 이상한 걸 눈치챘다. 내가 가는 곳마다 신기하게 규현과 마주쳤다.",
+      "reading": "myeo-chil sa-i, na-neun i-sang-han geol nun-chi-chaet-da. nae-ga ga-neun got-ma-da sin-gi-ha-ge gyu-hyeon-gwa ma-ju-chyeot-da.",
+      "en": "Over the past few days, I noticed something strange. Wherever I went, Kyuhyun somehow kept showing up.",
       "highlight_word_id": "w01"
     },
     {
-      "text": "이런 '산책', 아가씨랑은 처음이라 그런지 자꾸 심장이 이상하게 뛰네요.",
-      "reading": "i-reon san-chaek, a-ga-ssi-rang-eun cheo-eum-i-ra geu-reon-ji ja-kku sim-jang-i i-sang-ha-ge ttwi-ne-yo.",
-      "en": "Maybe it's because this is the first 'walk' I've taken with you, but my heart keeps beating strangely.",
+      "text": "홍대 골목에서도, 광장시장 앞에서도, 심지어 어제는 내가 예약한 게스트하우스 근처 편의점에서도 그를 봤다.",
+      "reading": "hong-dae gol-mok-e-seo-do, gwang-jang-si-jang ap-e-seo-do, sim-ji-eo eo-je-neun nae-ga ye-yak-han ge-seu-teu-ha-u-seu geun-cheo pyeon-ui-jeom-e-seo-do geu-reul bwat-da.",
+      "en": "In the alleys of Hongdae, in front of Gwangjang Market, and just yesterday even at a convenience store near the guesthouse I'd booked — I kept seeing him."
+    },
+    {
+      "text": "'이거 진짜 우연이에요? 아니면… 무슨 계획이라도 있는 거예요?' 나는 팔짱을 끼고 살짝 눈을 흘겼다.",
+      "reading": "i-geo jin-jja u-yeon-i-e-yo? a-ni-myeon… mu-seun gye-hoeg-i-ra-do it-neun geo-ye-yo? na-neun pal-jjang-eul kki-go sal-jjak nun-eul heul-gyeot-da.",
+      "en": "\"Is this really a coincidence? Or... do you have some kind of plan?\" I crossed my arms and shot him a suspicious look.",
       "highlight_word_id": "w02"
     },
     {
-      "text": "왜 자꾸 제 '얼굴'만 쳐다보세요. 그렇게 보면 저 진짜 이상한 표정 지을 것 같은데.",
-      "reading": "wae ja-kku je eol-gul-man cheo-da-bo-se-yo. geu-reo-ke bo-myeon jeo jin-jja i-sang-han pyo-jeong ji-eul geot gat-eun-de.",
-      "en": "Why do you keep staring at my 'face' like that. If you keep it up, I'm going to make a really weird expression.",
+      "text": "그는 잠깐 멈칫하더니, 이내 특유의 능청스러운 미소를 지었다. '글쎄요, 제 발이 요즘 이상하게 이쪽으로만 오네요.'",
+      "reading": "geu-neun jam-kkan meom-chit-ha-deo-ni, i-nae teuk-yu-ui neung-cheong-seu-reo-un mi-so-reul ji-eot-da. geul-sse-yo, je bal-i yo-jeum i-sang-ha-ge i-jjok-eu-ro-man o-ne-yo.",
+      "en": "He paused for a second, then quickly slipped back into his signature smooth, unbothered smile. \"Hmm, weird — my feet just keep bringing me this way lately.\"",
       "highlight_word_id": "w03"
     },
     {
-      "text": "아, 지금 저 완전 '당황'한 거 티 나죠? 능글맞은 규현 기장도 이럴 때가 있네요. ...근데 방금 농담으로 넘긴 거, 사실 조금 후회되네요.",
-      "reading": "a, ji-geum jeo wan-jeon dang-hwang-han geo ti na-jyo? neung-geul-maj-eun gyu-hyeon gi-jang-do i-reol ttae-ga it-ne-yo. ...geun-de bang-geum nong-dam-eu-ro neom-gin geo, sa-sil jo-geum hu-hoe-doe-ne-yo.",
-      "en": "Ah, I'm obviously completely 'flustered' right now, aren't I? Turns out even smooth Captain Kyuhyun has moments like this. ...though, honestly, I kind of regret joking my way out of it just now.",
+      "text": "'말도 안 되는 핑계라는 거, 저도 알아요. 근데 딱히 더 나은 변명이 생각이 안 나서요.'",
+      "reading": "mal-do an doe-neun ping-gye-ra-neun geo, jeo-do al-a-yo. geun-de ttak-hi deo na-eun byeon-myeong-i saeng-gag-i an na-seo-yo.",
+      "en": "\"I know that's a ridiculous excuse. But I honestly can't think of a better one.\"",
       "highlight_word_id": "w04"
     },
     {
-      "text": "그런 '표정'으로 웃지 마세요. 저 진짜 이상한 소리 할 것 같단 말이에요.",
-      "reading": "geu-reon pyo-jeong-eu-ro ut-ji ma-se-yo. jeo jin-jja i-sang-han so-ri hal geot gat-dan mal-i-e-yo.",
-      "en": "Don't smile at me with that 'expression'. I feel like I'm actually going to say something silly.",
+      "text": "장난스러운 말투였지만, 그 순간 그의 눈빛엔 숨기지 못한 진심이 살짝 스쳤다. 그는 곧바로 눈을 피하며 딴청을 부렸다.",
+      "reading": "jang-nan-seu-reo-un mal-tu-yeot-ji-man, geu sun-gan geu-ui nun-bit-en sum-gi-ji mot-han jin-sim-i sal-jjak seu-chyeot-da. geu-neun got-ba-ro nun-eul pi-ha-myeo ttan-cheong-eul bu-ryeot-da.",
+      "en": "His tone was playful, but for a moment his eyes betrayed a flicker of true feeling he couldn't quite hide. He quickly looked away and pretended to be busy with something else.",
       "highlight_word_id": "w05"
     },
     {
-      "text": "크흠. 자, 이 얘기는 여기까지 하고, 오늘 배운 단어들 문제로 확인해볼까요?",
-      "reading": "keu-heum. ja, i yae-gi-neun yeo-gi-kka-ji ha-go, o-neul bae-un dan-eo-deul mun-je-ro hwa-gin-hae-bol-kka-yo?",
-      "en": "Ahem. Alright, let's stop here — shall we check today's words with some questions?"
+      "text": "뻔히 보이는 거짓말인데도, 이상하게 밉지가 않았다. 오히려, 그 서투른 발뺌이 조금 귀엽다고 생각했다.",
+      "reading": "ppeon-hi bo-i-neun geo-jit-mal-in-de-do, i-sang-ha-ge mip-ji-ga an-at-da. o-hi-ryeo, geu seo-tu-reun bal-ppaem-i jo-geum gwi-yeop-da-go saeng-gak-haet-da.",
+      "en": "It was an obvious lie, but strangely, I couldn't bring myself to be annoyed. If anything, I thought his clumsy dodge was kind of endearing."
     }
   ],
   "words": [
-    { "id": "w01", "word": "헛기침", "reading": "heot-gi-chim", "meaning": "throat-clearing, ahem", "example": "저도 모르게 헛기침이 나왔어요.", "example_reading": "jeo-do mo-reu-ge heot-gi-chim-i na-wa-sseo-yo", "example_en": "An ahem slipped out without me realizing." },
-    { "id": "w02", "word": "산책", "reading": "san-chaek", "meaning": "walk, stroll", "example": "청계천 산책은 정말 좋아요.", "example_reading": "cheong-gye-cheon san-chaek-eun jeong-mal jo-a-yo", "example_en": "A walk along Cheonggyecheon is really nice." },
-    { "id": "w03", "word": "얼굴", "reading": "eol-gul", "meaning": "face", "example": "제 얼굴이 빨개졌나요?", "example_reading": "je eol-gul-i ppal-gae-jyeon-na-yo", "example_en": "Did my face turn red?" },
-    { "id": "w04", "word": "당황", "reading": "dang-hwang", "meaning": "embarrassment, fluster", "example": "지금 완전 당황했어요.", "example_reading": "ji-geum wan-jeon dang-hwang-hae-sseo-yo", "example_en": "I'm completely flustered right now." },
-    { "id": "w05", "word": "표정", "reading": "pyo-jeong", "meaning": "expression", "example": "그 표정 진짜 귀여워요.", "example_reading": "geu pyo-jeong jin-jja gwi-yeo-wo-yo", "example_en": "That expression is really cute." }
+    { "id": "w01", "word": "눈치채다", "reading": "nun-chi-chae-da", "meaning": "to notice, realize", "example": "나는 그의 마음을 눈치챘다.", "example_reading": "na-neun geu-ui ma-eum-eul nun-chi-chaet-da", "example_en": "I noticed how he felt." },
+    { "id": "w02", "word": "계획", "reading": "gye-hoek", "meaning": "plan", "example": "이게 다 계획된 거예요?", "example_reading": "i-ge da gye-hoek-doen geo-ye-yo", "example_en": "Was all of this planned?" },
+    { "id": "w03", "word": "능청스럽다", "reading": "neung-cheong-seu-reop-da", "meaning": "to play it cool, act innocent", "example": "그는 능청스럽게 웃으며 넘어갔다.", "example_reading": "geu-neun neung-cheong-seu-reop-ge us-eu-myeo neom-eo-gat-da", "example_en": "He smoothly laughed it off." },
+    { "id": "w04", "word": "핑계", "reading": "ping-gye", "meaning": "excuse", "example": "그 핑계는 하나도 안 믿겨요.", "example_reading": "geu ping-gye-neun ha-na-do an mid-gyeo-yo", "example_en": "I don't believe that excuse at all." },
+    { "id": "w05", "word": "진심", "reading": "jin-sim", "meaning": "true feelings, sincerity", "example": "그의 눈빛에서 진심이 보였다.", "example_reading": "geu-ui nun-bit-e-seo jin-sim-i bo-yeot-da", "example_en": "I could see his true feelings in his eyes." }
   ],
   "sentences": [
-    { "id": "s01", "ko": "저도 모르게 헛기침이 나왔어요.", "reading": "jeo-do mo-reu-ge heot-gi-chim-i na-wa-sseo-yo", "en": "An ahem slipped out without me realizing." },
-    { "id": "s02", "ko": "청계천 산책은 정말 좋아요.", "reading": "cheong-gye-cheon san-chaek-eun jeong-mal jo-a-yo", "en": "A walk along Cheonggyecheon is really nice." },
-    { "id": "s03", "ko": "제 얼굴이 빨개졌나요?", "reading": "je eol-gul-i ppal-gae-jyeon-na-yo", "en": "Did my face turn red?" },
-    { "id": "s04", "ko": "지금 완전 당황했어요.", "reading": "ji-geum wan-jeon dang-hwang-hae-sseo-yo", "en": "I'm completely flustered right now." },
-    { "id": "s05", "ko": "그 표정 진짜 귀여워요.", "reading": "geu pyo-jeong jin-jja gwi-yeo-wo-yo", "en": "That expression is really cute." }
+    { "id": "s01", "ko": "나는 그의 마음을 눈치챘다.", "reading": "na-neun geu-ui ma-eum-eul nun-chi-chaet-da", "en": "I noticed how he felt." },
+    { "id": "s02", "ko": "이게 다 계획된 거예요?", "reading": "i-ge da gye-hoek-doen geo-ye-yo", "en": "Was all of this planned?" },
+    { "id": "s03", "ko": "그는 능청스럽게 웃으며 넘어갔다.", "reading": "geu-neun neung-cheong-seu-reop-ge us-eu-myeo neom-eo-gat-da", "en": "He smoothly laughed it off." },
+    { "id": "s04", "ko": "그 핑계는 하나도 안 믿겨요.", "reading": "geu ping-gye-neun ha-na-do an mid-gyeo-yo", "en": "I don't believe that excuse at all." },
+    { "id": "s05", "ko": "그의 눈빛에서 진심이 보였다.", "reading": "geu-ui nun-bit-e-seo jin-sim-i bo-yeot-da", "en": "I could see his true feelings in his eyes." }
   ]
 }

@@ -1,62 +1,62 @@
 {
   "id": "sp-rom-haneul-05",
   "character_id": "haneul",
-  "title": "왜 자꾸 챙겨주냐고 묻는다면",
-  "emoji": "🤨",
+  "title": "몰래 선 팬사인회 줄",
+  "emoji": "🕶️",
   "story": [
     {
-      "text": "…춥죠. 잠깐 여기 들어가요.",
-      "reading": "…chub-jyo. jam-kkan yeo-gi deul-eo-ga-yo.",
-      "en": "...You're cold, right. Let's step in here for a moment."
+      "text": "쉬는 날, 하늘은 평소 안 쓰던 야구모자를 눌러쓰고 마스크까지 챙겨 집을 나섰다. 거울 속 자신을 보며 그는 잠깐 멈칫했다.",
+      "reading": "swi-neun nal, ha-neul-eun pyeong-so an sseu-deon ya-gu-mo-ja-reul nul-leo-sseu-go ma-seu-keu-kka-ji chaeng-gyeo jib-eul na-seoss-da. geo-ul sog ja-sin-eul bo-myeo geu-neun jam-kkan meom-chit-haess-da.",
+      "en": "On his day off, Haneul pulled a baseball cap low over his eyes — one he never normally wore — and grabbed a mask before heading out. He paused for a moment, looking at himself in the mirror."
     },
     {
-      "text": "이 '찻집', 저 혼자 책 읽으러 가끔 와요. 조용해서.",
-      "reading": "i 'chat-jip', jeo hon-ja chaek ilg-eu-reo ga-kkeum wa-yo. jo-yong-hae-seo.",
-      "en": "I sometimes come to this 'tea house' alone to read. It's quiet.",
-      "highlight_word_id": "w01"
-    },
-    {
-      "text": "여기 앉아서 '책' 읽으면 시간 잘 가요. …오늘은 손님이 있어서 다행이지만요.",
-      "reading": "yeo-gi anj-a-seo 'chaek' ilg-eu-myeon si-gan jal ga-yo. …o-neul-eun son-nim-i iss-eo-seo da-haeng-i-ji-man-yo.",
-      "en": "Sitting here reading a 'book', time flies. ...Though today I'm glad you're here instead.",
-      "highlight_word_id": "w02"
-    },
-    {
-      "text": "이 '차' 마셔봐요. 여기 대추차가 유명해요.",
-      "reading": "i 'cha' ma-syeo-bwa-yo. yeo-gi dae-chu-cha-ga yu-myeong-hae-yo.",
-      "en": "Try this 'tea'. Their jujube tea is famous here.",
-      "highlight_word_id": "w03"
-    },
-    {
-      "text": "자꾸 챙겨준다고 묻는다면… 그냥 '마음'이 그래요. 별 뜻 없어요.",
-      "reading": "ja-kku chaeng-gyeo-jun-da-go mud-neun-da-myeon… geu-nyang 'ma-eum'i geu-rae-yo. byeol tteus eobs-eo-yo.",
-      "en": "If you ask why I keep looking out for you... it's just how my 'heart' is. No special meaning.",
-      "highlight_word_id": "w04"
-    },
-    {
-      "text": "…왜 그렇게 '미소' 지어요. 사람 이상하게 만들지 말고.",
-      "reading": "…wae geu-reoh-ge 'mi-so' ji-eo-yo. sa-ram i-sang-ha-ge man-deul-ji mal-go.",
-      "en": "...Why are you 'smiling' like that. Don't make me feel strange.",
+      "text": "'…이게 뭐 하는 짓이지.' 낮게 중얼거리면서도, 그는 발걸음을 멈추지 않았다. 스스로도 어이없는 변장이라고 생각하면서.",
+      "reading": "'…i-ge mwo ha-neun jis-i-ji.' naj-ge jung-eol-geo-ri-myeon-seo-do, geu-neun bal-geol-eum-eul meom-chu-ji anh-ass-da. seu-seu-ro-do eo-i-eobs-neun byeon-jang-i-ra-go saeng-gag-ha-myeon-seo.",
+      "en": "'...What am I even doing.' He muttered under his breath, but his feet kept moving anyway — even as he thought his own disguise was faintly ridiculous.",
       "highlight_word_id": "w05"
     },
     {
-      "text": "…됐어요, 그만 물어봐요. 차 식기 전에 마셔요.",
-      "reading": "…dwaess-eo-yo, geu-man mul-eo-bwa-yo. cha sik-gi jeon-e ma-syeo-yo.",
-      "en": "...Enough, stop asking. Drink the tea before it gets cold."
+      "text": "서점 앞에는 이미 긴 줄이 늘어서 있었다. 오늘, 이곳에서 그녀의 팬사인회가 열린다는 걸 그는 우연히 알게 됐다.",
+      "reading": "seo-jeom ap-e-neun i-mi gin jul-i neul-eo-seo iss-eoss-da. o-neul, i-gos-e-seo geu-nyeo-ui paen-sa-in-hoe-ga yeol-lin-da-neun geol geu-neun u-yeon-hi al-ge dwaess-da.",
+      "en": "A long line had already formed in front of the bookstore. He'd found out, entirely by chance, that her fan-signing event was being held there today.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "태어나서 처음 서보는 줄이었다. 앞에 선 사람이 응원봉을 흔들며 말했다. '저 세 시간 전부터 기다렸어요!' 하늘은 그 열정에 조용히 압도됐다.",
+      "reading": "tae-eo-na-seo cheo-eum seo-bo-neun jul-i-eoss-da. ap-e seon sa-ram-i eung-won-bong-eul heun-deul-myeo mal-haess-da. 'jeo se si-gan jeon-bu-teo gi-da-ryeoss-eo-yo!' ha-neul-eun geu yeol-jeong-e jo-yong-hi ab-do-dwaess-da.",
+      "en": "It was the first line he'd ever stood in, in his entire life. The person ahead of him was waving a light stick. 'I've been waiting since three hours ago!' Haneul was quietly overwhelmed by that kind of devotion.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "드디어 차례가 왔을 때, 그는 뭐라 말해야 할지 몰라 그저 어색하게 서 있었다. '…어, 저기…' 평소의 그답지 않게 말을 더듬었다.",
+      "reading": "deu-di-eo cha-rye-ga wass-eul ttae, geu-neun mwo-ra mal-hae-ya hal-ji mol-la geu-jeo eo-saeg-ha-ge seo iss-eoss-da. '…eo, jeo-gi…' pyeong-so-ui geu-dap-ji anh-ge mal-eul deo-deum-eoss-da.",
+      "en": "When his turn finally came, he had no idea what to say and just stood there, painfully awkward. '...Um, so...' He stammered, entirely unlike his usual self.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "마스크 너머로 자신을 알아본 손님이 눈을 크게 떴다. '…여긴 어떻게…' 하늘은 시선을 피하며 앨범을 내밀었다. '사인이나 좀, 해줘요.'",
+      "reading": "ma-seu-keu neo-meo-ro ja-sin-eul al-a-bon son-nim-i nun-eul keu-ge tteoss-da. '…yeo-gin eo-tteoh-ge…' ha-neul-eun si-seon-eul pi-ha-myeo ael-beom-eul nae-mil-eoss-da. 'sa-in-i-na jom, hae-jwo-yo.'",
+      "en": "Recognizing him even behind the mask, she widened her eyes. '...How are you even here—' Haneul avoided her gaze and pushed the album forward. 'Just — give me an autograph, would you.'",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "앨범을 받아 든 손이 미세하게 떨렸다. 밖으로 나와 모자를 벗을 때까지, 하늘의 귀는 계속 빨갛게 물들어 있었다.",
+      "reading": "ael-beom-eul bad-a deun son-i mi-se-ha-ge tteol-lyeoss-da. bakk-eu-ro na-wa mo-ja-reul beos-eul ttae-kka-ji, ha-neul-ui gwi-neun gye-sok ppal-gat-ge mul-deul-eo iss-eoss-da.",
+      "en": "The hand holding the signed album trembled, ever so slightly. All the way outside, until he finally pulled off the cap, Haneul's ears stayed a deep, stubborn red."
     }
   ],
   "words": [
-    { "id": "w01", "word": "찻집", "reading": "chat-jip", "meaning": "Tea house", "example": "이 찻집은 분위기가 좋아요.", "example_reading": "i chat-jib-eun bun-wi-gi-ga jo-a-yo", "example_en": "This tea house has a nice atmosphere." },
-    { "id": "w02", "word": "책", "reading": "chaek", "meaning": "Book", "example": "여기서 책 읽는 걸 좋아해요.", "example_reading": "yeo-gi-seo chaek ilg-neun geol jo-a-hae-yo", "example_en": "I like reading books here." },
-    { "id": "w03", "word": "차", "reading": "cha", "meaning": "Tea", "example": "따뜻한 차 한잔 마셔요.", "example_reading": "tta-tteut-han cha han-jan ma-syeo-yo", "example_en": "Let's have a warm cup of tea." },
-    { "id": "w04", "word": "마음", "reading": "ma-eum", "meaning": "Heart / Mind", "example": "제 마음을 알아줬으면 좋겠어요.", "example_reading": "je ma-eum-eul al-a-jwoss-eu-myeon jo-ket-seo-yo", "example_en": "I wish you'd understand my heart." },
-    { "id": "w05", "word": "미소", "reading": "mi-so", "meaning": "Smile", "example": "그 미소가 참 예뻐요.", "example_reading": "geu mi-so-ga cham ye-ppeo-yo", "example_en": "That smile is really pretty." }
+    { "id": "w01", "word": "팬사인회", "reading": "paen-sa-in-hoe", "meaning": "Fan-signing event", "example": "오늘 팬사인회에 처음 가봤다.", "example_reading": "o-neul paen-sa-in-hoe-e cheo-eum ga-bwat-da", "example_en": "I went to a fan-signing event for the first time today." },
+    { "id": "w02", "word": "줄", "reading": "jul", "meaning": "Line / queue", "example": "줄이 서점 밖까지 이어졌다.", "example_reading": "jul-i seo-jeom bakk-kka-ji i-eo-jyeot-da", "example_en": "The line stretched all the way outside the bookstore." },
+    { "id": "w03", "word": "어색하다", "reading": "eo-saeg-ha-da", "meaning": "Awkward", "example": "처음이라 조금 어색했다.", "example_reading": "cheo-eum-i-ra jo-geum eo-saeg-haet-da", "example_en": "It was a little awkward since it was his first time." },
+    { "id": "w04", "word": "사인", "reading": "sa-in", "meaning": "Autograph / signature", "example": "앨범에 사인을 받았다.", "example_reading": "ael-beom-e sa-in-eul bad-at-da", "example_en": "I got an autograph on the album." },
+    { "id": "w05", "word": "변장", "reading": "byeon-jang", "meaning": "Disguise", "example": "모자와 마스크로 변장을 했다.", "example_reading": "mo-ja-wa ma-seu-keu-ro byeon-jang-eul haet-da", "example_en": "He disguised himself with a cap and mask." }
   ],
   "sentences": [
-    { "id": "s01", "ko": "찻집에서 책을 읽어요.", "reading": "chat-jib-e-seo chaeg-eul ilg-eo-yo", "en": "I read a book at the tea house." },
-    { "id": "s02", "ko": "책과 차가 잘 어울려요.", "reading": "chaeg-gwa cha-ga jal eo-ul-lyeo-yo", "en": "Books and tea go well together." },
-    { "id": "s03", "ko": "제 마음이 편해졌어요.", "reading": "je ma-eum-i pyeon-hae-jyeoss-eo-yo", "en": "My heart feels at ease now." },
-    { "id": "s04", "ko": "미소를 지으며 인사해요.", "reading": "mi-so-reul ji-eu-myeo in-sa-hae-yo", "en": "I greet you with a smile." },
-    { "id": "s05", "ko": "조용한 찻집에서 마음이 편해요.", "reading": "jo-yong-han chat-jib-e-seo ma-eum-i pyeon-hae-yo", "en": "My heart feels at ease in the quiet tea house." }
+    { "id": "s01", "ko": "오늘 처음으로 팬사인회에 가봤다.", "reading": "o-neul cheo-eum-eu-ro paen-sa-in-hoe-e ga-bwat-da", "en": "I went to a fan-signing event for the first time today." },
+    { "id": "s02", "ko": "줄이 생각보다 훨씬 길었다.", "reading": "jul-i saeng-gak-bo-da hwol-ssin gil-eot-da", "en": "The line was much longer than expected." },
+    { "id": "s03", "ko": "처음이라 조금 어색했다.", "reading": "cheo-eum-i-ra jo-geum eo-saeg-haet-da", "en": "It felt a little awkward since it was his first time." },
+    { "id": "s04", "ko": "떨리는 손으로 사인을 받았다.", "reading": "tteol-li-neun son-eu-ro sa-in-eul bad-at-da", "en": "I received the autograph with trembling hands." },
+    { "id": "s05", "ko": "모자를 눌러쓰고 변장을 했다.", "reading": "mo-ja-reul nul-leo-sseu-go byeon-jang-eul haet-da", "en": "He pulled his cap down low and disguised himself." }
   ]
 }

@@ -1,62 +1,62 @@
 {
   "id": "sp-rom-kyuhyun-09",
   "character_id": "kyuhyun",
-  "title": "서툴게 고쳐 쓴 고백 멘트",
-  "emoji": "📝",
+  "title": "야경 아래에서 내려놓은 여유",
+  "emoji": "🌃",
   "story": [
     {
-      "text": "오늘 여기로 오자고 한 거, 사실 다 이유가 있어요. 잠깐 제 얘기 좀 들어줄래요?",
-      "reading": "o-neul yeo-gi-ro o-ja-go han geo, sa-sil da i-yu-ga i-sseo-yo. jam-kkan je yae-gi jom deul-eo-jul-lae-yo?",
-      "en": "There's actually a reason I asked you to come here today. Can you listen to me for a moment?"
+      "text": "다음 만남에서 그는 나를 반포대교로 데려갔다. '오늘은 좀 특별한 데를 보여주고 싶어서요.' 그가 웃으며 말했다.",
+      "reading": "da-eum man-nam-e-seo geu-neun na-reul ban-po-dae-gyo-ro de-ryeo-gat-da. o-neul-eun jom teuk-byeol-han de-reul bo-yeo-ju-go sip-eo-seo-yo. geu-ga us-eu-myeo mal-haet-da.",
+      "en": "On our next meeting, he took me to Banpo Bridge. \"I wanted to show you somewhere a little special today,\" he said, smiling."
     },
     {
-      "text": "저 사실... 어제부터 계속 '고백' 멘트를 준비했거든요. 근데 이게 생각보다 어렵네요. 바람둥이라는 소문이랑은 정반대죠?",
-      "reading": "jeo sa-sil... eo-je-bu-teo gye-sok go-baek men-teu-reul jun-bi-haet-geo-deun-yo. geun-de i-ge saeng-gak-bo-da eo-ryeop-ne-yo. ba-ram-dung-i-ra-neun so-mun-i-rang-eun jeong-ban-dae-jyo?",
-      "en": "Actually... I've been preparing a 'confession' line since yesterday. But it's way harder than I thought. Kind of the opposite of that 'player' rumor, right?",
+      "text": "다리 아래로 펼쳐진 한강 야경이, 달빛 분수의 물줄기와 함께 반짝였다. 규현은 말없이 그 풍경을 바라보고 있었다.",
+      "reading": "da-ri a-rae-ro pyeol-chyeo-jin han-gang ya-gyeong-i, dal-bit bun-su-ui mul-jul-gi-wa ham-kke ban-jjag-yeot-da. gyu-hyeon-eun mal-eop-si geu pung-gyeong-eul ba-ra-bo-go iss-eot-da.",
+      "en": "The Han River night view spread out beneath the bridge, sparkling together with the jets of the moonlight rainbow fountain. Kyuhyun gazed at the scenery without a word.",
       "highlight_word_id": "w01"
     },
     {
-      "text": "핸드폰에 '편지'처럼 써놨는데, 막상 꺼내려니까 손이 떨리네요.",
-      "reading": "haen-deu-pon-e pyeon-ji-cheo-reom sseo-nwat-neun-de, mak-sang kkeo-nae-ryeo-ni-kka son-i tteol-li-ne-yo.",
-      "en": "I wrote it out like a 'letter' on my phone, but now that I actually want to pull it out, my hands are shaking.",
+      "text": "선선한 강바람이 불어왔다. 그는 슬쩍 내 쪽으로 손을 뻗더니, 조심스럽게 내 손을 잡았다.",
+      "reading": "seon-seon-han gang-ba-ram-i bul-eo-wat-da. geu-neun seul-jjeok nae jjok-eu-ro son-eul ppeot-deo-ni, jo-sim-seu-reop-ge nae son-eul jab-at-da.",
+      "en": "A cool river breeze blew past. He reached his hand toward me and carefully took hold of mine.",
       "highlight_word_id": "w02"
     },
     {
-      "text": "덕수궁 '돌담길' 걸으면 헤어진다는 얘기 있잖아요. 그래서 오늘, 저는 반대로 걸어보려고요.",
-      "reading": "deok-su-gung dol-dam-gil geol-eu-myeon hae-eo-jin-da-neun yae-gi it-jan-a-yo. geu-rae-seo o-neul, jeo-neun ban-dae-ro geol-eo-bo-ryeo-go-yo.",
-      "en": "They say couples break up walking this 'stone wall path' at Deoksugung. So today, I'm trying to walk it the opposite way.",
+      "text": "'이 정도 두근거림, 사실 오랜만이에요. 아니, 어쩌면 이런 느낌 자체가 처음인 것 같기도 하고.'",
+      "reading": "i jeong-do du-geun-geo-rim, sa-sil o-raen-man-i-e-yo. a-ni, eo-jjeo-myeon i-reon neu-kkim ja-che-ga cheo-eum-in geot gat-gi-do ha-go.",
+      "en": "\"This kind of heart-pounding — honestly, it's been a while. Or, actually, maybe this feeling itself is something new to me.\"",
       "highlight_word_id": "w03"
     },
     {
-      "text": "'연습'까지 했는데 왜 하나도 기억이 안 나죠? 사실 저, 다들 생각하는 것처럼 여기저기 마음 주는 사람 아니에요. 오히려 마음 주는 게 무서워서 늘 가볍게 굴었던 거지.",
-      "reading": "yeon-seup-kka-ji haet-neun-de wae ha-na-do gi-eok-i an na-jyo? sa-sil jeo, da-deul saeng-gak-ha-neun geot-cheo-reom yeo-gi-jeo-gi ma-eum ju-neun sa-ram a-ni-e-yo. o-hi-ryeo ma-eum ju-neun ge mu-seo-wo-seo neul ga-byeop-ge gul-eot-deon geo-ji.",
-      "en": "I even did 'practice', so why can't I remember any of it? Actually, I'm not the kind of person who hands his heart around to everyone, like people think. If anything, I always kept things light because giving my heart away scared me.",
+      "text": "평소의 여유로운 미소 대신, 그의 얼굴엔 뭔가에 벅찬 듯한 표정이 스쳤다. 나는 그 낯선 얼굴에서 눈을 뗄 수 없었다.",
+      "reading": "pyeong-so-ui yeo-yu-ro-un mi-so dae-sin, geu-ui eol-gul-en mwon-ga-e beok-chan deu-tan pyo-jeong-i seu-chyeot-da. na-neun geu nat-seon eol-gul-e-seo nun-eul ttel su eop-seot-da.",
+      "en": "Instead of his usual easy smile, something like being quietly overwhelmed flickered across his face. I couldn't look away from that unfamiliar expression.",
       "highlight_word_id": "w04"
     },
     {
-      "text": "그냥 지금 이 '떨림' 그대로 말할게요. 저... 아가씨가 진짜 좋아요.",
-      "reading": "geu-nyang ji-geum i tteol-lim geu-dae-ro mal-hal-ge-yo. jeo... a-ga-ssi-ga jin-jja jo-a-yo.",
-      "en": "I'll just say it with this 'trembling', just as it is. I... I really like you.",
+      "text": "'저 원래 이런 거 잘 안 하는데… 오늘은 그냥 솔직하게 있고 싶네요. 아가씨 앞에서는, 자꾸 그러고 싶어져요.'",
+      "reading": "jeo won-lae i-reon geo jal an ha-neun-de… o-neul-eun geu-nyang sol-jik-ha-ge it-go sip-ne-yo. a-ga-ssi ap-e-seo-neun, ja-kku geu-reo-go sip-eo-jyeo-yo.",
+      "en": "\"I don't usually do this kind of thing... but today, I just want to be honest. In front of you, I keep wanting to be like this.\"",
       "highlight_word_id": "w05"
     },
     {
-      "text": "...아, 이렇게 말해버렸네요. 크흠, 자, 오늘 배운 단어들 문제로 확인해볼까요?",
-      "reading": "...a, i-reo-ke mal-hae-beo-ryeot-ne-yo. keu-heum, ja, o-neul bae-un dan-eo-deul mun-je-ro hwa-gin-hae-bol-kka-yo?",
-      "en": "...ah, I just said it, just like that. Ahem, well, shall we check today's words with some questions?"
+      "text": "늘 장난과 여유 뒤에 숨어 있던 그가, 처음으로 아무 방패도 없이 내 앞에 서 있었다. 나는 잡은 손에 살며시 힘을 주었다.",
+      "reading": "neul jang-nan-gwa yeo-yu dwi-e sum-eo iss-deon geu-ga, cheo-eum-eu-ro a-mu bang-pae-do eop-si nae ap-e seo iss-eot-da. na-neun jab-eun son-e sal-myeo-si him-eul ju-eot-da.",
+      "en": "The man who always hid behind jokes and easy charm was, for the first time, standing before me with no shield at all. I gently tightened my grip on his hand."
     }
   ],
   "words": [
-    { "id": "w01", "word": "고백", "reading": "go-baek", "meaning": "confession", "example": "드디어 고백을 했어요.", "example_reading": "deu-di-eo go-baek-eul hae-sseo-yo", "example_en": "I finally confessed." },
-    { "id": "w02", "word": "편지", "reading": "pyeon-ji", "meaning": "letter", "example": "편지에 제 마음을 다 적었어요.", "example_reading": "pyeon-ji-e je ma-eum-eul da jeog-eo-sseo-yo", "example_en": "I wrote all my feelings in the letter." },
-    { "id": "w03", "word": "돌담길", "reading": "dol-dam-gil", "meaning": "stone wall path", "example": "덕수궁 돌담길을 같이 걸었어요.", "example_reading": "deok-su-gung dol-dam-gil-eul ga-chi geol-eo-sseo-yo", "example_en": "We walked the Deoksugung stone wall path together." },
-    { "id": "w04", "word": "연습", "reading": "yeon-seup", "meaning": "practice", "example": "고백 연습을 많이 했어요.", "example_reading": "go-baek yeon-seup-eul man-i hae-sseo-yo", "example_en": "I practiced my confession a lot." },
-    { "id": "w05", "word": "떨림", "reading": "tteol-lim", "meaning": "trembling, nervousness", "example": "손이 떨림을 감출 수 없었어요.", "example_reading": "son-i tteol-lim-eul gam-chul su eop-seo-sseo-yo", "example_en": "I couldn't hide the trembling of my hands." }
+    { "id": "w01", "word": "야경", "reading": "ya-gyeong", "meaning": "night view", "example": "한강 야경이 정말 아름다웠다.", "example_reading": "han-gang ya-gyeong-i jeong-mal a-reum-da-wot-da", "example_en": "The Han River night view was truly beautiful." },
+    { "id": "w02", "word": "강바람", "reading": "gang-ba-ram", "meaning": "river breeze", "example": "강바람이 시원하게 불었다.", "example_reading": "gang-ba-ram-i si-won-ha-ge bul-eot-da", "example_en": "The river breeze blew refreshingly." },
+    { "id": "w03", "word": "두근거림", "reading": "du-geun-geo-rim", "meaning": "heart-pounding, thumping", "example": "손을 잡자 두근거림이 커졌다.", "example_reading": "son-eul jap-ja du-geun-geo-rim-i keo-jyeot-da", "example_en": "The heart-pounding grew stronger when he took my hand." },
+    { "id": "w04", "word": "벅차다", "reading": "beok-cha-da", "meaning": "to be overwhelmed, moved", "example": "그 순간 마음이 벅찼다.", "example_reading": "geu sun-gan ma-eum-i beok-chat-da", "example_en": "My heart felt overwhelmed in that moment." },
+    { "id": "w05", "word": "솔직하다", "reading": "sol-jik-ha-da", "meaning": "to be honest", "example": "그는 처음으로 솔직하게 말했다.", "example_reading": "geu-neun cheo-eum-eu-ro sol-jik-ha-ge mal-haet-da", "example_en": "He spoke honestly for the first time." }
   ],
   "sentences": [
-    { "id": "s01", "ko": "드디어 고백을 했어요.", "reading": "deu-di-eo go-baek-eul hae-sseo-yo", "en": "I finally confessed." },
-    { "id": "s02", "ko": "편지에 제 마음을 다 적었어요.", "reading": "pyeon-ji-e je ma-eum-eul da jeog-eo-sseo-yo", "en": "I wrote all my feelings in the letter." },
-    { "id": "s03", "ko": "덕수궁 돌담길을 같이 걸었어요.", "reading": "deok-su-gung dol-dam-gil-eul ga-chi geol-eo-sseo-yo", "en": "We walked the Deoksugung stone wall path together." },
-    { "id": "s04", "ko": "고백 연습을 많이 했어요.", "reading": "go-baek yeon-seup-eul man-i hae-sseo-yo", "en": "I practiced my confession a lot." },
-    { "id": "s05", "ko": "손이 떨림을 감출 수 없었어요.", "reading": "son-i tteol-lim-eul gam-chul su eop-seo-sseo-yo", "en": "I couldn't hide the trembling of my hands." }
+    { "id": "s01", "ko": "한강 야경이 정말 아름다웠다.", "reading": "han-gang ya-gyeong-i jeong-mal a-reum-da-wot-da", "en": "The Han River night view was truly beautiful." },
+    { "id": "s02", "ko": "강바람이 시원하게 불었다.", "reading": "gang-ba-ram-i si-won-ha-ge bul-eot-da", "en": "The river breeze blew refreshingly." },
+    { "id": "s03", "ko": "손을 잡자 두근거림이 커졌다.", "reading": "son-eul jap-ja du-geun-geo-rim-i keo-jyeot-da", "en": "The heart-pounding grew stronger when he took my hand." },
+    { "id": "s04", "ko": "그 순간 마음이 벅찼다.", "reading": "geu sun-gan ma-eum-i beok-chat-da", "en": "My heart felt overwhelmed in that moment." },
+    { "id": "s05", "ko": "그는 처음으로 솔직하게 말했다.", "reading": "geu-neun cheo-eum-eu-ro sol-jik-ha-ge mal-haet-da", "en": "He spoke honestly for the first time." }
   ]
 }

@@ -1,93 +1,93 @@
 {
   "id": "sp-rom-sangwoo-06",
   "character_id": "sangwoo",
-  "title": "무전기 너머 들킨 목소리 떨림",
-  "emoji": "😯",
+  "title": "당신은 제 하늘입니다",
+  "emoji": "🌌",
   "level": "intermediate_advanced",
   "story": [
     {
-      "text": "오늘은 계룡산 자락입니다. 산세가 험하지만, 그만큼 오르고 나면 보이는 풍경이 특별하다고 하더군요. 오늘 제 마음도 꼭 이 산 같습니다.",
-      "reading": "o-neul-eun gye-ryong-san ja-rag-im-ni-da. san-se-ga heom-ha-ji-man, geu-man-keum o-reu-go na-myeon bo-i-neun pung-gyeong-i teuk-byeol-ha-da-go ha-deo-gun-yo. o-neul je ma-eum-do kkok i san gat-seum-ni-da.",
-      "en": "Today we're at the foot of Gyeryongsan Mountain. The terrain is rugged, but they say the view after the climb is special. My heart today feels just like this mountain."
+      "text": "오늘은 고마나루입니다. 해 질 무렵, 강물 위로 노을이 번지고 물살은 낮게 일렁입니다.",
+      "reading": "o-neul-eun go-ma-na-ru-im-ni-da. hae jil mu-ryeop, gang-mul wi-ro no-eul-i beon-ji-go mul-sal-eun nat-ge il-leong-im-ni-da.",
+      "en": "Today, Gomanaru. Around sunset, the glow spreads across the river, and the current ripples low and quiet."
     },
     {
-      "text": "당신이 제 이름을 불렀을 때, 목소리에 '떨림'이 섞인 걸 스스로도 느꼈습니다. 무전기 너머로도 들켰을까 걱정입니다.",
-      "reading": "dang-sin-i je i-reum-eul bul-leo-sseul ttae, mok-so-ri-e 'tteol-lim'-i seokk-in geol seu-seu-ro-do neu-kkyeot-seum-ni-da. mu-jeon-gi neo-meo-ro-do deul-kyeo-sseul-kka geok-jeong-im-ni-da.",
-      "en": "When you called my name, I felt a 'tremor' mix into my own voice. I'm worried it was noticed even over the radio.",
+      "text": "이런 '고요'한 풍경 앞에 서면, 저도 모르게 말이 없어지곤 합니다. 오늘은 그 고요 속에서, 당신에게 하고 싶은 말이 있습니다.",
+      "reading": "i-reon 'go-yo'-han pung-gyeong ap-e seo-myeon, jeo-do mo-reu-ge mal-i eop-seo-ji-gon ham-ni-da. o-neul-eun geu go-yo sog-e-seo, dang-sin-e-ge ha-go sip-eun mal-i it-seum-ni-da.",
+      "en": "Standing before scenery this 'quiet', I often find myself falling silent, without meaning to. Today, in that quiet, there's something I want to say to you.",
       "highlight_word_id": "w01"
     },
     {
-      "text": "이런 '동요'는 처음입니다. 십 년 넘게 조종석에 앉아도 흔들린 적 없던 제가 말입니다.",
-      "reading": "i-reon 'dong-yo'-neun cheo-eum-im-ni-da. sip nyeon neom-ge jo-jong-seog-e anj-a-do heun-deul-lin jeok eop-deon je-ga mal-im-ni-da.",
-      "en": "This kind of 'agitation' is a first for me. Someone who's sat in the cockpit for over ten years without ever wavering.",
+      "text": "그동안 능청스러운 말투 뒤에, 제 '진심'을 조금씩 감춰 왔습니다. 오늘만큼은, 그 뒤에 숨지 않고 말씀드리고 싶습니다.",
+      "reading": "geu-dong-an neung-cheong-seu-reo-un mal-tu dwi-e, je 'jin-sim'-eul jo-geum-ssik gam-chwo wat-seum-ni-da. o-neul-man-keum-eun, geu dwi-e sum-ji an-ko mal-sseum-deu-ri-go sip-seum-ni-da.",
+      "en": "All this time, I've been hiding my 'true feelings', little by little, behind a nonchalant tone. Just for today, I want to speak without hiding behind it.",
       "highlight_word_id": "w02"
     },
     {
-      "text": "늘 '침착'을 유지하는 게 기장의 기본이라 배웠습니다. 그런데 당신 앞에서는 그 기본이 자꾸 무너집니다.",
-      "reading": "neul 'chim-chak'-eul yu-ji-ha-neun ge gi-jang-ui gi-bon-i-ra bae-wot-seum-ni-da. geu-reon-de dang-sin ap-e-seo-neun geu gi-bon-i ja-kku mu-neo-jim-ni-da.",
-      "en": "I was taught that maintaining 'composure' is a captain's basic duty. But in front of you, even that basic thing keeps falling apart.",
+      "text": "지금 제 목소리에 '떨림'이 섞여 있다는 걸, 저도 느끼고 있습니다. 위기 앞에서도 흔들린 적 없던 제가 말입니다.",
+      "reading": "ji-geum je mok-so-ri-e 'tteol-lim'-i seokk-yeo it-da-neun geol, jeo-do neu-kki-go it-seum-ni-da. wi-gi ap-e-seo-do heun-deul-lin jeog eop-deon je-ga mal-im-ni-da.",
+      "en": "I can feel it myself — that a 'tremor' has crept into my voice right now. Me, who's never wavered even in the face of a crisis.",
       "highlight_word_id": "w03"
     },
     {
-      "text": "겉으로는 티 나지 않는 '미세'한 떨림이라 다행입니다. …라고 생각했는데, 당신은 다 알아채신 것 같더군요.",
-      "reading": "geot-eu-ro-neun ti na-ji an-neun 'mi-se'-han tteol-lim-i-ra da-haeng-im-ni-da. …ra-go saeng-gak-haet-neun-de, dang-sin-eun da al-a-chae-sin geot gat-deo-gun-yo.",
-      "en": "It's fortunate that it's a 'subtle' tremor, not visible from the outside. ...Or so I thought, but it seems you noticed everything.",
+      "text": "그날 밤, 계기가 저를 속였을 때도 저는 이렇게까지 '흔들리'지 않았습니다. 그런데 당신 앞에서는, 아무 위기도 아닌데 이렇게 흔들립니다.",
+      "reading": "geu-nal bam, gye-gi-ga jeo-reul sog-yeoss-eul ttae-do jeo-neun i-reo-ke-kka-ji 'heun-deul-li'-ji an-at-seum-ni-da. geu-reon-de dang-sin ap-e-seo-neun, a-mu wi-gi-do a-nin-de i-reo-ke heun-deul-lim-ni-da.",
+      "en": "That night, even when the instrument deceived me, I never 'wavered' this much. And yet in front of you, with no crisis at all, I waver like this.",
       "highlight_word_id": "w04"
     },
     {
-      "text": "완벽하던 매뉴얼에 처음으로 '균열'이 생겼습니다. 사실 콜사인을 몇 번이고 되물었던 것도, 전부 당신 목소리가 다시 듣고 싶어서였습니다. 이제는 인정하겠습니다.",
-      "reading": "wan-byeok-ha-deon mae-nyu-eol-e cheo-eum-eu-ro 'gyu-nyeol'-i saeng-gyeot-seum-ni-da. sa-sil kol-ssa-in-eul myeot beon-i-go doe-mul-eot-deon geot-do, jeon-bu dang-sin mok-so-ri-ga da-si deut-go sip-eo-seo-yeot-seum-ni-da. i-je-neun in-jeong-ha-get-seum-ni-da.",
-      "en": "A 'crack' has appeared for the first time in what used to be a perfect manual. The truth is, every time I asked you to repeat your callsign, it was because I wanted to hear your voice again. I'll admit it now.",
+      "text": "그날 밤 제가 무사히 착륙할 수 있었던 건, 계기판이 아니라 당신의 목소리 덕분이었습니다. …당신은, 제 '하늘'입니다. 저를 잃지 않게 붙잡아 준, 유일한 하늘입니다.",
+      "reading": "geu-nal bam je-ga mu-sa-hi chang-nyuk-hal su i-sseot-deon geon, gye-gi-pan-i a-ni-ra dang-sin-ui mok-so-ri deok-bun-i-eot-seum-ni-da. …dang-sin-eun, je 'ha-neul'-im-ni-da. jeo-reul il-chi an-ke but-jab-a jun, yu-il-han ha-neul-im-ni-da.",
+      "en": "That night, the reason I managed to land safely wasn't the instrument panel — it was because of your voice. ...You are my 'sky'. The one and only sky that kept me from ever losing myself.",
       "highlight_word_id": "w05"
     },
     {
-      "text": "…들켜버린 김에, 오늘은 여기까지 솔직하게 말씀드리겠습니다. 계룡산에서 나눈 대화를 보여드릴 테니 상황을 헤아려 보시기 바랍니다.",
-      "reading": "…deul-kyeo-beo-rin gim-e, o-neul-eun yeo-gi-kka-ji sol-jik-ha-ge mal-sseum-deu-ri-get-seum-ni-da. gye-ryong-san-e-seo na-nun dae-hwa-reul bo-yeo-deu-ril te-ni sang-hwang-eul he-a-ryeo bo-si-gi ba-ram-ni-da.",
-      "en": "...Since I've already been caught, I'll be honest up to this point today. I'll show you a conversation from Gyeryongsan—please work out the situation."
+      "text": "이런 말, 아직 서툽니다. 그래도 오늘은 여기까지 솔직해지고 싶었습니다. 고마나루에서 나눈 대화를 보여드릴 테니, 이 마음이 어떻게 전해졌는지 헤아려 봐 주시기 바랍니다.",
+      "reading": "i-reon mal, a-jik seo-teulb-ni-da. geu-rae-do o-neul-eun yeo-gi-kka-ji sol-jik-hae-ji-go sip-eot-seum-ni-da. go-ma-na-ru-e-seo na-nun dae-hwa-reul bo-yeo-deu-ril te-ni, i ma-eum-i eo-tteo-ke jeon-hae-jyeot-neun-ji he-a-ryeo bwa ju-si-gi ba-ram-ni-da.",
+      "en": "Words like these — I'm still clumsy with them. But today, at least this far, I wanted to be honest. I'll show you the conversation we had at Gomanaru — please take in how this feeling came across."
     }
   ],
   "words": [
-    { "id": "w01", "word": "떨림", "reading": "tteol-lim", "meaning": "Tremor / trembling", "example": "목소리에 떨림이 섞인 걸 스스로도 느꼈습니다.", "example_reading": "mok-so-ri-e tteol-lim-i seokk-in geol seu-seu-ro-do neu-kkyeot-seum-ni-da", "example_en": "I felt myself that a tremor mixed into my voice." },
-    { "id": "w02", "word": "동요", "reading": "dong-yo", "meaning": "Agitation / wavering", "example": "이런 동요는 처음입니다.", "example_reading": "i-reon dong-yo-neun cheo-eum-im-ni-da", "example_en": "This kind of agitation is a first." },
-    { "id": "w03", "word": "침착", "reading": "chim-chak", "meaning": "Composure / calm", "example": "늘 침착을 유지하는 게 기장의 기본이라 배웠습니다.", "example_reading": "neul chim-chak-eul yu-ji-ha-neun ge gi-jang-ui gi-bon-i-ra bae-wot-seum-ni-da", "example_en": "I was taught that keeping composure is a captain's basic duty." },
-    { "id": "w04", "word": "미세", "reading": "mi-se", "meaning": "Subtle / minute", "example": "겉으로는 티 나지 않는 미세한 떨림이라 다행입니다.", "example_reading": "geot-eu-ro-neun ti na-ji an-neun mi-se-han tteol-lim-i-ra da-haeng-im-ni-da", "example_en": "It's fortunate that it's a subtle tremor, not visible from outside." },
-    { "id": "w05", "word": "균열", "reading": "gyu-nyeol", "meaning": "Crack / fissure", "example": "완벽하던 매뉴얼에 처음으로 균열이 생겼습니다.", "example_reading": "wan-byeok-ha-deon mae-nyu-eol-e cheo-eum-eu-ro gyu-nyeol-i saeng-gyeot-seum-ni-da", "example_en": "A crack has appeared for the first time in what used to be a perfect manual." }
+    { "id": "w01", "word": "고요", "reading": "go-yo", "meaning": "Stillness / quiet", "example": "이런 고요한 풍경 앞에 서면 말이 없어집니다.", "example_reading": "i-reon go-yo-han pung-gyeong ap-e seo-myeon mal-i eop-seo-jim-ni-da", "example_en": "Standing before scenery this quiet, I fall silent." },
+    { "id": "w02", "word": "진심", "reading": "jin-sim", "meaning": "Sincerity / true feelings", "example": "제 진심을 조금씩 감춰 왔습니다.", "example_reading": "je jin-sim-eul jo-geum-ssik gam-chwo wat-seum-ni-da", "example_en": "I've been hiding my true feelings, little by little." },
+    { "id": "w03", "word": "떨림", "reading": "tteol-lim", "meaning": "Tremor", "example": "제 목소리에 떨림이 섞여 있습니다.", "example_reading": "je mok-so-ri-e tteol-lim-i seokk-yeo it-seum-ni-da", "example_en": "A tremor has crept into my voice." },
+    { "id": "w04", "word": "흔들림", "reading": "heun-deul-lim", "meaning": "Wavering", "example": "당신 앞에서는 이유 없이 흔들립니다.", "example_reading": "dang-sin ap-e-seo-neun i-yu eop-i heun-deul-lim-ni-da", "example_en": "In front of you, I waver for no reason at all." },
+    { "id": "w05", "word": "하늘", "reading": "ha-neul", "meaning": "Sky", "example": "당신은 제 하늘입니다.", "example_reading": "dang-sin-eun je ha-neul-im-ni-da", "example_en": "You are my sky." }
   ],
   "sentences": [
-    { "id": "s01", "ko": "목소리에 떨림이 섞인 걸 스스로도 느꼈습니다.", "reading": "mok-so-ri-e tteol-lim-i seokk-in geol seu-seu-ro-do neu-kkyeot-seum-ni-da", "en": "I felt myself that a tremor mixed into my voice." },
-    { "id": "s02", "ko": "이런 동요는 처음입니다.", "reading": "i-reon dong-yo-neun cheo-eum-im-ni-da", "en": "This kind of agitation is a first." },
-    { "id": "s03", "ko": "늘 침착을 유지하는 게 기장의 기본이라 배웠습니다.", "reading": "neul chim-chak-eul yu-ji-ha-neun ge gi-jang-ui gi-bon-i-ra bae-wot-seum-ni-da", "en": "I was taught that keeping composure is a captain's basic duty." },
-    { "id": "s04", "ko": "겉으로는 티 나지 않는 미세한 떨림이라 다행입니다.", "reading": "geot-eu-ro-neun ti na-ji an-neun mi-se-han tteol-lim-i-ra da-haeng-im-ni-da", "en": "It's fortunate that it's a subtle tremor, not visible from outside." },
-    { "id": "s05", "ko": "완벽하던 매뉴얼에 처음으로 균열이 생겼습니다.", "reading": "wan-byeok-ha-deon mae-nyu-eol-e cheo-eum-eu-ro gyu-nyeol-i saeng-gyeot-seum-ni-da", "en": "A crack has appeared for the first time in what used to be a perfect manual." }
+    { "id": "s01", "ko": "이런 고요한 풍경 앞에 서면 말이 없어집니다.", "reading": "i-reon go-yo-han pung-gyeong ap-e seo-myeon mal-i eop-seo-jim-ni-da", "en": "Standing before scenery this quiet, I fall silent." },
+    { "id": "s02", "ko": "제 진심을 조금씩 감춰 왔습니다.", "reading": "je jin-sim-eul jo-geum-ssik gam-chwo wat-seum-ni-da", "en": "I've been hiding my true feelings, little by little." },
+    { "id": "s03", "ko": "제 목소리에 떨림이 섞여 있습니다.", "reading": "je mok-so-ri-e tteol-lim-i seokk-yeo it-seum-ni-da", "en": "A tremor has crept into my voice." },
+    { "id": "s04", "ko": "당신 앞에서는 이유 없이 흔들립니다.", "reading": "dang-sin ap-e-seo-neun i-yu eop-i heun-deul-lim-ni-da", "en": "In front of you, I waver for no reason at all." },
+    { "id": "s05", "ko": "당신은 제 하늘입니다.", "reading": "dang-sin-eun je ha-neul-im-ni-da", "en": "You are my sky." }
   ],
   "dialogues": [
     {
       "id": "d01",
       "turns": [
-        { "speaker": "승객", "text": "기장님, 방금 목소리가 살짝 떨렸던 것 같은데요?", "reading": "gi-jang-nim, bang-geum mok-so-ri-ga sal-jjak tteol-lyeot-deon geot gat-eun-de-yo?", "en": "Captain, did your voice just tremble a little?" },
-        { "speaker": "천상우 기장", "text": "…아닙니다. 착각이셨을 겁니다.", "reading": "…a-nim-ni-da. chak-gag-i-syeo-sseul geom-ni-da.", "en": "...No. You must have imagined it." },
-        { "speaker": "승객", "text": "에이, 저 다 들었어요. 왜 그러셨어요?", "reading": "e-i, jeo da deul-eo-sseo-yo. wae geu-reo-syeo-sseo-yo?", "en": "Come on, I heard it clearly. Why did that happen?" },
-        { "speaker": "천상우 기장", "text": "…솔직히 말씀드리면, 당신 때문인 것 같습니다.", "reading": "…sol-jik-hi mal-sseum-deu-ri-myeon, dang-sin ttae-mun-in geot gat-seum-ni-da.", "en": "...To be honest, I think it's because of you." }
+        { "speaker": "손님", "text": "기장님, 오늘따라 되게 조용하시네요.", "reading": "gi-jang-nim, o-neul-tta-ra doe-ge jo-yong-ha-si-ne-yo.", "en": "Captain, you're unusually quiet today." },
+        { "speaker": "천상우 기장", "text": "…드릴 말씀을 고르고 있었습니다. 쉽게 나오지 않는 말이라서요.", "reading": "…deu-ril mal-sseum-eul go-reu-go i-sseot-seum-ni-da. swip-ge na-o-ji an-neun mal-i-ra-seo-yo.", "en": "...I was choosing my words. It's not something that comes easily." },
+        { "speaker": "손님", "text": "무슨 말인데 그렇게 신중하세요?", "reading": "mu-seun mal-in-de geu-reo-ke sin-jung-ha-se-yo?", "en": "What is it that has you being so careful?" },
+        { "speaker": "천상우 기장", "text": "…당신은 제 하늘입니다. 그날 밤 저를 지켜준 것도, 지금 이렇게 흔들리게 만드는 것도, 전부 당신입니다.", "reading": "…dang-sin-eun je ha-neul-im-ni-da. geu-nal bam jeo-reul ji-kyeo-jun geot-do, ji-geum i-reo-ke heun-deul-li-ge man-deu-neun geot-do, jeon-bu dang-sin-im-ni-da.", "en": "...You are my sky. The one who kept me safe that night, and the one making me waver like this right now — it's you, all of it." }
       ],
-      "question": "기장이 처음에 \"아닙니다\"라고 부인한 이유는?",
-      "question_en": "Why did the captain first deny it by saying, 'No'?",
-      "correct_answer": "당황한 마음을 들키고 싶지 않아서",
-      "options": ["당황한 마음을 들키고 싶지 않아서", "실제로 목소리가 떨리지 않아서", "산길이 힘들어서 대답을 피한 것", "질문을 제대로 듣지 못해서"],
-      "explanation": "기장은 실제로 목소리가 떨렸지만, 당황한 마음을 들키고 싶지 않아 처음에는 부인했습니다."
+      "question": "기장이 \"당신은 제 하늘입니다\"라고 말한 의미로 가장 알맞은 것은?",
+      "question_en": "What is the most fitting meaning behind the captain saying, 'You are my sky'?",
+      "correct_answer": "그녀가 자신을 구해준 존재이자 지금도 마음을 뒤흔드는 존재라는 고백",
+      "options": ["그녀가 자신을 구해준 존재이자 지금도 마음을 뒤흔드는 존재라는 고백", "그녀가 하늘과 관련된 직업을 가져야 한다는 뜻", "비행 중 하늘 상태가 좋다는 기상 보고", "단순히 하늘 풍경이 아름답다는 감상"],
+      "explanation": "기장은 그녀가 위기의 순간 자신을 구해준 존재이자, 지금도 자신의 마음을 뒤흔드는 존재라는 뜻으로 '하늘'이라는 말을 씁니다."
     },
     {
       "id": "d02",
       "turns": [
-        { "speaker": "승객", "text": "기장님, 그러고 보니 저한테 유독 다시 말해달라는 거 많이 하셨죠?", "reading": "gi-jang-nim, geu-reo-go bo-ni jeo-han-te yu-dok da-si mal-hae-dal-la-neun geo man-i ha-syeot-jyo?", "en": "Captain, now that I think about it, you've asked me to repeat myself a lot, haven't you?" },
-        { "speaker": "천상우 기장", "text": "…네. 이제 솔직히 말씀드리겠습니다.", "reading": "…ne. i-je sol-jik-hi mal-sseum-deu-ri-get-seum-ni-da.", "en": "...Yes. I'll be honest with you now." },
-        { "speaker": "승객", "text": "설마 그것도 다 듣고 계셨으면서 일부러 그러신 거예요?", "reading": "seol-ma geu-geot-do da deut-go gye-syeo-sseu-myeon-seo il-bu-reo geu-reo-sin geo-ye-yo?", "en": "Don't tell me you did that on purpose even though you heard everything?" },
-        { "speaker": "천상우 기장", "text": "맞습니다. 당신 목소리가, 몇 번을 들어도 안 질려서 그랬습니다.", "reading": "mat-seum-ni-da. dang-sin mok-so-ri-ga, myeot beon-eul deul-eo-do an jil-lyeo-seo geu-raet-seum-ni-da.", "en": "That's right. It's because I never get tired of your voice, no matter how many times I hear it." }
+        { "speaker": "손님", "text": "…그런 말, 아무한테나 하는 거 아니죠?", "reading": "…geu-reon mal, a-mu-han-te-na ha-neun geo a-ni-jyo?", "en": "...You don't say things like that to just anyone, do you?" },
+        { "speaker": "천상우 기장", "text": "십 년 넘게 조종석에 앉아도 이런 말은 한 적이 없습니다. 처음입니다.", "reading": "sip nyeon neom-ge jo-jong-seog-e anj-a-do i-reon mal-eun han jeog-i eop-seum-ni-da. cheo-eum-im-ni-da.", "en": "In over ten years in the cockpit, I've never once said something like this. This is a first." },
+        { "speaker": "손님", "text": "…심장 되게 빨리 뛰네요, 지금.", "reading": "…sim-jang doe-ge ppal-li ttwi-ne-yo, ji-geum.", "en": "...My heart is racing right now, so fast." },
+        { "speaker": "천상우 기장", "text": "저도 마찬가지입니다. 이 떨림, 당신 탓입니다.", "reading": "jeo-do ma-chan-ga-ji-im-ni-da. i tteol-lim, dang-sin tat-im-ni-da.", "en": "Same here. This trembling — it's your fault." }
       ],
-      "question": "기장이 되묻던 진짜 이유를 스스로 인정한 것이 뜻하는 바는?",
-      "question_en": "What does it mean that the captain himself finally admits the real reason he kept asking her to repeat herself?",
-      "correct_answer": "그동안 숨겨온 마음을 더 이상 숨기지 않기로 했다는 것",
-      "options": ["그동안 숨겨온 마음을 더 이상 숨기지 않기로 했다는 것", "앞으로는 절대 되묻지 않겠다는 다짐", "승객의 목소리에 문제가 있었다는 지적", "그저 무전 절차를 설명하려는 것"],
-      "explanation": "기장은 그동안 절차라는 핑계 뒤에 숨겨왔던 진짜 마음을, 더 이상 감추지 않고 솔직하게 인정하고 있습니다."
+      "question": "이 대화에서 두 사람의 감정 상태로 가장 알맞은 것은?",
+      "question_en": "What best describes the emotional state of the two people in this exchange?",
+      "correct_answer": "서로의 고백에 둘 다 긴장하며 설레고 있다",
+      "options": ["서로의 고백에 둘 다 긴장하며 설레고 있다", "기장만 긴장하고 손님은 무덤덤하다", "손님이 기장의 말을 믿지 못해 불안해한다", "두 사람 모두 어색해서 대화를 피하고 있다"],
+      "explanation": "기장의 진심 어린 고백에 두 사람 모두 심장이 빨리 뛸 만큼 긴장하고 설레는 감정을 함께 나누고 있습니다."
     }
   ]
 }

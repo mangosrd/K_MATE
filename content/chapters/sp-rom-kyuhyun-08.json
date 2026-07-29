@@ -1,62 +1,62 @@
 {
   "id": "sp-rom-kyuhyun-08",
   "character_id": "kyuhyun",
-  "title": "아가씨라고 부르는 이유",
-  "emoji": "💌",
+  "title": "저도 이런 거 잘 못해요",
+  "emoji": "🍰",
   "story": [
     {
-      "text": "광장시장 먹거리 골목, 사람 많은데 손 놓치면 안 돼요. 꼭 잡고 다녀요.",
-      "reading": "gwang-jang-si-jang meok-geo-ri gol-mok, sa-ram man-eun-de son not-chi-myeon an dwae-yo. kkok jab-go da-nyeo-yo.",
-      "en": "The food alleys of Gwangjang Market are crowded — don't let go of my hand. Hold on tight."
+      "text": "토요일 오후, 우리는 조용한 골목 안 작은 카페에 마주 앉았다. 평소라면 먼저 농담을 던졌을 그가, 오늘은 이상하게 말이 없었다.",
+      "reading": "to-yo-il o-hu, u-ri-neun jo-yong-han gol-mok an jak-eun ka-pe-e ma-ju anj-at-da. pyeong-so-ra-myeon meon-jeo nong-dam-eul deon-jyeot-eul geu-ga, o-neul-eun i-sang-ha-ge mal-i eop-seot-da.",
+      "en": "Saturday afternoon, we sat facing each other in a small cafe tucked in a quiet alley. He, who would normally crack a joke first, was strangely quiet today."
     },
     {
-      "text": "제가 이름 대신 '아가씨'라고 부르는 거 눈치채셨죠? 사실 이름 부르면 너무 가까워지는 것 같아서, 일부러 그랬어요.",
-      "reading": "je-ga i-reum dae-sin a-ga-ssi-ra-go bu-reu-neun geo nun-chi-chae-syeot-jyo? sa-sil i-reum bu-reu-myeon neo-mu ga-kka-wo-ji-neun geot gat-a-seo, il-bu-reo geu-rae-sseo-yo.",
-      "en": "You noticed I call you 'agassi' instead of your real name, right? Honestly, using your real name felt like it'd bring us too close, so I did it on purpose.",
+      "text": "몇 번이나 입을 열려다 마는 그의 모습이, 조금 어색해 보였다. 나는 그 모습이 낯설면서도 신기했다.",
+      "reading": "myeot beon-i-na ib-eul yeol-lyeo-da ma-neun geu-ui mo-seub-i, jo-geum eo-saek-hae bo-yeot-da. na-neun geu mo-seub-i nat-seol-myeon-seo-do sin-gi-haet-da.",
+      "en": "The way he kept starting to speak and stopping looked a little awkward. I found it both unfamiliar and fascinating.",
       "highlight_word_id": "w01"
     },
     {
-      "text": "이 '시장' 안에서는 아가씨도 그냥 저만의 손님이잖아요. 그래서 더 다정하게 부르고 싶어졌어요.",
-      "reading": "i si-jang an-e-seo-neun a-ga-ssi-do geu-nyang jeo-man-ui son-nim-i-jan-a-yo. geu-rae-seo deo da-jeong-ha-ge bu-reu-go si-peo-jyeo-sseo-yo.",
-      "en": "Inside this 'market', you're just my own guest, aren't you. So I wanted to call you more affectionately.",
-      "highlight_word_id": "w02"
-    },
-    {
-      "text": "'손님'이라고 부르면 너무 멀게 느껴지고, 이름 부르면 너무 가까워질까 봐 무섭고. 그래서 아가씨였어요. ...제 나름의 안전거리랄까요.",
-      "reading": "son-nim-i-ra-go bu-reu-myeon neo-mu meol-ge neu-kkyeo-ji-go, i-reum bu-reu-myeon neo-mu ga-kka-wo-jil-kka bwa mu-seop-go. geu-rae-seo a-ga-ssi-yeo-sseo-yo. ...je na-reum-ui an-jeon-geo-ri-ral-kka-yo.",
-      "en": "Calling you a 'guest' feels too distant, and using your name felt scary — like it'd bring us too close. So 'agassi' it was. ...my own kind of safe distance, I guess.",
-      "highlight_word_id": "w03"
-    },
-    {
-      "text": "'아가씨'라고 부르는 진짜 '이유', 궁금하지 않아요?",
-      "reading": "a-ga-ssi-ra-go bu-reu-neun jin-jja i-yu, gung-geum-ha-ji an-a-yo?",
-      "en": "Curious about the real 'reason' I call you 'agassi'?",
-      "highlight_word_id": "w04"
-    },
-    {
-      "text": "'우리'라는 말까지 붙이는 순간, 이미 제 '마음'속엔 아가씨가 들어와 있다는 뜻이거든요. 근데 이거, 저도 처음 느껴보는 거라 좀 낯서네요.",
-      "reading": "u-ri-ra-neun mal-kka-ji but-i-neun sun-gan, i-mi je ma-eum-sok-en a-ga-ssi-ga deul-eo-wa it-da-neun tteus-i-geo-deun-yo. geun-de i-geo, jeo-do cheo-eum neu-kkyeo-bo-neun geo-ra jom nat-seo-ne-yo.",
-      "en": "The moment I add the word 'our' on top of it, it means you've already made your way into my 'heart'. This is honestly the first time I've felt this way — it's a little unfamiliar, even for me.",
+      "text": "그는 커피잔을 만지작거리다가 겨우 입을 열었다. '저 지금 완전 긴장했어요. 믿겨요? 능글맞은 규현 기장이 이런 것도 다 있네요.'",
+      "reading": "geu-neun keo-pi-jan-eul man-ji-jak-geo-ri-da-ga gyeo-u ib-eul yeol-eot-da. jeo ji-geum wan-jeon gin-jang-haet-seo-yo. mid-gyeo-yo? neung-geul-maj-eun gyu-hyeon gi-jang-i i-reon geot-do da it-ne-yo.",
+      "en": "He fidgeted with his coffee cup and finally spoke. \"I'm completely nervous right now. Can you believe it? Turns out even smooth Captain Kyuhyun has moments like this.\"",
       "highlight_word_id": "w05"
     },
     {
-      "text": "자, 떡볶이도 먹었으니 이제 문제 풀 힘도 났겠죠? 오늘 배운 단어들 확인해볼까요?",
-      "reading": "ja, tteok-bo-kki-do meok-eo-sseu-ni i-je mun-je pul him-do nat-get-jyo? o-neul bae-un dan-eo-deul hwa-gin-hae-bol-kka-yo?",
-      "en": "Alright, now that you've eaten some tteokbokki, you should have the energy for some questions, right? Shall we check today's words?"
+      "text": "'사실 저, 이런 자리 진짜 오랜만이에요. 아니, 어쩌면 처음일지도 몰라요 — 이렇게 서툴게 구는 거.'",
+      "reading": "sa-sil jeo, i-reon ja-ri jin-jja o-raen-man-i-e-yo. a-ni, eo-jjeo-myeon cheo-eum-il-ji-do mol-la-yo — i-reo-ke seo-tul-ge gu-neun geo.",
+      "en": "\"Honestly, it's been a really long time since I've been on a date like this. Or, maybe this is actually the first time — being this clumsy about it.\"",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "다들 그를 바람둥이라고 불렀지만, 정작 마주 앉은 그는 자기 속마음을 꺼내는 데 서툰 사람이었다. 소문과 실제 모습이 이렇게 다를 줄은 몰랐다.",
+      "reading": "da-deul geu-reul ba-ram-dung-i-ra-go bul-leot-ji-man, jeong-jak ma-ju anj-eun geu-neun ja-gi sok-ma-eum-eul kkeo-nae-neun de seo-tun sa-ram-i-eot-da. so-mun-gwa sil-je mo-seub-i i-reo-ke da-reul jul-eun mol-lat-da.",
+      "en": "Everyone called him a player, but sitting across from him now, he was actually someone clumsy at revealing his inner feelings. I hadn't expected the rumors to be so different from reality.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "그는 겸연쩍게 웃으며 말했다. '근데 이상하게, 아가씨 앞에서는 어색한 것도 나쁘지 않네요. 오히려… 편안해요.'",
+      "reading": "geu-neun gyeom-yeon-jjeok-ge us-eu-myeo mal-haet-da. geun-de i-sang-ha-ge, a-ga-ssi ap-e-seo-neun eo-saek-han geot-do na-ppeu-ji an-ne-yo. o-hi-ryeo… pyeon-an-hae-yo.",
+      "en": "He laughed sheepishly. \"But strangely, even being awkward doesn't feel so bad in front of you. If anything... I feel comfortable.\"",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "완벽하게 능글맞던 사람이 보여준 서투른 진심이, 그 어떤 매끄러운 농담보다 더 깊이 와닿았다.",
+      "reading": "wan-byeok-ha-ge neung-geul-maj-deon sa-ram-i bo-yeo-jun seo-tu-reun jin-sim-i, geu eo-tteon mae-kkeu-reo-un nong-dam-bo-da deo gip-i wa-da-at-da.",
+      "en": "The clumsy sincerity shown by someone who was normally flawlessly smooth touched me far more deeply than any of his polished jokes ever had."
     }
   ],
   "words": [
-    { "id": "w01", "word": "애칭", "reading": "ae-ching", "meaning": "pet name, nickname", "example": "저는 아가씨를 애칭으로 불러요.", "example_reading": "jeo-neun a-ga-ssi-reul ae-ching-eu-ro bul-leo-yo", "example_en": "I call you by a pet name." },
-    { "id": "w02", "word": "시장", "reading": "si-jang", "meaning": "market", "example": "광장시장에는 맛있는 음식이 많아요.", "example_reading": "gwang-jang-si-jang-e-neun ma-sit-neun eum-sik-i man-a-yo", "example_en": "Gwangjang Market has lots of delicious food." },
-    { "id": "w03", "word": "손님", "reading": "son-nim", "meaning": "guest, customer", "example": "오늘은 특별한 손님이 왔어요.", "example_reading": "o-neul-eun teuk-byeol-han son-nim-i wa-sseo-yo", "example_en": "A special guest came today." },
-    { "id": "w04", "word": "이유", "reading": "i-yu", "meaning": "reason", "example": "그렇게 부르는 이유가 있어요.", "example_reading": "geu-reo-ke bu-reu-neun i-yu-ga i-sseo-yo", "example_en": "There's a reason I call you that." },
-    { "id": "w05", "word": "마음", "reading": "ma-eum", "meaning": "heart, mind", "example": "제 마음속에 아가씨가 있어요.", "example_reading": "je ma-eum-sok-e a-ga-ssi-ga i-sseo-yo", "example_en": "You're in my heart." }
+    { "id": "w01", "word": "어색하다", "reading": "eo-saek-ha-da", "meaning": "to be awkward", "example": "처음 만났을 때는 좀 어색했다.", "example_reading": "cheo-eum man-nass-eul ttae-neun jom eo-saek-haet-da", "example_en": "It was a little awkward when we first met." },
+    { "id": "w02", "word": "서투르다", "reading": "seo-tu-reu-da", "meaning": "to be clumsy, unskilled", "example": "그는 이런 대화가 서투르다.", "example_reading": "geu-neun i-reon dae-hwa-ga seo-tu-reu-da", "example_en": "He's clumsy at this kind of conversation." },
+    { "id": "w03", "word": "편안하다", "reading": "pyeon-an-ha-da", "meaning": "to be comfortable", "example": "그 옆에 있으면 마음이 편안하다.", "example_reading": "geu yeop-e iss-eu-myeon ma-eum-i pyeon-an-ha-da", "example_en": "I feel at ease when I'm beside him." },
+    { "id": "w04", "word": "속마음", "reading": "sok-ma-eum", "meaning": "inner feelings, true heart", "example": "그가 드디어 속마음을 보여줬다.", "example_reading": "geu-ga deu-di-eo sok-ma-eum-eul bo-yeo-jwot-da", "example_en": "He finally showed his true feelings." },
+    { "id": "w05", "word": "긴장하다", "reading": "gin-jang-ha-da", "meaning": "to be nervous, tense", "example": "그는 나 때문에 긴장한 것 같았다.", "example_reading": "geu-neun na ttae-mun-e gin-jang-han geot gat-at-da", "example_en": "He seemed nervous because of me." }
   ],
   "sentences": [
-    { "id": "s01", "ko": "저는 아가씨를 애칭으로 불러요.", "reading": "jeo-neun a-ga-ssi-reul ae-ching-eu-ro bul-leo-yo", "en": "I call you by a pet name." },
-    { "id": "s02", "ko": "광장시장에는 맛있는 음식이 많아요.", "reading": "gwang-jang-si-jang-e-neun ma-sit-neun eum-sik-i man-a-yo", "en": "Gwangjang Market has lots of delicious food." },
-    { "id": "s03", "ko": "오늘은 특별한 손님이 왔어요.", "reading": "o-neul-eun teuk-byeol-han son-nim-i wa-sseo-yo", "en": "A special guest came today." },
-    { "id": "s04", "ko": "그렇게 부르는 이유가 있어요.", "reading": "geu-reo-ke bu-reu-neun i-yu-ga i-sseo-yo", "en": "There's a reason I call you that." },
-    { "id": "s05", "ko": "제 마음속에 아가씨가 있어요.", "reading": "je ma-eum-sok-e a-ga-ssi-ga i-sseo-yo", "en": "You're in my heart." }
+    { "id": "s01", "ko": "처음 만났을 때는 좀 어색했다.", "reading": "cheo-eum man-nass-eul ttae-neun jom eo-saek-haet-da", "en": "It was a little awkward when we first met." },
+    { "id": "s02", "ko": "그는 이런 대화가 서투르다.", "reading": "geu-neun i-reon dae-hwa-ga seo-tu-reu-da", "en": "He's clumsy at this kind of conversation." },
+    { "id": "s03", "ko": "그 옆에 있으면 마음이 편안하다.", "reading": "geu yeop-e iss-eu-myeon ma-eum-i pyeon-an-ha-da", "en": "I feel at ease when I'm beside him." },
+    { "id": "s04", "ko": "그가 드디어 속마음을 보여줬다.", "reading": "geu-ga deu-di-eo sok-ma-eum-eul bo-yeo-jwot-da", "en": "He finally showed his true feelings." },
+    { "id": "s05", "ko": "그는 나 때문에 긴장한 것 같았다.", "reading": "geu-neun na ttae-mun-e gin-jang-han geot gat-at-da", "en": "He seemed nervous because of me." }
   ]
 }

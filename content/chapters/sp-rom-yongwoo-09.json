@@ -1,93 +1,93 @@
 {
   "id": "sp-rom-yongwoo-09",
   "character_id": "yongwoo",
-  "title": "제주 바다 앞에서 인정한 진심",
-  "emoji": "🌊",
+  "title": "동생이라는 말로는 이제",
+  "emoji": "🌙",
   "level": "intermediate_advanced",
   "story": [
     {
-      "text": "빨갛고 하얀 목마 등대 두 개가 마주 선 이호테우 해변, 노을이 수평선 너머로 저물고 있었다.",
-      "reading": "ppal-gat-go ha-yan mong-ma deung-dae du gae-ga ma-ju seon i-ho-te-u hae-byeon, no-eul-i su-pyeong-seon neo-meo-ro jeo-mul-go iss-eot-da.",
-      "en": "At Iho Tewoo Beach, where the red and white horse-shaped lighthouses stand facing each other, the sunset was sinking beyond the horizon."
+      "text": "이기대 해안산책로, 파도 소리를 배경으로 저 멀리 광안대교의 불빛이 반짝였다. 여행의 마지막 밤이었다.",
+      "reading": "i-gi-dae hae-an-san-chaeng-no, pa-do so-ri-reul bae-gyeong-eu-ro jeo meol-li gwang-an-dae-gyo-ui bul-bit-i ban-jjag-yeot-da. yeo-haeng-ui ma-ji-mak bam-i-eot-da.",
+      "en": "Along the Igidae coastal trail, the far-off lights of Gwangan Bridge sparkled against the sound of waves. It was the last night of the trip."
     },
     {
-      "text": "등대에 불이 하나둘 켜지자, 용우가 걸음을 멈추고 나를 바라본다. 평소보다 표정이 굳어 있었다.",
-      "reading": "deung-dae-e bul-i ha-na-dul kyeo-ji-ja, yong-u-ga geol-eum-eul meom-chu-go na-reul ba-ra-bon-da. pyeong-so-bo-da pyo-jeong-i gud-eo iss-eot-da.",
-      "en": "As the lighthouse lights came on one by one, Yongwoo stopped walking and looked at me. His expression was more tense than usual.",
+      "text": "용우는 평소보다 말이 없었다. 난간에 기대어 한참 불빛만 바라보다가, 문득 입을 열었다. '내일이면 돌아가는구나.'",
+      "reading": "yong-u-neun pyeong-so-bo-da mal-i eop-seot-da. nan-gan-e gi-dae-eo han-cham bul-bit-man ba-ra-bo-da-ga, mun-deuk ib-eul yeol-eot-da. nae-il-i-myeon dol-a-ga-neun-gu-na.",
+      "en": "Yongwoo was quieter than usual. Leaning on the railing, he stared at the lights for a long while before finally speaking. 'Tomorrow we go back.'",
       "highlight_word_id": "w01"
     },
     {
-      "text": "'저 수평선 볼 때마다 너 생각했다. 옆에 있어도 자꾸 보고 싶고, 그게 이상하다고 생각했는데.'",
-      "reading": "jeo su-pyeong-seon bol ttae-ma-da neo saeng-gak-aet-da. yeop-e iss-eo-do ja-kku bo-go sip-go, geu-ge i-sang-ha-da-go saeng-gak-aet-neun-de.",
-      "en": "'Every time I looked at that horizon, I thought of you. Even with you right beside me, I kept wanting to see you more — I thought that was strange.'",
+      "text": "'이번 여행, 되게 좋았어요. 표도 같이 끊어주고, 몰래 사진도 찍고, 스트랩까지…' 웃으며 하나씩 꼽자 용우가 헛기침을 하며 시선을 피한다.",
+      "reading": "i-beon yeo-haeng, doe-ge jo-ass-eo-yo. pyo-do gat-i kkeun-eo-ju-go, mol-lae sa-jin-do jjik-go, seu-teu-raeb-kka-ji. us-eu-myeo ha-na-ssik kkop-ja yong-u-ga heot-gi-chim-eul ha-myeo si-seon-eul pi-han-da.",
+      "en": "'This trip was really good. You booked the tickets with me, you secretly took photos, even the strap...' As I counted them off, smiling, Yongwoo cleared his throat and looked away.",
       "highlight_word_id": "w02"
     },
     {
-      "text": "목소리가 미세하게 떨리는 게 느껴졌다. 용우가 이렇게 긴장한 모습은 처음이었다.",
-      "reading": "mok-so-ri-ga mi-se-ha-ge tteol-li-neun ge neu-kkyeo-jyeot-da. yong-u-ga i-reo-ke gin-jang-han mo-seub-eun cheo-eum-i-eot-da.",
-      "en": "I could tell his voice was trembling slightly. It was the first time I'd ever seen Yongwoo this nervous.",
-      "highlight_word_id": "w05"
-    },
-    {
-      "text": "'이상한 게 아니더라. 그게 그냥… 내 진심이었다. 동생이 아니라, 좋아하는 사람으로.'",
-      "reading": "i-sang-han ge a-ni-deo-ra. geu-ge geu-nyang, nae jin-sim-i-eot-da. dong-saeng-i a-ni-ra, jo-a-ha-neun sa-ram-eu-ro.",
-      "en": "'It wasn't strange at all. It was just... my true heart. Not as a sibling, but as someone I like.'",
-      "highlight_word_id": "w04"
-    },
-    {
-      "text": "파도 소리를 배경 삼아, 용우가 마침내 고백한다. '형이니 동생이니, 그런 말로는 이제 안 되겠다. 나 너 좋아한다. …좋아한다고, 마. 와 이제 와서 딴소리하겠노.' 늘 방송처럼 또렷하던 발음이 무너지고, 숨겨왔던 부산 사투리가 고스란히 드러났다. 그게 오히려 어떤 말보다 진짜 같았다.",
-      "reading": "pa-do so-ri-reul bae-gyeong sam-a, yong-u-ga ma-chim-nae go-baek-an-da. hyeong-i-ni dong-saeng-i-ni, geu-reon mal-lo-neun i-je an doe-get-da. na neo jo-a-han-da. jo-a-han-da-go, ma. wa i-je wa-seo ttan-so-ri-ha-get-no. neul bang-song-cheo-reom tto-ryeot-ha-deon bal-eum-i mu-neo-ji-go, sum-gyeo-wat-deon bu-san sa-tu-ri-ga go-seu-ran-hi deu-reo-nat-da. geu-ge o-hi-ryeo eo-tteon mal-bo-da jin-jja gat-at-da.",
-      "en": "With the sound of the waves as a backdrop, Yongwoo finally confesses. ''Older brother,' 'younger sibling' — those words don't work anymore. I like you. ...I said I like you, seriously. Why would I go back on it now.' The radio-clear diction he'd always kept, even mid-flight, gave way completely, and the Busan dialect he'd hidden for so long came spilling out plain and unguarded. Somehow it felt more real than any polished sentence could have.",
+      "text": "'…처음엔, 그냥 걱정돼서 따라온 거였다. 진짜로.' 낮은 목소리로 시작한 그가 말을 잇지 못하고 한참을 멈췄다.",
+      "reading": "cheo-eum-en, geu-nyang geok-jeong-dwae-seo tta-ra-on geo-yeot-da. jin-jja-ro. naj-eun mok-so-ri-ro si-jak-han geu-ga mal-eul it-ji mot-ha-go han-cham-eul meom-chwot-da.",
+      "en": "'...At first, I really did just follow you because I was worried. Genuinely.' He started in a low voice, then fell silent for a long while, unable to continue.",
       "highlight_word_id": "w03"
     },
     {
-      "text": "심장이 터질 것 같아 아무 말도 못 하는 나를 보며 용우가 슬쩍 웃는다. '대답은 천천히 해도 된다. 대신 오늘 대화 몇 개는 잘 들어봐라, 나만큼 떨렸을 사람들 얘기니까.'",
-      "reading": "sim-jang-i teo-jil geot gat-a a-mu mal-do mot ha-neun na-reul bo-myeo yong-u-ga seul-jjak us-neun-da. dae-dab-eun cheon-cheon-hi hae-do doen-da. dae-sin o-neul dae-hwa myeot gae-neun jal deul-eo-bwa-ra, na-man-keum tteol-lyeoss-eul sa-ram-deul yae-gi-ni-kka.",
-      "en": "Seeing me speechless with my heart about to burst, Yongwoo smiles faintly. 'You can take your time answering. But listen to today's conversations carefully — they're about people who were probably just as nervous as I was.'"
+      "text": "'근데 표 같이 끊을 때도, 사진 찍을 때도, 스트랩 고를 때도… 동생 챙긴다는 말로 넘기기엔, 내가 너무 많이 신경 쓰고 있더라.' 스스로도 낯선 고백에 목소리 끝이 흔들렸다.",
+      "reading": "geun-de pyo gat-i kkeun-eul ttae-do, sa-jin jjig-eul ttae-do, seu-teu-raep go-reul ttae-do, dong-saeng chaeng-gin-da-neun mal-lo neom-gi-gi-en, nae-ga neo-mu man-i sin-gyeong sseu-go it-deo-ra. seu-seu-ro-do nat-seon go-baeg-e mok-so-ri kkeut-i heun-deul-lyeot-da.",
+      "en": "'But when we booked the tickets together, when I took your photo, when I picked out that strap... calling it just 'looking out for my sibling' — I was caring way too much for that to explain it.' His voice wavered at the end, as if the confession itself felt unfamiliar even to him.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "'동생이라는 말로는, 이제 설명이 안 된다.' 그가 처음으로 스스로 그 단어를 완전히 내려놓았다. 눈빛이 흔들림 없이 나를 향해 있었다.",
+      "reading": "dong-saeng-i-ra-neun mal-lo-neun, i-je seol-myeong-i an doen-da. geu-ga cheo-eum-eu-ro seu-seu-ro geu dan-eo-reul wan-jeon-hi nae-ryeo-noh-at-da. nun-bich-i heun-deul-lim eop-si na-reul hyang-hae iss-eot-da.",
+      "en": "'The word 'sibling' — it doesn't explain this anymore.' For the first time, he set the word down completely, on his own. His eyes stayed fixed on me, steady and unwavering.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "'나머지는… 내일 말할게. 오늘은 여기까지만.' 애써 목소리를 가다듬으며 화제를 돌렸다. '대화 몇 개만 더 듣고 들어가자. 나도 마음 좀 추스르고.'",
+      "reading": "na-meo-ji-neun, nae-il mal-hal-ge. o-neul-eun yeo-gi-kka-ji-man. ae-sseo mok-so-ri-reul ga-da-deum-eu-myeo hwa-je-reul dol-lyeot-da. dae-hwa myeot gae-man deo deut-go deul-eo-ga-ja. na-do ma-eum jom chu-seu-reu-go.",
+      "en": "'The rest of it... I'll tell you tomorrow. That's as far as I can go today.' He forced his voice steady, changing the subject. 'Let's listen to a few more conversations before we head in. Let me collect myself, too.'"
     }
   ],
   "words": [
-    { "id": "w01", "word": "등대", "reading": "deung-dae", "meaning": "Lighthouse", "example": "이호테우 해변에는 빨갛고 하얀 목마 등대가 있다.", "example_reading": "i-ho-te-u hae-byeon-e-neun ppal-gat-go ha-yan mong-ma deung-dae-ga it-da", "example_en": "There are red and white horse-shaped lighthouses at Iho Tewoo Beach." },
-    { "id": "w02", "word": "수평선", "reading": "su-pyeong-seon", "meaning": "Horizon", "example": "수평선 너머로 해가 완전히 저물었다.", "example_reading": "su-pyeong-seon neo-meo-ro hae-ga wan-jeon-hi jeo-mul-eot-da", "example_en": "The sun set completely beyond the horizon." },
-    { "id": "w03", "word": "고스란히", "reading": "go-seu-ran-hi", "meaning": "Entirely, without loss, just as it is", "example": "숨겨왔던 사투리가 고스란히 드러났다.", "example_reading": "sum-gyeo-wat-deon sa-tu-ri-ga go-seu-ran-hi deu-reo-nat-da", "example_en": "The dialect he'd hidden away came out completely, unfiltered." },
-    { "id": "w04", "word": "진심", "reading": "jin-sim", "meaning": "True heart, sincerity", "example": "그 말은 그의 진심에서 나온 것이었다.", "example_reading": "geu mal-eun geu-ui jin-sim-e-seo na-on geos-i-eot-da", "example_en": "Those words came from his true heart." },
-    { "id": "w05", "word": "떨리다", "reading": "tteol-li-da", "meaning": "To tremble, shake (with nerves)", "example": "긴장해서 그의 목소리가 살짝 떨렸다.", "example_reading": "gin-jang-hae-seo geu-ui mok-so-ri-ga sal-jjak tteol-lyeot-da", "example_en": "His voice trembled slightly out of nervousness." }
+    { "id": "w01", "word": "난간", "reading": "nan-gan", "meaning": "Railing", "example": "난간에 기대어 바다를 바라보았다.", "example_reading": "nan-gan-e gi-dae-eo ba-da-reul ba-ra-bo-at-da", "example_en": "He leaned on the railing, gazing at the sea." },
+    { "id": "w02", "word": "꼽다", "reading": "kkop-da", "meaning": "To count off, list one by one", "example": "여행의 좋았던 점을 하나씩 꼽아 보았다.", "example_reading": "yeo-haeng-ui jo-ass-deon jeom-eul ha-na-ssik kkop-a bo-at-da", "example_en": "I counted off, one by one, the things I loved about the trip." },
+    { "id": "w03", "word": "잇다", "reading": "it-da", "meaning": "To continue (speaking)", "example": "그는 말을 잇지 못하고 멈췄다.", "example_reading": "geu-neun mal-eul it-ji mot-ha-go meom-chwot-da", "example_en": "He stopped, unable to continue speaking." },
+    { "id": "w04", "word": "낯설다", "reading": "nat-seol-da", "meaning": "To feel unfamiliar, strange", "example": "스스로도 낯선 고백에 목소리가 흔들렸다.", "example_reading": "seu-seu-ro-do nat-seon go-baeg-e mok-so-ri-ga heun-deul-lyeot-da", "example_en": "His voice wavered at a confession that felt unfamiliar even to him." },
+    { "id": "w05", "word": "내려놓다", "reading": "nae-ryeo-noh-da", "meaning": "To set down, let go of", "example": "그는 마침내 '동생'이라는 말을 내려놓았다.", "example_reading": "geu-neun ma-chim-nae dong-saeng-i-ra-neun mal-eul nae-ryeo-noh-at-da", "example_en": "He finally set down the word 'sibling.'" }
   ],
   "sentences": [
-    { "id": "s01", "ko": "빨갛고 하얀 등대 두 개가 마주 선 해변에 노을이 저물고 있었다.", "reading": "ppal-gat-go ha-yan deung-dae du gae-ga ma-ju seon hae-byeon-e no-eul-i jeo-mul-go iss-eot-da", "en": "The sunset was fading at the beach where two red and white lighthouses stood facing each other." },
-    { "id": "s02", "ko": "그는 수평선을 보며 자꾸 내 생각이 났다고 조용히 말했다.", "reading": "geu-neun su-pyeong-seon-eul bo-myeo ja-kku nae saeng-gak-i nat-da-go jo-yong-hi mal-haet-da", "en": "He quietly said that looking at the horizon kept making him think of me." },
-    { "id": "s03", "ko": "고백하는 순간 그가 숨겨왔던 사투리가 고스란히 드러났다.", "reading": "go-baek-a-neun sun-gan geu-ga sum-gyeo-wat-deon sa-tu-ri-ga go-seu-ran-hi deu-reo-nat-da", "en": "In the moment of his confession, the dialect he'd been hiding came out completely, unfiltered." },
-    { "id": "s04", "ko": "동생이 아니라 좋아하는 사람이라는 그의 진심이 전해졌다.", "reading": "dong-saeng-i a-ni-ra jo-a-ha-neun sa-ram-i-ra-neun geu-ui jin-sim-i jeon-hae-jyeot-da", "en": "His true feelings came through — not as a sibling, but as someone he liked." },
-    { "id": "s05", "ko": "파도 소리를 배경으로 그는 마침내 고백했다.", "reading": "pa-do so-ri-reul bae-gyeong-eu-ro geu-neun ma-chim-nae go-baek-aet-da", "en": "With the sound of the waves in the background, he finally confessed." }
+    { "id": "s01", "ko": "이기대 해안산책로에서 멀리 광안대교의 불빛이 반짝이는 게 보였다.", "reading": "i-gi-dae hae-an-san-chaeng-no-e-seo meol-li gwang-an-dae-gyo-ui bul-bit-i ban-jjag-i-neun ge bo-yeot-da", "en": "From the Igidae coastal trail, the lights of Gwangan Bridge sparkled in the distance." },
+    { "id": "s02", "ko": "여행에서 좋았던 일들을 하나씩 꼽자 그는 시선을 피했다.", "reading": "yeo-haeng-e-seo jo-ass-deon il-deul-eul ha-na-ssik kkop-ja geu-neun si-seon-eul pi-haet-da", "en": "As I counted off the good moments from the trip, he looked away." },
+    { "id": "s03", "ko": "그는 말을 잇지 못하고 한참을 침묵했다.", "reading": "geu-neun mal-eul it-ji mot-ha-go han-cham-eul chim-muk-aet-da", "en": "He couldn't continue and fell silent for a long while." },
+    { "id": "s04", "ko": "스스로도 낯선 고백에 그의 목소리 끝이 흔들렸다.", "reading": "seu-seu-ro-do nat-seon go-baeg-e geu-ui mok-so-ri kkeut-i heun-deul-lyeot-da", "en": "His voice wavered at a confession that felt unfamiliar even to him." },
+    { "id": "s05", "ko": "동생이라는 말을 그는 처음으로 완전히 내려놓았다.", "reading": "dong-saeng-i-ra-neun mal-eul geu-neun cheo-eum-eu-ro wan-jeon-hi nae-ryeo-noh-at-da", "en": "For the first time, he completely set down the word 'sibling.'" }
   ],
   "dialogues": [
     {
       "id": "d01",
       "turns": [
-        { "speaker": "손님", "text": "오늘따라 왜 이렇게 말이 없어요?", "reading": "o-neul-tta-ra wae i-reo-ke mal-i eop-seo-yo?", "en": "Why have you been so quiet today?" },
-        { "speaker": "권용우 기장", "text": "할 말을 정리하고 있었다. …떨려서 그런다, 지금.", "reading": "hal mal-eul jeong-ni-ha-go iss-eot-da. tteol-lyeo-seo geu-reon-da, ji-geum.", "en": "I was gathering my thoughts on what to say. ...I'm nervous right now, that's why." },
-        { "speaker": "손님", "text": "기장님이 떨릴 때도 있어요?", "reading": "gi-jang-nim-i tteol-lil ttae-do iss-eo-yo?", "en": "Do you get nervous too, Captain?" },
-        { "speaker": "권용우 기장", "text": "너 앞에서는, 있더라. 오늘 처음 알았다.", "reading": "neo ap-e-seo-neun, it-deo-ra. o-neul cheo-eum al-at-da.", "en": "In front of you, apparently I do. I just found that out today." }
+        { "speaker": "손님", "text": "내일이면 돌아가네요. 이번 여행 진짜 좋았어요.", "reading": "nae-il-i-myeon dol-a-ga-ne-yo. i-beon yeo-haeng jin-jja jo-ass-eo-yo.", "en": "We're heading back tomorrow. This trip was really great." },
+        { "speaker": "권용우 기장", "text": "…나도. 처음엔 그냥 걱정돼서 따라온 거였는데.", "reading": "na-do. cheo-eum-en geu-nyang geok-jeong-dwae-seo tta-ra-on geo-yeot-neun-de.", "en": "...Me too. At first I only came along because I was worried." },
+        { "speaker": "손님", "text": "지금은요?", "reading": "ji-geum-eun-yo?", "en": "And now?" },
+        { "speaker": "권용우 기장", "text": "…지금은, 모르겠다. 그 말로는 설명이 안 되는 것 같다.", "reading": "ji-geum-eun, mo-reu-get-da. geu mal-lo-neun seol-myeong-i an doe-neun geot gat-da.", "en": "...Now, I don't know. I don't think that word explains it anymore." }
       ],
-      "question": "용우가 말없이 있었던 이유로 가장 알맞은 것은?",
-      "question_en": "What best explains why Yongwoo was quiet?",
-      "correct_answer": "진심을 고백하기 위해 할 말을 정리하며 긴장하고 있었다",
-      "options": ["진심을 고백하기 위해 할 말을 정리하며 긴장하고 있었다", "비행 스케줄을 생각하고 있었다", "손님에게 화가 나 있었다", "등대 불빛을 세고 있었다"],
-      "explanation": "용우는 자신의 진심을 고백하기 위해 할 말을 정리하며 긴장하고 있었습니다."
+      "question": "용우가 '그 말로는 설명이 안 된다'고 한 것은 무엇을 가리키나요?",
+      "question_en": "What does Yongwoo mean when he says 'that word doesn't explain it anymore'?",
+      "correct_answer": "손님을 '동생'으로서 걱정하는 마음이라는 설명",
+      "options": ["손님을 '동생'으로서 걱정하는 마음이라는 설명", "여행 일정이 힘들었다는 설명", "부산 사투리를 쓰는 이유", "규현과의 관계에 대한 설명"],
+      "explanation": "용우는 손님을 향한 마음이 더 이상 '동생을 걱정하는 마음'이라는 말로는 설명되지 않는다는 것을 깨달았습니다."
     },
     {
       "id": "d02",
       "turns": [
-        { "speaker": "권용우 기장", "text": "형이니 동생이니, 그런 말로는 이제 안 되겠다. 나 너 좋아한다. 좋아한다고, 마.", "reading": "hyeong-i-ni dong-saeng-i-ni, geu-reon mal-lo-neun i-je an doe-get-da. na neo jo-a-han-da. jo-a-han-da-go, ma.", "en": "'Older brother,' 'younger sibling' — those words don't work anymore. I like you. I said I like you, seriously." },
-        { "speaker": "손님", "text": "…방금 사투리 나왔어요. 그렇게 떨려요?", "reading": "bang-geum sa-tu-ri na-wass-eo-yo. geu-reo-ke tteol-lyeo-yo?", "en": "...Your dialect just came out. Are you that nervous?" },
-        { "speaker": "권용우 기장", "text": "…어. 이런 적 처음이다. 그냥 알아는 달라고, 내 진심이니까.", "reading": "eo. i-reon jeok cheo-eum-i-da. geu-nyang al-a-neun dal-la-go, nae jin-sim-i-ni-kka.", "en": "...Yeah. This is a first for me. Just know it, that's all — it's how I really feel." },
-        { "speaker": "손님", "text": "…알겠어요. 대신 사투리 쓰는 모습, 되게 진짜 같아서 좋았어요.", "reading": "al-gess-eo-yo. dae-sin sa-tu-ri sseu-neun mo-seub, doe-ge jin-jja gat-a-seo jo-ass-eo-yo.", "en": "...Okay. But hearing your dialect come out — it felt so real, and I liked it." }
+        { "speaker": "권용우 기장", "text": "표 끊을 때도, 사진 찍을 때도, 스트랩 고를 때도… 그게 다 동생 챙기는 걸로는 안 되더라.", "reading": "pyo kkeun-eul ttae-do, sa-jin jjig-eul ttae-do, seu-teu-raep go-reul ttae-do, geu-ge da dong-saeng chaeng-gi-neun geol-lo-neun an doe-deo-ra.", "en": "Booking tickets, taking your photo, picking out the strap... none of that added up to just 'looking out for a sibling.'" },
+        { "speaker": "손님", "text": "그럼 뭔데요?", "reading": "geu-reom mwon-de-yo?", "en": "Then what is it?" },
+        { "speaker": "권용우 기장", "text": "…나머지는 내일 말할게. 오늘은 여기까지만 하자.", "reading": "na-meo-ji-neun nae-il mal-hal-ge. o-neul-eun yeo-gi-kka-ji-man ha-ja.", "en": "...I'll tell you the rest tomorrow. Let's stop here for today." },
+        { "speaker": "손님", "text": "…알겠어요. 내일, 기다릴게요.", "reading": "al-gess-eo-yo. nae-il, gi-da-ril-ge-yo.", "en": "...Okay. I'll be waiting, tomorrow." }
       ],
-      "question": "이 대화에서 용우가 사투리를 쓴 것이 손님에게 준 인상으로 가장 알맞은 것은?",
-      "question_en": "What impression did Yongwoo's slip into dialect leave on the passenger in this conversation?",
-      "correct_answer": "가식이 아니라 진심으로 느껴져서 오히려 더 신뢰가 갔다",
-      "options": ["가식이 아니라 진심으로 느껴져서 오히려 더 신뢰가 갔다", "말투가 이상해서 당황스러웠다", "고향을 숨긴 것에 실망했다", "발음이 부정확해서 못 알아들었다"],
-      "explanation": "평소 흐트러짐 없던 용우의 말투가 사투리로 무너진 순간은, 오히려 그의 고백이 진심임을 보여주는 증거로 다가왔습니다."
+      "question": "용우가 마음을 다 말하지 않고 다음 날로 미룬 이유로 가장 알맞은 것은?",
+      "question_en": "What best explains why Yongwoo put off finishing his confession until the next day?",
+      "correct_answer": "벅찬 감정을 추스르고 제대로 된 마음으로 전하고 싶어서",
+      "options": ["벅찬 감정을 추스르고 제대로 된 마음으로 전하고 싶어서", "손님이 지쳐 보여서 배려한 것이다", "할 말을 잊어버려서", "내일 다른 중요한 일정이 있어서"],
+      "explanation": "용우는 벅차오르는 감정을 추스르고 제대로 마음을 전하고 싶어서 나머지 말을 다음 날로 미뤘습니다."
     }
   ]
 }

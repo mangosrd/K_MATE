@@ -1,93 +1,93 @@
 {
   "id": "sp-rom-yongwoo-05",
   "character_id": "yongwoo",
-  "title": "동생이라는 말이 유독 어색해진 날",
-  "emoji": "🌊",
+  "title": "낯익은 골목, 낯선 마음",
+  "emoji": "🌆",
   "level": "intermediate_advanced",
   "story": [
     {
-      "text": "성산항에서 우도로 향하는 여객선에 올랐다. 용우는 말없이 난간에 기대 바다를 보고 있었다.",
-      "reading": "seong-san-hang-e-seo u-do-ro hyang-ha-neun yeo-gaek-seon-e ol-lat-da. yong-u-neun mal-eop-si nan-gan-e gi-dae ba-da-reul bo-go iss-eot-da.",
-      "en": "We boarded the ferry from Seongsan Port to Udo Island. Yongwoo leaned on the railing in silence, gazing at the sea."
-    },
-    {
-      "text": "외국인 관광객이 다가와 표를 보여주며 길을 물었다. 용우가 망설임 없이 유창한 영어로 대답해준다. 억양 하나 어색함 없이 술술 나온다.",
-      "reading": "oe-gug-in gwan-gwang-gaeg-i da-ga-wa pyo-reul bo-yeo-ju-myeo gil-eul mul-eot-da. yong-u-ga mang-seol-im eop-si yu-chang-han yeong-eo-ro dae-dab-hae-jun-da. eog-yang ha-na eo-saek-am eop-si sul-sul na-on-da.",
-      "en": "A foreign tourist came over, showing his ticket and asking for directions. Without hesitation, Yongwoo answered in fluent English, the accent smooth and unforced.",
+      "text": "해가 뉘엿뉘엿 넘어갈 무렵, 오래된 책방들이 다닥다닥 붙어 있는 좁은 골목으로 들어섰다. 용우는 지도 한 번 안 보고도 망설임 없이 앞장섰다.",
+      "reading": "hae-ga nwi-eot-nwi-eot neom-eo-gal mu-ryeop, o-rae-doen chaek-bang-deul-i da-dak-da-dak but-eo it-neun jjob-eun gol-mog-eu-ro deul-eo-seot-da. yong-u-neun ji-do han beon an bo-go-do mang-seol-im eop-si ap-jang-seot-da.",
+      "en": "As the sun sank low, we stepped into a narrow alley crowded with old bookshops. Yongwoo led the way without a single glance at a map, without hesitation.",
       "highlight_word_id": "w01"
     },
     {
-      "text": "'미국에서 고등학교 3년 다녔거든.' 놀란 내 표정을 보더니 씩 웃으며 덧붙인다. 'Prego. …아, 이탈리아어도 좀 한다.' 무심코 튀어나온 말에 스스로도 살짝 머쓱해한다.",
-      "reading": "mi-guk-e-seo go-deung-hak-gyo sam-nyeon da-nyeot-geo-deun. nol-lan nae pyo-jeong-eul bo-deo-ni ssig us-eu-myeo deot-buch-in-da. peu-re-go. a, i-tal-li-a-eo-do jom han-da. mu-sim-ko twi-eo-na-on mal-e seu-seu-ro-do sal-jjak meo-sseu-gae-han-da.",
-      "en": "'I did three years of high school in the US.' Seeing my surprised face, he grins and adds, '‘Prego.’ ...Ah, I speak a bit of Italian too.' He looks faintly sheepish, as if the phrase had slipped out on its own.",
+      "text": "'여기 와본 적 있어요? 길을 왜 이렇게 잘 알아요.' 무심코 물었는데, 용우의 발걸음이 순간 멈칫했다.",
+      "reading": "yeo-gi wa-bon jeok iss-eo-yo? gil-eul wae i-reo-ke jal al-a-yo? mu-sim-ko mul-eoss-neun-de, yong-u-ui bal-geol-eum-i sun-gan meom-chit-aet-da.",
+      "en": "'Have you been here before? How do you know your way around so well.' I asked without thinking, and Yongwoo's steps faltered for a moment.",
       "highlight_word_id": "w02"
     },
     {
-      "text": "여객선이 흔들릴 때마다 용우가 반사적으로 내 팔을 붙잡았다. 손을 놓을 생각은 하지 않는 것 같았다.",
-      "reading": "yeo-gaek-seon-i heun-deul-lil ttae-ma-da yong-u-ga ban-sa-jeok-eu-ro nae pal-eul but-jab-at-da. son-eul noh-eul saeng-gak-eun ha-ji an-neun geot gat-at-da.",
-      "en": "Every time the ferry rocked, Yongwoo reflexively grabbed my arm. He didn't seem to be thinking about letting go.",
+      "text": "'…나, 여기서 컸다. 부산이 고향이다.' 담담하게 던진 말인데, 나한테는 꽤 놀라운 얘기였다. 몇 년을 알고 지냈는데도 처음 듣는 얘기였다.",
+      "reading": "na, yeo-gi-seo keot-da. bu-san-i go-hyang-i-da. dam-dam-ha-ge deon-jin mal-in-de, na-han-te-neun kkwae nol-la-un yae-gi-eot-da. myeot nyeon-eul al-go ji-naess-neun-de-do cheo-eum deut-neun yae-gi-eot-da.",
+      "en": "'...I grew up here. Busan's where I'm from.' He said it plainly, but for me it was quite the revelation. We'd known each other for years, and I was hearing this for the first time."
+    },
+    {
+      "text": "'왜 여태 말 안 했어요?' '뭐 그렇게 중요한 얘기라고. 물어본 적도 없었잖아.' 무뚝뚝하게 답하면서도 걸음이 자연스럽게 익숙한 골목 사이를 파고들었다.",
+      "reading": "wae yeo-tae mal an haess-eo-yo? mwo geu-reo-ke jung-yo-han yae-gi-ra-go. mul-eo-bon jeok-do eop-seot-jan-a. mu-ttuk-ttuk-ha-ge dab-a-myeon-seo-do geol-eum-i ja-yeon-seu-reop-ge ig-suk-han gol-mok sa-i-reul pa-go-deul-eot-da.",
+      "en": "'Why didn't you ever mention it?' 'It's not exactly a big deal. You never asked, either.' Even as he answered gruffly, his steps naturally wove through the alleys he clearly knew by heart.",
       "highlight_word_id": "w03"
     },
     {
-      "text": "'동생 데려오고 싶었다는 말이…' 하다가 용우가 말끝을 흐린다. 스스로도 그 말이 어색한 눈치였다.",
-      "reading": "dong-saeng de-ryeo-o-go sip-eot-da-neun mal-i, ha-da-ga yong-u-ga mal-kkeut-eul heu-rin-da. seu-seu-ro-do geu mal-i eo-saek-an nun-chi-eot-da.",
-      "en": "'I meant I wanted to bring my—' Yongwoo trails off. He seemed to sense himself just how awkward that word felt.",
-      "highlight_word_id": "w05"
+      "text": "책방 사이 좁은 틈으로 노을이 비쳐 들었다. 용우가 걸음을 멈추고 한참 골목을 바라보다 나지막이 말했다. '…너한테 이 동네 보여주고 싶었던 거, 되게 오래됐다.'",
+      "reading": "chaek-bang sa-i jjob-eun teum-eu-ro no-eul-i bi-chyeo deul-eot-da. yong-u-ga geol-eum-eul meom-chu-go han-cham gol-mog-eul ba-ra-bo-da na-ji-mag-i mal-haet-da. neo-han-te i dong-ne bo-yeo-ju-go sip-eot-deon geo, doe-ge o-rae-dwaet-da.",
+      "en": "Sunset light slanted through the narrow gap between bookshops. Yongwoo stopped walking, staring at the alley for a long moment before speaking quietly. '...I've wanted to show you this neighborhood for a really long time now.'"
     },
     {
-      "text": "'…이상하네.' 용우가 혼잣말처럼 중얼거린다. '동생이라는 말이, 오늘따라 되게 낯설다.'",
-      "reading": "i-sang-ha-ne. yong-u-ga hon-jan-mal-cheo-reom jung-eol-geo-rin-da. dong-saeng-i-ra-neun mal-i, o-neul-tta-ra doe-ge nat-seol-da.",
-      "en": "'...It's strange.' Yongwoo mutters, almost to himself. 'The word 'sibling' feels really unfamiliar today, somehow.'",
+      "text": "'동생 데려오고 싶어서, 라고 하기엔…' 말을 하다 말고 스스로도 이상하다는 듯 미간을 좁혔다. '아니다. 그냥, 너라서 보여주고 싶었던 거 같다.' 처음으로 '동생'이라는 단어를 쓰다가 스스로 지운 순간이었다.",
+      "reading": "dong-saeng de-ryeo-o-go sip-eo-seo, ra-go ha-gi-en. mal-eul ha-da mal-go seu-seu-ro-do i-sang-ha-da-neun deut mi-gan-eul job-hyeot-da. a-ni-da. geu-nyang, neo-ra-seo bo-yeo-ju-go sip-eot-deon geo gat-da. cheo-eum-eu-ro dong-saeng-i-ra-neun dan-eo-reul sseu-da-ga seu-seu-ro ji-un sun-gan-i-eot-da.",
+      "en": "'Because I wanted to bring my—' He stopped mid-sentence, frowning as if the word itself felt wrong. 'No. I think... I just wanted to show it to you. Because it's you.' It was the first time I'd watched him start to reach for the word 'sibling' and pull it back himself.",
       "highlight_word_id": "w04"
     },
     {
-      "text": "그는 한참 바다만 바라보다 헛기침을 하며 화제를 돌렸다. '…뭐, 신경 쓰지 마라. 그것보다 우도 대화 몇 개 들려줄 테니까 잘 들어봐.'",
-      "reading": "geu-neun han-cham ba-da-man ba-ra-bo-da heot-gi-chim-eul ha-myeo hwa-je-reul dol-lyeot-da. mwo, sin-gyeong sseu-ji ma-ra. geu-geot-bo-da u-do dae-hwa myeot gae deul-lyeo-jul te-ni-kka jal deul-eo-bwa.",
-      "en": "He stared at the sea for a long while before clearing his throat and changing the subject. '...Never mind, don't think too much about it. Anyway, I've got some conversations from Udo — listen carefully.'"
+      "text": "괜히 머쓱해졌는지 용우가 헛기침을 하며 다시 걸음을 재촉했다. '됐다, 이런 얘기 할 때가 아니지. 책방 구경이나 하면서 대화 몇 개 들어봐라.'",
+      "reading": "gwaen-hi meo-sseug-hae-jyeon-ji yong-u-ga heot-gi-chim-eul ha-myeo da-si geol-eum-eul jae-chok-aet-da. dwaet-da, i-reon yae-gi hal ttae-ga a-ni-ji. chaek-bang gu-gyeong-i-na ha-myeon-seo dae-hwa myeot gae deul-eo-bwa-ra.",
+      "en": "Seeming suddenly self-conscious, Yongwoo cleared his throat and hurried his pace again. 'Forget it, not the time for this. Go browse the bookshops and listen to a few conversations.'",
+      "highlight_word_id": "w05"
     }
   ],
   "words": [
-    { "id": "w01", "word": "유창하다", "reading": "yu-chang-ha-da", "meaning": "To be fluent (in a language)", "example": "그는 영어를 유창하게 구사한다.", "example_reading": "geu-neun yeong-eo-reul yu-chang-ha-ge gu-sa-han-da", "example_en": "He speaks English fluently." },
-    { "id": "w02", "word": "무심코", "reading": "mu-sim-ko", "meaning": "Without thinking, unintentionally", "example": "그는 무심코 이탈리아어 한마디를 뱉었다.", "example_reading": "geu-neun mu-sim-ko i-tal-li-a-eo han-ma-di-reul baet-eot-da", "example_en": "He let slip a phrase of Italian without meaning to." },
-    { "id": "w03", "word": "반사적", "reading": "ban-sa-jeok", "meaning": "Reflexive, instinctive", "example": "배가 흔들리자 그는 반사적으로 내 팔을 붙잡았다.", "example_reading": "bae-ga heun-deul-li-ja geu-neun ban-sa-jeog-eu-ro nae pal-eul but-jab-at-da", "example_en": "When the boat rocked, he grabbed my arm reflexively." },
-    { "id": "w04", "word": "낯설다", "reading": "nat-seol-da", "meaning": "To feel unfamiliar, strange", "example": "익숙했던 그 말이 오늘따라 낯설게 들렸다.", "example_reading": "ik-suk-aet-deon geu mal-i o-neul-tta-ra nat-seol-ge deul-lyeot-da", "example_en": "That once-familiar word sounded strange to me today, somehow." },
-    { "id": "w05", "word": "말끝을 흐리다", "reading": "mal-kkeut-eul heu-ri-da", "meaning": "To trail off mid-sentence", "example": "그는 뭔가 말하려다 말끝을 흐렸다.", "example_reading": "geu-neun mwon-ga mal-ha-ryeo-da mal-kkeut-eul heu-ryeot-da", "example_en": "He started to say something, then trailed off." }
+    { "id": "w01", "word": "다닥다닥", "reading": "da-dak-da-dak", "meaning": "Closely/tightly packed together", "example": "책방들이 다닥다닥 붙어 있었다.", "example_reading": "chaek-bang-deul-i da-dak-da-dak but-eo iss-eot-da", "example_en": "The bookshops were packed tightly together." },
+    { "id": "w02", "word": "멈칫하다", "reading": "meom-chit-ha-da", "meaning": "To falter, pause abruptly", "example": "질문을 듣고 그는 잠깐 멈칫했다.", "example_reading": "jil-mun-eul deut-go geu-neun jam-kkan meom-chit-aet-da", "example_en": "Hearing the question, he faltered for a moment." },
+    { "id": "w03", "word": "무뚝뚝하다", "reading": "mu-ttuk-ttuk-ha-da", "meaning": "To be gruff, blunt", "example": "그는 무뚝뚝하게 대답했지만 표정은 부드러웠다.", "example_reading": "geu-neun mu-ttuk-ttuk-ha-ge dae-dab-aet-ji-man pyo-jeong-eun bu-deu-reo-wot-da", "example_en": "He answered gruffly, but his expression was gentle." },
+    { "id": "w04", "word": "미간을 좁히다", "reading": "mi-gan-eul job-hi-da", "meaning": "To furrow one's brow", "example": "이상한 기분에 그는 미간을 좁혔다.", "example_reading": "i-sang-han gi-bun-e geu-neun mi-gan-eul job-hyeot-da", "example_en": "He furrowed his brow at the strange feeling." },
+    { "id": "w05", "word": "머쓱하다", "reading": "meo-sseuk-ha-da", "meaning": "To feel awkward/embarrassed", "example": "속마음을 들킨 듯 그는 머쓱해했다.", "example_reading": "sok-ma-eum-eul deul-kin deut geu-neun meo-sseuk-hae-haet-da", "example_en": "He looked awkward, as if his true feelings had been caught out." }
   ],
   "sentences": [
-    { "id": "s01", "ko": "외국인 관광객의 질문에 그는 유창한 영어로 막힘없이 대답했다.", "reading": "oe-gug-in gwan-gwang-gaeg-ui jil-mun-e geu-neun yu-chang-han yeong-eo-ro mak-him-eop-si dae-dab-aet-da", "en": "He answered the foreign tourist's question fluently in English, without a hitch." },
-    { "id": "s02", "ko": "그는 무심코 이탈리아어까지 튀어나와 스스로 머쓱해했다.", "reading": "geu-neun mu-sim-ko i-tal-li-a-eo-kka-ji twi-eo-na-wa seu-seu-ro meo-sseu-gae-haet-da", "en": "A phrase of Italian even slipped out of him unintentionally, and he looked faintly sheepish about it." },
-    { "id": "s03", "ko": "배가 흔들릴 때마다 그는 반사적으로 내 팔을 붙잡았다.", "reading": "bae-ga heun-deul-lil ttae-ma-da geu-neun ban-sa-jeog-eu-ro nae pal-eul but-jab-at-da", "en": "Every time the boat rocked, he grabbed my arm reflexively." },
-    { "id": "s04", "ko": "'동생이라는 말이 낯설다'는 그의 혼잣말이 오래 귓가에 맴돌았다.", "reading": "dong-saeng-i-ra-neun mal-i nat-seol-da-neun geu-ui hon-jan-mal-i o-rae gwit-ga-e maem-dol-at-da", "en": "His murmur, 'the word sibling feels unfamiliar,' lingered in my ears for a long time." },
-    { "id": "s05", "ko": "그는 동생이라는 말을 하려다 말끝을 흐리고 말았다.", "reading": "geu-neun dong-saeng-i-ra-neun mal-eul ha-ryeo-da mal-kkeut-eul heu-ri-go mal-at-da", "en": "He started to say the word 'sibling' but trailed off before finishing." }
+    { "id": "s01", "ko": "오래된 책방들이 다닥다닥 붙어 있는 골목으로 우리는 걸어 들어갔다.", "reading": "o-rae-doen chaek-bang-deul-i da-dak-da-dak but-eo it-neun gol-mog-eu-ro u-ri-neun geol-eo deul-eo-gat-da", "en": "We walked into an alley where old bookshops stood packed tightly together." },
+    { "id": "s02", "ko": "길을 잘 아냐는 질문에 그의 발걸음이 잠깐 멈칫했다.", "reading": "gil-eul jal a-nya-neun jil-mun-e geu-ui bal-geol-eum-i jam-kkan meom-chit-aet-da", "en": "At the question of whether he knew the area well, his steps faltered for a moment." },
+    { "id": "s03", "ko": "그는 무뚝뚝하게 부산이 고향이라고 처음으로 밝혔다.", "reading": "geu-neun mu-ttuk-ttuk-ha-ge bu-san-i go-hyang-i-ra-go cheo-eum-eu-ro balk-yeot-da", "en": "Gruffly, he revealed for the first time that Busan was his hometown." },
+    { "id": "s04", "ko": "동생이라는 말을 하려다 그는 스스로 미간을 좁히며 멈췄다.", "reading": "dong-saeng-i-ra-neun mal-eul ha-ryeo-da geu-neun seu-seu-ro mi-gan-eul job-hi-myeo meom-chwot-da", "en": "Starting to say 'sibling,' he stopped himself, furrowing his brow." },
+    { "id": "s05", "ko": "속마음이 새어 나온 게 머쓱했는지 그는 서둘러 화제를 돌렸다.", "reading": "sok-ma-eum-i sae-eo na-on ge meo-sseuk-aen-ji geu-neun seo-dul-leo hwa-je-reul dol-lyeot-da", "en": "Looking awkward, as if his true feelings had slipped out, he hurried to change the subject." }
   ],
   "dialogues": [
     {
       "id": "d01",
       "turns": [
-        { "speaker": "외국인 관광객", "text": "Excuse me, does this ferry stop at Udo Island?", "reading": "eks-kyu-jeu mi, deoz dis pe-ri seu-tap aet u-do ai-leon-deu?", "en": "Excuse me, does this ferry stop at Udo Island?" },
-        { "speaker": "권용우 기장", "text": "Yes, fifteen minutes from here. Follow the signs at the pier.", "reading": "yes, pip-tin mi-neot peu-reom hi-eo. pal-lo dae sa-ins aet deo pi-eo.", "en": "Yes, fifteen minutes from here. Follow the signs at the pier." },
-        { "speaker": "손님", "text": "기장님, 영어 진짜 유창하시네요?", "reading": "gi-jang-nim, yeong-eo jin-jja yu-chang-ha-si-ne-yo?", "en": "Captain, your English is really fluent, isn't it?" },
-        { "speaker": "권용우 기장", "text": "미국에서 고등학교 다녔거든. 그 정도는 기본이지.", "reading": "mi-guk-e-seo go-deung-hak-gyo da-nyeot-geo-deun. geu jeong-do-neun gi-bon-i-ji.", "en": "I went to high school in the US. That much is basic." }
+        { "speaker": "손님", "text": "여기 진짜 잘 아시네요. 부산 자주 오세요?", "reading": "yeo-gi jin-jja jal a-si-ne-yo. bu-san ja-ju o-se-yo?", "en": "You really know your way around here. Do you come to Busan often?" },
+        { "speaker": "권용우 기장", "text": "…나, 여기서 컸다. 고향이 부산이다.", "reading": "na, yeo-gi-seo keot-da. go-hyang-i bu-san-i-da.", "en": "...I grew up here. Busan's my hometown." },
+        { "speaker": "손님", "text": "네? 왜 이제야 말해줘요? 몇 년을 알고 지냈는데.", "reading": "ne? wae i-je-ya mal-hae-jwo-yo? myeot nyeon-eul al-go ji-naess-neun-de.", "en": "What? Why tell me only now? We've known each other for years." },
+        { "speaker": "권용우 기장", "text": "물어본 적이 없었으니까 그렇지. 별로 중요한 얘기도 아니고.", "reading": "mul-eo-bon jeog-i eop-seoss-eu-ni-kka geu-reo-chi. byeol-lo jung-yo-han yae-gi-do a-ni-go.", "en": "You never asked, that's why. Not like it's some important thing." }
       ],
-      "question": "용우가 영어를 유창하게 구사할 수 있는 이유는 무엇인가요?",
-      "question_en": "Why is Yongwoo able to speak English so fluently?",
-      "correct_answer": "미국에서 고등학교를 3년간 다녔기 때문에",
-      "options": ["미국에서 고등학교를 3년간 다녔기 때문에", "항공사 어학연수 프로그램 덕분에", "외국인 친구가 많아서", "통역 자격증이 있어서"],
-      "explanation": "용우는 미국에서 고등학교 3년을 다닌 경험 덕분에 영어를 유창하게 구사합니다."
+      "question": "용우가 부산이 고향이라는 사실을 여태 말하지 않은 이유로 가장 알맞은 것은?",
+      "question_en": "What best explains why Yongwoo never mentioned Busan was his hometown?",
+      "correct_answer": "굳이 먼저 꺼낼 만큼 중요하게 여기지 않았을 뿐, 숨긴 것은 아니다",
+      "options": ["굳이 먼저 꺼낼 만큼 중요하게 여기지 않았을 뿐, 숨긴 것은 아니다", "고향을 부끄러워해서 숨겼다", "손님이 알면 실망할까 봐 걱정했다", "직업상 밝히면 안 되는 규정이 있어서"],
+      "explanation": "용우는 고향을 숨긴 게 아니라, 굳이 먼저 말할 만큼 중요하게 생각하지 않았을 뿐이라고 무뚝뚝하게 답했습니다."
     },
     {
       "id": "d02",
       "turns": [
-        { "speaker": "손님", "text": "아까부터 계속 바다만 보시네요. 무슨 생각 하세요?", "reading": "a-kka-bu-teo gye-sok ba-da-man bo-si-ne-yo. mu-seun saeng-gak ha-se-yo?", "en": "You've been staring at the sea this whole time. What are you thinking about?" },
-        { "speaker": "권용우 기장", "text": "…그냥. 너 데려오고 싶었던 곳이라.", "reading": "geu-nyang. neo de-ryeo-o-go sip-eot-deon gos-i-ra.", "en": "...Nothing much. This was just a place I wanted to bring you to." },
-        { "speaker": "손님", "text": "동생이라서요?", "reading": "dong-saeng-i-ra-seo-yo?", "en": "Because I'm your sibling?" },
-        { "speaker": "권용우 기장", "text": "…그 말이 오늘따라 좀 낯서네. 이유는 나도 잘 모르겠다.", "reading": "geu mal-i o-neul-tta-ra jom nat-seo-ne. i-yu-neun na-do jal mo-reu-gess-da.", "en": "...That word feels kind of unfamiliar today, somehow. I don't really know why myself." }
+        { "speaker": "손님", "text": "여기 보여주고 싶었던 거, 오래됐다고 했잖아요. 왜요?", "reading": "yeo-gi bo-yeo-ju-go sip-eot-deon geo, o-rae-dwaet-da-go haess-jan-a-yo. wae-yo?", "en": "You said you'd wanted to show me this place for a long time. Why?" },
+        { "speaker": "권용우 기장", "text": "동생 데려오고 싶어서… 라고 하려니까 좀 이상하네.", "reading": "dong-saeng de-ryeo-o-go sip-eo-seo, ra-go ha-ryeo-ni-kka jom i-sang-ha-ne.", "en": "Because I wanted to bring my— ...saying it that way feels kind of off." },
+        { "speaker": "손님", "text": "이상해요? 뭐가요?", "reading": "i-sang-hae-yo? mwo-ga-yo?", "en": "Off? What is?" },
+        { "speaker": "권용우 기장", "text": "…아니다. 그냥, 너라서 보여주고 싶었던 거 같다. 됐고, 그만 캐물어라.", "reading": "a-ni-da. geu-nyang, neo-ra-seo bo-yeo-ju-go sip-eot-deon geo gat-da. dwaet-go, geu-man kae-mul-eo-ra.", "en": "...Never mind. I think I just wanted to show it to you, because it's you. Forget it, stop prying." }
       ],
-      "question": "이 대화에서 용우의 심경 변화로 가장 알맞은 설명은?",
-      "question_en": "What best describes the shift in Yongwoo's feelings in this conversation?",
-      "correct_answer": "'동생'이라는 표현이 자신의 감정과 맞지 않는다고 처음으로 느끼고 있다",
-      "options": ["'동생'이라는 표현이 자신의 감정과 맞지 않는다고 처음으로 느끼고 있다", "손님과의 여행이 지겨워지고 있다", "뱃멀미 때문에 정신이 없다", "다른 승객 생각을 하고 있다"],
-      "explanation": "용우는 평소 쓰던 '동생'이라는 말이 오늘따라 낯설게 느껴진다고 말하며, 자신의 감정을 처음으로 의식하고 있습니다."
+      "question": "이 대화에서 용우가 '동생'이라는 말을 하다 멈춘 이유로 가장 알맞은 것은?",
+      "question_en": "What best explains why Yongwoo stopped himself mid-sentence when trying to say 'sibling'?",
+      "correct_answer": "그 표현이 자신의 진짜 마음과 맞지 않는다고 스스로 느꼈기 때문",
+      "options": ["그 표현이 자신의 진짜 마음과 맞지 않는다고 스스로 느꼈기 때문", "단어를 잊어버려서", "손님이 화낼까 봐 걱정돼서", "그냥 장난삼아 말을 흐린 것이다"],
+      "explanation": "용우는 '동생'이라는 말을 하려다가, 그 표현이 자신의 진짜 감정과 맞지 않는다는 걸 스스로 깨닫고 말을 멈췄습니다."
     }
   ]
 }

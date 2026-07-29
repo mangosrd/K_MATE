@@ -1,62 +1,62 @@
 {
   "id": "sp-rom-kyuhyun-01",
   "character_id": "kyuhyun",
-  "title": "오늘따라 왜 이렇게 예뻐 보이지",
-  "emoji": "😏",
+  "title": "바닥에 떨어진 열쇠고리",
+  "emoji": "🔑",
   "story": [
     {
-      "text": "오늘따라 왜 이렇게 예뻐 보이지... 아, 실례. 규현 기장입니다. 오늘 기장을 맡게 됐어요.",
-      "reading": "o-neul-tta-ra wae i-reo-ke ye-ppeo bo-i-ji... a, sil-lye. gyu-hyeon gi-jang-im-ni-da. o-neul gi-jang-eul mat-ge dwae-sseo-yo.",
-      "en": "Why do you look so pretty today... oh, excuse me. I'm Captain Kyuhyun. I'll be your captain today."
-    },
-    {
-      "text": "사실 '승객' 여러분께 드리는 인사말, 저는 정해진 멘트 그대로 안 읽어요. 그때 기분 따라, 끌리는 대로 하거든요.",
-      "reading": "sa-sil seung-gaek yeo-reo-bun-kke deu-ri-neun in-sa-mal, jeo-neun jeong-hae-jin men-teu geu-dae-ro an il-geo-yo. geu-ttae gi-bun tta-ra, kkeul-li-neun dae-ro ha-geo-deun-yo.",
-      "en": "Actually, I don't read the standard greeting script for 'passengers' word for word. I just go with whatever feels right in the moment.",
+      "text": "인천공항 도착장은 사람들로 가득했다. 캐리어 바퀴 소리와 안내 방송 소리가 뒤섞여 시끄러웠고, 나는 지도 앱만 들여다보며 걸음을 서둘렀다.",
+      "reading": "in-cheon-gong-hang do-chak-jang-eun sa-ram-deul-lo ga-deuk-haet-da. kae-ri-eo ba-kwi so-ri-wa an-nae bang-song so-ri-ga dwi-seok-yeo si-kkeu-reo-wot-go, na-neun ji-do aeb-man deul-yeo-da-bo-myeo geol-eum-eul seo-dul-leot-da.",
+      "en": "Incheon Airport's arrival hall was packed with people. The clatter of suitcase wheels mixed with the PA announcements, and I hurried along with my eyes glued to a map app.",
       "highlight_word_id": "w01"
     },
     {
-      "text": "이 '공항'에서 몇 년 일했는데, 매뉴얼보다 감으로 움직인 날이 훨씬 많았죠. 근데 오늘 감은 진짜 확실하네요.",
-      "reading": "i gong-hang-e-seo myeot nyeon il-haet-neun-de, mae-nyu-eol-bo-da gam-eu-ro um-jik-in nal-i hwol-ssin man-at-jyo. geun-de o-neul gam-eun jin-jja hwak-sil-ha-ne-yo.",
-      "en": "I've worked at this 'airport' for years, and more often than not I've moved on instinct rather than the manual. But today my instinct is dead certain.",
+      "text": "방금 찾은 수하물을 어깨에 고쳐 메다가, 가방 옆주머니가 열려 있는 줄도 몰랐다.",
+      "reading": "bang-geum chaj-eun su-ha-mul-eul eo-kkae-e go-chyeo me-da-ga, ga-bang yeop-ju-meo-ni-ga yeol-lyeo iss-neun jul-do mol-lat-da.",
+      "en": "While adjusting the baggage I'd just picked up on my shoulder, I didn't even notice my bag's side pocket was open.",
       "highlight_word_id": "w02"
     },
     {
-      "text": "이번 '여행', 저랑 같은 노선이라니 이건 운명 아닌가요? 규정집엔 없는 확률이지만, 제 감은 믿을 만하거든요.",
-      "reading": "i-beon yeo-haeng, jeo-rang gat-eun no-seon-i-ra-ni i-geon un-myeong a-nin-ga-yo? gyu-jeong-jib-en eop-neun hwang-nyul-i-ji-man, je gam-eun mid-eul man-ha-geo-deun-yo.",
-      "en": "This 'trip' just happens to be on my route? Isn't that fate? The rulebook doesn't cover odds like that, but my gut's usually right.",
-      "highlight_word_id": "w03"
-    },
-    {
-      "text": "탑승하시면서 저 한 번 보고 웃으셨죠? 그 '미소' 보자마자 오늘 비행은 다르게 흘러갈 것 같다는 감이 왔어요.",
-      "reading": "tap-seung-ha-si-myeon-seo jeo han beon bo-go us-eu-syeot-jyo? geu mi-so bo-ja-ma-ja o-neul bi-haeng-eun da-reu-ge heul-leo-gal geot gat-da-neun gam-i wa-sseo-yo.",
-      "en": "You smiled at me when you boarded, didn't you? The moment I saw that 'smile', I had a feeling today's flight would go differently.",
-      "highlight_word_id": "w04"
-    },
-    {
-      "text": "기장이 승객 앞에서 이런 '설렘'을 느끼면 안 되는 건데... 뭐, 규정 위반이면 오늘만 봐주세요.",
-      "reading": "gi-jang-i seung-gaek ap-e-seo i-reon seol-lem-eul neu-kki-myeon an doe-neun geon-de... mwo, gyu-jeong wi-ban-i-myeon o-neul-man bwa-ju-se-yo.",
-      "en": "A captain isn't supposed to feel this kind of 'flutter' in front of a passenger... well, if it's against the rules, just let it slide for today.",
+      "text": "열쇠고리 하나가 스르륵 미끄러지더니, 바닥에 소리 없이 떨어졌다.",
+      "reading": "yeol-soe-go-ri ha-na-ga seu-reu-reuk mi-kkeu-reo-ji-deo-ni, ba-dak-e so-ri eop-si tteol-eo-jyeot-da.",
+      "en": "A keychain slid out and dropped silently to the floor.",
       "highlight_word_id": "w05"
     },
     {
-      "text": "자, 이런 얘기만 하다간 이륙 못 하겠네요. 오늘 배운 표현들, 문제 풀면서 제대로 확인해볼까요?",
-      "reading": "ja, i-reon yae-gi-man ha-da-gan i-ryuk mot ha-get-ne-yo. o-neul bae-un pyo-hyeon-deul, mun-je pul-myeon-seo je-dae-ro hwa-gin-hae-bol-kka-yo?",
-      "en": "Alright, if I keep talking like this we'll never take off. Shall we check what we learned today by solving some questions?"
+      "text": "마침 비행을 마치고 걸어오던 규현이 그 소리를 들었다. 그는 몸을 숙여 작은 열쇠고리를 집어 들었다. 은색 고리에 달린 별 모양 장식이 조명 아래 반짝였다.",
+      "reading": "ma-chim bi-haeng-eul ma-chi-go geol-eo-o-deon gyu-hyeon-i geu so-ri-reul deul-eot-da. geu-neun mom-eul suk-yeo jak-eun yeol-soe-go-ri-reul jib-eo deul-eot-da. eun-saek go-ri-e dal-lin byeol mo-yang jang-sik-i jo-myeong a-rae ban-jjak-yeot-da.",
+      "en": "Just then, Kyuhyun, who had finished his flight and was walking by, heard the sound. He bent down and picked up the small keychain. The little star charm on the silver ring glinted under the lights.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "고개를 들어 주인을 찾던 그의 눈이, 저만치 앞서 걷는 나의 뒷모습에 멈췄다. 첫눈에 반한다는 게 이런 걸까 — 그는 이상하게도 눈을 뗄 수가 없었다.",
+      "reading": "go-gae-reul deul-eo ju-in-eul chat-deon geu-ui nun-i, jeo-man-chi ap-seo geot-neun na-ui dwit-mo-seub-e meom-chwot-da. cheon-nun-e ban-han-da-neun ge i-reon geol-kka — geu-neun i-sang-ha-ge-do nun-eul ttel su-ga eop-seot-da.",
+      "en": "As he looked up to find the owner, his gaze stopped on my figure walking ahead in the distance. Was this what people meant by falling for someone at first sight? Strangely, he couldn't look away.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "'…따라가서 돌려줘야겠네.' 그는 낮게 혼잣말을 하며 열쇠고리를 손안에 꼭 쥐었다.",
+      "reading": "tta-ra-ga-seo dol-lyeo-jwo-ya-get-ne. geu-neun nat-ge hon-jal-mal-eul ha-myeo yeol-soe-go-ri-reul son-an-e kkok jwi-eot-da.",
+      "en": "\"...Guess I'd better go catch up and give this back.\" He murmured under his breath, closing his hand tightly around the keychain."
+    },
+    {
+      "text": "몇 분 전까지만 해도 평범했던 하루가, 그 작은 열쇠고리 하나로 완전히 달라지려 하고 있었다.",
+      "reading": "myeot bun jeon-kka-ji-man hae-do pyeong-beom-haet-deon ha-ru-ga, geu jak-eun yeol-soe-go-ri ha-na-ro wan-jeon-hi dal-la-ji-ryeo ha-go it-seot-da.",
+      "en": "A day that had been perfectly ordinary just minutes earlier was about to change completely — all because of one small keychain."
     }
   ],
   "words": [
-    { "id": "w01", "word": "승객", "reading": "seung-gaek", "meaning": "passenger", "example": "오늘 이 비행기에는 특별한 승객이 타셨네요.", "example_reading": "o-neul i bi-haeng-gi-e-neun teuk-byeol-han seung-gaek-i ta-syeon-ne-yo", "example_en": "There's a special passenger on this flight today." },
-    { "id": "w02", "word": "공항", "reading": "gong-hang", "meaning": "airport", "example": "공항에서 규현 기장을 처음 만났어요.", "example_reading": "gong-hang-e-seo gyu-hyeon gi-jang-eul cheo-eum man-na-sseo-yo", "example_en": "I first met Captain Kyuhyun at the airport." },
-    { "id": "w03", "word": "여행", "reading": "yeo-haeng", "meaning": "trip, travel", "example": "이번 여행은 오래 기억날 것 같아요.", "example_reading": "i-beon yeo-haeng-eun o-rae gi-eok-nal geot gat-a-yo", "example_en": "I think I'll remember this trip for a long time." },
-    { "id": "w04", "word": "미소", "reading": "mi-so", "meaning": "smile", "example": "그의 미소가 자꾸 생각나요.", "example_reading": "geu-ui mi-so-ga ja-kku saeng-gak-na-yo", "example_en": "I keep thinking about his smile." },
-    { "id": "w05", "word": "설렘", "reading": "seol-lem", "meaning": "flutter, excitement", "example": "탑승구 앞에서 설렘이 시작됐어요.", "example_reading": "tap-seung-gu ap-e-seo seol-lem-i si-jak-dwae-sseo-yo", "example_en": "The flutter began in front of the boarding gate." }
+    { "id": "w01", "word": "도착장", "reading": "do-chak-jang", "meaning": "arrival hall", "example": "공항 도착장에는 사람이 많았다.", "example_reading": "gong-hang do-chak-jang-e-neun sa-ram-i man-at-da", "example_en": "There were many people in the airport's arrival hall." },
+    { "id": "w02", "word": "수하물", "reading": "su-ha-mul", "meaning": "baggage, luggage", "example": "수하물을 찾은 후에 가방을 다시 멨다.", "example_reading": "su-ha-mul-eul chaj-eun hu-e ga-bang-eul da-si met-da", "example_en": "After finding my baggage, I put my bag back on." },
+    { "id": "w03", "word": "열쇠고리", "reading": "yeol-soe-go-ri", "meaning": "keychain", "example": "가방에 달린 열쇠고리가 예뻤다.", "example_reading": "ga-bang-e dal-lin yeol-soe-go-ri-ga ye-ppeot-da", "example_en": "The keychain attached to the bag was pretty." },
+    { "id": "w04", "word": "첫눈에", "reading": "cheon-nun-e", "meaning": "at first sight", "example": "그는 첫눈에 반했다고 말했다.", "example_reading": "geu-neun cheon-nun-e ban-haet-da-go mal-haet-da", "example_en": "He said he fell for her at first sight." },
+    { "id": "w05", "word": "떨어지다", "reading": "tteol-eo-ji-da", "meaning": "to fall, to drop", "example": "지갑이 바닥에 떨어졌다.", "example_reading": "ji-gab-i ba-dak-e tteol-eo-jyeot-da", "example_en": "The wallet fell to the floor." }
   ],
   "sentences": [
-    { "id": "s01", "ko": "오늘따라 왜 이렇게 예뻐 보이지.", "reading": "o-neul-tta-ra wae i-reo-ke ye-ppeo bo-i-ji", "en": "Why do you look so pretty today." },
-    { "id": "s02", "ko": "승객 여러분, 좋은 하루 되세요.", "reading": "seung-gaek yeo-reo-bun, jo-eun ha-ru doe-se-yo", "en": "Have a good day, passengers." },
-    { "id": "s03", "ko": "공항에서 우연히 다시 만났어요.", "reading": "gong-hang-e-seo u-yeon-hi da-si man-na-sseo-yo", "en": "We met again by chance at the airport." },
-    { "id": "s04", "ko": "이번 여행이 특별해질 것 같아요.", "reading": "i-beon yeo-haeng-i teuk-byeol-hae-jil geot gat-a-yo", "en": "This trip seems like it's going to be special." },
-    { "id": "s05", "ko": "그의 미소를 보면 설렘이 느껴져요.", "reading": "geu-ui mi-so-reul bo-myeon seol-lem-i neu-kkyeo-jyeo-yo", "en": "Seeing his smile, I feel a flutter." }
+    { "id": "s01", "ko": "공항 도착장은 사람들로 가득했다.", "reading": "gong-hang do-chak-jang-eun sa-ram-deul-lo ga-deuk-haet-da", "en": "The airport's arrival hall was full of people." },
+    { "id": "s02", "ko": "가방에서 열쇠고리가 떨어졌다.", "reading": "ga-bang-e-seo yeol-soe-go-ri-ga tteol-eo-jyeot-da", "en": "A keychain fell out of the bag." },
+    { "id": "s03", "ko": "그는 나를 첫눈에 알아봤다.", "reading": "geu-neun na-reul cheon-nun-e al-a-bwat-da", "en": "He recognized me at first sight." },
+    { "id": "s04", "ko": "수하물을 찾고 나서 걸음을 서둘렀다.", "reading": "su-ha-mul-eul chat-go na-seo geol-eum-eul seo-dul-leot-da", "en": "After finding my baggage, I hurried along." },
+    { "id": "s05", "ko": "그가 조용히 열쇠고리를 주웠다.", "reading": "geu-ga jo-yong-hi yeol-soe-go-ri-reul ju-wot-da", "en": "He quietly picked up the keychain." }
   ]
 }

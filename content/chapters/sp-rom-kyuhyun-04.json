@@ -1,62 +1,62 @@
 {
   "id": "sp-rom-kyuhyun-04",
   "character_id": "kyuhyun",
-  "title": "비번인 날의 사복 차림",
-  "emoji": "🧥",
+  "title": "이 커피, 사심 좀 섞였어요",
+  "emoji": "☕",
   "story": [
     {
-      "text": "어? 여기서 다 만나네요. 오늘 완전 편한 날인데, 이렇게 우연히 마주칠 줄은 몰랐어요.",
-      "reading": "eo? yeo-gi-seo da man-na-ne-yo. o-neul wan-jeon pyeon-han nal-in-de, i-reo-ke u-yeon-hi ma-ju-chil jul-eun mol-lat-seo-yo.",
-      "en": "Oh? Fancy meeting you here. Today's my totally free day, but I didn't expect to run into you like this."
+      "text": "그날 오후, 규현은 나를 근처 작은 카페로 이끌었다. 자리에 앉기도 전에 그는 이미 메뉴판을 살펴보고 있었다.",
+      "reading": "geu-nal o-hu, gyu-hyeon-eun na-reul geun-cheo jak-eun ka-pe-ro i-kkeul-eot-da. ja-ri-e anj-gi-do jeon-e geu-neun i-mi me-nyu-pan-eul sal-pyeo-bo-go iss-eot-da.",
+      "en": "That afternoon, Kyuhyun led me to a small nearby cafe. Before I'd even sat down, he was already looking over the menu."
     },
     {
-      "text": "'비번'인 날은 이렇게 입어요. 제복 아닌 저는 좀 낯설죠? 이런 날은 훌쩍 헬기라도 몰고 나가고 싶어지네요.",
-      "reading": "bi-beon-in nal-eun i-reo-ke ib-eo-yo. je-bok a-nin jeo-neun jom nat-seol-jyo? i-reon nal-eun hul-jjeok hel-gi-ra-do mol-go na-ga-go sip-eo-ji-ne-yo.",
-      "en": "This is how I dress on my 'day off'. I probably look unfamiliar without the uniform, huh? Days like this make me want to just hop in a helicopter and take off somewhere.",
+      "text": "'커피 취향 좀 물어봐도 돼요? 아니다, 그냥 제가 알아서 시킬게요. 이런 건 또 은근히 잘하거든요.'",
+      "reading": "keo-pi chwi-hyang jom mul-eo-bwa-do dwae-yo? a-ni-da, geu-nyang je-ga al-a-seo si-kil-ge-yo. i-reon geon tto eun-geun-hi jal-ha-geo-deun-yo.",
+      "en": "\"Mind if I ask your coffee preference? Actually, never mind — I'll just order for you. I happen to be pretty good at this kind of thing.\"",
       "highlight_word_id": "w01"
     },
     {
-      "text": "'사복' 입은 모습 처음 보죠? 반응이 나쁘지 않은 것 같아서 다행이네요. 다른 승무원들은 저더러 사복도 능글맞다고 놀리던데.",
-      "reading": "sa-bok ib-eun mo-seup cheo-eum bo-jyo? ban-eung-i na-ppeu-ji an-eun geot gat-a-seo da-haeng-i-ne-yo. da-reun seung-mu-won-deul-eun jeo-deo-reo sa-bok-do neung-geul-maj-da-go nol-li-deon-de.",
-      "en": "This is the first time you're seeing me in 'casual clothes', right? Glad your reaction doesn't seem bad. The other crew members tease me, saying even my casual style is too smooth.",
-      "highlight_word_id": "w02"
-    },
-    {
-      "text": "'홍대' 거리, 저 사실 잘 안 다니는데 오늘은 발이 여기로 왔네요. 신기하죠.",
-      "reading": "hong-dae geo-ri, jeo sa-sil jal an da-ni-neun-de o-neul-eun bal-i yeo-gi-ro wan-ne-yo. sin-gi-ha-jyo.",
-      "en": "I don't usually walk around 'Hongdae', but today my feet just brought me here. Funny, isn't it.",
-      "highlight_word_id": "w03"
-    },
-    {
-      "text": "저 골목 '카페' 커피 진짜 맛있는데, 시간 괜찮으면 같이 갈래요? 아, 저 바람둥이라고 소문났다던데 이래서 그런가 봐요.",
-      "reading": "jeo gol-mok ka-pe keo-pi jin-jja ma-sit-neun-de, si-gan gwaen-chan-eu-myeon ga-chi gal-lae-yo? a jeo ba-ram-dung-i-ra-go so-mun-nat-da-deon-de i-rae-seo geu-reon-ga bwa-yo.",
-      "en": "The coffee at that 'cafe' down the alley is really good — if you have time, want to go together? Ah, I heard people call me a player — I guess this is why.",
-      "highlight_word_id": "w04"
-    },
-    {
-      "text": "...어, 잠깐만요. 이거 완전 '데이트' 신청 아닌가요? 저도 모르게 이런 말이. 근데 저 진짜 아무한테나 이러는 거 아니에요.",
-      "reading": "...eo, jam-kkan-man-yo. i-geo wan-jeon de-i-teu sin-cheong a-nin-ga-yo? jeo-do mo-reu-ge i-reon mal-i. geun-de jeo jin-jja a-mu-han-te-na i-reo-neun geo a-ni-e-yo.",
-      "en": "...wait a second. Isn't this basically asking you on a 'date'? I said it without even realizing. But I really don't do this with just anyone.",
+      "text": "잠시 후 그는 내 취향이라고는 하나도 묻지 않았으면서, 신기하게도 딱 내가 좋아할 만한 걸 들고 돌아왔다.",
+      "reading": "jam-si hu geu-neun nae chwi-hyang-i-ra-go-neun ha-na-do mut-ji an-at-eu-myeon-seo, sin-gi-ha-ge-do ttak nae-ga jo-a-hal man-han geol deul-go dol-a-wat-da.",
+      "en": "A little while later, he came back — even though he hadn't asked about my taste at all, he'd somehow brought back exactly the kind of drink I'd like.",
       "highlight_word_id": "w05"
     },
     {
-      "text": "크흠, 아무튼 그렇다고요. 자, 오늘 배운 표현들 문제 풀면서 확인해볼까요?",
-      "reading": "keu-heum, a-mu-teun geu-reo-ta-go-yo. ja, o-neul bae-un pyo-hyeon-deul mun-je pul-myeon-seo hwa-gin-hae-bol-kka-yo?",
-      "en": "Ahem, anyway, that's how it is. Now, shall we check what we learned today by solving some questions?"
+      "text": "'사심이 조금 섞인 선택이었어요. 아가씨가 달달한 거 좋아할 것 같아서.'",
+      "reading": "sa-sim-i jo-geum seok-in seon-taeg-i-eot-seo-yo. a-ga-ssi-ga dal-dal-han geo jo-a-hal geot gat-a-seo.",
+      "en": "\"That choice had a little bit of personal interest mixed in. I had a feeling you'd like something sweet.\"",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "무심한 듯 던진 말이었지만, 그 안에는 세심한 배려가 묻어 있었다. 그런 다정함이 낯설어서, 나는 잠시 말을 잃었다.",
+      "reading": "mu-sim-han deut deon-jin mal-i-eot-ji-man, geu an-e-neun se-sim-han bae-ryeo-ga mud-eo iss-eot-da. geu-reon da-jeong-ham-i nat-seol-eo-seo, na-neun jam-si mal-eul il-eot-da.",
+      "en": "It sounded like an offhand remark, but there was careful consideration tucked inside it. That kind of warmth felt unfamiliar, and for a moment I didn't know what to say.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "'왜 그렇게 봐요? …이렇게 단둘이 앉아 있는 거, 사실 저도 오랜만이라 좀 어색하네요.' 그는 헛기침을 하며 시선을 창밖으로 돌렸다.",
+      "reading": "wae geu-reo-ke bwa-yo? …i-reo-ke dan-dul-i anj-a it-neun geo, sa-sil jeo-do o-raen-man-i-ra jom eo-saek-ha-ne-yo. geu-neun heot-gi-chim-eul ha-myeo si-seon-eul chang-bak-eu-ro dol-lyeot-da.",
+      "en": "\"Why are you looking at me like that? ...Honestly, sitting like this, just the two of us — it's been a while for me too, so it feels a little awkward.\" He cleared his throat and turned his gaze out the window.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "늘 여유롭고 능글맞던 그가 순간 말을 더듬는 모습이 낯설었다. 그리고 그 낯섦이, 묘하게 싫지 않았다.",
+      "reading": "neul yeo-yu-rop-go neung-geul-maj-deon geu-ga sun-gan mal-eul deo-deum-neun mo-seub-i nat-seol-eot-da. geu-ri-go geu nat-seolm-i, myo-ha-ge silh-ji an-at-da.",
+      "en": "Seeing him — always so composed and smooth — stumble over his words for once felt strange. And oddly, I didn't mind that strangeness at all."
     }
   ],
   "words": [
-    { "id": "w01", "word": "비번", "reading": "bi-beon", "meaning": "day off, off-duty", "example": "오늘은 제 비번인 날이에요.", "example_reading": "o-neul-eun je bi-beon-in nal-i-e-yo", "example_en": "Today is my day off." },
-    { "id": "w02", "word": "사복", "reading": "sa-bok", "meaning": "casual clothes", "example": "사복을 입으니까 느낌이 다르네요.", "example_reading": "sa-bok-eul ib-eu-ni-kka neu-kkim-i da-reu-ne-yo", "example_en": "Wearing casual clothes feels different." },
-    { "id": "w03", "word": "홍대", "reading": "hong-dae", "meaning": "Hongdae", "example": "홍대에는 예쁜 카페가 많아요.", "example_reading": "hong-dae-e-neun ye-ppeun ka-pe-ga man-a-yo", "example_en": "There are many pretty cafes in Hongdae." },
-    { "id": "w04", "word": "카페", "reading": "ka-pe", "meaning": "cafe", "example": "저 카페에서 커피 마실까요?", "example_reading": "jeo ka-pe-e-seo keo-pi ma-sil-kka-yo", "example_en": "Shall we drink coffee at that cafe?" },
-    { "id": "w05", "word": "데이트", "reading": "de-i-teu", "meaning": "date", "example": "이거 데이트 신청 맞죠?", "example_reading": "i-geo de-i-teu sin-cheong mat-jyo", "example_en": "This is a date invitation, right?" }
+    { "id": "w01", "word": "커피", "reading": "keo-pi", "meaning": "coffee", "example": "그가 커피를 사 주었다.", "example_reading": "geu-ga keo-pi-reul sa ju-eot-da", "example_en": "He bought me coffee." },
+    { "id": "w02", "word": "사심", "reading": "sa-sim", "meaning": "ulterior motive, personal interest", "example": "그 선택에는 사심이 조금 있었다.", "example_reading": "geu seon-taeg-e-neun sa-sim-i jo-geum iss-eot-da", "example_en": "There was a little personal interest behind that choice." },
+    { "id": "w03", "word": "배려", "reading": "bae-ryeo", "meaning": "consideration, thoughtfulness", "example": "그의 배려가 느껴졌다.", "example_reading": "geu-ui bae-ryeo-ga neu-kkyeo-jyeot-da", "example_en": "I could feel his thoughtfulness." },
+    { "id": "w04", "word": "단둘이", "reading": "dan-dul-i", "meaning": "just the two of us", "example": "우리는 단둘이 카페에 앉아 있었다.", "example_reading": "u-ri-neun dan-dul-i ka-pe-e anj-a iss-eot-da", "example_en": "We sat at the cafe, just the two of us." },
+    { "id": "w05", "word": "취향", "reading": "chwi-hyang", "meaning": "taste, preference", "example": "그는 내 취향을 정확히 알아챘다.", "example_reading": "geu-neun nae chwi-hyang-eul jeong-hwak-hi al-a-chaet-da", "example_en": "He figured out my taste exactly." }
   ],
   "sentences": [
-    { "id": "s01", "ko": "오늘은 제 비번인 날이에요.", "reading": "o-neul-eun je bi-beon-in nal-i-e-yo", "en": "Today is my day off." },
-    { "id": "s02", "ko": "사복을 입으니까 느낌이 다르네요.", "reading": "sa-bok-eul ib-eu-ni-kka neu-kkim-i da-reu-ne-yo", "en": "Wearing casual clothes feels different." },
-    { "id": "s03", "ko": "홍대에는 예쁜 카페가 많아요.", "reading": "hong-dae-e-neun ye-ppeun ka-pe-ga man-a-yo", "en": "There are many pretty cafes in Hongdae." },
-    { "id": "s04", "ko": "저 카페에서 커피 마실까요?", "reading": "jeo ka-pe-e-seo keo-pi ma-sil-kka-yo", "en": "Shall we drink coffee at that cafe?" },
-    { "id": "s05", "ko": "이거 데이트 신청 맞죠?", "reading": "i-geo de-i-teu sin-cheong mat-jyo", "en": "This is a date invitation, right?" }
+    { "id": "s01", "ko": "그가 커피를 사 주었다.", "reading": "geu-ga keo-pi-reul sa ju-eot-da", "en": "He bought me coffee." },
+    { "id": "s02", "ko": "그 선택에는 사심이 조금 있었다.", "reading": "geu seon-taeg-e-neun sa-sim-i jo-geum iss-eot-da", "en": "There was a little personal interest behind that choice." },
+    { "id": "s03", "ko": "그의 배려가 느껴졌다.", "reading": "geu-ui bae-ryeo-ga neu-kkyeo-jyeot-da", "en": "I could feel his thoughtfulness." },
+    { "id": "s04", "ko": "우리는 단둘이 카페에 앉아 있었다.", "reading": "u-ri-neun dan-dul-i ka-pe-e anj-a iss-eot-da", "en": "We sat at the cafe, just the two of us." },
+    { "id": "s05", "ko": "그는 내 취향을 정확히 알아챘다.", "reading": "geu-neun nae chwi-hyang-eul jeong-hwak-hi al-a-chaet-da", "en": "He figured out my taste exactly." }
   ]
 }

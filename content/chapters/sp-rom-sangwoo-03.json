@@ -1,93 +1,98 @@
 {
   "id": "sp-rom-sangwoo-03",
   "character_id": "sangwoo",
-  "title": "Roger That, 알겠습니다",
-  "emoji": "🎙️",
+  "title": "타워, 잘 들립니까",
+  "emoji": "📡",
   "level": "intermediate_advanced",
   "story": [
     {
-      "text": "지금 저희는 금강 철교 위를 지나고 있습니다. 강물을 보고 있으니, 오늘은 제 오래된 버릇 하나를 고백해야 할 것 같습니다.",
-      "reading": "ji-geum jeo-hui-neun geum-gang cheol-gyo wi-reul ji-na-go it-seum-ni-da. gang-mul-eul bo-go i-sseu-ni, o-neul-eun je o-rae-doen beo-reut ha-na-reul go-baek-hae-ya hal geot gat-seum-ni-da.",
-      "en": "We're currently passing over the Geumgang Railroad Bridge. Looking at the river, I feel I should confess one of my old habits today."
+      "text": "오늘은 금강 철교 근처입니다. 두 번째로 당신을 만나러 온 자리이니, 이번엔 조금 다른 이야기를 해보고 싶습니다.",
+      "reading": "o-neul-eun geum-gang cheol-gyo geun-cheo-im-ni-da. du beon-jjae-ro dang-sin-eul man-na-reo on ja-ri-i-ni, i-beon-en jo-geum da-reun i-ya-gi-reul hae-bo-go sip-seum-ni-da.",
+      "en": "Today, near the Geumgang Railroad Bridge. Since this is the second time I've come to see you, I'd like to talk about something a little different this time."
     },
     {
-      "text": "무전에서는 중요한 내용을 '재확인'하는 게 기본 절차입니다. …사실 이 핑계, 요즘 유독 자주 씁니다.",
-      "reading": "mu-jeon-e-seo-neun jung-yo-han nae-yong-eul 'jae-hwag-in'-ha-neun ge gi-bon jeol-cha-im-ni-da. …sa-sil i ping-gye, yo-jeum yu-dok ja-ju sseum-ni-da.",
-      "en": "In radio communication, 're-confirming' important content is basic procedure. ...To be honest, I've been using this excuse especially often lately.",
+      "text": "감사 인사만 드리려 했는데, 어쩌다 보니 당신과의 '교신'이 계속 이어지고 있습니다. 저도 이유를 잘 모르겠습니다.",
+      "reading": "gam-sa in-sa-man deu-ri-ryeo haet-neun-de, eo-jjeo-da bo-ni dang-sin-gwa-ui 'gyo-sin'-i gye-sok i-eo-ji-go it-seum-ni-da. jeo-do i-yu-reul jal mo-reu-get-seum-ni-da.",
+      "en": "I only meant to say thank you, but somehow this 'transmission' with you keeps going. Even I'm not quite sure why.",
       "highlight_word_id": "w01"
     },
     {
-      "text": "방금 그 '콜사인', 다시 한번 불러주실 수 있습니까. 잘 못 들어서 말입니다. …사실 두 번 다 또렷하게 들었습니다.",
-      "reading": "bang-geum geu 'kol-ssa-in', da-si han-beon bul-leo-ju-sil su it-seum-ni-kka. jal mot deul-eo-seo mal-im-ni-da. …sa-sil du beon da tto-ryeot-ha-ge deul-eot-seum-ni-da.",
-      "en": "Your 'callsign' just now—could you say it once more for me? I didn't quite catch it. ...In truth, I heard it clearly both times.",
+      "text": "정확히는, 이유를 모르는 척하는 겁니다. 사실 저는 '무전'을 핑계 삼아, 자꾸 당신에게 연락할 구실을 찾고 있습니다.",
+      "reading": "jeong-hwak-hi-neun, i-yu-reul mo-reu-neun cheok-ha-neun geom-ni-da. sa-sil jeo-neun 'mu-jeon'-eul ping-gye sam-a, ja-kku dang-sin-e-ge yeol-lak-hal gu-sil-eul chat-go it-seum-ni-da.",
+      "en": "To be precise, I'm pretending not to know the reason. In truth, I keep using 'radio calls' as an excuse to find reasons to reach out to you.",
       "highlight_word_id": "w02"
     },
     {
-      "text": "'절차상' 확인이 필요하다고 우기고 있지만, 사실 이유는 단순합니다. 당신 목소리를 한 번 더 듣고 싶어서입니다.",
-      "reading": "'jeol-cha-sang' hwag-in-i pil-yo-ha-da-go u-gi-go it-ji-man, sa-sil i-yu-neun dan-sun-ham-ni-da. dang-sin mok-so-ri-reul han beon deo deut-go sip-eo-seo-im-ni-da.",
-      "en": "I insist it's 'procedurally' necessary to confirm, but honestly the reason is simple. It's because I want to hear your voice one more time.",
+      "text": "'타워, 여기는 상우 기장.' 원래는 업무용으로만 쓰던 말인데, 요즘은 당신에게 문자를 보낼 때도 이 말부터 씁니다.",
+      "reading": "'ta-wo, yeo-gi-neun sang-u gi-jang.' won-lae-neun eom-mu-yong-eu-ro-man sseu-deon mal-in-de, yo-jeum-eun dang-sin-e-ge mun-ja-reul bo-nael ttae-do i mal-bu-teo sseum-ni-da.",
+      "en": "'Tower, this is Captain Sangwoo.' It's a phrase I once used strictly for work, but lately, it's the first thing I type whenever I send you a message."
+    },
+    {
+      "text": "이런 식으로 업무 말투 뒤에 마음을 숨기는 '능청'이 제 특기입니다. 그런데 당신 앞에서는, 이 능청이 자꾸 서툴러집니다.",
+      "reading": "i-reon sig-eu-ro eom-mu mal-tu dwi-e ma-eum-eul sum-gi-neun 'neung-cheong'-i je teuk-gi-im-ni-da. geu-reon-de dang-sin ap-e-seo-neun, i neung-cheong-i ja-kku seo-tul-leo-jim-ni-da.",
+      "en": "Hiding my feelings behind work phrasing like this — this 'nonchalant charm' is my specialty. But in front of you, this act keeps slipping.",
       "highlight_word_id": "w03"
     },
     {
-      "text": "이 버릇이 언젠가 '들통'날 거라는 건 알고 있습니다. 그래도 오늘까지는, 모르는 척해 주시면 감사하겠습니다.",
-      "reading": "i beo-reu-si eon-jen-ga 'deul-tong'-nal geo-ra-neun geon al-go it-seum-ni-da. geu-rae-do o-neul-kka-ji-neun, mo-reu-neun cheok-hae ju-si-myeon gam-sa-ha-get-seum-ni-da.",
-      "en": "I know this habit will get 'found out' eventually. But at least until today, I'd appreciate it if you'd play along and not notice.",
+      "text": "당신이 웃으며 답장을 보내올 때마다, 그 '여운'이 다음 비행 내내 가시질 않습니다.",
+      "reading": "dang-sin-i us-eu-myeo dap-jang-eul bo-nae-ol ttae-ma-da, geu 'yeo-un'-i da-eum bi-haeng nae-nae ga-si-jil an-seum-ni-da.",
+      "en": "Every time you send back a message with a laugh in it, the 'lingering feeling' doesn't fade for the rest of the flight.",
       "highlight_word_id": "w04"
     },
     {
-      "text": "누가 무슨 말을 해도, 제 '응답'은 늘 'Roger that, 알겠습니다'입니다. 그런데 당신에게는, 이 짧은 응답도 자꾸 늦게 나갑니다.",
-      "reading": "nu-ga mu-seun mal-eul hae-do, je 'eung-dap'-eun neul 'Roger that, al-get-seum-ni-da'-im-ni-da. geu-reon-de dang-sin-e-ge-neun, i jjalb-eun eung-dap-do ja-kku neut-ge na-gam-ni-da.",
-      "en": "Whatever anyone says, my 'response' is always 'Roger that, understood.' But to you, even this short response keeps coming out late.",
+      "text": "'로저.' 오늘도 당신 메시지에 짧게 답했지만, 사실 속으로는 훨씬 더 긴 대답을 준비하고 있었습니다.",
+      "reading": "'ro-jeo.' o-neul-do dang-sin me-si-ji-e jjalb-ge dap-haet-ji-man, sa-sil sog-eu-ro-neun hwol-ssin deo gin dae-dab-eul jun-bi-ha-go i-sseot-seum-ni-da.",
+      "en": "'Roger.' Today too, I answered your message shortly, but in truth, I'd been preparing a much longer reply, in my head.",
       "highlight_word_id": "w05"
     },
     {
-      "text": "…실례했습니다. 다시 절차대로 돌아가, 실제 무전 대화를 보여드리겠습니다. 상황을 잘 살펴 맞혀 보시기 바랍니다.",
-      "reading": "…sil-lye-haet-seum-ni-da. da-si jeol-cha-dae-ro dol-a-ga, sil-je mu-jeon dae-hwa-reul bo-yeo-deu-ri-get-seum-ni-da. sang-hwang-eul jal sal-pyeo mach-yeo bo-si-gi ba-ram-ni-da.",
-      "en": "...My apologies. Let me return to procedure and show you an actual radio conversation. Please look closely and figure out the situation."
+      "text": "…교신이 조금 길어졌군요. 금강 철교 근처에서 오간 실제 대화를 보여드릴 테니, 이 마음이 어디까지 들켰는지 헤아려 봐 주시기 바랍니다.",
+      "reading": "…gyo-sin-i jo-geum gil-eo-jyeot-gun-yo. geum-gang cheol-gyo geun-cheo-e-seo o-gan sil-je dae-hwa-reul bo-yeo-deu-ril te-ni, i ma-eum-i eo-di-kka-ji deul-kyeot-neun-ji he-a-ryeo bwa ju-si-gi ba-ram-ni-da.",
+      "en": "...This transmission has run a little long. I'll show you the conversation we actually had near the Geumgang Railroad Bridge — please work out just how much of this has already been found out."
     }
   ],
   "words": [
-    { "id": "w01", "word": "재확인", "reading": "jae-hwag-in", "meaning": "Re-confirmation", "example": "무전에서는 중요한 내용을 재확인하는 게 기본 절차입니다.", "example_reading": "mu-jeon-e-seo-neun jung-yo-han nae-yong-eul jae-hwag-in-ha-neun ge gi-bon jeol-cha-im-ni-da", "example_en": "In radio communication, re-confirming important content is basic procedure." },
-    { "id": "w02", "word": "콜사인", "reading": "kol-ssa-in", "meaning": "Callsign", "example": "방금 그 콜사인, 다시 한번 불러주실 수 있습니까.", "example_reading": "bang-geum geu kol-ssa-in, da-si han-beon bul-leo-ju-sil su it-seum-ni-kka", "example_en": "Could you say that callsign once more for me?" },
-    { "id": "w03", "word": "절차상", "reading": "jeol-cha-sang", "meaning": "Procedurally / as a matter of procedure", "example": "절차상 확인이 필요하다고 우기고 있지만, 사실 이유는 단순합니다.", "example_reading": "jeol-cha-sang hwag-in-i pil-yo-ha-da-go u-gi-go it-ji-man, sa-sil i-yu-neun dan-sun-ham-ni-da", "example_en": "I insist it's procedurally necessary to confirm, but honestly the reason is simple." },
-    { "id": "w04", "word": "들통", "reading": "deul-tong", "meaning": "Getting found out / exposed", "example": "이 버릇이 언젠가 들통날 거라는 건 알고 있습니다.", "example_reading": "i beo-reu-si eon-jen-ga deul-tong-nal geo-ra-neun geon al-go it-seum-ni-da", "example_en": "I know this habit will get found out eventually." },
-    { "id": "w05", "word": "응답", "reading": "eung-dap", "meaning": "Response / reply", "example": "당신에게는 이 짧은 응답도 자꾸 늦게 나갑니다.", "example_reading": "dang-sin-e-ge-neun i jjalb-eun eung-dap-do ja-kku neut-ge na-gam-ni-da", "example_en": "To you, even this short response keeps coming out late." }
+    { "id": "w01", "word": "교신", "reading": "gyo-sin", "meaning": "Transmission / communication", "example": "당신과의 교신이 계속 이어지고 있습니다.", "example_reading": "dang-sin-gwa-ui gyo-sin-i gye-sok i-eo-ji-go it-seum-ni-da", "example_en": "This transmission with you keeps going." },
+    { "id": "w02", "word": "무전", "reading": "mu-jeon", "meaning": "Radio call", "example": "무전을 핑계 삼아 연락할 구실을 찾고 있습니다.", "example_reading": "mu-jeon-eul ping-gye sam-a yeol-lak-hal gu-sil-eul chat-go it-seum-ni-da", "example_en": "I keep using radio calls as an excuse to find reasons to reach out." },
+    { "id": "w03", "word": "능청", "reading": "neung-cheong", "meaning": "Nonchalant charm / feigned innocence", "example": "업무 말투 뒤에 마음을 숨기는 능청이 제 특기입니다.", "example_reading": "eom-mu mal-tu dwi-e ma-eum-eul sum-gi-neun neung-cheong-i je teuk-gi-im-ni-da", "example_en": "Hiding my feelings behind work phrasing is my specialty." },
+    { "id": "w04", "word": "여운", "reading": "yeo-un", "meaning": "Lingering feeling / afterglow", "example": "그 여운이 다음 비행 내내 가시질 않습니다.", "example_reading": "geu yeo-un-i da-eum bi-haeng nae-nae ga-si-jil an-seum-ni-da", "example_en": "That lingering feeling doesn't fade for the rest of the flight." },
+    { "id": "w05", "word": "로저", "reading": "ro-jeo", "meaning": "\"Roger\" (radio acknowledgment)", "example": "로저, 짧게 답했지만 속으로는 긴 대답을 준비했습니다.", "example_reading": "ro-jeo, jjalb-ge dap-haet-ji-man sog-eu-ro-neun gin dae-dab-eul jun-bi-haet-seum-ni-da", "example_en": "'Roger' — I answered shortly, but inside I'd prepared a much longer reply." }
   ],
   "sentences": [
-    { "id": "s01", "ko": "무전에서는 중요한 내용을 재확인하는 게 기본 절차입니다.", "reading": "mu-jeon-e-seo-neun jung-yo-han nae-yong-eul jae-hwag-in-ha-neun ge gi-bon jeol-cha-im-ni-da", "en": "In radio communication, re-confirming important content is basic procedure." },
-    { "id": "s02", "ko": "방금 그 콜사인, 다시 한번 불러주실 수 있습니까.", "reading": "bang-geum geu kol-ssa-in, da-si han-beon bul-leo-ju-sil su it-seum-ni-kka", "en": "Could you say that callsign once more for me?" },
-    { "id": "s03", "ko": "절차상 확인이 필요하다고 우기고 있지만, 사실 이유는 단순합니다.", "reading": "jeol-cha-sang hwag-in-i pil-yo-ha-da-go u-gi-go it-ji-man, sa-sil i-yu-neun dan-sun-ham-ni-da", "en": "I insist it's procedurally necessary to confirm, but honestly the reason is simple." },
-    { "id": "s04", "ko": "이 버릇이 언젠가 들통날 거라는 건 알고 있습니다.", "reading": "i beo-reu-si eon-jen-ga deul-tong-nal geo-ra-neun geon al-go it-seum-ni-da", "en": "I know this habit will get found out eventually." },
-    { "id": "s05", "ko": "당신에게는 이 짧은 응답도 자꾸 늦게 나갑니다.", "reading": "dang-sin-e-ge-neun i jjalb-eun eung-dap-do ja-kku neut-ge na-gam-ni-da", "en": "To you, even this short response keeps coming out late." }
+    { "id": "s01", "ko": "당신과의 교신이 계속 이어지고 있습니다.", "reading": "dang-sin-gwa-ui gyo-sin-i gye-sok i-eo-ji-go it-seum-ni-da", "en": "This transmission with you keeps going." },
+    { "id": "s02", "ko": "무전을 핑계 삼아 연락할 구실을 찾고 있습니다.", "reading": "mu-jeon-eul ping-gye sam-a yeol-lak-hal gu-sil-eul chat-go it-seum-ni-da", "en": "I keep using radio calls as an excuse to find reasons to reach out." },
+    { "id": "s03", "ko": "업무 말투 뒤에 마음을 숨기는 능청이 제 특기입니다.", "reading": "eom-mu mal-tu dwi-e ma-eum-eul sum-gi-neun neung-cheong-i je teuk-gi-im-ni-da", "en": "Hiding my feelings behind work phrasing is my specialty." },
+    { "id": "s04", "ko": "그 여운이 다음 비행 내내 가시질 않습니다.", "reading": "geu yeo-un-i da-eum bi-haeng nae-nae ga-si-jil an-seum-ni-da", "en": "That lingering feeling doesn't fade for the rest of the flight." },
+    { "id": "s05", "ko": "로저, 짧게 답했지만 속으로는 긴 대답을 준비했습니다.", "reading": "ro-jeo, jjalb-ge dap-haet-ji-man sog-eu-ro-neun gin dae-dab-eul jun-bi-haet-seum-ni-da", "en": "'Roger' — I answered shortly, but inside I'd prepared a much longer reply." }
   ],
   "dialogues": [
     {
       "id": "d01",
       "turns": [
-        { "speaker": "승객", "text": "저 방금 뭐라고 했는지 들으셨어요?", "reading": "jeo bang-geum mwo-ra-go haet-neun-ji deul-eu-syeo-sseo-yo?", "en": "Did you hear what I just said?" },
-        { "speaker": "천상우 기장", "text": "…죄송합니다, 잘 못 들었습니다. 절차상 다시 한번 말씀해 주시겠습니까.", "reading": "…joe-song-ham-ni-da, jal mot deu-reot-seum-ni-da. jeol-cha-sang da-si han-beon mal-sseum-hae ju-si-get-seum-ni-kka.", "en": "...My apologies, I didn't quite catch it. Procedurally, could you say it once more?" },
-        { "speaker": "승객", "text": "에이, 방금 완전 또렷하게 들으셨으면서.", "reading": "e-i, bang-geum wan-jeon tto-ryeot-ha-ge deul-eu-syeo-sseu-myeon-seo.", "en": "Come on, you heard it perfectly clearly just now." },
-        { "speaker": "천상우 기장", "text": "…들켰습니까. 그래도 한 번 더 듣고 싶은 건 진심입니다.", "reading": "…deul-kyeot-seum-ni-kka. geu-rae-do han beon deo deut-go sip-eun geon jin-sim-im-ni-da.", "en": "...Was I caught? Even so, wanting to hear it one more time is sincere." }
+        { "speaker": "천상우 기장", "text": "타워, 여기는 상우 기장. 오늘 하루 기상은 어떻습니까.", "reading": "ta-wo, yeo-gi-neun sang-u gi-jang. o-neul ha-ru gi-sang-eun eo-tteo-hum-ni-kka.", "en": "Tower, this is Captain Sangwoo. How's the weather on your end today?" },
+        { "speaker": "손님", "text": "기장님, 저한테 문자할 때도 꼭 그렇게 시작해야 돼요?", "reading": "gi-jang-nim, jeo-han-te mun-ja-hal ttae-do kkok geu-reo-ke si-jak-hae-ya dwae-yo?", "en": "Captain, do you really have to start every text to me like that?" },
+        { "speaker": "천상우 기장", "text": "습관이라 어쩔 수 없습니다. …그런데 솔직히, 이 습관이 싫지는 않으실 거라 생각합니다.", "reading": "seup-gwan-i-ra eo-jjeol su eop-seum-ni-da. …geu-reon-de sol-jik-hi, i seup-gwan-i sil-chi-neun an-eu-sil geo-ra saeng-gak-ham-ni-da.", "en": "It's a habit — can't help it. ...Though honestly, I don't think you dislike this habit." },
+        { "speaker": "손님", "text": "…부정은 못 하겠네요. 능청스럽게.", "reading": "…bu-jeong-eun mot ha-get-ne-yo. neung-cheong-seu-reop-ge.", "en": "...Can't really deny that. So smoothly, too." }
       ],
-      "question": "기장이 \"잘 못 들었다\"며 다시 물은 진짜 이유는?",
-      "question_en": "What is the captain's real reason for saying he 'didn't quite catch it' and asking again?",
-      "correct_answer": "그녀의 목소리를 한 번 더 듣고 싶어서 절차를 핑계 삼은 것",
-      "options": ["그녀의 목소리를 한 번 더 듣고 싶어서 절차를 핑계 삼은 것", "실제로 주변 소음이 심해서 듣지 못한 것", "무전기 상태가 좋지 않아서", "규정상 반드시 두 번 확인해야 해서"],
-      "explanation": "기장은 실제로 못 들은 게 아니라, 목소리를 한 번 더 듣고 싶은 마음을 '절차상 확인'이라는 핑계로 감추고 있습니다."
+      "question": "손님의 마지막 대답이 보여주는 것은?",
+      "question_en": "What does the passenger's last response show?",
+      "correct_answer": "기장의 능청스러운 말투가 싫지 않다는 것을 인정하는 반응",
+      "options": ["기장의 능청스러운 말투가 싫지 않다는 것을 인정하는 반응", "기장의 말투가 무례하다고 화를 내는 반응", "기장에게 습관을 고치라고 요구하는 반응", "기장의 말을 전혀 믿지 않는 반응"],
+      "explanation": "손님은 기장의 능청스러운 인사말이 싫지 않다는 것을 은근히 인정하며, 못 이기는 척 넘어가고 있습니다."
     },
     {
       "id": "d02",
       "turns": [
-        { "speaker": "승객", "text": "기장님, 저 이름 여러 번 되물으시는 거 혹시 습관이에요?", "reading": "gi-jang-nim, jeo i-reum yeo-reo beon doe-mul-eu-si-neun geo hok-si seup-gwan-i-e-yo?", "en": "Captain, is asking my name over and over some kind of habit of yours?" },
-        { "speaker": "천상우 기장", "text": "습관이자, 절차이기도 합니다.", "reading": "seup-gwan-i-ja, jeol-cha-i-gi-do ham-ni-da.", "en": "It's a habit, but also a procedure." },
-        { "speaker": "승객", "text": "그 절차, 되게 수상한데요.", "reading": "geu jeol-cha, doe-ge su-sang-han-de-yo.", "en": "That procedure sounds pretty suspicious." },
-        { "speaker": "천상우 기장", "text": "수상해도 어쩔 수 없습니다. Roger that, 인정하겠습니다.", "reading": "su-sang-hae-do eo-jjeol su eop-seum-ni-da. Roger that, in-jeong-ha-get-seum-ni-da.", "en": "Suspicious or not, it can't be helped. Roger that—I'll admit it." }
+        { "speaker": "손님", "text": "근데 로저는 왜 그렇게 짧게 답장해요? 성의 없어 보이게.", "reading": "geun-de ro-jeo-neun wae geu-reo-ke jjalb-ge dap-jang-hae-yo? seong-ui eop-seo bo-i-ge.", "en": "But why do you always reply with just 'Roger'? It seems kind of unenthusiastic." },
+        { "speaker": "천상우 기장", "text": "짧게 보이는 그 대답 뒤에, 사실 훨씬 긴 마음이 있습니다.", "reading": "jjalb-ge bo-i-neun geu dae-dap dwi-e, sa-sil hwol-ssin gin ma-eum-i it-seum-ni-da.", "en": "Behind that short reply, there's actually a much longer feeling." },
+        { "speaker": "손님", "text": "그게 무슨 뜻이에요?", "reading": "geu-ge mu-seun tteu-si-e-yo?", "en": "What do you mean by that?" },
+        { "speaker": "천상우 기장", "text": "당신 문자 하나에, 제가 얼마나 오래 답장을 고민하는지 알면 놀라실 겁니다.", "reading": "dang-sin mun-ja ha-na-e, je-ga eol-ma-na o-rae dap-jang-eul go-min-ha-neun-ji al-myeon nol-la-sil geom-ni-da.", "en": "If you knew how long I agonize over just one reply to your texts, you'd be surprised." }
       ],
-      "question": "기장이 마지막에 \"인정하겠습니다\"라고 말한 것이 뜻하는 바는?",
-      "question_en": "What does the captain's final line, 'I'll admit it,' mean?",
-      "correct_answer": "되묻는 습관이 진짜로는 절차가 아니라는 사실을 얼버무리며 인정한다",
-      "options": ["되묻는 습관이 진짜로는 절차가 아니라는 사실을 얼버무리며 인정한다", "앞으로는 절대 되묻지 않겠다고 약속한다", "습관을 고치겠다고 사과한다", "정말 절차 때문이었다고 단호히 주장한다"],
-      "explanation": "기장은 딱 잡아떼지 않고, 되묻는 버릇이 순수한 절차만은 아니라는 사실을 웃으며 은근히 인정하고 있습니다."
+      "question": "기장의 마지막 말이 의미하는 것은?",
+      "question_en": "What does the captain's last line mean?",
+      "correct_answer": "짧은 답장 뒤에 그녀를 향한 깊은 마음과 고민이 숨어 있다는 것",
+      "options": ["짧은 답장 뒤에 그녀를 향한 깊은 마음과 고민이 숨어 있다는 것", "답장을 쓰는 것이 업무상 번거롭다는 것", "문자 답장 규정이 따로 있다는 것", "손님의 문자가 이해하기 어렵다는 것"],
+      "explanation": "기장은 겉으로는 짧고 무심해 보이는 답장 뒤에, 사실 그녀를 향한 깊은 마음과 고민이 숨어 있음을 넌지시 밝히고 있습니다."
     }
   ]
 }

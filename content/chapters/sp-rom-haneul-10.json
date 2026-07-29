@@ -1,62 +1,62 @@
 {
   "id": "sp-rom-haneul-10",
   "character_id": "haneul",
-  "title": "서툴지만 분명하게",
-  "emoji": "🌸",
+  "title": "그날, 인파 속에서부터",
+  "emoji": "🌟",
   "story": [
     {
-      "text": "…따라와요. 오늘은 딴 데 안 가고, 할 말 있어서 불렀어요.",
-      "reading": "…tta-ra-wa-yo. o-neul-eun ttan de an ga-go, hal mal iss-eo-seo bul-leoss-eo-yo.",
-      "en": "...Come with me. We're not going anywhere else today, I called you here because I have something to say."
+      "text": "하늘은 손님을 다시 그 공항으로 불러냈다. 두 사람이 처음 마주쳤던, 바로 그 게이트 앞으로.",
+      "reading": "ha-neul-eun son-nim-eul da-si geu gong-hang-eu-ro bul-leo-naess-da. du sa-ram-i cheo-eum ma-ju-chyeoss-deon, ba-ro geu ge-i-teu ap-eu-ro.",
+      "en": "Haneul asked her to meet him at that same airport once more. Right in front of the very gate where the two of them had first crossed paths."
     },
     {
-      "text": "저기 '별' 보여요? 한옥마을 지붕 위로 뜬 거. …오늘따라 잘 보이네요.",
-      "reading": "jeo-gi 'byeol' bo-yeo-yo? han-ok-ma-eul ji-bung wi-ro tteun geo. …o-neul-tta-ra jal bo-i-ne-yo.",
-      "en": "Can you see that 'star'? Rising above the Hanok Village roofs. ...It's especially clear tonight.",
-      "highlight_word_id": "w01"
-    },
-    {
-      "text": "…이런 거 잘 못 해요, 원래. 그래도 오늘은 '고백' 좀 하려고요.",
-      "reading": "…i-reon geo jal mos hae-yo, won-lae. geu-rae-do o-neul-eun 'go-baek' jom ha-ryeo-go-yo.",
-      "en": "...I'm not good at this sort of thing, usually. But today I'm going to make a 'confession'.",
-      "highlight_word_id": "w02"
-    },
-    {
-      "text": "…무뚝뚝해서 몰랐겠지만, 스케줄 조정한 것도, 다 '진심'이었어요. 처음부터.",
-      "reading": "…mu-ttuk-ttuk-hae-seo mol-lass-get-ji-man, seu-ke-jul jo-jeong-han geot-do, da 'jin-sim'i-eoss-eo-yo. cheo-eum-bu-teo.",
-      "en": "...You probably didn't know because I'm so blunt, but even rearranging my schedule — it was all 'sincere'. From the very beginning.",
-      "highlight_word_id": "w03"
-    },
-    {
-      "text": "…'손' 좀 줘봐요. 이렇게 잡고 있는 게, 훨씬 나아서요.",
-      "reading": "…'son' jom jwo-bwa-yo. i-reoh-ge jap-go it-neun ge, hwol-ssin na-a-seo-yo.",
-      "en": "...Give me your 'hand'. Holding it like this feels so much better.",
-      "highlight_word_id": "w04"
-    },
-    {
-      "text": "앞으로도 곁에 있을게요. 진지하게 생각하고 있어요, 오래도록. 이거 하나는 '약속'해요.",
-      "reading": "ap-eu-ro-do gyeot-e iss-eul-ge-yo. jin-ji-ha-ge saeng-gak-ha-go iss-eo-yo, o-rae-do-rok. i-geo ha-na-neun 'yak-sok'hae-yo.",
-      "en": "I'll stay by your side from now on too. I'm thinking about this seriously, for the long run. This much, I 'promise'.",
+      "text": "'…기억해요? 그날, 여기서 손님 탑승권 주워줬던 거.' 하늘의 목소리는 평소보다 조금 낮게 가라앉아 있었다.",
+      "reading": "'…gi-eok-hae-yo? geu-nal, yeo-gi-seo son-nim tap-seung-gwon ju-weo-jwoss-deon geo.' ha-neul-ui mok-so-ri-neun pyeong-so-bo-da jo-geum naj-ge ga-ra-anj-a iss-eoss-da.",
+      "en": "'...Do you remember? That day, right here, when I picked up your boarding pass.' Haneul's voice had sunk a little lower than usual.",
       "highlight_word_id": "w05"
     },
     {
-      "text": "…서툴어도, 이 정도면 분명하죠? 자, 이제 진짜 마지막 문제예요.",
-      "reading": "…seo-tul-eo-do, i jeong-do-myeon bun-myeong-ha-jyo? ja, i-je jin-jja ma-ji-mak mun-je-ye-yo.",
-      "en": "...Even if I'm clumsy at this, this much is clear, right? Alright, this is really the last question now."
+      "text": "'저 원래 이런 거 잘 못 해요. 그래도 오늘은 고백 좀 하려고요.' 그는 숨을 한 번 고르고, 천천히 말을 이었다.",
+      "reading": "'jeo won-lae i-reon geo jal mos hae-yo. geu-rae-do o-neul-eun go-baek jom ha-ryeo-go-yo.' geu-neun sum-eul han beon go-reu-go, cheon-cheon-hi mal-eul i-eoss-da.",
+      "en": "'I'm really not good at this sort of thing. But today, I'm going to make a confession anyway.' He took a breath and slowly continued.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "'팬사인회도, 콘서트도, 다 진심이었어요. 근데 사실은요, 그거보다 훨씬 전부터 시작된 마음이었어요.'",
+      "reading": "'paen-sa-in-hoe-do, kon-seo-teu-do, da jin-sim-i-eoss-eo-yo. geun-de sa-sil-eun-yo, geu-geo-bo-da hwol-ssin jeon-bu-teo si-jag-doen ma-eum-i-eoss-eo-yo.'",
+      "en": "'The fan-signing, the concert — all of it was sincere. But honestly, this feeling started a long time before any of that.'",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "'그 인파 속에서 딱 한 번 스친 얼굴을, 저는 그날부터 계속 찾고 있었어요. …이게 운명이라면, 웃기지만 저는 믿을래요.'",
+      "reading": "'geu in-pa sog-e-seo ttak han beon sseu-chin eol-gul-eul, jeo-neun geu-nal-bu-teo gye-sok chaj-go iss-eoss-eo-yo. …i-ge un-myeong-i-ra-myeon, us-gi-ji-man jeo-neun mid-eul-lae-yo.'",
+      "en": "'That one face I glimpsed just once, in that crowd — I've been looking for it ever since that day. ...If this is fate, it sounds ridiculous, but I think I want to believe it.'",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "'앞으로도 팬으로, 그리고 그냥 저로도, 손님 곁에 있고 싶어요. 무대 위에서든, 이렇게 평범한 순간이든 상관없이.'",
+      "reading": "'ap-eu-ro-do paen-eu-ro, geu-ri-go geu-nyang jeo-ro-do, son-nim gyeot-e it-go sip-eo-yo. mu-dae wi-e-seo-deun, i-reoh-ge pyeong-beom-han sun-gan-i-deun sang-gwan-eobs-i.'",
+      "en": "'From now on, as a fan, and just as myself too — I want to stay by your side. Whether you're up on that stage or in a plain, ordinary moment like this, it doesn't matter to me.'",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "하늘은 마지막으로 낮게 웃으며 덧붙였다. '…서툴러도, 이 정도면 분명하죠? 그 인파 속 얼굴 하나가, 결국 여기까지 왔네요.'",
+      "reading": "ha-neul-eun ma-ji-mag-eu-ro naj-ge us-eu-myeo deot-but-yeoss-da. '…seo-tul-leo-do, i jeong-do-myeon bun-myeong-ha-jyo? geu in-pa sog eol-gul ha-na-ga, gyeol-guk yeo-gi-kka-ji wass-ne-yo.'",
+      "en": "Finally, with a low laugh, Haneul added one last thing. '...Even if I'm clumsy at it, this much is clear, right? That one face in the crowd — it ended up bringing me all the way here.'"
     }
   ],
   "words": [
-    { "id": "w01", "word": "별", "reading": "byeol", "meaning": "Star", "example": "밤하늘에 별이 반짝여요.", "example_reading": "bam-ha-neul-e byeol-i ban-jjag-yeo-yo", "example_en": "The stars twinkle in the night sky." },
-    { "id": "w02", "word": "고백", "reading": "go-baek", "meaning": "Confession", "example": "드디어 고백을 했어요.", "example_reading": "deu-di-eo go-baeg-eul haess-eo-yo", "example_en": "I finally made a confession." },
-    { "id": "w03", "word": "진심", "reading": "jin-sim", "meaning": "Sincerity / True heart", "example": "제 진심을 알아줘요.", "example_reading": "je jin-sim-eul al-a-jwo-yo", "example_en": "Please understand my sincerity." },
-    { "id": "w04", "word": "손", "reading": "son", "meaning": "Hand", "example": "손을 꼭 잡아요.", "example_reading": "son-eul kkok jab-a-yo", "example_en": "Hold my hand tightly." },
-    { "id": "w05", "word": "약속", "reading": "yak-sok", "meaning": "Promise", "example": "우리 약속 지켜요.", "example_reading": "u-ri yak-sok ji-kyeo-yo", "example_en": "Let's keep our promise." }
+    { "id": "w01", "word": "고백", "reading": "go-baek", "meaning": "Confession", "example": "드디어 진심을 고백했다.", "example_reading": "deu-di-eo jin-sim-eul go-baeg-haet-da", "example_en": "He finally confessed his true feelings." },
+    { "id": "w02", "word": "운명", "reading": "un-myeong", "meaning": "Fate / destiny", "example": "이건 운명이라고 믿고 싶었다.", "example_reading": "i-geon un-myeong-i-ra-go mid-go sip-eot-da", "example_en": "He wanted to believe this was fate." },
+    { "id": "w03", "word": "진심", "reading": "jin-sim", "meaning": "Sincerity / true heart", "example": "그 말은 전부 진심이었다.", "example_reading": "geu mal-eun jeon-bu jin-sim-i-eot-da", "example_en": "Every word was completely sincere." },
+    { "id": "w04", "word": "곁", "reading": "gyeot", "meaning": "One's side (closeness)", "example": "앞으로도 곁에 있고 싶어요.", "example_reading": "ap-eu-ro-do gyeot-e it-go sip-eo-yo", "example_en": "I want to stay by your side from now on too." },
+    { "id": "w05", "word": "그날", "reading": "geu-nal", "meaning": "That day", "example": "그날부터 마음이 달라졌다.", "example_reading": "geu-nal-bu-teo ma-eum-i dal-la-jyeot-da", "example_en": "His feelings changed starting that day." }
   ],
   "sentences": [
-    { "id": "s01", "ko": "별이 가득한 밤이에요.", "reading": "byeol-i ga-deug-han bam-i-e-yo", "en": "It's a night full of stars." },
-    { "id": "s02", "ko": "용기를 내서 고백했어요.", "reading": "yong-gi-reul nae-seo go-baeg-haess-eo-yo", "en": "I gathered courage and confessed." },
-    { "id": "s03", "ko": "제 진심이 전해졌으면 좋겠어요.", "reading": "je jin-sim-i jeon-hae-jyeoss-eu-myeon jo-ket-seo-yo", "en": "I hope my sincerity gets through to you." },
-    { "id": "s04", "ko": "손을 잡고 별을 봐요.", "reading": "son-eul jap-go byeol-eul bwa-yo", "en": "We hold hands and look at the stars." },
-    { "id": "s05", "ko": "이 약속, 꼭 지킬게요.", "reading": "i yak-sok, kkok ji-kil-ge-yo", "en": "I'll definitely keep this promise." }
+    { "id": "s01", "ko": "드디어 진심을 고백했다.", "reading": "deu-di-eo jin-sim-eul go-baeg-haet-da", "en": "He finally confessed his true feelings." },
+    { "id": "s02", "ko": "이게 운명이라면 믿고 싶었다.", "reading": "i-ge un-myeong-i-ra-myeon mid-go sip-eot-da", "en": "If this was fate, he wanted to believe it." },
+    { "id": "s03", "ko": "그 말은 전부 진심이었다.", "reading": "geu mal-eun jeon-bu jin-sim-i-eot-da", "en": "Every word of it was sincere." },
+    { "id": "s04", "ko": "앞으로도 곁에 있고 싶어요.", "reading": "ap-eu-ro-do gyeot-e it-go sip-eo-yo", "en": "I want to stay by your side from now on too." },
+    { "id": "s05", "ko": "그날부터 모든 게 시작됐다.", "reading": "geu-nal-bu-teo mo-deun ge si-jag-doe-eot-da", "en": "It all started from that day." }
   ]
 }

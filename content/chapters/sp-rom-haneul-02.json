@@ -1,62 +1,62 @@
 {
   "id": "sp-rom-haneul-02",
   "character_id": "haneul",
-  "title": "안전벨트나 매요",
-  "emoji": "🙄",
+  "title": "우연이라기엔 자주 겹치는",
+  "emoji": "✈️",
   "story": [
     {
-      "text": "…뭐 하는 거예요, 지금. 자리에 똑바로 앉아요.",
-      "reading": "…mwo ha-neun geo-ye-yo, ji-geum. ja-ri-e ttok-ba-ro anj-a-yo.",
-      "en": "...What are you doing right now. Sit properly in your seat."
+      "text": "그 뒤로 이상한 일이 생겼다. 원래 다른 노선을 돌던 하늘이, 자꾸 같은 편에 배정되기 시작한 것이다.",
+      "reading": "geu dwi-ro i-sang-han il-i saeng-gyeoss-da. won-lae da-reun no-seon-eul dol-deon ha-neul-i, ja-kku gat-eun pyeon-e bae-jeong-doe-gi si-jag-han geos-i-da.",
+      "en": "Strange things started happening after that. Haneul, who used to fly a completely different route, kept getting assigned to the same flight."
     },
     {
-      "text": "됐고, '안전벨트'나 매요. 저는 이런 거 대충 넘기는 거 딱 질색이에요.",
-      "reading": "dwaet-go, 'an-jeon-bel-teu'na mae-yo. jeo-neun i-reon geo dae-chung neom-gi-neun geo ttak jil-saeg-i-e-yo.",
-      "en": "Never mind, just fasten your 'seatbelt'. I absolutely hate cutting corners on stuff like this.",
+      "text": "동료들은 그가 굳이 이 노선을 자원했다는 걸 알고 있었다. 정작 하늘 본인은 그런 적 없다는 얼굴을 했지만.",
+      "reading": "dong-nyo-deul-eun geu-ga gud-i i no-seon-eul ja-won-haess-da-neun geol al-go iss-eoss-da. jeong-jak ha-neul bon-in-eun geu-reon jeok eobs-da-neun eol-gul-eul haess-ji-man.",
+      "en": "His colleagues knew he'd specifically volunteered for this route. Haneul himself, though, wore the face of someone who'd done no such thing.",
       "highlight_word_id": "w01"
     },
     {
-      "text": "비행 전에 '점검'만 몇 번을 하는지 알아요? 하나라도 대충 넘기면 안 되니까.",
-      "reading": "bi-haeng jeon-e 'jeom-geom'man myeot beon-eul ha-neun-ji al-a-yo? ha-na-ra-do dae-chung neom-gi-myeon an doe-ni-kka.",
-      "en": "Do you know how many times I do a 'check' before every flight? Can't let even one thing slide.",
+      "text": "브리핑 룸에서 누가 지나가듯 물었다. '이번 달 스케줄, 또 이 편이네요?' '…그냥 자리가 비어서요.' 하늘은 서류에서 눈도 떼지 않고 대답했다.",
+      "reading": "beu-ri-ping rum-e-seo nu-ga ji-na-ga-deut mul-eoss-da. 'i-beon dal seu-ke-jul, tto i pyeon-i-ne-yo?' '…geu-nyang ja-ri-ga bi-eo-seo-yo.' ha-neul-eun seo-ryu-e-seo nun-do tte-ji anh-go dae-dab-haess-da.",
+      "en": "In the briefing room, someone asked in passing. 'Your schedule this month — this flight again?' '...There was just an open slot.' Haneul answered without even looking up from his paperwork.",
       "highlight_word_id": "w02"
     },
     {
-      "text": "다 저만의 '순서'가 있어요. 그거 하나라도 어긋나면 마음이 안 놓여요.",
-      "reading": "da jeo-man-ui 'sun-seo'ga iss-eo-yo. geu-geo ha-na-ra-do eo-geun-na-myeon ma-eum-i an noh-yeo-yo.",
-      "en": "I have my own 'routine' for everything. If even one step is off, I can't relax.",
+      "text": "세 번째로 같은 손님과 마주친 날, 그는 속으로 생각했다. 이쯤 되면 우연이라고 하기엔 좀 뻔뻔한 것 같다고.",
+      "reading": "se beon-jjae-ro gat-eun son-nim-gwa ma-ju-chin nal, geu-neun sog-eu-ro saeng-gag-haess-da. i-jjeum doe-myeon u-yeon-i-ra-go ha-gi-en jom ppeon-ppeon-han geot gat-da-go.",
+      "en": "The third time he ran into the same passenger, he thought to himself — at this point, calling it a coincidence was starting to feel a little shameless, even to him.",
       "highlight_word_id": "w03"
     },
     {
-      "text": "즉흥적인 거 딱 질색이에요. '규칙'대로, 순서대로. 그래야 안 다쳐요.",
-      "reading": "jeuk-heung-jeog-in geo ttak jil-saeg-i-e-yo. 'gyu-chik'dae-ro, sun-seo-dae-ro. geu-rae-ya an da-chyeo-yo.",
-      "en": "I can't stand anything impulsive. Follow the 'rules', follow the steps. That's how nobody gets hurt.",
+      "text": "'…또 마주치네요.' 복도에서 인사를 건네는 그의 목소리는 태연했지만, 귀 끝이 살짝 붉어져 있었다.",
+      "reading": "'…tto ma-ju-chi-ne-yo.' bok-do-e-seo in-sa-reul geon-ne-neun geu-ui mok-so-ri-neun tae-yeon-haess-ji-man, gwi kkeut-i sal-jjak bulg-eo-jyeo iss-eoss-da.",
+      "en": "'...We keep running into each other.' His voice, greeting her in the aisle, sounded perfectly calm — but the tips of his ears had gone slightly red.",
       "highlight_word_id": "w04"
     },
     {
-      "text": "'걱정' 마요. 이 노선 몇 년째 몰아요. 준비된 사람이니까, 나만 믿어요.",
-      "reading": "'geok-jeong' ma-yo. i no-seon myeot nyeon-jjae mol-a-yo. jun-bi-doen sa-ram-i-ni-kka, na-man mid-eo-yo.",
-      "en": "Don't 'worry'. I've flown this route for years. I'm someone who's always prepared, so just trust me.",
+      "text": "손님이 웃으며 '일부러 그런 거 아니에요?' 하고 묻자, 그는 살짝 당황한 얼굴로 답했다. '…그럴 리가요. 그냥 이상하게 자꾸 겹치네요, 스케줄이.'",
+      "reading": "son-nim-i us-eu-myeo 'il-bu-reo geu-reon geo a-ni-e-yo?' ha-go mut-ja, geu-neun sal-jjak dang-hwang-han eol-gul-lo dab-haess-da. '…geu-reol li-ga-yo. geu-nyang i-sang-ha-ge ja-kku gyeop-chi-ne-yo, seu-ke-jul-i.'",
+      "en": "When she asked, smiling, 'Are you doing this on purpose?' he answered with a hint of flustered denial. '...No way. It's just — the schedules keep overlapping strangely, that's all.'",
       "highlight_word_id": "w05"
     },
     {
-      "text": "…왜 자꾸 쳐다봐요. 착륙할 때까지 얌전히 있어요.",
-      "reading": "…wae ja-kku chyeo-da-bwa-yo. chang-nyug-hal ttae-kka-ji yam-jeon-hi iss-eo-yo.",
-      "en": "...Why do you keep staring. Just sit tight until we land."
+      "text": "정작 그날 밤, 하늘은 다음 달 스케줄표를 펴놓고 한참을 들여다봤다. 손님이 타는 편을 찾는 데, 예상보다 오래 걸리지 않았다.",
+      "reading": "jeong-jak geu-nal bam, ha-neul-eun da-eum dal seu-ke-jul-pyo-reul pyeo-noh-go han-cham-eul deul-yeo-da-bwass-da. son-nim-i ta-neun pyeon-eul chaj-neun de, ye-sang-bo-da o-rae geol-li-ji anh-ass-da.",
+      "en": "That night, though, Haneul sat with next month's schedule spread out in front of him for a long while. Finding the flight she'd be on didn't take him nearly as long as he expected."
     }
   ],
   "words": [
-    { "id": "w01", "word": "안전벨트", "reading": "an-jeon-bel-teu", "meaning": "Seatbelt", "example": "안전벨트를 꼭 매세요.", "example_reading": "an-jeon-bel-teu-reul kkok mae-se-yo", "example_en": "Please be sure to fasten your seatbelt." },
-    { "id": "w02", "word": "점검", "reading": "jeom-geom", "meaning": "Check / Inspection", "example": "이륙 전에 점검을 꼼꼼히 해요.", "example_reading": "i-ryug jeon-e jeom-geom-eul kkom-kkom-hi hae-yo", "example_en": "I do a thorough check before takeoff." },
-    { "id": "w03", "word": "순서", "reading": "sun-seo", "meaning": "Order / Procedure", "example": "순서대로 준비하는 게 편해요.", "example_reading": "sun-seo-dae-ro jun-bi-ha-neun ge pyeon-hae-yo", "example_en": "It's easier when I prepare step by step." },
-    { "id": "w04", "word": "규칙", "reading": "gyu-chik", "meaning": "Rule", "example": "규칙을 지키는 게 중요해요.", "example_reading": "gyu-chig-eul ji-ki-neun ge jung-yo-hae-yo", "example_en": "Following the rules is important." },
-    { "id": "w05", "word": "걱정", "reading": "geok-jeong", "meaning": "Worry", "example": "걱정하지 마세요.", "example_reading": "geok-jeong-ha-ji ma-se-yo", "example_en": "Please don't worry." }
+    { "id": "w01", "word": "노선", "reading": "no-seon", "meaning": "Route / line", "example": "이 노선은 인기가 많아요.", "example_reading": "i no-seon-eun in-gi-ga man-a-yo", "example_en": "This route is popular." },
+    { "id": "w02", "word": "스케줄", "reading": "seu-ke-jul", "meaning": "Schedule", "example": "이번 주 스케줄을 확인했다.", "example_reading": "i-beon ju seu-ke-jul-eul hwag-in-haet-da", "example_en": "I checked this week's schedule." },
+    { "id": "w03", "word": "우연", "reading": "u-yeon", "meaning": "Coincidence", "example": "우연치고는 너무 잦았다.", "example_reading": "u-yeon-chi-go-neun neo-mu jaj-at-da", "example_en": "It happened too often to be a coincidence." },
+    { "id": "w04", "word": "마주치다", "reading": "ma-ju-chi-da", "meaning": "To run into (someone)", "example": "복도에서 그와 마주쳤다.", "example_reading": "bok-do-e-seo geu-wa ma-ju-chyeot-da", "example_en": "I ran into him in the hallway." },
+    { "id": "w05", "word": "이상하다", "reading": "i-sang-ha-da", "meaning": "Strange / odd", "example": "오늘따라 좀 이상해요.", "example_reading": "o-neul-tta-ra jom i-sang-hae-yo", "example_en": "Something feels a bit strange today." }
   ],
   "sentences": [
-    { "id": "s01", "ko": "안전벨트를 매고 기다려요.", "reading": "an-jeon-bel-teu-reul mae-go gi-da-ryeo-yo", "en": "Fasten your seatbelt and wait." },
-    { "id": "s02", "ko": "점검을 마치고 출발해요.", "reading": "jeom-geom-eul ma-chi-go chul-bal-hae-yo", "en": "We depart after finishing the check." },
-    { "id": "s03", "ko": "순서대로 하나씩 확인해요.", "reading": "sun-seo-dae-ro ha-na-ssig hwag-in-hae-yo", "en": "I check things one by one, in order." },
-    { "id": "s04", "ko": "규칙을 지키면 안전해요.", "reading": "gyu-chig-eul ji-ki-myeon an-jeon-hae-yo", "en": "Following the rules keeps you safe." },
-    { "id": "s05", "ko": "걱정 말고 저만 믿어요.", "reading": "geok-jeong mal-go jeo-man mid-eo-yo", "en": "Don't worry, just trust me." }
+    { "id": "s01", "ko": "이 노선을 일부러 자원했대요.", "reading": "i no-seon-eul il-bu-reo ja-won-haet-dae-yo", "en": "They say he volunteered for this route on purpose." },
+    { "id": "s02", "ko": "이번 달 스케줄이 또 겹쳤어요.", "reading": "i-beon dal seu-ke-jul-i tto gyeop-chyeoss-eo-yo", "en": "This month's schedule overlapped again." },
+    { "id": "s03", "ko": "우연이라기엔 너무 자주 만나요.", "reading": "u-yeon-i-ra-gi-en neo-mu ja-ju man-na-yo", "en": "We meet too often for it to be a coincidence." },
+    { "id": "s04", "ko": "복도에서 또 마주쳤어요.", "reading": "bok-do-e-seo tto ma-ju-chyeoss-eo-yo", "en": "We ran into each other in the aisle again." },
+    { "id": "s05", "ko": "귀 끝이 붉어진 게 좀 이상했어요.", "reading": "gwi kkeut-i bulg-eo-jin ge jom i-sang-haess-eo-yo", "en": "It was a little strange how the tips of his ears turned red." }
   ]
 }

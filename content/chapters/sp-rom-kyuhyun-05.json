@@ -1,62 +1,62 @@
 {
   "id": "sp-rom-kyuhyun-05",
   "character_id": "kyuhyun",
-  "title": "다른 항공사 기장은 만나지 마요",
-  "emoji": "🙅",
+  "title": "경복궁 지붕선을 가리키며",
+  "emoji": "🏯",
   "story": [
     {
-      "text": "북촌 골목 걷다가 딴 데 정신 팔린 거 다 봤어요. 누구 생각하는 거예요?",
-      "reading": "buk-chon gol-mok geot-da-ga ttan de jeong-sin pal-lin geo da bwa-sseo-yo. nu-gu saeng-gak-ha-neun geo-ye-yo?",
-      "en": "I saw you totally distracted while we were walking through Bukchon. Who were you thinking about?"
-    },
-    {
-      "text": "설마 지난번에 만났다는 그 다른 '항공사' 기장, 그 사람 생각하는 거 아니죠? 그래서? 그 사람이 저보다 뭐가 더 좋은데요?",
-      "reading": "seol-ma ji-nan-beon-e man-nat-da-neun geu da-reun hang-gong-sa gi-jang, geu sa-ram saeng-gak-ha-neun geo a-ni-jyo? geu-rae-seo? geu sa-ram-i jeo-bo-da mwo-ga deo jo-eun-de-yo?",
-      "en": "You're not thinking about that captain from another 'airline' you mentioned meeting before, are you? So? What's so much better about him than me?",
+      "text": "카페를 나선 우리는 딱히 정하지 않은 걸음으로 걷다가, 어느새 경복궁 돌담을 따라 걷고 있었다.",
+      "reading": "ka-pe-reul na-seon u-ri-neun ttak-hi jeong-ha-ji an-eun geol-eum-eu-ro geot-da-ga, eo-neu-sae gyeong-bok-gung dol-dam-eul tta-ra geot-go iss-eot-da.",
+      "en": "Leaving the cafe, we walked without any particular destination, and before long we found ourselves walking along the stone walls of Gyeongbokgung.",
       "highlight_word_id": "w01"
     },
     {
-      "text": "여기 '한옥' 지붕선 좀 보세요. 예쁘죠? ...저도 나름 볼만한데, 자꾸 딴 데만 보시네요.",
-      "reading": "yeo-gi han-ok ji-bung-seon jom bo-se-yo. ye-ppeu-jyo? ...jeo-do na-reum bol-man-han-de, ja-kku ttan de-man bo-si-ne-yo.",
-      "en": "Look at the roofline of this 'hanok'. Pretty, right? ...I'm decent to look at too, but you keep glancing elsewhere.",
+      "text": "그는 담장 너머로 살짝 보이는 궁궐 지붕을 가리켰다. '저 지붕 곡선, 자세히 보면 예쁘지 않아요? 저는 이 노선을 다닐 때마다 하늘에서 저걸 봐요.'",
+      "reading": "geu-neun dam-jang neo-meo-ro sal-jjak bo-i-neun gung-gwol ji-bung-eul ga-ri-kyeot-da. jeo ji-bung gok-seon, ja-se-hi bo-myeon ye-ppeu-ji an-a-yo? jeo-neun i no-seon-eul da-nil ttae-ma-da ha-neul-e-seo jeo-geol bwa-yo.",
+      "en": "He pointed to the palace roof peeking over the wall. \"If you look closely at that curve, isn't it beautiful? Every time I fly this route, I see it from up in the sky.\"",
       "highlight_word_id": "w02"
     },
     {
-      "text": "이 '골목' 끝까지 손 놓지 말고 따라오세요. 길 잃어버리면 저만 손해거든요.",
-      "reading": "i gol-mok kkeut-kka-ji son no-chi mal-go tta-ra-o-se-yo. gil il-eo-beo-ri-myeon jeo-man son-hae-geo-deun-yo.",
-      "en": "Don't let go of my hand till the end of this 'alley'. If you get lost, I'm the one who loses out.",
+      "text": "평소의 장난기 대신, 그의 목소리엔 뜻밖의 잔잔함이 묻어 있었다. 그는 궁궐의 역사를 하나씩 짚어가며 설명하기 시작했다.",
+      "reading": "pyeong-so-ui jang-nan-gi dae-sin, geu-ui mok-so-ri-en tteut-bakk-ui jan-jan-ham-i mud-eo iss-eot-da. geu-neun gung-gwol-ui yeok-sa-reul ha-na-ssik jip-eo-ga-myeo seol-myeong-ha-gi si-jak-haet-da.",
+      "en": "Instead of his usual playfulness, there was an unexpected calm in his voice. He began explaining the palace's history, piece by piece.",
       "highlight_word_id": "w03"
     },
     {
-      "text": "저 지금 완전 '질투'하는 거 티 나요? 그래서, 안 그런 척하기가 은근히 힘드네요.",
-      "reading": "jeo ji-geum wan-jeon jil-tu-ha-neun geo ti na-yo? geu-rae-seo, an geu-reon cheok-ha-gi-ga eun-geun-hi him-deu-ne-yo.",
-      "en": "Is it obvious I'm totally 'jealous' right now? So — yeah, it's surprisingly hard to pretend I'm not.",
+      "text": "'이런 이야기, 아무한테나 막 하고 다니는 거 아니에요. 그냥… 아가씨한테는 좀 더 알려주고 싶어서요.'",
+      "reading": "i-reon i-ya-gi, a-mu-han-te-na mak ha-go da-ni-neun geo a-ni-e-yo. geu-nyang… a-ga-ssi-han-te-neun jom deo al-lyeo-ju-go sip-eo-seo-yo.",
+      "en": "\"This kind of story — I don't just go around telling it to anyone. I just... wanted to share more of it with you, specifically.\"",
       "highlight_word_id": "w04"
     },
     {
-      "text": "장난 반, 진심 반으로 하나만 '약속'해요. 다른 항공사 기장은 만나지 마요.",
-      "reading": "jang-nan ban, jin-sim ban-eu-ro ha-na-man yak-sok-hae-yo. da-reun hang-gong-sa gi-jang-eun man-na-ji ma-yo.",
-      "en": "Half joking, half serious — just make me one 'promise'. Don't go meeting captains from other airlines.",
+      "text": "능청스럽던 평소와 달리, 그 순간만큼은 정말 순수하게 이 도시를 아끼는 사람처럼 보였다. 나는 그 낯선 진지함이 오히려 마음에 들었다.",
+      "reading": "neung-cheong-seu-reop-deon pyeong-so-wa dal-li, geu sun-gan-man-keum-eun jeong-mal sun-su-ha-ge i do-si-reul a-kki-neun sa-ram-cheo-reom bo-yeot-da. na-neun geu nat-seon jin-ji-ham-i o-hi-ryeo ma-eum-e deul-eot-da.",
+      "en": "Unlike his usual smooth-talking self, in that moment he looked like someone who genuinely cared about this city. I found that unfamiliar sincerity strangely appealing."
+    },
+    {
+      "text": "시선이 마주치자 그는 살짝 당황한 듯 헛기침을 했다. '왜 그렇게 봐요? 저 이럴 때만 진지해지는 거 아니거든요. …아, 아닌가.'",
+      "reading": "si-seon-i ma-ju-chi-ja geu-neun sal-jjak dang-hwang-han deut heot-gi-chim-eul haet-da. wae geu-reo-ke bwa-yo? jeo i-reol ttae-man jin-ji-hae-ji-neun geo a-ni-geo-deun-yo. …a, a-nin-ga.",
+      "en": "When our eyes met, he seemed a little flustered and cleared his throat. \"Why are you looking at me like that? I'm not only serious at moments like this, you know. ...or, well, maybe I am.\"",
       "highlight_word_id": "w05"
     },
     {
-      "text": "자, 이 골목 다 돌았으니까 이제 문제로 넘어가 볼까요? 오늘 단어들 기억나죠?",
-      "reading": "ja, i gol-mok da dol-at-eu-ni-kka i-je mun-je-ro neom-eo-ga bol-kka-yo? o-neul dan-eo-deul gi-eok-na-jyo?",
-      "en": "Alright, we've walked the whole alley, so shall we move on to the questions? You remember today's words, right?"
+      "text": "궁궐 지붕 너머로 노을이 번지고 있었다. 그리고 나는, 이 사람의 다른 얼굴을 조금 더 보고 싶어졌다.",
+      "reading": "gung-gwol ji-bung neo-meo-ro no-eul-i beon-ji-go iss-eot-da. geu-ri-go na-neun, i sa-ram-ui da-reun eol-gul-eul jo-geum deo bo-go sip-eo-jyeot-da.",
+      "en": "The sunset was spreading beyond the palace roof. And I found myself wanting to see a little more of this other side of him."
     }
   ],
   "words": [
-    { "id": "w01", "word": "항공사", "reading": "hang-gong-sa", "meaning": "airline", "example": "다른 항공사 기장은 만나지 마요.", "example_reading": "da-reun hang-gong-sa gi-jang-eun man-na-ji ma-yo", "example_en": "Don't go meeting captains from other airlines." },
-    { "id": "w02", "word": "한옥", "reading": "han-ok", "meaning": "traditional Korean house", "example": "북촌 한옥 마을이 정말 예뻐요.", "example_reading": "buk-chon han-ok ma-eul-i jeong-mal ye-ppeo-yo", "example_en": "Bukchon Hanok Village is really pretty." },
-    { "id": "w03", "word": "골목", "reading": "gol-mok", "meaning": "alley", "example": "이 골목은 사진 찍기 좋아요.", "example_reading": "i gol-mok-eun sa-jin jjik-gi jo-a-yo", "example_en": "This alley is great for taking pictures." },
-    { "id": "w04", "word": "질투", "reading": "jil-tu", "meaning": "jealousy", "example": "저 지금 질투하고 있어요.", "example_reading": "jeo ji-geum jil-tu-ha-go it-seo-yo", "example_en": "I'm feeling jealous right now." },
-    { "id": "w05", "word": "약속", "reading": "yak-sok", "meaning": "promise", "example": "우리 약속 하나 해요.", "example_reading": "u-ri yak-sok ha-na hae-yo", "example_en": "Let's make a promise." }
+    { "id": "w01", "word": "경복궁", "reading": "gyeong-bok-gung", "meaning": "Gyeongbokgung Palace", "example": "경복궁 돌담길이 아름다웠다.", "example_reading": "gyeong-bok-gung dol-dam-gil-i a-reum-da-wot-da", "example_en": "The stone wall path of Gyeongbokgung was beautiful." },
+    { "id": "w02", "word": "지붕", "reading": "ji-bung", "meaning": "roof", "example": "궁궐 지붕의 곡선이 멋있다.", "example_reading": "gung-gwol ji-bung-ui gok-seon-i meos-it-da", "example_en": "The curve of the palace roof is impressive." },
+    { "id": "w03", "word": "역사", "reading": "yeok-sa", "meaning": "history", "example": "그는 서울의 역사를 잘 알고 있었다.", "example_reading": "geu-neun seo-ul-ui yeok-sa-reul jal al-go iss-eot-da", "example_en": "He knew Seoul's history well." },
+    { "id": "w04", "word": "이야기", "reading": "i-ya-gi", "meaning": "story", "example": "그가 궁궐에 대한 이야기를 들려주었다.", "example_reading": "geu-ga gung-gwol-e dae-han i-ya-gi-reul deul-lyeo-ju-eot-da", "example_en": "He told me a story about the palace." },
+    { "id": "w05", "word": "진지하다", "reading": "jin-ji-ha-da", "meaning": "to be serious, sincere", "example": "그의 표정이 갑자기 진지해졌다.", "example_reading": "geu-ui pyo-jeong-i gap-ja-gi jin-ji-hae-jyeot-da", "example_en": "His expression suddenly turned serious." }
   ],
   "sentences": [
-    { "id": "s01", "ko": "다른 항공사 기장은 만나지 마요.", "reading": "da-reun hang-gong-sa gi-jang-eun man-na-ji ma-yo", "en": "Don't go meeting captains from other airlines." },
-    { "id": "s02", "ko": "북촌 한옥 마을이 정말 예뻐요.", "reading": "buk-chon han-ok ma-eul-i jeong-mal ye-ppeo-yo", "en": "Bukchon Hanok Village is really pretty." },
-    { "id": "s03", "ko": "이 골목은 사진 찍기 좋아요.", "reading": "i gol-mok-eun sa-jin jjik-gi jo-a-yo", "en": "This alley is great for taking pictures." },
-    { "id": "s04", "ko": "저 지금 질투하고 있어요.", "reading": "jeo ji-geum jil-tu-ha-go it-seo-yo", "en": "I'm feeling jealous right now." },
-    { "id": "s05", "ko": "우리 약속 하나 해요.", "reading": "u-ri yak-sok ha-na hae-yo", "en": "Let's make a promise." }
+    { "id": "s01", "ko": "경복궁 돌담길이 아름다웠다.", "reading": "gyeong-bok-gung dol-dam-gil-i a-reum-da-wot-da", "en": "The stone wall path of Gyeongbokgung was beautiful." },
+    { "id": "s02", "ko": "궁궐 지붕의 곡선이 멋있다.", "reading": "gung-gwol ji-bung-ui gok-seon-i meos-it-da", "en": "The curve of the palace roof is impressive." },
+    { "id": "s03", "ko": "그는 서울의 역사를 잘 알고 있었다.", "reading": "geu-neun seo-ul-ui yeok-sa-reul jal al-go iss-eot-da", "en": "He knew Seoul's history well." },
+    { "id": "s04", "ko": "그가 궁궐에 대한 이야기를 들려주었다.", "reading": "geu-ga gung-gwol-e dae-han i-ya-gi-reul deul-lyeo-ju-eot-da", "en": "He told me a story about the palace." },
+    { "id": "s05", "ko": "그의 표정이 갑자기 진지해졌다.", "reading": "geu-ui pyo-jeong-i gap-ja-gi jin-ji-hae-jyeot-da", "en": "His expression suddenly turned serious." }
   ]
 }

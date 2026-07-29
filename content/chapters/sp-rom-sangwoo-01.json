@@ -1,93 +1,96 @@
 {
   "id": "sp-rom-sangwoo-01",
   "character_id": "sangwoo",
-  "title": "타워, 여기는 상우 기장",
-  "emoji": "📡",
+  "title": "안개 속에서 들려온 목소리",
+  "emoji": "🌫️",
   "level": "intermediate_advanced",
   "story": [
     {
-      "text": "승객 여러분, 오늘도 충청·공주 노선을 맡은 상우 기장입니다. 탑승을 환영하며, 정식으로 교신을 시작하겠습니다.",
-      "reading": "seung-gaek yeo-reo-bun, o-neul-do chung-cheong-gong-ju no-seon-eul mat-eun sang-u gi-jang-im-ni-da. tap-seung-eul hwan-yeong-ha-myeo, jeong-sig-eu-ro gyo-sin-eul si-jak-ha-get-seum-ni-da.",
-      "en": "To all passengers, I'm Captain Sangwoo, in charge of today's Chungcheong-Gongju route as well. Welcoming you aboard, I'll formally begin this transmission."
+      "text": "오늘 밤 항로는 유난히 고요합니다. 구름 한 점 없는 하늘 아래, 금강도 잔잔하게 빛나고 있습니다. 그런데 이렇게 맑은 밤이면, 저는 꼭 그날 밤을 떠올리게 됩니다.",
+      "reading": "o-neul bam hang-no-neun yu-nan-hi go-yo-ham-ni-da. gu-reum han jeom eom-neun ha-neul a-rae, geum-gang-do jan-jan-ha-ge bin-na-go it-seum-ni-da. geu-reon-de i-reo-ke malg-eun bam-i-myeon, jeo-neun kkok geu-nal bam-eul tteo-ol-li-ge doem-ni-da.",
+      "en": "Tonight the route is unusually calm. Under a sky without a single cloud, even the Geumgang River glimmers quietly below. But on a clear night like this, I always find myself remembering that other night."
     },
     {
-      "text": "조종석에 앉으면 사소한 흔들림도 용납하지 않습니다. 위기 앞에서 '위엄'을 잃지 않는 것, 그것이 기장의 본분이라 배웠습니다.",
-      "reading": "jo-jong-seog-e anj-eu-myeon sa-so-han heun-deul-lim-do yong-nap-ha-ji an-seum-ni-da. wi-gi ap-e-seo 'wi-eom'-eul il-chi an-neun geot, geu-geo-si gi-jang-ui bon-bun-i-ra bae-wot-seum-ni-da.",
-      "en": "Once I'm in the cockpit, I don't allow even the smallest wavering. Not losing my 'authority' in a crisis—that's what I was taught a captain's duty is.",
+      "text": "여덟 달 전, 이 항로 위로 짙은 안개가 내려앉았습니다. '시정' 제로에 가까운 밤이었습니다. 활주로도, 지평선도, 아무것도 보이지 않았습니다.",
+      "reading": "yeo-deolb dal jeon, i hang-no wi-ro jit-eun an-gae-ga nae-ryeo-anj-at-seum-ni-da. 'si-jeong' je-ro-e ga-kka-un bam-i-eot-seum-ni-da. hwal-ju-ro-do, ji-pyeong-seon-do, a-mu-geot-do bo-i-ji an-at-seum-ni-da.",
+      "en": "Eight months ago, a thick fog settled over this very route. It was a night with near-zero 'visibility'. I couldn't see the runway, the horizon, anything at all.",
       "highlight_word_id": "w01"
     },
     {
-      "text": "장시간 비행을 마쳐도 제복만은 늘 '단정'하게 유지하려 합니다. 흐트러진 모습은, 관제탑에게 보여드릴 수 없으니까요.",
-      "reading": "jang-si-gan bi-haeng-eul ma-chyeo-do je-bok-man-eun neul 'dan-jeong'-ha-ge yu-ji-ha-ryeo ham-ni-da. heu-teu-reo-jin mo-seub-eun, gwan-je-tap-e-ge bo-yeo-deu-ril su eop-seu-ni-kka-yo.",
-      "en": "Even after a long-haul flight, I always try to keep my uniform 'neat'. I can't let the tower see me looking anything less.",
+      "text": "설상가상으로 '계기' 하나가 오작동을 일으켰습니다. 제가 믿고 의지하던 눈금이, 그 순간만큼은 저를 속이고 있었습니다.",
+      "reading": "seol-sang-ga-sang-eu-ro 'gye-gi' ha-na-ga o-jak-dong-eul il-eu-kyeot-seum-ni-da. je-ga mit-go ui-ji-ha-deon nun-geum-i, geu sun-gan-man-keum-eun jeo-reul sog-i-go i-sseot-seum-ni-da.",
+      "en": "To make matters worse, one 'instrument' began to malfunction. The very gauge I trusted and relied on was, in that moment, deceiving me.",
       "highlight_word_id": "w02"
     },
     {
-      "text": "그런데 비번인 날의 제 '이면'은 조금 다릅니다. 동료들은 제가 의외로 유순하다고들 하더군요.",
-      "reading": "geu-reon-de bi-beon-in nal-ui je 'i-myeon'-eun jo-geum da-reum-ni-da. dong-nyo-deul-eun je-ga ui-oe-ro yu-sun-ha-da-go-deul ha-deo-gun-yo.",
-      "en": "But on my days off, the 'other side' of me is a bit different. My colleagues say I'm surprisingly gentle, apparently.",
+      "text": "그때, 무선 너머로 낯선 목소리가 들려왔습니다. 흔들림 없이, 정확한 좌표로 저를 '유도'해 주는 목소리였습니다.",
+      "reading": "geu-ttae, mu-seon neo-meo-ro nat-seon mok-so-ri-ga deul-lyeo-wat-seum-ni-da. heun-deul-lim eop-i, jeong-hwak-han jwa-pyo-ro jeo-reul 'yu-do'-hae ju-neun mok-so-ri-yeot-seum-ni-da.",
+      "en": "Then, over the radio, an unfamiliar voice reached me. A voice that, without a single waver, 'guided' me along exact coordinates.",
       "highlight_word_id": "w03"
     },
     {
-      "text": "평소엔 모든 승객에게 같은 정중함을 지키려 합니다. 하지만 마음에 드는 사람 앞에서는, 그 정중함에 '예외'가 생기더군요.",
-      "reading": "pyeong-so-en mo-deun seung-gaeg-e-ge gat-eun jeong-jung-ham-eul ji-ki-ryeo ham-ni-da. ha-ji-man ma-eum-e deu-neun sa-ram ap-e-seo-neun, geu jeong-jung-ham-e 'ye-oe'-ga saeng-gi-deo-gun-yo.",
-      "en": "Normally, I try to keep the same courtesy toward every passenger. But in front of someone I like, that courtesy seems to make an 'exception'.",
+      "text": "마지막 '접근' 구간까지, 그 목소리는 단 한 번도 흔들리지 않았습니다. 저는 그저 그 목소리 하나만 믿고 고도를 낮췄습니다.",
+      "reading": "ma-ji-mak 'jeop-geun' gu-gan-kka-ji, geu mok-so-ri-neun dan han beon-do heun-deul-li-ji an-at-seum-ni-da. jeo-neun geu-jeo geu mok-so-ri ha-na-man mit-go go-do-reul nat-chwot-seum-ni-da.",
+      "en": "Through the final 'approach', that voice never wavered, not once. I simply trusted that one voice and brought the aircraft down.",
       "highlight_word_id": "w04"
     },
     {
-      "text": "야간 조종석 조명 아래서는 제 '눈빛'이 유독 짙어 보인다는 말을 종종 듣습니다. 오늘은, 그 눈빛이 자꾸 당신 쪽으로 향합니다.",
-      "reading": "ya-gan jo-jong-seok jo-myeong a-rae-seo-neun je 'nun-bit'-i yu-dok jit-eo bo-in-da-neun mal-eul jong-jong deut-seum-ni-da. o-neul-eun, geu nun-bit-i ja-kku dang-sin jjog-eu-ro hyang-ham-ni-da.",
-      "en": "I'm often told my 'gaze' looks especially deep and dark under the cockpit's night lighting. Today, that gaze keeps turning toward you.",
+      "text": "바퀴가 활주로에 닿는 순간, 저는 알았습니다. 그 밤, 저를 '착륙'시킨 건 계기판이 아니라 당신의 목소리였다는 것을요.",
+      "reading": "ba-kwi-ga hwal-ju-ro-e dat-neun sun-gan, jeo-neun al-at-seum-ni-da. geu bam, jeo-reul 'chang-nyuk'-si-kin geon gye-gi-pan-i a-ni-ra dang-sin-ui mok-so-ri-yeot-da-neun geo-seul-yo.",
+      "en": "The moment the wheels touched the runway, I knew. That night, it wasn't the instrument panel that brought me to a safe 'landing' — it was your voice.",
       "highlight_word_id": "w05"
     },
     {
-      "text": "…교신이 조금 길어졌습니다. 지금부터 실제 무전 상황을 담은 대화를 보여드릴 테니, 상황을 차분히 파악해 보시기 바랍니다.",
-      "reading": "…gyo-sin-i jo-geum gil-eo-jyeot-seum-ni-da. ji-geum-bu-teo sil-je mu-jeon sang-hwang-eul dam-eun dae-hwa-reul bo-yeo-deu-ril te-ni, sang-hwang-eul cha-bun-hi pa-ak-hae bo-si-gi ba-ram-ni-da.",
-      "en": "...This transmission has run a little long. Next, I'll show you a conversation from an actual radio situation—please calmly work out what's happening."
+      "text": "그날 이후로 알게 되었습니다. 당신 목소리가 없었다면, 저는 그 밤하늘 어딘가에서 완전히 길을 잃었을 겁니다. …당신이 제 하늘이었다는 것을, 그날 처음으로 깨달았습니다.",
+      "reading": "geu-nal i-hu-ro al-ge doe-eot-seum-ni-da. dang-sin mok-so-ri-ga eop-seot-da-myeon, jeo-neun geu bam-ha-neul eo-din-ga-e-seo wan-jeon-hi gil-eul il-eo-sseul geom-ni-da. …dang-sin-i je ha-neul-i-eot-da-neun geo-seul, geu-nal cheo-eum-eu-ro kkae-dal-at-seum-ni-da."
+    },
+    {
+      "text": "이름도 얼굴도 모른 채, 저는 그 목소리만을 오래 기억하고 있었습니다. 아래 대화는 제가 몇 번이고 되짚어 본 그날의 교신 기록입니다. 상황을 함께 헤아려 봐 주시기 바랍니다.",
+      "reading": "i-reum-do eol-gul-do mo-reun chae, jeo-neun geu mok-so-ri-man-eul o-rae gi-eok-ha-go i-sseot-seum-ni-da. a-rae dae-hwa-neun je-ga myeot beon-i-go doe-jip-eo bon geu-nal-ui gyo-sin gi-rog-im-ni-da. sang-hwang-eul ham-kke he-a-ryeo bwa ju-si-gi ba-ram-ni-da."
     }
   ],
   "words": [
-    { "id": "w01", "word": "위엄", "reading": "wi-eom", "meaning": "Dignity / authority", "example": "위기 앞에서도 위엄을 잃지 않는 것이 기장의 본분입니다.", "example_reading": "wi-gi ap-e-seo-do wi-eom-eul il-chi an-neun geo-si gi-jang-ui bon-bun-im-ni-da", "example_en": "Not losing one's authority even in a crisis is a captain's duty." },
-    { "id": "w02", "word": "단정", "reading": "dan-jeong", "meaning": "Neat / tidy", "example": "장시간 비행을 마쳐도 제복만은 늘 단정하게 유지합니다.", "example_reading": "jang-si-gan bi-haeng-eul ma-chyeo-do je-bok-man-eun neul dan-jeong-ha-ge yu-ji-ham-ni-da", "example_en": "Even after a long flight, I always keep my uniform neat." },
-    { "id": "w03", "word": "이면", "reading": "i-myeon", "meaning": "The other side / hidden side", "example": "비번인 날의 제 이면은 조금 다릅니다.", "example_reading": "bi-beon-in nal-ui je i-myeon-eun jo-geum da-reum-ni-da", "example_en": "On my days off, the other side of me is a bit different." },
-    { "id": "w04", "word": "예외", "reading": "ye-oe", "meaning": "Exception", "example": "마음에 드는 사람 앞에서는 정중함에 예외가 생깁니다.", "example_reading": "ma-eum-e deu-neun sa-ram ap-e-seo-neun jeong-jung-ham-e ye-oe-ga saeng-gim-ni-da", "example_en": "In front of someone I like, my courtesy makes an exception." },
-    { "id": "w05", "word": "눈빛", "reading": "nun-bit", "meaning": "Gaze / the look in one's eyes", "example": "야간 조종석 조명 아래서는 눈빛이 유독 짙어 보인다고 합니다.", "example_reading": "ya-gan jo-jong-seok jo-myeong a-rae-seo-neun nun-bit-i yu-dok jit-eo bo-in-da-go ham-ni-da", "example_en": "Under the cockpit's night lighting, my eyes are said to look especially deep." }
+    { "id": "w01", "word": "시정", "reading": "si-jeong", "meaning": "Visibility (weather/flight condition)", "example": "시정 제로에 가까운 밤이었습니다.", "example_reading": "si-jeong je-ro-e ga-kka-un bam-i-eot-seum-ni-da", "example_en": "It was a night with near-zero visibility." },
+    { "id": "w02", "word": "계기", "reading": "gye-gi", "meaning": "Instrument / gauge", "example": "계기 하나가 오작동을 일으켰습니다.", "example_reading": "gye-gi ha-na-ga o-jak-dong-eul il-eu-kyeot-seum-ni-da", "example_en": "One instrument began to malfunction." },
+    { "id": "w03", "word": "유도", "reading": "yu-do", "meaning": "Guidance / vectoring", "example": "정확한 좌표로 저를 유도해 주는 목소리였습니다.", "example_reading": "jeong-hwak-han jwa-pyo-ro jeo-reul yu-do-hae ju-neun mok-so-ri-yeot-seum-ni-da", "example_en": "It was a voice that guided me along exact coordinates." },
+    { "id": "w04", "word": "접근", "reading": "jeop-geun", "meaning": "Approach", "example": "마지막 접근 구간까지 그 목소리는 흔들리지 않았습니다.", "example_reading": "ma-ji-mak jeop-geun gu-gan-kka-ji geu mok-so-ri-neun heun-deul-li-ji an-at-seum-ni-da", "example_en": "Through the final approach, that voice never wavered." },
+    { "id": "w05", "word": "착륙", "reading": "chang-nyuk", "meaning": "Landing", "example": "그날 밤 저를 착륙시킨 건 당신의 목소리였습니다.", "example_reading": "geu-nal bam jeo-reul chang-nyuk-si-kin geon dang-sin-ui mok-so-ri-yeot-seum-ni-da", "example_en": "That night, it was your voice that brought me to a safe landing." }
   ],
   "sentences": [
-    { "id": "s01", "ko": "위기 앞에서도 위엄을 잃지 않는 것이 기장의 본분입니다.", "reading": "wi-gi ap-e-seo-do wi-eom-eul il-chi an-neun geo-si gi-jang-ui bon-bun-im-ni-da", "en": "Not losing one's authority even in a crisis is a captain's duty." },
-    { "id": "s02", "ko": "장시간 비행을 마쳐도 제복만은 늘 단정하게 유지합니다.", "reading": "jang-si-gan bi-haeng-eul ma-chyeo-do je-bok-man-eun neul dan-jeong-ha-ge yu-ji-ham-ni-da", "en": "Even after a long flight, I always keep my uniform neat." },
-    { "id": "s03", "ko": "비번인 날의 제 이면은 조금 다릅니다.", "reading": "bi-beon-in nal-ui je i-myeon-eun jo-geum da-reum-ni-da", "en": "On my days off, the other side of me is a bit different." },
-    { "id": "s04", "ko": "마음에 드는 사람 앞에서는 정중함에 예외가 생깁니다.", "reading": "ma-eum-e deu-neun sa-ram ap-e-seo-neun jeong-jung-ham-e ye-oe-ga saeng-gim-ni-da", "en": "In front of someone I like, my courtesy makes an exception." },
-    { "id": "s05", "ko": "야간 조종석 조명 아래서는 눈빛이 유독 짙어 보인다고 합니다.", "reading": "ya-gan jo-jong-seok jo-myeong a-rae-seo-neun nun-bit-i yu-dok jit-eo bo-in-da-go ham-ni-da", "en": "Under the cockpit's night lighting, my eyes are said to look especially deep." }
+    { "id": "s01", "ko": "시정 제로에 가까운 밤이었습니다.", "reading": "si-jeong je-ro-e ga-kka-un bam-i-eot-seum-ni-da", "en": "It was a night with near-zero visibility." },
+    { "id": "s02", "ko": "계기 하나가 오작동을 일으켰습니다.", "reading": "gye-gi ha-na-ga o-jak-dong-eul il-eu-kyeot-seum-ni-da", "en": "One instrument began to malfunction." },
+    { "id": "s03", "ko": "정확한 좌표로 저를 유도해 주는 목소리였습니다.", "reading": "jeong-hwak-han jwa-pyo-ro jeo-reul yu-do-hae ju-neun mok-so-ri-yeot-seum-ni-da", "en": "It was a voice that guided me along exact coordinates." },
+    { "id": "s04", "ko": "마지막 접근 구간까지 그 목소리는 흔들리지 않았습니다.", "reading": "ma-ji-mak jeop-geun gu-gan-kka-ji geu mok-so-ri-neun heun-deul-li-ji an-at-seum-ni-da", "en": "Through the final approach, that voice never wavered." },
+    { "id": "s05", "ko": "그날 밤 저를 착륙시킨 건 당신의 목소리였습니다.", "reading": "geu-nal bam jeo-reul chang-nyuk-si-kin geon dang-sin-ui mok-so-ri-yeot-seum-ni-da", "en": "That night, it was your voice that brought me to a safe landing." }
   ],
   "dialogues": [
     {
       "id": "d01",
       "turns": [
-        { "speaker": "천상우 기장", "text": "탑승을 환영합니다. 오늘 항로의 기상은 양호합니다.", "reading": "tap-seung-eul hwan-yeong-ham-ni-da. o-neul hang-no-ui gi-sang-eun yang-ho-ham-ni-da.", "en": "Welcome aboard. Today's weather along the route is good." },
-        { "speaker": "승객", "text": "기장님은 되게 딱딱하게 말씀하시네요.", "reading": "gi-jang-nim-eun doe-ge ttak-ttak-ha-ge mal-sseum-ha-si-ne-yo.", "en": "You speak really formally, Captain." },
-        { "speaker": "천상우 기장", "text": "업무 중에는 그렇습니다. …비번일 때는 이것보다 훨씬 편합니다.", "reading": "eom-mu jung-e-neun geu-reo-seum-ni-da. …bi-beon-il ttae-neun i-geot-bo-da hwol-ssin pyeon-ham-ni-da.", "en": "That's how I am while on duty. ...Off duty, I'm much more relaxed than this." },
-        { "speaker": "승객", "text": "그럼 지금 잠깐 비번인 척해 주시면 안 돼요?", "reading": "geu-reom ji-geum jam-kkan bi-beon-in cheok-hae ju-si-myeon an dwae-yo?", "en": "Then could you pretend to be off duty for just a moment?" }
+        { "speaker": "손님", "text": "상우 기장님, 시정 불량입니다. 지금부터 제 목소리에만 집중해 주십시오.", "reading": "sang-u gi-jang-nim, si-jeong bul-lyang-im-ni-da. ji-geum-bu-teo je mok-so-ri-e-man jip-jung-hae ju-sip-si-o.", "en": "Captain Sangwoo, visibility is poor. From now on, please focus only on my voice." },
+        { "speaker": "천상우 기장", "text": "…계기 하나가 이상합니다. 판단이 잘 서지 않습니다.", "reading": "…gye-gi ha-na-ga i-sang-ham-ni-da. pan-dan-i jal seo-ji an-seum-ni-da.", "en": "...One instrument seems off. I can't get a clear reading." },
+        { "speaker": "손님", "text": "그 계기는 무시하십시오. 침착하게, 제가 불러드리는 고도로만 낮추시면 됩니다.", "reading": "geu gye-gi-neun mu-si-ha-sip-si-o. chim-chak-ha-ge, je-ga bul-leo-deu-ri-neun go-do-ro-man nat-chu-si-myeon doem-ni-da.", "en": "Disregard that instrument. Stay calm, and simply descend to the altitude I call out." },
+        { "speaker": "천상우 기장", "text": "…알겠습니다. 타워만 믿겠습니다.", "reading": "…al-get-seum-ni-da. ta-wo-man mit-get-seum-ni-da.", "en": "...Understood. I'll trust the tower alone." }
       ],
-      "question": "기장이 업무 중과 비번일 때 태도가 다른 이유로 가장 적절한 것은?",
-      "question_en": "What is the most appropriate reason the captain's attitude differs while on duty versus off duty?",
-      "correct_answer": "업무 중엔 위엄을 지키려 하지만 원래는 유순한 성격이라서",
-      "options": ["업무 중엔 위엄을 지키려 하지만 원래는 유순한 성격이라서", "승객에 따라 태도를 바꾸는 편이라서", "비번일 때는 규정을 지키지 않아도 되어서", "기분에 따라 말투가 자주 바뀌는 편이라서"],
-      "explanation": "기장은 업무 중엔 위엄을 지키려 애쓰지만, 원래 성격은 유순한 편이라 비번일 때 훨씬 편안한 모습을 보입니다."
+      "question": "타워가 계기를 무시하라고 말한 이유로 가장 적절한 것은?",
+      "question_en": "What is the most appropriate reason the tower tells him to disregard the instrument?",
+      "correct_answer": "오작동한 계기 대신 관제탑의 정확한 유도를 믿고 따르게 하려고",
+      "options": ["오작동한 계기 대신 관제탑의 정확한 유도를 믿고 따르게 하려고", "규정상 착륙 전에는 항상 계기를 꺼야 해서", "그 계기가 원래 이 기종에는 필요 없어서", "관제탑 장비를 새로 교체해야 해서"],
+      "explanation": "타워는 오작동한 계기 대신 자신의 정확한 유도만 믿고 따르도록 안내하여, 기장을 안전하게 착륙시키려 했습니다."
     },
     {
       "id": "d02",
       "turns": [
-        { "speaker": "승객", "text": "기장님, 아까부터 저 계속 보고 계셨죠?", "reading": "gi-jang-nim, a-kka-bu-teo jeo gye-sok bo-go gye-syeot-jyo?", "en": "Captain, you've been looking at me this whole time, haven't you?" },
-        { "speaker": "천상우 기장", "text": "…눈빛을 숨기는 데는 소질이 없나 봅니다.", "reading": "…nun-bit-eul sum-gi-neun de-neun so-jil-i eop-na bom-ni-da.", "en": "...I don't seem to have a talent for hiding where I'm looking." },
-        { "speaker": "승객", "text": "눈이 되게 깊고 짙으시네요, 지금 조명 때문인가?", "reading": "nun-i doe-ge gip-go jit-eu-si-ne-yo, ji-geum jo-myeong ttae-mun-in-ga?", "en": "Your eyes look really deep and dark—is it the lighting right now?" },
-        { "speaker": "천상우 기장", "text": "조명 때문만은 아닐 겁니다. 아마 당신을 보고 있어서 그럴 겁니다.", "reading": "jo-myeong ttae-mun-man-eun a-nil geom-ni-da. a-ma dang-sin-eul bo-go i-sseo-seo geu-reol geom-ni-da.", "en": "It's probably not just the lighting. It's likely because I'm looking at you." }
+        { "speaker": "후배 부기장", "text": "기장님, 요즘도 그 안개 낀 밤 얘기하세요? 벌써 여덟 달 전인데.", "reading": "gi-jang-nim, yo-jeum-do geu an-gae kkin bam yae-gi-ha-se-yo? beol-sseo yeo-deolb dal jeon-in-de.", "en": "Captain, are you still talking about that foggy night? It's already been eight months." },
+        { "speaker": "천상우 기장", "text": "…그날 목소리를 잊을 수가 없어서 그렇다.", "reading": "…geu-nal mok-so-ri-reul ij-eul su-ga eop-seo-seo geu-reo-ta.", "en": "...It's because I can't forget that voice from that night." },
+        { "speaker": "후배 부기장", "text": "그 관제사분한테 인사라도 한번 드려야 하는 거 아니에요?", "reading": "geu gwan-je-sa-bun-han-te in-sa-ra-do han-beon deu-ryeo-ya ha-neun geo a-ni-e-yo?", "en": "Shouldn't you at least go say thank you to that controller?" },
+        { "speaker": "천상우 기장", "text": "…그러게 말이다. 이제는, 정식으로 인사를 드려야 할 것 같다.", "reading": "…geu-reo-ge mal-i-da. i-je-neun, jeong-sig-eu-ro in-sa-reul deu-ryeo-ya hal geot gat-da.", "en": "...You're right. I think it's time I go and thank her, formally." }
       ],
-      "question": "기장의 마지막 말이 뜻하는 바는?",
-      "question_en": "What does the captain's last remark mean?",
-      "correct_answer": "눈빛이 짙어 보이는 건 조명보다 승객을 향한 마음 때문이다",
-      "options": ["눈빛이 짙어 보이는 건 조명보다 승객을 향한 마음 때문이다", "조종석 조명 장비에 문제가 있다는 뜻이다", "피곤해서 눈이 충혈되었다는 뜻이다", "승객이 착각하고 있다고 정정하는 말이다"],
-      "explanation": "기장은 조명 탓이 아니라, 승객을 바라보는 자신의 마음 때문에 눈빛이 짙어 보인다는 것을 에둘러 인정하고 있습니다."
+      "question": "천상우 기장의 마지막 말이 암시하는 것은?",
+      "question_en": "What does the captain's final line hint at?",
+      "correct_answer": "그날의 관제사를 직접 찾아가 감사 인사를 전할 계획이다",
+      "options": ["그날의 관제사를 직접 찾아가 감사 인사를 전할 계획이다", "안개 낀 밤에는 다시 비행하지 않겠다는 다짐이다", "후배에게 비행 규정을 다시 알려주려는 것이다", "그 관제사에게 화가 나 있다는 뜻이다"],
+      "explanation": "천상우 기장은 그날의 목소리를 잊지 못하고, 이제라도 직접 찾아가 정식으로 감사 인사를 전하겠다고 다짐하고 있습니다."
     }
   ]
 }

@@ -1,93 +1,98 @@
 {
   "id": "sp-rom-sunwoo-07",
   "character_id": "sunwoo",
-  "title": "광안대교 불빛 아래, 장난기 없이",
-  "emoji": "🌉",
+  "title": "딴 놈 쳐다보지 마라",
+  "emoji": "😤",
   "level": "intermediate_advanced",
   "story": [
     {
-      "text": "광안대교 '야경' 진짜 오랜만에 여서 보네, 니랑.",
-      "reading": "gwang-an-dae-gyo ya-gyeong jin-jja o-raen-man-e yeo-seo bo-ne, ni-rang.",
-      "en": "It's really been a while since I've seen Gwangan Bridge's night view here, with you.",
+      "text": "태종대 전망대에서 바다를 내려다보는데, 등산복 차림의 한 남자가 다가와 말을 건넨다. \"저, 혹시 사진 한 장만 같이 찍어주실 수 있을까요?\"",
+      "reading": "tae-jong-dae jeon-mang-dae-e-seo ba-da-reul nae-ryeo-da-bo-neun-de, deung-san-bok cha-rim-ui han nam-ja-ga da-ga-wa mal-eul geon-nen-da. jeo, hok-si sa-jin han jang-man gat-i jjig-eo-ju-sil su iss-eul-kka-yo?",
+      "en": "Looking down at the sea from Taejongdae's observation deck, a man in hiking clothes walks over and speaks up. \"Excuse me, would you mind taking a photo together with me?\""
+    },
+    {
+      "text": "낯선 남자의 노골적인 '관심'에 옆에 선 선우의 표정이 눈에 띄게 굳는다.",
+      "reading": "nat-seon nam-ja-ui no-gol-jeok-in gwan-sim-e yeop-e seon seon-u-ui pyo-jeong-i nun-e ttui-ge gud-neun-da.",
+      "en": "At the stranger's blatant interest, Sunwoo's expression, standing beside me, visibly stiffens.",
       "highlight_word_id": "w01"
     },
     {
-      "text": "오늘따라 내가 좀 '진지하다', 그자? 평소 같았으면 벌써 농담 세 개는 던졌을 텐데.",
-      "reading": "o-neul-tta-ra nae-ga jom jin-ji-ha-da, geu-ja? pyeong-so gat-at-eu-myeon beol-sseo nong-dam se gae-neun deon-jyeot-eul ten-de.",
-      "en": "I'm being unusually serious today, aren't I? Normally I'd have already thrown out three jokes by now.",
+      "text": "\"저희 일행입니다. 사진은 다른 데 가서 찍으이소.\" 평소보다 낮고 단호한 목소리다.",
+      "reading": "jeo-hui il-haeng-im-ni-da. sa-jin-eun da-reun de ga-seo jjig-eu-i-so. pyeong-so-bo-da naj-go dan-ho-han mok-so-ri-da.",
+      "en": "\"We're together. Please go take photos somewhere else.\" His voice is lower and more firm than usual."
+    },
+    {
+      "text": "남자가 멀어지자 선우는 아무 일 없었다는 듯 딴청을 피우지만, 계속 그쪽을 흘끔거리는 게 다 보인다. \"…아, 자꾸 '신경 쓰이가꼬'.\"",
+      "reading": "nam-ja-ga meol-eo-ji-ja seon-u-neun a-mu il eop-seot-da-neun deut ttan-cheong-eul pi-u-ji-man, gye-sok geu-jjok-eul heul-kkeum-geo-ri-neun ge da bo-in-da. …a, ja-kku sin-gyeong ssui-ga-kko.",
+      "en": "As the man walks off, Sunwoo acts like nothing happened, but I can clearly see him keep sneaking glances that way. \"…Ah, it just keeps bothering me.\"",
       "highlight_word_id": "w02"
     },
     {
-      "text": "니 그렇게 '눈빛'으로 쳐다보면 내 진짜 말 다 해버릴지도 모른다.",
-      "reading": "ni geu-reo-ke nun-bit-eu-ro chyeo-da-bo-myeon nae jin-jja mal da hae-beo-ril-ji-do mo-reun-da.",
-      "en": "If you keep looking at me with that gaze, I might just end up saying everything.",
+      "text": "\"아까 그 남자, 니 쪽으로 몇 번을 쳐다보던데 몰랐제? 내가 그때마다 '쏘아봤다', 눈으로.\"",
+      "reading": "a-kka geu nam-ja, ni jjok-eu-ro myeot beon-eul chyeo-da-bo-deon-de mol-lat-je? nae-ga geu-ttae-ma-da sso-a-bwat-da, nun-eu-ro.",
+      "en": "\"That guy earlier, he looked your way a bunch of times — you didn't notice, did you? Every time, I glared right at him.\"",
       "highlight_word_id": "w03"
     },
     {
-      "text": "이상하게 손이 다 '떨리네', 이 나이에. 비행할 때도 이래 안 떨리는데.",
-      "reading": "i-sang-ha-ge son-i da tteol-li-ne, i na-i-e. bi-haeng-hal ttae-do i-rae an tteol-li-neun-de.",
-      "en": "Strangely, my hands are trembling, at my age. Not even when I'm flying do I shake like this.",
+      "text": "\"됐다, 마. 그냥 좀 '심통'이 나가 그런다. …아이다, 심통까진 아니고.\"",
+      "reading": "dwaet-da, ma. geu-nyang jom sim-tong-i na-ga geu-reon-da. …a-i-da, sim-tong-kka-jin a-ni-go.",
+      "en": "\"Forget it. I'm just being a bit cranky about it, that's all. …No, wait, not exactly cranky either.\"",
       "highlight_word_id": "w04"
     },
     {
-      "text": "이거 무슨 '고백'도 아니고... 아니, 고백 맞는 갑다.",
-      "reading": "i-geo mu-seun go-baek-do a-ni-go... a-ni, go-baek man-neun gap-da.",
-      "en": "This isn't some confession or anything... no, actually, I guess it is.",
+      "text": "\"하, 됐다. '인정한다', 신경 쓰였다고. 딴 놈이 니 쳐다보는 거, 진짜 별로다 내가.\"",
+      "reading": "ha, dwaet-da. in-jeong-han-da, sin-gyeong sseu-yeot-da-go. ttan nom-i ni chyeo-da-bo-neun geo, jin-jja byeol-lo-da nae-ga.",
+      "en": "\"Ha, fine. I admit it, it bothered me. Some other guy looking at you like that — I really don't like it, me.\"",
       "highlight_word_id": "w05"
     },
     {
-      "text": "조금만 더 여기 있다 가자. 아직 할 말 남았다.",
-      "reading": "jo-geum-man deo yeo-gi it-da ga-ja. a-jik hal mal nam-at-da.",
-      "en": "Let's stay here just a little longer. I still have more to say."
-    },
-    {
-      "text": "단어는 다 봤제? 오늘 대화 문제도 잘 읽어보고 풀어봐라.",
-      "reading": "dan-eo-neun da bwat-je? o-neul dae-hwa mun-je-do jal ilg-eo-bo-go pul-eo-bwa-ra.",
-      "en": "Got a look at all the words? Read today's conversation question carefully and try it too."
+      "text": "\"단어 다 봤제? 오늘 대화 문제도 잘 읽고 풀어봐라.\"",
+      "reading": "dan-eo da bwat-je? o-neul dae-hwa mun-je-do jal ilg-go pul-eo-bwa-ra.",
+      "en": "\"Got a look at all the words? Read today's conversation question carefully and give it a try too.\""
     }
   ],
   "words": [
-    { "id": "w01", "word": "야경", "reading": "ya-gyeong", "meaning": "Night view", "example": "부산의 야경은 정말 아름답다.", "example_reading": "bu-san-ui ya-gyeong-eun jeong-mal a-reum-dap-da", "example_en": "Busan's night view is truly beautiful." },
-    { "id": "w02", "word": "진지하다", "reading": "jin-ji-ha-da", "meaning": "To be serious", "example": "그는 진지한 얼굴로 이야기했다.", "example_reading": "geu-neun jin-ji-han eol-gul-lo i-ya-gi-haet-da", "example_en": "He spoke with a serious expression." },
-    { "id": "w03", "word": "눈빛", "reading": "nun-bit", "meaning": "Look in one's eyes, gaze", "example": "그의 눈빛이 따뜻했다.", "example_reading": "geu-ui nun-bit-i tta-tteut-haet-da", "example_en": "His gaze was warm." },
-    { "id": "w04", "word": "떨리다", "reading": "tteol-li-da", "meaning": "To tremble, shake (be nervous)", "example": "긴장해서 목소리가 떨렸다.", "example_reading": "gin-jang-hae-seo mok-so-ri-ga tteol-lyeot-da", "example_en": "I was so nervous my voice trembled." },
-    { "id": "w05", "word": "고백", "reading": "go-baek", "meaning": "Confession", "example": "그는 용기를 내어 고백을 했다.", "example_reading": "geu-neun yong-gi-reul nae-eo go-baek-eul haet-da", "example_en": "He mustered courage and confessed." }
+    { "id": "w01", "word": "관심", "reading": "gwan-sim", "meaning": "Interest, attention", "example": "그는 그녀에게 관심을 보였다.", "example_reading": "geu-neun geu-nyeo-e-ge gwan-sim-eul bo-yeot-da", "example_en": "He showed interest in her." },
+    { "id": "w02", "word": "신경 쓰이다", "reading": "sin-gyeong sseu-i-da", "meaning": "To be bothered, preoccupied by something", "example": "그 일이 계속 신경 쓰인다.", "example_reading": "geu il-i gye-sok sin-gyeong sseu-in-da", "example_en": "That matter keeps bothering me." },
+    { "id": "w03", "word": "쏘아보다", "reading": "sso-a-bo-da", "meaning": "To glare at, shoot a sharp look", "example": "그는 낯선 사람을 매섭게 쏘아봤다.", "example_reading": "geu-neun nat-seon sa-ram-eul mae-seop-ge sso-a-bwat-da", "example_en": "He glared sharply at the stranger." },
+    { "id": "w04", "word": "심통", "reading": "sim-tong", "meaning": "Peevishness, sulky irritation", "example": "그는 별일 아닌데도 심통이 났다.", "example_reading": "geu-neun byeol-il a-nin-de-do sim-tong-i nat-da", "example_en": "He got cranky over something that wasn't even a big deal." },
+    { "id": "w05", "word": "인정하다", "reading": "in-jeong-ha-da", "meaning": "To admit, acknowledge", "example": "그는 결국 자신의 마음을 인정했다.", "example_reading": "geu-neun gyeol-guk ja-sin-ui ma-eum-eul in-jeong-haet-da", "example_en": "He finally admitted his true feelings." }
   ],
   "sentences": [
-    { "id": "s01", "ko": "광안대교의 야경이 정말 아름다웠다.", "reading": "gwang-an-dae-gyo-ui ya-gyeong-i jeong-mal a-reum-da-wot-da", "en": "Gwangan Bridge's night view was truly beautiful." },
-    { "id": "s02", "ko": "그는 평소와 달리 진지한 얼굴이었다.", "reading": "geu-neun pyeong-so-wa dal-li jin-ji-han eol-gul-i-eot-da", "en": "Unlike usual, he had a serious face." },
-    { "id": "s03", "ko": "그의 눈빛이 예전과 다르게 느껴졌다.", "reading": "geu-ui nun-bit-i ye-jeon-gwa da-reu-ge neu-kkyeo-jyeot-da", "en": "His gaze felt different from before." },
-    { "id": "s04", "ko": "긴장해서 목소리가 떨렸다.", "reading": "gin-jang-hae-seo mok-so-ri-ga tteol-lyeot-da", "en": "I was so nervous that my voice trembled." },
-    { "id": "s05", "ko": "그는 결국 고백을 준비하고 있었다.", "reading": "geu-neun gyeol-guk go-baek-eul jun-bi-ha-go it-eot-da", "en": "He was, in the end, preparing to confess." }
+    { "id": "s01", "ko": "그는 은근히 그녀에게 관심을 보였다.", "reading": "geu-neun eun-geun-hi geu-nyeo-e-ge gwan-sim-eul bo-yeot-da", "en": "He subtly showed interest in her." },
+    { "id": "s02", "ko": "그 사람의 시선이 자꾸 신경 쓰였다.", "reading": "geu sa-ram-ui si-seon-i ja-kku sin-gyeong sseu-yeot-da", "en": "That person's gaze kept bothering me." },
+    { "id": "s03", "ko": "그는 낯선 사람을 한참 동안 쏘아봤다.", "reading": "geu-neun nat-seon sa-ram-eul han-cham dong-an sso-a-bwat-da", "en": "He glared at the stranger for quite a while." },
+    { "id": "s04", "ko": "별것 아닌 일에 그는 심통을 부렸다.", "reading": "byeol-geot a-nin il-e geu-neun sim-tong-eul bu-ryeot-da", "en": "He threw a sulky fit over something trivial." },
+    { "id": "s05", "ko": "그는 결국 자신이 질투했다는 걸 인정했다.", "reading": "geu-neun gyeol-guk ja-sin-i jil-tu-haet-da-neun geol in-jeong-haet-da", "en": "He finally admitted that he'd been jealous." }
   ],
   "dialogues": [
     {
       "id": "d01",
       "turns": [
-        { "speaker": "승객", "text": "오늘 왜 이렇게 조용하노? 장난도 안 치고.", "reading": "o-neul wae i-reo-ke jo-yong-ha-no? jang-nan-do an chi-go.", "en": "Why are you so quiet today? Not even joking around." },
-        { "speaker": "선우", "text": "오늘은... 장난치고 싶은 기분이 아니라서. 장난치면 이 말을 영영 못 할 거 같아서.", "reading": "o-neul-eun... jang-nan-chi-go sip-eun gi-bun-i a-ni-ra-seo. jang-nan-chi-myeon i mal-eul yeong-yeong mot hal geo gat-a-seo.", "en": "Today... I'm just not in the mood to joke. If I joke around, I feel like I'll never get to say this." },
-        { "speaker": "승객", "text": "무슨 일 있나? 얼굴이 왜 그렇노.", "reading": "mu-seun il it-na? eol-gul-i wae geu-ron-no.", "en": "Is something wrong? Why do you look like that." },
-        { "speaker": "선우", "text": "할 말이 있는데, 오늘은 진지하게 하고 싶어서 그렇다.", "reading": "hal mal-i it-neun-de, o-neul-eun jin-ji-ha-ge ha-go sip-eo-seo geu-ro-ta.", "en": "There's something I want to say, and today I want to say it seriously." }
+        { "speaker": "낯선 남자", "text": "저, 혹시 사진 한 장만 같이 찍어 주실 수 있을까요? 풍경이랑 같이요.", "reading": "jeo, hok-si sa-jin han jang-man gat-i jjig-eo ju-sil su iss-eul-kka-yo? pung-gyeong-i-rang gat-i-yo.", "en": "Excuse me, would you mind taking a photo together with me? With the scenery too." },
+        { "speaker": "승객", "text": "아, 저는 상관없는데...", "reading": "a, jeo-neun sang-gwan-eop-neun-de...", "en": "Oh, I don't mind, but..." },
+        { "speaker": "선우", "text": "저희 일행입니다. 죄송한데 다른 분이랑 찍으이소.", "reading": "jeo-hui il-haeng-im-ni-da. joe-song-han-de da-reun bun-i-rang jjig-eu-i-so.", "en": "We're together. Sorry, but please take a photo with someone else." },
+        { "speaker": "낯선 남자", "text": "아… 네, 죄송합니다.", "reading": "a… ne, joe-song-ham-ni-da.", "en": "Oh… okay, sorry about that." }
       ],
-      "question": "이 대화를 통해 짐작할 수 있는 선우의 의도는 무엇인가요?",
-      "question_en": "What can you infer is Sunwoo's intention from this conversation?",
-      "correct_answer": "평소와 다르게 진지한 이야기를 하려고 마음먹은 것",
-      "options": ["평소와 다르게 진지한 이야기를 하려고 마음먹은 것", "몸이 아파서 기운이 없는 것", "일 때문에 스트레스를 받은 것", "빨리 집에 가고 싶어 하는 것"],
-      "explanation": "선우는 장난치고 싶지 않다며 평소와 다른 태도를 보이는데, 이는 진지하게 할 말이 있다는 의도를 나타냅니다."
+      "question": "선우는 왜 갑자기 대화에 끼어들었나요?",
+      "question_en": "Why does Sunwoo suddenly interrupt the conversation?",
+      "correct_answer": "낯선 남자가 승객에게 관심을 보이는 게 신경 쓰여서",
+      "options": ["낯선 남자가 승객에게 관심을 보이는 게 신경 쓰여서", "사진 찍는 자리를 대신 찾아주려고", "낯선 남자가 위험해 보여서", "사진 찍을 시간이 없어서"],
+      "explanation": "선우는 낯선 남자가 승객에게 관심을 보이며 접근하는 것이 신경 쓰여 은근히 질투하며 대화에 끼어들었습니다."
     },
     {
       "id": "d02",
       "turns": [
-        { "speaker": "선우", "text": "니한테 예전부터 하고 싶었던 말이 있는데.", "reading": "ni-han-te ye-jeon-bu-teo ha-go sip-eot-deon mal-i it-neun-de.", "en": "There's something I've wanted to say to you for a long time." },
-        { "speaker": "승객", "text": "뭔데? 왜 이래 뜸을 들이노.", "reading": "mwon-de? wae i-rae tteum-eul deul-i-no.", "en": "What is it? Why are you dragging it out like this." },
-        { "speaker": "선우", "text": "아니다, 다음에... 아니, 그냥 지금 할란다. 도망 안 간다, 오늘은.", "reading": "a-ni-da, da-eum-e... a-ni, geu-nyang ji-geum hal-lan-da. do-mang an gan-da, o-neul-eun.", "en": "Never mind, next time... no, I'll just say it now. I'm not running away today." },
-        { "speaker": "승객", "text": "선우야, 나 좀 떨린다. 빨리 말해봐.", "reading": "seon-u-ya, na jom tteol-lin-da. ppal-li mal-hae-bwa.", "en": "Sunwoo, I'm getting nervous. Just say it already." }
+        { "speaker": "승객", "text": "너 방금 표정 완전 무서웠어. 뭐야, 질투해?", "reading": "neo bang-geum pyo-jeong wan-jeon mu-seo-wo-sseo. mwo-ya, jil-tu-hae?", "en": "Your face just now was seriously scary. What, are you jealous?" },
+        { "speaker": "선우", "text": "질투는 무슨! 그냥… 모르는 사람이 자꾸 니 쳐다보는 게 별로여가 그렇지.", "reading": "jil-tu-neun mu-seun! geu-nyang… mo-reu-neun sa-ram-i ja-kku ni chyeo-da-bo-neun ge byeol-lo-yeo-ga geu-reo-chi.", "en": "Jealous, what! I just… don't like it when a total stranger keeps looking at you, that's all." },
+        { "speaker": "승객", "text": "그게 질투 아니고 뭐야.", "reading": "geu-ge jil-tu a-ni-go mwo-ya.", "en": "How is that not jealousy." },
+        { "speaker": "선우", "text": "…됐다, 인정한다. 신경 쓰였다, 마이. 됐제? 이제.", "reading": "…dwaet-da, in-jeong-han-da. sin-gyeong sseu-yeot-da, ma-i. dwaet-je? i-je.", "en": "…Fine, I admit it. It bothered me, a lot. Happy now?" }
       ],
-      "question": "이 장면의 분위기로 가장 알맞은 것은 무엇인가요?",
-      "question_en": "What best describes the mood of this scene?",
-      "correct_answer": "고백을 앞두고 긴장되고 설레는 분위기",
-      "options": ["고백을 앞두고 긴장되고 설레는 분위기", "다투기 직전의 긴장된 분위기", "이별을 앞둔 슬픈 분위기", "가벼운 농담을 주고받는 분위기"],
-      "explanation": "선우가 망설이며 진지하게 할 말을 꺼내려 하고, 승객도 떨린다고 말하는 것에서 고백을 앞둔 설레는 분위기를 알 수 있습니다."
+      "question": "선우가 결국 인정한 것은 무엇인가요?",
+      "question_en": "What does Sunwoo end up admitting?",
+      "correct_answer": "낯선 남자의 관심에 질투를 느꼈다는 것",
+      "options": ["낯선 남자의 관심에 질투를 느꼈다는 것", "사진 찍는 게 귀찮았다는 것", "빨리 자리를 뜨고 싶었다는 것", "승객에게 화가 났었다는 것"],
+      "explanation": "선우는 처음엔 부인하지만, 결국 낯선 남자가 승객에게 관심을 보인 것에 질투를 느꼈다고 솔직히 인정합니다."
     }
   ]
 }

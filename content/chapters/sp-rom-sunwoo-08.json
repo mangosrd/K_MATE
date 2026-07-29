@@ -1,93 +1,98 @@
 {
   "id": "sp-rom-sunwoo-08",
   "character_id": "sunwoo",
-  "title": "니 내 좋아하나",
-  "emoji": "💥",
+  "title": "오륙도 스카이워크, 하다 만 말",
+  "emoji": "💭",
   "level": "intermediate_advanced",
   "story": [
     {
-      "text": "'솔직히' 말해봐라. 니 내한테 마음 있제?",
-      "reading": "sol-jik-hi mal-hae-bwa-ra. ni nae-han-te ma-eum it-je?",
-      "en": "Tell me honestly. You have feelings for me, don't you?",
+      "text": "오륙도 스카이워크 유리 바닥 아래로 새파란 바다가 훤히 내려다보인다. 발밑이 그대로 비쳐 보여 순간 '아찔하다'.",
+      "reading": "o-ryuk-do seu-ka-i-wo-keu yu-ri ba-dak a-rae-ro sae-pa-ran ba-da-ga hwon-hi nae-ryeo-da-bo-in-da. bal-mit-i geu-dae-ro bi-chyeo bo-yeo sun-gan a-jjil-ha-da.",
+      "en": "Below the glass floor of the Oryukdo Skywalk, the deep blue sea stretches out clearly beneath our feet. Seeing straight through to the water below, it's dizzying for a second.",
       "highlight_word_id": "w01"
     },
     {
-      "text": "내는 이제 '확신한다', 이게 그냥 소꿉친구 감정이 아니라는 거.",
-      "reading": "nae-neun i-je hwak-sin-han-da, i-ge geu-nyang so-kkup-chin-gu gam-jeong-i a-ni-ra-neun geo.",
-      "en": "I'm certain now, that this isn't just childhood-friend feelings.",
+      "text": "\"밑에 보이제? 나도 처음 왔을 때 다리 풀렸다. …아니, 지금 다리 풀리는 건 그것 때문이 아이고.\"",
+      "reading": "mit-e bo-i-je? na-do cheo-eum wat-eul ttae da-ri pul-lyeot-da. …a-ni, ji-geum da-ri pul-li-neun geon geu-geot ttae-mun-i a-i-go.",
+      "en": "\"You can see straight down, right? My legs went weak the first time I came here too. …No, wait, the reason my legs are weak right now isn't because of that.\""
+    },
+    {
+      "text": "그는 난간을 잡은 채 한참을 '머뭇거린다'. 하고 싶은 말이 있는 듯 입을 열었다 닫았다를 반복한다.",
+      "reading": "geu-neun nan-gan-eul jab-eun chae han-cham-eul meo-mut-geo-rin-da. ha-go sip-eun mal-i it-neun deut ib-eul yeol-eot-da dad-at-da-reul ban-bok-han-da.",
+      "en": "Gripping the railing, he hesitates for a long while. As if he has something he wants to say, he keeps opening and closing his mouth.",
       "highlight_word_id": "w02"
     },
     {
-      "text": "와 대답 안 하고 자꾸 '얼버무리노'. 내도 지금 말 자꾸 헛나온다, 니만 그런 거 아이다.",
-      "reading": "wa dae-dap an ha-go ja-kku eol-beo-mu-ri-no. nae-do ji-geum mal ja-kku heon-na-on-da, ni-man geu-reon geo a-i-da.",
-      "en": "Why do you keep mumbling and avoiding the answer instead of just replying. I'm stumbling over my words too right now, it's not just you.",
+      "text": "\"크흠, 크흠.\" 괜히 '헛기침을' 두어 번 하더니 겨우 입을 뗀다. \"저… 그, 니한테 할 말이 있는데.\"",
+      "reading": "keu-heum, keu-heum. gwaen-hi heot-gi-chim-eul du-eo beon ha-deo-ni gyeo-u ib-eul ttem-da. jeo… geu, ni-han-te hal mal-i it-neun-de.",
+      "en": "\"Ahem, ahem.\" He clears his throat a couple of times for no reason before finally managing to speak. \"So… um, there's something I need to tell you.\"",
       "highlight_word_id": "w03"
     },
     {
-      "text": "오늘은 '용기' 내가꼬 확실히 물어볼란다. 몇 번을 삼켰는지 모른다, 이 말.",
-      "reading": "o-neul-eun yong-gi nae-ga-kko hwak-sil-hi mul-eo-bol-lan-da. myeot beon-eul sam-kyeon-neun-ji mo-reun-da, i mal.",
-      "en": "Today I'm gathering my courage to ask you clearly. I don't know how many times I've swallowed this question back down.",
+      "text": "\"이 말을 몇 번을 삼켰는지 모른다. 근데 오늘은 진짜 '입 밖에 내볼라고'.\"",
+      "reading": "i mal-eul myeot beon-eul sam-kyeon-neun-ji mo-reun-da. geun-de o-neul-eun jin-jja ip bakk-e nae-bol-la-go.",
+      "en": "\"I don't know how many times I've swallowed this back down. But today I'm actually going to try and say it out loud.\"",
       "highlight_word_id": "w04"
     },
     {
-      "text": "돌려 말 안 하고 그냥 '직진할게'. 니 내 좋아하나?",
-      "reading": "dol-lyeo mal an ha-go geu-nyang jik-jin-hal-ge. ni nae jo-a-ha-na?",
-      "en": "I won't beat around the bush, I'll just go straight for it. Do you like me?",
+      "text": "이마에 '진땀'까지 배어 나오는데, 정작 결정적인 순간에 말문이 턱 막힌다. \"그, 그러니까 내 말은— 아, 진짜 이게 뭐라고 이래 안 나오노!\"",
+      "reading": "i-ma-e jin-ttam-kka-ji bae-eo na-o-neun-de, jeong-jak gyeol-jeong-jeok-in sun-gan-e mal-mun-i teok mak-hin-da. geu, geu-reo-ni-kka nae mal-eun— a, jin-jja i-ge mwo-ra-go i-rae an na-o-no!",
+      "en": "Nervous sweat even starts beading on his forehead, but right at the crucial moment, the words get stuck in his throat. \"So, what I mean is— ugh, seriously, why won't this come out no matter what!\"",
       "highlight_word_id": "w05"
     },
     {
-      "text": "태종대 파도 소리 들리제? 대답 들을 때까지 안 움직인다, 내.",
-      "reading": "tae-jong-dae pa-do so-ri deul-li-je? dae-dap deul-eul ttae-kka-ji an um-jik-in-da, nae.",
-      "en": "You can hear the waves at Taejongdae, right? I'm not moving until I hear your answer."
+      "text": "\"됐다! 오늘은 몬 하겠다, 진짜! 다음에! 다음에 무조건 한다!\" 그가 두 손으로 얼굴을 감싸며 그 자리에 주저앉는다.",
+      "reading": "dwaet-da! o-neul-eun mon ha-get-da, jin-jja! da-eum-e! da-eum-e mu-jo-geon han-da! geu-ga du son-eu-ro eol-gul-eul gam-ssa-myeo geu ja-ri-e ju-jeo-anj-neun-da.",
+      "en": "\"Forget it! I can't do this today, seriously! Next time! I'm definitely doing it next time!\" He buries his face in both hands and sinks right down on the spot."
     },
     {
-      "text": "단어 다 봤제? 오늘 대화 문제도 집중해서 풀어봐라.",
+      "text": "\"단어 다 봤제? 오늘 대화 문제도 집중해서 풀어봐라.\"",
       "reading": "dan-eo da bwat-je? o-neul dae-hwa mun-je-do jip-jung-hae-seo pul-eo-bwa-ra.",
-      "en": "Got a look at all the words? Focus and give today's conversation question a try too."
+      "en": "\"Got a look at all the words? Focus and give today's conversation question a try too.\""
     }
   ],
   "words": [
-    { "id": "w01", "word": "솔직히", "reading": "sol-jik-hi", "meaning": "Honestly, frankly", "example": "솔직히 말하면 나도 잘 모르겠다.", "example_reading": "sol-jik-hi mal-ha-myeon na-do jal mo-reu-get-da", "example_en": "Honestly speaking, I'm not sure either." },
-    { "id": "w02", "word": "확신하다", "reading": "hwak-sin-ha-da", "meaning": "To be certain, sure", "example": "나는 그의 진심을 확신했다.", "example_reading": "na-neun geu-ui jin-sim-eul hwak-sin-haet-da", "example_en": "I was certain of his sincerity." },
-    { "id": "w03", "word": "얼버무리다", "reading": "eol-beo-mu-ri-da", "meaning": "To mumble, evade giving a clear answer", "example": "그는 질문에 얼버무리며 대답을 피했다.", "example_reading": "geu-neun jil-mun-e eol-beo-mu-ri-myeo dae-dap-eul pi-haet-da", "example_en": "He mumbled and avoided answering the question." },
-    { "id": "w04", "word": "용기", "reading": "yong-gi", "meaning": "Courage", "example": "그는 용기를 내서 고백했다.", "example_reading": "geu-neun yong-gi-reul nae-seo go-baek-haet-da", "example_en": "He mustered courage and confessed." },
-    { "id": "w05", "word": "직진하다", "reading": "jik-jin-ha-da", "meaning": "To go straight for it, be direct", "example": "그는 고민하지 않고 직진하는 성격이다.", "example_reading": "geu-neun go-min-ha-ji an-ko jik-jin-ha-neun seong-gyeok-i-da", "example_en": "He's the type to go straight for it without hesitation." }
+    { "id": "w01", "word": "아찔하다", "reading": "a-jjil-ha-da", "meaning": "To be dizzying, heart-stopping", "example": "높은 곳에서 아래를 보니 아찔했다.", "example_reading": "nop-eun got-e-seo a-rae-reul bo-ni a-jjil-haet-da", "example_en": "Looking down from up high made me dizzy." },
+    { "id": "w02", "word": "머뭇거리다", "reading": "meo-mut-geo-ri-da", "meaning": "To hesitate, falter", "example": "그는 대답하기 전에 잠시 머뭇거렸다.", "example_reading": "geu-neun dae-dap-ha-gi jeon-e jam-si meo-mut-geo-ryeot-da", "example_en": "He hesitated for a moment before answering." },
+    { "id": "w03", "word": "헛기침", "reading": "heot-gi-chim", "meaning": "A nervous or fake cough, throat-clearing", "example": "그는 긴장하면 헛기침을 한다.", "example_reading": "geu-neun gin-jang-ha-myeon heot-gi-chim-eul han-da", "example_en": "He clears his throat when he's nervous." },
+    { "id": "w04", "word": "입 밖에 내다", "reading": "ip bakk-e nae-da", "meaning": "To say something out loud, voice a thought", "example": "속마음을 입 밖에 내기가 두려웠다.", "example_reading": "sok-ma-eum-eul ip bakk-e nae-gi-ga du-ryeo-wot-da", "example_en": "I was afraid to say my true feelings out loud." },
+    { "id": "w05", "word": "진땀", "reading": "jin-ttam", "meaning": "Nervous sweat", "example": "긴장해서 진땀이 났다.", "example_reading": "gin-jang-hae-seo jin-ttam-i nat-da", "example_en": "I was so nervous I broke into a nervous sweat." }
   ],
   "sentences": [
-    { "id": "s01", "ko": "솔직히 말해서 나도 잘 모르겠다.", "reading": "sol-jik-hi mal-hae-seo na-do jal mo-reu-get-da", "en": "Honestly speaking, I don't really know either." },
-    { "id": "s02", "ko": "나는 그가 진심이라고 확신했다.", "reading": "na-neun geu-ga jin-sim-i-ra-go hwak-sin-haet-da", "en": "I was certain that he was sincere." },
-    { "id": "s03", "ko": "그는 질문에 대답하지 않고 얼버무렸다.", "reading": "geu-neun jil-mun-e dae-dap-ha-ji an-ko eol-beo-mu-ryeot-da", "en": "He didn't answer the question and just mumbled." },
-    { "id": "s04", "ko": "용기를 내서 마음을 전했다.", "reading": "yong-gi-reul nae-seo ma-eum-eul jeon-haet-da", "en": "I mustered courage and conveyed my feelings." },
-    { "id": "s05", "ko": "그는 고민하지 않고 직진하는 성격이다.", "reading": "geu-neun go-min-ha-ji an-ko jik-jin-ha-neun seong-gyeok-i-da", "en": "He's the type of person who goes straight for it without hesitation." }
+    { "id": "s01", "ko": "높은 다리 위에서 아래를 보니 아찔했다.", "reading": "nop-eun da-ri wi-e-seo a-rae-reul bo-ni a-jjil-haet-da", "en": "Looking down from the high bridge made me dizzy." },
+    { "id": "s02", "ko": "그는 말을 꺼내기 전에 한참 머뭇거렸다.", "reading": "geu-neun mal-eul kkeo-nae-gi jeon-e han-cham meo-mut-geo-ryeot-da", "en": "He hesitated for a long while before bringing it up." },
+    { "id": "s03", "ko": "그는 어색할 때마다 헛기침을 한다.", "reading": "geu-neun eo-saek-hal ttae-ma-da heot-gi-chim-eul han-da", "en": "He clears his throat whenever things get awkward." },
+    { "id": "s04", "ko": "그 말을 입 밖에 내는 데 큰 용기가 필요했다.", "reading": "geu mal-eul ip bakk-e nae-neun de keun yong-gi-ga pil-yo-haet-da", "en": "It took a lot of courage to say those words out loud." },
+    { "id": "s05", "ko": "그는 긴장해서 이마에 진땀을 흘렸다.", "reading": "geu-neun gin-jang-hae-seo i-ma-e jin-ttam-eul heul-lyeot-da", "en": "He was so nervous that his forehead broke out in sweat." }
   ],
   "dialogues": [
     {
       "id": "d01",
       "turns": [
-        { "speaker": "선우", "text": "니 내 좋아하나? 오늘은 얼버무리지 말고 대답해라.", "reading": "ni nae jo-a-ha-na? o-neul-eun eol-beo-mu-ri-ji mal-go dae-dap-hae-ra.", "en": "Do you like me? Don't mumble around it today, just answer." },
-        { "speaker": "승객", "text": "가, 갑자기 그런 걸 왜 묻노...", "reading": "ga, gap-ja-gi geu-reon geol wae mut-no...", "en": "W-why are you suddenly asking that..." },
-        { "speaker": "선우", "text": "됐다, 대답 피하지 마라. 나는 진지하다. …손 봐라, 아직도 떨고 있다 내가.", "reading": "dwaet-da, dae-dap pi-ha-ji ma-ra. na-neun jin-ji-ha-da. …son bwa-ra, a-jik-do tteol-go it-da nae-ga.", "en": "Come on, don't avoid the answer. I'm serious. …Look at my hand, I'm still shaking." },
-        { "speaker": "승객", "text": "...맞다. 좋아한다, 오래전부터.", "reading": "...mat-da. jo-a-han-da, o-rae-jeon-bu-teo.", "en": "...That's right. I like you, and have for a long time." }
+        { "speaker": "승객", "text": "너 왜 그래? 얼굴이 새빨개.", "reading": "neo wae geu-rae? eol-gul-i sae-ppal-gae.", "en": "What's wrong with you? Your face is bright red." },
+        { "speaker": "선우", "text": "아, 아니다! 여기 햇볕이 좀 강해가! …아니 사실 그게 아니고, 할 말이 있는데.", "reading": "a, a-ni-da! yeo-gi haet-byeot-i jom gang-hae-ga! …a-ni sa-sil geu-ge a-ni-go, hal mal-i it-neun-de.", "en": "N-no! The sun's just kind of strong here! …No wait, actually that's not it, there's something I want to say." },
+        { "speaker": "승객", "text": "뭔데? 편하게 말해봐.", "reading": "mwon-de? pyeon-ha-ge mal-hae-bwa.", "en": "What is it? Just say it, no need to be nervous." },
+        { "speaker": "선우", "text": "편하게 말하는 게 제일 안 되는 게 지금인데 어떡하노!", "reading": "pyeon-ha-ge mal-ha-neun ge je-il an doe-neun ge ji-geum-in-de eo-tteok-ha-no!", "en": "Right now is exactly when 'just saying it' is the hardest thing in the world, what am I supposed to do!" }
       ],
-      "question": "이 대화의 결과로 알 수 있는 것은 무엇인가요?",
-      "question_en": "What can be concluded from the outcome of this conversation?",
-      "correct_answer": "승객이 선우에 대한 자신의 마음을 솔직하게 인정했다",
-      "options": ["승객이 선우에 대한 자신의 마음을 솔직하게 인정했다", "승객이 화가 나서 자리를 떠났다", "선우가 질문을 취소했다", "두 사람이 다투기 시작했다"],
-      "explanation": "승객은 처음엔 당황하지만 결국 선우를 오래전부터 좋아해 왔다고 솔직하게 인정합니다."
+      "question": "선우가 얼굴이 빨개진 진짜 이유는 무엇인가요?",
+      "question_en": "What is the real reason Sunwoo's face turned red?",
+      "correct_answer": "하고 싶은 말이 있어 긴장하고 있었기 때문에",
+      "options": ["하고 싶은 말이 있어 긴장하고 있었기 때문에", "햇볕이 너무 강했기 때문에", "높은 곳이 무서웠기 때문에", "오래 걸어서 더웠기 때문에"],
+      "explanation": "선우는 햇볕 핑계를 대지만, 실제로는 하고 싶은 말을 꺼내려다 긴장해서 얼굴이 빨개진 것입니다."
     },
     {
       "id": "d02",
       "turns": [
-        { "speaker": "선우", "text": "...진짜가? 장난 아니고?", "reading": "...jin-jja-ga? jang-nan a-ni-go?", "en": "...Really? Not a joke?" },
-        { "speaker": "승객", "text": "장난 아니다. 니는? 니는 어떤데.", "reading": "jang-nan a-ni-da. ni-neun? ni-neun eo-tteon-de.", "en": "Not a joke. What about you? How do you feel." },
-        { "speaker": "선우", "text": "내가 먼저 물어봤는데 이래 되뿌네. 하... 내도 마찬가지다. 이 말 하는데 얼굴이 와 이래 뜨겁노.", "reading": "nae-ga meon-jeo mul-eo-bwat-neun-de i-rae doe-ppu-ne. ha... nae-do ma-chan-ga-ji-da. i mal ha-neun-de eol-gul-i wa i-rae tteu-geop-no.", "en": "I was the one who asked first, and now this happens. Ha... I feel the same way. Why's my face this hot just saying that." },
-        { "speaker": "승객", "text": "그럼 우리 이제 뭐가 되는 거고?", "reading": "geu-reom u-ri i-je mwo-ga doe-neun geo-go?", "en": "So what are we now, then?" }
+        { "speaker": "선우", "text": "그, 니가… 아니 그러니까…", "reading": "geu, ni-ga… a-ni geu-reo-ni-kka…", "en": "So, you… no wait, I mean…" },
+        { "speaker": "승객", "text": "천천히 말해도 돼. 안 급해.", "reading": "cheon-cheon-hi mal-hae-do dwae. an geup-hae.", "en": "You can take your time. There's no rush." },
+        { "speaker": "선우", "text": "…미안하다, 오늘은 진짜 안 되겠다. 심장이 터질 거 같아서 말이 하나도 안 나온다.", "reading": "…mi-an-ha-da, o-neul-eun jin-jja an doe-get-da. sim-jang-i teo-jil geo gat-a-seo mal-i ha-na-do an na-on-da.", "en": "…Sorry, I really can't do this today. My heart feels like it's about to burst, not a single word will come out." },
+        { "speaker": "승객", "text": "귀엽네, 그런 모습.", "reading": "gwi-yeop-ne, geu-reon mo-seup.", "en": "That's kind of cute, you like this." }
       ],
-      "question": "선우의 반응에서 알 수 있는 그의 마음은 무엇인가요?",
-      "question_en": "What does Sunwoo's reaction reveal about his feelings?",
-      "correct_answer": "승객과 같은 마음이라는 것을 인정하며 기뻐하는 마음",
-      "options": ["승객과 같은 마음이라는 것을 인정하며 기뻐하는 마음", "예상치 못한 대답에 화가 난 마음", "승객을 놀리려는 장난스러운 마음", "빨리 이 상황을 피하고 싶은 마음"],
-      "explanation": "선우는 놀란 듯하면서도 자신도 같은 마음이라고 인정하며, 서로의 진심이 확인되는 순간입니다."
+      "question": "이 대화에서 알 수 있는 선우의 모습은 무엇인가요?",
+      "question_en": "What does this conversation show about Sunwoo?",
+      "correct_answer": "진심을 전하려다 너무 긴장해서 결국 말을 잇지 못하는 모습",
+      "options": ["진심을 전하려다 너무 긴장해서 결국 말을 잇지 못하는 모습", "승객에게 화가 나서 말을 참는 모습", "졸려서 집중하지 못하는 모습", "다른 생각을 하느라 정신이 없는 모습"],
+      "explanation": "선우는 진심을 전하려 여러 번 시도하지만, 너무 긴장한 나머지 결국 말을 끝맺지 못하고 포기합니다."
     }
   ]
 }

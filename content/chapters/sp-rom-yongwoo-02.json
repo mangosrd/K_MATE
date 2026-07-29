@@ -1,93 +1,93 @@
 {
   "id": "sp-rom-yongwoo-02",
   "character_id": "yongwoo",
-  "title": "동생 챙기는 건 나뿐이지",
-  "emoji": "🫡",
+  "title": "누가 니 혼자 보내나",
+  "emoji": "😤",
   "level": "intermediate_advanced",
   "story": [
     {
-      "text": "함덕해수욕장의 에메랄드빛 바다 앞, 용우가 파라솔을 펴며 자리를 잡는다.",
-      "reading": "ham-deok-hae-su-yok-jang-ui e-me-ral-deu-bit ba-da ap, yong-u-ga pa-ra-sol-eul pyeo-myeo ja-ri-reul jap-neun-da.",
-      "en": "In front of Hamdeok Beach's emerald sea, Yongwoo sets up a spot, unfolding a parasol."
+      "text": "출발 당일 아침, 제주공항 국내선 탑승구 앞은 사람들로 붐볐다. 캐리어를 끌고 줄을 서던 나는 익숙한 뒷모습을 발견하고 걸음을 멈췄다. 196cm의 그 큰 어깨를 못 알아볼 리가 없었다.",
+      "reading": "chul-bal dang-il a-chim, je-ju-gong-hang guk-nae-seon tap-seung-gu ap-eun sa-ram-deul-lo bum-byeot-da. kae-ri-eo-reul kkeul-go jul-eul seo-deon na-neun ig-suk-han dwit-mo-seub-eul bal-gyeon-ha-go geol-eum-eul meom-chwot-da. baek-gu-sib-yuk-sen-ti-ui geu keun eo-kkae-reul mot al-a-bol li-ga eop-seot-da.",
+      "en": "On the morning of departure, the domestic gate at Jeju International Airport was crowded. Dragging my suitcase toward the line, I stopped short at the sight of a familiar back. There was no mistaking those broad, 196-centimeter-tall shoulders."
     },
     {
-      "text": "'이 백사장 밟아본 지 오랜만이네. 너랑 오니까 또 느낌이 다르다.' (헛기침) '…경치가, 경치가 다르다고.'",
-      "reading": "i baek-sa-jang balb-a-bon ji o-raen-man-i-ne. neo-rang o-ni-kka tto neu-kkim-i da-reu-da. gyeong-chi-ga, gyeong-chi-ga da-reu-da-go.",
-      "en": "'It's been a while since I walked this white sand. Coming here with you feels different.' (clears throat) '...I meant the scenery. The scenery's different.'",
-      "highlight_word_id": "w01"
-    },
-    {
-      "text": "옆 파라솔에 있던 손님 무리가 용우를 알아보고 수군거린다. '저분, K-MATE 인기 기장 두 분 중 한 분 아니야? 규현 기장님이랑 맨날 같이 묶여서 나오는.' 용우의 눈썹이 미세하게 꿈틀했다.",
-      "reading": "yeop pa-ra-sol-e it-deon son-nim mu-ri-ga yong-u-reul al-a-bo-go su-gun-geo-rin-da. jeo-bun, k-me-i-teu in-gi gi-jang du bun jung han bun a-ni-ya? gyu-hyeon gi-jang-nim-i-rang maen-nal gat-i mu-kkyeo-seo na-o-neun. yong-u-ui nun-sseob-i mi-se-ha-ge kkum-teul-haet-da.",
-      "en": "A group at the next parasol over recognized Yongwoo and whispered among themselves. 'Isn't that one of the two popular K-MATE captains? The one who's always lumped in with Captain Kyuhyun.' Yongwoo's eyebrow twitched, ever so slightly.",
-      "highlight_word_id": "w04"
-    },
-    {
-      "text": "'묶이긴 뭘 묶여. 걔랑 나랑 같은 급이 아닌데.' 누구 들으라는 것도 아닌데 혼자 중얼거리며 파라솔 각도를 신경질적으로 고쳐 세운다.",
-      "reading": "mu-kkyeo-gin mwol mu-kkyeo. gyae-rang na-rang gat-eun geub-i a-nin-de. nu-gu deul-eu-ra-neun geot-do a-nin-de hon-ja jung-eol-geo-ri-myeo pa-ra-sol gak-do-reul sin-gyeong-jil-jeog-eu-ro go-chyeo se-un-da.",
-      "en": "'Lumped in, my foot. He and I aren't even in the same league.' Muttering to no one in particular, he re-adjusts the parasol angle with unnecessary force.",
-      "highlight_word_id": "w05"
-    },
-    {
-      "text": "옆에서 낯선 남자가 말을 걸자, 용우가 은근히 내 앞으로 자리를 옮겨 앉는다. '왜 자꾸 말 걸어, 저 사람.'",
-      "reading": "yeop-e-seo nat-seon nam-ja-ga mal-eul geol-ja, yong-u-ga eun-geun-hi nae ap-eu-ro ja-ri-reul om-gyeo anj-neun-da. wae ja-kku mal geol-eo, jeo sa-ram.",
-      "en": "When a stranger nearby starts talking to me, Yongwoo subtly shifts his seat in front of me. 'Why does that guy keep talking to you.'",
-      "highlight_word_id": "w03"
-    },
-    {
-      "text": "'신경 쓰지 말고 내 곁에 있어라. 내가 있는데 뭐가 걱정이야.' 말은 무심한 척, 눈은 이미 그 남자를 노려보고 있다. 팔짱을 낀 어깨가 유독 단단해 보였다.",
-      "reading": "sin-gyeong sseu-ji mal-go nae gyeot-e iss-eo-ra. nae-ga it-neun-de mwo-ga geok-jeong-i-ya. mal-eun mu-sim-han cheok, nun-eun i-mi geu nam-ja-reul no-ryeo-bo-go it-da. pal-jjang-eul kkin eo-kkae-ga yu-dok dan-dan-hae bo-yeot-da.",
-      "en": "'Don't worry about him, just stay by my side. What's there to worry about when I'm here.' His words sound indifferent, but his eyes are already glaring at the man. His crossed arms looked unusually solid just then.",
+      "text": "'어? 여기서 뭐 해요?' 놀라서 묻자 용우가 대수롭지 않게 뒤를 돌아본다. '나도 볼일 있어서 부산 간다.' 표정 하나 안 변하고 태연하게 말했다.",
+      "reading": "eo? yeo-gi-seo mwo hae-yo? nol-la-seo mut-ja yong-u-ga dae-su-rop-ji an-ke dwi-reul dol-a-bon-da. na-do bol-il iss-eo-seo bu-san gan-da. pyo-jeong ha-na an byeon-ha-go tae-yeon-ha-ge mal-haet-da.",
+      "en": "'Wait, what are you doing here?' I asked, startled. Yongwoo turned back, unfazed. 'I've got things to take care of in Busan too.' He said it with a perfectly straight face.",
       "highlight_word_id": "w02"
     },
     {
-      "text": "'됐고, 동생 챙기는 건 나뿐이지. 규현이는 신경도 안 쓰거든? 딴생각 말고 이 대화들이나 잘 들어봐라.'",
-      "reading": "dwaet-go, dong-saeng chaeng-gi-neun geon na-ppun-i-ji. gyu-hyeon-i-neun sin-gyeong-do an sseu-geo-deun. ttan-saeng-gak mal-go i dae-hwa-deul-i-na jal deul-eo-bwa-ra.",
-      "en": "'Never mind. I'm the only one who looks out for you, got it? Kyuhyun wouldn't even bother. Stop overthinking and listen to these conversations carefully.'"
+      "text": "'무슨 볼일인데요?' 캐물어도 용우는 어깨만 으쓱했다. '그냥 있다. 꼬치꼬치 캐묻지 마라.'",
+      "reading": "mu-seun bol-il-in-de-yo? kae-mul-eo-do yong-u-neun eo-kkae-man eu-sseuk-aet-da. geu-nyang it-da. kko-chi-kko-chi kae-mut-ji ma-ra.",
+      "en": "'What kind of things?' I pressed, but Yongwoo only shrugged. 'Just things. Stop prying.'",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "탑승권을 내밀며 게이트 직원에게 확인받던 그의 손끝, 좌석 번호가 눈에 들어왔다. 내 옆자리였다. '…설마 저랑 같은 비행기예요?' '그래서, 뭐.' 용우가 당당하게 되물었다.",
+      "reading": "tap-seung-gwon-eul nae-mil-myeo ge-i-teu jig-won-e-ge hwak-in-bat-deon geu-ui son-kkeut, jwa-seok beon-ho-ga nun-e deul-eo-wat-da. nae yeop-ja-ri-eot-da. seol-ma jeo-rang gat-eun bi-haeng-gi-ye-yo? geu-rae-seo, mwo. yong-u-ga dang-dang-ha-ge doe-mul-eot-da.",
+      "en": "As he handed his boarding pass to the gate staff, I caught a glimpse of the seat number on it — right next to mine. '...Don't tell me you're on the same flight as me?' 'So what if I am.' Yongwoo shot back, brazen as ever.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "누가 봐도 우연이 아니었다. 그런데도 어찌나 당당한지, 따지려던 마음이 오히려 픽 웃음으로 바뀌었다.",
+      "reading": "nu-ga bwa-do u-yeon-i a-ni-eot-da. geu-reon-de-do eo-jji-na dang-dang-han-ji, tta-ji-ryeo-deon ma-eum-i o-hi-ryeo pik us-eum-eu-ro ba-kkwi-eot-da.",
+      "en": "It clearly wasn't a coincidence, no matter how you looked at it. And yet he was so shameless about it that my urge to call him out melted into a small laugh instead.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "'…뭘 웃어. 누가 니 혼자 보내나. 걱정돼서 그런 거니까 오해하지 마라.' 귀 끝이 살짝 붉어진 채로 시치미를 뗐다.",
+      "reading": "mwol us-eo. nu-ga ni hon-ja bo-nae-na. geok-jeong-dwae-seo geu-reon geo-ni-kka o-hae-ha-ji ma-ra. gwi kkeut-i sal-jjak bulg-eo-jin chae-ro si-chi-mi-reul ttet-da.",
+      "en": "'...What are you laughing at. Who's letting you go alone. I'm just worried, so don't get the wrong idea.' He played it off, the tips of his ears turning faintly red.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "탑승 안내 방송이 울리자 용우가 먼저 캐리어를 들고 앞장선다. '가면서 대화 몇 개 들어봐라. 심심할 텐데.'",
+      "reading": "tap-seung an-nae bang-song-i ul-li-ja yong-u-ga meon-jeo kae-ri-eo-reul deul-go ap-jang-seon-da. ga-myeon-seo dae-hwa myeot gae deul-eo-bwa-ra. sim-sim-hal ten-de.",
+      "en": "As the boarding announcement rang out, Yongwoo picked up my suitcase and walked ahead first. 'Listen to a couple of conversations on the way. You'll get bored otherwise.'"
     }
   ],
   "words": [
-    { "id": "w01", "word": "백사장", "reading": "baek-sa-jang", "meaning": "White sandy beach", "example": "함덕 백사장은 물빛이 맑기로 유명하다.", "example_reading": "ham-deok baek-sa-jang-eun mul-bit-i mal-gi-ro yu-myeong-ha-da", "example_en": "Hamdeok's white sand beach is famous for its clear water color." },
-    { "id": "w02", "word": "곁", "reading": "gyeot", "meaning": "Side, near, beside", "example": "힘들 때마다 그가 늘 내 곁에 있어주었다.", "example_reading": "him-deul ttae-ma-da geu-ga neul nae gyeot-e iss-eo-ju-eot-da", "example_en": "Whenever things were hard, he always stayed by my side." },
-    { "id": "w03", "word": "말을 걸다", "reading": "mal-eul geol-da", "meaning": "To strike up a conversation, talk to someone", "example": "낯선 사람이 갑자기 나에게 말을 걸었다.", "example_reading": "nat-seon sa-ram-i gap-ja-gi na-e-ge mal-eul geol-eot-da", "example_en": "A stranger suddenly struck up a conversation with me." },
-    { "id": "w04", "word": "수군거리다", "reading": "su-gun-geo-ri-da", "meaning": "To whisper, gossip in low voices", "example": "사람들이 그를 알아보고 수군거렸다.", "example_reading": "sa-ram-deul-i geu-reul al-a-bo-go su-gun-geo-ryeot-da", "example_en": "People recognized him and whispered among themselves." },
-    { "id": "w05", "word": "급이 다르다", "reading": "geub-i da-reu-da", "meaning": "To be on a different level (idiom, often boastful)", "example": "그는 자기 인기가 남들과 급이 다르다고 우겼다.", "example_reading": "geu-neun ja-gi in-gi-ga nam-deul-gwa geub-i da-reu-da-go u-gyeot-da", "example_en": "He insisted his popularity was on a completely different level from everyone else's." }
+    { "id": "w01", "word": "우연", "reading": "u-yeon", "meaning": "Coincidence", "example": "이게 정말 우연일까?", "example_reading": "i-ge jeong-mal u-yeon-il-kka?", "example_en": "Is this really a coincidence?" },
+    { "id": "w02", "word": "볼일", "reading": "bol-il", "meaning": "Something to attend to, an errand", "example": "부산에 볼일이 좀 있어서요.", "example_reading": "bu-san-e bol-il-i jom iss-eo-seo-yo", "example_en": "I have some things to take care of in Busan." },
+    { "id": "w03", "word": "캐묻다", "reading": "kae-mut-da", "meaning": "To pry, question insistently", "example": "자꾸 캐묻지 좀 마세요.", "example_reading": "ja-kku kae-mut-ji jom ma-se-yo", "example_en": "Please stop prying so much." },
+    { "id": "w04", "word": "당당하다", "reading": "dang-dang-ha-da", "meaning": "To be brazen/self-assured, unabashed", "example": "그는 들켰는데도 당당한 표정이었다.", "example_reading": "geu-neun deul-kyeon-neun-de-do dang-dang-han pyo-jeong-i-eot-da", "example_en": "Even after getting caught, he wore a brazen expression." },
+    { "id": "w05", "word": "시치미를 떼다", "reading": "si-chi-mi-reul tte-da", "meaning": "To feign ignorance, play innocent (idiom)", "example": "다 알면서 시치미를 뗀다.", "example_reading": "da al-myeon-seo si-chi-mi-reul tten-da", "example_en": "He plays innocent even though he clearly knows." }
   ],
   "sentences": [
-    { "id": "s01", "ko": "함덕해수욕장의 백사장은 오랜만에 밟아도 여전히 곱고 하얬다.", "reading": "ham-deok-hae-su-yok-jang-ui baek-sa-jang-eun o-raen-man-e balb-a-do yeo-jeon-hi gop-go ha-yaet-da", "en": "Even after a long time, the white sand of Hamdeok Beach was still fine and white." },
-    { "id": "s02", "ko": "옆자리 손님들이 그를 알아보고 규현 기장과 묶어 수군거렸다.", "reading": "yeop-ja-ri son-nim-deul-i geu-reul al-a-bo-go gyu-hyeon gi-jang-gwa mu-kkeo su-gun-geo-ryeot-da", "en": "The passengers nearby recognized him and whispered, lumping him together with Captain Kyuhyun." },
-    { "id": "s03", "ko": "그는 급이 다르다며 혼자 중얼거리고는 애꿎은 파라솔만 고쳐 세웠다.", "reading": "geu-neun geub-i da-reu-da-myeo hon-ja jung-eol-geo-ri-go-neun ae-kkuj-eun pa-ra-sol-man go-chyeo se-wot-da", "en": "Muttering that he was on a different level entirely, he took it out on the parasol instead." },
-    { "id": "s04", "ko": "낯선 남자가 말을 걸자 그는 은근히 내 앞으로 자리를 옮겼다.", "reading": "nat-seon nam-ja-ga mal-eul geol-ja geu-neun eun-geun-hi nae ap-eu-ro ja-ri-reul om-gyeot-da", "en": "When a stranger spoke to me, he subtly moved to sit in front of me." },
-    { "id": "s05", "ko": "신경 쓰지 말고 내 곁에 있으라는 그의 말이 오래도록 남았다.", "reading": "sin-gyeong sseu-ji mal-go nae gyeot-e iss-eu-ra-neun geu-ui mal-i o-rae-do-rok nam-at-da", "en": "His words, telling me to stay by his side and not worry, lingered for a long time." }
+    { "id": "s01", "ko": "게이트 앞에서 나는 낯익은 큰 그림자를 발견하고 걸음을 멈췄다.", "reading": "ge-i-teu ap-e-seo na-neun nat-ig-eun keun geu-rim-ja-reul bal-gyeon-ha-go geol-eum-eul meom-chwot-da", "en": "At the gate, I stopped short at the sight of a familiar tall figure." },
+    { "id": "s02", "ko": "부산에 볼일이 있다는 그의 말은 누가 봐도 핑계였다.", "reading": "bu-san-e bol-il-i it-da-neun geu-ui mal-eun nu-ga bwa-do ping-gye-eot-da", "en": "His claim of having things to take care of in Busan was, to anyone's eyes, an excuse." },
+    { "id": "s03", "ko": "캐물어도 그는 시치미를 떼며 어깨만 으쓱였다.", "reading": "kae-mul-eo-do geu-neun si-chi-mi-reul tte-myeo eo-kkae-man eu-sseog-yeot-da", "en": "No matter how I pressed him, he played innocent and only shrugged." },
+    { "id": "s04", "ko": "탑승권 속 좌석 번호를 보고서야 같은 비행기라는 걸 알아챘다.", "reading": "tap-seung-gwon sok jwa-seok beon-ho-reul bo-go-seo-ya gat-eun bi-haeng-gi-ra-neun geol al-a-chaet-da", "en": "It was only from the seat number on his boarding pass that I realized we were on the same flight." },
+    { "id": "s05", "ko": "그는 당당하게 '누가 니 혼자 보내나'라고 말하며 귀를 붉혔다.", "reading": "geu-neun dang-dang-ha-ge nu-ga ni hon-ja bo-nae-na-ra-go mal-ha-myeo gwi-reul bulk-yeot-da", "en": "He declared, brazen as ever, 'Who's letting you go alone,' his ears turning red." }
   ],
   "dialogues": [
     {
       "id": "d01",
       "turns": [
-        { "speaker": "손님", "text": "방금 저기 사람들이 기장님 보고 수군거리던데요, 인기 많으신가 봐요?", "reading": "bang-geum jeo-gi sa-ram-deul-i gi-jang-nim bo-go su-gun-geo-ri-deon-de-yo, in-gi man-eu-sin-ga bwa-yo?", "en": "Those people over there were just whispering about you, Captain. You must be popular." },
-        { "speaker": "권용우 기장", "text": "규현이랑 헷갈렸겠지, 뭐. 사람들이 자꾸 우리 둘을 묶어서 말해서.", "reading": "gyu-hyeon-i-rang heot-gal-lyeot-get-ji, mwo. sa-ram-deul-i ja-kku u-ri dul-eul mu-kkeo-seo mal-hae-seo.", "en": "They probably mixed me up with Kyuhyun. People keep lumping the two of us together." },
-        { "speaker": "손님", "text": "두 분이 같이 묶이는 게 싫으세요?", "reading": "du bun-i gat-i mu-kki-neun ge sil-eo-yo?", "en": "Do you dislike being grouped with him?" },
-        { "speaker": "권용우 기장", "text": "싫다기보다는… 급이 다른데 자꾸 그러니까 그렇지.", "reading": "sil-ta-gi-bo-da-neun, geub-i da-reun-de ja-kku geu-reo-ni-kka geu-reo-chi.", "en": "It's not that I dislike it exactly... it's just that we're on different levels, and they keep doing it anyway." }
+        { "speaker": "손님", "text": "잠깐만요, 이 비행기 저랑 같은 편이잖아요. 우연이에요?", "reading": "jam-kkan-man-yo, i bi-haeng-gi jeo-rang gat-eun pyeon-i-jan-a-yo. u-yeon-i-e-yo?", "en": "Hold on, this is the same flight as mine. Is that a coincidence?" },
+        { "speaker": "권용우 기장", "text": "우연이지 그럼 뭐겠어. 세상 참 좁다, 그치.", "reading": "u-yeon-i-ji geu-reom mwo-gess-eo. se-sang cham job-da, geu-chi.", "en": "What else would it be but a coincidence. Small world, huh." },
+        { "speaker": "손님", "text": "표정이 하나도 안 놀란 표정인데요?", "reading": "pyo-jeong-i ha-na-do an nol-lan pyo-jeong-in-de-yo?", "en": "You don't look surprised at all, though." },
+        { "speaker": "권용우 기장", "text": "원래 잘 안 놀란다, 내가. 자, 짐이나 이리 줘봐.", "reading": "won-lae jal an nol-lan-da, nae-ga. ja, jim-i-na i-ri jwo-bwa.", "en": "I just don't rattle easily, that's all. Here, hand me your bag." }
       ],
-      "question": "용우가 규현과 묶이는 것에 예민하게 반응한 이유는 무엇인가요?",
-      "question_en": "Why did Yongwoo react touchily to being lumped together with Kyuhyun?",
-      "correct_answer": "자신의 인기가 규현과는 다른 급이라고 은근히 생각해서",
-      "options": ["자신의 인기가 규현과는 다른 급이라고 은근히 생각해서", "규현과 실제로 사이가 나빠서", "손님이 규현을 더 좋아할까 봐 걱정돼서", "비행 스케줄이 겹쳐서 불편해서"],
-      "explanation": "용우는 규현과 자신이 같은 급으로 묶이는 걸 은근히 못마땅해하며, 자기 인기가 더 특별하다고 생각하는 승부욕을 드러냈습니다."
+      "question": "용우가 손님과 같은 비행기를 탄 것에 대해 보인 태도로 가장 알맞은 것은?",
+      "question_en": "What best describes Yongwoo's attitude about ending up on the same flight as the passenger?",
+      "correct_answer": "명백한 우연이 아닌데도 태연하게 우연인 척한다",
+      "options": ["명백한 우연이 아닌데도 태연하게 우연인 척한다", "정말 우연이라 자신도 놀랐다", "일정이 겹쳐서 곤란해한다", "손님을 피하려고 한다"],
+      "explanation": "용우는 명백히 일부러 같은 비행기를 예매했으면서도 태연하게 우연인 척 시치미를 뗐습니다."
     },
     {
       "id": "d02",
       "turns": [
-        { "speaker": "낯선 남자", "text": "저기, 혹시 시간 있으시면 같이 사진 좀…", "reading": "jeo-gi, hok-si si-gan iss-eu-si-myeon gat-i sa-jin jom.", "en": "Excuse me, if you have a moment, could we take a photo together..." },
-        { "speaker": "권용우 기장", "text": "(끼어들며) 얘 지금 나랑 같이 있는데요.", "reading": "kki-eo-deul-myeo, yae ji-geum na-rang gat-i it-neun-de-yo.", "en": "(cutting in) She's with me right now." },
-        { "speaker": "손님", "text": "왜 끼어들어요, 그냥 사진 찍자는 거였는데.", "reading": "wae kki-eo-deul-eo-yo, geu-nyang sa-jin jjik-ja-neun geo-yeot-neun-de.", "en": "Why'd you cut in, he was just asking for a photo." },
-        { "speaker": "권용우 기장", "text": "몰라, 그냥…신경 쓰이니까 그렇지.", "reading": "mol-la, geu-nyang sin-gyeong sseu-i-ni-kka geu-reo-chi.", "en": "I don't know, I just... it bothered me, that's all." }
+        { "speaker": "손님", "text": "볼일이 뭔데요 대체? 말을 해줘야 알죠.", "reading": "bol-il-i mwon-de-yo dae-che? mal-eul hae-jwo-ya al-jyo.", "en": "What errand is it, seriously? You have to tell me for me to know." },
+        { "speaker": "권용우 기장", "text": "…그냥, 니가 걱정돼서 그런 거다. 그거면 됐지 않냐.", "reading": "geu-nyang, ni-ga geok-jeong-dwae-seo geu-reon geo-da. geu-geo-myeon dwaet-ji an-nya.", "en": "...It's just because I'm worried about you. Isn't that enough." },
+        { "speaker": "손님", "text": "혼자 여행 좀 가겠다는데 왜 이렇게까지 해요?", "reading": "hon-ja yeo-haeng jom ga-get-da-neun-de wae i-reo-ke-kka-ji hae-yo?", "en": "I just wanted to take one little solo trip, why go this far?" },
+        { "speaker": "권용우 기장", "text": "됐고. 누가 니 혼자 그렇게 보내나. 내가 있는데.", "reading": "dwaet-go. nu-ga ni hon-ja geu-reo-ke bo-nae-na. nae-ga it-neun-de.", "en": "Never mind that. Who's letting you go alone like that. Not while I'm around." }
       ],
-      "question": "용우가 낯선 남자의 말에 끼어든 이유로 가장 알맞은 것은?",
-      "question_en": "What best explains why Yongwoo cut in on the stranger's question?",
-      "correct_answer": "손님이 신경 쓰여서 은근히 질투가 났기 때문",
-      "options": ["손님이 신경 쓰여서 은근히 질투가 났기 때문", "사진 찍는 게 규정 위반이라서", "낯선 남자가 무례해서", "시간이 없어서"],
-      "explanation": "용우는 정확한 이유를 말하지 못했지만, 손님이 신경 쓰여 은근히 질투가 난 모습을 보였습니다."
+      "question": "용우가 굳이 같은 비행기를 예매하면서까지 동행한 진짜 이유는 무엇인가요?",
+      "question_en": "What is the real reason Yongwoo went so far as to book the same flight?",
+      "correct_answer": "손님이 걱정되고, 함께 가고 싶었기 때문",
+      "options": ["손님이 걱정되고, 함께 가고 싶었기 때문", "부산에 정말 급한 업무가 있어서", "비행 스케줄이 원래 그렇게 짜여 있어서", "다른 승객과 착각해서"],
+      "explanation": "용우는 '볼일'이라는 핑계를 댔지만, 실제로는 손님이 걱정되고 함께 가고 싶은 마음에 같은 비행기를 예매했습니다."
     }
   ]
 }

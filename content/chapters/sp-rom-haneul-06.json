@@ -1,62 +1,62 @@
 {
   "id": "sp-rom-haneul-06",
   "character_id": "haneul",
-  "title": "말은 없어도 곁을 지키는",
-  "emoji": "🤍",
+  "title": "무대 위, 당신만 보여서",
+  "emoji": "🎤",
   "story": [
     {
-      "text": "다리 아파요? …천천히 올라가요, 안 급해요.",
-      "reading": "da-ri a-pa-yo? …cheon-cheon-hi ol-la-ga-yo, an geup-hae-yo.",
-      "en": "Do your legs hurt? ...Let's go up slowly, there's no rush."
+      "text": "그다음 달, 하늘은 난생처음 콘서트장이라는 곳에 발을 들였다. 표를 구하는 데만 꼬박 며칠이 걸렸다는 건 아무에게도 말하지 않았다.",
+      "reading": "geu-da-eum dal, ha-neul-eun nan-saeng-cheo-eum kon-seo-teu-jang-i-ra-neun gos-e bal-eul deul-yeoss-da. pyo-reul gu-ha-neun de-man kko-bak myeoch il-i geol-lyeoss-da-neun geon a-mu-e-ge-do mal-ha-ji anh-ass-da.",
+      "en": "The following month, Haneul set foot inside a concert venue for the very first time in his life. He told no one that it had taken him a solid few days just to get a ticket."
     },
     {
-      "text": "여기가 '오목대'예요. 한옥마을 전체가 다 보이는 곳이에요.",
-      "reading": "yeo-gi-ga 'o-mok-dae'ye-yo. han-ok-ma-eul jeon-che-ga da bo-i-neun gos-i-e-yo.",
-      "en": "This is 'Omokdae'. A place where you can see the whole Hanok Village.",
+      "text": "태어나서 처음 와보는 콘서트였다. 사방에서 쏟아지는 조명과 음악에, 그는 잠시 정신을 차리지 못했다.",
+      "reading": "tae-eo-na-seo cheo-eum wa-bo-neun kon-seo-teu-i-eoss-da. sa-bang-e-seo ssod-a-ji-neun jo-myeong-gwa eum-ag-e, geu-neun jam-si jeong-sin-eul cha-ri-ji mos-haess-da.",
+      "en": "It was his first concert ever. Surrounded by lights and music pouring in from every direction, he was momentarily overwhelmed.",
       "highlight_word_id": "w01"
     },
     {
-      "text": "'계단' 꽤 되죠. 힘들면 말해요, 천천히 가면 되니까.",
-      "reading": "'gye-dan' kkwae doe-jyo. him-deul-myeon mal-hae-yo, cheon-cheon-hi ga-myeon doe-ni-kka.",
-      "en": "Quite a lot of 'stairs', right. Tell me if it's hard, we can go slowly.",
-      "highlight_word_id": "w02"
-    },
-    {
-      "text": "저 '노을' 좀 봐요. 기와지붕이 다 붉게 물들었어요.",
-      "reading": "jeo 'no-eul' jom bwa-yo. gi-wa-ji-bung-i da bulg-ge mul-deul-eoss-eo-yo.",
-      "en": "Look at that 'sunset glow'. The tiled roofs have all turned red.",
+      "text": "그녀의 이름이 불리는 순간, 공연장 전체가 함성으로 뒤덮였다. 하늘은 그 소리에 몸이 저릿해지는 걸 느꼈다.",
+      "reading": "geu-nyeo-ui i-reum-i bul-li-neun sun-gan, gong-yeon-jang jeon-che-ga ham-seong-eu-ro dwi-deop-yeoss-da. ha-neul-eun geu so-ri-e mom-i jeo-rit-hae-ji-neun geol neu-kkyeoss-da.",
+      "en": "The instant her name was called, the entire venue erupted in one massive roar. Haneul felt a shiver run through his body at the sound.",
       "highlight_word_id": "w03"
     },
     {
-      "text": "…넘어질 뻔했잖아요. '손' 잡아요, 그냥 잡으라니까요.",
-      "reading": "…neom-eo-jil ppeon-haess-jan-a-yo. 'son' jab-a-yo, geu-nyang jab-eu-ra-ni-kka-yo.",
-      "en": "...You almost tripped. Just take my 'hand', just take it.",
-      "highlight_word_id": "w04"
+      "text": "무대 위에 선 그녀는, 그가 알던 모습과는 완전히 다른 사람 같았다. 수만 개의 시선을 받으면서도 조금도 흔들리지 않았다.",
+      "reading": "mu-dae wi-e seon geu-nyeo-neun, geu-ga al-deon mo-seub-gwa-neun wan-jeon-hi da-reun sa-ram gat-ass-da. su-man gae-ui si-seon-eul bad-eu-myeon-seo-do jo-geum-do heun-deul-li-ji anh-ass-da.",
+      "en": "Standing on that stage, she seemed like an entirely different person from the one he knew. Even under tens of thousands of eyes, she never wavered, not once.",
+      "highlight_word_id": "w02"
     },
     {
-      "text": "'바람' 차죠. …이 풍경, 나중에도 같이 보고 싶다는 생각, 방금 했어요.",
-      "reading": "'ba-ram' cha-jyo. …i pung-gyeong, na-jung-e-do gat-i bo-go sip-da-neun saeng-gak, bang-geum haess-eo-yo.",
-      "en": "The 'wind' is cold, right. ...I just thought I'd like to see this view again with you, someday.",
+      "text": "조명 아래에서 그녀는 빛났다. 하늘은 그 순간, 자신이 지금껏 알던 게 이 사람의 아주 작은 조각에 불과했다는 걸 깨달았다.",
+      "reading": "jo-myeong a-rae-e-seo geu-nyeo-neun bit-nass-da. ha-neul-eun geu sun-gan, ja-sin-i ji-geum-kkeot al-deon ge i sa-ram-ui a-ju jag-eun jo-gag-e bul-gwa-haess-da-neun geol kkae-dal-ass-da.",
+      "en": "Under the lights, she shone. In that moment, Haneul realized everything he thought he knew about her had only ever been the smallest fragment of who she was.",
       "highlight_word_id": "w05"
     },
     {
-      "text": "…뭘 그렇게 봐요. 그냥, 계속 이렇게 있고 싶다는 거예요.",
-      "reading": "…mwol geu-reoh-ge bwa-yo. geu-nyang, gye-sok i-reoh-ge it-go sip-da-neun geo-ye-yo.",
-      "en": "...What are you looking at like that. I just mean... I want it to stay like this, for a long time."
+      "text": "공연이 끝나고, 텅 빈 무대를 한참 바라보던 그는 혼잣말처럼 중얼거렸다. '…뭔가, 되게 벅차네요.' 무슨 감정인지 스스로도 정확히 설명할 수 없었다.",
+      "reading": "gong-yeon-i kkeut-na-go, teong bin mu-dae-reul han-cham ba-ra-bo-deon geu-neun hon-jan-mal-cheo-reom jung-eol-geo-ryeoss-da. '…mwon-ga, doe-ge beok-cha-ne-yo.' mu-seun gam-jeong-in-ji seu-seu-ro-do jeong-hwag-hi seol-myeong-hal su eobs-eoss-da.",
+      "en": "After the show ended, he stared at the empty stage for a long while before muttering to himself. '...This is — really overwhelming.' He couldn't quite explain, even to himself, what exactly he was feeling.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "집으로 돌아가는 길, 하늘은 문득 깨달았다. 팬으로서 느낀 감동인지, 그 사람을 향한 마음인지, 이제는 그 경계가 잘 보이지 않았다.",
+      "reading": "jib-eu-ro dol-a-ga-neun gil, ha-neul-eun mun-deuk kkae-dal-ass-da. paen-eu-ro-seo neu-kkin gam-dong-in-ji, geu sa-ram-eul hyang-han ma-eum-in-ji, i-je-neun geu gyeong-gye-ga jal bo-i-ji anh-ass-da.",
+      "en": "On the way home, it hit him — he could no longer clearly tell where the thrill of being a fan ended and where his feelings for her began. The line between the two had all but disappeared."
     }
   ],
   "words": [
-    { "id": "w01", "word": "오목대", "reading": "o-mok-dae", "meaning": "Omokdae", "example": "오목대에서 노을을 봐요.", "example_reading": "o-mok-dae-e-seo no-eul-eul bwa-yo", "example_en": "I watch the sunset from Omokdae." },
-    { "id": "w02", "word": "계단", "reading": "gye-dan", "meaning": "Stairs", "example": "계단을 천천히 올라가요.", "example_reading": "gye-dan-eul cheon-cheon-hi ol-la-ga-yo", "example_en": "I go up the stairs slowly." },
-    { "id": "w03", "word": "노을", "reading": "no-eul", "meaning": "Sunset glow", "example": "노을이 정말 아름다워요.", "example_reading": "no-eul-i jeong-mal a-reum-da-wo-yo", "example_en": "The sunset glow is truly beautiful." },
-    { "id": "w04", "word": "손", "reading": "son", "meaning": "Hand", "example": "제 손을 잡아요.", "example_reading": "je son-eul jab-a-yo", "example_en": "Take my hand." },
-    { "id": "w05", "word": "바람", "reading": "ba-ram", "meaning": "Wind", "example": "바람이 시원하게 불어요.", "example_reading": "ba-ram-i si-won-ha-ge bul-eo-yo", "example_en": "The wind blows refreshingly." }
+    { "id": "w01", "word": "콘서트", "reading": "kon-seo-teu", "meaning": "Concert", "example": "처음으로 콘서트에 가봤다.", "example_reading": "cheo-eum-eu-ro kon-seo-teu-e ga-bwat-da", "example_en": "I went to a concert for the first time." },
+    { "id": "w02", "word": "무대", "reading": "mu-dae", "meaning": "Stage", "example": "그녀는 무대 위에서 반짝였다.", "example_reading": "geu-nyeo-neun mu-dae wi-e-seo ban-jjag-yeot-da", "example_en": "She sparkled on stage." },
+    { "id": "w03", "word": "함성", "reading": "ham-seong", "meaning": "Roar / cheer (of a crowd)", "example": "공연장이 함성으로 가득 찼다.", "example_reading": "gong-yeon-jang-i ham-seong-eu-ro ga-deuk chat-da", "example_en": "The venue was filled with roaring cheers." },
+    { "id": "w04", "word": "벅차다", "reading": "beok-cha-da", "meaning": "Overwhelmed / deeply moved", "example": "감동이 벅차올랐다.", "example_reading": "gam-dong-i beok-cha-ol-lat-da", "example_en": "A wave of emotion overwhelmed him." },
+    { "id": "w05", "word": "빛나다", "reading": "bit-na-da", "meaning": "To shine", "example": "조명 아래에서 그녀가 빛났다.", "example_reading": "jo-myeong a-rae-e-seo geu-nyeo-ga bit-nat-da", "example_en": "She shone under the lights." }
   ],
   "sentences": [
-    { "id": "s01", "ko": "오목대까지 계단이 많아요.", "reading": "o-mok-dae-kka-ji gye-dan-i man-a-yo", "en": "There are many stairs up to Omokdae." },
-    { "id": "s02", "ko": "노을이 질 때 바람이 불어요.", "reading": "no-eul-i jil ttae ba-ram-i bul-eo-yo", "en": "The wind blows as the sunset falls." },
-    { "id": "s03", "ko": "손을 잡고 계단을 올라가요.", "reading": "son-eul jap-go gye-dan-eul ol-la-ga-yo", "en": "We climb the stairs holding hands." },
-    { "id": "s04", "ko": "바람이 불어서 조금 추워요.", "reading": "ba-ram-i bul-eo-seo jo-geum chu-wo-yo", "en": "It's a bit cold because the wind is blowing." },
-    { "id": "s05", "ko": "노을이 참 따뜻해 보여요.", "reading": "no-eul-i cham tta-tteut-hae bo-yeo-yo", "en": "The sunset glow looks so warm." }
+    { "id": "s01", "ko": "처음으로 콘서트라는 곳에 가봤다.", "reading": "cheo-eum-eu-ro kon-seo-teu-ra-neun gos-e ga-bwat-da", "en": "I went to something called a concert for the first time." },
+    { "id": "s02", "ko": "무대 위의 그녀는 완전히 달라 보였다.", "reading": "mu-dae wi-ui geu-nyeo-neun wan-jeon-hi dal-la bo-yeot-da", "en": "She looked completely different up on the stage." },
+    { "id": "s03", "ko": "이름이 불리자 함성이 터졌다.", "reading": "i-reum-i bul-li-ja ham-seong-i teo-jyeot-da", "en": "The crowd erupted in cheers the moment her name was called." },
+    { "id": "s04", "ko": "설명할 수 없이 마음이 벅찼다.", "reading": "seol-myeong-hal su eobs-i ma-eum-i beok-chat-da", "en": "His heart felt overwhelmed in a way he couldn't explain." },
+    { "id": "s05", "ko": "조명 아래 그녀가 환하게 빛났다.", "reading": "jo-myeong a-rae geu-nyeo-ga hwan-ha-ge bit-nat-da", "en": "She shone brilliantly under the lights." }
   ]
 }

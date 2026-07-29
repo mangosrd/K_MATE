@@ -1,62 +1,62 @@
 {
   "id": "sp-rom-haneul-04",
   "character_id": "haneul",
-  "title": "딴 사람이랑 뭐 했어요",
-  "emoji": "😤",
+  "title": "검색창을 닫지 못하고",
+  "emoji": "😵‍💫",
   "story": [
     {
-      "text": "…여태 어디 있었어요. 연락도 안 되고.",
-      "reading": "…yeo-tae eo-di iss-eoss-eo-yo. yeol-lak-do an doe-go.",
-      "en": "...Where have you been all this time. You weren't answering."
+      "text": "그날 이후, 하늘의 방은 평소와 조금 달라졌다. 침대 옆 휴대폰 화면이, 꺼질 새 없이 계속 켜져 있었다.",
+      "reading": "geu-nal i-hu, ha-neul-ui bang-eun pyeong-so-wa jo-geum dal-la-jyeoss-da. chim-dae yeop hyu-dae-pon hwa-myeon-i, kkeo-jil sae eobs-i gye-sok kyeo-jyeo iss-eoss-da.",
+      "en": "After that day, Haneul's room looked a little different than usual. The phone screen by his bed barely had a moment to go dark."
     },
     {
-      "text": "남부 '시장'까지 혼자 간 거예요? 즉흥적으로. 위험하잖아요.",
-      "reading": "nam-bu 'si-jang'kka-ji hon-ja gan geo-ye-yo? jeuk-heung-jeog-eu-ro. wi-heom-ha-jan-a-yo.",
-      "en": "You went all the way to Nambu 'Market' alone? On a whim, no less. That's dangerous.",
-      "highlight_word_id": "w01"
-    },
-    {
-      "text": "'친구'? …누구요. 말투가 왜 그렇게 편해요, 그 사람한테.",
-      "reading": "'chin-gu'? …nu-gu-yo. mal-tu-ga wae geu-reoh-ge pyeon-hae-yo, geu sa-ram-han-te.",
-      "en": "A 'friend'? ...Who? Why do you sound so comfortable talking about that person.",
+      "text": "이름을 몰라서 검색조차 쉽지 않았다. 그런데도 그는 늦은 밤까지 기사와 영상들을 하나씩 눌러보고 있었다.",
+      "reading": "i-reum-eul mol-la-seo geom-saeg-jo-cha swip-ji anh-ass-da. geu-reon-de-do geu-neun neuj-eun bam-kka-ji gi-sa-wa yeong-sang-deul-eul ha-na-ssig nul-leo-bo-go iss-eoss-da.",
+      "en": "Not even knowing her name made searching hard. And yet, deep into the night, he kept clicking through articles and videos, one after another.",
       "highlight_word_id": "w02"
     },
     {
-      "text": "'밤'늦게 낯선 사람이랑 다니지 마요. 이 동네 어두운 골목 많아요.",
-      "reading": "'bam'neuj-ge nach-seon sa-ram-i-rang da-ni-ji ma-yo. i dong-ne eo-du-un gol-mok man-a-yo.",
-      "en": "Don't wander around late at 'night' with strangers. This neighborhood has a lot of dark alleys.",
-      "highlight_word_id": "w03"
-    },
-    {
-      "text": "…아까 그 '사람'이랑 뭐 했어요. 그냥 궁금해서 그래요.",
-      "reading": "…a-kka geu 'sa-ram'i-rang mwo haess-eo-yo. geu-nyang gung-geum-hae-seo geu-rae-yo.",
-      "en": "...What were you doing with that 'person' earlier. I'm just curious, that's all.",
-      "highlight_word_id": "w04"
-    },
-    {
-      "text": "됐어요. 왜 그런 '표정'으로 봐요. 신경 안 써요, 진짜.",
-      "reading": "dwaess-eo-yo. wae geu-reoh-ge 'pyo-jeong'eu-ro bwa-yo. sin-gyeong an sseo-yo, jin-jja.",
-      "en": "Never mind. Why are you looking at me with that 'expression'. I really don't care.",
+      "text": "동기 조종사가 옆에서 놀렸다. '야, 너 그거 여전히 보고 있냐?' 하늘은 화면을 서둘러 끄며 대답했다. '…아니야, 그냥 뉴스 보는 거야.'",
+      "reading": "dong-gi jo-jong-sa-ga yeop-e-seo nol-lyeoss-da. 'ya, neo geu-geo yeo-jeon-hi bo-go it-nya?' ha-neul-eun hwa-myeon-eul seo-dul-leo kkeu-myeo dae-dab-haess-da. '…a-ni-ya, geu-nyang nyu-seu bo-neun geo-ya.'",
+      "en": "A fellow pilot teased him from the seat next to him. 'Hey, are you still watching that?' Haneul quickly shut the screen off. '...No, I'm just reading the news.'",
       "highlight_word_id": "w05"
     },
     {
-      "text": "…아니다, 신경 쓰여요. 자, 오늘은 여기까지만 해요.",
-      "reading": "…a-ni-da, sin-gyeong sseu-yeo-yo. ja, o-neul-eun yeo-gi-kka-ji-man hae-yo.",
-      "en": "...No, actually, I do care. Alright, let's stop here for today."
+      "text": "마음이 복잡했다. 그저 얼굴 하나에 이끌렸던 감정이, 이제는 다른 무게로 다가왔다. 손님이면서, 동시에 수만 명이 좋아하는 사람이라는 사실이.",
+      "reading": "ma-eum-i bok-jap-haess-da. geu-jeo eol-gul ha-na-e i-kkeul-lyeoss-deon gam-jeong-i, i-je-neun da-reun mu-ge-ro da-ga-wass-da. son-nim-i-myeon-seo, dong-si-e su-man myeong-i jo-a-ha-neun sa-ram-i-ra-neun sa-sil-i.",
+      "en": "His mind was complicated. A feeling that had started with just one face now carried a different weight altogether — the fact that she was a passenger, and at the same time, someone tens of thousands of people adored.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "다음 비행에서 마주쳤을 때, 그는 평소보다 말이 없었다. '…왜 그래요?' 묻는 말에 그는 겨우 대답했다. '그냥, 좀 신경 쓰여서요.'",
+      "reading": "da-eum bi-haeng-e-seo ma-ju-chyeoss-eul ttae, geu-neun pyeong-so-bo-da mal-i eobs-eoss-da. '…wae geu-rae-yo?' mut-neun mal-e geu-neun gyeo-u dae-dab-haess-da. 'geu-nyang, jom sin-gyeong sseu-yeo-seo-yo.'",
+      "en": "When their paths crossed on the next flight, he was quieter than usual. '...What's wrong?' she asked. He finally answered. 'It's nothing. I'm just — a little bothered, that's all.'",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "늘 흔들림 없던 그의 태도가 처음으로 살짝 무너졌다. 완벽하게 정돈되어 있던 평정심에, 아주 작은 금 하나가 생긴 것 같았다.",
+      "reading": "neul heun-deul-lim eobs-deon geu-ui tae-do-ga cheo-eum-eu-ro sal-jjak mu-neo-jyeoss-da. wan-byeog-ha-ge jeong-don-doe-eo iss-deon pyeong-jeong-sim-e, a-ju jag-eun geum ha-na-ga saeng-gin geot gat-ass-da.",
+      "en": "For the first time, his usually unshaken composure cracked, just a little. It felt as though a tiny fracture had appeared in the perfectly ordered calm he always kept.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "유명한 사람이든 아니든, 상관없다고 생각하려 했다. 그런데도 자꾸 검색창을 열게 되는 자신이, 하늘은 낯설었다.",
+      "reading": "yu-myeong-han sa-ram-i-deun a-ni-deun, sang-gwan-eobs-da-go saeng-gag-ha-ryeo haess-da. geu-reon-de-do ja-kku geom-saeg-chang-eul yeol-ge doe-neun ja-sin-i, ha-neul-eun nach-seol-eoss-da.",
+      "en": "He tried telling himself it didn't matter, famous or not. And yet, catching himself opening that search bar again and again — even to Haneul, that felt like someone else entirely."
     }
   ],
   "words": [
-    { "id": "w01", "word": "시장", "reading": "si-jang", "meaning": "Market", "example": "시장에서 맛있는 음식을 팔아요.", "example_reading": "si-jang-e-seo mas-iss-neun eum-sig-eul pal-a-yo", "example_en": "They sell delicious food at the market." },
-    { "id": "w02", "word": "친구", "reading": "chin-gu", "meaning": "Friend", "example": "저 사람은 제 친구예요.", "example_reading": "jeo sa-ram-eun je chin-gu-ye-yo", "example_en": "That person is my friend." },
-    { "id": "w03", "word": "밤", "reading": "bam", "meaning": "Night", "example": "밤에는 시장이 더 활기차요.", "example_reading": "bam-e-neun si-jang-i deo hwal-gi-cha-yo", "example_en": "The market is livelier at night." },
-    { "id": "w04", "word": "사람", "reading": "sa-ram", "meaning": "Person", "example": "저 사람은 누구예요?", "example_reading": "jeo sa-ram-eun nu-gu-ye-yo", "example_en": "Who is that person?" },
-    { "id": "w05", "word": "표정", "reading": "pyo-jeong", "meaning": "Expression (face)", "example": "표정이 왜 그래요?", "example_reading": "pyo-jeong-i wae geu-rae-yo", "example_en": "Why do you have that expression?" }
+    { "id": "w01", "word": "복잡하다", "reading": "bok-jap-ha-da", "meaning": "Complicated", "example": "마음이 복잡해서 잠이 안 왔다.", "example_reading": "ma-eum-i bok-jap-hae-seo jam-i an wat-da", "example_en": "My mind was so complicated I couldn't sleep." },
+    { "id": "w02", "word": "검색", "reading": "geom-saek", "meaning": "Search", "example": "밤새 그녀에 대해 검색했다.", "example_reading": "bam-sae geu-nyeo-e dae-hae geom-saeg-haet-da", "example_en": "He searched about her all night." },
+    { "id": "w03", "word": "신경 쓰이다", "reading": "sin-gyeong sseu-i-da", "meaning": "To be on one's mind / bothered by", "example": "그 말이 계속 신경 쓰였다.", "example_reading": "geu mal-i gye-sok sin-gyeong sseu-yeoss-da", "example_en": "That comment kept nagging at him." },
+    { "id": "w04", "word": "무너지다", "reading": "mu-neo-ji-da", "meaning": "To collapse / crack (composure)", "example": "그의 평정심이 처음으로 무너졌다.", "example_reading": "geu-ui pyeong-jeong-sim-i cheo-eum-eu-ro mu-neo-jyeot-da", "example_en": "His composure cracked for the first time." },
+    { "id": "w05", "word": "여전히", "reading": "yeo-jeon-hi", "meaning": "Still / as ever", "example": "그는 여전히 화면을 보고 있었다.", "example_reading": "geu-neun yeo-jeon-hi hwa-myeon-eul bo-go iss-eot-da", "example_en": "He was still looking at the screen." }
   ],
   "sentences": [
-    { "id": "s01", "ko": "시장에 사람이 정말 많아요.", "reading": "si-jang-e sa-ram-i jeong-mal man-a-yo", "en": "There are so many people at the market." },
-    { "id": "s02", "ko": "친구랑 같이 밤 시장에 갔어요.", "reading": "chin-gu-rang gat-i bam si-jang-e gass-eo-yo", "en": "I went to the night market with a friend." },
-    { "id": "s03", "ko": "밤이 되니까 불빛이 예뻐요.", "reading": "bam-i doe-ni-kka bul-bich-i ye-ppeo-yo", "en": "Now that it's night, the lights are pretty." },
-    { "id": "s04", "ko": "그 사람 표정이 좀 이상해요.", "reading": "geu sa-ram pyo-jeong-i jom i-sang-hae-yo", "en": "That person's expression looks a bit strange." },
-    { "id": "s05", "ko": "표정 관리 좀 해요.", "reading": "pyo-jeong gwal-li jom hae-yo", "en": "Try to manage your expression a little." }
+    { "id": "s01", "ko": "마음이 복잡해서 말이 없어졌다.", "reading": "ma-eum-i bok-jap-hae-seo mal-i eobs-eo-jyeot-da", "en": "His mind was so complicated he fell silent." },
+    { "id": "s02", "ko": "밤새 이름도 모르는 사람을 검색했다.", "reading": "bam-sae i-reum-do mo-reu-neun sa-ram-eul geom-saeg-haet-da", "en": "He spent all night searching for someone whose name he didn't even know." },
+    { "id": "s03", "ko": "그 말이 자꾸 신경 쓰였다.", "reading": "geu mal-i ja-kku sin-gyeong sseu-yeoss-da", "en": "That remark kept nagging at him." },
+    { "id": "s04", "ko": "평정심이 처음으로 무너졌다.", "reading": "pyeong-jeong-sim-i cheo-eum-eu-ro mu-neo-jyeot-da", "en": "His composure cracked for the first time." },
+    { "id": "s05", "ko": "그는 여전히 화면에서 눈을 못 뗐다.", "reading": "geu-neun yeo-jeon-hi hwa-myeon-e-seo nun-eul mot ttaet-da", "en": "He still couldn't take his eyes off the screen." }
   ]
 }

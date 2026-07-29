@@ -1,62 +1,62 @@
 {
   "id": "sp-rom-haneul-03",
   "character_id": "haneul",
-  "title": "눈에 밟혀서 그래요",
-  "emoji": "🫣",
+  "title": "당신이... 그 사람이었어요?",
+  "emoji": "😲",
   "story": [
     {
-      "text": "…비 온다면서요. 우산도 없이 어디 가요.",
-      "reading": "…bi on-da-myeon-seo-yo. u-san-do eobs-i eo-di ga-yo.",
-      "en": "...I heard it's going to rain. Where are you going without an umbrella."
+      "text": "그날은 유난히 게이트 앞이 시끄러웠다. 사람들이 한쪽으로 몰려들며 휴대폰을 들어 올리고 있었다.",
+      "reading": "geu-nal-eun yu-nan-hi ge-i-teu ap-i si-kkeu-reo-woss-da. sa-ram-deul-i han-jjog-eu-ro mol-lyeo-deul-myeo hyu-dae-pon-eul deul-eo ol-li-go iss-eoss-da.",
+      "en": "That day, the area in front of the gate was unusually loud. People were crowding toward one side, phones raised."
     },
     {
-      "text": "'경기전' 안 가봤어요? 조선 태조 어진 모셔둔 곳인데. 마침 가는 길이니까 따라오든가.",
-      "reading": "'gyeong-gi-jeon' an ga-bwass-eo-yo? jo-seon tae-jo eo-jin mo-syeo-dun gos-in-de. ma-chim ga-neun gil-i-ni-kka tta-ra-o-deun-ga.",
-      "en": "You haven't been to 'Gyeonggijeon'? It's where King Taejo's portrait is enshrined. I'm headed there anyway, so come along if you want.",
-      "highlight_word_id": "w01"
-    },
-    {
-      "text": "저는 '예보' 미리 확인하는 습관 있어요. 즉흥적으로 나왔다가 낭패 보기 싫어서.",
-      "reading": "jeo-neun 'ye-bo' mi-ri hwag-in-ha-neun seup-gwan iss-eo-yo. jeuk-heung-jeog-eu-ro na-wass-da-ga nang-pae bo-gi silh-eo-seo.",
-      "en": "I have a habit of checking the 'forecast' ahead of time. I hate stepping out on a whim and getting caught off guard.",
-      "highlight_word_id": "w02"
-    },
-    {
-      "text": "'비' 온다고 했잖아요. 그래서 미리 챙겨온 거예요, 이거.",
-      "reading": "'bi' on-da-go haess-jan-a-yo. geu-rae-seo mi-ri chaeng-gyeo-on geo-ye-yo, i-geo.",
-      "en": "I told you it would 'rain'. That's why I brought this ahead of time.",
-      "highlight_word_id": "w03"
-    },
-    {
-      "text": "…이거 써요. 저는 하나 더 있으니까. '우산' 뺏는 거 아니에요.",
-      "reading": "…i-geo sseo-yo. jeo-neun ha-na deo iss-eu-ni-kka. 'u-san' ppaes-neun geo a-ni-e-yo.",
-      "en": "...Use this. I have another one. I'm not taking your 'umbrella' away.",
-      "highlight_word_id": "w04"
-    },
-    {
-      "text": "이런 '습관', 웃기죠. 근데 덕분에 손님 안 젖었잖아요.",
-      "reading": "i-reon 'seup-gwan', us-gi-jyo. geun-de deok-bun-e son-nim an jeoj-eoss-jan-a-yo.",
-      "en": "This 'habit' is kind of funny, I know. But thanks to it, you didn't get soaked.",
+      "text": "'저기 좀 봐요, 실물이다!' 누군가 외치는 소리에 하늘은 별생각 없이 고개를 돌렸다가, 그대로 놀랐다. 그 한가운데 서 있는 얼굴이, 낯익은 그 얼굴이었다.",
+      "reading": "'jeo-gi jom bwa-yo, sil-mul-i-da!' nu-gun-ga oe-chi-neun so-ri-e ha-neul-eun byeol-saeng-gag eobs-i go-gae-reul dol-lyeoss-da-ga, geu-dae-ro nol-lass-da. geu han-ga-un-de seo iss-neun eol-gul-i, nach-ig-eun geu eol-gul-i-eoss-da.",
+      "en": "'Look over there, it's really her!' Someone shouted, and Haneul turned his head without much thought — only to be genuinely surprised. Standing right in the middle of it all was that face. The familiar one.",
       "highlight_word_id": "w05"
     },
     {
-      "text": "…누가 걱정하래요. 그냥, 눈에 밟혀서 그래요.",
-      "reading": "…nu-ga geok-jeong-ha-rae-yo. geu-nyang, nun-e balp-hyeo-seo geu-rae-yo.",
-      "en": "...Who said I was worried. It's just... you were on my mind, that's all."
+      "text": "순식간에 몰려든 사람들은 다들 손에 앨범이나 포토카드를 쥐고 있었다. 하늘은 그제서야 깨달았다. 이 사람들이 전부, 그녀의 팬이라는 걸.",
+      "reading": "sun-sik-gan-e mol-lyeo-deun sa-ram-deul-eun da-deul son-e ael-beom-i-na po-to-ka-deu-reul jwi-go iss-eoss-da. ha-neul-eun geu-je-seo-ya kkae-dal-ass-da. i sa-ram-deul-i jeon-bu, geu-nyeo-ui paen-i-ra-neun geol.",
+      "en": "The people who'd gathered in an instant were all clutching albums or photocards. Only then did Haneul realize — every single one of them was her fan.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "직원 하나가 다가와 다급하게 말했다. '손님, 공항에서 이렇게 알아보는 사람이 많으면 저희 쪽에서 안전 요원 붙여드릴게요.' 하늘은 그 말을 듣고서야 상황을 이해했다.",
+      "reading": "jig-won ha-na-ga da-ga-wa da-geub-ha-ge mal-haess-da. 'son-nim, gong-hang-e-seo i-reoh-ge al-a-bo-neun sa-ram-i man-eu-myeon jeo-hui jjog-e-seo an-jeon yo-won but-yeo-deu-ril-ge-yo.' ha-neul-eun geu mal-eul deut-go-seo-ya sang-hwang-eul i-hae-haess-da.",
+      "en": "A staff member hurried over. 'Ma'am, when this many people recognize you at the airport, we usually assign security.' Only then did Haneul fully understand the situation.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "하늘은 애써 담담한 척 물었다. '…이렇게 유명한 사람인 줄 몰랐어요.' 목소리는 평소와 같았지만, 손끝이 미세하게 떨리고 있었다.",
+      "reading": "ha-neul-eun ae-sseo dam-dam-han cheok mul-eoss-da. '…i-reoh-ge yu-myeong-han sa-ram-in jul mol-lass-eo-yo.' mok-so-ri-neun pyeong-so-wa gat-ass-ji-man, son-kkeut-i mi-se-ha-ge tteol-li-go iss-eoss-da.",
+      "en": "Haneul asked, trying hard to sound unbothered. '...I didn't know you were this famous.' His voice was steady, as usual — but his fingertips were trembling, just slightly.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "겨우 소란이 가라앉고 게이트 안으로 들어온 뒤에도, 그는 한참 동안 아무 말이 없었다. 머릿속이 뒤죽박죽이었다.",
+      "reading": "gyeo-u so-ran-i ga-ra-anj-go ge-i-teu an-eu-ro deul-eo-on dwi-e-do, geu-neun han-cham dong-an a-mu mal-i eobs-eoss-da. meo-rit-sog-i dwi-juk-bak-jug-i-eoss-da.",
+      "en": "Even after the commotion finally died down and they made it inside the gate, he stayed silent for a long while. His head was a mess.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "'…괜찮아요.' 손님이 웃으며 건넨 말에, 하늘은 뒤늦게 정신을 차리고 대답했다. '그게, 안 괜찮은 건 저인 것 같은데요.' 처음으로, 그는 뭘 어떻게 해야 할지 몰랐다.",
+      "reading": "'…gwaen-chan-a-yo.' son-nim-i us-eu-myeo geon-nen mal-e, ha-neul-eun dwi-neuk-ge jeong-sin-eul cha-ri-go dae-dab-haess-da. 'geu-ge, an gwaen-chan-eun geon jeo-in geot gat-eun-de-yo.' cheo-eum-eu-ro, geu-neun mwol eo-tteoh-ge hae-ya hal-ji mol-lass-da.",
+      "en": "'...It's okay.' When she said that with a smile, Haneul finally snapped out of it and answered. 'I think I'm the one who's not okay, here.' For the first time, he had no idea what to do."
     }
   ],
   "words": [
-    { "id": "w01", "word": "경기전", "reading": "gyeong-gi-jeon", "meaning": "Gyeonggijeon Shrine", "example": "경기전은 전주에 있는 유명한 곳이에요.", "example_reading": "gyeong-gi-jeon-eun jeon-ju-e it-neun yu-myeong-han gos-i-e-yo", "example_en": "Gyeonggijeon is a famous place in Jeonju." },
-    { "id": "w02", "word": "예보", "reading": "ye-bo", "meaning": "Forecast", "example": "일기예보를 보고 우산을 챙겼어요.", "example_reading": "il-gi-ye-bo-reul bo-go u-san-eul chaeng-gyeoss-eo-yo", "example_en": "I checked the weather forecast and brought an umbrella." },
-    { "id": "w03", "word": "비", "reading": "bi", "meaning": "Rain", "example": "오늘 비가 많이 와요.", "example_reading": "o-neul bi-ga man-i wa-yo", "example_en": "It's raining a lot today." },
-    { "id": "w04", "word": "우산", "reading": "u-san", "meaning": "Umbrella", "example": "우산을 가져왔어요.", "example_reading": "u-san-eul ga-jyeo-wass-eo-yo", "example_en": "I brought an umbrella." },
-    { "id": "w05", "word": "습관", "reading": "seup-gwan", "meaning": "Habit", "example": "미리 준비하는 게 제 습관이에요.", "example_reading": "mi-ri jun-bi-ha-neun ge je seup-gwan-i-e-yo", "example_en": "Preparing in advance is my habit." }
+    { "id": "w01", "word": "팬", "reading": "paen", "meaning": "Fan", "example": "공항에 팬들이 많이 모였다.", "example_reading": "gong-hang-e paen-deul-i man-i mo-yeot-da", "example_en": "Many fans gathered at the airport." },
+    { "id": "w02", "word": "알아보다", "reading": "al-a-bo-da", "meaning": "To recognize", "example": "사람들이 한눈에 그녀를 알아봤다.", "example_reading": "sa-ram-deul-i han-nun-e geu-nyeo-reul al-a-bwat-da", "example_en": "People recognized her at a glance." },
+    { "id": "w03", "word": "유명하다", "reading": "yu-myeong-ha-da", "meaning": "Famous", "example": "생각보다 훨씬 유명한 사람이었다.", "example_reading": "saeng-gak-bo-da hwol-ssin yu-myeong-han sa-ram-i-eot-da", "example_en": "She was far more famous than he thought." },
+    { "id": "w04", "word": "소란", "reading": "so-ran", "meaning": "Commotion / disturbance", "example": "잠깐의 소란 끝에 다시 조용해졌다.", "example_reading": "jam-kkan-ui so-ran kkeut-e da-si jo-yong-hae-jyeot-da", "example_en": "After a brief commotion, it grew quiet again." },
+    { "id": "w05", "word": "놀라다", "reading": "nol-la-da", "meaning": "To be surprised", "example": "그 소식에 그는 크게 놀랐다.", "example_reading": "geu so-sig-e geu-neun keu-ge nol-lat-da", "example_en": "He was greatly surprised by the news." }
   ],
   "sentences": [
-    { "id": "s01", "ko": "경기전에 가기 전에 예보를 확인해요.", "reading": "gyeong-gi-jeon-e ga-gi jeon-e ye-bo-reul hwag-in-hae-yo", "en": "I check the forecast before going to Gyeonggijeon." },
-    { "id": "s02", "ko": "예보를 보고 미리 준비해요.", "reading": "ye-bo-reul bo-go mi-ri jun-bi-hae-yo", "en": "I check the forecast and prepare in advance." },
-    { "id": "s03", "ko": "비가 오면 우산을 써요.", "reading": "bi-ga o-myeon u-san-eul sseo-yo", "en": "When it rains, I use an umbrella." },
-    { "id": "s04", "ko": "우산 없이 비를 맞았어요.", "reading": "u-san eobs-i bi-reul maj-ass-eo-yo", "en": "I got caught in the rain without an umbrella." },
-    { "id": "s05", "ko": "이런 습관 덕분에 안 젖었어요.", "reading": "i-reon seup-gwan deok-bun-e an jeoj-eoss-eo-yo", "en": "Thanks to this habit, I didn't get wet." }
+    { "id": "s01", "ko": "공항에 팬들이 한꺼번에 몰려들었다.", "reading": "gong-hang-e paen-deul-i han-kkeo-beon-e mol-lyeo-deul-eot-da", "en": "Fans all crowded in at once at the airport." },
+    { "id": "s02", "ko": "사람들이 그녀를 한눈에 알아봤다.", "reading": "sa-ram-deul-i geu-nyeo-reul han-nun-e al-a-bwat-da", "en": "People recognized her at a glance." },
+    { "id": "s03", "ko": "이렇게 유명한 사람인 줄 몰랐어요.", "reading": "i-reoh-ge yu-myeong-han sa-ram-in jul mol-lass-eo-yo", "en": "I didn't know she was this famous." },
+    { "id": "s04", "ko": "소란이 가라앉을 때까지 기다렸다.", "reading": "so-ran-i ga-ra-anj-eul ttae-kka-ji gi-da-ryeot-da", "en": "I waited until the commotion died down." },
+    { "id": "s05", "ko": "그 사실에 크게 놀랐다.", "reading": "geu sa-sil-e keu-ge nol-lat-da", "en": "I was greatly surprised by that fact." }
   ]
 }

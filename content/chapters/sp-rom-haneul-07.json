@@ -1,62 +1,62 @@
 {
   "id": "sp-rom-haneul-07",
   "character_id": "haneul",
-  "title": "나한텐 언제 궁금해할 건데요",
-  "emoji": "❓",
+  "title": "그 함성 속에 나는 없어서",
+  "emoji": "😤",
   "story": [
     {
-      "text": "말없이 왜 자꾸 여기저기 궁금해해요. 오늘은 또 뭐가 궁금한 건데요.",
-      "reading": "mal-eobs-i wae ja-kku yeo-gi-jeo-gi gung-geum-hae-hae-yo. o-neul-eun tto mwo-ga gung-geum-han geon-de-yo.",
-      "en": "Why are you always curious about everywhere without saying a word. What are you curious about today."
+      "text": "콘서트에 다녀온 뒤로, 하늘의 휴대폰에는 그녀의 팬클럽 공식 앱까지 몰래 깔려 있었다. 본인은 그 사실을 죽어도 인정하지 않았지만.",
+      "reading": "kon-seo-teu-e da-nyeo-on dwi-ro, ha-neul-ui hyu-dae-pon-e-neun geu-nyeo-ui paen-keul-leop gong-sig aeb-kka-ji mol-lae kkal-lyeo iss-eoss-da. bon-in-eun geu sa-sil-eul jug-eo-do in-jeong-ha-ji anh-ass-ji-man.",
+      "en": "After the concert, Haneul had secretly installed her official fan club app on his phone. Not that he would ever, under any circumstances, admit to it."
     },
     {
-      "text": "이 '벽화' 마을, 골목마다 그림이 달라요. 천천히 보고 가요.",
-      "reading": "i 'byeok-hwa' ma-eul, gol-mok-ma-da geu-rim-i dal-la-yo. cheon-cheon-hi bo-go ga-yo.",
-      "en": "In this 'mural' village, every alley has a different painting. Take your time looking around.",
+      "text": "매일같이 올라오는 팬클럽 게시글에는, 그녀를 향한 애정 어린 댓글이 수천 개씩 달려 있었다. 하늘은 그걸 읽다가 묘하게 기분이 가라앉는 걸 느꼈다.",
+      "reading": "mae-il-gat-i ol-la-o-neun paen-keul-leop ge-si-geul-e-neun, geu-nyeo-reul hyang-han ae-jeong eo-rin daet-geul-i su-cheon gae-ssig dal-lyeo iss-eoss-da. ha-neul-eun geu-geol ilg-da-ga myo-ha-ge gi-bun-i ga-ra-anj-neun geol neu-kkyeoss-da.",
+      "en": "Every day, the fan club posts filled up with thousands of comments overflowing with affection for her. Reading through them, Haneul felt his mood sink in some strange, unfamiliar way.",
       "highlight_word_id": "w01"
     },
     {
-      "text": "이 '골목' 안쪽으로 가면 사람도 적고 조용해요.",
-      "reading": "i 'gol-mok' an-jjog-eu-ro ga-myeon sa-ram-do jeok-go jo-yong-hae-yo.",
-      "en": "If you go further into this 'alley', there are fewer people and it's quiet.",
-      "highlight_word_id": "w02"
-    },
-    {
-      "text": "…아까부터 '질문'이 많네요. 그거 그만 좀 물어봐요, 진짜.",
-      "reading": "…a-kka-bu-teo 'jil-mun'i man-ne-yo. geu-geo geu-man jom mul-eo-bwa-yo, jin-jja.",
-      "en": "...You've had a lot of 'questions' since earlier. Seriously, stop asking that one.",
-      "highlight_word_id": "w03"
-    },
-    {
-      "text": "그 '대답', 지금 꼭 들어야 돼요? …스케줄 겹치는 거, 그냥 우연이에요. 자꾸 그런 눈으로 보지 말아요.",
-      "reading": "geu 'dae-dap', ji-geum kkok deul-eo-ya dwae-yo? …seu-ke-jul gyeop-chi-neun geo, geu-nyang u-yeon-i-e-yo. ja-kku geu-reon nun-eu-ro bo-ji mal-a-yo.",
-      "en": "Do you really need that 'answer' right now? ...Our schedules overlapping is just a coincidence. Stop looking at me like that.",
-      "highlight_word_id": "w04"
-    },
-    {
-      "text": "우리가 무슨 '사이'냐고요? …그건 제가 묻고 싶은 말이에요.",
-      "reading": "u-ri-ga mu-seun 'sa-i'nya-go-yo? …geu-geon je-ga mut-go sip-eun mal-i-e-yo.",
-      "en": "What kind of 'relationship' are we, you ask? ...That's exactly what I want to ask you.",
+      "text": "손님이 물었다. '왜 그렇게 표정이 안 좋아요?' 하늘은 애써 아무렇지 않은 척했다. '…아니에요. 그냥, 좀 못마땅해서요.' '뭐가요?' '…됐어요, 신경 쓰지 마요.'",
+      "reading": "son-nim-i mul-eoss-da. 'wae geu-reoh-ge pyo-jeong-i an jo-a-yo?' ha-neul-eun ae-sseo a-mu-reoh-ji anh-eun cheog-haess-da. '…a-ni-e-yo. geu-nyang, jom mot-ma-ttang-hae-seo-yo.' 'mwo-ga-yo?' '…dwaess-eo-yo, sin-gyeong sseu-ji ma-yo.'",
+      "en": "She asked, 'Why do you look so unhappy?' Haneul tried hard to seem unbothered. '...It's nothing. I'm just — a little displeased, that's all.' 'About what?' '...Forget it, don't worry about it.'",
       "highlight_word_id": "w05"
     },
     {
-      "text": "그래서, 나한텐 언제 궁금해할 건데요. …답 안 해도 돼요, 표정 보니까 알겠어요.",
-      "reading": "geu-rae-seo, na-han-ten eon-je gung-geum-hae-hal geon-de-yo. …dap an hae-do dwae-yo, pyo-jeong bo-ni-kka al-get-seo-yo.",
-      "en": "So, when are you going to be curious about me. ...You don't have to answer, I can tell from your face."
+      "text": "그가 정작 못마땅한 건, 수만 명이 그녀에게 보내는 응원이었다. 다들 진심으로 그녀를 좋아한다는 게, 이상하게 그의 속을 긁었다.",
+      "reading": "geu-ga jeong-jak mot-ma-ttang-han geon, su-man myeong-i geu-nyeo-e-ge bo-nae-neun eung-won-i-eoss-da. da-deul jin-sim-eu-ro geu-nyeo-reul jo-a-han-da-neun ge, i-sang-ha-ge geu-ui sog-eul geulg-eoss-da.",
+      "en": "What actually bothered him was the cheering — the sheer volume of support pouring in from tens of thousands of people. The fact that all of them genuinely adored her scraped at something inside him, in a way he couldn't quite name.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "손님이 장난스레 웃으며 말했다. '설마 그거, 질투예요?' 하늘의 얼굴이 순식간에 굳었다. '…말도 안 되는 소리 하지 마요. 제가 왜요.'",
+      "reading": "son-nim-i jang-nan-seu-re us-eu-myeo mal-haess-da. 'seol-ma geu-geo, jil-tu-ye-yo?' ha-neul-ui eol-gul-i sun-sik-gan-e gud-eoss-da. '…mal-do an doe-neun so-ri ha-ji ma-yo. je-ga wae-yo.'",
+      "en": "She teased, grinning. 'Don't tell me that's jealousy.' Haneul's expression froze instantly. '...Don't say something so ridiculous. Why would I be.'",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "부정하면서도, 그는 속으로 인정할 수밖에 없었다. 이렇게까지 누군가의 인기가 거슬렸던 적은, 태어나서 처음이었다.",
+      "reading": "bu-jeong-ha-myeon-seo-do, geu-neun sog-eu-ro in-jeong-hal su-bakk-e eobs-eoss-da. i-reoh-ge-kka-ji nu-gun-ga-ui in-gi-ga geo-seul-lyeoss-deon jeog-eun, tae-eo-na-seo cheo-eum-i-eoss-da.",
+      "en": "Even as he denied it, he had no choice but to admit it to himself — this was the first time in his life that someone's popularity had ever bothered him this much.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "한참 침묵하던 하늘이 결국 작게 인정했다. '…맞아요, 질투. 됐죠? 이제 그만 물어봐요.' 그의 목소리 끝이, 평소답지 않게 조금 풀려 있었다.",
+      "reading": "han-cham chim-mug-ha-deon ha-neul-i gyeol-guk jag-ge in-jeong-haess-da. '…maj-a-yo, jil-tu. dwaet-jyo? i-je geu-man mul-eo-bwa-yo.' geu-ui mok-so-ri kkeut-i, pyeong-so-dap-ji anh-ge jo-geum pul-lyeo iss-eoss-da.",
+      "en": "After a long silence, Haneul finally admitted it, quietly. '...Fine, jealousy. Happy now? Stop asking.' His voice, at the very end, had softened in a way that wasn't like him at all."
     }
   ],
   "words": [
-    { "id": "w01", "word": "벽화", "reading": "byeok-hwa", "meaning": "Mural", "example": "이 골목에는 예쁜 벽화가 많아요.", "example_reading": "i gol-mog-e-neun ye-ppeun byeok-hwa-ga man-a-yo", "example_en": "There are many pretty murals in this alley." },
-    { "id": "w02", "word": "골목", "reading": "gol-mok", "meaning": "Alley", "example": "좁은 골목을 따라 걸어요.", "example_reading": "job-eun gol-mog-eul tta-ra geol-eo-yo", "example_en": "I walk along the narrow alley." },
-    { "id": "w03", "word": "질문", "reading": "jil-mun", "meaning": "Question", "example": "질문이 있으면 물어보세요.", "example_reading": "jil-mun-i iss-eu-myeon mul-eo-bo-se-yo", "example_en": "If you have a question, ask me." },
-    { "id": "w04", "word": "대답", "reading": "dae-dap", "meaning": "Answer", "example": "대답을 못 하고 웃기만 했어요.", "example_reading": "dae-dab-eul mos ha-go us-gi-man haess-eo-yo", "example_en": "I couldn't answer and just smiled." },
-    { "id": "w05", "word": "사이", "reading": "sa-i", "meaning": "Relationship / Between", "example": "우리는 어떤 사이일까요?", "example_reading": "u-ri-neun eo-tteon sa-i-il-kka-yo", "example_en": "What kind of relationship are we?" }
+    { "id": "w01", "word": "팬클럽", "reading": "paen-keul-leop", "meaning": "Fan club", "example": "공식 팬클럽 앱을 깔았다.", "example_reading": "gong-sig paen-keul-leop aeb-eul kkal-at-da", "example_en": "I installed the official fan club app." },
+    { "id": "w02", "word": "질투", "reading": "jil-tu", "meaning": "Jealousy", "example": "그건 그냥 질투 아니에요?", "example_reading": "geu-geon geu-nyang jil-tu a-ni-e-yo", "example_en": "Isn't that just jealousy?" },
+    { "id": "w03", "word": "응원", "reading": "eung-won", "meaning": "Cheering / support", "example": "팬들의 응원이 대단했다.", "example_reading": "paen-deul-ui eung-won-i dae-dan-haet-da", "example_en": "The fans' cheering was incredible." },
+    { "id": "w04", "word": "인기", "reading": "in-gi", "meaning": "Popularity", "example": "그녀의 인기를 실감했다.", "example_reading": "geu-nyeo-ui in-gi-reul sil-gam-haet-da", "example_en": "He truly felt how popular she was." },
+    { "id": "w05", "word": "못마땅하다", "reading": "mot-ma-ttang-ha-da", "meaning": "Displeased / dissatisfied", "example": "표정이 못마땅해 보였다.", "example_reading": "pyo-jeong-i mot-ma-ttang-hae bo-yeot-da", "example_en": "His expression looked displeased." }
   ],
   "sentences": [
-    { "id": "s01", "ko": "골목마다 벽화가 그려져 있어요.", "reading": "gol-mok-ma-da byeok-hwa-ga geu-ryeo-jyeo iss-eo-yo", "en": "There's a mural in every alley." },
-    { "id": "s02", "ko": "질문에 대답을 못 했어요.", "reading": "jil-mun-e dae-dab-eul mos haess-eo-yo", "en": "I couldn't answer the question." },
-    { "id": "s03", "ko": "이 벽화 마을은 골목이 예뻐요.", "reading": "i byeok-hwa ma-eul-eun gol-mog-i ye-ppeo-yo", "en": "This mural village has pretty alleys." },
-    { "id": "s04", "ko": "우리 사이가 궁금해요.", "reading": "u-ri sa-i-ga gung-geum-hae-yo", "en": "I'm curious about our relationship." },
-    { "id": "s05", "ko": "제 질문에 솔직하게 대답해 줘요.", "reading": "je jil-mun-e sol-jik-ha-ge dae-dap-hae jwo-yo", "en": "Please answer my question honestly." }
+    { "id": "s01", "ko": "몰래 팬클럽 앱을 깔았다.", "reading": "mol-lae paen-keul-leop aeb-eul kkal-at-da", "en": "He secretly installed the fan club app." },
+    { "id": "s02", "ko": "그건 질투가 분명했다.", "reading": "geu-geon jil-tu-ga bun-myeong-haet-da", "en": "It was clearly jealousy." },
+    { "id": "s03", "ko": "수만 명의 응원이 쏟아졌다.", "reading": "su-man myeong-ui eung-won-i sod-a-jyeot-da", "en": "Tens of thousands of cheers poured in." },
+    { "id": "s04", "ko": "그녀의 인기를 실감했다.", "reading": "geu-nyeo-ui in-gi-reul sil-gam-haet-da", "en": "He truly felt her popularity." },
+    { "id": "s05", "ko": "왠지 못마땅한 표정을 지었다.", "reading": "waen-ji mot-ma-ttang-han pyo-jeong-eul ji-eot-da", "en": "For some reason, he wore a displeased expression." }
   ]
 }

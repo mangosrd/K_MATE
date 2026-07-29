@@ -1,98 +1,98 @@
 {
   "id": "sp-rom-sunwoo-05",
   "character_id": "sunwoo",
-  "title": "니만 몰랐제",
-  "emoji": "🙈",
+  "title": "우리 친구잖아… 근데 왜",
+  "emoji": "🍃",
   "level": "intermediate_advanced",
   "story": [
     {
-      "text": "오늘은 영화의 전당 앞에서 좀 걷자. 할 말도 있고.",
-      "reading": "o-neu-reun yeong-hwa-ui jeon-dang ap-e-seo jom geot-ja. hal mal-do it-go.",
-      "en": "Let's walk in front of the Busan Cinema Center today. I've got something to say too."
-    },
-    {
-      "text": "아까 내 브리핑하는 거 봤제? 비행 전엔 '철저하게' 다 점검 안 하면 마음이 안 놓인다.",
-      "reading": "a-kka nae beu-ri-ping-ha-neun geo bwat-je? bi-haeng jeon-en cheol-jeo-ha-ge da jeom-geom an ha-myeon ma-eum-i an noh-in-da.",
-      "en": "You saw me briefing earlier, right? Before a flight, if I don't check everything thoroughly, I can't settle down.",
+      "text": "동백섬 산책로는 이른 오후에도 사람이 적어 조용하다. 소나무 사이로 부는 바람에 두 사람의 손등이 '스칠' 때마다 이상하게 신경이 쓰인다.",
+      "reading": "dong-baek-seom san-chaek-ro-neun i-reun o-hu-e-do sa-ram-i jeog-eo jo-yong-ha-da. so-na-mu sa-i-ro bu-neun ba-ram-e du sa-ram-ui son-deung-i seu-chil ttae-ma-da i-sang-ha-ge sin-gyeong-i sseu-in-da.",
+      "en": "Dongbaekseom's walking trail is quiet even in the early afternoon, few people around. Every time the wind through the pines makes our hands brush against each other, it bothers me in a strange way.",
       "highlight_word_id": "w01"
     },
     {
-      "text": "장난끼는 그때 하나도 없었제? 안전 앞에서는 농담 한마디도 안 한다, 내가.",
-      "reading": "jang-nan-kki-neun geu-ttae ha-na-do eop-seot-je? an-jeon ap-e-seo-neun nong-dam han-ma-di-do an han-da, nae-ga.",
-      "en": "There wasn't a hint of joking around then, right? I don't crack a single joke when it comes to safety."
+      "text": "\"아까 손 스칠 때마다 니 움찔하더라? 뭐고, 내가 무슨 벌레가?\" 그가 장난스레 웃지만 눈은 웃지 않는다.",
+      "reading": "a-kka son seu-chil ttae-ma-da ni um-jjil-ha-deo-ra? mwo-go, nae-ga mu-seun beol-le-ga? geu-ga jang-nan-seu-re ut-ji-man nun-eun ut-ji an-neun-da.",
+      "en": "\"You flinched every time our hands touched just now? What, am I some kind of bug?\" He laughs it off playfully, but his eyes aren't laughing."
     },
     {
-      "text": "평소랑 완전 '딴판'이라 놀랐제? 이런 얼굴 아무한테나 안 보여준다.",
-      "reading": "pyeong-so-rang wan-jeon ttan-pan-i-ra nol-lat-je? i-reon eol-gul a-mu-han-te-na an bo-yeo-jun-da.",
-      "en": "You were surprised because it's completely different from usual, huh? I don't show this face to just anyone.",
+      "text": "웃으면서 던진 말인데도 표정이 묘하게 '헷갈린다'. 장난인지 진심인지 구분이 안 될 때가 많아졌다, 요즘 들어.",
+      "reading": "us-eu-myeon-seo deon-jin mal-in-de-do pyo-jeong-i myo-ha-ge het-gal-lin-da. jang-nan-in-ji jin-sim-in-ji gu-bun-i an doel ttae-ga man-a-jyeot-da, yo-jeum deul-eo.",
+      "en": "Even though he says it with a laugh, his expression is oddly confusing. Lately it's become harder and harder to tell whether he's joking or serious.",
       "highlight_word_id": "w02"
     },
     {
-      "text": "니는 진짜 '눈치가 없다' 싶을 정도다. 이런 것도 몰랐제, 내 원래 이런 놈인 거.",
-      "reading": "ni-neun jin-jja nun-chi-ga eop-da sip-eul jeong-do-da. i-reon geot-do mol-lat-je, nae won-lae i-reon nom-in geo.",
-      "en": "You're seriously oblivious. Did you not even know this — that this is who I really am underneath.",
+      "text": "\"우리 사이에 무슨 '경계' 같은 게 있었나. 소꿉친구, 그거 하나로 딱 정해져 있었는데, 요즘은 그 선이 자꾸 흐릿해진다.\"",
+      "reading": "u-ri sa-i-e mu-seun gyeong-gye gat-eun ge iss-eon-na. so-kkup-chin-gu, geu-geo ha-na-ro ttak jeong-hae-jyeo it-eot-neun-de, yo-jeum-eun geu seon-i ja-kku heu-rit-hae-jin-da.",
+      "en": "\"Was there ever some kind of line between us? Childhood friends — that was the one clear label. But lately that line keeps getting blurry.\"",
       "highlight_word_id": "w03"
     },
     {
-      "text": "친구들도 진작에 다 '짐작하고' 있었다카더라, 내가 니 얼마나 챙기는지.",
-      "reading": "chin-gu-deul-do jin-jak-e da jim-jak-ha-go it-eot-da-ka-deo-ra, nae-ga ni eol-ma-na chaeng-gi-neun-ji.",
-      "en": "Even my friends had already guessed it long ago, apparently — how much I take care of you.",
+      "text": "그가 잠시 걸음을 멈추고 나를 빤히 바라본다. \"이거 내 '착각'인가 싶다가도… 아니다 싶고. 니는 어떻노, 니도 그런 느낌 있나?\"",
+      "reading": "geu-ga jam-si geol-eum-eul meom-chu-go na-reul ppan-hi ba-ra-bon-da. i-geo nae chak-gak-in-ga sip-da-ga-do… a-ni-da sip-go. ni-neun eo-tteon-no, ni-do geu-reon neu-kkim it-na?",
+      "en": "He stops walking for a moment and stares straight at me. \"I keep thinking maybe this is just me imagining things… then thinking, no, it's not. What about you, do you get that feeling too?\"",
       "highlight_word_id": "w04"
     },
     {
-      "text": "됐다, 마. 내 '속마음' 들킨 거 같아가 부끄럽네.",
-      "reading": "dwaet-da, ma. nae sok-ma-eum deul-kin geo gat-a-ga bu-kkeu-reom-ne.",
-      "en": "Forget it. Feels like my true feelings got caught, it's embarrassing.",
+      "text": "\"…아니다! 방금 그거 그냥 물어본 거다, 신경 쓰지 마라! 우리 친구잖아, 친구끼리 이런 거 물어볼 수도 있제, 안 그렇나?\"",
+      "reading": "…a-ni-da! bang-geum geu-geo geu-nyang mul-eo-bon geo-da, sin-gyeong sseu-ji ma-ra! u-ri chin-gu-jan-a, chin-gu-kki-ri i-reon geo mul-eo-bol su-do it-je, an geu-reon-na?",
+      "en": "\"…No, never mind! I just asked that randomly, don't read into it! We're friends, right — friends can ask stuff like that too, can't they?\""
+    },
+    {
+      "text": "\"아 몰라, 갑자기 '새삼' 이상한 기분 든다. 밥이나 무러 가자, 배고프다 내가!\"",
+      "reading": "a mol-la, gap-ja-gi sae-sam i-sang-han gi-bun deun-da. bap-i-na mu-reo ga-ja, bae-go-peu-da nae-ga!",
+      "en": "\"Ugh, I don't know, suddenly this weird feeling's hitting me all over again. Let's go eat, I'm starving!\"",
       "highlight_word_id": "w05"
     },
     {
-      "text": "단어는 다 봤제? 이번 대화 문제도 잘 읽고 풀어봐라.",
+      "text": "\"단어는 다 봤제? 이번 대화 문제도 잘 읽고 풀어봐라.\"",
       "reading": "dan-eo-neun da bwat-je? i-beon dae-hwa mun-je-do jal ilg-go pul-eo-bwa-ra.",
-      "en": "Got a look at all the words? Read this conversation question carefully and give it a try."
+      "en": "\"Got a look at all the words? Read this conversation question carefully and give it a try.\""
     }
   ],
   "words": [
-    { "id": "w01", "word": "철저하다", "reading": "cheol-jeo-ha-da", "meaning": "To be thorough, meticulous", "example": "그는 일할 때만큼은 철저하게 준비한다.", "example_reading": "geu-neun il-hal ttae-man-keum cheol-jeo-ha-ge jun-bi-han-da", "example_en": "When it comes to work, he prepares thoroughly." },
-    { "id": "w02", "word": "딴판", "reading": "ttan-pan", "meaning": "A completely different appearance/state", "example": "일할 때 그의 모습은 평소와 딴판이다.", "example_reading": "il-hal ttae geu-ui mo-seup-eun pyeong-so-wa ttan-pan-i-da", "example_en": "His demeanor at work is a completely different thing from usual." },
-    { "id": "w03", "word": "눈치가 없다", "reading": "nun-chi-ga eop-da", "meaning": "To be oblivious, clueless", "example": "그는 눈치가 없어서 분위기를 못 읽는다.", "example_reading": "geu-neun nun-chi-ga eop-seo-seo bun-wi-gi-reul mot ilg-neun-da", "example_en": "He's oblivious, so he can't read the room." },
-    { "id": "w04", "word": "짐작하다", "reading": "jim-jak-ha-da", "meaning": "To guess, presume", "example": "그의 표정만 봐도 짐작할 수 있었다.", "example_reading": "geu-ui pyo-jeong-man bwa-do jim-jak-hal su it-eot-da", "example_en": "I could guess just from his expression." },
-    { "id": "w05", "word": "속마음", "reading": "sok-ma-eum", "meaning": "Inner feelings, true heart", "example": "그는 속마음을 잘 드러내지 않는다.", "example_reading": "geu-neun sok-ma-eum-eul jal deu-reo-nae-ji an-neun-da", "example_en": "He doesn't easily reveal his true feelings." }
+    { "id": "w01", "word": "스치다", "reading": "seu-chi-da", "meaning": "To brush past, graze lightly", "example": "지나가다 어깨가 스쳤다.", "example_reading": "ji-na-ga-da eo-kkae-ga seu-chyeot-da", "example_en": "Our shoulders brushed as we passed by." },
+    { "id": "w02", "word": "헷갈리다", "reading": "het-gal-li-da", "meaning": "To be confused, mixed up", "example": "그의 마음을 도무지 알 수가 없어 헷갈렸다.", "example_reading": "geu-ui ma-eum-eul do-mu-ji al su-ga eop-seo het-gal-lyeot-da", "example_en": "I had no idea what he was really thinking, it confused me." },
+    { "id": "w03", "word": "경계", "reading": "gyeong-gye", "meaning": "Boundary, line", "example": "친구와 연인 사이의 경계가 흐려졌다.", "example_reading": "chin-gu-wa yeon-in sa-i-ui gyeong-gye-ga heu-ryeo-jyeot-da", "example_en": "The line between friends and lovers had blurred." },
+    { "id": "w04", "word": "착각", "reading": "chak-gak", "meaning": "Misconception, delusion, mistaken idea", "example": "그게 내 착각이었나 싶었다.", "example_reading": "geu-ge nae chak-gak-i-eot-na sip-eot-da", "example_en": "I wondered if that had just been my own delusion." },
+    { "id": "w05", "word": "새삼", "reading": "sae-sam", "meaning": "Anew, freshly (realizing something again)", "example": "그의 다정함에 새삼 놀랐다.", "example_reading": "geu-ui da-jeong-ham-e sae-sam nol-lat-da", "example_en": "I was struck anew by how kind he was." }
   ],
   "sentences": [
-    { "id": "s01", "ko": "그는 비행 전 점검만큼은 철저하게 한다.", "reading": "geu-neun bi-haeng jeon jeom-geom-man-keum-eun cheol-jeo-ha-ge han-da", "en": "He's thorough, at least when it comes to preflight checks." },
-    { "id": "s02", "ko": "일할 때 그의 모습은 평소와 딴판이었다.", "reading": "il-hal ttae geu-ui mo-seup-eun pyeong-so-wa ttan-pan-i-eot-da", "en": "His demeanor at work was completely different from usual." },
-    { "id": "s03", "ko": "그는 눈치가 없어서 분위기를 잘 못 읽는다.", "reading": "geu-neun nun-chi-ga eop-seo-seo bun-wi-gi-reul jal mot ilg-neun-da", "en": "He's oblivious, so he doesn't read the room well." },
-    { "id": "s04", "ko": "나는 그의 마음을 어느 정도 짐작하고 있었다.", "reading": "na-neun geu-ui ma-eum-eul eo-neu jeong-do jim-jak-ha-go it-eot-da", "en": "I had already guessed his feelings to some extent." },
-    { "id": "s05", "ko": "그는 속마음을 쉽게 드러내지 않는 사람이다.", "reading": "geu-neun sok-ma-eum-eul swip-ge deu-reo-nae-ji an-neun sa-ram-i-da", "en": "He's a person who doesn't easily reveal his true feelings." }
+    { "id": "s01", "ko": "복잡한 길을 지나가다 어깨가 스쳤다.", "reading": "bok-jap-han gil-eul ji-na-ga-da eo-kkae-ga seu-chyeot-da", "en": "Passing through the crowded street, our shoulders brushed." },
+    { "id": "s02", "ko": "그의 진심이 무엇인지 헷갈렸다.", "reading": "geu-ui jin-sim-i mu-eos-in-ji het-gal-lyeot-da", "en": "I was confused about what his true feelings were." },
+    { "id": "s03", "ko": "친구와 연인의 경계가 점점 흐려졌다.", "reading": "chin-gu-wa yeon-in-ui gyeong-gye-ga jeom-jeom heu-ryeo-jyeot-da", "en": "The boundary between friend and lover gradually blurred." },
+    { "id": "s04", "ko": "그게 내 착각인 줄 알았는데 아니었다.", "reading": "geu-ge nae chak-gak-in jul al-at-neun-de a-ni-eot-da", "en": "I thought it was just my own imagination, but it wasn't." },
+    { "id": "s05", "ko": "그의 배려에 새삼 마음이 따뜻해졌다.", "reading": "geu-ui bae-ryeo-e sae-sam ma-eum-i tta-tteut-hae-jyeot-da", "en": "His thoughtfulness warmed my heart anew." }
   ],
   "dialogues": [
     {
       "id": "d01",
       "turns": [
-        { "speaker": "승객", "text": "아까 브리핑할 때 완전 딴사람 같더라. 목소리도 낮고, 표정도 진짜 진지하고.", "reading": "a-kka beu-ri-ping-hal ttae wan-jeon ttan-sa-ram gat-deo-ra. mok-so-ri-do naj-go, pyo-jeong-do jin-jja jin-ji-ha-go.", "en": "Earlier during the briefing you seemed like a completely different person. Your voice was low, your expression was so serious." },
-        { "speaker": "선우", "text": "당연하지. 그거는 사람 목숨 걸린 일인데, 장난치면 안 되지 그때는.", "reading": "dang-yeon-ha-ji. geu-geo-neun sa-ram mok-sum geol-lin il-in-de, jang-nan-chi-myeon an doe-ji geu-ttae-neun.", "en": "Of course. That's something people's lives depend on, I can't be joking around during that." },
-        { "speaker": "승객", "text": "몰랐다, 니가 그렇게 철저한 사람인 줄. 맨날 장난만 치는 줄 알았는데.", "reading": "mol-lat-da, ni-ga geu-reo-ke cheol-jeo-han sa-ram-in jul. maen-nal jang-nan-man chi-neun jul al-at-neun-de.", "en": "I didn't know you were such a thorough person. I thought you only ever joked around." },
-        { "speaker": "선우", "text": "니만 몰랐제. 딴 사람들은 다 안다, 내 이런 거.", "reading": "ni-man mol-lat-je. ttan sa-ram-deul-eun da an-da, nae i-reon geo.", "en": "You're the only one who didn't know. Everyone else already knows this side of me." }
+        { "speaker": "선우", "text": "요즘 니랑 있으면 그냥 옛날처럼 편하지가 않다. 이상하제?", "reading": "yo-jeum ni-rang it-eu-myeon geu-nyang yen-nal-cheo-reom pyeon-ha-ji-ga an-ta. i-sang-ha-je?", "en": "Lately, being with you doesn't feel as easy and comfortable as it used to. Weird, right?" },
+        { "speaker": "승객", "text": "나도 그래. 예전엔 안 그랬는데, 요즘은 좀… 뭐라 해야 되지.", "reading": "na-do geu-rae. ye-jeon-en an geu-raet-neun-de, yo-jeum-eun jom… mwo-ra hae-ya doe-ji.", "en": "Me too. It wasn't like this before, but these days it's kind of… how do I put it." },
+        { "speaker": "선우", "text": "거봐라, 니도 그렇제? 이거 무슨 조짐인지 모르겠다.", "reading": "geo-bwa-ra, ni-do geu-ron-je? i-geo mu-seun jo-jim-in-ji mo-reu-get-da.", "en": "See, you feel it too, right? I don't know what kind of sign this is." },
+        { "speaker": "승객", "text": "조짐은 무슨. 그냥 오랜만에 만나서 그런 거 아니야?", "reading": "jo-jim-eun mu-seun. geu-nyang o-raen-man-e man-na-seo geu-reon geo a-ni-ya?", "en": "What sign. Isn't it just because we haven't seen each other in a while?" }
       ],
-      "question": "승객이 선우에게 놀란 이유는 무엇인가요?",
-      "question_en": "Why is the passenger surprised by Sunwoo?",
-      "correct_answer": "평소 장난스러운 모습과 달리 브리핑 때 완전히 진지하고 철저한 모습을 보여서",
-      "options": ["평소 장난스러운 모습과 달리 브리핑 때 완전히 진지하고 철저한 모습을 보여서", "선우가 비행을 그만둔다고 해서", "선우가 다른 노선으로 옮긴다고 해서", "선우가 갑자기 화를 내서"],
-      "explanation": "승객은 평소 장난기 많은 선우가 비행 브리핑 때는 완전히 다른 사람처럼 진지하고 철저한 모습을 보여 놀랐습니다."
+      "question": "선우와 승객이 공통으로 느끼는 감정은 무엇인가요?",
+      "question_en": "What feeling do Sunwoo and the passenger share in common?",
+      "correct_answer": "예전과 달리 서로 사이가 어색하고 편하지 않게 느껴진다",
+      "options": ["예전과 달리 서로 사이가 어색하고 편하지 않게 느껴진다", "둘 다 여행이 지루하다고 느낀다", "둘 다 빨리 헤어지고 싶어 한다", "둘 다 날씨 때문에 짜증이 나 있다"],
+      "explanation": "두 사람 모두 예전과 달리 서로가 편하지 않고 무언가 달라졌다는 것을 느끼며 어색해하고 있습니다."
     },
     {
       "id": "d02",
       "turns": [
-        { "speaker": "친구", "text": "선우가 브리핑 때 얼마나 철저한지 니는 모르제. 후배들 사이에서 완전 유명하다.", "reading": "seon-u-ga beu-ri-ping ttae eol-ma-na cheol-jeo-han-ji ni-neun mo-reu-je. hu-bae-deul sa-i-e-seo wan-jeon yu-myeong-ha-da.", "en": "You have no idea how thorough Sunwoo is during briefings. He's totally famous for it among the junior crew." },
-        { "speaker": "승객", "text": "진짜? 나만 몰랐네, 그런 거.", "reading": "jin-jja? na-man mol-lan-ne, geu-reon geo.", "en": "Really? I guess I'm the only one who didn't know that." },
-        { "speaker": "친구", "text": "니 얼마나 좋아하는지도 우리는 진작에 다 짐작했다. 정작 니만 몰랐던 거 아이가?", "reading": "ni eol-ma-na jo-a-ha-neun-ji-do u-ri-neun jin-jak-e da jim-jak-haet-da. jeong-jak ni-man mol-lat-deon geo a-i-ga?", "en": "We'd all already guessed how much he likes you too. Isn't it really just you who didn't know?" },
-        { "speaker": "선우", "text": "야! 그건 또 무슨 소리고! ...아이, 됐다, 밥이나 무러 가자, 다들.", "reading": "ya! geu-geon tto mu-seun so-ri-go! ...a-i, dwaet-da, bap-i-na mu-reo ga-ja, da-deul.", "en": "Hey! What's that supposed to mean now! ...Ugh, forget it, let's all just go eat." }
+        { "speaker": "선우", "text": "아이다, 오랜만이라서가 아니고. 이게… 뭐라캐야 되노, 이.", "reading": "a-i-da, o-raen-man-i-ra-seo-ga a-ni-go. i-ge… mwo-ra-kae-ya doe-no, i.", "en": "No, it's not because it's been a while. This is… how do I even put this." },
+        { "speaker": "승객", "text": "말해봐, 뭔데.", "reading": "mal-hae-bwa, mwon-de.", "en": "Just say it, what is it." },
+        { "speaker": "선우", "text": "됐다! 아이다! 그냥 배고파서 그렇다, 배고파서! 밥이나 무러 가자!", "reading": "dwaet-da! a-i-da! geu-nyang bae-go-pa-seo geu-ro-ta, bae-go-pa-seo! bap-i-na mu-reo ga-ja!", "en": "Forget it! Never mind! It's just because I'm hungry, hungry! Let's go eat!" },
+        { "speaker": "승객", "text": "지금 완전 도망가는 거 다 티 난다.", "reading": "ji-geum wan-jeon do-mang-ga-neun geo da ti na-da.", "en": "It's totally obvious you're running away right now." }
       ],
-      "question": "친구의 말에서 알 수 있는 사실은 무엇인가요?",
-      "question_en": "What fact can be inferred from the friend's words?",
-      "correct_answer": "선우의 철저한 성격과 승객을 향한 마음 모두 주변 사람들은 이미 알고 있었다는 것",
-      "options": ["선우의 철저한 성격과 승객을 향한 마음 모두 주변 사람들은 이미 알고 있었다는 것", "선우가 곧 이직할 예정이라는 것", "친구가 승객을 좋아한다는 것", "선우가 비행을 무서워한다는 것"],
-      "explanation": "친구는 선우의 프로다운 면모와 승객을 향한 마음 둘 다 주변에서는 이미 다 알고 있었다는 사실을 알려주며 선우를 놀립니다."
+      "question": "선우가 말을 끝맺지 못하고 화제를 돌린 이유는 무엇인가요?",
+      "question_en": "Why does Sunwoo fail to finish his sentence and change the subject?",
+      "correct_answer": "자신의 감정을 뭐라고 설명해야 할지 몰라 당황했기 때문에",
+      "options": ["자신의 감정을 뭐라고 설명해야 할지 몰라 당황했기 때문에", "정말로 배가 많이 고팠기 때문에", "승객의 질문이 무례하다고 느꼈기 때문에", "다음 비행 시간이 촉박했기 때문에"],
+      "explanation": "선우는 자신의 흔들리는 감정을 어떻게 표현해야 할지 몰라 당황한 나머지, 배고프다는 핑계로 급히 화제를 돌립니다."
     }
   ]
 }

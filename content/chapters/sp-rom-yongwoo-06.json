@@ -1,93 +1,93 @@
 {
   "id": "sp-rom-yongwoo-06",
   "character_id": "yongwoo",
-  "title": "일부러 선을 긋는 서툰 마음",
-  "emoji": "🙅",
+  "title": "아무것도 아니다, 그냥 산 거다",
+  "emoji": "🛍️",
   "level": "intermediate_advanced",
   "story": [
     {
-      "text": "삼나무가 빽빽하게 늘어선 사려니숲길, 초록빛 그늘 사이로 바람이 지나간다. 용우가 평소보다 두 걸음쯤 앞서 걷는다.",
-      "reading": "sam-na-mu-ga ppaek-ppaek-ha-ge neul-eo-seon sa-ryeo-ni-sup-gil, cho-rok-bit geu-neul sa-i-ro ba-ram-i ji-na-gan-da. yong-u-ga pyeong-so-bo-da du geol-eum-jjeum ap-seo geot-neun-da.",
-      "en": "Along Saryeoni Forest Trail lined thick with cedar trees, the wind passes through the green shade. Yongwoo walks about two steps ahead of usual."
-    },
-    {
-      "text": "쉬어가는 공터에서 용우가 갑자기 나무 그루터기를 향해 돌려차기를 날린다. 답답한 걸 몸으로 풀어내려는 듯, 낮게 뻗는 발끝이 매섭다.",
-      "reading": "swi-eo-ga-neun gong-teo-e-seo yong-u-ga gap-ja-gi na-mu geu-ru-teo-gi-reul hyang-hae dol-lyeo-cha-gi-reul nal-lin-da. dap-dap-han geol mom-eu-ro pul-eo-nae-ryeo-neun deut, naj-ge ppeot-neun bal-kkeut-i mae-seop-da.",
-      "en": "At a clearing where we stop to rest, Yongwoo suddenly throws a roundhouse kick at a tree stump. As if trying to work off his frustration physically, the low, sharp arc of his foot is fierce.",
+      "text": "국제시장 골목은 없는 게 없었다. 옷가게, 신발가게를 지나 액세서리 노점 앞에서 나는 예쁜 팔찌 하나에 눈이 팔렸다.",
+      "reading": "guk-je-si-jang gol-mog-eun eop-neun ge eop-seot-da. ot-ga-ge, sin-bal-ga-ge-reul ji-na-seo aek-se-seo-ri no-jeom ap-e-seo na-neun ye-ppeun pal-jji ha-na-e nun-i pal-lyeot-da.",
+      "en": "The alleys of Gukje Market seemed to sell everything under the sun. Passing clothing shops and shoe stalls, I found myself drawn to a pretty bracelet at an accessories stand.",
       "highlight_word_id": "w01"
     },
     {
-      "text": "'삼나무 숲은 원래 좀 떨어져서 걸어야 제맛이다.' 애꿎은 이유를 대며 자꾸 앞서 나간다.",
-      "reading": "sam-na-mu sup-eun won-lae jom tteol-eo-jyeo-seo geol-eo-ya je-mas-i-da. ae-kkuj-eun i-yu-reul dae-myeo ja-kku ap-seo na-gan-da.",
-      "en": "'You're supposed to walk a bit apart to really enjoy a cedar forest.' He gives a flimsy excuse, keeps walking ahead.",
+      "text": "잠깐 화장실 좀 다녀오겠다며 용우가 자리를 비웠다. 평소보다 오래 걸린다 싶었는데, 돌아온 그의 손엔 작은 종이봉투 하나가 들려 있었다.",
+      "reading": "jam-kkan hwa-jang-sil jom da-nyeo-o-get-da-myeo yong-u-ga ja-ri-reul bi-wot-da. pyeong-so-bo-da o-rae geol-lin-da sip-eoss-neun-de, dol-a-on geu-ui son-en jak-eun jong-i-bong-tu ha-na-ga deul-lyeo iss-eot-da.",
+      "en": "Saying he'd be right back from the restroom, Yongwoo stepped away. It took him longer than usual, and when he came back, there was a small paper bag in his hand.",
       "highlight_word_id": "w02"
     },
     {
-      "text": "요 며칠 용우는 괜히 거리를 두려는 듯 굴었다. 먼저 팔을 잡던 손도, 먼저 챙기던 잔소리도 조금씩 줄어 있었다. 대신 도장에서 보내는 시간이 눈에 띄게 늘었다고 했다.",
-      "reading": "yo myeo-chil yong-u-neun gwaen-hi geo-ri-reul du-ryeo-neun deut gul-eot-da. meon-jeo pal-eul jap-deon son-do, meon-jeo chaeng-gi-deon jan-so-ri-do jo-geum-ssik jul-eo iss-eot-da. dae-sin do-jang-e-seo bo-nae-neun si-gan-i nun-e ttui-ge neul-eot-da-go haet-da.",
-      "en": "These past few days, Yongwoo had been acting like he was trying to keep some distance. The hand that used to grab my arm first, the nagging that used to come first — both had quietly grown less. Instead, he mentioned his time at the dojang had noticeably increased.",
+      "text": "'그건 뭐예요?' 물으니 용우가 봉투를 슬쩍 등 뒤로 감춘다. '아무것도 아니다. 그냥 산 거다.'",
+      "reading": "geu-geon mwo-ye-yo? mul-eu-ni yong-u-ga bong-tu-reul seul-jjak deung dwi-ro gam-chun-da. a-mu-geot-do a-ni-da. geu-nyang san geo-da.",
+      "en": "'What's that?' I asked, and Yongwoo tucked the bag behind his back. 'It's nothing. Just something I bought.'"
+    },
+    {
+      "text": "'뭔데 그렇게 숨겨요?' '됐고, 신경 꺼. …자, 다음 가게나 가자.' 서둘러 화제를 돌리며 앞장서 걷는 모습이 왠지 수상했다.",
+      "reading": "mwon-de geu-reo-ke sum-gyeo-yo? dwaet-go, sin-gyeong kkeo. ja, da-eum ga-ge-na ga-ja. seo-dul-leo hwa-je-reul dol-li-myeo ap-jang-seo geot-neun mo-seub-i waen-ji su-sang-haet-da.",
+      "en": "'Why are you hiding it like that?' 'Never mind, don't worry about it. ...Come on, next shop.' The way he hurried to change the subject and walk ahead felt more than a little suspicious.",
       "highlight_word_id": "w03"
     },
     {
-      "text": "'지난번엔 내가 좀 오해할 만한 말을 했나 본데, 신경 쓸 거 없다. 원래 하던 대로 하는 거니까.'",
-      "reading": "ji-nan-beon-en nae-ga jom o-hae-hal man-han mal-eul haess-na bon-de, sin-gyeong sseul geo eop-da. won-lae ha-deon dae-ro ha-neun geo-ni-kka.",
-      "en": "'Guess I said something last time that might've caused a misunderstanding. Don't worry about it. I'm just doing what I always do.'",
+      "text": "저녁 무렵, 숙소로 가는 길에 용우가 몰래 종이봉투 속을 한 번 더 들여다보는 걸 봤다. 별거 아니라던 것치고 표정이 꽤 만족스러워 보였다.",
+      "reading": "jeo-nyeok mu-ryeop, suk-so-ro ga-neun gil-e yong-u-ga mol-lae jong-i-bong-tu sog-eul han beon deo deul-yeo-da-bo-neun geol bwat-da. byeol-geo a-ni-ra-deon geot-chi-go pyo-jeong-i kkwae man-jok-seu-reo-wo bo-yeot-da.",
+      "en": "That evening, on the way back, I caught Yongwoo secretly peeking into the paper bag one more time. For something he'd claimed was nothing, he looked awfully pleased with himself.",
       "highlight_word_id": "w04"
     },
     {
-      "text": "정작 숲길 갈림길에서 내가 조금 뒤처지자 못 참고 돌아와 손을 내미는 걸 보면, 마음을 감추는 게 여전히 서툴다.",
-      "reading": "jeong-jak sup-gil gal-lim-gil-e-seo nae-ga jo-geum dwi-cheo-ji-ja mot cham-go dol-a-wa son-eul nae-mi-neun geol bo-myeon, ma-eum-eul gam-chu-neun ge yeo-jeon-hi seo-tul-da.",
-      "en": "Yet when I fell a little behind at a fork in the trail, he couldn't help but turn back and hold out his hand — proof he's still clumsy at hiding how he feels.",
+      "text": "'뭐 좋은 거라도 샀어요?' 묻자 화들짝 봉투를 가방 깊숙이 넣는다. '아니라니까. …쓸데없는 거 신경 쓰지 말고 밥이나 먹으러 가자.'",
+      "reading": "mwo jo-eun geo-ra-do sass-eo-yo? mut-ja hwa-deul-jjak bong-tu-reul ga-bang gip-sug-i neon-neun-da. a-ni-ra-ni-kka. sseul-de-eop-neun geo sin-gyeong sseu-ji mal-go bap-i-na meog-eu-reo ga-ja.",
+      "en": "'Did you buy something good?' I asked, and he jolted, shoving the bag deep into his backpack. 'I said it's nothing. ...Stop worrying about pointless things and let's go get dinner.'",
       "highlight_word_id": "w05"
     },
     {
-      "text": "선을 그으려 할수록 자꾸만 곁을 맴도는 그를 보며 웃음이 났다. '그럼 오늘 대화도 잘 들어봐요, 신경 쓰이게 만들어드릴게요.'",
-      "reading": "seon-eul geu-eu-ryeo hal-su-rok ja-kku-man gyeot-eul maem-do-neun geu-reul bo-myeo us-eum-i nat-da. geu-reom o-neul dae-hwa-do jal deul-eo-bwa-yo, sin-gyeong sseu-i-ge man-deul-eo-deu-ril-ge-yo.",
-      "en": "Watching him hover close even as he tried to draw a line, I couldn't help but smile. 'Then listen carefully to today's conversations too — I'll make sure to keep you on your toes.'"
+      "text": "궁금증은 접어두기로 했다. 언젠가는 알게 되겠지 싶어서. '오늘 시장 대화들도 몇 개 들어봐라. 재밌는 것들 많다.'",
+      "reading": "gung-geum-jeung-eun jeob-eo-du-gi-ro haet-da. eon-jen-ga-neun al-ge doe-get-ji sip-eo-seo. o-neul si-jang dae-hwa-deul-do myeot gae deul-eo-bwa-ra. jae-mi-neun geot-deul man-ta.",
+      "en": "I decided to let my curiosity rest — figured I'd find out eventually. 'Listen to a few market conversations today too. There are some fun ones.'"
     }
   ],
   "words": [
-    { "id": "w01", "word": "돌려차기", "reading": "dol-lyeo-cha-gi", "meaning": "Roundhouse kick (taekwondo technique)", "example": "그는 화가 날 때마다 그루터기에 돌려차기를 날렸다.", "example_reading": "geu-neun hwa-ga nal ttae-ma-da geu-ru-teo-gi-e dol-lyeo-cha-gi-reul nal-lyeot-da", "example_en": "Whenever he got frustrated, he'd throw a roundhouse kick at the stump." },
-    { "id": "w02", "word": "애꿎다", "reading": "ae-kkut-da", "meaning": "Undeserving, made a scapegoat of (used for flimsy excuses/targets)", "example": "그는 애꿎은 핑계를 대며 화제를 돌렸다.", "example_reading": "geu-neun ae-kkuj-eun ping-gye-reul dae-myeo hwa-je-reul dol-lyeot-da", "example_en": "He gave a flimsy, unrelated excuse and changed the subject." },
-    { "id": "w03", "word": "거리를 두다", "reading": "geo-ri-reul du-da", "meaning": "To keep/put distance (from someone)", "example": "그는 요즘 부쩍 나와 거리를 두려는 것 같다.", "example_reading": "geu-neun yo-jeum bu-jjeok na-wa geo-ri-reul du-ryeo-neun geot gat-da", "example_en": "Lately he seems to be trying to keep his distance from me." },
-    { "id": "w04", "word": "오해", "reading": "o-hae", "meaning": "Misunderstanding", "example": "괜한 오해를 살까 봐 미리 설명했다.", "example_reading": "gwaen-han o-hae-reul sal-kka bwa mi-ri seol-myeong-haet-da", "example_en": "I explained beforehand so as not to cause any misunderstanding." },
-    { "id": "w05", "word": "서툴다", "reading": "seo-tul-da", "meaning": "To be clumsy, unskilled (often emotionally)", "example": "그는 자기 마음을 표현하는 데 늘 서툴렀다.", "example_reading": "geu-neun ja-gi ma-eum-eul pyo-hyeon-ha-neun de neul seo-tul-leot-da", "example_en": "He was always clumsy at expressing his own feelings." }
+    { "id": "w01", "word": "노점", "reading": "no-jeom", "meaning": "Street stall/vendor", "example": "노점에서 액세서리를 구경했다.", "example_reading": "no-jeom-e-seo aek-se-seo-ri-reul gu-gyeong-haet-da", "example_en": "I browsed accessories at the street stall." },
+    { "id": "w02", "word": "종이봉투", "reading": "jong-i-bong-tu", "meaning": "Paper bag", "example": "그의 손에 작은 종이봉투가 들려 있었다.", "example_reading": "geu-ui son-e jak-eun jong-i-bong-tu-ga deul-lyeo iss-eot-da", "example_en": "There was a small paper bag in his hand." },
+    { "id": "w03", "word": "서둘러", "reading": "seo-dul-leo", "meaning": "Hurriedly, in a rush", "example": "그는 서둘러 화제를 돌렸다.", "example_reading": "geu-neun seo-dul-leo hwa-je-reul dol-lyeot-da", "example_en": "He hurriedly changed the subject." },
+    { "id": "w04", "word": "들여다보다", "reading": "deul-yeo-da-bo-da", "meaning": "To peek/look into", "example": "그는 봉투 속을 몰래 들여다보았다.", "example_reading": "geu-neun bong-tu sog-eul mol-lae deul-yeo-da-bo-at-da", "example_en": "He secretly peeked into the bag." },
+    { "id": "w05", "word": "만족스럽다", "reading": "man-jok-seu-reop-da", "meaning": "To look/be satisfied", "example": "그의 표정이 꽤 만족스러워 보였다.", "example_reading": "geu-ui pyo-jeong-i kkwae man-jok-seu-reo-wo bo-yeot-da", "example_en": "His expression looked quite satisfied." }
   ],
   "sentences": [
-    { "id": "s01", "ko": "답답함을 참지 못한 그는 그루터기를 향해 돌려차기를 날렸다.", "reading": "dap-dap-am-eul cham-ji mot-han geu-neun geu-ru-teo-gi-reul hyang-hae dol-lyeo-cha-gi-reul nal-lyeot-da", "en": "Unable to hold back his frustration, he threw a roundhouse kick at the stump." },
-    { "id": "s02", "ko": "그는 애꿎은 핑계를 대며 며칠째 무뚝뚝하게 굴었다.", "reading": "geu-neun ae-kkuj-eun ping-gye-reul dae-myeo myeo-chil-jjae mu-ttuk-ttuk-ha-ge gul-eot-da", "en": "He'd been acting curt for days, hiding behind flimsy excuses." },
-    { "id": "s03", "ko": "요즘 그는 도장에서 보내는 시간을 늘리며 나와 거리를 두려 했다.", "reading": "yo-jeum geu-neun do-jang-e-seo bo-nae-neun si-gan-eul neul-li-myeo na-wa geo-ri-reul du-ryeo haet-da", "en": "Lately he'd been spending more time at the dojang, trying to keep his distance from me." },
-    { "id": "s04", "ko": "오해할 만한 말을 했다며 그는 별일 아니라는 듯 넘기려 했다.", "reading": "o-hae-hal man-han mal-eul haet-da-myeo geu-neun byeol-il a-ni-ra-neun deut neom-gi-ryeo haet-da", "en": "Saying he might've caused a misunderstanding, he tried to brush it off as nothing." },
-    { "id": "s05", "ko": "마음을 감추는 게 서툰 그를 보며 나는 웃음을 참을 수 없었다.", "reading": "ma-eum-eul gam-chu-neun ge seo-tun geu-reul bo-myeo na-neun us-eum-eul cham-eul su eop-seot-da", "en": "Watching him, so clumsy at hiding his feelings, I couldn't help but smile." }
+    { "id": "s01", "ko": "국제시장 골목은 없는 게 없을 만큼 다양한 노점들로 가득했다.", "reading": "guk-je-si-jang gol-mog-eun eop-neun ge eop-seul man-keum da-yang-han no-jeom-deul-lo ga-deuk-aet-da", "en": "The alleys of Gukje Market were packed with all kinds of street stalls, selling seemingly everything." },
+    { "id": "s02", "ko": "잠깐 자리를 비웠다 돌아온 그의 손엔 작은 종이봉투가 들려 있었다.", "reading": "jam-kkan ja-ri-reul bi-wot-da dol-a-on geu-ui son-en jak-eun jong-i-bong-tu-ga deul-lyeo iss-eot-da", "en": "When he came back after stepping away for a moment, there was a small paper bag in his hand." },
+    { "id": "s03", "ko": "뭐냐고 묻자 그는 서둘러 화제를 돌리며 앞장서 걸었다.", "reading": "mwo-nya-go mut-ja geu-neun seo-dul-leo hwa-je-reul dol-li-myeo ap-jang-seo geol-eot-da", "en": "Asked what it was, he hurriedly changed the subject and walked on ahead." },
+    { "id": "s04", "ko": "숙소로 가는 길, 그가 몰래 봉투 속을 들여다보는 걸 보고 말았다.", "reading": "suk-so-ro ga-neun gil, geu-ga mol-lae bong-tu sog-eul deul-yeo-da-bo-neun geol bo-go mal-at-da", "en": "On the way back, I caught him secretly peeking into the bag." },
+    { "id": "s05", "ko": "별거 아니라던 것치고 그의 표정은 꽤 만족스러워 보였다.", "reading": "byeol-geo a-ni-ra-deon geot-chi-go geu-ui pyo-jeong-eun kkwae man-jok-seu-reo-wo bo-yeot-da", "en": "For something he claimed was nothing, his expression looked quite satisfied." }
   ],
   "dialogues": [
     {
       "id": "d01",
       "turns": [
-        { "speaker": "손님", "text": "아까 그루터기를 그렇게 세게 차던데, 화난 일 있으세요?", "reading": "a-kka geu-ru-teo-gi-reul geu-reo-ke se-ge cha-deon-de, hwa-nan il iss-eo-yo?", "en": "You kicked that stump pretty hard earlier — did something upset you?" },
-        { "speaker": "권용우 기장", "text": "화는 무슨. 그냥 몸이 근질거려서 그랬다.", "reading": "hwa-neun mu-seun. geu-nyang mom-i geun-jil-geo-ryeo-seo geu-raet-da.", "en": "What, no. My body just felt restless, that's all." },
-        { "speaker": "손님", "text": "요즘 도장도 부쩍 자주 가시는 것 같던데요.", "reading": "yo-jeum do-jang-do bu-jjeok ja-ju ga-si-neun geot gat-deon-de-yo.", "en": "You've also been going to the dojang a lot more often lately." },
-        { "speaker": "권용우 기장", "text": "…그냥, 이것저것 정리할 게 좀 있어서. 별거 아니다.", "reading": "geu-nyang, i-geot-jeo-geot jeong-ni-hal ge jom iss-eo-seo. byeol-geo a-ni-da.", "en": "...Just, there's a few things I need to sort out. It's nothing." }
+        { "speaker": "손님", "text": "화장실 갔다 온다면서 왜 이렇게 오래 걸렸어요?", "reading": "hwa-jang-sil gat-da on-da-myeon-seo wae i-reo-ke o-rae geol-lyeoss-eo-yo?", "en": "You said you were just going to the restroom, why'd it take so long?" },
+        { "speaker": "권용우 기장", "text": "…줄이 좀 길더라. 별거 아니다.", "reading": "jul-i jom gil-deo-ra. byeol-geo a-ni-da.", "en": "...The line was a bit long. Nothing much." },
+        { "speaker": "손님", "text": "근데 그 봉투는 뭐예요? 화장실 갔다 오는데 쇼핑도 했어요?", "reading": "geun-de geu bong-tu-neun mwo-ye-yo? hwa-jang-sil gat-da o-neun-de syo-ping-do haess-eo-yo?", "en": "But what's that bag? Did you shop on the way to the restroom too?" },
+        { "speaker": "권용우 기장", "text": "아, 이거. …그냥 지나가다 산 거다. 신경 쓸 거 없다.", "reading": "a, i-geo. geu-nyang ji-na-ga-da san geo-da. sin-gyeong sseul geo eop-da.", "en": "Ah, this. ...Just something I bought passing by. Nothing to worry about." }
       ],
-      "question": "용우가 요즘 도장에 자주 가고 그루터기를 세게 찬 이유로 가장 알맞은 것은?",
-      "question_en": "What best explains why Yongwoo has been going to the dojang more and kicking the stump so hard?",
-      "correct_answer": "손님을 향한 자신의 감정을 몸을 움직여 다스리려 하기 때문",
-      "options": ["손님을 향한 자신의 감정을 몸을 움직여 다스리려 하기 때문", "체력 단련 대회를 준비하고 있어서", "손님에게 정말 화가 나서", "도장 관장님과의 약속 때문에"],
-      "explanation": "용우는 손님을 향한 복잡한 감정을 운동으로 풀어내려 하며, 스스로도 그 마음을 다스리는 데 서툰 모습을 보입니다."
+      "question": "용우가 종이봉투에 든 물건을 숨기는 이유로 가장 알맞은 것은?",
+      "question_en": "What best explains why Yongwoo is hiding what's in the paper bag?",
+      "correct_answer": "깜짝 선물처럼 준비한 것이라 미리 들키고 싶지 않아서",
+      "options": ["깜짝 선물처럼 준비한 것이라 미리 들키고 싶지 않아서", "부끄러운 물건을 산 것이라서", "가격이 너무 비싸서 말하기 싫어서", "다른 사람에게 줄 선물이라 비밀이어서"],
+      "explanation": "용우는 손님을 위해 몰래 준비한 것을 미리 들키고 싶지 않아, 별거 아니라고 얼버무렸습니다."
     },
     {
       "id": "d02",
       "turns": [
-        { "speaker": "권용우 기장", "text": "왜 자꾸 뒤처져, 괜스레 사람 신경 쓰이게.", "reading": "wae ja-kku dwi-cheo-jyeo, gwaen-seu-re sa-ram sin-gyeong sseu-i-ge.", "en": "Why do you keep falling behind, making me worry for no reason." },
-        { "speaker": "손님", "text": "거리 두려던 거 아니었어요? 신경 안 쓰셔도 되는데.", "reading": "geo-ri du-ryeo-deon geo a-ni-eoss-eo-yo? sin-gyeong an sseu-syeo-do doe-neun-de.", "en": "Weren't you trying to keep your distance? You don't have to worry." },
-        { "speaker": "권용우 기장", "text": "그거랑 이거랑 다르지. 넘어지는 거랑 내 마음이랑 무슨 상관이야.", "reading": "geu-geo-rang i-geo-rang da-reu-ji. neom-eo-ji-neun geo-rang nae ma-eum-i-rang mu-seun sang-gwan-i-ya.", "en": "That's different from this. What does falling have to do with my feelings." },
-        { "speaker": "손님", "text": "…말은 그렇게 하면서 손은 계속 잡고 계시네요.", "reading": "mal-eun geu-reo-ke ha-myeon-seo son-eun gye-sok jap-go gye-si-ne-yo.", "en": "...You say that, but you're still holding my hand." }
+        { "speaker": "손님", "text": "아까부터 봉투를 계속 신경 쓰시던데요. 뭐가 들었길래요?", "reading": "a-kka-bu-teo bong-tu-reul gye-sok sin-gyeong sseu-si-deon-de-yo. mwo-ga deul-eot-gil-lae-yo?", "en": "You've been keeping an eye on that bag this whole time. What's inside?" },
+        { "speaker": "권용우 기장", "text": "신경은 무슨. 그냥 잘 산 건가 확인한 거다.", "reading": "sin-gyeong-eun mu-seun. geu-nyang jal san geon-ga hwak-in-han geo-da.", "en": "What do you mean, keeping an eye on it. Just checking if I bought it right." },
+        { "speaker": "손님", "text": "표정 보니까 뭔가 마음에 쏙 든 것 같은데요.", "reading": "pyo-jeong bo-ni-kka mwon-ga ma-eum-e ssok deun geot gat-eun-de-yo.", "en": "From your face, it looks like you're really pleased with it." },
+        { "speaker": "권용우 기장", "text": "…티 났나. 아무튼 지금은 말 안 해줄 거다. 궁금하면 좀 참아라.", "reading": "ti nan-na. a-mu-teun ji-geum-eun mal an hae-jul geo-da. gung-geum-ha-myeon jom cham-a-ra.", "en": "...Was it that obvious. Anyway, I'm not telling you right now. If you're curious, just wait." }
       ],
-      "question": "이 대화가 보여주는 용우의 모순된 태도로 가장 알맞은 것은?",
-      "question_en": "What best captures the contradiction in Yongwoo's attitude here?",
-      "correct_answer": "거리를 두려 하면서도 결국 손님을 챙기는 행동은 멈추지 못한다",
-      "options": ["거리를 두려 하면서도 결국 손님을 챙기는 행동은 멈추지 못한다", "손님에게 화가 나서 일부러 차갑게 군다", "손을 놓고 싶어 하지만 손님이 놓아주지 않는다", "길을 몰라서 손님의 도움이 필요하다"],
-      "explanation": "용우는 거리를 두려 했지만 정작 손님이 뒤처지자 손을 잡아주는 등, 말과 행동이 모순되는 서툰 모습을 보입니다."
+      "question": "이 대화에서 용우의 태도로 가장 알맞은 설명은?",
+      "question_en": "What best describes Yongwoo's attitude in this conversation?",
+      "correct_answer": "준비한 것에 스스로도 만족하면서, 정체는 끝까지 비밀로 하려 한다",
+      "options": ["준비한 것에 스스로도 만족하면서, 정체는 끝까지 비밀로 하려 한다", "산 물건이 마음에 안 들어서 후회하고 있다", "손님에게 물건을 팔려고 흥정하고 있다", "물건을 잃어버릴까 봐 걱정하고 있다"],
+      "explanation": "용우는 자신이 준비한 것에 스스로 만족스러워하면서도, 그 정체는 끝까지 비밀로 하려는 모습을 보였습니다."
     }
   ]
 }

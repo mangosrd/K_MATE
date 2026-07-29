@@ -1,93 +1,93 @@
 {
   "id": "sp-rom-sangwoo-07",
   "character_id": "sangwoo",
-  "title": "계기판보다 자꾸 보이는 얼굴",
-  "emoji": "🧭",
+  "title": "안전거리를 유지하겠습니다",
+  "emoji": "🌥️",
   "level": "intermediate_advanced",
   "story": [
     {
-      "text": "오늘은 고마나루입니다. 곰 전설이 전해지는 금강의 나루터지요. 그런데 오늘은 나루터보다, 자꾸 다른 게 눈앞에 아른거립니다.",
-      "reading": "o-neul-eun go-ma-na-ru-im-ni-da. gom jeon-seol-i jeon-hae-ji-neun geum-gang-ui na-ru-teo-ji-yo. geu-reon-de o-neul-eun na-ru-teo-bo-da, ja-kku da-reun ge nun-ap-e a-reun-geo-rim-ni-da.",
-      "en": "Today we're at Gomanaru, the ferry crossing on the Geumgang River where the bear legend is told. But today, something other than the ferry crossing keeps flickering before my eyes."
+      "text": "오늘은 낙화암과 백마강입니다. 이 절벽 아래 전해지는 오랜 이야기를 아실는지요. 급류처럼 밀려온 상실 앞에서, 사람은 종종 스스로를 지키는 법을 배웁니다.",
+      "reading": "o-neul-eun nak-hwa-am-gwa baeng-ma-gang-im-ni-da. i jeol-byeok a-rae jeon-hae-ji-neun o-raen i-ya-gi-reul a-sil-leun-ji-yo. geup-lyu-cheo-reom mil-lyeo-on sang-sil ap-e-seo, sa-ram-eun jong-jong seu-seu-ro-reul ji-ki-neun beob-eul bae-um-ni-da.",
+      "en": "Today, Nakhwaam Rock and the Baengma River. Perhaps you know the old story carried down from this cliff. In the face of loss that rushes in like floodwater, people often learn how to protect themselves."
     },
     {
-      "text": "비행 중에는 '계기판'만 봐야 한다고 배웠습니다. 그런데 요즘은 계기판 위로 자꾸 당신 얼굴이 겹쳐 보입니다.",
-      "reading": "bi-haeng jung-e-neun 'gye-gi-pan'-man bwa-ya han-da-go bae-wot-seum-ni-da. geu-reon-de yo-jeum-eun gye-gi-pan wi-ro ja-kku dang-sin eol-gul-i gyeop-chyeo bo-im-ni-da.",
-      "en": "I was taught that during flight, I should only look at the 'instrument panel'. But lately, your face keeps overlapping on it.",
+      "text": "요즘 들어, 저는 당신과의 '거리'를 조금씩 재고 있습니다. 예전보다 한 걸음 물러선 채로 말입니다.",
+      "reading": "yo-jeum deul-eo, jeo-neun dang-sin-gwa-ui 'geo-ri'-reul jo-geum-ssik jae-go it-seum-ni-da. ye-jeon-bo-da han geol-eum mul-leo-seon chae-ro mal-im-ni-da.",
+      "en": "Lately, I've been quietly measuring the 'distance' between us. Standing one step further back than before.",
       "highlight_word_id": "w01"
     },
     {
-      "text": "제 '시선'이 자꾸 엉뚱한 곳으로 흐릅니다. 정확히는, 당신이 있는 방향으로 말입니다.",
-      "reading": "je 'si-seon'-i ja-kku eong-ttung-han gos-eu-ro heu-reum-ni-da. jeong-hwak-hi-neun, dang-sin-i it-neun bang-hyang-eu-ro mal-im-ni-da.",
-      "en": "My 'gaze' keeps drifting somewhere it shouldn't. To be precise, toward wherever you are.",
+      "text": "당신에게 곁을 너무 쉽게 내준 건 아닌지, 스스로 '경계'하게 됩니다. 조종석에서는 이런 흔들림이 위험하다고 배웠으니까요.",
+      "reading": "dang-sin-e-ge gyeot-eul neo-mu swip-ge nae-jun geon a-nin-ji, seu-seu-ro 'gyeong-gye'-ha-ge doem-ni-da. jo-jong-seog-e-seo-neun i-reon heun-deul-lim-i wi-heom-ha-da-go bae-wo-sseu-ni-kka-yo.",
+      "en": "I find myself 'wary', wondering if I let you in too easily. Because I was taught that a wavering like this is dangerous, in the cockpit.",
       "highlight_word_id": "w02"
     },
     {
-      "text": "당신은 제 말투가 너무 태연해서 오히려 얄밉다고 하셨지요. 십 년을 지켜온 '집중'력도, 요즘처럼 흔들린 적이 없습니다.",
-      "reading": "dang-sin-eun je mal-tu-ga neo-mu tae-yeon-hae-seo o-hi-ryeo yal-mip-da-go ha-syeot-ji-yo. sip nyeon-eul ji-kyeo-on 'jip-jung'-yeog-i, yo-jeum-cheo-reom heun-deul-lin jeog-i eop-seum-ni-da.",
-      "en": "You said my tone was so calm and unbothered that it was almost infuriating. My ten years of hard-won 'concentration' has never wavered like this before either.",
+      "text": "당신을 향한 마음이 커질수록, 저는 더 '자제'하려고 합니다. 이 마음이 언젠가 제 판단을 흐릴까 봐 두렵습니다.",
+      "reading": "dang-sin-eul hyang-han ma-eum-i keo-jil-su-rok, jeo-neun deo 'ja-je'-ha-ryeo ham-ni-da. i ma-eum-i eon-jen-ga je pan-dan-eul heu-ril-kka bwa du-ryeop-seum-ni-da.",
+      "en": "The more my feelings for you grow, the more I try to 'restrain' myself. I'm afraid this heart of mine might someday cloud my judgment.",
       "highlight_word_id": "w03"
     },
     {
-      "text": "눈을 감아도 당신 얼굴의 '잔상'이 사라지지 않습니다. 이런 증상은 교범에도 나와 있지 않더군요.",
-      "reading": "nun-eul gam-a-do dang-sin eol-gul-ui 'jan-sang'-i sa-ra-ji-ji an-seum-ni-da. i-reon jeung-sang-eun gyo-beom-e-do na-wa it-ji an-teo-gun-yo.",
-      "en": "Even with my eyes closed, the 'afterimage' of your face won't fade. This symptom isn't written in any manual.",
+      "text": "관제 용어로, 항공기 사이에는 반드시 '안전거리'를 유지해야 합니다. …마음에도 그런 규정이 있었으면 좋겠다고, 요즘 자주 생각합니다.",
+      "reading": "gwan-je yong-eo-ro, hang-gong-gi sa-i-e-neun ban-deu-si 'an-jeon-geo-ri'-reul yu-ji-hae-ya ham-ni-da. …ma-eum-e-do geu-reon gyu-jeong-i i-sseo-sseu-myeon jo-ket-da-go, yo-jeum ja-ju saeng-gak-ham-ni-da.",
+      "en": "In ATC terms, aircraft must always maintain a 'safe separation distance' between them. ...Lately I often find myself wishing the heart had a rule like that, too.",
       "highlight_word_id": "w04"
     },
     {
-      "text": "'무의식'중에 당신 이름을 부를 뻔한 적도 있습니다. 관제탑 대신 말입니다.",
-      "reading": "'mu-ui-sik'-jung-e dang-sin i-reum-eul bu-reul ppeon-han jeok-do it-seum-ni-da. gwan-je-tap dae-sin mal-im-ni-da.",
-      "en": "There have been moments I almost said your name 'unconsciously'—instead of saying 'tower'.",
+      "text": "그런데도 당신에게서 완전히 멀어지지 못하는 걸 보면, 이건 그저 '미련'일지도 모릅니다. 거리를 두겠다면서도, 결국 자꾸 당신 쪽을 바라보고 있으니까요.",
+      "reading": "geu-reon-de-do dang-sin-e-ge-seo wan-jeon-hi meol-eo-ji-ji mot-ha-neun geol bo-myeon, i-geon geu-jeo 'mi-ryeon'-il-ji-do mo-reum-ni-da. geo-ri-reul du-get-da-myeon-seo-do, gyeol-guk ja-kku dang-sin jjog-eul ba-ra-bo-go i-sseu-ni-kka-yo.",
+      "en": "And yet, seeing how I can't quite pull myself fully away from you, maybe this is nothing more than 'lingering attachment'. Even as I try to keep my distance, I still find myself looking your way, again and again.",
       "highlight_word_id": "w05"
     },
     {
-      "text": "…이만 계기판으로 돌아가겠습니다. 고마나루에서 오간 대화를 보여드릴 테니, 상황을 잘 살펴봐 주시기 바랍니다.",
-      "reading": "…i-man gye-gi-pan-eu-ro dol-a-ga-get-seum-ni-da. go-ma-na-ru-e-seo o-gan dae-hwa-reul bo-yeo-deu-ril te-ni, sang-hwang-eul jal sal-pyeo-bwa ju-si-gi ba-ram-ni-da.",
-      "en": "...I'll return to the instrument panel now. I'll show you a conversation from Gomanaru—please look closely at the situation."
+      "text": "오늘은 당신에게 평소보다 조금 더 딱딱하게 굴었을지도 모릅니다. 미안한 마음으로, 백마강에서 나눈 대화를 보여드릴 테니 그 어색함을 헤아려 봐 주시기 바랍니다.",
+      "reading": "o-neul-eun dang-sin-e-ge pyeong-so-bo-da jo-geum deo ttak-ttak-ha-ge gul-eo-sseul-ji-do mo-reum-ni-da. mi-an-han ma-eum-eu-ro, baeng-ma-gang-e-seo na-nun dae-hwa-reul bo-yeo-deu-ril te-ni geu eo-saek-ham-eul he-a-ryeo bwa ju-si-gi ba-ram-ni-da.",
+      "en": "Today, I may have come across a little stiffer with you than usual. With a slightly guilty conscience, I'll show you the conversation we had by the Baengma River — please take in that awkwardness."
     }
   ],
   "words": [
-    { "id": "w01", "word": "계기판", "reading": "gye-gi-pan", "meaning": "Instrument panel", "example": "계기판 위로 자꾸 당신 얼굴이 겹쳐 보입니다.", "example_reading": "gye-gi-pan wi-ro ja-kku dang-sin eol-gul-i gyeop-chyeo bo-im-ni-da", "example_en": "Your face keeps overlapping on the instrument panel." },
-    { "id": "w02", "word": "시선", "reading": "si-seon", "meaning": "Gaze", "example": "제 시선이 자꾸 당신이 있는 방향으로 흐릅니다.", "example_reading": "je si-seon-i ja-kku dang-sin-i it-neun bang-hyang-eu-ro heu-reum-ni-da", "example_en": "My gaze keeps drifting toward wherever you are." },
-    { "id": "w03", "word": "집중", "reading": "jip-jung", "meaning": "Concentration", "example": "십 년을 지켜온 집중력이 요즘처럼 흔들린 적이 없습니다.", "example_reading": "sip nyeon-eul ji-kyeo-on jip-jung-yeog-i yo-jeum-cheo-reom heun-deul-lin jeog-i eop-seum-ni-da", "example_en": "My ten years of hard-won concentration has never wavered like this before." },
-    { "id": "w04", "word": "잔상", "reading": "jan-sang", "meaning": "Afterimage", "example": "눈을 감아도 당신 얼굴의 잔상이 사라지지 않습니다.", "example_reading": "nun-eul gam-a-do dang-sin eol-gul-ui jan-sang-i sa-ra-ji-ji an-seum-ni-da", "example_en": "Even with my eyes closed, the afterimage of your face won't fade." },
-    { "id": "w05", "word": "무의식", "reading": "mu-ui-sik", "meaning": "Unconscious / subconscious", "example": "무의식중에 당신 이름을 부를 뻔했습니다.", "example_reading": "mu-ui-sik-jung-e dang-sin i-reum-eul bu-reul ppeon-haet-seum-ni-da", "example_en": "I almost said your name unconsciously." }
+    { "id": "w01", "word": "거리", "reading": "geo-ri", "meaning": "Distance", "example": "당신과의 거리를 조금씩 재고 있습니다.", "example_reading": "dang-sin-gwa-ui geo-ri-reul jo-geum-ssik jae-go it-seum-ni-da", "example_en": "I've been quietly measuring the distance between us." },
+    { "id": "w02", "word": "경계", "reading": "gyeong-gye", "meaning": "Wariness / vigilance", "example": "스스로 경계하게 됩니다.", "example_reading": "seu-seu-ro gyeong-gye-ha-ge doem-ni-da", "example_en": "I find myself on guard." },
+    { "id": "w03", "word": "자제", "reading": "ja-je", "meaning": "Self-restraint", "example": "더 자제하려고 합니다.", "example_reading": "deo ja-je-ha-ryeo ham-ni-da", "example_en": "I try to restrain myself more." },
+    { "id": "w04", "word": "안전거리", "reading": "an-jeon-geo-ri", "meaning": "Safe separation distance", "example": "항공기 사이에는 안전거리를 유지해야 합니다.", "example_reading": "hang-gong-gi sa-i-e-neun an-jeon-geo-ri-reul yu-ji-hae-ya ham-ni-da", "example_en": "Aircraft must maintain a safe separation distance between them." },
+    { "id": "w05", "word": "미련", "reading": "mi-ryeon", "meaning": "Lingering attachment", "example": "이건 그저 미련일지도 모릅니다.", "example_reading": "i-geon geu-jeo mi-ryeon-il-ji-do mo-reum-ni-da", "example_en": "This might be nothing more than lingering attachment." }
   ],
   "sentences": [
-    { "id": "s01", "ko": "계기판 위로 자꾸 당신 얼굴이 겹쳐 보입니다.", "reading": "gye-gi-pan wi-ro ja-kku dang-sin eol-gul-i gyeop-chyeo bo-im-ni-da", "en": "Your face keeps overlapping on the instrument panel." },
-    { "id": "s02", "ko": "제 시선이 자꾸 당신이 있는 방향으로 흐릅니다.", "reading": "je si-seon-i ja-kku dang-sin-i it-neun bang-hyang-eu-ro heu-reum-ni-da", "en": "My gaze keeps drifting toward wherever you are." },
-    { "id": "s03", "ko": "십 년을 지켜온 집중력이 요즘처럼 흔들린 적이 없습니다.", "reading": "sip nyeon-eul ji-kyeo-on jip-jung-yeog-i yo-jeum-cheo-reom heun-deul-lin jeog-i eop-seum-ni-da", "en": "My ten years of hard-won concentration has never wavered like this before." },
-    { "id": "s04", "ko": "눈을 감아도 당신 얼굴의 잔상이 사라지지 않습니다.", "reading": "nun-eul gam-a-do dang-sin eol-gul-ui jan-sang-i sa-ra-ji-ji an-seum-ni-da", "en": "Even with my eyes closed, the afterimage of your face won't fade." },
-    { "id": "s05", "ko": "무의식중에 당신 이름을 부를 뻔했습니다.", "reading": "mu-ui-sik-jung-e dang-sin i-reum-eul bu-reul ppeon-haet-seum-ni-da", "en": "I almost said your name unconsciously." }
+    { "id": "s01", "ko": "당신과의 거리를 조금씩 재고 있습니다.", "reading": "dang-sin-gwa-ui geo-ri-reul jo-geum-ssik jae-go it-seum-ni-da", "en": "I've been quietly measuring the distance between us." },
+    { "id": "s02", "ko": "스스로 경계하게 됩니다.", "reading": "seu-seu-ro gyeong-gye-ha-ge doem-ni-da", "en": "I find myself on guard." },
+    { "id": "s03", "ko": "더 자제하려고 합니다.", "reading": "deo ja-je-ha-ryeo ham-ni-da", "en": "I try to restrain myself more." },
+    { "id": "s04", "ko": "항공기 사이에는 안전거리를 유지해야 합니다.", "reading": "hang-gong-gi sa-i-e-neun an-jeon-geo-ri-reul yu-ji-hae-ya ham-ni-da", "en": "Aircraft must maintain a safe separation distance between them." },
+    { "id": "s05", "ko": "이건 그저 미련일지도 모릅니다.", "reading": "i-geon geu-jeo mi-ryeon-il-ji-do mo-reum-ni-da", "en": "This might be nothing more than lingering attachment." }
   ],
   "dialogues": [
     {
       "id": "d01",
       "turns": [
-        { "speaker": "승객", "text": "기장님 때문에 저 요즘 계속 정신이 없어요. 그렇게 태연하게 그런 말 하시는 거, 반칙이에요.", "reading": "gi-jang-nim ttae-mun-e jeo yo-jeum gye-sok jeong-sin-i eop-seo-yo. geu-reo-ke tae-yeon-ha-ge geu-reon mal ha-si-neun geo, ban-chig-i-e-yo.", "en": "I've been a complete mess lately because of you, Captain. Saying things like that so calmly—it's not fair." },
-        { "speaker": "천상우 기장", "text": "반칙이라니, 섭섭합니다. 저는 늘 진심만 말씀드리는데 말입니다.", "reading": "ban-chig-i-ra-ni, seop-seop-ham-ni-da. jeo-neun neul jin-sim-man mal-sseum-deu-ri-neun-de mal-im-ni-da.", "en": "'Not fair'—that hurts. I only ever say what I truly mean, you know." },
-        { "speaker": "승객", "text": "그 진심이 문제라니까요. 하나도 안 어색하게 그런 말을 하시니까.", "reading": "geu jin-sim-i mun-je-ra-ni-kka-yo. ha-na-do an eo-saek-ha-ge geu-reon mal-eul ha-si-ni-kka.", "en": "That sincerity is exactly the problem. You say things like that without a single trace of awkwardness." },
-        { "speaker": "천상우 기장", "text": "…그렇다면 다행입니다. 능청스럽지 않다는 뜻이니까요.", "reading": "…geu-reo-ta-myeon da-haeng-im-ni-da. neung-cheong-seu-rop-ji an-neun-da-neun tteu-si-ni-kka-yo.", "en": "...That's a relief, then. It means it doesn't come off as a put-on act." }
+        { "speaker": "손님", "text": "기장님, 요즘 저한테 좀 거리 두시는 것 같아요.", "reading": "gi-jang-nim, yo-jeum jeo-han-te jom geo-ri du-si-neun geot gat-a-yo.", "en": "Captain, it feels like you've been keeping some distance from me lately." },
+        { "speaker": "천상우 기장", "text": "…그렇게 느끼셨다면, 죄송합니다. 나름의 이유가 있었습니다.", "reading": "…geu-reo-ke neu-kki-syeot-da-myeon, joe-song-ham-ni-da. na-rum-ui i-yu-ga i-sseot-seum-ni-da.", "en": "...If that's how it's felt, I'm sorry. There was a reason of my own." },
+        { "speaker": "손님", "text": "이유가 뭔데요? 그냥 말해주세요.", "reading": "i-yu-ga mwon-de-yo? geu-nyang mal-hae-ju-se-yo.", "en": "What's the reason? Just tell me." },
+        { "speaker": "천상우 기장", "text": "…이 마음이 커지면, 제가 흔들릴까 봐 두려웠습니다. 조종석에서 흔들림은, 위험한 것이라고 배웠으니까요.", "reading": "…i ma-eum-i keo-ji-myeon, je-ga heun-deul-lil-kka bwa du-ryeo-wot-seum-ni-da. jo-jong-seog-e-seo heun-deul-lim-eun, wi-heom-han geos-i-ra-go bae-wo-sseu-ni-kka-yo.", "en": "...I was afraid that if this feeling grew any bigger, I'd start to waver. I was taught that wavering, in the cockpit, is a dangerous thing." }
       ],
-      "question": "승객이 \"반칙\"이라고 말한 이유는?",
-      "question_en": "Why does the passenger say it's 'not fair'?",
-      "correct_answer": "기장이 능청스러운 플러팅을 너무 자연스럽게 해서 자꾸 흔들리기 때문",
-      "options": ["기장이 능청스러운 플러팅을 너무 자연스럽게 해서 자꾸 흔들리기 때문", "기장이 규정을 지키지 않아서 화가 나서", "기장이 다른 승객에게도 똑같이 대해서", "기장이 대화를 갑자기 끊어서"],
-      "explanation": "승객은 기장이 너무 자연스럽고 태연하게 애정 표현을 건네는 탓에 자꾸만 마음이 흔들린다는 것을 '반칙'이라는 말로 표현하고 있습니다."
+      "question": "기장이 거리를 둔 진짜 이유로 가장 적절한 것은?",
+      "question_en": "What is the most appropriate real reason the captain kept his distance?",
+      "correct_answer": "커지는 마음이 자신의 판단력을 흔들까 봐 스스로를 보호하려 했다",
+      "options": ["커지는 마음이 자신의 판단력을 흔들까 봐 스스로를 보호하려 했다", "손님에게 실망해서 마음이 식었기 때문에", "다른 사람을 마음에 두고 있기 때문에", "규정상 승객과는 거리를 둬야 해서"],
+      "explanation": "기장은 커지는 마음이 자신의 판단력을 흔들까 봐 두려워, 스스로를 보호하려는 마음에 거리를 두고 있었습니다."
     },
     {
       "id": "d02",
       "turns": [
-        { "speaker": "승객", "text": "기장님도 제 얼굴 자꾸 떠올리세요? 그럼 피차일반이네요.", "reading": "gi-jang-nim-do je eol-gul ja-kku tteo-ol-li-se-yo? geu-reom pi-cha-il-ban-i-ne-yo.", "en": "You keep picturing my face too? Then we're even." },
-        { "speaker": "천상우 기장", "text": "피차일반이라니, 다행입니다. 저 혼자만 이런 줄 알았습니다.", "reading": "pi-cha-il-ban-i-ra-ni, da-haeng-im-ni-da. jeo hon-ja-man i-reon jul al-at-seum-ni-da.", "en": "'We're even'—what a relief. I thought I was the only one." },
-        { "speaker": "승객", "text": "그러니까 그런 말을 아무렇지 않게 하시는 게 얄밉다는 거예요.", "reading": "geu-reo-ni-kka geu-reon mal-eul a-mu-reo-chi an-ke ha-si-neun ge yal-mip-da-neun geo-ye-yo.", "en": "That's exactly why it's infuriating that you say things like that so effortlessly." },
-        { "speaker": "천상우 기장", "text": "…노력해도 잘 안 됩니다. 이건 타고난 것 같습니다.", "reading": "…no-ryeok-hae-do jal an doem-ni-da. i-geon ta-go-nan geot gat-seum-ni-da.", "en": "...Even when I try to hold back, it doesn't quite work. I think this might just be who I am." }
+        { "speaker": "천상우 기장", "text": "…솔직히 말하면, 완전히 거리를 두지도 못했습니다.", "reading": "…sol-jik-hi mal-ha-myeon, wan-jeon-hi geo-ri-reul du-ji-do mot-haet-seum-ni-da.", "en": "...To be honest, I couldn't fully keep my distance either." },
+        { "speaker": "손님", "text": "그게 무슨 말이에요?", "reading": "geu-ge mu-seun mal-i-e-yo?", "en": "What do you mean by that?" },
+        { "speaker": "천상우 기장", "text": "거리를 두겠다면서도, 결국 자꾸 당신 쪽을 바라보고 있었습니다. …이건 미련이겠지요.", "reading": "geo-ri-reul du-get-da-myeon-seo-do, gyeol-guk ja-kku dang-sin jjog-eul ba-ra-bo-go i-sseot-seum-ni-da. …i-geon mi-ryeon-i-get-ji-yo.", "en": "Even while telling myself to keep my distance, I kept ending up looking your way, again and again. ...I suppose this is what lingering attachment looks like." },
+        { "speaker": "손님", "text": "…그럼 그냥 미련하게, 저한테 다시 가까이 오시면 안 돼요?", "reading": "…geu-reom geu-nyang mi-ryeon-ha-ge, jeo-han-te da-si ga-kka-i o-si-myeon an dwae-yo?", "en": "...Then why don't you just be a little foolish, and come close to me again?" }
       ],
-      "question": "두 사람의 대화가 보여주는 것은?",
-      "question_en": "What does this exchange between the two of them reveal?",
-      "correct_answer": "서로 비슷하게 상대를 신경 쓰고 있다는 사실이 드러난다",
-      "options": ["서로 비슷하게 상대를 신경 쓰고 있다는 사실이 드러난다", "승객이 기장에게 전혀 관심이 없다는 것을 보여준다", "기장이 일부러 승객을 피곤하게 만들려 한다는 것을 보여준다", "둘 사이에 오해가 생겼다는 것을 보여준다"],
-      "explanation": "두 사람 모두 서로의 얼굴이 자꾸 떠오른다고 인정하면서, 비슷한 마음을 품고 있다는 사실이 자연스럽게 드러납니다."
+      "question": "손님의 마지막 말이 뜻하는 바는?",
+      "question_en": "What does the passenger's final line mean?",
+      "correct_answer": "기장이 거리를 두지 말고 다시 마음을 열어주기를 바라는 것",
+      "options": ["기장이 거리를 두지 말고 다시 마음을 열어주기를 바라는 것", "기장에게 화가 나서 대화를 끝내려는 것", "미련이라는 단어의 뜻을 잘못 이해한 것", "관제사로서 정식으로 항의하는 것"],
+      "explanation": "손님은 기장이 스스로 만든 거리를 허물고, 다시 자신에게 마음을 열어주기를 바라는 마음을 솔직하게 전하고 있습니다."
     }
   ]
 }

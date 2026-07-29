@@ -1,93 +1,98 @@
 {
   "id": "sp-rom-sunwoo-03",
   "character_id": "sunwoo",
-  "title": "어릴 때 사진 들이밀며",
-  "emoji": "📸",
+  "title": "자갈치 시장에서, 문득",
+  "emoji": "🐟",
   "level": "intermediate_advanced",
   "story": [
     {
-      "text": "남포동 이 골목, 우리 옛날에 맨날 왔던 데다.",
-      "reading": "nam-po-dong i gol-mok, u-ri yen-nal-e maen-nal wat-deon de-da.",
-      "en": "This alley in Nampo-dong, we used to come here all the time back then."
+      "text": "자갈치시장은 아침부터 활기가 넘친다. 상인들의 외침과 갈매기 울음소리가 뒤섞이고, 좌판마다 싱싱한 생선이 은빛으로 반짝인다.",
+      "reading": "ja-gal-chi-si-jang-eun a-chim-bu-teo hwal-gi-ga neom-chin-da. sang-in-deul-ui oe-chim-gwa gal-mae-gi ul-eum-so-ri-ga dwi-seok-i-go, jwa-pan-ma-da ssing-ssing-han saeng-seon-i eun-bit-eu-ro ban-jjak-in-da.",
+      "en": "Jagalchi Market is bursting with energy from morning on. Merchants' shouts mix with the cries of seagulls, and fresh fish glint silver on every stall."
     },
     {
-      "text": "이거 봐라, 어릴 때 우리 사진. 이 '추억'이 아직도 여 있더라.",
-      "reading": "i-geo bwa-ra, eo-ril ttae u-ri sa-jin. i chu-eok-i a-jik-do yeo it-deo-ra.",
-      "en": "Look at this, a picture of us as kids. This memory is still right here.",
+      "text": "\"이모, 이거 얼마고? …아이고, 너무 비싸다. 좀 깎아 주소.\" 선우가 능청스럽게 '흥정을' 시작한다.",
+      "reading": "i-mo, i-geo eol-ma-go? …a-i-go, neo-mu bi-ssa-da. jom kkak-a ju-so. seon-u-ga neung-cheong-seu-reop-ge heung-jeong-eul si-jak-han-da.",
+      "en": "\"Ma'am, how much for this? …Aigo, that's too much. Cut me a deal.\" Sunwoo starts haggling with an easy, nonchalant confidence.",
       "highlight_word_id": "w01"
     },
     {
-      "text": "이 동네 오니까 갑자기 '그립네', 그때가.",
-      "reading": "i dong-ne o-ni-kka gap-ja-gi geu-rim-ne, geu-ttae-ga.",
-      "en": "Coming to this neighborhood, I suddenly miss those days.",
+      "text": "몇 마디 주고받더니 결국 가격을 깎아낸 그가 의기양양한 얼굴로 돌아본다.",
+      "reading": "myeot ma-di ju-go-bat-deo-ni gyeol-guk ga-gyeok-eul kkak-a-naen geu-ga ui-gi-yang-yang-han eol-gul-lo dol-a-bon-da.",
+      "en": "After a few back-and-forth remarks, he wins a lower price and turns back around, looking triumphant."
+    },
+    {
+      "text": "\"봤제? 이게 부산 사람 아이가. 시장은 이래 '활기차게' 다녀야 제맛이다.\"",
+      "reading": "bwat-je? i-ge bu-san sa-ram a-i-ga. si-jang-eun i-rae hwal-gi-cha-ge da-nyeo-ya je-mat-i-da.",
+      "en": "\"You saw that, right? That's what a real Busan person does. You gotta walk through a market this lively for it to feel right.\"",
       "highlight_word_id": "w02"
     },
     {
-      "text": "근데 사진 속 니랑 지금 니랑 보니까... 좀 '낯설다', 이상하게. 이래 옆에 계속 있고 싶어질 정도로.",
-      "reading": "geun-de sa-jin sok ni-rang ji-geum ni-rang bo-ni-kka... jom nat-seol-da, i-sang-ha-ge. i-rae yeop-e gye-sok it-go sip-eo-jil jeong-do-ro.",
-      "en": "But comparing the you in the photo and the you now... it feels strangely unfamiliar. Unfamiliar enough that I want to keep you by my side like this.",
+      "text": "회 한 접시를 앞에 두고 나란히 앉아 있는데, 선우가 젓가락질을 멈추고 물끄러미 이쪽을 바라본다. \"니 이래 앞에 앉아 있으니까—\" '불쑥' 튀어나온 말에 그 자신도 놀란 눈치다.",
+      "reading": "hoe han jeop-si-reul ap-e du-go na-ran-hi anj-a it-neun-de, seon-u-ga jeot-ga-rak-jil-eul meom-chu-go mul-kkeu-reo-mi i-jjok-eul ba-ra-bon-da. ni i-rae ap-e anj-a it-eu-ni-kka— bul-ssuk twi-eo-na-on mal-e geu ja-sin-do nol-lan nun-chi-i-da.",
+      "en": "Sitting side by side over a plate of raw fish, Sunwoo stops mid-chopstick and stares blankly at me. \"You sitting there in front of me like that—\" The words blurt out of nowhere, and even he looks startled by them.",
       "highlight_word_id": "w03"
     },
     {
-      "text": "'새삼' 니가 많이 컸구나 싶고... 아니, 그, 우리 친구잖아, 근데 아니 근데— 에엥, 내가 지금 뭔 말을 하고 있노.",
-      "reading": "sae-sam ni-ga man-i keot-gu-na sip-go... a-ni, geu, u-ri chin-gu-jan-a, geun-de a-ni geun-de— e-eng, nae-ga ji-geum mwon mal-eul ha-go it-no.",
-      "en": "I realize all over again how much you've grown up... I mean, we're friends, but— wait no— eh, what am I even saying right now.",
+      "text": "말을 잇지 못하고 '머쓱한' 듯 뒷머리를 긁적인다. \"…아니다, 됐다. 그냥 회나 무라, 식겠다.\"",
+      "reading": "mal-eul it-ji mot-ha-go meo-sseuk-han deut dwit-meo-ri-reul geuk-jeok-in-da. …a-ni-da, dwaet-da. geu-nyang hoe-na mu-ra, sik-get-da.",
+      "en": "Unable to continue, he scratches the back of his head, looking sheepish. \"…No, never mind. Just eat, it'll go cold.\"",
       "highlight_word_id": "w04"
     },
     {
-      "text": "와 갑자기 말하다가 '어색해지노', 내가. 아이다! 아무 말도 안 했다, 방금! 자갈치나 가자, 배고프다!",
-      "reading": "wa gap-ja-gi mal-ha-da-ga eo-saek-hae-ji-no, nae-ga. a-i-da! a-mu mal-do an haet-da, bang-geum! ja-gal-chi-na ga-ja, bae-go-peu-da!",
-      "en": "Whoa, why am I suddenly getting awkward mid-sentence. No wait! I didn't say anything just now! Let's just go to Jagalchi, I'm hungry!",
+      "text": "애꿎은 물컵만 만지작거리며 '딴청을' 피우는 그의 귀끝이 살짝 붉다.",
+      "reading": "ae-kkuj-eun mul-keop-man man-ji-jak-geo-ri-myeo ttan-cheong-eul pi-u-neun geu-ui gwi-kkeut-i sal-jjak but-da.",
+      "en": "He fidgets with his water cup for no reason, feigning indifference, the tips of his ears turning faintly red.",
       "highlight_word_id": "w05"
     },
     {
-      "text": "단어는 다 봤제? 대화 문제도 있으니까 잘 읽어봐라.",
-      "reading": "dan-eo-neun da bwat-je? dae-hwa mun-je-do it-eu-ni-kka jal ilg-eo-bwa-ra.",
-      "en": "Got a look at all the words? There's a conversation question too, so read it carefully."
+      "text": "\"단어는 다 챙겼제? 대화 문제도 있으니까 잘 읽어봐라.\"",
+      "reading": "dan-eo-neun da chaeng-gyeot-je? dae-hwa mun-je-do it-eu-ni-kka jal ilg-eo-bwa-ra.",
+      "en": "\"Got all the words down? There's a conversation question too, so read it carefully.\""
     }
   ],
   "words": [
-    { "id": "w01", "word": "추억", "reading": "chu-eok", "meaning": "Memory, reminiscence", "example": "이 사진은 소중한 추억이다.", "example_reading": "i sa-jin-eun so-jung-han chu-eok-i-da", "example_en": "This photo is a precious memory." },
-    { "id": "w02", "word": "그립다", "reading": "geu-rip-da", "meaning": "To miss, feel nostalgic for", "example": "고향이 그리울 때가 있다.", "example_reading": "go-hyang-i geu-ri-ul ttae-ga it-da", "example_en": "There are times I miss my hometown." },
-    { "id": "w03", "word": "낯설다", "reading": "nat-seol-da", "meaning": "To be unfamiliar, strange", "example": "처음 간 도시는 모든 게 낯설었다.", "example_reading": "cheo-eum gan do-si-neun mo-deun ge nat-seol-eot-da", "example_en": "In the city I visited for the first time, everything felt unfamiliar." },
-    { "id": "w04", "word": "새삼", "reading": "sae-sam", "meaning": "Anew, freshly (realize again)", "example": "그의 배려에 새삼 고마움을 느꼈다.", "example_reading": "geu-ui bae-ryeo-e sae-sam go-ma-um-eul neu-kkyeot-da", "example_en": "I felt gratitude anew for his consideration." },
-    { "id": "w05", "word": "어색하다", "reading": "eo-saek-ha-da", "meaning": "To be awkward", "example": "오랜만에 만나니 조금 어색했다.", "example_reading": "o-raen-man-e man-na-ni jo-geum eo-saek-haet-da", "example_en": "Meeting after a long time, it was a bit awkward." }
+    { "id": "w01", "word": "흥정하다", "reading": "heung-jeong-ha-da", "meaning": "To haggle, bargain over a price", "example": "시장에서는 흥정하는 재미가 있다.", "example_reading": "si-jang-e-seo-neun heung-jeong-ha-neun jae-mi-ga it-da", "example_en": "There's a certain fun in haggling at the market." },
+    { "id": "w02", "word": "활기차다", "reading": "hwal-gi-cha-da", "meaning": "To be lively, full of energy", "example": "아침 시장은 언제나 활기차다.", "example_reading": "a-chim si-jang-eun eon-je-na hwal-gi-cha-da", "example_en": "The morning market is always lively." },
+    { "id": "w03", "word": "불쑥", "reading": "bul-ssuk", "meaning": "Abruptly, out of nowhere (of words or actions)", "example": "그는 불쑥 속마음을 말해 버렸다.", "example_reading": "geu-neun bul-ssuk sok-ma-eum-eul mal-hae beo-ryeot-da", "example_en": "He blurted out his true feelings out of nowhere." },
+    { "id": "w04", "word": "머쓱하다", "reading": "meo-sseuk-ha-da", "meaning": "To feel awkward, sheepish", "example": "농담이 안 통해서 머쓱했다.", "example_reading": "nong-dam-i an tong-hae-seo meo-sseuk-haet-da", "example_en": "My joke didn't land, so I felt sheepish." },
+    { "id": "w05", "word": "딴청 (피우다)", "reading": "ttan-cheong (pi-u-da)", "meaning": "To feign indifference, pretend not to notice", "example": "그는 딴청을 피우며 대답을 피했다.", "example_reading": "geu-neun ttan-cheong-eul pi-u-myeo dae-dap-eul pi-haet-da", "example_en": "He avoided answering by acting like nothing was going on." }
   ],
   "sentences": [
-    { "id": "s01", "ko": "이 사진을 보니 어릴 적 추억이 떠올랐다.", "reading": "i sa-jin-eul bo-ni eo-ril jeok chu-eok-i tteo-ol-lat-da", "en": "Looking at this photo, memories from my childhood came to mind." },
-    { "id": "s02", "ko": "고향 친구들이 가끔 그립다.", "reading": "go-hyang chin-gu-deul-i ga-kkeum geu-rip-da", "en": "I sometimes miss my hometown friends." },
-    { "id": "s03", "ko": "오랜만에 만난 그가 왠지 낯설게 느껴졌다.", "reading": "o-raen-man-e man-nan geu-ga waen-ji nat-seol-ge neu-kkyeo-jyeot-da", "en": "Somehow, meeting him after so long felt unfamiliar." },
-    { "id": "s04", "ko": "그의 변한 모습에 새삼 놀랐다.", "reading": "geu-ui byeon-han mo-seup-e sae-sam nol-lat-da", "en": "I was struck anew by how much he had changed." },
-    { "id": "s05", "ko": "갑자기 조용해져서 분위기가 어색해졌다.", "reading": "gap-ja-gi jo-yong-hae-jyeo-seo bun-wi-gi-ga eo-saek-hae-jyeot-da", "en": "It suddenly got quiet and the mood became awkward." }
+    { "id": "s01", "ko": "시장 상인과 흥정해서 값을 깎았다.", "reading": "si-jang sang-in-gwa heung-jeong-hae-seo gap-eul kkak-at-da", "en": "I haggled with the market vendor and got the price lowered." },
+    { "id": "s02", "ko": "이 골목은 언제 와도 활기차다.", "reading": "i gol-mok-eun eon-je wa-do hwal-gi-cha-da", "en": "This alley is lively no matter when you come." },
+    { "id": "s03", "ko": "그는 불쑥 고백 같은 말을 던졌다.", "reading": "geu-neun bul-ssuk go-baek gat-eun mal-eul deon-jyeot-da", "en": "He suddenly blurted out something that sounded like a confession." },
+    { "id": "s04", "ko": "실수를 들켜서 머쓱하게 웃었다.", "reading": "sil-su-reul deul-kyeo-seo meo-sseuk-ha-ge us-eot-da", "en": "Caught in my mistake, I laughed sheepishly." },
+    { "id": "s05", "ko": "그는 대답 대신 딴청을 피웠다.", "reading": "geu-neun dae-dap dae-sin ttan-cheong-eul pi-wot-da", "en": "Instead of answering, he acted like nothing was going on." }
   ],
   "dialogues": [
     {
       "id": "d01",
       "turns": [
-        { "speaker": "선우", "text": "...니랑 계속 이래 지낼 수 있으면 좋겠다. 그, 그니까 내 말은—", "reading": "...ni-rang gye-sok i-rae ji-nael su it-eu-myeon jo-ket-da. geu, geu-ni-kka nae mal-eun—", "en": "...I wish we could keep going on like this together. I mean, what I'm trying to say is—" },
-        { "speaker": "승객", "text": "어? 갑자기 뭔 말이고? 너 얼굴 왜 그래?", "reading": "eo? gap-ja-gi mwon mal-i-go? neo eol-gul wae geu-rae?", "en": "Huh? What's this sudden talk about? Why does your face look like that?" },
-        { "speaker": "선우", "text": "얼, 얼굴이 뭐! 아무렇지도 않다! …아니 잠깐만, 더워서 그렇다. 여름이잖아, 지금.", "reading": "eol, eol-gul-i mwo! a-mu-reo-chi-do an-ta! …a-ni jam-kkan-man, deo-wo-seo geu-ro-ta. yeo-reum-i-jan-a, ji-geum.", "en": "Wh-what's wrong with my face! I'm totally fine! …No wait, hold on, it's just hot out. It's summer right now." },
-        { "speaker": "승객", "text": "지금 겨울인데?", "reading": "ji-geum gyeo-ul-in-de?", "en": "It's winter right now though?" }
+        { "speaker": "상인", "text": "총각, 오늘 회 좋다. 방어 한 마리 우째?", "reading": "chong-gak, o-neul hoe jo-ta. bang-eo han ma-ri u-jjae?", "en": "Young man, the raw fish is good today. How about a whole yellowtail?" },
+        { "speaker": "선우", "text": "이모, 저 매일 오는 단골인데 좀 더 깎아 주이소.", "reading": "i-mo, jeo mae-il o-neun dan-gol-in-de jom deo kkak-a ju-i-so.", "en": "Ma'am, I'm a regular who comes every day, cut me a bit more." },
+        { "speaker": "상인", "text": "아이고 능청스럽기는. 그래, 오늘만 특별히 깎아준다.", "reading": "a-i-go neung-cheong-seu-reop-gi-neun. geu-rae, o-neul-man teuk-byeol-hi kkak-a-jun-da.", "en": "Aigo, so smooth-talking. Fine, I'll cut it just for today." },
+        { "speaker": "승객", "text": "완전 단골처럼 구네. 진짜 여기 자주 오나 봐?", "reading": "wan-jeon dan-gol-cheo-reom gu-ne. jin-jja yeo-gi ja-ju o-na bwa?", "en": "You're acting like a total regular. Do you actually come here a lot?" }
       ],
-      "question": "선우가 갑자기 날씨 핑계를 댄 이유는 무엇인가요?",
-      "question_en": "Why does Sunwoo suddenly make an excuse about the weather?",
-      "correct_answer": "얼굴이 빨개진 진짜 이유를 숨기려고 급하게 둘러대서",
-      "options": ["얼굴이 빨개진 진짜 이유를 숨기려고 급하게 둘러대서", "정말 날씨가 더워서", "승객이 추워 보여서", "다음 대화 주제를 정하려고"],
-      "explanation": "선우는 진심이 튀어나올 뻔하자 당황해 얼굴이 빨개졌고, 그걸 감추려 앞뒤 안 맞는 날씨 핑계까지 댑니다."
+      "question": "선우가 상인에게서 값을 깎는 데 사용한 방법은 무엇인가요?",
+      "question_en": "What method does Sunwoo use to get a discount from the vendor?",
+      "correct_answer": "자신을 단골이라고 소개하며 능청스럽게 흥정했다",
+      "options": ["자신을 단골이라고 소개하며 능청스럽게 흥정했다", "가격표를 보여 달라고 요구했다", "다른 가게와 비교하며 항의했다", "현금이 없다고 둘러댔다"],
+      "explanation": "선우는 자신이 단골이라고 능청스럽게 말하며 상인과 흥정해 가격을 깎아냅니다."
     },
     {
       "id": "d02",
       "turns": [
-        { "speaker": "승객", "text": "방금 진지했다가 갑자기 왜 딴소리하노?", "reading": "bang-geum jin-ji-haet-da-ga gap-ja-gi wae ttan-so-ri-ha-no?", "en": "You were being serious just now, why are you suddenly changing the subject?" },
-        { "speaker": "선우", "text": "내가 언제? 안 그랬다! 자갈치 가서 씨앗호떡이나 무자, 어?", "reading": "nae-ga eon-je? an geu-raet-da! ja-gal-chi ga-seo ssi-at-ho-tteok-i-na mu-ja, eo?", "en": "When did I? I didn't do that! Let's just go to Jagalchi and eat some seed hotteok, okay?" },
-        { "speaker": "승객", "text": "능청은. 방금 니 표정 봤으면서.", "reading": "neung-cheong-eun. bang-geum ni pyo-jeong bwa-sseu-myeon-seo.", "en": "So nonchalant. I saw your face just a second ago." },
-        { "speaker": "선우", "text": "봤어도 몬 본 척해도라, 쫌. 이런 거 진짜 부끄러버 죽겠다 내가.", "reading": "bwa-sseo-do mon bon cheo-kae-do-ra, jjom. i-reon geo jin-jja bu-kkeu-reo-beo juk-get-da nae-ga.", "en": "Even if you saw it, just pretend you didn't, seriously. This kind of thing seriously embarrasses me to death." }
+        { "speaker": "승객", "text": "왜 그렇게 쳐다봐? 회에 뭐 묻었어?", "reading": "wae geu-reo-ke chyeo-da-bwa? hoe-e mwo mut-eot-eo?", "en": "Why are you staring at me like that? Is there something on the fish?" },
+        { "speaker": "선우", "text": "아니, 그게 아니고... 니 이래 앞에 앉아 있으니까 갑자기— 아이다, 아무것도 아이다.", "reading": "a-ni, geu-ge a-ni-go... ni i-rae ap-e anj-a it-eu-ni-kka gap-ja-gi— a-i-da, a-mu-geot-do a-i-da.", "en": "No, that's not it... it's just, with you sitting right there like that, suddenly— never mind, it's nothing." },
+        { "speaker": "승객", "text": "방금 뭐라 하려다가 말았잖아. 뭔데?", "reading": "bang-geum mwo-ra ha-ryeo-da-ga mal-at-jan-a. mwon-de?", "en": "You just started to say something and stopped. What was it?" },
+        { "speaker": "선우", "text": "몰라도 된다, 그런 거! 자, 회나 무라, 다 식는다. …아 진짜 왜 이라지 오늘.", "reading": "mol-la-do doen-da, geu-reon geo! ja, hoe-na mu-ra, da sik-neun-da. …a jin-jja wae i-ra-ji o-neul.", "en": "You don't need to know that! Here, just eat, it's all going cold. …Ugh, seriously, what's with me today." }
       ],
-      "question": "이 대화에서 선우의 태도로 알 수 있는 것은 무엇인가요?",
-      "question_en": "What does Sunwoo's attitude in this conversation reveal?",
-      "correct_answer": "진심이 들킬까 봐 장난과 딴소리로 급히 넘기려는 모습",
-      "options": ["진심이 들킬까 봐 장난과 딴소리로 급히 넘기려는 모습", "호떡이 먹고 싶어서 급한 모습", "승객에게 화가 난 모습", "길을 몰라서 당황한 모습"],
-      "explanation": "평소 장난스럽던 선우가 순간 진지해지며 속마음을 내비쳤다가, 들킨 걸 눈치채자 장난과 화제 전환으로 서둘러 얼버무리고 있습니다."
+      "question": "선우가 갑자기 말을 멈추고 딴청을 피운 이유는 무엇일까요?",
+      "question_en": "Why does Sunwoo suddenly stop talking and act like nothing happened?",
+      "correct_answer": "속마음이 무심코 튀어나올 뻔해서 당황했기 때문에",
+      "options": ["속마음이 무심코 튀어나올 뻔해서 당황했기 때문에", "회가 상한 것 같아서", "옆 가게 소음이 시끄러워서", "다음 일정이 급해서"],
+      "explanation": "선우는 진심이 불쑥 튀어나올 뻔하자 스스로도 당황해 얼버무리며 딴청으로 넘어갑니다."
     }
   ]
 }

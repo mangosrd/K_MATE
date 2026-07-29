@@ -1,62 +1,62 @@
 {
   "id": "sp-rom-kyuhyun-07",
   "character_id": "kyuhyun",
-  "title": "한강 야경, 여유가 사라진 순간",
-  "emoji": "🌃",
+  "title": "바쁜 척하지 말고 나랑 데이트하지",
+  "emoji": "💘",
   "story": [
     {
-      "text": "반포대교 여기 자리, 제가 제일 좋아하는 곳이에요. 오늘은 특별히 아가씨한테만 보여드리고 싶었어요.",
-      "reading": "ban-po-dae-gyo yeo-gi ja-ri, je-ga je-il jo-a-ha-neun got-i-e-yo. o-neul-eun teuk-byeol-hi a-ga-ssi-han-te-man bo-yeo-deu-ri-go si-peot-seo-yo.",
-      "en": "This spot at Banpo Bridge is my favorite place. Today I especially wanted to show it only to you."
+      "text": "그날 저녁, 규현에게서 메시지가 왔다. 평소와 달리 어딘가 조심스러운 말투였다.",
+      "reading": "geu-nal jeo-nyeok, gyu-hyeon-e-ge-seo me-si-ji-ga wat-da. pyeong-so-wa dal-li eo-din-ga jo-sim-seu-reo-un mal-tu-yeot-da.",
+      "en": "That evening, a message came from Kyuhyun. Unlike usual, his tone felt somehow careful."
     },
     {
-      "text": "이 '야경', 매일 봐도 안 질리는데, 오늘따라 옆에 아가씨가 있어서 더 예뻐 보이네요.",
-      "reading": "i ya-gyeong, mae-il bwa-do an jil-li-neun-de, o-neul-tta-ra yeop-e a-ga-ssi-ga i-sseo-seo deo ye-ppeo bo-i-ne-yo.",
-      "en": "This 'night view' never gets old no matter how many times I see it, but today it looks even more beautiful with you beside me.",
+      "text": "이번 주말에 시간 있냐는 짧은 질문 하나. 나는 괜히 심장이 두근거려서 답장을 몇 번이나 고쳐 썼다.",
+      "reading": "i-beon ju-mal-e si-gan iss-nya-neun jjalb-eun jil-mun ha-na. na-neun gwaen-hi sim-jang-i du-geun-geo-ryeo-seo dap-jang-eul myeot beon-i-na go-chyeo sseot-da.",
+      "en": "A short question — did I have time this weekend. My heart, for no clear reason, started pounding, and I rewrote my reply several times.",
       "highlight_word_id": "w01"
     },
     {
-      "text": "저기 달빛무지개 '분수' 물줄기 보이죠? 타이밍 맞춰서 왔거든요, 아가씨 보여주려고.",
-      "reading": "jeo-gi dal-bit-mu-ji-gae bun-su mul-jul-gi bo-i-jyo? ta-i-ming mat-chwo-seo wat-geo-deun-yo, a-ga-ssi bo-yeo-ju-ryeo-go.",
-      "en": "Can you see the Moonlight Rainbow 'fountain' over there? I timed it on purpose, just to show you.",
+      "text": "다음 날 만난 그는, 여느 때처럼 웃고 있었지만 평소보다 말이 조금 느렸다. '요즘 계속 바쁘다고 하셨죠? 저도 알아요, 여행 일정 빡빡한 거.'",
+      "reading": "da-eum nal man-nan geu-neun, yeo-neu ttae-cheo-reom ut-go iss-eot-ji-man pyeong-so-bo-da mal-i jo-geum neu-ryeot-da. yo-jeum gye-sok ba-ppeu-da-go ha-syeot-jyo? jeo-do al-a-yo, yeo-haeng il-jeong ppak-ppak-han geo.",
+      "en": "When I met him the next day, he was smiling as usual, but he was talking a little slower than normal. \"You said you've been busy lately, right? I know — I get it, your trip schedule's packed.\"",
       "highlight_word_id": "w02"
     },
     {
-      "text": "평소엔 무슨 말이든 '여유' 있게 잘하는데, 오늘은 이상하게 그게 잘 안 되네요. 방금 뭔가 말하려다가... 아니, 아무것도 아니에요.",
-      "reading": "pyeong-so-en mu-seun mal-i-deun yeo-yu it-ge jal-ha-neun-de, o-neul-eun i-sang-ha-ge geu-ge jal an doe-ne-yo. bang-geum mwon-ga mal-ha-ryeo-da-ga... a-ni, a-mu-geot-do a-ni-e-yo.",
-      "en": "Normally I can talk about anything with 'composure', but today, oddly, I just can't manage it. I almost said something just now... never mind, it's nothing.",
+      "text": "잠깐의 정적. 그리고 그는 평소의 장난기를 걷어내고, 낮고 차분한 목소리로 말했다. '이번 주말엔 바쁜 척하지 말고, 나랑 데이트하지, 아가씨?'",
+      "reading": "jam-kkan-ui jeong-jeok. geu-ri-go geu-neun pyeong-so-ui jang-nan-gi-reul geot-eo-nae-go, nat-go cha-bun-han mok-so-ri-ro mal-haet-da. i-beon ju-mal-en ba-ppeun cheok-ha-ji mal-go, na-rang de-i-teu-ha-ji, a-ga-ssi?",
+      "en": "A brief silence. And then, shedding his usual playfulness, he spoke in a low, steady voice. \"This weekend, don't pretend to be busy — let's go on a date, agassi.\"",
       "highlight_word_id": "w03"
     },
     {
-      "text": "이 '순간'만큼은 능글맞은 농담 대신, 그냥 솔직하게 있고 싶어요. 근데 자꾸 말이 목에서 걸리네요.",
-      "reading": "i sun-gan-man-keum-eun neung-geul-maj-eun nong-dam dae-sin, geu-nyang sol-jik-ha-ge it-go si-peo-yo. geun-de ja-kku mal-i mok-e-seo geol-li-ne-yo.",
-      "en": "Just for this 'moment', instead of my usual smooth jokes, I just want to be honest. But the words keep catching in my throat.",
-      "highlight_word_id": "w04"
-    },
-    {
-      "text": "왜 아무 말도 안 해요? 이 '침묵', 저 지금 심장 터질 것 같은데.",
-      "reading": "wae a-mu mal-do an hae-yo? i chim-muk, jeo ji-geum sim-jang teo-jil geot gat-eun-de.",
-      "en": "Why aren't you saying anything? This 'silence' is making my heart feel like it's about to burst.",
+      "text": "늘 여유롭던 그의 목소리가 순간 낮고 진지해졌다. 나는 숨을 멈춘 채 그의 눈을 바라봤다.",
+      "reading": "neul yeo-yu-rop-deon geu-ui mok-so-ri-ga sun-gan nat-go jin-ji-hae-jyeot-da. na-neun sum-eul meom-chun chae geu-ui nun-eul ba-ra-bwat-da.",
+      "en": "His voice, always so easygoing, suddenly dropped low and turned serious. I held my breath and looked into his eyes.",
       "highlight_word_id": "w05"
     },
     {
-      "text": "...크흠, 오늘은 여기까지만 할게요. 배운 단어들, 문제로 확인해볼까요?",
-      "reading": "...keu-heum, o-neul-eun yeo-gi-kka-ji-man hal-ge-yo. bae-un dan-eo-deul, mun-je-ro hwa-gin-hae-bol-kka-yo?",
-      "en": "...ahem, let's stop here for today. Shall we check the words we learned with some questions?"
+      "text": "정적이 길어지자 그는 먼저 시선을 피하며 다시 웃었다. '…농담처럼 말했지만, 이거 사실 저한테는 꽤 용기 낸 거예요.'",
+      "reading": "jeong-jeog-i gil-eo-ji-ja geu-neun meon-jeo si-seon-eul pi-ha-myeo da-si ut-eot-da. …nong-dam-cheo-reom mal-haet-ji-man, i-geo sa-sil jeo-han-te-neun kkwae yong-gi naen geo-ye-yo.",
+      "en": "When the silence stretched too long, he broke eye contact first and smiled again. \"...I said it like a joke, but honestly, that took quite a bit of courage for me.\"",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "늘 능글맞기만 하던 그가 보인 그 잠깐의 진심에, 나는 대답 대신 조용히 고개를 끄덕였다.",
+      "reading": "neul neung-geul-maj-gi-man ha-deon geu-ga bo-in geu jam-kkan-ui jin-sim-e, na-neun dae-dap dae-sin jo-yong-hi go-gae-reul kkeu-deok-yeot-da.",
+      "en": "At that brief flash of sincerity from someone who was usually all smooth talk, I answered not with words, but with a quiet nod."
     }
   ],
   "words": [
-    { "id": "w01", "word": "야경", "reading": "ya-gyeong", "meaning": "night view", "example": "한강 야경이 정말 아름다워요.", "example_reading": "han-gang ya-gyeong-i jeong-mal a-reum-da-wo-yo", "example_en": "The Han River night view is truly beautiful." },
-    { "id": "w02", "word": "분수", "reading": "bun-su", "meaning": "fountain", "example": "반포대교 분수가 시작됐어요.", "example_reading": "ban-po-dae-gyo bun-su-ga si-jak-dwae-sseo-yo", "example_en": "The Banpo Bridge fountain has started." },
-    { "id": "w03", "word": "여유", "reading": "yeo-yu", "meaning": "composure, leisure", "example": "오늘은 여유가 하나도 없어요.", "example_reading": "o-neul-eun yeo-yu-ga ha-na-do eop-seo-yo", "example_en": "I have no composure at all today." },
-    { "id": "w04", "word": "순간", "reading": "sun-gan", "meaning": "moment", "example": "이 순간을 오래 기억할 것 같아요.", "example_reading": "i sun-gan-eul o-rae gi-eok-hal geot gat-a-yo", "example_en": "I think I'll remember this moment for a long time." },
-    { "id": "w05", "word": "침묵", "reading": "chim-muk", "meaning": "silence", "example": "긴 침묵 끝에 그가 말했어요.", "example_reading": "gin chim-muk kkeut-e geu-ga mal-hae-sseo-yo", "example_en": "After a long silence, he spoke." }
+    { "id": "w01", "word": "주말", "reading": "ju-mal", "meaning": "weekend", "example": "이번 주말에 시간 있어요?", "example_reading": "i-beon ju-mal-e si-gan iss-eo-yo", "example_en": "Do you have time this weekend?" },
+    { "id": "w02", "word": "바쁘다", "reading": "ba-ppeu-da", "meaning": "to be busy", "example": "요즘 계속 바빠서 못 만났다.", "example_reading": "yo-jeum gye-sok ba-ppa-seo mot man-nat-da", "example_en": "I've been so busy lately that we couldn't meet." },
+    { "id": "w03", "word": "데이트", "reading": "de-i-teu", "meaning": "date", "example": "우리 이번 주말에 데이트할래요?", "example_reading": "u-ri i-beon ju-mal-e de-i-teu-hal-lae-yo", "example_en": "Want to go on a date this weekend?" },
+    { "id": "w04", "word": "용기", "reading": "yong-gi", "meaning": "courage", "example": "그 말을 하는 데 용기가 필요했다.", "example_reading": "geu mal-eul ha-neun de yong-gi-ga pil-yo-haet-da", "example_en": "It took courage to say that." },
+    { "id": "w05", "word": "진지해지다", "reading": "jin-ji-hae-ji-da", "meaning": "to turn serious", "example": "그의 목소리가 갑자기 진지해졌다.", "example_reading": "geu-ui mok-so-ri-ga gap-ja-gi jin-ji-hae-jyeot-da", "example_en": "His voice suddenly turned serious." }
   ],
   "sentences": [
-    { "id": "s01", "ko": "한강 야경이 정말 아름다워요.", "reading": "han-gang ya-gyeong-i jeong-mal a-reum-da-wo-yo", "en": "The Han River night view is truly beautiful." },
-    { "id": "s02", "ko": "반포대교 분수가 시작됐어요.", "reading": "ban-po-dae-gyo bun-su-ga si-jak-dwae-sseo-yo", "en": "The Banpo Bridge fountain has started." },
-    { "id": "s03", "ko": "오늘은 여유가 하나도 없어요.", "reading": "o-neul-eun yeo-yu-ga ha-na-do eop-seo-yo", "en": "I have no composure at all today." },
-    { "id": "s04", "ko": "이 순간을 오래 기억할 것 같아요.", "reading": "i sun-gan-eul o-rae gi-eok-hal geot gat-a-yo", "en": "I think I'll remember this moment for a long time." },
-    { "id": "s05", "ko": "긴 침묵 끝에 그가 말했어요.", "reading": "gin chim-muk kkeut-e geu-ga mal-hae-sseo-yo", "en": "After a long silence, he spoke." }
+    { "id": "s01", "ko": "이번 주말에 시간 있어요?", "reading": "i-beon ju-mal-e si-gan iss-eo-yo", "en": "Do you have time this weekend?" },
+    { "id": "s02", "ko": "요즘 계속 바빠서 못 만났다.", "reading": "yo-jeum gye-sok ba-ppa-seo mot man-nat-da", "en": "I've been so busy lately that we couldn't meet." },
+    { "id": "s03", "ko": "우리 이번 주말에 데이트할래요?", "reading": "u-ri i-beon ju-mal-e de-i-teu-hal-lae-yo", "en": "Want to go on a date this weekend?" },
+    { "id": "s04", "ko": "그 말을 하는 데 용기가 필요했다.", "reading": "geu mal-eul ha-neun de yong-gi-ga pil-yo-haet-da", "en": "It took courage to say that." },
+    { "id": "s05", "ko": "그의 목소리가 갑자기 진지해졌다.", "reading": "geu-ui mok-so-ri-ga gap-ja-gi jin-ji-hae-jyeot-da", "en": "His voice suddenly turned serious." }
   ]
 }

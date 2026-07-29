@@ -1,93 +1,97 @@
 {
   "id": "sp-rom-sangwoo-02",
   "character_id": "sangwoo",
-  "title": "착륙 승인을 요청한다",
-  "emoji": "🛬",
+  "title": "공산성에서, 뒤늦은 인사",
+  "emoji": "🙇",
   "level": "intermediate_advanced",
   "story": [
     {
-      "text": "지금 저희는 공산성 위 하늘을 순항 중입니다. 오늘은 제 오래된 별명 하나를 소개해 드리고 싶습니다.",
-      "reading": "ji-geum jeo-hui-neun gong-san-seong wi ha-neul-eul sun-hang jung-im-ni-da. o-neul-eun je o-rae-doen byeol-myeong ha-na-reul so-gae-hae deu-ri-go sip-seum-ni-da.",
-      "en": "We're currently cruising over the sky above Gongsanseong Fortress. Today I'd like to introduce you to one of my old nicknames."
+      "text": "오늘은 공산성입니다. 성벽을 따라 걷다 보면 금강이 한눈에 내려다보이는 자리가 있습니다. 그 자리에서, 저는 당신을 기다리고 있었습니다.",
+      "reading": "o-neul-eun gong-san-seong-im-ni-da. seong-byeog-eul tta-ra geot-da bo-myeon geum-gang-i han-nun-e nae-ryeo-da-bo-i-neun ja-ri-ga it-seum-ni-da. geu ja-ri-e-seo, jeo-neun dang-sin-eul gi-da-ri-go i-sseot-seum-ni-da.",
+      "en": "Today we're at Gongsanseong Fortress. Walking along the ramparts, there's a spot where the whole Geumgang River comes into view at once. It was there that I stood waiting for you."
     },
     {
-      "text": "동료들 사이에서 저는 십 년 넘게 이 항로를 지킨 '관록' 있는 기장으로 통합니다. …그런데 알고 보니, 플러팅에도 관록이 있다고들 하더군요.",
-      "reading": "dong-nyo-deul sa-i-e-seo jeo-neun sip nyeon neom-ge i hang-no-reul ji-kin 'gwal-lok' it-neun gi-jang-eu-ro tong-ham-ni-da. …geu-reon-de al-go bo-ni, peul-leo-ting-e-do gwal-lo-gi it-da-go-deul ha-deo-gun-yo.",
-      "en": "Among my colleagues, I'm known as a captain with the 'seasoned skill' of over ten years on this route. ...But apparently, I have the same seasoned skill in flirting too.",
+      "text": "여덟 달 전 그날, 제 목소리를 들어주신 '관제사'가 당신이었다는 사실을, 저는 최근에야 알았습니다. 이렇게 마주 서게 될 줄은 몰랐습니다.",
+      "reading": "yeo-deolb dal jeon geu-nal, je mok-so-ri-reul deul-eo-ju-sin 'gwan-je-sa'-ga dang-sin-i-eot-da-neun sa-sil-eul, jeo-neun choe-geun-e-ya al-at-seum-ni-da. i-reo-ke ma-ju seo-ge doel jul-eun mol-lat-seum-ni-da.",
+      "en": "That the 'air traffic controller' who listened to me that night eight months ago was you — I only found out recently. I never imagined I'd end up standing face to face with you like this.",
       "highlight_word_id": "w01"
     },
     {
-      "text": "격식 있는 말투 뒤에 마음을 숨기는 '능청'이 제 특기입니다. 그런데 당신 앞에서는 이 능청이 자꾸 서툴러집니다.",
-      "reading": "gyeok-sik it-neun mal-tu dwi-e ma-eum-eul sum-gi-neun 'neung-cheong'-i je teuk-gi-im-ni-da. geu-reon-de dang-sin ap-e-seo-neun i neung-cheong-i ja-kku seo-tul-leo-jim-ni-da.",
-      "en": "Hiding my feelings behind formal speech with a perfectly straight face—'nonchalant cunning'—is my specialty. But in front of you, this act keeps slipping.",
+      "text": "제게 당신은, 그저 스쳐 가는 목소리가 아닙니다. 제 목숨을 지켜주신 '은인'입니다. 이 말이 조금 낯간지럽더라도, 오늘만큼은 꼭 전하고 싶었습니다.",
+      "reading": "je-ge dang-sin-eun, geu-jeo seu-chyeo ga-neun mok-so-ri-ga a-nim-ni-da. je mok-sum-eul ji-kyeo-ju-sin 'eun-in'-im-ni-da. i mal-i jo-geum nat-gan-ji-reop-deo-ra-do, o-neul-man-keum-eun kkok jeon-ha-go sip-eot-seum-ni-da.",
+      "en": "To me, you're not just a voice that passed through my life. You're the 'benefactor' who saved my life. Even if this sounds a little awkward to say, I wanted to tell you, at least today.",
       "highlight_word_id": "w02"
     },
     {
-      "text": "방금 당신 얼굴이 살짝 붉어진 것 같은데, 이 정도 '무장해제'는 사실 계획된 것입니다. 사과는 하지 않겠습니다.",
-      "reading": "bang-geum dang-sin eol-gul-i sal-jjak bulg-eo-jin geot gat-neun-de, i jeong-do 'mu-jang-hae-je'-neun sa-sil gye-hoek-doen geo-sim-ni-da. sa-gwa-neun ha-ji an-ket-seum-ni-da.",
-      "en": "Your face just seemed to flush slightly—but this much 'disarming' is, in fact, entirely planned. I won't apologize for it.",
+      "text": "미리 준비한 인사말이 있었는데, 막상 당신 앞에 서니 '격식'을 차린 문장들이 하나도 떠오르지 않는군요.",
+      "reading": "mi-ri jun-bi-han in-sa-mal-i i-sseot-neun-de, mak-sang dang-sin ap-e seo-ni 'gyeok-sik'-eul cha-rin mun-jang-deul-i ha-na-do tteo-o-reu-ji an-neun-gun-yo.",
+      "en": "I had a greeting prepared in advance, but now that I'm actually standing in front of you, not a single one of those 'formal' sentences comes to mind.",
       "highlight_word_id": "w03"
     },
     {
-      "text": "'착륙'이란 비행기가 땅에 안전하게 내려앉는 것을 말합니다. 사실 저는, 다른 곳이 아니라 당신 마음에 착륙하고 싶다는 생각을 자주 합니다.",
-      "reading": "'chang-nyuk'-i-ran bi-haeng-gi-ga ttang-e an-jeon-ha-ge nae-ryeo-an-neun geo-seul mal-ham-ni-da. sa-sil jeo-neun, da-reun go-si a-ni-ra dang-sin ma-eum-e chang-nyuk-ha-go sip-da-neun saeng-gag-eul ja-ju ham-ni-da.",
-      "en": "'Landing' means an aircraft safely coming down onto the ground. Truthfully, I often find myself thinking I'd like to land somewhere else—in your heart.",
+      "text": "'그날 밤, 정말 감사했습니다.' 겨우 이 한마디를 꺼내는 데도, 제 목소리는 평소와 다르게 흔들렸습니다.",
+      "reading": "'geu-nal bam, jeong-mal gam-sa-haet-seum-ni-da.' gyeo-u i han-ma-di-reul kkeo-nae-neun de-do, je mok-so-ri-neun pyeong-so-wa da-reu-ge heun-deul-lyeot-seum-ni-da.",
+      "en": "'That night — thank you, truly.' Even getting out that one simple line, my voice shook, unlike its usual self."
+    },
+    {
+      "text": "당신 덕분에 그날 밤, 그리고 그 뒤로도 계속, 저는 이 항로를 '무사히' 지킬 수 있었습니다.",
+      "reading": "dang-sin deok-bun-e geu-nal bam, geu-ri-go geu dwi-ro-do gye-sok, jeo-neun i hang-no-reul 'mu-sa-hi' ji-kil su i-sseot-seum-ni-da.",
+      "en": "Because of you, that night — and every night since — I've been able to keep this route 'safely'.",
       "highlight_word_id": "w04"
     },
     {
-      "text": "이런 '요청'은 교범에 없는 것이라 조금 망설여집니다. 그래도 오늘은, 정식으로 요청드리고 싶습니다.",
-      "reading": "i-reon 'yo-cheong'-eun gyo-beom-e eop-neun geo-si-ra jo-geum mang-seol-yeo-jim-ni-da. geu-rae-do o-neul-eun, jeong-sig-eu-ro yo-cheong-deu-ri-go sip-seum-ni-da.",
-      "en": "This kind of 'request' isn't written in any manual, so I hesitate a little. But today, I'd like to make it formally.",
+      "text": "이렇게 늦게야 찾아뵌 것이 큰 '결례'라는 걸 압니다. 그래도 이렇게라도, 뒤늦은 인사를 받아주시겠습니까.",
+      "reading": "i-reo-ke neut-ge-ya chaj-a-bwoen geo-si keun 'gyeol-lye'-ra-neun geol am-ni-da. geu-rae-do i-reo-ke-ra-do, dwi-neuj-eun in-sa-reul bad-a-ju-si-get-seum-ni-kka.",
+      "en": "I know it's a great 'impropriety' to have come this late. But even so, will you accept this belated greeting?",
       "highlight_word_id": "w05"
     },
     {
-      "text": "오늘의 교신은 이쯤에서 줄이겠습니다. 공산성에서 나눈 실제 대화를 보여드릴 테니, 두 사람의 상황을 헤아려 보시기 바랍니다.",
-      "reading": "o-neul-ui gyo-sin-eun i-jjeum-e-seo jul-i-get-seum-ni-da. gong-san-seong-e-seo na-nun sil-je dae-hwa-reul bo-yeo-deu-ril te-ni, du sa-ram-ui sang-hwang-eul he-a-ryeo bo-si-gi ba-ram-ni-da.",
-      "en": "I'll conclude today's transmission here. I'll show you an actual conversation from Gongsanseong Fortress—please work out the situation between the two people."
+      "text": "당신은 잠시 놀란 얼굴을 하더니, 이내 작게 웃으며 괜찮다고 말해 주었습니다. 그 웃음이, 무전 너머로만 알던 목소리보다 훨씬 더 다정했습니다. 공산성에서 나눈 대화를 보여드릴 테니, 그날의 분위기를 헤아려 봐 주시기 바랍니다.",
+      "reading": "dang-sin-eun jam-si nol-lan eol-gul-eul ha-deo-ni, i-nae jak-ge us-eu-myeo gwaen-chan-ta-go mal-hae ju-eot-seum-ni-da. geu us-eum-i, mu-jeon neo-meo-ro-man al-deon mok-so-ri-bo-da hwol-ssin deo da-jeong-haet-seum-ni-da. gong-san-seong-e-seo na-nun dae-hwa-reul bo-yeo-deu-ril te-ni, geu-nal-ui bun-wi-gi-reul he-a-ryeo bwa ju-si-gi ba-ram-ni-da."
     }
   ],
   "words": [
-    { "id": "w01", "word": "관록", "reading": "gwal-lok", "meaning": "Seasoned skill / finesse from experience", "example": "십 년 넘게 이 항로를 지킨 관록 있는 기장으로 통합니다.", "example_reading": "sip nyeon neom-ge i hang-no-reul ji-kin gwal-lok it-neun gi-jang-eu-ro tong-ham-ni-da", "example_en": "I'm known as a captain with the seasoned skill of over ten years on this route." },
-    { "id": "w02", "word": "능청", "reading": "neung-cheong", "meaning": "Feigned innocence / nonchalant cunning", "example": "격식 있는 말투 뒤에 마음을 숨기는 능청이 제 특기입니다.", "example_reading": "gyeok-sik it-neun mal-tu dwi-e ma-eum-eul sum-gi-neun neung-cheong-i je teuk-gi-im-ni-da", "example_en": "Hiding my feelings behind formal speech with a straight face is my specialty." },
-    { "id": "w03", "word": "무장해제", "reading": "mu-jang-hae-je", "meaning": "Disarming (someone)", "example": "이 정도 무장해제는 사실 계획된 것입니다.", "example_reading": "i jeong-do mu-jang-hae-je-neun sa-sil gye-hoek-doen geo-sim-ni-da", "example_en": "This much disarming is, in fact, entirely planned." },
-    { "id": "w04", "word": "착륙", "reading": "chang-nyuk", "meaning": "Landing", "example": "저는 다른 곳이 아니라 당신 마음에 착륙하고 싶습니다.", "example_reading": "jeo-neun da-reun go-si a-ni-ra dang-sin ma-eum-e chang-nyuk-ha-go sip-seum-ni-da", "example_en": "I'd like to land somewhere else—in your heart." },
-    { "id": "w05", "word": "요청", "reading": "yo-cheong", "meaning": "Request", "example": "오늘은 정식으로 요청드리고 싶습니다.", "example_reading": "o-neul-eun jeong-sig-eu-ro yo-cheong-deu-ri-go sip-seum-ni-da", "example_en": "Today, I'd like to make this request formally." }
+    { "id": "w01", "word": "관제사", "reading": "gwan-je-sa", "meaning": "Air traffic controller", "example": "그날 제 목소리를 들어주신 관제사가 당신이었습니다.", "example_reading": "geu-nal je mok-so-ri-reul deul-eo-ju-sin gwan-je-sa-ga dang-sin-i-eot-seum-ni-da", "example_en": "The air traffic controller who listened to me that day was you." },
+    { "id": "w02", "word": "은인", "reading": "eun-in", "meaning": "Benefactor / one who saved one's life", "example": "제 목숨을 지켜주신 은인입니다.", "example_reading": "je mok-sum-eul ji-kyeo-ju-sin eun-in-im-ni-da", "example_en": "You're the benefactor who saved my life." },
+    { "id": "w03", "word": "격식", "reading": "gyeok-sik", "meaning": "Formality", "example": "격식을 차린 문장들이 하나도 떠오르지 않습니다.", "example_reading": "gyeok-sig-eul cha-rin mun-jang-deul-i ha-na-do tteo-o-reu-ji an-seum-ni-da", "example_en": "Not a single formal sentence comes to mind." },
+    { "id": "w04", "word": "무사히", "reading": "mu-sa-hi", "meaning": "Safely / without incident", "example": "덕분에 이 항로를 무사히 지킬 수 있었습니다.", "example_reading": "deok-bun-e i hang-no-reul mu-sa-hi ji-kil su i-sseot-seum-ni-da", "example_en": "Thanks to you, I've been able to keep this route safely." },
+    { "id": "w05", "word": "결례", "reading": "gyeol-lye", "meaning": "Impropriety / breach of etiquette", "example": "이렇게 늦게 찾아뵌 것이 결례라는 걸 압니다.", "example_reading": "i-reo-ke neut-ge chaj-a-bwoen geo-si gyeol-lye-ra-neun geol am-ni-da", "example_en": "I know it's an impropriety to have come this late." }
   ],
   "sentences": [
-    { "id": "s01", "ko": "십 년 넘게 이 항로를 지킨 관록 있는 기장으로 통합니다.", "reading": "sip nyeon neom-ge i hang-no-reul ji-kin gwal-lok it-neun gi-jang-eu-ro tong-ham-ni-da", "en": "I'm known as a captain with the seasoned skill of over ten years on this route." },
-    { "id": "s02", "ko": "격식 있는 말투 뒤에 마음을 숨기는 능청이 제 특기입니다.", "reading": "gyeok-sik it-neun mal-tu dwi-e ma-eum-eul sum-gi-neun neung-cheong-i je teuk-gi-im-ni-da", "en": "Hiding my feelings behind formal speech with a straight face is my specialty." },
-    { "id": "s03", "ko": "이 정도 무장해제는 사실 계획된 것입니다.", "reading": "i jeong-do mu-jang-hae-je-neun sa-sil gye-hoek-doen geo-sim-ni-da", "en": "This much disarming is, in fact, entirely planned." },
-    { "id": "s04", "ko": "저는 다른 곳이 아니라 당신 마음에 착륙하고 싶습니다.", "reading": "jeo-neun da-reun go-si a-ni-ra dang-sin ma-eum-e chang-nyuk-ha-go sip-seum-ni-da", "en": "I'd like to land somewhere else—in your heart." },
-    { "id": "s05", "ko": "오늘은 정식으로 요청드리고 싶습니다.", "reading": "o-neul-eun jeong-sig-eu-ro yo-cheong-deu-ri-go sip-seum-ni-da", "en": "Today, I'd like to make this request formally." }
+    { "id": "s01", "ko": "그날 제 목소리를 들어주신 관제사가 당신이었습니다.", "reading": "geu-nal je mok-so-ri-reul deul-eo-ju-sin gwan-je-sa-ga dang-sin-i-eot-seum-ni-da", "en": "The air traffic controller who listened to me that day was you." },
+    { "id": "s02", "ko": "제 목숨을 지켜주신 은인입니다.", "reading": "je mok-sum-eul ji-kyeo-ju-sin eun-in-im-ni-da", "en": "You're the benefactor who saved my life." },
+    { "id": "s03", "ko": "격식을 차린 문장들이 하나도 떠오르지 않습니다.", "reading": "gyeok-sig-eul cha-rin mun-jang-deul-i ha-na-do tteo-o-reu-ji an-seum-ni-da", "en": "Not a single formal sentence comes to mind." },
+    { "id": "s04", "ko": "덕분에 이 항로를 무사히 지킬 수 있었습니다.", "reading": "deok-bun-e i hang-no-reul mu-sa-hi ji-kil su i-sseot-seum-ni-da", "en": "Thanks to you, I've been able to keep this route safely." },
+    { "id": "s05", "ko": "이렇게 늦게 찾아뵌 것이 결례라는 걸 압니다.", "reading": "i-reo-ke neut-ge chaj-a-bwoen geo-si gyeol-lye-ra-neun geol am-ni-da", "en": "I know it's an impropriety to have come this late." }
   ],
   "dialogues": [
     {
       "id": "d01",
       "turns": [
-        { "speaker": "천상우 기장", "text": "방금 그 말, 설레셨습니까?", "reading": "bang-geum geu mal, seol-le-syeot-seum-ni-kka?", "en": "That thing I just said—did it make your heart flutter?" },
-        { "speaker": "승객", "text": "네? 아니 무슨 그런 걸 대놓고 물어보세요.", "reading": "ne? a-ni mu-seun geu-reon geol dae-no-ko mul-eo-bo-se-yo.", "en": "What? Why would you ask something like that so openly?" },
-        { "speaker": "천상우 기장", "text": "관제탑의 반응을 확인하는 것도 기장의 절차입니다.", "reading": "gwan-je-tap-ui ban-eung-eul hwag-in-ha-neun geot-do gi-jang-ui jeol-cha-im-ni-da.", "en": "Confirming the tower's reaction is also part of a captain's procedure." },
-        { "speaker": "승객", "text": "그거 핑계인 거 다 알아요, 능청스럽게.", "reading": "geu-geo ping-gye-in geo da al-a-yo, neung-cheong-seu-reop-ge.", "en": "I know that's just an excuse—so nonchalantly, too." }
+        { "speaker": "천상우 기장", "text": "실례합니다. 혹시, 여덟 달 전 안개 낀 밤에 무전을 받아주셨던 관제사분 맞으십니까.", "reading": "sil-lye-ham-ni-da. hok-si, yeo-deolb dal jeon an-gae kkin bam-e mu-jeon-eul bad-a-ju-syeot-deon gwan-je-sa-bun mat-eu-sim-ni-kka.", "en": "Excuse me. By any chance, are you the controller who took my call on that foggy night, eight months ago?" },
+        { "speaker": "손님", "text": "…어, 맞아요. 그런데 그걸 어떻게 아셨어요?", "reading": "…eo, mat-a-yo. geu-reon-de geu-geol eo-tteo-ke a-syeo-sseo-yo?", "en": "...Oh, that's right. But how did you know that?" },
+        { "speaker": "천상우 기장", "text": "그날 목소리를 계속 기억하고 있었습니다. 오늘은, 정식으로 감사를 전하고 싶어 찾아왔습니다.", "reading": "geu-nal mok-so-ri-reul gye-sok gi-eok-ha-go i-sseot-seum-ni-da. o-neul-eun, jeong-sig-eu-ro gam-sa-reul jeon-ha-go sip-eo chaj-a-wat-seum-ni-da.", "en": "I've kept that voice in my memory ever since. Today, I came here because I wanted to offer my thanks, formally." },
+        { "speaker": "손님", "text": "그냥 제 할 일을 한 것뿐인데, 이렇게까지 안 하셔도 되는데요.", "reading": "geu-nyang je hal il-eul han geot-ppun-in-de, i-reo-ke-kka-ji an ha-syeo-do doe-neun-de-yo.", "en": "I was just doing my job — you really didn't have to go this far." }
       ],
-      "question": "승객의 마지막 반응이 보여주는 것은?",
-      "question_en": "What does the passenger's last reaction show?",
-      "correct_answer": "기장의 능청스러운 플러팅에 못 이기는 척 넘어가고 있다",
-      "options": ["기장의 능청스러운 플러팅에 못 이기는 척 넘어가고 있다", "기장의 말이 무례하다고 화를 내고 있다", "기장의 절차 설명을 진지하게 믿고 있다", "대화를 그만 끝내고 싶어 한다"],
-      "explanation": "승객은 기장의 능청스러운 핑계를 다 알아채면서도, 그 플러팅에 못 이기는 척 슬쩍 넘어가고 있습니다."
+      "question": "기장이 공산성까지 찾아온 이유로 가장 적절한 것은?",
+      "question_en": "What is the most fitting reason the captain came all the way to Gongsanseong Fortress?",
+      "correct_answer": "자신을 구해준 관제사에게 직접 정식으로 감사 인사를 전하기 위해",
+      "options": ["자신을 구해준 관제사에게 직접 정식으로 감사 인사를 전하기 위해", "공산성의 역사를 소개해 주기 위해", "다음 비행 일정을 논의하기 위해", "관제탑에 새 장비를 전달하기 위해"],
+      "explanation": "기장은 여덟 달 전 자신을 안전하게 착륙시켜 준 관제사를 직접 찾아가, 정식으로 감사 인사를 전하고 싶었습니다."
     },
     {
       "id": "d02",
       "turns": [
-        { "speaker": "천상우 기장", "text": "당신 마음에 착륙 허가를 요청해도 되겠습니까.", "reading": "dang-sin ma-eum-e chang-nyuk heo-ga-reul yo-cheong-hae-do doe-get-seum-ni-kka.", "en": "May I request landing clearance to your heart?" },
-        { "speaker": "승객", "text": "또 그 착륙 얘기예요? 기장님 그거 몇 번째예요.", "reading": "tto geu chang-nyuk yae-gi-ye-yo? gi-jang-nim geu-geo myeot beon-jjae-ye-yo.", "en": "That landing thing again? Captain, how many times is that now?" },
-        { "speaker": "천상우 기장", "text": "몇 번을 말해도 부족한 것 같아서 말입니다.", "reading": "myeot beon-eul mal-hae-do bu-jok-han geot gat-a-seo mal-im-ni-da.", "en": "It seems like no matter how many times I say it, it's not enough." },
-        { "speaker": "승객", "text": "…정말 못 당해내겠네요, 이 능청은.", "reading": "…jeong-mal mot dang-hae-nae-get-ne-yo, i neung-cheong-eun.", "en": "...I really can't win against this nonchalant charm of yours." }
+        { "speaker": "손님", "text": "근데 그 목소리 하나로 저를 어떻게 알아보신 거예요?", "reading": "geun-de geu mok-so-ri ha-na-ro jeo-reul eo-tteo-ke al-a-bo-sin geo-ye-yo?", "en": "But how did you recognize me from just that voice?" },
+        { "speaker": "천상우 기장", "text": "십 년 넘게 조종석에 앉아도 흔들린 적 없는 제가, 그날은 유독 그 목소리에만 의지했습니다. …그런 목소리를 어떻게 잊겠습니까.", "reading": "sip nyeon neom-ge jo-jong-seog-e anj-a-do heun-deul-lin jeog eop-neun je-ga, geu-nal-eun yu-dok geu mok-so-ri-e-man ui-ji-haet-seum-ni-da. …geu-reon mok-so-ri-reul eo-tteo-ke ij-get-seum-ni-kka.", "en": "Someone who's sat in the cockpit for over ten years without ever wavering — that day, I relied on that voice, and only that voice. ...How could I possibly forget a voice like that?" },
+        { "speaker": "손님", "text": "…기장님, 생각보다 다정한 분이시네요.", "reading": "…gi-jang-nim, saeng-gak-bo-da da-jeong-han bun-i-si-ne-yo.", "en": "...Captain, you're a lot gentler than I expected." },
+        { "speaker": "천상우 기장", "text": "은인 앞에서는, 이 정도 다정함은 당연한 겁니다.", "reading": "eun-in ap-e-seo-neun, i jeong-do da-jeong-ham-eun dang-yeon-han geom-ni-da.", "en": "In front of the person who saved my life, this much gentleness is only natural." }
       ],
-      "question": "승객의 마지막 대답이 나타내는 감정은?",
-      "question_en": "What emotion does the passenger's final response show?",
-      "correct_answer": "기장의 능청스러운 애정 표현에 두 손 든 듯한 감정",
-      "options": ["기장의 능청스러운 애정 표현에 두 손 든 듯한 감정", "기장의 반복되는 말에 화가 난 감정", "기장을 놀리고 싶은 짓궂은 감정", "기장의 말을 전혀 믿지 않는 감정"],
-      "explanation": "승객은 기장의 능청스러운 애정 표현을 당해낼 수 없다는 듯, 반쯤 포기한 웃음 섞인 감정을 드러내고 있습니다."
+      "question": "기장의 마지막 대답이 보여주는 것은?",
+      "question_en": "What does the captain's final response reveal?",
+      "correct_answer": "생명의 은인에게는 자연스럽게 다정한 태도가 나온다는 것",
+      "options": ["생명의 은인에게는 자연스럽게 다정한 태도가 나온다는 것", "업무상 예의로만 다정하게 대하는 것", "관제사에게 잘 보이려는 계산된 태도", "누구에게나 원래 다정한 성격이라는 것"],
+      "explanation": "기장은 자신의 목숨을 구해준 은인 앞에서는 다정한 태도가 자연스럽게 나온다고 답하며, 그녀를 향한 마음이 특별함을 은근히 드러냅니다."
     }
   ]
 }

@@ -1,93 +1,93 @@
 {
   "id": "sp-rom-sangwoo-08",
   "character_id": "sangwoo",
-  "title": "이 채널, 당신에게만 열어둘게요",
-  "emoji": "📻",
+  "title": "이제는 절차 없이 말하겠습니다",
+  "emoji": "✉️",
   "level": "intermediate_advanced",
   "story": [
     {
-      "text": "오늘은 부여 낙화암과 백마강입니다. 노을이 강물 위로 붉게 번지는 시간이지요. 오늘은 격식을 조금 내려놓고 말씀드리고 싶습니다.",
-      "reading": "o-neul-eun bu-yeo nak-hwa-am-gwa baeng-ma-gang-im-ni-da. no-eul-i gang-mul wi-ro bulg-ge beon-ji-neun si-gan-i-ji-yo. o-neul-eun gyeok-sig-eul jo-geum nae-ryeo-no-ko mal-sseum-deu-ri-go sip-seum-ni-da.",
-      "en": "Today we're at Nakhwaam Rock and the Baengma River in Buyeo, at the hour when the sunset spreads red across the water. Today, I'd like to set aside a bit of formality and speak to you."
+      "text": "오늘은 부여 정림사지입니다. 천 년 넘게 이 자리를 지켜온 석탑을 보고 있으니, 문득 오래 망설여온 제 자신이 부끄러워집니다.",
+      "reading": "o-neul-eun bu-yeo jeong-nim-sa-ji-im-ni-da. cheon nyeon neom-ge i ja-ri-reul ji-kyeo-on seok-tab-eul bo-go i-sseu-ni, mun-deuk o-rae mang-seol-yeo-on je ja-sin-i bu-kkeu-reo-wo-jim-ni-da.",
+      "en": "Today, the Jeongnimsa Temple Site in Buyeo. Looking at the stone pagoda that has stood watch over this spot for over a thousand years, I suddenly feel ashamed of how long I've been hesitating."
     },
     {
-      "text": "제 목소리는 원래 정해진 항로로만 '전파'를 보냅니다. 그런데 지금은, 당신에게만 닿길 바라며 보내고 있습니다.",
-      "reading": "je mok-so-ri-neun won-lae jeong-hae-jin hang-no-ro-man 'jeon-pa'-reul bo-naem-ni-da. geu-reon-de ji-geum-eun, dang-sin-e-ge-man da-kkil ba-ra-myeo bo-nae-go it-seum-ni-da.",
-      "en": "My voice normally sends 'radio waves' only along fixed routes. But right now, I'm sending it hoping it reaches only you.",
+      "text": "지난 며칠, 저는 스스로 거리를 두려 했던 걸 후회했습니다. 그리고 오늘, 하나의 '결심'을 하고 이 자리에 왔습니다.",
+      "reading": "ji-nan myeo-chil, jeo-neun seu-seu-ro geo-ri-reul du-ryeo haet-deon geol hu-hoe-haet-seum-ni-da. geu-ri-go o-neul, ha-na-ui 'gyeol-sim'-eul ha-go i ja-ri-e wat-seum-ni-da.",
+      "en": "These past few days, I've regretted trying to keep my distance from you. And today, I came here having made one 'decision'.",
       "highlight_word_id": "w01"
     },
     {
-      "text": "누구와도 맞춰본 적 없는 '주파수'입니다. 당신과는 이상하게, 처음부터 잘 맞았습니다.",
-      "reading": "nu-gu-wa-do mat-chwo-bon jeog eop-neun 'ju-pa-su'-im-ni-da. dang-sin-gwa-neun i-sang-ha-ge, cheo-eum-bu-teo jal mat-at-seum-ni-da.",
-      "en": "This is a 'frequency' I've never tuned with anyone before. With you, strangely, it matched from the very start.",
+      "text": "능청스러운 말투 뒤에 숨는 건 이제 그만두겠습니다. 대신, 조금 서툴더라도 '용기'를 내어 말씀드리겠습니다.",
+      "reading": "neung-cheong-seu-reo-un mal-tu dwi-e sum-neun geon i-je geu-man-du-get-seum-ni-da. dae-sin, jo-geum seo-tul-deo-ra-do 'yong-gi'-reul nae-eo mal-sseum-deu-ri-get-seum-ni-da.",
+      "en": "I'll stop hiding behind a nonchalant tone, starting now. Instead, even if it's a little clumsy, I'll speak with 'courage'.",
       "highlight_word_id": "w02"
     },
     {
-      "text": "그래서 결심했습니다. 이 채널을, 당신에게만 '개방'하겠습니다.",
-      "reading": "geu-rae-seo gyeol-sim-haet-seum-ni-da. i chae-neol-eul, dang-sin-e-ge-man 'gae-bang'-ha-get-seum-ni-da.",
-      "en": "So I've decided. I'll 'open' this channel to you alone.",
+      "text": "돌아가는 항로 대신, 이제는 당신에게 곧장 향하는 '직항'을 택하겠습니다. 더는 에두르지 않겠습니다.",
+      "reading": "dol-a-ga-neun hang-no dae-sin, i-je-neun dang-sin-e-ge got-jang hyang-ha-neun 'jik-hang'-eul taek-ha-get-seum-ni-da. deo-neun e-du-reu-ji an-ket-seum-ni-da.",
+      "en": "Instead of a roundabout route, from now on I'll choose the 'direct route' straight to you. I won't beat around the bush any longer.",
       "highlight_word_id": "w03"
     },
     {
-      "text": "항공대 동기들도 제 능청은 익히 알지만, 이런 '신뢰'까지 내보인 적은 없습니다. 당신을 향한 신뢰가 없었다면 하지 못했을 말입니다.",
-      "reading": "hang-gong-dae dong-gi-deul-do je neung-cheong-eun i-ki al-ji-man, i-reon 'sin-roe'-kka-ji nae-bo-in jeog-eun eop-seum-ni-da. dang-sin-eul hyang-han sin-roe-ga eop-seot-da-myeon ha-ji mot-hae-sseul mal-im-ni-da.",
-      "en": "Even my academy classmates know my nonchalant charm well, but I've never shown this kind of 'trust' before. Without trust in you, I couldn't have said this.",
+      "text": "거절당할 수도 있다는 '각오'는 이미 되어 있습니다. 그래도 이 마음을 숨긴 채로 남는 것보다는, 훨씬 나을 것 같습니다.",
+      "reading": "geo-jeol-dang-hal su-do it-da-neun 'gag-o'-neun i-mi doe-eo it-seum-ni-da. geu-rae-do i ma-eum-eul sum-gin chae-ro nam-neun geot-bo-da-neun, hwol-ssin na-eul geot gat-seum-ni-da.",
+      "en": "I've already made my 'peace' with the possibility of being turned down. Still, that feels far better than staying stuck with this feeling hidden away.",
       "highlight_word_id": "w04"
     },
     {
-      "text": "무전 멘트 뒤에 숨기지 않고, 이번엔 '진심'으로 말씀드립니다. 이 채널, 당신에게만 열어두겠습니다.",
-      "reading": "mu-jeon men-teu dwi-e sum-gi-ji an-ko, i-beon-en 'jin-sim'-eu-ro mal-sseum-deu-rim-ni-da. i chae-neol, dang-sin-e-ge-man yeol-eo-du-get-seum-ni-da.",
-      "en": "Not hiding behind radio phrases this time, I'll say it with 'sincerity'. I'll keep this channel open for you alone.",
+      "text": "이제 당신에게 마지막 '신호'를 보내려 합니다. 이 신호를 받아주신다면, 저는 주저 없이 당신에게 다가가겠습니다.",
+      "reading": "i-je dang-sin-e-ge ma-ji-mak 'sin-ho'-reul bo-nae-ryeo ham-ni-da. i sin-ho-reul bad-a-ju-sin-da-myeon, jeo-neun ju-jeo eop-i dang-sin-e-ge da-ga-ga-get-seum-ni-da.",
+      "en": "Now, I'm about to send you one final 'signal'. If you receive this signal, I'll approach you without a moment's hesitation.",
       "highlight_word_id": "w05"
     },
     {
-      "text": "…말이 길어졌습니다. 백마강에서 나눈 대화를 보여드릴 테니, 두 사람의 마음이 어디쯤 있는지 짚어 보시기 바랍니다.",
-      "reading": "…mal-i gil-eo-jyeot-seum-ni-da. baeng-ma-gang-e-seo na-nun dae-hwa-reul bo-yeo-deu-ril te-ni, du sa-ram-ui ma-eum-i eo-di-jjeum it-neun-ji jip-eo bo-si-gi ba-ram-ni-da.",
-      "en": "...I've gone on a bit long. I'll show you a conversation shared by the Baengma River—please work out where the two hearts stand."
+      "text": "…말이 조금 앞서갔군요. 오늘 정림사지에서 나눈 대화를 보여드릴 테니, 이 결심이 어떻게 전해졌는지 지켜봐 주시기 바랍니다.",
+      "reading": "…mal-i jo-geum ap-seo-gat-gun-yo. o-neul jeong-nim-sa-ji-e-seo na-nun dae-hwa-reul bo-yeo-deu-ril te-ni, i gyeol-sim-i eo-tteo-ke jeon-hae-jyeot-neun-ji ji-kyeo-bwa ju-si-gi ba-ram-ni-da.",
+      "en": "...I may have gotten a little ahead of myself. I'll show you the conversation we had at Jeongnimsa Temple Site today — please watch and see how this resolve came across."
     }
   ],
   "words": [
-    { "id": "w01", "word": "전파", "reading": "jeon-pa", "meaning": "Radio wave", "example": "제 목소리는 정해진 항로로만 전파를 보냅니다.", "example_reading": "je mok-so-ri-neun jeong-hae-jin hang-no-ro-man jeon-pa-reul bo-naem-ni-da", "example_en": "My voice normally sends radio waves only along fixed routes." },
-    { "id": "w02", "word": "주파수", "reading": "ju-pa-su", "meaning": "Frequency", "example": "당신과는 처음부터 주파수가 잘 맞았습니다.", "example_reading": "dang-sin-gwa-neun cheo-eum-bu-teo ju-pa-su-ga jal mat-at-seum-ni-da", "example_en": "With you, the frequency matched from the very start." },
-    { "id": "w03", "word": "개방", "reading": "gae-bang", "meaning": "Opening (up)", "example": "이 채널을 당신에게만 개방하겠습니다.", "example_reading": "i chae-neol-eul dang-sin-e-ge-man gae-bang-ha-get-seum-ni-da", "example_en": "I'll open this channel to you alone." },
-    { "id": "w04", "word": "신뢰", "reading": "sin-roe", "meaning": "Trust", "example": "동기들도 익히 아는 능청과 달리, 이런 신뢰까지 내보인 적은 없습니다.", "example_reading": "dong-gi-deul-do i-ki a-neun neung-cheong-gwa dal-li, i-reon sin-roe-kka-ji nae-bo-in jeog-eun eop-seum-ni-da", "example_en": "Unlike the nonchalant charm my classmates know well, I've never shown this kind of trust before." },
-    { "id": "w05", "word": "진심", "reading": "jin-sim", "meaning": "Sincerity / true heart", "example": "이번엔 진심으로 말씀드립니다.", "example_reading": "i-beon-en jin-sim-eu-ro mal-sseum-deu-rim-ni-da", "example_en": "This time, I'll say it with sincerity." }
+    { "id": "w01", "word": "결심", "reading": "gyeol-sim", "meaning": "Decision / resolve", "example": "하나의 결심을 하고 이 자리에 왔습니다.", "example_reading": "ha-na-ui gyeol-sim-eul ha-go i ja-ri-e wat-seum-ni-da", "example_en": "I came here having made one decision." },
+    { "id": "w02", "word": "용기", "reading": "yong-gi", "meaning": "Courage", "example": "용기를 내어 말씀드리겠습니다.", "example_reading": "yong-gi-reul nae-eo mal-sseum-deu-ri-get-seum-ni-da", "example_en": "I'll speak with courage." },
+    { "id": "w03", "word": "직항", "reading": "jik-hang", "meaning": "Direct route / nonstop flight", "example": "당신에게 곧장 향하는 직항을 택하겠습니다.", "example_reading": "dang-sin-e-ge got-jang hyang-ha-neun jik-hang-eul taek-ha-get-seum-ni-da", "example_en": "I'll choose the direct route straight to you." },
+    { "id": "w04", "word": "각오", "reading": "gag-o", "meaning": "Being resolved / prepared for an outcome", "example": "거절당할 수도 있다는 각오는 되어 있습니다.", "example_reading": "geo-jeol-dang-hal su-do it-da-neun gag-o-neun doe-eo it-seum-ni-da", "example_en": "I've made my peace with the possibility of being turned down." },
+    { "id": "w05", "word": "신호", "reading": "sin-ho", "meaning": "Signal", "example": "마지막 신호를 보내려 합니다.", "example_reading": "ma-ji-mak sin-ho-reul bo-nae-ryeo ham-ni-da", "example_en": "I'm about to send one final signal." }
   ],
   "sentences": [
-    { "id": "s01", "ko": "제 목소리는 정해진 항로로만 전파를 보냅니다.", "reading": "je mok-so-ri-neun jeong-hae-jin hang-no-ro-man jeon-pa-reul bo-naem-ni-da", "en": "My voice normally sends radio waves only along fixed routes." },
-    { "id": "s02", "ko": "당신과는 처음부터 주파수가 잘 맞았습니다.", "reading": "dang-sin-gwa-neun cheo-eum-bu-teo ju-pa-su-ga jal mat-at-seum-ni-da", "en": "With you, the frequency matched from the very start." },
-    { "id": "s03", "ko": "이 채널을 당신에게만 개방하겠습니다.", "reading": "i chae-neol-eul dang-sin-e-ge-man gae-bang-ha-get-seum-ni-da", "en": "I'll open this channel to you alone." },
-    { "id": "s04", "ko": "동기들도 익히 아는 능청과 달리, 이런 신뢰까지 내보인 적은 없습니다.", "reading": "dong-gi-deul-do i-ki a-neun neung-cheong-gwa dal-li, i-reon sin-roe-kka-ji nae-bo-in jeog-eun eop-seum-ni-da", "en": "Unlike the nonchalant charm my classmates know well, I've never shown this kind of trust before." },
-    { "id": "s05", "ko": "이번엔 진심으로 말씀드립니다.", "reading": "i-beon-en jin-sim-eu-ro mal-sseum-deu-rim-ni-da", "en": "This time, I'll say it with sincerity." }
+    { "id": "s01", "ko": "하나의 결심을 하고 이 자리에 왔습니다.", "reading": "ha-na-ui gyeol-sim-eul ha-go i ja-ri-e wat-seum-ni-da", "en": "I came here having made one decision." },
+    { "id": "s02", "ko": "용기를 내어 말씀드리겠습니다.", "reading": "yong-gi-reul nae-eo mal-sseum-deu-ri-get-seum-ni-da", "en": "I'll speak with courage." },
+    { "id": "s03", "ko": "당신에게 곧장 향하는 직항을 택하겠습니다.", "reading": "dang-sin-e-ge got-jang hyang-ha-neun jik-hang-eul taek-ha-get-seum-ni-da", "en": "I'll choose the direct route straight to you." },
+    { "id": "s04", "ko": "거절당할 수도 있다는 각오는 되어 있습니다.", "reading": "geo-jeol-dang-hal su-do it-da-neun gag-o-neun doe-eo it-seum-ni-da", "en": "I've made my peace with the possibility of being turned down." },
+    { "id": "s05", "ko": "마지막 신호를 보내려 합니다.", "reading": "ma-ji-mak sin-ho-reul bo-nae-ryeo ham-ni-da", "en": "I'm about to send one final signal." }
   ],
   "dialogues": [
     {
       "id": "d01",
       "turns": [
-        { "speaker": "천상우 기장", "text": "이 채널, 오늘부터 당신에게만 개방하겠습니다.", "reading": "i chae-neol, o-neul-bu-teo dang-sin-e-ge-man gae-bang-ha-get-seum-ni-da.", "en": "This channel, from today, I'll open it to you alone." },
-        { "speaker": "승객", "text": "채널을 개방한다는 게... 무슨 뜻이에요?", "reading": "chae-neol-eul gae-bang-han-da-neun ge... mu-seun tteu-si-e-yo?", "en": "What do you mean by 'opening the channel'...?" },
-        { "speaker": "천상우 기장", "text": "제 진심을 숨기지 않고 전하겠다는 뜻입니다. 동기들 앞에서도 이렇게까지는 못 했습니다.", "reading": "je jin-sim-eul sum-gi-ji an-ko jeon-ha-get-da-neun tteu-sim-ni-da. dong-gi-deul ap-e-seo-do i-reo-ke-kka-ji-neun mot haet-seum-ni-da.", "en": "It means I'll convey my sincerity without hiding it. I've never gone this far, even in front of my classmates." },
-        { "speaker": "승객", "text": "…기장님, 지금 되게 로맨틱한 거 아세요?", "reading": "…gi-jang-nim, ji-geum doe-ge ro-maen-tik-han geo a-se-yo?", "en": "...Captain, do you realize how romantic you're being right now?" }
+        { "speaker": "천상우 기장", "text": "그동안 거리를 뒀던 것, 사과드립니다. 오늘은 드릴 말씀이 있어 왔습니다.", "reading": "geu-dong-an geo-ri-reul dwot-deon geot, sa-gwa-deu-rim-ni-da. o-neul-eun deu-ril mal-sseum-i i-sseo wat-seum-ni-da.", "en": "I'm sorry for keeping my distance these past few days. Today, I came because there's something I need to say." },
+        { "speaker": "손님", "text": "…왠지 오늘은 진짜 진지한 얘기 같네요.", "reading": "…waen-ji o-neul-eun jin-jja jin-ji-han yae-gi gat-ne-yo.", "en": "...Somehow, this feels like it's going to be really serious today." },
+        { "speaker": "천상우 기장", "text": "능청 뒤에 숨는 건 그만두기로 했습니다. 당신을, 좋아합니다.", "reading": "neung-cheong dwi-e sum-neun geon geu-man-du-gi-ro haet-seum-ni-da. dang-sin-eul, jo-a-ham-ni-da.", "en": "I've decided to stop hiding behind nonchalance. I like you." },
+        { "speaker": "손님", "text": "…드디어 말씀하시네요, 그거.", "reading": "…deu-di-eo mal-sseum-ha-si-ne-yo, geu-geo.", "en": "...You finally said it." }
       ],
-      "question": "기장이 \"채널을 개방하겠다\"라고 말한 진짜 의미는?",
-      "question_en": "What is the real meaning behind the captain saying, 'I'll open the channel'?",
-      "correct_answer": "승객에게 자신의 진심을 숨기지 않고 보여주겠다는 뜻",
-      "options": ["승객에게 자신의 진심을 숨기지 않고 보여주겠다는 뜻", "새로운 무전 주파수를 공식적으로 등록하겠다는 뜻", "회사 규정을 변경하겠다는 뜻", "다른 승객들에게도 같은 채널을 쓰겠다는 뜻"],
-      "explanation": "기장은 실제 무전 채널이 아니라, 승객에게 자신의 진심을 숨김없이 보여주겠다는 마음을 '개방'이라는 말로 표현하고 있습니다."
+      "question": "이 대화가 이전 챕터의 \"거리 두기\"와 대조적으로 보여주는 것은?",
+      "question_en": "What does this conversation show in contrast to the 'keeping distance' from the previous chapter?",
+      "correct_answer": "기장이 두려움을 극복하고 직접 마음을 고백하기로 결심했다는 것",
+      "options": ["기장이 두려움을 극복하고 직접 마음을 고백하기로 결심했다는 것", "기장이 여전히 마음을 숨기고 있다는 것", "손님이 기장의 고백을 예상하지 못했다는 것", "두 사람의 관계가 이전보다 멀어졌다는 것"],
+      "explanation": "기장은 판단이 흐려질까 두려워 거리를 뒀던 이전과 달리, 이번에는 두려움을 극복하고 직접 마음을 고백하기로 결심했습니다."
     },
     {
       "id": "d02",
       "turns": [
-        { "speaker": "승객", "text": "기장님은 아무한테나 이런 말 안 하실 것 같은데.", "reading": "gi-jang-nim-eun a-mu-han-te-na i-reon mal an ha-sil geot gat-eun-de.", "en": "You don't seem like the type to say this kind of thing to just anyone." },
-        { "speaker": "천상우 기장", "text": "맞습니다. 신뢰가 없는 사람에게는 이 주파수를 맞추지 않습니다.", "reading": "mat-seum-ni-da. sin-roe-ga eop-neun sa-ram-e-ge-neun i ju-pa-su-reul mat-chu-ji an-seum-ni-da.", "en": "That's right. I don't tune this frequency for someone I don't trust." },
-        { "speaker": "승객", "text": "그럼 저는 특별한 사람인 거예요?", "reading": "geu-reom jeo-neun teuk-byeol-han sa-ram-in geo-ye-yo?", "en": "So am I a special person to you, then?" },
-        { "speaker": "천상우 기장", "text": "…부정하면, 지금까지의 제 말이 다 거짓말이 됩니다.", "reading": "…bu-jeong-ha-myeon, ji-geum-kka-ji-ui je mal-i da geo-jit-mal-i doem-ni-da.", "en": "...If I deny it, everything I've said so far becomes a lie." }
+        { "speaker": "손님", "text": "근데 왜 하필 오늘이에요? 갑자기 이렇게 용기 낸 이유가 있어요?", "reading": "geun-de wae ha-pil o-neul-i-e-yo? gap-ja-gi i-reo-ke yong-gi naen i-yu-ga i-sseo-yo?", "en": "But why today, of all days? Is there a reason you suddenly found the courage?" },
+        { "speaker": "천상우 기장", "text": "이 탑을 보고 있으니, 천 년을 버틴 것에 비하면 제 망설임은 너무 짧고 초라해 보였습니다.", "reading": "i tab-eul bo-go i-sseu-ni, cheon nyeon-eul beo-tin geos-e bi-ha-myeon je mang-seol-im-eun neo-mu jjalb-go cho-ra-hae bo-yeot-seum-ni-da.", "en": "Looking at this pagoda, my hesitation seemed so short and small compared to something that's endured for a thousand years." },
+        { "speaker": "손님", "text": "그래서 직항으로 오신 거예요, 저한테?", "reading": "geu-rae-seo jik-hang-eu-ro o-sin geo-ye-yo, jeo-han-te?", "en": "So you came straight to me, then? A direct route?" },
+        { "speaker": "천상우 기장", "text": "정확합니다. 이제 더는 돌아가지 않겠습니다.", "reading": "jeong-hwak-ham-ni-da. i-je deo-neun dol-a-ga-ji an-ket-seum-ni-da.", "en": "Exactly right. I won't take the roundabout way anymore." }
       ],
-      "question": "기장의 마지막 대답이 뜻하는 바는?",
-      "question_en": "What does the captain's last answer mean?",
-      "correct_answer": "승객이 자신에게 특별한 사람이라는 것을 인정한다",
-      "options": ["승객이 자신에게 특별한 사람이라는 것을 인정한다", "지금까지 한 말이 전부 거짓이었다는 뜻", "질문에 대답을 회피하려는 뜻", "규정상 답할 수 없다는 뜻"],
-      "explanation": "기장은 부정하면 이전의 진심 어린 말들이 거짓이 되어버린다고 말하며, 승객이 특별한 사람임을 완곡하게 인정합니다."
+      "question": "기장이 \"직항으로 왔다\"고 말한 것이 비유하는 것은?",
+      "question_en": "What does the captain's line about coming by a 'direct route' metaphorically mean?",
+      "correct_answer": "에둘러 말하지 않고 마음을 곧바로 전하기로 했다는 것",
+      "options": ["에둘러 말하지 않고 마음을 곧바로 전하기로 했다는 것", "실제 비행 노선을 직항으로 변경했다는 것", "정림사지까지 가장 빠른 길로 왔다는 것", "다른 승객 없이 혼자 왔다는 것"],
+      "explanation": "기장은 실제 비행 노선이 아니라, 에둘러 말하지 않고 마음을 곧바로 전하기로 한 결심을 '직항'이라는 말에 빗대어 표현하고 있습니다."
     }
   ]
 }

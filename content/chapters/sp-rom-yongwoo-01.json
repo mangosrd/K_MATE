@@ -1,93 +1,93 @@
 {
   "id": "sp-rom-yongwoo-01",
   "character_id": "yongwoo",
-  "title": "또 칠칠맞게 굴지 마라",
-  "emoji": "🙄",
+  "title": "말도 없이 어디를 가",
+  "emoji": "😐",
   "level": "intermediate_advanced",
   "story": [
     {
-      "text": "게이트를 나서자마자 낯익은 실루엣이 눈에 들어왔다. 196cm는 됨직한 큰 키에 다부진 어깨, 팔짱을 낀 채 미동도 없이 서 있는 모습이 꼭 호랑이 같았다. 발치엔 태권도 도복 가방까지. '야, 너 왜 이렇게 늦게 나와.' 낮고 또렷한 목소리가 울렸다.",
-      "reading": "ge-i-teu-reul na-seo-ja-ma-ja nat-ik-eun sil-lu-et-i nun-e deul-eo-wat-da. baek-gu-sib-yuk-sen-ti-neun doem-jik-han keun ki-e da-bu-jin eo-kkae, pal-jjang-eul kkin chae mi-dong-do eop-si seo it-neun mo-seub-i kkok ho-rang-i gat-at-da. bal-chi-en tae-kwon-do do-bok ga-bang-kka-ji. ya, neo wae i-reo-ke neut-ge na-wa. naj-go tto-ryeot-han mok-so-ri-ga ul-lyeot-da.",
-      "en": "The moment I stepped out of the gate, a familiar silhouette caught my eye — a good 196cm tall, broad and built through the shoulders, standing perfectly still with his arms crossed, exactly like a tiger at rest. A taekwondo dobok bag sat at his feet. 'Hey, why are you so late.' His voice rang out low and unusually clear."
+      "text": "공항 근처 단골 카페, 오후의 나른한 햇살이 창가에 내려앉아 있었다. 브리핑을 막 끝낸 용우가 커피 두 잔을 들고 와 맞은편에 앉는다. '오늘은 일찍 끝났다. 시간 좀 남았는데, 뭐 할 거야.'",
+      "reading": "gong-hang geun-cheo dan-gol ka-pe, o-hu-ui na-reun-han haet-sal-i chang-ga-e nae-ryeo-anj-a iss-eot-da. beu-ri-ping-eul mak kkeut-naen yong-u-ga keo-pi du jan-eul deul-go wa maj-eun-pyeon-e anj-neun-da. o-neul-eun il-jjik kkeut-nat-da. si-gan jom nam-ass-neun-de, mwo hal geo-ya.",
+      "en": "In the café near the airport we always went to, the lazy afternoon sun spilled across the window seat. Yongwoo, fresh out of his briefing, set down two cups of coffee and sat across from me. 'Finished early today. Got some time left — what are you up to.'"
     },
     {
-      "text": "'캐리어 바퀴 하나는 또 왜 저래. 너 진짜 또 칠칠맞게 굴지 마라. 내가 몇 번을 말해.' 잔소리하면서도 목소리 톤 하나 안 흐트러진다 — 방송 멘트라도 하듯 또박또박하다.",
-      "reading": "kae-ri-eo ba-kwi ha-na-neun tto wae jeo-rae. neo jin-jja tto chil-chil-mat-ge gul-ji ma-ra. nae-ga myeot beon-eul mal-hae. jan-so-ri-ha-myeon-seo-do mok-so-ri ton ha-na an heu-teu-reo-jin-da, bang-song men-teu-ra-do ha-deut tto-bak-tto-bak-a-da.",
-      "en": "'What's wrong with one of your suitcase wheels again. Seriously, don't be so careless again. How many times do I have to tell you.' Even mid-scolding his tone never wavers — crisp and clipped, like he's reading out a cabin announcement.",
+      "text": "'저 다음 주에 휴가 내서 부산 좀 다녀오려고요. 혼자, 며칠.' 무심코 스케줄표를 넘기며 말했다.",
+      "reading": "jeo da-eum ju-e hyu-ga nae-seo bu-san jom da-nyeo-o-ryeo-go-yo. hon-ja, myeo-chil. mu-sim-ko seu-ke-jul-pyo-reul neom-gi-myeo mal-haet-da.",
+      "en": "'I'm taking a few days off next week to go to Busan. Alone, just for a bit.' I said it casually while flipping through my schedule.",
       "highlight_word_id": "w01"
     },
     {
-      "text": "쉬는 날인데도 굳이 마중을 나온 걸 아니까 고맙다고 하려는데 용우가 먼저 말을 자른다. '착각하지 마라. 지나가는 길이었다.' 그러면서 이미 캐리어 두 개를 한 손에 가볍게 들어 올렸다.",
-      "reading": "swi-neun nal-in-de-do gud-i ma-jung-eul na-on geol a-ni-kka go-map-da-go ha-ryeo-neun-de yong-u-ga meon-jeo mal-eul ja-reun-da. chak-gak-a-ji ma-ra. ji-na-ga-neun gil-i-eot-da. geu-reo-myeon-seo i-mi kae-ri-eo du gae-reul han son-e ga-byeop-ge deul-eo ol-lyeot-da.",
-      "en": "I knew he'd come out to meet me even on his day off, and I was about to say thanks, but Yongwoo cut me off first. 'Don't get the wrong idea. I just happened to be passing by.' Even as he said it, he'd already lifted both suitcases with one hand like they weighed nothing.",
+      "text": "커피잔을 입가로 가져가던 용우의 손이 잠깐 멈췄다. 아주 짧은 순간이라 눈치채지 못할 뻔했다. '부산은 왜.' 목소리 톤은 평소와 다를 바 없이 담담했다.",
+      "reading": "keo-pi-jan-eul ip-ga-ro ga-jyeo-ga-deon yong-u-ui son-i jam-kkan meom-chwot-da. a-ju jjalb-eun sun-gan-i-ra nun-chi-chae-ji mot-hal ppeon-haet-da. bu-san-eun wae. mok-so-ri ton-eun pyeong-so-wa da-reul ba eop-si dam-dam-haet-da.",
+      "en": "Yongwoo's hand, halfway to his mouth with the coffee cup, paused for just a beat. It was brief enough that I nearly missed it. 'Why Busan.' His tone stayed as even as ever.",
       "highlight_word_id": "w02"
     },
     {
-      "text": "말은 그렇게 하면서 벌써 짐을 양손 가득 들고 앞장서 걷고 있다. 뒷모습이 꼭 오빠 같다.",
-      "reading": "mal-eun geu-reo-ke ha-myeon-seo beol-sseo jim-eul yang-son ga-deuk deul-go ap-jang-seo geot-go it-da. dwit-mo-seub-i kkok o-ppa gat-da.",
-      "en": "Even as he says that, he's already walking ahead with both hands full of my luggage. From behind, he looks just like an older brother.",
+      "text": "'그냥요, 한 번도 안 가봤으니까. 바람도 쐴 겸.' '혼자? 숙소는 정했고. 기차표는 끊었어? 밤길 혼자 다니지 말고.' 질문이 평소보다 하나둘 더 늘어난 것 같았다.",
+      "reading": "geu-nyang-yo, han beon-do an ga-bwass-eu-ni-kka. ba-ram-do sswel gyeom. hon-ja? suk-so-neun jeong-haet-go. gi-cha-pyo-neun kkeun-eoss-eo? bam-gil hon-ja da-ni-ji mal-go. jil-mun-i pyeong-so-bo-da ha-na-dul deo neul-eo-nan geot gat-at-da.",
+      "en": "'Just because — I've never been. Figured I'd get some fresh air too.' 'Alone? Do you have a place to stay. Did you book your train tickets? Don't wander around at night by yourself.' The questions seemed to pile up more than usual.",
       "highlight_word_id": "w03"
     },
     {
-      "text": "'여권은. 지갑은. 핸드폰 배터리는 챙겼어?' 차에 타기도 전에 확인 목록이 끝도 없다.",
-      "reading": "yeo-gwon-eun. ji-gab-eun. haen-deu-pon bae-teo-ri-neun chaeng-gyeoss-eo? cha-e ta-gi-do jeon-e hwak-in mok-rok-i kkeut-do eop-da.",
-      "en": "'Your passport. Your wallet. Did you charge your phone battery?' The checklist goes on before I've even gotten in the car.",
+      "text": "'또 잔소리 시작이다.' 웃으며 놀리자 용우가 딴청을 부리듯 창밖으로 시선을 돌렸다. '잔소리가 아니라 걱정이지. …됐다, 니 알아서 잘 하겠지.' 말과 달리 목소리 끝이 살짝 가라앉아 있었다.",
+      "reading": "tto jan-so-ri si-jak-i-da. us-eu-myeo nol-li-ja yong-u-ga ttan-cheong-eul bu-ri-deut chang-bakk-eu-ro si-seon-eul dol-lyeot-da. jan-so-ri-ga a-ni-ra geok-jeong-i-ji. dwaet-da, ni al-a-seo jal ha-get-ji. mal-gwa dal-li mok-so-ri kkeut-i sal-jjak ga-ra-anj-a iss-eot-da.",
+      "en": "'There you go, nagging again.' I teased him with a laugh, and Yongwoo turned his gaze out the window as if suddenly distracted. 'It's not nagging, it's worrying. ...Forget it, you'll figure it out on your own.' Despite his words, the end of his voice had dipped, just slightly.",
       "highlight_word_id": "w04"
     },
     {
-      "text": "'그만 좀 물어봐, 잔소리쟁이.' 웃으며 놀리자 용우가 살짝 눈을 흘긴다. '이게 잔소리로 보이나. 걱정이지.' 눈매는 서늘한데 말투는 여전히 흐트러짐 없이 차분하다.",
-      "reading": "geu-man jom mul-eo-bwa, jan-so-ri-jaeng-i. us-eu-myeo nol-li-ja yong-u-ga sal-jjak nun-eul heul-gin-da. i-ge jan-so-ri-ro bo-i-na. geok-jeong-i-ji. nun-mae-neun seo-neul-han-de mal-tu-neun yeo-jeon-hi heu-teu-reo-jim eop-si cha-bun-ha-da.",
-      "en": "'Stop asking already, you nag.' I teased him with a laugh, and Yongwoo shot me a look. 'You call this nagging? It's called worrying.' His eyes are cold and sharp, but his tone stays perfectly composed regardless.",
+      "text": "그날따라 용우는 유난히 말이 없었다. 커피가 다 식도록 손도 안 대고, 대신 핸드폰 화면만 몇 번이고 켰다 껐다 했다. 뭘 보는지는 알려주지 않았다.",
+      "reading": "geu-nal-tta-ra yong-u-neun yu-nan-hi mal-i eop-seot-da. keo-pi-ga da sik-do-rok son-do an dae-go, dae-sin haen-deu-pon hwa-myeon-man myeot beon-i-go kyeot-da kkeot-da haet-da. mwol bo-neun-ji-neun al-lyeo-ju-ji an-at-da.",
+      "en": "That day, Yongwoo was unusually quiet. He let his coffee go cold without a sip, and instead kept turning his phone screen on and off. He never let me see what he was looking at.",
       "highlight_word_id": "w05"
     },
     {
-      "text": "차 문을 열어주며 용우가 씩 웃는다. '일단 타라. 오늘 대화 몇 개 들려줄 테니까, 잘 듣고 무슨 상황인지 맞혀봐라.'",
-      "reading": "cha mun-eul yeol-eo-ju-myeo yong-u-ga ssik us-neun-da. il-dan ta-ra. o-neul dae-hwa myeot gae deul-lyeo-jul te-ni-kka, jal deut-go mu-seun sang-hwang-in-ji mac-hyeo-bwa-ra.",
-      "en": "Yongwoo grins as he opens the car door for me. 'Get in first. I'll play you a couple of conversations today — listen carefully and figure out what's going on.'"
+      "text": "'…간다, 이제.' 자리에서 일어서며 짧게 말했다. 평소보다 인사도 없이 성큼성큼 나가는 뒷모습을 보며, 오늘따라 왜 저러나 싶었다. '대화 몇 개 남겨뒀다. 심심할 때 들어봐라.'",
+      "reading": "gan-da, i-je. ja-ri-e-seo il-eo-seo-myeo jjalb-ge mal-haet-da. pyeong-so-bo-da in-sa-do eop-si seong-keum-seong-keum na-ga-neun dwit-mo-seub-eul bo-myeo, o-neul-tta-ra wae jeo-reo-na sip-eot-da. dae-hwa myeot gae nam-gyeo-dwot-da. sim-sim-hal ttae deul-eo-bwa-ra.",
+      "en": "'...I'm heading out.' He said it curtly as he stood up. Watching him stride off without even his usual goodbye, I wondered what had gotten into him today. 'Left you a few conversations. Listen to them if you're bored.'"
     }
   ],
   "words": [
-    { "id": "w01", "word": "칠칠맞다", "reading": "chil-chil-mat-da", "meaning": "Careless, clumsy (informal, often scolding)", "example": "짐을 자꾸 흘리고 다니다니, 진짜 칠칠맞구나.", "example_reading": "jim-eul ja-kku heul-li-go da-ni-da-ni, jin-jja chil-chil-mat-gu-na", "example_en": "Dropping your things all over the place like that — you're really careless." },
-    { "id": "w02", "word": "마중", "reading": "ma-jung", "meaning": "Going out to meet/greet someone arriving", "example": "바쁜데도 공항까지 마중을 나와 줬다.", "example_reading": "ba-ppeun-de-do gong-hang-kka-ji ma-jung-eul na-wa jwot-da", "example_en": "Even though he was busy, he came all the way to the airport to meet me." },
-    { "id": "w03", "word": "짐", "reading": "jim", "meaning": "Luggage, baggage, load", "example": "짐이 무거워 보이니까 내가 들어줄게.", "example_reading": "jim-i mu-geo-wo bo-i-ni-kka nae-ga deul-eo-jul-ge", "example_en": "Your luggage looks heavy, so let me carry it." },
-    { "id": "w04", "word": "챙기다", "reading": "chaeng-gi-da", "meaning": "To look after, take care of, pack/prepare", "example": "출발하기 전에 여권부터 챙겨라.", "example_reading": "chul-bal-ha-gi jeon-e yeo-gwon-bu-teo chaeng-gyeo-ra", "example_en": "Grab your passport before we leave." },
-    { "id": "w05", "word": "잔소리", "reading": "jan-so-ri", "meaning": "Nagging", "example": "잔소리처럼 들려도 다 널 위해서 하는 말이야.", "example_reading": "jan-so-ri-cheo-reom deul-lyeo-do da neol wi-hae-seo ha-neun mal-i-ya", "example_en": "Even if it sounds like nagging, I'm only saying it for your sake." }
+    { "id": "w01", "word": "무심코", "reading": "mu-sim-ko", "meaning": "Without thinking, absentmindedly", "example": "그녀는 무심코 여행 이야기를 꺼냈다.", "example_reading": "geu-nyeo-neun mu-sim-ko yeo-haeng i-ya-gi-reul kkeo-naet-da", "example_en": "She brought up the trip without thinking much of it." },
+    { "id": "w02", "word": "담담하다", "reading": "dam-dam-ha-da", "meaning": "To stay calm and composed, unruffled", "example": "그는 놀란 내색 없이 담담하게 대답했다.", "example_reading": "geu-neun nol-lan nae-saek eop-si dam-dam-ha-ge dae-dab-aet-da", "example_en": "He answered calmly, without showing any surprise." },
+    { "id": "w03", "word": "밤길", "reading": "bam-gil", "meaning": "A road/path at night", "example": "여자 혼자 밤길을 다니면 위험하다.", "example_reading": "yeo-ja hon-ja bam-gil-eul da-ni-myeon wi-heom-ha-da", "example_en": "It's dangerous for a woman to walk alone at night." },
+    { "id": "w04", "word": "딴청을 부리다", "reading": "ttan-cheong-eul bu-ri-da", "meaning": "To pretend to be occupied with something else, feign indifference", "example": "그는 속마음을 감추려고 딴청을 부렸다.", "example_reading": "geu-neun sok-ma-eum-eul gam-chu-ryeo-go ttan-cheong-eul bu-ryeot-da", "example_en": "He acted distracted to hide his true feelings." },
+    { "id": "w05", "word": "유난히", "reading": "yu-nan-hi", "meaning": "Unusually, especially (more than normal)", "example": "오늘따라 그는 유난히 조용했다.", "example_reading": "o-neul-tta-ra geu-neun yu-nan-hi jo-yong-haet-da", "example_en": "He was unusually quiet today, of all days." }
   ],
   "sentences": [
-    { "id": "s01", "ko": "196cm의 다부진 체격으로 팔짱을 낀 그는 미동도 없이 호랑이처럼 서 있었다.", "reading": "baek-gu-sib-yuk-sen-ti-ui da-bu-jin che-gyeok-eu-ro pal-jjang-eul kkin geu-neun mi-dong-do eop-si ho-rang-i-cheo-reom seo iss-eot-da", "en": "Standing at 196cm with a built frame, arms crossed, he was perfectly still, like a tiger." },
-    { "id": "s02", "ko": "그는 잔소리를 하면서도 이미 내 짐을 양손 가득 들고 있었다.", "reading": "geu-neun jan-so-ri-reul ha-myeon-seo-do i-mi nae jim-eul yang-son ga-deuk deul-go iss-eot-da", "en": "Even while nagging, he was already carrying my luggage with both hands." },
-    { "id": "s03", "ko": "여권이랑 지갑은 잘 챙겼냐고 그는 차에 타기도 전에 물었다.", "reading": "yeo-gwon-i-rang ji-gab-eun jal chaeng-gyeon-nya-go geu-neun cha-e ta-gi-do jeon-e mul-eot-da", "en": "He asked if I'd properly packed my passport and wallet before we'd even gotten in the car." },
-    { "id": "s04", "ko": "또 칠칠맞게 짐을 흘리고 다니지 말라고 그는 몇 번이나 말했다.", "reading": "tto chil-chil-mat-ge jim-eul heul-li-go da-ni-ji mal-la-go geu-neun myeot beon-i-na mal-haet-da", "en": "He told me over and over not to be careless and drop my things again." },
-    { "id": "s05", "ko": "걱정이지 잔소리가 아니라며 그는 서늘한 눈으로 살짝 눈을 흘겼다.", "reading": "geok-jeong-i-ji jan-so-ri-ga a-ni-ra-myeo geu-neun seo-neul-han nun-eu-ro sal-jjak nun-eul heul-gyeot-da", "en": "He shot me a cool, sharp look, saying it was worry, not nagging." }
+    { "id": "s01", "ko": "그녀가 다음 주에 혼자 부산 여행을 간다고 무심코 말을 꺼냈다.", "reading": "geu-nyeo-ga da-eum ju-e hon-ja bu-san yeo-haeng-eul gan-da-go mu-sim-ko mal-eul kkeo-naet-da", "en": "She casually mentioned that she was going on a solo trip to Busan next week." },
+    { "id": "s02", "ko": "그는 놀란 기색을 감추며 담담하게 '부산은 왜'라고 물었다.", "reading": "geu-neun nol-lan gi-saek-eul gam-chu-myeo dam-dam-ha-ge bu-san-eun wae-ra-go mul-eot-da", "en": "Hiding his surprise, he asked calmly, 'Why Busan.'" },
+    { "id": "s03", "ko": "그는 숙소와 기차표를 확인하며 밤길을 혼자 다니지 말라고 당부했다.", "reading": "geu-neun suk-so-wa gi-cha-pyo-reul hwak-in-ha-myeo bam-gil-eul hon-ja da-ni-ji mal-la-go dang-bu-haet-da", "en": "He checked on her lodging and train tickets and told her not to walk alone at night." },
+    { "id": "s04", "ko": "속마음을 들킬까 봐 그는 딴청을 부리듯 창밖만 바라보았다.", "reading": "sok-ma-eum-eul deul-kil-kka bwa geu-neun ttan-cheong-eul bu-ri-deut chang-bakk-man ba-ra-bo-at-da", "en": "Afraid his true feelings might show, he stared out the window as if distracted." },
+    { "id": "s05", "ko": "그날 그는 유난히 말이 없었고, 커피는 식어가도록 손대지 않았다.", "reading": "geu-nal geu-neun yu-nan-hi mal-i eop-seot-go, keo-pi-neun sig-eo-ga-do-rok son-dae-ji an-at-da", "en": "He was unusually quiet that day, and let his coffee go cold without touching it." }
   ],
   "dialogues": [
     {
       "id": "d01",
       "turns": [
-        { "speaker": "권용우 기장", "text": "야, 짐은 그거 다야? 무거워 보이는데 내가 들게.", "reading": "ya, jim-eun geu-geo da-ya? mu-geo-wo bo-i-neun-de nae-ga deul-ge.", "en": "Hey, is that all your luggage? Looks heavy, let me carry it." },
-        { "speaker": "손님", "text": "괜찮아요, 저 혼자 들 수 있어요.", "reading": "gwaen-chan-a-yo, jeo hon-ja deul su iss-eo-yo.", "en": "It's fine, I can carry it myself." },
-        { "speaker": "권용우 기장", "text": "됐고, 이리 줘봐. 너 팔 힘도 없으면서 또 무리하지 말고.", "reading": "dwaet-go, i-ri jwo-bwa. neo pal him-do eops-eu-myeon-seo tto mu-ri-ha-ji mal-go.", "en": "Never mind, just hand it over. You've got no arm strength, don't push yourself." },
-        { "speaker": "손님", "text": "…고마워요. 그런데 오늘 쉬는 날 아니었어요?", "reading": "go-ma-wo-yo. geu-reon-de o-neul swi-neun nal a-ni-eoss-eo-yo?", "en": "…Thanks. But wasn't today your day off?" }
+        { "speaker": "손님", "text": "저 다음 주에 부산 여행 가려고요. 그냥 혼자, 바람 쐬러.", "reading": "jeo da-eum ju-e bu-san yeo-haeng ga-ryeo-go-yo. geu-nyang hon-ja, ba-ram sswoe-reo.", "en": "I'm going on a trip to Busan next week. Just alone, to get some fresh air." },
+        { "speaker": "권용우 기장", "text": "혼자? 위험하게 왜 혼자 가. 숙소는 정했어?", "reading": "hon-ja? wi-heom-ha-ge wae hon-ja ga. suk-so-neun jeong-haess-eo?", "en": "Alone? Why go alone, that's risky. Do you have a place to stay?" },
+        { "speaker": "손님", "text": "다 컸는데 뭐가 위험해요. 알아서 잘 다녀올게요.", "reading": "da keon-neun-de mwo-ga wi-heom-hae-yo. al-a-seo jal da-nyeo-ol-ge-yo.", "en": "I'm a grown-up, what's dangerous about it. I'll manage just fine." },
+        { "speaker": "권용우 기장", "text": "…알아서 하겠지, 뭐. 됐다, 신경 끄자.", "reading": "al-a-seo ha-get-ji, mwo. dwaet-da, sin-gyeong kkeu-ja.", "en": "...I'm sure you'll manage. Forget it, never mind." }
       ],
-      "question": "용우가 손님의 짐을 직접 들어준 이유는 무엇인가요?",
-      "question_en": "Why did Yongwoo carry the passenger's luggage himself?",
-      "correct_answer": "손님이 무리할까 봐 걱정돼서",
-      "options": ["손님이 무리할까 봐 걱정돼서", "자기 짐이 없어서 심심해서", "공항 규정 때문에", "다른 승객과 착각해서"],
-      "explanation": "용우는 손님이 무거운 짐을 혼자 드는 걸 걱정해 먼저 나서서 짐을 들어주었습니다."
+      "question": "용우가 손님의 부산 여행 소식에 갑자기 말수가 줄어든 이유로 가장 알맞은 것은?",
+      "question_en": "What best explains why Yongwoo grew unusually quiet after hearing about the passenger's Busan trip?",
+      "correct_answer": "같이 가지 못하는 것이 못내 서운했기 때문",
+      "options": ["같이 가지 못하는 것이 못내 서운했기 때문", "부산이라는 지역을 싫어해서", "휴가 규정을 어겼다고 생각해서", "다른 업무 때문에 바빠서"],
+      "explanation": "용우는 겉으로는 무심한 척했지만, 손님의 여행에 자신이 함께하지 못한다는 사실에 은근히 서운해하고 있었습니다."
     },
     {
       "id": "d02",
       "turns": [
-        { "speaker": "손님", "text": "기장님, 저 여권이랑 지갑 잘 챙겼는지 다시 확인해봐야겠어요.", "reading": "gi-jang-nim, jeo yeo-gwon-i-rang ji-gap jal chaeng-gyeon-neun-ji da-si hwak-in-hae-bwa-ya-gess-eo-yo.", "en": "Captain, I should double check I've got my passport and wallet." },
-        { "speaker": "권용우 기장", "text": "그러니까 내가 아까부터 물어봤잖아. 미리미리 좀 챙겨라.", "reading": "geu-reo-ni-kka nae-ga a-kka-bu-teo mul-eo-bwat-jan-a. mi-ri-mi-ri jom chaeng-gyeo-ra.", "en": "That's why I kept asking earlier. Take care of things ahead of time." },
-        { "speaker": "손님", "text": "잔소리 그만하세요, 저 다 컸거든요?", "reading": "jan-so-ri geu-man-ha-se-yo, jeo da keot-geo-deun-yo?", "en": "Stop nagging, I'm a grown-up, you know?" },
-        { "speaker": "권용우 기장", "text": "다 컸어도 허당인 건 여전하네. 이게 잔소리로 보이면 어쩔 수 없고.", "reading": "da keoss-eo-do heo-dang-in geon yeo-jeon-ha-ne. i-ge jan-so-ri-ro bo-i-myeon eo-jjeol su eop-go.", "en": "Grown-up or not, you're still scatterbrained. If this looks like nagging to you, so be it." }
+        { "speaker": "규현 기장", "text": "너 오늘따라 왜 이렇게 시큰둥해? 무슨 일 있냐?", "reading": "neo o-neul-tta-ra wae i-reo-ke si-keun-dung-hae? mu-seun il iss-nya?", "en": "Why are you so sulky today of all days? Something wrong?" },
+        { "speaker": "권용우 기장", "text": "아무것도 아니다. 신경 꺼라.", "reading": "a-mu-geot-do a-ni-da. sin-gyeong kkeo-ra.", "en": "It's nothing. Don't worry about it." },
+        { "speaker": "규현 기장", "text": "얼굴에 다 티 나는데 뭘. 연애 상담이라도 해줘?", "reading": "eol-gul-e da ti na-neun-de mwol. yeon-ae sang-dam-i-ra-do hae-jwo?", "en": "It's written all over your face. Need some romance advice?" },
+        { "speaker": "권용우 기장", "text": "됐고. …너나 잘해라, 규현아.", "reading": "dwaet-go. neo-na jal-hae-ra, gyu-hyeon-a.", "en": "Forget it. ...Mind your own business, Kyuhyun." }
       ],
-      "question": "용우가 손님에게 여권과 지갑을 확인하라고 한 이유는 무엇인가요?",
-      "question_en": "Why did Yongwoo tell the passenger to check her passport and wallet?",
-      "correct_answer": "손님이 물건을 잘 못 챙길까 봐 걱정돼서",
-      "options": ["손님이 물건을 잘 못 챙길까 봐 걱정돼서", "공항 보안 검색 때문에", "여권 사진이 마음에 안 들어서", "지갑을 빌리고 싶어서"],
-      "explanation": "용우는 손님이 덜렁대는 성격을 알기에 미리 여권과 지갑을 챙기라고 잔소리했습니다."
+      "question": "이 대화에서 용우의 태도로 가장 알맞은 설명은?",
+      "question_en": "What best describes Yongwoo's attitude in this conversation?",
+      "correct_answer": "속마음을 들키고 싶지 않아 일부러 대화를 피하고 있다",
+      "options": ["속마음을 들키고 싶지 않아 일부러 대화를 피하고 있다", "규현과 사이가 나빠서 화를 내고 있다", "정말로 아무 일도 없어서 심드렁하다", "업무 이야기를 하고 싶어 한다"],
+      "explanation": "용우는 자신의 서운한 감정을 규현에게 들키고 싶지 않아 일부러 화제를 돌리며 자리를 피했습니다."
     }
   ]
 }

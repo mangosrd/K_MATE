@@ -1,62 +1,62 @@
 {
   "id": "sp-rom-kyuhyun-02",
   "character_id": "kyuhyun",
-  "title": "이거 규정 위반인가요",
-  "emoji": "💖",
+  "title": "이거, 아가씨 거 아니에요?",
+  "emoji": "😏",
   "story": [
     {
-      "text": "어, 진짜 오셨네요? 비번인 날 저랑 차 마시자고 했더니 진짜 나오실 줄은 몰랐는데.",
-      "reading": "eo, jin-jja o-syeon-ne-yo? bi-beon-in nal jeo-rang cha ma-si-ja-go haet-deo-ni jin-jja na-o-sil jul-eun mol-lat-neun-de.",
-      "en": "Oh, you actually came? I asked you to grab tea with me on my day off, but I didn't think you'd really show up."
+      "text": "저만치 앞서 걷던 나는 등 뒤에서 다급하게 부르는 목소리에 걸음을 멈췄다.",
+      "reading": "jeo-man-chi ap-seo geot-deon na-neun deung dwi-e-seo da-geup-ha-ge bu-reu-neun mok-so-ri-e geol-eum-eul meom-chwot-da.",
+      "en": "I was walking on ahead when an urgent voice calling from behind made me stop."
     },
     {
-      "text": "기장이 승객한테 이렇게 개인적으로 연락하는 거, 이거 '규정' 위반인가요? 근데 전 원래 규정보다 감을 믿는 편이라.",
-      "reading": "gi-jang-i seung-gaek-han-te i-reo-ke gae-in-jeok-eu-ro yeol-lak-ha-neun geo, i-geo gyu-jeong wi-ban-in-ga-yo? geun-de jeon won-lae gyu-jeong-bo-da gam-eul min-neun pyeon-i-ra.",
-      "en": "A captain contacting a passenger privately like this — is this a 'regulation' violation? But I've always trusted my gut more than the rulebook, anyway.",
-      "highlight_word_id": "w01"
-    },
-    {
-      "text": "'인사동' 골목에 숨어 있는 이 찻집, 매뉴얼에도 안 나오는 곳이에요. 발 가는 대로 걷다가 제가 직접 찾은 곳이거든요.",
-      "reading": "in-sa-dong gol-mok-e sum-eo it-neun i chat-jip, mae-nyu-eol-e-do an na-o-neun got-i-e-yo. bal ga-neun dae-ro geot-da-ga je-ga jik-jeop chaj-eun got-i-geo-deun-yo.",
-      "en": "This tea house hidden in the 'Insadong' alleys isn't in any manual. I found it myself just by wandering wherever my feet took me.",
-      "highlight_word_id": "w02"
-    },
-    {
-      "text": "이 '찻집' 자리, 창가 쪽으로 앉으면 인사동 거리가 다 보여요. 근데 전 아가씨만 보이네요.",
-      "reading": "i chat-jip ja-ri, chang-ga jjok-eu-ro anj-eu-myeon in-sa-dong geo-ri-ga da bo-yeo-yo. geun-de jeon a-ga-ssi-man bo-i-ne-yo.",
-      "en": "This 'tea house' — if you sit by the window, you can see all of Insadong. But somehow I only see you.",
+      "text": "숨을 살짝 몰아쉬며 다가온 그가 손바닥 위 열쇠고리를 내밀었다. '소지품 하나가 저기 바닥에 떨어져 있던데, 혹시 아가씨 거 아니에요?'",
+      "reading": "sum-eul sal-jjak mol-a-swi-myeo da-ga-on geu-ga son-ba-dak wi yeol-soe-go-ri-reul nae-mil-eot-da. so-ji-pum ha-na-ga jeo-gi ba-dak-e tteol-eo-jyeo it-deon-de, hok-si a-ga-ssi geo a-ni-e-yo?",
+      "en": "Slightly out of breath from hurrying over, he held out the keychain on his palm. \"I found a belonging lying on the floor over there — this wouldn't happen to be yours, would it, agassi?\"",
       "highlight_word_id": "w03"
     },
     {
-      "text": "아, 방금 건 '농담'이었어요. ...절반 정도는. 저 원래 정색하고 사는 거 딱 질색이거든요.",
-      "reading": "a, bang-geum geon nong-dam-i-eot-seo-yo. ...jeol-ban jeong-do-neun. jeo won-lae jeong-saek-ha-go sa-neun geo ttak jil-saeg-i-geo-deun-yo.",
-      "en": "Ah, that last part was a 'joke'. ...Half of it, anyway. I've always hated taking anything too seriously.",
+      "text": "자세히 보니 정말 내 열쇠고리였다. 잃어버린 줄도 몰랐는데. 그리고 그제야 그의 제복이 눈에 들어왔다 — 항공사 기장이었다.",
+      "reading": "ja-se-hi bo-ni jeong-mal nae yeol-soe-go-ri-eot-da. ilh-eo-beo-rin jul-do mol-lat-neun-de. geu-ri-go geu-je-ya geu-ui je-bok-i nun-e deul-eo-wat-da — hang-gong-sa gi-jang-i-eot-da.",
+      "en": "Looking closely, it really was my keychain. I hadn't even realized I'd lost it. Only then did I notice his uniform — he was an airline captain.",
       "highlight_word_id": "w04"
     },
     {
-      "text": "농담처럼 던졌지만, 사실 요즘 아가씨 생각하면 이게 '진심'인지 저도 헷갈려요.",
-      "reading": "nong-dam-cheo-reom deon-jyeot-ji-man, sa-sil yo-jeum a-ga-ssi saeng-gak-ha-myeon i-ge jin-sim-in-ji jeo-do het-gal-lyeo-yo.",
-      "en": "I threw it out like a joke, but honestly, when I think about you these days, even I can't tell if it's 'sincerity'.",
+      "text": "'잃어버린 것도 모르고 그냥 걸어가시던데요. 하마터면 영영 못 찾을 뻔했어요.'",
+      "reading": "ilh-eo-beo-rin geot-do mo-reu-go geu-nyang geol-eo-ga-si-deon-de-yo. ha-ma-teo-myeon yeong-yeong mot chaj-eul ppeon-haet-seo-yo.",
+      "en": "\"You were just walking off without even realizing you'd lost it. You almost never got it back.\"",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "그는 씩 웃으며 열쇠고리를 내 손에 살며시 쥐여 주었다. '자, 돌려드릴게요. 대신 제 소개는 하고 가야겠죠? 규현입니다. 오늘은 그냥… 지나가던 기장이고요.'",
+      "reading": "geu-neun ssik us-eu-myeo yeol-soe-go-ri-reul nae son-e sal-myeo-si jwi-yeo ju-eot-da. ja, dol-lyeo-deu-ril-ge-yo. dae-sin je so-gae-neun ha-go ga-ya-get-jyo? gyu-hyeon-im-ni-da. o-neul-eun geu-nyang… ji-na-ga-deon gi-jang-i-go-yo.",
+      "en": "He grinned and gently placed the keychain in my hand. \"Here, let me give this back to you. Though I should probably introduce myself first, shouldn't I? I'm Kyuhyun. Today, though... I'm just a captain passing through.\"",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "'그래서, 첫인상이 어때요? 기장치고 나쁘지 않죠?'",
+      "reading": "geu-rae-seo, cheon-in-sang-i eo-ttae-yo? gi-jang-chi-go na-ppeu-ji an-a-jyo?",
+      "en": "\"So, what's your first impression? Not bad, for a captain?\"",
       "highlight_word_id": "w05"
     },
     {
-      "text": "자, 이런 얘기는 여기까지 하고. 오늘 배운 단어들 잊기 전에 문제로 확인해볼까요?",
-      "reading": "ja, i-reon yae-gi-neun yeo-gi-kka-ji ha-go. o-neul bae-un dan-eo-deul it-gi jeon-e mun-je-ro hwa-gin-hae-bol-kka-yo?",
-      "en": "Alright, let's leave it there for now. Shall we check today's words with some questions before you forget them?"
+      "text": "장난스럽게 웃는 그의 얼굴에서, 나는 이상하게 눈을 떼기가 어려웠다. 저 사람, 어디서 다시 만날 일이 있을까 — 그런 생각이 스쳤다.",
+      "reading": "jang-nan-seu-reop-ge ut-neun geu-ui eol-gul-e-seo, na-neun i-sang-ha-ge nun-eul tte-gi-ga eo-ryeo-wot-da. jeo sa-ram, eo-di-seo da-si man-nal il-i iss-eul-kka — geu-reon saeng-gak-i seu-chyeot-da.",
+      "en": "Watching his playful grin, I found it strangely hard to look away. A thought flickered through my mind — would I ever run into him again?"
     }
   ],
   "words": [
-    { "id": "w01", "word": "규정", "reading": "gyu-jeong", "meaning": "regulation, rule", "example": "이거 규정 위반 아닌가요?", "example_reading": "i-geo gyu-jeong wi-ban a-nin-ga-yo", "example_en": "Isn't this a violation of regulations?" },
-    { "id": "w02", "word": "인사동", "reading": "in-sa-dong", "meaning": "Insadong", "example": "인사동에는 예쁜 골목이 많아요.", "example_reading": "in-sa-dong-e-neun ye-ppeun gol-mok-i man-a-yo", "example_en": "Insadong has many pretty alleys." },
-    { "id": "w03", "word": "찻집", "reading": "chat-jip", "meaning": "tea house", "example": "저 찻집에서 차 한잔 할까요?", "example_reading": "jeo chat-jip-e-seo cha han-jan hal-kka-yo", "example_en": "Shall we have a cup of tea at that tea house?" },
-    { "id": "w04", "word": "농담", "reading": "nong-dam", "meaning": "joke", "example": "그건 농담이 아니라 진심이었어요.", "example_reading": "geu-geon nong-dam-i a-ni-ra jin-sim-i-eot-seo-yo", "example_en": "That wasn't a joke, it was sincere." },
-    { "id": "w05", "word": "진심", "reading": "jin-sim", "meaning": "sincerity, true feelings", "example": "진심을 말하면 조금 부끄러워요.", "example_reading": "jin-sim-eul mal-ha-myeon jo-geum bu-kkeu-reo-wo-yo", "example_en": "Telling the truth makes me a little embarrassed." }
+    { "id": "w01", "word": "잃어버리다", "reading": "ilh-eo-beo-ri-da", "meaning": "to lose (something)", "example": "지갑을 잃어버려서 당황했다.", "example_reading": "ji-gab-eul ilh-eo-beo-ryeo-seo dang-hwang-haet-da", "example_en": "I was flustered because I'd lost my wallet." },
+    { "id": "w02", "word": "돌려주다", "reading": "dol-lyeo-ju-da", "meaning": "to give back, return", "example": "그가 열쇠고리를 돌려주었다.", "example_reading": "geu-ga yeol-soe-go-ri-reul dol-lyeo-ju-eot-da", "example_en": "He gave the keychain back to me." },
+    { "id": "w03", "word": "소지품", "reading": "so-ji-pum", "meaning": "belongings, personal items", "example": "소지품을 잘 챙기세요.", "example_reading": "so-ji-pum-eul jal chaeng-gi-se-yo", "example_en": "Please keep track of your belongings." },
+    { "id": "w04", "word": "기장", "reading": "gi-jang", "meaning": "captain (of an aircraft)", "example": "그는 항공사 기장이다.", "example_reading": "geu-neun hang-gong-sa gi-jang-i-da", "example_en": "He is an airline captain." },
+    { "id": "w05", "word": "첫인상", "reading": "cheon-in-sang", "meaning": "first impression", "example": "그의 첫인상은 나쁘지 않았다.", "example_reading": "geu-ui cheon-in-sang-eun na-ppeu-ji an-at-da", "example_en": "My first impression of him wasn't bad." }
   ],
   "sentences": [
-    { "id": "s01", "ko": "이거 규정 위반 아닌가요?", "reading": "i-geo gyu-jeong wi-ban a-nin-ga-yo", "en": "Isn't this a violation of regulations?" },
-    { "id": "s02", "ko": "인사동에는 예쁜 골목이 많아요.", "reading": "in-sa-dong-e-neun ye-ppeun gol-mok-i man-a-yo", "en": "Insadong has many pretty alleys." },
-    { "id": "s03", "ko": "저 찻집에서 차 한잔 할까요?", "reading": "jeo chat-jip-e-seo cha han-jan hal-kka-yo", "en": "Shall we have a cup of tea at that tea house?" },
-    { "id": "s04", "ko": "그건 농담이 아니라 진심이었어요.", "reading": "geu-geon nong-dam-i a-ni-ra jin-sim-i-eot-seo-yo", "en": "That wasn't a joke, it was sincere." },
-    { "id": "s05", "ko": "진심을 말하면 조금 부끄러워요.", "reading": "jin-sim-eul mal-ha-myeon jo-geum bu-kkeu-reo-wo-yo", "en": "Telling the truth makes me a little embarrassed." }
+    { "id": "s01", "ko": "지갑을 잃어버려서 당황했다.", "reading": "ji-gab-eul ilh-eo-beo-ryeo-seo dang-hwang-haet-da", "en": "I was flustered because I'd lost my wallet." },
+    { "id": "s02", "ko": "그가 열쇠고리를 돌려주었다.", "reading": "geu-ga yeol-soe-go-ri-reul dol-lyeo-ju-eot-da", "en": "He gave the keychain back to me." },
+    { "id": "s03", "ko": "소지품을 잘 챙기세요.", "reading": "so-ji-pum-eul jal chaeng-gi-se-yo", "en": "Please keep track of your belongings." },
+    { "id": "s04", "ko": "그는 항공사 기장이다.", "reading": "geu-neun hang-gong-sa gi-jang-i-da", "en": "He is an airline captain." },
+    { "id": "s05", "ko": "그의 첫인상은 나쁘지 않았다.", "reading": "geu-ui cheon-in-sang-eun na-ppeu-ji an-at-da", "en": "My first impression of him wasn't bad." }
   ]
 }
