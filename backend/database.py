@@ -35,6 +35,8 @@ class Settings(BaseSettings):
     smtp_user: str = ""
     smtp_password: str = ""
     smtp_from_email: str = ""
+    resend_api_key: str = ""
+    support_from_email: str = ""
 
     class Config:
         env_file = ".env"
