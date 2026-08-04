@@ -69,12 +69,19 @@
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
   padding: 6px 14px;
-  border-radius: var(--radius-full);
+  border-radius: var(--radius-lg);
   font-size: 13px;
   font-weight: 800;
   border: 1px solid rgba(255, 255, 255, 0.35);
   color: #ffffff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  /* 러시아어("1 дней подряд")처럼 한국어("1일 연속")보다 훨씬 긴 언어로 번역되면 이 배지가
+     찌그러지면서 2줄로 줄바꿈됐는데, 완전히 둥근 알약 모양(radius-full)이라 2줄이 되는 순간
+     모양이 깨져 보였다(스크린샷으로 확인). 줄바꿈 대신 옆으로 늘어나게 하고, 모양도 완전
+     둥근 알약 대신 완만한 둥근 사각형(radius-lg)으로 바꿔서 혹시 더 긴 언어가 들어와도
+     덜 깨져 보이게 한다. 배너 왼쪽 텍스트(제목/부제)는 자연스럽게 줄바꿈되므로 공간을 양보한다. */
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .statsRow {

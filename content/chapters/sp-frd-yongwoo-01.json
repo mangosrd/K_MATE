@@ -1,0 +1,93 @@
+{
+  "id": "sp-frd-yongwoo-01",
+  "character_id": "yongwoo",
+  "title": "니 진짜 오랜만이다, 인마",
+  "emoji": "🙋‍♂️",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "제주국제공항 도착장, 인파 사이로 캐리어 바퀴 소리가 요란했다. 몇 년 만에 밟는 제주 땅이라 그런지 발걸음이 자꾸 들떴다.",
+      "reading": "je-ju-guk-je-gong-hang do-chak-jang, in-pa sa-i-ro kae-ri-eo ba-kwi so-ri-ga yo-ran-haet-da. myeot nyeon man-e balb-neun je-ju ttang-i-ra geu-reon-ji bal-geol-eum-i ja-kku deul-tteot-da.",
+      "en": "At Jeju International Airport's arrival hall, the clatter of suitcase wheels was loud amid the crowd. Maybe because it had been years since I last set foot on Jeju, my steps kept getting lighter.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "저만치 앞쪽, 익숙한 큰 키의 남자가 눈에 들어왔다. 용우였다. 팔짱을 낀 채 무심한 표정으로 서 있었지만, 눈은 벌써 이쪽을 향해 있었다.",
+      "reading": "jeo-man-chi ap-jjok, ig-suk-han keun ki-ui nam-ja-ga nun-e deul-eo-wat-da. yong-u-yeot-da. pal-jjang-eul kkin chae mu-sim-han pyo-jeong-eu-ro seo iss-eot-ji-man, nun-eun beol-sseo i-jjog-eul hyang-hae iss-eot-da.",
+      "en": "Off in the distance, a familiar, tall figure caught my eye. It was Yongwoo. He stood with his arms crossed and a blank expression, but his eyes were already fixed on me."
+    },
+    {
+      "text": "'왔나.' 짧은 한마디였지만, 목소리에 반가움이 묻어났다. '캐리어는 또 왜 이렇게 커. 며칠 있다 간다고.'",
+      "reading": "wat-na. jjalb-eun han-ma-di-yeot-ji-man, mok-so-ri-e ban-ga-um-i mud-eo-nat-da. kae-ri-eo-neun tto wae i-reo-ke keo. myeo-chil it-da gan-da-go.",
+      "en": "'You're here.' It was a short greeting, but gladness leaked through his voice. 'Why's your suitcase so huge again. You're only staying a few days.'"
+    },
+    {
+      "text": "나는 웃으며 다가가 그를 와락 안았다. 몇 년의 시간이 무색하게, 그의 어깨는 기억보다 더 단단했다.",
+      "reading": "na-neun us-eu-myeo da-ga-ga geu-reul wa-rak an-at-da. myeot nyeon-ui si-gan-i mu-saek-ha-ge, geu-ui eo-kkae-neun gi-eok-bo-da deo dan-dan-haet-da.",
+      "en": "I laughed and pulled him into a quick hug. Defying the years that had passed, his shoulders felt even sturdier than I remembered.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "'…마, 이 자슥아. 진짜 오랜만이다.' 낮게 갈라진 목소리와 함께, 방송처럼 또렷하던 발음이 순간 무너졌다. 부산 사투리였다.",
+      "reading": "ma, i ja-seug-a. jin-jja o-raen-man-i-da. nat-ge gal-la-jin mok-so-ri-wa ham-kke, bang-song-cheo-reom tto-ryeot-ha-deon bal-eum-i sun-gan mu-neo-jyeot-da. bu-san sa-tu-ri-yeot-da.",
+      "en": "'...Man, you punk. It's really been forever.' Along with his low, cracked voice, the crisp, radio-announcer diction he always kept came apart for a moment. It was Busan dialect.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "당황한 듯 헛기침을 하며 용우가 얼른 캐리어 손잡이를 뺏어 들었다. '…뭘 그렇게 봐. 가자, 배고프제.' 다시 평소의 담담한 얼굴로 돌아와 있었다.",
+      "reading": "dang-hwang-han deut heot-gi-chim-eul ha-myeo yong-u-ga eol-leun kae-ri-eo son-jab-i-reul ppaes-eo deul-eot-da. mwol geu-reo-ke bwa. ga-ja, bae-go-peu-je. da-si pyeong-so-ui dam-dam-han eol-gul-lo dol-a-wa iss-eot-da.",
+      "en": "Looking flustered, Yongwoo cleared his throat and quickly snatched the suitcase handle from me. '...What are you staring at. Let's go, you must be hungry.' His usual composed face was already back.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "공항 밖으로 나서자 야자수 사이로 훈훈한 바람이 불어왔다. 오랜만의 재회인데도, 이상하게 하나도 낯설지 않았다. 제주에서의 열흘이 이렇게 시작되고 있었다.",
+      "reading": "gong-hang bakk-eu-ro na-seo-ja ya-ja-su sa-i-ro hun-hun-han ba-ram-i bul-eo-wat-da. o-raen-man-ui jae-hoe-in-de-do, i-sang-ha-ge ha-na-do nat-seol-ji anh-at-da. je-ju-e-seo-ui yeol-heul-i i-reo-ke si-jak-doe-go iss-eot-da.",
+      "en": "Stepping outside, a warm breeze drifted through the palm trees. Even though it had been so long since we'd seen each other, strangely, nothing felt unfamiliar. My ten days in Jeju were starting just like this.",
+      "highlight_word_id": "w05"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "인파", "reading": "in-pa", "meaning": "crowd, throng of people", "example": "공항은 인파로 북적였다.", "example_reading": "gong-hang-eun in-pa-ro buk-jeog-yeot-da", "example_en": "The airport was bustling with crowds." },
+    { "id": "w02", "word": "무색하다", "reading": "mu-saek-ha-da", "meaning": "to be put to shame, rendered meaningless (by contrast)", "example": "세월이 무색하게 그는 하나도 안 변했다.", "example_reading": "se-wol-i mu-saek-ha-ge geu-neun ha-na-do an byeon-haet-da", "example_en": "Defying the passage of time, he hadn't changed a bit." },
+    { "id": "w03", "word": "갈라지다", "reading": "gal-la-ji-da", "meaning": "(of a voice) to crack, to break", "example": "감정이 북받쳐 목소리가 갈라졌다.", "example_reading": "gam-jeong-i buk-bat-chyeo mok-so-ri-ga gal-la-jyeot-da", "example_en": "Overcome with emotion, his voice cracked." },
+    { "id": "w04", "word": "헛기침", "reading": "heot-gi-chim", "meaning": "a nervous/fake cough, throat-clearing", "example": "그는 어색함에 헛기침을 했다.", "example_reading": "geu-neun eo-saek-ham-e heot-gi-chim-eul haet-da", "example_en": "He cleared his throat awkwardly." },
+    { "id": "w05", "word": "훈훈하다", "reading": "hun-hun-ha-da", "meaning": "warm, heartwarming (weather or atmosphere)", "example": "봄바람이 훈훈하게 불었다.", "example_reading": "bom-ba-ram-i hun-hun-ha-ge bul-eot-da", "example_en": "The spring breeze blew warm and pleasant." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "공항 도착장은 인파로 북적였다.", "reading": "gong-hang do-chak-jang-eun in-pa-ro buk-jeog-yeot-da", "en": "The airport arrival hall was bustling with crowds." },
+    { "id": "s02", "ko": "몇 년 만인데도 그는 하나도 안 변해 있었다.", "reading": "myeot nyeon man-in-de-do geu-neun ha-na-do an byeon-hae iss-eot-da", "en": "Even after several years, he hadn't changed one bit." },
+    { "id": "s03", "ko": "그의 목소리가 반가움에 살짝 갈라졌다.", "reading": "geu-ui mok-so-ri-ga ban-ga-um-e sal-jjak gal-la-jyeot-da", "en": "His voice cracked slightly with gladness." },
+    { "id": "s04", "ko": "그는 헛기침을 하며 캐리어를 대신 끌었다.", "reading": "geu-neun heot-gi-chim-eul ha-myeo kae-ri-eo-reul dae-sin kkeul-eot-da", "en": "He cleared his throat and pulled the suitcase for me instead." },
+    { "id": "s05", "ko": "공항 밖에는 훈훈한 바람이 불고 있었다.", "reading": "gong-hang bakk-e-neun hun-hun-han ba-ram-i bul-go iss-eot-da", "en": "Outside the airport, a warm breeze was blowing." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "용우", "text": "왔나. 캐리어는 또 왜 이렇게 커. 며칠 있다 간다고.", "reading": "wat-na. kae-ri-eo-neun tto wae i-reo-ke keo. myeo-chil it-da gan-da-go.", "en": "You're here. Why's your suitcase so huge again. You're only staying a few days." },
+        { "speaker": "승객", "text": "오랜만에 보는 건데 그 말부터 해? 반갑다는 말은 없어?", "reading": "o-raen-man-e bo-neun geon-de geu mal-bu-teo hae? ban-gap-da-neun mal-eun eob-seo?", "en": "We haven't seen each other in ages and that's the first thing you say? No 'good to see you'?" },
+        { "speaker": "용우", "text": "…반갑다, 인마. 됐제, 이 정도면.", "reading": "ban-gap-da, in-ma. dwaet-je, i jeong-do-myeon.", "en": "...Good to see you too, you punk. That should cover it, right." },
+        { "speaker": "승객", "text": "'됐제'는 또 뭐야, 사투리 나온 거 봐.", "reading": "dwaet-je-neun tto mwo-ya, sa-tu-ri na-on geo bwa.", "en": "What's with the 'dwaetje'? Look at that, your dialect's showing." }
+      ],
+      "question": "용우가 반가운 마음을 표현하는 방식으로 알맞은 것은?",
+      "question_en": "What best describes how Yongwoo expressed his gladness at the reunion?",
+      "correct_answer": "잔소리와 무뚝뚝한 말투 속에 반가움을 숨겼다",
+      "options": ["잔소리와 무뚝뚝한 말투 속에 반가움을 숨겼다", "눈물을 흘리며 크게 반가워했다", "별로 반가워하지 않았다", "화를 내며 짐이 많다고 나무랐다"],
+      "explanation": "용우는 무뚝뚝하고 잔소리 섞인 말투 뒤에 반가운 감정을 숨기는 전형적인 츤데레 모습을 보였습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "승객", "text": "야, 너 방금 목소리 떨렸어. 혹시 운 거야?", "reading": "ya, neo bang-geum mok-so-ri tteol-lyeoss-eo. hok-si un geo-ya?", "en": "Hey, your voice just shook. Were you crying or something?" },
+        { "speaker": "용우", "text": "무슨 소리야. …마, 이 자슥아. 진짜 오랜만이라 그렇다.", "reading": "mu-seun so-ri-ya. ma, i ja-seug-a. jin-jja o-raen-man-i-ra geu-reo-ta.", "en": "What are you talking about. ...Man, you punk. It's just been a really long time, that's all." },
+        { "speaker": "승객", "text": "방금 사투리 썼지? 부산 말투 오랜만에 듣네.", "reading": "bang-geum sa-tu-ri sseot-ji? bu-san mal-tu o-raen-man-e deun-ne.", "en": "You just used dialect, didn't you? Haven't heard that Busan accent in a while." },
+        { "speaker": "용우", "text": "…들었나. 됐다, 신경 쓰지 마라. 가자.", "reading": "deul-eon-na. dwaet-da, sin-gyeong sseu-ji ma-ra. ga-ja.", "en": "...You heard that. Never mind, don't worry about it. Let's go." }
+      ],
+      "question": "용우가 갑자기 사투리를 쓴 이유로 가장 알맞은 것은?",
+      "question_en": "What best explains why Yongwoo suddenly slipped into dialect?",
+      "correct_answer": "감정이 북받쳐 무의식중에 사투리가 튀어나왔다",
+      "options": ["감정이 북받쳐 무의식중에 사투리가 튀어나왔다", "일부러 손님을 웃기려고 사투리를 썼다", "부산 사투리 연습을 하고 있었다", "화가 나서 사투리를 썼다"],
+      "explanation": "용우는 오랜만의 재회에 감정이 북받쳐, 평소 감추던 부산 사투리가 무의식중에 튀어나왔습니다."
+    }
+  ]
+}

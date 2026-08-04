@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { LanguageProvider } from "@/components/LanguageContext";
+import { ThemeProvider } from "@/components/ThemeContext";
 
 export const metadata: Metadata = {
   title: "K-MATE — Learn Korean with Your AI Travel Companion",
@@ -17,9 +18,11 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body>
-        <LanguageProvider>
-          <div className="app-shell">{children}</div>
-        </LanguageProvider>
+        <ThemeProvider>
+          <LanguageProvider>
+            <div className="app-shell">{children}</div>
+          </LanguageProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

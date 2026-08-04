@@ -1,0 +1,98 @@
+{
+  "id": "sp-frd-sangwoo-05",
+  "character_id": "sangwoo",
+  "title": "웨이팅도 함께라면",
+  "emoji": "🌰",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "공주 골목 끝, 작은 밤빵집 앞에 사람들이 길게 줄지어 서 있었습니다.",
+      "reading": "gong-ju gol-mok kkeut, jak-eun bam-ppang-jib ap-e sa-ram-deul-i gil-ge jul-ji-eo seo it-seot-seum-ni-da.",
+      "en": "At the end of a Gongju alley, people stood in a long line in front of a small chestnut bread shop."
+    },
+    {
+      "text": "\"이 정도 '웨이팅'은 각오해야 합니다.\" 저는 비행 전 브리핑처럼 진지하게 상황을 설명했습니다.",
+      "reading": "\"i jeong-do 'we-i-ting'-eun gak-o-hae-ya ham-ni-da.\" jeo-neun bi-haeng jeon beu-ri-ping-cheo-reom jin-ji-ha-ge sang-hwang-eul seol-myeong-haess-seum-ni-da.",
+      "en": "\"We have to be prepared for this much of a 'wait'.\" I explained the situation as seriously as a pre-flight briefing.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "직원이 건넨 '대기표'를 손에 쥐고, 번호가 불리기를 기다렸습니다. 숫자는 좀처럼 줄지 않았습니다.",
+      "reading": "jig-won-i geon-nen 'dae-gi-pyo'-reul son-e jwi-go, beon-ho-ga bul-li-gi-reul gi-da-ryeot-seum-ni-da. sut-ja-neun jom-cheo-reom jul-ji an-at-seum-ni-da.",
+      "en": "Holding the 'waiting ticket' the staff handed us, we waited for our number to be called. The number barely seemed to move.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "삼십 분쯤 지나자 드디어 저희 차례가 왔습니다. 갓 구운 밤빵 냄새가 골목까지 퍼졌습니다.",
+      "reading": "sam-sip bun-jjeum ji-na-ja deu-di-eo jeo-hui cha-rye-ga wass-seum-ni-da. gat gu-un bam-ppang naem-sae-ga gol-mok-kka-ji peo-jyeot-seum-ni-da.",
+      "en": "About thirty minutes later, our turn finally came. The smell of freshly baked chestnut bread spread through the alley."
+    },
+    {
+      "text": "봉투를 열자마자, 우리는 자리에 앉기도 전에 하나씩 꺼내 '나눠 먹었습니다.'",
+      "reading": "bong-tu-reul yeol-ja-ma-ja, u-ri-neun ja-ri-e anj-gi-do jeon-e ha-na-ssik kkeo-nae 'na-nwo meog-eot-seum-ni-da.'",
+      "en": "As soon as we opened the bag, before we even sat down, we took pieces out and 'shared them.'",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "\"이런 게 진짜 '별미'입니다.\" 저는 입안 가득 퍼지는 달콤함에 눈을 감았습니다.",
+      "reading": "\"i-reon ge jin-jja 'byeol-mi'-im-ni-da.\" jeo-neun ib-an ga-deuk peo-ji-neun dal-kom-ham-e nun-eul gam-at-seum-ni-da.",
+      "en": "\"This is what a true 'delicacy' tastes like.\" I closed my eyes at the sweetness filling my mouth.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "생각해 보니 아침부터 아무것도 먹지 않아 몹시 '시장하던' 참이었습니다. 밤빵 하나로는 턱없이 부족했습니다.",
+      "reading": "saeng-gak-hae bo-ni a-chim-bu-teo a-mu-geot-do meok-ji an-a mob-si 'si-jang-ha-deon' cham-i-eot-seum-ni-da. bam-ppang ha-na-ro-neun teog-eob-si bu-jok-haess-seum-ni-da.",
+      "en": "Come to think of it, I hadn't eaten anything since morning and had been terribly 'hungry.' One piece of chestnut bread was nowhere near enough.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "결국 우리는 봉투 하나를 더 사서 벤치에 나란히 앉았습니다. 그날 나눈 대화를 들려드리겠습니다.",
+      "reading": "gyeol-guk u-ri-neun bong-tu ha-na-reul deo sa-seo ben-chi-e na-ran-hi anj-at-seum-ni-da. geu-nal na-nun dae-hwa-reul deul-lyeo-deu-ri-get-seum-ni-da.",
+      "en": "In the end, we bought one more bag and sat side by side on a bench. Let me share the conversation we had that day."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "웨이팅", "reading": "we-i-ting", "meaning": "waiting in line (for a restaurant)", "example": "이 식당은 항상 웨이팅이 깁니다.", "example_reading": "i sik-dang-eun hang-sang we-i-ting-i gim-ni-da", "example_en": "This restaurant always has a long wait." },
+    { "id": "w02", "word": "대기표", "reading": "dae-gi-pyo", "meaning": "waiting number, waiting ticket", "example": "대기표를 받고 순서를 기다렸습니다.", "example_reading": "dae-gi-pyo-reul bat-go sun-seo-reul gi-da-ryeot-seum-ni-da", "example_en": "I got a waiting ticket and waited for my turn." },
+    { "id": "w03", "word": "나눠 먹다", "reading": "na-nwo meok-da", "meaning": "to share food, eat together", "example": "친구와 빵을 나눠 먹었습니다.", "example_reading": "chin-gu-wa ppang-eul na-nwo meog-eot-seum-ni-da", "example_en": "I shared bread with my friend." },
+    { "id": "w04", "word": "별미", "reading": "byeol-mi", "meaning": "delicacy, special dish", "example": "이 지역의 별미를 꼭 먹어 봐야 합니다.", "example_reading": "i ji-yeog-ui byeol-mi-reul kkok meog-eo bwa-ya ham-ni-da", "example_en": "You really must try this region's specialty dish." },
+    { "id": "w05", "word": "시장하다", "reading": "si-jang-ha-da", "meaning": "to be hungry (formal)", "example": "너무 시장해서 빨리 먹고 싶었습니다.", "example_reading": "neo-mu si-jang-hae-seo ppal-li meok-go sip-eot-seum-ni-da", "example_en": "I was so hungry that I wanted to eat quickly." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "이 식당은 항상 웨이팅이 깁니다.", "reading": "i sik-dang-eun hang-sang we-i-ting-i gim-ni-da", "en": "This restaurant always has a long wait." },
+    { "id": "s02", "ko": "대기표를 받고 순서를 기다렸습니다.", "reading": "dae-gi-pyo-reul bat-go sun-seo-reul gi-da-ryeot-seum-ni-da", "en": "I got a waiting ticket and waited for my turn." },
+    { "id": "s03", "ko": "친구와 빵을 나눠 먹었습니다.", "reading": "chin-gu-wa ppang-eul na-nwo meog-eot-seum-ni-da", "en": "I shared bread with my friend." },
+    { "id": "s04", "ko": "이 지역의 별미를 꼭 먹어 봐야 합니다.", "reading": "i ji-yeog-ui byeol-mi-reul kkok meog-eo bwa-ya ham-ni-da", "en": "You really must try this region's specialty dish." },
+    { "id": "s05", "ko": "너무 시장해서 빨리 먹고 싶었습니다.", "reading": "neo-mu si-jang-hae-seo ppal-li meok-go sip-eot-seum-ni-da", "en": "I was so hungry that I wanted to eat quickly." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "승객", "text": "우와, 줄이 왜 이렇게 길어? 얼마나 기다려야 돼?", "reading": "u-wa, jul-i wae i-reo-ke gil-eo? eol-ma-na gi-da-ryeo-ya dwae?", "en": "Whoa, why is the line so long? How long do we have to wait?" },
+        { "speaker": "상우", "text": "대기표를 보니 삼십 분 정도 예상됩니다. 이 정도 웨이팅은 감수해야죠.", "reading": "dae-gi-pyo-reul bo-ni sam-sip bun jeong-do ye-sang-doem-ni-da. i jeong-do we-i-ting-eun gam-su-hae-ya-jyo.", "en": "Looking at the waiting ticket, it looks like about thirty minutes. We'll have to accept this much of a wait." },
+        { "speaker": "승객", "text": "역시 침착하네. 기다리는 동안 뭐 하지?", "reading": "yeok-si chim-chak-ha-ne. gi-da-ri-neun dong-an mwo ha-ji?", "en": "You're calm as always. What should we do while we wait?" },
+        { "speaker": "상우", "text": "근처를 좀 걷다 오는 건 어떻습니까? 대기표는 제가 잘 챙기고 있겠습니다.", "reading": "geun-cheo-reul jom geot-da o-neun geon eo-tteo-seum-ni-kka? dae-gi-pyo-neun je-ga jal chaeng-gi-go it-get-seum-ni-da.", "en": "How about we take a walk around nearby? I'll keep the waiting ticket safe." }
+      ],
+      "question": "대기표를 보니 예상 대기 시간은 얼마였나요?",
+      "question_en": "According to the waiting ticket, how long was the estimated wait?",
+      "correct_answer": "삼십 분 정도",
+      "options": ["삼십 분 정도", "한 시간 정도", "십 분 정도", "두 시간 정도"],
+      "explanation": "상우는 대기표를 확인하고 삼십 분 정도 기다려야 한다고 말했습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "상우", "text": "봉투 안에 몇 개 없으니, 서로 나눠 먹는 게 좋겠습니다.", "reading": "bong-tu an-e myeot gae eop-seu-ni, seo-ro na-nwo meok-neun ge jo-ket-seum-ni-da.", "en": "There aren't many in the bag, so it'd be good to share them with each other." },
+        { "speaker": "승객", "text": "좋아. 근데 이거 진짜 별미다, 그치?", "reading": "jo-a. geun-de i-geo jin-jja byeol-mi-da, geu-chi?", "en": "Sounds good. But this is really a delicacy, isn't it?" },
+        { "speaker": "상우", "text": "인정합니다. 아침을 걸러서 그런지 더 시장하게 느껴집니다.", "reading": "in-jeong-ham-ni-da. a-chim-eul geol-leo-seo geu-reon-ji deo si-jang-ha-ge neu-kkyeom-ni-da.", "en": "I agree. Maybe because I skipped breakfast, it feels even more like I'm starving." },
+        { "speaker": "승객", "text": "그럼 하나 더 사 오자. 오늘은 실컷 먹자!", "reading": "geu-reom ha-na deo sa o-ja. o-neul-eun sil-keot meok-ja!", "en": "Then let's go buy one more bag. Let's eat our fill today!" }
+      ],
+      "question": "상우가 평소보다 더 배고픔을 느낀 이유는 무엇인가요?",
+      "question_en": "Why did Sangwoo feel hungrier than usual?",
+      "correct_answer": "아침을 걸렀기 때문에",
+      "options": ["아침을 걸렀기 때문에", "운동을 많이 해서", "밤을 새워서", "점심을 두 번 먹어서"],
+      "explanation": "상우는 아침을 거른 탓에 평소보다 더 시장하다고 느꼈다고 말했습니다."
+    }
+  ]
+}

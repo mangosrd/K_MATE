@@ -1,0 +1,98 @@
+{
+  "id": "sp-day-sunwoo-07",
+  "character_id": "sunwoo",
+  "title": "약은 식후 삼십 분",
+  "emoji": "💊",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "며칠째 콧물과 기침이 멈추지 않았다. 목소리마저 갈라진 나를 보고 선우의 표정이 심각해졌다.",
+      "reading": "myeo-chil-jjae kon-mul-gwa gi-chim-i meom-chu-ji anh-at-da. mok-so-ri-ma-jeo gal-la-jin na-reul bo-go seon-u-ui pyo-jeong-i sim-gak-hae-jyeot-da.",
+      "en": "For days, my runny nose and cough wouldn't stop. Seeing my voice go hoarse too, Sunwoo's expression turned serious."
+    },
+    {
+      "text": "\"이 정도면 그냥 넘길 증상이 아니다. 당장 병원 가자.\" 그가 반강제로 나를 끌고 나왔다.",
+      "reading": "\"i jeong-do-myeon geu-nyang neom-gil jeung-sang-i a-ni-da. dang-jang byeong-won ga-ja.\" geu-ga ban-gang-je-ro na-reul kkeul-go na-wat-da.",
+      "en": "\"This isn't a symptom you can just brush off anymore. We're going to the hospital right now.\" He half-dragged me out.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "근처 내과에 도착해 접수를 하고 얼마 기다리지 않아 진료를 받을 수 있었다. 선우는 대기실 의자에서 다리를 떨며 안절부절못했다.",
+      "reading": "geun-cheo nae-gwa-e do-chak-hae jeop-su-reul ha-go eol-ma gi-da-ri-ji anh-a jin-ryo-reul bad-eul su iss-eot-da. seon-u-neun dae-gi-sil ui-ja-e-seo da-ri-reul tteol-myeo an-jeol-bu-jeol-mot-haet-da.",
+      "en": "We arrived at a nearby internal medicine clinic, checked in, and it wasn't long before I could see the doctor. Sunwoo sat in the waiting room, jiggling his leg, unable to sit still.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "의사 선생님은 몇 가지를 묻고는 처방전을 건넸다. \"감기몸살이네요, 며칠 푹 쉬셔야 해요.\"",
+      "reading": "ui-sa seon-saeng-nim-eun myeot ga-ji-reul mut-go-neun cheo-bang-jeon-eul geon-net-da. \"gam-gi-mom-sal-i-ne-yo, myeo-chil puk swi-syeo-ya hae-yo.\"",
+      "en": "The doctor asked a few questions and then handed me a prescription. \"It's a cold with body aches. You need to rest well for a few days.\"",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "약국에 들러 약을 받는데, 선우가 대신 약사님께 이것저것 캐물었다. \"이거 부작용 같은 거 없어요?\"",
+      "reading": "yak-guk-e deul-leo yak-eul bad-neun-de, seon-u-ga dae-sin yak-sa-nim-kke i-geot-jeo-geot kae-mul-eot-da. \"i-geo bu-jak-yong gat-eun geo eop-seo-yo?\"",
+      "en": "Stopping by the pharmacy to get the medicine, Sunwoo peppered the pharmacist with questions on my behalf. \"Does this have any side effects or anything?\"",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "\"이 약은 식후 삼십 분에 드세요.\" 약사님 말에 그는 나보다 더 진지하게 고개를 끄덕였다.",
+      "reading": "\"i yag-eun sik-hu sam-sip bun-e deu-se-yo.\" yak-sa-nim mal-e geu-neun na-bo-da deo jin-ji-ha-ge go-gae-reul kkeu-deok-yeot-da.",
+      "en": "\"Take this medicine thirty minutes after meals.\" At the pharmacist's words, he nodded even more seriously than I did.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "\"자, 이제 집에 가서 푹 쉬어라. 오늘은 내가 죽이라도 사다 줄게.\" 그가 봉지를 흔들며 앞장섰다.",
+      "reading": "\"ja, i-je jib-e ga-seo puk swi-eo-ra. o-neul-eun nae-ga juk-i-ra-do sa-da jul-ge.\" geu-ga bong-ji-reul heun-deul-myeo ap-jang-seot-da.",
+      "en": "\"Alright, go home and rest well now. I'll bring you some porridge or something today.\" He said, swinging the bag as he walked ahead."
+    },
+    {
+      "text": "\"오늘 배운 단어랑 대화, 아프더라도 끝까지 챙겨봐라이.\"",
+      "reading": "\"o-neul bae-un dan-eo-rang dae-hwa, a-peu-deo-ra-do kkeut-kka-ji chaeng-gyeo-bwa-ra-i.\"",
+      "en": "\"Even if you're sick, get through today's words and conversation to the end.\""
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "증상", "reading": "jeung-sang", "meaning": "symptom", "example": "감기 증상이 심해져서 병원에 갔다.", "example_reading": "gam-gi jeung-sang-i sim-hae-jyeo-seo byeong-won-e gat-da", "example_en": "My cold symptoms got worse, so I went to the hospital." },
+    { "id": "w02", "word": "처방전", "reading": "cheo-bang-jeon", "meaning": "prescription", "example": "의사에게 처방전을 받아 약국으로 갔다.", "example_reading": "ui-sa-e-ge cheo-bang-jeon-eul bad-a yak-guk-eu-ro gat-da", "example_en": "I got a prescription from the doctor and went to the pharmacy." },
+    { "id": "w03", "word": "진료를 받다", "reading": "jin-ryo-reul bad-da", "meaning": "to receive medical treatment, see a doctor", "example": "아침 일찍 진료를 받으러 갔다.", "example_reading": "a-chim il-jjik jin-ryo-reul bad-eu-reo gat-da", "example_en": "I went to see a doctor early in the morning." },
+    { "id": "w04", "word": "부작용", "reading": "bu-jak-yong", "meaning": "side effect", "example": "이 약은 부작용이 거의 없다.", "example_reading": "i yag-eun bu-jak-yong-i geo-ui eop-da", "example_en": "This medicine has almost no side effects." },
+    { "id": "w05", "word": "식후", "reading": "sik-hu", "meaning": "after meals", "example": "이 약은 식후에 먹어야 한다.", "example_reading": "i yag-eun sik-hu-e meog-eo-ya han-da", "example_en": "This medicine should be taken after meals." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "어제부터 목이 아프고 기침 증상이 있다.", "reading": "eo-je-bu-teo mog-i a-peu-go gi-chim jeung-sang-i it-da", "en": "I've had a sore throat and cough symptoms since yesterday." },
+    { "id": "s02", "ko": "의사 선생님이 처방전을 써 주었다.", "reading": "ui-sa seon-saeng-nim-i cheo-bang-jeon-eul sseo ju-eot-da", "en": "The doctor wrote me a prescription." },
+    { "id": "s03", "ko": "아침 일찍 병원에 가서 진료를 받았다.", "reading": "a-chim il-jjik byeong-won-e ga-seo jin-ryo-reul bad-at-da", "en": "I went to the hospital early in the morning and saw a doctor." },
+    { "id": "s04", "ko": "이 약은 부작용이 거의 없다고 한다.", "reading": "i yag-eun bu-jak-yong-i geo-ui eop-da-go han-da", "en": "They say this medicine has almost no side effects." },
+    { "id": "s05", "ko": "이 약은 식후 30분에 먹어야 한다.", "reading": "i yag-eun sik-hu sam-sip bun-e meog-eo-ya han-da", "en": "This medicine must be taken 30 minutes after meals." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "선우", "text": "괜찮나? 얼굴이 반쪽이다, 진짜.", "reading": "gwaen-chan-na? eol-gul-i ban-jjog-i-da, jin-jja.", "en": "Are you okay? Your face looks half-gone, seriously." },
+        { "speaker": "승객", "text": "그냥 목만 좀 아픈 건데. 병원까지 안 와도 됐는데.", "reading": "geu-nyang mok-man jom a-peun geon-de. byeong-won-kka-ji an wa-do dwaet-neun-de.", "en": "It's just my throat that hurts a bit. You didn't have to come all the way to the hospital." },
+        { "speaker": "선우", "text": "증상 며칠째라며. 그거 방치하면 더 심해진다.", "reading": "jeung-sang myeo-chil-jjae-ra-myeo. geu-geo bang-chi-ha-myeon deo sim-hae-jin-da.", "en": "You said the symptoms have lasted for days already. If you leave it, it'll get worse." },
+        { "speaker": "승객", "text": "…알았어, 걱정해줘서 고마워.", "reading": "…al-at-eo, geok-jeong-hae-jwo-seo go-ma-wo.", "en": "…Okay, thanks for worrying about me." }
+      ],
+      "question": "선우가 승객을 병원에 데려간 이유는 무엇인가요?",
+      "question_en": "Why did Sunwoo take the passenger to the hospital?",
+      "correct_answer": "며칠째 이어진 증상을 방치하면 안 될 것 같아서",
+      "options": ["며칠째 이어진 증상을 방치하면 안 될 것 같아서", "병원 근처에 볼일이 있어서", "정기 검진을 받아야 해서", "약국이 문을 닫아서"],
+      "explanation": "선우는 며칠째 계속된 증상을 그냥 두면 더 심해질까 봐 승객을 병원에 데려갔습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "선우", "text": "이거 부작용 같은 거 없어요? 이 사람 원래 약을 좀 잘 못 먹는데.", "reading": "i-geo bu-jak-yong gat-eun geo eop-seo-yo? i sa-ram won-lae yag-eul jom jal mot meong-neun-de.", "en": "Does this have any side effects or anything? She's usually not great with medicine." },
+        { "speaker": "승객", "text": "야, 니가 왜 대신 물어보고 있노.", "reading": "ya, ni-ga wae dae-sin mul-eo-bo-go it-no.", "en": "Hey, why are you asking on my behalf." },
+        { "speaker": "선우", "text": "니는 가만있어봐라. 이런 건 확실히 물어야 된다.", "reading": "ni-neun ga-man-iss-eo-bwa-ra. i-reon geon hwak-sil-hi mul-eo-ya doen-da.", "en": "Just stay put. You have to ask these things properly." },
+        { "speaker": "승객", "text": "…알겠다, 알겠어. 니 완전 보호자 같다.", "reading": "…al-get-da, al-get-eo. ni wan-jeon bo-ho-ja gat-da.", "en": "…Fine, fine. You're totally acting like my guardian." }
+      ],
+      "question": "약국에서 선우가 한 행동은 무엇인가요?",
+      "question_en": "What did Sunwoo do at the pharmacy?",
+      "correct_answer": "약사에게 부작용 여부를 대신 물어보았다",
+      "options": ["약사에게 부작용 여부를 대신 물어보았다", "약값을 깎아 달라고 했다", "다른 약국으로 가자고 했다", "약을 대신 먹어보겠다고 했다"],
+      "explanation": "선우는 승객을 대신해 약사에게 약의 부작용이 있는지 꼼꼼히 물어보았습니다."
+    }
+  ]
+}

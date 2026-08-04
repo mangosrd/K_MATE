@@ -1,0 +1,98 @@
+{
+  "id": "sp-day-sangwoo-02",
+  "character_id": "sangwoo",
+  "title": "무엇으로 주문하시겠습니까",
+  "emoji": "☕",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "제민천을 따라 걷다 보면 작은 한옥 카페들이 줄지어 있습니다. 오늘은 그중 한 곳에 들어가 보기로 했습니다.",
+      "reading": "je-min-cheon-eul tta-ra geot-da bo-myeon jak-eun han-ok ka-pe-deul-i jul-ji-eo it-seum-ni-da. o-neul-eun geu-jung han gos-e deul-eo-ga bo-gi-ro haet-seum-ni-da.",
+      "en": "Walking along Jemincheon Stream, small hanok cafes line the path one after another. Today, we decided to step into one of them."
+    },
+    {
+      "text": "카운터 앞에 서자 직원이 물었습니다. '무엇으로 주문하시겠습니까?' 저는 괜히 그 말투가 익숙하게 느껴져 슬쩍 웃었습니다.",
+      "reading": "ka-un-teo ap-e seo-ja jig-won-i mul-eot-seum-ni-da. mu-eos-eu-ro ju-mun-ha-si-get-seum-ni-kka. jeo-neun gwaen-hi geu mal-tu-ga ik-suk-ha-ge neu-kkyeo sseul-jjeog us-eot-seum-ni-da.",
+      "en": "As we stepped up to the counter, the staff member asked, \"What would you like to order?\" For some reason the phrasing felt oddly familiar, and I found myself smiling faintly.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "'꼭 관제탑이 이륙 허가를 묻는 것 같지 않습니까.' 제 농담에 당신은 어이없다는 듯 웃었습니다.",
+      "reading": "kkok gwan-je-tab-i i-ryuk heo-ga-reul mut-neun geot gat-ji an-seum-ni-kka. je nong-dam-e dang-sin-eun eo-i-eob-da-neun deut us-eot-seum-ni-da.",
+      "en": "\"Doesn't it sound just like a control tower asking for takeoff clearance?\" At my joke, you laughed like you couldn't believe I'd said that."
+    },
+    {
+      "text": "저는 메뉴판을 살피다 원두 종류부터 확인했습니다. 산미가 적은 원두인지 미리 물어보는 게 제 오래된 습관입니다.",
+      "reading": "jeo-neun me-nyu-pan-eul sal-pi-da won-du jong-ryu-bu-teo hwak-in-haet-seum-ni-da. san-mi-ga jeok-eun won-du-in-ji mi-ri mul-eo-bo-neun ge je o-rae-doen seup-gwan-im-ni-da.",
+      "en": "Looking over the menu, I checked the type of coffee beans first thing. Asking in advance whether the beans are low in acidity is an old habit of mine.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "당신은 자몽 에이드를 고르며 '당도는 반만 넣어주세요'라고 주문했습니다. 저는 그 세심함이 꼭 저를 닮은 것 같아 괜히 뿌듯했습니다.",
+      "reading": "dang-sin-eun ja-mong e-i-deu-reul go-reu-myeo dang-do-neun ban-man neo-eo-ju-se-yo-ra-go ju-mun-haet-seum-ni-da. jeo-neun geu se-sim-ham-i kkok jeo-reul dal-meun geot gat-a gwaen-hi ppu-deut-haet-seum-ni-da.",
+      "en": "You ordered a grapefruit ade, saying, \"Half sweetness, please.\" Somehow that careful attention to detail felt just like me, and I felt oddly proud.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "결제를 마치자 진동벨을 건네받았습니다. 벨이 울리기 전까지, 우리는 창가 자리에 앉아 잠시 숨을 돌렸습니다.",
+      "reading": "gyeol-je-reul ma-chi-ja jin-dong-bel-eul geon-ne-bad-at-seum-ni-da. bel-i ul-li-gi jeon-kka-ji, u-ri-neun chang-ga ja-ri-e anj-a jam-si sum-eul dol-lyeot-seum-ni-da.",
+      "en": "After paying, we were handed a buzzer. Until it rang, we sat by the window for a moment and caught our breath.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "'테이크아웃으로 바꿀까요? 날씨가 좋으니 걸으면서 마셔도 좋을 것 같습니다.' 당신이 먼저 제안했고, 저는 곧바로 동의했습니다.",
+      "reading": "te-i-keu-a-us-eu-ro ba-kkul-kka-yo? nal-ssi-ga jo-eu-ni geol-eu-myeon-seo ma-syeo-do jo-eul geot gat-seum-ni-da. dang-sin-i meon-jeo je-an-haet-go, jeo-neun got-ba-ro dong-ui-haet-seum-ni-da.",
+      "en": "\"Should we switch to takeout? The weather's nice, so it might be good to drink while we walk.\" You suggested it first, and I agreed right away.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "결국 우리는 한 손엔 음료를, 다른 손엔 서로의 발걸음을 맞추며 제민천을 따라 걸었습니다. 커피 한 잔에도 이렇게 마음이 편할 수 있다는 걸, 오늘 처음 알았습니다.",
+      "reading": "gyeol-guk u-ri-neun han son-en eum-ryo-reul, da-reun son-en seo-ro-ui bal-geol-eum-eul maj-chu-myeo je-min-cheon-eul tta-ra geol-eot-seum-ni-da. keo-pi han jan-e-do i-reo-ke ma-eum-i pyeon-hal su it-da-neun geol, o-neul cheo-eum al-at-seum-ni-da.",
+      "en": "In the end, we walked along Jemincheon Stream, drinks in hand, matching our pace to one another. That even a single cup of coffee could feel this comfortable — I realized it for the first time today."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "주문", "reading": "ju-mun", "meaning": "order (at a restaurant/cafe)", "example": "무엇으로 주문하시겠습니까?", "example_reading": "mu-eos-eu-ro ju-mun-ha-si-get-seum-ni-kka", "example_en": "What would you like to order?" },
+    { "id": "w02", "word": "진동벨", "reading": "jin-dong-bel", "meaning": "buzzer/pager given at cafes to notify an order is ready", "example": "진동벨이 울리면 가지러 갑시다.", "example_reading": "jin-dong-bel-i ul-li-myeon ga-ji-reo gap-si-da", "example_en": "Let's go pick it up when the buzzer rings." },
+    { "id": "w03", "word": "테이크아웃", "reading": "te-i-keu-a-us", "meaning": "takeout", "example": "테이크아웃으로 주문했습니다.", "example_reading": "te-i-keu-a-us-eu-ro ju-mun-haet-seum-ni-da", "example_en": "I ordered it to take out." },
+    { "id": "w04", "word": "당도", "reading": "dang-do", "meaning": "sweetness level", "example": "당도는 반만 넣어주세요.", "example_reading": "dang-do-neun ban-man neo-eo-ju-se-yo", "example_en": "Please make it half sweetness." },
+    { "id": "w05", "word": "원두", "reading": "won-du", "meaning": "coffee beans", "example": "산미가 적은 원두로 주세요.", "example_reading": "san-mi-ga jeok-eun won-du-ro ju-se-yo", "example_en": "Please give me beans with low acidity." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "무엇으로 주문하시겠습니까?", "reading": "mu-eos-eu-ro ju-mun-ha-si-get-seum-ni-kka", "en": "What would you like to order?" },
+    { "id": "s02", "ko": "진동벨이 울리면 알려주세요.", "reading": "jin-dong-bel-i ul-li-myeon al-lyeo-ju-se-yo", "en": "Please let me know when the buzzer rings." },
+    { "id": "s03", "ko": "테이크아웃 가능한가요?", "reading": "te-i-keu-a-us ga-neung-han-ga-yo", "en": "Is takeout possible?" },
+    { "id": "s04", "ko": "당도는 반만 넣어주세요.", "reading": "dang-do-neun ban-man neo-eo-ju-se-yo", "en": "Please make the sweetness half." },
+    { "id": "s05", "ko": "원두는 어떤 걸 쓰세요?", "reading": "won-du-neun eo-tteon geol sseu-se-yo", "en": "What kind of coffee beans do you use?" }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "상우", "text": "무엇으로 주문하시겠습니까? 저는 아메리카노로 하겠습니다.", "reading": "mu-eos-eu-ro ju-mun-ha-si-get-seum-ni-kka. jeo-neun a-me-ri-ka-no-ro ha-get-seum-ni-da", "en": "What would you like to order? I'll have an Americano." },
+        { "speaker": "승객", "text": "저는 자몽 에이드요. 근데 당도 조절도 되나요?", "reading": "jeo-neun ja-mong e-i-deu-yo. geun-de dang-do jo-jeol-do doe-na-yo", "en": "I'll have the grapefruit ade. But can I adjust the sweetness too?" },
+        { "speaker": "상우", "text": "될 겁니다. 저기 직원분께 여쭤보겠습니다.", "reading": "doel geob-ni-da. jeo-gi jig-won-bun-kke yeo-jjwo-bo-get-seum-ni-da", "en": "It should be possible. I'll ask the staff over there." },
+        { "speaker": "승객", "text": "역시 확인부터 하시네요. 기장님답게.", "reading": "yeok-si hwak-in-bu-teo ha-si-ne-yo. gi-jang-nim-dab-ge", "en": "You always check first, don't you. So very captain-like." }
+      ],
+      "question": "상우가 직원에게 다시 물어보려는 이유는?",
+      "question_en": "Why does Sangwoo go ask the staff again?",
+      "correct_answer": "승객의 당도 조절 요청이 가능한지 확실히 확인하기 위해서",
+      "options": ["승객의 당도 조절 요청이 가능한지 확실히 확인하기 위해서", "아메리카노 가격을 확인하기 위해서", "다른 메뉴로 바꾸기 위해서", "직원과 친해지고 싶어서"],
+      "explanation": "상우는 승객이 원하는 당도 조절이 실제로 가능한지 직접 확인하려는 꼼꼼한 성격을 보여줍니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "승객", "text": "여기 자리에 앉아서 마실까요, 아니면 들고 나갈까요?", "reading": "yeo-gi ja-ri-e anj-a-seo ma-syeol-kka-yo, a-ni-myeon deul-go na-gal-kka-yo", "en": "Should we sit here and drink, or take it with us?" },
+        { "speaker": "상우", "text": "날씨가 좋으니 테이크아웃해서 걷는 건 어떻습니까.", "reading": "nal-ssi-ga jo-eu-ni te-i-keu-a-us-hae-seo geot-neun geon eo-tteo-seum-ni-kka", "en": "The weather's nice — how about we take it out and walk?" },
+        { "speaker": "승객", "text": "좋아요. 그럼 진동벨은 반납해야겠네요.", "reading": "jo-a-yo. geu-reom jin-dong-bel-eun ban-nap-hae-ya-get-ne-yo", "en": "Sounds good. Then I guess we should return the buzzer." },
+        { "speaker": "상우", "text": "제가 반납하고 오겠습니다. 잠시만 기다려 주십시오.", "reading": "je-ga ban-nap-ha-go o-get-seum-ni-da. jam-si-man gi-da-ryeo ju-sip-si-o", "en": "I'll go return it. Please wait just a moment." }
+      ],
+      "question": "두 사람이 최종적으로 결정한 것은 무엇입니까?",
+      "question_en": "What did the two of them ultimately decide?",
+      "correct_answer": "음료를 테이크아웃해서 걸으며 마시기로 했다",
+      "options": ["음료를 테이크아웃해서 걸으며 마시기로 했다", "카페 안에 계속 앉아 있기로 했다", "음료를 취소하기로 했다", "다른 카페로 옮기기로 했다"],
+      "explanation": "날씨가 좋다는 이유로 두 사람은 음료를 테이크아웃해서 걸으며 마시기로 결정했습니다."
+    }
+  ]
+}

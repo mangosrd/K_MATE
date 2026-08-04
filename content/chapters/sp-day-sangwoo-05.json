@@ -1,0 +1,98 @@
+{
+  "id": "sp-day-sangwoo-05",
+  "character_id": "sangwoo",
+  "title": "오늘의 기상 브리핑",
+  "emoji": "🌤️",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "약속 장소에 먼저 도착한 저는, 휴대폰으로 오늘 날씨를 다시 한번 확인하고 있었습니다. 이미 세 번은 본 것 같은데도, 손이 저절로 움직입니다.",
+      "reading": "yak-sok jang-so-e meon-jeo do-chak-han jeo-neun, hyu-dae-pon-eu-ro o-neul nal-ssi-reul da-si han-beon hwak-in-ha-go it-seot-seum-ni-da. i-mi se beon-eun bon geot gat-neun-de-do, son-i jeo-jeol-lo um-jig-im-ni-da.",
+      "en": "Arriving first at our meeting spot, I was checking today's weather on my phone once more. I must have already looked at it three times, but my hand moves on its own."
+    },
+    {
+      "text": "오늘 기상예보는 오전엔 맑고 오후엔 흐림이었습니다. 저는 그 정보를 머릿속에 정리해 두었습니다. 계획이 틀어지지 않으려면 미리 알아 둬야 하니까요.",
+      "reading": "o-neul gi-sang-ye-bo-neun o-jeon-en malg-go o-hu-en heu-rim-i-eot-seum-ni-da. jeo-neun geu jeong-bo-reul meo-ris-sok-e jeong-li-hae du-eot-seum-ni-da. gye-hoeg-i teul-eo-ji-ji an-eu-ryeo-myeon mi-ri al-a dwo-ya ha-ni-kka-yo.",
+      "en": "Today's weather forecast said clear in the morning, cloudy in the afternoon. I filed that information away in my head. If I want our plans not to fall apart, I need to know in advance.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "강수확률은 삼십 퍼센트였습니다. 낮지만 무시할 수치는 아니라서, 저는 접이식 우산을 가방에 챙겨 넣었습니다.",
+      "reading": "gang-su-hwak-lyul-eun sam-sib peo-sen-teu-yeot-seum-ni-da. naj-ji-man mu-si-hal su-chi-neun a-ni-ra-seo, jeo-neun jeob-i-sik u-san-eul ga-bang-e chaeng-gyeo neo-eot-seum-ni-da.",
+      "en": "The precipitation probability was thirty percent. It was low, but not a number to ignore, so I tucked a folding umbrella into my bag.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "당신이 도착해 얇은 카디건 차림으로 나오자, 저는 걱정스럽게 말했습니다. '기온은 괜찮아 보여도 체감온도는 더 낮을 수 있습니다. 강바람이 붑니다.'",
+      "reading": "dang-sin-i do-chak-hae yalb-eun ka-di-geon cha-rim-eu-ro na-o-ja, jeo-neun geok-jeong-seu-reop-ge mal-haet-seum-ni-da. gi-on-eun gwaen-chan-a bo-yeo-do che-gam-on-do-neun deo naj-eul su it-seum-ni-da. gang-ba-ram-i bum-ni-da.",
+      "en": "When you arrived wearing just a thin cardigan, I said with concern, \"The temperature might look fine, but the feels-like temperature could be lower. There's a river wind blowing.\"",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "'게다가 오늘은 일교차가 큽니다. 아침저녁으로 십 도 가까이 차이가 난다고 합니다.' 저는 그러니 겉옷을 하나 더 챙기는 게 좋겠다고 덧붙였습니다.",
+      "reading": "ge-da-ga o-neul-eun il-gyo-cha-ga keum-ni-da. a-chim-jeo-nyeog-eu-ro sib do ga-kka-i cha-i-ga nan-da-go ham-ni-da. jeo-neun geu-reo-ni geot-os-eul ha-na deo chaeng-gi-neun ge jo-ket-da-go deot-bu-chyeot-seum-ni-da.",
+      "en": "\"On top of that, today's diurnal temperature range is large. Apparently there's nearly a ten-degree difference between morning and evening.\" I added that it would be wise to bring one more piece of outerwear.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "저는 미리 챙겨 온 얇은 겉옷을 당신 어깨에 살며시 걸쳐 주었습니다. '혹시 몰라 가져왔습니다. 필요 없으면 그냥 들고만 다니셔도 됩니다.'",
+      "reading": "jeo-neun mi-ri chaeng-gyeo on yalb-eun geot-os-eul dang-sin eo-kkae-e sal-myeo-si geol-chyeo ju-eot-seum-ni-da. hok-si mol-la ga-jyeo-wat-seum-ni-da. pil-yo eob-seu-myeon geu-nyang deul-go-man da-ni-syeo-do doem-ni-da.",
+      "en": "I gently draped a thin jacket I'd brought along over your shoulders. \"I brought it just in case. If you don't need it, you can just carry it around.\"",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "당신은 '기상 캐스터보다 더 꼼꼼한 것 같아요'라며 웃었습니다. 저는 딱히 부정하지 않았습니다. 어차피 사실이니까요.",
+      "reading": "dang-sin-eun gi-sang kae-seu-teo-bo-da deo kkom-kkom-han geot gat-a-yo-ra-myeo us-eot-seum-ni-da. jeo-neun ttak-hi bu-jeong-ha-ji an-at-seum-ni-da. eo-cha-pi sa-sil-i-ni-kka-yo.",
+      "en": "You laughed, saying, \"You seem more thorough than a weather forecaster.\" I didn't bother denying it. It was true, after all."
+    },
+    {
+      "text": "겉옷 하나를 챙긴 덕분인지, 강바람이 불어도 당신은 춥지 않아 보였습니다. 그거면 됐다고, 저는 생각했습니다.",
+      "reading": "geot-os ha-na-reul chaeng-gin deok-bun-in-ji, gang-ba-ram-i bul-eo-do dang-sin-eun chub-ji an-a bo-yeot-seum-ni-da. geu-geo-myeon dwaet-da-go, jeo-neun saeng-gak-haet-seum-ni-da.",
+      "en": "Maybe thanks to that one jacket, you didn't seem cold even with the river wind blowing. That was enough, I thought."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "기상예보", "reading": "gi-sang-ye-bo", "meaning": "weather forecast", "example": "오늘 기상예보를 확인했습니다.", "example_reading": "o-neul gi-sang-ye-bo-reul hwak-in-haet-seum-ni-da", "example_en": "I checked today's weather forecast." },
+    { "id": "w02", "word": "체감온도", "reading": "che-gam-on-do", "meaning": "feels-like temperature", "example": "체감온도는 실제보다 낮을 수 있습니다.", "example_reading": "che-gam-on-do-neun sil-je-bo-da naj-eul su it-seum-ni-da", "example_en": "The feels-like temperature can be lower than the actual one." },
+    { "id": "w03", "word": "강수확률", "reading": "gang-su-hwak-lyul", "meaning": "precipitation probability", "example": "오늘 강수확률은 삼십 퍼센트입니다.", "example_reading": "o-neul gang-su-hwak-lyul-eun sam-sib peo-sen-teu-im-ni-da", "example_en": "Today's precipitation probability is thirty percent." },
+    { "id": "w04", "word": "일교차", "reading": "il-gyo-cha", "meaning": "diurnal (daily) temperature range", "example": "오늘은 일교차가 큽니다.", "example_reading": "o-neul-eun il-gyo-cha-ga keum-ni-da", "example_en": "Today has a large temperature swing." },
+    { "id": "w05", "word": "겉옷", "reading": "geot-os", "meaning": "outerwear, jacket", "example": "겉옷을 하나 챙기는 게 좋겠습니다.", "example_reading": "geot-os-eul ha-na chaeng-gi-neun ge jo-ket-seum-ni-da", "example_en": "It'd be good to bring a jacket." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "오늘 기상예보를 확인해 보셨습니까?", "reading": "o-neul gi-sang-ye-bo-reul hwak-in-hae bo-syeot-seum-ni-kka", "en": "Have you checked today's weather forecast?" },
+    { "id": "s02", "ko": "바람 때문에 체감온도가 더 낮습니다.", "reading": "ba-ram ttae-mun-e che-gam-on-do-ga deo naj-seum-ni-da", "en": "Because of the wind, the feels-like temperature is lower." },
+    { "id": "s03", "ko": "오후에는 강수확률이 높아진다고 합니다.", "reading": "o-hu-e-neun gang-su-hwak-lyul-i nop-a-jin-da-go ham-ni-da", "en": "They say the precipitation probability rises in the afternoon." },
+    { "id": "s04", "ko": "요즘은 일교차가 커서 감기 걸리기 쉽습니다.", "reading": "yo-jeum-eun il-gyo-cha-ga keo-seo gam-gi geol-li-gi swip-seum-ni-da", "en": "The daily temperature swing is large these days, so it's easy to catch a cold." },
+    { "id": "s05", "ko": "얇은 겉옷이라도 챙기시는 게 좋겠습니다.", "reading": "yalb-eun geot-os-i-ra-do chaeng-gi-si-neun ge jo-ket-seum-ni-da", "en": "It would be good to bring even a thin jacket." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "상우", "text": "오늘 강수확률이 삼십 퍼센트라고 합니다. 우산을 챙겼습니다.", "reading": "o-neul gang-su-hwak-lyul-i sam-sib peo-sen-teu-ra-go ham-ni-da. u-san-eul chaeng-gyeot-seum-ni-da", "en": "They say today's precipitation probability is thirty percent. I brought an umbrella." },
+        { "speaker": "승객", "text": "그 정도면 안 와도 되지 않아요?", "reading": "geu jeong-do-myeon an wa-do doe-ji an-a-yo", "en": "Isn't that low enough that it might not even rain?" },
+        { "speaker": "상우", "text": "낮은 확률도 확률입니다. 대비해서 나쁠 건 없습니다.", "reading": "naj-eun hwak-lyul-do hwak-lyul-im-ni-da. dae-bi-hae-seo na-ppeul geon eop-seum-ni-da", "en": "A low probability is still a probability. There's no harm in preparing for it." },
+        { "speaker": "승객", "text": "역시 뭐든 미리미리시네요.", "reading": "yeok-si mwo-deun mi-ri-mi-ri-si-ne-yo", "en": "You really do prepare for everything ahead of time." }
+      ],
+      "question": "상우가 낮은 강수확률에도 우산을 챙긴 이유는?",
+      "question_en": "Why did Sangwoo bring an umbrella despite the low precipitation probability?",
+      "correct_answer": "낮은 확률이라도 무시하지 않고 미리 대비하는 성격이라서",
+      "options": ["낮은 확률이라도 무시하지 않고 미리 대비하는 성격이라서", "일기예보를 믿지 않기 때문에", "우산이 원래 가방에 있었기 때문에", "승객이 우산을 챙겨달라고 부탁해서"],
+      "explanation": "상우는 확률이 낮아도 가능성을 무시하지 않고 항상 미리 대비하는 꼼꼼한 성격을 보여줍니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "승객", "text": "오늘 뭐 입어야 할지 모르겠어요. 일교차가 크대서.", "reading": "o-neul mwo ib-eo-ya hal-ji mo-reu-get-eo-yo. il-gyo-cha-ga keu-dae-seo", "en": "I don't know what to wear today. They say the temperature swing is big." },
+        { "speaker": "상우", "text": "겹쳐 입으시길 추천합니다. 얇은 옷을 여러 겹 입으면 벗고 입기 편합니다.", "reading": "gyeop-chyeo ib-eu-si-gil chu-cheon-ham-ni-da. yalb-eun os-eul yeo-reo gyeop ib-eu-myeon beos-go ip-gi pyeon-ham-ni-da", "en": "I'd recommend layering. Wearing several thin layers makes it easy to take off or put on." },
+        { "speaker": "승객", "text": "그럼 겉옷도 하나 더 챙길게요.", "reading": "geu-reom geot-os-do ha-na deo chaeng-gil-ge-yo", "en": "Then I'll bring one more jacket too." },
+        { "speaker": "상우", "text": "잘 생각하셨습니다. 제 것도 하나 여분으로 있으니 걱정 마십시오.", "reading": "jal saeng-gak-ha-syeot-seum-ni-da. je geot-do ha-na yeo-bun-eu-ro it-eu-ni geok-jeong ma-sip-si-o", "en": "Good thinking. I have a spare one of my own too, so don't worry." }
+      ],
+      "question": "상우가 겹쳐 입기를 추천한 이유는?",
+      "question_en": "Why does Sangwoo recommend layering?",
+      "correct_answer": "일교차가 커서 옷을 쉽게 벗고 입을 수 있도록 하기 위해",
+      "options": ["일교차가 커서 옷을 쉽게 벗고 입을 수 있도록 하기 위해", "얇은 옷이 더 저렴하기 때문에", "두꺼운 옷이 유행에 뒤처져서", "짐을 가볍게 하기 위해서"],
+      "explanation": "상우는 아침저녁 기온 차가 큰 날씨에 맞춰, 쉽게 벗고 입을 수 있도록 겹쳐 입기를 추천했습니다."
+    }
+  ]
+}

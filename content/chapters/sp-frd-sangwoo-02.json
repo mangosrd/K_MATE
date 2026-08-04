@@ -1,0 +1,93 @@
+{
+  "id": "sp-frd-sangwoo-02",
+  "character_id": "sangwoo",
+  "title": "오늘 밤은 치맥입니다",
+  "emoji": "🍗",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "해가 지고 나니 산성시장 골목에 불빛이 하나둘 켜졌습니다. 노포 치킨집 앞, 우리는 나란히 자리를 잡았습니다.",
+      "reading": "hae-ga ji-go na-ni san-seong-si-jang gol-mog-e bul-bit-i ha-na-dul kyeo-jyeot-seum-ni-da. no-po chi-kin-jib ap, u-ri-neun na-ran-hi ja-ri-reul jab-at-seum-ni-da.",
+      "en": "Once the sun went down, the lights came on one by one along the alleys of Sanseong Market. In front of an old-school chicken restaurant, we took our seats side by side."
+    },
+    {
+      "text": "\"오늘은 '치맥'이 딱입니다.\" 메뉴판을 넘기는 손이 유독 신나 보였다고, 친구가 웃으며 놀렸습니다.",
+      "reading": "\"o-neul-eun 'chi-maek'-i ttag-im-ni-da.\" me-nyu-pan-eul neom-gi-neun son-i yu-dok sin-na bo-yeot-da-go, chin-gu-ga us-eu-myeo nol-lyeot-seum-ni-da.",
+      "en": "\"Today calls for exactly this — 'chimaek'.\" My friend teased that my hand flipping through the menu looked unusually excited.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "양념 반, 후라이드 반이 나오고, 잔이 부딪혔습니다. \"'건배'.\" 격식은 여기서도 빠지지 않았습니다.",
+      "reading": "yang-nyeom ban, hu-ra-i-deu ban-i na-o-go, jan-i bu-dich-yeot-seum-ni-da. \"'geon-bae'.\" gyeok-sig-eun yeo-gi-seo-do ppa-ji-ji an-at-seum-ni-da.",
+      "en": "Half seasoned, half fried arrived, and our glasses clinked together. \"'Cheers'.\" Even here, my formality never quite left me.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "\"기장님은 치킨 먹을 때도 꼭 격식을 차리네.\" 친구의 놀림에, 저는 젓가락 대신 손으로 치킨을 집으며 웃었습니다. 그래도 '안주'는 역시 치킨이 최고입니다.",
+      "reading": "\"gi-jang-nim-eun chi-kin meog-eul ttae-do kkok gyeok-sig-eul cha-ri-ne.\" chin-gu-ui nol-lim-e, jeo-neun jeot-ga-rak dae-sin son-eu-ro chi-kin-eul jib-eu-myeo us-eot-seum-ni-da. geu-rae-do 'an-ju'-neun yeok-si chi-kin-i choe-go-im-ni-da.",
+      "en": "\"Even eating chicken, you still keep up appearances, Captain.\" At my friend's teasing, I laughed and picked up the chicken with my hands instead of chopsticks. Still, chicken really is the best 'drinking snack'.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "빈 접시가 금세 늘어났습니다. \"여기, 반 마리만 더 '시켜'도 될까요?\" 제 목소리는 이미 신이 나 있었습니다.",
+      "reading": "bin jeop-si-ga geum-se neul-eo-nat-seum-ni-da. \"yeo-gi, ban ma-ri-man deo 'si-kyeo'-do doel-kka-yo?\" je mok-so-ri-neun i-mi sin-i na iss-eot-seum-ni-da.",
+      "en": "The empty plates piled up fast. \"Excuse me, could we 'order' half a chicken more?\" My voice already had a bounce of excitement in it.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "\"이 집, 우리 '단골' 하자.\" 취기가 살짝 오른 채로 그렇게 말하고 나니, 어쩐지 든든한 약속처럼 느껴졌습니다.",
+      "reading": "\"i jip, u-ri 'dan-gol' ha-ja.\" chwi-gi-ga sal-jjak o-reun chae-ro geu-reo-ke mal-ha-go na-ni, eo-jjeon-ji deun-deun-han yak-sog-cheo-reom neu-kkyeot-seum-ni-da.",
+      "en": "\"Let's make this place our 'regular spot'.\" Saying that with a light buzz on, it somehow felt like a reassuring promise.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "치킨 두 마리와 맥주 몇 잔이 비워질 때까지, 우리는 웃음을 멈추지 못했습니다. 그날 밤 나눈 대화를 들려드리겠습니다.",
+      "reading": "chi-kin du ma-ri-wa maek-ju myeot jan-i bi-wo-jil ttae-kka-ji, u-ri-neun us-eum-eul meom-chu-ji mot-haess-seum-ni-da. geu-nal bam na-nun dae-hwa-reul deul-lyeo-deu-ri-get-seum-ni-da.",
+      "en": "Until two whole chickens and several glasses of beer were finished, we couldn't stop laughing. Let me share the conversation we had that night."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "치맥", "reading": "chi-maek", "meaning": "chicken and beer (combo)", "example": "금요일 밤엔 치맥이 진리입니다.", "example_reading": "geum-yo-il bam-en chi-maeg-i jil-li-im-ni-da", "example_en": "Friday nights, chimaek is the truth (the best choice)." },
+    { "id": "w02", "word": "건배", "reading": "geon-bae", "meaning": "cheers, a toast", "example": "우리는 잔을 들고 건배했습니다.", "example_reading": "u-ri-neun jan-eul deul-go geon-bae-haess-seum-ni-da", "example_en": "We raised our glasses and toasted." },
+    { "id": "w03", "word": "안주", "reading": "an-ju", "meaning": "food eaten alongside drinks", "example": "치킨만 한 안주가 없습니다.", "example_reading": "chi-kin-man han an-ju-ga eop-seum-ni-da", "example_en": "There's no side dish like chicken for drinking." },
+    { "id": "w04", "word": "시키다", "reading": "si-ki-da", "meaning": "to order (food)", "example": "치킨 한 마리 더 시켰습니다.", "example_reading": "chi-kin han ma-ri deo si-kyeoss-seum-ni-da", "example_en": "We ordered one more chicken." },
+    { "id": "w05", "word": "단골", "reading": "dan-gol", "meaning": "regular customer / one's go-to spot", "example": "이 가게는 저희 단골집입니다.", "example_reading": "i ga-ge-neun jeo-hui dan-gol-jib-im-ni-da", "example_en": "This place is our regular spot." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "금요일 밤엔 역시 치맥이 최고입니다.", "reading": "geum-yo-il bam-en yeok-si chi-maeg-i choe-go-im-ni-da", "en": "Friday nights, chimaek really is the best." },
+    { "id": "s02", "ko": "우리는 잔을 부딪히며 건배했습니다.", "reading": "u-ri-neun jan-eul bu-dich-i-myeo geon-bae-haess-seum-ni-da", "en": "We clinked glasses and toasted." },
+    { "id": "s03", "ko": "치킨은 맥주와 가장 잘 어울리는 안주입니다.", "reading": "chi-kin-eun maek-ju-wa ga-jang jal eo-ul-li-neun an-ju-im-ni-da", "en": "Chicken is the drinking snack that pairs best with beer." },
+    { "id": "s04", "ko": "배가 고파서 하나 더 시켰습니다.", "reading": "bae-ga go-pa-seo ha-na deo si-kyeoss-seum-ni-da", "en": "I was hungry so I ordered one more." },
+    { "id": "s05", "ko": "이 치킨집은 우리의 단골집이 되었습니다.", "reading": "i chi-kin-jib-eun u-ri-ui dan-gol-jib-i doe-eot-seum-ni-da", "en": "This chicken restaurant became our regular spot." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "상우", "text": "메뉴가 다양한데, 양념과 후라이드 중 어느 쪽으로 시킬까요?", "reading": "me-nyu-ga da-yang-han-de, yang-nyeom-gwa hu-ra-i-deu jung eo-neu jjog-eu-ro si-kil-kka-yo?", "en": "There are so many options — should we order seasoned or fried?" },
+        { "speaker": "승객", "text": "반반 시키자. 그래야 둘 다 먹지.", "reading": "ban-ban si-ki-ja. geu-rae-ya dul da meok-ji.", "en": "Let's order half-and-half. That way we can have both." },
+        { "speaker": "상우", "text": "합리적인 판단입니다. 그럼 맥주도 첫 잔은 제가 사겠습니다.", "reading": "hab-li-jeog-in pan-dan-im-ni-da. geu-reom maek-ju-do cheot jan-eun je-ga sa-get-seum-ni-da.", "en": "A rational decision. Then I'll buy the first round of beer." },
+        { "speaker": "승객", "text": "역시 든든하다니까. 자, 건배부터 하자!", "reading": "yeok-si deun-deun-ha-da-ni-kka. ja, geon-bae-bu-teo ha-ja!", "en": "You're so reliable, as always. Come on, let's toast first!" }
+      ],
+      "question": "두 사람이 치킨을 주문한 방식은 무엇인가요?",
+      "question_en": "How did the two of them order their chicken?",
+      "correct_answer": "양념과 후라이드를 반반씩 주문했다",
+      "options": ["양념과 후라이드를 반반씩 주문했다", "후라이드만 두 마리 주문했다", "양념만 한 마리 주문했다", "메뉴를 정하지 못해 그냥 나왔다"],
+      "explanation": "승객의 제안에 따라 두 사람은 양념과 후라이드를 반반씩 시켜서 둘 다 맛볼 수 있게 했습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "승객", "text": "야, 근데 너 술 취하니까 목소리 진짜 부드러워진다?", "reading": "ya, geun-de neo sul chwi-ha-ni-kka mok-so-ri jin-jja bu-deu-reo-wo-jin-da?", "en": "Hey, but your voice gets seriously softer when you're a little drunk, you know?" },
+        { "speaker": "상우", "text": "…그렇습니까? 관제탑도 가끔은 쉬어야죠.", "reading": "…geu-reo-seum-ni-kka? gwan-je-tap-do ga-kkeum-eun swi-eo-ya-jyo.", "en": "...Is that so? Even a control tower has to rest sometimes." },
+        { "speaker": "승객", "text": "이 집, 우리 단골 하자. 다음에도 여기서 치맥 하는 거야.", "reading": "i jib, u-ri dan-gol ha-ja. da-eum-e-do yeo-gi-seo chi-maek ha-neun geo-ya.", "en": "Let's make this our regular spot. Next time too, let's do chimaek here." },
+        { "speaker": "상우", "text": "좋습니다. 그 약속, 반드시 지키겠습니다.", "reading": "jo-eum-ni-da. geu yak-sok, ban-deu-si ji-ki-get-seum-ni-da.", "en": "Sounds good. That promise, I'll make sure to keep it." }
+      ],
+      "question": "두 사람이 이 치킨집에 대해 어떤 약속을 했나요?",
+      "question_en": "What promise did the two of them make about this chicken restaurant?",
+      "correct_answer": "이곳을 둘의 단골집으로 삼고 다음에 또 오기로 했다",
+      "options": ["이곳을 둘의 단골집으로 삼고 다음에 또 오기로 했다", "다시는 오지 않기로 했다", "다른 사람에게는 비밀로 하기로 했다", "메뉴를 바꿔 달라고 요청하기로 했다"],
+      "explanation": "승객이 이 가게를 둘의 단골집으로 삼자고 제안했고, 상우는 다음에도 함께 오겠다고 약속했습니다."
+    }
+  ]
+}

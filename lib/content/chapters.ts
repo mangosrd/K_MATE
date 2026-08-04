@@ -1,209 +1,218 @@
 import type { ChapterContent } from "@/types/content";
-import chG01 from "@/content/chapters/ch-g01.json";
-import chG02 from "@/content/chapters/ch-g02.json";
-import chG03 from "@/content/chapters/ch-g03.json";
-import chG04 from "@/content/chapters/ch-g04.json";
-import chG05 from "@/content/chapters/ch-g05.json";
-import chG06 from "@/content/chapters/ch-g06.json";
-import chG07 from "@/content/chapters/ch-g07.json";
-import chG08 from "@/content/chapters/ch-g08.json";
-import chG09 from "@/content/chapters/ch-g09.json";
-import chG10 from "@/content/chapters/ch-g10.json";
-import chH01 from "@/content/chapters/ch-h01.json";
-import chH02 from "@/content/chapters/ch-h02.json";
-import chH03 from "@/content/chapters/ch-h03.json";
-import chH04 from "@/content/chapters/ch-h04.json";
-import chH05 from "@/content/chapters/ch-h05.json";
-import chH06 from "@/content/chapters/ch-h06.json";
-import chH07 from "@/content/chapters/ch-h07.json";
-import chH08 from "@/content/chapters/ch-h08.json";
-import chH09 from "@/content/chapters/ch-h09.json";
-import chH10 from "@/content/chapters/ch-h10.json";
-import chJ01 from "@/content/chapters/ch-j01.json";
-import chJ02 from "@/content/chapters/ch-j02.json";
-import chJ03 from "@/content/chapters/ch-j03.json";
-import chJ04 from "@/content/chapters/ch-j04.json";
-import chJ05 from "@/content/chapters/ch-j05.json";
-import chJ06 from "@/content/chapters/ch-j06.json";
-import chJ07 from "@/content/chapters/ch-j07.json";
-import chJ08 from "@/content/chapters/ch-j08.json";
-import chJ09 from "@/content/chapters/ch-j09.json";
-import chJ10 from "@/content/chapters/ch-j10.json";
-import chK01 from "@/content/chapters/ch-k01.json";
-import chK02 from "@/content/chapters/ch-k02.json";
-import chK03 from "@/content/chapters/ch-k03.json";
-import chK04 from "@/content/chapters/ch-k04.json";
-import chK05 from "@/content/chapters/ch-k05.json";
-import chK06 from "@/content/chapters/ch-k06.json";
-import chK07 from "@/content/chapters/ch-k07.json";
-import chK08 from "@/content/chapters/ch-k08.json";
-import chK09 from "@/content/chapters/ch-k09.json";
-import chK10 from "@/content/chapters/ch-k10.json";
-import chS01 from "@/content/chapters/ch-s01.json";
-import chS02 from "@/content/chapters/ch-s02.json";
-import chS03 from "@/content/chapters/ch-s03.json";
-import chS04 from "@/content/chapters/ch-s04.json";
-import chS05 from "@/content/chapters/ch-s05.json";
-import chS06 from "@/content/chapters/ch-s06.json";
-import chS07 from "@/content/chapters/ch-s07.json";
-import chS08 from "@/content/chapters/ch-s08.json";
-import chS09 from "@/content/chapters/ch-s09.json";
-import chS10 from "@/content/chapters/ch-s10.json";
-import spRomHaneul01 from "@/content/chapters/sp-rom-haneul-01.json";
-import spRomHaneul02 from "@/content/chapters/sp-rom-haneul-02.json";
-import spRomHaneul03 from "@/content/chapters/sp-rom-haneul-03.json";
-import spRomHaneul04 from "@/content/chapters/sp-rom-haneul-04.json";
-import spRomHaneul05 from "@/content/chapters/sp-rom-haneul-05.json";
-import spRomHaneul06 from "@/content/chapters/sp-rom-haneul-06.json";
-import spRomHaneul07 from "@/content/chapters/sp-rom-haneul-07.json";
-import spRomHaneul08 from "@/content/chapters/sp-rom-haneul-08.json";
-import spRomHaneul09 from "@/content/chapters/sp-rom-haneul-09.json";
-import spRomHaneul10 from "@/content/chapters/sp-rom-haneul-10.json";
-import spRomKyuhyun01 from "@/content/chapters/sp-rom-kyuhyun-01.json";
-import spRomKyuhyun02 from "@/content/chapters/sp-rom-kyuhyun-02.json";
-import spRomKyuhyun03 from "@/content/chapters/sp-rom-kyuhyun-03.json";
-import spRomKyuhyun04 from "@/content/chapters/sp-rom-kyuhyun-04.json";
-import spRomKyuhyun05 from "@/content/chapters/sp-rom-kyuhyun-05.json";
-import spRomKyuhyun06 from "@/content/chapters/sp-rom-kyuhyun-06.json";
-import spRomKyuhyun07 from "@/content/chapters/sp-rom-kyuhyun-07.json";
-import spRomKyuhyun08 from "@/content/chapters/sp-rom-kyuhyun-08.json";
-import spRomKyuhyun09 from "@/content/chapters/sp-rom-kyuhyun-09.json";
-import spRomKyuhyun10 from "@/content/chapters/sp-rom-kyuhyun-10.json";
-import spRomSangwoo01 from "@/content/chapters/sp-rom-sangwoo-01.json";
-import spRomSangwoo02 from "@/content/chapters/sp-rom-sangwoo-02.json";
-import spRomSangwoo03 from "@/content/chapters/sp-rom-sangwoo-03.json";
-import spRomSangwoo04 from "@/content/chapters/sp-rom-sangwoo-04.json";
-import spRomSangwoo05 from "@/content/chapters/sp-rom-sangwoo-05.json";
-import spRomSangwoo06 from "@/content/chapters/sp-rom-sangwoo-06.json";
-import spRomSangwoo07 from "@/content/chapters/sp-rom-sangwoo-07.json";
-import spRomSangwoo08 from "@/content/chapters/sp-rom-sangwoo-08.json";
-import spRomSangwoo09 from "@/content/chapters/sp-rom-sangwoo-09.json";
-import spRomSangwoo10 from "@/content/chapters/sp-rom-sangwoo-10.json";
-import spRomSunwoo01 from "@/content/chapters/sp-rom-sunwoo-01.json";
-import spRomSunwoo02 from "@/content/chapters/sp-rom-sunwoo-02.json";
-import spRomSunwoo03 from "@/content/chapters/sp-rom-sunwoo-03.json";
-import spRomSunwoo04 from "@/content/chapters/sp-rom-sunwoo-04.json";
-import spRomSunwoo05 from "@/content/chapters/sp-rom-sunwoo-05.json";
-import spRomSunwoo06 from "@/content/chapters/sp-rom-sunwoo-06.json";
-import spRomSunwoo07 from "@/content/chapters/sp-rom-sunwoo-07.json";
-import spRomSunwoo08 from "@/content/chapters/sp-rom-sunwoo-08.json";
-import spRomSunwoo09 from "@/content/chapters/sp-rom-sunwoo-09.json";
-import spRomSunwoo10 from "@/content/chapters/sp-rom-sunwoo-10.json";
-import spRomYongwoo01 from "@/content/chapters/sp-rom-yongwoo-01.json";
-import spRomYongwoo02 from "@/content/chapters/sp-rom-yongwoo-02.json";
-import spRomYongwoo03 from "@/content/chapters/sp-rom-yongwoo-03.json";
-import spRomYongwoo04 from "@/content/chapters/sp-rom-yongwoo-04.json";
-import spRomYongwoo05 from "@/content/chapters/sp-rom-yongwoo-05.json";
-import spRomYongwoo06 from "@/content/chapters/sp-rom-yongwoo-06.json";
-import spRomYongwoo07 from "@/content/chapters/sp-rom-yongwoo-07.json";
-import spRomYongwoo08 from "@/content/chapters/sp-rom-yongwoo-08.json";
-import spRomYongwoo09 from "@/content/chapters/sp-rom-yongwoo-09.json";
-import spRomYongwoo10 from "@/content/chapters/sp-rom-yongwoo-10.json";
 
-// Chapter.id("ch-k01" 등, lib/db/mock.ts MOCK_CHAPTERS와 동일한 체계) -> 콘텐츠 본문.
-const CHAPTER_CONTENT: Record<string, ChapterContent> = {
-  "ch-g01": chG01 as ChapterContent,
-  "ch-g02": chG02 as ChapterContent,
-  "ch-g03": chG03 as ChapterContent,
-  "ch-g04": chG04 as ChapterContent,
-  "ch-g05": chG05 as ChapterContent,
-  "ch-g06": chG06 as ChapterContent,
-  "ch-g07": chG07 as ChapterContent,
-  "ch-g08": chG08 as ChapterContent,
-  "ch-g09": chG09 as ChapterContent,
-  "ch-g10": chG10 as ChapterContent,
-  "ch-h01": chH01 as ChapterContent,
-  "ch-h02": chH02 as ChapterContent,
-  "ch-h03": chH03 as ChapterContent,
-  "ch-h04": chH04 as ChapterContent,
-  "ch-h05": chH05 as ChapterContent,
-  "ch-h06": chH06 as ChapterContent,
-  "ch-h07": chH07 as ChapterContent,
-  "ch-h08": chH08 as ChapterContent,
-  "ch-h09": chH09 as ChapterContent,
-  "ch-h10": chH10 as ChapterContent,
-  "ch-j01": chJ01 as ChapterContent,
-  "ch-j02": chJ02 as ChapterContent,
-  "ch-j03": chJ03 as ChapterContent,
-  "ch-j04": chJ04 as ChapterContent,
-  "ch-j05": chJ05 as ChapterContent,
-  "ch-j06": chJ06 as ChapterContent,
-  "ch-j07": chJ07 as ChapterContent,
-  "ch-j08": chJ08 as ChapterContent,
-  "ch-j09": chJ09 as ChapterContent,
-  "ch-j10": chJ10 as ChapterContent,
-  "ch-k01": chK01 as ChapterContent,
-  "ch-k02": chK02 as ChapterContent,
-  "ch-k03": chK03 as ChapterContent,
-  "ch-k04": chK04 as ChapterContent,
-  "ch-k05": chK05 as ChapterContent,
-  "ch-k06": chK06 as ChapterContent,
-  "ch-k07": chK07 as ChapterContent,
-  "ch-k08": chK08 as ChapterContent,
-  "ch-k09": chK09 as ChapterContent,
-  "ch-k10": chK10 as ChapterContent,
-  "ch-s01": chS01 as ChapterContent,
-  "ch-s02": chS02 as ChapterContent,
-  "ch-s03": chS03 as ChapterContent,
-  "ch-s04": chS04 as ChapterContent,
-  "ch-s05": chS05 as ChapterContent,
-  "ch-s06": chS06 as ChapterContent,
-  "ch-s07": chS07 as ChapterContent,
-  "ch-s08": chS08 as ChapterContent,
-  "ch-s09": chS09 as ChapterContent,
-  "ch-s10": chS10 as ChapterContent,
-  "sp-rom-haneul-01": spRomHaneul01 as ChapterContent,
-  "sp-rom-haneul-02": spRomHaneul02 as ChapterContent,
-  "sp-rom-haneul-03": spRomHaneul03 as ChapterContent,
-  "sp-rom-haneul-04": spRomHaneul04 as ChapterContent,
-  "sp-rom-haneul-05": spRomHaneul05 as ChapterContent,
-  "sp-rom-haneul-06": spRomHaneul06 as ChapterContent,
-  "sp-rom-haneul-07": spRomHaneul07 as ChapterContent,
-  "sp-rom-haneul-08": spRomHaneul08 as ChapterContent,
-  "sp-rom-haneul-09": spRomHaneul09 as ChapterContent,
-  "sp-rom-haneul-10": spRomHaneul10 as ChapterContent,
-  "sp-rom-kyuhyun-01": spRomKyuhyun01 as ChapterContent,
-  "sp-rom-kyuhyun-02": spRomKyuhyun02 as ChapterContent,
-  "sp-rom-kyuhyun-03": spRomKyuhyun03 as ChapterContent,
-  "sp-rom-kyuhyun-04": spRomKyuhyun04 as ChapterContent,
-  "sp-rom-kyuhyun-05": spRomKyuhyun05 as ChapterContent,
-  "sp-rom-kyuhyun-06": spRomKyuhyun06 as ChapterContent,
-  "sp-rom-kyuhyun-07": spRomKyuhyun07 as ChapterContent,
-  "sp-rom-kyuhyun-08": spRomKyuhyun08 as ChapterContent,
-  "sp-rom-kyuhyun-09": spRomKyuhyun09 as ChapterContent,
-  "sp-rom-kyuhyun-10": spRomKyuhyun10 as ChapterContent,
-  "sp-rom-sangwoo-01": spRomSangwoo01 as ChapterContent,
-  "sp-rom-sangwoo-02": spRomSangwoo02 as ChapterContent,
-  "sp-rom-sangwoo-03": spRomSangwoo03 as ChapterContent,
-  "sp-rom-sangwoo-04": spRomSangwoo04 as ChapterContent,
-  "sp-rom-sangwoo-05": spRomSangwoo05 as ChapterContent,
-  "sp-rom-sangwoo-06": spRomSangwoo06 as ChapterContent,
-  "sp-rom-sangwoo-07": spRomSangwoo07 as ChapterContent,
-  "sp-rom-sangwoo-08": spRomSangwoo08 as ChapterContent,
-  "sp-rom-sangwoo-09": spRomSangwoo09 as ChapterContent,
-  "sp-rom-sangwoo-10": spRomSangwoo10 as ChapterContent,
-  "sp-rom-sunwoo-01": spRomSunwoo01 as ChapterContent,
-  "sp-rom-sunwoo-02": spRomSunwoo02 as ChapterContent,
-  "sp-rom-sunwoo-03": spRomSunwoo03 as ChapterContent,
-  "sp-rom-sunwoo-04": spRomSunwoo04 as ChapterContent,
-  "sp-rom-sunwoo-05": spRomSunwoo05 as ChapterContent,
-  "sp-rom-sunwoo-06": spRomSunwoo06 as ChapterContent,
-  "sp-rom-sunwoo-07": spRomSunwoo07 as ChapterContent,
-  "sp-rom-sunwoo-08": spRomSunwoo08 as ChapterContent,
-  "sp-rom-sunwoo-09": spRomSunwoo09 as ChapterContent,
-  "sp-rom-sunwoo-10": spRomSunwoo10 as ChapterContent,
-  "sp-rom-yongwoo-01": spRomYongwoo01 as ChapterContent,
-  "sp-rom-yongwoo-02": spRomYongwoo02 as ChapterContent,
-  "sp-rom-yongwoo-03": spRomYongwoo03 as ChapterContent,
-  "sp-rom-yongwoo-04": spRomYongwoo04 as ChapterContent,
-  "sp-rom-yongwoo-05": spRomYongwoo05 as ChapterContent,
-  "sp-rom-yongwoo-06": spRomYongwoo06 as ChapterContent,
-  "sp-rom-yongwoo-07": spRomYongwoo07 as ChapterContent,
-  "sp-rom-yongwoo-08": spRomYongwoo08 as ChapterContent,
-  "sp-rom-yongwoo-09": spRomYongwoo09 as ChapterContent,
-  "sp-rom-yongwoo-10": spRomYongwoo10 as ChapterContent,
+// 챕터별 JSON을 필요한 시점에만 동적으로 받아온다 — 예전엔 이 파일이 202개 챕터 콘텐츠
+// (총 2.2MB)를 전부 정적 import로 한 번에 번들에 박아 넣고 있어서, 챕터를 1개만 열어도
+// 학습 세션 페이지 진입 시 200개 분량이 통째로(gzip 기준 500KB+) 한 청크로 다운로드됐다.
+// 각 항목을 개별 동적 import()로 분리하면 번들러가 챕터별로 청크를 쪼개서, 실제로
+// 여는 챕터 1개(수 KB) 분량만 그때그때 받아오게 된다.
+// Chapter.id("ch-k01" 등, lib/db/mock.ts MOCK_CHAPTERS와 동일한 체계) -> 로더.
+// content/chapters/chapter-01.json, chapter-02.json은 구 id체계의 죽은 데이터라 제외한다.
+const CHAPTER_LOADERS: Record<string, () => Promise<{ default: unknown }>> = {
+  "ch-g01": () => import("@/content/chapters/ch-g01.json"),
+  "ch-g02": () => import("@/content/chapters/ch-g02.json"),
+  "ch-g03": () => import("@/content/chapters/ch-g03.json"),
+  "ch-g04": () => import("@/content/chapters/ch-g04.json"),
+  "ch-g05": () => import("@/content/chapters/ch-g05.json"),
+  "ch-g06": () => import("@/content/chapters/ch-g06.json"),
+  "ch-g07": () => import("@/content/chapters/ch-g07.json"),
+  "ch-g08": () => import("@/content/chapters/ch-g08.json"),
+  "ch-g09": () => import("@/content/chapters/ch-g09.json"),
+  "ch-g10": () => import("@/content/chapters/ch-g10.json"),
+  "ch-h01": () => import("@/content/chapters/ch-h01.json"),
+  "ch-h02": () => import("@/content/chapters/ch-h02.json"),
+  "ch-h03": () => import("@/content/chapters/ch-h03.json"),
+  "ch-h04": () => import("@/content/chapters/ch-h04.json"),
+  "ch-h05": () => import("@/content/chapters/ch-h05.json"),
+  "ch-h06": () => import("@/content/chapters/ch-h06.json"),
+  "ch-h07": () => import("@/content/chapters/ch-h07.json"),
+  "ch-h08": () => import("@/content/chapters/ch-h08.json"),
+  "ch-h09": () => import("@/content/chapters/ch-h09.json"),
+  "ch-h10": () => import("@/content/chapters/ch-h10.json"),
+  "ch-j01": () => import("@/content/chapters/ch-j01.json"),
+  "ch-j02": () => import("@/content/chapters/ch-j02.json"),
+  "ch-j03": () => import("@/content/chapters/ch-j03.json"),
+  "ch-j04": () => import("@/content/chapters/ch-j04.json"),
+  "ch-j05": () => import("@/content/chapters/ch-j05.json"),
+  "ch-j06": () => import("@/content/chapters/ch-j06.json"),
+  "ch-j07": () => import("@/content/chapters/ch-j07.json"),
+  "ch-j08": () => import("@/content/chapters/ch-j08.json"),
+  "ch-j09": () => import("@/content/chapters/ch-j09.json"),
+  "ch-j10": () => import("@/content/chapters/ch-j10.json"),
+  "ch-k01": () => import("@/content/chapters/ch-k01.json"),
+  "ch-k02": () => import("@/content/chapters/ch-k02.json"),
+  "ch-k03": () => import("@/content/chapters/ch-k03.json"),
+  "ch-k04": () => import("@/content/chapters/ch-k04.json"),
+  "ch-k05": () => import("@/content/chapters/ch-k05.json"),
+  "ch-k06": () => import("@/content/chapters/ch-k06.json"),
+  "ch-k07": () => import("@/content/chapters/ch-k07.json"),
+  "ch-k08": () => import("@/content/chapters/ch-k08.json"),
+  "ch-k09": () => import("@/content/chapters/ch-k09.json"),
+  "ch-k10": () => import("@/content/chapters/ch-k10.json"),
+  "ch-s01": () => import("@/content/chapters/ch-s01.json"),
+  "ch-s02": () => import("@/content/chapters/ch-s02.json"),
+  "ch-s03": () => import("@/content/chapters/ch-s03.json"),
+  "ch-s04": () => import("@/content/chapters/ch-s04.json"),
+  "ch-s05": () => import("@/content/chapters/ch-s05.json"),
+  "ch-s06": () => import("@/content/chapters/ch-s06.json"),
+  "ch-s07": () => import("@/content/chapters/ch-s07.json"),
+  "ch-s08": () => import("@/content/chapters/ch-s08.json"),
+  "ch-s09": () => import("@/content/chapters/ch-s09.json"),
+  "ch-s10": () => import("@/content/chapters/ch-s10.json"),
+  "sp-day-haneul-01": () => import("@/content/chapters/sp-day-haneul-01.json"),
+  "sp-day-haneul-02": () => import("@/content/chapters/sp-day-haneul-02.json"),
+  "sp-day-haneul-03": () => import("@/content/chapters/sp-day-haneul-03.json"),
+  "sp-day-haneul-04": () => import("@/content/chapters/sp-day-haneul-04.json"),
+  "sp-day-haneul-05": () => import("@/content/chapters/sp-day-haneul-05.json"),
+  "sp-day-haneul-06": () => import("@/content/chapters/sp-day-haneul-06.json"),
+  "sp-day-haneul-07": () => import("@/content/chapters/sp-day-haneul-07.json"),
+  "sp-day-haneul-08": () => import("@/content/chapters/sp-day-haneul-08.json"),
+  "sp-day-haneul-09": () => import("@/content/chapters/sp-day-haneul-09.json"),
+  "sp-day-haneul-10": () => import("@/content/chapters/sp-day-haneul-10.json"),
+  "sp-day-kyuhyun-01": () => import("@/content/chapters/sp-day-kyuhyun-01.json"),
+  "sp-day-kyuhyun-02": () => import("@/content/chapters/sp-day-kyuhyun-02.json"),
+  "sp-day-kyuhyun-03": () => import("@/content/chapters/sp-day-kyuhyun-03.json"),
+  "sp-day-kyuhyun-04": () => import("@/content/chapters/sp-day-kyuhyun-04.json"),
+  "sp-day-kyuhyun-05": () => import("@/content/chapters/sp-day-kyuhyun-05.json"),
+  "sp-day-kyuhyun-06": () => import("@/content/chapters/sp-day-kyuhyun-06.json"),
+  "sp-day-kyuhyun-07": () => import("@/content/chapters/sp-day-kyuhyun-07.json"),
+  "sp-day-kyuhyun-08": () => import("@/content/chapters/sp-day-kyuhyun-08.json"),
+  "sp-day-kyuhyun-09": () => import("@/content/chapters/sp-day-kyuhyun-09.json"),
+  "sp-day-kyuhyun-10": () => import("@/content/chapters/sp-day-kyuhyun-10.json"),
+  "sp-day-sangwoo-01": () => import("@/content/chapters/sp-day-sangwoo-01.json"),
+  "sp-day-sangwoo-02": () => import("@/content/chapters/sp-day-sangwoo-02.json"),
+  "sp-day-sangwoo-03": () => import("@/content/chapters/sp-day-sangwoo-03.json"),
+  "sp-day-sangwoo-04": () => import("@/content/chapters/sp-day-sangwoo-04.json"),
+  "sp-day-sangwoo-05": () => import("@/content/chapters/sp-day-sangwoo-05.json"),
+  "sp-day-sangwoo-06": () => import("@/content/chapters/sp-day-sangwoo-06.json"),
+  "sp-day-sangwoo-07": () => import("@/content/chapters/sp-day-sangwoo-07.json"),
+  "sp-day-sangwoo-08": () => import("@/content/chapters/sp-day-sangwoo-08.json"),
+  "sp-day-sangwoo-09": () => import("@/content/chapters/sp-day-sangwoo-09.json"),
+  "sp-day-sangwoo-10": () => import("@/content/chapters/sp-day-sangwoo-10.json"),
+  "sp-day-sunwoo-01": () => import("@/content/chapters/sp-day-sunwoo-01.json"),
+  "sp-day-sunwoo-02": () => import("@/content/chapters/sp-day-sunwoo-02.json"),
+  "sp-day-sunwoo-03": () => import("@/content/chapters/sp-day-sunwoo-03.json"),
+  "sp-day-sunwoo-04": () => import("@/content/chapters/sp-day-sunwoo-04.json"),
+  "sp-day-sunwoo-05": () => import("@/content/chapters/sp-day-sunwoo-05.json"),
+  "sp-day-sunwoo-06": () => import("@/content/chapters/sp-day-sunwoo-06.json"),
+  "sp-day-sunwoo-07": () => import("@/content/chapters/sp-day-sunwoo-07.json"),
+  "sp-day-sunwoo-08": () => import("@/content/chapters/sp-day-sunwoo-08.json"),
+  "sp-day-sunwoo-09": () => import("@/content/chapters/sp-day-sunwoo-09.json"),
+  "sp-day-sunwoo-10": () => import("@/content/chapters/sp-day-sunwoo-10.json"),
+  "sp-day-yongwoo-01": () => import("@/content/chapters/sp-day-yongwoo-01.json"),
+  "sp-day-yongwoo-02": () => import("@/content/chapters/sp-day-yongwoo-02.json"),
+  "sp-day-yongwoo-03": () => import("@/content/chapters/sp-day-yongwoo-03.json"),
+  "sp-day-yongwoo-04": () => import("@/content/chapters/sp-day-yongwoo-04.json"),
+  "sp-day-yongwoo-05": () => import("@/content/chapters/sp-day-yongwoo-05.json"),
+  "sp-day-yongwoo-06": () => import("@/content/chapters/sp-day-yongwoo-06.json"),
+  "sp-day-yongwoo-07": () => import("@/content/chapters/sp-day-yongwoo-07.json"),
+  "sp-day-yongwoo-08": () => import("@/content/chapters/sp-day-yongwoo-08.json"),
+  "sp-day-yongwoo-09": () => import("@/content/chapters/sp-day-yongwoo-09.json"),
+  "sp-day-yongwoo-10": () => import("@/content/chapters/sp-day-yongwoo-10.json"),
+  "sp-frd-haneul-01": () => import("@/content/chapters/sp-frd-haneul-01.json"),
+  "sp-frd-haneul-02": () => import("@/content/chapters/sp-frd-haneul-02.json"),
+  "sp-frd-haneul-03": () => import("@/content/chapters/sp-frd-haneul-03.json"),
+  "sp-frd-haneul-04": () => import("@/content/chapters/sp-frd-haneul-04.json"),
+  "sp-frd-haneul-05": () => import("@/content/chapters/sp-frd-haneul-05.json"),
+  "sp-frd-haneul-06": () => import("@/content/chapters/sp-frd-haneul-06.json"),
+  "sp-frd-haneul-07": () => import("@/content/chapters/sp-frd-haneul-07.json"),
+  "sp-frd-haneul-08": () => import("@/content/chapters/sp-frd-haneul-08.json"),
+  "sp-frd-haneul-09": () => import("@/content/chapters/sp-frd-haneul-09.json"),
+  "sp-frd-haneul-10": () => import("@/content/chapters/sp-frd-haneul-10.json"),
+  "sp-frd-kyuhyun-01": () => import("@/content/chapters/sp-frd-kyuhyun-01.json"),
+  "sp-frd-kyuhyun-02": () => import("@/content/chapters/sp-frd-kyuhyun-02.json"),
+  "sp-frd-kyuhyun-03": () => import("@/content/chapters/sp-frd-kyuhyun-03.json"),
+  "sp-frd-kyuhyun-04": () => import("@/content/chapters/sp-frd-kyuhyun-04.json"),
+  "sp-frd-kyuhyun-05": () => import("@/content/chapters/sp-frd-kyuhyun-05.json"),
+  "sp-frd-kyuhyun-06": () => import("@/content/chapters/sp-frd-kyuhyun-06.json"),
+  "sp-frd-kyuhyun-07": () => import("@/content/chapters/sp-frd-kyuhyun-07.json"),
+  "sp-frd-kyuhyun-08": () => import("@/content/chapters/sp-frd-kyuhyun-08.json"),
+  "sp-frd-kyuhyun-09": () => import("@/content/chapters/sp-frd-kyuhyun-09.json"),
+  "sp-frd-kyuhyun-10": () => import("@/content/chapters/sp-frd-kyuhyun-10.json"),
+  "sp-frd-sangwoo-01": () => import("@/content/chapters/sp-frd-sangwoo-01.json"),
+  "sp-frd-sangwoo-02": () => import("@/content/chapters/sp-frd-sangwoo-02.json"),
+  "sp-frd-sangwoo-03": () => import("@/content/chapters/sp-frd-sangwoo-03.json"),
+  "sp-frd-sangwoo-04": () => import("@/content/chapters/sp-frd-sangwoo-04.json"),
+  "sp-frd-sangwoo-05": () => import("@/content/chapters/sp-frd-sangwoo-05.json"),
+  "sp-frd-sangwoo-06": () => import("@/content/chapters/sp-frd-sangwoo-06.json"),
+  "sp-frd-sangwoo-07": () => import("@/content/chapters/sp-frd-sangwoo-07.json"),
+  "sp-frd-sangwoo-08": () => import("@/content/chapters/sp-frd-sangwoo-08.json"),
+  "sp-frd-sangwoo-09": () => import("@/content/chapters/sp-frd-sangwoo-09.json"),
+  "sp-frd-sangwoo-10": () => import("@/content/chapters/sp-frd-sangwoo-10.json"),
+  "sp-frd-sunwoo-01": () => import("@/content/chapters/sp-frd-sunwoo-01.json"),
+  "sp-frd-sunwoo-02": () => import("@/content/chapters/sp-frd-sunwoo-02.json"),
+  "sp-frd-sunwoo-03": () => import("@/content/chapters/sp-frd-sunwoo-03.json"),
+  "sp-frd-sunwoo-04": () => import("@/content/chapters/sp-frd-sunwoo-04.json"),
+  "sp-frd-sunwoo-05": () => import("@/content/chapters/sp-frd-sunwoo-05.json"),
+  "sp-frd-sunwoo-06": () => import("@/content/chapters/sp-frd-sunwoo-06.json"),
+  "sp-frd-sunwoo-07": () => import("@/content/chapters/sp-frd-sunwoo-07.json"),
+  "sp-frd-sunwoo-08": () => import("@/content/chapters/sp-frd-sunwoo-08.json"),
+  "sp-frd-sunwoo-09": () => import("@/content/chapters/sp-frd-sunwoo-09.json"),
+  "sp-frd-sunwoo-10": () => import("@/content/chapters/sp-frd-sunwoo-10.json"),
+  "sp-frd-yongwoo-01": () => import("@/content/chapters/sp-frd-yongwoo-01.json"),
+  "sp-frd-yongwoo-02": () => import("@/content/chapters/sp-frd-yongwoo-02.json"),
+  "sp-frd-yongwoo-03": () => import("@/content/chapters/sp-frd-yongwoo-03.json"),
+  "sp-frd-yongwoo-04": () => import("@/content/chapters/sp-frd-yongwoo-04.json"),
+  "sp-frd-yongwoo-05": () => import("@/content/chapters/sp-frd-yongwoo-05.json"),
+  "sp-frd-yongwoo-06": () => import("@/content/chapters/sp-frd-yongwoo-06.json"),
+  "sp-frd-yongwoo-07": () => import("@/content/chapters/sp-frd-yongwoo-07.json"),
+  "sp-frd-yongwoo-08": () => import("@/content/chapters/sp-frd-yongwoo-08.json"),
+  "sp-frd-yongwoo-09": () => import("@/content/chapters/sp-frd-yongwoo-09.json"),
+  "sp-frd-yongwoo-10": () => import("@/content/chapters/sp-frd-yongwoo-10.json"),
+  "sp-rom-haneul-01": () => import("@/content/chapters/sp-rom-haneul-01.json"),
+  "sp-rom-haneul-02": () => import("@/content/chapters/sp-rom-haneul-02.json"),
+  "sp-rom-haneul-03": () => import("@/content/chapters/sp-rom-haneul-03.json"),
+  "sp-rom-haneul-04": () => import("@/content/chapters/sp-rom-haneul-04.json"),
+  "sp-rom-haneul-05": () => import("@/content/chapters/sp-rom-haneul-05.json"),
+  "sp-rom-haneul-06": () => import("@/content/chapters/sp-rom-haneul-06.json"),
+  "sp-rom-haneul-07": () => import("@/content/chapters/sp-rom-haneul-07.json"),
+  "sp-rom-haneul-08": () => import("@/content/chapters/sp-rom-haneul-08.json"),
+  "sp-rom-haneul-09": () => import("@/content/chapters/sp-rom-haneul-09.json"),
+  "sp-rom-haneul-10": () => import("@/content/chapters/sp-rom-haneul-10.json"),
+  "sp-rom-kyuhyun-01": () => import("@/content/chapters/sp-rom-kyuhyun-01.json"),
+  "sp-rom-kyuhyun-02": () => import("@/content/chapters/sp-rom-kyuhyun-02.json"),
+  "sp-rom-kyuhyun-03": () => import("@/content/chapters/sp-rom-kyuhyun-03.json"),
+  "sp-rom-kyuhyun-04": () => import("@/content/chapters/sp-rom-kyuhyun-04.json"),
+  "sp-rom-kyuhyun-05": () => import("@/content/chapters/sp-rom-kyuhyun-05.json"),
+  "sp-rom-kyuhyun-06": () => import("@/content/chapters/sp-rom-kyuhyun-06.json"),
+  "sp-rom-kyuhyun-07": () => import("@/content/chapters/sp-rom-kyuhyun-07.json"),
+  "sp-rom-kyuhyun-08": () => import("@/content/chapters/sp-rom-kyuhyun-08.json"),
+  "sp-rom-kyuhyun-09": () => import("@/content/chapters/sp-rom-kyuhyun-09.json"),
+  "sp-rom-kyuhyun-10": () => import("@/content/chapters/sp-rom-kyuhyun-10.json"),
+  "sp-rom-sangwoo-01": () => import("@/content/chapters/sp-rom-sangwoo-01.json"),
+  "sp-rom-sangwoo-02": () => import("@/content/chapters/sp-rom-sangwoo-02.json"),
+  "sp-rom-sangwoo-03": () => import("@/content/chapters/sp-rom-sangwoo-03.json"),
+  "sp-rom-sangwoo-04": () => import("@/content/chapters/sp-rom-sangwoo-04.json"),
+  "sp-rom-sangwoo-05": () => import("@/content/chapters/sp-rom-sangwoo-05.json"),
+  "sp-rom-sangwoo-06": () => import("@/content/chapters/sp-rom-sangwoo-06.json"),
+  "sp-rom-sangwoo-07": () => import("@/content/chapters/sp-rom-sangwoo-07.json"),
+  "sp-rom-sangwoo-08": () => import("@/content/chapters/sp-rom-sangwoo-08.json"),
+  "sp-rom-sangwoo-09": () => import("@/content/chapters/sp-rom-sangwoo-09.json"),
+  "sp-rom-sangwoo-10": () => import("@/content/chapters/sp-rom-sangwoo-10.json"),
+  "sp-rom-sunwoo-01": () => import("@/content/chapters/sp-rom-sunwoo-01.json"),
+  "sp-rom-sunwoo-02": () => import("@/content/chapters/sp-rom-sunwoo-02.json"),
+  "sp-rom-sunwoo-03": () => import("@/content/chapters/sp-rom-sunwoo-03.json"),
+  "sp-rom-sunwoo-04": () => import("@/content/chapters/sp-rom-sunwoo-04.json"),
+  "sp-rom-sunwoo-05": () => import("@/content/chapters/sp-rom-sunwoo-05.json"),
+  "sp-rom-sunwoo-06": () => import("@/content/chapters/sp-rom-sunwoo-06.json"),
+  "sp-rom-sunwoo-07": () => import("@/content/chapters/sp-rom-sunwoo-07.json"),
+  "sp-rom-sunwoo-08": () => import("@/content/chapters/sp-rom-sunwoo-08.json"),
+  "sp-rom-sunwoo-09": () => import("@/content/chapters/sp-rom-sunwoo-09.json"),
+  "sp-rom-sunwoo-10": () => import("@/content/chapters/sp-rom-sunwoo-10.json"),
+  "sp-rom-yongwoo-01": () => import("@/content/chapters/sp-rom-yongwoo-01.json"),
+  "sp-rom-yongwoo-02": () => import("@/content/chapters/sp-rom-yongwoo-02.json"),
+  "sp-rom-yongwoo-03": () => import("@/content/chapters/sp-rom-yongwoo-03.json"),
+  "sp-rom-yongwoo-04": () => import("@/content/chapters/sp-rom-yongwoo-04.json"),
+  "sp-rom-yongwoo-05": () => import("@/content/chapters/sp-rom-yongwoo-05.json"),
+  "sp-rom-yongwoo-06": () => import("@/content/chapters/sp-rom-yongwoo-06.json"),
+  "sp-rom-yongwoo-07": () => import("@/content/chapters/sp-rom-yongwoo-07.json"),
+  "sp-rom-yongwoo-08": () => import("@/content/chapters/sp-rom-yongwoo-08.json"),
+  "sp-rom-yongwoo-09": () => import("@/content/chapters/sp-rom-yongwoo-09.json"),
+  "sp-rom-yongwoo-10": () => import("@/content/chapters/sp-rom-yongwoo-10.json"),
 };
 
-export function getChapterContent(chapterId: string): ChapterContent | null {
-  return CHAPTER_CONTENT[chapterId] ?? null;
+export async function getChapterContent(chapterId: string): Promise<ChapterContent | null> {
+  const loader = CHAPTER_LOADERS[chapterId];
+  if (!loader) return null;
+  const mod = await loader();
+  return mod.default as ChapterContent;
 }

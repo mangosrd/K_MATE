@@ -65,3 +65,27 @@
   line-height: 1.8;
   color: #334155;
 }
+
+:global(html[data-theme="dark"]) .page {
+  background: #0E1015;
+}
+
+:global(html[data-theme="dark"]) .card {
+  background: #1B1F29;
+  box-shadow: none;
+}
+
+:global(html[data-theme="dark"]) .title,
+:global(html[data-theme="dark"]) .heading {
+  color: #F3F4F6;
+}
+
+:global(html[data-theme="dark"]) .section p,
+:global(html[data-theme="dark"]) .list li {
+  color: #B4BAC6;
+}
+
+:global(html[data-theme="dark"]) .backLink,
+:global(html[data-theme="dark"]) .updated {
+  color: #7C8494;
+}

@@ -1,0 +1,98 @@
+{
+  "id": "sp-day-sunwoo-01",
+  "character_id": "sunwoo",
+  "title": "눈뜨자마자 온 전화",
+  "emoji": "🌅",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "핸드폰 진동 소리에 눈을 떴다. 평소라면 늦잠을 자고도 남았을 시간이었다.",
+      "reading": "haen-deu-pon jin-dong so-ri-e nun-eul tteot-da. pyeong-so-ra-myeon neut-jam-eul ja-go-do nam-a-sseul si-gan-i-eot-da.",
+      "en": "I woke up to my phone buzzing. It was an hour I'd normally still be oversleeping at.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "화면에는 '선우'라는 이름이 떠 있었다. 이렇게 일찍 전화할 사람이 아닌데, 하며 반쯤 감긴 눈으로 전화를 받았다.",
+      "reading": "hwa-myeon-e-neun 'seon-u'-ra-neun i-reum-i tteo iss-eot-da. i-reo-ke il-jjik jeon-hwa-hal sa-ram-i a-nin-de, ha-myeo ban-jjeum gam-gin nun-eu-ro jeon-hwa-reul bad-at-da.",
+      "en": "There was \"Sunwoo\" on the screen. He wasn't usually one to call this early, I thought, answering with my eyes still half shut.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "\"야, 니 아직도 자나? 해 중천에 떴다 아이가.\" 수화기 너머 목소리가 유난히 쨍쨍했다.",
+      "reading": "\"ya, ni a-jik-do ja-na? hae jung-cheon-e tteot-da a-i-ga.\" su-hwa-gi neo-meo mok-so-ri-ga yu-nan-hi jjaeng-jjaeng-haet-da.",
+      "en": "\"Hey, are you still sleeping? The sun's already high in the sky.\" His voice on the other end was unusually bright and sharp."
+    },
+    {
+      "text": "이불 속에서 크게 기지개를 켜며 몸을 일으켰다. 삐걱거리는 관절 소리가 방 안에 울렸다.",
+      "reading": "i-bul sok-e-seo keu-ge gi-ji-gae-reul kyeo-myeo mom-eul il-eu-kyeot-da. ppi-geok-geo-ri-neun gwan-jeol so-ri-ga bang an-e ul-lyeot-da.",
+      "en": "I stretched big under the blanket and pushed myself up. My creaking joints echoed through the room.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "세수를 하고 나오니 정신이 한결 상쾌했다. 결국 못 이기는 척 옷을 챙겨 입고 밖으로 나섰다.",
+      "reading": "se-su-reul ha-go na-o-ni jeong-sin-i han-gyeol sang-kwae-haet-da. gyeol-guk mot i-gi-neun cheok os-eul chaeng-gyeo ib-go bakk-eu-ro na-seot-da.",
+      "en": "After washing my face, my mind felt much more refreshed. In the end, pretending I had no choice, I got dressed and headed outside.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "골목 어귀에 선우가 팔짱을 끼고 서 있었다. 나를 보자마자 씩 웃으며 손을 흔들었다.",
+      "reading": "gol-mok eo-gwi-e seon-u-ga pal-jjang-eul kki-go seo iss-eot-da. na-reul bo-ja-ma-ja ssik us-eu-myeo son-eul heun-deul-eot-da.",
+      "en": "Sunwoo was standing at the alley entrance with his arms crossed. The moment he saw me, he grinned and waved."
+    },
+    {
+      "text": "\"봐라, 나왔네. 좋은 아침이다, 가시나야.\" 그의 활기찬 목소리에 나도 모르게 잠이 마저 달아났다.",
+      "reading": "\"bwa-ra, na-wat-ne. jo-eun a-chim-i-da, ga-si-na-ya.\" geu-ui hwal-gi-chan mok-so-ri-e na-do mo-reu-ge jam-i ma-jeo dal-a-nat-da.",
+      "en": "\"See, you came out. Good morning, kid.\" His energetic voice chased away the last of my sleepiness before I even noticed.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "\"오늘 아침 인사말부터 하나씩 익혀보자. 단어랑 대화 문제까지, 끝까지 함께 가보자고.\"",
+      "reading": "\"o-neul a-chim in-sa-mal-bu-teo ha-na-ssik ik-yeo-bo-ja. dan-eo-rang dae-hwa mun-je-kka-ji, kkeut-kka-ji ham-kke ga-bo-ja-go.\"",
+      "en": "\"Let's learn today's morning greetings one by one. Words and the conversation questions too — let's go through it all together.\""
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "일찍", "reading": "il-jjik", "meaning": "early", "example": "오늘은 평소보다 일찍 일어났다.", "example_reading": "o-neul-eun pyeong-so-bo-da il-jjik il-eo-nat-da", "example_en": "Today I woke up earlier than usual." },
+    { "id": "w02", "word": "기지개", "reading": "gi-ji-gae", "meaning": "a stretch (of the body)", "example": "아침마다 기지개를 켜면 몸이 풀린다.", "example_reading": "a-chim-ma-da gi-ji-gae-reul kyeo-myeon mom-i pul-lin-da", "example_en": "Stretching every morning loosens up my body." },
+    { "id": "w03", "word": "상쾌하다", "reading": "sang-kwae-ha-da", "meaning": "to feel refreshed", "example": "찬물로 세수하니 기분이 상쾌했다.", "example_reading": "chan-mul-lo se-su-ha-ni gi-bun-i sang-kwae-haet-da", "example_en": "Washing my face with cold water, I felt refreshed." },
+    { "id": "w04", "word": "늦잠", "reading": "neut-jam", "meaning": "oversleeping", "example": "주말에는 늦잠을 자는 게 낙이다.", "example_reading": "ju-mal-e-neun neut-jam-eul ja-neun ge nak-i-da", "example_en": "Sleeping in on weekends is my one joy." },
+    { "id": "w05", "word": "활기차다", "reading": "hwal-gi-cha-da", "meaning": "to be lively, energetic", "example": "그는 언제나 활기찬 목소리로 인사한다.", "example_reading": "geu-neun eon-je-na hwal-gi-chan mok-so-ri-ro in-sa-han-da", "example_en": "He always greets people with an energetic voice." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "오늘은 일찍 일어나서 하루를 시작했다.", "reading": "o-neul-eun il-jjik il-eo-na-seo ha-ru-reul si-jak-haet-da", "en": "I woke up early today and started my day." },
+    { "id": "s02", "ko": "아침에 기지개를 켜면 잠이 깬다.", "reading": "a-chim-e gi-ji-gae-reul kyeo-myeon jam-i kkaen-da", "en": "Stretching in the morning wakes you up." },
+    { "id": "s03", "ko": "상쾌한 바람이 얼굴을 스쳤다.", "reading": "sang-kwae-han ba-ram-i eol-gul-eul seu-cheot-da", "en": "A refreshing breeze brushed past my face." },
+    { "id": "s04", "ko": "늦잠을 자서 약속에 늦을 뻔했다.", "reading": "neut-jam-eul ja-seo yak-sok-e neuj-eul ppeon-haet-da", "en": "I overslept and almost was late for the appointment." },
+    { "id": "s05", "ko": "그는 활기차게 아침 인사를 건넸다.", "reading": "geu-neun hwal-gi-cha-ge a-chim in-sa-reul geon-net-da", "en": "He greeted me energetically in the morning." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "선우", "text": "야, 니 아직도 자나? 해 중천에 떴다 아이가.", "reading": "ya, ni a-jik-do ja-na? hae jung-cheon-e tteot-da a-i-ga.", "en": "Hey, are you still asleep? The sun's already high up in the sky." },
+        { "speaker": "승객", "text": "…몇 신데 벌써 전화고. 나 방금 일어났다고.", "reading": "…myeot sin-de beol-sseo jeon-hwa-go. na bang-geum il-eo-nat-da-go.", "en": "…What time is it that you're calling already. I just woke up, I said." },
+        { "speaker": "선우", "text": "거짓말 마라. 목소리부터 잠 덜 깬 티 난다 아이가.", "reading": "geo-jit-mal ma-ra. mok-so-ri-bu-teo jam deol kkaen ti nan-da a-i-ga.", "en": "Don't lie. Your voice alone shows you're still half asleep." },
+        { "speaker": "승객", "text": "아 몰라, 십 분만 더 잘게.", "reading": "a mol-la, sip bun-man deo jal-ge.", "en": "Ugh, I don't know, I'll sleep ten more minutes." }
+      ],
+      "question": "선우가 승객에게 전화한 이유는 무엇인가요?",
+      "question_en": "Why did Sunwoo call the passenger?",
+      "correct_answer": "늦잠 자는 승객을 깨우려고",
+      "options": ["늦잠 자는 승객을 깨우려고", "비행 일정을 알려주려고", "저녁 약속을 잡으려고", "길을 물어보려고"],
+      "explanation": "선우는 아직 자고 있는 승객을 놀리듯 깨우기 위해 아침 일찍 전화를 걸었습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "선우", "text": "봐라, 나왔네. 좋은 아침이다, 가시나야.", "reading": "bwa-ra, na-wat-ne. jo-eun a-chim-i-da, ga-si-na-ya.", "en": "See, you came out. Good morning, kid." },
+        { "speaker": "승객", "text": "너는 맨날 왜 이렇게 일찍 움직이는데?", "reading": "neo-neun maen-nal wae i-reo-ke il-jjik um-jik-i-neun-de?", "en": "Why do you always move around so early every day?" },
+        { "speaker": "선우", "text": "비행 있는 날은 새벽부터 일어나야 되거든. 몸에 뱄다, 이제.", "reading": "bi-haeng it-neun nal-eun sae-byeok-bu-teo il-eo-na-ya doe-geo-deun. mom-e baet-da, i-je.", "en": "On days I have a flight, I have to get up before dawn. It's become a habit by now." },
+        { "speaker": "승객", "text": "부지런한 척은. 그래도 오늘 아침 공기는 좋네.", "reading": "bu-ji-reon-han cheok-eun. geu-rae-do o-neul a-chim gong-gi-neun jo-ne.", "en": "Such a hard worker, huh. Still, the morning air is nice today." }
+      ],
+      "question": "선우가 아침 일찍 일어나는 습관이 생긴 이유는 무엇인가요?",
+      "question_en": "Why did Sunwoo develop the habit of waking up early in the morning?",
+      "correct_answer": "비행 일정 때문에 새벽부터 일어나야 해서",
+      "options": ["비행 일정 때문에 새벽부터 일어나야 해서", "아침 운동을 좋아해서", "아침에 카페가 한산해서", "어릴 때부터 잠이 없어서"],
+      "explanation": "선우는 비행이 있는 날마다 새벽부터 일어나야 해서 이른 기상이 습관처럼 몸에 뱄다고 말합니다."
+    }
+  ]
+}

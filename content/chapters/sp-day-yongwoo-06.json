@@ -1,0 +1,103 @@
+{
+  "id": "sp-day-yongwoo-06",
+  "character_id": "yongwoo",
+  "title": "손맛을 아는 시간",
+  "emoji": "🎣",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "오랜만에 스케줄이 완전히 빈 토요일, 용우가 먼저 나를 불러냈다. '오늘은 낚시나 가자. 나 쉬는 날엔 원래 이거 한다.'",
+      "reading": "o-raen-man-e seu-ke-jul-i wan-jeon-hi bin to-yo-il, yong-u-ga meon-jeo na-reul bul-leo-naet-da. o-neul-eun nak-si-na ga-ja. na swi-neun nal-en won-lae i-geo han-da.",
+      "en": "One Saturday, with his schedule surprisingly wide open for once, Yongwoo called out to me first. \"Let's go fishing today. This is what I do on my days off.\""
+    },
+    {
+      "text": "협재 근처 갯바위에 도착하자, 그는 트렁크에서 낚싯대 두 대를 꺼내며 익숙하게 채비를 폈다.",
+      "reading": "hyeop-jae geun-cheo gaet-ba-wi-e do-chak-ha-ja, geu-neun teu-reong-keu-e-seo nak-ssit-dae du dae-reul kkeo-nae-myeo ig-suk-ha-ge chae-bi-reul pyeot-da.",
+      "en": "When we arrived at the rocky shore near Hyeopjae, he pulled two fishing rods out of the trunk and set up the tackle with practiced ease.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "'미끼는 이렇게 꿰는 거다.' 용우가 바늘에 미끼를 꿰어 보이며 말했다. 처음 보는 손놀림에 나는 눈을 떼지 못했다.",
+      "reading": "mi-kki-neun i-reo-ke kkwe-neun geo-da. yong-u-ga ba-neul-e mi-kki-reul kkwe-eo bo-i-myeo mal-haet-da. cheo-eum bo-neun son-nol-lim-e na-neun nun-eul tte-ji mot-haet-da.",
+      "en": "\"This is how you thread the bait.\" Yongwoo said, showing me how to hook the bait onto the line. I couldn't take my eyes off his unfamiliar, practiced movements.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "'이제 던지고 기다리면 돼. 조급해하지 말고.' 낚싯대를 건네받은 나는 그가 시키는 대로 바다를 향해 힘껏 던졌다.",
+      "reading": "i-je deon-ji-go gi-da-ri-myeon dwae. jo-geup-hae-ha-ji mal-go. nak-ssit-dae-reul geon-ne-bad-eun na-neun geu-ga si-ki-neun dae-ro ba-da-reul hyang-hae him-kkeot deon-jyeot-da.",
+      "en": "\"Now just cast it and wait. Don't be impatient.\" Taking the rod he handed me, I cast it out toward the sea with all my strength, just as he told me."
+    },
+    {
+      "text": "한참을 기다려도 아무 반응이 없자 지루해진 나는 하품을 했다. 용우는 눈 하나 깜짝 안 하고 찌만 바라보고 있었다.",
+      "reading": "han-cham-eul gi-da-ryeo-do a-mu ban-eung-i eop-ja ji-ru-hae-jin na-neun ha-pum-eul haet-da. yong-u-neun nun ha-na kkam-jjak an ha-go jji-man ba-ra-bo-go iss-eot-da.",
+      "en": "After a long wait with no response at all, I grew bored and yawned. Yongwoo, meanwhile, didn't so much as blink, just kept staring at the float."
+    },
+    {
+      "text": "'취미는 원래 기다리는 맛이다.' 그가 낮은 목소리로 말한 순간, 내 낚싯대 끝이 갑자기 팽팽하게 휘었다.",
+      "reading": "chwi-mi-neun won-lae gi-da-ri-neun mas-i-da. geu-ga naj-eun mok-so-ri-ro mal-han sun-gan, nae nak-ssit-dae kkeut-i gap-ja-gi paeng-paeng-ha-ge hwi-eot-da.",
+      "en": "\"A hobby is, by nature, all about the taste of waiting.\" The moment he said that in his low voice, the tip of my rod suddenly bent taut."
+    },
+    {
+      "text": "'왔다, 왔어! 천천히 감아 봐라.' 그의 다급한 목소리에 손이 떨렸다. 줄 끝에서 전해지는 짜릿한 손맛에 나도 모르게 소리를 질렀다.",
+      "reading": "wat-da, wass-eo! cheon-cheon-hi gam-a bwa-ra. geu-ui da-geup-han mok-so-ri-e son-i tteol-lyeot-da. jul kkeut-e-seo jeon-hae-ji-neun jja-rit-han son-mas-e na-do mo-reu-ge so-ri-reul jil-leot-da.",
+      "en": "\"It's here, it's on! Reel it in slowly.\" His urgent voice made my hands tremble. At the thrilling tug transmitted through the line, I let out a shout without meaning to.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "작은 물고기 한 마리가 올라오자, 용우는 크기를 살피더니 다시 바다로 놓아주었다. '이건 너무 작다. 방생하자, 다음에 더 큰 놈으로 잡아라.'",
+      "reading": "jag-eun mul-go-gi han ma-ri-ga ol-la-o-ja, yong-u-neun keu-gi-reul sal-pi-deo-ni da-si ba-da-ro no-a-ju-eot-da. i-geon neo-mu jak-da. bang-saeng-ha-ja, da-eum-e deo keun nom-eu-ro jab-a-ra.",
+      "en": "A small fish came up on the line, and Yongwoo looked it over before releasing it back into the sea. \"This one's too small. Let's set it free — next time, catch a bigger one.\"",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "노을이 지는 바다를 보며 나란히 앉아 있으려니, 아무것도 안 하고 그냥 기다리는 이 시간이 이렇게 여유로울 수 있다는 걸 처음 알았다.",
+      "reading": "no-eul-i ji-neun ba-da-reul bo-myeo na-ran-hi anj-a iss-eu-ryeo-ni, a-mu-geot-do an ha-go geu-nyang gi-da-ri-neun i si-gan-i i-reo-ke yeo-yu-ro-ul su it-da-neun geol cheo-eum al-at-da.",
+      "en": "Sitting side by side watching the sunset paint the sea, I realized for the first time how leisurely it could feel to simply wait, doing nothing at all.",
+      "highlight_word_id": "w05"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "낚싯대", "reading": "nak-ssit-dae", "meaning": "fishing rod", "example": "낚싯대를 챙겨서 바다로 나갔다.", "example_reading": "nak-ssit-dae-reul chaeng-gyeo-seo ba-da-ro na-gat-da", "example_en": "I packed my fishing rod and went to the sea." },
+    { "id": "w02", "word": "미끼", "reading": "mi-kki", "meaning": "bait", "example": "미끼를 바늘에 꿰었다.", "example_reading": "mi-kki-reul ba-neul-e kkwe-eot-da", "example_en": "I hooked the bait onto the line." },
+    { "id": "w03", "word": "손맛", "reading": "son-mat", "meaning": "the thrill felt through the line when a fish bites", "example": "손맛이 짜릿해서 낚시를 계속하게 된다.", "example_reading": "son-mas-i jja-rit-hae-seo nak-si-reul gye-sok-ha-ge doen-da", "example_en": "The thrill on the line is so exciting that I keep fishing." },
+    { "id": "w04", "word": "방생하다", "reading": "bang-saeng-ha-da", "meaning": "to release a caught fish back into the water", "example": "너무 작은 물고기는 방생해 주었다.", "example_reading": "neo-mu jag-eun mul-go-gi-neun bang-saeng-hae ju-eot-da", "example_en": "I released the fish that was too small." },
+    { "id": "w05", "word": "여유롭다", "reading": "yeo-yu-rop-da", "meaning": "to be leisurely, relaxed", "example": "아무 약속 없는 주말은 여유롭다.", "example_reading": "a-mu yak-sog eop-neun ju-mal-eun yeo-yu-rop-da", "example_en": "A weekend with no plans is relaxing." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "오랜만에 낚싯대를 챙겨서 바다로 나갔다.", "reading": "o-raen-man-e nak-ssit-dae-reul chaeng-gyeo-seo ba-da-ro na-gat-da", "en": "After a long while, I packed my fishing rod and headed to the sea." },
+    { "id": "s02", "ko": "미끼를 바늘에 꿰는 법을 처음 배웠다.", "reading": "mi-kki-reul ba-neul-e kkwe-neun beob-eul cheo-eum bae-wot-da", "en": "I learned how to thread bait onto a hook for the first time." },
+    { "id": "s03", "ko": "물고기가 물자 손끝으로 짜릿한 손맛이 전해졌다.", "reading": "mul-go-gi-ga mul-ja son-kkeut-eu-ro jja-rit-han son-mas-i jeon-hae-jyeot-da", "en": "When the fish bit, a thrilling tug traveled through my fingertips." },
+    { "id": "s04", "ko": "크기가 작은 물고기는 다시 방생해 주었다.", "reading": "keu-gi-ga jag-eun mul-go-gi-neun da-si bang-saeng-hae ju-eot-da", "en": "I released the fish that was too small back into the water." },
+    { "id": "s05", "ko": "아무 약속 없이 여유롭게 하루를 보냈다.", "reading": "a-mu yak-sog eop-si yeo-yu-rop-ge ha-ru-reul bo-naet-da", "en": "I spent the day leisurely, with no plans at all." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "용우", "text": "미끼는 이렇게 바늘 끝에 단단히 꿰는 거다.", "reading": "mi-kki-neun i-reo-ke ba-neul kkeut-e dan-dan-hi kkwe-neun geo-da.", "en": "You thread the bait onto the tip of the hook firmly, like this." },
+        { "speaker": "승객", "text": "저는 이런 거 처음 해 봐요. 좀 무섭네요.", "reading": "jeo-neun i-reon geo cheo-eum hae bwa-yo. jom mu-seop-ne-yo.", "en": "This is my first time doing something like this. It's a little scary." },
+        { "speaker": "용우", "text": "무섭긴, 몇 번 해 보면 금방 익숙해진다.", "reading": "mu-seop-gin, myeot beon hae bo-myeon geum-bang ig-suk-hae-jin-da.", "en": "Scary, my foot — do it a few times and you'll get used to it right away." },
+        { "speaker": "승객", "text": "그럼 이제 어떻게 던져요?", "reading": "geu-reom i-je eo-tteo-ke deon-jyeo-yo?", "en": "Then how do I cast it now?" }
+      ],
+      "question": "용우가 승객에게 미끼 꿰는 법을 직접 보여준 이유로 가장 알맞은 것은?",
+      "question_en": "What best explains why Yongwoo personally showed the passenger how to bait the hook?",
+      "correct_answer": "승객이 낚시가 처음이라 방법을 몰라서",
+      "options": ["승객이 낚시가 처음이라 방법을 몰라서", "미끼가 비싸서 아까워서", "승객이 미끼를 무서워해서 대신 해 주려고", "시간이 없어서 빨리 끝내려고"],
+      "explanation": "승객이 낚시를 처음 해 본다고 하자 용우가 미끼 꿰는 법을 직접 보여주었습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "용우", "text": "왔다, 왔어! 천천히 감아 봐라.", "reading": "wat-da, wass-eo! cheon-cheon-hi gam-a bwa-ra.", "en": "It's here, it's on! Reel it in slowly." },
+        { "speaker": "승객", "text": "손이 떨려요! 이거 진짜 물고기 맞죠?", "reading": "son-i tteol-lyeo-yo! i-geo jin-jja mul-go-gi mat-jyo?", "en": "My hands are shaking! This is really a fish, right?" },
+        { "speaker": "용우", "text": "그래, 잘 잡았다. 근데 이건 너무 작으니까 놓아주자.", "reading": "geu-rae, jal jab-at-da. geun-de i-geon neo-mu jag-eu-ni-kka no-a-ju-ja.", "en": "Yeah, nice catch. But this one's too small, so let's let it go." },
+        { "speaker": "승객", "text": "아깝지 않아요? 그냥 가져가면 안 돼요?", "reading": "a-kkap-ji an-a-yo? geu-nyang ga-jyeo-ga-myeon an dwae-yo?", "en": "Isn't that a waste? Can't we just keep it?" }
+      ],
+      "question": "용우가 물고기를 다시 놓아주자고 한 이유로 가장 알맞은 것은?",
+      "question_en": "What best explains why Yongwoo suggested releasing the fish?",
+      "correct_answer": "물고기가 너무 작아서",
+      "options": ["물고기가 너무 작아서", "물고기가 병들어 보여서", "낚시가 금지된 구역이라서", "승객이 물고기를 무서워해서"],
+      "explanation": "용우는 잡은 물고기가 너무 작다며 다시 놓아주자고 했습니다."
+    }
+  ]
+}

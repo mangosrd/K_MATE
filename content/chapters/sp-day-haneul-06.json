@@ -1,0 +1,67 @@
+{
+  "id": "sp-day-haneul-06",
+  "character_id": "haneul",
+  "title": "카메라를 든 주말",
+  "emoji": "📷",
+  "story": [
+    {
+      "text": "모처럼 비번이 겹친 주말이었다. 하늘도 나도 딱히 계획이 없었다.",
+      "reading": "mo-cheo-reom bi-beon-i gyeop-chin ju-mal-i-eot-da. ha-neul-do na-do ttak-hi gye-hoeg-i eop-seot-da.",
+      "en": "It was a rare weekend when our days off overlapped. Neither Haneul nor I had any particular plans.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "'뭐 할 거야?' 내가 묻자, 그는 잠시 뜸을 들이더니 말했다. '나 사진 찍는 거 취미야.'",
+      "reading": "'mwo hal geo-ya?' nae-ga mud-ja, geu-neun jam-si tteum-eul deul-i-deo-ni mal-haet-da. 'na sa-jin jjik-neun geo chwi-mi-ya.'",
+      "en": "\"What do you want to do?\" I asked. He paused for a moment, then said, \"Taking photos — that's my hobby.\"",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "의외였다. 무뚝뚝한 그가 카메라를 들면 다른 사람처럼 조용히 집중했다.",
+      "reading": "ui-oe-yeot-da. mu-ttuk-ttuk-han geu-ga ka-me-ra-reul deul-myeon da-reun sa-ram-cheo-reom jo-yong-hi jip-jung-haet-da.",
+      "en": "It was unexpected. When he picked up a camera, the blunt version of him turned quiet and focused, like a different person."
+    },
+    {
+      "text": "'전주천 따라 산책이나 하자. 걷다가 찍고 싶은 거 있으면 찍고.' 그가 앞장서 걸었다.",
+      "reading": "'jeon-ju-cheon tta-ra san-chaek-i-na ha-ja. geot-da-ga jjik-go sip-eun geo iss-eu-myeon jjik-go.' geu-ga ap-jang-seo geol-eot-da.",
+      "en": "\"Let's just take a walk along Jeonjucheon. If we see something worth shooting, we'll shoot it.\" He led the way, walking ahead.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "'너무 열심히 하지 마. 주말인데 쉬어야지.' 내가 놀리듯 말하자, 그는 픽 웃었다.",
+      "reading": "'neo-mu yeol-sim-hi ha-ji ma. ju-mal-in-de swi-eo-ya-ji.' nae-ga nol-li-deut mal-ha-ja, geu-neun pik us-eot-da.",
+      "en": "\"Don't try too hard. It's the weekend — you're supposed to rest.\" I teased, and he gave a small smile.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "'이런 게 나한텐 쉬는 거야.' 그가 무심히 답하며 렌즈를 갈아 끼웠다. 나는 그 말이 왠지 마음에 남았다.",
+      "reading": "'i-reon ge na-han-ten swi-neun geo-ya.' geu-ga mu-sim-hi dap-ha-myeo ren-jeu-reul gal-a kki-wot-da. na-neun geu mal-i waen-ji ma-eum-e nam-at-da.",
+      "en": "\"This kind of thing is resting, for me.\" He answered offhandedly, changing his lens. Somehow, the words stuck with me."
+    },
+    {
+      "text": "'너도 좋아하는 거 하나 말해봐.' 그가 카메라 너머로 물었다. 나는 잠깐 고민하다 웃으며 답했다. '지금 이 순간, 이런 거.'",
+      "reading": "'neo-do jo-a-ha-neun geo ha-na mal-hae-bwa.' geu-ga ka-me-ra neo-meo-ro mul-eot-da. na-neun jam-kkan go-min-ha-da us-eu-myeo dap-haet-da. 'ji-geum i sun-gan, i-reon geo.'",
+      "en": "\"Tell me one thing you like too.\" He asked from behind the camera. I thought for a second, then answered with a smile. \"This moment, right now — things like this.\"",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "그는 대답 대신 셔터를 눌렀다. 딸깍, 조용한 소리가 우리의 주말을 한 장면으로 남겼다.",
+      "reading": "geu-neun dae-dap dae-sin syeo-teo-reul nul-leot-da. ttal-kkak, jo-yong-han so-ri-ga u-ri-ui ju-mal-eul han jang-myeon-eu-ro nam-gyeot-da.",
+      "en": "Instead of answering, he pressed the shutter. A quiet click captured our weekend into a single frame."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "주말", "reading": "ju-mal", "meaning": "weekend", "example": "주말에 뭐 해요?", "example_reading": "ju-mal-e mwo hae-yo?", "example_en": "What do you do on weekends?" },
+    { "id": "w02", "word": "취미", "reading": "chwi-mi", "meaning": "hobby", "example": "제 취미는 사진 찍기예요.", "example_reading": "je chwi-mi-neun sa-jin jjik-gi-ye-yo", "example_en": "My hobby is taking photos." },
+    { "id": "w03", "word": "쉬다", "reading": "swi-da", "meaning": "to rest", "example": "오늘은 집에서 쉬고 싶어요.", "example_reading": "o-neul-eun jib-e-seo swi-go sip-eo-yo", "example_en": "I want to rest at home today." },
+    { "id": "w04", "word": "산책", "reading": "san-chaek", "meaning": "walk, stroll", "example": "저녁에 산책하러 가요.", "example_reading": "jeo-nyeog-e san-chaek-ha-reo ga-yo", "example_en": "Let's go for a walk in the evening." },
+    { "id": "w05", "word": "좋아하다", "reading": "jo-a-ha-da", "meaning": "to like", "example": "저는 커피를 좋아해요.", "example_reading": "jeo-neun keo-pi-reul jo-a-hae-yo", "example_en": "I like coffee." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "주말에 뭐 할 거예요?", "reading": "ju-mal-e mwo hal geo-ye-yo?", "en": "What will you do this weekend?" },
+    { "id": "s02", "ko": "취미가 뭐예요?", "reading": "chwi-mi-ga mwo-ye-yo?", "en": "What's your hobby?" },
+    { "id": "s03", "ko": "오늘은 좀 쉬고 싶어요.", "reading": "o-neul-eun jom swi-go sip-eo-yo", "en": "I want to rest a bit today." },
+    { "id": "s04", "ko": "같이 산책할까요?", "reading": "ga-chi san-chaek-hal-kka-yo?", "en": "Shall we take a walk together?" },
+    { "id": "s05", "ko": "저는 이런 걸 좋아해요.", "reading": "jeo-neun i-reon geol jo-a-hae-yo", "en": "I like this kind of thing." }
+  ]
+}

@@ -5,7 +5,7 @@
   position: sticky; top: 0; z-index: 50;
 }
 .backBtn { font-size: 28px; color: var(--text-secondary); flex-shrink: 0; }
-.headerCenter { display: flex; align-items: center; gap: var(--space-sm); flex: 1; }
+.headerCenter { display: flex; align-items: center; gap: var(--space-sm); flex: 1; min-width: 0; }
 .headerAvatar {
   width: 36px; height: 36px; border-radius: 50%;
   background: var(--red-light); border: 2px solid var(--red-mid);
@@ -14,8 +14,32 @@
   overflow: hidden;
 }
 .headerAvatarImg { width: 100%; height: 100%; object-fit: cover; }
-.headerName { font-size: 15px; font-weight: 700; color: var(--text-primary); }
-.headerSub  { font-size: 11px; color: var(--text-muted); }
+.headerName { font-size: 14px; font-weight: 700; color: var(--text-primary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.headerSub  { font-size: 10px; color: var(--text-muted); }
+
+/* 편지함·앨범 pill 버튼 */
+.headerPill {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  flex-shrink: 0;
+  padding: 5px 9px;
+  border-radius: var(--radius-full);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  transition: background var(--transition-fast), border-color var(--transition-fast);
+  -webkit-tap-highlight-color: transparent;
+}
+.headerPill:hover {
+  background: var(--blue-light);
+  border-color: var(--blue-mid);
+  color: var(--blue);
+}
 
 .inner { padding: var(--space-md); display: flex; flex-direction: column; gap: var(--space-md); }
 
@@ -29,6 +53,9 @@
   font-family: var(--font-sans); cursor: pointer;
   display: flex; flex-direction: column; align-items: center; gap: 1px;
   transition: all var(--transition-fast);
+  border: none;
+  outline: none;
+  background: transparent;
 }
 .tabKo { font-size: 13px; font-weight: 600; color: var(--text-muted); }
 .tabEn { font-size: 10px; font-weight: 500; color: var(--text-muted); }
@@ -42,9 +69,17 @@
 
 /* 비어있음 */
 .empty {
-  text-align: center; padding: var(--space-2xl) 0;
-  display: flex; flex-direction: column; gap: var(--space-sm);
-  align-items: center; font-size: 16px; font-weight: 600; color: var(--text-secondary);
+  text-align: center; padding: var(--space-xl) 0;
+  display: flex; flex-direction: column; align-items: center; gap: var(--space-md);
+  font-size: 16px; font-weight: 600; color: var(--text-secondary);
+}
+.emptyMsg {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  max-width: 240px;
+  text-align: center;
 }
 .emptyEn { font-size: 13px; color: var(--text-muted); font-weight: 400; }
 
@@ -76,7 +111,7 @@
   margin-bottom: var(--space-md);
 }
 .modalActions { display: flex; flex-direction: column; gap: var(--space-sm); }
-.pillBtn { border-radius: var(--radius-full); }
+.pillBtn { border-radius: var(--radius-full); white-space: nowrap; }
 
 /* 열람 뷰 */
 .reader {

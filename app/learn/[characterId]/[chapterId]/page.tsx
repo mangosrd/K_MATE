@@ -4,14 +4,17 @@ import { useState, use, useEffect, useMemo } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./session.module.css";
+import LoadingSplash from "@/components/LoadingSplash";
 import { getChapterContent } from "@/lib/content/chapters";
 import { addVocabWord } from "@/lib/vocab/store";
-import { getEffectiveUserId, getCurrentUser } from "@/lib/auth/store";
+import { getEffectiveUserId } from "@/lib/auth/store";
 import { useLanguage } from "@/components/LanguageContext";
-import { MOCK_USER, canAccessCharacter, isChapterUnlocked } from "@/lib/db/mock";
+import { canAccessCharacter, isChapterUnlocked, getCharacterById } from "@/lib/db/mock";
+import { useMembership, useFreeCharSlots } from "@/lib/auth/useAuthUser";
+import { useTranslationMap, substituteTranslations, TranslatableItem } from "@/lib/translate/store";
 
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
-import type { ChapterWord as Word, ChapterSentence as Sentence, DialogueScene, DialogueTurn } from "@/types/content";
+import type { ChapterContent, ChapterWord as Word, ChapterSentence as Sentence, DialogueScene, DialogueTurn } from "@/types/content";
 
 // ── 기장별 전용 음성 톤 조절 함수 (TTS) ─────────────────────────
 async function playCaptainVoice(text: string, characterId: string) {
@@ -127,8 +130,9 @@ function generateExercises(words: Word[], sentences: Sentence[], dialogues: Dial
     });
   });
 
-  // 3. 빈칸 채우기
-  sentences.forEach((s) => {
+  // 3. 빈칸 채우기 — 외국인 학습자는 대부분 자판에 한글 입력 자체가 안 돼 있어서, 정답을
+  // 직접 타이핑하게 하면 사실상 풀 수 없는 문제였다. 직접 입력 대신 4지선다 객관식으로 바꾼다.
+  const fillBlankTargets = sentences.map((s) => {
     const parts = s.ko.split(" ");
     const firstToken = parts[0];
     const rest = parts.slice(1).join(" ");
@@ -140,6 +144,19 @@ function generateExercises(words: Word[], sentences: Sentence[], dialogues: Dial
     const targetWord = matchedWord ? matchedWord.word : firstToken;
     const particleSuffix = matchedWord ? firstToken.slice(matchedWord.word.length) : "";
     const blankSentence = `____${particleSuffix} ${rest}`;
+    return { s, targetWord, blankSentence };
+  });
+
+  fillBlankTargets.forEach(({ s, targetWord, blankSentence }) => {
+    // 오답 후보: 같은 챕터의 다른 빈칸 정답 + 단어 목록에서 채운다(문장이 몇 개 없는 챕터에서도
+    // 최대한 4개를 채우기 위해 두 출처를 합친다).
+    const wrongPool = Array.from(
+      new Set([
+        ...fillBlankTargets.filter((d) => d.targetWord !== targetWord).map((d) => d.targetWord),
+        ...words.map((w) => w.word).filter((w) => w !== targetWord),
+      ])
+    );
+    const wrong = shuffle(wrongPool).slice(0, 3);
 
     list.push({
       id: `fb-${s.id}`,
@@ -150,7 +167,7 @@ function generateExercises(words: Word[], sentences: Sentence[], dialogues: Dial
       correctAnswer: targetWord,
       hintText: `정답 첫 글자: '${targetWord[0]}' (총 ${targetWord.length}글자)`,
       explanation: `정답: "${targetWord}" ➔ 전체 문장: "${s.ko}" (${s.en})`,
-      options: [],
+      options: shuffle([targetWord, ...wrong]),
       originalData: s,
     });
   });
@@ -235,23 +252,95 @@ export default function LearningSessionPage({
   params: Promise<{ characterId: string; chapterId: string }>;
 }) {
   const { characterId, chapterId } = use(params);
-  const { t } = useLanguage();
-  const content = getChapterContent(chapterId);
+  const { t, language } = useLanguage();
+  const { membership, membershipLoaded } = useMembership();
+  const { freeSlots, freeSlotsLoaded } = useFreeCharSlots();
+
+  // 챕터 콘텐츠는 이제 챕터별로 쪼개진 청크를 동적 import로 그때그때 받아온다
+  // (lib/content/chapters.ts 참고) — chapterId가 바뀔 때마다 새로 받아와야 한다.
+  const [content, setContent] = useState<ChapterContent | null>(null);
+  const [contentLoaded, setContentLoaded] = useState(false);
+
+  useEffect(() => {
+    let cancelled = false;
+    setContentLoaded(false);
+    getChapterContent(chapterId).then((data) => {
+      if (cancelled) return;
+      setContent(data);
+      setContentLoaded(true);
+    });
+    return () => { cancelled = true; };
+  }, [chapterId]);
+
+  // 로컬/캐시 상태에서는 청크가 사실상 순식간에 도착해서 로딩 화면이 한 프레임만
+  // 그려지고 사라지는 "깜빡임"이 생긴다. 실제 로딩이 이보다 빨라도 화면은 최소 5초는
+  // 붙잡아두고, "랜딩중..." → "랜딩 완료!" 2단계로 보여줘서 순간적으로 스쳐 지나가지
+  // 않고 로딩 화면답게 보이도록 한다.
+  const [loadingPhase, setLoadingPhase] = useState<"landing" | "done">("landing");
+  const [minLoadingTimeElapsed, setMinLoadingTimeElapsed] = useState(false);
+  useEffect(() => {
+    setLoadingPhase("landing");
+    setMinLoadingTimeElapsed(false);
+    const doneTextTimer = setTimeout(() => setLoadingPhase("done"), 2000);
+    const dismissTimer = setTimeout(() => setMinLoadingTimeElapsed(true), 3000);
+    return () => {
+      clearTimeout(doneTextTimer);
+      clearTimeout(dismissTimer);
+    };
+  }, [chapterId]);
 
   const exercises = useMemo(
     () => (content ? generateExercises(content.words, content.sentences, content.dialogues ?? []) : []),
     [chapterId, content]
   );
 
+  // 단어 뜻/예문 번역/스토리 번역은 챕터 콘텐츠에 한국어+영어로만 준비돼 있어, 그 외
+  // UI 언어에서는 화면에 그릴 때 실시간으로 번역해서 보여준다(lib/translate/store.ts,
+  // 결과는 캐싱됨). 채점에 쓰이는 원본 영어 값(정답 비교 등)은 절대 바꾸지 않고,
+  // 화면에 보여주는 텍스트만 이 맵으로 치환한다.
+  const translatableItems: TranslatableItem[] = useMemo(() => {
+    if (!content) return [];
+    const items: TranslatableItem[] = [];
+    content.words.forEach((w) => {
+      items.push({ text: w.meaning, contextKo: w.word });
+      items.push({ text: w.example_en, contextKo: w.example });
+    });
+    content.sentences.forEach((s) => items.push({ text: s.en, contextKo: s.ko }));
+    (content.dialogues ?? []).forEach((d) => {
+      items.push({ text: d.question_en, contextKo: d.question });
+      d.turns.forEach((turn) => {
+        if (turn.en) items.push({ text: turn.en, contextKo: turn.text });
+      });
+    });
+    content.story.forEach((b) => {
+      if (b.en) items.push({ text: b.en, contextKo: b.text });
+    });
+    return items;
+  }, [content]);
+  const translationMap = useTranslationMap(translatableItems, language);
+  const tr = (text: string) => substituteTranslations(text, translationMap);
+
   const [phase, setPhase] = useState<Phase>("intro");
   const [currentIdx, setCurrentIdx] = useState(0);
   const [storyIdx, setStoryIdx] = useState(0);
 
-  // 다음 챕터 ID 계산 (e.g. ch-k01 ➔ ch-k02)
-  const chapterPrefix = chapterId.slice(0, 4);
-  const chapterNum = parseInt(chapterId.slice(4) || "1", 10);
+  // 다음 챕터 ID 계산 (e.g. ch-k01 ➔ ch-k02, sp-rom-kyuhyun-01 ➔ sp-rom-kyuhyun-02)
+  // 접두사 길이가 고정 4글자(ch-k01)라고 가정하면 sp-rom-{name}-01처럼 접두사 길이가
+  // 캐릭터마다 다른 로맨스 챕터에서 잘못 잘려 nextChapterId가 존재하지 않는 id가 되어버린다.
+  // 끝자리 숫자만 정규식으로 분리해 접두사 길이에 상관없이 안전하게 계산한다.
+  const chapterIdMatch = chapterId.match(/^(.*?)(\d+)$/);
+  const chapterPrefix = chapterIdMatch ? chapterIdMatch[1] : chapterId;
+  const chapterNum = chapterIdMatch ? parseInt(chapterIdMatch[2], 10) : 1;
+  const numDigits = chapterIdMatch ? chapterIdMatch[2].length : 2;
   const nextNum = chapterNum + 1;
-  const nextChapterId = `${chapterPrefix}${nextNum < 10 ? "0" + nextNum : nextNum}`;
+  const nextChapterId = `${chapterPrefix}${String(nextNum).padStart(numDigits, "0")}`;
+
+  // 챕터 목록으로 돌아가는 링크 — 스페셜(sp-) 챕터에서 왔으면 목록 페이지도 "스페셜 주제별" 탭으로
+  // 열어야 한다. 그냥 /learn/${characterId}로만 보내면 그 페이지의 탭 상태가 기본값(지역 문화)으로
+  // 초기화돼서, 스페셜 챕터를 보다가 목록으로 나가면 엉뚱하게 지역 문화 목록이 나오는 문제가 있었다.
+  const backToListHref = chapterId.startsWith("sp-")
+    ? `/learn/${characterId}?tab=special`
+    : `/learn/${characterId}`;
 
   // ── 문제 상태 ─────────────────────────────────────────────
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
@@ -266,6 +355,19 @@ export default function LearningSessionPage({
 
   const [score, setScore] = useState(0);
   const [correctCount, setCorrectCount] = useState(0);
+
+  // "다음 챕터" 버튼은 같은 페이지 템플릿(app/learn/[characterId]/[chapterId]) 안에서
+  // chapterId만 바뀌는 client-side 이동이라, Next.js가 이 컴포넌트를 재마운트하지 않고
+  // 재사용할 수 있다 — 그러면 phase/currentIdx/score 등이 이전 챕터 값 그대로 남아
+  // 새 챕터인데 완료 화면이나 엉뚱한 진행 상태가 뜬다. chapterId가 바뀔 때마다 세션
+  // 진행 상태를 명시적으로 초기화한다.
+  useEffect(() => {
+    setPhase("intro");
+    setCurrentIdx(0);
+    setStoryIdx(0);
+    setScore(0);
+    setCorrectCount(0);
+  }, [chapterId]);
 
   const totalExercises = exercises.length;
   const currentEx = exercises[currentIdx];
@@ -322,6 +424,7 @@ export default function LearningSessionPage({
       if ("word" in data && "meaning" in data) {
         addVocabWord({
           character_id: characterId,
+          character_name: getCharacterById(characterId)?.name,
           word: data.word,
           reading: data.reading,
           meaning: data.meaning,
@@ -346,6 +449,12 @@ export default function LearningSessionPage({
   const handleNext = () => {
     if (currentIdx + 1 >= totalExercises) {
       setPhase("complete");
+      // 로컬 stamps에도 바로 반영해둔다 — 안 하면 "다음 챕터" 버튼으로 바로 이동했을 때
+      // isChapterUnlocked가 방금 끝낸 이 챕터를 stamps에서 못 찾아 다음 챕터를 잘못
+      // 잠금 처리한다. 아래 PUT은 fire-and-forget이라 다음 챕터 진입 시점의 진도 재조회
+      // (stamps는 characterId 기준으로만 fetch)보다 늦게 끝날 수도 있어, 백엔드 응답을
+      // 기다렸다 반영하는 방식으론 이 경쟁 상태를 막을 수 없다.
+      setStamps((prev) => (prev.includes(chapterId) ? prev : [...prev, chapterId]));
       // 챕터 완료를 백엔드 진도에 기록 (best-effort — 실패해도 화면 흐름엔 영향 없음)
       fetch(`${BACKEND_URL}/progress`, {
         method: "PUT",
@@ -369,6 +478,7 @@ export default function LearningSessionPage({
     if ("word" in data && "meaning" in data) {
       addVocabWord({
         character_id: characterId,
+        character_name: getCharacterById(characterId)?.name,
         word: data.word,
         reading: data.reading,
         meaning: data.meaning,
@@ -412,15 +522,29 @@ export default function LearningSessionPage({
     }
   };
 
+  // ── 챕터 순서 잠금(진도 stamps) + 챕터 콘텐츠 + 멤버십/무료슬롯, 전부 비동기로 받아온다 ──
+  // stamps를 fetch로 받아와야만 잠금 여부를 판단할 수 있는데, 그 전에 곧바로 아래 인트로/본문
+  // JSX를 렌더링해버리면 그 첫 렌더(서버사이드 렌더링 결과 + 하이드레이션 페이로드)에 실제
+  // 챕터 콘텐츠가 이미 포함돼버린다 — 화면엔 잠깐 뒤 잠금 화면이 떠도, 페이지 소스/네트워크
+  // 응답에는 잠긴 챕터의 내용이 그대로 노출되는 문제가 있었다. 멤버십/freeSlots도 마운트
+  // 직후엔 항상 기본값(무료회원)으로 시작해서 실제 백엔드 조회가 끝나기 전까진, 진짜 프리미엄
+  // 회원도 잠깐 🔒 잠금 화면을 봤다가 콘텐츠로 바뀌는 깜빡임이 있었다. 다만 멤버십 대기는
+  // 프리미엄 전용 캐릭터일 때만 필요하다 — 무료 캐릭터는 membership을 보기도 전에 이미
+  // 접근이 허용되므로, 규현/하늘 챕터에 뒤로가기로 재진입할 때마다 로딩 화면이 뜨는
+  // 불필요한 깜빡임이 새로 생겼었다.
+  const requiresPremium = getCharacterById(characterId)?.requires_premium ?? false;
+  if (
+    !stampsLoaded || !contentLoaded || !minLoadingTimeElapsed ||
+    (requiresPremium && (!membershipLoaded || !freeSlotsLoaded))
+  ) {
+    return <LoadingSplash message={t(loadingPhase === "landing" ? "loadingChapter" : "loadingChapterDone")} />;
+  }
+
   // ── 프리미엄 접근 제어 ──────────────────────────────────
   // 이전엔 이 페이지(실제 챕터 콘텐츠)에는 프리미엄 체크가 전혀 없었다. 목록 페이지
   // (/learn/[characterId])에서만 막고 있어서, 무료 회원도 프리미엄 캐릭터의 챕터 URL을
   // 직접 알면(주소창 입력, 공유 링크 등) 그대로 들어가 전체 콘텐츠를 볼 수 있었다.
-  const canAccess = canAccessCharacter(
-    characterId,
-    getCurrentUser()?.membership ?? MOCK_USER.membership,
-    MOCK_USER.free_character_slots
-  );
+  const canAccess = canAccessCharacter(characterId, membership, freeSlots);
   if (!canAccess) {
     return (
       <main className={styles.page}>
@@ -431,25 +555,9 @@ export default function LearningSessionPage({
           <Link href="/premium" className="btn btn-gold btn-lg" style={{ textAlign: "center" }}>
             ⭐ {t("premiumOnly")}
           </Link>
-          <Link href={`/learn/${characterId}`} className="btn btn-secondary btn-lg" style={{ textAlign: "center", marginTop: 8 }}>
+          <Link href={backToListHref} className="btn btn-secondary btn-lg" style={{ textAlign: "center", marginTop: 8 }}>
             {t("backToList")}
           </Link>
-        </div>
-      </main>
-    );
-  }
-
-  // ── 챕터 순서 잠금 (이전 챕터를 완료해야 진입 가능) ────────────
-  // stamps를 fetch로 받아와야만 잠금 여부를 판단할 수 있는데, 그 전에 곧바로 아래 인트로/본문
-  // JSX를 렌더링해버리면 그 첫 렌더(서버사이드 렌더링 결과 + 하이드레이션 페이로드)에 실제
-  // 챕터 콘텐츠가 이미 포함돼버린다 — 화면엔 잠깐 뒤 잠금 화면이 떠도, 페이지 소스/네트워크
-  // 응답에는 잠긴 챕터의 내용이 그대로 노출되는 문제가 있었다. fetch가 끝날 때까지는 아무
-  // 콘텐츠도 그리지 않고 로딩 화면만 보여줘서 이 노출을 막는다.
-  if (!stampsLoaded) {
-    return (
-      <main className={styles.page}>
-        <div className={styles.introCard}>
-          <div className={styles.introEmoji}>⏳</div>
         </div>
       </main>
     );
@@ -461,7 +569,7 @@ export default function LearningSessionPage({
         <div className={styles.introCard}>
           <div className={styles.introEmoji}>🔒</div>
           <h1 className={styles.introTitle}>{t("chapterLockedHint")}</h1>
-          <Link href={`/learn/${characterId}`} className="btn btn-primary btn-lg" style={{ textAlign: "center" }}>
+          <Link href={backToListHref} className="btn btn-primary btn-lg" style={{ textAlign: "center" }}>
             {t("backToList")}
           </Link>
         </div>
@@ -477,7 +585,7 @@ export default function LearningSessionPage({
           <div className={styles.introEmoji}>🚧</div>
           <h1 className={styles.introTitle}>{t("contentNotReadyTitle")}</h1>
           <p className={styles.introTitleEn}>{t("contentNotReadySub")}</p>
-          <Link href={`/learn/${characterId}`} className="btn btn-primary btn-lg" style={{ textAlign: "center" }}>
+          <Link href={backToListHref} className="btn btn-primary btn-lg" style={{ textAlign: "center" }}>
             {t("backToList")}
           </Link>
         </div>
@@ -519,7 +627,7 @@ export default function LearningSessionPage({
           >
             {t("startLearn")}
           </button>
-          <Link href={`/learn/${characterId}`} className="btn btn-ghost" style={{ textAlign: "center" }}>
+          <Link href={backToListHref} className="btn btn-ghost" style={{ textAlign: "center" }}>
             {t("backToList")}
           </Link>
         </div>
@@ -538,7 +646,7 @@ export default function LearningSessionPage({
       <main className={styles.page}>
         <div className={styles.novelCard}>
           <div className={styles.storyHeader}>
-            <Link href={`/learn/${characterId}`} className={styles.closeBtn} aria-label="닫기">✕</Link>
+            <Link href={backToListHref} className={styles.closeBtn} aria-label="닫기">✕</Link>
             <div className={styles.storyHeaderInfo}>
               <span className={styles.storyHeaderEmoji}>{content.emoji}</span>
               <span className={styles.storyHeaderTitle}>{content.title}</span>
@@ -553,7 +661,7 @@ export default function LearningSessionPage({
               <div key={i}>
                 <p className={styles.novelPara}>{bubble.text}</p>
                 {bubble.reading && <p className={styles.novelReading}>[{bubble.reading}]</p>}
-                {bubble.en && <p className={styles.novelTranslation}>{bubble.en}</p>}
+                {bubble.en && <p className={styles.novelTranslation}>{tr(bubble.en)}</p>}
               </div>
             ))}
           </div>
@@ -575,6 +683,7 @@ export default function LearningSessionPage({
       content.words.forEach((w) => {
         addVocabWord({
           character_id: characterId,
+          character_name: getCharacterById(characterId)?.name,
           word: w.word,
           reading: w.reading,
           meaning: w.meaning,
@@ -589,7 +698,7 @@ export default function LearningSessionPage({
       <main className={styles.page}>
         <div className={styles.vocabReviewCard}>
           <div className={styles.storyHeader}>
-            <Link href={`/learn/${characterId}`} className={styles.closeBtn} aria-label="닫기">✕</Link>
+            <Link href={backToListHref} className={styles.closeBtn} aria-label="닫기">✕</Link>
             <div className={styles.storyHeaderInfo}>
               <span className={styles.storyHeaderEmoji}>{content.emoji}</span>
               <span className={styles.storyHeaderTitle}>{content.title}</span>
@@ -607,11 +716,11 @@ export default function LearningSessionPage({
               <div key={w.id} className={styles.vocabReviewItem}>
                 <span className={styles.vocabReviewWord}>{w.word}</span>
                 <span className={styles.vocabReviewReading}>[{w.reading}]</span>
-                <p className={styles.vocabReviewMeaning}>{w.meaning}</p>
+                <p className={styles.vocabReviewMeaning}>{tr(w.meaning)}</p>
                 <p className={styles.vocabReviewExample}>
                   {w.example}
                   <br />
-                  {w.example_en}
+                  {tr(w.example_en)}
                 </p>
               </div>
             ))}
@@ -637,7 +746,7 @@ export default function LearningSessionPage({
       <main className={styles.page}>
         <div className={styles.storyCard}>
           <div className={styles.storyHeader}>
-            <Link href={`/learn/${characterId}`} className={styles.closeBtn} aria-label="닫기">✕</Link>
+            <Link href={backToListHref} className={styles.closeBtn} aria-label="닫기">✕</Link>
             <div className={styles.storyHeaderInfo}>
               <span className={styles.storyHeaderEmoji}>{content.emoji}</span>
               <span className={styles.storyHeaderTitle}>{content.title}</span>
@@ -668,11 +777,11 @@ export default function LearningSessionPage({
                     <div className={styles.storyBubble}>
                       <p className={styles.storyText}>{bubble.text}</p>
                       {bubble.reading && <p className={styles.storyReading}>[{bubble.reading}]</p>}
-                      {bubble.en && <p className={styles.storyEn}>{bubble.en}</p>}
+                      {bubble.en && <p className={styles.storyEn}>{tr(bubble.en)}</p>}
                       {word && (
                         <div className={styles.storyWordChip}>
                           <span className={styles.storyWordChipWord}>{word.word}</span>
-                          <span className={styles.storyWordChipMeaning}>{word.meaning}</span>
+                          <span className={styles.storyWordChipMeaning}>{tr(word.meaning)}</span>
                         </div>
                       )}
                     </div>
@@ -724,7 +833,7 @@ export default function LearningSessionPage({
             <Link href={`/learn/${characterId}/${nextChapterId}`} className="btn btn-primary btn-lg" id="btn-next-chapter">
               {t("nextChapter")} ({t("totalChapters")} {nextNum})
             </Link>
-            <Link href={`/learn/${characterId}`} className="btn btn-secondary btn-lg">
+            <Link href={backToListHref} className="btn btn-secondary btn-lg">
               {t("backToChapterList")}
             </Link>
             <Link href={`/chat/${characterId}`} className="btn btn-blue btn-lg">
@@ -759,7 +868,7 @@ export default function LearningSessionPage({
     <main className={styles.page}>
       {/* 헤더 진도 바 */}
       <div className={styles.sessionHeader}>
-        <Link href={`/learn/${characterId}`} className={styles.closeBtn} aria-label="닫기">✕</Link>
+        <Link href={backToListHref} className={styles.closeBtn} aria-label="닫기">✕</Link>
         <div className={styles.sessionProgress}>
           <div className={styles.sessionBar}>
             <div className={styles.sessionFill} style={{ width: `${pct}%` }} />
@@ -823,7 +932,7 @@ export default function LearningSessionPage({
           {showHint && (
             <div className={styles.hintCard}>
               <span className={styles.hintIcon}>💡</span>
-              <p>{fallbackHintText ?? currentEx.hintText}</p>
+              <p>{fallbackHintText ?? tr(currentEx.hintText)}</p>
             </div>
           )}
 
@@ -841,10 +950,10 @@ export default function LearningSessionPage({
                   <p className={styles.flashHint}>탭해서 뒤집기 · Tap to flip</p>
                 </div>
                 <div className={styles.flashBack}>
-                  <p className={styles.flashMeaning}>{currentEx.correctAnswer}</p>
+                  <p className={styles.flashMeaning}>{tr(currentEx.correctAnswer)}</p>
                   <p className={styles.flashExample}>{(currentEx.originalData as Word).example}</p>
                   <p className={styles.flashReading}>[{(currentEx.originalData as Word).example_reading}]</p>
-                  <p className={styles.flashExampleEn}>{(currentEx.originalData as Word).example_en}</p>
+                  <p className={styles.flashExampleEn}>{tr((currentEx.originalData as Word).example_en)}</p>
                 </div>
               </button>
               {flipped && (
@@ -860,7 +969,7 @@ export default function LearningSessionPage({
             <>
               <div className={styles.mcQuestion}>
                 <div className={styles.wordAudioRow}>
-                  <h2 className={styles.mcWord}>{fallbackPrompt ?? currentEx.questionText}</h2>
+                  <h2 className={styles.mcWord}>{fallbackPrompt ? tr(fallbackPrompt) : currentEx.questionText}</h2>
                   <button
                     type="button"
                     className={styles.inlineListenBtn}
@@ -893,7 +1002,7 @@ export default function LearningSessionPage({
                       onClick={() => !isSubmitted && setSelectedOption(opt)}
                       disabled={isSubmitted}
                     >
-                      {opt}
+                      {tr(opt)}
                     </button>
                   );
                 })}
@@ -920,9 +1029,9 @@ export default function LearningSessionPage({
                   {isCorrect ? (
                     <p className={styles.correctText}>{t("correctNotice")}</p>
                   ) : (
-                    <p className={styles.wrongText}>{t("wrongFinalPrefix")} <strong>{currentEx.correctAnswer}</strong></p>
+                    <p className={styles.wrongText}>{t("wrongFinalPrefix")} <strong>{tr(currentEx.correctAnswer)}</strong></p>
                   )}
-                  <p className={styles.explanation}>{currentEx.explanation}</p>
+                  <p className={styles.explanation}>{tr(currentEx.explanation)}</p>
                   <button className="btn btn-primary btn-lg" onClick={handleNext}>
                     {t("nextQuestion")}
                   </button>
@@ -947,17 +1056,28 @@ export default function LearningSessionPage({
                   </button>
                 </div>
                 <p className={styles.mcReading}>[{currentEx.reading}]</p>
-                <p className={styles.fbTranslation}>{(currentEx.originalData as Sentence).en}</p>
+                <p className={styles.fbTranslation}>{tr((currentEx.originalData as Sentence).en)}</p>
               </div>
 
-              <div className={styles.fbInputRow}>
-                <input
-                  className={styles.fbInput}
-                  value={inputText}
-                  onChange={(e) => !isSubmitted && setInputText(e.target.value)}
-                  placeholder="빈칸에 들어갈 한글 단어를 입력하세요..."
-                  disabled={isSubmitted}
-                />
+              <div className={styles.mcOptions}>
+                {currentEx.options.map((opt) => {
+                  let cls = styles.mcOption;
+                  if (selectedOption === opt) cls += " " + styles.mcSelected;
+                  if (isSubmitted) {
+                    if (opt === currentEx.correctAnswer) cls += " " + styles.mcCorrect;
+                    else if (selectedOption === opt) cls += " " + styles.mcWrong;
+                  }
+                  return (
+                    <button
+                      key={opt}
+                      className={cls}
+                      onClick={() => !isSubmitted && setSelectedOption(opt)}
+                      disabled={isSubmitted}
+                    >
+                      {tr(opt)}
+                    </button>
+                  );
+                })}
               </div>
 
               {!isSubmitted && attempts > 0 && attempts < 3 && (
@@ -969,8 +1089,8 @@ export default function LearningSessionPage({
               {!isSubmitted && (
                 <button
                   className="btn btn-primary btn-lg"
-                  onClick={() => handleCheckAnswer(inputText)}
-                  disabled={!inputText.trim()}
+                  onClick={() => handleCheckAnswer()}
+                  disabled={!selectedOption}
                 >
                   {t("checkAnswerWithCount", { n: 3 - attempts })}
                 </button>
@@ -981,9 +1101,9 @@ export default function LearningSessionPage({
                   {isCorrect ? (
                     <p className={styles.correctText}>{t("correctNotice")}</p>
                   ) : (
-                    <p className={styles.wrongText}>{t("wrongFinalPrefix")} <strong>{currentEx.correctAnswer}</strong></p>
+                    <p className={styles.wrongText}>{t("wrongFinalPrefix")} <strong>{tr(currentEx.correctAnswer)}</strong></p>
                   )}
-                  <p className={styles.explanation}>{currentEx.explanation}</p>
+                  <p className={styles.explanation}>{tr(currentEx.explanation)}</p>
                   <button className="btn btn-primary btn-lg" onClick={handleNext}>
                     {t("nextQuestion")}
                   </button>
@@ -1008,7 +1128,7 @@ export default function LearningSessionPage({
                   </button>
                 </div>
                 <p className={styles.mcReading}>[{currentEx.reading}]</p>
-                <p className={styles.audioHint}>{(currentEx.originalData as Sentence).en}</p>
+                <p className={styles.audioHint}>{tr((currentEx.originalData as Sentence).en)}</p>
                 <p className={styles.speakingInstruction}>
                   👇 아래 🎤 마이크 버튼을 누르고 위 문장을 한국어로 따라 읽으세요!
                 </p>
@@ -1051,9 +1171,9 @@ export default function LearningSessionPage({
                   {isCorrect ? (
                     <p className={styles.correctText}>{t("speakingCorrect")}</p>
                   ) : (
-                    <p className={styles.wrongText}>{t("wrongFinalPrefix")} <strong>{currentEx.correctAnswer}</strong></p>
+                    <p className={styles.wrongText}>{t("wrongFinalPrefix")} <strong>{tr(currentEx.correctAnswer)}</strong></p>
                   )}
-                  <p className={styles.explanation}>{currentEx.explanation}</p>
+                  <p className={styles.explanation}>{tr(currentEx.explanation)}</p>
                   <button className="btn btn-primary btn-lg" onClick={handleNext}>
                     {t("nextQuestion")}
                   </button>
@@ -1091,7 +1211,7 @@ export default function LearningSessionPage({
                       onClick={() => !isSubmitted && setSelectedOption(opt)}
                       disabled={isSubmitted}
                     >
-                      {opt}
+                      {tr(opt)}
                     </button>
                   );
                 })}
@@ -1118,9 +1238,9 @@ export default function LearningSessionPage({
                   {isCorrect ? (
                     <p className={styles.correctText}>{t("correctNotice")}</p>
                   ) : (
-                    <p className={styles.wrongText}>{t("wrongFinalPrefix")} <strong>{currentEx.correctAnswer}</strong></p>
+                    <p className={styles.wrongText}>{t("wrongFinalPrefix")} <strong>{tr(currentEx.correctAnswer)}</strong></p>
                   )}
-                  <p className={styles.explanation}>{currentEx.explanation}</p>
+                  <p className={styles.explanation}>{tr(currentEx.explanation)}</p>
                   <button className="btn btn-primary btn-lg" onClick={handleNext}>
                     {t("nextQuestion")}
                   </button>
@@ -1139,7 +1259,7 @@ export default function LearningSessionPage({
                     <div className={styles.dlgBubble}>
                       <p className={styles.dlgText}>{turn.text}</p>
                       {turn.reading && <p className={styles.dlgReading}>[{turn.reading}]</p>}
-                      {turn.en && <p className={styles.dlgEn}>{turn.en}</p>}
+                      {turn.en && <p className={styles.dlgEn}>{tr(turn.en)}</p>}
                     </div>
                   </div>
                 ))}
@@ -1147,7 +1267,7 @@ export default function LearningSessionPage({
 
               <div className={styles.mcQuestion}>
                 <p className={styles.dlgQuestion}>{currentEx.questionText}</p>
-                <p className={styles.mcReading}>{currentEx.hintText}</p>
+                <p className={styles.mcReading}>{tr(currentEx.hintText)}</p>
               </div>
 
               <div className={styles.mcOptions}>
@@ -1165,7 +1285,7 @@ export default function LearningSessionPage({
                       onClick={() => !isSubmitted && setSelectedOption(opt)}
                       disabled={isSubmitted}
                     >
-                      {opt}
+                      {tr(opt)}
                     </button>
                   );
                 })}
@@ -1192,9 +1312,9 @@ export default function LearningSessionPage({
                   {isCorrect ? (
                     <p className={styles.correctText}>{t("correctNotice")}</p>
                   ) : (
-                    <p className={styles.wrongText}>{t("wrongFinalPrefix")} <strong>{currentEx.correctAnswer}</strong></p>
+                    <p className={styles.wrongText}>{t("wrongFinalPrefix")} <strong>{tr(currentEx.correctAnswer)}</strong></p>
                   )}
-                  <p className={styles.explanation}>{currentEx.explanation}</p>
+                  <p className={styles.explanation}>{tr(currentEx.explanation)}</p>
                   <button className="btn btn-primary btn-lg" onClick={handleNext}>
                     {t("nextQuestion")}
                   </button>

@@ -1,0 +1,98 @@
+{
+  "id": "sp-day-sangwoo-09",
+  "character_id": "sangwoo",
+  "title": "목적지까지, 로저",
+  "emoji": "🚕",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "저녁 식사를 마치고 나오니 밤바람이 제법 쌀쌀했습니다. 저는 큰길 쪽으로 나가 택시를 잡았습니다.",
+      "reading": "jeo-nyeok sik-sa-reul ma-chi-go na-o-ni bam-ba-ram-i je-beop ssal-ssal-haet-seum-ni-da. jeo-neun keun-gil jjog-eu-ro na-ga taek-si-reul jab-at-seum-ni-da.",
+      "en": "Coming out after dinner, the night wind was quite chilly. I stepped out toward the main road and hailed a taxi."
+    },
+    {
+      "text": "택시가 멈추자, 저는 먼저 뒷문을 열어 당신을 태우고 뒤이어 승차했습니다. 작은 습관이지만, 늘 그렇게 해 왔습니다.",
+      "reading": "taek-si-ga meom-chu-ja, jeo-neun meon-jeo dwit-mun-eul yeol-eo dang-sin-eul tae-u-go dwi-i-eo seung-cha-haet-seum-ni-da. jak-eun seup-gwan-i-ji-man, neul geu-reo-ke hae wass-seum-ni-da.",
+      "en": "As the taxi stopped, I opened the back door first, let you get in, and boarded right after. It's a small habit, but one I've always kept.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "기사님이 목적지를 물으셨습니다. 저는 정확한 주소까지 또박또박 말씀드렸습니다. '공주시 봉황동, 제민천 근처입니다.'",
+      "reading": "gi-sa-nim-i mok-jeok-ji-reul mul-eu-syeot-seum-ni-da. jeo-neun jeong-hwak-han ju-so-kka-ji tto-bak-tto-bak mal-sseum-deu-ryeot-seum-ni-da. gong-ju-si bong-hwang-dong, je-min-cheon geun-cheo-im-ni-da.",
+      "en": "The driver asked for our destination. I stated the exact address clearly, syllable by syllable: \"Bonghwang-dong, Gongju, near Jemincheon Stream.\"",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "내비게이션이 안내하는 경로를 보며, 저는 저도 모르게 화면을 살폈습니다. '이 경로가 맞습니까?' 기사님이 웃으며 '기사보다 더 꼼꼼하시네요'라고 하셨습니다.",
+      "reading": "nae-bi-ge-i-syeon-i an-nae-ha-neun gyeong-no-reul bo-myeo, jeo-neun jeo-do mo-reu-ge hwa-myeon-eul sal-pyeot-seum-ni-da. i gyeong-no-ga mat-seum-ni-kka? gi-sa-nim-i us-eu-myeo gi-sa-bo-da deo kkom-kkom-ha-si-ne-yo-ra-go ha-syeot-seum-ni-da.",
+      "en": "Watching the route the navigation showed, I found myself checking the screen without meaning to. \"Is this route correct?\" The driver laughed and said, \"You're more thorough than I am.\"",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "기사님이 골목 하나를 지름길로 빠져나가자, 저는 감탄했습니다. '효율적인 경로입니다. 마음에 듭니다.' 당신은 그런 저를 보며 어이없다는 듯 웃었습니다.",
+      "reading": "gi-sa-nim-i gol-mok ha-na-reul ji-reum-gil-lo ppa-jyeo-na-ga-ja, jeo-neun gam-tan-haet-seum-ni-da. hyo-yul-jeog-in gyeong-no-im-ni-da. ma-eum-e deum-ni-da. dang-sin-eun geu-reon jeo-reul bo-myeo eo-i-eob-da-neun deut us-eot-seum-ni-da.",
+      "en": "When the driver cut through a back alley as a shortcut, I was impressed. \"That's an efficient route. I approve.\" You watched me and laughed like you couldn't believe it.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "'택시 안에서도 그렇게 진지하게 경로를 평가해요?' 당신이 묻자, 저는 잠시 고민하다 답했습니다. '직업병인 모양입니다.'",
+      "reading": "taek-si an-e-seo-do geu-reo-ke jin-ji-ha-ge gyeong-no-reul pyeong-ga-hae-yo? dang-sin-i mut-ja, jeo-neun jam-si go-min-ha-da dap-haet-seum-ni-da. jig-eop-byeong-in mo-yang-im-ni-da.",
+      "en": "\"Do you seriously evaluate the route even inside a taxi?\" you asked, and I thought about it for a moment before answering. \"I suppose it's an occupational habit.\""
+    },
+    {
+      "text": "목적지에 도착하자, 저는 재빨리 요금을 계산했습니다. 당신이 지갑을 꺼내기도 전이었습니다. '오늘은 제가 냈습니다.'",
+      "reading": "mok-jeok-ji-e do-chak-ha-ja, jeo-neun jae-ppal-li yo-geum-eul gye-san-haet-seum-ni-da. dang-sin-i ji-gab-eul kkeo-nae-gi-do jeon-i-eot-seum-ni-da. o-neul-eun je-ga naess-seum-ni-da.",
+      "en": "As we arrived at our destination, I quickly paid the fare — before you'd even taken out your wallet. \"I've got it today.\"",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "당신은 '항상 이런 식이면 곤란한데'라며 웃었지만, 저는 개의치 않았습니다. 무사히 도착했다는 것만으로도, 오늘 밤은 충분했습니다.",
+      "reading": "dang-sin-eun hang-sang i-reon sig-i-myeon gon-lan-han-de-ra-myeo us-eot-ji-man, jeo-neun gae-ui-chi an-at-seum-ni-da. mu-sa-hi do-chak-haet-da-neun geot-man-eu-ro-do, o-neul bam-eun chung-bun-haet-seum-ni-da.",
+      "en": "You laughed and said, \"It'll be a problem if you always do it this way,\" but I didn't mind at all. Just having arrived safely was enough for me tonight."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "목적지", "reading": "mok-jeok-ji", "meaning": "destination", "example": "목적지를 정확히 말씀드렸습니다.", "example_reading": "mok-jeok-ji-reul jeong-hwak-hi mal-sseum-deu-ryeot-seum-ni-da", "example_en": "I stated the destination clearly." },
+    { "id": "w02", "word": "경로", "reading": "gyeong-no", "meaning": "route", "example": "이 경로가 맞습니까?", "example_reading": "i gyeong-no-ga mat-seum-ni-kka", "example_en": "Is this route correct?" },
+    { "id": "w03", "word": "요금", "reading": "yo-geum", "meaning": "fare", "example": "제가 요금을 계산했습니다.", "example_reading": "je-ga yo-geum-eul gye-san-haet-seum-ni-da", "example_en": "I paid the fare." },
+    { "id": "w04", "word": "지름길", "reading": "ji-reum-gil", "meaning": "shortcut", "example": "골목을 지름길로 빠져나갔습니다.", "example_reading": "gol-mog-eul ji-reum-gil-lo ppa-jyeo-na-gass-seum-ni-da", "example_en": "We cut through the alley as a shortcut." },
+    { "id": "w05", "word": "승차", "reading": "seung-cha", "meaning": "boarding, getting into a vehicle", "example": "뒤이어 승차했습니다.", "example_reading": "dwi-i-eo seung-cha-haet-seum-ni-da", "example_en": "I boarded right after." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "목적지가 어디십니까?", "reading": "mok-jeok-ji-ga eo-di-sim-ni-kka", "en": "Where is your destination?" },
+    { "id": "s02", "ko": "더 빠른 경로가 있을까요?", "reading": "deo ppa-reun gyeong-no-ga i-sseul-kka-yo", "en": "Is there a faster route?" },
+    { "id": "s03", "ko": "요금은 제가 계산하겠습니다.", "reading": "yo-geum-eun je-ga gye-san-ha-get-seum-ni-da", "en": "I'll pay the fare." },
+    { "id": "s04", "ko": "이쪽 골목이 지름길입니다.", "reading": "i-jjok gol-mog-i ji-reum-gil-im-ni-da", "en": "This alley is a shortcut." },
+    { "id": "s05", "ko": "먼저 승차하십시오.", "reading": "meon-jeo seung-cha-ha-sip-si-o", "en": "Please board first." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "상우", "text": "기사님, 공주시 봉황동 제민천 근처로 가 주세요.", "reading": "gi-sa-nim, gong-ju-si bong-hwang-dong je-min-cheon geun-cheo-ro ga ju-se-yo", "en": "Driver, please take us near Jemincheon Stream in Bonghwang-dong, Gongju." },
+        { "speaker": "승객", "text": "기장님, 주소는 어떻게 그렇게 정확히 외우세요?", "reading": "gi-jang-nim, ju-so-neun eo-tteo-ke geu-reo-ke jeong-hwak-hi oe-u-se-yo", "en": "Captain, how do you memorize addresses so precisely?" },
+        { "speaker": "상우", "text": "정확한 목적지 전달은 기본입니다. 헷갈리면 곤란하니까요.", "reading": "jeong-hwak-han mok-jeok-ji jeon-dal-eun gi-bon-im-ni-da. hes-gal-li-myeon gon-lan-ha-ni-kka-yo", "en": "Conveying the exact destination is basic. It'd be a problem if there's confusion." },
+        { "speaker": "승객", "text": "저는 제 집 주소도 가끔 헷갈리는데.", "reading": "jeo-neun je jib ju-so-do ga-kkeum hes-gal-li-neun-de", "en": "I sometimes even get confused about my own address." }
+      ],
+      "question": "상우가 목적지를 정확히 말한 이유는?",
+      "question_en": "Why did Sangwoo state the destination so precisely?",
+      "correct_answer": "정확한 정보 전달이 혼란을 막는다고 생각해서",
+      "options": ["정확한 정보 전달이 혼란을 막는다고 생각해서", "기사가 길을 잘 몰라서", "요금을 깎기 위해서", "습관적으로 큰 소리로 말해서"],
+      "explanation": "상우는 정확한 목적지 전달이 혼란을 막는 기본이라고 생각하는 원칙주의적인 성격을 보여줍니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "승객", "text": "아까부터 계속 내비게이션 화면 보시네요.", "reading": "a-kka-bu-teo gye-sok nae-bi-ge-i-syeon hwa-myeon bo-si-ne-yo", "en": "You've been staring at the navigation screen this whole time." },
+        { "speaker": "상우", "text": "경로가 맞는지 확인하는 겁니다. 직업병이라고 생각해 주십시오.", "reading": "gyeong-no-ga mat-neun-ji hwak-in-ha-neun geom-ni-da. jig-eop-byeong-i-ra-go saeng-gak-hae ju-sip-si-o", "en": "I'm checking that the route is correct. Please just chalk it up to occupational habit." },
+        { "speaker": "승객", "text": "기사님도 아시는 길일 텐데요.", "reading": "gi-sa-nim-do a-si-neun gil-il ten-de-yo", "en": "I'm sure the driver knows the way too." },
+        { "speaker": "상우", "text": "그렇겠지만, 확인해서 나쁠 건 없습니다. 목적지까지 안전하게 가는 게 우선이니까요.", "reading": "geu-reo-ket-ji-man, hwak-in-hae-seo na-ppeul geon eop-seum-ni-da. mok-jeok-ji-kka-ji an-jeon-ha-ge ga-neun ge u-seon-i-ni-kka-yo", "en": "I'm sure he does, but there's no harm in checking. Getting to the destination safely comes first." }
+      ],
+      "question": "상우가 계속 내비게이션을 확인하는 이유는?",
+      "question_en": "Why does Sangwoo keep checking the navigation screen?",
+      "correct_answer": "안전하게 목적지에 도착하는 것을 확인하고 싶은 습관 때문에",
+      "options": ["안전하게 목적지에 도착하는 것을 확인하고 싶은 습관 때문에", "기사를 믿지 못해서 감시하려고", "내비게이션 앱 사용법을 배우고 싶어서", "심심해서 화면을 구경하는 것뿐이라서"],
+      "explanation": "상우는 목적지까지 안전하게 가는 것을 확인하고 싶은 습관 때문에 경로를 계속 살핀다고 설명합니다."
+    }
+  ]
+}

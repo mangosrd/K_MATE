@@ -1,0 +1,67 @@
+{
+  "id": "sp-day-haneul-10",
+  "character_id": "haneul",
+  "title": "노을 아래, 하루의 끝",
+  "emoji": "🌇",
+  "story": [
+    {
+      "text": "전주천에 노을이 내려앉았다. 하루의 끝, 우리는 강변 벤치에 나란히 앉았다.",
+      "reading": "jeon-ju-cheon-e no-eul-i nae-ryeo-anj-at-da. ha-ru-ui kkeut, u-ri-neun gang-byeon ben-chi-e na-ran-hi anj-at-da.",
+      "en": "Sunset settled over Jeonjucheon. At the end of the day, we sat side by side on a bench by the river.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "'오늘 하루도 잘 마무리했네.' 하늘이 물끄러미 강물을 보며 말했다.",
+      "reading": "'o-neul ha-ru-do jal ma-mu-ri-haet-ne.' ha-neul-i mul-kkeu-reo-mi gang-mul-eul bo-myeo mal-haet-da.",
+      "en": "\"We wrapped up today well too.\" Haneul said, gazing blankly at the river.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "저녁 바람이 선선하게 불어왔다. 낮의 소란스러움은 잦아들고, 사람들의 발걸음도 느려졌다.",
+      "reading": "jeo-nyeok ba-ram-i seon-seon-ha-ge bul-eo-wat-da. naj-ui so-ran-seu-reo-um-eun ja-ja-deul-go, sa-ram-deul-ui bal-geol-eum-do neu-ryeo-jyeot-da.",
+      "en": "The evening breeze blew in, cool and pleasant. The day's noise had quieted, and people's footsteps slowed.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "'그동안 여기저기 데려가 줘서 고마워.' 내가 먼저 말을 꺼냈다. 그는 잠시 말이 없었다.",
+      "reading": "'geu-dong-an yeo-gi-jeo-gi de-ryeo-ga jwo-seo go-ma-wo.' nae-ga meon-jeo mal-eul kkae-naess-da. geu-neun jam-si mal-i eop-seot-da.",
+      "en": "\"Thanks for taking me around all these places.\" I spoke first. He was quiet for a moment.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "'뭘 그런 걸로.' 그가 무심히 답했다. 그러나 옆에 앉은 어깨는 평소보다 조금 더 가까웠다.",
+      "reading": "'mwol geu-reon geol-lo.' geu-ga mu-sim-hi dap-haet-da. geu-reo-na yeop-e anj-eun eo-kkae-neun pyeong-so-bo-da jo-geum deo ga-kka-wot-da.",
+      "en": "\"It's nothing.\" He answered indifferently. And yet, the shoulder beside me sat a little closer than usual."
+    },
+    {
+      "text": "'너랑 있으면 이상하게 편안해.' 내가 무심코 중얼거리자, 그가 살짝 고개를 돌려 나를 봤다.",
+      "reading": "'neo-rang iss-eu-myeon i-sang-ha-ge pyeon-an-hae.' nae-ga mu-sim-ko jung-eol-geo-ri-ja, geu-ga sal-jjak go-gae-reul dol-lyeo na-reul bwat-da.",
+      "en": "\"It's strange — I feel so at ease when I'm with you.\" I murmured without thinking, and he turned his head slightly to look at me.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "'나도.' 짧은 한마디였다. 그러곤 다시 강물로 시선을 돌렸다. 무뚝뚝한 옆모습이 오늘따라 유난히 편해 보였다.",
+      "reading": "'na-do.' jjalb-eun han-ma-di-yeot-da. geu-reo-gon da-si gang-mul-lo si-seon-eul dol-lyeot-da. mu-ttuk-ttuk-han yeop-mo-seub-i o-neul-tta-ra yu-nan-hi pyeon-hae bo-yeot-da.",
+      "en": "\"Me too.\" It was a short reply. Then he turned his gaze back to the river. His blunt profile looked unusually at ease today."
+    },
+    {
+      "text": "노을이 완전히 저물 때까지, 우리는 별다른 말 없이 그저 나란히 앉아 있었다. 그것으로 충분한 하루였다.",
+      "reading": "no-eul-i wan-jeon-hi jeo-mul ttae-kka-ji, u-ri-neun byeol-da-reun mal eop-si geu-jeo na-ran-hi anj-a iss-eot-da. geu-geo-seu-ro chung-bun-han ha-ru-yeot-da.",
+      "en": "Until the sunset faded completely, we just sat side by side without much to say. That alone was enough to make it a good day."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "하루", "reading": "ha-ru", "meaning": "a day", "example": "오늘 하루 어땠어요?", "example_reading": "o-neul ha-ru eo-ttaess-eo-yo?", "example_en": "How was your day today?" },
+    { "id": "w02", "word": "마무리하다", "reading": "ma-mu-ri-ha-da", "meaning": "to wrap up, to finish", "example": "일을 마무리했어요.", "example_reading": "il-eul ma-mu-ri-haess-eo-yo", "example_en": "I finished up the work." },
+    { "id": "w03", "word": "저녁", "reading": "jeo-nyeok", "meaning": "evening", "example": "저녁에 산책해요.", "example_reading": "jeo-nyeog-e san-chaek-hae-yo", "example_en": "I take a walk in the evening." },
+    { "id": "w04", "word": "고맙다", "reading": "go-map-da", "meaning": "to be thankful", "example": "정말 고마워요.", "example_reading": "jeong-mal go-ma-wo-yo", "example_en": "Thank you so much." },
+    { "id": "w05", "word": "편안하다", "reading": "pyeon-an-ha-da", "meaning": "to be comfortable, at ease", "example": "여기 있으면 편안해요.", "example_reading": "yeo-gi iss-eu-myeon pyeon-an-hae-yo", "example_en": "I feel at ease when I'm here." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "오늘 하루 수고했어요.", "reading": "o-neul ha-ru su-go-haess-eo-yo", "en": "Good work today." },
+    { "id": "s02", "ko": "이제 마무리할까요?", "reading": "i-je ma-mu-ri-hal-kka-yo?", "en": "Shall we wrap it up now?" },
+    { "id": "s03", "ko": "저녁에 만나요.", "reading": "jeo-nyeog-e man-na-yo", "en": "Let's meet in the evening." },
+    { "id": "s04", "ko": "정말 고마워요.", "reading": "jeong-mal go-ma-wo-yo", "en": "Thank you so much." },
+    { "id": "s05", "ko": "여기 있으면 편안해요.", "reading": "yeo-gi iss-eu-myeon pyeon-an-hae-yo", "en": "I feel comfortable being here." }
+  ]
+}

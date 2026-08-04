@@ -1,0 +1,97 @@
+{
+  "id": "sp-day-yongwoo-04",
+  "character_id": "yongwoo",
+  "title": "막차를 놓치면 안 된다",
+  "emoji": "🚌",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "제주에는 지하철이 없다는 걸 새삼 깨달은 건, 정류장 시간표 앞에서 한참을 서 있을 때였다. 용우가 익숙하게 버스 번호를 훑어보며 말했다. '이거 타고 가다가 한 번 환승해야 돼.'",
+      "reading": "je-ju-e-neun ji-ha-cheol-i eop-da-neun geol sae-sam kkae-dal-eun geon, jeong-ryu-jang si-gan-pyo ap-e-seo han-cham-eul seo iss-eul ttae-i-eot-da. yong-u-ga ig-suk-ha-ge beo-seu beon-ho-reul hult-eo-bo-myeo mal-haet-da. i-geo ta-go ga-da-ga han beon hwan-seung-hae-ya dwae.",
+      "en": "It hit me all over again that Jeju has no subway, as I stood in front of the bus stop timetable for a long while. Yongwoo scanned the bus numbers with familiar ease. \"Take this one, then transfer once partway there.\"",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "'환승은 또 어떻게 해요?' 내가 묻자 그는 목에 건 교통카드를 흔들어 보였다. '이거 하나면 끝이다. 버스 탈 때 찍고, 내릴 때 또 찍으면 요금 알아서 계산된다.'",
+      "reading": "hwan-seung-eun tto eo-tteo-ke hae-yo? nae-ga mut-ja geu-neun mok-e geon gyo-tong-ka-deu-reul heun-deul-eo bo-yeot-da. i-geo ha-na-myeon kkeut-i-da. beo-seu tal ttae jjik-go, nae-ril ttae tto jjik-eu-myeon yo-geum al-a-seo gye-san-doen-da.",
+      "en": "\"How do I even transfer?\" I asked, and he held up the transit card hanging around his neck. \"This is all you need. Tap it when you get on the bus, and tap again when you get off — the fare sorts itself out.\"",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "버스가 도착하자 그가 먼저 올라타 카드를 찍고는, 뒤따르는 나를 위해 문을 붙잡아 주었다. '뒷문으로 타지 말고 앞문으로 타라. 여기 사람들 다 그렇게 탄다.'",
+      "reading": "beo-seu-ga do-chak-ha-ja geu-ga meon-jeo ol-la-ta ka-deu-reul jjik-go-neun, dwi-tta-reu-neun na-reul wi-hae mun-eul but-jab-a ju-eot-da. dwit-mun-eu-ro ta-ji mal-go ap-mun-eu-ro ta-ra. yeo-gi sa-ram-deul da geu-reo-ke tan-da.",
+      "en": "When the bus arrived, he got on first and tapped his card, then held the door for me as I followed. \"Don't get on through the back door, get on through the front. Everyone here boards that way.\""
+    },
+    {
+      "text": "창밖으로 협재 해변이 스쳐 지나갈 때쯤, 용우가 하차벨을 눌러야 할 정류장을 짚어 주었다. '다음다음 정류장에서 내려야 하니까, 미리 벨 눌러 놔.'",
+      "reading": "chang-bakk-eu-ro hyeop-jae hae-byeon-i seu-chyeo ji-na-gal ttae-jjeum, yong-u-ga ha-cha-bel-eul nul-leo-ya hal jeong-ryu-jang-eul jip-eo ju-eot-da. da-eum-da-eum jeong-ryu-jang-e-seo nae-ryeo-ya ha-ni-kka, mi-ri bel nul-leo no-a.",
+      "en": "As Hyeopjae Beach slid past the window, Yongwoo pointed out the stop where I'd need to press the button to get off. \"We get off two stops from now, so press the bell ahead of time.\"",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "환승 정류장에서 내려 다음 버스를 기다리는데, 하늘이 어느새 어둑해져 있었다. '오늘 마지막 코스까지 다 돌면 시간이 애매한데. 여기 막차가 몇 시더라.'",
+      "reading": "hwan-seung jeong-ryu-jang-e-seo nae-ryeo da-eum beo-seu-reul gi-da-ri-neun-de, ha-neul-i eo-neu-sae eo-duk-hae-jyeo iss-eot-da. o-neul ma-ji-mak ko-seu-kka-ji da dol-myeon si-gan-i ae-mae-han-de. yeo-gi mak-cha-ga myeot si-deo-ra.",
+      "en": "Getting off at the transfer stop and waiting for the next bus, I noticed the sky had already begun to dim. \"If we do the whole last stretch of the route, the timing gets iffy. What time's the last bus around here again.\""
+    },
+    {
+      "text": "핸드폰으로 검색하던 그가 미간을 좁혔다. '막차 놓치면 택시비 만만치 않다. 서두르자.' 잔소리보다 더 급한 목소리에 나도 걸음이 빨라졌다.",
+      "reading": "haen-deu-pon-eu-ro geom-saek-ha-deon geu-ga mi-gan-eul jop-hyeot-da. mak-cha noch-i-myeon taek-si-bi man-man-chi an-ta. seo-du-reu-ja. jan-so-ri-bo-da deo geup-han mok-so-ri-e na-do geol-eum-i ppal-la-jyeot-da.",
+      "en": "Searching on his phone, he frowned. \"If we miss the last bus, the taxi fare's no joke. Let's hurry.\" His voice was more urgent than his usual nagging, and my steps quickened too.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "다행히 정류장에 도착하자마자 버스가 곧바로 들어왔다. 자리에 앉고 나서야 용우가 그제야 참았던 숨을 길게 내쉬었다. '봐라, 아슬아슬했다.'",
+      "reading": "da-haeng-hi jeong-ryu-jang-e do-chak-ha-ja-ma-ja beo-seu-ga got-ba-ro deul-eo-wat-da. ja-ri-e anj-go na-seo-ya yong-u-ga geu-je-ya cham-at-deon sum-eul gil-ge nae-swi-eot-da. bwa-ra, a-seul-a-seul-haet-da.",
+      "en": "Luckily, the bus pulled in the moment we reached the stop. Only after we'd sat down did Yongwoo finally let out the breath he'd been holding. \"See, that was cutting it close.\""
+    },
+    {
+      "text": "가로등 불빛이 하나둘 스쳐 지나가는 창밖을 보며, 다음엔 시간표를 미리 좀 봐야겠다고 조용히 생각했다.",
+      "reading": "ga-ro-deung bul-bit-i ha-na-dul seu-chyeo ji-na-ga-neun chang-bakk-eul bo-myeo, da-eum-en si-gan-pyo-reul mi-ri jom bwa-ya-get-da-go jo-yong-hi saeng-gak-haet-da.",
+      "en": "Watching the streetlights slip past one by one outside the window, I quietly resolved to check the timetable ahead of time next time."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "환승하다", "reading": "hwan-seung-ha-da", "meaning": "to transfer (between buses/trains)", "example": "이 버스에서 저 버스로 환승해야 해요.", "example_reading": "i beo-seu-e-seo jeo beo-seu-ro hwan-seung-hae-ya hae-yo", "example_en": "You need to transfer from this bus to that one." },
+    { "id": "w02", "word": "정류장", "reading": "jeong-ryu-jang", "meaning": "bus stop", "example": "다음 정류장에서 내리세요.", "example_reading": "da-eum jeong-ryu-jang-e-seo nae-ri-se-yo", "example_en": "Get off at the next stop." },
+    { "id": "w03", "word": "하차벨", "reading": "ha-cha-bel", "meaning": "the stop button/bell on a bus", "example": "내리기 전에 하차벨을 눌러야 한다.", "example_reading": "nae-ri-gi jeon-e ha-cha-bel-eul nul-leo-ya han-da", "example_en": "You need to press the stop button before getting off." },
+    { "id": "w04", "word": "교통카드", "reading": "gyo-tong-ka-deu", "meaning": "transit card", "example": "교통카드로 버스 요금을 냈다.", "example_reading": "gyo-tong-ka-deu-ro beo-seu yo-geum-eul naet-da", "example_en": "I paid the bus fare with a transit card." },
+    { "id": "w05", "word": "막차", "reading": "mak-cha", "meaning": "the last bus/train of the day", "example": "막차를 놓쳐서 택시를 탔다.", "example_reading": "mak-cha-reul noch-yeo-seo taek-si-reul tat-da", "example_en": "I missed the last bus, so I took a taxi." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "이 버스에서 저 버스로 한 번 환승해야 해요.", "reading": "i beo-seu-e-seo jeo beo-seu-ro han beon hwan-seung-hae-ya hae-yo", "en": "You need to transfer once from this bus to that one." },
+    { "id": "s02", "ko": "정류장 시간표를 미리 확인하는 게 좋다.", "reading": "jeong-ryu-jang si-gan-pyo-reul mi-ri hwag-in-ha-neun ge jo-ta", "en": "It's good to check the bus stop timetable ahead of time." },
+    { "id": "s03", "ko": "내릴 정류장이 다가오면 하차벨을 눌러라.", "reading": "nae-ril jeong-ryu-jang-i da-ga-o-myeon ha-cha-bel-eul nul-leo-ra", "en": "Press the stop button when your stop is coming up." },
+    { "id": "s04", "ko": "교통카드를 안 찍으면 요금이 잘못 계산될 수 있다.", "reading": "gyo-tong-ka-deu-reul an jjig-eu-myeon yo-geum-i jal-mot gye-san-doel su it-da", "en": "If you don't tap your transit card, the fare can be calculated wrong." },
+    { "id": "s05", "ko": "막차 시간을 놓치지 않으려고 서둘렀다.", "reading": "mak-cha si-gan-eul noch-i-ji an-eu-ryeo-go seo-dul-leot-da", "en": "I hurried so as not to miss the last bus." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "승객", "text": "환승은 어떻게 해요? 요금을 또 내야 해요?", "reading": "hwan-seung-eun eo-tteo-ke hae-yo? yo-geum-eul tto nae-ya hae-yo?", "en": "How do I transfer? Do I have to pay the fare again?" },
+        { "speaker": "용우", "text": "교통카드만 있으면 돼. 탈 때, 내릴 때 다 찍으면 알아서 계산된다.", "reading": "gyo-tong-ka-deu-man iss-eu-myeon dwae. tal ttae, nae-ril ttae da jjig-eu-myeon al-a-seo gye-san-doen-da.", "en": "You just need your transit card. Tap it when you get on and when you get off, and it calculates itself." },
+        { "speaker": "승객", "text": "그럼 그냥 계속 찍기만 하면 되는 거네요.", "reading": "geu-reom geu-nyang gye-sok jjik-gi-man ha-myeon doe-neun geo-ne-yo.", "en": "So I just have to keep tapping it, that's all." },
+        { "speaker": "용우", "text": "그래, 안 찍고 내리면 요금 더 나오니까 조심해라.", "reading": "geu-rae, an jjik-go nae-ri-myeon yo-geum deo na-o-ni-kka jo-sim-hae-ra.", "en": "Right, but if you forget to tap when getting off, you'll get charged more, so be careful." }
+      ],
+      "question": "교통카드 사용법에 대한 용우의 설명으로 가장 알맞은 것은?",
+      "question_en": "What best describes Yongwoo's explanation of how to use the transit card?",
+      "correct_answer": "탈 때와 내릴 때 모두 카드를 찍어야 요금이 정확히 계산된다",
+      "options": ["탈 때와 내릴 때 모두 카드를 찍어야 요금이 정확히 계산된다", "탈 때만 카드를 찍으면 된다", "내릴 때만 카드를 찍으면 된다", "환승할 때는 요금을 현금으로 내야 한다"],
+      "explanation": "용우는 버스를 탈 때와 내릴 때 모두 교통카드를 찍어야 요금이 정확히 계산된다고 설명했습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "용우", "text": "막차 놓치면 택시비 만만치 않다. 서두르자.", "reading": "mak-cha noch-i-myeon taek-si-bi man-man-chi an-ta. seo-du-reu-ja.", "en": "If we miss the last bus, the taxi fare's no joke. Let's hurry." },
+        { "speaker": "승객", "text": "아직 시간 있지 않아요? 왜 이렇게 급해해요?", "reading": "a-jik si-gan iss-ji an-a-yo? wae i-reo-ke geup-hae-hae-yo?", "en": "Don't we still have time? Why are you in such a rush?" },
+        { "speaker": "용우", "text": "여긴 시내랑 달라서 배차 간격이 길다. 놓치면 한참 기다려야 돼.", "reading": "yeo-gin si-nae-rang dal-la-seo bae-cha gan-gyeog-i gil-da. noch-i-myeon han-cham gi-da-ryeo-ya dwae.", "en": "This isn't like downtown, the buses run far apart. If we miss it, we'll have to wait a long time." },
+        { "speaker": "승객", "text": "그럼 빨리 걸을게요, 저 앞이죠?", "reading": "geu-reom ppal-li geol-eul-ge-yo, jeo ap-i-jyo?", "en": "Then let's walk fast, it's just up ahead, right?" }
+      ],
+      "question": "용우가 서둘러 걷자고 재촉한 이유로 가장 알맞은 것은?",
+      "question_en": "What best explains why Yongwoo urged them to hurry?",
+      "correct_answer": "막차를 놓치면 다음 버스까지 오래 기다려야 해서",
+      "options": ["막차를 놓치면 다음 버스까지 오래 기다려야 해서", "비가 곧 올 것 같아서", "정류장이 문을 닫을 시간이라서", "다른 일정이 이미 늦어서"],
+      "explanation": "용우는 이 지역이 시내와 달리 배차 간격이 길어서 막차를 놓치면 한참을 기다려야 한다고 설명했습니다."
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "id": "sp-frd-sangwoo-06",
+  "character_id": "sangwoo",
+  "title": "금강 밤바람 앞에서",
+  "emoji": "🌙",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "밤이 깊어지자 금강 변 벤치에 나란히 앉았습니다. 강바람이 제법 선선했습니다.",
+      "reading": "bam-i gip-eo-ji-ja geum-gang byeon ben-chi-e na-ran-hi anj-at-seum-ni-da. gang-ba-ram-i je-beop seon-seon-haess-seum-ni-da.",
+      "en": "As the night deepened, we sat side by side on a bench by the Geumgang River. The river breeze was fairly cool."
+    },
+    {
+      "text": "친구의 표정이 어딘가 무거워 보였습니다. \"요즘 무슨 '고민' 있습니까?\" 제가 먼저 조심스레 물었습니다.",
+      "reading": "chin-gu-ui pyo-jeong-i eo-din-ga mu-geo-wo bo-yeot-seum-ni-da. \"yo-jeum mu-seun 'go-min' it-seum-ni-kka?\" je-ga meon-jeo jo-sim-seu-re mul-eot-seum-ni-da.",
+      "en": "My friend's expression looked somehow heavy. \"Do you have some 'worry' these days?\" I asked cautiously first.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "잠시 망설이던 친구가 결국 마음속 이야기를 '털어놓았습니다.' 저는 말없이 끝까지 들었습니다.",
+      "reading": "jam-si mang-seol-i-deon chin-gu-ga gyeol-guk ma-eum-sok i-ya-gi-reul 'teol-eo-noh-at-seum-ni-da.' jeo-neun mal-eob-si kkeut-kka-ji deul-eot-seum-ni-da.",
+      "en": "After hesitating for a moment, my friend finally 'opened up' about what was on their mind. I listened quietly, all the way to the end.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "평소라면 격식 있는 조언부터 건넸을 텐데, 오늘은 그저 옆에 있어 주고 싶었습니다.",
+      "reading": "pyeong-so-ra-myeon gyeok-sik it-neun jo-eon-bu-teo geon-naess-eul ten-de, o-neul-eun geu-jeo yeop-e it-eo ju-go sip-eot-seum-ni-da.",
+      "en": "Normally I would have offered some formal-sounding advice first, but today I just wanted to be there beside my friend."
+    },
+    {
+      "text": "\"괜찮습니다. 잘 견디고 있는 겁니다.\" 서툴지만 진심을 담아 '위로하려' 애썼습니다.",
+      "reading": "\"gwaen-chan-seum-ni-da. jal gyeon-di-go it-neun geob-ni-da.\" seo-tul-ji-man jin-sim-eul dam-a 'wi-ro-ha-ryeo' ae-sseot-seum-ni-da.",
+      "en": "\"It's okay. You're doing well, holding up.\" Clumsy as it was, I tried hard to 'comfort' them with sincerity.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "저 역시 비슷한 순간을 지나온 적이 있어, 그 마음에 깊이 '공감할' 수 있었습니다.",
+      "reading": "jeo yeok-si bi-seut-han sun-gan-eul ji-na-on jeog-i it-eo, geu ma-eum-e gip-i 'gong-gam-hal' su it-eot-seum-ni-da.",
+      "en": "I too had once gone through a similar moment, so I could deeply 'empathize' with those feelings.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "\"힘들 때는 언제든 불러도 됩니다.\" 낮은 목소리에 '진심'을 꾹꾹 눌러 담았습니다.",
+      "reading": "\"him-deul ttae-neun eon-je-deun bul-leo-do doem-ni-da.\" naj-eun mok-so-ri-e 'jin-sim'-eul kkuk-kkuk nul-leo dam-at-seum-ni-da.",
+      "en": "\"Whenever things get hard, you can call me anytime.\" I packed 'sincerity' into every word of my low voice.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "강물 위로 달빛이 조용히 흔들리고 있었습니다. 그날 밤 나눈 대화를 들려드리겠습니다.",
+      "reading": "gang-mul wi-ro dal-bit-i jo-yong-hi heun-deul-li-go it-eot-seum-ni-da. geu-nal bam na-nun dae-hwa-reul deul-lyeo-deu-ri-get-seum-ni-da.",
+      "en": "Moonlight quietly rippled over the river's surface. Let me share the conversation we had that night."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "고민", "reading": "go-min", "meaning": "worry, concern", "example": "요즘 작은 고민이 하나 생겼습니다.", "example_reading": "yo-jeum jag-eun go-min-i ha-na saeng-gyeot-seum-ni-da", "example_en": "I've had a small worry lately." },
+    { "id": "w02", "word": "털어놓다", "reading": "teol-eo-not-da", "meaning": "to open up, to confess one's feelings", "example": "친구에게 속마음을 털어놓았습니다.", "example_reading": "chin-gu-e-ge sog-ma-eum-eul teol-eo-noh-at-seum-ni-da", "example_en": "I opened up to my friend about my true feelings." },
+    { "id": "w03", "word": "위로하다", "reading": "wi-ro-ha-da", "meaning": "to comfort, to console", "example": "슬퍼하는 친구를 진심으로 위로했습니다.", "example_reading": "seul-peo-ha-neun chin-gu-reul jin-sim-eu-ro wi-ro-haess-seum-ni-da", "example_en": "I sincerely comforted my sad friend." },
+    { "id": "w04", "word": "공감하다", "reading": "gong-gam-ha-da", "meaning": "to empathize, to relate", "example": "그 마음에 저도 깊이 공감합니다.", "example_reading": "geu ma-eum-e jeo-do gip-i gong-gam-ham-ni-da", "example_en": "I deeply empathize with those feelings too." },
+    { "id": "w05", "word": "진심", "reading": "jin-sim", "meaning": "sincerity, true heart", "example": "진심을 담아 그 말을 전했습니다.", "example_reading": "jin-sim-eul dam-a geu mal-eul jeon-haess-seum-ni-da", "example_en": "I said those words with sincerity." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "요즘 작은 고민이 하나 생겼습니다.", "reading": "yo-jeum jag-eun go-min-i ha-na saeng-gyeot-seum-ni-da", "en": "I've had a small worry lately." },
+    { "id": "s02", "ko": "친구에게 속마음을 털어놓았습니다.", "reading": "chin-gu-e-ge sog-ma-eum-eul teol-eo-noh-at-seum-ni-da", "en": "I opened up to my friend about my true feelings." },
+    { "id": "s03", "ko": "슬퍼하는 친구를 진심으로 위로했습니다.", "reading": "seul-peo-ha-neun chin-gu-reul jin-sim-eu-ro wi-ro-haess-seum-ni-da", "en": "I sincerely comforted my sad friend." },
+    { "id": "s04", "ko": "그 마음에 저도 깊이 공감합니다.", "reading": "geu ma-eum-e jeo-do gip-i gong-gam-ham-ni-da", "en": "I deeply empathize with those feelings too." },
+    { "id": "s05", "ko": "진심을 담아 그 말을 전했습니다.", "reading": "jin-sim-eul dam-a geu mal-eul jeon-haess-seum-ni-da", "en": "I said those words with sincerity." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "상우", "text": "표정이 안 좋아 보입니다. 무슨 고민이라도 있습니까?", "reading": "pyo-jeong-i an jo-a bo-im-ni-da. mu-seun go-min-i-ra-do it-seum-ni-kka?", "en": "You don't look well. Do you have some kind of worry?" },
+        { "speaker": "승객", "text": "사실... 요즘 회사 일 때문에 좀 힘들어.", "reading": "sa-sil... yo-jeum hoe-sa il ttae-mun-e jom him-deul-eo.", "en": "Actually... lately I've been struggling because of work." },
+        { "speaker": "상우", "text": "그랬군요. 편하게 다 털어놓아도 됩니다. 끝까지 듣겠습니다.", "reading": "geu-raet-gu-nyo. pyeon-ha-ge da teol-eo-noh-a-do doem-ni-da. kkeut-kka-ji deut-get-seum-ni-da.", "en": "I see. Feel free to open up about all of it. I'll listen until the end." },
+        { "speaker": "승객", "text": "고마워. 너한테 말하니까 벌써 마음이 좀 놓인다.", "reading": "go-ma-wo. neo-han-te mal-ha-ni-kka beol-sseo ma-eum-i jom noh-in-da.", "en": "Thanks. Just telling you already makes me feel a bit more at ease." }
+      ],
+      "question": "승객이 상우에게 털어놓은 고민의 원인은 무엇인가요?",
+      "question_en": "What was the cause of the worry the passenger opened up to Sangwoo about?",
+      "correct_answer": "회사 일",
+      "options": ["회사 일", "가족 문제", "건강 문제", "돈 문제"],
+      "explanation": "승객은 요즘 회사 일 때문에 힘들다고 상우에게 털어놓았습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "승객", "text": "너도 이런 고민 해 본 적 있어?", "reading": "neo-do i-reon go-min hae bon jeog it-seo?", "en": "Have you ever had a worry like this too?" },
+        { "speaker": "상우", "text": "물론입니다. 그때 기분, 충분히 공감합니다.", "reading": "mul-lon-im-ni-da. geu-ttae gi-bun, chung-bun-hi gong-gam-ham-ni-da.", "en": "Of course. I fully empathize with how you feel." },
+        { "speaker": "승객", "text": "그런 너를 보니까 좀 위로가 된다.", "reading": "geu-reon neo-reul bo-ni-kka jom wi-ro-ga doen-da.", "en": "Seeing you like that comforts me a little." },
+        { "speaker": "상우", "text": "다행입니다. 이 말, 진심으로 하는 겁니다. 언제든 불러 주십시오.", "reading": "da-haeng-im-ni-da. i mal, jin-sim-eu-ro ha-neun geob-ni-da. eon-je-deun bul-leo ju-sip-si-o.", "en": "I'm glad. I mean this with complete sincerity — please call me anytime." }
+      ],
+      "question": "상우가 승객의 고민에 공감할 수 있었던 이유는 무엇인가요?",
+      "question_en": "Why was Sangwoo able to empathize with the passenger's worry?",
+      "correct_answer": "자신도 비슷한 고민을 겪어 본 적이 있어서",
+      "options": ["자신도 비슷한 고민을 겪어 본 적이 있어서", "책에서 관련 내용을 읽어서", "다른 사람에게 들은 이야기라서", "승객의 직업과 같아서"],
+      "explanation": "상우는 자신도 비슷한 순간을 겪어 봤기 때문에 승객의 마음에 깊이 공감할 수 있었다고 말했습니다."
+    }
+  ]
+}

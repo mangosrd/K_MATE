@@ -1,0 +1,62 @@
+{
+  "id": "sp-day-kyuhyun-01",
+  "character_id": "kyuhyun",
+  "title": "아침을 여는 인사",
+  "emoji": "☀️",
+  "story": [
+    {
+      "text": "이른 아침, 좁은 골목길 사이로 옅은 햇살이 스며들었다. 아직 잠이 덜 깬 눈으로 현관문을 나서자, 시원한 아침 공기가 뺨을 스쳤다.",
+      "reading": "i-reun a-chim, jop-eun gol-mok-gil sa-i-ro yeot-eun haet-sal-i seu-myeo-deul-eot-da. a-jik jam-i deol kkaen nun-eu-ro hyeon-gwan-mun-eul na-seo-ja, si-won-han a-chim gong-gi-ga ppyam-eul seu-chyeot-da.",
+      "en": "Early in the morning, faint sunlight seeped through the narrow alley. Stepping out the front door with eyes still heavy with sleep, the cool morning air brushed my cheek."
+    },
+    {
+      "text": "골목 어귀에는 규현이 커피 두 잔을 든 채 벽에 기대 서 있었다. \"좋은 아침이에요, 아가씨.\" 그가 씩 웃으며 손을 흔들었다.",
+      "reading": "gol-mok eo-gwi-e-neun gyu-hyeon-i keo-pi du jan-eul deun chae byeok-e gi-dae seo iss-eot-da. \"jo-eun a-chim-i-e-yo, a-ga-ssi.\" geu-ga ssik us-eu-myeo son-eul heun-deul-eot-da.",
+      "en": "At the mouth of the alley, Kyuhyun stood leaning against the wall, holding two cups of coffee. \"Good morning, miss.\" He grinned and waved.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "\"오늘도 늦게 일어났죠? 눈이 반쯤 감겨 있는데요.\" 그가 눈을 찡긋하며 커피 한 잔을 내밀었다.",
+      "reading": "\"o-neul-do neut-ge il-eo-nat-jyo? nun-i ban-jjeum gam-gyeo it-neun-de-yo.\" geu-ga nun-eul jjing-geut-ha-myeo keo-pi han jan-eul nae-mil-eot-da.",
+      "en": "\"Got up late again today, didn't you? Your eyes are half shut.\" He winked and held out a cup of coffee.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "\"그쪽은 몇 시부터 여기 있었는데요?\" 내가 커피를 받아 들며 묻자, 그는 \"잘 잤으면 그걸로 됐죠, 뭐.\" 하며 능청스럽게 시선을 돌렸다.",
+      "reading": "\"geu-jjok-eun myeot si-bu-teo yeo-gi iss-eot-neun-de-yo?\" nae-ga keo-pi-reul bad-a deul-myeo mut-ja, geu-neun \"jal jat-eu-myeon geu-geol-lo dwaet-jyo, mwo.\" ha-myeo neung-cheong-seu-reop-ge si-seon-eul dol-lyeot-da.",
+      "en": "\"How long have you been standing here?\" I asked, taking the coffee. \"As long as you slept well, that's all that matters,\" he said, smoothly looking away.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "한 모금 마신 커피는 따뜻했고, 아침 공기는 유난히 상쾌했다. 오랜만에 느끼는 개운한 기분이었다.",
+      "reading": "han mo-geum ma-sin keo-pi-neun tta-tteut-haet-go, a-chim gong-gi-neun yu-nan-hi sang-kwae-haet-da. o-raen-man-e neu-kki-neun gae-un-han gi-bun-i-eot-da.",
+      "en": "The sip of coffee was warm, and the morning air was unusually refreshing. It was a clean, clear feeling I hadn't had in a while.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "\"자, 그럼 우리 하루를 시작해 볼까요?\" 규현이 씩 웃으며 앞장서 걸었다. 그의 발걸음에는 여유가 묻어났다.",
+      "reading": "\"ja, geu-reom u-ri ha-ru-reul si-jak-hae bol-kka-yo?\" gyu-hyeon-i ssik us-eu-myeo ap-jang-seo geol-eot-da. geu-ui bal-geol-eum-e-neun yeo-yu-ga mud-eo-nat-da.",
+      "en": "\"Well then, shall we start our day?\" Kyuhyun grinned and walked ahead. There was an easy confidence in his stride.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "뒤따라 걸으며, 나는 오늘 하루가 왠지 나쁘지 않을 것 같다는 예감이 들었다.",
+      "reading": "dwi-tta-ra geol-eu-myeo, na-neun o-neul ha-ru-ga waen-ji na-ppeu-ji anh-eul geot gat-da-neun ye-gam-i deul-eot-da.",
+      "en": "Following behind him, I had a feeling that today, somehow, wouldn't turn out so bad."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "아침", "reading": "a-chim", "meaning": "morning", "example": "아침에 커피를 마셨다.", "example_reading": "a-chim-e keo-pi-reul ma-syeot-da", "example_en": "I drank coffee in the morning." },
+    { "id": "w02", "word": "일어나다", "reading": "il-eo-na-da", "meaning": "to get up, to wake up", "example": "나는 일곱 시에 일어났다.", "example_reading": "na-neun il-gop si-e il-eo-nat-da", "example_en": "I got up at seven o'clock." },
+    { "id": "w03", "word": "잘 자다", "reading": "jal ja-da", "meaning": "to sleep well", "example": "어젯밤에는 잘 잤어요.", "example_reading": "eo-jet-bam-e-neun jal jat-eo-yo", "example_en": "I slept well last night." },
+    { "id": "w04", "word": "상쾌하다", "reading": "sang-kwae-ha-da", "meaning": "to be refreshing", "example": "아침 공기가 상쾌하다.", "example_reading": "a-chim gong-gi-ga sang-kwae-ha-da", "example_en": "The morning air is refreshing." },
+    { "id": "w05", "word": "하루를 시작하다", "reading": "ha-ru-reul si-jak-ha-da", "meaning": "to start the day", "example": "커피 한 잔으로 하루를 시작해요.", "example_reading": "keo-pi han jan-eu-ro ha-ru-reul si-jak-hae-yo", "example_en": "I start my day with a cup of coffee." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "좋은 아침이에요!", "reading": "jo-eun a-chim-i-e-yo!", "en": "Good morning!" },
+    { "id": "s02", "ko": "잘 잤어요?", "reading": "jal jat-eo-yo?", "en": "Did you sleep well?" },
+    { "id": "s03", "ko": "오늘 하루도 힘내요.", "reading": "o-neul ha-ru-do him-nae-yo.", "en": "Have a good day today too." },
+    { "id": "s04", "ko": "아침 먹었어요?", "reading": "a-chim meog-eot-eo-yo?", "en": "Have you had breakfast?" },
+    { "id": "s05", "ko": "오늘은 뭐 할 거예요?", "reading": "o-neul-eun mwo hal geo-ye-yo?", "en": "What are you going to do today?" }
+  ]
+}

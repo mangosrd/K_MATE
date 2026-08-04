@@ -1,0 +1,62 @@
+{
+  "id": "sp-day-kyuhyun-06",
+  "character_id": "kyuhyun",
+  "title": "여유로운 주말 오후",
+  "emoji": "🌿",
+  "story": [
+    {
+      "text": "한강공원 잔디밭 위로 일요일 오후의 햇살이 나른하게 쏟아졌다. 돗자리 위에 널브러진 규현은 하늘을 향해 팔다리를 쭉 뻗었다.",
+      "reading": "han-gang-gong-won jan-di-bat wi-ro il-yo-il o-hu-ui haet-sal-i na-reun-ha-ge sso-da-jyeot-da. dot-ja-ri wi-e neol-beu-reo-jin gyu-hyeon-eun ha-neul-eul hyang-hae pal-da-ri-reul jjuk ppeot-eot-da.",
+      "en": "Sunday afternoon sunlight spilled lazily over the grass at Han River Park. Sprawled on the picnic mat, Kyuhyun stretched his arms and legs out toward the sky."
+    },
+    {
+      "text": "\"주말엔 역시 이렇게 늘어지는 게 최고죠.\" 그가 눈을 지그시 감으며 만족스럽게 중얼거렸다.",
+      "reading": "\"ju-mal-en yeok-si i-reo-ke neul-eo-ji-neun ge choe-go-jyo.\" geu-ga nun-eul ji-geu-si gam-eu-myeo man-jok-seu-reop-ge jung-eol-geo-ryeot-da.",
+      "en": "\"On weekends, lying around like this really is the best.\" He murmured contentedly, eyes closed.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "\"저는 좀 쉬어야겠어요. 이번 주는 유난히 길었거든요.\" 나도 그 옆에 나란히 누워 눈을 감았다. 바람이 기분 좋게 뺨을 스쳤다.",
+      "reading": "\"jeo-neun jom swi-eo-ya-get-eo-yo. i-beon ju-neun yu-nan-hi gil-eot-geo-deun-yo.\" na-do geu yeop-e na-ran-hi nu-wo nun-eul gam-at-da. ba-ram-i gi-bun jo-ke ppyam-eul seu-chyeot-da.",
+      "en": "\"I really need to rest. This week felt especially long.\" I lay down beside him and closed my eyes too. The breeze felt pleasant against my cheek.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "\"근데 아가씨는 취미가 뭐예요?\" 그가 고개만 살짝 돌려 물었다. \"쉬는 날 뭐 하고 노나 궁금해서요.\"",
+      "reading": "\"geun-de a-ga-ssi-neun chwi-mi-ga mwo-ye-yo?\" geu-ga go-gae-man sal-jjak dol-lyeo mul-eot-da. \"swi-neun nal mwo ha-go no-na gung-geum-hae-seo-yo.\"",
+      "en": "\"So what's your hobby, miss?\" He turned his head slightly to ask. \"I'm curious what you do for fun on your days off.\"",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "내가 되묻자 그는 잠깐 머뭇거리더니, 가방에서 조그만 수첩을 꺼내 보였다. \"...그냥, 가끔 이런 데 끄적여요.\" 그러고는 헛기침을 하며 서둘러 수첩을 도로 집어넣었다.",
+      "reading": "nae-ga doe-mut-ja geu-neun jam-kkan meo-mut-geo-ri-deo-ni, ga-bang-e-seo jo-geu-man su-cheob-eul kkeon-nae bo-yeot-da. \"...geu-nyang, ga-kkeum i-reon de kkeu-jeog-yeo-yo.\" geu-reo-go-neun heot-gi-chim-eul ha-myeo seo-dul-leo su-cheob-eul do-ro jib-eo-neoh-eot-da.",
+      "en": "When I asked him back, he hesitated for a moment, then pulled a small notebook from his bag. \"...Just, sometimes I doodle in this.\" Then he cleared his throat and hurriedly tucked the notebook away again."
+    },
+    {
+      "text": "\"그럼 우리 슬슬 강변이나 산책할까요?\" 그가 어색함을 감추듯 벌떡 일어나 손을 내밀었다.",
+      "reading": "\"geu-reom u-ri seul-seul gang-byeon-i-na san-chaek-hal-kka-yo?\" geu-ga eo-saek-ham-eul gam-chu-deut beol-tteok il-eo-na son-eul nae-mil-eot-da.",
+      "en": "\"Well then, shall we take a walk along the river?\" He jumped up as if to hide his awkwardness, and held out his hand.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "강물을 따라 나란히 걷는 동안, 나는 문득 이런 여유로운 시간이 참 오랜만이라는 생각이 들었다. 규현도 같은 생각을 하는지, 말없이 미소를 짓고 있었다.",
+      "reading": "gang-mul-eul tta-ra na-ran-hi geot-neun dong-an, na-neun mun-deuk i-reon yeo-yu-ro-un si-gan-i cham o-raen-man-i-ra-neun saeng-gag-i deul-eot-da. gyu-hyeon-do gat-eun saeng-gag-eul ha-neun-ji, mal-eob-si mi-so-reul jit-go iss-eot-da.",
+      "en": "Walking side by side along the river, I suddenly realized how long it had been since I'd had such a relaxed stretch of time. Kyuhyun seemed to be thinking the same thing, smiling quietly without a word.",
+      "highlight_word_id": "w05"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "주말", "reading": "ju-mal", "meaning": "weekend", "example": "주말에 뭐 해요?", "example_reading": "ju-mal-e mwo hae-yo", "example_en": "What do you do on weekends?" },
+    { "id": "w02", "word": "취미", "reading": "chwi-mi", "meaning": "hobby", "example": "제 취미는 사진 찍기예요.", "example_reading": "je chwi-mi-neun sa-jin jjik-gi-ye-yo", "example_en": "My hobby is taking photos." },
+    { "id": "w03", "word": "쉬다", "reading": "swi-da", "meaning": "to rest", "example": "오늘은 집에서 쉴 거예요.", "example_reading": "o-neul-eun jib-e-seo swil geo-ye-yo", "example_en": "I'm going to rest at home today." },
+    { "id": "w04", "word": "산책하다", "reading": "san-chaek-ha-da", "meaning": "to take a walk", "example": "같이 산책할래요?", "example_reading": "ga-chi san-chaek-hal-lae-yo", "example_en": "Want to take a walk together?" },
+    { "id": "w05", "word": "여유롭다", "reading": "yeo-yu-rop-da", "meaning": "to be leisurely, relaxed", "example": "이런 여유로운 시간이 좋아요.", "example_reading": "i-reon yeo-yu-ro-un si-gan-i jo-a-yo", "example_en": "I like this kind of relaxed time." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "주말에 뭐 해요?", "reading": "ju-mal-e mwo hae-yo?", "en": "What do you do on weekends?" },
+    { "id": "s02", "ko": "취미가 뭐예요?", "reading": "chwi-mi-ga mwo-ye-yo?", "en": "What's your hobby?" },
+    { "id": "s03", "ko": "오늘은 집에서 쉴 거예요.", "reading": "o-neul-eun jib-e-seo swil geo-ye-yo.", "en": "I'm going to rest at home today." },
+    { "id": "s04", "ko": "같이 산책할래요?", "reading": "ga-chi san-chaek-hal-lae-yo?", "en": "Want to take a walk together?" },
+    { "id": "s05", "ko": "이런 여유로운 시간이 좋아요.", "reading": "i-reon yeo-yu-ro-un si-gan-i jo-a-yo.", "en": "I like this kind of relaxed time." }
+  ]
+}

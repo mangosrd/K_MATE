@@ -47,46 +47,161 @@
     }
   ],
   "words": [
-    { "id": "w01", "word": "일출봉", "reading": "il-chul-bong", "meaning": "Sunrise Peak (Seongsan Ilchulbong)", "example": "일출봉은 바다 위로 솟은 거대한 화산체입니다.", "example_reading": "il-chul-bong-eun ba-da wi-ro sos-eun geo-dae-han hwa-san-che-im-ni-da", "example_en": "Sunrise Peak is a massive volcanic cone rising from the sea." },
-    { "id": "w02", "word": "분화구", "reading": "bun-hwa-gu", "meaning": "Volcanic crater", "example": "분화구 둘레를 따라 걸으면 장엄한 전망이 펼쳐집니다.", "example_reading": "bun-hwa-gu dul-le-reul tta-ra geol-eu-myeon jang-eom-han jeon-mang-i pyeol-cheo-jim-ni-da", "example_en": "Walking around the crater's rim reveals a majestic view." },
-    { "id": "w03", "word": "유네스코", "reading": "yu-ne-seu-ko", "meaning": "UNESCO", "example": "유네스코 세계자연유산으로 등재되어 있습니다.", "example_reading": "yu-ne-seu-ko se-gye-ja-yeon-yu-san-eu-ro deung-jae-doe-eo it-seum-ni-da", "example_en": "It is registered as a UNESCO World Natural Heritage site." },
-    { "id": "w04", "word": "우도", "reading": "u-do", "meaning": "Udo Island", "example": "우도는 배를 타고 건너야 하는 작은 섬입니다.", "example_reading": "u-do-neun bae-reul ta-go geon-neo-ya ha-neun jag-eun seom-im-ni-da", "example_en": "Udo is a small island you must cross by boat." },
-    { "id": "w05", "word": "에메랄드빛", "reading": "e-me-ral-deu-bit", "meaning": "Emerald color", "example": "에메랄드빛 바다가 우도를 감싸고 있습니다.", "example_reading": "e-me-ral-deu-bit ba-da-ga u-do-reul gam-ssa-go it-seum-ni-da", "example_en": "An emerald-colored sea surrounds Udo." }
+    {
+      "id": "w01",
+      "word": "절경",
+      "reading": "jeol-gyeong",
+      "meaning": "Magnificent scenery",
+      "example": "이곳은 해돋이로 유명한 절경입니다.",
+      "example_reading": "i-gos-eun hae-dod-i-ro yu-myeong-han jeol-gyeong-im-ni-da",
+      "example_en": "This place is famous scenery known for its sunrise."
+    },
+    {
+      "id": "w02",
+      "word": "분화구",
+      "reading": "bun-hwa-gu",
+      "meaning": "Volcanic crater",
+      "example": "분화구 둘레를 따라 걸으면 장엄한 전망이 펼쳐집니다.",
+      "example_reading": "bun-hwa-gu dul-le-reul tta-ra geol-eu-myeon jang-eom-han jeon-mang-i pyeol-cheo-jim-ni-da",
+      "example_en": "Walking around the crater's rim reveals a majestic view."
+    },
+    {
+      "id": "w03",
+      "word": "세계유산",
+      "reading": "se-gye-yu-san",
+      "meaning": "World heritage",
+      "example": "이 지역은 세계유산으로 지정되어 보호받고 있습니다.",
+      "example_reading": "i ji-yeog-eun se-gye-yu-san-eu-ro ji-jeong-doe-eo bo-ho-bad-go it-seum-ni-da",
+      "example_en": "This area is designated as a World Heritage site and is under protection."
+    },
+    {
+      "id": "w04",
+      "word": "섬",
+      "reading": "seom",
+      "meaning": "Island",
+      "example": "배를 타고 작은 섬으로 건너갔습니다.",
+      "example_reading": "bae-reul ta-go jak-eun seom-eu-ro geon-neo-gat-seum-ni-da",
+      "example_en": "We took a boat and crossed over to a small island."
+    },
+    {
+      "id": "w05",
+      "word": "에메랄드빛",
+      "reading": "e-me-ral-deu-bit",
+      "meaning": "Emerald color",
+      "example": "에메랄드빛 바다가 우도를 감싸고 있습니다.",
+      "example_reading": "e-me-ral-deu-bit ba-da-ga u-do-reul gam-ssa-go it-seum-ni-da",
+      "example_en": "An emerald-colored sea surrounds Udo."
+    }
   ],
   "sentences": [
-    { "id": "s01", "ko": "일출봉은 바다 위로 솟은 거대한 화산체입니다.", "reading": "il-chul-bong-eun ba-da wi-ro sos-eun geo-dae-han hwa-san-che-im-ni-da", "en": "Sunrise Peak is a massive volcanic cone rising from the sea." },
-    { "id": "s02", "ko": "분화구 둘레를 따라 걸으면 장엄한 전망이 펼쳐집니다.", "reading": "bun-hwa-gu dul-le-reul tta-ra geol-eu-myeon jang-eom-han jeon-mang-i pyeol-cheo-jim-ni-da", "en": "Walking around the crater's rim reveals a majestic view." },
-    { "id": "s03", "ko": "유네스코 세계자연유산으로 등재되어 있습니다.", "reading": "yu-ne-seu-ko se-gye-ja-yeon-yu-san-eu-ro deung-jae-doe-eo it-seum-ni-da", "en": "It is registered as a UNESCO World Natural Heritage site." },
-    { "id": "s04", "ko": "우도는 배를 타고 건너야 하는 작은 섬입니다.", "reading": "u-do-neun bae-reul ta-go geon-neo-ya ha-neun jag-eun seom-im-ni-da", "en": "Udo is a small island you must cross by boat." },
-    { "id": "s05", "ko": "에메랄드빛 바다가 우도를 감싸고 있습니다.", "reading": "e-me-ral-deu-bit ba-da-ga u-do-reul gam-ssa-go it-seum-ni-da", "en": "An emerald-colored sea surrounds Udo." }
+    {
+      "id": "s01",
+      "ko": "이곳은 해돋이로 유명한 절경입니다.",
+      "reading": "i-gos-eun hae-dod-i-ro yu-myeong-han jeol-gyeong-im-ni-da",
+      "en": "This place is famous scenery known for its sunrise."
+    },
+    {
+      "id": "s02",
+      "ko": "분화구 둘레를 따라 걸으면 장엄한 전망이 펼쳐집니다.",
+      "reading": "bun-hwa-gu dul-le-reul tta-ra geol-eu-myeon jang-eom-han jeon-mang-i pyeol-cheo-jim-ni-da",
+      "en": "Walking around the crater's rim reveals a majestic view."
+    },
+    {
+      "id": "s03",
+      "ko": "이 지역은 세계유산으로 지정되어 보호받고 있습니다.",
+      "reading": "i ji-yeog-eun se-gye-yu-san-eu-ro ji-jeong-doe-eo bo-ho-bad-go it-seum-ni-da",
+      "en": "This area is designated as a World Heritage site and is under protection."
+    },
+    {
+      "id": "s04",
+      "ko": "배를 타고 작은 섬으로 건너갔습니다.",
+      "reading": "bae-reul ta-go jak-eun seom-eu-ro geon-neo-gat-seum-ni-da",
+      "en": "We took a boat and crossed over to a small island."
+    },
+    {
+      "id": "s05",
+      "ko": "에메랄드빛 바다가 우도를 감싸고 있습니다.",
+      "reading": "e-me-ral-deu-bit ba-da-ga u-do-reul gam-ssa-go it-seum-ni-da",
+      "en": "An emerald-colored sea surrounds Udo."
+    }
   ],
   "dialogues": [
     {
       "id": "d01",
       "turns": [
-        { "speaker": "관광객", "text": "우도 가는 배는 어디서 타나요?", "reading": "u-do ga-neun bae-neun eo-di-seo ta-na-yo?", "en": "Where do I catch the boat to Udo?" },
-        { "speaker": "직원", "text": "성산항에서 타시면 돼요. 15분이면 도착해요.", "reading": "seong-san-hang-e-seo ta-si-myeon dwae-yo.", "en": "You can take it from Seongsan Port. It takes about 15 minutes." },
-        { "speaker": "관광객", "text": "왕복 표를 미리 사야 하나요?", "reading": "wang-bok pyo-reul mi-ri sa-ya ha-na-yo?", "en": "Should I buy a round-trip ticket in advance?" },
-        { "speaker": "직원", "text": "네, 왕복으로 미리 구매하시는 게 좋아요. 성수기엔 매진되기도 하거든요.", "reading": "ne, wang-bog-eu-ro mi-ri gu-mae-ha-si-neun ge jo-a-yo.", "en": "Yes, it's better to buy round-trip in advance. During peak season it can even sell out." }
+        {
+          "speaker": "관광객",
+          "text": "우도 가는 배는 어디서 타나요?",
+          "reading": "u-do ga-neun bae-neun eo-di-seo ta-na-yo?",
+          "en": "Where do I catch the boat to Udo?"
+        },
+        {
+          "speaker": "직원",
+          "text": "성산항에서 타시면 돼요. 15분이면 도착해요.",
+          "reading": "seong-san-hang-e-seo ta-si-myeon dwae-yo.",
+          "en": "You can take it from Seongsan Port. It takes about 15 minutes."
+        },
+        {
+          "speaker": "관광객",
+          "text": "왕복 표를 미리 사야 하나요?",
+          "reading": "wang-bok pyo-reul mi-ri sa-ya ha-na-yo?",
+          "en": "Should I buy a round-trip ticket in advance?"
+        },
+        {
+          "speaker": "직원",
+          "text": "네, 왕복으로 미리 구매하시는 게 좋아요. 성수기엔 매진되기도 하거든요.",
+          "reading": "ne, wang-bog-eu-ro mi-ri gu-mae-ha-si-neun ge jo-a-yo.",
+          "en": "Yes, it's better to buy round-trip in advance. During peak season it can even sell out."
+        }
       ],
       "question": "직원이 관광객에게 추천한 것은 무엇인가요?",
       "question_en": "What did the staff member recommend to the tourist?",
       "correct_answer": "왕복 표를 미리 구매하는 것",
-      "options": ["왕복 표를 미리 구매하는 것", "편도 표만 사는 것", "성산항 대신 다른 항구를 이용하는 것", "배 대신 다리로 건너는 것"],
+      "options": [
+        "왕복 표를 미리 구매하는 것",
+        "편도 표만 사는 것",
+        "성산항 대신 다른 항구를 이용하는 것",
+        "배 대신 다리로 건너는 것"
+      ],
       "explanation": "직원은 성수기엔 매진되기도 하니 왕복으로 미리 구매하는 게 좋다고 추천했습니다."
     },
     {
       "id": "d02",
       "turns": [
-        { "speaker": "친구1", "text": "우와, 분화구가 진짜 크다. 여기까지 오길 잘했어.", "reading": "u-wa, bun-hwa-gu-ga jin-jja keu-da.", "en": "Wow, the crater is really huge. I'm glad we came here." },
-        { "speaker": "친구2", "text": "그러게. 근데 해 뜨는 시간에 맞춰서 오면 훨씬 장관이래.", "reading": "geu-reo-ge. geun-de hae tteu-neun si-gan-e maj-chwo-seo o-myeon hwol-ssin jang-gwan-i-rae.", "en": "I know, right. But I heard it's way more spectacular if you come at sunrise." },
-        { "speaker": "친구1", "text": "다음엔 새벽에 일찍 와보자.", "reading": "da-eum-en sae-byeog-e il-jjik wa-bo-ja.", "en": "Let's come early in the morning next time." },
-        { "speaker": "친구2", "text": "좋아, 그럼 숙소를 성산 근처로 잡아야겠다.", "reading": "jo-a, geu-reom suk-so-reul seong-san geun-cheo-ro jab-a-ya-get-da.", "en": "Good, then we should book a place to stay near Seongsan." }
+        {
+          "speaker": "친구1",
+          "text": "우와, 분화구가 진짜 크다. 여기까지 오길 잘했어.",
+          "reading": "u-wa, bun-hwa-gu-ga jin-jja keu-da.",
+          "en": "Wow, the crater is really huge. I'm glad we came here."
+        },
+        {
+          "speaker": "친구2",
+          "text": "그러게. 근데 해 뜨는 시간에 맞춰서 오면 훨씬 장관이래.",
+          "reading": "geu-reo-ge. geun-de hae tteu-neun si-gan-e maj-chwo-seo o-myeon hwol-ssin jang-gwan-i-rae.",
+          "en": "I know, right. But I heard it's way more spectacular if you come at sunrise."
+        },
+        {
+          "speaker": "친구1",
+          "text": "다음엔 새벽에 일찍 와보자.",
+          "reading": "da-eum-en sae-byeog-e il-jjik wa-bo-ja.",
+          "en": "Let's come early in the morning next time."
+        },
+        {
+          "speaker": "친구2",
+          "text": "좋아, 그럼 숙소를 성산 근처로 잡아야겠다.",
+          "reading": "jo-a, geu-reom suk-so-reul seong-san geun-cheo-ro jab-a-ya-get-da.",
+          "en": "Good, then we should book a place to stay near Seongsan."
+        }
       ],
       "question": "친구2가 다음 방문 때 하고 싶어 하는 것은 무엇인가요?",
       "question_en": "What does Friend 2 want to do on the next visit?",
       "correct_answer": "해 뜨는 시간에 맞춰 일출봉을 다시 오는 것",
-      "options": ["해 뜨는 시간에 맞춰 일출봉을 다시 오는 것", "우도에 가지 않는 것", "분화구에 올라가지 않는 것", "숙소를 성산에서 먼 곳으로 잡는 것"],
+      "options": [
+        "해 뜨는 시간에 맞춰 일출봉을 다시 오는 것",
+        "우도에 가지 않는 것",
+        "분화구에 올라가지 않는 것",
+        "숙소를 성산에서 먼 곳으로 잡는 것"
+      ],
       "explanation": "친구2는 해 뜨는 시간에 오면 훨씬 장관이라며 다음엔 새벽에 일찍 오자고 했습니다."
     }
   ]

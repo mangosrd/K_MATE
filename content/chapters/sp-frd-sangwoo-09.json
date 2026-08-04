@@ -1,0 +1,98 @@
+{
+  "id": "sp-frd-sangwoo-09",
+  "character_id": "sangwoo",
+  "title": "사진첩 속, 우리의 여름",
+  "emoji": "📷",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "여행의 마지막 밤, 숙소 마루에 나란히 앉아 휴대폰 사진첩을 넘겨 보았습니다.",
+      "reading": "yeo-haeng-ui ma-ji-mak bam, suk-so ma-ru-e na-ran-hi anj-a hyu-dae-pon sa-jin-cheob-eul neom-gyeo bo-at-seum-ni-da.",
+      "en": "On the last night of the trip, we sat side by side on the porch of our lodging, scrolling through the photo album on our phones."
+    },
+    {
+      "text": "공산성, 산성시장, 노래방까지, 사진 한 장 한 장에 지난 며칠의 '추억'이 고스란히 담겨 있었습니다.",
+      "reading": "gong-san-seong, san-seong-si-jang, no-rae-bang-kka-ji, sa-jin han jang han jang-e ji-nan myeo-chil-ui 'chu-eok'-i go-seu-ran-hi dam-gyeo it-eot-seum-ni-da.",
+      "en": "From Gongsanseong to Sanseong Market to the karaoke room, every single photo held the 'memories' of the past few days, just as they were.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "\"이번 여행, 진짜 '잊지 못할' 것 같아.\" 친구의 나지막한 말에 저도 조용히 고개를 끄덕였습니다.",
+      "reading": "\"i-beon yeo-haeng, jin-jja 'it-ji mot-hal' geot gat-a.\" chin-gu-ui na-ji-mak-han mal-e jeo-do jo-yong-hi go-gae-reul kkeu-deog-yeot-seum-ni-da.",
+      "en": "\"I think this trip is one I'll really 'never forget'.\" At my friend's quiet words, I nodded silently too.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "화면 속 웃고 있는 우리 모습이 새삼 낯설면서도 반가웠습니다. 평소엔 잘 안 웃는 얼굴인데 말입니다.",
+      "reading": "hwa-myeon sok ut-go it-neun u-ri mo-seub-i sae-sam nat-seol-myeon-seo-do ban-ga-wot-seum-ni-da. pyeong-so-en jal an ut-neun eol-gul-in-de mal-im-ni-da.",
+      "en": "The sight of us laughing on screen felt strangely unfamiliar yet welcome. It's not a face that usually smiles much, after all."
+    },
+    {
+      "text": "노래방에서 목이 쉬도록 부르던 사진을 보다가, 어쩐지 마음이 '뭉클해졌습니다.'",
+      "reading": "no-rae-bang-e-seo mog-i swi-do-rok bu-reu-deon sa-jin-eul bo-da-ga, eo-jjeon-ji ma-eum-i 'mung-keul-hae-jyeot-seum-ni-da.'",
+      "en": "Looking at a photo of us singing our voices hoarse at karaoke, I somehow felt my heart 'grow full and moved.'",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "\"이 '순간'을 사진으로 남겨 둬서 다행입니다.\" 저는 화면을 손끝으로 가만히 쓸어 보았습니다.",
+      "reading": "\"i 'sun-gan'-eul sa-jin-eu-ro nam-gyeo dwo-seo da-haeng-im-ni-da.\" jeo-neun hwa-myeon-eul son-kkeut-eu-ro ga-man-hi sseul-eo bo-at-seum-ni-da.",
+      "en": "\"I'm glad we captured this 'moment' in a photo.\" I gently traced the screen with my fingertip.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "바쁜 일상 속에서도 이렇게 만든 시간이 얼마나 '소중한지', 새삼 깨달았습니다.",
+      "reading": "ba-ppeun il-sang sog-e-seo-do i-reo-ke man-deun si-gan-i eol-ma-na 'so-jung-han-ji', sae-sam kkae-dal-at-seum-ni-da.",
+      "en": "In the middle of a busy daily life, I realized once again just how 'precious' the time we'd carved out like this was.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "사진첩을 다 넘길 때쯤, 창밖은 이미 캄캄해져 있었습니다. 그날 밤 나눈 대화를 들려드리겠습니다.",
+      "reading": "sa-jin-cheob-eul da neom-gil ttae-jjeum, chang-bakk-eun i-mi kam-kam-hae-jyeo it-eot-seum-ni-da. geu-nal bam na-nun dae-hwa-reul deul-lyeo-deu-ri-get-seum-ni-da.",
+      "en": "By the time we finished scrolling through the album, it was already pitch dark outside. Let me share the conversation we had that night."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "추억", "reading": "chu-eok", "meaning": "memory", "example": "여행에서 좋은 추억을 많이 만들었습니다.", "example_reading": "yeo-haeng-e-seo jo-eun chu-eog-eul man-i man-deul-eot-seum-ni-da", "example_en": "I made a lot of good memories on the trip." },
+    { "id": "w02", "word": "잊지 못하다", "reading": "it-ji mot-ha-da", "meaning": "to be unable to forget", "example": "그날의 풍경을 잊지 못합니다.", "example_reading": "geu-nal-ui pung-gyeong-eul it-ji mot-ham-ni-da", "example_en": "I can't forget the scenery from that day." },
+    { "id": "w03", "word": "뭉클하다", "reading": "mung-keul-ha-da", "meaning": "to be moved, touched (emotionally)", "example": "편지를 읽고 마음이 뭉클했습니다.", "example_reading": "pyeon-ji-reul ilk-go ma-eum-i mung-keul-haess-seum-ni-da", "example_en": "Reading the letter, my heart felt full." },
+    { "id": "w04", "word": "순간", "reading": "sun-gan", "meaning": "moment", "example": "그 순간을 아직도 기억합니다.", "example_reading": "geu sun-gan-eul a-jik-do gi-eok-ham-ni-da", "example_en": "I still remember that moment." },
+    { "id": "w05", "word": "소중하다", "reading": "so-jung-ha-da", "meaning": "to be precious", "example": "가족과의 시간은 늘 소중합니다.", "example_reading": "ga-jok-gwa-ui si-gan-eun neul so-jung-ham-ni-da", "example_en": "Time with family is always precious." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "이 여행은 평생 잊지 못할 추억이 되었습니다.", "reading": "i yeo-haeng-eun pyeong-saeng it-ji mot-hal chu-eog-i doe-eot-seum-ni-da", "en": "This trip became a memory I'll never forget for the rest of my life." },
+    { "id": "s02", "ko": "그 순간을 절대 잊지 못할 것 같습니다.", "reading": "geu sun-gan-eul jeol-dae it-ji mot-hal geot gat-seum-ni-da", "en": "I don't think I'll ever be able to forget that moment." },
+    { "id": "s03", "ko": "옛날 사진을 보니 마음이 뭉클했습니다.", "reading": "yet-nal sa-jin-eul bo-ni ma-eum-i mung-keul-haess-seum-ni-da", "en": "Looking at the old photos, my heart felt full." },
+    { "id": "s04", "ko": "그 순간을 함께해서 기뻤습니다.", "reading": "geu sun-gan-eul ham-kke-hae-seo gi-ppeot-seum-ni-da", "en": "I was glad to share that moment together." },
+    { "id": "s05", "ko": "친구와 보낸 시간은 정말 소중합니다.", "reading": "chin-gu-wa bo-naen si-gan-eun jeong-mal so-jung-ham-ni-da", "en": "The time spent with my friend is truly precious." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "승객", "text": "사진 보니까 그때 생각난다. 공산성에서 처음 만났을 때.", "reading": "sa-jin bo-ni-kka geu-ttae saeng-gang-na-n-da. gong-san-seong-e-seo cheo-eum man-nass-eul ttae.", "en": "Looking at this photo reminds me of that time — when we first met at Gongsanseong." },
+        { "speaker": "상우", "text": "그 순간, 저에게도 정말 특별한 추억입니다.", "reading": "geu sun-gan, jeo-e-ge-do jeong-mal teuk-byeol-han chu-eog-im-ni-da.", "en": "That moment is a truly special memory for me too." },
+        { "speaker": "승객", "text": "이번 여행 전체가 다 잊지 못할 것 같아.", "reading": "i-beon yeo-haeng jeon-che-ga da it-ji mot-hal geot gat-a.", "en": "I think this whole trip is going to be unforgettable." },
+        { "speaker": "상우", "text": "저도 같은 생각입니다. 오래도록 기억하겠습니다.", "reading": "jeo-do gat-eun saeng-gag-im-ni-da. o-rae-do-rok gi-eok-ha-get-seum-ni-da.", "en": "I feel the same. I'll remember it for a long time." }
+      ],
+      "question": "두 사람이 사진을 보며 가장 먼저 떠올린 기억은 무엇인가요?",
+      "question_en": "What memory did the two of them first recall while looking at the photos?",
+      "correct_answer": "공산성에서 처음 만났던 순간",
+      "options": ["공산성에서 처음 만났던 순간", "노래방에서 노래했던 순간", "캠핑장에서 불멍했던 순간", "놀이공원에 갔던 순간"],
+      "explanation": "승객은 사진을 보며 공산성에서 처음 만났던 순간을 가장 먼저 떠올렸습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "상우", "text": "이 사진, 노래방에서 열창하던 모습이네요.", "reading": "i sa-jin, no-rae-bang-e-seo yeol-chang-ha-deon mo-seub-i-ne-yo.", "en": "This photo — it's us singing our hearts out at karaoke." },
+        { "speaker": "승객", "text": "맞아, 그때 진짜 웃겼는데. 보기만 해도 뭉클하다.", "reading": "maj-a, geu-ttae jin-jja ut-gyeon-neun-de. bo-gi-man hae-do mung-keul-ha-da.", "en": "Right, that was so funny back then. Just looking at it makes me feel moved." },
+        { "speaker": "상우", "text": "이런 순간들이 모여서 이번 여행을 만든 것 같습니다.", "reading": "i-reon sun-gan-deul-i mo-yeo-seo i-beon yeo-haeng-eul man-deun geot gat-seum-ni-da.", "en": "It seems like moments like these are what made this trip what it was." },
+        { "speaker": "승객", "text": "그러니까 더 소중하지. 이 사진들, 잘 간직하자.", "reading": "geu-reo-ni-kka deo so-jung-ha-ji. i sa-jin-deul, jal gan-jik-ha-ja.", "en": "That's exactly why it's so precious. Let's take good care of these photos." }
+      ],
+      "question": "승객은 사진첩을 보며 어떤 감정을 느꼈나요?",
+      "question_en": "What emotion did the passenger feel while looking through the photo album?",
+      "correct_answer": "뭉클하고 소중한 감정",
+      "options": ["뭉클하고 소중한 감정", "지루하고 심심한 감정", "화가 나고 억울한 감정", "무섭고 불안한 감정"],
+      "explanation": "승객은 사진을 보며 뭉클함을 느꼈고, 그 순간들이 소중하다고 말했습니다."
+    }
+  ]
+}

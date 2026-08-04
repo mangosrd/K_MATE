@@ -4,6 +4,8 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { useLanguage, Language } from "@/components/LanguageContext";
+import { setPreferredCaptainId } from "@/lib/auth/store";
+import LoadingSplash from "@/components/LoadingSplash";
 import styles from "./onboarding.module.css";
 
 const LANGUAGES: { code: Language; flag: string; name: string }[] = [
@@ -78,17 +80,21 @@ const TUTORIAL_STEPS = [
 
 export default function OnboardingPage() {
   const router = useRouter();
-  const { language, setLanguage } = useLanguage();
+  const { language, setLanguage, t } = useLanguage();
   const [step, setStep] = useState(0); // 0: 언어, 1: 메이트, 2: 튜토리얼
   const [selectedChar, setSelectedChar] = useState("kyuhyun");
+  const [finishing, setFinishing] = useState(false);
 
   const handleFinish = () => {
     // 선택한 메이트를 저장해두고, 메인 여행(지도) 화면으로 이동
-    if (typeof window !== "undefined") {
-      localStorage.setItem("kmate_preferred_captain", selectedChar);
-    }
+    setPreferredCaptainId(selectedChar);
+    setFinishing(true);
     router.push("/map");
   };
+
+  if (finishing) {
+    return <LoadingSplash message={t("loadingTakeoff")} />;
+  }
 
   return (
     <main className={styles.page}>

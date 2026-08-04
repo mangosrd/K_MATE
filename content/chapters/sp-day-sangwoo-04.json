@@ -1,0 +1,98 @@
+{
+  "id": "sp-day-sangwoo-04",
+  "character_id": "sangwoo",
+  "title": "정류장에서, 로저",
+  "emoji": "🚌",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "오늘은 대전에 갈 일이 있어, 시외버스를 타기로 했습니다. 저는 버스보다 비행기가 훨씬 익숙한데, 당신과 함께라면 뭐든 나쁘지 않습니다.",
+      "reading": "o-neul-eun dae-jeon-e gal il-i it-eo, si-oe-beo-seu-reul ta-gi-ro haet-seum-ni-da. jeo-neun beo-seu-bo-da bi-haeng-gi-ga hwol-ssin ik-suk-han-de, dang-sin-gwa ham-kke-ra-myeon mwo-deun na-ppeu-ji an-seum-ni-da.",
+      "en": "We had some business in Daejeon today, so we decided to take an intercity bus. Airplanes are far more familiar to me than buses, but with you, anything is fine."
+    },
+    {
+      "text": "공주 시외버스터미널 정류장에는 전광판에 도착 예정 시간이 떠 있었습니다. 저는 습관처럼 시간을 확인하고 손목시계와 맞춰 보았습니다.",
+      "reading": "gong-ju si-oe-beo-seu-teo-mi-neol jeong-lyu-jang-e-neun jeon-gwang-pan-e do-chak ye-jeong si-gan-i tteo it-seot-seum-ni-da. jeo-neun seup-gwan-cheo-reom si-gan-eul hwak-in-ha-go son-mok-si-gye-wa maj-chwo bo-at-seum-ni-da.",
+      "en": "At the Gongju Intercity Bus Terminal stop, the arrival board displayed the expected time. Out of habit, I checked it and compared it against my wristwatch.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "'배차 간격이 십오 분이군요. 정시성은 나쁘지 않습니다.' 저는 진지하게 평가했고, 당신은 '버스 회사 직원이세요?'라며 웃었습니다.",
+      "reading": "bae-cha gan-gyeog-i sib-o bun-i-gun-yo. jeong-si-seong-eun na-ppeu-ji an-seum-ni-da. jeo-neun jin-ji-ha-ge pyeong-ga-haet-go, dang-sin-eun beo-seu hoe-sa jig-won-i-se-yo-ra-myeo us-eot-seum-ni-da.",
+      "en": "\"The dispatch interval is fifteen minutes. Punctuality isn't bad at all.\" I gave my serious assessment, and you laughed, asking, \"Are you a bus company employee or something?\"",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "버스가 정시에 도착했습니다. 저는 '역시'라고 작게 중얼거리며 만족스럽게 올라탔습니다.",
+      "reading": "beo-seu-ga jeong-si-e do-chak-haet-seum-ni-da. jeo-neun yeok-si-ra-go jak-ge jung-eol-geo-ri-myeo man-jok-seu-reop-ge ol-la-tat-seum-ni-da.",
+      "en": "The bus arrived right on time. I murmured a small \"just as expected\" and boarded, satisfied."
+    },
+    {
+      "text": "저는 교통카드를 단말기에 가볍게 대고 지나갔습니다. 뒤따라 당신도 카드를 대며 '삑' 소리에 웃었습니다.",
+      "reading": "jeo-neun gyo-tong-ka-deu-reul dan-mal-gi-e ga-byeop-ge dae-go ji-na-gass-seum-ni-da. dwi-tta-ra dang-sin-do ka-deu-reul dae-myeo ppig so-ri-e us-eot-seum-ni-da.",
+      "en": "I tapped my transit card lightly against the reader and moved on. Following behind, you tapped your card too and laughed at the little beep.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "목적지가 가까워지자, 저는 미리 하차벨을 눌렀습니다. '내릴 정류장을 놓치면 곤란하니까요.' 언제나 여유 있게 준비하는 편이 좋습니다.",
+      "reading": "mok-jeok-ji-ga ga-kka-wo-ji-ja, jeo-neun mi-ri ha-cha-bel-eul nul-leot-seum-ni-da. nae-ril jeong-lyu-jang-eul noch-chi-myeon gon-lan-ha-ni-kka-yo. eon-je-na yeo-yu it-ge jun-bi-ha-neun pyeon-i jo-eup-ni-da.",
+      "en": "As our destination drew near, I pressed the stop bell early. \"It'd be a problem if we missed our stop.\" It's always better to prepare with a bit of margin.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "대전에 도착해서는 지하철로 환승해야 했습니다. 저는 앞장서서 환승 통로를 안내했고, 당신은 그런 저를 순순히 따라왔습니다.",
+      "reading": "dae-jeon-e do-chak-hae-seo-neun ji-ha-cheol-lo hwan-seung-hae-ya haet-seum-ni-da. jeo-neun ap-jang-seo-seo hwan-seung tong-lo-reul an-nae-haet-go, dang-sin-eun geu-reon jeo-reul sun-sun-hi tta-ra-wass-seum-ni-da.",
+      "en": "Once we arrived in Daejeon, we needed to transfer to the subway. I took the lead, guiding the way through the transfer passage, and you followed along quietly.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "지하철 손잡이를 나란히 잡고 서서, 당신이 물었습니다. '기장님은 길도 잘 아시네요.' 저는 그저 웃으며 답했습니다. '당신과 가는 길이니, 틀리면 안 되잖습니까.'",
+      "reading": "ji-ha-cheol son-jab-i-reul na-ran-hi jab-go seo-seo, dang-sin-i mul-eot-seum-ni-da. gi-jang-nim-eun gil-do jal a-si-ne-yo. jeo-neun geu-jeo us-eu-myeo dap-haet-seum-ni-da. dang-sin-gwa ga-neun gil-i-ni, teul-li-myeon an doe-jan-seum-ni-kka.",
+      "en": "Standing side by side holding the subway handrails, you asked, \"Captain, you really know your way around, don't you.\" I just smiled and answered, \"It's the road I'm taking with you — I can't afford to get it wrong.\""
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "환승", "reading": "hwan-seung", "meaning": "transfer (between transit lines)", "example": "지하철로 환승해야 합니다.", "example_reading": "ji-ha-cheol-lo hwan-seung-hae-ya ham-ni-da", "example_en": "We need to transfer to the subway." },
+    { "id": "w02", "word": "교통카드", "reading": "gyo-tong-ka-deu", "meaning": "transit card", "example": "교통카드를 단말기에 대 주세요.", "example_reading": "gyo-tong-ka-deu-reul dan-mal-gi-e dae ju-se-yo", "example_en": "Please tap your transit card on the reader." },
+    { "id": "w03", "word": "하차벨", "reading": "ha-cha-bel", "meaning": "stop request bell/button", "example": "내릴 정류장 전에 하차벨을 누르세요.", "example_reading": "nae-ril jeong-lyu-jang jeon-e ha-cha-bel-eul nu-reu-se-yo", "example_en": "Press the stop bell before your stop." },
+    { "id": "w04", "word": "배차간격", "reading": "bae-cha-gan-gyeok", "meaning": "dispatch/departure interval", "example": "이 노선은 배차 간격이 십오 분입니다.", "example_reading": "i no-seon-eun bae-cha gan-gyeog-i sib-o bun-im-ni-da", "example_en": "This route has a fifteen-minute dispatch interval." },
+    { "id": "w05", "word": "정류장", "reading": "jeong-lyu-jang", "meaning": "bus stop, station", "example": "다음 정류장에서 내립니다.", "example_reading": "da-eum jeong-lyu-jang-e-seo nae-rim-ni-da", "example_en": "We get off at the next stop." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "여기서 지하철로 환승할 수 있습니다.", "reading": "yeo-gi-seo ji-ha-cheol-lo hwan-seung-hal su it-seum-ni-da", "en": "You can transfer to the subway here." },
+    { "id": "s02", "ko": "교통카드가 있으면 더 저렴합니다.", "reading": "gyo-tong-ka-deu-ga it-eu-myeon deo jeo-ryeom-ham-ni-da", "en": "It's cheaper if you have a transit card." },
+    { "id": "s03", "ko": "내리기 전에 하차벨을 눌러야 합니다.", "reading": "nae-ri-gi jeon-e ha-cha-bel-eul nul-leo-ya ham-ni-da", "en": "You need to press the stop bell before getting off." },
+    { "id": "s04", "ko": "이 버스는 배차 간격이 짧은 편입니다.", "reading": "i beo-seu-neun bae-cha gan-gyeog-i jjalb-eun pyeon-im-ni-da", "en": "This bus has a relatively short dispatch interval." },
+    { "id": "s05", "ko": "다음 정류장에서 내리면 됩니다.", "reading": "da-eum jeong-lyu-jang-e-seo nae-ri-myeon doem-ni-da", "en": "You just need to get off at the next stop." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "승객", "text": "버스가 언제 오는지 어떻게 그렇게 잘 아세요?", "reading": "beo-seu-ga eon-je o-neun-ji eo-tteo-ke geu-reo-ke jal a-se-yo", "en": "How do you know so well when the bus is coming?" },
+        { "speaker": "상우", "text": "전광판에 배차 간격과 도착 예정 시간이 나와 있습니다. 확인만 하면 됩니다.", "reading": "jeon-gwang-pan-e bae-cha gan-gyeok-gwa do-chak ye-jeong si-gan-i na-wa it-seum-ni-da. hwak-in-man ha-myeon doem-ni-da", "en": "The board shows the dispatch interval and expected arrival time. You just have to check it." },
+        { "speaker": "승객", "text": "그런 것도 다 확인하시는구나. 역시 기장님.", "reading": "geu-reon geot-do da hwak-in-ha-si-neun-gu-na. yeok-si gi-jang-nim", "en": "You really do check everything. Typical Captain." },
+        { "speaker": "상우", "text": "확인은 아무리 해도 지나치지 않습니다.", "reading": "hwak-in-eun a-mu-ri hae-do ji-na-chi-ji an-seum-ni-da", "en": "There's no such thing as checking too much." }
+      ],
+      "question": "상우가 버스 도착 시간을 정확히 아는 방법은?",
+      "question_en": "How does Sangwoo know the exact bus arrival time?",
+      "correct_answer": "전광판에 나온 배차 간격과 도착 예정 시간을 확인해서",
+      "options": ["전광판에 나온 배차 간격과 도착 예정 시간을 확인해서", "버스 기사에게 미리 전화를 해서", "예전에 버스 회사에서 일해 봐서", "감으로 대충 짐작해서"],
+      "explanation": "상우는 정류장 전광판에 표시된 배차 간격과 도착 예정 시간을 확인하는 습관 덕분에 버스 도착을 정확히 압니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "상우", "text": "이번 역에서 환승입니다. 저를 놓치지 말고 따라오십시오.", "reading": "i-beon yeog-e-seo hwan-seung-im-ni-da. jeo-reul noch-chi-ji mal-go tta-ra-o-sip-si-o", "en": "We transfer at this station. Don't lose sight of me, please follow closely." },
+        { "speaker": "승객", "text": "손이라도 잡아주시게요?", "reading": "son-i-ra-do jab-a-ju-si-ge-yo", "en": "Are you going to hold my hand or something?" },
+        { "speaker": "상우", "text": "필요하다면 그렇게 하겠습니다. 인파 속에서 놓치는 것보다는 나으니까요.", "reading": "pil-yo-ha-da-myeon geu-reo-ke ha-get-seum-ni-da. in-pa sog-e-seo noch-chi-neun geot-bo-da-neun na-eu-ni-kka-yo", "en": "If it's necessary, I will. It's better than losing you in the crowd." },
+        { "speaker": "승객", "text": "…생각보다 진지하게 대답하시네요.", "reading": "…saeng-gak-bo-da jin-ji-ha-ge dae-dap-ha-si-ne-yo", "en": "...That's a more serious answer than I expected." }
+      ],
+      "question": "상우가 손을 잡겠다고 말한 이유는?",
+      "question_en": "Why did Sangwoo say he would hold her hand?",
+      "correct_answer": "환승 인파 속에서 승객을 놓치지 않기 위해서",
+      "options": ["환승 인파 속에서 승객을 놓치지 않기 위해서", "지하철에서 넘어질까 봐 걱정되어서", "승객이 먼저 잡아달라고 부탁해서", "역 안이 미끄러워서"],
+      "explanation": "상우는 환승하는 복잡한 인파 속에서 승객을 놓치지 않기 위한 실용적인 이유로 손을 잡겠다고 말했습니다."
+    }
+  ]
+}

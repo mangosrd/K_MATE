@@ -1,0 +1,98 @@
+{
+  "id": "sp-day-yongwoo-02",
+  "character_id": "yongwoo",
+  "title": "샷 추가는 선택이 아니다",
+  "emoji": "☕",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "애월 해안도로를 따라 걷다가 통유리창 너머로 바다가 보이는 카페에 들어섰다. 시원한 에어컨 바람과 커피 향이 동시에 훅 끼쳐 왔다.",
+      "reading": "ae-wol hae-an-do-ro-reul tta-ra geot-da-ga tong-yu-ri-chang neo-meo-ro ba-da-ga bo-i-neun ka-pe-e deul-eo-seot-da. si-won-han e-eo-keon ba-ram-gwa keo-pi hyang-i dong-si-e huk kki-chyeo wat-da.",
+      "en": "Walking along the Aewol coastal road, we stepped into a café with a floor-to-ceiling window overlooking the sea. A blast of cool air-conditioning and coffee scent hit us both at once."
+    },
+    {
+      "text": "메뉴판 앞에서 한참을 망설이자, 용우가 옆에서 팔짱을 끼고 지켜보며 픽 웃었다. '뭘 그렇게 고민해. 그냥 주문하면 되는데.'",
+      "reading": "me-nyu-pan ap-e-seo han-cham-eul mang-seol-i-ja, yong-u-ga yeop-e-seo pal-jjang-eul kki-go ji-kyeo-bo-myeo pik us-eot-da. mwol geu-reo-ke go-min-hae. geu-nyang ju-mun-ha-myeon doe-neun-de.",
+      "en": "\"I hesitated for a long while in front of the menu board. Yongwoo stood beside me with his arms crossed, watching, and gave a short laugh. \"What's there to agonize over. Just order already.\"",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "'근데 얼음은 많이 넣어요, 적게 넣어요? 샷은 왜 따로 추가해요?' 처음 보는 선택지 앞에서 나는 우물쭈물했다.",
+      "reading": "geun-de eol-eum-eun man-i neo-eo-yo, jeog-ge neo-eo-yo? syas-eun wae tta-ro chu-ga-hae-yo? cheo-eum bo-neun seon-taeg-ji ap-e-seo na-neun u-mul-jju-mul-haet-da.",
+      "en": "\"But do they put in a lot of ice, or a little? And why do you add a shot separately?\" Faced with a menu of choices I'd never seen before, I hemmed and hawed."
+    },
+    {
+      "text": "결국 보다 못한 용우가 카운터로 성큼 다가섰다. '아이스 아메리카노 두 잔이요. 하나는 얼음을 빼 주시고, 샷 하나 추가해 주세요. 포장이요.' 또박또박한 말투로 순식간에 주문을 끝냈다.",
+      "reading": "gyeol-guk bo-da mot-han yong-u-ga ka-un-teo-ro seong-keum da-ga-seot-da. a-i-seu a-me-ri-ka-no du jan-i-yo. ha-na-neun eol-eum-eul ppae ju-si-go, syas ha-na chu-ga-hae ju-se-yo. po-jang-i-yo. tto-bak-tto-bak-han mal-tu-ro sun-sik-gan-e ju-mun-eul kkeut-naet-da.",
+      "en": "Unable to watch any longer, Yongwoo strode up to the counter. \"Two iced Americanos. Leave the ice out of one, and add one extra shot. To go.\" In his crisp, clear-cut tone, he finished the order in an instant.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "'왜 얼음을 빼요? 그럼 밍밍해지지 않아요?' 내가 묻자 그는 당연하다는 듯 대답했다. '얼음 다 녹으면 물맛만 남잖아. 그리고 이건 니 거, 얼음 있는 걸로.'",
+      "reading": "wae eol-eum-eul ppae-yo? geu-reom ming-ming-hae-ji-ji an-a-yo? nae-ga mut-ja geu-neun dang-yeon-ha-da-neun deut dae-dab-aet-da. eol-eum da nog-eu-myeon mul-mat-man nam-ja-na. geu-ri-go i-geon ni geo, eol-eum it-neun geol-lo.",
+      "en": "\"Why leave the ice out? Doesn't that make it watery?\" I asked, and he answered like it was obvious. \"Once the ice all melts, all that's left is watered-down flavor. And this one's yours — the one with ice.\"",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "'저기 앉아 있어. 진동벨 울리면 내가 가져올게.' 그가 진동벨을 손에 쥔 채 창가 자리를 턱짓으로 가리켰다.",
+      "reading": "jeo-gi anj-a iss-eo. jin-dong-bel ul-li-myeon nae-ga ga-jyeo-ol-ge. geu-ga jin-dong-bel-eul son-e jwin chae chang-ga ja-ri-reul teok-jit-eu-ro ga-ri-kyeot-da.",
+      "en": "\"Sit over there. I'll bring it when the buzzer goes off.\" He nodded toward the window seat, the buzzer already in his hand.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "잠시 후 진동벨이 요란하게 울리자, 용우가 얼음 없는 아메리카노 한 잔과 샷 추가된 한 잔을 들고 왔다. '샷 추가는 왜 넣어요?' '비행 전엔 이거 하나는 있어야 정신이 든다.' 그가 대수롭지 않게 답하며 자리에 앉았다.",
+      "reading": "jam-si hu jin-dong-bel-i yo-ran-ha-ge ul-li-ja, yong-u-ga eol-eum eop-neun a-me-ri-ka-no han jan-gwa syas chu-ga-doen han jan-eul deul-go wat-da. syas chu-ga-neun wae neo-eo-yo? bi-haeng jeon-en i-geo ha-na-neun iss-eo-ya jeong-sin-i deun-da. geu-ga dae-su-rop-ji an-ke dab-ha-myeo ja-ri-e anj-at-da.",
+      "en": "A moment later, the buzzer buzzed loudly, and Yongwoo came back with the no-ice Americano and the extra-shot one. \"Why the extra shot?\" \"Before a flight, I need at least this much to wake up.\" He answered offhandedly and took his seat.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "'다음엔 니가 직접 주문해 봐라. 어렵지 않다.' 그가 컵을 부딪치며 씩 웃었다. 별것 아닌 카페 주문 하나에도, 오늘 또 하나 배운 기분이었다.",
+      "reading": "da-eum-en ni-ga jik-jeop ju-mun-hae bwa-ra. eo-ryeop-ji an-ta. geu-ga keob-eul bu-dit-chi-myeo ssik us-eot-da. byeol-geot a-nin ka-pe ju-mun ha-na-e-do, o-neul tto ha-na bae-un gi-bun-i-eot-da.",
+      "en": "\"Next time, order it yourself. It's not hard.\" He clinked his cup against mine and grinned. Even something as small as a café order felt like one more thing I'd learned today."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "주문하다", "reading": "ju-mun-ha-da", "meaning": "to order (food or drinks)", "example": "커피를 두 잔 주문했다.", "example_reading": "keo-pi-reul du jan ju-mun-haet-da", "example_en": "I ordered two cups of coffee." },
+    { "id": "w02", "word": "포장", "reading": "po-jang", "meaning": "takeout, to go", "example": "포장으로 부탁드릴게요.", "example_reading": "po-jang-eu-ro bu-tak-deu-ril-ge-yo", "example_en": "To go, please." },
+    { "id": "w03", "word": "진동벨", "reading": "jin-dong-bel", "meaning": "buzzer/pager given to customers to signal an order is ready", "example": "진동벨이 울리면 가지러 가세요.", "example_reading": "jin-dong-bel-i ul-li-myeon ga-ji-reo ga-se-yo", "example_en": "Go pick it up when the buzzer rings." },
+    { "id": "w04", "word": "샷 추가", "reading": "syas chu-ga", "meaning": "extra espresso shot", "example": "저는 샷 추가해서 마셔요.", "example_reading": "jeo-neun syas chu-ga-hae-seo ma-syeo-yo", "example_en": "I drink mine with an extra shot." },
+    { "id": "w05", "word": "얼음을 빼다", "reading": "eol-eum-eul ppae-da", "meaning": "to leave out the ice (in a drink order)", "example": "얼음을 빼고 마시면 더 진해요.", "example_reading": "eol-eum-eul ppae-go ma-si-myeon deo jin-hae-yo", "example_en": "It tastes stronger if you leave out the ice." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "카페에서 아이스 아메리카노를 주문했다.", "reading": "ka-pe-e-seo a-i-seu a-me-ri-ka-no-reul ju-mun-haet-da", "en": "I ordered an iced Americano at the café." },
+    { "id": "s02", "ko": "여기서 드실 건가요, 포장이신가요?", "reading": "yeo-gi-seo deu-sil geon-ga-yo, po-jang-i-sin-ga-yo?", "en": "Will you be having it here, or is it to go?" },
+    { "id": "s03", "ko": "진동벨이 울리면 카운터로 가서 받으세요.", "reading": "jin-dong-bel-i ul-li-myeon ka-un-teo-ro ga-seo bad-eu-se-yo", "en": "When the buzzer rings, go to the counter to pick it up." },
+    { "id": "s04", "ko": "저는 커피가 연해서 샷 추가해서 마셔요.", "reading": "jeo-neun keo-pi-ga yeon-hae-seo syas chu-ga-hae-seo ma-syeo-yo", "en": "The coffee's too weak for me, so I add an extra shot." },
+    { "id": "s05", "ko": "얼음을 빼고 진하게 마시는 걸 좋아해요.", "reading": "eol-eum-eul ppae-go jin-ha-ge ma-si-neun geol jo-a-hae-yo", "en": "I like drinking it strong, without ice." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "용우", "text": "아이스 아메리카노 두 잔이요. 하나는 얼음 빼 주세요.", "reading": "a-i-seu a-me-ri-ka-no du jan-i-yo. ha-na-neun eol-eum ppae ju-se-yo.", "en": "Two iced Americanos. Leave the ice out of one." },
+        { "speaker": "승객", "text": "저는 그냥 얼음 있는 걸로 주세요.", "reading": "jeo-neun geu-nyang eol-eum it-neun geol-lo ju-se-yo.", "en": "I'll just have mine with ice, please." },
+        { "speaker": "용우", "text": "그래, 여기서 드세요, 포장하세요?", "reading": "geu-rae, yeo-gi-seo deu-se-yo, po-jang-ha-se-yo?", "en": "Alright. Will you have it here, or should I get it to go?" },
+        { "speaker": "승객", "text": "포장으로 해서 바다 보면서 마셔요.", "reading": "po-jang-eu-ro hae-seo ba-da bo-myeon-seo ma-syeo-yo.", "en": "Let's get it to go and drink it while looking at the ocean." }
+      ],
+      "question": "용우가 자신의 커피에서 얼음을 뺀 이유로 가장 알맞은 것은?",
+      "question_en": "What best explains why Yongwoo asked to have the ice left out of his own coffee?",
+      "correct_answer": "얼음이 녹으면 커피 맛이 밍밍해지는 것을 싫어해서",
+      "options": ["얼음이 녹으면 커피 맛이 밍밍해지는 것을 싫어해서", "치아가 약해서 찬 것을 못 먹어서", "카페 직원이 얼음이 없다고 해서", "승객과 잔을 헷갈리지 않으려고"],
+      "explanation": "용우는 얼음이 녹으면 커피 맛이 옅어진다고 생각해서 자신의 잔에서는 얼음을 빼 달라고 했습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "승객", "text": "근데 샷 추가는 왜 하는 거예요?", "reading": "geun-de syas chu-ga-neun wae ha-neun geo-ye-yo?", "en": "So why do you add an extra shot?" },
+        { "speaker": "용우", "text": "비행 전엔 이거 하나는 있어야 정신이 든다.", "reading": "bi-haeng jeon-en i-geo ha-na-neun iss-eo-ya jeong-sin-i deun-da.", "en": "Before a flight, I need at least this much to wake up." },
+        { "speaker": "승객", "text": "그럼 저도 다음엔 추가해 볼까요?", "reading": "geu-reom jeo-do da-eum-en chu-ga-hae bol-kka-yo?", "en": "Should I add one next time too, then?" },
+        { "speaker": "용우", "text": "너는 됐다, 밤에 잠 못 잔다.", "reading": "neo-neun dwaet-da, bam-e jam mot jan-da.", "en": "Not you, you won't be able to sleep at night." }
+      ],
+      "question": "용우가 카페인을 필요로 하는 이유로 가장 알맞은 것은?",
+      "question_en": "What best explains why Yongwoo needs the extra caffeine?",
+      "correct_answer": "비행 전에 정신을 맑게 하기 위해서",
+      "options": ["비행 전에 정신을 맑게 하기 위해서", "커피 맛을 더 좋아해서", "승객과 같은 것을 마시고 싶어서", "잠이 안 와서 습관적으로 마셔서"],
+      "explanation": "용우는 비행을 앞두고 정신을 차리기 위해 샷을 추가해서 마신다고 말했습니다."
+    }
+  ]
+}

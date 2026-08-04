@@ -1,0 +1,144 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(160deg, var(--blue) 0%, #005BAC 55%, var(--red) 100%);
+  animation: fadeIn 0.3s ease-out;
+}
+
+.bgPattern {
+  position: absolute;
+  inset: 0;
+  opacity: 0.07;
+  pointer-events: none;
+  background-image: repeating-linear-gradient(
+    45deg,
+    #fff 0px, #fff 1px,
+    transparent 1px, transparent 22px
+  );
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  padding: 24px;
+  animation: floatUp 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.logoWrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logoIcon {
+  font-size: 40px;
+  filter: drop-shadow(0 4px 12px rgba(255, 255, 255, 0.5));
+  animation: pulseIcon 2s ease-in-out infinite;
+}
+
+.logoText {
+  font-size: 34px;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  color: #fff;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* 비행기가 활주로를 따라 이륙하는 로딩 모션 */
+.runway {
+  position: relative;
+  width: 200px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.runwayLine {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 6px;
+  height: 2px;
+  background: repeating-linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.6) 0px, rgba(255, 255, 255, 0.6) 10px,
+    transparent 10px, transparent 20px
+  );
+}
+
+.plane {
+  position: absolute;
+  left: 0;
+  bottom: 8px;
+  font-size: 24px;
+  display: inline-block;
+  animation: takeOff 1.8s ease-in-out infinite;
+}
+
+.dots {
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--gold, #C9962A);
+  animation: dotBounce 1.2s ease-in-out infinite;
+}
+
+.dot:nth-child(2) { animation-delay: 0.15s; }
+.dot:nth-child(3) { animation-delay: 0.3s; }
+
+.message {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+}
+
+.messageEn {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+  margin-top: -18px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes floatUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulseIcon {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+@keyframes takeOff {
+  0% { left: 0; bottom: 8px; transform: rotate(0deg); }
+  60% { left: 168px; bottom: 8px; transform: rotate(0deg); }
+  100% { left: 200px; bottom: 26px; transform: rotate(-25deg); opacity: 0; }
+}
+
+@keyframes dotBounce {
+  0%, 80%, 100% { opacity: 0.35; transform: scale(0.85); }
+  40% { opacity: 1; transform: scale(1.15); }
+}
+
+:root[data-theme="dark"] .overlay {
+  background: linear-gradient(160deg, #002055 0%, #003478 55%, #A02028 100%);
+}

@@ -48,6 +48,31 @@
   animation: slideUp 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+:global(html[data-theme="dark"]) .modalCard {
+  background: #1B1F29;
+}
+
+:global(html[data-theme="dark"]) .modalTitle {
+  color: #F3F4F6;
+}
+
+:global(html[data-theme="dark"]) .modalSub {
+  color: #B4BAC6;
+}
+
+:global(html[data-theme="dark"]) .langItem {
+  background: #232837;
+  border-color: #383F52;
+}
+
+:global(html[data-theme="dark"]) .langName {
+  color: #F3F4F6;
+}
+
+:global(html[data-theme="dark"]) .selected {
+  background: rgba(59, 130, 246, 0.15) !important;
+}
+
 .modalHeader {
   display: flex;
   align-items: center;

@@ -16,6 +16,13 @@ CREATE TABLE IF NOT EXISTS users (
   level         INT          NOT NULL DEFAULT 1,
   membership    ENUM('free','premium') NOT NULL DEFAULT 'free',
   free_char_slots JSON       DEFAULT ('[]'),
+  free_chat_count INT        NOT NULL DEFAULT 0,
+  ad_coins_today  INT        NOT NULL DEFAULT 0,
+  ad_coins_date   DATE       NULL,
+  theme_pref       VARCHAR(10) NOT NULL DEFAULT 'light',
+  notify_chat      BOOLEAN     NOT NULL DEFAULT TRUE,
+  notify_diary     BOOLEAN     NOT NULL DEFAULT TRUE,
+  notify_marketing BOOLEAN     NOT NULL DEFAULT FALSE,
   is_withdrawn  BOOLEAN      NOT NULL DEFAULT FALSE,
   withdrawn_at  DATETIME,
   created_at    DATETIME     NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -98,6 +105,21 @@ CREATE TABLE IF NOT EXISTS diary_entries (
   INDEX idx_user_char (user_id, character_id)
 ) ENGINE=InnoDB;
 
+-- ── 편지 (지연 답장 — 답장은 reply_ready_at 이후 우편함을 열 때 그 자리에서 생성) ──
+CREATE TABLE IF NOT EXISTS letters (
+  id             VARCHAR(36)  PRIMARY KEY DEFAULT (UUID()),
+  user_id        VARCHAR(36)  NOT NULL,
+  character_id   VARCHAR(50)  NOT NULL,
+  content        TEXT         NOT NULL,
+  reply_content  TEXT         NULL,
+  sent_at        DATETIME     NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  reply_ready_at DATETIME     NOT NULL,
+  is_read        BOOLEAN      NOT NULL DEFAULT FALSE,
+  FOREIGN KEY (user_id)      REFERENCES users(id),
+  FOREIGN KEY (character_id) REFERENCES characters(id),
+  INDEX idx_user_char (user_id, character_id)
+) ENGINE=InnoDB;
+
 -- ── 단어장 ───────────────────────────────────────────────────
 CREATE TABLE IF NOT EXISTS vocab_items (
   id                   VARCHAR(36)  PRIMARY KEY DEFAULT (UUID()),
@@ -139,6 +161,75 @@ CREATE TABLE IF NOT EXISTS memberships (
   FOREIGN KEY (user_id) REFERENCES users(id)
 ) ENGINE=InnoDB;
 
+-- ── 결제 수단 (실제 카드 연동 없음 — 브랜드/끝 4자리만 저장하는 시뮬레이션) ───
+CREATE TABLE IF NOT EXISTS payment_methods (
+  id         VARCHAR(36) PRIMARY KEY DEFAULT (UUID()),
+  user_id    VARCHAR(36) NOT NULL,
+  brand      VARCHAR(20) NOT NULL,
+  last4      VARCHAR(4)  NOT NULL,
+  created_at DATETIME    NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (user_id) REFERENCES users(id)
+) ENGINE=InnoDB;
+
+-- ── 결제 내역 (실제 결제 검증 기록, 웹=포트원 / 안드로이드 앱=Google Play) ─────
+CREATE TABLE IF NOT EXISTS purchases (
+  id             VARCHAR(36)  PRIMARY KEY DEFAULT (UUID()),
+  user_id        VARCHAR(36)  NOT NULL,
+  platform       VARCHAR(20)  NOT NULL,
+  product_id     VARCHAR(100) NOT NULL,
+  purchase_token VARCHAR(500) NOT NULL,
+  status         VARCHAR(20)  NOT NULL DEFAULT 'verified',
+  created_at     DATETIME     NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (user_id) REFERENCES users(id),
+  UNIQUE KEY uq_purchase_token (platform, purchase_token)
+) ENGINE=InnoDB;
+
+-- ── 고객 지원 문의 ───────────────────────────────────────────
+CREATE TABLE IF NOT EXISTS support_tickets (
+  id         VARCHAR(36) PRIMARY KEY DEFAULT (UUID()),
+  user_id    VARCHAR(36),
+  name       VARCHAR(100) NOT NULL,
+  email      VARCHAR(255) NOT NULL,
+  category   VARCHAR(50)  NOT NULL,
+  message    TEXT         NOT NULL,
+  status     VARCHAR(20)  NOT NULL DEFAULT 'open',
+  created_at DATETIME     NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (user_id) REFERENCES users(id)
+) ENGINE=InnoDB;
+
+-- ── 번역 캐시 (챕터 콘텐츠 영어 텍스트 → UI 언어 번역, LLM 결과 캐싱) ──────
+CREATE TABLE IF NOT EXISTS translation_cache (
+  id              VARCHAR(36) PRIMARY KEY DEFAULT (UUID()),
+  text_hash       VARCHAR(64) NOT NULL,
+  target_lang     VARCHAR(10) NOT NULL,
+  source_text     TEXT        NOT NULL,
+  translated_text TEXT        NOT NULL,
+  created_at      DATETIME    NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  UNIQUE KEY uq_hash_lang (text_hash, target_lang)
+) ENGINE=InnoDB;
+
+-- ── 기장 사진첩 (캐릭터별 스탠딩 일러스트 카탈로그 + 유저별 코인 해금) ──────
+CREATE TABLE IF NOT EXISTS gallery_images (
+  id           VARCHAR(36) PRIMARY KEY DEFAULT (UUID()),
+  character_id VARCHAR(50) NOT NULL,
+  image_url    VARCHAR(255) NOT NULL,
+  title        VARCHAR(100),
+  `order`      INT         NOT NULL DEFAULT 0,
+  unlock_cost  INT         NOT NULL DEFAULT 0,
+  created_at   DATETIME    NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (character_id) REFERENCES characters(id)
+) ENGINE=InnoDB;
+
+CREATE TABLE IF NOT EXISTS user_gallery_unlocks (
+  id          VARCHAR(36) PRIMARY KEY DEFAULT (UUID()),
+  user_id     VARCHAR(36) NOT NULL,
+  image_id    VARCHAR(36) NOT NULL,
+  unlocked_at DATETIME    NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  UNIQUE KEY uq_user_image (user_id, image_id),
+  FOREIGN KEY (user_id) REFERENCES users(id),
+  FOREIGN KEY (image_id) REFERENCES gallery_images(id)
+) ENGINE=InnoDB;
+
 -- ── 시드 데이터: 권역 ─────────────────────────────────────────
 INSERT INTO regions (id, name, name_en, airport_code, description, description_en, place_count, is_locked) VALUES
   ('seoul',       '서울·경기', 'Seoul & Gyeonggi',     'SEL', '조선의 수도, 현대 한국의 심장',     'Capital of Korea, hub of modernity and tradition', 8, FALSE),
@@ -159,7 +250,7 @@ ON DUPLICATE KEY UPDATE name=name;
 
 -- ── 시드 데이터: 테스트 사용자 ──────────────────────────────
 INSERT INTO users (id, name, email, language, level, membership, free_char_slots) VALUES
-  ('user-001', 'Kim Traveler', 'test@kmate.app', 'en', 3, 'free', '["kyuhyun","haneul"]')
+  ('user-001', 'Kim Traveler', 'test@kmate.app', 'en', 1, 'free', '["kyuhyun","haneul"]')
 ON DUPLICATE KEY UPDATE name=name;
 
 INSERT INTO economies (user_id, coins) VALUES ('user-001', 35)

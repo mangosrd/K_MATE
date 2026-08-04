@@ -1,0 +1,93 @@
+{
+  "id": "sp-frd-yongwoo-06",
+  "character_id": "yongwoo",
+  "title": "말해봐라, 다 들어줄 테니까",
+  "emoji": "🫂",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "해가 뉘엿뉘엿 저물 무렵, 협재해변을 따라 나란히 걸었다. 파도 소리만 조용히 우리 사이를 채웠다.",
+      "reading": "hae-ga nwi-eot-nwi-eot jeo-mul mu-ryeop, hyeop-jae-hae-byeon-eul tta-ra na-ran-hi geol-eot-da. pa-do so-ri-man jo-yong-hi u-ri sa-i-reul chae-wot-da.",
+      "en": "As the sun slowly sank toward the horizon, we walked side by side along Hyeopjae Beach. Only the sound of waves quietly filled the space between us."
+    },
+    {
+      "text": "'요즘 무슨 고민 있제. 며칠째 표정이 안 좋다.' 용우가 먼저 말을 건넸다. 캐묻지 않고 그저 옆에서 기다려 주는 눈빛이었다.",
+      "reading": "yo-jeum mu-seun go-min it-je. myeo-chil-jjae pyo-jeong-i an jo-ta. yong-u-ga meon-jeo mal-eul geon-net-da. kae-mut-ji anh-go geu-jeo yeop-e-seo gi-da-ryeo ju-neun nun-bit-i-eot-da.",
+      "en": "'You've got something on your mind lately, right. Your face hasn't looked right for days.' Yongwoo spoke up first. He didn't press, just watched me with eyes that quietly waited alongside."
+    },
+    {
+      "text": "결국 나는 요즘 계속 불안했던 마음들을 하나씩 꺼내 놓았다. 진로에 대한 막막함, 앞이 안 보이는 미래에 대한 두려움까지.",
+      "reading": "gyeol-guk na-neun yo-jeum gye-sok bul-an-haet-deon ma-eum-deul-eul ha-na-ssik kkeo-nae noh-at-da. jin-lo-e dae-han mak-mak-ham, ap-i an bo-i-neun mi-rae-e dae-han du-ryeo-um-kka-ji.",
+      "en": "In the end, I started laying out, one by one, the anxious feelings I'd been carrying — the uncertainty about my path ahead, even the fear of a future I couldn't see clearly.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "'그런 거였나.' 용우가 낮게 중얼거리며 내 어깨를 가만히 토닥여 주었다. '누구나 그런 순간이 있다. 너만 그런 거 아니다.'",
+      "reading": "geu-reon geo-yeon-na. yong-u-ga naj-ge jung-eol-geo-ri-myeo nae eo-kkae-reul ga-man-hi to-dag-yeo ju-eot-da. nu-gu-na geu-reon sun-gan-i it-da. neo-man geu-reon geo a-ni-da.",
+      "en": "'So that's what it was.' Yongwoo murmured quietly and gently patted my shoulder. 'Everyone has moments like this. It's not just you.'",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "'…사실 나도 그렇다.' 뜻밖의 고백에 놀라 쳐다보자, 용우가 바다를 향한 채 속내를 털어놓기 시작했다. '기장이라고 다 완벽해야 되는 줄 알았다. 실수하면 안 된다는 압박감, 그거 매일 느낀다.'",
+      "reading": "sa-sil na-do geu-reo-ta. tteus-bakk-ui go-baeg-e nol-la chyeo-da-bo-ja, yong-u-ga ba-da-reul hyang-han chae sok-nae-reul teol-eo-noh-gi si-jak-haet-da. gi-jang-i-ra-go da wan-byeok-hae-ya doe-neun jul al-at-da. sil-su-ha-myeon an doen-da-neun ap-bak-gam, geu-geo mae-il neu-kkin-da.",
+      "en": "'...Honestly, I feel the same way.' Startled by the unexpected confession, I looked at him. Facing the sea, Yongwoo began opening up about his own inner thoughts. 'I thought being a captain meant I had to be perfect. I feel that pressure of not being allowed to make a mistake — every single day.'",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "'…한 번도 말한 적 없다, 이런 거.' 목소리가 살짝 떨리더니, 방송처럼 또렷하던 발음이 무너지고 낯선 억양이 섞여 나왔다. '니한테는 말해도 될 것 같아서.'",
+      "reading": "han beon-do mal-han jeog eob-da, i-reon geo. mok-so-ri-ga sal-jjak tteol-li-deo-ni, bang-song-cheo-reom tto-ryeot-ha-deon bal-eum-i mu-neo-ji-go nat-seon eog-yang-i seokk-yeo na-wat-da. ni-han-te-neun mal-hae-do doel geot gat-a-seo.",
+      "en": "'...I've never told anyone this before.' His voice trembled slightly, and the crisp, radio-announcer diction he always kept came apart, an unfamiliar accent slipping through. 'It just felt like I could say it to you.'",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "'나는 니 버팀목까진 못 돼도, 옆은 지켜줄 수 있다. 그거면 됐제.' 어둑해진 바다를 함께 바라보며, 우리 사이의 거리가 조금 더 가까워진 걸 느꼈다.",
+      "reading": "na-neun ni beot-tim-mok-kka-jin mot dwae-do, yeop-eun ji-kyeo-jul su it-da. geu-geo-myeon dwaet-je. eo-duk-hae-jin ba-da-reul ham-kke ba-ra-bo-myeo, u-ri sa-i-ui geo-ri-ga jo-geum deo ga-kka-wo-jin geol neu-kkyeot-da.",
+      "en": "'I might not be able to be your pillar of support, but I can stay by your side. That should be enough, right.' Gazing together at the darkening sea, I felt the distance between us had grown a little closer.",
+      "highlight_word_id": "w05"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "불안하다", "reading": "bul-an-ha-da", "meaning": "to feel anxious, uneasy", "example": "미래에 대한 생각에 마음이 불안했다.", "example_reading": "mi-rae-e dae-han saeng-gag-e ma-eum-i bul-an-haet-da", "example_en": "My mind felt uneasy thinking about the future." },
+    { "id": "w02", "word": "토닥이다", "reading": "to-dag-i-da", "meaning": "to pat gently, to comfort with light pats", "example": "그는 내 어깨를 토닥여 주었다.", "example_reading": "geu-neun nae eo-kkae-reul to-dag-yeo ju-eot-da", "example_en": "He gave my shoulder a gentle, comforting pat." },
+    { "id": "w03", "word": "속내", "reading": "sok-nae", "meaning": "one's true inner feelings, what's really on one's mind", "example": "그는 처음으로 속내를 털어놓았다.", "example_reading": "geu-neun cheo-eum-eu-ro sok-nae-reul teol-eo-noh-at-da", "example_en": "He opened up about his true feelings for the first time." },
+    { "id": "w04", "word": "압박감", "reading": "ap-bak-gam", "meaning": "a sense of pressure, being under pressure", "example": "실수하면 안 된다는 압박감이 컸다.", "example_reading": "sil-su-ha-myeon an doen-da-neun ap-bak-gam-i keot-da", "example_en": "The pressure of not being allowed to make a mistake was immense." },
+    { "id": "w05", "word": "버팀목", "reading": "beot-tim-mok", "meaning": "a pillar of support, something/someone to lean on", "example": "그는 힘든 시기의 버팀목이 되어 주었다.", "example_reading": "geu-neun him-deun si-gi-ui beot-tim-mog-i doe-eo ju-eot-da", "example_en": "He became a pillar of support during the hard times." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "나는 요즘 진로 때문에 마음이 불안했다.", "reading": "na-neun yo-jeum jin-lo ttae-mun-e ma-eum-i bul-an-haet-da", "en": "I'd been feeling anxious lately because of my career path." },
+    { "id": "s02", "ko": "그는 말없이 내 어깨를 토닥여 주었다.", "reading": "geu-neun mal-eop-si nae eo-kkae-reul to-dag-yeo ju-eot-da", "en": "He silently gave my shoulder a comforting pat." },
+    { "id": "s03", "ko": "용우도 처음으로 자신의 속내를 털어놓았다.", "reading": "yong-u-do cheo-eum-eu-ro ja-sin-ui sok-nae-reul teol-eo-noh-at-da", "en": "Yongwoo, too, opened up about his true feelings for the first time." },
+    { "id": "s04", "ko": "그는 실수하면 안 된다는 압박감을 매일 느꼈다.", "reading": "geu-neun sil-su-ha-myeon an doen-da-neun ap-bak-gam-eul mae-il neu-kkyeot-da", "en": "He felt the pressure of not being allowed to make a mistake every day." },
+    { "id": "s05", "ko": "그는 나에게 버팀목이 되어 주겠다고 말했다.", "reading": "geu-neun na-e-ge beot-tim-mog-i doe-eo ju-get-da-go mal-haet-da", "en": "He said he would be a pillar of support for me." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "용우", "text": "요즘 무슨 고민 있제. 며칠째 표정이 안 좋다.", "reading": "yo-jeum mu-seun go-min it-je. myeo-chil-jjae pyo-jeong-i an jo-ta.", "en": "You've got something on your mind lately, right. Your face hasn't looked right for days." },
+        { "speaker": "승객", "text": "티 났어? 사실 요즘 진로 때문에 마음이 좀 불안해.", "reading": "ti nass-eo? sa-sil yo-jeum jin-lo ttae-mun-e ma-eum-i jom bul-an-hae.", "en": "Was it that obvious? Honestly, I've been anxious about my career path lately." },
+        { "speaker": "용우", "text": "말해봐라. 다 들어줄 테니까.", "reading": "mal-hae-bwa-ra. da deul-eo-jul te-ni-kka.", "en": "Talk to me. I'll listen to all of it." },
+        { "speaker": "승객", "text": "고마워. 사실 앞이 하나도 안 보여서 무서웠어.", "reading": "go-ma-wo. sa-sil ap-i ha-na-do an bo-yeo-seo mu-seo-wot-eo.", "en": "Thanks. Honestly, I was scared because I couldn't see the way ahead at all." }
+      ],
+      "question": "고민을 털어놓는 손님을 대하는 용우의 태도로 가장 알맞은 것은?",
+      "question_en": "What best describes Yongwoo's attitude toward the passenger opening up about their worries?",
+      "correct_answer": "재촉하지 않고 끝까지 들어주려는 태도",
+      "options": ["재촉하지 않고 끝까지 들어주려는 태도", "별일 아니라며 무시하는 태도", "빨리 해결책부터 제시하려는 태도", "듣기 귀찮아하는 태도"],
+      "explanation": "용우는 재촉하지 않고 손님이 마음을 다 털어놓을 수 있도록 끝까지 들어주는 태도를 보였습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "승객", "text": "너도 그런 고민 있어? 항상 자신감 넘쳐 보이는데.", "reading": "neo-do geu-reon go-min iss-eo? hang-sang ja-sin-gam neom-chyeo bo-i-neun-de.", "en": "Do you have worries like that too? You always seem so confident." },
+        { "speaker": "용우", "text": "…사실 나도 그렇다. 기장이라고 실수하면 안 된다는 압박감, 매일 느낀다.", "reading": "sa-sil na-do geu-reo-ta. gi-jang-i-ra-go sil-su-ha-myeon an doen-da-neun ap-bak-gam, mae-il neu-kkin-da.", "en": "...Honestly, I do too. The pressure of not being allowed to make a mistake because I'm a captain — I feel it every day." },
+        { "speaker": "승객", "text": "그런 얘기 처음 듣는다. 힘들었겠다.", "reading": "geu-reon yae-gi cheo-eum deun-neun-da. him-deul-eot-get-da.", "en": "I'm hearing this for the first time. That must have been hard." },
+        { "speaker": "용우", "text": "…한 번도 말한 적 없다. 니한테는 말해도 될 것 같아서.", "reading": "han beon-do mal-han jeog eob-da. ni-han-te-neun mal-hae-do doel geot gat-a-seo.", "en": "...I've never told anyone. It just felt like I could say it to you." }
+      ],
+      "question": "용우가 처음으로 자신의 속내를 털어놓은 이유로 가장 알맞은 것은?",
+      "question_en": "What best explains why Yongwoo opened up about his true feelings for the first time?",
+      "correct_answer": "손님을 믿는 마음이 커서 자신도 마음을 열게 되었다",
+      "options": ["손님을 믿는 마음이 커서 자신도 마음을 열게 되었다", "술을 마셔서 저절로 말이 나왔다", "손님이 강하게 캐물어서 어쩔 수 없었다", "그냥 아무에게나 하는 말버릇이다"],
+      "explanation": "용우는 손님을 향한 깊은 신뢰가 쌓였기에, 평소 누구에게도 하지 않던 자신의 속내를 처음으로 털어놓았습니다."
+    }
+  ]
+}

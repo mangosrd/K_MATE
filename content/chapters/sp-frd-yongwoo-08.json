@@ -1,0 +1,92 @@
+{
+  "id": "sp-frd-yongwoo-08",
+  "character_id": "yongwoo",
+  "title": "불 앞에서는 다 솔직해진다",
+  "emoji": "⛺",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "함덕 해변 근처 캠핑장에 도착하자, 용우는 망설임 없이 능숙한 손놀림으로 텐트를 치기 시작했다.",
+      "reading": "ham-deok hae-byeon geun-cheo kaem-ping-jang-e do-chak-ha-ja, yong-u-neun mang-seol-im eob-si neung-suk-han son-nol-lim-eu-ro ten-teu-reul chi-gi si-jak-haet-da.",
+      "en": "The moment we arrived at the campground near Hamdeok Beach, Yongwoo started pitching the tent with skilled, unhesitating hands.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "도와준답시고 나선 나는 오히려 폴대를 반대로 꽂는 실수를 했다. '가만있어라, 그냥.' 핀잔을 주면서도 용우는 웃음을 참는 눈치였다.",
+      "reading": "do-wa-jun-dap-si-go na-seon na-neun o-hi-ryeo pol-dae-reul ban-dae-ro kkoj-neun sil-su-reul haet-da. ga-man-it-eo-ra, geu-nyang. pin-jan-eul ju-myeon-seo-do yong-u-neun us-eum-eul cham-neun nun-chi-yeot-da.",
+      "en": "Trying to help, I only managed to plant a pole in backward. 'Just stay still.' Even as he scolded me, Yongwoo looked like he was holding back a laugh."
+    },
+    {
+      "text": "장작을 패고 모닥불을 피우는 손길에는 군더더기가 없었다. 순식간에 타오르는 불꽃을 보며 나는 감탄할 수밖에 없었다.",
+      "reading": "jang-jag-eul pae-go mo-dak-bul-eul pi-u-neun son-gil-e-neun gun-deo-deo-gi-ga eob-seot-da. sun-sik-gan-e ta-o-reu-neun bul-kkoch-eul bo-myeo na-neun gam-tan-hal su-bakk-e eob-seot-da.",
+      "en": "The way he split firewood and started the bonfire had no wasted motion at all. Watching the flames leap up in an instant, I couldn't help but be impressed.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "우리는 모닥불 앞에 나란히 앉아 말없이 불멍을 즐겼다. 타닥타닥 장작 타는 소리만이 조용히 밤공기를 채웠다.",
+      "reading": "u-ri-neun mo-dak-bul ap-e na-ran-hi anj-a mal-eop-si bul-meong-eul jeul-gyeot-da. ta-dak-ta-dak jang-jak ta-neun so-ri-man-i jo-yong-hi bam-gong-gi-reul chae-wot-da.",
+      "en": "We sat side by side in front of the fire, quietly zoning out to the flames without a word. Only the crackling of burning wood quietly filled the night air.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "고개를 들자 밤하늘 가득 별이 쏟아질 듯 펼쳐져 있었다. 굳이 말을 하지 않아도 이 시간이 편안하게 느껴졌다.",
+      "reading": "go-gae-reul deul-ja bam-ha-neul ga-deuk byeol-i ssod-a-jil deut pyeol-chyeo-jyeo iss-eot-da. gud-i mal-eul ha-ji anh-a-do i si-gan-i pyeon-an-ha-ge neu-kkyeo-jyeot-da.",
+      "en": "Looking up, the night sky stretched out full of stars, as if they might come pouring down. I didn't need to say anything for this moment to feel comfortable."
+    },
+    {
+      "text": "'어릴 때는 이런 불 보는 시간도 없었다.' 용우가 불빛에 비친 얼굴로 조용히 입을 열었다. '태권도 훈련 끝나면 쓰러져 자기 바빴으니까.'",
+      "reading": "eo-ril ttae-neun i-reon bul bo-neun si-gan-do eob-seot-da. yong-u-ga bul-bit-e bi-chin eol-gul-lo jo-yong-hi ib-eul yeol-eot-da. tae-kwon-do hun-lyeon kkeut-na-myeon sseu-reo-jyeo ja-gi ba-ppass-eu-ni-kka.",
+      "en": "'As a kid, I never even had time to sit and watch a fire like this.' Yongwoo spoke quietly, his face lit by the flames. 'The moment taekwondo training ended, I was too busy collapsing into sleep.'"
+    },
+    {
+      "text": "밤이 깊어 불씨를 정리하며 하루를 마무리했다. '오늘처럼 아무것도 안 하고 편하게 보낸 날도 오랜만이다.' 낮게 웃는 용우의 목소리가 어둠 속에서 따뜻하게 울렸다.",
+      "reading": "bam-i gip-eo bul-ssi-reul jeong-ni-ha-myeo ha-ru-reul ma-mu-ri-haet-da. o-neul-cheo-reom a-mu-geot-do an ha-go pyeon-ha-ge bo-naen nal-do o-raen-man-i-da. naj-ge us-neun yong-u-ui mok-so-ri-ga eo-dum sog-e-seo tta-tteut-ha-ge ul-lyeot-da.",
+      "en": "As night deepened, we wrapped up the day by tending to the dying embers. 'It's been a while since I had a day this relaxed, doing absolutely nothing.' Yongwoo's low laugh echoed warmly through the darkness.",
+      "highlight_word_id": "w05"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "텐트를 치다", "reading": "ten-teu-reul chi-da", "meaning": "to pitch a tent", "example": "우리는 캠핑장에 텐트를 쳤다.", "example_reading": "u-ri-neun kaem-ping-jang-e ten-teu-reul chyeot-da", "example_en": "We pitched a tent at the campground." },
+    { "id": "w02", "word": "장작", "reading": "jang-jak", "meaning": "firewood", "example": "장작을 패서 모닥불을 피웠다.", "example_reading": "jang-jag-eul pae-seo mo-dak-bul-eul pi-wot-da", "example_en": "We split firewood and lit a bonfire." },
+    { "id": "w03", "word": "군더더기", "reading": "gun-deo-deo-gi", "meaning": "excess, unnecessary/wasted movement or fluff", "example": "그의 동작에는 군더더기가 없었다.", "example_reading": "geu-ui dong-jag-e-neun gun-deo-deo-gi-ga eob-seot-da", "example_en": "There wasn't a single wasted motion in his movements." },
+    { "id": "w04", "word": "불멍", "reading": "bul-meong", "meaning": "staring blankly at a fire, zoning out to the flames", "example": "모닥불 앞에서 불멍을 즐겼다.", "example_reading": "mo-dak-bul ap-e-seo bul-meong-eul jeul-gyeot-da", "example_en": "We enjoyed zoning out in front of the campfire." },
+    { "id": "w05", "word": "밤공기", "reading": "bam-gong-gi", "meaning": "night air", "example": "밤공기가 차갑고 상쾌했다.", "example_reading": "bam-gong-gi-ga cha-gap-go sang-kwae-haet-da", "example_en": "The night air was cool and refreshing." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "용우는 능숙하게 텐트를 쳤다.", "reading": "yong-u-neun neung-suk-ha-ge ten-teu-reul chyeot-da", "en": "Yongwoo skillfully pitched the tent." },
+    { "id": "s02", "ko": "그는 장작을 패서 모닥불을 피웠다.", "reading": "geu-neun jang-jag-eul pae-seo mo-dak-bul-eul pi-wot-da", "en": "He split firewood and started a bonfire." },
+    { "id": "s03", "ko": "그의 손길에는 군더더기가 전혀 없었다.", "reading": "geu-ui son-gil-e-neun gun-deo-deo-gi-ga jeon-hyeo eob-seot-da", "en": "There was absolutely no wasted motion in his hands." },
+    { "id": "s04", "ko": "우리는 모닥불 앞에서 조용히 불멍을 즐겼다.", "reading": "u-ri-neun mo-dak-bul ap-e-seo jo-yong-hi bul-meong-eul jeul-gyeot-da", "en": "We quietly enjoyed staring at the campfire together." },
+    { "id": "s05", "ko": "차가운 밤공기가 오히려 상쾌하게 느껴졌다.", "reading": "cha-ga-un bam-gong-gi-ga o-hi-ryeo sang-kwae-ha-ge neu-kkyeo-jyeot-da", "en": "The cool night air felt refreshing instead of cold." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "승객", "text": "내가 도와줄게. 이거 어떻게 하는 거야?", "reading": "nae-ga do-wa-jul-ge. i-geo eo-tteo-ke ha-neun geo-ya?", "en": "I'll help you. How do you do this part?" },
+        { "speaker": "용우", "text": "가만있어라, 그냥. 폴대 반대로 꽂았잖아.", "reading": "ga-man-it-eo-ra, geu-nyang. pol-dae ban-dae-ro kkoj-at-jan-a.", "en": "Just stay still. You put the pole in backward." },
+        { "speaker": "승객", "text": "아, 미안. 나 이런 거 진짜 처음이라.", "reading": "a, mi-an. na i-reon geo jin-jja cheo-eum-i-ra.", "en": "Ah, sorry. This is really my first time doing this." },
+        { "speaker": "용우", "text": "됐다, 구경이나 해라. 금방 끝난다.", "reading": "dwaet-da, gu-gyeong-i-na hae-ra. geum-bang kkeut-nan-da.", "en": "It's fine, just watch. It'll be done in no time." }
+      ],
+      "question": "텐트를 치다 실수한 손님에게 용우가 보인 태도로 가장 알맞은 것은?",
+      "question_en": "What best describes Yongwoo's attitude toward the passenger's mistake while pitching the tent?",
+      "correct_answer": "짜증 내지 않고 배려하며 직접 마무리해 주었다",
+      "options": ["짜증 내지 않고 배려하며 직접 마무리해 주었다", "실수를 크게 꾸짖었다", "도움을 거절하고 혼자 하라고 했다", "귀찮아하며 자리를 피했다"],
+      "explanation": "용우는 핀잔을 주는 척했지만 짜증 내지 않고, 배려하는 마음으로 직접 텐트 치는 일을 마무리해 주었습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "승객", "text": "무슨 생각해? 표정이 편안해 보여.", "reading": "mu-seun saeng-gag-hae? pyo-jeong-i pyeon-an-hae bo-yeo.", "en": "What are you thinking about? You look relaxed." },
+        { "speaker": "용우", "text": "그냥, 어릴 때 생각이 좀 났다. 태권도 훈련 끝나면 쓰러져 자기 바빴으니까.", "reading": "geu-nyang, eo-ril ttae saeng-gag-i jom nat-da. tae-kwon-do hun-lyeon kkeut-na-myeon sseu-reo-jyeo ja-gi ba-ppass-eu-ni-kka.", "en": "Just thinking about when I was a kid. Once taekwondo training ended, I was too busy collapsing into sleep." },
+        { "speaker": "승객", "text": "그렇게 힘들었어? 처음 듣는 얘기다.", "reading": "geu-reo-ke him-deul-eoss-eo? cheo-eum deun-neun i-ya-gi-da.", "en": "It was that hard? I'm hearing this for the first time." },
+        { "speaker": "용우", "text": "…오늘처럼 아무것도 안 하고 편하게 보낸 날도 오랜만이라 그런가 보다.", "reading": "o-neul-cheo-reom a-mu-geot-do an ha-go pyeon-ha-ge bo-naen nal-do o-raen-man-i-ra geu-reon-ga bo-da.", "en": "...I guess it's because it's been a while since I had a day this relaxed, doing nothing like today." }
+      ],
+      "question": "용우가 불멍을 하며 어릴 적 이야기를 꺼낸 이유로 가장 알맞은 것은?",
+      "question_en": "What best explains why Yongwoo brought up his childhood while staring at the fire?",
+      "correct_answer": "편안한 분위기 속에서 자연스럽게 마음이 열렸다",
+      "options": ["편안한 분위기 속에서 자연스럽게 마음이 열렸다", "손님에게 훈련의 고됨을 자랑하고 싶어서다", "화제를 돌려 다른 이야기를 피하려는 것이다", "그냥 심심해서 아무 말이나 한 것이다"],
+      "explanation": "모닥불 앞의 편안한 분위기 속에서 용우는 자연스럽게 마음을 열고 평소 잘 하지 않던 어릴 적 이야기를 꺼냈습니다."
+    }
+  ]
+}

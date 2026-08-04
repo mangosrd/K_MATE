@@ -123,7 +123,7 @@ export const MOCK_REGIONS: Region[] = [
     id: "chungcheong",
     name: "충청·공주",
     name_en: "Chungcheong & Gongju",
-    airport_code: "CJU",
+    airport_code: "CJJ",
     description: "백제의 숨결이 살아있는 역사의 땅",
     description_en: "Land of history — heartland of the Baekje kingdom",
     thumbnail_url: "/regions/chungcheong.jpg",
@@ -334,84 +334,128 @@ const ROMANCE_CHAPTERS: SpecialChapter[] = [
 export const SPECIAL_CHAPTERS: SpecialChapter[] = [
   ...ROMANCE_CHAPTERS,
 
-  // ☕ 일상 스토리 (10개)
-  { id: "sp-day-01", category: "daily", order: 1, title: "아침 인사와 하루 시작", title_en: "Morning Greetings", description: "기분 좋은 아침 인사와 일상 안부 묻기", emoji: "🌅", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
-  { id: "sp-day-02", category: "daily", order: 2, title: "한국 카페에서 음료 주문", title_en: "Ordering Drinks at Cafe", description: "아아(아이스타메리카노) 및 디저트 주문하기", emoji: "🍹", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
-  { id: "sp-day-03", category: "daily", order: 3, title: "편의점과 마트 꿀팁 탐방", title_en: "Convenience Store Tips", description: "1+1 행사, 꿀조합 음식과 결제 대화", emoji: "🏪", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
-  { id: "sp-day-04", category: "daily", order: 4, title: "지하철과 버스 탑승", title_en: "Subway & Bus Travel", description: "교통카드 찍기, 환승하기, 길 물어보기", emoji: "🚇", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
-  { id: "sp-day-05", category: "daily", order: 5, title: "오늘의 날씨와 옷차림", title_en: "Weather & Outfit Chat", description: "일기예보 확인 및 옷차림 관련 일상 표현", emoji: "☀️", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
-  { id: "sp-day-06", category: "daily", order: 6, title: "주말 휴식과 취미 생활", title_en: "Weekend Rest & Hobbies", description: "영화 보기, 운동하기, 쉬는 날 이야기", emoji: "🎧", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
-  { id: "sp-day-07", category: "daily", order: 7, title: "병원과 약국 이용하기", title_en: "Hospital & Pharmacy", description: "증상 설명하기, 약 복용법 알아듣기", emoji: "💊", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
-  { id: "sp-day-08", category: "daily", order: 8, title: "집들과 이웃 간 인사", title_en: "Housewarming & Neighbors", description: "한국의 집 구하기, 집들이 선물과 인사", emoji: "🏡", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
-  { id: "sp-day-09", category: "daily", order: 9, title: "택시 타기와 길 찾기", title_en: "Taxis & Navigation", description: "네비게이션과 기사님께 목적지 말하기", emoji: "🚕", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
-  { id: "sp-day-10", category: "daily", order: 10, title: "소중한 하루의 마무리", title_en: "Ending a Precious Day", description: "하루 소감 나누기, 밤 인사와 잘 자라는 표현", emoji: "🌙", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  // ☕ 일상 스토리 — 로맨스 아닌 슬라이스 오브 라이프, 기장별 동일한 10개 주제(아침/카페/편의점/
+  // 대중교통/날씨/취미/병원/집들이/택시/하루마무리)를 각자의 지역·성격으로 풀어낸 스토리 (기장당 10개, 총 50개)
+  // 규현·하늘 = 무료(기본형, level/dialogues 없음) · 선우·상우·용우 = 프리미엄(중고급형, level+dialogues 2개)
+  { id: "sp-day-kyuhyun-01", category: "daily", character_id: "kyuhyun", order: 1, title: "아침을 여는 인사", title_en: "A Greeting That Opens the Morning", description: "골목 어귀에서 커피를 들고 기다리는 규현과 나누는 상쾌한 아침 인사", emoji: "☀️", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-day-kyuhyun-02", category: "daily", character_id: "kyuhyun", order: 2, title: "아이스 아메리카노 주세요", title_en: "One Iced Americano, Please", description: "카페에서 규현의 도움으로 첫 음료 주문에 도전하는 이야기", emoji: "☕", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-day-kyuhyun-03", category: "daily", character_id: "kyuhyun", order: 3, title: "편의점 꿀템 탐방", title_en: "A Tour of Convenience Store Tips", description: "저녁 편의점에서 삼각김밥과 1+1 꿀팁을 알려주는 규현", emoji: "🏪", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-day-kyuhyun-04", category: "daily", character_id: "kyuhyun", order: 4, title: "환승은 이쪽으로", title_en: "Transfer This Way", description: "붐비는 지하철과 버스를 규현과 함께 갈아타며 이동하는 하루", emoji: "🚇", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-day-kyuhyun-05", category: "daily", character_id: "kyuhyun", order: 5, title: "쌀쌀한 날의 겉옷", title_en: "A Jacket for a Chilly Day", description: "갑자기 쌀쌀해진 날씨에 겉옷과 우산을 챙겨주는 규현", emoji: "🌦️", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-day-kyuhyun-06", category: "daily", character_id: "kyuhyun", order: 6, title: "여유로운 주말 오후", title_en: "A Leisurely Weekend Afternoon", description: "한강공원에서 뒹굴며 서로의 취미를 이야기하는 여유로운 주말", emoji: "🌿", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-day-kyuhyun-07", category: "daily", character_id: "kyuhyun", order: 7, title: "감기 기운이 있어서", title_en: "Coming Down with a Cold", description: "감기 걸린 나를 병원과 약국에 데려가 챙겨주는 규현", emoji: "💊", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-day-kyuhyun-08", category: "daily", character_id: "kyuhyun", order: 8, title: "이사떡 돌리는 날", title_en: "Handing Out Moving-Day Rice Cake", description: "새로 이사한 집에서 이사떡을 들고 이웃에게 인사하러 다니는 이야기", emoji: "🏠", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-day-kyuhyun-09", category: "daily", character_id: "kyuhyun", order: 9, title: "여기서 세워주세요", title_en: "Please Stop Here", description: "길을 잃어 결국 택시를 잡아타고 목적지를 찾아가는 소동", emoji: "🚕", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-day-kyuhyun-10", category: "daily", character_id: "kyuhyun", order: 10, title: "잘 자요, 내일 봐요", title_en: "Good Night, See You Tomorrow", description: "노을 지는 언덕에서 하루를 돌아보고 집까지 배웅받는 하루의 마무리", emoji: "🌇", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
 
-  // 🤝 친구 스토리 (10개)
-  { id: "sp-frd-01", category: "friendship", order: 1, title: "반가운 친구와의 재회", title_en: "Reunion with Friend", description: "오랜만에 만난 친구와 나누는 격식 없는 표현", emoji: "🙋‍♂️", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
-  { id: "sp-frd-02", category: "friendship", order: 2, title: "치맥(치킨과 맥주) 모임", title_en: "Chicken & Beer Hangout", description: "한국 야식 문화와 친구끼리 건배하기", emoji: "🍗", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
-  { id: "sp-frd-03", category: "friendship", order: 3, title: "한국 유행어와 신조어", title_en: "Korean Slang & Buzzwords", description: "'대박', '진짜?', '대박사건' 재미있는 유행어", emoji: "🔥", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
-  { id: "sp-frd-04", category: "friendship", order: 4, title: "노래방에서 신나게 부르기", title_en: "Karaoke Singing Night", description: "노래 신청하기, 점수 경쟁, 애창곡 이야기", emoji: "🎤", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
-  { id: "sp-frd-05", category: "friendship", order: 5, title: "맛집 줄 서기와 음식 나누기", title_en: "Foodie Lines & Sharing", description: "맛집 웨이팅, 더피더치(N빵) 나누기", emoji: "🍲", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
-  { id: "sp-frd-06", category: "friendship", order: 6, title: "고민 상담과 깊은 우정", title_en: "Heart-to-Heart Chat", description: "솔직한 고민을 나누고 위로하는 표현", emoji: "🫂", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
-  { id: "sp-frd-07", category: "friendship", order: 7, title: "놀이공원 교복 데이", title_en: "Amusement Park Uniform Day", description: "롯데월드/에버랜드 기구 타기 사진 찍기", emoji: "🎡", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
-  { id: "sp-frd-08", category: "friendship", order: 8, title: "캠핑과 장작불 불멍", title_en: "Camping & Campfire Chat", description: "밤하늘 아래 장작불 켜고 나누는 이야기", emoji: "⛺", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
-  { id: "sp-frd-09", category: "friendship", order: 9, title: "잊지 못할 여행 추억", title_en: "Unforgettable Memories", description: "친구들과 사진 찍고 추억을 회상하기", emoji: "📸", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
-  { id: "sp-frd-10", category: "friendship", order: 10, title: "우정은 영원히!", title_en: "Friends Forever!", description: "평생 함께할 든든한 한국 친구와의 우정", emoji: "🌟", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-day-haneul-01", category: "daily", character_id: "haneul", order: 1, title: "골목길의 아침 인사", title_en: "Good Morning in the Alley", description: "안개 낀 한옥마을 골목에서 하늘과 함께 시작하는 아침 산책", emoji: "🌄", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-day-haneul-02", category: "daily", character_id: "haneul", order: 2, title: "객리단길, 아메리카노 한 잔", title_en: "A Cup of Americano on Gaekridan-gil", description: "객리단길 카페에서 하늘이 알아서 챙겨주는 커피 한 잔의 시간", emoji: "☕", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-day-haneul-03", category: "daily", character_id: "haneul", order: 3, title: "편의점에서, 오후의 간식", title_en: "Afternoon Snacks at the Convenience Store", description: "무더운 오후, 편의점에서 마주치는 소소한 장보기 순간들", emoji: "🏪", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-day-haneul-04", category: "daily", character_id: "haneul", order: 4, title: "버스를 타고", title_en: "Riding the Bus", description: "지하철 없는 전주에서 버스로 이동하며 배우는 대중교통 이용법", emoji: "🚌", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-day-haneul-05", category: "daily", character_id: "haneul", order: 5, title: "오늘 날씨엔 이 옷", title_en: "Dressed for Today's Weather", description: "변덕스러운 날씨에 맞춰 옷차림을 챙겨주는 하늘의 무심한 배려", emoji: "🧥", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-day-haneul-06", category: "daily", character_id: "haneul", order: 6, title: "카메라를 든 주말", title_en: "A Weekend with a Camera", description: "비번인 주말, 카메라를 든 하늘과 함께하는 전주천 산책", emoji: "📷", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-day-haneul-07", category: "daily", character_id: "haneul", order: 7, title: "약국 가는 길", title_en: "On the Way to the Pharmacy", description: "몸살이 난 날, 하늘과 함께 병원과 약국을 오가는 하루", emoji: "💊", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-day-haneul-08", category: "daily", character_id: "haneul", order: 8, title: "소박한 집들이", title_en: "A Simple Housewarming", description: "새 집에 놀러 온 하늘과 함께하는 소박한 집들이와 이웃 인사", emoji: "🏠", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-day-haneul-09", category: "daily", character_id: "haneul", order: 9, title: "막차 대신 택시", title_en: "A Taxi Instead of the Last Bus", description: "막차를 놓친 밤, 택시를 타고 집으로 돌아가는 길", emoji: "🚕", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-day-haneul-10", category: "daily", character_id: "haneul", order: 10, title: "노을 아래, 하루의 끝", title_en: "End of the Day, Beneath the Sunset", description: "노을 지는 강변에서 하루를 마무리하며 나누는 편안한 대화", emoji: "🌇", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+
+  { id: "sp-day-sunwoo-01", category: "daily", character_id: "sunwoo", order: 1, title: "눈뜨자마자 온 전화", title_en: "The Call the Moment I Woke Up", description: "선우가 늦잠 자는 승객을 놀리듯 깨워 함께 아침 산책을 시작하는 이야기", emoji: "🌅", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-day-sunwoo-02", category: "daily", character_id: "sunwoo", order: 2, title: "오늘의 당 충전", title_en: "Today's Sugar Refill", description: "전포 카페거리에서 음료를 주문하고 포장해 바다 앞에서 마시기로 하는 이야기", emoji: "☕", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-day-sunwoo-03", category: "daily", character_id: "sunwoo", order: 3, title: "편의점 단골의 자격", title_en: "Regular at the Convenience Store", description: "밤 산책 중 편의점에 들러 1+1, 포인트 적립 등 꿀팁을 나누는 이야기", emoji: "🏪", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-day-sunwoo-04", category: "daily", character_id: "sunwoo", order: 4, title: "서면에서 갈아타는 법", title_en: "How to Transfer at Seomyeon", description: "지하철에서 버스로 갈아타며 노선도와 하차벨을 챙기는 이야기", emoji: "🚇", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-day-sunwoo-05", category: "daily", character_id: "sunwoo", order: 5, title: "일교차가 심하다카네", title_en: "The Weather Swing Is No Joke", description: "일교차 심한 날씨를 확인하고 겉옷과 우산을 챙기는 이야기", emoji: "🌤️", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-day-sunwoo-06", category: "daily", character_id: "sunwoo", order: 6, title: "언덕 위의 취미 생활", title_en: "Hobbies on the Hill", description: "김해공항 근처 언덕에서 비행기 사진을 찍으며 여유로운 주말을 보내는 이야기", emoji: "🎨", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-day-sunwoo-07", category: "daily", character_id: "sunwoo", order: 7, title: "약은 식후 삼십 분", title_en: "Take This After Meals", description: "감기 증상으로 병원과 약국을 함께 다녀오는 이야기", emoji: "💊", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-day-sunwoo-08", category: "daily", character_id: "sunwoo", order: 8, title: "떡 돌리는 날", title_en: "The Day We Hand Out Rice Cake", description: "새집으로 이사해 짐 정리와 떡 돌리기, 작은 집들이를 하는 이야기", emoji: "🏠", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-day-sunwoo-09", category: "daily", character_id: "sunwoo", order: 9, title: "기사님이 아시는 지름길", title_en: "The Shortcut the Driver Knows", description: "택시를 타고 이동하다 내비게이션 오류를 기사님의 지름길로 해결하는 이야기", emoji: "🚕", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-day-sunwoo-10", category: "daily", character_id: "sunwoo", order: 10, title: "노을 속으로", title_en: "Into the Sunset", description: "동백섬 노을을 보며 하루를 되짚고 집 앞까지 배웅받으며 마무리하는 이야기", emoji: "🌇", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+
+  { id: "sp-day-sangwoo-01", category: "daily", character_id: "sangwoo", order: 1, title: "좋은 아침입니다", title_en: "Good Morning", description: "공산성 아침 산책. 상우가 '기상' 표현으로 컨디션을 확인하며 하루를 브리핑하듯 시작하는 이야기", emoji: "🌅", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-day-sangwoo-02", category: "daily", character_id: "sangwoo", order: 2, title: "무엇으로 주문하시겠습니까", title_en: "What Would You Like to Order", description: "제민천 한옥 카페에서 음료를 주문하고 테이크아웃해 걷는 이야기", emoji: "☕", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-day-sangwoo-03", category: "daily", character_id: "sangwoo", order: 3, title: "편의점 브리핑", title_en: "Convenience Store Briefing", description: "편의점에서 유통기한·원플러스원·적립·시식을 화물 점검하듯 꼼꼼히 챙기는 이야기", emoji: "🏪", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-day-sangwoo-04", category: "daily", character_id: "sangwoo", order: 4, title: "정류장에서, 로저", title_en: "At the Stop, Roger", description: "공주-대전 버스와 지하철 환승을 정시성 있게 챙기는 이야기", emoji: "🚌", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-day-sangwoo-05", category: "daily", character_id: "sangwoo", order: 5, title: "오늘의 기상 브리핑", title_en: "Today's Weather Briefing", description: "기상예보·체감온도·일교차를 확인해 겉옷을 챙겨주는 이야기", emoji: "🌤️", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-day-sangwoo-06", category: "daily", character_id: "sangwoo", order: 6, title: "주말의 정비 시간", title_en: "Weekend Maintenance Time", description: "모형 비행기 조립이라는 여가·재충전 취미를 보여주는 이야기", emoji: "🛩️", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-day-sangwoo-07", category: "daily", character_id: "sangwoo", order: 7, title: "증상 보고", title_en: "Symptom Report", description: "병원 진료와 약국에서 증상·처방전·복용법을 챙기는 이야기", emoji: "💊", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-day-sangwoo-08", category: "daily", character_id: "sangwoo", order: 8, title: "집들이 브리핑", title_en: "Housewarming Briefing", description: "집들이 선물(세제·휴지)과 이웃 인사를 격식 있게 처리하는 이야기", emoji: "🏠", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-day-sangwoo-09", category: "daily", character_id: "sangwoo", order: 9, title: "목적지까지, 로저", title_en: "To the Destination, Roger", description: "택시 승차·경로·요금·지름길을 챙기는 이야기", emoji: "🚕", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-day-sangwoo-10", category: "daily", character_id: "sangwoo", order: 10, title: "오늘의 비행 일지", title_en: "Today's Flight Log", description: "금강 노을을 보며 하루를 마무리하고 집까지 배웅하는 이야기", emoji: "🌇", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+
+  { id: "sp-day-yongwoo-01", category: "daily", character_id: "yongwoo", order: 1, title: "제주 아침, 늦잠은 없다", title_en: "No Sleeping In, Jeju Mornings", description: "늦잠 잔 승객을 용우가 깨워 함께 아침을 먹는 제주 첫 아침 이야기", emoji: "☀️", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-day-yongwoo-02", category: "daily", character_id: "yongwoo", order: 2, title: "샷 추가는 선택이 아니다", title_en: "Extra Shot, No Exceptions", description: "애월 카페에서 용우에게 아이스 아메리카노 주문법을 배우는 이야기", emoji: "☕", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-day-yongwoo-03", category: "daily", character_id: "yongwoo", order: 3, title: "1+1의 정석", title_en: "The Art of Buy-One-Get-One", description: "편의점 야식 쇼핑에서 용우에게 알뜰한 장보기 요령을 배우는 이야기", emoji: "🏪", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-day-yongwoo-04", category: "daily", character_id: "yongwoo", order: 4, title: "막차를 놓치면 안 된다", title_en: "Don't Miss the Last Bus", description: "버스 환승과 교통카드 사용법을 익히며 막차를 잡으려 서두르는 이야기", emoji: "🚌", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-day-yongwoo-05", category: "daily", character_id: "yongwoo", order: 5, title: "일교차를 이기는 법", title_en: "Beating the Temperature Swing", description: "변덕스러운 제주 날씨 속 용우가 챙겨준 겉옷과 우산 이야기", emoji: "🧥", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-day-yongwoo-06", category: "daily", character_id: "yongwoo", order: 6, title: "손맛을 아는 시간", title_en: "The Feel of a Good Catch", description: "주말 휴일에 용우와 갯바위 낚시를 하며 기다림의 즐거움을 배우는 이야기", emoji: "🎣", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-day-yongwoo-07", category: "daily", character_id: "yongwoo", order: 7, title: "아프면 말을 해야지", title_en: "Say Something When It Hurts", description: "체한 승객을 병원과 약국에 데려가는 용우의 무뚝뚝하지만 다정한 보살핌 이야기", emoji: "💊", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-day-yongwoo-08", category: "daily", character_id: "yongwoo", order: 8, title: "휴지 한 통의 인사", title_en: "A Greeting of Tissue and Detergent", description: "새집으로 이사해 집들이 선물을 준비하고 이웃에게 인사드리는 이야기", emoji: "🏠", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-day-yongwoo-09", category: "daily", character_id: "yongwoo", order: 9, title: "지름길은 내가 안다", title_en: "I Know the Shortcut", description: "택시를 타고 목적지를 말하고, 길 헤매는 기사를 용우가 지름길로 안내하는 이야기", emoji: "🚕", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-day-yongwoo-10", category: "daily", character_id: "yongwoo", order: 10, title: "오늘 하루도 수고했다", title_en: "Well Done, Today Too", description: "옥상에서 노을을 보며 평범한 하루를 소중히 여기는 법을 배우는 하루 마무리 이야기", emoji: "🌇", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+
+  // 🤝 친구 스토리 — 로맨스 아닌 플라토닉 우정, 기장별 동일한 10개 주제(재회/치맥/유행어/노래방/맛집줄서기/
+  // 고민상담/놀이공원/캠핑불멍/여행추억/영원한우정)를 각자의 지역·성격으로 풀어낸 스토리 (기장당 10개, 총 50개)
+  { id: "sp-frd-kyuhyun-01", category: "friendship", character_id: "kyuhyun", order: 1, title: "오랜만이야, 잘 지냈어?", title_en: "Long Time No See", description: "김포공항 도착장에서 반갑게 재회하는 오랜 친구 규현", emoji: "🙌", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-frd-kyuhyun-02", category: "friendship", character_id: "kyuhyun", order: 2, title: "치맥 없인 못 살아", title_en: "Can't Live Without Chimaek", description: "을지로 술집에서 치킨과 맥주로 재회를 축하하는 건배", emoji: "🍗", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-frd-kyuhyun-03", category: "friendship", character_id: "kyuhyun", order: 3, title: "요즘 애들 말, 알려줄게", title_en: "I'll Teach You the Latest Slang", description: "홍대 거리를 걸으며 규현이 알려주는 요즘 유행어", emoji: "🔥", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-frd-kyuhyun-04", category: "friendship", character_id: "kyuhyun", order: 4, title: "노래방에서는 내가 진리다", title_en: "In Karaoke, I'm the Truth", description: "노래방에서 뜻밖의 가창력을 뽐내는 규현과의 신나는 밤", emoji: "🎤", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-frd-kyuhyun-05", category: "friendship", character_id: "kyuhyun", order: 5, title: "이 집은 줄 서서라도 먹어야 돼", title_en: "This Place Is Worth the Wait", description: "맛집 웨이팅 줄에서 음식을 나눠 먹으며 보내는 시간", emoji: "🍜", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-frd-kyuhyun-06", category: "friendship", character_id: "kyuhyun", order: 6, title: "혼자 끙끙 앓지 마", title_en: "Don't Suffer Alone", description: "한강 벤치에서 능청스러움을 내려놓고 진심으로 위로하는 규현", emoji: "🫂", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-frd-kyuhyun-07", category: "friendship", character_id: "kyuhyun", order: 7, title: "이 정도는 타 줘야 놀이공원이지", title_en: "You've Gotta Ride This Much", description: "놀이공원에서 롤러코스터를 타며 신나게 보내는 하루", emoji: "🎢", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-frd-kyuhyun-08", category: "friendship", character_id: "kyuhyun", order: 8, title: "불멍 하면서 아무 말 안 해도 돼요", title_en: "You Don't Have to Say Anything While Staring at the Fire", description: "캠핑장 장작불 앞, 말없이도 편안한 규현과의 밤", emoji: "🏕️", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-frd-kyuhyun-09", category: "friendship", character_id: "kyuhyun", order: 9, title: "이 순간, 진짜 오래 기억날 것 같아요", title_en: "I Think I'll Remember This for a Long Time", description: "여행 마지막 밤, 사진을 넘겨 보며 추억을 되짚는 시간", emoji: "📸", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-frd-kyuhyun-10", category: "friendship", character_id: "kyuhyun", order: 10, title: "우리 이 우정 변치 말자", title_en: "Let's Not Let This Friendship Change", description: "공항에서의 따뜻한 배웅과 변치 않을 우정의 약속", emoji: "🤗", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+
+  { id: "sp-frd-haneul-01", category: "friendship", character_id: "haneul", order: 1, title: "반가운 친구와의 재회", title_en: "Reunion with a Friend", description: "전주역에서 마중 나온 하늘과의 무뚝뚝하지만 반가운 재회", emoji: "🙋‍♂️", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-frd-haneul-02", category: "friendship", character_id: "haneul", order: 2, title: "치맥(치킨과 맥주) 모임", title_en: "Chicken & Beer Hangout", description: "한옥마을 치킨집에서 건배하며 나누는 오랜만의 대화", emoji: "🍗", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-frd-haneul-03", category: "friendship", character_id: "haneul", order: 3, title: "한국 유행어와 신조어", title_en: "Korean Slang & Buzzwords", description: "대박·인정·갑분싸·꿀잼, 거리를 걸으며 배우는 진짜 유행어", emoji: "🔥", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-frd-haneul-04", category: "friendship", character_id: "haneul", order: 4, title: "노래방에서 신나게 부르기", title_en: "Karaoke Singing Night", description: "신청곡과 점수 경쟁, 의외로 다정한 하늘의 애창곡", emoji: "🎤", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-frd-haneul-05", category: "friendship", character_id: "haneul", order: 5, title: "맛집 줄 서기와 음식 나누기", title_en: "Foodie Lines & Sharing Food", description: "남부시장 국밥집 웨이팅과 곱빼기, 말없이 나눠 먹는 정", emoji: "🍲", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-frd-haneul-06", category: "friendship", character_id: "haneul", order: 6, title: "고민 상담과 깊은 우정", title_en: "A Heart-to-Heart Talk", description: "전주천 밤길에서 고민을 털어놓고 위로받는 진심의 순간", emoji: "🫂", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-frd-haneul-07", category: "friendship", character_id: "haneul", order: 7, title: "안 무섭다며", title_en: "You Said You Weren't Scared", description: "광주 패밀리랜드 롤러코스터 앞에서 무너지는 하늘의 허당미", emoji: "🎡", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-frd-haneul-08", category: "friendship", character_id: "haneul", order: 8, title: "그 유명한 불멍이라는 거", title_en: "So This Is the Famous Bulmeong", description: "변산반도 캠핑장, 장작불 앞에서의 편안한 침묵과 불멍", emoji: "⛺", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-frd-haneul-09", category: "friendship", character_id: "haneul", order: 9, title: "됐어, 남겼어", title_en: "Done, It's Kept", description: "사진첩을 넘기며 되짚는 열흘의 추억, 뿌듯함과 아쉬움", emoji: "📸", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-frd-haneul-10", category: "friendship", character_id: "haneul", order: 10, title: "넌 이제 내 친구야", title_en: "You're My Friend Now", description: "배웅과 약속, 확인하는 영원한 우정", emoji: "🌟", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+
+  { id: "sp-frd-sunwoo-01", category: "friendship", character_id: "sunwoo", order: 1, title: "야, 니 진짜 오랜만이다", title_en: "Hey, It's Really Been Forever", description: "김해공항에서 몇 년 만에 재회하는 소꿉친구 선우", emoji: "🙋‍♂️", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-frd-sunwoo-02", category: "friendship", character_id: "sunwoo", order: 2, title: "치맥 아니면 안 되는 밤", title_en: "A Night That Needs Chicken & Beer", description: "서면 치킨집에서 좋아하는 부위를 기억해주는 선우", emoji: "🍗", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-frd-sunwoo-03", category: "friendship", character_id: "sunwoo", order: 3, title: "그거 완전 인정이다", title_en: "Totally Agreed, That", description: "전포 카페거리에서 배우는 대박·레전드·인정 같은 유행어", emoji: "🔥", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-frd-sunwoo-04", category: "friendship", character_id: "sunwoo", order: 4, title: "마이크 놔라, 내 차례다", title_en: "Drop the Mic, My Turn", description: "서면 노래방에서 애창곡을 부르며 신나는 밤을 보내는 선우", emoji: "🎤", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-frd-sunwoo-05", category: "friendship", character_id: "sunwoo", order: 5, title: "웨이팅도 같이하면 놀이다", title_en: "Even Waiting in Line Is Fun Together", description: "남포동 돼지국밥 줄에서 좋아하는 고기를 양보하는 선우", emoji: "🍲", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-frd-sunwoo-06", category: "friendship", character_id: "sunwoo", order: 6, title: "말 안 해도 안다, 내가", title_en: "I Know Without You Saying It", description: "이기대 해안 산책로에서 부담 없이 건네는 위로", emoji: "🫂", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-frd-sunwoo-07", category: "friendship", character_id: "sunwoo", order: 7, title: "니 완전 겁먹었네", title_en: "You're Totally Scared Stiff", description: "롯데월드 어드벤처 부산에서 놀이기구를 타며 보내는 하루", emoji: "🎢", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-frd-sunwoo-08", category: "friendship", character_id: "sunwoo", order: 8, title: "눈 감고도 한다, 내가", title_en: "I Could Do This With My Eyes Closed", description: "거제 바닷가 캠핑장, 모닥불 앞에서 나누는 편안한 침묵", emoji: "🔥", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-frd-sunwoo-09", category: "friendship", character_id: "sunwoo", order: 9, title: "맨날 오던 그 바다", title_en: "The Sea We Always Came To", description: "송정 해수욕장, 어릴 적 추억이 밀려오는 순간", emoji: "🌊", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-frd-sunwoo-10", category: "friendship", character_id: "sunwoo", order: 10, title: "이번 열흘 진짜 소중했다", title_en: "These Ten Days Were Really Precious", description: "김해공항 배웅, 새끼손가락 걸고 나누는 우정의 약속", emoji: "🤝", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+
+  { id: "sp-frd-sangwoo-01", category: "friendship", character_id: "sangwoo", order: 1, title: "공산성에서, 반가운 얼굴", title_en: "A Welcome Face at Gongsanseong", description: "십 년 지기 친구와 공산성에서 재회하는 반가움", emoji: "🤝", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-frd-sangwoo-02", category: "friendship", character_id: "sangwoo", order: 2, title: "오늘 밤은 치맥입니다", title_en: "Tonight Is Chicken & Beer", description: "산성시장 치킨집에서 치맥을 즐기며 단골집을 약속", emoji: "🍗", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-frd-sangwoo-03", category: "friendship", character_id: "sangwoo", order: 3, title: "완전 대박입니다", title_en: "Totally Daebak", description: "격식 있는 상우가 친구에게 요즘 유행어와 신조어를 배우는 이야기", emoji: "🔥", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-frd-sangwoo-04", category: "friendship", character_id: "sangwoo", order: 4, title: "18번을 부탁드립니다", title_en: "My Go-To Song, Please", description: "노래방에서 상우와 친구가 각자의 애창곡을 부르는 밤", emoji: "🎤", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-frd-sangwoo-05", category: "friendship", character_id: "sangwoo", order: 5, title: "웨이팅도 함께라면", title_en: "Worth the Wait, Together", description: "공주 골목 맛집 앞에서 긴 줄을 서고 간식을 나누는 시간", emoji: "🌰", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-frd-sangwoo-06", category: "friendship", character_id: "sangwoo", order: 6, title: "금강 밤바람 앞에서", title_en: "By the Geumgang Night Breeze", description: "금강 변 벤치에서 친구의 고민을 들어주고 위로하는 대화", emoji: "🌙", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-frd-sangwoo-07", category: "friendship", character_id: "sangwoo", order: 7, title: "오월드, 짜릿한 하루", title_en: "O-World, A Thrilling Day", description: "대전 오월드에서 롤러코스터와 회전목마, 관람차 야경을 즐기는 하루", emoji: "🎢", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-frd-sangwoo-08", category: "friendship", character_id: "sangwoo", order: 8, title: "대청호, 불멍의 밤", title_en: "Daecheongho, A Night of Fire-Gazing", description: "대청호 캠핑장에서 텐트를 치고 모닥불 앞 불멍을 즐기는 이야기", emoji: "🏕️", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-frd-sangwoo-09", category: "friendship", character_id: "sangwoo", order: 9, title: "사진첩 속, 우리의 여름", title_en: "In the Photo Album, Our Summer", description: "여행 마지막 밤, 함께 찍은 사진들을 넘겨 보며 추억하는 시간", emoji: "📷", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-frd-sangwoo-10", category: "friendship", character_id: "sangwoo", order: 10, title: "다시, 우리는", title_en: "Once Again, We Are", description: "공주역 플랫폼에서의 마지막 배웅, 영원한 우정을 다짐하는 순간", emoji: "🌟", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+
+  { id: "sp-frd-yongwoo-01", category: "friendship", character_id: "yongwoo", order: 1, title: "니 진짜 오랜만이다, 인마", title_en: "You're Really Back After So Long", description: "제주공항에서 몇 년 만에 재회하는 친형제 같은 용우", emoji: "🙋‍♂️", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-frd-yongwoo-02", category: "friendship", character_id: "yongwoo", order: 2, title: "치킨 식기 전에 와라", title_en: "Get Here Before the Chicken Gets Cold", description: "골목 치킨집에서 나누는 건배와 취기 어린 진심", emoji: "🍗", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-frd-yongwoo-03", category: "friendship", character_id: "yongwoo", order: 3, title: "그건 또 뭔 소리야", title_en: "What's That Supposed to Mean", description: "모르는 척하다 다 알고 있었다는 걸 들키는 용우의 유행어 상식", emoji: "🔥", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-frd-yongwoo-04", category: "friendship", character_id: "yongwoo", order: 4, title: "박자 좀 맞춰봐라", title_en: "Try Keeping the Beat", description: "노래방에서 뜻밖의 실력을 뽐내는 용우와의 점수 경쟁", emoji: "🎤", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-frd-yongwoo-05", category: "friendship", character_id: "yongwoo", order: 5, title: "배고파 죽겠다, 얼른", title_en: "I'm Starving, Hurry Up", description: "제주 국수 맛집 줄에서 알고 보니 단골이었던 용우", emoji: "🍲", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-frd-yongwoo-06", category: "friendship", character_id: "yongwoo", order: 6, title: "말해봐라, 다 들어줄 테니까", title_en: "Talk to Me, I'll Listen to All of It", description: "협재 해변 노을 아래, 서로 처음 털어놓는 진짜 속마음", emoji: "🫂", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-frd-yongwoo-07", category: "friendship", character_id: "yongwoo", order: 7, title: "쫄았으면 말을 해", title_en: "Just Say So If You're Scared", description: "제주신화월드 롤러코스터 앞 허세, 그리고 들통난 진짜 반응", emoji: "🎡", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-frd-yongwoo-08", category: "friendship", character_id: "yongwoo", order: 8, title: "불 앞에서는 다 솔직해진다", title_en: "Everyone Gets Honest by the Fire", description: "함덕 해변 캠핑장, 모닥불 앞에서 꺼내는 어릴 적 이야기", emoji: "⛺", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-frd-yongwoo-09", category: "friendship", character_id: "yongwoo", order: 9, title: "이 사진, 오래 간직해라", title_en: "Keep This Photo for a Long Time", description: "우도 여행, 여행이 끝나감을 실감하는 씁쓸한 순간", emoji: "📸", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
+  { id: "sp-frd-yongwoo-10", category: "friendship", character_id: "yongwoo", order: 10, title: "언제든 다시 온나", title_en: "Come Back Anytime", description: "공항 배웅, 진심을 담아 전하는 사투리 섞인 작별 인사", emoji: "🌟", total_words: 10, total_sentences: 5, step_count: 10, is_locked: true },
 ];
 
-
-// ── 단어장 ───────────────────────────────────────────────
-export const MOCK_VOCAB: VocabItem[] = [];
-
-// ── 일기 (캐릭터별) ─────────────────────────────────────
-export const MOCK_DIARY: DiaryEntry[] = [
-  {
-    id: "diary-001",
-    user_id: "user-001",
-    character_id: "kyuhyun",
-    body_ko: "오늘 여행자와 함께 경복궁을 다녀왔다. 한복을 입고 사진을 찍으며 웃음이 끊이지 않았다. 처음에는 서툰 한국어가 귀여워서 나도 모르게 더 천천히 말하게 됐다. 오늘 날씨도 맑아서 더 좋았던 것 같다.",
-    place_name: "경복궁, 서울",
-    unlocked: false,
-    unlock_cost: 5,
-    created_at: "2025-07-20T18:00:00Z",
-  },
-  {
-    id: "diary-002",
-    user_id: "user-001",
-    character_id: "kyuhyun",
-    body_ko: "홍대 카페에서 여행자와 오랫동안 이야기했다. 한국어로 자기 나라 이야기를 해줬는데 정말 흥미로웠다. 다음에는 어디를 같이 가면 좋을지 벌써부터 기대가 된다.",
-    place_name: "홍대, 서울",
-    unlocked: false,
-    unlock_cost: 8,
-    created_at: "2025-07-21T19:30:00Z",
-  },
-  {
-    id: "diary-003",
-    user_id: "user-001",
-    character_id: "haneul",
-    body_ko: "전주 한옥마을을 함께 걸으며 많은 이야기를 나눴다. 비빔밥을 처음 먹어본다는 여행자의 얼굴에서 행복이 느껴졌다. 전통의 아름다움을 함께 느낄 수 있어서 오늘이 참 좋았다.",
-    place_name: "전주 한옥마을",
-    unlocked: false,
-    unlock_cost: 6,
-    created_at: "2025-07-22T17:00:00Z",
-  },
-];
 
 // ── 경제 ────────────────────────────────────────────────
 export const MOCK_ECONOMY: Economy = {
   id: "eco-001",
   user_id: "user-001",
   coins: 35,
-};
-
-// ── 멤버십 ──────────────────────────────────────────────
-export const MOCK_MEMBERSHIP: Membership = {
-  id: "mem-001",
-  user_id: "user-001",
-  tier: "free",
-  started_at: "2025-01-01T00:00:00Z",
-  expires_at: null,
-  price_krw: 0,
 };
 
 // ── 헬퍼 함수 ────────────────────────────────────────────
@@ -429,14 +473,6 @@ export function getCharactersForRegion(regionId: string) {
 
 export function getChaptersForCharacter(characterId: string) {
   return MOCK_CHAPTERS.filter((ch) => ch.character_id === characterId);
-}
-
-export function getDiaryForCharacter(characterId: string) {
-  return MOCK_DIARY.filter((d) => d.character_id === characterId);
-}
-
-export function getVocabForCharacter(characterId: string) {
-  return MOCK_VOCAB.filter((v) => v.character_id === characterId);
 }
 
 export function canAccessCharacter(characterId: string, membership: string, freeSlots: string[]) {

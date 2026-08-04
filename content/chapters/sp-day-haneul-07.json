@@ -1,0 +1,62 @@
+{
+  "id": "sp-day-haneul-07",
+  "character_id": "haneul",
+  "title": "약국 가는 길",
+  "emoji": "💊",
+  "story": [
+    {
+      "text": "며칠 전 비를 맞은 게 화근이었다. 아침부터 목이 따끔거리고 몸이 무거웠다.",
+      "reading": "myeo-chil jeon bi-reul maj-eun ge hwa-geun-i-eot-da. a-chim-bu-teo mok-i tta-kkeum-geo-ri-go mom-i mu-geo-wot-da.",
+      "en": "Getting caught in the rain a few days ago was the cause. My throat had been prickling and my body felt heavy since morning."
+    },
+    {
+      "text": "'너 얼굴이 왜 그래.' 하늘이 대뜸 손을 뻗어 내 이마를 짚었다. '많이 아프네.'",
+      "reading": "'neo eol-gul-i wae geu-rae.' ha-neul-i dae-tteum son-eul ppeot-eo nae i-ma-reul jip-eot-da. 'man-i a-peu-ne.'",
+      "en": "\"Why do you look like that?\" Haneul reached out without warning and pressed his hand to my forehead. \"You're pretty sick.\"",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "'병원 가자. 근처에 내가 아는 곳 있어.' 그는 대답도 듣지 않고 벌써 걷기 시작했다.",
+      "reading": "'byeong-won ga-ja. geun-cheo-e nae-ga a-neun got iss-eo.' geu-neun dae-dap-do deut-ji anh-go beol-sseo geot-gi si-jak-haet-da.",
+      "en": "\"Let's go to the hospital. I know a place nearby.\" He didn't even wait for an answer, already walking ahead.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "진료를 마치고 나오자, 의사가 처방전을 건넸다. 하늘이 대신 받아 접어 주머니에 넣었다.",
+      "reading": "jil-lyo-reul ma-chi-go na-o-ja, ui-sa-ga cheo-bang-jeon-eul geon-ne-ss-da. ha-neul-i dae-sin bad-a jeob-eo ju-meo-ni-e neoh-eot-da.",
+      "en": "After the exam, the doctor handed over a prescription. Haneul took it for me, folded it, and tucked it into his pocket.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "'약국은 저 건너편이야.' 그가 길을 건너며 내 팔을 슬쩍 붙잡았다. 차가 오는 방향을 살피면서.",
+      "reading": "'yak-guk-eun jeo geon-neo-pyeon-i-ya.' geu-ga gil-eul geon-neo-myeo nae pal-eul seul-jjeok but-jab-at-da. cha-ga o-neun bang-hyang-eul sal-pi-myeon-seo.",
+      "en": "\"The pharmacy's right across there.\" He caught my arm lightly as we crossed, keeping an eye on the traffic.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "'하루 세 번, 밥 먹고 바로 먹어.' 약 봉투를 건네며 그가 짧게 일렀다.",
+      "reading": "'ha-ru se beon, bap meok-go ba-ro meog-eo.' yak bong-tu-reul geon-ne-myeo geu-ga jjalb-ge il-leot-da.",
+      "en": "\"Three times a day, right after meals.\" He instructed briefly, handing over the bag of medicine.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "'고마워.' 내가 웃으며 말하자, 그는 괜히 딴 데를 보며 중얼거렸다. '아프지나 마.'",
+      "reading": "'go-ma-wo.' nae-ga us-eu-myeo mal-ha-ja, geu-neun gwaen-hi ttan de-reul bo-myeo jung-eol-geo-ryeot-da. 'a-peu-ji-na ma.'",
+      "en": "\"Thanks.\" I said with a smile. He looked away for no reason and mumbled, \"Just don't get sick again.\""
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "아프다", "reading": "a-peu-da", "meaning": "to be sick, to hurt", "example": "어디가 아프세요?", "example_reading": "eo-di-ga a-peu-se-yo?", "example_en": "Where does it hurt?" },
+    { "id": "w02", "word": "병원", "reading": "byeong-won", "meaning": "hospital, clinic", "example": "병원에 가 봐야겠어요.", "example_reading": "byeong-won-e ga bwa-ya-gess-eo-yo", "example_en": "I think I need to go to the hospital." },
+    { "id": "w03", "word": "처방전", "reading": "cheo-bang-jeon", "meaning": "prescription", "example": "처방전 받으셨어요?", "example_reading": "cheo-bang-jeon bad-eu-syeoss-eo-yo?", "example_en": "Did you get a prescription?" },
+    { "id": "w04", "word": "약국", "reading": "yak-guk", "meaning": "pharmacy", "example": "약국이 어디 있어요?", "example_reading": "yak-guk-i eo-di iss-eo-yo?", "example_en": "Where is the pharmacy?" },
+    { "id": "w05", "word": "약", "reading": "yak", "meaning": "medicine", "example": "이 약을 하루에 세 번 드세요.", "example_reading": "i yag-eul ha-ru-e se beon deu-se-yo", "example_en": "Take this medicine three times a day." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "많이 아프세요?", "reading": "man-i a-peu-se-yo?", "en": "Does it hurt a lot?" },
+    { "id": "s02", "ko": "병원에 같이 가요.", "reading": "byeong-won-e ga-chi ga-yo", "en": "Let's go to the hospital together." },
+    { "id": "s03", "ko": "처방전 여기 있어요.", "reading": "cheo-bang-jeon yeo-gi iss-eo-yo", "en": "Here's the prescription." },
+    { "id": "s04", "ko": "약국은 어디예요?", "reading": "yak-guk-eun eo-di-ye-yo?", "en": "Where's the pharmacy?" },
+    { "id": "s05", "ko": "약은 식후에 드세요.", "reading": "yag-eun sik-hu-e deu-se-yo", "en": "Take the medicine after meals." }
+  ]
+}

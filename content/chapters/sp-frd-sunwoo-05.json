@@ -1,0 +1,93 @@
+{
+  "id": "sp-frd-sunwoo-05",
+  "character_id": "sunwoo",
+  "title": "웨이팅도 같이하면 놀이다",
+  "emoji": "🍲",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "남포동 골목, 돼지국밥집 앞에 늘어선 줄이 모퉁이를 돌아 이어진다. 선우가 대기표를 받아 들고 씩 웃는다.",
+      "reading": "nam-po-dong gol-mok, dwae-ji-guk-bab-jib ap-e neul-eo-seon jul-i mo-tung-i-reul dol-a i-eo-jin-da. seon-u-ga dae-gi-pyo-reul bad-a deul-go ssik us-neun-da.",
+      "en": "In a Nampo-dong alley, the line outside a pork soup place winds around the corner. Sunwoo takes the waiting number and grins.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "\"40분? 껌이다, 껌. 이 집은 기다릴 가치가 있다.\" 그는 벽에 기대서서 지루할 틈도 없이 옛날이야기를 술술 꺼낸다.",
+      "reading": "40-bun? kkeom-i-da, kkeom. i jib-eun gi-da-ril ga-chi-ga it-da. geu-neun byeog-e gi-dae-seo-seo ji-ru-hal teum-do eop-si yen-nal-i-ya-gi-reul sul-sul kkeo-nen-da.",
+      "en": "\"Forty minutes? Nothing to it. This place is worth the wait.\" He leans against the wall and rattles off old stories, leaving no room for boredom."
+    },
+    {
+      "text": "드디어 자리에 앉자 뜨끈한 국밥 두 그릇이 놓인다. 선우가 먼저 깍두기 국물을 국밥에 쓱 부어 넣는다.",
+      "reading": "deu-di-eo ja-ri-e anj-ja tteu-kkeun-han guk-bab du geu-reut-i noh-in-da. seon-u-ga meon-jeo kkak-du-gi guk-mul-eul guk-bab-e sseuk bu-eo neon-neun-da.",
+      "en": "We finally sit down and two steaming bowls of soup arrive. Sunwoo goes first, pouring a splash of kkakdugi juice into his soup.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "\"이래 무야 진짜배기다. 니도 한번 해봐라.\" 그는 자기 반찬 접시에서 제일 아끼던 수육 한 점을 내 그릇 위에 올려 준다.",
+      "reading": "i-rae mu-ya jin-jja-bae-gi-da. ni-do han-beon hae-bwa-ra. geu-neun ja-gi ban-chan jeop-si-e-seo je-il a-kki-deon su-yuk han jeom-eul nae geu-reut wi-e ol-lyeo jun-da.",
+      "en": "\"Eat it like this and it's the real deal. Try it too.\" He places the boiled pork slice he was saving from his own side dish plate onto my bowl.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "국물 한 숟갈에 온몸이 훅 풀린다. 줄 서서 기다린 보람이 있다는 게 이런 맛일까. 나도 모르게 감탄이 나온다.",
+      "reading": "guk-mul han sut-gal-e on-mom-i huk pul-lin-da. jul seo-seo gi-da-rin bo-ram-i it-da-neun ge i-reon mas-il-kka. na-do mo-reu-ge gam-tan-i na-on-da.",
+      "en": "One spoonful of broth and my whole body loosens up at once. So this is what makes the wait worthwhile. I let out an admiring sigh without meaning to.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "\"더 무라, 남기지 말고. 다 무야 내가 데려온 보람이 있다.\" 선우가 내 밥그릇 옆으로 반찬 접시들을 하나둘 밀어준다.",
+      "reading": "deo mu-ra, nam-gi-ji mal-go. da mu-ya nae-ga de-ryeo-on bo-ram-i it-da. seon-u-ga nae bab-geu-reut yeop-eu-ro ban-chan jeop-si-deul-eul ha-na-dul mil-eo-jun-da.",
+      "en": "\"Eat more, don't leave any. Only if you finish it all does me bringing you here mean something.\" Sunwoo pushes the side dish plates over toward my bowl one by one.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "밖으로 나오니 아직도 줄이 길게 이어져 있었다. 나눠 먹은 국밥 한 그릇이 어느 근사한 식사보다 더 든든하게 느껴졌다.",
+      "reading": "bakk-eu-ro na-o-ni a-jik-do jul-i gil-ge i-eo-jyeo iss-eot-da. na-nwo meog-eun guk-bab han geu-reut-i eo-neu geun-sa-han sik-sa-bo-da deo deun-deon-ha-ge neu-kkyeo-jyeot-da.",
+      "en": "Stepping back outside, the line was still stretching long. Sharing that single bowl of soup felt more filling than any fancy meal."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "대기표", "reading": "dae-gi-pyo", "meaning": "waiting number (for a line)", "example": "식당 앞에서 대기표를 받았다.", "example_reading": "sik-dang ap-e-seo dae-gi-pyo-reul bad-at-da", "example_en": "I got a waiting number outside the restaurant." },
+    { "id": "w02", "word": "국물", "reading": "guk-mul", "meaning": "broth, soup liquid", "example": "국물이 진하고 맛있었다.", "example_reading": "guk-mul-i jin-ha-go mas-it-eot-da", "example_en": "The broth was rich and delicious." },
+    { "id": "w03", "word": "아끼다", "reading": "a-kki-da", "meaning": "to save, treasure (something) for later", "example": "그는 제일 좋은 부위를 아껴 두었다.", "example_reading": "geu-neun je-il jo-eun bu-wi-reul a-kkyeo du-eot-da", "example_en": "He set aside the best part, saving it." },
+    { "id": "w04", "word": "보람", "reading": "bo-ram", "meaning": "a sense of reward, worthwhileness", "example": "기다린 보람이 있는 맛이었다.", "example_reading": "gi-da-rin bo-ram-i it-neun mas-i-eot-da", "example_en": "It tasted like the wait was worth it." },
+    { "id": "w05", "word": "남기다", "reading": "nam-gi-da", "meaning": "to leave (food) uneaten", "example": "밥을 남기지 않고 다 먹었다.", "example_reading": "bab-eul nam-gi-ji anh-go da meok-eot-da", "example_en": "I ate everything without leaving any." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "입구에서 대기표를 받고 기다렸다.", "reading": "ib-gu-e-seo dae-gi-pyo-reul bad-go gi-da-ryeot-da", "en": "I got a waiting number at the entrance and waited." },
+    { "id": "s02", "ko": "국물이 뜨끈해서 몸이 풀렸다.", "reading": "guk-mul-i tteu-kkeun-hae-seo mom-i pul-lyeot-da", "en": "The broth was so hot that my body relaxed." },
+    { "id": "s03", "ko": "그는 제일 맛있는 부위를 아껴 두었다.", "reading": "geu-neun je-il mas-it-neun bu-wi-reul a-kkyeo du-eot-da", "en": "He saved the tastiest part for later." },
+    { "id": "s04", "ko": "오래 기다린 보람이 있었다.", "reading": "o-rae gi-da-rin bo-ram-i iss-eot-da", "en": "The long wait turned out to be worth it." },
+    { "id": "s05", "ko": "음식을 하나도 남기지 않고 다 먹었다.", "reading": "eum-sik-eul ha-na-do nam-gi-ji anh-go da meok-eot-da", "en": "I ate all the food without leaving anything." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "선우", "text": "40분? 껌이다, 껌. 이 집은 기다릴 가치가 있다.", "reading": "40-bun? kkeom-i-da, kkeom. i jib-eun gi-da-ril ga-chi-ga it-da.", "en": "Forty minutes? Nothing to it. This place is worth the wait." },
+        { "speaker": "승객", "text": "이렇게 줄이 긴데 진짜 맛있는 거 맞아?", "reading": "i-reoh-ge jul-i gin-de jin-jja mas-it-neun geo maj-a?", "en": "The line's this long, are you sure it's really that good?" },
+        { "speaker": "선우", "text": "내가 부산 토박이다. 믿고 기다려 봐라, 후회 안 시킨다.", "reading": "nae-ga bu-san to-bak-i-da. mid-go gi-da-ryeo bwa-ra, hu-hoe an si-kin-da.", "en": "I'm a Busan native. Trust me and wait, I won't let you regret it." },
+        { "speaker": "승객", "text": "알겠어, 믿어볼게. 그동안 이야기나 해줘.", "reading": "al-get-eo, mid-eo-bol-ge. geu-dong-an i-ya-gi-na hae-jwo.", "en": "Alright, I'll trust you. Tell me some stories in the meantime." }
+      ],
+      "question": "선우가 줄이 긴 이유로 승객에게 설명한 것은 무엇인가요?",
+      "question_en": "What reason did Sunwoo give the passenger for the long line?",
+      "correct_answer": "기다릴 만큼 맛있는 집이라는 것",
+      "options": ["기다릴 만큼 맛있는 집이라는 것", "가게가 곧 문을 닫는다는 것", "사람들이 길을 잘못 안다는 것", "예약을 안 해서 늦어진다는 것"],
+      "explanation": "선우는 이 집이 충분히 기다릴 가치가 있는 맛집이라며 승객을 안심시킵니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "선우", "text": "이래 무야 진짜배기다. 니도 한번 해봐라. 이 수육도 무보고.", "reading": "i-rae mu-ya jin-jja-bae-gi-da. ni-do han-beon hae-bwa-ra. i su-yuk-do mu-bo-go.", "en": "Eat it like this and it's the real deal. Try it too. Have some of this boiled pork as well." },
+        { "speaker": "승객", "text": "이거 네가 제일 좋아하는 부위 아니야?", "reading": "i-geo ne-ga je-il jo-a-ha-neun bu-wi a-ni-ya?", "en": "Isn't this your favorite part though?" },
+        { "speaker": "선우", "text": "맞다, 근데 니 주는 기 더 맛있다. 더 무라, 남기지 말고.", "reading": "mat-da, geun-de ni ju-neun gi deo mas-it-da. deo mu-ra, nam-gi-ji mal-go.", "en": "It is, but giving it to you tastes even better. Eat more, don't leave any." },
+        { "speaker": "승객", "text": "고맙다, 진짜. 이렇게까지 챙겨주니까 더 맛있게 느껴져.", "reading": "go-map-da, jin-jja. i-reoh-ge-kka-ji chaeng-gyeo-ju-ni-kka deo mas-it-ge neu-kkyeo-jyeo.", "en": "Thanks, seriously. It tastes even better because you're looking out for me like this." }
+      ],
+      "question": "선우가 국밥집에서 보인 행동으로 알맞은 것은?",
+      "question_en": "What did Sunwoo do at the soup restaurant?",
+      "correct_answer": "자신이 좋아하는 부위를 승객에게 나눠 주었다",
+      "options": ["자신이 좋아하는 부위를 승객에게 나눠 주었다", "혼자 다 먹고 승객에게는 안 줬다", "음식이 입에 안 맞아 남겼다", "다른 가게로 옮기자고 했다"],
+      "explanation": "선우는 자기가 가장 좋아하는 수육을 승객에게 나눠 주며 먼저 챙겨줍니다."
+    }
+  ]
+}

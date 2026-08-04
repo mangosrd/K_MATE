@@ -4,8 +4,9 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import BottomNav from "@/components/ui/BottomNav";
-import { MOCK_CHARACTERS, MOCK_USER, MOCK_DIARY, canAccessCharacter } from "@/lib/db/mock";
-import { getCurrentUser, getEffectiveUserId } from "@/lib/auth/store";
+import { MOCK_CHARACTERS, canAccessCharacter } from "@/lib/db/mock";
+import { getEffectiveUserId } from "@/lib/auth/store";
+import { useMembership, useFreeCharSlots } from "@/lib/auth/useAuthUser";
 import { getAllLocalDiaries } from "@/lib/diary/store";
 import { useLanguage } from "@/components/LanguageContext";
 import type { DiaryEntry } from "@/types/database";
@@ -15,7 +16,9 @@ const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:800
 
 export default function DiarySelectPage() {
   const { t } = useLanguage();
-  const [diaries, setDiaries] = useState<DiaryEntry[]>(MOCK_DIARY);
+  const { membership } = useMembership();
+  const { freeSlots } = useFreeCharSlots();
+  const [diaries, setDiaries] = useState<DiaryEntry[]>([]);
 
   useEffect(() => {
     const local = getAllLocalDiaries();
@@ -31,8 +34,10 @@ export default function DiarySelectPage() {
       const remote = results.flat();
       const remoteIds = new Set(remote.map((d) => d.id));
       const real = [...remote, ...local.filter((d) => !remoteIds.has(d.id))];
-      // 실제로 생성된 일기가 있으면 그걸 쓰고, 없으면 데모용 mock 일기를 유지한다
-      if (real.length > 0) setDiaries(real);
+      // 일기가 하나도 없는 신규 유저에게 예전엔 데모용 mock 일기 3개를 그대로 보여주고
+      // 있었다 — 실제 존재하지 않는 id라 "해금" 시도하면 실패하는 가짜 데이터였다.
+      // 항상 실제 값(비어있으면 빈 배열)으로 덮어써서 정직한 빈 상태를 보여준다.
+      setDiaries(real);
     });
   }, []);
 
@@ -56,7 +61,7 @@ export default function DiarySelectPage() {
 
           <div className={styles.charList}>
             {MOCK_CHARACTERS.map((char) => {
-              const canAccess = canAccessCharacter(char.id, getCurrentUser()?.membership ?? MOCK_USER.membership, MOCK_USER.free_character_slots);
+              const canAccess = canAccessCharacter(char.id, membership, freeSlots);
               const total = diaryCountByChar(char.id);
               const unlocked = unlockedCount(char.id);
 

@@ -1,0 +1,62 @@
+{
+  "id": "sp-frd-haneul-07",
+  "character_id": "haneul",
+  "title": "안 무섭다며",
+  "emoji": "🎡",
+  "story": [
+    {
+      "text": "광주 패밀리랜드 정문 앞, 알록달록한 풍선 장식이 바람에 흔들렸다. \"오늘은 내가 다 골라도 되지?\" 나는 신이 나서 물었다.",
+      "reading": "gwang-ju pae-mil-li-raen-deu jeong-mun ap, al-lok-dal-lok-han pung-seon jang-sig-i ba-ram-e heun-deul-lyeot-da. o-neul-eun nae-ga da gol-la-do doe-ji? na-neun sin-i na-seo mul-eot-da.",
+      "en": "At the front gate of Gwangju Family Land, colorful balloon decorations swayed in the wind. \"I get to pick everything today, right?\" I asked, already excited."
+    },
+    {
+      "text": "\"골라. 놀이기구는 다 타 줄 테니까.\" 하늘이 무심하게 답했다. 의외로 순순한 대답이었다.",
+      "reading": "gol-la. nol-i-gi-gu-neun da ta jul te-ni-kka. ha-neul-i mu-sim-ha-ge dap-haet-da. ui-oe-ro sun-sun-han dae-dab-i-eot-da.",
+      "en": "\"Go ahead. I'll ride whatever ride you pick.\" Haneul answered flatly. Surprisingly agreeable of him.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "내가 가장 먼저 고른 건 제일 높은 롤러코스터였다. \"저거부터 타자.\" 하늘의 얼굴이 순간 살짝 굳는 걸 나는 놓치지 않았다.",
+      "reading": "nae-ga ga-jang meon-jeo go-reun geon je-il nop-eun rol-leo-ko-seu-teo-yeot-da. jeo-geo-bu-teo ta-ja. ha-neul-ui eol-gul-i sun-gan sal-jjak gud-neun geol na-neun noh-chi-ji anh-at-da.",
+      "en": "The very first thing I picked was the tallest roller coaster. \"Let's ride that one first.\" I didn't miss the way his face stiffened for just a moment.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "열차가 꼭대기에서 뚝 떨어지는 순간, 옆에서 그의 손이 손잡이를 으스러질 듯 움켜쥐는 게 보였다. \"안 무섭다며.\" 내가 웃음을 참으며 놀리자, 그는 애써 눈을 피했다.",
+      "reading": "yeol-cha-ga kkok-dae-gi-e-seo ttuk tteol-eo-ji-neun sun-gan, yeop-e-seo geu-ui son-i son-jab-i-reul eu-seu-reo-jil deut um-kyeo-jwi-neun ge bo-yeot-da. an mu-seop-da-myeo. nae-ga us-eum-eul cham-eu-myeo nol-li-ja, geu-neun ae-sseo nun-eul pi-haet-da.",
+      "en": "The moment the car dropped from the peak, I saw his hand gripping the safety bar like he'd crush it. \"You said you weren't scared,\" I teased, trying not to laugh, and he pointedly looked away.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "내려서도 다리가 풀린 그를, 나는 장난스럽게 어깨동무하며 부축하는 척했다. \"기대. 내가 챙겨줄게.\" 그는 못마땅한 척했지만 뿌리치지 않았다.",
+      "reading": "nae-ryeo-seo-do da-ri-ga pul-lin geu-reul, na-neun jang-nan-seu-reop-ge eo-kkae-dong-mu-ha-myeo bu-chuk-ha-neun cheok-haet-da. gi-dae. nae-ga chaeng-gyeo-jul-ge. geu-neun mot-ma-ttang-han cheok-haet-ji-man ppu-ri-chi-ji anh-at-da.",
+      "en": "Even after getting off, his legs were still shaky, and I playfully slung an arm around his shoulder, pretending to hold him up. \"Lean on me. I've got you.\" He acted annoyed, but he didn't shake me off.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "출구 앞 포토존에서 우리는 나란히 사진을 찍었다. \"표정 왜 그래.\" 놀란 얼굴 그대로 찍힌 그의 사진을 보고 둘 다 한참을 웃었다.",
+      "reading": "chul-gu ap po-to-jon-e-seo u-ri-neun na-ran-hi sa-jin-eul jjig-eot-da. pyo-jeong wae geu-rae. nol-lan eol-gul geu-dae-ro jjik-hin geu-ui sa-jin-eul bo-go dul da han-cham-eul us-eot-da.",
+      "en": "At the photo zone by the exit, we took a photo side by side. \"What's with that face?\" We both burst out laughing at the picture, his expression frozen in mid-shock.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "해가 뉘엿뉘엿 넘어갈 때까지 우리는 놀이공원을 실컷 누볐다. 시끌벅적한 하루였지만, 웃음이 끊이지 않은 하루이기도 했다.",
+      "reading": "hae-ga nwi-eot-nwi-eot neom-eo-gal ttae-kka-ji u-ri-neun nol-i-gong-won-eul sil-keot nu-byeot-da. si-kkeul-beok-jeok-han ha-ru-yeot-ji-man, us-eum-i kkeunh-i-ji anh-eun ha-ru-i-gi-do haet-da.",
+      "en": "We roamed the amusement park to our heart's content until the sun dipped low. It was a chaotic day — but also one where the laughter never stopped."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "놀이기구", "reading": "nol-i-gi-gu", "meaning": "amusement ride", "example": "이 놀이공원엔 놀이기구가 많다.", "example_reading": "i nol-i-gong-won-en nol-i-gi-gu-ga man-ta", "example_en": "This amusement park has a lot of rides." },
+    { "id": "w02", "word": "롤러코스터", "reading": "rol-leo-ko-seu-teo", "meaning": "roller coaster", "example": "롤러코스터는 처음부터 무서웠다.", "example_reading": "rol-leo-ko-seu-teo-neun cheo-eum-bu-teo mu-seo-wot-da", "example_en": "The roller coaster was scary from the start." },
+    { "id": "w03", "word": "무섭다", "reading": "mu-seop-da", "meaning": "to be scary, frightening", "example": "밤길이 좀 무섭다.", "example_reading": "bam-gil-i jom mu-seop-da", "example_en": "The night street is a bit scary." },
+    { "id": "w04", "word": "사진을 찍다", "reading": "sa-jin-eul jjik-da", "meaning": "to take a photo", "example": "우리는 함께 사진을 찍었다.", "example_reading": "u-ri-neun ham-kke sa-jin-eul jjig-eot-da", "example_en": "We took a photo together." },
+    { "id": "w05", "word": "어깨동무하다", "reading": "eo-kkae-dong-mu-ha-da", "meaning": "to put an arm around each other's shoulders (friendly gesture)", "example": "친구들과 어깨동무하고 걸었다.", "example_reading": "chin-gu-deul-gwa eo-kkae-dong-mu-ha-go geol-eot-da", "example_en": "I walked with my friends, arms around each other's shoulders." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "이 놀이공원엔 놀이기구가 많다.", "reading": "i nol-i-gong-won-en nol-i-gi-gu-ga man-ta", "en": "This amusement park has a lot of rides." },
+    { "id": "s02", "ko": "롤러코스터는 처음부터 무서웠다.", "reading": "rol-leo-ko-seu-teo-neun cheo-eum-bu-teo mu-seo-wot-da", "en": "The roller coaster was scary from the start." },
+    { "id": "s03", "ko": "밤길이 좀 무섭다.", "reading": "bam-gil-i jom mu-seop-da", "en": "The night street is a bit scary." },
+    { "id": "s04", "ko": "우리는 함께 사진을 찍었다.", "reading": "u-ri-neun ham-kke sa-jin-eul jjig-eot-da", "en": "We took a photo together." },
+    { "id": "s05", "ko": "친구들과 어깨동무하고 걸었다.", "reading": "chin-gu-deul-gwa eo-kkae-dong-mu-ha-go geol-eot-da", "en": "I walked with my friends, arms around each other's shoulders." }
+  ]
+}

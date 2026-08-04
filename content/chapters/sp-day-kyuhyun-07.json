@@ -1,0 +1,62 @@
+{
+  "id": "sp-day-kyuhyun-07",
+  "character_id": "kyuhyun",
+  "title": "감기 기운이 있어서",
+  "emoji": "💊",
+  "story": [
+    {
+      "text": "약속 장소에 나타난 나를 보자마자, 규현의 얼굴이 순식간에 굳었다. 콧물을 훌쩍이며 목이 살짝 잠긴 내 목소리를 눈치챈 모양이었다.",
+      "reading": "yak-sok jang-so-e na-ta-nan na-reul bo-ja-ma-ja, gyu-hyeon-ui eol-gul-i sun-sik-gan-e gud-eot-da. kon-mul-eul hul-jjeog-i-myeo mok-i sal-jjak jam-gin nae mok-so-ri-reul nun-chi-chaen mo-yang-i-eot-da.",
+      "en": "The moment he saw me at our meeting spot, Kyuhyun's face stiffened instantly. He seemed to have noticed my sniffling and the slight rasp in my voice."
+    },
+    {
+      "text": "\"목소리가 왜 그래요? 감기 걸린 거 아니에요?\" 그가 다가와 내 이마에 손을 척 얹었다. \"열도 좀 있는 것 같은데.\"",
+      "reading": "\"mok-so-ri-ga wae geu-rae-yo? gam-gi geol-lin geo an-i-e-yo?\" geu-ga da-ga-wa nae i-ma-e son-eul cheok eon-jeot-da. \"yeol-do jom it-neun geot gat-neun-de.\"",
+      "en": "\"What's with your voice? Did you catch a cold?\" He stepped closer and pressed his hand to my forehead. \"You seem to have a bit of a fever too.\"",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "\"괜찮아요, 그냥 목이 좀…\" 내가 얼버무리자, 그는 단호하게 내 팔을 붙잡았다. \"안 되겠어요. 저기 병원부터 가요.\"",
+      "reading": "\"gwaen-chan-a-yo, geu-nyang mok-i jom…\" nae-ga eol-beo-mu-ri-ja, geu-neun dan-ho-ha-ge nae pal-eul but-jab-at-da. \"an doe-get-eo-yo. jeo-gi byeong-won-bu-teo ga-yo.\"",
+      "en": "\"I'm fine, my throat's just a little…\" I trailed off, and he firmly took hold of my arm. \"No good. We're going to the clinic first, right there.\"",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "간호사가 접수대에서 물었다. \"어디가 아파서 오셨어요? 증상이 어떻게 되세요?\" 내가 대답을 망설이자 규현이 대신 조곤조곤 설명해 주었다.",
+      "reading": "gan-ho-sa-ga jeop-su-dae-e-seo mul-eot-da. \"eo-di-ga a-pa-seo o-syeot-eo-yo? jeung-sang-i eo-tteo-ke doe-se-yo?\" nae-ga dae-dab-eul mang-seol-i-ja gyu-hyeon-i dae-sin jo-gon-jo-gon seol-myeong-hae ju-eot-da.",
+      "en": "The nurse at the front desk asked, \"What brings you in today? What are your symptoms?\" As I hesitated, Kyuhyun calmly explained on my behalf.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "진료를 마치고 나오자 규현이 종이 한 장을 흔들어 보였다. \"처방전 나왔어요. 약국 가서 약만 받으면 끝이에요.\"",
+      "reading": "jin-lyo-reul ma-chi-go na-o-ja gyu-hyeon-i jong-i han jang-eul heun-deul-eo bo-yeot-da. \"cheo-bang-jeon na-wat-eo-yo. yak-guk ga-seo yak-man bad-eu-myeon kkeut-i-e-yo.\"",
+      "en": "As I came out from the exam room, Kyuhyun waved a slip of paper. \"Prescription's ready. Just go to the pharmacy and get the medicine, and that's it.\"",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "바로 옆 건물의 약국으로 들어서자, 규현이 처방전을 대신 내밀며 말했다. \"감기약 좀 잘 챙겨주세요. 이 아가씨가 아픈 걸 잘 참는 편이라서요.\"",
+      "reading": "ba-ro yeop geon-mul-ui yak-guk-eu-ro deul-eo-seo-ja, gyu-hyeon-i cheo-bang-jeon-eul dae-sin nae-mil-myeo mal-haet-da. \"gam-gi-yak jom jal chaeng-gyeo-ju-se-yo. i a-ga-ssi-ga a-peun geol jal cham-neun pyeon-i-ra-seo-yo.\"",
+      "en": "Stepping into the pharmacy in the building right next door, Kyuhyun handed over the prescription for me. \"Please make sure she gets good cold medicine. This one tends to just tough it out when she's sick.\"",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "약봉지를 받아 든 그는 근처 카페에서 따뜻한 유자차 한 잔까지 사서 내 손에 쥐여주었다. \"오늘은 일찍 들어가서 푹 쉬어요. 알겠죠?\" 무뚝뚝한 말투 뒤로, 걱정이 고스란히 묻어났다.",
+      "reading": "yak-bong-ji-reul bad-a deun geu-neun geun-cheo ka-pe-e-seo tta-tteut-han yu-ja-cha han jan-kka-ji sa-seo nae son-e jwi-yeo-ju-eot-da. \"o-neul-eun il-jjik deul-eo-ga-seo puk swi-eo-yo. al-get-jyo?\" mu-ttuk-ttuk-han mal-tu dwi-ro, geok-jeong-i go-seu-ran-hi mud-eo-nat-da.",
+      "en": "Taking the bag of medicine, he even bought a warm citron tea from a nearby cafe and pressed it into my hand. \"Go home early today and rest well, okay?\" Behind his gruff tone, the worry showed through unmistakably."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "병원", "reading": "byeong-won", "meaning": "hospital, clinic", "example": "몸이 아파서 병원에 갔어요.", "example_reading": "mom-i a-pa-seo byeong-won-e gass-eo-yo", "example_en": "I felt unwell, so I went to the clinic." },
+    { "id": "w02", "word": "약국", "reading": "yak-guk", "meaning": "pharmacy", "example": "이 근처에 약국이 있어요?", "example_reading": "i geun-cheo-e yak-guk-i iss-eo-yo", "example_en": "Is there a pharmacy near here?" },
+    { "id": "w03", "word": "처방전", "reading": "cheo-bang-jeon", "meaning": "prescription", "example": "처방전 가지고 왔어요.", "example_reading": "cheo-bang-jeon ga-ji-go wat-eo-yo", "example_en": "I brought my prescription." },
+    { "id": "w04", "word": "증상", "reading": "jeung-sang", "meaning": "symptom", "example": "증상이 어떻게 되세요?", "example_reading": "jeung-sang-i eo-tteo-ke doe-se-yo", "example_en": "What are your symptoms?" },
+    { "id": "w05", "word": "감기", "reading": "gam-gi", "meaning": "a cold (illness)", "example": "감기에 걸린 것 같아요.", "example_reading": "gam-gi-e geol-lin geot gat-a-yo", "example_en": "I think I've caught a cold." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "어디가 아프세요?", "reading": "eo-di-ga a-peu-se-yo?", "en": "Where does it hurt?" },
+    { "id": "s02", "ko": "목이 좀 아파요.", "reading": "mok-i jom a-pa-yo.", "en": "My throat hurts a bit." },
+    { "id": "s03", "ko": "이 근처에 약국이 있어요?", "reading": "i geun-cheo-e yak-guk-i iss-eo-yo?", "en": "Is there a pharmacy near here?" },
+    { "id": "s04", "ko": "처방전 가지고 왔어요.", "reading": "cheo-bang-jeon ga-ji-go wat-eo-yo.", "en": "I brought my prescription." },
+    { "id": "s05", "ko": "감기약 주세요.", "reading": "gam-gi-yak ju-se-yo.", "en": "Please give me cold medicine." }
+  ]
+}

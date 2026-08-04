@@ -1,0 +1,103 @@
+{
+  "id": "sp-frd-sangwoo-01",
+  "character_id": "sangwoo",
+  "title": "공산성에서, 반가운 얼굴",
+  "emoji": "🤝",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "오늘은 특별히 휴가를 냈습니다. 조종석 대신 공산성 금서루 앞에 서서, 누군가를 기다리고 있습니다.",
+      "reading": "o-neul-eun teuk-byeol-hi hyu-ga-reul naet-seum-ni-da. jo-jong-seok dae-sin gong-san-seong geum-seo-ru ap-e seo-seo, nu-gu-ga-reul gi-da-ri-go it-seum-ni-da.",
+      "en": "Today, I specially took the day off. Instead of the cockpit, I'm standing in front of Geumseoru Gate at Gongsanseong Fortress, waiting for someone."
+    },
+    {
+      "text": "십 년 지기 친구와의 '재회'입니다. 비행 스케줄을 이렇게까지 여러 번 바꿔 본 적은 처음입니다.",
+      "reading": "sip nyeon ji-gi chin-gu-wa-ui 'jae-hoe'-im-ni-da. bi-haeng seu-ke-jul-eul i-reo-ke-kka-ji yeo-reo beon ba-kkwo bon jeog-eun cheo-eum-im-ni-da.",
+      "en": "It's a 'reunion' with a friend I've known for ten years. This is the first time I've rearranged my flight schedule this many times.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "'오랜만'이라는 말이 이렇게 벅찰 줄은 몰랐습니다. 저만치 버스에서 낯익은 실루엣이 내렸습니다.",
+      "reading": "'o-raen-man'-i-ra-neun mal-i i-reo-ke beok-chal jul-eun mol-lat-seum-ni-da. jeo-man-chi beo-seu-e-seo nat-ig-eun sil-lu-et-i nae-ryeot-seum-ni-da.",
+      "en": "I never knew the words 'long time no see' could feel this overwhelming. Off in the distance, a familiar silhouette stepped off the bus.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "\"타워, 오랜만이다!\" 저도 모르게 그 애칭이 먼저 튀어나왔습니다. 침착함을 유지하던 관제탑 기장도 결국 크게 손을 흔들고 말았습니다.",
+      "reading": "\"ta-wo, o-raen-man-i-da!\" jeo-do mo-reu-ge geu ae-ching-i meon-jeo twi-eo-na-wat-seum-ni-da. chim-chak-ham-eul yu-ji-ha-deon gwan-je-tap gi-jang-do gyeol-guk keu-ge son-eul heun-deul-go mal-at-seum-ni-da.",
+      "en": "\"Tower, long time no see!\" The old nickname slipped out before I even realized it. Even the captain who always kept his composure ended up waving his arm wide."
+    },
+    {
+      "text": "타워는 오래전 제가 붙인 별명입니다. 이 친구 목소리를 들을 때마다, 관제사처럼 든든하다고 느꼈거든요.",
+      "reading": "ta-wo-neun o-rae-jeon je-ga but-in byeol-myeong-im-ni-da. i chin-gu mok-so-ri-reul deul-eul ttae-ma-da, gwan-je-sa-cheo-reom deun-deun-ha-da-go neu-kkyeot-geo-deun-yo.",
+      "en": "'Tower' is a nickname I gave this friend a long time ago. Every time I hear their voice, it feels as reassuring as an air traffic controller's."
+    },
+    {
+      "text": "짐을 받아 들고 근황과 '안부'를 묻는 사이, 우리는 어느새 나란히 성벽 길을 걷고 있었습니다.",
+      "reading": "jim-eul bad-a deul-go geun-hwang-gwa 'an-bu'-reul mut-neun sa-i, u-ri-neun eo-neu-sae na-ran-hi seong-byeok gil-eul geot-go it-seot-seum-ni-da.",
+      "en": "As I took their bag and we asked after each other's news, before we knew it, we were walking side by side along the fortress wall.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "말투는 여전히 격식 있게 나가지만, 사실 이렇게 '반갑'기는 정말 오랜만입니다.",
+      "reading": "mal-tu-neun yeo-jeon-hi gyeok-sik it-ge na-ga-ji-man, sa-sil i-reo-ke 'ban-gap'-gi-neun jeong-mal o-raen-man-im-ni-da.",
+      "en": "My tone still comes out formal as ever, but honestly, it's been a very long time since I've felt this 'glad' to see someone.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "\"많이 그리웠다.\" 딱 한마디, 낮은 목소리로 진심을 전했습니다. 관제탑 기장에게도, 이런 순간은 있습니다.",
+      "reading": "\"man-i geu-ri-wot-da.\" ttak han-ma-di, nat-eun mok-so-ri-ro jin-sim-eul jeon-haet-seum-ni-da. gwan-je-tap gi-jang-e-ge-do, i-reon sun-gan-eun it-seum-ni-da.",
+      "en": "\"I missed you a lot.\" Just one short line, said low and sincere. Even a control-tower captain has moments like this.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "성벽 위로 부는 바람이 유난히 시원하던 오후였습니다. 그날 나눈 대화를 들려드리겠습니다.",
+      "reading": "seong-byeok wi-ro bu-neun ba-ram-i yu-nan-hi si-won-ha-deon o-hu-yeot-seum-ni-da. geu-nal na-nun dae-hwa-reul deul-lyeo-deu-ri-get-seum-ni-da.",
+      "en": "It was an afternoon when the wind atop the fortress wall felt especially refreshing. Let me share the conversation we had that day."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "재회", "reading": "jae-hoe", "meaning": "reunion", "example": "오랜 친구와의 재회는 언제나 뭉클합니다.", "example_reading": "o-raen chin-gu-wa-ui jae-hoe-neun eon-je-na mung-keul-ham-ni-da", "example_en": "A reunion with an old friend is always moving." },
+    { "id": "w02", "word": "오랜만", "reading": "o-raen-man", "meaning": "a long time (since last time)", "example": "오랜만에 만나니 할 얘기가 산더미입니다.", "example_reading": "o-raen-man-e man-na-ni hal yae-gi-ga san-deo-mi-im-ni-da", "example_en": "Meeting after so long, we have a mountain of things to talk about." },
+    { "id": "w03", "word": "안부", "reading": "an-bu", "meaning": "news of someone's well-being", "example": "친구에게 안부를 물었습니다.", "example_reading": "chin-gu-e-ge an-bu-reul mul-eot-seum-ni-da", "example_en": "I asked my friend how they'd been doing." },
+    { "id": "w04", "word": "반갑다", "reading": "ban-gap-da", "meaning": "to be glad, delighted (to see someone)", "example": "이렇게 만나니 정말 반갑습니다.", "example_reading": "i-reo-ke man-na-ni jeong-mal ban-gap-seum-ni-da", "example_en": "I'm so glad we get to meet like this." },
+    { "id": "w05", "word": "그립다", "reading": "geu-rip-da", "meaning": "to miss, to long for", "example": "그동안 네가 많이 그리웠다.", "example_reading": "geu-dong-an ne-ga man-i geu-ri-wot-da", "example_en": "I've missed you a lot this whole time." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "드디어 오랜만에 친구를 만났습니다.", "reading": "deu-di-eo o-raen-man-e chin-gu-reul man-nat-seum-ni-da", "en": "At last, I met my friend after a long time." },
+    { "id": "s02", "ko": "만나자마자 서로의 안부를 물었습니다.", "reading": "man-na-ja-ma-ja seo-ro-ui an-bu-reul mul-eot-seum-ni-da", "en": "As soon as we met, we asked how each other had been." },
+    { "id": "s03", "ko": "이렇게 다시 만나니 정말 반갑습니다.", "reading": "i-reo-ke da-si man-na-ni jeong-mal ban-gap-seum-ni-da", "en": "Meeting again like this, I'm truly glad." },
+    { "id": "s04", "ko": "혼자 있을 때 네가 많이 그리웠다.", "reading": "hon-ja iss-eul ttae ne-ga man-i geu-ri-wot-da", "en": "When I was alone, I missed you a lot." },
+    { "id": "s05", "ko": "이 재회를 오래도록 기억할 것 같습니다.", "reading": "i jae-hoe-reul o-rae-do-rok gi-eok-hal geot gat-seum-ni-da", "en": "I think I'll remember this reunion for a long time." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "상우", "text": "타워, 오랜만이다. 잘 지냈어?", "reading": "ta-wo, o-raen-man-i-da. jal ji-naess-eo?", "en": "Tower, long time no see. Have you been well?" },
+        { "speaker": "승객", "text": "응! 그동안 연락도 잘 못 해서 미안해. 너는 잘 지냈어?", "reading": "eung! geu-dong-an yeol-lak-do jal mot hae-seo mi-an-hae. neo-neun jal ji-naess-eo?", "en": "Yeah! Sorry I couldn't keep in touch much. Have you been doing okay?" },
+        { "speaker": "상우", "text": "비행 스케줄 조정하느라 정신없었지만, 오늘만큼은 무조건 시간을 냈습니다.", "reading": "bi-haeng seu-ke-jul jo-jeong-ha-neu-ra jeong-sin-eop-seot-ji-man, o-neul-man-keum-eun mu-jo-geon si-gan-eul naess-seum-ni-da.", "en": "I was swamped rearranging my flight schedule, but today, no matter what, I made time." },
+        { "speaker": "승객", "text": "역시 상우답다. 이렇게까지 신경 써 줘서 고마워.", "reading": "yeok-si sang-u-dab-da. i-reo-ke-kka-ji sin-gyeong sseo jwo-seo go-ma-wo.", "en": "That's so like you, Sangwoo. Thanks for going to such trouble for me." }
+      ],
+      "question": "승객이 '역시 상우답다'라고 말한 이유로 가장 알맞은 것은?",
+      "question_en": "What is the most fitting reason the passenger says, 'That's so like you, Sangwoo'?",
+      "correct_answer": "상우가 바쁜 비행 스케줄을 조정하면서까지 재회를 위해 시간을 냈기 때문에",
+      "options": ["상우가 바쁜 비행 스케줄을 조정하면서까지 재회를 위해 시간을 냈기 때문에", "상우가 비행기를 놓칠 뻔했기 때문에", "상우가 선물을 준비해 왔기 때문에", "상우가 인사말을 영어로 했기 때문에"],
+      "explanation": "상우는 바쁜 비행 스케줄을 여러 번 조정하면서까지 친구와의 재회를 위해 시간을 냈고, 승객은 그런 상우의 마음 씀씀이에 고마움을 표현하고 있습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "승객", "text": "근데 너 갑자기 '타워'는 무슨 소리야?", "reading": "geun-de neo gap-ja-gi 'ta-wo'-neun mu-seun so-ri-ya?", "en": "Wait, what's with the sudden 'Tower' thing?" },
+        { "speaker": "상우", "text": "예전부터 붙인 네 별명입니다. 네 목소리를 들으면 늘 관제사처럼 든든했거든요.", "reading": "ye-jeon-bu-teo but-in ne byeol-myeong-im-ni-da. ne mok-so-ri-reul deul-eu-myeon neul gwan-je-sa-cheo-reom deun-deun-haess-geo-deun-yo.", "en": "It's a nickname I gave you a long time ago. Hearing your voice always felt as reassuring as a controller's." },
+        { "speaker": "승객", "text": "풋, 여전히 넌 어디서든 기장 모드구나.", "reading": "put, yeo-jeon-hi neon eo-di-seo-deun gi-jang mo-deu-gu-na.", "en": "Ha, you're still in captain mode wherever you go, huh." },
+        { "speaker": "상우", "text": "직업병입니다. 그래도 오늘은, 그냥 반가운 친구로 왔습니다.", "reading": "jig-eop-byeong-im-ni-da. geu-rae-do o-neul-eun, geu-nyang ban-ga-un chin-gu-ro wat-seum-ni-da.", "en": "Occupational habit. But today, I came simply as a glad-to-see-you friend." }
+      ],
+      "question": "상우가 승객을 '타워'라고 부르는 이유는 무엇인가요?",
+      "question_en": "Why does Sangwoo call the passenger 'Tower'?",
+      "correct_answer": "친구의 목소리가 관제사처럼 든든하게 느껴져서 오래전 붙인 별명이기 때문에",
+      "options": ["친구의 목소리가 관제사처럼 든든하게 느껴져서 오래전 붙인 별명이기 때문에", "친구가 실제로 관제사로 일하기 때문에", "공항 근처에 사는 친구라서", "친구가 그 별명을 먼저 지어줬기 때문에"],
+      "explanation": "상우는 친구의 목소리에서 느꼈던 든든함을 관제사에 빗대어 '타워'라는 별명을 붙였고, 이는 오랜 우정에서 비롯된 애정 표현입니다."
+    }
+  ]
+}

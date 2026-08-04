@@ -1,0 +1,11 @@
+﻿# ML 모델 파일 — 로컬 전용, Railway에 올리지 않음
+# (torch/transformers 없이도 llm_service.py가 자동 폴백 처리함)
+ml/
+
+# 개발/테스트용 파일
+backend/backend.log
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+.env
+.env.local

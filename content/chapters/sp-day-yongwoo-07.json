@@ -1,0 +1,98 @@
+{
+  "id": "sp-day-yongwoo-07",
+  "character_id": "yongwoo",
+  "title": "아프면 말을 해야지",
+  "emoji": "💊",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "어젯밤 흑돼지에 회까지 욕심껏 먹은 게 화근이었는지, 아침부터 속이 더부룩하고 메스꺼웠다. 아무래도 체한 것 같았다.",
+      "reading": "eo-jet-bam heuk-dwae-ji-e hoe-kka-ji yok-sim-kkeot meog-eun ge hwa-geun-i-eot-neun-ji, a-chim-bu-teo sog-i deo-bu-ruk-ha-go me-seu-kkeo-wot-da. a-mu-rae-do che-han geot gat-at-da.",
+      "en": "Whether it was the black pork or the sashimi I'd greedily eaten too much of the night before, my stomach felt bloated and queasy from the moment I woke up. It seemed like I'd definitely gotten indigestion.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "얼굴이 하얗게 뜬 나를 보자마자 용우의 표정이 굳었다. '얼굴이 왜 그래. 어디 아프냐?' 손으로 내 이마를 짚어보며 다급하게 물었다.",
+      "reading": "eol-gul-i ha-yat-ge tteun na-reul bo-ja-ma-ja yong-u-ui pyo-jeong-i gud-eot-da. eol-gul-i wae geu-rae. eo-di a-peu-nya? son-eu-ro nae i-ma-reul jip-eo-bo-myeo da-geup-ha-ge mul-eot-da.",
+      "en": "The moment he saw my face gone pale, Yongwoo's expression hardened. \"What's wrong with your face. Are you sick somewhere?\" He pressed his hand to my forehead and asked urgently."
+    },
+    {
+      "text": "'병원 갈 정도는 아니에요...' 라고 말끝을 흐리는 사이, 용우는 이미 차 키를 챙기고 있었다. '그건 내가 판단한다. 타.'",
+      "reading": "byeong-won gal jeong-do-neun a-ni-e-yo... ra-go mal-kkeut-eul heu-ri-neun sa-i, yong-u-neun i-mi cha ki-reul chaeng-gi-go iss-eot-da. geu-geon nae-ga pan-dan-han-da. ta.",
+      "en": "\"It's not bad enough to go to the hospital...\" Before I could even finish the sentence, Yongwoo was already grabbing the car keys. \"That's for me to decide. Get in.\""
+    },
+    {
+      "text": "동네 내과에서 진료를 받자, 의사 선생님은 대수롭지 않다는 듯 웃었다. '체하셨네요. 며칠 죽 위주로 드시고 이 약 드시면 금방 나아요.'",
+      "reading": "dong-ne nae-gwa-e-seo jin-lyo-reul bat-ja, ui-sa seon-saeng-nim-eun dae-su-rop-ji an-ta-neun deut us-eot-da. che-ha-syeot-ne-yo. myeo-chil juk wi-ju-ro deu-si-go i yak deu-si-myeon geum-bang na-a-yo.",
+      "en": "When I saw the doctor at the neighborhood clinic, she smiled like it was nothing much. \"You've got indigestion. Stick to porridge for a few days and take this medicine, and you'll be better in no time.\"",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "옆에서 팔짱을 끼고 듣던 용우가 그제야 안심한 얼굴로 처방전을 받아 들었다. '거봐라, 병원 오길 잘했지.'",
+      "reading": "yeop-e-seo pal-jjang-eul kki-go deut-deon yong-u-ga geu-je-ya an-sim-han eol-gul-lo cheo-bang-jeon-eul bad-a deul-eot-da. geo-bwa-ra, byeong-won o-gil jal-haet-ji.",
+      "en": "Yongwoo, who'd been listening with his arms crossed beside me, finally relaxed and took the prescription slip. \"See, told you it was a good idea to come.\"",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "옆 건물 약국에서 약사가 봉투를 건네며 물었다. '이 소화제는 식후에 드세요. 하루 세 번이요.' 용우가 대신 봉투를 받아 내 가방에 챙겨 넣었다.",
+      "reading": "yeop geon-mul yak-gug-e-seo yak-sa-ga bong-tu-reul geon-ne-myeo mul-eot-da. i so-hwa-je-neun sik-hu-e deu-se-yo. ha-ru se beon-i-yo. yong-u-ga dae-sin bong-tu-reul bad-a nae ga-bang-e chaeng-gyeo neoh-eot-da.",
+      "en": "At the pharmacy next door, the pharmacist handed over a bag and said, \"Take this digestive medicine after meals. Three times a day.\" Yongwoo took the bag for me and tucked it into my bag.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "숙소로 돌아온 뒤, 그는 죽집에서 사 온 전복죽을 식탁에 놓으며 말했다. '약은 꼭 제때 챙겨 먹어라. 내가 옆에서 매번 확인 못 한다.'",
+      "reading": "suk-so-ro dol-a-on dwi, geu-neun juk-jib-e-seo sa on jeon-bok-jug-eul sik-tag-e noh-eu-myeo mal-haet-da. yag-eun kkok je-ttae chaeng-gyeo meog-eo-ra. nae-ga yeop-e-seo mae-beon hwag-in mot han-da.",
+      "en": "After we got back to the guesthouse, he set down abalone porridge he'd bought from a porridge shop and said, \"Make sure you take your medicine on time. I can't check on you every single time.\"",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "속이 조금씩 편해지는 걸 느끼며, 잔소리 뒤에 숨은 걱정이 이렇게나 컸다는 걸 새삼 느꼈다.",
+      "reading": "sog-i jo-geum-ssik pyeon-hae-ji-neun geol neu-kki-myeo, jan-so-ri dwi-e sum-eun geok-jeong-i i-reo-ke-na keot-da-neun geol sae-sam neu-kkyeot-da.",
+      "en": "As I felt my stomach gradually settle, I realized all over again just how much worry had been hiding behind his nagging."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "체하다", "reading": "che-ha-da", "meaning": "to have indigestion, to feel sick after eating", "example": "급하게 먹었더니 체한 것 같다.", "example_reading": "geup-ha-ge meog-eot-deo-ni che-han geot gat-da", "example_en": "I ate too fast, and I think I've got indigestion." },
+    { "id": "w02", "word": "진료를 받다", "reading": "jin-lyo-reul bat-da", "meaning": "to receive a medical examination", "example": "속이 안 좋아서 진료를 받았다.", "example_reading": "sog-i an jo-a-seo jin-lyo-reul bad-at-da", "example_en": "My stomach felt off, so I went and got checked out." },
+    { "id": "w03", "word": "처방전", "reading": "cheo-bang-jeon", "meaning": "prescription", "example": "처방전을 들고 약국에 갔다.", "example_reading": "cheo-bang-jeon-eul deul-go yak-gug-e gat-da", "example_en": "I took the prescription and went to the pharmacy." },
+    { "id": "w04", "word": "소화제", "reading": "so-hwa-je", "meaning": "digestive medicine, antacid", "example": "소화제를 먹으니 속이 편해졌다.", "example_reading": "so-hwa-je-reul meog-eu-ni sog-i pyeon-hae-jyeot-da", "example_en": "After taking the digestive medicine, my stomach felt better." },
+    { "id": "w05", "word": "약을 챙겨 먹다", "reading": "yag-eul chaeng-gyeo meok-da", "meaning": "to take one's medicine (on schedule, without forgetting)", "example": "하루 세 번 약을 챙겨 먹어야 한다.", "example_reading": "ha-ru se beon yag-eul chaeng-gyeo meog-eo-ya han-da", "example_en": "You need to take your medicine three times a day." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "급하게 먹었더니 체해서 하루 종일 속이 안 좋았다.", "reading": "geup-ha-ge meog-eot-deo-ni che-hae-seo ha-ru jong-il sog-i an jo-at-da", "en": "I ate too fast and got indigestion, so my stomach was off all day." },
+    { "id": "s02", "ko": "몸이 안 좋아서 동네 병원에서 진료를 받았다.", "reading": "mom-i an jo-a-seo dong-ne byeong-won-e-seo jin-lyo-reul bad-at-da", "en": "I wasn't feeling well, so I got examined at the neighborhood clinic." },
+    { "id": "s03", "ko": "처방전을 가지고 약국에서 약을 받았다.", "reading": "cheo-bang-jeon-eul ga-ji-go yak-gug-e-seo yag-eul bad-at-da", "en": "I took the prescription and picked up the medicine at the pharmacy." },
+    { "id": "s04", "ko": "이 소화제는 식후에 하루 세 번 드세요.", "reading": "i so-hwa-je-neun sik-hu-e ha-ru se beon deu-se-yo", "en": "Take this digestive medicine three times a day after meals." },
+    { "id": "s05", "ko": "약을 챙겨 먹었더니 금방 몸이 나아졌다.", "reading": "yag-eul chaeng-gyeo meog-eot-deo-ni geum-bang mom-i na-a-jyeot-da", "en": "I took my medicine as scheduled, and I got better quickly." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "용우", "text": "얼굴이 왜 그래. 어디 아프냐?", "reading": "eol-gul-i wae geu-rae. eo-di a-peu-nya?", "en": "What's wrong with your face. Are you sick somewhere?" },
+        { "speaker": "승객", "text": "그냥 속이 좀 안 좋아서요. 병원까지 갈 정도는 아니에요.", "reading": "geu-nyang sog-i jom an jo-a-seo-yo. byeong-won-kka-ji gal jeong-do-neun a-ni-e-yo.", "en": "My stomach's just a bit off. It's not bad enough to go to the hospital." },
+        { "speaker": "용우", "text": "그건 내가 판단한다. 얼른 타, 병원부터 가자.", "reading": "geu-geon nae-ga pan-dan-han-da. eol-leun ta, byeong-won-bu-teo ga-ja.", "en": "That's for me to decide. Get in, we're going to the hospital first." },
+        { "speaker": "승객", "text": "네... 알겠어요, 갈게요.", "reading": "ne... al-gess-eo-yo, gal-ge-yo.", "en": "Okay... fine, I'll go." }
+      ],
+      "question": "용우가 승객의 만류에도 병원에 데려간 이유로 가장 알맞은 것은?",
+      "question_en": "What best explains why Yongwoo took the passenger to the hospital despite her objection?",
+      "correct_answer": "승객의 상태가 괜찮은지 직접 확인하고 싶어서",
+      "options": ["승객의 상태가 괜찮은지 직접 확인하고 싶어서", "병원이 마침 가까워서", "미리 예약이 되어 있어서", "다른 볼일이 있어서"],
+      "explanation": "승객이 괜찮다고 했지만 용우는 그 판단은 자신이 하겠다며 직접 병원에 데려갔습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "용우", "text": "이 소화제는 식후에 하루 세 번 먹어야 한다. 알겠지?", "reading": "i so-hwa-je-neun sik-hu-e ha-ru se beon meog-eo-ya han-da. al-get-ji?", "en": "You have to take this digestive medicine three times a day after meals. Got it?" },
+        { "speaker": "승객", "text": "네, 근데 자꾸 깜빡할 것 같아요.", "reading": "ne, geun-de ja-kku kkam-ppak-hal geot gat-a-yo.", "en": "Okay, but I feel like I'll keep forgetting." },
+        { "speaker": "용우", "text": "그럼 내가 시간마다 알려줄게. 이번엔 진짜 잘 챙겨 먹어라.", "reading": "geu-reom nae-ga si-gan-ma-da al-lyeo-jul-ge. i-beon-en jin-jja jal chaeng-gyeo meog-eo-ra.", "en": "Then I'll remind you every time. Make sure you actually take it this time." },
+        { "speaker": "승객", "text": "고마워요, 이렇게까지 챙겨줄 줄 몰랐어요.", "reading": "go-ma-wo-yo, i-reo-ke-kka-ji chaeng-gyeo-jul jul mol-lass-eo-yo.", "en": "Thanks, I didn't expect you'd look after me this much." }
+      ],
+      "question": "용우가 시간마다 알려주겠다고 한 이유로 가장 알맞은 것은?",
+      "question_en": "What best explains why Yongwoo offered to remind the passenger every time?",
+      "correct_answer": "승객이 약 먹는 것을 깜빡할까 봐 걱정돼서",
+      "options": ["승객이 약 먹는 것을 깜빡할까 봐 걱정돼서", "약사가 그렇게 하라고 시켜서", "약값을 아끼기 위해서", "심심한 시간을 보내려고"],
+      "explanation": "승객이 약 먹는 것을 깜빡할 것 같다고 하자 용우가 시간마다 알려주겠다고 했습니다."
+    }
+  ]
+}

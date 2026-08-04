@@ -1,0 +1,98 @@
+{
+  "id": "sp-day-sangwoo-01",
+  "character_id": "sangwoo",
+  "title": "좋은 아침입니다",
+  "emoji": "🌅",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "공산성 성곽 위로 아침 해가 막 떠오르고 있습니다. 이런 이른 시간에 만나자고 한 건 저였는데, 정작 먼저 나와 기다리고 있던 사람도 저였습니다.",
+      "reading": "gong-san-seong seong-gwak wi-ro a-chim hae-ga mak tteo-o-reu-go it-seum-ni-da. i-reon i-reun si-gan-e man-na-ja-go han geon jeo-yeot-neun-de, jeong-jak meon-jeo na-wa gi-da-ri-go it-deon sa-ram-do jeo-yeot-seum-ni-da.",
+      "en": "The morning sun is just rising over the walls of Gongsanseong Fortress. I was the one who suggested meeting this early, and yet somehow I was also the one who ended up waiting here first."
+    },
+    {
+      "text": "'좋은 아침입니다. 오늘 기상 상태는 어떻습니까?' 저도 모르게 습관처럼 나온 말인데, 당신은 그게 날씨를 묻는 건지 제 컨디션을 묻는 건지 되물었습니다.",
+      "reading": "jo-eun a-chim-im-ni-da. o-neul gi-sang sang-tae-neun eo-tteo-seum-ni-kka. jeo-do mo-reu-ge seup-gwan-cheo-reom na-on mal-in-de, dang-sin-eun geu-ge nal-ssi-reul mut-neun geon-ji je keon-di-syeon-eul mut-neun geon-ji doe-mul-eot-seum-ni-da.",
+      "en": "\"Good morning. How's the 'gisang' status today?\" The phrase slipped out of me out of habit, and you asked back whether I meant the weather or how I was feeling — since the word covers both.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "듣고 보니 재미있는 지적이었습니다. 저는 원래 그런 애매한 표현을 잘 안 쓰는 편인데, 당신 앞에서는 종종 말이 헛나갑니다.",
+      "reading": "deut-go bo-ni jae-mi-it-neun ji-jeog-i-eot-seum-ni-da. jeo-neun won-lae geu-reon ae-mae-han pyo-hyeon-eul jal an sseu-neun pyeon-in-de, dang-sin ap-e-seo-neun jong-jong mal-i heot-na-gam-ni-da.",
+      "en": "Hearing it put that way, it was a fair point. I don't usually use such ambiguous phrasing — but somehow, in front of you, my words tend to slip."
+    },
+    {
+      "text": "'농담은 이쯤 하고, 진짜 컨디션은 어떻습니까?' 저는 다시 진지하게 물었습니다. 하루를 시작하기 전에는 사람의 상태부터 확인하는 게 순서니까요.",
+      "reading": "nong-dam-eun i-jjeum ha-go, jin-jja keon-di-syeon-eun eo-tteo-seum-ni-kka. jeo-neun da-si jin-ji-ha-ge mul-eot-seum-ni-da. ha-ru-reul si-jak-ha-gi jeon-e-neun sa-ram-ui sang-tae-bu-teo hwak-in-ha-neun ge sun-seo-ni-kka-yo.",
+      "en": "\"Joking aside, how's your actual condition?\" I asked again, this time in earnest. Before starting the day, checking a person's condition first is simply the correct order of operations.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "저는 매일 아침, 머릿속으로 그날의 일정을 한 번 그려 봅니다. 비행 전 브리핑을 하던 습관이 몸에 배어서 그런 모양입니다.",
+      "reading": "jeo-neun mae-il a-chim, meo-ris-sok-eu-ro geu-nal-ui il-jeong-eul han beon geu-ryeo bom-ni-da. bi-haeng jeon beu-ri-ping-eul ha-deon seup-gwan-i mom-e bae-eo-seo geu-reon mo-yang-im-ni-da.",
+      "en": "Every morning, I run through that day's plans once in my head. It seems the habit of pre-flight briefings has simply worked its way into me.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "오늘따라 유독 활기차 보이는 당신을 보니, 걱정했던 게 무색해졌습니다. 좋은 컨디션이라는 뜻이니, 저도 마음이 놓입니다.",
+      "reading": "o-neul-tta-ra yu-dok hwal-gi-cha bo-i-neun dang-sin-eul bo-ni, geok-jeong-haet-deon ge mu-saek-hae-jyeot-seum-ni-da. jo-eun keon-di-syeon-i-ra-neun tteu-si-ni, jeo-do ma-eum-i noh-yeoss-seum-ni-da.",
+      "en": "Seeing you looking especially lively today made all my worrying feel pointless. It means you're in good condition, and that puts my mind at ease too.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "'그럼 오늘 일과를 말씀드리겠습니다.' 저는 손가락을 하나씩 접어가며 아침 식사, 산책, 점심 약속까지 순서대로 읊었습니다. 마치 관제탑에 일정을 보고하듯이요.",
+      "reading": "geu-reom o-neul il-gwa-reul mal-sseum-deu-ri-get-seum-ni-da. jeo-neun son-ga-rak-eul ha-na-ssik jeob-eo-ga-myeo a-chim sik-sa, san-chaek, jeom-sim yak-sok-kka-ji sun-seo-dae-ro eup-eot-seum-ni-da. ma-chi gwan-je-tab-e il-jeong-eul bo-go-ha-deut-i-yo.",
+      "en": "\"Then let me report today's schedule.\" I counted off on my fingers, listing breakfast, a walk, and our lunch plans in order — as though reporting an itinerary to a control tower.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "당신이 웃으며 '기장님은 하루도 대충 사는 법이 없네요'라고 말했습니다. 저는 그저 어깨를 으쓱했습니다. 오늘도, 무사히 좋은 하루가 되기를 바랄 뿐입니다.",
+      "reading": "dang-sin-i us-eu-myeo gi-jang-nim-eun ha-ru-do dae-chung sa-neun beob-i eob-ne-yo-ra-go mal-haet-seum-ni-da. jeo-neun geu-jeo eo-kkae-reul eu-sseuk-haet-seum-ni-da. o-neul-do, mu-sa-hi jo-eun ha-ru-ga doe-gi-reul ba-ral ppun-im-ni-da.",
+      "en": "You laughed and said, \"Captain, you never let a single day go by half-heartedly, do you.\" I simply shrugged. All I hope for, today as well, is a safe and good day ahead."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "기상", "reading": "gi-sang", "meaning": "waking up / rising (also means 'weather' — same spelling, different word)", "example": "오늘 기상 상태는 어떻습니까?", "example_reading": "o-neul gi-sang sang-tae-neun eo-tteo-seum-ni-kka", "example_en": "How's your 'gisang' condition today?" },
+    { "id": "w02", "word": "컨디션", "reading": "keon-di-syeon", "meaning": "condition (physical/mental state)", "example": "진짜 컨디션은 어떻습니까?", "example_reading": "jin-jja keon-di-syeon-eun eo-tteo-seum-ni-kka", "example_en": "How's your actual condition?" },
+    { "id": "w03", "word": "브리핑", "reading": "beu-ri-ping", "meaning": "briefing", "example": "비행 전 브리핑을 하던 습관이 있습니다.", "example_reading": "bi-haeng jeon beu-ri-ping-eul ha-deon seup-gwan-i it-seum-ni-da", "example_en": "I have a habit from doing pre-flight briefings." },
+    { "id": "w04", "word": "활기차다", "reading": "hwal-gi-cha-da", "meaning": "to be lively, energetic", "example": "오늘따라 활기차 보입니다.", "example_reading": "o-neul-tta-ra hwal-gi-cha bo-im-ni-da", "example_en": "You look especially lively today." },
+    { "id": "w05", "word": "일과", "reading": "il-gwa", "meaning": "daily schedule, daily routine", "example": "오늘 일과를 말씀드리겠습니다.", "example_reading": "o-neul il-gwa-reul mal-sseum-deu-ri-get-seum-ni-da", "example_en": "Let me tell you today's schedule." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "오늘 기상 상태는 어떻습니까?", "reading": "o-neul gi-sang sang-tae-neun eo-tteo-seum-ni-kka", "en": "How is your condition (or the weather) today?" },
+    { "id": "s02", "ko": "하루를 시작하기 전에는 컨디션부터 확인해야 합니다.", "reading": "ha-ru-reul si-jak-ha-gi jeon-e-neun keon-di-syeon-bu-teo hwak-in-hae-ya ham-ni-da", "en": "Before starting the day, you should check your condition first." },
+    { "id": "s03", "ko": "비행 전 브리핑처럼 하루를 미리 그려 봅니다.", "reading": "bi-haeng jeon beu-ri-ping-cheo-reom ha-ru-reul mi-ri geu-ryeo bom-ni-da", "en": "Like a pre-flight briefing, I picture the day ahead in advance." },
+    { "id": "s04", "ko": "오늘은 유독 활기차 보이시네요.", "reading": "o-neul-eun yu-dok hwal-gi-cha bo-i-si-ne-yo", "en": "You look especially lively today." },
+    { "id": "s05", "ko": "오늘 일과를 순서대로 말씀드리겠습니다.", "reading": "o-neul il-gwa-reul sun-seo-dae-ro mal-sseum-deu-ri-get-seum-ni-da", "en": "Let me tell you today's schedule in order." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "상우", "text": "좋은 아침입니다. 오늘 컨디션은 어떻습니까?", "reading": "jo-eun a-chim-im-ni-da. o-neul keon-di-syeon-eun eo-tteo-seum-ni-kka", "en": "Good morning. How's your condition today?" },
+        { "speaker": "승객", "text": "좋아요. 근데 기장님은 매번 그렇게 상태부터 물어보시네요.", "reading": "jo-a-yo. geun-de gi-jang-nim-eun mae-beon geu-reo-ke sang-tae-bu-teo mul-eo-bo-si-ne-yo", "en": "I'm good. But Captain, you always ask about my condition first, every time." },
+        { "speaker": "상우", "text": "확인 없이 출발하는 건 규정 위반이니까요. 아침은 드셨습니까?", "reading": "hwak-in eob-si chul-bal-ha-neun geon gyu-jeong wi-ban-i-ni-kka-yo. a-chim-eun deu-syeot-seum-ni-kka", "en": "Departing without a check would be against procedure. Have you had breakfast?" },
+        { "speaker": "승객", "text": "아직요. 기장님이 사주신다면서요?", "reading": "a-jik-yo. gi-jang-nim-i sa-ju-sin-da-myeon-seo-yo", "en": "Not yet. Weren't you going to treat me to breakfast?" }
+      ],
+      "question": "상우가 아침에 컨디션부터 확인하는 이유는 무엇입니까?",
+      "question_en": "Why does Sangwoo check her condition first thing in the morning?",
+      "correct_answer": "확인 없이 하루를 시작하는 것은 그의 원칙에 어긋나기 때문에",
+      "options": ["확인 없이 하루를 시작하는 것은 그의 원칙에 어긋나기 때문에", "아침 식사 메뉴를 정하기 위해서", "관제탑에 보고해야 하기 때문에", "승객이 먼저 물어봤기 때문에"],
+      "explanation": "상우는 확인 절차 없이 하루를 시작하는 것을 규정 위반처럼 여기는 원칙주의자라서, 항상 컨디션부터 확인합니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "승객", "text": "오늘 일정이 진짜 이렇게 빡빡해요? 아침, 산책, 점심까지 다 정해놨어요?", "reading": "o-neul il-jeong-i jin-jja i-reo-ke ppak-ppak-hae-yo? a-chim, san-chaek, jeom-sim-kka-ji da jeong-hae-nwass-eo-yo?", "en": "Is today's schedule really this packed? You've already planned breakfast, a walk, and lunch?" },
+        { "speaker": "상우", "text": "대략적인 계획일 뿐입니다. 언제든 상황에 맞춰 조정할 수 있습니다.", "reading": "dae-ryak-jeok-in gye-hoeg-il ppun-im-ni-da. eon-je-deun sang-hwang-e maj-chwo jo-jeong-hal su it-seum-ni-da", "en": "It's just a rough plan. It can always be adjusted as the situation calls for it." },
+        { "speaker": "승객", "text": "기장님답네요. 그럼 오늘 첫 순서는 뭐예요?", "reading": "gi-jang-nim-dab-ne-yo. geu-reom o-neul cheot sun-seo-neun mwo-ye-yo", "en": "That's so like you, Captain. So what's first on the list today?" },
+        { "speaker": "상우", "text": "간단한 아침 식사입니다. 배가 든든해야 하루를 잘 버틸 수 있으니까요.", "reading": "gan-dan-han a-chim sik-sa-im-ni-da. bae-ga deun-deun-hae-ya ha-ru-reul jal beo-til su it-seu-ni-kka-yo", "en": "A simple breakfast. You need a full stomach to make it through the day well." }
+      ],
+      "question": "상우가 오늘 일정을 짠 방식에 대해 알 수 있는 것은?",
+      "question_en": "What can we learn about how Sangwoo planned today's schedule?",
+      "correct_answer": "계획을 세우되 상황에 따라 유연하게 바꿀 수 있도록 했다",
+      "options": ["계획을 세우되 상황에 따라 유연하게 바꿀 수 있도록 했다", "한 번 정한 일정은 절대 바꾸지 않는다", "일정을 전혀 계획하지 않고 즉흥적으로 움직인다", "승객에게 일정을 전부 맡겼다"],
+      "explanation": "상우는 일정을 미리 계획하지만, 상황에 따라 조정할 수 있는 대략적인 계획이라고 밝히며 유연함을 보여줍니다."
+    }
+  ]
+}

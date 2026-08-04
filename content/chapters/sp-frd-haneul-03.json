@@ -1,0 +1,62 @@
+{
+  "id": "sp-frd-haneul-03",
+  "character_id": "haneul",
+  "title": "한국 유행어와 신조어",
+  "emoji": "🔥",
+  "story": [
+    {
+      "text": "다음 날, 나는 길가의 어묵 가게를 보며 또박또박 말했다. \"정말 맛있어 보이는 가게네요.\" 하늘이 옆에서 픽 웃었다.",
+      "reading": "da-eum nal, na-neun gil-ga-ui eo-muk ga-ge-reul bo-myeo tto-bak-tto-bak mal-haet-da. jeong-mal mas-iss-eo bo-i-neun ga-ge-ne-yo. ha-neul-i yeop-e-seo pik us-eot-da.",
+      "en": "The next day, I looked at a fish-cake stall on the street and said, very properly, \"What a delicious-looking shop.\" Haneul smirked beside me."
+    },
+    {
+      "text": "\"그런 말투 누가 써. 놀랍거나 좋을 땐 그냥 '대박'이라고 해.\" 그가 팔짱을 끼며 정정했다.",
+      "reading": "geu-reon mal-tu nu-ga sseo. nol-lap-geo-na jo-eul ttaen geu-nyang dae-bak-i-ra-go hae. geu-ga pal-jjang-eul kki-myeo jeong-jeong-haet-da.",
+      "en": "\"Who talks like that. When something's surprising or amazing, just say 'daebak'.\" He corrected me, arms crossed.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "어묵을 한 입 베어 물고 내가 \"어, 대박, 맛있어요\"라고 하자, 그는 짧게 답했다. \"인정.\" 처음 들어보는 그 한마디가 왠지 웃겼다.",
+      "reading": "eo-muk-eul han ip be-eo mul-go nae-ga eo, dae-bak, mas-iss-eo-yo-ra-go ha-ja, geu-neun jjalb-ge dap-haet-da. in-jeong. cheo-eum deul-eo-bo-neun geu han-ma-di-ga waen-ji ut-gyeot-da.",
+      "en": "I bit into the fish cake and said, \"Oh, daebak, this is good,\" and he answered shortly: \"In-jeong.\" (Agreed.) Hearing that word for the first time was somehow funny.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "내가 분위기를 살려보겠다고 던진 농담이 완전히 실패했다. 정적이 흘렀다. \"이게 바로 갑분싸다.\" 하늘이 무표정하게 평가했다.",
+      "reading": "nae-ga bun-wi-gi-reul sal-lyeo-bo-get-da-go deon-jin nong-dam-i wan-jeon-hi sil-pae-haet-da. jeong-jeog-i heul-leot-da. i-ge ba-ro gap-bun-ssa-da. ha-neul-i mu-pyo-jeong-ha-ge pyeong-ga-haet-da.",
+      "en": "The joke I threw out to liven things up completely fell flat. Silence hung in the air. \"This, right here, is gapbunssa.\" (a sudden awkward mood) Haneul assessed it, deadpan.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "그러다 지나가던 강아지가 내 신발 끈을 물고 안 놔주는 소동이 벌어졌다. 둘이서 배꼽을 잡고 웃었다. \"와, 이거 완전 꿀잼이다.\" 그가 드물게 크게 웃으며 말했다.",
+      "reading": "geu-reo-da ji-na-ga-deon gang-a-ji-ga nae sin-bal kkeun-eul mul-go an nwa-ju-neun so-dong-i beol-eo-jyeot-da. dul-i-seo bae-kkob-eul jab-go us-eot-da. wa, i-geo wan-jeon kkul-jaem-i-da. geu-ga deu-mul-ge keu-ge us-eu-myeo mal-haet-da.",
+      "en": "Then a passing dog grabbed my shoelace and wouldn't let go — total chaos. We both burst out laughing. \"Wow, this is straight-up kkuljaem.\" (super fun) he said, laughing loudly, which was rare for him.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "신이 나서 어릴 때 이야기를 줄줄 늘어놓자, 그가 손을 들어 막았다. \"됐어, 거기까지. TMI야.\" 하지만 듣는 표정은 싫지 않아 보였다.",
+      "reading": "sin-i na-seo eo-ril ttae i-ya-gi-reul jul-jul neul-eo-noh-ja, geu-ga son-eul deul-eo mag-at-da. dwaess-eo, geo-gi-kka-ji. ti-em-a-i-ya. ha-ji-man deut-neun pyo-jeong-eun silh-ji anh-a bo-yeot-da.",
+      "en": "Getting excited, I launched into a long story from when I was a kid, but he held up a hand to stop me. \"Okay, that's enough. TMI.\" But the look on his face while listening didn't seem to mind at all.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "\"너도 이제 슬슬 신조어 좀 쓰네.\" 그가 툭 던졌다. \"다 너한테 배운 거잖아.\" 나는 웃으며 대꾸했다. 골목을 걷는 발걸음이 가벼웠다.",
+      "reading": "neo-do i-je seul-seul sin-jo-eo jom sseu-ne. geu-ga tuk deon-jyeot-da. da neo-han-te bae-un geo-jan-a. na-neun us-eu-myeo dae-kku-haet-da. gol-mog-eul geot-neun bal-geol-eum-i ga-byeo-wot-da.",
+      "en": "\"You're finally starting to use some slang.\" he tossed out. \"I learned it all from you,\" I shot back with a laugh. Our footsteps down the alley felt light."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "대박", "reading": "dae-bak", "meaning": "wow, amazing, jackpot (exclamation)", "example": "대박, 이거 진짜 맛있다!", "example_reading": "dae-bak, i-geo jin-jja mas-it-da!", "example_en": "Whoa, this is actually delicious!" },
+    { "id": "w02", "word": "인정", "reading": "in-jeong", "meaning": "agreed, I admit it's true", "example": "그 말에는 나도 인정.", "example_reading": "geu mal-e-neun na-do in-jeong", "example_en": "I agree with that too." },
+    { "id": "w03", "word": "갑분싸", "reading": "gap-bun-ssa", "meaning": "a sudden awkward/dead silence (short for '갑자기 분위기 싸해짐')", "example": "내 농담 때문에 갑분싸가 됐다.", "example_reading": "nae nong-dam ttae-mun-e gap-bun-ssa-ga dwaet-da", "example_en": "My joke made the mood suddenly awkward." },
+    { "id": "w04", "word": "꿀잼", "reading": "kkul-jaem", "meaning": "super fun, hilarious (slang)", "example": "어제 본 영화 완전 꿀잼이었어.", "example_reading": "eo-je bon yeong-hwa wan-jeon kkul-jaem-i-eoss-eo", "example_en": "The movie I watched yesterday was hilariously fun." },
+    { "id": "w05", "word": "TMI", "reading": "ti-em-a-i", "meaning": "too much information", "example": "그건 완전 TMI야, 그만 말해.", "example_reading": "geu-geon wan-jeon ti-em-a-i-ya, geu-man mal-hae", "example_en": "That's way too much information, stop talking." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "대박, 이거 진짜 맛있다!", "reading": "dae-bak, i-geo jin-jja mas-it-da!", "en": "Whoa, this is actually delicious!" },
+    { "id": "s02", "ko": "그 말에는 나도 인정.", "reading": "geu mal-e-neun na-do in-jeong", "en": "I agree with that too." },
+    { "id": "s03", "ko": "내 농담 때문에 갑분싸가 됐다.", "reading": "nae nong-dam ttae-mun-e gap-bun-ssa-ga dwaet-da", "en": "My joke made the mood suddenly awkward." },
+    { "id": "s04", "ko": "어제 본 영화 완전 꿀잼이었어.", "reading": "eo-je bon yeong-hwa wan-jeon kkul-jaem-i-eoss-eo", "en": "The movie I watched yesterday was hilariously fun." },
+    { "id": "s05", "ko": "그건 완전 TMI야, 그만 말해.", "reading": "geu-geon wan-jeon ti-em-a-i-ya, geu-man mal-hae", "en": "That's way too much information, stop talking." }
+  ]
+}

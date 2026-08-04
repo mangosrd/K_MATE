@@ -1,0 +1,93 @@
+{
+  "id": "sp-frd-sunwoo-10",
+  "character_id": "sunwoo",
+  "title": "이번 열흘 진짜 소중했다",
+  "emoji": "🤝",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "김해공항 출국장 앞, 열흘이 어떻게 지나갔는지 모르게 마지막 날이 왔다. 선우가 괜히 딴청을 피우며 캐리어 손잡이를 만지작거린다.",
+      "reading": "gim-hae-gong-hang chul-guk-jang ap, yeol-heul-i eo-tteoh-ge ji-na-gan-neun-ji mo-reu-ge ma-ji-mak nal-i wat-da. seon-u-ga gwaen-hi ttan-cheong-eul pi-u-myeo kae-ri-eo son-jab-i-reul man-ji-jak-geo-rin-da.",
+      "en": "In front of Gimhae Airport's departure hall, the last day arrives without my even noticing how the ten days flew by. Sunwoo fidgets with the suitcase handle, pretending to be distracted."
+    },
+    {
+      "text": "\"말도 안 되게 빨리 갔다, 시간이.\" 그가 헛기침을 하며 애써 아무렇지 않은 척한다. 그의 눈빛에는 서운함이 살짝 묻어난다.",
+      "reading": "mal-do an doe-ge ppal-li gat-da, si-gan-i. geu-ga heot-gi-chim-eul ha-myeo ae-sseo a-mu-reoh-ji anh-eun cheok-han-da. geu-ui nun-bit-e-neun seo-un-ham-i sal-jjak mud-eo-nan-da.",
+      "en": "\"Time flew by way too fast, ridiculously so.\" He clears his throat, trying hard to act unbothered. A hint of disappointment shows faintly in his eyes."
+    },
+    {
+      "text": "\"이번 열흘 진짜 소중했다, 내한테.\" 평소답지 않게 진지한 그의 말투에, 나도 모르게 마음이 뭉클해진다.",
+      "reading": "i-beon yeol-heul jin-jja so-jung-haet-da, nae-han-te. pyeong-so-dap-ji anh-ge jin-ji-han geu-ui mal-tu-e, na-do mo-reu-ge ma-eum-i mung-keul-hae-jin-da.",
+      "en": "\"These ten days were really precious to me.\" His tone, unusually earnest for him, moves my heart before I even realize it.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "\"다음에 또 오면, 그때도 내가 다 책임진다. 이건 약속이다.\" 그가 새끼손가락을 불쑥 내민다. 장난스러운데도 진심이 가득 담겨 있다.",
+      "reading": "da-eum-e tto o-myeon, geu-ttae-do nae-ga da chaek-im-jin-da. i-geon yak-sog-i-da. geu-ga sae-kki-son-ga-rag-eul bul-ssuk nae-min-da. jang-nan-seu-reo-un-de-do jin-sim-i ga-deuk dam-gyeo iss-da.",
+      "en": "\"If you come again next time, I've got that trip covered too. This is a promise.\" He suddenly holds out his pinky finger. Playful as it is, it's full of sincerity.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "나도 웃으며 손가락을 걸었다. \"그래, 약속. 너도 서울 한번 놀러 와라.\" \"콜이다, 그거.\" 짧은 약속 하나에 오랜 우정이 고스란히 담겨 있었다.",
+      "reading": "na-do us-eu-myeo son-ga-rag-eul geol-eot-da. geu-rae, yak-sok. neo-do seo-ul han-beon nol-leo o-a-ra. kol-i-da, geu-geo. jjalb-eun yak-sok ha-na-e o-raen u-jeong-i go-seu-ran-hi dam-gyeo iss-eot-da.",
+      "en": "Laughing, I hooked my pinky with his too. \"Alright, promise. You come visit Seoul sometime too.\" \"Deal.\" A single short promise held our long friendship inside it, whole and intact.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "\"우리 우정은 영원히 그대로다, 안 그렇나?\" 선우가 씩 웃으며 어깨동무를 한다. 몇 년이 지나도 변하지 않을 거라는 확신이 든다.",
+      "reading": "u-ri u-jeong-eun yeong-won-hi geu-dae-ro-da, an geu-reoh-na? seon-u-ga ssik us-eu-myeo eo-kkae-dong-mu-reul han-da. myeot nyeon-i ji-na-do byeon-ha-ji anh-eul geo-ra-neun hwak-sin-i deun-da.",
+      "en": "\"Our friendship stays exactly the same forever, doesn't it?\" Sunwoo grins and throws an arm around my shoulder. I feel certain it won't change even years from now.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "탑승 게이트로 향하는 나를 그는 손을 흔들며 끝까지 배웅한다. \"잘 가라! 다음에 또 오나!\" 그의 목소리가 공항 안에 오래도록 울린다.",
+      "reading": "tap-seung ge-i-teu-ro hyang-ha-neun na-reul geu-neun son-eul heun-deul-myeo kkeut-kka-ji bae-ung-han-da. jal ga-ra! da-eum-e tto o-na! geu-ui mok-so-ri-ga gong-hang an-e o-rae-do-rok ul-lin-da.",
+      "en": "As I head toward the boarding gate, he waves and sees me off all the way to the end. \"Take care! Come again next time!\" His voice echoes through the airport for a long time after.",
+      "highlight_word_id": "w05"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "소중하다", "reading": "so-jung-ha-da", "meaning": "to be precious, valuable", "example": "이번 여행은 나에게 소중한 시간이었다.", "example_reading": "i-beon yeo-haeng-eun na-e-ge so-jung-han si-gan-i-eot-da", "example_en": "This trip was precious time to me." },
+    { "id": "w02", "word": "약속", "reading": "yak-sok", "meaning": "promise", "example": "우리는 다시 만나기로 약속했다.", "example_reading": "u-ri-neun da-si man-na-gi-ro yak-sok-haet-da", "example_en": "We promised to meet again." },
+    { "id": "w03", "word": "우정", "reading": "u-jeong", "meaning": "friendship", "example": "우리의 우정은 변함없다.", "example_reading": "u-ri-ui u-jeong-eun byeon-ham-eop-da", "example_en": "Our friendship remains unchanged." },
+    { "id": "w04", "word": "영원히", "reading": "yeong-won-hi", "meaning": "forever, eternally", "example": "이 추억은 영원히 남을 것이다.", "example_reading": "i chu-eog-eun yeong-won-hi nam-eul geos-i-da", "example_en": "This memory will remain forever." },
+    { "id": "w05", "word": "배웅하다", "reading": "bae-ung-ha-da", "meaning": "to see someone off", "example": "그는 공항까지 나를 배웅해 주었다.", "example_reading": "geu-neun gong-hang-kka-ji na-reul bae-ung-hae ju-eot-da", "example_en": "He saw me off all the way to the airport." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "그와 보낸 시간은 나에게 소중하다.", "reading": "geu-wa bo-naen si-gan-eun na-e-ge so-jung-ha-da", "en": "The time I spent with him is precious to me." },
+    { "id": "s02", "ko": "우리는 다시 만나자고 약속했다.", "reading": "u-ri-neun da-si man-na-ja-go yak-sok-haet-da", "en": "We promised to meet again." },
+    { "id": "s03", "ko": "오랜 우정은 쉽게 변하지 않는다.", "reading": "o-raen u-jeong-eun swip-ge byeon-ha-ji anh-neun-da", "en": "A long friendship doesn't change easily." },
+    { "id": "s04", "ko": "이 추억은 영원히 잊지 못할 것이다.", "reading": "i chu-eog-eun yeong-won-hi it-ji mot-hal geos-i-da", "en": "This memory will be unforgettable forever." },
+    { "id": "s05", "ko": "친구가 공항까지 배웅해 주었다.", "reading": "chin-gu-ga gong-hang-kka-ji bae-ung-hae ju-eot-da", "en": "My friend saw me off all the way to the airport." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "선우", "text": "이번 열흘 진짜 소중했다, 내한테. 다음에 또 오면, 그때도 내가 다 책임진다.", "reading": "i-beon yeol-heul jin-jja so-jung-haet-da, nae-han-te. da-eum-e tto o-myeon, geu-ttae-do nae-ga da chaek-im-jin-da.", "en": "These ten days were really precious to me. If you come again next time, I've got that trip covered too." },
+        { "speaker": "승객", "text": "나도 진짜 좋았어. 이건 약속이다?", "reading": "na-do jin-jja jo-a-sseo. i-geon yak-sog-i-da?", "en": "I had a really great time too. Is this a promise?" },
+        { "speaker": "선우", "text": "당연하지. 새끼손가락 걸자, 진짜로.", "reading": "dang-yeon-ha-ji. sae-kki-son-ga-rak geol-ja, jin-jja-ro.", "en": "Of course. Let's hook pinkies, for real." },
+        { "speaker": "승객", "text": "좋아, 약속. 너도 서울 한번 놀러 와라.", "reading": "jo-a, yak-sok. neo-do seo-ul han-beon nol-leo o-a-ra.", "en": "Deal, promise. You come visit Seoul sometime too." }
+      ],
+      "question": "선우가 승객과 새끼손가락을 걸며 한 약속은 무엇인가요?",
+      "question_en": "What promise did Sunwoo make with the passenger while hooking pinky fingers?",
+      "correct_answer": "다음에 또 오면 그때도 여행을 책임지겠다는 것",
+      "options": ["다음에 또 오면 그때도 여행을 책임지겠다는 것", "다시는 안 만나겠다는 것", "선물을 보내주겠다는 것", "부산에 이사 오라는 것"],
+      "explanation": "선우는 승객이 다음에 다시 오면 그때도 여행을 자신이 다 책임지겠다고 진심으로 약속합니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "선우", "text": "우리 우정은 영원히 그대로다, 안 그렇나?", "reading": "u-ri u-jeong-eun yeong-won-hi geu-dae-ro-da, an geu-reoh-na?", "en": "Our friendship stays exactly the same forever, doesn't it?" },
+        { "speaker": "승객", "text": "그럼, 당연하지. 몇 년이 지나도 우리는 똑같을 거야.", "reading": "geu-reom, dang-yeon-ha-ji. myeot nyeon-i ji-na-do u-ri-neun ttok-gat-eul geo-ya.", "en": "Of course, obviously. Even years from now, we'll be exactly the same." },
+        { "speaker": "선우", "text": "그 말 믿는다, 내. 조심히 가고, 도착하면 연락해라.", "reading": "geu mal mid-neun-da, nae. jo-sim-hi ga-go, do-chak-ha-myeon yeol-lak-hae-ra.", "en": "I'll hold you to that. Travel safe, and text me when you land." },
+        { "speaker": "승객", "text": "그래, 잘 있어. 다음에 또 보자.", "reading": "geu-rae, jal iss-eo. da-eum-e tto bo-ja.", "en": "Alright, take care. See you again next time." }
+      ],
+      "question": "선우가 헤어지기 전 승객에게 전한 마음은 무엇인가요?",
+      "question_en": "What feeling did Sunwoo convey to the passenger before they parted?",
+      "correct_answer": "시간이 지나도 우정은 변하지 않을 것이라는 확신",
+      "options": ["시간이 지나도 우정은 변하지 않을 것이라는 확신", "이제 그만 연락하자는 것", "여행이 별로였다는 것", "다시는 안 볼 것 같다는 불안함"],
+      "explanation": "선우는 시간이 지나도 둘의 우정은 그대로일 거라는 확신을 담아 승객과 진심 어린 인사를 나눕니다."
+    }
+  ]
+}

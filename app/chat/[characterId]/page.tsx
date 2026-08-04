@@ -4,14 +4,16 @@ import { useState, useRef, useEffect, useCallback, use } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import BottomNav from "@/components/ui/BottomNav";
+import LoadingSplash from "@/components/LoadingSplash";
 import type { ChatMessage, ChatResponse } from "@/types/api";
 import styles from "./chat.module.css";
 
-import { MOCK_CHARACTERS, MOCK_USER, canAccessCharacter } from "@/lib/db/mock";
+import { MOCK_CHARACTERS, canAccessCharacter } from "@/lib/db/mock";
 import { addVocabWord } from "@/lib/vocab/store";
 import { addLocalDiary } from "@/lib/diary/store";
 import { getChatHistory, saveChatHistory, clearChatHistory } from "@/lib/chat/store";
 import { getEffectiveUserId, getCurrentUser } from "@/lib/auth/store";
+import { useMembership, useFreeCharSlots } from "@/lib/auth/useAuthUser";
 
 const REGION_NAMES: Record<string, string> = {
   seoul: "서울·경기 노선",
@@ -28,8 +30,10 @@ import { useLanguage } from "@/components/LanguageContext";
 
 export default function ChatPage({ params }: { params: Promise<{ characterId: string }> }) {
   const { characterId } = use(params);
-  const { language } = useLanguage();
-  const canAccess = canAccessCharacter(characterId, getCurrentUser()?.membership ?? MOCK_USER.membership, MOCK_USER.free_character_slots);
+  const { language, t } = useLanguage();
+  const { membership, membershipLoaded } = useMembership();
+  const { freeSlots, freeSlotsLoaded } = useFreeCharSlots();
+  const canAccess = canAccessCharacter(characterId, membership, freeSlots);
 
   // 실제 캐릭터 데이터 조회
   const char = MOCK_CHARACTERS.find((c) => c.id === characterId) ?? {
@@ -59,9 +63,23 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
   const [toast, setToast] = useState<string | null>(null);
   const [showEndModal, setShowEndModal] = useState(false);
   const [savedWords, setSavedWords] = useState<string[]>([]);
-  const [resumeChoice, setResumeChoice] = useState<"pending" | "resolved">(() =>
-    getChatHistory(characterId) ? "pending" : "resolved"
-  );
+  const [showPaywall, setShowPaywall] = useState(false);
+  const [freeRemaining, setFreeRemaining] = useState<number | null>(null);
+  // 서버는 localStorage에 접근할 수 없어 항상 "resolved"로 렌더한다 — 초기값을
+  // getChatHistory()로 바로 잡으면 서버/클라이언트 렌더 결과가 달라져 하이드레이션
+  // 에러가 난다. 마운트 후에만(클라이언트에서만) 저장된 대화가 있는지 확인한다.
+  const [resumeChoice, setResumeChoice] = useState<"pending" | "resolved">("resolved");
+
+  useEffect(() => {
+    // 저장된 기록이 시작 인사말(캐릭터가 먼저 건 말) 하나뿐이면 "대화"라고 볼 수
+    // 없다 — 아래 저장 effect가 인사말만 있어도 그대로 저장해버려서, 실제로 아무
+    // 말도 안 하고 페이지만 열었다 나가도 다음 방문 때 계속 팝업이 떴었다.
+    // 사용자가 실제로 메시지를 보낸 기록이 있을 때만 이어서 하기를 제안한다.
+    const history = getChatHistory(characterId);
+    if (history?.some((m) => m.role === "user")) {
+      setResumeChoice("pending");
+    }
+  }, [characterId]);
   const [isListening, setIsListening] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
@@ -90,23 +108,25 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
   // 단어 저장 토스트
   const showToast = useCallback((word: string) => {
     setSavedWords((prev) => [...prev, word]);
-    setToast(`'${word}' saved to vocab!`);
+    setToast(t("wordSavedToast", { word }));
     setTimeout(() => setToast(null), 3000);
-  }, []);
+  }, [t]);
 
   // 단어장에 영구 저장 — 로컬(브라우저)에 우선 저장하고, 백엔드가 살아있으면 함께 동기화
   const saveWordToVocab = useCallback(
     (word: string, meaning: string, sentence: string) => {
       addVocabWord({
         character_id: characterId,
+        character_name: char.name,
         word,
         meaning,
         sentence,
         sentence_translation: "",
       });
     },
-    [characterId]
+    [characterId, char.name]
   );
+
 
   const sendMessage = async () => {
     if (!input.trim() || isLoading) return;
@@ -135,12 +155,21 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
         }),
       });
 
+      // 무료 대화 10회 소진 — 답장 없이 결제 유도 모달만 띄운다(사용자가 보낸 메시지는
+      // 화면에 남겨두되, 가짜 답장을 지어내지 않는다).
+      if (res.status === 402) {
+        setShowPaywall(true);
+        return;
+      }
+      if (!res.ok) throw new Error("chat request failed");
+
       const data: ChatResponse = await res.json();
 
       setMessages([
         ...newMessages,
         { role: "assistant", content: data.reply },
       ]);
+      setFreeRemaining(data.free_messages_remaining ?? null);
 
       if (data.callback_memory) {
         setCallbackMemory(data.callback_memory);
@@ -173,6 +202,16 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
 
   const handleSessionEnd = async () => {
     const userId = getEffectiveUserId();
+
+    // 승객이 한 마디도 안 하고(초기 인사만 있는 상태) 바로 종료하면 나눈 대화 자체가
+    // 없으므로, 일기/기억을 생성·저장할 소재도 없다 — 굳이 LLM을 호출해 빈 대화 기반의
+    // 일기를 만들지 않는다.
+    const hasConversation = messages.some((m) => m.role === "user");
+    if (!hasConversation) {
+      clearChatHistory(characterId);
+      window.location.href = "/diary";
+      return;
+    }
 
     // 1. 기억 추출 + 저장 (LLM 추출 후 백엔드 MySQL에 best-effort 저장)
     fetch("/api/memory", {
@@ -235,7 +274,7 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
       (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
 
     if (!SpeechRecognition) {
-      setToast("Speech recognition is not supported in this browser.");
+      setToast(t("sttNotSupportedToast"));
       return;
     }
 
@@ -278,18 +317,27 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
   // (이 아래로 useEffect 1개, useCallback 2개, useState 1개가 더 있었음) 리렌더링 시점에
   // canAccess 값이 달라지면(예: 다른 탭에서 프리미엄 결제 후 돌아왔을 때) 훅 호출 순서가
   // 바뀌어 "Rendered fewer hooks than expected" 런타임 에러로 채팅 화면이 통째로 깨질 수 있었다.
+  // membership/freeSlots는 마운트 직후엔 항상 기본값(무료회원)으로 시작해서 실제 백엔드
+  // 조회가 끝나기 전까진, 진짜 프리미엄 회원도 잠깐 🔒 잠금 화면을 봤다가 채팅 화면으로
+  // 바뀌는 깜빡임이 있었다. 다만 이 대기가 필요한 건 프리미엄 전용 캐릭터일 때뿐이다 —
+  // 무료 캐릭터는 membership을 보기도 전에 이미 접근이 허용되므로, 매번(뒤로가기로
+  // 재진입할 때마다도) 로딩 화면을 띄우면 불필요한 깜빡임만 새로 생긴다.
+  if (char.requires_premium && (!membershipLoaded || !freeSlotsLoaded)) {
+    return <LoadingSplash />;
+  }
+
   if (!canAccess) {
     return (
       <>
         <div className="page-content" style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", minHeight: "80vh", padding: "20px", textAlign: "center" }}>
           <div style={{ fontSize: "64px", marginBottom: "16px" }}>🔒</div>
-          <h2 style={{ fontSize: "20px", fontWeight: "800", marginBottom: "8px" }}>{char.name} 기장 노선 잠금</h2>
+          <h2 style={{ fontSize: "20px", fontWeight: "800", marginBottom: "8px" }}>{t("chatLockTitle", { name: char.name })}</h2>
           <p style={{ fontSize: "14px", color: "var(--text-muted)", marginBottom: "24px", maxWidth: "300px" }}>
-            이 노선은 프리미엄 전용입니다. 구독 후 대화를 이용하실 수 있습니다.
+            {t("chatLockSub")}
           </p>
           <div style={{ display: "flex", gap: "12px" }}>
-            <Link href="/chat" className="btn btn-secondary">← 목록으로</Link>
-            <Link href="/premium" className="btn btn-gold">⭐ 프리미엄 보기</Link>
+            <Link href="/chat" className="btn btn-secondary">{t("backToListBtn")}</Link>
+            <Link href="/premium" className="btn btn-gold">{t("viewPremiumBtn")}</Link>
           </div>
         </div>
         <BottomNav />
@@ -328,7 +376,7 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
             id="btn-session-end"
             aria-label="End session"
           >
-            종료
+            {t("endSessionBtn")}
           </button>
         </header>
 
@@ -385,6 +433,16 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
               </span>
             ))}
           </div>
+        )}
+
+        {/* 무료 대화 남은 횟수 안내 */}
+        {freeRemaining !== null && (
+          <p style={{ fontSize: 11, color: "var(--text-muted)", textAlign: "center", margin: "0 0 6px" }}>
+            {t("freeRemainingMsg", { n: String(freeRemaining) })} ·{" "}
+            <Link href="/premium" style={{ color: "var(--red)", fontWeight: 700 }}>
+              {t("unlimitedChatLink")}
+            </Link>
+          </p>
         )}
 
         {/* 입력창 */}
@@ -445,6 +503,38 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
               <button className={`btn btn-primary btn-lg ${styles.pillBtn}`} onClick={handleResume} id="btn-chat-resume">
                 이어서 하기
               </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* 무료 대화 10회 소진 — 프리미엄 유도 */}
+      {showPaywall && (
+        <div
+          className="modal-overlay"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="modal-paywall-title"
+          onClick={() => setShowPaywall(false)}
+        >
+          <div className="modal-sheet" onClick={(e) => e.stopPropagation()}>
+            <div className="modal-handle" />
+            <h2 id="modal-paywall-title" className={styles.modalTitle}>
+              {t("paywallTitle")}
+            </h2>
+            <p className={styles.modalSub}>
+              {t("paywallSub", { name: char.name })}
+            </p>
+            <div className={styles.modalActions}>
+              <button
+                className={`btn btn-secondary btn-lg ${styles.pillBtn}`}
+                onClick={() => setShowPaywall(false)}
+              >
+                {t("notNowBtn")}
+              </button>
+              <Link href="/premium" className={`btn btn-primary btn-lg ${styles.pillBtn}`}>
+                {t("viewPremiumBtn")}
+              </Link>
             </div>
           </div>
         </div>

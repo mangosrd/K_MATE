@@ -1,0 +1,93 @@
+{
+  "id": "sp-day-yongwoo-08",
+  "character_id": "yongwoo",
+  "title": "휴지 한 통의 인사",
+  "emoji": "🏠",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "드디어 제주시에 내 방을 구했다. 이삿짐을 나르는 내내 용우가 옆에서 무거운 상자들을 대신 옮겨 주었다.",
+      "reading": "deu-di-eo je-ju-si-e nae bang-eul gu-haet-da. i-sat-jim-eul na-reu-neun nae-nae yong-u-ga yeop-e-seo mu-geo-un sang-ja-deul-eul dae-sin om-gyeo ju-eot-da.",
+      "en": "I'd finally gotten a room of my own in Jeju City. The whole time I was moving in, Yongwoo carried the heavy boxes for me."
+    },
+    {
+      "text": "'집들이엔 이게 국룰이다.' 용우가 봉지에서 휴지와 세제를 꺼내 내밀었다. '휴지처럼 일이 술술 풀리고, 세제처럼 거품이 잘 일어나라는 뜻이다.'",
+      "reading": "jip-deul-i-en i-ge gung-nyul-i-da. yong-u-ga bong-ji-e-seo hyu-ji-wa se-je-reul kkeo-nae nae-mil-eot-da. hyu-ji-cheo-reom il-i sul-sul pul-li-go, se-je-cheo-reom geo-pum-i jal il-eo-na-ra-neun tteus-i-da.",
+      "en": "\"This is the unwritten rule for housewarmings.\" Yongwoo pulled tissue and detergent out of a bag and held them out. \"It means may things unroll smoothly for you like the tissue, and may your life bubble up and flourish like the suds.\"",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "'짐만 풀지 말고, 옆집엔 먼저 가서 인사부터 드려야 한다.' 그가 정색하며 나를 이끌었다. 이런 것까지 챙기는 그가 낯설면서도 든든했다.",
+      "reading": "jim-man pul-ji mal-go, yeop-jib-en meon-jeo ga-seo in-sa-bu-teo deu-ryeo-ya han-da. geu-ga jeong-saek-ha-myeo na-reul i-kkeul-eot-da. i-reon geot-kka-ji chaeng-gi-neun geu-ga nat-seol-myeon-seo-do deun-deun-haet-da.",
+      "en": "\"Don't just unpack — go greet the neighbors next door first.\" He said seriously and pulled me along. It felt unfamiliar seeing him mind even something like this, but reassuring too.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "옆집 문이 열리자 용우가 먼저 허리를 숙였다. '안녕하세요, 옆집에 새로 이사 왔습니다. 앞으로 잘 부탁드립니다.' 세제를 건네자 아주머니의 얼굴에 웃음이 번졌다.",
+      "reading": "yeop-jib mun-i yeol-li-ja yong-u-ga meon-jeo heo-ri-reul suk-yeot-da. an-nyeong-ha-se-yo, yeop-jib-e sae-ro i-sa wass-seup-ni-da. ap-eu-ro jal bu-tak-deu-rim-ni-da. se-je-reul geon-ne-ja a-ju-meo-ni-ui eol-gul-e us-eum-i beon-jyeot-da.",
+      "en": "When the neighbor's door opened, Yongwoo bowed first. \"Hello, we just moved in next door. Please look after us.\" As he handed over the detergent, a smile spread across the woman's face.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "'벽이 얇아서 밤엔 소리 조심해야 한다. 이웃끼리 예의는 지켜야지.' 그가 낮은 목소리로 당부했다. 그 말에 이 골목이 이제 내 이웃이 됐다는 게 실감 났다.",
+      "reading": "byeog-i yalb-a-seo bam-en so-ri jo-sim-hae-ya han-da. i-ut-kki-ri ye-ui-neun ji-kyeo-ya-ji. geu-ga naj-eun mok-so-ri-ro dang-bu-haet-da. geu mal-e i gol-mog-i i-je nae i-ut-i dwaet-da-neun ge sil-gam nat-da.",
+      "en": "\"The walls are thin, so be careful about noise at night. You've got to keep up manners between neighbors.\" He said in a low voice. At his words, it hit me that this alley had now become my neighborhood.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "저녁엔 조촐하게 집들이를 열었다. '음악은 적당히, 너무 늦게까지 떠들면 민폐 끼치는 거다.' 용우가 시계를 흘끗 보며 목소리를 낮췄다.",
+      "reading": "jeo-nyeog-en jo-chol-ha-ge jip-deul-i-reul yeol-eot-da. eum-ag-eun jeok-dang-hi, neo-mu neut-ge-kka-ji tteo-deul-myeon min-pye kki-chi-neun geo-da. yong-u-ga si-gye-reul heul-kkeut bo-myeo mok-so-ri-reul nat-chwot-da.",
+      "en": "That evening we held a small, modest housewarming. \"Keep the music reasonable — if we're loud too late, that's inconsiderate to the neighbors.\" Yongwoo glanced at the clock and lowered his voice.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "다들 돌아가고 조용해진 방 안에서, 낯선 동네가 어느새 정든 곳처럼 느껴졌다. 이 모든 게 용우의 잔소리 섞인 챙김 덕분이라는 생각이 들었다.",
+      "reading": "da-deul dol-a-ga-go jo-yong-hae-jin bang an-e-seo, nat-seon dong-ne-ga eo-neu-sae jeong-deun got-cheo-reom neu-kkyeo-jyeot-da. i mo-deun ge yong-u-ui jan-so-ri seok-in chaeng-gim deok-bun-i-ra-neun saeng-gag-i deul-eot-da.",
+      "en": "In the quiet room after everyone had left, this once-unfamiliar neighborhood suddenly felt like a place I'd grown attached to. I thought it was all thanks to Yongwoo's nagging, care-filled looking-after."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "집들이", "reading": "jip-deul-i", "meaning": "housewarming party", "example": "새집으로 이사해서 집들이를 했다.", "example_reading": "sae-jib-eu-ro i-sa-hae-seo jip-deul-i-reul haet-da", "example_en": "I moved into a new place, so I threw a housewarming party." },
+    { "id": "w02", "word": "이웃", "reading": "i-ut", "meaning": "neighbor", "example": "이웃끼리는 서로 인사를 잘 해야 한다.", "example_reading": "i-ut-kki-ri-neun seo-ro in-sa-reul jal hae-ya han-da", "example_en": "Neighbors should greet each other properly." },
+    { "id": "w03", "word": "인사를 드리다", "reading": "in-sa-reul deu-ri-da", "meaning": "to greet someone politely (honorific)", "example": "새로 이사 와서 이웃에게 인사를 드렸다.", "example_reading": "sae-ro i-sa wa-seo i-us-e-ge in-sa-reul deu-ryeot-da", "example_en": "I just moved in, so I paid my respects to the neighbors." },
+    { "id": "w04", "word": "세제", "reading": "se-je", "meaning": "laundry detergent", "example": "이사 선물로 세제를 사 갔다.", "example_reading": "i-sa seon-mul-lo se-je-reul sa gat-da", "example_en": "I brought detergent as a housewarming gift." },
+    { "id": "w05", "word": "민폐를 끼치다", "reading": "min-pye-reul kki-chi-da", "meaning": "to cause inconvenience or trouble to others", "example": "밤늦게 시끄럽게 하면 이웃에게 민폐를 끼친다.", "example_reading": "bam-neut-ge si-kkeu-reop-ge ha-myeon i-us-e-ge min-pye-reul kki-chin-da", "example_en": "Being loud late at night causes trouble for the neighbors." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "새집으로 이사해서 친구들을 불러 집들이를 했다.", "reading": "sae-jib-eu-ro i-sa-hae-seo chin-gu-deul-eul bul-leo jip-deul-i-reul haet-da", "en": "I moved into a new place and invited friends over for a housewarming." },
+    { "id": "s02", "ko": "이웃과 사이좋게 지내는 것이 중요하다.", "reading": "i-ut-gwa sa-i-jo-ke ji-nae-neun geos-i jung-yo-ha-da", "en": "It's important to get along well with your neighbors." },
+    { "id": "s03", "ko": "이사 온 첫날 옆집에 가서 인사를 드렸다.", "reading": "i-sa on cheot-nal yeop-jib-e ga-seo in-sa-reul deu-ryeot-da", "en": "On my first day after moving in, I went next door to greet them." },
+    { "id": "s04", "ko": "집들이 선물로 휴지와 세제를 많이 준비했다.", "reading": "jip-deul-i seon-mul-lo hyu-ji-wa se-je-reul man-i jun-bi-haet-da", "en": "I got plenty of tissue and detergent ready as housewarming gifts." },
+    { "id": "s05", "ko": "밤늦게 떠들어서 이웃에게 민폐를 끼치고 싶지 않다.", "reading": "bam-neut-ge tteo-deul-eo-seo i-us-e-ge min-pye-reul kki-chi-go sip-ji an-ta", "en": "I don't want to cause trouble for the neighbors by being loud late at night." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "용우", "text": "집들이엔 휴지랑 세제를 사 가는 게 국룰이다.", "reading": "jip-deul-i-en hyu-ji-rang se-je-reul sa ga-neun ge gung-nyul-i-da.", "en": "Bringing tissue and detergent is basically the unwritten rule for housewarmings." },
+        { "speaker": "승객", "text": "왜 하필 휴지랑 세제예요?", "reading": "wae ha-pil hyu-ji-rang se-je-ye-yo?", "en": "Why tissue and detergent specifically?" },
+        { "speaker": "용우", "text": "휴지처럼 술술 풀리고, 세제처럼 거품 잘 나라는 뜻이다.", "reading": "hyu-ji-cheo-reom sul-sul pul-li-go, se-je-cheo-reom geo-pum jal na-ra-neun tteus-i-da.", "en": "It means may things unroll smoothly like the tissue, and bubble up well like the detergent." },
+        { "speaker": "승객", "text": "그런 뜻이 있는 줄 몰랐어요. 재밌네요.", "reading": "geu-reon tteus-i in-neun jul mol-lass-eo-yo. jae-mit-ne-yo.", "en": "I had no idea it meant that. That's fun." }
+      ],
+      "question": "한국에서 집들이 선물로 휴지와 세제를 주는 이유로 가장 알맞은 것은?",
+      "question_en": "What best explains why tissue and detergent are traditional Korean housewarming gifts?",
+      "correct_answer": "일이 잘 풀리고 생활이 번창하길 바라는 의미를 담고 있어서",
+      "options": ["일이 잘 풀리고 생활이 번창하길 바라는 의미를 담고 있어서", "가격이 가장 저렴한 생필품이라서", "다른 선물을 준비할 시간이 없어서", "받는 사람이 요청한 물건이라서"],
+      "explanation": "휴지처럼 일이 술술 풀리고 세제처럼 거품이 잘 일어나길 바라는 좋은 뜻을 담은 한국의 집들이 풍습입니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "용우", "text": "벽이 얇으니까 밤엔 소리 조심해라. 이웃끼리 예의는 지켜야지.", "reading": "byeog-i yalb-eu-ni-kka bam-en so-ri jo-sim-hae-ra. i-ut-kki-ri ye-ui-neun ji-kyeo-ya-ji.", "en": "The walls are thin, so watch the noise at night. You've got to keep up manners between neighbors." },
+        { "speaker": "승객", "text": "그럼 오늘 집들이는 조용히 해야겠네요.", "reading": "geu-reom o-neul jip-deul-i-neun jo-yong-hi hae-ya-get-ne-yo.", "en": "Then I guess today's housewarming should be quiet." },
+        { "speaker": "용우", "text": "음악은 적당히 틀고, 너무 늦게까지 떠들지만 마라.", "reading": "eum-ag-eun jeok-dang-hi teul-go, neo-mu neut-ge-kka-ji tteo-deul-ji-man ma-ra.", "en": "Play the music at a reasonable volume, just don't be loud too late." },
+        { "speaker": "승객", "text": "네, 명심할게요. 옆집에 민폐 끼치기 싫어요.", "reading": "ne, myeong-sim-hal-ge-yo. yeop-jib-e min-pye kki-chi-gi silh-eo-yo.", "en": "Okay, I'll keep that in mind. I don't want to bother the neighbors next door." }
+      ],
+      "question": "용우가 승객에게 소리에 조심하라고 당부한 이유로 가장 알맞은 것은?",
+      "question_en": "What best explains why Yongwoo cautioned the passenger to be careful about noise?",
+      "correct_answer": "벽이 얇아서 이웃에게 소음으로 피해를 줄 수 있어서",
+      "options": ["벽이 얇아서 이웃에게 소음으로 피해를 줄 수 있어서", "집주인이 시끄러운 걸 싫어해서", "밤에는 법으로 소음이 금지되어서", "옆집에 아기가 있어서"],
+      "explanation": "용우는 벽이 얇아 소리가 잘 들리니 이웃에게 민폐가 되지 않도록 조심하라고 당부했습니다."
+    }
+  ]
+}

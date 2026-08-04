@@ -1,0 +1,98 @@
+{
+  "id": "sp-frd-sangwoo-07",
+  "character_id": "sangwoo",
+  "title": "오월드, 짜릿한 하루",
+  "emoji": "🎢",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "오랜만에 평일 휴가를 맞춰, 대전 오월드로 향했습니다. 놀이공원 입구부터 신이 난 친구가 제 팔을 잡아끌었습니다.",
+      "reading": "o-raen-man-e pyeong-il hyu-ga-reul mat-chwo, dae-jeon o-wol-deu-ro hyang-haess-seum-ni-da. nol-i-gong-won ib-gu-bu-teo sin-i nan chin-gu-ga je pal-eul jab-a-kkeul-eot-seum-ni-da.",
+      "en": "For the first time in a while, we matched up a weekday off and headed to Daejeon O-World. Right from the entrance, my excited friend pulled me along by the arm."
+    },
+    {
+      "text": "\"어떤 '놀이기구'부터 탈까?\" 친구가 지도를 펼치며 눈을 반짝였습니다. 저는 팀장처럼 진지하게 동선을 검토했습니다.",
+      "reading": "\"eo-tteon 'nol-i-gi-gu'-bu-teo tal-kka?\" chin-gu-ga ji-do-reul pyeol-chi-myeo nun-eul ban-jjag-yeot-seum-ni-da. jeo-neun tim-jang-cheo-reom jin-ji-ha-ge dong-seon-eul geom-to-haess-seum-ni-da.",
+      "en": "\"Which 'ride' should we go on first?\" My friend spread out the map, eyes sparkling. I reviewed the route as seriously as a team leader.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "결국 첫 번째는 '롤러코스터'였습니다. 안전벨트를 채우는 손끝이 살짝 떨렸습니다.",
+      "reading": "gyeol-guk cheot beon-jjae-neun 'rol-leo-ko-seu-teo'-yeot-seum-ni-da. an-jeon-bel-teu-reul chae-u-neun son-kkeut-i sal-jjak tteol-lyeot-seum-ni-da.",
+      "en": "In the end, the first one was the 'roller coaster.' My fingertips trembled slightly as I buckled the safety belt.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "출발 신호와 함께 레일이 요란하게 움직였습니다. 저도 모르게 비명이 터져 나왔습니다.",
+      "reading": "chul-bal sin-ho-wa ham-kke re-il-i yo-ran-ha-ge um-jig-yeot-seum-ni-da. jeo-do mo-reu-ge bi-myeong-i teo-jyeo na-wat-seum-ni-da.",
+      "en": "As soon as the departure signal sounded, the rail rattled to life. A scream burst out of me before I even realized it."
+    },
+    {
+      "text": "숨을 고르고 나서 찾은 다음 코스는 '회전목마'였습니다. 친구는 이제야 좀 살겠다며 웃었습니다.",
+      "reading": "sum-eul go-reu-go na-seo chaj-eun da-eum ko-seu-neun 'hoe-jeon-mok-ma'-yeot-seum-ni-da. chin-gu-neun i-je-ya jom sal-get-da-myeo us-eot-seum-ni-da.",
+      "en": "After catching my breath, the next ride we found was the 'carousel.' My friend laughed, saying they could finally breathe again.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "\"오늘, 정말 '짜릿하다'.\" 흔들리는 목마 위에서 친구가 중얼거렸습니다. 저도 마음속 깊이 동의했습니다.",
+      "reading": "\"o-neul, jeong-mal 'jja-rit-ha-da'.\" heun-deul-li-neun mok-ma wi-e-seo chin-gu-ga jung-eol-geo-ryeot-seum-ni-da. jeo-do ma-eum-sok gip-i dong-ui-haess-seum-ni-da.",
+      "en": "\"Today is really 'thrilling'.\" My friend murmured, swaying on the wooden horse. I agreed deep in my heart too.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "해가 저물자 놀이공원 전체에 불이 켜졌습니다. 관람차 위에서 내려다본 '야경'은 숨이 멎을 만큼 아름다웠습니다.",
+      "reading": "hae-ga jeo-mul-ja nol-i-gong-won jeon-che-e bul-i kyeo-jyeot-seum-ni-da. gwan-ram-cha wi-e-seo nae-ryeo-da-bon 'ya-gyeong'-eun sum-i myeoj-eul man-keum a-reum-da-wot-seum-ni-da.",
+      "en": "As the sun set, lights came on across the whole amusement park. The 'night view' from the Ferris wheel was breathtakingly beautiful.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "관람차가 천천히 한 바퀴 도는 동안, 우리는 말없이 그 풍경을 눈에 담았습니다. 그날 나눈 대화를 들려드리겠습니다.",
+      "reading": "gwan-ram-cha-ga cheon-cheon-hi han ba-kwi do-neun dong-an, u-ri-neun mal-eob-si geu pung-gyeong-eul nun-e dam-at-seum-ni-da. geu-nal na-nun dae-hwa-reul deul-lyeo-deu-ri-get-seum-ni-da.",
+      "en": "As the Ferris wheel slowly made its round, we silently took in the view. Let me share the conversation we had that day."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "놀이기구", "reading": "nol-i-gi-gu", "meaning": "amusement ride", "example": "이 공원에는 놀이기구가 정말 많습니다.", "example_reading": "i gong-won-e-neun nol-i-gi-gu-ga jeong-mal man-seum-ni-da", "example_en": "This park has really a lot of rides." },
+    { "id": "w02", "word": "롤러코스터", "reading": "rol-leo-ko-seu-teo", "meaning": "roller coaster", "example": "롤러코스터를 타고 소리를 질렀습니다.", "example_reading": "rol-leo-ko-seu-teo-reul ta-go so-ri-reul jil-leot-seum-ni-da", "example_en": "I rode the roller coaster and screamed." },
+    { "id": "w03", "word": "회전목마", "reading": "hoe-jeon-mok-ma", "meaning": "carousel, merry-go-round", "example": "회전목마는 아이들에게 인기가 많습니다.", "example_reading": "hoe-jeon-mok-ma-neun a-i-deul-e-ge in-gi-ga man-seum-ni-da", "example_en": "The carousel is very popular with children." },
+    { "id": "w04", "word": "짜릿하다", "reading": "jja-rit-ha-da", "meaning": "to be thrilling", "example": "오늘 하루는 정말 짜릿했습니다.", "example_reading": "o-neul ha-ru-neun jeong-mal jja-rit-haess-seum-ni-da", "example_en": "Today was truly thrilling." },
+    { "id": "w05", "word": "야경", "reading": "ya-gyeong", "meaning": "night view", "example": "관람차에서 본 야경이 아름다웠습니다.", "example_reading": "gwan-ram-cha-e-seo bon ya-gyeong-i a-reum-da-wot-seum-ni-da", "example_en": "The night view from the Ferris wheel was beautiful." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "이 공원에는 놀이기구가 정말 많습니다.", "reading": "i gong-won-e-neun nol-i-gi-gu-ga jeong-mal man-seum-ni-da", "en": "This park has really a lot of rides." },
+    { "id": "s02", "ko": "롤러코스터를 타고 소리를 질렀습니다.", "reading": "rol-leo-ko-seu-teo-reul ta-go so-ri-reul jil-leot-seum-ni-da", "en": "I rode the roller coaster and screamed." },
+    { "id": "s03", "ko": "회전목마는 아이들에게 인기가 많습니다.", "reading": "hoe-jeon-mok-ma-neun a-i-deul-e-ge in-gi-ga man-seum-ni-da", "en": "The carousel is very popular with children." },
+    { "id": "s04", "ko": "오늘 하루는 정말 짜릿했습니다.", "reading": "o-neul ha-ru-neun jeong-mal jja-rit-haess-seum-ni-da", "en": "Today was truly thrilling." },
+    { "id": "s05", "ko": "관람차에서 본 야경이 아름다웠습니다.", "reading": "gwan-ram-cha-e-seo bon ya-gyeong-i a-reum-da-wot-seum-ni-da", "en": "The night view from the Ferris wheel was beautiful." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "승객", "text": "뭐부터 탈까? 롤러코스터 어때?", "reading": "mwo-bu-teo tal-kka? rol-leo-ko-seu-teo eo-ttae?", "en": "What should we ride first? How about the roller coaster?" },
+        { "speaker": "상우", "text": "좋습니다. 출발 전에 안전벨트부터 확인하겠습니다.", "reading": "jo-eum-ni-da. chul-bal jeon-e an-jeon-bel-teu-bu-teo hwag-in-ha-get-seum-ni-da.", "en": "Sounds good. Before we start, I'll check the safety belt first." },
+        { "speaker": "승객", "text": "역시 기장님답다, 여기서도 안전 점검이네.", "reading": "yeok-si gi-jang-nim-dab-da, yeo-gi-seo-do an-jeon jeom-geom-i-ne.", "en": "So captain-like — doing a safety check even here." },
+        { "speaker": "상우", "text": "직업병입니다. 그래도... 솔직히 조금 떨립니다.", "reading": "jig-eop-byeong-im-ni-da. geu-rae-do... sol-jik-hi jo-geum tteol-lim-ni-da.", "en": "Occupational habit. But still... honestly, I'm a little nervous." }
+      ],
+      "question": "롤러코스터를 타기 전 상우가 가장 먼저 한 행동은 무엇인가요?",
+      "question_en": "What was the first thing Sangwoo did before riding the roller coaster?",
+      "correct_answer": "안전벨트를 확인했다",
+      "options": ["안전벨트를 확인했다", "친구의 손을 잡았다", "사진을 찍었다", "눈을 감았다"],
+      "explanation": "상우는 출발 전에 안전벨트부터 확인하겠다고 말하며 습관처럼 안전을 점검했습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "상우", "text": "관람차에서 보는 야경이 정말 특별하네요.", "reading": "gwan-ram-cha-e-seo bo-neun ya-gyeong-i jeong-mal teuk-byeol-ha-ne-yo.", "en": "The night view from the Ferris wheel is really special." },
+        { "speaker": "승객", "text": "그러게, 오늘 진짜 짜릿하고 재밌었어.", "reading": "geu-reo-ge, o-neul jin-jja jja-rit-ha-go jae-miss-eot-seo.", "en": "Right, today was really thrilling and fun." },
+        { "speaker": "상우", "text": "저도 오랜만에 이렇게 마음껏 웃었습니다.", "reading": "jeo-do o-raen-man-e i-reo-ke ma-eum-kkeot us-eot-seum-ni-da.", "en": "I laughed this freely for the first time in a while too." },
+        { "speaker": "승객", "text": "다음엔 어디로 놀러 갈까?", "reading": "da-eum-en eo-di-ro nol-leo gal-kka?", "en": "Where should we go play next time?" }
+      ],
+      "question": "관람차 위에서 상우는 어떤 감정을 느꼈나요?",
+      "question_en": "What emotion did Sangwoo feel on the Ferris wheel?",
+      "correct_answer": "오랜만에 마음껏 웃을 만큼 즐거운 감정",
+      "options": ["오랜만에 마음껏 웃을 만큼 즐거운 감정", "무서워서 눈을 감고 싶은 감정", "빨리 내려가고 싶은 감정", "지루하고 심심한 감정"],
+      "explanation": "상우는 오랜만에 이렇게 마음껏 웃었다고 말하며 즐거운 감정을 표현했습니다."
+    }
+  ]
+}

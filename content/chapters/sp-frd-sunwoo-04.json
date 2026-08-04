@@ -1,0 +1,93 @@
+{
+  "id": "sp-frd-sunwoo-04",
+  "character_id": "sunwoo",
+  "title": "마이크 놔라, 내 차례다",
+  "emoji": "🎤",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "서면 노래방, 조명이 어지럽게 돌아가는 작은 방에 우리 둘뿐이다. 선우가 리모컨을 붙잡고 신나게 번호를 누른다.",
+      "reading": "seo-myeon no-rae-bang, jo-myeong-i eo-ji-reop-ge dol-a-ga-neun jak-eun bang-e u-ri dul-ppun-i-da. seon-u-ga ri-mo-keon-eul but-jab-go sin-na-ge beon-ho-reul nu-reun-da.",
+      "en": "In a Seomyeon karaoke room, lights spinning dizzily, it's just the two of us. Sunwoo grabs the remote and excitedly punches in a number."
+    },
+    {
+      "text": "\"이 노래 예약했다, 내가. 니는 다음 곡 골라 놔라.\" 그가 노래책을 휙 넘기며 곡 번호를 눈으로 훑는다.",
+      "reading": "i no-rae ye-yak-haet-da, nae-ga. ni-neun da-eum gok gol-la nwa-ra. geu-ga no-rae-chaek-eul hwik neom-gi-myeo gok beon-ho-reul nun-eu-ro hult-neun-da.",
+      "en": "\"I already reserved this song. You pick the next one.\" He flips through the song book, scanning the numbers.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "전주가 흐르자마자 선우는 마이크를 꽉 쥐고 눈을 감는다. 애창곡이 분명하다. 가사 하나 틀리지 않고 열창한다.",
+      "reading": "jeon-ju-ga heu-reu-ja-ma-ja seon-u-neun ma-i-keu-reul kkwak jwi-go nun-eul gam-neun-da. ae-chang-gok-i bun-myeong-ha-da. ga-sa ha-na teul-li-ji anh-go yeol-chang-han-da.",
+      "en": "The moment the intro starts, Sunwoo grips the mic tight and closes his eyes. It's clearly his signature song. He belts it out without missing a single lyric.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "점수가 뜨자 그가 두 팔을 번쩍 든다. \"98점! 봤제? 내가 이 방 레전드다.\" 능청스러운 표정에 웃음이 터진다.",
+      "reading": "jeom-su-ga tteu-ja geu-ga du pal-eul beon-jjeok deul-da. 98-jeom! bwat-je? nae-ga i bang le-jeon-deu-da. neung-cheong-seu-reo-un pyo-jeong-e us-eum-i teo-jin-da.",
+      "en": "When the score pops up, he throws both arms in the air. \"98 points! See that? I'm the legend of this room.\" His deadpan pride sends me into laughter.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "내 차례가 되자 선우가 탬버린을 흔들며 분위기를 띄운다. \"박자 놓쳐도 괜찮다, 흥만 있으면 되는 기라!\"",
+      "reading": "nae cha-rye-ga doe-ja seon-u-ga taem-beo-rin-eul heun-deul-myeo bun-wi-gi-reul ttui-un-da. bak-ja noch-yeo-do gwaen-chan-ta, heung-man iss-eu-myeon doe-neun gi-ra!",
+      "en": "When it's my turn, Sunwoo shakes a tambourine to hype up the mood. \"It's fine if you miss the beat, all that matters is having the vibe!\"",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "우리는 목이 쉬도록 신청곡을 부르고 또 불렀다. 마지막 곡이 끝나자 화면에 이용 시간이 다 됐다는 안내가 뜬다.",
+      "reading": "u-ri-neun mok-i swi-do-rok sin-cheong-gok-eul bu-reu-go tto bul-leot-da. ma-ji-mak gok-i kkeut-na-ja hwa-myeon-e i-yong si-gan-i da dwaet-da-neun an-nae-ga tteun-da.",
+      "en": "We sang requested songs until our voices went hoarse. As the last song ended, a message popped up on screen saying our time was up.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "\"십 분 더 넣자.\" 선우가 미련 가득한 얼굴로 동전을 찾아 주머니를 뒤진다. 나는 웃으며 그의 손을 말렸다. \"내일 목 다 쉰다, 그만해라.\"",
+      "reading": "sip bun deo neot-ja. seon-u-ga mi-ryeon ga-deuk-han eol-gul-lo dong-jeon-eul chaj-a ju-meo-ni-reul dwi-jin-da. na-neun us-eu-myeo geu-ui son-eul mal-lyeot-da. nae-il mok da swin-da, geu-man-hae-ra.",
+      "en": "\"Let's add ten more minutes.\" Sunwoo, looking reluctant to leave, digs through his pockets for coins. Laughing, I stop his hand. \"Your voice will be totally gone tomorrow, that's enough.\""
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "예약하다", "reading": "ye-yak-ha-da", "meaning": "to reserve, book (a song, a table)", "example": "노래방에서 신청곡을 예약했다.", "example_reading": "no-rae-bang-e-seo sin-cheong-gok-eul ye-yak-haet-da", "example_en": "I reserved a requested song at the karaoke room." },
+    { "id": "w02", "word": "애창곡", "reading": "ae-chang-gok", "meaning": "one's signature song, favorite song to sing", "example": "이 노래는 내 애창곡이다.", "example_reading": "i no-rae-neun nae ae-chang-gog-i-da", "example_en": "This song is my signature song." },
+    { "id": "w03", "word": "점수", "reading": "jeom-su", "meaning": "score, points", "example": "노래방 점수가 90점이 넘었다.", "example_reading": "no-rae-bang jeom-su-ga 90-jeom-i neom-eot-da", "example_en": "The karaoke score was over 90 points." },
+    { "id": "w04", "word": "흥", "reading": "heung", "meaning": "vibe, exuberant excitement", "example": "노래방에서는 흥이 최고다.", "example_reading": "no-rae-bang-e-seo-neun heung-i choe-go-da", "example_en": "At karaoke, having the vibe matters most." },
+    { "id": "w05", "word": "목이 쉬다", "reading": "mok-i swi-da", "meaning": "for one's voice to go hoarse", "example": "노래를 너무 많이 불러서 목이 쉬었다.", "example_reading": "no-rae-reul neo-mu man-i bul-leo-seo mok-i swi-eot-da", "example_en": "I sang so much that my voice went hoarse." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "내가 좋아하는 노래를 미리 예약했다.", "reading": "nae-ga jo-a-ha-neun no-rae-reul mi-ri ye-yak-haet-da", "en": "I reserved my favorite song ahead of time." },
+    { "id": "s02", "ko": "이 노래는 그의 애창곡이다.", "reading": "i no-rae-neun geu-ui ae-chang-gog-i-da", "en": "This song is his signature song." },
+    { "id": "s03", "ko": "점수가 높게 나와서 신났다.", "reading": "jeom-su-ga nop-ge na-wa-seo sin-nat-da", "en": "The score came out high, so I got excited." },
+    { "id": "s04", "ko": "박자보다 흥이 더 중요하다.", "reading": "bak-ja-bo-da heung-i deo jung-yo-ha-da", "en": "The vibe matters more than the rhythm." },
+    { "id": "s05", "ko": "너무 신나게 불러서 목이 쉬었다.", "reading": "neo-mu sin-na-ge bul-leo-seo mok-i swi-eot-da", "en": "I sang so excitedly that my voice went hoarse." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "선우", "text": "이 노래 예약했다, 내가. 이거 완전 내 애창곡이다.", "reading": "i no-rae ye-yak-haet-da, nae-ga. i-geo wan-jeon nae ae-chang-gog-i-da.", "en": "I already reserved this song. This is totally my signature song." },
+        { "speaker": "승객", "text": "기대되는데? 점수 얼마나 나오나 보자.", "reading": "gi-dae-doe-neun-de? jeom-su eol-ma-na na-o-na bo-ja.", "en": "I'm looking forward to it. Let's see how high your score comes out." },
+        { "speaker": "선우", "text": "각오해라, 내 진지하게 부를 거다. 박수는 나중에 쳐도.", "reading": "gak-o-hae-ra, nae jin-ji-ha-ge bu-reul geo-da. bak-su-neun na-jung-e chyeo-do.", "en": "Get ready, I'm going to sing this seriously. Save the applause for after." },
+        { "speaker": "승객", "text": "오케이, 알겠어. 얼른 시작해 봐.", "reading": "o-ke-i, al-get-eo. eol-leun si-jak-hae bwa.", "en": "Okay, got it. Go ahead and start." }
+      ],
+      "question": "선우가 노래방에서 부르려는 노래는 어떤 곡인가요?",
+      "question_en": "What kind of song does Sunwoo plan to sing at the karaoke room?",
+      "correct_answer": "자신이 미리 예약한 애창곡",
+      "options": ["자신이 미리 예약한 애창곡", "승객이 신청한 곡", "처음 들어보는 곡", "너무 어려워서 포기한 곡"],
+      "explanation": "선우는 자신의 애창곡을 미리 예약해 놓고 진지하게 부를 준비를 합니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "승객", "text": "98점이라니, 완전 레전드다 진짜.", "reading": "98-jeom-i-ra-ni, wan-jeon le-jeon-deu-da jin-jja.", "en": "98 points, that's seriously a total legend." },
+        { "speaker": "선우", "text": "봤제? 내 실력 인정하나? 이제 니 차례다.", "reading": "bwat-je? nae sil-lyeok in-jeong-ha-na? i-je ni cha-rye-da.", "en": "See that? Do you acknowledge my skills? Now it's your turn." },
+        { "speaker": "승객", "text": "나는 자신 없는데. 박자도 잘 못 맞추고.", "reading": "na-neun ja-sin eop-neun-de. bak-ja-do jal mot mat-chu-go.", "en": "I'm not confident though. I can't even keep the beat well." },
+        { "speaker": "선우", "text": "박자 놓쳐도 괜찮다, 흥만 있으면 되는 기라! 내가 탬버린 쳐줄게.", "reading": "bak-ja noch-yeo-do gwaen-chan-ta, heung-man iss-eu-myeon doe-neun gi-ra! nae-ga taem-beo-rin chyeo-jul-ge.", "en": "It's fine if you miss the beat, all that matters is having the vibe! I'll play the tambourine for you." }
+      ],
+      "question": "선우가 승객에게 노래를 부르라고 격려하며 한 말은 무엇인가요?",
+      "question_en": "What did Sunwoo say to encourage the passenger to sing?",
+      "correct_answer": "박자를 놓쳐도 흥만 있으면 된다고 했다",
+      "options": ["박자를 놓쳐도 흥만 있으면 된다고 했다", "박자를 완벽하게 맞춰야 한다고 했다", "노래를 부르지 말라고 했다", "다음에 부르라고 미뤘다"],
+      "explanation": "선우는 박자보다 즐기는 흥이 중요하다며 승객을 편하게 격려해줍니다."
+    }
+  ]
+}

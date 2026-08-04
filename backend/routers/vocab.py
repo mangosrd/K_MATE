@@ -64,6 +64,14 @@ def add_vocab(req: VocabItemCreate, db: Session = Depends(get_db)):
     return _serialize(item)
 
 
+@router.delete("/{user_id}", status_code=204)
+def delete_all_vocab(user_id: str, db: Session = Depends(get_db)):
+    """단어장 전체 초기화 — 해당 유저의 모든 단어를 DB에서 삭제한다."""
+    db.query(VocabItem).filter(VocabItem.user_id == user_id).delete()
+    db.commit()
+    return
+
+
 @router.put("/review", response_model=VocabItemResponse)
 def update_mastery(req: VocabReviewUpdate, db: Session = Depends(get_db)):
     """단어 마스터리 업데이트"""

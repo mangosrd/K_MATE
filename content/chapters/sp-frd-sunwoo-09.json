@@ -1,0 +1,93 @@
+{
+  "id": "sp-frd-sunwoo-09",
+  "character_id": "sunwoo",
+  "title": "맨날 오던 그 바다",
+  "emoji": "🌊",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "송정 해수욕장, 파도 소리를 듣던 선우가 문득 걸음을 멈춘다. \"여기, 우리 초등학교 때 맨날 오던 데 아이가.\"",
+      "reading": "song-jeong hae-su-yok-jang, pa-do so-ri-reul deut-deon seon-u-ga mun-deuk geol-eum-eul meom-chun-da. yeo-gi, u-ri cho-deung-hak-gyo ttae maen-nal o-deon de a-i-ga.",
+      "en": "At Songjeong Beach, Sunwoo, who had been listening to the waves, suddenly stops walking. \"This is the spot we used to come to all the time back in elementary school, isn't it.\"",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "오래된 기억들이 밀물처럼 밀려온다. 튜브를 타고 놀다 파도에 휩쓸려 엉엉 울던 그 여름날이 아직도 생생하다.",
+      "reading": "o-rae-doen gi-eok-deul-i mil-mul-cheo-reom mil-lyeo-on-da. tyu-beu-reul ta-go nol-da pa-do-e hwip-sseul-lyeo eong-eong ul-deon geu yeo-reum-nal-i a-jik-do saeng-saeng-ha-da.",
+      "en": "Old memories come rushing in like a tide. That summer day when I got swept by a wave while riding a tube and bawled my eyes out is still vivid.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "\"니 그때 튜브 놓치고 울었던 거 기억하나? 내가 업고 뛰어갔었제.\" 선우가 웃음 섞인 목소리로 그날을 꺼낸다.",
+      "reading": "ni geu-ttae tyu-beu noch-i-go ul-eot-deon geo gi-eok-ha-na? nae-ga eob-go ttwi-eo-gat-eot-je. seon-u-ga us-eum seokk-in mok-so-ri-ro geu-nal-eul kkeo-nen-da.",
+      "en": "\"Do you remember crying because you lost your tube back then? I carried you on my back and ran.\" Sunwoo brings up that day, his voice mixed with laughter."
+    },
+    {
+      "text": "아련한 표정으로 모래사장을 바라보던 그가 발끝으로 무언가를 쓱쓱 그린다. 그날 우리가 새겼던 이름 두 글자, 어렴풋이 그 자리가 떠오른다.",
+      "reading": "a-ryeon-han pyo-jeong-eu-ro mo-rae-sa-jang-eul ba-ra-bo-deon geu-ga bal-kkeut-eu-ro mu-eon-ga-reul sseuk-sseuk geu-rin-da. geu-nal u-ri-ga saeg-yeot-deon i-reum du geul-ja, eo-ryeom-put-i geu ja-ri-ga tteo-o-reun-da.",
+      "en": "With a wistful look on his face as he gazes at the sand, he traces something with his toes. The two names we'd once carved into the sand that day — the spot faintly comes back to mind.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "\"그때 여기다 우리 이름 새겼었는데, 파도가 다 지워뿟다.\" 선우가 아쉬운 듯 웃으며 말한다. 나는 그 시절이 새삼 그립다.",
+      "reading": "geu-ttae yeo-gi-da u-ri i-reum saeg-yeot-eot-neun-de, pa-do-ga da ji-wo-bbut-da. seon-u-ga a-swi-un deut us-eu-myeo mal-han-da. na-neun geu si-jeol-i sae-sam geu-rip-da.",
+      "en": "\"We carved our names right here back then, but the waves washed them all away.\" Sunwoo says with a wistful smile. I find myself missing those days all over again.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "\"그래도 여기 온 거는 안 잊어뿌지, 내가.\" 그가 손가락으로 자기 머리를 톡톡 두드리며 씩 웃는다.",
+      "reading": "geu-rae-do yeo-gi on geo-neun an ij-eo-bbu-ji, nae-ga. geu-ga son-ga-rak-eu-ro ja-gi meo-ri-reul tok-tok du-deu-ri-myeo ssik us-neun-da.",
+      "en": "\"But I won't forget that we came here, at least.\" He taps his own head with a finger and grins."
+    },
+    {
+      "text": "우리는 한참을 그 자리에 서서 파도만 바라봤다. 지워진 이름 대신, 그날의 추억은 더 선명하게 마음에 새겨져 있었다.",
+      "reading": "u-ri-neun han-cham-eul geu ja-ri-e seo-seo pa-do-man ba-ra-bwat-da. ji-wo-jin i-reum dae-sin, geu-nal-ui chu-eok-eun deo seon-myeong-ha-ge ma-eum-e saeg-yeo-jyeo iss-eot-da.",
+      "en": "We stood there for a long while, just watching the waves. In place of the erased names, that day's memory was carved into our hearts even more clearly.",
+      "highlight_word_id": "w05"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "문득", "reading": "mun-deuk", "meaning": "suddenly, out of the blue", "example": "걷다가 문득 옛날 생각이 났다.", "example_reading": "geot-da-ga mun-deuk yen-nal saeng-gag-i nat-da", "example_en": "While walking, an old memory suddenly came to mind." },
+    { "id": "w02", "word": "생생하다", "reading": "saeng-saeng-ha-da", "meaning": "to be vivid, lifelike (of a memory)", "example": "그날의 기억이 아직도 생생하다.", "example_reading": "geu-nal-ui gi-eog-i a-jik-do saeng-saeng-ha-da", "example_en": "The memory of that day is still vivid." },
+    { "id": "w03", "word": "아련하다", "reading": "a-ryeon-ha-da", "meaning": "to be hazy, wistful (of a memory or feeling)", "example": "그의 얼굴에 아련한 표정이 스쳤다.", "example_reading": "geu-ui eol-gul-e a-ryeon-han pyo-jeong-i seu-chyeot-da", "example_en": "A wistful expression flitted across his face." },
+    { "id": "w04", "word": "그립다", "reading": "geu-rip-da", "meaning": "to miss, long for", "example": "어릴 적 그 시절이 그립다.", "example_reading": "eo-ril jeok geu si-jeol-i geu-rip-da", "example_en": "I miss those days from my childhood." },
+    { "id": "w05", "word": "추억", "reading": "chu-eok", "meaning": "memory, remembrance (of a happy moment)", "example": "이 바다는 우리에게 소중한 추억이다.", "example_reading": "i ba-da-neun u-ri-e-ge so-jung-han chu-eog-i-da", "example_en": "This beach is a precious memory for us." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "걷다가 문득 그 사람이 생각났다.", "reading": "geot-da-ga mun-deuk geu sa-ram-i saeng-gak-nat-da", "en": "While walking, that person suddenly came to mind." },
+    { "id": "s02", "ko": "어린 시절 기억이 아직도 생생하다.", "reading": "eo-rin si-jeol gi-eog-i a-jik-do saeng-saeng-ha-da", "en": "The memories of my childhood are still vivid." },
+    { "id": "s03", "ko": "옛 추억을 떠올리니 마음이 아련하다.", "reading": "yet chu-eog-eul tteo-ol-li-ni ma-eum-i a-ryeon-ha-da", "en": "Recalling old memories, my heart feels wistful." },
+    { "id": "s04", "ko": "그때 그 시절이 새삼 그립다.", "reading": "geu-ttae geu si-jeol-i sae-sam geu-rip-da", "en": "I find myself missing those days all over again." },
+    { "id": "s05", "ko": "이 바다는 우리에게 잊지 못할 추억이다.", "reading": "i ba-da-neun u-ri-e-ge it-ji mot-hal chu-eog-i-da", "en": "This beach is an unforgettable memory for us." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "선우", "text": "여기, 우리 초등학교 때 맨날 오던 데 아이가. 완전 그대로다.", "reading": "yeo-gi, u-ri cho-deung-hak-gyo ttae maen-nal o-deon de a-i-ga. wan-jeon geu-dae-ro-da.", "en": "This is the spot we used to come to all the time in elementary school, isn't it. It hasn't changed at all." },
+        { "speaker": "승객", "text": "맞다, 여기! 튜브 타고 놀던 거 기억나.", "reading": "mat-da, yeo-gi! tyu-beu ta-go nol-deon geo gi-eok-na.", "en": "That's right, this place! I remember playing here with tubes." },
+        { "speaker": "선우", "text": "니 그때 튜브 놓치고 파도에 휩쓸려서 엉엉 울었제.", "reading": "ni geu-ttae tyu-beu noch-i-go pa-do-e hwip-sseul-lyeo-seo eong-eong ul-eot-je.", "en": "You lost your tube back then and got swept by a wave and bawled your eyes out." },
+        { "speaker": "승객", "text": "야, 그건 잊어라. 부끄럽다, 그거.", "reading": "ya, geu-geon ij-eo-ra. bu-kkeu-reop-da, geu-geo.", "en": "Hey, forget about that. It's embarrassing." }
+      ],
+      "question": "선우가 송정 해수욕장에서 떠올린 기억은 무엇인가요?",
+      "question_en": "What memory did Sunwoo recall at Songjeong Beach?",
+      "correct_answer": "어릴 때 자주 놀러 왔던 곳이라는 것",
+      "options": ["어릴 때 자주 놀러 왔던 곳이라는 것", "처음 와보는 곳이라는 것", "가족 여행으로 온 곳이라는 것", "학교 소풍으로 온 곳이라는 것"],
+      "explanation": "선우는 이곳이 초등학교 시절 둘이 자주 놀러 오던 곳이라는 걸 떠올리며 반가워합니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "선우", "text": "그때 여기다 우리 이름 새겼었는데, 파도가 다 지워뿟다.", "reading": "geu-ttae yeo-gi-da u-ri i-reum saeg-yeot-eot-neun-de, pa-do-ga da ji-wo-bbut-da.", "en": "We carved our names right here back then, but the waves washed them all away." },
+        { "speaker": "승객", "text": "그러네, 흔적도 없이 사라졌네. 조금 아쉽다.", "reading": "geu-reo-ne, heun-jeok-do eop-si sa-ra-jyeot-ne. jo-geum a-swip-da.", "en": "You're right, it vanished without a trace. That's a bit sad." },
+        { "speaker": "선우", "text": "그래도 여기 온 거는 안 잊어뿌지, 내가. 다 기억하고 있다.", "reading": "geu-rae-do yeo-gi on geo-neun an ij-eo-bbu-ji, nae-ga. da gi-eok-ha-go it-da.", "en": "But I won't forget that we came here, at least. I remember it all." },
+        { "speaker": "승객", "text": "나도 그래. 이름은 지워져도 추억은 안 지워지네.", "reading": "na-do geu-rae. i-reum-eun ji-wo-jyeo-do chu-eog-eun an ji-wo-ji-ne.", "en": "Me too. Even if the names fade, the memories don't." }
+      ],
+      "question": "이름이 지워진 것에 대해 선우가 한 말은 무엇인가요?",
+      "question_en": "What did Sunwoo say about the names being washed away?",
+      "correct_answer": "이름은 지워져도 그날의 기억은 잊지 않는다는 것",
+      "options": ["이름은 지워져도 그날의 기억은 잊지 않는다는 것", "다시 이름을 새기러 가자는 것", "속상해서 그만 가자는 것", "이름을 새긴 걸 후회한다는 것"],
+      "explanation": "선우는 파도에 이름이 지워졌어도 그날 함께 왔던 기억만은 잊지 않는다고 말합니다."
+    }
+  ]
+}

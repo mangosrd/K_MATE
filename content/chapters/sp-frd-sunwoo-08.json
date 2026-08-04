@@ -1,0 +1,93 @@
+{
+  "id": "sp-frd-sunwoo-08",
+  "character_id": "sunwoo",
+  "title": "눈 감고도 한다, 내가",
+  "emoji": "🔥",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "거제 바닷가 캠핑장, 해가 지자 선우가 장작을 이리저리 쌓으며 능숙하게 불을 피운다. \"이 정도는 눈 감고도 한다, 내가.\"",
+      "reading": "geo-je ba-dat-ga kaem-ping-jang, hae-ga ji-ja seon-u-ga jang-jag-eul i-ri-jeo-ri ssah-eu-myeo neung-suk-ha-ge bul-eul pi-un-da. i jeong-do-neun nun gam-go-do han-da, nae-ga.",
+      "en": "At a seaside campsite in Geoje, as the sun sets, Sunwoo skillfully stacks firewood this way and that, building a fire. \"I could do this much with my eyes closed.\"",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "장작이 타닥타닥 소리를 내며 타오르자 주황빛 불빛이 얼굴에 어른거린다. 선우는 만족스러운 표정으로 모닥불 앞에 자리를 잡는다.",
+      "reading": "jang-jag-i ta-dak-ta-dak so-ri-reul nae-myeo ta-o-reu-ja ju-hwang-bit bul-bit-i eol-gul-e eo-reun-geo-rin-da. seon-u-neun man-jok-seu-reo-un pyo-jeong-eu-ro mo-dak-bul ap-e ja-ri-reul jab-neun-da.",
+      "en": "As the firewood crackles and blazes up, an orange glow flickers over our faces. Sunwoo settles in front of the campfire, looking pleased with himself.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "\"이게 요즘 말로 '불멍'이다. 아무 생각 없이 불만 보는 거.\" 그가 나뭇가지로 장작을 뒤적이며 새로운 말을 알려준다.",
+      "reading": "i-ge yo-jeum mal-lo bul-meong-i-da. a-mu saeng-gak eop-si bul-man bo-neun geo. geu-ga na-mut-ga-ji-ro jang-jag-eul dwi-jeog-i-myeo sae-ro-un mal-eul al-lyeo-jun-da.",
+      "en": "\"This is what people call 'bul-meong' these days. Just staring at the fire without any thoughts.\" He explains the new expression while poking at the firewood with a stick.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "말없이 한참을 불만 바라본다. 신기하게도 마음이 놓이는 게, 굳이 무슨 말을 하지 않아도 편안하다.",
+      "reading": "mal-eop-si han-cham-eul bul-man ba-ra-bon-da. sin-gi-ha-ge-do ma-eum-i noh-i-neun ge, gud-i mu-seun mal-eul ha-ji anh-a-do pyeon-an-ha-da.",
+      "en": "We stare at the fire in silence for a good while. Strangely, my mind settles at ease — comfortable even without any need to say a word.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "하늘을 올려다보니 별똥별 하나가 순식간에 스쳐 지나간다. \"빨리 소원 빌어라!\" 선우가 다급하게 내 옆구리를 찌른다.",
+      "reading": "ha-neul-eul ol-lyeo-da-bo-ni byeol-ttong-byeol ha-na-ga sun-sik-gan-e seu-chyeo ji-na-gan-da. ppal-li so-won bil-eo-ra! seon-u-ga da-geup-ha-ge nae yeop-gu-ri-reul jji-reun-da.",
+      "en": "Looking up at the sky, a single shooting star streaks by in an instant. \"Quick, make a wish!\" Sunwoo nudges my side urgently.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "\"무슨 소원 빌었노?\" \"비밀이다.\" 그가 장난스럽게 눈을 흘기더니, 이내 다시 잔잔한 미소로 불씨를 바라본다.",
+      "reading": "mu-seun so-won bil-eot-no? bi-mil-i-da. geu-ga jang-nan-seu-reop-ge nun-eul heul-gi-deo-ni, i-nae da-si jan-jan-han mi-so-ro bul-ssi-reul ba-ra-bon-da.",
+      "en": "\"What did you wish for?\" \"It's a secret.\" He shoots me a playful glare, then soon goes back to gazing at the embers with a quiet smile."
+    },
+    {
+      "text": "장작이 다 타들어갈 때까지 우리는 그 자리를 지켰다. 말보다 침묵이 더 많은 걸 전하는 밤이었다.",
+      "reading": "jang-jag-i da ta-deul-eo-gal ttae-kka-ji u-ri-neun geu ja-ri-reul ji-kyeot-da. mal-bo-da chim-muk-i deo man-eun geol jeon-ha-neun bam-i-eot-da.",
+      "en": "We held our spot until the last of the firewood had burned down. It was a night where silence said more than words ever could."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "장작", "reading": "jang-jak", "meaning": "firewood", "example": "그는 장작을 쌓아 모닥불을 피웠다.", "example_reading": "geu-neun jang-jag-eul ssah-a mo-dak-bul-eul pi-eot-da", "example_en": "He stacked firewood and lit a campfire." },
+    { "id": "w02", "word": "모닥불", "reading": "mo-dak-bul", "meaning": "campfire, bonfire", "example": "우리는 모닥불 앞에 둘러앉았다.", "example_reading": "u-ri-neun mo-dak-bul ap-e dul-leo-anj-at-da", "example_en": "We sat gathered around the campfire." },
+    { "id": "w03", "word": "불멍", "reading": "bul-meong", "meaning": "zoning out while staring blankly at a fire (slang)", "example": "캠핑장에서 불멍을 하니 마음이 편해졌다.", "example_reading": "kaem-ping-jang-e-seo bul-meong-eul ha-ni ma-eum-i pyeon-hae-jyeot-da", "example_en": "Staring blankly at the fire at the campsite put my mind at ease." },
+    { "id": "w04", "word": "마음이 놓이다", "reading": "ma-eum-i noh-i-da", "meaning": "to feel at ease, relieved", "example": "그의 목소리를 들으니 마음이 놓였다.", "example_reading": "geu-ui mok-so-ri-reul deul-eu-ni ma-eum-i noh-yeot-da", "example_en": "Hearing his voice put my mind at ease." },
+    { "id": "w05", "word": "별똥별", "reading": "byeol-ttong-byeol", "meaning": "shooting star", "example": "밤하늘에서 별똥별을 봤다.", "example_reading": "bam-ha-neul-e-seo byeol-ttong-byeol-eul bwat-da", "example_en": "I saw a shooting star in the night sky." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "그가 장작을 모아 불을 피웠다.", "reading": "geu-ga jang-jag-eul mo-a bul-eul pi-eot-da", "en": "He gathered firewood and started a fire." },
+    { "id": "s02", "ko": "모닥불 앞에 앉으니 마음이 따뜻해졌다.", "reading": "mo-dak-bul ap-e anj-eu-ni ma-eum-i tta-tteut-hae-jyeot-da", "en": "Sitting in front of the campfire, my heart grew warm." },
+    { "id": "s03", "ko": "요즘은 불멍이 취미인 사람이 많다.", "reading": "yo-jeum-eun bul-meong-i chwi-mi-in sa-ram-i man-ta", "en": "These days, many people have staring at fires as a hobby." },
+    { "id": "s04", "ko": "친구 말을 듣고 나서야 마음이 놓였다.", "reading": "chin-gu mal-eul deut-go na-seo-ya ma-eum-i noh-yeot-da", "en": "Only after hearing my friend's words did I feel at ease." },
+    { "id": "s05", "ko": "밤하늘에 별똥별이 떨어졌다.", "reading": "bam-ha-neul-e byeol-ttong-byeol-i tteol-eo-jyeot-da", "en": "A shooting star fell across the night sky." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "선우", "text": "이 정도는 눈 감고도 한다, 내가. 장작 쌓는 거는 내한테 맡기라.", "reading": "i jeong-do-neun nun gam-go-do han-da, nae-ga. jang-jak ssah-neun geo-neun nae-han-te mat-gi-ra.", "en": "I could do this much with my eyes closed. Leave the firewood stacking to me." },
+        { "speaker": "승객", "text": "완전 능숙하네. 캠핑 자주 오나 보다.", "reading": "wan-jeon neung-suk-ha-ne. kaem-ping ja-ju o-na bo-da.", "en": "You're so skilled at this. You must go camping a lot." },
+        { "speaker": "선우", "text": "그렇지도, 뭐. 불 피우고 이래 불멍 하는 기 낙이다, 내한테는.", "reading": "geu-reo-chi-do, mwo. bul pi-u-go i-rae bul-meong ha-neun gi nag-i-da, nae-han-te-neun.", "en": "I guess so. Lighting the fire and just staring at it like this is my little joy." },
+        { "speaker": "승객", "text": "불멍이 뭔데? 처음 듣는 말이야.", "reading": "bul-meong-i mwon-de? cheo-eum deut-neun mal-i-ya.", "en": "What's 'bul-meong'? I've never heard that word before." }
+      ],
+      "question": "선우가 승객에게 알려준 '불멍'의 뜻은 무엇인가요?",
+      "question_en": "What did Sunwoo explain the word 'bul-meong' means?",
+      "correct_answer": "아무 생각 없이 불만 멍하니 바라보는 것",
+      "options": ["아무 생각 없이 불만 멍하니 바라보는 것", "장작을 빨리 쌓는 기술", "불을 끄는 방법", "캠핑장을 예약하는 것"],
+      "explanation": "선우는 '불멍'이 아무 생각 없이 불을 멍하니 바라보며 쉬는 것을 뜻하는 요즘 말이라고 알려줍니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "선우", "text": "저기 봐라, 별똥별이다! 빨리 소원 빌어라!", "reading": "jeo-gi bwa-ra, byeol-ttong-byeol-i-da! ppal-li so-won bil-eo-ra!", "en": "Look over there, a shooting star! Quick, make a wish!" },
+        { "speaker": "승객", "text": "어, 어디, 어디! 벌써 사라졌잖아.", "reading": "eo, eo-di, eo-di! beol-sseo sa-ra-jyeot-jan-a.", "en": "Huh, where, where! It's already gone." },
+        { "speaker": "선우", "text": "그래도 순간적으로 빌었제? 나는 확실히 빌었다.", "reading": "geu-rae-do sun-gan-jeog-eu-ro bil-eot-je? na-neun hwak-sil-hi bil-eot-da.", "en": "Still, you managed a quick wish, right? I definitely got mine in." },
+        { "speaker": "승객", "text": "무슨 소원 빌었는데? 나도 궁금하다.", "reading": "mu-seun so-won bil-eot-neun-de? na-do gung-geum-ha-da.", "en": "What did you wish for? I'm curious too." }
+      ],
+      "question": "선우가 별똥별을 보자마자 승객에게 한 말은 무엇인가요?",
+      "question_en": "What did Sunwoo say to the passenger the moment he saw the shooting star?",
+      "correct_answer": "빨리 소원을 빌라고 했다",
+      "options": ["빨리 소원을 빌라고 했다", "사진을 찍으라고 했다", "텐트로 들어가자고 했다", "별자리 이름을 물었다"],
+      "explanation": "선우는 별똥별이 사라지기 전에 얼른 소원을 빌라며 승객을 재촉합니다."
+    }
+  ]
+}

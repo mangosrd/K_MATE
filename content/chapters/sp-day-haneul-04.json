@@ -1,0 +1,62 @@
+{
+  "id": "sp-day-haneul-04",
+  "character_id": "haneul",
+  "title": "버스를 타고",
+  "emoji": "🚌",
+  "story": [
+    {
+      "text": "전주에는 지하철이 없다. 대신 시내 곳곳을 촘촘히 잇는 버스가 있었다.",
+      "reading": "jeon-ju-e-neun ji-ha-cheol-i eop-da. dae-sin si-nae got-got-eul chom-chom-hi it-neun beo-seu-ga iss-eot-da.",
+      "en": "Jeonju has no subway. Instead, a dense network of buses connected every corner of the city.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "'저기 정류장. 다음 버스가 우리가 탈 거야.' 하늘이 표지판을 가리키며 앞장섰다.",
+      "reading": "'jeo-gi jeong-nyu-jang. da-eum beo-seu-ga u-ri-ga tal geo-ya.' ha-neul-i pyo-ji-pan-eul ga-ri-ki-myeo ap-jang-seot-da.",
+      "en": "\"There's the bus stop. The next bus is ours.\" Haneul pointed at the sign and led the way.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "버스가 도착하자 그는 능숙하게 교통카드를 태그했다. '너도 찍어.' 나는 서둘러 카드를 댔다.",
+      "reading": "beo-seu-ga do-chak-ha-ja geu-neun neung-suk-ha-ge gyo-tong-ka-deu-reul tae-geu-haet-da. 'neo-do jjik-eo.' na-neun seo-dul-leo ka-deu-reul daet-da.",
+      "en": "When the bus arrived, he tapped his transit card without a second thought. \"You too, tag it.\" I hurried to tap mine as well.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "'다음 정류장에서 환승하면 시간이 더 빨라.' 창밖을 보던 하늘이 무심히 알려줬다.",
+      "reading": "'da-eum jeong-nyu-jang-e-seo hwan-seung-ha-myeon si-gan-i deo ppal-la.' chang-bakk-eul bo-deon ha-neul-i mu-sim-hi al-lyeo-jwot-da.",
+      "en": "\"If we transfer at the next stop, it'll be faster.\" Haneul, looking out the window, mentioned it offhandedly.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "버스가 흔들릴 때마다 그는 슬쩍 손잡이 쪽으로 나를 붙잡아 세웠다. 말은 없었지만 손끝이 늘 먼저 움직였다.",
+      "reading": "beo-seu-ga heun-deul-lil ttae-ma-da geu-neun seul-jjeok son-jab-i jjok-eu-ro na-reul but-jab-a se-wot-da. mal-eun eop-seot-ji-man son-kkeut-i neul meon-jeo um-jik-yeot-da.",
+      "en": "Every time the bus swayed, he'd quietly steady me toward the handrail. He never said anything, but his hand always moved first."
+    },
+    {
+      "text": "'다음이 우리 내릴 곳이야.' 그가 하차벨을 눌렀다. '내리자.'",
+      "reading": "'da-eum-i u-ri nae-ril got-i-ya.' geu-ga ha-cha-bel-eul nul-leot-da. 'nae-ri-ja.'",
+      "en": "\"This next one's our stop.\" He pressed the stop button. \"Let's get off.\"",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "버스에서 내려 걷는 길, 하늘이 슬쩍 옆으로 붙었다. '멀지 않았지?' 나는 고개를 끄덕였다. 그와 함께라면 어디든 가깝게 느껴졌다.",
+      "reading": "beo-seu-e-seo nae-ryeo geot-neun gil, ha-neul-i seul-jjeok yeop-eu-ro but-eot-da. 'meol-ji anh-at-ji?' na-neun go-gae-reul kkeu-deok-yeot-da. geu-wa ham-kke-ra-myeon eo-di-deun ga-kkap-ge neu-kkyeo-jyeot-da.",
+      "en": "Walking after getting off the bus, Haneul quietly fell into step beside me. \"Not too far, right?\" I nodded. With him, everywhere felt closer."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "버스", "reading": "beo-seu", "meaning": "bus", "example": "이 버스는 한옥마을로 가요.", "example_reading": "i beo-seu-neun han-ok-ma-eul-lo ga-yo", "example_en": "This bus goes to Hanok Village." },
+    { "id": "w02", "word": "정류장", "reading": "jeong-nyu-jang", "meaning": "bus stop, station", "example": "다음 정류장에서 내려요.", "example_reading": "da-eum jeong-nyu-jang-e-seo nae-ryeo-yo", "example_en": "I'm getting off at the next stop." },
+    { "id": "w03", "word": "교통카드", "reading": "gyo-tong-ka-deu", "meaning": "transit card", "example": "교통카드 있으세요?", "example_reading": "gyo-tong-ka-deu iss-eu-se-yo?", "example_en": "Do you have a transit card?" },
+    { "id": "w04", "word": "환승", "reading": "hwan-seung", "meaning": "transfer (transit)", "example": "여기서 환승할 수 있어요.", "example_reading": "yeo-gi-seo hwan-seung-hal su iss-eo-yo", "example_en": "You can transfer here." },
+    { "id": "w05", "word": "내리다", "reading": "nae-ri-da", "meaning": "to get off", "example": "이번 역에서 내려야 해요.", "example_reading": "i-beon yeog-e-seo nae-ryeo-ya hae-yo", "example_en": "I need to get off at this station." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "버스가 언제 와요?", "reading": "beo-seu-ga eon-je wa-yo?", "en": "When does the bus come?" },
+    { "id": "s02", "ko": "정류장이 어디예요?", "reading": "jeong-nyu-jang-i eo-di-ye-yo?", "en": "Where is the bus stop?" },
+    { "id": "s03", "ko": "여기서 환승할 수 있어요?", "reading": "yeo-gi-seo hwan-seung-hal su iss-eo-yo?", "en": "Can I transfer here?" },
+    { "id": "s04", "ko": "다음에서 내릴게요.", "reading": "da-eum-e-seo nae-ril-kke-yo", "en": "I'll get off at the next stop." },
+    { "id": "s05", "ko": "교통카드로 계산할게요.", "reading": "gyo-tong-ka-deu-ro gye-san-hal-kke-yo", "en": "I'll pay with my transit card." }
+  ]
+}

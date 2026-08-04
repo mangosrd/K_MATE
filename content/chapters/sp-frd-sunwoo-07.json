@@ -1,0 +1,93 @@
+{
+  "id": "sp-frd-sunwoo-07",
+  "character_id": "sunwoo",
+  "title": "니 완전 겁먹었네",
+  "emoji": "🎢",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "아침 일찍 기장 롯데월드 어드벤처 부산 정문 앞, 선우가 자유이용권 두 장을 팔랑팔랑 흔들며 나타난다. \"오늘 이걸로 하루 종일 놀아보자, 우리.\"",
+      "reading": "a-chim il-jjik gi-jang lot-de-wol-deu eo-deu-ben-cheo bu-san jeong-mun ap, seon-u-ga ja-yu-i-yong-gwon du jang-eul pal-lang-pal-lang heun-deul-myeo na-ta-nan-da. o-neul i-geol-lo ha-ru jong-il nol-a-bo-ja, u-ri.",
+      "en": "Early in the morning, in front of Lotte World Adventure Busan in Gijang, Sunwoo shows up waving two free passes back and forth. \"Let's play all day long with these, just the two of us.\"",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "입장하자마자 그는 제일 무섭다는 롤러코스터부터 나를 잡아끈다. \"짜릿한 거 먼저 타야 재밌다, 몸 풀기로 딱이다.\"",
+      "reading": "ib-jang-ha-ja-ma-ja geu-neun je-il mu-seop-da-neun rol-leo-ko-seu-teo-bu-teo na-reul jab-a-kkeun-da. jja-rit-han geo meon-jeo ta-ya jae-mit-da, mom pul-gi-ro ttag-i-da.",
+      "en": "The moment we enter, he drags me straight to the scariest roller coaster there is. \"You've gotta ride the thrilling one first, it's good for warming up.\"",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "출발 신호와 함께 롤러코스터가 급하강하자 나는 나도 모르게 비명을 지른다. 옆에서 선우도 똑같이 목청껏 소리 지르며 웃는다.",
+      "reading": "chul-bal sin-ho-wa ham-kke rol-leo-ko-seu-teo-ga geup-ha-gang-ha-ja na-neun na-do mo-reu-ge bi-myeong-eul ji-reun-da. yeop-e-seo seon-u-do ttok-gat-i mok-cheong-kkeot so-ri ji-reu-myeo us-neun-da.",
+      "en": "The moment the ride launches and the coaster plunges, I scream without even meaning to. Beside me, Sunwoo screams just as loud at the top of his lungs, laughing the whole time.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "내려와서도 다리가 후들거리는 나를 보며 선우가 낄낄댄다. \"니 완전 겁먹었네. 얼굴이 하얗다, 하얘.\"",
+      "reading": "nae-ryeo-wa-seo-do da-ri-ga hu-deul-geo-ri-neun na-reul bo-myeo seon-u-ga kkil-kkil-daen-da. ni wan-jeon geob-meog-eot-ne. eol-gul-i ha-yat-da, ha-yae.",
+      "en": "Even after getting off, my legs are still shaking, and Sunwoo cracks up watching me. \"You're totally scared stiff. Your face is white, so white.\"",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "\"그럼 이번엔 순한 맛으로 가자.\" 그가 나를 이끈 곳은 알록달록한 회전목마 앞이다. 은근히 배려심이 느껴진다.",
+      "reading": "geu-reom i-beon-en sun-han mas-eu-ro ga-ja. geu-ga na-reul i-kkeun got-eun al-lok-dal-lok-han hoe-jeon-mok-ma ap-i-da. eun-geun-hi bae-ryeo-sim-i neu-kkyeo-jin-da.",
+      "en": "\"Alright, let's go with the mild version this time.\" Where he leads me is in front of a colorful carousel. Quietly, I can feel his consideration.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "천천히 도는 목마 위에서 우리는 나란히 앉아 지나가는 풍경을 바라본다. 아까의 스릴은 온데간데없이, 평화로운 웃음만 남는다.",
+      "reading": "cheon-cheon-hi do-neun mok-ma wi-e-seo u-ri-neun na-ran-hi anj-a ji-na-ga-neun pung-gyeong-eul ba-ra-bon-da. a-kka-ui seu-lil-eun on-de-gan-de-eop-si, pyeong-hwa-ro-un us-eum-man nam-neun-da.",
+      "en": "Sitting side by side on the slowly turning carousel horses, we watch the passing scenery. All the earlier thrill is gone without a trace, leaving only peaceful laughter."
+    },
+    {
+      "text": "\"오늘 여기 있는 거 다 타보자, 하나도 남기지 말고.\" 선우가 지도를 펼치며 다음 코스를 정한다. 놀이공원에서의 하루가 이렇게 꽉 채워진다.",
+      "reading": "o-neul yeo-gi it-neun geo da ta-bo-ja, ha-na-do nam-gi-ji mal-go. seon-u-ga ji-do-reul pyeol-chi-myeo da-eum ko-seu-reul jeong-han-da. nol-i-gong-won-e-seo-ui ha-ru-ga i-reoh-ge kkwak chae-wo-jin-da.",
+      "en": "\"Let's ride everything here today, don't leave a single one out.\" Sunwoo spreads out the map and plans our next course. A day at the amusement park fills up just like that."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "자유이용권", "reading": "ja-yu-i-yong-gwon", "meaning": "free pass (all-inclusive ride ticket)", "example": "자유이용권이 있으면 모든 놀이기구를 다 탈 수 있다.", "example_reading": "ja-yu-i-yong-gwon-i iss-eu-myeon mo-deun nol-i-gi-gu-reul da tal su it-da", "example_en": "With a free pass, you can ride every attraction." },
+    { "id": "w02", "word": "짜릿하다", "reading": "jja-rit-ha-da", "meaning": "to be thrilling, exhilarating", "example": "롤러코스터를 타니 짜릿한 기분이 들었다.", "example_reading": "rol-leo-ko-seu-teo-reul ta-ni jja-rit-han gi-bun-i deul-eot-da", "example_en": "Riding the roller coaster gave me a thrilling feeling." },
+    { "id": "w03", "word": "비명을 지르다", "reading": "bi-myeong-eul ji-reu-da", "meaning": "to scream, let out a shriek", "example": "너무 무서워서 비명을 질렀다.", "example_reading": "neo-mu mu-seo-wo-seo bi-myeong-eul jil-leot-da", "example_en": "I was so scared that I screamed." },
+    { "id": "w04", "word": "겁먹다", "reading": "geob-meok-da", "meaning": "to get scared, frightened", "example": "그는 높은 곳을 보고 겁먹은 표정을 지었다.", "example_reading": "geu-neun nop-eun got-eul bo-go geob-meog-eun pyo-jeong-eul ji-eot-da", "example_en": "He made a scared face looking at the high place." },
+    { "id": "w05", "word": "회전목마", "reading": "hoe-jeon-mok-ma", "meaning": "carousel, merry-go-round", "example": "아이들이 회전목마를 타며 즐거워했다.", "example_reading": "a-i-deul-i hoe-jeon-mok-ma-reul ta-myeo jeul-geo-wo-haet-da", "example_en": "The children had fun riding the carousel." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "자유이용권 덕분에 마음껏 놀이기구를 탔다.", "reading": "ja-yu-i-yong-gwon deok-bun-e ma-eum-kkeot nol-i-gi-gu-reul tat-da", "en": "Thanks to the free pass, we rode the rides to our hearts' content." },
+    { "id": "s02", "ko": "롤러코스터는 언제 타도 짜릿하다.", "reading": "rol-leo-ko-seu-teo-neun eon-je ta-do jja-rit-ha-da", "en": "The roller coaster is thrilling no matter when you ride it." },
+    { "id": "s03", "ko": "무서운 장면에서 나도 모르게 비명을 질렀다.", "reading": "mu-seo-un jang-myeon-e-seo na-do mo-reu-ge bi-myeong-eul jil-leot-da", "en": "I screamed without meaning to during the scary scene." },
+    { "id": "s04", "ko": "그는 높은 곳에서 겁먹은 얼굴을 했다.", "reading": "geu-neun nop-eun got-e-seo geob-meog-eun eol-gul-eul haet-da", "en": "He made a scared face up high." },
+    { "id": "s05", "ko": "회전목마는 천천히 돌아서 편안하다.", "reading": "hoe-jeon-mok-ma-neun cheon-cheon-hi dol-a-seo pyeon-an-ha-da", "en": "The carousel turns slowly, so it's relaxing." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "선우", "text": "입장하자마자 짜릿한 거 먼저 타자. 롤러코스터부터 간다!", "reading": "ib-jang-ha-ja-ma-ja jja-rit-han geo meon-jeo ta-ja. rol-leo-ko-seu-teo-bu-teo gan-da!", "en": "The second we get in, let's ride the thrilling one first. Roller coaster, here we go!" },
+        { "speaker": "승객", "text": "벌써? 워밍업도 없이?", "reading": "beol-sseo? wo-ming-eob-do eop-si?", "en": "Already? Without any warm-up?" },
+        { "speaker": "선우", "text": "몸 풀기로 딱이다, 이게. 쫄지 말고 따라온나.", "reading": "mom pul-gi-ro ttag-i-da, i-ge. jjol-ji mal-go tta-ra-on-na.", "en": "This is perfect for warming up the body. Don't chicken out, just follow me." },
+        { "speaker": "승객", "text": "…알겠어, 근데 진짜 무섭게 생겼다.", "reading": "…al-get-eo, geun-de jin-jja mu-seop-ge saeng-gyeot-da.", "en": "…Fine, but this really looks terrifying." }
+      ],
+      "question": "선우가 놀이공원에 입장하자마자 하려고 한 것은 무엇인가요?",
+      "question_en": "What did Sunwoo want to do as soon as they entered the amusement park?",
+      "correct_answer": "제일 무서운 롤러코스터부터 타는 것",
+      "options": ["제일 무서운 롤러코스터부터 타는 것", "회전목마부터 타는 것", "기념품부터 사는 것", "밥부터 먹는 것"],
+      "explanation": "선우는 짜릿한 걸 먼저 타야 재밌다며 제일 무섭다는 롤러코스터부터 승객을 끌고 갑니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "승객", "text": "나 진짜 겁먹었잖아, 방금. 다리가 아직도 후들거려.", "reading": "na jin-jja geob-meog-eot-jan-a, bang-geum. da-ri-ga a-jik-do hu-deul-geo-ryeo.", "en": "I was seriously scared just now. My legs are still shaking." },
+        { "speaker": "선우", "text": "알았다, 알았어. 그럼 이번엔 순한 맛으로 가자.", "reading": "al-at-da, al-at-eo. geu-reom i-beon-en sun-han mas-eu-ro ga-ja.", "en": "Alright, alright. Then let's go with the mild version this time." },
+        { "speaker": "승객", "text": "회전목마? 완전 반갑다, 이거.", "reading": "hoe-jeon-mok-ma? wan-jeon ban-gap-da, i-geo.", "en": "The carousel? I'm so glad to see this." },
+        { "speaker": "선우", "text": "이 정도는 니도 겁 안 낼 끼다. 편하게 타라.", "reading": "i jeong-do-neun ni-do geob an nael kki-da. pyeon-ha-ge ta-ra.", "en": "Even you won't get scared of this much. Just ride it comfortably." }
+      ],
+      "question": "선우가 롤러코스터 다음으로 승객을 데려간 곳은 어디인가요?",
+      "question_en": "Where did Sunwoo take the passenger after the roller coaster?",
+      "correct_answer": "회전목마",
+      "options": ["회전목마", "또 다른 롤러코스터", "매표소", "주차장"],
+      "explanation": "겁먹은 승객을 보고 선우는 순한 놀이기구인 회전목마로 자리를 옮깁니다."
+    }
+  ]
+}

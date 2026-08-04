@@ -1,0 +1,93 @@
+{
+  "id": "sp-frd-sunwoo-01",
+  "character_id": "sunwoo",
+  "title": "야, 니 진짜 오랜만이다",
+  "emoji": "🙋‍♂️",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "김해공항 출구, 캐리어를 끌고 나오자마자 저 멀리서 누군가 손을 번쩍 들고 소리친다. \"야! 여기다, 여기!\"",
+      "reading": "gim-hae-gong-hang chul-gu, kae-ri-eo-reul kkeul-go na-o-ja-ma-ja jeo meol-li-seo nu-gu-ga son-eul beon-jjeok deul-go so-ri-chin-da. ya! yeo-gi-da, yeo-gi!",
+      "en": "Right as I walk out of Gimhae Airport's exit with my suitcase, someone far off throws a hand up and shouts, \"Hey! Over here, over here!\"",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "몇 년 만인지 셀 수도 없는데, 선우는 하나도 안 변한 얼굴로 성큼성큼 걸어와 내 어깨를 툭 친다.",
+      "reading": "myeot nyeon man-in-ji sel su-do eop-neun-de, seon-u-neun ha-na-do an byeon-han eol-gul-lo seong-keum-seong-keum geol-eo-wa nae eo-kkae-reul tuk chin-da.",
+      "en": "It's been so many years I can't even count, but Sunwoo strides over with a face that hasn't changed a bit and gives my shoulder a light punch.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "\"니 얼굴 봐라, 하나도 안 변했네. 근데 캐리어는 와 이래 크노? 이민 오나?\"",
+      "reading": "ni eol-gul bwa-ra, ha-na-do an byeon-haet-ne. geun-de kae-ri-eo-neun wa i-rae keu-no? i-min o-na?",
+      "en": "\"Look at your face, hasn't changed one bit. But why's your suitcase this huge? You immigrating or something?\""
+    },
+    {
+      "text": "\"오랜만이다, 진짜.\" 나는 웃으며 그를 와락 껴안는다. 낯설지가 않다. 마치 어제도 만났던 사람처럼 편하다.",
+      "reading": "o-raen-man-i-da, jin-jja. na-neun us-eu-myeo geu-reul wa-rak kkyeo-an-neun-da. nat-seol-ji-ga an-neun-da. ma-chi eo-je-do man-nat-deon sa-ram-cheo-reom pyeon-ha-da.",
+      "en": "\"It's really been forever.\" I laugh and pull him into a hug. It doesn't feel awkward at all. It feels as easy as if we'd met just yesterday.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "\"밥은 뭇나? 비행기서 준 거 말고, 사람 먹는 밥.\" 선우가 내 캐리어를 대신 끌며 앞장선다.",
+      "reading": "bab-eun mun-na? bi-haeng-gi-seo jun geo mal-go, sa-ram meok-neun bab. seon-u-ga nae kae-ri-eo-reul dae-sin kkeul-myeo ap-jang-seon-da.",
+      "en": "\"You eat yet? Not the airline food, I mean real human food.\" Sunwoo grabs my suitcase for me and leads the way.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "\"오늘부터 열흘 내가 다 책임진다. 걱정 붙들어 매고 따라만 온나.\" 그의 목소리에는 예전 그대로의 여유와 반가움이 묻어 있다.",
+      "reading": "o-neul-bu-teo yeol-heul nae-ga da chaek-im-jin-da. geok-jeong but-deul-eo mae-go tta-ra-man on-na. geu-ui mok-so-ri-e-neun ye-jeon geu-dae-ro-ui yeo-yu-wa ban-ga-um-i mu-deo it-da.",
+      "en": "\"Starting today, I've got the next ten days fully covered. Don't worry about a thing, just follow me.\" His voice carries the same easygoing warmth and genuine delight it always did.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "공항 밖으로 나서자 부산의 짭짤한 바닷바람이 훅 끼쳐온다. 오랜만의 재회인데도, 이상하게 하나도 서먹하지 않다.",
+      "reading": "gong-hang bakk-eu-ro na-seo-ja bu-san-ui jjap-jjal-han ba-dat-ba-ram-i huk kki-cheo-on-da. o-raen-man-ui jae-hoe-in-de-do, i-sang-ha-ge ha-na-do seo-meok-ha-ji anh-da.",
+      "en": "Stepping outside the airport, Busan's salty sea breeze hits me all at once. Even after such a long reunion, strangely, there's no awkwardness at all."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "출구", "reading": "chul-gu", "meaning": "exit", "example": "출구에서 친구가 기다리고 있었다.", "example_reading": "chul-gu-e-seo chin-gu-ga gi-da-ri-go iss-eot-da", "example_en": "My friend was waiting at the exit." },
+    { "id": "w02", "word": "성큼성큼", "reading": "seong-keum-seong-keum", "meaning": "with big, brisk strides", "example": "그는 성큼성큼 다가와 인사했다.", "example_reading": "geu-neun seong-keum-seong-keum da-ga-wa in-sa-haet-da", "example_en": "He strode over briskly and greeted me." },
+    { "id": "w03", "word": "낯설다", "reading": "nat-seol-da", "meaning": "to feel unfamiliar, awkward", "example": "오랜만에 만났는데도 낯설지 않았다.", "example_reading": "o-raen-man-e man-nat-neun-de-do nat-seol-ji anh-at-da", "example_en": "Even after such a long time apart, it didn't feel unfamiliar." },
+    { "id": "w04", "word": "앞장서다", "reading": "ap-jang-seo-da", "meaning": "to take the lead, to go first", "example": "그가 앞장서서 길을 안내했다.", "example_reading": "geu-ga ap-jang-seo-seo gil-eul an-nae-haet-da", "example_en": "He took the lead and showed the way." },
+    { "id": "w05", "word": "반가움", "reading": "ban-ga-um", "meaning": "gladness (at seeing someone)", "example": "그의 얼굴에서 반가움이 느껴졌다.", "example_reading": "geu-ui eol-gul-e-seo ban-ga-um-i neu-kkyeo-jyeot-da", "example_en": "I could sense the gladness on his face." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "공항 출구에서 오랜 친구를 만났다.", "reading": "gong-hang chul-gu-e-seo o-raen chin-gu-reul man-nat-da", "en": "I met an old friend at the airport exit." },
+    { "id": "s02", "ko": "그는 성큼성큼 걸어와 반갑게 인사했다.", "reading": "geu-neun seong-keum-seong-keum geol-eo-wa ban-gap-ge in-sa-haet-da", "en": "He strode over and greeted me warmly." },
+    { "id": "s03", "ko": "오랜만인데도 하나도 낯설지 않았다.", "reading": "o-raen-man-in-de-do ha-na-do nat-seol-ji anh-at-da", "en": "Even after so long, it didn't feel unfamiliar at all." },
+    { "id": "s04", "ko": "그가 앞장서서 짐을 옮겨 주었다.", "reading": "geu-ga ap-jang-seo-seo jim-eul om-gyeo ju-eot-da", "en": "He took the lead and carried my bags for me." },
+    { "id": "s05", "ko": "그의 얼굴에 반가움이 가득했다.", "reading": "geu-ui eol-gul-e ban-ga-um-i ga-deuk-haet-da", "en": "His face was full of gladness." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "선우", "text": "야! 여기다, 여기! 니 얼굴 봐라, 하나도 안 변했네.", "reading": "ya! yeo-gi-da, yeo-gi! ni eol-gul bwa-ra, ha-na-do an byeon-haet-ne.", "en": "Hey! Over here, over here! Look at your face, hasn't changed one bit." },
+        { "speaker": "승객", "text": "너도 똑같다, 진짜. 몇 년 만이야, 이게.", "reading": "neo-do ttok-gat-da, jin-jja. myeot nyeon man-i-ya, i-ge.", "en": "You're exactly the same too, seriously. How many years has it even been." },
+        { "speaker": "선우", "text": "세보지도 마라, 서운해진다. 캐리어 이리 도. 내가 끌게.", "reading": "se-bo-ji-do ma-ra, seo-un-hae-jin-da. kae-ri-eo i-ri do. nae-ga kkeul-ge.", "en": "Don't even count, it'll make me sad. Give me the suitcase. I'll pull it." },
+        { "speaker": "승객", "text": "괜찮아, 내가 끌 수 있어. 근데 진짜 고맙다.", "reading": "gwaen-chan-a, nae-ga kkeul su iss-eo. geun-de jin-jja go-map-da.", "en": "It's fine, I can pull it myself. But seriously, thanks." }
+      ],
+      "question": "선우가 공항에서 승객을 맞이하며 한 행동으로 알맞은 것은?",
+      "question_en": "What did Sunwoo do when he greeted the passenger at the airport?",
+      "correct_answer": "캐리어를 대신 끌어주겠다고 했다",
+      "options": ["캐리어를 대신 끌어주겠다고 했다", "택시를 미리 불러 두었다", "선물을 준비해 왔다", "다른 친구를 소개했다"],
+      "explanation": "선우는 반가운 마음에 승객의 캐리어를 자기가 끌겠다고 나섭니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "선우", "text": "밥은 뭇나? 비행기서 준 거 말고, 사람 먹는 밥.", "reading": "bab-eun mun-na? bi-haeng-gi-seo jun geo mal-go, sa-ram meok-neun bab.", "en": "You eat yet? Not the airline food, I mean real human food." },
+        { "speaker": "승객", "text": "아니, 아직. 비행기에서 잠만 잤어.", "reading": "a-ni, a-jik. bi-haeng-gi-e-seo jam-man jat-eo.", "en": "No, not yet. I just slept the whole flight." },
+        { "speaker": "선우", "text": "잘됐다. 오늘부터 열흘 내가 다 책임진다. 따라만 온나.", "reading": "jal-dwaet-da. o-neul-bu-teo yeol-heul nae-ga da chaek-im-jin-da. tta-ra-man on-na.", "en": "Good. Starting today, I've got the next ten days fully covered. Just follow me." },
+        { "speaker": "승객", "text": "든든하네. 그럼 오늘은 뭐부터 먹으러 가?", "reading": "deun-deun-ha-ne. geu-reom o-neul-eun mwo-bu-teo meok-eu-reo ga?", "en": "That's reassuring. So what are we eating first today?" }
+      ],
+      "question": "선우가 승객에게 제안한 것은 무엇인가요?",
+      "question_en": "What did Sunwoo propose to the passenger?",
+      "correct_answer": "열흘 동안 여행을 자기가 책임지겠다는 것",
+      "options": ["열흘 동안 여행을 자기가 책임지겠다는 것", "혼자 여행하라는 것", "다음에 다시 만나자는 것", "숙소부터 예약하자는 것"],
+      "explanation": "선우는 오랜만에 만난 반가움에 앞으로 열흘 동안의 여행을 자기가 책임지겠다고 말합니다."
+    }
+  ]
+}

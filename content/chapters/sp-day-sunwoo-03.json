@@ -1,0 +1,93 @@
+{
+  "id": "sp-day-sunwoo-03",
+  "character_id": "sunwoo",
+  "title": "편의점 단골의 자격",
+  "emoji": "🏪",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "밤 산책을 하다 출출해진 우리는 근처 편의점으로 들어갔다. 환한 조명 아래 진열대가 가지런히 줄지어 있었다.",
+      "reading": "bam san-chaek-eul ha-da chul-chul-hae-jin u-ri-neun geun-cheo pyeon-ui-jeom-eu-ro deul-eo-gat-da. hwan-han jo-myeong a-rae jin-yeol-dae-ga ga-jil-ran-hi jul-ji-eo iss-eot-da.",
+      "en": "Getting hungry on our night walk, we ducked into a nearby convenience store. Under the bright lights, the shelves stood in neat rows."
+    },
+    {
+      "text": "\"이거 봐라, 원플러스원이다.\" 선우가 음료 냉장고 앞에서 눈을 반짝이며 손짓했다.",
+      "reading": "\"i-geo bwa-ra, won-peul-leo-seu-won-i-da.\" seon-u-ga eum-nyo naeng-jang-go ap-e-seo nun-eul ban-jjak-i-myeo son-jit-haet-da.",
+      "en": "\"Look at this, it's a one-plus-one.\" Sunwoo waved me over in front of the drink fridge, eyes sparkling.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "나는 삼각김밥을 하나 집어 들며 뒷면에 적힌 유통기한부터 확인했다. 그는 그런 나를 보며 피식 웃었다. \"까다롭기는.\"",
+      "reading": "na-neun sam-gak-gim-bap-eul ha-na jib-eo deul-myeo dwit-myeon-e jeok-hin yu-tong-gi-han-bu-teo hwak-in-haet-da. geu-neun geu-reon na-reul bo-myeo pi-sik us-eot-da. \"kka-da-rop-gi-neun.\"",
+      "en": "I picked up a triangle kimbap and checked the expiration date printed on the back first. He watched me and chuckled. \"So picky.\"",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "\"어차피 여기 자주 오니까 이 앱에 포인트 적립해라. 나중에 다 돌려받는다.\" 그가 능숙하게 스캔 화면을 보여줬다.",
+      "reading": "\"eo-cha-pi yeo-gi ja-ju o-ni-kka i aeb-e po-in-teu jeok-lip-hae-ra. na-jung-e da dol-lyeo-bad-neun-da.\" geu-ga neung-suk-ha-ge seu-kaen hwa-myeon-eul bo-yeo-jwot-da.",
+      "en": "\"Since we come here so often anyway, earn points on this app. You'll get it all back later.\" He skillfully showed me the scan screen.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "고른 도시락을 전자레인지에 넣고 데우는 동안, 그는 창가 스탠드 테이블에 팔을 걸치고 기다렸다.",
+      "reading": "go-reun do-si-rak-eul jeon-ja-re-in-ji-e neo-ko de-u-neun dong-an, geu-neun chang-ga seu-taen-deu te-i-beul-e pal-eul geol-chi-go gi-da-ryeot-da.",
+      "en": "While the lunch box I picked warmed in the microwave, he leaned an arm on the window-side standing table and waited.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "계산대 앞에 서서 그가 카드를 내밀며 능청스럽게 말했다. \"오늘은 내가 산다. 대신 다음엔 니 차례다.\"",
+      "reading": "gye-san-dae ap-e seo-seo geu-ga ka-deu-reul nae-mil-myeo neung-cheong-seu-reop-ge mal-haet-da. \"o-neul-eun nae-ga san-da. dae-sin da-eum-en ni cha-rye-da.\"",
+      "en": "Standing at the checkout counter, he casually held out his card. \"I'm paying today. But it's your turn next time.\"",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "\"단어랑 대화, 오늘 것도 끝까지 잘 풀어봐라이.\" 봉지를 흔들며 그가 앞장서 걸었다.",
+      "reading": "\"dan-eo-rang dae-hwa, o-neul geot-do kkeut-kka-ji jal pul-eo-bwa-ra-i.\" bong-ji-reul heun-deul-myeo geu-ga ap-jang-seo geol-eot-da.",
+      "en": "\"Give today's words and conversation a good try too, all the way through.\" He walked ahead, swinging the bag."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "원플러스원", "reading": "won-peul-leo-seu-won", "meaning": "one-plus-one (buy one get one free deal)", "example": "이 라면은 이번 주 원플러스원이다.", "example_reading": "i ra-myeon-eun i-beon ju won-peul-leo-seu-won-i-da", "example_en": "This ramen is buy-one-get-one this week." },
+    { "id": "w02", "word": "유통기한", "reading": "yu-tong-gi-han", "meaning": "expiration date", "example": "우유의 유통기한을 확인하고 샀다.", "example_reading": "u-yu-ui yu-tong-gi-han-eul hwak-in-ha-go sat-da", "example_en": "I checked the milk's expiration date before buying it." },
+    { "id": "w03", "word": "적립하다", "reading": "jeok-lip-ha-da", "meaning": "to accumulate/save up (points)", "example": "포인트를 적립하면 할인을 받을 수 있다.", "example_reading": "po-in-teu-reul jeok-lip-ha-myeon hal-in-eul bad-eul su it-da", "example_en": "If you earn points, you can get a discount." },
+    { "id": "w04", "word": "데우다", "reading": "de-u-da", "meaning": "to heat up, warm up", "example": "도시락을 전자레인지에 데웠다.", "example_reading": "do-si-rak-eul jeon-ja-re-in-ji-e de-wot-da", "example_en": "I warmed the lunch box in the microwave." },
+    { "id": "w05", "word": "계산대", "reading": "gye-san-dae", "meaning": "checkout counter", "example": "계산대 앞에 줄이 길게 서 있었다.", "example_reading": "gye-san-dae ap-e jul-i gil-ge seo iss-eot-da", "example_en": "A long line stood in front of the checkout counter." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "이 음료는 지금 원플러스원 행사 중이다.", "reading": "i eum-nyo-neun ji-geum won-peul-leo-seu-won haeng-sa jung-i-da", "en": "This drink is currently on a one-plus-one promotion." },
+    { "id": "s02", "ko": "유통기한을 꼭 확인하고 사야 한다.", "reading": "yu-tong-gi-han-eul kkok hwak-in-ha-go sa-ya han-da", "en": "You must check the expiration date before buying." },
+    { "id": "s03", "ko": "포인트를 적립하면 다음에 할인받을 수 있다.", "reading": "po-in-teu-reul jeok-lip-ha-myeon da-eum-e hal-in-bad-eul su it-da", "en": "If you save up points, you can get a discount next time." },
+    { "id": "s04", "ko": "도시락은 전자레인지에 데워서 먹었다.", "reading": "do-si-rak-eun jeon-ja-re-in-ji-e de-wo-seo meog-eot-da", "en": "I heated up the lunch box in the microwave and ate it." },
+    { "id": "s05", "ko": "계산대 앞에 줄이 길게 늘어서 있었다.", "reading": "gye-san-dae ap-e jul-i gil-ge neul-eo-seo iss-eot-da", "en": "A line stretched long in front of the checkout counter." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "선우", "text": "이거 봐라, 이 음료 원플러스원이다. 하나는 니 꺼 해라.", "reading": "i-geo bwa-ra, i eum-nyo won-peul-leo-seu-won-i-da. ha-na-neun ni kkeo hae-ra.", "en": "Look at this, this drink's buy-one-get-one. Take one for yourself." },
+        { "speaker": "승객", "text": "오, 웬일로 이런 것도 챙겨주고. 근데 유통기한은 넉넉해?", "reading": "o, wen-il-lo i-reon geot-do chaeng-gyeo-ju-go. geun-de yu-tong-gi-han-eun neok-neok-hae?", "en": "Oh, since when do you look out for stuff like this. But is the expiration date good?" },
+        { "speaker": "선우", "text": "당연하지, 딱 봤다 아이가. 니 그런 거 은근 깐깐하게 본다.", "reading": "dang-yeon-ha-ji, ttak bwat-da a-i-ga. ni geu-reon geo eun-geun kkan-kkan-ha-ge bon-da.", "en": "Of course, I checked already. You're surprisingly picky about that stuff." },
+        { "speaker": "승객", "text": "당연하지, 나중에 배 아프면 니 탓이니까.", "reading": "dang-yeon-ha-ji, na-jung-e bae a-peu-myeon ni tas-i-ni-kka.", "en": "Of course, if my stomach hurts later it's on you." }
+      ],
+      "question": "선우가 음료를 고를 때 신경 쓴 것은 무엇인가요?",
+      "question_en": "What did Sunwoo pay attention to when picking the drinks?",
+      "correct_answer": "유통기한",
+      "options": ["유통기한", "가격", "브랜드", "용량"],
+      "explanation": "선우는 원플러스원 음료를 고르면서 유통기한까지 미리 확인했다고 말합니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "선우", "text": "포인트 적립할 번호 있제? 불러봐라.", "reading": "po-in-teu jeok-lip-hal beon-ho it-je? bul-leo-bwa-ra.", "en": "You've got a number for earning points, right? Say it." },
+        { "speaker": "승객", "text": "어, 잠깐만. 근데 이거 계산대에서 바로 데워줘?", "reading": "eo, jam-kkan-man. geun-de i-geo gye-san-dae-e-seo ba-ro de-wo-jwo?", "en": "Uh, hold on. But can they heat this up right at the counter?" },
+        { "speaker": "선우", "text": "그럼, 말만 하면 데워준다. 내가 물어볼게.", "reading": "geu-reom, mal-man ha-myeon de-wo-jun-da. nae-ga mul-eo-bol-ge.", "en": "Sure, just ask and they'll heat it up. I'll ask." },
+        { "speaker": "승객", "text": "역시 단골은 다르네. 여기 완전 훤하다.", "reading": "yeok-si dan-gol-eun da-reu-ne. yeo-gi wan-jeon hwon-ha-da.", "en": "A regular really is different. You know this place inside out." }
+      ],
+      "question": "승객이 계산대에서 부탁한 것은 무엇인가요?",
+      "question_en": "What did the passenger ask for at the checkout counter?",
+      "correct_answer": "음식을 데워 달라는 것",
+      "options": ["음식을 데워 달라는 것", "봉투를 더 달라는 것", "포인트를 취소해 달라는 것", "환불해 달라는 것"],
+      "explanation": "승객은 고른 음식을 계산대에서 바로 데워줄 수 있는지 물어보았습니다."
+    }
+  ]
+}

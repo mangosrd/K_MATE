@@ -1,0 +1,97 @@
+{
+  "id": "sp-day-yongwoo-05",
+  "character_id": "yongwoo",
+  "title": "일교차를 이기는 법",
+  "emoji": "🧥",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "올레길 초입에 서니 아침 공기가 제법 선선했다. 반팔 차림으로 나온 나를 보고 용우가 위아래를 훑더니 한숨부터 쉬었다.",
+      "reading": "ol-le-gil cho-ib-e seo-ni a-chim gong-gi-ga je-beop seon-seon-haet-da. ban-pal cha-rim-eu-ro na-on na-reul bo-go yong-u-ga wi-a-rae-reul hult-deo-ni han-sum-bu-teo swi-eot-da.",
+      "en": "Standing at the start of the Olle trail, the morning air felt fairly cool. Yongwoo looked me up and down in my short-sleeve outfit and let out a sigh before saying anything."
+    },
+    {
+      "text": "'제주 날씨를 아직도 모르나. 아침저녁으로 쌀쌀하고 낮엔 또 덥다. 일교차가 얼마나 큰데 반팔만 입고 나와.'",
+      "reading": "je-ju nal-ssi-reul a-jik-do mo-reu-na. a-chim-jeo-nyeog-eu-ro ssal-ssal-ha-go naj-en tto deop-da. il-gyo-cha-ga eol-ma-na keun-de ban-pal-man ip-go na-wa.",
+      "en": "\"Still don't know Jeju weather, do you. It's chilly in the mornings and evenings, then hot again in the daytime. The daily temperature swing is huge, and you come out in just a short sleeve.\"",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "'그래도 낮엔 덥잖아요.' 내가 우기자, 그는 대꾸도 없이 배낭에서 얇은 바람막이를 꺼내 내밀었다. '이거 겉옷으로 걸치고 있다가 더우면 벗어. 감기 걸리면 니만 손해다.'",
+      "reading": "geu-rae-do naj-en deop-jan-a-yo. nae-ga u-gi-ja, geu-neun dae-kkoe-do eop-si bae-nang-e-seo yalb-eun ba-ram-mag-i-reul kkeo-nae nae-mil-eot-da. i-geo geot-ot-eu-ro geol-chi-go it-da-ga deo-u-myeon beos-eo. gam-gi geol-li-myeon ni-man son-hae-da.",
+      "en": "\"But it's hot in the daytime,\" I insisted, and without another word he pulled a thin windbreaker out of his backpack and held it out. \"Wear this as a layer, and take it off if you get hot. If you catch a cold, it's only you who loses out.\"",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "겉옷을 걸치니 오히려 딱 좋았다. 못 이기는 척 고맙다고 하자, 용우가 뿌듯한 듯 콧방귀를 뀌며 앞장서 걸었다.",
+      "reading": "geot-ot-eul geol-chi-ni o-hi-ryeo ttak jo-at-da. mot i-gi-neun cheok go-map-da-go ha-ja, yong-u-ga ppu-deut-han deut kot-bang-gwi-reul kkwi-myeo ap-jang-seo geol-eot-da.",
+      "en": "With the jacket on, it was actually just right. When I grudgingly said thanks, Yongwoo let out a proud little snort and walked on ahead."
+    },
+    {
+      "text": "한참을 걷는데 하늘이 갑자기 어두워지더니, 저 멀리서 먹구름이 몰려오는 게 보였다. '제주 날씨는 진짜 변덕스러워요.' 내가 중얼거리자 그가 배낭에서 이번엔 우산을 꺼냈다.",
+      "reading": "han-cham-eul geot-neun-de ha-neul-i gap-ja-gi eo-du-wo-ji-deo-ni, jeo meol-li-seo meok-gu-reum-i mol-lyeo-o-neun ge bo-yeot-da. je-ju nal-ssi-neun jin-jja byeon-deok-seu-reo-wo-yo. nae-ga jung-eol-geo-ri-ja geu-ga bae-nang-e-seo i-beon-en u-san-eul kkeo-naet-da.",
+      "en": "We'd been walking a while when the sky suddenly darkened, and I could see storm clouds rolling in from far off. \"Jeju weather is seriously so fickle,\" I muttered, and this time he pulled an umbrella out of his backpack.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "'우산을 챙겨 왔어요? 일기예보 봤어요?' 놀란 내 물음에 그가 당연하다는 듯 답했다. '여기 날씨는 원래 오전, 오후가 다르다. 비 올 확률 있으면 무조건 챙긴다.'",
+      "reading": "u-san-eul chaeng-gyeo wass-eo-yo? il-gi-ye-bo bwass-eo-yo? nol-lan nae mul-eum-e geu-ga dang-yeon-ha-da-neun deut dab-aet-da. yeo-gi nal-ssi-neun won-lae o-jeon, o-hu-ga da-reu-da. bi ol hwal-lyul iss-eu-myeon mu-jo-geon chaeng-gin-da.",
+      "en": "\"You brought an umbrella? Did you check the forecast?\" I asked, surprised, and he answered as if it were obvious. \"Weather here's just different from morning to afternoon by nature. If there's any chance of rain, I bring one, no question.\"",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "빗방울이 하나둘 떨어지기 시작하자, 용우가 우산을 펴 내 쪽으로 반쯤 기울여 주었다. 자기 어깨는 반쯤 젖는 줄도 모르는 눈치였다.",
+      "reading": "bit-bang-ul-i ha-na-dul tteol-eo-ji-gi si-jak-ha-ja, yong-u-ga u-san-eul pyeo nae jjog-eu-ro ban-jjeum gi-ul-yeo ju-eot-da. ja-gi eo-kkae-neun ban-jjeum jeo-neun jul-do mo-reu-neun nun-chi-yeot-da.",
+      "en": "As raindrops began to fall one by one, Yongwoo opened the umbrella and tilted it halfway toward me. He seemed not to notice that his own shoulder was getting half-soaked."
+    },
+    {
+      "text": "'다음엔 일기예보라도 좀 보고 나와라.' 잔소리 같았지만, 젖은 어깨 쪽으로는 자꾸 시선이 갔다. 오늘 제주 날씨도, 용우도 참 변덕스러우면서 다정했다.",
+      "reading": "da-eum-en il-gi-ye-bo-ra-do jom bo-go na-wa-ra. jan-so-ri gat-at-ji-man, jeoj-eun eo-kkae jjog-eu-ro-neun ja-kku si-seon-i gat-da. o-neul je-ju nal-ssi-do, yong-u-do cham byeon-deok-seu-reo-u-myeon-seo da-jeong-haet-da.",
+      "en": "\"Next time, at least check the forecast before you come out.\" It sounded like nagging, but my eyes kept drifting to his rain-soaked shoulder. Jeju's weather today, and Yongwoo too, were both fickle and strangely warm."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "일교차", "reading": "il-gyo-cha", "meaning": "daily temperature range/swing", "example": "가을엔 일교차가 커서 감기 걸리기 쉽다.", "example_reading": "ga-eul-en il-gyo-cha-ga keo-seo gam-gi geol-li-gi swip-da", "example_en": "In fall, the daily temperature swing is big, so it's easy to catch a cold." },
+    { "id": "w02", "word": "쌀쌀하다", "reading": "ssal-ssal-ha-da", "meaning": "to be chilly (weather)", "example": "아침저녁으로 쌀쌀하니 겉옷을 챙겨라.", "example_reading": "a-chim-jeo-nyeog-eu-ro ssal-ssal-ha-ni geot-ot-eul chaeng-gyeo-ra", "example_en": "It's chilly in the mornings and evenings, so bring a jacket." },
+    { "id": "w03", "word": "겉옷", "reading": "geot-ot", "meaning": "outerwear, jacket", "example": "겉옷을 걸치니 훨씬 따뜻했다.", "example_reading": "geot-ot-eul geol-chi-ni hwol-ssin tta-tteut-haet-da", "example_en": "Once I put on my jacket, it was much warmer." },
+    { "id": "w04", "word": "우산을 챙기다", "reading": "u-san-eul chaeng-gi-da", "meaning": "to bring/pack an umbrella", "example": "비 올 확률이 있으면 우산을 챙기는 게 좋다.", "example_reading": "bi ol hwal-lyul-i iss-eu-myeon u-san-eul chaeng-gi-neun ge jo-ta", "example_en": "If there's a chance of rain, it's good to bring an umbrella." },
+    { "id": "w05", "word": "변덕스럽다", "reading": "byeon-deok-seu-reop-da", "meaning": "to be fickle, changeable (often used for weather)", "example": "제주 날씨는 변덕스럽기로 유명하다.", "example_reading": "je-ju nal-ssi-neun byeon-deok-seu-reop-gi-ro yu-myeong-ha-da", "example_en": "Jeju weather is famous for being changeable." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "오늘은 일교차가 커서 겉옷이 필요하다.", "reading": "o-neul-eun il-gyo-cha-ga keo-seo geot-ot-i pil-yo-ha-da", "en": "Today the temperature swing is big, so you'll need a jacket." },
+    { "id": "s02", "ko": "아침 공기가 쌀쌀해서 몸이 움츠러들었다.", "reading": "a-chim gong-gi-ga ssal-ssal-hae-seo mom-i um-cheu-reo-deul-eot-da", "en": "The morning air was chilly, so I hunched my shoulders." },
+    { "id": "s03", "ko": "얇은 겉옷 하나쯤은 챙기는 게 좋다.", "reading": "yalb-eun geot-ot ha-na-jjeum-eun chaeng-gi-neun ge jo-ta", "en": "It's good to bring at least one thin jacket." },
+    { "id": "s04", "ko": "비 소식이 있어서 우산을 챙겼다.", "reading": "bi so-sig-i iss-eo-seo u-san-eul chaeng-gyeot-da", "en": "There was word of rain, so I brought an umbrella." },
+    { "id": "s05", "ko": "제주 날씨는 워낙 변덕스러워서 예측하기 어렵다.", "reading": "je-ju nal-ssi-neun wo-nak byeon-deok-seu-reo-wo-seo ye-cheuk-ha-gi eo-ryeop-da", "en": "Jeju weather is so fickle that it's hard to predict." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "용우", "text": "반팔만 입고 나오면 어떡해. 여긴 일교차가 얼마나 큰데.", "reading": "ban-pal-man ip-go na-o-myeon eo-tteok-hae. yeo-gin il-gyo-cha-ga eol-ma-na keun-de.", "en": "How could you come out in just a short sleeve. The temperature swing here is huge." },
+        { "speaker": "승객", "text": "낮에는 더울 것 같아서 그랬죠.", "reading": "naj-e-neun deo-ul geot gat-a-seo geu-raet-jyo.", "en": "I figured it'd be hot during the day." },
+        { "speaker": "용우", "text": "아침저녁으론 쌀쌀하다. 이거 걸치고 있어.", "reading": "a-chim-jeo-nyeog-eu-ron ssal-ssal-ha-da. i-geo geol-chi-go iss-eo.", "en": "It's chilly in the mornings and evenings. Wear this." },
+        { "speaker": "승객", "text": "고마워요, 확실히 따뜻하네요.", "reading": "go-ma-wo-yo, hwak-sil-hi tta-tteut-ha-ne-yo.", "en": "Thanks, it's definitely warmer now." }
+      ],
+      "question": "용우가 승객에게 겉옷을 챙겨준 이유로 가장 알맞은 것은?",
+      "question_en": "What best explains why Yongwoo gave the passenger a jacket to wear?",
+      "correct_answer": "아침저녁의 일교차가 커서 감기에 걸릴까 봐 걱정돼서",
+      "options": ["아침저녁의 일교차가 커서 감기에 걸릴까 봐 걱정돼서", "자기가 더워서 벗어 준 것뿐이라서", "비가 올 것 같아서 대신 입힌 것이라서", "사진을 예쁘게 찍고 싶어서"],
+      "explanation": "용우는 아침저녁으로 쌀쌀한 일교차 때문에 승객이 감기에 걸릴까 봐 미리 겉옷을 챙겨 왔습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "승객", "text": "우산을 챙겨 왔어요? 일기예보 봤어요?", "reading": "u-san-eul chaeng-gyeo wass-eo-yo? il-gi-ye-bo bwass-eo-yo?", "en": "You brought an umbrella? Did you check the forecast?" },
+        { "speaker": "용우", "text": "여기 날씨는 워낙 변덕스러우니까 비 올 확률만 있어도 챙긴다.", "reading": "yeo-gi nal-ssi-neun wo-nak byeon-deok-seu-reo-u-ni-kka bi ol hwal-lyul-man iss-eo-do chaeng-gin-da.", "en": "The weather here is so fickle that I bring one even if there's just a chance of rain." },
+        { "speaker": "승객", "text": "진짜 준비성이 철저하네요.", "reading": "jin-jja jun-bi-seong-i cheol-jeo-ha-ne-yo.", "en": "You're really thorough about being prepared." },
+        { "speaker": "용우", "text": "비행할 때 버릇이다. 니도 습관 좀 들여라.", "reading": "bi-haeng-hal ttae beo-reut-i-da. ni-do seup-gwan jom deul-yeo-ra.", "en": "It's a habit from flying. You should get in the habit too." }
+      ],
+      "question": "용우가 항상 우산을 챙기는 이유로 가장 알맞은 것은?",
+      "question_en": "What best explains why Yongwoo always brings an umbrella?",
+      "correct_answer": "제주 날씨가 변덕스러워서 비 올 확률이 조금이라도 있으면 대비한다",
+      "options": ["제주 날씨가 변덕스러워서 비 올 확률이 조금이라도 있으면 대비한다", "우산을 파는 것이 취미라서", "승객이 우산을 좋아해서", "비행 규정상 항상 소지해야 해서"],
+      "explanation": "용우는 제주 날씨가 워낙 변덕스러워서 비 올 확률이 조금만 있어도 미리 우산을 챙기는 습관이 있다고 설명했습니다."
+    }
+  ]
+}

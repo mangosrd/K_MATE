@@ -1,0 +1,67 @@
+{
+  "id": "sp-day-haneul-01",
+  "character_id": "haneul",
+  "title": "골목길의 아침 인사",
+  "emoji": "🌄",
+  "story": [
+    {
+      "text": "전주 한옥마을의 아침은 안개로 자욱했다. 기와지붕 위로 옅은 햇살이 번지기 시작했다.",
+      "reading": "jeon-ju han-ok-ma-eul-ui a-chim-eun an-gae-ro ja-uk-haet-da. gi-wa-ji-bung wi-ro yeot-eun haet-sal-i beon-ji-gi si-jak-haet-da.",
+      "en": "The morning in Jeonju Hanok Village was thick with fog. A pale sunlight was beginning to spread over the tiled roofs."
+    },
+    {
+      "text": "나는 늦잠을 자려다가, 알람 소리에 억지로 눈을 떴다. 오늘도 하늘과 아침 산책을 하기로 한 날이었다.",
+      "reading": "na-neun neut-jam-eul ja-ryeo-da-ga, al-lam so-ri-e eok-ji-ro nun-eul tteot-da. o-neul-do ha-neul-gwa a-chim san-chaek-eul ha-gi-ro han nal-i-eot-da.",
+      "en": "I'd been tempted to sleep in, but the alarm forced my eyes open. Today was another day I'd promised to take a morning walk with Haneul.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "골목을 나서자 그가 벌써 담벼락에 기대어 서 있었다. 비번인데도 옷차림은 흐트러짐 하나 없었다.",
+      "reading": "gol-mok-eul na-seo-ja geu-ga beol-sseo dam-byeo-rag-e gi-dae-eo seo iss-eot-da. bi-beon-in-de-do ot-cha-rim-eun heu-teu-reo-jim ha-na eop-seot-da.",
+      "en": "The moment I stepped into the alley, he was already there, leaning against the wall. Even off duty, not a single thread of his outfit was out of place."
+    },
+    {
+      "text": "'잘 잤어?' 그가 툭 던지듯 물었다. 다정한 말투는 아니었지만, 눈은 내 얼굴을 살피고 있었다.",
+      "reading": "'jal jja-sseo?' geu-ga tuk deon-ji-deut mul-eot-da. da-jeong-han mal-tu-neun a-ni-eot-ji-man, nun-eun nae eol-gul-eul sal-pi-go iss-eot-da.",
+      "en": "\"Sleep okay?\" he tossed out the question bluntly. His tone wasn't warm, but his eyes were quietly checking my face.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "'그럭저럭요.' 하품을 참으며 대답하자, 그는 말없이 따뜻한 캔 음료 하나를 내밀었다. 아침부터 준비해 온 모양이었다.",
+      "reading": "'geu-reok-jeo-reok-yo.' ha-pum-eul cham-eu-myeo dae-dab-ha-ja, geu-neun mal-eop-si tta-tteut-han kaen eum-nyo ha-na-reul nae-mil-eot-da. a-chim-bu-teo jun-bi-hae on mo-yang-i-eot-da.",
+      "en": "\"So-so,\" I answered, swallowing a yawn. Without a word, he held out a warm canned drink. He must have prepared it that very morning."
+    },
+    {
+      "text": "'아침엔 뭐라도 마셔.' 짧은 한마디였지만, 그 안에 걱정이 얼마나 눌러 담겨 있는지 나는 알고 있었다.",
+      "reading": "'a-chim-en mwo-ra-do ma-syeo.' jjalb-eun han-ma-di-eot-ji-man, geu an-e geok-jeong-i eol-ma-na nul-leo dam-gyeo iss-neun-ji na-neun al-go iss-eot-da.",
+      "en": "\"Drink something, at least, in the morning.\" It was just a short line, but I knew exactly how much worry was pressed into it.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "우리는 나란히 골목을 걸었다. 안개가 걷히며 새로운 하루가 열리고 있었다.",
+      "reading": "u-ri-neun na-ran-hi gol-mok-eul geol-eot-da. an-gae-ga geot-hi-myeo sae-ro-un ha-ru-ga yeol-li-go iss-eot-da.",
+      "en": "We walked side by side down the alley. As the fog lifted, a new day was opening up.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "'오늘 하루도 잘 시작해보자.' 그가 무심한 척 중얼거렸다. 나는 웃음이 났다. 그와 함께라면 오늘도 나쁘지 않을 것 같았다.",
+      "reading": "'o-neul ha-ru-do jal si-jak-hae-bo-ja.' geu-ga mu-sim-han cheok jung-eol-geo-ryeot-da. na-neun us-eum-i nat-da. geu-wa ham-kke-ra-myeon o-neul-do na-ppeu-ji anh-eul geot gat-at-da.",
+      "en": "\"Let's start today off right.\" He muttered it like it was nothing. I couldn't help but smile. With him around, today didn't seem so bad either.",
+      "highlight_word_id": "w04"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "아침", "reading": "a-chim", "meaning": "morning", "example": "아침에는 커피 한 잔이면 충분해요.", "example_reading": "a-chim-e-neun keo-pi han jan-i-myeon chung-bun-hae-yo", "example_en": "In the morning, one cup of coffee is enough for me." },
+    { "id": "w02", "word": "일어나다", "reading": "il-eo-na-da", "meaning": "to wake up, to get up", "example": "나는 매일 일곱 시에 일어나요.", "example_reading": "na-neun mae-il il-gop si-e il-eo-na-yo", "example_en": "I get up at seven o'clock every day." },
+    { "id": "w03", "word": "하루", "reading": "ha-ru", "meaning": "a day", "example": "오늘 하루도 수고 많았어요.", "example_reading": "o-neul ha-ru-do su-go man-ass-eo-yo", "example_en": "You worked hard today too." },
+    { "id": "w04", "word": "시작하다", "reading": "si-jak-ha-da", "meaning": "to start, to begin", "example": "이제 일을 시작할까요?", "example_reading": "i-je il-eul si-jak-hal-kka-yo", "example_en": "Shall we start working now?" },
+    { "id": "w05", "word": "잘 자다", "reading": "jal ja-da", "meaning": "to sleep well", "example": "어젯밤에 잘 잤어요?", "example_reading": "eo-jet-bam-e jal ja-sseo-yo", "example_en": "Did you sleep well last night?" }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "좋은 아침이에요.", "reading": "jo-eun a-chim-i-e-yo", "en": "Good morning." },
+    { "id": "s02", "ko": "잘 잤어요?", "reading": "jal ja-sseo-yo?", "en": "Did you sleep well?" },
+    { "id": "s03", "ko": "오늘 하루도 힘내요.", "reading": "o-neul ha-ru-do him-nae-yo", "en": "Have a great day today too." },
+    { "id": "s04", "ko": "이제 하루를 시작해 볼까요?", "reading": "i-je ha-ru-reul si-jak-hae bol-kka-yo?", "en": "Shall we start the day now?" },
+    { "id": "s05", "ko": "저는 일곱 시에 일어나요.", "reading": "jeo-neun il-gop si-e il-eo-na-yo", "en": "I get up at seven o'clock." }
+  ]
+}

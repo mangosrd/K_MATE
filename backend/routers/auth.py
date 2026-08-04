@@ -52,6 +52,34 @@ def register(req: RegisterRequest, db: Session = Depends(get_db)):
     return _to_response(user)
 
 
+@router.post("/guest", response_model=AuthUserResponse)
+def create_guest(db: Session = Depends(get_db)):
+    """비로그인 방문자용 익명 게스트 계정 생성.
+
+    예전엔 로그인 안 한 방문자가 전부 고정된 공용 id(user-001)를 같이 썼는데, 그러면
+    무료 대화 10회 같은 계정별 한도가 실제로는 "로그인 안 한 모든 방문자가 합쳐서
+    10회"가 되어버린다. 프론트가 앱을 처음 띄울 때 이 엔드포인트를 한 번 불러서 방문자
+    전용 id를 발급받아 localStorage에 저장해두고, 그 뒤로는 그 id를 계속 쓴다.
+    """
+    user = User(
+        id=str(uuid.uuid4()),
+        name="Guest",
+        email=None,
+        password_hash=None,
+        language="ko",
+        membership="free",
+        free_char_slots=["kyuhyun", "haneul"],
+    )
+    db.add(user)
+    db.flush()
+
+    db.add(Economy(id=str(uuid.uuid4()), user_id=user.id, coins=35))
+    db.commit()
+    db.refresh(user)
+
+    return _to_response(user)
+
+
 @router.post("/login", response_model=AuthUserResponse)
 def login(req: LoginRequest, db: Session = Depends(get_db)):
     """이메일 로그인"""

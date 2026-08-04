@@ -1,0 +1,98 @@
+{
+  "id": "sp-day-sunwoo-08",
+  "character_id": "sunwoo",
+  "title": "떡 돌리는 날",
+  "emoji": "🏠",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "이사한 지 얼마 안 된 집 안은 여전히 상자투성이였다. 선우는 팔을 걷어붙이고 제일 무거운 상자부터 옮겼다.",
+      "reading": "i-sa-han ji eol-ma an doen jib an-eun yeo-jeon-hi sang-ja-tu-seong-i-eot-da. seon-u-neun pal-eul geod-eo-but-i-go je-il mu-geo-un sang-ja-bu-teo om-gyeot-da.",
+      "en": "The inside of the house I'd just moved into was still full of boxes. Sunwoo rolled up his sleeves and started moving the heaviest box first.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "\"이 정도면 이사 도와준 값은 톡톡히 받아야겠다.\" 그가 이마의 땀을 닦으며 능청스레 말했다.",
+      "reading": "\"i jeong-do-myeon i-sa do-wa-jun gab-eun tok-tok-hi bad-a-ya-get-da.\" geu-ga i-ma-ui ttam-eul dakk-eu-myeo neung-cheong-seu-re mal-haet-da.",
+      "en": "\"At this rate I should get properly paid back for helping you move.\" He said, wiping sweat off his forehead, all casual about it."
+    },
+    {
+      "text": "\"오늘 저녁에 조촐하게 집들이 하기로 했다며? 나도 낄 자격 충분하지?\" 그가 넉살 좋게 물었다.",
+      "reading": "\"o-neul jeo-nyeog-e jo-chol-ha-ge jib-deul-i ha-gi-ro haet-da-myeo? na-do kkil ja-gyeok chung-bun-ha-ji?\" geu-ga neok-sal jo-ke mul-eot-da.",
+      "en": "\"You're having a small housewarming tonight, right? I've definitely earned a spot at it, haven't I?\" He asked, cheeky as ever.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "짐 정리를 마치고 나니, 어머니가 챙겨주신 떡이 눈에 들어왔다. \"이웃들한테 먼저 돌리고 오자.\"",
+      "reading": "jim jeong-ri-reul ma-chi-go na-ni, eo-meo-ni-ga chaeng-gyeo-ju-sin tteog-i nun-e deul-eo-wat-da. \"i-ut-deul-han-te meon-jeo dol-li-go o-ja.\"",
+      "en": "After finishing unpacking, I noticed the rice cake my mom had packed for me. \"Let's go hand these out to the neighbors first.\"",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "옆집, 위층, 아래층까지 돌며 떡을 답례품으로 건넸다. 선우는 넉살 좋게 먼저 인사를 건네며 분위기를 풀었다.",
+      "reading": "yeop-jip, wi-cheung, a-rae-cheung-kka-ji dol-myeo tteog-eul dam-nye-pum-eu-ro geon-net-da. seon-u-neun neok-sal jo-ke meon-jeo in-sa-reul geon-ne-myeo bun-wi-gi-reul pul-eot-da.",
+      "en": "We went around to the neighbor next door, upstairs, and downstairs, handing out rice cake as a little gift. Sunwoo broke the ice by greeting them first, cheerful as ever.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "저녁이 되자 작은 집들이가 시작됐다. \"인테리어 나쁘지 않네. 다음엔 내가 좀 봐줄까?\" 그가 벽을 톡톡 두드리며 웃었다.",
+      "reading": "jeo-nyeog-i doe-ja jak-eun jib-deul-i-ga si-jak-doet-da. \"in-te-ri-eo na-ppeu-ji anh-ne. da-eum-en nae-ga jom bwa-jul-kka?\" geu-ga byeog-eul tok-tok du-deu-ri-myeo us-eot-da.",
+      "en": "As evening fell, the small housewarming party began. \"The interior's not bad. Want me to take a look next time?\" He said, laughing as he tapped the wall.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "\"됐거든, 니 손재주 못 믿는다.\" 나는 웃으며 그의 어깨를 밀쳤다. 새 보금자리에 웃음소리가 가득 찼다.",
+      "reading": "\"dwaet-geo-deun, ni son-jae-ju mot mid-neun-da.\" na-neun us-eu-myeo geu-ui eo-kkae-reul mil-chyeot-da. sae bo-geum-ja-ri-e us-eum-so-ri-ga ga-deuk chat-da.",
+      "en": "\"No thanks, I don't trust your handiwork.\" I laughed and shoved his shoulder. Laughter filled my new little nest."
+    },
+    {
+      "text": "\"오늘 단어랑 대화, 새집 정리하듯 차근차근 풀어봐라.\"",
+      "reading": "\"o-neul dan-eo-rang dae-hwa, sae-jip jeong-ri-ha-deut cha-geun-cha-geun pul-eo-bwa-ra.\"",
+      "en": "\"Go through today's words and conversation step by step, just like organizing a new home.\""
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "이사하다", "reading": "i-sa-ha-da", "meaning": "to move (house)", "example": "다음 달에 새 아파트로 이사한다.", "example_reading": "da-eum dal-e sae a-pa-teu-ro i-sa-han-da", "example_en": "I'm moving to a new apartment next month." },
+    { "id": "w02", "word": "집들이", "reading": "jib-deul-i", "meaning": "housewarming party", "example": "이번 주말에 집들이를 하기로 했다.", "example_reading": "i-beon ju-mal-e jib-deul-i-reul ha-gi-ro haet-da", "example_en": "We decided to have a housewarming party this weekend." },
+    { "id": "w03", "word": "이웃", "reading": "i-ut", "meaning": "neighbor", "example": "새로 이사 온 이웃에게 인사를 건넸다.", "example_reading": "sae-ro i-sa on i-ut-e-ge in-sa-reul geon-net-da", "example_en": "I greeted the neighbor who had just moved in." },
+    { "id": "w04", "word": "답례품", "reading": "dam-nye-pum", "meaning": "a return gift, token gift", "example": "감사의 뜻으로 답례품을 준비했다.", "example_reading": "gam-sa-ui tteus-eu-ro dam-nye-pum-eul jun-bi-haet-da", "example_en": "I prepared a token gift as a sign of thanks." },
+    { "id": "w05", "word": "인테리어", "reading": "in-te-ri-eo", "meaning": "interior decor", "example": "새 집 인테리어를 아기자기하게 꾸몄다.", "example_reading": "sae jip in-te-ri-eo-reul a-gi-ja-gi-ha-ge kku-myeot-da", "example_en": "I decorated the new house's interior in a cute, cozy way." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "지난주에 새 아파트로 이사했다.", "reading": "ji-nan-ju-e sae a-pa-teu-ro i-sa-haet-da", "en": "I moved to a new apartment last week." },
+    { "id": "s02", "ko": "이번 주말에 집들이를 하기로 했다.", "reading": "i-beon ju-mal-e jib-deul-i-reul ha-gi-ro haet-da", "en": "We decided to have a housewarming this weekend." },
+    { "id": "s03", "ko": "이웃에게 먼저 인사를 건네는 게 좋다.", "reading": "i-ut-e-ge meon-jeo in-sa-reul geon-ne-neun ge jo-ta", "en": "It's good to greet your neighbors first." },
+    { "id": "s04", "ko": "떡을 답례품으로 옆집에 돌렸다.", "reading": "tteog-eul dam-nye-pum-eu-ro yeop-jib-e dol-lyeot-da", "en": "I handed out rice cake as a token gift to the house next door." },
+    { "id": "s05", "ko": "인테리어를 새로 하니 집 분위기가 확 달라졌다.", "reading": "in-te-ri-eo-reul sae-ro ha-ni jib bun-wi-gi-ga hwak dal-la-jyeot-da", "en": "Redoing the interior completely changed the atmosphere of the house." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "선우", "text": "이 상자, 뭐가 이래 무겁노. 책이가?", "reading": "i sang-ja, mwo-ga i-rae mu-geop-no. chaeg-i-ga?", "en": "This box, why's it so heavy. Is it books?" },
+        { "speaker": "승객", "text": "어, 대부분 책이야. 살살 옮겨줘.", "reading": "eo, dae-bu-bun chaeg-i-ya. sal-sal om-gyeo-jwo.", "en": "Yeah, mostly books. Carry it gently." },
+        { "speaker": "선우", "text": "알았다. 근데 오늘 저녁에 집들이 한다며? 나도 부르는 거제?", "reading": "al-at-da. geun-de o-neul jeo-nyeog-e jib-deul-i han-da-myeo? na-do bu-reu-neun geo-je?", "en": "Got it. But you're having a housewarming tonight, right? I'm invited too, aren't I?" },
+        { "speaker": "승객", "text": "당연하지, 니가 젤 고생했는데.", "reading": "dang-yeon-ha-ji, ni-ga jel go-saeng-haet-neun-de.", "en": "Of course, you're the one who worked hardest." }
+      ],
+      "question": "선우가 짐을 옮기며 승객에게 확인한 것은 무엇인가요?",
+      "question_en": "What did Sunwoo confirm with the passenger while moving her things?",
+      "correct_answer": "오늘 저녁 집들이에 자신도 초대받았는지",
+      "options": ["오늘 저녁 집들이에 자신도 초대받았는지", "이사 비용을 얼마나 썼는지", "새집 위치가 어디인지", "이삿짐센터를 불렀는지"],
+      "explanation": "선우는 무거운 상자를 옮기면서 오늘 저녁 집들이에 자신도 초대되는지 넌지시 물어봤습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "선우", "text": "떡 이거, 몇 집이나 돌릴 거고?", "reading": "tteok i-geo, myeot jip-i-na dol-lil geo-go?", "en": "This rice cake, how many houses are you planning to give it to?" },
+        { "speaker": "승객", "text": "옆집이랑 위아래층까지, 넉 집 정도.", "reading": "yeop-jib-i-rang wi-a-rae-cheung-kka-ji, neok jip jeong-do.", "en": "The place next door and above and below, about four households." },
+        { "speaker": "선우", "text": "내가 먼저 인사할게. 이런 건 내가 좀 하거든.", "reading": "nae-ga meon-jeo in-sa-hal-ge. i-reon geon nae-ga jom ha-geo-deun.", "en": "I'll go greet them first. I'm kind of good at this stuff." },
+        { "speaker": "승객", "text": "니 은근 넉살 좋은 거 오늘 또 느낀다.", "reading": "ni eun-geun neok-sal jo-eun geo o-neul tto neu-kkin-da.", "en": "I'm realizing again today just how surprisingly good you are with people." }
+      ],
+      "question": "선우와 승객이 떡을 돌리려는 집은 총 몇 곳인가요?",
+      "question_en": "How many households are Sunwoo and the passenger planning to hand rice cake to?",
+      "correct_answer": "네 집",
+      "options": ["네 집", "두 집", "여섯 집", "한 집"],
+      "explanation": "승객은 옆집과 위아래층까지 총 네 집에 떡을 돌릴 예정이라고 말했습니다."
+    }
+  ]
+}

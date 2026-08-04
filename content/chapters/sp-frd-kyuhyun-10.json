@@ -1,0 +1,67 @@
+{
+  "id": "sp-frd-kyuhyun-10",
+  "character_id": "kyuhyun",
+  "title": "우리 이 우정 변치 말자",
+  "emoji": "🤗",
+  "story": [
+    {
+      "text": "출국 게이트 앞, 규현은 평소와 다르게 말이 없었다. 캐리어 손잡이를 괜히 만지작거리기만 했다.",
+      "reading": "chul-guk ge-i-teu ap, gyu-hyeon-eun pyeong-so-wa da-reu-ge mal-i eop-seot-da. kae-ri-eo son-jab-i-reul gwaen-hi man-ji-jak-geo-ri-gi-man haet-da.",
+      "en": "In front of the departure gate, Kyuhyun was unusually quiet. He just kept fidgeting with the suitcase handle for no reason."
+    },
+    {
+      "text": "\"이제 진짜 가는 거예요?\" 그가 헛기침을 하며 물었다. \"그래서, 다음엔 또 언제 와요?\"",
+      "reading": "\"i-je jin-jja ga-neun geo-ye-yo?\" geu-ga heot-gi-chim-eul ha-myeo mul-eot-da. \"geu-rae-seo, da-eum-en tto eon-je wa-yo?\"",
+      "en": "\"So you're really leaving now?\" he asked, clearing his throat. \"So? When are you coming back next?\""
+    },
+    {
+      "text": "\"글쎄, 다음엔 규현 씨가 저 보러 올 차례 아니에요?\" 내가 장난스레 받아치자 그는 피식 웃었다.",
+      "reading": "\"geul-sse, da-eum-en gyu-hyeon ssi-ga jeo bo-reo ol cha-lye a-ni-e-yo?\" nae-ga jang-nan-seu-re bad-a-chi-ja geu-neun pi-sik us-eot-da.",
+      "en": "\"Well, isn't it your turn to come see me next time?\" I shot back playfully, and he let out a short laugh."
+    },
+    {
+      "text": "\"저야 좋죠. 근데 그전까지는 이 우정, 변치 않는 거예요.\" 그가 새끼손가락을 내밀며 진지한 얼굴로 말했다.",
+      "reading": "\"jeo-ya jo-chyo. geun-de geu-jeon-kka-ji-neun i u-jeong, byeon-chi an-neun geo-ye-yo.\" geu-ga sae-kki-son-ga-rag-eul nae-mil-myeo jin-ji-han eol-gul-lo mal-haet-da.",
+      "en": "\"I'd love that. But until then, this friendship of ours doesn't change, got it?\" He held out his pinky finger, his expression suddenly serious.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "나는 웃으며 그의 손가락에 내 손가락을 걸었다. \"당연하지. 우리 우정은 평생 갈 거야.\"",
+      "reading": "na-neun us-eu-myeo geu-ui son-ga-rag-e nae son-ga-rag-eul geol-eot-da. \"dang-yeon-ha-ji. u-ri u-jeong-eun pyeong-saeng gal geo-ya.\"",
+      "en": "Smiling, I hooked my pinky around his. \"Of course. Our friendship's going to last a lifetime.\"",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "\"능글맞은 소리만 하는 줄 알았더니, 가끔은 이렇게 진심도 보여주네요.\" 내가 놀리듯 말하자 그는 또 헛기침을 했다.",
+      "reading": "\"neung-geul-maj-eun so-ri-man ha-neun jul al-at-deo-ni, ga-kkeum-eun i-reoh-ge jin-sim-do bo-yeo-ju-ne-yo.\" nae-ga nol-li-deut mal-ha-ja geu-neun tto heot-gi-chim-eul haet-da.",
+      "en": "\"I thought all you ever did was talk smooth, but every once in a while you actually show some real sincerity.\" I teased, and he cleared his throat again.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "\"제가 원래 이래요. 평생 이 자리에서 아가씨 든든하게 지켜 줄 사람이니까.\" 그가 어깨를 으쓱하며 여유롭게 웃었다.",
+      "reading": "\"je-ga won-lae i-rae-yo. pyeong-saeng i ja-ri-e-seo a-ga-ssi deun-deun-ha-ge ji-kyeo jul sa-ram-i-ni-kka.\" geu-ga eo-kkae-reul eu-sseuk-ha-myeo yeo-yu-rob-ge us-eot-da.",
+      "en": "\"That's just how I am. Because I'll always be the reliable guy standing right here, watching over you, miss.\" He shrugged, laughing easily.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "게이트 너머로 사라지기 직전, 나는 뒤돌아 크게 손을 흔들었다. \"또 보자, 규현아!\" 그의 웃음소리가 오래도록 귓가에 맴돌았다. 우리의 우정은, 어디에 있든 영원히 변하지 않을 것 같았다.",
+      "reading": "ge-i-teu neo-meo-ro sa-ra-ji-gi jik-jeon, na-neun dwi-dol-a keu-ge son-eul heun-deul-eot-da. \"tto bo-ja, gyu-hyeon-a!\" geu-ui us-eum-so-ri-ga o-rae-do-rok gwis-ga-e maem-dol-at-da. u-ri-ui u-jeong-eun, eo-di-e it-deun yeong-won-hi byeon-ha-ji an-eul geot gat-at-da.",
+      "en": "Just before disappearing beyond the gate, I turned back and waved big. \"See you again, Kyuhyun!\" The sound of his laughter lingered in my ears for a long time after. Our friendship, I felt, would stay unchanged forever, no matter where each of us ended up.",
+      "highlight_word_id": "w02"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "우정", "reading": "u-jeong", "meaning": "friendship", "example": "우리 우정 변치 말자.", "example_reading": "u-ri u-jeong byeon-chi mal-ja", "example_en": "Let's not let our friendship change." },
+    { "id": "w02", "word": "영원히", "reading": "yeong-won-hi", "meaning": "forever, eternally", "example": "이 순간을 영원히 기억할게요.", "example_reading": "i sun-gan-eul yeong-won-hi gi-eok-hal-ge-yo", "example_en": "I'll remember this moment forever." },
+    { "id": "w03", "word": "진심", "reading": "jin-sim", "meaning": "sincerity, true feelings", "example": "이건 제 진심이에요.", "example_reading": "i-geon je jin-sim-i-e-yo", "example_en": "This is how I truly feel." },
+    { "id": "w04", "word": "평생", "reading": "pyeong-saeng", "meaning": "one's whole life, a lifetime", "example": "이 은혜는 평생 안 잊을게요.", "example_reading": "i eun-hye-neun pyeong-saeng an ij-eul-ge-yo", "example_en": "I'll never forget this kindness as long as I live." },
+    { "id": "w05", "word": "든든하다", "reading": "deun-deun-ha-da", "meaning": "to be reliable, reassuring", "example": "그가 옆에 있으면 든든해요.", "example_reading": "geu-ga yeop-e iss-eu-myeon deun-deun-hae-yo", "example_en": "I feel reassured when he's by my side." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "우리 우정 변치 말자.", "reading": "u-ri u-jeong byeon-chi mal-ja.", "en": "Let's not let our friendship change." },
+    { "id": "s02", "ko": "이 순간을 영원히 기억할게요.", "reading": "i sun-gan-eul yeong-won-hi gi-eok-hal-ge-yo.", "en": "I'll remember this moment forever." },
+    { "id": "s03", "ko": "이건 제 진심이에요.", "reading": "i-geon je jin-sim-i-e-yo.", "en": "This is my true feeling." },
+    { "id": "s04", "ko": "평생 잊지 못할 거예요.", "reading": "pyeong-saeng ij-ji mot-hal geo-ye-yo.", "en": "I won't be able to forget it for the rest of my life." },
+    { "id": "s05", "ko": "그가 있으면 정말 든든해요.", "reading": "geu-ga iss-eu-myeon jeong-mal deun-deun-hae-yo.", "en": "I feel really reassured when he's around." }
+  ]
+}

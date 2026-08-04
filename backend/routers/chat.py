@@ -9,11 +9,14 @@ from schemas.schemas import ChatRequest, ChatResponse, WordSuggestion
 from services.llm_service import (
     load_persona, build_system_prompt, llm_chat, extract_word_suggestion
 )
-from models.models import Character, Memory, Progress
+from models.models import Character, Memory, Progress, User
 from routers.progress import apply_streak
+from services.access_control import check_character_access
 import uuid
 
 router = APIRouter(prefix="/chat", tags=["chat"])
+
+FREE_CHAT_LIMIT = 10
 
 
 @router.post("", response_model=ChatResponse)
@@ -24,6 +27,22 @@ async def chat(req: ChatRequest, db: Session = Depends(get_db)):
     character = db.query(Character).filter(Character.id == req.character_id).first()
     if not character:
         raise HTTPException(status_code=404, detail=f"Character '{req.character_id}' not found")
+
+    # 1-1. 무료 회원 대화 횟수 제한 — 계정(User row)에 귀속되므로 재접속해도 초기화되지
+    # 않는다. LLM을 부르기 전에 먼저 막아서 어차피 거절할 요청에 API 비용을 쓰지 않는다.
+    user = db.query(User).filter(User.id == req.user_id).first()
+    if not user:
+        raise HTTPException(status_code=404, detail=f"User '{req.user_id}' not found")
+
+    # 1-1-1. 프리미엄 전용 캐릭터인데 이 유저는 접근 권한이 없으면 여기서 막는다 —
+    # 프론트 잠금 화면은 API를 직접 호출하면 우회되므로 서버에서도 검증해야 한다.
+    check_character_access(user, character)
+
+    if user.membership != "premium" and user.free_chat_count >= FREE_CHAT_LIMIT:
+        raise HTTPException(
+            status_code=402,
+            detail="무료 대화 10회를 모두 사용했습니다. 프리미엄으로 업그레이드하면 무제한으로 대화할 수 있어요.",
+        )
 
     # 2. 기장 페르소나 로드
     persona = load_persona(req.character_id)
@@ -51,7 +70,7 @@ async def chat(req: ChatRequest, db: Session = Depends(get_db)):
         messages.append({"role": msg.role, "content": msg.content})
     messages.append({"role": "user", "content": req.user_message})
 
-    # 6. LLM 호출
+    # 6. LLM 호출 (기본 모델 = gemini-flash-lite-latest, llm_chat 기본값 그대로 사용)
     reply = await llm_chat(messages, temperature=0.6, max_tokens=256)
 
     # 7. 호감도 업데이트 + 연속 일수 갱신
@@ -64,8 +83,18 @@ async def chat(req: ChatRequest, db: Session = Depends(get_db)):
         progress = Progress(id=str(uuid.uuid4()), user_id=req.user_id, character_id=req.character_id)
         db.add(progress)
         db.flush()
-    progress.affinity = min(100, progress.affinity + 1)
-    apply_streak(progress)
+    apply_streak(progress)  # 호감도(하루 1회)·연속일수 갱신을 여기서 함께 처리한다
+
+    # 7-1. 무료 회원이면 대화 횟수 차감(정상적으로 답변을 받은 경우에만 카운트)
+    # with_for_update로 다시 잠깐 잠가서 증가시킨다 — LLM 호출이 끝난 뒤라 잠그는 구간이
+    # 짧다(맨 위에서부터 잠그면 LLM 응답 기다리는 몇 초 동안 같은 유저의 다른 요청이
+    # 전부 막혀버린다). 이 좁은 구간만 잠가도 카운터가 두 요청 사이에 유실되는 걸 막을 수 있다.
+    free_messages_remaining = None
+    if user.membership != "premium":
+        locked_user = db.query(User).filter(User.id == req.user_id).with_for_update().first()
+        locked_user.free_chat_count += 1
+        free_messages_remaining = max(0, FREE_CHAT_LIMIT - locked_user.free_chat_count)
+
     db.commit()
 
     # 8. 단어 추출 (+ LLM 사전 조회로 뜻 채우기)
@@ -82,4 +111,5 @@ async def chat(req: ChatRequest, db: Session = Depends(get_db)):
         callback_memory=callback_memory,
         word_suggestion=word_suggestion,
         affinity_delta=1,
+        free_messages_remaining=free_messages_remaining,
     )

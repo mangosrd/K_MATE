@@ -14,13 +14,20 @@ load_dotenv()
 
 
 class Settings(BaseSettings):
+    # Railway가 자동으로 주입하는 통합 DB URL (있으면 최우선 사용)
+    database_url: str = ""
+    # 개별 MySQL 접속 정보 (로컬 개발 또는 DATABASE_URL 없을 때 사용)
     mysql_host: str = "localhost"
     mysql_port: int = 3306
     mysql_user: str = "root"
     mysql_password: str = ""
     mysql_db: str = "kmate"
-    groq_api_key: str = ""
+    gemini_api_key: str = ""
     frontend_url: str = "http://localhost:3000"
+    google_play_package_name: str = "com.kmate.app"
+    google_play_service_account_file: str = ""
+    internal_api_secret: str = ""
+    portone_api_secret: str = ""
 
     class Config:
         env_file = ".env"
@@ -34,11 +41,20 @@ def get_settings() -> Settings:
 
 def get_db_url(settings: Settings | None = None) -> str:
     s = settings or get_settings()
+    # Railway가 DATABASE_URL을 자동으로 주입하면 그걸 우선 사용한다.
+    # MySQL(mysql://) → pymysql 드라이버로 교체, PostgreSQL은 그대로.
+    if s.database_url:
+        url = s.database_url
+        if url.startswith("mysql://"):
+            url = url.replace("mysql://", "mysql+pymysql://", 1)
+        return url
+    # 로컬 개발: 개별 MYSQL_* 변수로 조합
     return (
         f"mysql+pymysql://{s.mysql_user}:{s.mysql_password}"
         f"@{s.mysql_host}:{s.mysql_port}/{s.mysql_db}"
         f"?charset=utf8mb4"
     )
+
 
 
 # SQLAlchemy 엔진

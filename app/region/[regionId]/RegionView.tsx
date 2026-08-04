@@ -5,10 +5,11 @@ import Link from "next/link";
 import Image from "next/image";
 import BottomNav from "@/components/ui/BottomNav";
 import {
-  getCharactersForRegion, MOCK_USER, MOCK_ALL_PROGRESS,
+  getCharactersForRegion, MOCK_ALL_PROGRESS,
   canAccessCharacter,
 } from "@/lib/db/mock";
-import { getEffectiveUserId, getCurrentUser } from "@/lib/auth/store";
+import { getEffectiveUserId } from "@/lib/auth/store";
+import { useMembership, useFreeCharSlots } from "@/lib/auth/useAuthUser";
 import { useLanguage } from "@/components/LanguageContext";
 import type { Region, Progress } from "@/types/database";
 import styles from "./region.module.css";
@@ -18,35 +19,35 @@ const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:800
 interface RegionHighlight {
   id: string;
   name: string;
-  en: string;
+  enKey: string;
   emoji: string;
 }
 
 const REGION_HIGHLIGHTS: Record<string, RegionHighlight[]> = {
   seoul: [
-    { id: "p1", name: "경복궁", en: "Gyeongbokgung", emoji: "🏯" },
-    { id: "p2", name: "홍대", en: "Hongdae", emoji: "🌆" },
-    { id: "p3", name: "남산타워", en: "Namsan Tower", emoji: "🗼" },
+    { id: "p1", name: "경복궁", enKey: "placeGyeongbokgung", emoji: "🏯" },
+    { id: "p2", name: "홍대", enKey: "placeHongdae", emoji: "🌆" },
+    { id: "p3", name: "남산타워", enKey: "placeNamsanTower", emoji: "🗼" },
   ],
   jeonju: [
-    { id: "p1", name: "한옥마을", en: "Hanok Village", emoji: "🏘️" },
-    { id: "p2", name: "비빔밥 거리", en: "Bibimbap Street", emoji: "🍚" },
-    { id: "p3", name: "경기전", en: "Gyeonggijeon", emoji: "🏯" },
+    { id: "p1", name: "한옥마을", enKey: "placeHanokVillage", emoji: "🏘️" },
+    { id: "p2", name: "비빔밥 거리", enKey: "placeBibimbapStreet", emoji: "🍚" },
+    { id: "p3", name: "경기전", enKey: "placeGyeonggijeon", emoji: "🏯" },
   ],
   busan: [
-    { id: "p1", name: "해운대", en: "Haeundae Beach", emoji: "🌊" },
-    { id: "p2", name: "자갈치시장", en: "Jagalchi Market", emoji: "🐟" },
-    { id: "p3", name: "광안대교", en: "Gwangan Bridge", emoji: "🌉" },
+    { id: "p1", name: "해운대", enKey: "placeHaeundae", emoji: "🌊" },
+    { id: "p2", name: "자갈치시장", enKey: "placeJagalchiMarket", emoji: "🐟" },
+    { id: "p3", name: "광안대교", enKey: "placeGwanganBridge", emoji: "🌉" },
   ],
   chungcheong: [
-    { id: "p1", name: "무령왕릉", en: "King Muryeong's Tomb", emoji: "👑" },
-    { id: "p2", name: "공산성", en: "Gongsanseong Fortress", emoji: "🏯" },
-    { id: "p3", name: "금강", en: "Geumgang River", emoji: "🌊" },
+    { id: "p1", name: "무령왕릉", enKey: "placeMuryeongTomb", emoji: "👑" },
+    { id: "p2", name: "공산성", enKey: "placeGongsanseong", emoji: "🏯" },
+    { id: "p3", name: "금강", enKey: "placeGeumgangRiver", emoji: "🌊" },
   ],
   jeju: [
-    { id: "p1", name: "성산일출봉", en: "Seongsan Ilchulbong", emoji: "🌅" },
-    { id: "p2", name: "한라산", en: "Hallasan", emoji: "🌋" },
-    { id: "p3", name: "우도", en: "Udo Island", emoji: "🏝️" },
+    { id: "p1", name: "성산일출봉", enKey: "placeSeongsanIlchulbong", emoji: "🌅" },
+    { id: "p2", name: "한라산", enKey: "placeHallasan", emoji: "🌋" },
+    { id: "p3", name: "우도", enKey: "placeUdoIsland", emoji: "🏝️" },
   ],
 };
 
@@ -55,7 +56,9 @@ const REGION_EMOJI: Record<string, string> = {
 };
 
 export default function RegionView({ region }: { region: Region }) {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  const { membership } = useMembership();
+  const { freeSlots } = useFreeCharSlots();
   const characters = getCharactersForRegion(region.id);
   const highlights = REGION_HIGHLIGHTS[region.id] ?? [];
   const [allProgress, setAllProgress] = useState<Record<string, Progress>>(MOCK_ALL_PROGRESS);
@@ -73,21 +76,6 @@ export default function RegionView({ region }: { region: Region }) {
       results.forEach((p) => { if (p) merged[p.character_id] = p; });
       if (Object.keys(merged).length > 0) setAllProgress(merged);
     });
-
-    // 이 지역의 명소를 둘러봤으니 "방문 장소"로 한 번에 기록한다 (best-effort)
-    if (highlights.length > 0) {
-      characters.forEach((c) => {
-        fetch(`${BACKEND_URL}/progress`, {
-          method: "PUT",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            user_id: userId,
-            character_id: c.id,
-            add_places: highlights.map((place) => `${region.id}-${place.id}`),
-          }),
-        }).catch(() => {});
-      });
-    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [region.id]);
 
@@ -133,7 +121,7 @@ export default function RegionView({ region }: { region: Region }) {
 
             <div className={styles.characterList}>
               {characters.map((char) => {
-                const canAccess = canAccessCharacter(char.id, getCurrentUser()?.membership ?? MOCK_USER.membership, MOCK_USER.free_character_slots);
+                const canAccess = canAccessCharacter(char.id, membership, freeSlots);
                 const progress = allProgress[char.id];
                 const affinity = progress?.affinity ?? 0;
                 const affinityStars = Math.round(affinity / 20);
@@ -234,7 +222,7 @@ export default function RegionView({ region }: { region: Region }) {
                 <div key={place.id} className={styles.placeChip}>
                   <span className={styles.placeEmoji}>{place.emoji}</span>
                   <span className={styles.placeName}>{place.name}</span>
-                  <span className={styles.placeNameEn}>{place.en}</span>
+                  {language !== "ko" && <span className={styles.placeNameEn}>{t(place.enKey)}</span>}
                 </div>
               ))}
             </div>

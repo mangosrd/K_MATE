@@ -1,0 +1,62 @@
+{
+  "id": "sp-day-kyuhyun-02",
+  "character_id": "kyuhyun",
+  "title": "아이스 아메리카노 주세요",
+  "emoji": "☕",
+  "story": [
+    {
+      "text": "번화한 거리 한쪽에 자리 잡은 작은 카페의 문을 열자, 고소한 원두 향이 확 풍겨왔다.",
+      "reading": "beon-hwa-han geo-ri han-jjok-e ja-ri jab-eun jak-eun ka-pe-ui mun-eul yeol-ja, go-so-han won-du hyang-i hwak pung-gyeo-wat-da.",
+      "en": "As I opened the door of a small cafe tucked into a busy street, the nutty scent of coffee beans rushed out."
+    },
+    {
+      "text": "\"자, 오늘은 아가씨가 직접 주문해 볼까요?\" 규현이 카운터 쪽으로 슬쩍 등을 떠밀며 장난스럽게 웃었다.",
+      "reading": "\"ja, o-neul-eun a-ga-ssi-ga jik-jeop ju-mun-hae bol-kka-yo?\" gyu-hyeon-i ka-un-teo jjok-eu-ro seul-jjeok deung-eul tteo-mil-myeo jang-nan-seu-reop-ge us-eot-da.",
+      "en": "\"So, why don't you try ordering yourself today?\" Kyuhyun gave me a light push toward the counter, grinning mischievously.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "메뉴판을 훑어보던 내가 머뭇거리자, 그가 슬쩍 다가와 귓가에 속삭였다. \"이럴 땐 그냥 '아메리카노 한 잔 주세요' 하면 되는데요.\"",
+      "reading": "me-nyu-pan-eul hult-eo-bo-deon nae-ga meo-mut-geo-ri-ja, geu-ga seul-jjeok da-ga-wa gwit-ga-e sok-sag-yeot-da. \"i-reol ttaen geu-nyang 'a-me-ri-ka-no han jan ju-se-yo' ha-myeon doe-neun-de-yo.\"",
+      "en": "As I scanned the menu and hesitated, he leaned in close and whispered, \"In a case like this, you just say 'One Americano, please.'\"",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "직원이 웃으며 물었다. \"사이즈는 어떻게 해드릴까요?\" 나는 규현을 흘끗 보았고, 그는 눈짓으로 '톨'이라고 말하라는 신호를 보냈다.",
+      "reading": "jig-won-i us-eu-myeo mul-eot-da. \"sa-i-jeu-neun eo-ttteo-ke hae-deu-ril-kka-yo?\" na-neun gyu-hyeon-eul heul-kkeut bo-at-go, geu-neun nun-jit-eu-ro 'tol'-i-ra-go mal-ha-ra-neun sin-ho-reul bo-naet-da.",
+      "en": "The staff member asked with a smile, \"What size would you like?\" I glanced at Kyuhyun, who signaled with his eyes to say 'tall.'",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "\"여기서 드시고 가세요, 포장이세요?\" 라는 물음에 내가 멈칫하자, 규현이 대신 대답했다. \"포장으로 해주세요. 우리 갈 데가 있거든요.\"",
+      "reading": "\"yeo-gi-seo deu-si-go ga-se-yo, po-jang-i-se-yo?\" ra-neun mul-eum-e nae-ga meom-chit-ha-ja, gyu-hyeon-i dae-sin dae-dab-haet-da. \"po-jang-eu-ro hae-ju-se-yo. u-ri gal de-ga it-geo-deun-yo.\"",
+      "en": "\"For here, or to go?\" I froze at the question, and Kyuhyun answered for me. \"To go, please. We've got somewhere to be.\"",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "완성된 커피를 받아 든 나는 한 모금 마시고 살짝 인상을 찌푸렸다. \"얼음을 너무 많이 넣었나 봐요.\" 그러자 규현이 낮게 웃으며 말했다. \"다음엔 '얼음 조금만 넣어 주세요' 해봐요. 그래서, 오늘 첫 주문은 성공적이었다고 봐도 되죠?\"",
+      "reading": "wan-seong-doen keo-pi-reul bad-a deun na-neun han mo-geum ma-si-go sal-jjak in-sang-eul jji-pu-ryeot-da. \"eol-eum-eul neo-mu man-i neoh-eot-na bwa-yo.\" geu-reo-ja gyu-hyeon-i nat-ge us-eu-myeo mal-haet-da. \"da-eum-en 'eol-eum jo-geum-man neoh-eo ju-se-yo' hae-bwa-yo. geu-rae-seo, o-neul cheot ju-mun-eun seong-gong-jeog-i-eot-da-go bwa-do doe-jyo?\"",
+      "en": "Taking the finished coffee, I sipped it and winced slightly. \"I think they put in too much ice.\" Kyuhyun laughed quietly. \"Next time, try saying 'Just a little ice, please.' So — I guess we can call today's first order a success?\"",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "창가 자리에 마주 앉아 커피를 홀짝이는 동안, 규현은 계속 흐뭇한 얼굴로 나를 지켜보고 있었다.",
+      "reading": "chang-ga ja-ri-e ma-ju anj-a keo-pi-reul hol-jjag-i-neun dong-an, gyu-hyeon-eun gye-sok heu-mut-han eol-gul-lo na-reul ji-kyeo-bo-go iss-eot-da.",
+      "en": "As we sat facing each other by the window, sipping our coffee, Kyuhyun kept watching me with a satisfied look on his face."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "주문하다", "reading": "ju-mun-ha-da", "meaning": "to order", "example": "카페에서 커피를 주문했다.", "example_reading": "ka-pe-e-seo keo-pi-reul ju-mun-haet-da", "example_en": "I ordered coffee at the cafe." },
+    { "id": "w02", "word": "아메리카노", "reading": "a-me-ri-ka-no", "meaning": "Americano", "example": "저는 아이스 아메리카노를 좋아해요.", "example_reading": "jeo-neun a-i-seu a-me-ri-ka-no-reul jo-a-hae-yo", "example_en": "I like iced Americano." },
+    { "id": "w03", "word": "사이즈", "reading": "sa-i-jeu", "meaning": "size", "example": "사이즈는 톨로 주세요.", "example_reading": "sa-i-jeu-neun tol-lo ju-se-yo", "example_en": "Please make it a tall size." },
+    { "id": "w04", "word": "포장", "reading": "po-jang", "meaning": "to go, takeout", "example": "포장해서 가져갈게요.", "example_reading": "po-jang-hae-seo ga-jyeo-gal-ge-yo", "example_en": "I'll take it to go." },
+    { "id": "w05", "word": "얼음", "reading": "eol-eum", "meaning": "ice", "example": "얼음 빼고 주세요.", "example_reading": "eol-eum ppae-go ju-se-yo", "example_en": "Please make it without ice." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "아이스 아메리카노 한 잔 주세요.", "reading": "a-i-seu a-me-ri-ka-no han jan ju-se-yo.", "en": "One iced Americano, please." },
+    { "id": "s02", "ko": "사이즈는 어떻게 해드릴까요?", "reading": "sa-i-jeu-neun eo-tteo-ke hae-deu-ril-kka-yo?", "en": "What size would you like?" },
+    { "id": "s03", "ko": "여기서 드시고 가세요, 포장이세요?", "reading": "yeo-gi-seo deu-si-go ga-se-yo, po-jang-i-se-yo?", "en": "For here, or to go?" },
+    { "id": "s04", "ko": "얼음 조금만 넣어 주세요.", "reading": "eol-eum jo-geum-man neoh-eo ju-se-yo.", "en": "Please put in just a little ice." },
+    { "id": "s05", "ko": "저는 따뜻한 라떼로 할게요.", "reading": "jeo-neun tta-tteut-han la-tte-ro hal-ge-yo.", "en": "I'll have a warm latte." }
+  ]
+}

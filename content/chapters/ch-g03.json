@@ -47,46 +47,161 @@
     }
   ],
   "words": [
-    { "id": "w01", "word": "공산성", "reading": "gong-san-seong", "meaning": "Gongsanseong Fortress", "example": "공산성은 백제 웅진 시대의 도읍을 지키던 산성입니다.", "example_reading": "gong-san-seong-eun baek-je ung-jin si-dae-ui do-eub-eul ji-ki-deon san-seong-im-ni-da", "example_en": "Gongsanseong is the mountain fortress that guarded Baekje's Ungjin-era capital." },
-    { "id": "w02", "word": "토성", "reading": "to-seong", "meaning": "Earthen rampart / wall", "example": "토성은 흙을 다져 쌓은 백제 초기의 성벽 형태입니다.", "example_reading": "to-seong-eun heuk-eul da-jyeo ssa-eun baek-je cho-gi-ui seong-byeok hyeong-tae-im-ni-da", "example_en": "The earthen rampart is an early Baekje form of fortress wall, packed from soil." },
-    { "id": "w03", "word": "성벽", "reading": "seong-byeok", "meaning": "Fortress wall", "example": "성벽을 따라 걸으면 금강의 풍경이 한눈에 보입니다.", "example_reading": "seong-byeog-eul tta-ra geol-eu-myeon geum-gang-ui pung-gyeong-i han-nun-e bo-im-ni-da", "example_en": "Walking along the fortress wall, the Geumgang scenery comes into view at a glance." },
-    { "id": "w04", "word": "왕궁지", "reading": "wang-gung-ji", "meaning": "Royal palace site", "example": "왕궁지에서 백제 왕이 정사를 돌보았습니다.", "example_reading": "wang-gung-ji-e-seo baek-je wang-i jeong-sa-reul dol-bo-a-seum-ni-da", "example_en": "At the royal palace site, the Baekje king attended to state affairs." },
-    { "id": "w05", "word": "진남루", "reading": "jin-nam-nu", "meaning": "Jinnamnu (south gate tower of Gongsanseong)", "example": "진남루는 공산성의 남쪽을 지키는 대표 문루입니다.", "example_reading": "jin-nam-nu-neun gong-san-seong-ui nam-jjog-eul ji-ki-neun dae-pyo mun-nu-im-ni-da", "example_en": "Jinnamnu is the representative gate tower guarding the south side of Gongsanseong." }
+    {
+      "id": "w01",
+      "word": "산성",
+      "reading": "san-seong",
+      "meaning": "Mountain fortress",
+      "example": "산성은 적의 침입을 막기 위해 산 위에 쌓은 성입니다.",
+      "example_reading": "san-seong-eun jeog-ui chim-ib-eul mak-gi wi-hae san wi-e ssa-eun seong-im-ni-da",
+      "example_en": "A mountain fortress is a fortification built on a mountain to block enemy invasions."
+    },
+    {
+      "id": "w02",
+      "word": "토성",
+      "reading": "to-seong",
+      "meaning": "Earthen rampart / wall",
+      "example": "토성은 흙을 다져 쌓은 백제 초기의 성벽 형태입니다.",
+      "example_reading": "to-seong-eun heuk-eul da-jyeo ssa-eun baek-je cho-gi-ui seong-byeok hyeong-tae-im-ni-da",
+      "example_en": "The earthen rampart is an early Baekje form of fortress wall, packed from soil."
+    },
+    {
+      "id": "w03",
+      "word": "성벽",
+      "reading": "seong-byeok",
+      "meaning": "Fortress wall",
+      "example": "성벽을 따라 걸으면 금강의 풍경이 한눈에 보입니다.",
+      "example_reading": "seong-byeog-eul tta-ra geol-eu-myeon geum-gang-ui pung-gyeong-i han-nun-e bo-im-ni-da",
+      "example_en": "Walking along the fortress wall, the Geumgang scenery comes into view at a glance."
+    },
+    {
+      "id": "w04",
+      "word": "유적지",
+      "reading": "yu-jeok-ji",
+      "meaning": "Historic site",
+      "example": "이 유적지에서 백제 시대의 기와가 많이 발굴되었습니다.",
+      "example_reading": "i yu-jeok-ji-e-seo baek-je si-dae-ui gi-wa-ga man-i bal-gul-doe-eot-seum-ni-da",
+      "example_en": "Many roof tiles from the Baekje era were excavated at this historic site."
+    },
+    {
+      "id": "w05",
+      "word": "문루",
+      "reading": "mul-lu",
+      "meaning": "Gate tower",
+      "example": "문루에 오르면 성 안팎을 한눈에 볼 수 있습니다.",
+      "example_reading": "mul-lu-e o-reu-myeon seong an-pak-eul han-nun-e bol su it-seum-ni-da",
+      "example_en": "From the gate tower, you can see both inside and outside the fortress at a glance."
+    }
   ],
   "sentences": [
-    { "id": "s01", "ko": "공산성은 백제 웅진 시대의 도읍을 지키던 산성입니다.", "reading": "gong-san-seong-eun baek-je ung-jin si-dae-ui do-eub-eul ji-ki-deon san-seong-im-ni-da", "en": "Gongsanseong is the mountain fortress that guarded Baekje's Ungjin-era capital." },
-    { "id": "s02", "ko": "토성은 흙을 다져 쌓은 백제 초기의 성벽 형태입니다.", "reading": "to-seong-eun heuk-eul da-jyeo ssa-eun baek-je cho-gi-ui seong-byeok hyeong-tae-im-ni-da", "en": "The earthen rampart is an early Baekje form of fortress wall, packed from soil." },
-    { "id": "s03", "ko": "성벽을 따라 걸으면 금강의 풍경이 한눈에 보입니다.", "reading": "seong-byeog-eul tta-ra geol-eu-myeon geum-gang-ui pung-gyeong-i han-nun-e bo-im-ni-da", "en": "Walking along the fortress wall, the Geumgang scenery comes into view at a glance." },
-    { "id": "s04", "ko": "왕궁지에서 백제 왕이 정사를 돌보았습니다.", "reading": "wang-gung-ji-e-seo baek-je wang-i jeong-sa-reul dol-bo-a-seum-ni-da", "en": "At the royal palace site, the Baekje king attended to state affairs." },
-    { "id": "s05", "ko": "진남루는 공산성의 남쪽을 지키는 대표 문루입니다.", "reading": "jin-nam-nu-neun gong-san-seong-ui nam-jjog-eul ji-ki-neun dae-pyo mun-nu-im-ni-da", "en": "Jinnamnu is the representative gate tower guarding the south side of Gongsanseong." }
+    {
+      "id": "s01",
+      "ko": "산성은 적의 침입을 막기 위해 산 위에 쌓은 성입니다.",
+      "reading": "san-seong-eun jeog-ui chim-ib-eul mak-gi wi-hae san wi-e ssa-eun seong-im-ni-da",
+      "en": "A mountain fortress is a fortification built on a mountain to block enemy invasions."
+    },
+    {
+      "id": "s02",
+      "ko": "토성은 흙을 다져 쌓은 백제 초기의 성벽 형태입니다.",
+      "reading": "to-seong-eun heuk-eul da-jyeo ssa-eun baek-je cho-gi-ui seong-byeok hyeong-tae-im-ni-da",
+      "en": "The earthen rampart is an early Baekje form of fortress wall, packed from soil."
+    },
+    {
+      "id": "s03",
+      "ko": "성벽을 따라 걸으면 금강의 풍경이 한눈에 보입니다.",
+      "reading": "seong-byeog-eul tta-ra geol-eu-myeon geum-gang-ui pung-gyeong-i han-nun-e bo-im-ni-da",
+      "en": "Walking along the fortress wall, the Geumgang scenery comes into view at a glance."
+    },
+    {
+      "id": "s04",
+      "ko": "이 유적지에서 백제 시대의 기와가 많이 발굴되었습니다.",
+      "reading": "i yu-jeok-ji-e-seo baek-je si-dae-ui gi-wa-ga man-i bal-gul-doe-eot-seum-ni-da",
+      "en": "Many roof tiles from the Baekje era were excavated at this historic site."
+    },
+    {
+      "id": "s05",
+      "ko": "문루에 오르면 성 안팎을 한눈에 볼 수 있습니다.",
+      "reading": "mul-lu-e o-reu-myeon seong an-pak-eul han-nun-e bol su it-seum-ni-da",
+      "en": "From the gate tower, you can see both inside and outside the fortress at a glance."
+    }
   ],
   "dialogues": [
     {
       "id": "d01",
       "turns": [
-        { "speaker": "관광객", "text": "이 산성 길, 한 바퀴 도는 데 얼마나 걸려요?", "reading": "i san-seong gil, han ba-kwi do-neun de eol-ma-na geol-lyeo-yo?", "en": "How long does it take to walk one full loop of this fortress trail?" },
-        { "speaker": "매표소 직원", "text": "천천히 걸으시면 한 시간 반 정도 걸리고, 성벽 위에서 금강이 아주 잘 보여요.", "reading": "cheon-cheon-hi geol-eu-si-myeon han si-gan ban jeong-do geol-li-go, seong-byeok wi-e-seo geum-gang-i a-ju jal bo-yeo-yo.", "en": "If you walk slowly, it takes about an hour and a half, and the Geumgang is very clearly visible from the wall." },
-        { "speaker": "관광객", "text": "진남루 쪽으로 올라가면 되나요?", "reading": "jin-nam-nu jjog-eu-ro ol-la-ga-myeon doe-na-yo?", "en": "Should I go up toward Jinnamnu?" },
-        { "speaker": "매표소 직원", "text": "네, 진남루에서 시작해서 공북루 쪽으로 도시면 왕궁지도 자연스럽게 지나가게 됩니다.", "reading": "ne, jin-nam-nu-e-seo si-jak-hae-seo gong-buk-nu jjog-eu-ro do-si-myeon wang-gung-ji-do ja-yeon-seu-reop-ge ji-na-ga-ge doem-ni-da.", "en": "Yes, if you start at Jinnamnu and loop toward Gongbungnu, you'll naturally pass by the royal palace site as well." }
+        {
+          "speaker": "관광객",
+          "text": "이 산성 길, 한 바퀴 도는 데 얼마나 걸려요?",
+          "reading": "i san-seong gil, han ba-kwi do-neun de eol-ma-na geol-lyeo-yo?",
+          "en": "How long does it take to walk one full loop of this fortress trail?"
+        },
+        {
+          "speaker": "매표소 직원",
+          "text": "천천히 걸으시면 한 시간 반 정도 걸리고, 성벽 위에서 금강이 아주 잘 보여요.",
+          "reading": "cheon-cheon-hi geol-eu-si-myeon han si-gan ban jeong-do geol-li-go, seong-byeok wi-e-seo geum-gang-i a-ju jal bo-yeo-yo.",
+          "en": "If you walk slowly, it takes about an hour and a half, and the Geumgang is very clearly visible from the wall."
+        },
+        {
+          "speaker": "관광객",
+          "text": "진남루 쪽으로 올라가면 되나요?",
+          "reading": "jin-nam-nu jjog-eu-ro ol-la-ga-myeon doe-na-yo?",
+          "en": "Should I go up toward Jinnamnu?"
+        },
+        {
+          "speaker": "매표소 직원",
+          "text": "네, 진남루에서 시작해서 공북루 쪽으로 도시면 왕궁지도 자연스럽게 지나가게 됩니다.",
+          "reading": "ne, jin-nam-nu-e-seo si-jak-hae-seo gong-buk-nu jjog-eu-ro do-si-myeon wang-gung-ji-do ja-yeon-seu-reop-ge ji-na-ga-ge doem-ni-da.",
+          "en": "Yes, if you start at Jinnamnu and loop toward Gongbungnu, you'll naturally pass by the royal palace site as well."
+        }
       ],
       "question": "이 대화는 어디에서 이루어지고 있나요?",
       "question_en": "Where is this conversation taking place?",
       "correct_answer": "공산성 매표소",
-      "options": ["공산성 매표소", "무령왕릉 전시실", "금강 유람선 선착장", "공주 시외버스터미널"],
+      "options": [
+        "공산성 매표소",
+        "무령왕릉 전시실",
+        "금강 유람선 선착장",
+        "공주 시외버스터미널"
+      ],
       "explanation": "산성 둘레길 소요 시간과 진남루, 왕궁지로 이어지는 탐방 경로를 안내하는 내용으로 보아 공산성 매표소에서 나누는 대화입니다."
     },
     {
       "id": "d02",
       "turns": [
-        { "speaker": "아이", "text": "아빠, 이 성벽은 왜 색깔이 위랑 아래랑 달라요?", "reading": "a-ppa, i seong-byeog-eun wae saek-kkal-i wi-rang a-rae-rang dal-la-yo?", "en": "Dad, why does this wall's color look different on top and at the bottom?" },
-        { "speaker": "아빠", "text": "아래쪽은 백제 때 흙으로 쌓은 토성의 흔적이고, 위쪽은 조선 시대에 돌로 다시 쌓은 거란다.", "reading": "a-rae-jjog-eun baek-je ttae heuk-eu-ro ssa-eun to-seong-ui heun-jeog-i-go, wi-jjog-eun jo-seon si-dae-e dol-lo da-si ssa-eun geo-ran-da.", "en": "The bottom part is a trace of the earthen rampart built during Baekje, and the top part was rebuilt in stone during Joseon." },
-        { "speaker": "아이", "text": "그럼 이 성이 두 시대에 걸쳐 만들어진 거예요?", "reading": "geu-reom i seong-i du si-dae-e geol-chyeo man-deul-eo-jin geo-ye-yo?", "en": "So this fortress was built across two different eras?" },
-        { "speaker": "아빠", "text": "그렇지, 그래서 공산성을 보면 백제와 조선의 흔적을 함께 만날 수 있는 거야.", "reading": "geu-reo-chi, geu-rae-seo gong-san-seong-eul bo-myeon baek-je-wa jo-seon-ui heun-jeog-eul ham-kke man-nal su in-neun geo-ya.", "en": "That's right, so when you look at Gongsanseong, you can encounter traces of both Baekje and Joseon together." }
+        {
+          "speaker": "아이",
+          "text": "아빠, 이 성벽은 왜 색깔이 위랑 아래랑 달라요?",
+          "reading": "a-ppa, i seong-byeog-eun wae saek-kkal-i wi-rang a-rae-rang dal-la-yo?",
+          "en": "Dad, why does this wall's color look different on top and at the bottom?"
+        },
+        {
+          "speaker": "아빠",
+          "text": "아래쪽은 백제 때 흙으로 쌓은 토성의 흔적이고, 위쪽은 조선 시대에 돌로 다시 쌓은 거란다.",
+          "reading": "a-rae-jjog-eun baek-je ttae heuk-eu-ro ssa-eun to-seong-ui heun-jeog-i-go, wi-jjog-eun jo-seon si-dae-e dol-lo da-si ssa-eun geo-ran-da.",
+          "en": "The bottom part is a trace of the earthen rampart built during Baekje, and the top part was rebuilt in stone during Joseon."
+        },
+        {
+          "speaker": "아이",
+          "text": "그럼 이 성이 두 시대에 걸쳐 만들어진 거예요?",
+          "reading": "geu-reom i seong-i du si-dae-e geol-chyeo man-deul-eo-jin geo-ye-yo?",
+          "en": "So this fortress was built across two different eras?"
+        },
+        {
+          "speaker": "아빠",
+          "text": "그렇지, 그래서 공산성을 보면 백제와 조선의 흔적을 함께 만날 수 있는 거야.",
+          "reading": "geu-reo-chi, geu-rae-seo gong-san-seong-eul bo-myeon baek-je-wa jo-seon-ui heun-jeog-eul ham-kke man-nal su in-neun geo-ya.",
+          "en": "That's right, so when you look at Gongsanseong, you can encounter traces of both Baekje and Joseon together."
+        }
       ],
       "question": "아빠가 설명한 성벽 색깔이 다른 이유는 무엇인가요?",
       "question_en": "According to the father, why do the fortress walls differ in color?",
       "correct_answer": "백제의 흙 토성과 조선의 돌 성벽이 함께 남아 있어서",
-      "options": ["백제의 흙 토성과 조선의 돌 성벽이 함께 남아 있어서", "매년 다른 색으로 새로 칠해서", "성벽마다 만든 나라가 달라서", "햇빛에 따라 색이 변하는 돌이라서"],
+      "options": [
+        "백제의 흙 토성과 조선의 돌 성벽이 함께 남아 있어서",
+        "매년 다른 색으로 새로 칠해서",
+        "성벽마다 만든 나라가 달라서",
+        "햇빛에 따라 색이 변하는 돌이라서"
+      ],
       "explanation": "아빠는 아래쪽이 백제 때의 토성 흔적이고 위쪽이 조선 시대에 돌로 다시 쌓은 부분이라서 색깔이 다르게 보인다고 설명합니다."
     }
   ]

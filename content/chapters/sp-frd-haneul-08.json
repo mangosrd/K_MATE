@@ -1,0 +1,62 @@
+{
+  "id": "sp-frd-haneul-08",
+  "character_id": "haneul",
+  "title": "그 유명한 불멍이라는 거",
+  "emoji": "⛺",
+  "story": [
+    {
+      "text": "변산반도 해변 캠핑장에 도착하자, 파도 소리가 은은하게 들려왔다. 짐을 내리며 하늘이 팔을 걷어붙였다.",
+      "reading": "byeon-san-ban-do hae-byeon kaem-ping-jang-e do-chak-ha-ja, pa-do so-ri-ga eun-eun-ha-ge deul-lyeo-wat-da. jim-eul nae-ri-myeo ha-neul-i pal-eul geod-eo-but-yeot-da.",
+      "en": "We arrived at the beachside campsite on Byeonsan Peninsula, and the sound of waves drifted in softly. As we unloaded our things, Haneul rolled up his sleeves."
+    },
+    {
+      "text": "\"텐트 치는 거 처음이지? 보고만 있어.\" 그는 능숙한 손놀림으로 순식간에 텐트를 쳤다. 나는 감탄하며 옆에서 폴대만 건넸다.",
+      "reading": "ten-teu chi-neun geo cheo-eum-i-ji? bo-go-man iss-eo. geu-neun neung-suk-han son-nol-lim-eu-ro sun-sik-gan-e ten-teu-reul chyeot-da. na-neun gam-tan-ha-myeo yeop-e-seo pol-dae-man geon-net-da.",
+      "en": "\"First time pitching a tent, right? Just watch.\" With practiced hands, he had the tent up in no time. I just handed him tent poles, watching in awe.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "그가 근처에서 주워 온 장작을 착착 쌓기 시작했다. \"젖은 건 안 타. 마른 것만 골라.\" 나름의 노하우를 알려주는 그의 표정은 진지했다.",
+      "reading": "geu-ga geun-cheo-e-seo ju-wo on jang-jag-eul chak-chak ssah-gi si-jak-haet-da. jeoj-eun geon an ta. ma-reun geot-man gol-la. na-reum-ui no-ha-u-reul al-lyeo-ju-neun geu-ui pyo-jeong-eun jin-ji-haet-da.",
+      "en": "He started neatly stacking firewood he'd gathered nearby. \"Wet ones won't burn. Pick only the dry ones.\" His expression was serious as he shared his own know-how.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "라이터 불꽃이 장작에 옮겨붙으며 모닥불이 타올랐다. 어두워진 캠핑장에 주황빛이 은은하게 번졌다.",
+      "reading": "ra-i-teo bul-kkoch-i jang-jag-e om-gyeo-but-eu-myeo mo-dak-bul-i ta-ol-lat-da. eo-du-wo-jin kaem-ping-jang-e ju-hwang-bich-i eun-eun-ha-ge beon-jyeot-da.",
+      "en": "The lighter's flame caught the firewood, and the campfire blazed to life. A warm orange glow spread softly through the darkened campsite.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "우리는 나란히 앉아 말없이 불꽃만 바라봤다. \"이게 그렇게 유명한 불멍이라는 거야.\" 하늘이 낮게 중얼거렸다. 아무 생각 없이 멍하니 있는 시간이 오랜만이었다.",
+      "reading": "u-ri-neun na-ran-hi anj-a mal-eop-si bul-kkot-man ba-ra-bwat-da. i-ge geu-reo-ke yu-myeong-han bul-meong-i-ra-neun geo-ya. ha-neul-i naj-ge jung-eol-geo-ryeot-da. a-mu saeng-gak eop-si meong-ha-ni it-neun si-gan-i o-raen-man-i-eot-da.",
+      "en": "We sat side by side, silently staring at the flames. \"So this is the famous 'bulmeong' thing,\" Haneul murmured low. It had been a long time since I'd let my mind go blank like this.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "고개를 들자 별이 쏟아질 듯 빼곡했다. \"저게 무슨 별자리인지 알아?\" 내가 묻자, 그는 잠시 생각하더니 시치미를 뗐다. \"몰라. 그냥 예쁘다는 것만 알아.\"",
+      "reading": "go-gae-reul deul-ja byeol-i ssod-a-jil deut ppae-gok-haet-da. jeo-ge mu-seun byeol-ja-ri-in-ji al-a? nae-ga mut-ja, geu-neun jam-si saeng-gak-ha-deo-ni si-chi-mi-reul ttyeot-da. mol-la. geu-nyang ye-ppeu-da-neun geot-man al-a.",
+      "en": "I looked up, and the sky was packed with stars, as if they might spill over. \"Do you know what constellation that is?\" I asked, and after a pause he played dumb. \"No idea. I just know it's pretty.\"",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "불이 사그라들 때까지 우리는 별다른 말 없이 그 자리에 머물렀다. 조용한 밤이었지만, 마음은 어느 때보다 편안했다.",
+      "reading": "bul-i sa-geu-ra-deul ttae-kka-ji u-ri-neun byeol-da-reun mal eop-si geu ja-ri-e meo-mul-leot-da. jo-yong-han bam-i-eot-ji-man, ma-eum-eun eo-neu ttae-bo-da pyeon-an-haet-da.",
+      "en": "We stayed there without much conversation until the fire burned low. It was a quiet night, but my heart felt more at ease than it ever had."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "텐트를 치다", "reading": "ten-teu-reul chi-da", "meaning": "to pitch a tent", "example": "우리는 힘을 합쳐 텐트를 쳤다.", "example_reading": "u-ri-neun him-eul hap-chyeo ten-teu-reul chyeot-da", "example_en": "We worked together to pitch the tent." },
+    { "id": "w02", "word": "장작", "reading": "jang-jak", "meaning": "firewood", "example": "장작이 부족해서 더 주워 왔다.", "example_reading": "jang-jag-i bu-jok-hae-seo deo ju-wo wat-da", "example_en": "We were low on firewood so we gathered more." },
+    { "id": "w03", "word": "불멍", "reading": "bul-meong", "meaning": "staring blankly at a fire, \"fire-watching\"", "example": "캠핑의 낭만은 불멍이다.", "example_reading": "kaem-ping-ui nang-man-eun bul-meong-i-da", "example_en": "The romance of camping is staring at the fire." },
+    { "id": "w04", "word": "별자리", "reading": "byeol-ja-ri", "meaning": "constellation", "example": "밤하늘의 별자리를 세어 봤다.", "example_reading": "bam-ha-neul-ui byeol-ja-ri-reul se-eo bwat-da", "example_en": "I tried counting the constellations in the night sky." },
+    { "id": "w05", "word": "모닥불", "reading": "mo-dak-bul", "meaning": "campfire, bonfire", "example": "모닥불 앞에 둘러앉았다.", "example_reading": "mo-dak-bul ap-e dul-leo-anj-at-da", "example_en": "We sat gathered around the campfire." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "우리는 힘을 합쳐 텐트를 쳤다.", "reading": "u-ri-neun him-eul hap-chyeo ten-teu-reul chyeot-da", "en": "We worked together to pitch the tent." },
+    { "id": "s02", "ko": "장작이 부족해서 더 주워 왔다.", "reading": "jang-jag-i bu-jok-hae-seo deo ju-wo wat-da", "en": "We were low on firewood so we gathered more." },
+    { "id": "s03", "ko": "캠핑의 낭만은 불멍이다.", "reading": "kaem-ping-ui nang-man-eun bul-meong-i-da", "en": "The romance of camping is staring at the fire." },
+    { "id": "s04", "ko": "밤하늘의 별자리를 세어 봤다.", "reading": "bam-ha-neul-ui byeol-ja-ri-reul se-eo bwat-da", "en": "I tried counting the constellations in the night sky." },
+    { "id": "s05", "ko": "모닥불 앞에 둘러앉았다.", "reading": "mo-dak-bul ap-e dul-leo-anj-at-da", "en": "We sat gathered around the campfire." }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "id": "sp-day-haneul-09",
+  "character_id": "haneul",
+  "title": "막차 대신 택시",
+  "emoji": "🚕",
+  "story": [
+    {
+      "text": "막차가 끊긴 시간이었다. 하늘이 도로변에 서서 손을 들었다. '택시 잡자.'",
+      "reading": "mak-cha-ga kkeun-kin si-gan-i-eot-da. ha-neul-i do-ro-byeon-e seo-seo son-eul deul-eot-da. 'taek-si jap-ja.'",
+      "en": "It was past the last bus. Haneul stood at the roadside and raised his hand. \"Let's grab a taxi.\"",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "택시가 서자 그가 먼저 문을 열어줬다. 기사님께 목적지를 또박또박 말하는 것도 그의 몫이었다.",
+      "reading": "taek-si-ga seo-ja geu-ga meon-jeo mun-eul yeol-eo-jwot-da. gi-sa-nim-kke mok-jeok-ji-reul tto-bak-tto-bak mal-ha-neun geot-do geu-ui mog-i-eot-da.",
+      "en": "When the taxi stopped, he opened the door for me first. Telling the driver our destination clearly was his job too.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "'주소 정확히 아세요?' 기사님이 묻자, 하늘은 휴대폰 지도를 내밀며 위치를 짚어줬다.",
+      "reading": "'ju-so jeong-hwak-hi a-se-yo?' gi-sa-nim-i mud-ja, ha-neul-eun hyu-dae-pon ji-do-reul nae-mil-myeo wi-chi-reul jip-eo-jwot-da.",
+      "en": "\"Do you know the exact address?\" the driver asked. Haneul held out his phone map and pointed to the location.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "'이 길로 가면 더 빠를 텐데.' 그가 창밖을 보며 중얼거렸다. 기사님도 고개를 끄덕이며 방향을 틀었다.",
+      "reading": "'i gil-lo ga-myeon deo ppa-reul ten-de.' geu-ga chang-bakk-eul bo-myeo jung-eol-geo-ryeot-da. gi-sa-nim-do go-gae-reul kkeu-deok-i-myeo bang-hyang-eul teul-eot-da.",
+      "en": "\"Going this way would be faster.\" He murmured, looking out the window. The driver nodded and changed direction.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "도착하자 요금이 화면에 떴다. 내가 지갑을 꺼내기도 전에, 하늘이 이미 카드를 내밀고 있었다.",
+      "reading": "do-chak-ha-ja yo-geum-i hwa-myeon-e tteot-da. nae-ga ji-gab-eul kkae-nae-gi-do jeon-e, ha-neul-i i-mi ka-deu-reul nae-mil-go iss-eot-da.",
+      "en": "When we arrived, the fare popped up on the screen. Before I could even get my wallet out, Haneul had already held out his card.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "'다음엔 나도 낼게.' 내가 투덜대자, 그는 대꾸도 없이 차 문을 열어줬다. 늘 그런 식이었다.",
+      "reading": "'da-eum-en na-do nael-ge.' nae-ga tu-deol-dae-ja, geu-neun dae-kkoe-do eop-si cha mun-eul yeol-eo-jwot-da. neul geu-reon sig-i-eot-da.",
+      "en": "\"I'll pay next time.\" I grumbled, but he just opened the car door without a word. It was always like that."
+    },
+    {
+      "text": "밤길을 걸어 집 앞까지 데려다주며 그가 말했다. '잘 들어가.' 짧은 인사였지만, 이상하게 마음이 놓였다.",
+      "reading": "bam-gil-eul geol-eo jib ap-kka-ji de-ryeo-da-ju-myeo geu-ga mal-haet-da. 'jal deul-eo-ga.' jjalb-eun in-sa-yeot-ji-man, i-sang-ha-ge ma-eum-i noh-yeot-da.",
+      "en": "Walking me the rest of the way home along the night road, he said, \"Get in safe.\" It was a short goodbye, but strangely, it put my mind at ease."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "택시", "reading": "taek-si", "meaning": "taxi", "example": "택시를 불러 주세요.", "example_reading": "taek-si-reul bul-leo ju-se-yo", "example_en": "Please call a taxi for me." },
+    { "id": "w02", "word": "기사님", "reading": "gi-sa-nim", "meaning": "driver (polite)", "example": "기사님, 여기서 세워 주세요.", "example_reading": "gi-sa-nim, yeo-gi-seo se-wo ju-se-yo", "example_en": "Driver, please stop here." },
+    { "id": "w03", "word": "주소", "reading": "ju-so", "meaning": "address", "example": "이 주소로 가 주세요.", "example_reading": "i ju-so-ro ga ju-se-yo", "example_en": "Please take me to this address." },
+    { "id": "w04", "word": "길", "reading": "gil", "meaning": "way, road", "example": "이 길이 맞아요?", "example_reading": "i gil-i maj-a-yo?", "example_en": "Is this the right way?" },
+    { "id": "w05", "word": "요금", "reading": "yo-geum", "meaning": "fare, fee", "example": "요금이 얼마 나왔어요?", "example_reading": "yo-geum-i eol-ma na-wass-eo-yo?", "example_en": "How much did the fare come to?" }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "택시 좀 불러 주세요.", "reading": "taek-si jom bul-leo ju-se-yo", "en": "Please call me a taxi." },
+    { "id": "s02", "ko": "기사님, 안녕하세요.", "reading": "gi-sa-nim, an-nyeong-ha-se-yo", "en": "Hello, driver." },
+    { "id": "s03", "ko": "이 주소로 가 주세요.", "reading": "i ju-so-ro ga ju-se-yo", "en": "Please take me to this address." },
+    { "id": "s04", "ko": "이 길이 맞나요?", "reading": "i gil-i mat-na-yo?", "en": "Is this the right way?" },
+    { "id": "s05", "ko": "요금은 얼마예요?", "reading": "yo-geum-eun eol-ma-ye-yo?", "en": "How much is the fare?" }
+  ]
+}

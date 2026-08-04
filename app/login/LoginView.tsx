@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { useLanguage } from "@/components/LanguageContext";
 import { setCurrentUser } from "@/lib/auth/store";
+import LoadingSplash from "@/components/LoadingSplash";
 import styles from "./login.module.css";
 
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
@@ -57,17 +58,23 @@ export default function LoginView() {
       const data = await res.json();
       if (!res.ok) {
         setError(data.detail || "요청에 실패했습니다.");
+        setLoading(false);
         return;
       }
 
       setCurrentUser(data);
+      // 성공 시엔 로딩 상태를 그대로 유지한다 — router.push로 페이지가 전환될 때까지
+      // 스플래시 화면이 계속 보이도록(false로 되돌리면 전환 직전 폼 화면이 다시 잠깐 보임)
       router.push(mode === "signup" ? "/onboarding" : "/map");
     } catch {
       setError("서버에 연결할 수 없습니다. 잠시 후 다시 시도해주세요.");
-    } finally {
       setLoading(false);
     }
   };
+
+  if (loading) {
+    return <LoadingSplash message={t("loadingTakeoff")} />;
+  }
 
   return (
     <main className={styles.page}>
@@ -180,10 +187,9 @@ export default function LoginView() {
             <button
               className="btn btn-primary btn-lg"
               onClick={submit}
-              disabled={loading}
               id="btn-auth-submit"
             >
-              {loading ? "처리 중..." : mode === "signup" ? "회원가입" : "로그인"}
+              {mode === "signup" ? "회원가입" : "로그인"}
             </button>
 
             <p className={styles.signupHint}>

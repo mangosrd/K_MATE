@@ -386,15 +386,6 @@
 .fbSentence     { font-size: 20px; font-weight: 700; color: var(--text-primary); line-height: 1.5; }
 .fbBlank        { display: inline-block; min-width: 80px; border-bottom: 3px solid var(--red); color: var(--red); }
 .fbTranslation  { font-size: 13px; color: var(--text-muted); margin-top: var(--space-sm); }
-.fbInputRow     { display: flex; gap: var(--space-sm); }
-.fbInput {
-  flex: 1;
-  background: #fff; border: 1.5px solid var(--border-default);
-  border-radius: var(--radius-md); padding: 12px var(--space-md);
-  font-size: 16px; font-family: var(--font-sans); color: var(--text-primary);
-  outline: none;
-}
-.fbInput:focus { border-color: var(--red); }
 .fbResult { display: flex; flex-direction: column; gap: var(--space-sm); }
 .fbCorrect { font-size: 15px; font-weight: 700; color: var(--mint); }
 
@@ -428,6 +419,7 @@
   border-radius: var(--radius-full);
   padding: 4px 10px; cursor: pointer;
   transition: all var(--transition-fast);
+  white-space: nowrap;
 }
 .voicePlayBtn:hover { background: #DBEAFE; transform: scale(1.03); }
 
@@ -438,6 +430,7 @@
   border-radius: var(--radius-full);
   padding: 4px 10px; cursor: pointer;
   transition: all var(--transition-fast);
+  white-space: nowrap;
 }
 .hintToggleBtn:hover { background: #FDE68A; transform: scale(1.03); }
 
@@ -451,6 +444,7 @@
   padding: 4px 10px;
   cursor: pointer;
   transition: all var(--transition-fast);
+  white-space: nowrap;
 }
 .skipBtn:hover {
   background: var(--blue-light);

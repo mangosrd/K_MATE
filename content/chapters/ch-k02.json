@@ -46,17 +46,82 @@
     }
   ],
   "words": [
-    { "id": "w01", "word": "훈민정음", "reading": "hun-min-jeong-eum", "meaning": "Hunminjeongeum (original name of Hangul)", "example": "세종대왕은 1443년에 훈민정음을 창제했어요.", "example_reading": "se-jong-dae-wang-eun cheon-sa-baek-sa-si-bsam-nyeon-e hun-min-jeong-eum-eul chang-je-hae-sseo-yo", "example_en": "King Sejong created Hunminjeongeum in 1443." },
-    { "id": "w02", "word": "세종대왕", "reading": "se-jong-dae-wang", "meaning": "King Sejong the Great", "example": "세종대왕은 백성을 가장 사랑한 왕이었어요.", "example_reading": "se-jong-dae-wang-eun baek-seong-eul ga-jang sa-rang-han wang-i-eo-sseo-yo", "example_en": "King Sejong was the king who loved his people the most." },
-    { "id": "w03", "word": "자음", "reading": "ja-eum", "meaning": "Consonant", "example": "한글은 자음 14개로 이루어져 있어요.", "example_reading": "han-geul-eun ja-eum yeol-ne-gae-ro i-ru-eo-jeo it-seo-yo", "example_en": "Hangul is made up of 14 consonants." },
-    { "id": "w04", "word": "모음", "reading": "mo-eum", "meaning": "Vowel", "example": "모음은 하늘, 땅, 사람을 본떠 만들었어요.", "example_reading": "mo-eum-eun ha-neul, ttang, sa-ram-eul bon-tteo man-deu-reo-sseo-yo", "example_en": "The vowels were made based on the shapes of heaven, earth, and people." },
-    { "id": "w05", "word": "한글날", "reading": "han-geul-nal", "meaning": "Hangul Day", "example": "매년 10월 9일은 한글날이에요.", "example_reading": "mae-nyeon si-wol gu-il-eun han-geul-nal-i-e-yo", "example_en": "Every October 9th is Hangul Day." }
+    {
+      "id": "w01",
+      "word": "문자",
+      "reading": "mun-ja",
+      "meaning": "Writing system; script",
+      "example": "한글은 세계에서 가장 과학적인 문자로 꼽힙니다.",
+      "example_reading": "han-geul-eun se-gye-e-seo ga-jang gwa-hak-jeog-in mun-ja-ro kkob-him-ni-da",
+      "example_en": "Hangul is considered one of the most scientific writing systems in the world."
+    },
+    {
+      "id": "w02",
+      "word": "임금",
+      "reading": "im-geum",
+      "meaning": "King; monarch",
+      "example": "이 임금은 백성을 위해 새로운 문자를 만들었습니다.",
+      "example_reading": "i im-geum-eun baek-seong-eul wi-hae sae-ro-un mun-ja-reul man-deul-eot-seum-ni-da",
+      "example_en": "This king created a new writing system for his people."
+    },
+    {
+      "id": "w03",
+      "word": "자음",
+      "reading": "ja-eum",
+      "meaning": "Consonant",
+      "example": "한글은 자음 14개로 이루어져 있어요.",
+      "example_reading": "han-geul-eun ja-eum yeol-ne-gae-ro i-ru-eo-jeo it-seo-yo",
+      "example_en": "Hangul is made up of 14 consonants."
+    },
+    {
+      "id": "w04",
+      "word": "모음",
+      "reading": "mo-eum",
+      "meaning": "Vowel",
+      "example": "모음은 하늘, 땅, 사람을 본떠 만들었어요.",
+      "example_reading": "mo-eum-eun ha-neul, ttang, sa-ram-eul bon-tteo man-deu-reo-sseo-yo",
+      "example_en": "The vowels were made based on the shapes of heaven, earth, and people."
+    },
+    {
+      "id": "w05",
+      "word": "한글날",
+      "reading": "han-geul-nal",
+      "meaning": "Hangul Day",
+      "example": "매년 10월 9일은 한글날이에요.",
+      "example_reading": "mae-nyeon si-wol gu-il-eun han-geul-nal-i-e-yo",
+      "example_en": "Every October 9th is Hangul Day."
+    }
   ],
   "sentences": [
-    { "id": "s01", "ko": "훈민정음은 1443년에 창제되었습니다.", "reading": "hun-min-jeong-eum-eun cheon-sa-baek-sa-si-bsam-nyeon-e chang-je-doe-eot-seum-ni-da", "en": "Hunminjeongeum was created in 1443." },
-    { "id": "s02", "ko": "세종대왕은 백성을 가장 사랑한 왕입니다.", "reading": "se-jong-dae-wang-eun baek-seong-eul ga-jang sa-rang-han wang-im-ni-da", "en": "King Sejong was the king who loved his people the most." },
-    { "id": "s03", "ko": "자음은 발음 기관의 모양을 본떴습니다.", "reading": "ja-eum-eun bal-eum gi-gwan-ui mo-yang-eul bon-tteot-seum-ni-da", "en": "The consonants were modeled after the shapes of speech organs." },
-    { "id": "s04", "ko": "모음은 하늘과 땅과 사람을 나타냅니다.", "reading": "mo-eum-eun ha-neul-gwa ttang-gwa sa-ram-eul na-ta-naem-ni-da", "en": "The vowels represent heaven, earth, and people." },
-    { "id": "s05", "ko": "한글날에 한글의 우수성을 기념합니다.", "reading": "han-geul-nal-e han-geul-ui u-su-seong-eul gi-nyeom-ham-ni-da", "en": "On Hangul Day, we celebrate the excellence of Hangul." }
+    {
+      "id": "s01",
+      "ko": "훈민정음은 1443년에 창제되었습니다.",
+      "reading": "hun-min-jeong-eum-eun cheon-sa-baek-sa-si-bsam-nyeon-e chang-je-doe-eot-seum-ni-da",
+      "en": "Hunminjeongeum was created in 1443."
+    },
+    {
+      "id": "s02",
+      "ko": "세종대왕은 백성을 가장 사랑한 왕입니다.",
+      "reading": "se-jong-dae-wang-eun baek-seong-eul ga-jang sa-rang-han wang-im-ni-da",
+      "en": "King Sejong was the king who loved his people the most."
+    },
+    {
+      "id": "s03",
+      "ko": "자음은 발음 기관의 모양을 본떴습니다.",
+      "reading": "ja-eum-eun bal-eum gi-gwan-ui mo-yang-eul bon-tteot-seum-ni-da",
+      "en": "The consonants were modeled after the shapes of speech organs."
+    },
+    {
+      "id": "s04",
+      "ko": "모음은 하늘과 땅과 사람을 나타냅니다.",
+      "reading": "mo-eum-eun ha-neul-gwa ttang-gwa sa-ram-eul na-ta-naem-ni-da",
+      "en": "The vowels represent heaven, earth, and people."
+    },
+    {
+      "id": "s05",
+      "ko": "한글날에 한글의 우수성을 기념합니다.",
+      "reading": "han-geul-nal-e han-geul-ui u-su-seong-eul gi-nyeom-ham-ni-da",
+      "en": "On Hangul Day, we celebrate the excellence of Hangul."
+    }
   ]
 }

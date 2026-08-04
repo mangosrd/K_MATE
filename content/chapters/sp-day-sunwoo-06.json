@@ -1,0 +1,98 @@
+{
+  "id": "sp-day-sunwoo-06",
+  "character_id": "sunwoo",
+  "title": "언덕 위의 취미 생활",
+  "emoji": "🎨",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "주말 오후, 선우는 나를 김해공항 근처 언덕으로 데려갔다. 이유는 묻지 않아도 뻔했다.",
+      "reading": "ju-mal o-hu, seon-u-neun na-reul gim-hae-gong-hang geun-cheo eon-deok-eu-ro de-ryeo-gat-da. i-yu-neun mut-ji anh-a-do ppeon-haet-da.",
+      "en": "Weekend afternoon, Sunwoo took me to a hill near Gimhae Airport. I didn't even need to ask why — it was obvious."
+    },
+    {
+      "text": "\"오늘은 딱히 계획 없다. 그냥 여기서 여유롭게 시간 좀 보내자.\" 그가 돗자리를 펴며 말했다.",
+      "reading": "\"o-neul-eun ttak-hi gye-hoek eop-da. geu-nyang yeo-gi-seo yeo-yu-rop-ge si-gan jom bo-nae-ja.\" geu-ga dot-ja-ri-reul pyeo-myeo mal-haet-da.",
+      "en": "\"No particular plans today. Let's just spend some relaxed time here.\" He said, spreading out a picnic mat.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "그의 가방에서는 오래된 카메라가 나왔다. 비행기를 향한 그의 취미는 어릴 때부터 한결같았다.",
+      "reading": "geu-ui ga-bang-e-seo-neun o-rae-doen ka-me-ra-ga na-wat-da. bi-haeng-gi-reul hyang-han geu-ui chwi-mi-neun eo-ril ttae-bu-teo han-gyeol-gat-at-da.",
+      "en": "An old camera came out of his bag. His hobby of loving planes had stayed exactly the same since he was little.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "비행기가 낮게 지나갈 때마다 그는 셔터를 누르며 완전히 몰입했다. 그 순간만큼은 장난기 하나 없는 진지한 얼굴이었다.",
+      "reading": "bi-haeng-gi-ga naj-ge ji-na-gal ttae-ma-da geu-neun syeo-teo-reul nul-leu-myeo wan-jeon-hi mol-ib-haet-da. geu sun-gan-man-keum jang-nan-gi ha-na eop-neun jin-ji-han eol-gul-i-eot-da.",
+      "en": "Every time a plane flew by low, he pressed the shutter, completely absorbed. In that moment, his face was serious, without a trace of playfulness.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "나는 옆에서 그냥 하늘을 보며 빈둥거렸다. 딱히 뭘 하지 않아도 이상하게 마음이 편안했다.",
+      "reading": "na-neun yeop-e-seo geu-nyang ha-neul-eul bo-myeo bin-dung-geo-ryeot-da. ttak-hi mwol ha-ji anh-a-do i-sang-ha-ge ma-eum-i pyeon-an-haet-da.",
+      "en": "Beside him, I just lazed around looking up at the sky. Even doing nothing in particular, I strangely felt at ease.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "\"니는 요새 취미 뭐 있나?\" 그가 카메라를 내려놓으며 불쑥 물었다. 나는 딱히 떠오르는 게 없어 웃기만 했다.",
+      "reading": "\"ni-neun yo-sae chwi-mi mwo it-na?\" geu-ga ka-me-ra-reul nae-ryeo-noh-eu-myeo bul-ssuk mul-eot-da. na-neun ttak-hi tteo-o-reu-neun ge eop-seo us-gi-man haet-da.",
+      "en": "\"What hobbies do you even have these days?\" He asked out of nowhere, setting down the camera. Nothing came to mind, so I just laughed."
+    },
+    {
+      "text": "\"이렇게 아무 생각 없이 있는 것도 나쁘지 않네. 완전 재충전되는 기분이다.\" 그가 하늘을 보며 기지개를 켰다.",
+      "reading": "\"i-reo-ke a-mu saeng-gak eop-si it-neun geot-do na-ppeu-ji anh-ne. wan-jeon jae-chung-jeon-doe-neun gi-bun-i-da.\" geu-ga ha-neul-eul bo-myeo gi-ji-gae-reul kyeot-da.",
+      "en": "\"Being like this with no thoughts at all isn't bad either. Feels like I'm fully recharging.\" He said, stretching as he looked up at the sky.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "\"이번 챕터 단어랑 대화도, 여유롭게 하나씩 풀어봐라.\"",
+      "reading": "\"i-beon chaeb-teo dan-eo-rang dae-hwa-do, yeo-yu-rop-ge ha-na-ssik pul-eo-bwa-ra.\"",
+      "en": "\"Take this chapter's words and conversation too, one by one, at an easy pace.\""
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "취미", "reading": "chwi-mi", "meaning": "hobby", "example": "그의 취미는 사진 찍기다.", "example_reading": "geu-ui chwi-mi-neun sa-jin jjik-gi-da", "example_en": "His hobby is taking photos." },
+    { "id": "w02", "word": "여유롭다", "reading": "yeo-yu-rop-da", "meaning": "to be leisurely, relaxed", "example": "오랜만에 여유로운 주말을 보냈다.", "example_reading": "o-raen-man-e yeo-yu-ro-un ju-mal-eul bo-naet-da", "example_en": "I had a relaxed weekend for the first time in a while." },
+    { "id": "w03", "word": "빈둥거리다", "reading": "bin-dung-geo-ri-da", "meaning": "to laze around, idle", "example": "주말에는 그냥 집에서 빈둥거리고 싶다.", "example_reading": "ju-mal-e-neun geu-nyang jib-e-seo bin-dung-geo-ri-go sip-da", "example_en": "On weekends I just want to laze around at home." },
+    { "id": "w04", "word": "몰입하다", "reading": "mol-ib-ha-da", "meaning": "to immerse oneself, become absorbed", "example": "그는 취미 생활에 깊이 몰입한다.", "example_reading": "geu-neun chwi-mi saeng-hwal-e gip-i mol-ib-han-da", "example_en": "He gets deeply absorbed in his hobby." },
+    { "id": "w05", "word": "재충전하다", "reading": "jae-chung-jeon-ha-da", "meaning": "to recharge (energy)", "example": "여행을 다녀오면 몸과 마음이 재충전된다.", "example_reading": "yeo-haeng-eul da-nyeo-o-myeon mom-gwa ma-eum-i jae-chung-jeon-doen-da", "example_en": "After traveling, both body and mind get recharged." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "주말에는 특별한 취미 생활을 즐긴다.", "reading": "ju-mal-e-neun teuk-byeol-han chwi-mi saeng-hwal-eul jeul-gin-da", "en": "I enjoy a special hobby on weekends." },
+    { "id": "s02", "ko": "오랜만에 여유롭게 하루를 보냈다.", "reading": "o-raen-man-e yeo-yu-rop-ge ha-ru-reul bo-naet-da", "en": "I spent a leisurely day for the first time in a while." },
+    { "id": "s03", "ko": "가끔은 아무것도 안 하고 빈둥거리는 것도 좋다.", "reading": "ga-kkeum-eun a-mu-geot-do an ha-go bin-dung-geo-ri-neun geot-do jo-ta", "en": "Sometimes it's good to just laze around and do nothing." },
+    { "id": "s04", "ko": "그는 비행기 사진에 완전히 몰입해 있었다.", "reading": "geu-neun bi-haeng-gi sa-jin-e wan-jeon-hi mol-ib-hae iss-eot-da", "en": "He was completely absorbed in taking photos of planes." },
+    { "id": "s05", "ko": "주말 동안 푹 쉬면서 재충전했다.", "reading": "ju-mal dong-an puk swi-myeon-seo jae-chung-jeon-haet-da", "en": "I rested well over the weekend and recharged." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "선우", "text": "니는 요새 취미로 뭐 하나 있나?", "reading": "ni-neun yo-sae chwi-mi-ro mwo ha-na it-na?", "en": "Do you have any hobby these days?" },
+        { "speaker": "승객", "text": "글쎄, 딱히 없는 것 같은데. 니처럼 이렇게 열정적인 거 하나도 없다.", "reading": "geul-sse, ttak-hi eop-neun geot gat-eun-de. ni-cheo-reom i-reo-ke yeol-jeong-jeok-in geo ha-na-do eop-da.", "en": "Hmm, I don't think I have one really. Nothing I'm as passionate about as you are with this." },
+        { "speaker": "선우", "text": "괜찮다, 천천히 찾으면 된다. 급할 거 없다 아이가.", "reading": "gwaen-chan-ta, cheon-cheon-hi chaj-eu-myeon doen-da. geup-hal geo eop-da a-i-ga.", "en": "It's fine, you can find one slowly. No need to rush." },
+        { "speaker": "승객", "text": "니는 언제부터 비행기를 이렇게 좋아했는데?", "reading": "ni-neun eon-je-bu-teo bi-haeng-gi-reul i-reo-ke jo-a-haet-neun-de?", "en": "Since when have you liked planes this much?" }
+      ],
+      "question": "선우가 취미를 아직 못 찾은 승객에게 해준 조언은 무엇인가요?",
+      "question_en": "What advice did Sunwoo give the passenger who hasn't found a hobby yet?",
+      "correct_answer": "천천히 찾으면 된다",
+      "options": ["천천히 찾으면 된다", "당장 하나 정해야 한다", "취미는 필요 없다", "자신처럼 사진을 배워야 한다"],
+      "explanation": "선우는 급할 것 없이 천천히 취미를 찾으면 된다고 승객을 다독였습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "승객", "text": "이렇게 아무것도 안 하고 빈둥거리니까 오히려 좋다.", "reading": "i-reo-ke a-mu-geot-do an ha-go bin-dung-geo-ri-ni-kka o-hi-ryeo jo-ta.", "en": "Doing nothing like this and just lazing around actually feels nice." },
+        { "speaker": "선우", "text": "그자? 나도 이 시간이 제일 여유롭고 좋더라.", "reading": "geu-ja? na-do i si-gan-i je-il yeo-yu-rop-go jo-teo-ra.", "en": "Right? I also find this the most relaxing, best time." },
+        { "speaker": "승객", "text": "니는 맨날 비행기만 찍는데 안 질리나?", "reading": "ni-neun maen-nal bi-haeng-gi-man jjik-neun-de an jil-li-na?", "en": "You photograph planes every single day — don't you get sick of it?" },
+        { "speaker": "선우", "text": "이게 내한테는 재충전이다. 하늘 보고 있으면 머리가 맑아진다.", "reading": "i-ge nae-han-te-neun jae-chung-jeon-i-da. ha-neul bo-go iss-eu-myeon meo-ri-ga malg-a-jin-da.", "en": "This is how I recharge. Looking at the sky clears my head." }
+      ],
+      "question": "선우에게 비행기 사진 찍기가 갖는 의미는 무엇인가요?",
+      "question_en": "What does taking photos of planes mean to Sunwoo?",
+      "correct_answer": "재충전이 되는 시간",
+      "options": ["재충전이 되는 시간", "돈을 버는 수단", "단순한 시간 때우기", "승객에게 보여주기 위한 것"],
+      "explanation": "선우는 비행기 사진을 찍는 시간이 자신에게 재충전이 되는 소중한 시간이라고 말합니다."
+    }
+  ]
+}

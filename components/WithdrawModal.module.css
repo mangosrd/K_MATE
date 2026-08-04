@@ -141,3 +141,38 @@
   from { transform: translateY(20px); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
 }
+
+:global(html[data-theme="dark"]) .modalCard {
+  background: #1B1F29;
+}
+
+:global(html[data-theme="dark"]) .modalTitle {
+  color: #F3F4F6;
+}
+
+:global(html[data-theme="dark"]) .retentionText,
+:global(html[data-theme="dark"]) .closeBtn {
+  color: #7C8494;
+}
+
+:global(html[data-theme="dark"]) .fieldLabel {
+  color: #B4BAC6;
+}
+
+:global(html[data-theme="dark"]) .warningText {
+  background: rgba(239, 68, 68, 0.12);
+  border-color: rgba(239, 68, 68, 0.3);
+  color: #E5E7EB;
+}
+
+:global(html[data-theme="dark"]) .passwordInput {
+  background: #232837;
+  border-color: #383F52;
+  color: #F3F4F6;
+}
+
+:global(html[data-theme="dark"]) .cancelBtn {
+  background: #232837;
+  border-color: #383F52;
+  color: #E5E7EB;
+}

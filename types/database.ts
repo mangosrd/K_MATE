@@ -128,6 +128,7 @@ export interface VocabItem {
   id: string;
   user_id: string;
   character_id: string;
+  character_name?: string;   // 어떤 기장과 나눈 단어인지 표시용 (예: "양규현")
   word: string;
   reading?: string;
   meaning: string;
@@ -138,6 +139,7 @@ export interface VocabItem {
   review_count: number;
   tags: string[];
 }
+
 
 // ---- 일기 ----
 export interface DiaryEntry {

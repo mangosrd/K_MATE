@@ -46,17 +46,82 @@
     }
   ],
   "words": [
-    { "id": "w01", "word": "지리산", "reading": "ji-ri-san", "meaning": "Jirisan Mountain", "example": "지리산은 한국에서 아주 큰 산이에요.", "example_reading": "ji-ri-san-eun han-guk-e-seo a-ju keun san-i-e-yo", "example_en": "Jirisan is a very large mountain in Korea." },
-    { "id": "w02", "word": "산사", "reading": "san-sa", "meaning": "Mountain Temple", "example": "산사는 산속에 있는 절이에요.", "example_reading": "san-sa-neun san-sog-e it-neun jeol-i-e-yo", "example_en": "A mountain temple is a temple located in the mountains." },
-    { "id": "w03", "word": "템플스테이", "reading": "tem-peul-seu-te-i", "meaning": "Templestay", "example": "템플스테이에서 하루를 절에서 지내요.", "example_reading": "tem-peul-seu-te-i-e-seo ha-ru-reul jeol-e-seo ji-nae-yo", "example_en": "During a templestay, you spend a day at a temple." },
-    { "id": "w04", "word": "스님", "reading": "seu-nim", "meaning": "Buddhist Monk", "example": "스님이 아침마다 예불을 드려요.", "example_reading": "seu-nim-i a-chim-ma-da ye-bul-eul deu-ryeo-yo", "example_en": "The monk holds a prayer service every morning." },
-    { "id": "w05", "word": "목탁", "reading": "mok-tak", "meaning": "Moktak (Wooden Percussion Instrument)", "example": "목탁 소리에 맞춰 마음을 가다듬어요.", "example_reading": "mok-tak so-ri-e maj-chwo ma-eum-eul ga-da-deum-eo-yo", "example_en": "You steady your mind to the sound of the moktak." }
+    {
+      "id": "w01",
+      "word": "능선",
+      "reading": "neung-seon",
+      "meaning": "Mountain ridge",
+      "example": "능선을 따라 걷다 보면 절이 나타납니다.",
+      "example_reading": "neung-seon-eul tta-ra geot-da bo-myeon jeol-i na-ta-nam-ni-da",
+      "example_en": "If you walk along the ridge, a temple appears."
+    },
+    {
+      "id": "w02",
+      "word": "산사",
+      "reading": "san-sa",
+      "meaning": "Mountain Temple",
+      "example": "산사는 산속에 있는 절이에요.",
+      "example_reading": "san-sa-neun san-sog-e it-neun jeol-i-e-yo",
+      "example_en": "A mountain temple is a temple located in the mountains."
+    },
+    {
+      "id": "w03",
+      "word": "템플스테이",
+      "reading": "tem-peul-seu-te-i",
+      "meaning": "Templestay",
+      "example": "템플스테이에서 하루를 절에서 지내요.",
+      "example_reading": "tem-peul-seu-te-i-e-seo ha-ru-reul jeol-e-seo ji-nae-yo",
+      "example_en": "During a templestay, you spend a day at a temple."
+    },
+    {
+      "id": "w04",
+      "word": "스님",
+      "reading": "seu-nim",
+      "meaning": "Buddhist Monk",
+      "example": "스님이 아침마다 예불을 드려요.",
+      "example_reading": "seu-nim-i a-chim-ma-da ye-bul-eul deu-ryeo-yo",
+      "example_en": "The monk holds a prayer service every morning."
+    },
+    {
+      "id": "w05",
+      "word": "목탁",
+      "reading": "mok-tak",
+      "meaning": "Moktak (Wooden Percussion Instrument)",
+      "example": "목탁 소리에 맞춰 마음을 가다듬어요.",
+      "example_reading": "mok-tak so-ri-e maj-chwo ma-eum-eul ga-da-deum-eo-yo",
+      "example_en": "You steady your mind to the sound of the moktak."
+    }
   ],
   "sentences": [
-    { "id": "s01", "ko": "지리산은 국립공원 1호로 지정됐어요.", "reading": "ji-ri-san-eun gung-nip-gong-won il-ho-ro ji-jeong-dwae-sseo-yo", "en": "Jirisan was designated as national park No. 1." },
-    { "id": "s02", "ko": "산사는 고요하고 평화로운 곳이에요.", "reading": "san-sa-neun go-yo-ha-go pyeong-hwa-ro-un gos-i-e-yo", "en": "A mountain temple is a quiet, peaceful place." },
-    { "id": "s03", "ko": "템플스테이는 몸과 마음을 쉬게 해요.", "reading": "tem-peul-seu-te-i-neun mom-gwa ma-eum-eul swi-ge hae-yo", "en": "Templestay lets the body and mind rest." },
-    { "id": "s04", "ko": "스님은 새벽부터 하루를 시작해요.", "reading": "seu-nim-eun sae-byeok-bu-teo ha-ru-reul si-jak-hae-yo", "en": "The monk starts the day from dawn." },
-    { "id": "s05", "ko": "목탁 소리가 산사에 은은히 퍼져요.", "reading": "mok-tak so-ri-ga san-sa-e eun-eun-hi peo-jyeo-yo", "en": "The moktak's sound softly spreads through the mountain temple." }
+    {
+      "id": "s01",
+      "ko": "지리산은 국립공원 1호로 지정됐어요.",
+      "reading": "ji-ri-san-eun gung-nip-gong-won il-ho-ro ji-jeong-dwae-sseo-yo",
+      "en": "Jirisan was designated as national park No. 1."
+    },
+    {
+      "id": "s02",
+      "ko": "산사는 고요하고 평화로운 곳이에요.",
+      "reading": "san-sa-neun go-yo-ha-go pyeong-hwa-ro-un gos-i-e-yo",
+      "en": "A mountain temple is a quiet, peaceful place."
+    },
+    {
+      "id": "s03",
+      "ko": "템플스테이는 몸과 마음을 쉬게 해요.",
+      "reading": "tem-peul-seu-te-i-neun mom-gwa ma-eum-eul swi-ge hae-yo",
+      "en": "Templestay lets the body and mind rest."
+    },
+    {
+      "id": "s04",
+      "ko": "스님은 새벽부터 하루를 시작해요.",
+      "reading": "seu-nim-eun sae-byeok-bu-teo ha-ru-reul si-jak-hae-yo",
+      "en": "The monk starts the day from dawn."
+    },
+    {
+      "id": "s05",
+      "ko": "목탁 소리가 산사에 은은히 퍼져요.",
+      "reading": "mok-tak so-ri-ga san-sa-e eun-eun-hi peo-jyeo-yo",
+      "en": "The moktak's sound softly spreads through the mountain temple."
+    }
   ]
 }

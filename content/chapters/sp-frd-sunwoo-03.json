@@ -1,0 +1,93 @@
+{
+  "id": "sp-frd-sunwoo-03",
+  "character_id": "sunwoo",
+  "title": "그거 완전 인정이다",
+  "emoji": "🔥",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "전포 카페거리, 커피를 기다리며 선우가 휴대폰 화면을 불쑥 내민다. \"이거 봐라, 이거. 대박 아이가?\"",
+      "reading": "jeon-po ka-pe-geo-ri, keo-pi-reul gi-da-ri-myeo seon-u-ga hyu-dae-pon hwa-myeon-eul bul-ssuk nae-min-da. i-geo bwa-ra, i-geo. dae-bak a-i-ga?",
+      "en": "In the Jeonpo cafe street, while waiting for coffee, Sunwoo suddenly holds out his phone screen. \"Look at this, look. Isn't it insane?\"",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "화면 속 영상은 누가 봐도 우스꽝스러운 실수 모음이다. 나도 모르게 웃음이 터진다. \"이거 완전 웃기다, 진짜.\"",
+      "reading": "hwa-myeon sok yeong-sang-eun nu-ga bwa-do u-seu-kkwang-seu-reo-un sil-su mo-eum-i-da. na-do mo-reu-ge us-eum-i teo-jin-da. i-geo wan-jeon ut-gi-da, jin-jja.",
+      "en": "The video on screen is clearly a compilation of ridiculous blunders. I can't help but burst out laughing. \"This is completely hilarious, seriously.\""
+    },
+    {
+      "text": "\"거 봐라, 요즘 애들 말로 '레전드'라 카는 기 이런 거다.\" 선우가 뿌듯한 표정으로 어깨를 으쓱인다.",
+      "reading": "geo bwa-ra, yo-jeum ae-deul mal-lo le-jeon-deu-ra ka-neun gi i-reon geo-da. seon-u-ga ppu-deut-han pyo-jeong-eu-ro eo-kkae-reul eu-sseug-in-da.",
+      "en": "\"See, that's what kids these days call a 'legend' moment.\" Sunwoo shrugs, looking proud of himself.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "\"니 '인정?'이 뭔지는 아나? 누가 뭐라 카면, 그냥 '인정' 한마디만 하면 끝이다.\" 그가 손가락으로 오케이 표시를 만들며 설명한다.",
+      "reading": "ni in-jeong-i mwon-ji-neun a-na? nu-ga mwo-ra ka-myeon, geu-nyang in-jeong han-ma-di-man ha-myeon kkeut-i-da. geu-ga son-ga-rak-eu-ro o-ke-i pyo-si-reul man-deul-myeo seol-myeong-han-da.",
+      "en": "\"Do you even know what 'in-jeong' means? Whenever someone says something, you just say 'agreed' and that's the end of it.\" He explains, making an okay sign with his fingers.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "\"이 노래 '띵곡'이다, 완전.\" 카페에서 흘러나오는 노래를 듣더니 그가 눈을 반짝인다. 나는 새로운 단어 하나를 배운 게 신기해서 자꾸 되뇐다.",
+      "reading": "i no-rae tting-gok-i-da, wan-jeon. ka-pe-e-seo heul-leo-na-o-neun no-rae-reul deut-deo-ni geu-ga nun-eul ban-jjag-in-da. na-neun sae-ro-un dan-eo ha-na-reul bae-un ge sin-gi-hae-seo ja-kku doe-noe-in-da.",
+      "en": "\"This song is a total banger.\" His eyes light up as he listens to the song playing in the cafe. I keep repeating the new word to myself, fascinated to have learned it.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "\"근데 진짜, 니 부산말 배울 생각은 없나? '~하나', '~아이가' 이런 거.\" 그는 장난기 가득한 눈으로 나를 툭 찌른다.",
+      "reading": "geun-de jin-jja, ni bu-san-mal bae-ul saeng-gak-eun eop-na? ha-na, a-i-ga i-reon geo. geu-neun jang-nan-gi ga-deuk-han nun-eu-ro na-reul tuk jji-reun-da.",
+      "en": "\"But seriously, don't you want to learn Busan dialect too? Things like '-hana', '-aiga'.\" He pokes me, eyes full of mischief."
+    },
+    {
+      "text": "\"콜! 오늘부터 하나씩 가르쳐도.\" 나의 대답에 선우가 씩 웃는다. 커피 한 잔에 오늘의 유행어 수업이 시작됐다.",
+      "reading": "kol! o-neul-bu-teo ha-na-ssik ga-reu-chyeo-do. na-ui dae-dab-e seon-u-ga ssik ut-neun-da. keo-pi han jan-e o-neul-ui yu-haeng-eo su-eob-i si-jak-dwaet-da.",
+      "en": "\"Deal! Teach me one at a time starting today.\" Sunwoo grins at my answer. Over a single cup of coffee, today's slang lesson had begun.",
+      "highlight_word_id": "w05"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "대박", "reading": "dae-bak", "meaning": "awesome / no way (slang for amazement)", "example": "이번 시험 결과가 대박이다.", "example_reading": "i-beon si-heom gyeol-gwa-ga dae-bak-i-da", "example_en": "This exam result is amazing." },
+    { "id": "w02", "word": "레전드", "reading": "le-jeon-deu", "meaning": "legendary (slang, from 'legend')", "example": "그 경기는 완전 레전드였다.", "example_reading": "geu gyeong-gi-neun wan-jeon le-jeon-deu-yeot-da", "example_en": "That match was an absolute legend." },
+    { "id": "w03", "word": "인정", "reading": "in-jeong", "meaning": "agreed / I admit it (slang for acknowledging something)", "example": "그건 진짜 인정이다.", "example_reading": "geu-geon jin-jja in-jeong-i-da", "example_en": "That, I totally agree with." },
+    { "id": "w04", "word": "띵곡", "reading": "tting-gok", "meaning": "a banger, a great song (slang, playful spelling of 명곡)", "example": "이 노래는 진짜 띵곡이다.", "example_reading": "i no-rae-neun jin-jja tting-gok-i-da", "example_en": "This song is a real banger." },
+    { "id": "w05", "word": "유행어", "reading": "yu-haeng-eo", "meaning": "buzzword, trendy slang", "example": "요즘 유행어를 하나도 몰랐다.", "example_reading": "yo-jeum yu-haeng-eo-reul ha-na-do mol-lat-da", "example_en": "I didn't know any of the current buzzwords." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "이 영상 진짜 대박이다.", "reading": "i yeong-sang jin-jja dae-bak-i-da", "en": "This video is really amazing." },
+    { "id": "s02", "ko": "그 장면은 완전 레전드였다.", "reading": "geu jang-myeon-eun wan-jeon le-jeon-deu-yeot-da", "en": "That scene was a total legend." },
+    { "id": "s03", "ko": "네 말에 완전 인정이다.", "reading": "ne mal-e wan-jeon in-jeong-i-da", "en": "I totally agree with what you said." },
+    { "id": "s04", "ko": "이 노래는 요즘 띵곡으로 유명하다.", "reading": "i no-rae-neun yo-jeum tting-gog-eu-ro yu-myeong-ha-da", "en": "This song is famous as a banger these days." },
+    { "id": "s05", "ko": "요즘 유행어를 친구한테 배웠다.", "reading": "yo-jeum yu-haeng-eo-reul chin-gu-han-te bae-wot-da", "en": "I learned the latest buzzwords from a friend." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "선우", "text": "이거 봐라, 이거. 대박 아이가? 완전 웃기제?", "reading": "i-geo bwa-ra, i-geo. dae-bak a-i-ga? wan-jeon ut-gi-je?", "en": "Look at this, look. Isn't it insane? Totally hilarious, right?" },
+        { "speaker": "승객", "text": "완전, 배꼽 빠지는 줄 알았어. 근데 대박이 무슨 뜻이야?", "reading": "wan-jeon, bae-kkob ppa-ji-neun jul al-at-eo. geun-de dae-bak-i mu-seun tteus-i-ya?", "en": "Totally, I nearly cracked a rib. But what does 'daebak' mean?" },
+        { "speaker": "선우", "text": "완전 놀랍다, 대단하다 그 뜻이다. 진짜 자주 쓰는 말이니까 외워도.", "reading": "wan-jeon nol-lap-da, dae-dan-ha-da geu tteus-i-da. jin-jja ja-ju sseu-neun mal-i-ni-kka oe-wo-do.", "en": "It means totally amazing, incredible. It's used all the time so memorize it." },
+        { "speaker": "승객", "text": "오케이, 대박! 이렇게 쓰면 되는 거지?", "reading": "o-ke-i, dae-bak! i-reoh-ge sseu-myeon doe-neun geo-ji?", "en": "Okay, daebak! Is this how I use it?" }
+      ],
+      "question": "선우가 승객에게 '대박'이라는 표현에 대해 설명한 내용은 무엇인가요?",
+      "question_en": "What did Sunwoo explain to the passenger about the expression 'daebak'?",
+      "correct_answer": "정말 놀랍고 대단하다는 뜻이다",
+      "options": ["정말 놀랍고 대단하다는 뜻이다", "매우 슬프다는 뜻이다", "빨리 가자는 뜻이다", "음식이 맵다는 뜻이다"],
+      "explanation": "선우는 '대박'이 정말 놀랍거나 대단할 때 쓰는 감탄 표현이라고 설명해줍니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "선우", "text": "니 '인정?'이 뭔지는 아나? 누가 뭐라 카면 그냥 '인정' 한마디만 하면 끝이다.", "reading": "ni in-jeong-i mwon-ji-neun a-na? nu-ga mwo-ra ka-myeon geu-nyang in-jeong han-ma-di-man ha-myeon kkeut-i-da.", "en": "Do you know what 'in-jeong' means? Whenever someone says something, you just say 'agreed' and that's the end of it." },
+        { "speaker": "승객", "text": "아, 그럼 동의한다는 뜻이야?", "reading": "a, geu-reom dong-ui-han-da-neun tteus-i-ya?", "en": "Ah, so it means you agree?" },
+        { "speaker": "선우", "text": "정답이다. 예를 들어 '이 집 치킨 진짜 맛있제' 하면 '인정' 이렇게 쓴다.", "reading": "jeong-dab-i-da. ye-reul deul-eo i jib chi-kin jin-jja mas-it-je ha-myeon in-jeong i-reoh-ge sseun-da.", "en": "Exactly right. For example, if someone says 'this place's chicken is really good,' you'd reply 'agreed' like that." },
+        { "speaker": "승객", "text": "이해했어. 부산 사투리도 완전 인정이야, 너 덕분에.", "reading": "i-hae-haet-eo. bu-san sa-tu-ri-do wan-jeon in-jeong-i-ya, neo deok-bun-e.", "en": "Got it. Busan dialect gets my full approval too, thanks to you." }
+      ],
+      "question": "선우가 예시로 든 '인정'의 쓰임은 무엇인가요?",
+      "question_en": "How did Sunwoo use '인정' in his example?",
+      "correct_answer": "상대의 말에 동의를 표현할 때 쓴다",
+      "options": ["상대의 말에 동의를 표현할 때 쓴다", "헤어질 때 인사로 쓴다", "음식을 주문할 때 쓴다", "화가 났을 때 쓴다"],
+      "explanation": "선우는 '인정'이 상대방의 말에 동의할 때 쓰는 짧은 표현이라고 예를 들어 설명합니다."
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "id": "sp-frd-yongwoo-09",
+  "character_id": "yongwoo",
+  "title": "이 사진, 오래 간직해라",
+  "emoji": "📸",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "성산항에서 우도행 도항선에 올랐다. 짧은 뱃길이었지만, 파도를 가르는 배 위에서 바라본 성산일출봉은 또 다른 얼굴이었다.",
+      "reading": "seong-san-hang-e-seo u-do-haeng do-hang-seon-e ol-lat-da. jjalb-eun baet-gil-i-eot-ji-man, pa-do-reul ga-reu-neun bae wi-e-seo ba-ra-bon seong-san-il-chul-bong-eun tto da-reun eol-gul-i-eot-da.",
+      "en": "We boarded the ferry to Udo Island from Seongsan Port. It was a short crossing, but Seongsan Ilchulbong looked like a completely different sight from the deck of a boat cutting through the waves.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "우도에 도착하자마자 자전거를 빌려 해안도로를 달렸다. 바람을 가르며 페달을 밟는 용우의 뒷모습이 오늘따라 홀가분해 보였다.",
+      "reading": "u-do-e do-chak-ha-ja-ma-ja ja-jeon-geo-reul bil-lyeo hae-an-do-ro-reul dal-lyeot-da. ba-ram-eul ga-reu-myeo pe-dal-eul balb-neun yong-u-ui dwit-mo-seub-i o-neul-tta-ra hol-ga-bun-hae bo-yeot-da.",
+      "en": "The moment we arrived on Udo, we rented bikes and rode along the coastal road. Watching Yongwoo pedal through the wind ahead of me, his back looked especially carefree today."
+    },
+    {
+      "text": "서빈백사의 새하얀 백사장 앞에서 나는 저절로 걸음을 멈췄다. 산호 모래가 눈부시게 반짝이는 풍경에 연신 카메라 셔터를 눌렀다.",
+      "reading": "seo-bin-baek-sa-ui sae-ha-yan baek-sa-jang ap-e-seo na-neun jeo-jeol-lo geol-eum-eul meom-chwot-da. san-ho mo-rae-ga nun-bu-si-ge ban-jjag-i-neun pung-gyeong-e yeon-sin ka-me-ra syeo-teo-reul nul-leot-da.",
+      "en": "In front of Seobinbaeksa's pure white sand, I stopped in my tracks without meaning to. I kept pressing the camera shutter at the sight of the coral sand glittering dazzlingly.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "'이리 와봐라, 찍어줄 테니까.' 용우가 내 핸드폰을 받아 들며 말했다. 사진을 확인시켜 주면서 그가 덧붙였다. '이 사진, 오래 간직해라.'",
+      "reading": "i-ri wa-bwa-ra, jjig-eo-jul te-ni-kka. yong-u-ga nae haen-deu-pon-eul bad-a deul-myeo mal-haet-da. sa-jin-eul hwag-in-si-kyeo ju-myeon-seo geu-ga deot-bu-chyeot-da. i sa-jin, o-rae gan-jik-hae-ra.",
+      "en": "'Come here, I'll take your picture.' Yongwoo said, taking my phone from me. As he showed me the photo, he added, 'Keep this one for a long time.'",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "땅콩 아이스크림을 하나씩 나눠 들고 방파제에 걸터앉았다. 지난 열흘 동안의 일들이 필름처럼 스쳐 지나갔다.",
+      "reading": "ttang-kong a-i-seu-keu-rim-eul ha-na-ssik na-nwo deul-go bang-pa-je-e geol-teo-anj-at-da. ji-nan yeol-heul dong-an-ui il-deul-i pil-leum-cheo-reom seu-chyeo ji-na-gat-da.",
+      "en": "We each held a peanut ice cream and sat down on the edge of the breakwater. The events of the past ten days flickered past like scenes from a film.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "'벌써 마지막 날이 다가온다니, 이상하게 아쉽다.' 노을 지는 바다를 보며 중얼거리자, 용우도 잠시 말이 없었다. '…나도 그렇다, 마. 이번 열흘, 진짜 오래 기억날 것 같다.'",
+      "reading": "beol-sseo ma-ji-mak nal-i da-ga-on-da-ni, i-sang-ha-ge a-swip-da. no-eul ji-neun ba-da-reul bo-myeo jung-eol-geo-ri-ja, yong-u-do jam-si mal-i eob-seot-da. na-do geu-reo-ta, ma. i-beon yeol-heul, jin-jja o-rae gi-eok-nal geot gat-da.",
+      "en": "'The last day is already coming up, it feels strangely sad.' I murmured, watching the sun set over the sea, and Yongwoo went quiet for a moment too. '...Same here, man. This trip, these ten days — I think I'll remember them for a really long time.'"
+    },
+    {
+      "text": "돌아오는 배 위에서 아이스크림보다 더 달콤하게, 가슴 한쪽이 벅차올랐다. 우도에서 보낸 오늘 하루는, 오래도록 잊지 못할 추억으로 남을 것 같았다.",
+      "reading": "dol-a-o-neun bae wi-e-seo a-i-seu-keu-rim-bo-da deo dal-kom-ha-ge, ga-seum han-jjog-i beok-cha-ol-lat-da. u-do-e-seo bo-naen o-neul ha-ru-neun, o-rae-do-rok it-ji mot-hal chu-eog-eu-ro nam-eul geot gat-at-da.",
+      "en": "On the ferry back, a feeling sweeter than the ice cream welled up in my chest. This one day spent on Udo felt like it would stay with me as an unforgettable memory for a long time to come.",
+      "highlight_word_id": "w05"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "도항선", "reading": "do-hang-seon", "meaning": "a ferry that crosses to an island", "example": "우도로 가는 도항선에 올랐다.", "example_reading": "u-do-ro ga-neun do-hang-seon-e ol-lat-da", "example_en": "We boarded the ferry heading to Udo Island." },
+    { "id": "w02", "word": "눈부시다", "reading": "nun-bu-si-da", "meaning": "to be dazzling, blindingly bright", "example": "백사장이 햇빛에 눈부시게 빛났다.", "example_reading": "baek-sa-jang-i haet-bich-e nun-bu-si-ge bit-nat-da", "example_en": "The white sand beach shone dazzlingly in the sunlight." },
+    { "id": "w03", "word": "덧붙이다", "reading": "deot-bu-chi-da", "meaning": "to add, to append (a remark)", "example": "그는 사진을 보여주며 한마디 덧붙였다.", "example_reading": "geu-neun sa-jin-eul bo-yeo-ju-myeo han-ma-di deot-bu-chyeot-da", "example_en": "He added one more remark while showing the photo." },
+    { "id": "w04", "word": "방파제", "reading": "bang-pa-je", "meaning": "breakwater, pier", "example": "우리는 방파제에 앉아 이야기를 나눴다.", "example_reading": "u-ri-neun bang-pa-je-e anj-a i-ya-gi-reul na-nwot-da", "example_en": "We sat on the breakwater and talked." },
+    { "id": "w05", "word": "벅차오르다", "reading": "beok-cha-ol-leu-da", "meaning": "to well up with emotion, to feel a swell of feeling", "example": "그리운 마음에 가슴이 벅차올랐다.", "example_reading": "geu-ri-un ma-eum-e ga-seum-i beok-cha-ol-lat-da", "example_en": "My chest welled up with a wave of longing." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "우리는 우도로 가는 도항선에 올랐다.", "reading": "u-ri-neun u-do-ro ga-neun do-hang-seon-e ol-lat-da", "en": "We boarded the ferry heading to Udo Island." },
+    { "id": "s02", "ko": "산호 백사장이 햇빛에 눈부시게 반짝였다.", "reading": "san-ho baek-sa-jang-i haet-bich-e nun-bu-si-ge ban-jjag-yeot-da", "en": "The coral sand beach glittered dazzlingly in the sunlight." },
+    { "id": "s03", "ko": "그는 사진을 확인시켜 주며 한마디 덧붙였다.", "reading": "geu-neun sa-jin-eul hwag-in-si-kyeo ju-myeo han-ma-di deot-bu-chyeot-da", "en": "He showed me the photo and added one more remark." },
+    { "id": "s04", "ko": "우리는 방파제에 앉아 지난 열흘을 떠올렸다.", "reading": "u-ri-neun bang-pa-je-e anj-a ji-nan yeol-heul-eul tteo-ol-lyeot-da", "en": "We sat on the breakwater and reminisced about the past ten days." },
+    { "id": "s05", "ko": "돌아오는 길에 가슴 한쪽이 벅차올랐다.", "reading": "dol-a-o-neun gil-e ga-seum han-jjog-i beok-cha-ol-lat-da", "en": "On the way back, a wave of emotion welled up in my chest." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "용우", "text": "이리 와봐라, 찍어줄 테니까.", "reading": "i-ri wa-bwa-ra, jjig-eo-jul te-ni-kka.", "en": "Come here, I'll take your picture." },
+        { "speaker": "승객", "text": "잘 찍어줘야 돼, 여기 진짜 예쁘니까.", "reading": "jal jjig-eo-jwo-ya dwae, yeo-gi jin-jja ye-ppeu-ni-kka.", "en": "You'd better take it well, this place is really pretty." },
+        { "speaker": "용우", "text": "걱정 마라. …이 사진, 오래 간직해라.", "reading": "geok-jeong ma-ra. i sa-jin, o-rae gan-jik-hae-ra.", "en": "Don't worry. ...Keep this photo for a long time." },
+        { "speaker": "승객", "text": "왜 그렇게 진지하게 말해? 무슨 사진이라고.", "reading": "wae geu-reo-ke jin-ji-ha-ge mal-hae? mu-seun sa-jin-i-ra-go.", "en": "Why are you being so serious about it? It's just a photo." }
+      ],
+      "question": "용우가 사진을 오래 간직하라고 말한 이유로 가장 알맞은 것은?",
+      "question_en": "What best explains why Yongwoo told the passenger to keep the photo for a long time?",
+      "correct_answer": "함께한 이 순간을 진심으로 소중하게 여기기 때문에",
+      "options": ["함께한 이 순간을 진심으로 소중하게 여기기 때문에", "사진을 잘 못 찍어서 미안한 마음에", "사진 찍는 게 귀찮아서 한 번만 찍으려고", "우도가 다시 오기 힘든 곳이라서"],
+      "explanation": "용우는 무심한 척했지만, 함께 보낸 이 순간을 진심으로 소중히 여겼기 때문에 사진을 오래 간직하라고 말했습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "승객", "text": "벌써 마지막 날이 다가온다니, 이상하게 아쉽다.", "reading": "beol-sseo ma-ji-mak nal-i da-ga-on-da-ni, i-sang-ha-ge a-swip-da.", "en": "The last day is already coming up, it feels strangely sad." },
+        { "speaker": "용우", "text": "…나도 그렇다, 마. 이번 열흘, 진짜 오래 기억날 것 같다.", "reading": "na-do geu-reo-ta, ma. i-beon yeol-heul, jin-jja o-rae gi-eok-nal geot gat-da.", "en": "...Same here, man. I think this trip's going to stay with me for a long time." },
+        { "speaker": "승객", "text": "너도 이런 말 할 때가 있네. 의외다.", "reading": "neo-do i-reon mal hal ttae-ga it-ne. ui-oe-da.", "en": "Didn't expect you to say something like that. Surprising." },
+        { "speaker": "용우", "text": "…시끄럽다, 인마. 배 온다, 타자.", "reading": "si-kkeu-reop-da, in-ma. bae on-da, ta-ja.", "en": "...Quiet, you punk. The boat's here, let's get on." }
+      ],
+      "question": "이 대화에서 용우의 마지막 반응이 보여주는 것은?",
+      "question_en": "What does Yongwoo's final reaction in this exchange reveal?",
+      "correct_answer": "진심을 들킨 게 쑥스러워 서둘러 화제를 돌린다",
+      "options": ["진심을 들킨 게 쑥스러워 서둘러 화제를 돌린다", "손님의 말에 정말로 화가 났다", "빨리 배를 타지 않으면 놓칠까 봐 걱정된다", "이번 여행이 별로였다고 생각한다"],
+      "explanation": "용우는 자신의 진심 어린 말이 쑥스러워 서둘러 화제를 돌리는 전형적인 츤데레 반응을 보였습니다."
+    }
+  ]
+}

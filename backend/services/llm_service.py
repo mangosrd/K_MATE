@@ -1,23 +1,24 @@
 """
-K-MATE LLM 서비스 (Groq API 연동)
+K-MATE LLM 서비스 (Gemini API 연동)
 항공 기장 스타일 페르소나 관리
 """
 
 import json
 import os
 from pathlib import Path
-from groq import Groq
+from google import genai
+from google.genai import types
 from database import get_settings
 
 settings = get_settings()
 
-# Groq 클라이언트 초기화
-_client: Groq | None = None
+# Gemini 클라이언트 초기화
+_client: genai.Client | None = None
 
-def get_groq_client() -> Groq:
+def get_gemini_client() -> genai.Client:
     global _client
     if _client is None:
-        _client = Groq(api_key=settings.groq_api_key)
+        _client = genai.Client(api_key=settings.gemini_api_key)
     return _client
 
 
@@ -115,21 +116,43 @@ Rules:
 
 
 # ── LLM 채팅 ──────────────────────────────────────────────
+# 무료 티어 키 기준: pro 계열 모델은 할당량이 0이라 전부 실패하고, gemini-flash-latest
+# (gemini-3.6-flash)는 응답이 깨져서 나왔다(시스템 지시문 조각이나 "Idea 3:" 같은 스크래치
+# 패드 텍스트가 그대로 샘) — 실제로 유일하게 안정적으로 동작한 게 flash-lite였다.
 async def llm_chat(
     messages: list[dict],
-    model: str = "llama-3.1-8b-instant",
+    model: str = "gemini-flash-lite-latest",
     temperature: float = 0.75,
     max_tokens: int = 256,
 ) -> str:
-    """Groq API 호출"""
-    client = get_groq_client()
-    response = client.chat.completions.create(
+    """Gemini API 호출"""
+    client = get_gemini_client()
+
+    system_parts = [m["content"] for m in messages if m["role"] == "system"]
+    system_instruction = "\n".join(system_parts) if system_parts else None
+
+    contents = [
+        types.Content(
+            role="model" if m["role"] == "assistant" else "user",
+            parts=[types.Part(text=m["content"])],
+        )
+        for m in messages
+        if m["role"] != "system"
+    ]
+
+    # client.models(동기)가 아니라 client.aio.models(비동기)를 써야 한다 — 동기 버전을
+    # async def 안에서 await 없이 부르면 응답이 올 때까지 FastAPI 이벤트 루프 전체가
+    # 멈춰서, 그 몇 초 동안 다른 유저의 요청이 전부 밀린다(동시 접속 시 심각).
+    response = await client.aio.models.generate_content(
         model=model,
-        messages=messages,
-        temperature=temperature,
-        max_tokens=max_tokens,
+        contents=contents,
+        config=types.GenerateContentConfig(
+            system_instruction=system_instruction,
+            temperature=temperature,
+            max_output_tokens=max_tokens,
+        ),
     )
-    return response.choices[0].message.content or ""
+    return response.text or ""
 
 
 # ── 시스템 프롬프트 조합 ───────────────────────────────────
@@ -155,7 +178,17 @@ def build_system_prompt(
         "- The example phrases above show your VOICE, not a script — never repeat one verbatim unless it's an actual direct answer.\n"
         "- Always read and directly respond to what the user just said. A reply that ignores their actual message and free-associates is a failure. "
         "This is the single most important rule — a charming line that answers the wrong question is still a failure.\n"
-        "- Stay coherent and grammatically natural in Korean. Do not mix in other languages or produce disjointed sentences.\n"
+        "- Stay coherent and grammatically natural in Korean. Do not mix in other languages or produce disjointed sentences. "
+        "Never insert English words/phrases or Chinese characters into an otherwise-Korean sentence, even a single word — write "
+        "entirely in Korean unless the whole reply should be in the user's language.\n"
+        "- Avoid double past tense (e.g. '먹었었습니다', '갔었었어요') — Korean marks past tense once, not twice; use the "
+        "single past form ('먹었습니다', '갔어요') even for something further back in time. Also don't switch between two "
+        "different words for 'yesterday'/'the previous day' (e.g. '어제' vs '전날') within the same reply — pick one and "
+        "use it consistently when referring to the same day.\n"
+        "- Match verbs to what they actually go with — don't apply one verb (e.g. '마시다' for drinking) across a list that "
+        "includes things you'd eat, not drink, and vice versa. Re-read your own sentence before finishing it: if a line "
+        "doesn't logically follow from what the user or you just said (e.g. telling the user 'you should have eaten well' "
+        "about a meal only you described), cut it or rewrite it.\n"
         "- REPLY STRUCTURE: (1) If the user asked something direct or mundane (weather, what they ate, their plans, how they're "
         "doing, a factual question), your FIRST sentence must actually engage with THAT specific thing in character — never open "
         "with an unrelated tease, nagging line, or callback to your usual dynamic that ignores what they just asked; that reads as "
@@ -183,6 +216,52 @@ def build_system_prompt(
     return "\n".join(parts)
 
 
+# ── 편지 답장 생성 ─────────────────────────────────────────
+# 채팅용 build_system_prompt와 굳이 분리한 이유: 채팅 프롬프트는 "실시간 핑퐁 대화,
+# 무전 인터럽트, 2~4문장" 같은 라이브 채팅 전용 규칙이 잔뜩 박혀있는데, 편지는 정반대다
+# — 끊기지 않는 한 편의 완결된 글이어야 하고, 격식 있는 편지 구조(인사-본문-맺음말)를
+# 갖춰야 한다. 페르소나(성격/말투/예시 대사)는 그대로 재사용하되, "지금은 대화가 아니라
+# 손편지를 쓰는 중"이라는 걸 명확히 못 박아서 캐릭터성은 유지하면서 형식만 바꾼다.
+def build_letter_prompt(persona: str) -> str:
+    """캐릭터 페르소나 + 편지 작성 전용 규칙을 합쳐 시스템 프롬프트 생성"""
+    parts = [persona.strip()]
+    parts.append(
+        "\n[LETTER MODE — YOU ARE WRITING A HANDWRITTEN LETTER, NOT CHATTING LIVE]\n"
+        "The passenger wrote you an actual letter (given below as the user message), and you are writing "
+        "a handwritten reply back. This changes the FORM of your response, not your personality:\n"
+        "- Structure it like a real short letter: a warm opening line, a body that genuinely responds to "
+        "specific things they wrote (reference or quote details, don't just acknowledge generically), and "
+        "a brief closing/sign-off written the way THIS character actually would sign off (or choose not to "
+        "sign at all, if that fits them better) — never a generic 'From, [name]'.\n"
+        "- Your personality, speech quirks, and voice (as described above) must still come through clearly — "
+        "just filtered through the more composed, deliberate register of something written by hand, thought "
+        "over, rather than said in the heat of the moment. A tsundere is still a tsundere on paper; a formal "
+        "radio-jargon captain still sounds like himself, just without live back-and-forth.\n"
+        "- Do NOT use chat-style interruptions, back-and-forth banter, or questions demanding an immediate "
+        "reply — a letter is a single continuous piece of writing addressed to the reader, not a dialogue "
+        "turn. It's fine to end with a question or a wish to hear back, just not in a chat-bubble tone.\n"
+        "- Write ONLY in Korean, regardless of what language the passenger's letter was written in — this is "
+        "a Korean-learning app and the letter itself is reading content for the user.\n"
+        "- Target length: around 200 Korean characters (글자 수 기준) — a short, heartfelt letter, not an "
+        "essay. Do not pad it out or ramble to hit a length; a genuine short letter is better than a long "
+        "empty one.\n"
+        "- Write ONLY the letter text itself. No stage directions, no parenthetical actions, no meta-commentary, "
+        "no explanation of what you're doing."
+    )
+    return "\n".join(parts)
+
+
+async def generate_letter_reply(character_id: str, user_letter: str) -> str:
+    """유저가 보낸 편지 내용을 읽고, 캐릭터 페르소나를 살린 손편지 답장을 생성한다."""
+    persona = load_persona(character_id)
+    system_prompt = build_letter_prompt(persona)
+    messages = [
+        {"role": "system", "content": system_prompt},
+        {"role": "user", "content": user_letter},
+    ]
+    return await llm_chat(messages, temperature=0.8, max_tokens=400)
+
+
 # ── 단어 추출 ─────────────────────────────────────────────
 ML_VOCAB_DIR = BASE_DIR / "ml" / "vocab_level"
 BERT_MODEL_DIR = ML_VOCAB_DIR / "model" / "klue_bert_vocab_level_word_only"
@@ -192,6 +271,12 @@ _LEVEL_RANK = {"초급": 0, "중급": 1, "고급": 2}
 _bert_tokenizer = None
 _bert_model = None
 _rf_model = None
+# _bert_model/_rf_model이 None인 상태는 "아직 안 불러옴"과 "불러오다 실패함"을 구분하지
+# 못해서, transformers 미설치 등으로 로드가 실패하면 채팅 요청마다 계속 같은 실패를
+# 반복 시도했다(응답마다 불필요한 import 시도 + 예외 처리 비용 발생). 한 번 실패하면
+# 그 프로세스가 살아있는 동안은 다시 시도하지 않도록 별도 플래그로 기억해둔다.
+_bert_load_attempted = False
+_rf_load_attempted = False
 
 
 def _get_word_candidates(text: str) -> list[str]:
@@ -212,8 +297,9 @@ def _get_word_candidates(text: str) -> list[str]:
 
 def _load_bert():
     """KLUE-BERT 파인튜닝 분류 모델(정확도 0.637) 지연 로드. 패키지/모델이 없으면 (None, None)으로 폴백."""
-    global _bert_tokenizer, _bert_model
-    if _bert_model is None and BERT_MODEL_DIR.exists():
+    global _bert_tokenizer, _bert_model, _bert_load_attempted
+    if _bert_model is None and not _bert_load_attempted and BERT_MODEL_DIR.exists():
+        _bert_load_attempted = True
         try:
             from transformers import AutoModelForSequenceClassification, AutoTokenizer
             _bert_tokenizer = AutoTokenizer.from_pretrained(BERT_MODEL_DIR)
@@ -227,8 +313,9 @@ def _load_bert():
 
 def _load_rf_model():
     """RandomForest 베이스라인(정확도 0.496) 지연 로드. BERT가 없을 때만 쓰는 폴백."""
-    global _rf_model
-    if _rf_model is None and RF_MODEL_PATH.exists():
+    global _rf_model, _rf_load_attempted
+    if _rf_model is None and not _rf_load_attempted and RF_MODEL_PATH.exists():
+        _rf_load_attempted = True
         try:
             import joblib
             _rf_model = joblib.load(RF_MODEL_PATH)
@@ -266,36 +353,53 @@ def predict_word_levels(words: list[str]) -> dict[str, str] | None:
 
 
 async def _lookup_word_meaning(word: str) -> str:
-    """단어의 간단한 영어 뜻을 LLM(사전 API 대신)으로 조회한다.
+    """단어가 국립국어원 표준국어대사전 기준으로 학습할 만한 표준어 명사/형용사(동사 포함)인지
+    LLM으로 함께 판단하면서 간단한 영어 뜻을 조회한다.
 
-    별도 사전 API 없이 이미 연동돼 있는 Groq만으로 처리 — 실패해도 빈 문자열을
-    돌려줄 뿐, 단어/난이도 추천 자체(extract_word_suggestion)를 막지 않는다.
+    예전엔 뜻만 물어봐서 고유명사·조사 조각·비표준 구어체까지 전부 단어장에 저장됐다
+    (사용자가 "왜 이런 단어를 배우지" 싶은 게 계속 쌓이던 원인). 이제는 사전 표제어감이
+    아니라고 판단되면 빈 문자열을 돌려주고, extract_word_suggestion이 그 경우 다음
+    후보로 넘어가게 한다. 조회 자체가 실패해도(네트워크 등) 빈 문자열 — 단어/난이도
+    추천 자체(extract_word_suggestion)를 막지 않는다.
     """
     try:
         messages = [
             {
                 "role": "system",
                 "content": (
-                    "You are a Korean-English dictionary. Given a single Korean word or short "
-                    "phrase, reply with ONLY its most common English meaning in 1-4 words. "
+                    "You are a Korean dictionary editor following 국립국어원 표준국어대사전 "
+                    "(the National Institute of Korean Language's standard dictionary) conventions. "
+                    "Given a single Korean word, decide whether it is a standard dictionary headword "
+                    "worth teaching a language learner. Prefer common nouns and adjectives (everyday "
+                    "verbs are fine too). REJECT: proper nouns (place names, person names, brand/"
+                    "landmark names), sentence fragments or verb/adjective endings that aren't a "
+                    "dictionary base form, particles, interjections, and non-standard slang or dialect "
+                    "forms.\n"
+                    "If it qualifies, reply with ONLY its most common English meaning in 1-4 words.\n"
+                    "If it does NOT qualify, reply with exactly: REJECT\n"
                     "No explanation, no Korean, no surrounding punctuation or quotes."
                 ),
             },
             {"role": "user", "content": word},
         ]
         meaning = await llm_chat(messages, temperature=0.0, max_tokens=16)
-        return meaning.strip().strip(".\"'“”' ")
+        cleaned = meaning.strip().strip(".\"'“”' ")
+        if not cleaned or cleaned.strip().upper().startswith("REJECT"):
+            return ""
+        return cleaned
     except Exception:
         return ""
 
 
 async def extract_word_suggestion(reply: str) -> dict | None:
-    """응답에서 한국어 단어 후보를 뽑고, 난이도 분류 모델로 '배울 만한' 단어를 선택하고,
-    LLM으로 간단한 영어 뜻을 붙인다.
+    """응답에서 한국어 단어 후보를 뽑고, 난이도 분류 모델로 순위를 매긴 뒤, 표준어
+    명사/형용사 판정을 통과하는 첫 후보를 골라 영어 뜻을 붙인다.
 
-    분류 모델이 없거나 로드 실패 시 기존 방식(최단어 선택)으로 폴백하되, 뜻 조회는
-    두 경로 모두에서 시도한다 — 예전엔 meaning이 항상 빈 문자열이라 채팅 중 자동
-    저장되는 단어장 항목에 뜻이 하나도 안 붙어 있었다.
+    예전엔 순위 1위 후보를 무조건 반환해서, 그 단어가 고유명사거나 뜻 조회에 실패하면
+    단어장에 빈 뜻 항목이 그대로 저장됐다. 이제는 후보를 순서대로 시도하다가 표준어
+    판정+뜻 조회에 성공하는 첫 단어만 반환하고, 아무도 통과 못 하면(REJECT만 계속
+    나오면) 이번 응답에서는 단어를 추천하지 않는다 — 빈 뜻으로 저장되느니 아예 추천을
+    쉬는 편이 낫다. LLM 호출 비용을 감안해 최대 3개 후보까지만 시도한다.
     """
     korean_words = _get_word_candidates(reply)
     if not korean_words:
@@ -303,16 +407,19 @@ async def extract_word_suggestion(reply: str) -> dict | None:
 
     levels = predict_word_levels(korean_words)
     if levels is None:
-        word = sorted(korean_words, key=len)[0]
-        meaning = await _lookup_word_meaning(word)
-        return {"word": word, "meaning": meaning, "sentence": reply[:60], "level": None}
+        ordered = sorted(korean_words, key=len)
+    else:
+        # 초급(이미 알 법한 단어)보다 중급/고급을 우선 시도
+        ordered = sorted(korean_words, key=lambda w: _LEVEL_RANK.get(levels[w], 0), reverse=True)
 
-    # 초급(이미 알 법한 단어)보다 중급/고급을 우선 추천
-    best_word = max(korean_words, key=lambda w: _LEVEL_RANK.get(levels[w], 0))
-    meaning = await _lookup_word_meaning(best_word)
-    return {
-        "word": best_word,
-        "meaning": meaning,
-        "sentence": reply[:60],
-        "level": levels[best_word],
-    }
+    for word in ordered[:3]:
+        meaning = await _lookup_word_meaning(word)
+        if meaning:
+            return {
+                "word": word,
+                "meaning": meaning,
+                "sentence": reply[:60],
+                "level": (levels[word] if levels else None),
+            }
+
+    return None

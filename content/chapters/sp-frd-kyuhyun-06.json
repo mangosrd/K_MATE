@@ -1,0 +1,67 @@
+{
+  "id": "sp-frd-kyuhyun-06",
+  "character_id": "kyuhyun",
+  "title": "혼자 끙끙 앓지 마",
+  "emoji": "🫂",
+  "story": [
+    {
+      "text": "며칠째 표정이 어두운 나를 보다 못해, 규현이 한강 공원 벤치에 캔커피 두 개를 들고 앉았다. \"무슨 고민 있어요, 아가씨. 얼굴에 다 써 있는데.\"",
+      "reading": "myeo-chil-jjae pyo-jeong-i eo-du-un na-reul bo-da mot-hae, gyu-hyeon-i han-gang gong-won ben-chi-e kaen-keo-pi du gae-reul deul-go anj-at-da. \"mu-seun go-min iss-eo-yo, a-ga-ssi. eol-gul-e da sseo it-neun-de.\"",
+      "en": "Unable to keep watching my gloomy face for days on end, Kyuhyun sat down on a bench in Hangang Park with two cans of coffee. \"What's bothering you, miss. It's written all over your face.\"",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "나는 애써 웃어 보였지만 그는 속지 않았다. \"괜찮은 척은. 나한테까지 그럴 필요 없잖아요.\"",
+      "reading": "na-neun ae-sseo us-eo bo-yeot-ji-man geu-neun sok-ji an-at-da. \"gwaen-chan-eun cheog-eun. na-han-te-kka-ji geu-reol pil-yo eop-jan-a-yo.\"",
+      "en": "I forced a smile, but he wasn't fooled. \"Don't bother pretending you're fine. Not with me, of all people.\""
+    },
+    {
+      "text": "결국 나는 요즘 마음을 무겁게 짓누르던 고민을 하나둘 털어놓기 시작했다. 진로에 대한 불안, 자꾸만 작아지는 자신감까지.",
+      "reading": "gyeol-guk na-neun yo-jeum ma-eum-eul mu-geob-ge jin-nu-reu-deon go-min-eul ha-na-dul teol-eo-noh-gi si-jak-haet-da. jin-lo-e dae-han bul-an, ja-kku-man jag-a-ji-neun ja-sin-gam-kka-ji.",
+      "en": "In the end, I started opening up, one worry at a time, about everything that had been weighing on my heart lately — my anxiety about the future, my shrinking confidence.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "규현은 평소와 다르게 장난기를 싹 지우고 조용히 귀 기울여 들었다. 가끔 고개를 끄덕이는 것 말고는 아무 말도 하지 않았다.",
+      "reading": "gyu-hyeon-eun pyeong-so-wa da-reu-ge jang-nan-gi-reul ssak ji-u-go jo-yong-hi gwi gi-ul-yeo deul-eot-da. ga-kkeum go-gae-reul kkeu-deuk-i-neun geot mal-go-neun a-mu mal-do ha-ji an-at-da.",
+      "en": "Unlike his usual self, Kyuhyun wiped away all traces of playfulness and listened quietly, leaning in. Aside from an occasional nod, he said nothing at all."
+    },
+    {
+      "text": "이야기가 끝나자 그가 낮은 목소리로 물었다. \"그래서, 제일 힘든 게 뭐예요?\" 평소의 장난스러운 '그래서'가 아니라 진심이 담긴 물음이었다.",
+      "reading": "i-ya-gi-ga kkeut-na-ja geu-ga naj-eun mok-so-ri-ro mul-eot-da. \"geu-rae-seo, je-il him-deun ge mwo-ye-yo?\" pyeong-so-ui jang-nan-seu-reo-un 'geu-rae-seo'-ga a-ni-ra jin-sim-i dam-gin mul-eum-i-eot-da.",
+      "en": "When I finished talking, he asked in a low voice, \"So? What's the hardest part?\" It wasn't his usual teasing \"so?\" — this time, the question was full of sincerity."
+    },
+    {
+      "text": "\"정답은 나도 몰라요. 근데 아가씨가 얼마나 애써 왔는지는 알아요.\" 그가 내 어깨를 가만히 토닥이며 위로했다.",
+      "reading": "\"jeong-dab-eun na-do mol-la-yo. geun-de a-ga-ssi-ga eol-ma-na ae-sseo wat-neun-ji-neun al-a-yo.\" geu-ga nae eo-kkae-reul ga-man-hi to-dag-i-myeo wi-ro-haet-da.",
+      "en": "\"I don't know the right answer either. But I do know how hard you've been trying.\" He gently patted my shoulder, comforting me.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "\"혼자 끙끙 앓지 마요. 내가 곁에 있을 거니까.\" 그의 담담한 목소리가 마음 깊이 스며들었다.",
+      "reading": "\"hon-ja kkeung-kkeung al-chi ma-yo. nae-ga gyeot-e iss-eul geo-ni-kka.\" geu-ui dam-dam-han mok-so-ri-ga ma-eum gip-i seu-myeo-deul-eot-da.",
+      "en": "\"Don't suffer through it alone. Because I'll be right here beside you.\" His calm, steady voice sank deep into my heart.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "강바람이 선선하게 불어왔다. 담백한 말 한마디가 그렇게 큰 힘이 될 줄은 몰랐다.",
+      "reading": "gang-ba-ram-i seon-seon-ha-ge bul-eo-wat-da. dam-baeg-han mal han-ma-di-ga geu-reoh-ge keun him-i doel jul-eun mol-lat-da.",
+      "en": "A cool breeze blew in off the river. I never knew one plain, unadorned sentence could become such a source of strength.",
+      "highlight_word_id": "w05"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "고민", "reading": "go-min", "meaning": "a worry, a concern", "example": "요즘 고민이 많아요.", "example_reading": "yo-jeum go-min-i man-a-yo", "example_en": "I have a lot on my mind these days." },
+    { "id": "w02", "word": "털어놓다", "reading": "teol-eo-noh-da", "meaning": "to open up, to confide", "example": "친구에게 고민을 털어놓았다.", "example_reading": "chin-gu-e-ge go-min-eul teol-eo-noh-at-da", "example_en": "I opened up to my friend about my worries." },
+    { "id": "w03", "word": "위로하다", "reading": "wi-ro-ha-da", "meaning": "to comfort, to console", "example": "그가 나를 따뜻하게 위로해 줬다.", "example_reading": "geu-ga na-reul tta-tteut-ha-ge wi-ro-hae jwot-da", "example_en": "He comforted me warmly." },
+    { "id": "w04", "word": "곁에 있다", "reading": "gyeot-e it-da", "meaning": "to be by someone's side", "example": "힘들 때 곁에 있어 줄게.", "example_reading": "him-deul ttae gyeot-e iss-eo jul-ge", "example_en": "I'll be by your side when things get hard." },
+    { "id": "w05", "word": "힘이 되다", "reading": "him-i doe-da", "meaning": "to become a source of strength or support", "example": "네 말이 정말 힘이 됐어.", "example_reading": "ne mal-i jeong-mal him-i dwaet-eo", "example_en": "Your words were a real source of strength for me." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "요즘 고민이 많아요.", "reading": "yo-jeum go-min-i man-a-yo.", "en": "I have a lot of worries these days." },
+    { "id": "s02", "ko": "나한테 털어놓아 봐요.", "reading": "na-han-te teol-eo-noh-a bwa-yo.", "en": "Open up to me." },
+    { "id": "s03", "ko": "친구가 나를 위로해 줬어요.", "reading": "chin-gu-ga na-reul wi-ro-hae jwo-sseo-yo.", "en": "My friend comforted me." },
+    { "id": "s04", "ko": "내가 곁에 있을게요.", "reading": "nae-ga gyeot-e iss-eul-ge-yo.", "en": "I'll be right here beside you." },
+    { "id": "s05", "ko": "그 말이 정말 힘이 됐어요.", "reading": "geu mal-i jeong-mal him-i dwaet-eo-yo.", "en": "Those words were a real source of strength." }
+  ]
+}

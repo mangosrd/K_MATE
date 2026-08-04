@@ -1,7 +1,7 @@
 # K-MATE Python 백엔드
 
 K-MATE 여행·학습 플랫폼의 **Python FastAPI 백엔드**입니다.  
-LLM 채팅(Groq), 일기 생성, 단어장, 진도 관리 API를 제공합니다.
+LLM 채팅(Gemini), 일기 생성, 단어장, 진도 관리 API를 제공합니다.
 
 ---
 
@@ -14,7 +14,7 @@ LLM 채팅(Groq), 일기 생성, 단어장, 진도 관리 API를 제공합니다
 | SQLAlchemy | 2.0 |
 | MySQL | 8.0+ |
 | PyMySQL | 1.1 |
-| Groq SDK | 0.11 |
+| google-genai | 2.15 |
 
 ---
 
@@ -44,7 +44,7 @@ docker exec -i kmate-mysql mysql -u root -pkmate1234 kmate < sql/schema.sql
 ### 2. 환경변수 설정
 ```bash
 cp .env.example .env
-# .env 파일을 열어 MySQL 비밀번호와 Groq API 키 입력
+# .env 파일을 열어 MySQL 비밀번호와 Gemini API 키 입력
 ```
 
 ### 3. 패키지 설치 & 실행
@@ -88,7 +88,7 @@ MYSQL_PORT=3306
 MYSQL_USER=root
 MYSQL_PASSWORD=your_password
 MYSQL_DB=kmate
-GROQ_API_KEY=your_groq_key
+GEMINI_API_KEY=your_gemini_key
 FRONTEND_URL=http://localhost:3000
 ```
 
@@ -112,7 +112,7 @@ backend/
 │   ├── vocab.py         ← /vocab/*
 │   └── progress.py      ← /progress, /regions, /user
 ├── services/
-│   └── llm_service.py   ← Groq LLM + 기장 페르소나
+│   └── llm_service.py   ← Gemini LLM + 기장 페르소나
 └── sql/
     └── schema.sql       ← MySQL DDL + 시드 데이터
 ```

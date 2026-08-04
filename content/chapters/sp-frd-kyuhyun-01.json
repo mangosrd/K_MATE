@@ -1,0 +1,67 @@
+{
+  "id": "sp-frd-kyuhyun-01",
+  "character_id": "kyuhyun",
+  "title": "오랜만이야, 잘 지냈어?",
+  "emoji": "🙌",
+  "story": [
+    {
+      "text": "김포공항 국내선 도착 로비는 여전히 분주했다. 오랜만에 다시 밟은 한국 땅이라 그런지, 나는 괜히 두리번거리며 설레는 마음을 감추지 못했다.",
+      "reading": "gim-po-gong-hang guk-nae-seon do-chak lo-bi-neun yeo-jeon-hi bun-ju-haet-da. o-raen-man-e da-si balb-eun han-guk ttang-i-ra geu-reon-ji, na-neun gwaen-hi du-ri-beon-geo-ri-myeo seol-le-neun ma-eum-eul gam-chu-ji mot-haet-da.",
+      "en": "Gimpo Airport's domestic arrivals lobby was as busy as ever. Maybe because it had been so long since I'd set foot in Korea again, I couldn't hide the flutter of excitement as I glanced around.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "저 멀리, 기장 유니폼 재킷을 어깨에 걸친 익숙한 실루엣이 눈에 들어왔다. 규현이었다.",
+      "reading": "jeo meol-li, gi-jang yu-ni-pom jae-ket-eul eo-kkae-e geol-chin ik-suk-han sil-lu-et-i nun-e deul-eo-wat-da. gyu-hyeon-i-eot-da.",
+      "en": "In the distance, a familiar silhouette with a captain's uniform jacket slung over one shoulder caught my eye. It was Kyuhyun."
+    },
+    {
+      "text": "\"야, 거기서 뭐 해. 마중 나온 사람 놓칠라.\" 그가 씩 웃으며 손을 들어 보였다.",
+      "reading": "\"ya, geo-gi-seo mwo hae. ma-jung na-on sa-ram noch-il-la.\" geu-ga ssik us-eu-myeo son-eul deul-eo bo-yeot-da.",
+      "en": "\"Hey, what are you doing standing there? You'll miss the guy who came to meet you.\" He grinned and raised a hand.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "\"규현아!\" 나는 반가운 마음에 큰 소리로 그를 부르며 달려갔다.",
+      "reading": "\"gyu-hyeon-a!\" na-neun ban-ga-un ma-eum-e keun so-ri-ro geu-reul bu-reu-myeo dal-lyeo-gat-da.",
+      "en": "\"Kyuhyun!\" Overjoyed, I called out his name loudly and ran toward him.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "\"얼굴 까먹은 줄 알았잖아, 아가씨. 근데 하나도 안 변했네.\" 그는 내 캐리어 손잡이를 슬쩍 가로채며 눈을 찡긋했다.",
+      "reading": "\"eol-gul kka-meog-eun jul al-at-jan-a, a-ga-ssi. geun-de ha-na-do an byeon-haet-ne.\" geu-neun nae kae-ri-eo son-jab-i-reul seul-jjeok ga-ro-chae-myeo nun-eul jjing-geut-haet-da.",
+      "en": "\"I thought you'd forgotten my face, miss. But look at you—not a bit changed.\" He casually snatched my suitcase handle away and winked.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "\"그래, 그동안 잘 지냈어? 부모님도 잘 계시고?\" 그가 캐리어를 끌며 다정하게 안부를 물었다.",
+      "reading": "\"geu-rae, geu-dong-an jal ji-naet-eo? bu-mo-nim-do jal gye-si-go?\" geu-ga kae-ri-eo-reul kkeul-myeo da-jeong-ha-ge an-bu-reul mul-eot-da.",
+      "en": "\"So, how have you been? Are your parents doing well too?\" He asked after my family warmly as he pulled my suitcase along.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "\"너야말로 여전하다. 여전히 능글맞고.\" 내가 웃으며 쏘아붙이자, 그는 헛기침을 하며 슬쩍 시선을 돌렸다.",
+      "reading": "\"neo-ya-mal-lo yeo-jeon-ha-da. yeo-jeon-hi neung-geul-mat-go.\" nae-ga us-eu-myeo sso-a-but-ji-ja, geu-neun heot-gi-chim-eul ha-myeo seul-jjeok si-seon-eul dol-lyeot-da.",
+      "en": "\"You're the one who hasn't changed—still smooth-talking as ever.\" When I teased him with a laugh, he cleared his throat and looked away."
+    },
+    {
+      "text": "몇 년 만의 재회인데도 어제 만난 사람처럼 편했다. \"그래서, 이번엔 나랑 뭐 하고 놀 건데?\" 규현이 장난스레 눈썹을 들썩였다.",
+      "reading": "myeot nyeon man-ui jae-hoe-in-de-do eo-je man-nan sa-ram-cheo-reom pyeon-haet-da. \"geu-rae-seo, i-beon-en na-rang mwo ha-go nol geon-de?\" gyu-hyeon-i jang-nan-seu-re nun-seob-eul deul-sseok-yeot-da.",
+      "en": "Even though it had been years since we'd last met, it felt as easy as if we'd seen each other yesterday. \"So, what are we doing together this time?\" Kyuhyun wiggled his eyebrows playfully."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "오랜만", "reading": "o-raen-man", "meaning": "a long time (since last time)", "example": "오랜만이야! 잘 지냈어?", "example_reading": "o-raen-man-i-ya! jal ji-naet-eo?", "example_en": "Long time no see! How have you been?" },
+    { "id": "w02", "word": "반갑다", "reading": "ban-gap-da", "meaning": "to be glad, happy to see (someone)", "example": "만나서 정말 반가워요.", "example_reading": "man-na-seo jeong-mal ban-ga-wo-yo", "example_en": "I'm really glad to meet you." },
+    { "id": "w03", "word": "여전하다", "reading": "yeo-jeon-ha-da", "meaning": "to be the same as before, unchanged", "example": "너는 여전히 잘생겼네.", "example_reading": "neo-neun yeo-jeon-hi jal-saeng-gyeot-ne", "example_en": "You're still handsome as ever." },
+    { "id": "w04", "word": "마중 나오다", "reading": "ma-jung na-o-da", "meaning": "to come out to meet/greet someone (arriving)", "example": "공항으로 마중 나갈게.", "example_reading": "gong-hang-eu-ro ma-jung na-gal-ge", "example_en": "I'll come out to the airport to meet you." },
+    { "id": "w05", "word": "안부", "reading": "an-bu", "meaning": "news of one's well-being, regards", "example": "가족들에게 안부 전해 줘.", "example_reading": "ga-jok-deul-e-ge an-bu jeon-hae jwo", "example_en": "Give my regards to your family." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "오랜만이야! 잘 지냈어?", "reading": "o-raen-man-i-ya! jal ji-naet-eo?", "en": "Long time no see! How have you been?" },
+    { "id": "s02", "ko": "하나도 안 변했네.", "reading": "ha-na-do an byeon-haet-ne.", "en": "You haven't changed a bit." },
+    { "id": "s03", "ko": "마중 나와 줘서 고마워.", "reading": "ma-jung na-wa jwo-seo go-ma-wo.", "en": "Thanks for coming out to meet me." },
+    { "id": "s04", "ko": "우리 진짜 오랜만이다.", "reading": "u-ri jin-jja o-raen-man-i-da.", "en": "It's really been forever since we've met." },
+    { "id": "s05", "ko": "부모님께 안부 전해 줘.", "reading": "bu-mo-nim-kke an-bu jeon-hae jwo.", "en": "Please give my regards to your parents." }
+  ]
+}

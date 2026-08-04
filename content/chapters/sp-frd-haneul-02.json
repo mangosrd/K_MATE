@@ -1,0 +1,62 @@
+{
+  "id": "sp-frd-haneul-02",
+  "character_id": "haneul",
+  "title": "치맥(치킨과 맥주) 모임",
+  "emoji": "🍗",
+  "story": [
+    {
+      "text": "한옥마을 골목 안, 나무 간판이 걸린 작은 치킨집 앞에 하늘이 먼저 자리를 잡고 앉아 있었다.",
+      "reading": "han-ok-ma-eul gol-mok an, na-mu gan-pan-i geol-lin jak-eun chi-kin-jib ap-e ha-neul-i meon-jeo ja-ri-reul jap-go anj-a iss-eot-da.",
+      "en": "In an alley of Hanok Village, in front of a small chicken place with a wooden sign, Haneul had already claimed a seat and was sitting there."
+    },
+    {
+      "text": "\"왔으면 앉아. 뭐 마실지는 벌써 시켜놨어.\" 그가 턱짓으로 맥주 두 잔을 가리켰다. 시원한 거품이 잔 위로 넘칠 듯 담겨 있었다.",
+      "reading": "wass-eu-myeon anj-a. mwo ma-sil-ji-neun beol-sseo si-kyeo-nwass-eo. geu-ga teok-jis-eu-ro maek-ju du jan-eul ga-ri-kyeot-da. si-won-han geo-pum-i jan wi-ro neom-chil deut dam-gyeo iss-eot-da.",
+      "en": "\"You're here, so sit. I already ordered what we're drinking.\" He nodded toward two mugs of beer with his chin. Cold, refreshing foam sat brimming right at the rim.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "\"순살로 시켰어. 너 뼈 발라내는 거 귀찮아하잖아.\" 무심하게 던진 말이었지만, 내 취향을 정확히 기억하고 있었다.",
+      "reading": "sun-sal-lo si-kyeoss-eo. neo ppyeo bal-la-nae-neun geo gwi-chan-a-ha-jan-a. mu-sim-ha-ge deon-jin mal-i-eot-ji-man, nae chwi-hyang-eul jeong-hwak-hi gi-eok-ha-go iss-eot-da.",
+      "en": "\"I ordered it boneless. You always hate picking bones apart.\" He said it offhandedly, but he'd remembered exactly what I liked.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "치킨이 나오자 그는 잔부터 들어 올렸다. \"건배. 오랜만에 얼굴 본 기념으로.\" 잔이 부딪히는 소리가 좁은 가게 안에 청량하게 퍼졌다.",
+      "reading": "chi-kin-i na-o-ja geu-neun jan-bu-teo deul-eo ol-lyeot-da. geon-bae. o-raen-man-e eol-gul bon gi-nyeom-eu-ro. jan-i bu-di-chi-neun so-ri-ga job-eun ga-ge an-e cheong-nyang-ha-ge peo-jyeot-da.",
+      "en": "When the chicken arrived, he raised his glass first. \"Cheers. To finally seeing your face again.\" The clink of our glasses rang out crisply through the small restaurant.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "\"안주는 이걸로 됐고, 너 요즘 뭐 힘든 거 없어?\" 대수롭지 않은 척 물었지만, 눈은 나를 똑바로 보고 있었다.",
+      "reading": "an-ju-neun i-geol-lo dwaet-go, neo yo-jeum mwo him-deun geo eop-seo? dae-su-rop-ji anh-eun cheok mul-eot-ji-man, nun-eun na-reul ttok-ba-ro bo-go iss-eot-da.",
+      "en": "\"This is plenty for a drinking snack — anyway, is anything rough going on with you lately?\" He asked it like it was nothing, but his eyes were watching me straight on.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "\"없어, 없어. 그냥 먹자.\" 나는 얼버무리며 웃었다. 그는 더 캐묻지 않고, 대신 잔을 다시 채워줬다. \"그래, 오늘은 그냥 한잔하자.\"",
+      "reading": "eop-seo, eop-seo. geu-nyang meok-ja. na-neun eol-beo-mu-ri-myeo us-eot-da. geu-neun deo kae-mut-ji anh-go, dae-sin jan-eul da-si chae-wo-jwot-da. geu-rae, o-neul-eun geu-nyang han-jan-ha-ja.",
+      "en": "\"Nothing, nothing. Let's just eat.\" I laughed it off vaguely. He didn't press further, and instead refilled my glass. \"Alright. Let's just have a drink tonight.\"",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "뼈다귀가 쌓여가는 접시 위로, 우리는 별거 아닌 이야기를 주고받았다. 오랜만인데도 하나도 어색하지 않은 밤이었다.",
+      "reading": "ppyeo-da-gwi-ga sso-a-ga-neun jeop-si wi-ro, u-ri-neun byeol-geo a-nin i-ya-gi-reul ju-go-bad-at-da. o-raen-man-in-de-do ha-na-do eo-saek-ha-ji anh-eun bam-i-eot-da.",
+      "en": "Over a plate piling up with bones, we traded small, meaningless talk. Even after so long apart, the night didn't feel awkward at all."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "건배", "reading": "geon-bae", "meaning": "a toast, cheers", "example": "우리는 잔을 들고 건배했다.", "example_reading": "u-ri-neun jan-eul deul-go geon-bae-haet-da", "example_en": "We raised our glasses and toasted." },
+    { "id": "w02", "word": "안주", "reading": "an-ju", "meaning": "food eaten with alcohol, drinking snack", "example": "맥주에는 안주가 빠질 수 없다.", "example_reading": "maek-ju-e-neun an-ju-ga ppa-jil su eop-da", "example_en": "Beer just isn't complete without something to eat alongside it." },
+    { "id": "w03", "word": "순살", "reading": "sun-sal", "meaning": "boneless (chicken)", "example": "저는 순살 치킨으로 주문할게요.", "example_reading": "jeo-neun sun-sal chi-kin-eu-ro ju-mun-hal-kke-yo", "example_en": "I'll order the boneless chicken." },
+    { "id": "w04", "word": "시원하다", "reading": "si-won-ha-da", "meaning": "to be cool, refreshing", "example": "이 맥주는 정말 시원하다.", "example_reading": "i maek-ju-neun jeong-mal si-won-ha-da", "example_en": "This beer is really cold and refreshing." },
+    { "id": "w05", "word": "한잔하다", "reading": "han-jan-ha-da", "meaning": "to have a casual drink (together)", "example": "오늘 저녁에 한잔할까?", "example_reading": "o-neul jeo-nyeog-e han-jan-hal-kka?", "example_en": "Should we grab a drink tonight?" }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "우리는 잔을 들고 건배했다.", "reading": "u-ri-neun jan-eul deul-go geon-bae-haet-da", "en": "We raised our glasses and toasted." },
+    { "id": "s02", "ko": "맥주에는 안주가 빠질 수 없다.", "reading": "maek-ju-e-neun an-ju-ga ppa-jil su eop-da", "en": "Beer just isn't complete without something to eat alongside it." },
+    { "id": "s03", "ko": "저는 순살 치킨으로 주문할게요.", "reading": "jeo-neun sun-sal chi-kin-eu-ro ju-mun-hal-kke-yo", "en": "I'll order the boneless chicken." },
+    { "id": "s04", "ko": "이 맥주는 정말 시원하다.", "reading": "i maek-ju-neun jeong-mal si-won-ha-da", "en": "This beer is really cold and refreshing." },
+    { "id": "s05", "ko": "오늘 저녁에 한잔할까?", "reading": "o-neul jeo-nyeog-e han-jan-hal-kka?", "en": "Should we grab a drink tonight?" }
+  ]
+}

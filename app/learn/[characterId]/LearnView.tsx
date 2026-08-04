@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./learn.module.css";
@@ -18,7 +19,12 @@ interface LearnViewProps {
 
 export default function LearnView({ char, chapters }: LearnViewProps) {
   const { t } = useLanguage();
-  const [tab, setTab] = useState<"regional" | "special">("regional");
+  const searchParams = useSearchParams();
+  // 스페셜 챕터 상세 화면에서 "챕터 목록으로"를 누르면 ?tab=special로 들어온다 — 그 경우 기본값
+  // "regional"로 초기화해버리면 스페셜 탭을 보다 나간 사람이 엉뚱하게 지역 문화 탭을 보게 된다.
+  const [tab, setTab] = useState<"regional" | "special">(
+    searchParams.get("tab") === "special" ? "special" : "regional"
+  );
   const [specialCategory, setSpecialCategory] = useState<"romance" | "daily" | "friendship">("romance");
   const [selectedCaptainId, setSelectedCaptainId] = useState<string>(char.id);
   const [stamps, setStamps] = useState<string[]>([]);
@@ -235,7 +241,7 @@ export default function LearnView({ char, chapters }: LearnViewProps) {
                       title={isSequenceLocked ? t("chapterLockedHint") : undefined}
                     >
                       <div className={`${styles.chapterIcon} ${isCompleted ? styles.iconDone : styles.iconLocked}`}>
-                        {isCompleted ? "✓" : "🔒"} {sc.emoji}
+                        {isCompleted ? "✓" : isSequenceLocked ? "🔒" : sc.emoji}
                       </div>
 
                       <div className={styles.chapterInfo}>

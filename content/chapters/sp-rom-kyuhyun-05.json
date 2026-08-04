@@ -46,17 +46,82 @@
     }
   ],
   "words": [
-    { "id": "w01", "word": "경복궁", "reading": "gyeong-bok-gung", "meaning": "Gyeongbokgung Palace", "example": "경복궁 돌담길이 아름다웠다.", "example_reading": "gyeong-bok-gung dol-dam-gil-i a-reum-da-wot-da", "example_en": "The stone wall path of Gyeongbokgung was beautiful." },
-    { "id": "w02", "word": "지붕", "reading": "ji-bung", "meaning": "roof", "example": "궁궐 지붕의 곡선이 멋있다.", "example_reading": "gung-gwol ji-bung-ui gok-seon-i meos-it-da", "example_en": "The curve of the palace roof is impressive." },
-    { "id": "w03", "word": "역사", "reading": "yeok-sa", "meaning": "history", "example": "그는 서울의 역사를 잘 알고 있었다.", "example_reading": "geu-neun seo-ul-ui yeok-sa-reul jal al-go iss-eot-da", "example_en": "He knew Seoul's history well." },
-    { "id": "w04", "word": "이야기", "reading": "i-ya-gi", "meaning": "story", "example": "그가 궁궐에 대한 이야기를 들려주었다.", "example_reading": "geu-ga gung-gwol-e dae-han i-ya-gi-reul deul-lyeo-ju-eot-da", "example_en": "He told me a story about the palace." },
-    { "id": "w05", "word": "진지하다", "reading": "jin-ji-ha-da", "meaning": "to be serious, sincere", "example": "그의 표정이 갑자기 진지해졌다.", "example_reading": "geu-ui pyo-jeong-i gap-ja-gi jin-ji-hae-jyeot-da", "example_en": "His expression suddenly turned serious." }
+    {
+      "id": "w01",
+      "word": "궁궐",
+      "reading": "gung-gwol",
+      "meaning": "Royal palace",
+      "example": "궁궐 지붕 위로 노을이 물들고 있었습니다.",
+      "example_reading": "gung-gwol ji-bung wi-ro no-eul-i mul-deul-go it-eot-seum-ni-da",
+      "example_en": "The sunset was coloring the sky above the palace roof."
+    },
+    {
+      "id": "w02",
+      "word": "지붕",
+      "reading": "ji-bung",
+      "meaning": "roof",
+      "example": "궁궐 지붕의 곡선이 멋있다.",
+      "example_reading": "gung-gwol ji-bung-ui gok-seon-i meos-it-da",
+      "example_en": "The curve of the palace roof is impressive."
+    },
+    {
+      "id": "w03",
+      "word": "역사",
+      "reading": "yeok-sa",
+      "meaning": "history",
+      "example": "그는 서울의 역사를 잘 알고 있었다.",
+      "example_reading": "geu-neun seo-ul-ui yeok-sa-reul jal al-go iss-eot-da",
+      "example_en": "He knew Seoul's history well."
+    },
+    {
+      "id": "w04",
+      "word": "이야기",
+      "reading": "i-ya-gi",
+      "meaning": "story",
+      "example": "그가 궁궐에 대한 이야기를 들려주었다.",
+      "example_reading": "geu-ga gung-gwol-e dae-han i-ya-gi-reul deul-lyeo-ju-eot-da",
+      "example_en": "He told me a story about the palace."
+    },
+    {
+      "id": "w05",
+      "word": "진지하다",
+      "reading": "jin-ji-ha-da",
+      "meaning": "to be serious, sincere",
+      "example": "그의 표정이 갑자기 진지해졌다.",
+      "example_reading": "geu-ui pyo-jeong-i gap-ja-gi jin-ji-hae-jyeot-da",
+      "example_en": "His expression suddenly turned serious."
+    }
   ],
   "sentences": [
-    { "id": "s01", "ko": "경복궁 돌담길이 아름다웠다.", "reading": "gyeong-bok-gung dol-dam-gil-i a-reum-da-wot-da", "en": "The stone wall path of Gyeongbokgung was beautiful." },
-    { "id": "s02", "ko": "궁궐 지붕의 곡선이 멋있다.", "reading": "gung-gwol ji-bung-ui gok-seon-i meos-it-da", "en": "The curve of the palace roof is impressive." },
-    { "id": "s03", "ko": "그는 서울의 역사를 잘 알고 있었다.", "reading": "geu-neun seo-ul-ui yeok-sa-reul jal al-go iss-eot-da", "en": "He knew Seoul's history well." },
-    { "id": "s04", "ko": "그가 궁궐에 대한 이야기를 들려주었다.", "reading": "geu-ga gung-gwol-e dae-han i-ya-gi-reul deul-lyeo-ju-eot-da", "en": "He told me a story about the palace." },
-    { "id": "s05", "ko": "그의 표정이 갑자기 진지해졌다.", "reading": "geu-ui pyo-jeong-i gap-ja-gi jin-ji-hae-jyeot-da", "en": "His expression suddenly turned serious." }
+    {
+      "id": "s01",
+      "ko": "경복궁 돌담길이 아름다웠다.",
+      "reading": "gyeong-bok-gung dol-dam-gil-i a-reum-da-wot-da",
+      "en": "The stone wall path of Gyeongbokgung was beautiful."
+    },
+    {
+      "id": "s02",
+      "ko": "궁궐 지붕의 곡선이 멋있다.",
+      "reading": "gung-gwol ji-bung-ui gok-seon-i meos-it-da",
+      "en": "The curve of the palace roof is impressive."
+    },
+    {
+      "id": "s03",
+      "ko": "그는 서울의 역사를 잘 알고 있었다.",
+      "reading": "geu-neun seo-ul-ui yeok-sa-reul jal al-go iss-eot-da",
+      "en": "He knew Seoul's history well."
+    },
+    {
+      "id": "s04",
+      "ko": "그가 궁궐에 대한 이야기를 들려주었다.",
+      "reading": "geu-ga gung-gwol-e dae-han i-ya-gi-reul deul-lyeo-ju-eot-da",
+      "en": "He told me a story about the palace."
+    },
+    {
+      "id": "s05",
+      "ko": "그의 표정이 갑자기 진지해졌다.",
+      "reading": "geu-ui pyo-jeong-i gap-ja-gi jin-ji-hae-jyeot-da",
+      "en": "His expression suddenly turned serious."
+    }
   ]
 }

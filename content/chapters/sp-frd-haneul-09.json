@@ -1,0 +1,62 @@
+{
+  "id": "sp-frd-haneul-09",
+  "character_id": "haneul",
+  "title": "됐어, 남겼어",
+  "emoji": "📸",
+  "story": [
+    {
+      "text": "여행의 마지막 밤, 한옥마을 지붕 너머로 노을이 붉게 번지고 있었다. 하늘과 나는 처마 밑 평상에 나란히 걸터앉았다.",
+      "reading": "yeo-haeng-ui ma-ji-mak bam, han-ok-ma-eul ji-bung neo-meo-ro no-eul-i bulg-ge beon-ji-go iss-eot-da. ha-neul-gwa na-neun cheo-ma mit pyeong-sang-e na-ran-hi geol-teo-anj-at-da.",
+      "en": "On the last night of the trip, the sunset spread red beyond the rooftops of Hanok Village. Haneul and I sat side by side on a wooden bench under the eaves."
+    },
+    {
+      "text": "그가 휴대폰 사진첩을 꺼내 넘기기 시작했다. \"이거 봐. 첫날 니 캐리어 들고 헥헥대던 사진.\" 우리는 사진 한 장 한 장에 웃음을 터뜨렸다.",
+      "reading": "geu-ga hyu-dae-pon sa-jin-cheob-eul kkeo-nae neom-gi-gi si-jak-haet-da. i-geo bwa. cheot-nal ni kae-ri-eo deul-go hek-hek-dae-deon sa-jin. u-ri-neun sa-jin han jang han jang-e us-eum-eul teo-tteu-lyeot-da.",
+      "en": "He pulled out his phone's photo album and started scrolling. \"Look at this. You huffing and puffing with your suitcase on day one.\" We burst into laughter over each photo.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "\"치맥 먹던 날도, 노래방에서 네가 발라드 부르던 날도… 다 엊그제 같은데.\" 열흘 동안 쌓인 추억이 사진 속에 가득했다.",
+      "reading": "chi-maek meok-deon nal-do, no-rae-bang-e-seo ne-ga bal-la-deu bu-reu-deon nal-do… da eoj-geu-je gat-eun-de. yeol-heul dong-an ssah-in chu-eog-i sa-jin sog-e ga-deuk-haet-da.",
+      "en": "\"The day we had chicken and beer, the day you sang that ballad at noraebang… it all feels like yesterday.\" The photos were packed with memories built up over the past ten days.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "\"이 순간, 어디에라도 좀 남기고 싶다.\" 내가 중얼거리자, 하늘이 말없이 우리 둘의 사진을 한 장 더 찍었다. \"됐어, 남겼어.\"",
+      "reading": "i sun-gan, eo-di-e-ra-do jom nam-gi-go sip-da. nae-ga jung-eol-geo-ri-ja, ha-neul-i mal-eop-si u-ri dul-ui sa-jin-eul han jang deo jjig-eot-da. dwaess-eo, nam-gyeoss-eo.",
+      "en": "\"I want to leave this moment behind somewhere,\" I murmured, and without a word, Haneul took one more photo of the two of us. \"Done. It's kept now.\"",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "\"여행 끝나면 좀 그리워하겠지, 이런 거.\" 내가 아쉬운 듯 말하자, 그는 픽 웃었다. \"그리워할 필요 없어. 또 오면 되잖아.\"",
+      "reading": "yeo-haeng kkeut-na-myeon jom geu-ri-wo-ha-get-ji, i-reon geo. nae-ga a-swi-un deut mal-ha-ja, geu-neun pik us-eot-da. geu-ri-wo-hal pil-yo eop-seo. tto o-myeon doe-jan-a.",
+      "en": "\"Once the trip's over, I think I'll miss this kind of thing.\" I said, a little wistfully, and he smirked. \"No need to miss it. Just come again.\"",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "\"그래도 열흘 동안 진짜 알차게 놀았다, 우리.\" 나는 뿌듯한 얼굴로 기지개를 켰다. 하늘도 드물게 흡족한 표정을 지었다.",
+      "reading": "geu-rae-do yeol-heul dong-an jin-jja al-cha-ge nol-at-da, u-ri. na-neun ppu-deut-han eol-gul-lo gi-ji-gae-reul kyeot-da. ha-neul-do deu-mul-ge heup-jok-han pyo-jeong-eul ji-eot-da.",
+      "en": "\"Still, we really made the most of these ten days.\" I stretched, looking satisfied. Even Haneul wore a rare, contented expression.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "노을이 완전히 저물고 나서야 우리는 자리에서 일어났다. 오늘 하루도, 이 여행 전체도, 잊지 못할 하루로 남을 것 같았다.",
+      "reading": "no-eul-i wan-jeon-hi jeo-mul-go na-seo-ya u-ri-neun ja-ri-e-seo il-eo-nat-da. o-neul ha-ru-do, i yeo-haeng jeon-che-do, ij-ji mot-hal ha-ru-ro nam-eul geot gat-at-da.",
+      "en": "Only once the sunset had fully faded did we finally get up. I had a feeling today, and this whole trip, would stay with me as a day I'd never forget."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "추억", "reading": "chu-eok", "meaning": "memory (of a shared experience)", "example": "우리에겐 좋은 추억이 많다.", "example_reading": "u-ri-e-ge-n jo-eun chu-eog-i man-ta", "example_en": "We have a lot of good memories." },
+    { "id": "w02", "word": "남기다", "reading": "nam-gi-da", "meaning": "to leave behind, to preserve", "example": "사진으로 그 순간을 남겼다.", "example_reading": "sa-jin-eu-ro geu sun-gan-eul nam-gyeot-da", "example_en": "I preserved that moment in a photo." },
+    { "id": "w03", "word": "뿌듯하다", "reading": "ppu-deut-ha-da", "meaning": "to feel proud, fulfilled", "example": "다 해내고 나니 뿌듯하다.", "example_reading": "da hae-nae-go na-ni ppu-deut-ha-da", "example_en": "Now that it's all done, I feel proud." },
+    { "id": "w04", "word": "사진첩", "reading": "sa-jin-cheop", "meaning": "photo album", "example": "사진첩을 보며 옛날 생각이 났다.", "example_reading": "sa-jin-cheob-eul bo-myeo yet-nal saeng-gag-i nat-da", "example_en": "Looking at the photo album, old memories came back." },
+    { "id": "w05", "word": "그리워하다", "reading": "geu-ri-wo-ha-da", "meaning": "to miss, to long for", "example": "고향을 그리워했다.", "example_reading": "go-hyang-eul geu-ri-wo-haet-da", "example_en": "I missed my hometown." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "우리에겐 좋은 추억이 많다.", "reading": "u-ri-e-ge-n jo-eun chu-eog-i man-ta", "en": "We have a lot of good memories." },
+    { "id": "s02", "ko": "사진으로 그 순간을 남겼다.", "reading": "sa-jin-eu-ro geu sun-gan-eul nam-gyeot-da", "en": "I preserved that moment in a photo." },
+    { "id": "s03", "ko": "다 해내고 나니 뿌듯하다.", "reading": "da hae-nae-go na-ni ppu-deut-ha-da", "en": "Now that it's all done, I feel proud." },
+    { "id": "s04", "ko": "사진첩을 보며 옛날 생각이 났다.", "reading": "sa-jin-cheob-eul bo-myeo yet-nal saeng-gag-i nat-da", "en": "Looking at the photo album, old memories came back." },
+    { "id": "s05", "ko": "고향을 그리워했다.", "reading": "go-hyang-eul geu-ri-wo-haet-da", "en": "I missed my hometown." }
+  ]
+}

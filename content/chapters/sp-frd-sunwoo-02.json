@@ -1,0 +1,93 @@
+{
+  "id": "sp-frd-sunwoo-02",
+  "character_id": "sunwoo",
+  "title": "치맥 아니면 안 되는 밤",
+  "emoji": "🍗",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "서면 골목, 빨간 간판의 치킨집 앞에 선우가 자신 있게 멈춰 선다. \"여기 아니면 오늘 밤은 인정 못 한다.\"",
+      "reading": "seo-myeon gol-mok, ppal-gan gan-pan-ui chi-kin-jib ap-e seon-u-ga ja-sin it-ge meom-chwo seon-da. yeo-gi a-ni-myeon o-neul bam-eun in-jeong mot han-da.",
+      "en": "In a Seomyeon alley, Sunwoo stops confidently in front of a chicken place with a red sign. \"If it's not here, tonight doesn't count.\""
+    },
+    {
+      "text": "자리에 앉자마자 그는 메뉴판도 안 보고 주문한다. \"양념 반 후라이드 반, 그리고 생맥 두 잔부터 도.\"",
+      "reading": "ja-ri-e anj-ja-ma-ja geu-neun me-nyu-pan-do an bo-go ju-mun-han-da. yang-nyeom ban hu-ra-i-deu ban, geu-ri-go saeng-maek du jan-bu-teo do.",
+      "en": "As soon as we sit down, he orders without even looking at the menu. \"Half seasoned, half fried, and two draft beers to start.\"",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "\"짠, 오랜만에 얼굴 본 기념으로.\" 잔을 부딪히자 청량한 소리가 시끌벅적한 가게 안에 퍼진다.",
+      "reading": "jjan, o-raen-man-e eol-gul bon gi-nyeom-eu-ro. jan-eul bu-di-chi-ja cheong-nyang-han so-ri-ga si-kkeul-beok-jeok-han ga-ge an-e peo-jin-da.",
+      "en": "\"Cheers, to seeing each other's faces again after so long.\" As our glasses clink, a crisp sound spreads through the noisy, lively restaurant.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "치킨이 나오자 선우는 제일 큼직한 조각을 내 접시 위에 척 올려준다. \"니 다리 살 좋아했제? 안 잊어뿟다.\"",
+      "reading": "chi-kin-i na-o-ja seon-u-neun je-il keum-jik-han jo-gak-eul nae jeop-si wi-e cheok ol-lyeo-jun-da. ni da-ri sal jo-a-haet-je? an ij-eo-bbut-da.",
+      "en": "When the chicken arrives, Sunwoo casually plops the biggest piece onto my plate. \"You liked the drumstick, right? I didn't forget.\"",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "맥주 거품이 콧등에 살짝 묻은 채로 그가 웃는다. 시답잖은 농담 하나에도 배꼽을 잡고 웃던, 그 시절 그대로다.",
+      "reading": "maek-ju geo-pum-i kot-deung-e sal-jjak mud-eun chae-ro geu-ga us-neun-da. si-dab-jan-eun nong-dam ha-na-e-do bae-kkob-eul jab-go us-deon, geu si-jeol geu-dae-ro-da.",
+      "en": "He laughs with a little beer foam still on the tip of his nose. Cracking up over the silliest jokes, just like the old days.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "\"부산 사람은 치킨에 맥주 아니면 하루가 안 끝난다 아이가.\" 그는 뼈다귀를 정리하며 능청스럽게 덧붙인다.",
+      "reading": "bu-san sa-ram-eun chi-kin-e maek-ju a-ni-myeon ha-ru-ga an kkeut-nan-da a-i-ga. geu-neun ppyeo-da-gwi-reul jeong-ni-ha-myeo neung-cheong-seu-reop-ge deot-bu-chin-da.",
+      "en": "\"For a Busan person, the day just isn't over without chicken and beer.\" He adds, straight-faced, while tidying up the bones."
+    },
+    {
+      "text": "치킨 무 한 조각을 나눠 먹으며 우리는 별거 아닌 이야기로 시간 가는 줄도 몰랐다. 그런 밤이 참 오랜만이었다.",
+      "reading": "chi-kin mu han jo-gak-eul na-nwo meok-eu-myeo u-ri-neun byeol-geo a-nin i-ya-gi-ro si-gan ga-neun jul-do mol-lat-da. geu-reon bam-i cham o-raen-man-i-eot-da.",
+      "en": "Sharing a piece of pickled radish, we lost track of time over nothing-in-particular chatter. It had been a long time since a night like that.",
+      "highlight_word_id": "w05"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "생맥주", "reading": "saeng-maek-ju", "meaning": "draft beer", "example": "여름엔 시원한 생맥주가 최고다.", "example_reading": "yeo-reum-en si-won-han saeng-maek-ju-ga choe-go-da", "example_en": "In summer, cold draft beer is the best." },
+    { "id": "w02", "word": "청량하다", "reading": "cheong-nyang-ha-da", "meaning": "to be crisp, refreshing (sound/feeling)", "example": "잔이 부딪히는 청량한 소리가 났다.", "example_reading": "jan-i bu-di-chi-neun cheong-nyang-han so-ri-ga nat-da", "example_en": "There was a crisp sound as the glasses clinked." },
+    { "id": "w03", "word": "잊어버리다", "reading": "ij-eo-beo-ri-da", "meaning": "to forget completely", "example": "그는 약속을 잊어버리지 않았다.", "example_reading": "geu-neun yak-sok-eul ij-eo-beo-ri-ji anh-at-da", "example_en": "He didn't forget the promise." },
+    { "id": "w04", "word": "시답잖다", "reading": "si-dab-jan-da", "meaning": "to be trivial, not worth taking seriously (but still fun)", "example": "우리는 시답잖은 농담에도 크게 웃었다.", "example_reading": "u-ri-neun si-dab-jan-eun nong-dam-e-do keu-ge us-eot-da", "example_en": "We laughed hard even at the silliest jokes." },
+    { "id": "w05", "word": "나눠 먹다", "reading": "na-nwo meok-da", "meaning": "to share food, to eat together", "example": "친구들과 치킨을 나눠 먹었다.", "example_reading": "chin-gu-deul-gwa chi-kin-eul na-nwo meok-eot-da", "example_en": "I shared chicken with my friends." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "우리는 생맥주부터 두 잔 시켰다.", "reading": "u-ri-neun saeng-maek-ju-bu-teo du jan si-kyeot-da", "en": "We ordered two draft beers first." },
+    { "id": "s02", "ko": "잔이 부딪히며 청량한 소리가 났다.", "reading": "jan-i bu-di-chi-myeo cheong-nyang-han so-ri-ga nat-da", "en": "The glasses clinked with a crisp sound." },
+    { "id": "s03", "ko": "그는 내가 좋아하는 부위를 잊어버리지 않았다.", "reading": "geu-neun nae-ga jo-a-ha-neun bu-wi-reul ij-eo-beo-ri-ji anh-at-da", "en": "He didn't forget the part I liked." },
+    { "id": "s04", "ko": "시답잖은 농담에도 우리는 계속 웃었다.", "reading": "si-dab-jan-eun nong-dam-e-do u-ri-neun gye-sok us-eot-da", "en": "We kept laughing even at the silliest jokes." },
+    { "id": "s05", "ko": "치킨을 나눠 먹으며 이야기꽃을 피웠다.", "reading": "chi-kin-eul na-nwo meok-eu-myeo i-ya-gi-kkoch-eul pi-wot-da", "en": "We shared chicken and chatted away happily." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "선우", "text": "양념 반 후라이드 반, 생맥 두 잔부터 도. 여기 치킨이 부산에서 제일이다.", "reading": "yang-nyeom ban hu-ra-i-deu ban, saeng-maek du jan-bu-teo do. yeo-gi chi-kin-i bu-san-e-seo je-il-i-da.", "en": "Half seasoned, half fried, and two draft beers first. This place has the best chicken in Busan." },
+        { "speaker": "승객", "text": "너 진짜 여기 자주 오나 보다. 메뉴판도 안 보네.", "reading": "neo jin-jja yeo-gi ja-ju o-na bo-da. me-nyu-pan-do an bo-ne.", "en": "You must really come here a lot. You didn't even look at the menu." },
+        { "speaker": "선우", "text": "이모가 내 얼굴 보면 다 아신다. 니 오늘부터 여기 단골이다.", "reading": "i-mo-ga nae eol-gul bo-myeon da a-sin-da. ni o-neul-bu-teo yeo-gi dan-gol-i-da.", "en": "The auntie here knows my face and my order by heart. You're a regular here starting today too." },
+        { "speaker": "승객", "text": "좋다, 그럼 매일 와도 되겠네.", "reading": "jo-ta, geu-reom mae-il wa-do doe-get-ne.", "en": "Nice, then I guess I could come every day." }
+      ],
+      "question": "선우가 치킨집에서 보인 모습으로 알맞은 것은?",
+      "question_en": "What did Sunwoo do at the chicken restaurant?",
+      "correct_answer": "메뉴판을 보지 않고 익숙하게 주문했다",
+      "options": ["메뉴판을 보지 않고 익숙하게 주문했다", "다른 가게로 자리를 옮기자고 했다", "음식을 다 남기고 나왔다", "혼자 조용히 먹기만 했다"],
+      "explanation": "선우는 단골집답게 메뉴판도 보지 않고 익숙하게 치킨과 맥주를 주문합니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "선우", "text": "니 다리 살 좋아했제? 안 잊어뿟다. 이거 니 먼저 무라.", "reading": "ni da-ri sal jo-a-haet-je? an ij-eo-bbut-da. i-geo ni meon-jeo mu-ra.", "en": "You liked the drumstick, right? I didn't forget. Eat this one first." },
+        { "speaker": "승객", "text": "와, 그걸 아직도 기억하고 있었어?", "reading": "wa, geu-geol a-jik-do gi-eok-ha-go iss-eot-eo?", "en": "Wow, you still remembered that?" },
+        { "speaker": "선우", "text": "당연하지. 니에 대한 건 다 기억한다, 내가.", "reading": "dang-yeon-ha-ji. ni-e dae-han geon da gi-eok-han-da, nae-ga.", "en": "Of course. I remember everything about you." },
+        { "speaker": "승객", "text": "고맙다, 진짜. 너도 좀 먹어, 자꾸 나만 챙기지 말고.", "reading": "go-map-da, jin-jja. neo-do jom meok-eo, ja-kku na-man chaeng-gi-ji mal-go.", "en": "Thanks, seriously. You eat too, stop always looking out for just me." }
+      ],
+      "question": "선우가 치킨 다리를 승객에게 준 이유는 무엇인가요?",
+      "question_en": "Why did Sunwoo give the passenger the chicken drumstick?",
+      "correct_answer": "승객이 좋아하는 부위를 기억하고 있었기 때문에",
+      "options": ["승객이 좋아하는 부위를 기억하고 있었기 때문에", "자기가 다리 살을 싫어하기 때문에", "가게 이모가 시켜서", "가위바위보에서 졌기 때문에"],
+      "explanation": "선우는 오래전부터 승객이 다리 살을 좋아한다는 것을 기억하고 챙겨줍니다."
+    }
+  ]
+}

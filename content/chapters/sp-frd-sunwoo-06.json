@@ -1,0 +1,93 @@
+{
+  "id": "sp-frd-sunwoo-06",
+  "character_id": "sunwoo",
+  "title": "말 안 해도 안다, 내가",
+  "emoji": "🫂",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "이기대 해안 산책로, 파도 소리만 들리는 벤치에 나란히 앉았다. 아까부터 말수가 줄어든 나를 선우가 가만히 지켜본다.",
+      "reading": "i-gi-dae hae-an san-chaek-lo, pa-do so-ri-man deul-li-neun ben-chi-e na-ran-hi anj-at-da. a-kka-bu-teo mal-su-ga jul-eo-deun na-reul seon-u-ga ga-man-hi ji-kyeo-bon-da.",
+      "en": "On the Igidae coastal trail, we sit side by side on a bench where only the sound of waves can be heard. Sunwoo has been quietly watching me, since I've been unusually quiet for a while now."
+    },
+    {
+      "text": "\"니 아까부터 표정이 안 좋다. 무슨 일 있제?\" 그는 캐묻지 않고, 그저 옆에서 기다려 주는 눈빛으로 묻는다.",
+      "reading": "ni a-kka-bu-teo pyo-jeong-i an jo-ta. mu-seun il it-je? geu-neun kae-mut-ji anh-go, geu-jeo yeop-e-seo gi-da-ryeo ju-neun nun-bit-eu-ro mun-neun-da.",
+      "en": "\"You've had a bad look on your face for a while. Something's up, right?\" He doesn't press, just asks with eyes that quietly wait for me alongside.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "결국 나는 요즘 마음속에 쌓아 뒀던 고민을 하나씩 털어놓기 시작했다. 선우는 끼어들지 않고 끝까지 들어준다.",
+      "reading": "gyeol-guk na-neun yo-jeum ma-eum-sok-e ssa-a dwot-deon go-min-eul ha-na-ssik teol-eo-noh-gi si-jak-haet-da. seon-u-neun kki-eo-deul-ji anh-go kkeut-kka-ji deul-eo-jun-da.",
+      "en": "In the end, I started unloading, one by one, the worries I'd been carrying inside. Sunwoo doesn't interrupt, and listens all the way through.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "\"고생했네, 니. 혼자 그거 다 짊어지고 있었나.\" 그의 목소리는 여느 때와 다르게 낮고 진지했다.",
+      "reading": "go-saeng-haet-ne, ni. hon-ja geu-geo da jjim-eo-ji-go iss-eot-na. geu-ui mok-so-ri-neun yeo-neu ttae-wa da-reu-ge nat-go jin-ji-haet-da.",
+      "en": "\"You've had it rough. Were you carrying all that alone?\" His voice was low and serious, unlike his usual self.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "\"말 안 해도 안다, 내가. 니 원래 힘든 티 잘 안 내는 거.\" 그가 내 어깨를 툭툭 두드리며 말을 잇는다.",
+      "reading": "mal an hae-do an-da, nae-ga. ni won-lae him-deun ti jal an nae-neun geo. geu-ga nae eo-kkae-reul tuk-tuk du-deu-ri-myeo mal-eul it-neun-da.",
+      "en": "\"I know even without you saying it. You've always been bad at showing when you're struggling.\" He pats my shoulder and continues.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "\"근데 내한테는 좀 기대라. 우리 그런 사이 아이가.\" 담담하게 건네는 그 말에, 꾹 참았던 눈물이 결국 핑 돈다.",
+      "reading": "geun-de nae-han-te-neun jom gi-dae-ra. u-ri geu-reon sa-i a-i-ga. dam-dam-ha-ge geon-ne-neun geu mal-e, kkuk cham-at-deon nun-mul-i gyeol-guk ping don-da.",
+      "en": "\"But you can lean on me a little. Isn't that what we are to each other.\" At those calmly spoken words, the tears I'd been holding back finally well up.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "선우는 별다른 위로의 말 대신, 그저 조용히 내 옆자리를 지켰다. 파도 소리만이 우리 사이를 채웠고, 그걸로 충분했다.",
+      "reading": "seon-u-neun byeol-da-reun wi-ro-ui mal dae-sin, geu-jeo jo-yong-hi nae yeop-ja-ri-reul ji-kyeot-da. pa-do so-ri-man-i u-ri sa-i-reul chae-wot-go, geu-geol-lo chung-bun-haet-da.",
+      "en": "Instead of any special words of comfort, Sunwoo simply, quietly held his seat beside me. Only the sound of waves filled the space between us, and that was enough."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "표정", "reading": "pyo-jeong", "meaning": "expression (on one's face)", "example": "그의 표정이 오늘따라 어두웠다.", "example_reading": "geu-ui pyo-jeong-i o-neul-tta-ra eo-du-wot-da", "example_en": "His expression looked especially dark today." },
+    { "id": "w02", "word": "털어놓다", "reading": "teol-eo-noh-da", "meaning": "to open up, confide, get something off one's chest", "example": "친구에게 고민을 털어놓았다.", "example_reading": "chin-gu-e-ge go-min-eul teol-eo-noh-at-da", "example_en": "I opened up about my worries to my friend." },
+    { "id": "w03", "word": "짊어지다", "reading": "jjim-eo-ji-da", "meaning": "to carry (a burden), to shoulder", "example": "혼자 그 짐을 다 짊어지고 있었다.", "example_reading": "hon-ja geu jim-eul da jjim-eo-ji-go iss-eot-da", "example_en": "I had been shouldering that whole burden alone." },
+    { "id": "w04", "word": "기대다", "reading": "gi-dae-da", "meaning": "to lean on, to rely on (someone)", "example": "힘들 때는 나한테 기대도 된다.", "example_reading": "him-deul ttae-neun na-han-te gi-dae-do doen-da", "example_en": "When things are hard, you can lean on me." },
+    { "id": "w05", "word": "위로", "reading": "wi-ro", "meaning": "comfort, consolation", "example": "그의 말 한마디가 큰 위로가 됐다.", "example_reading": "geu-ui mal han-ma-di-ga keun wi-ro-ga dwaet-da", "example_en": "His single sentence became a great comfort." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "그의 표정이 갑자기 어두워졌다.", "reading": "geu-ui pyo-jeong-i gap-ja-gi eo-du-wo-jyeot-da", "en": "His expression suddenly darkened." },
+    { "id": "s02", "ko": "나는 그에게 고민을 털어놓았다.", "reading": "na-neun geu-e-ge go-min-eul teol-eo-noh-at-da", "en": "I opened up to him about my worries." },
+    { "id": "s03", "ko": "혼자 짐을 짊어지지 않아도 된다.", "reading": "hon-ja jim-eul jjim-eo-ji-ji anh-a-do doen-da", "en": "You don't have to shoulder the burden alone." },
+    { "id": "s04", "ko": "힘들 때는 친구에게 기대면 된다.", "reading": "him-deul ttae-neun chin-gu-e-ge gi-dae-myeon doen-da", "en": "When it's hard, you can lean on a friend." },
+    { "id": "s05", "ko": "그의 진심 어린 위로가 큰 힘이 됐다.", "reading": "geu-ui jin-sim eo-rin wi-ro-ga keun him-i dwaet-da", "en": "His sincere comfort became a great strength." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "선우", "text": "니 아까부터 표정이 안 좋다. 무슨 일 있제?", "reading": "ni a-kka-bu-teo pyo-jeong-i an jo-ta. mu-seun il it-je?", "en": "You've had a bad look on your face for a while. Something's up, right?" },
+        { "speaker": "승객", "text": "티가 그렇게 났어? 별거 아니야, 그냥 요즘 좀 복잡해서.", "reading": "ti-ga geu-reoh-ge nat-eo? byeol-geo a-ni-ya, geu-nyang yo-jeum jom bok-jab-hae-seo.", "en": "Was it that obvious? It's nothing much, just things have been complicated lately." },
+        { "speaker": "선우", "text": "별거 아니어도 된다, 얘기하고 싶으면 해라. 내는 그냥 들어줄 테니까.", "reading": "byeol-geo a-ni-eo-do doen-da, yae-gi-ha-go sip-eu-myeon hae-ra. nae-neun geu-nyang deul-eo-jul te-ni-kka.", "en": "It's fine even if it's nothing much, talk if you want to. I'll just listen." },
+        { "speaker": "승객", "text": "고마워. 사실 요즘 고민이 좀 있었어.", "reading": "go-ma-wo. sa-sil yo-jeum go-min-i jom iss-eot-eo.", "en": "Thanks. Actually, I've had some worries lately." }
+      ],
+      "question": "선우가 승객의 표정을 보고 취한 태도로 알맞은 것은?",
+      "question_en": "How did Sunwoo respond upon noticing the passenger's expression?",
+      "correct_answer": "캐묻지 않고 편하게 이야기할 수 있도록 기다려 주었다",
+      "options": ["캐묻지 않고 편하게 이야기할 수 있도록 기다려 주었다", "무슨 일인지 계속 캐물었다", "못 본 척 넘어갔다", "화제를 억지로 바꿨다"],
+      "explanation": "선우는 재촉하지 않고, 승객이 편하게 이야기를 꺼낼 수 있도록 기다려 줍니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "선우", "text": "고생했네, 니. 혼자 그거 다 짊어지고 있었나.", "reading": "go-saeng-haet-ne, ni. hon-ja geu-geo da jjim-eo-ji-go iss-eot-na.", "en": "You've had it rough. Were you carrying all that alone?" },
+        { "speaker": "승객", "text": "괜히 걱정 끼치는 거 같아서 말 안 했었어.", "reading": "gwaen-hi geok-jeong kki-chi-neun geo gat-a-seo mal an haet-eot-eo.", "en": "I didn't say anything because I felt like it'd just worry you." },
+        { "speaker": "선우", "text": "말 안 해도 안다, 내가. 근데 내한테는 좀 기대라. 우리 그런 사이 아이가.", "reading": "mal an hae-do an-da, nae-ga. geun-de nae-han-te-neun jom gi-dae-ra. u-ri geu-reon sa-i a-i-ga.", "en": "I know even without you saying it. But you can lean on me a little. Isn't that what we are to each other." },
+        { "speaker": "승객", "text": "고맙다, 진짜. 너 있어서 다행이야.", "reading": "go-map-da, jin-jja. neo iss-eo-seo da-haeng-i-ya.", "en": "Thanks, seriously. I'm glad you're here." }
+      ],
+      "question": "선우가 승객에게 전하고 싶었던 마음은 무엇인가요?",
+      "question_en": "What feeling was Sunwoo trying to convey to the passenger?",
+      "correct_answer": "힘들 때 자신에게 기대도 된다는 것",
+      "options": ["힘들 때 자신에게 기대도 된다는 것", "고민을 혼자 해결하라는 것", "빨리 잊어버리라는 것", "다른 사람에게 말하라는 것"],
+      "explanation": "선우는 승객이 혼자 짐을 짊어지지 않고 자신에게 기대도 된다는 진심을 전합니다."
+    }
+  ]
+}

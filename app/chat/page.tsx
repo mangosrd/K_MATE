@@ -4,8 +4,9 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import BottomNav from "@/components/ui/BottomNav";
-import { MOCK_CHARACTERS, MOCK_USER, MOCK_ALL_PROGRESS, canAccessCharacter } from "@/lib/db/mock";
-import { getEffectiveUserId, getCurrentUser } from "@/lib/auth/store";
+import { MOCK_CHARACTERS, MOCK_ALL_PROGRESS, canAccessCharacter } from "@/lib/db/mock";
+import { getEffectiveUserId } from "@/lib/auth/store";
+import { useMembership, useFreeCharSlots } from "@/lib/auth/useAuthUser";
 import { useLanguage } from "@/components/LanguageContext";
 import type { Progress } from "@/types/database";
 import styles from "./chat-select.module.css";
@@ -14,7 +15,8 @@ const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:800
 
 export default function ChatSelectPage() {
   const { t } = useLanguage();
-  const membership = getCurrentUser()?.membership ?? MOCK_USER.membership;
+  const { membership } = useMembership();
+  const { freeSlots } = useFreeCharSlots();
   const isPremium = membership === "premium";
   const [allProgress, setAllProgress] = useState<Record<string, Progress>>(MOCK_ALL_PROGRESS);
 
@@ -69,9 +71,7 @@ export default function ChatSelectPage() {
           {/* 캐릭터 그리드 */}
           <div className={styles.charGrid}>
             {MOCK_CHARACTERS.map((char) => {
-              const canAccess = canAccessCharacter(
-                char.id, membership, MOCK_USER.free_character_slots
-              );
+              const canAccess = canAccessCharacter(char.id, membership, freeSlots);
               const progress = allProgress[char.id];
               const affinity = progress?.affinity ?? 0;
               const affinityStars = Math.round(affinity / 20);
@@ -134,14 +134,13 @@ export default function ChatSelectPage() {
                       {t("startChat")}
                     </Link>
                   ) : (
-                    <button
-                      disabled
+                    <Link
+                      href="/premium"
                       className={`btn btn-secondary btn-sm ${styles.chatBtn}`}
                       id={`btn-unlock-${char.id}`}
-                      style={{ opacity: 0.6, cursor: "not-allowed" }}
                     >
-                      {t("lockedPremium")}
-                    </button>
+                      ⭐ {t("lockedPremium")}
+                    </Link>
                   )}
                 </div>
               );

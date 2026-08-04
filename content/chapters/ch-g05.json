@@ -47,46 +47,161 @@
     }
   ],
   "words": [
-    { "id": "w01", "word": "계룡산", "reading": "gye-ryong-san", "meaning": "Gyeryongsan Mountain", "example": "계룡산은 산세가 닭과 용을 닮았다고 하여 붙여진 이름입니다.", "example_reading": "gye-ryong-san-eun san-se-ga dak-gwa yong-eul dalm-at-da-go ha-yeo bu-cheo-jin i-reum-im-ni-da", "example_en": "Gyeryongsan's name comes from its terrain resembling a chicken and a dragon." },
-    { "id": "w02", "word": "산신", "reading": "san-sin", "meaning": "Mountain spirit / deity", "example": "산신에게 제사를 지내는 중악단이 계룡산에 있습니다.", "example_reading": "san-sin-e-ge je-sa-reul ji-nae-neun jung-ak-dan-i gye-ryong-san-e it-seum-ni-da", "example_en": "Jungakdan, a shrine for rites to the mountain spirit, is located on Gyeryongsan." },
-    { "id": "w03", "word": "신도안", "reading": "sin-do-an", "meaning": "Sindoan (site once considered as a new capital)", "example": "신도안은 조선 초 새 도읍 후보지로 거론되었던 곳입니다.", "example_reading": "sin-do-an-eun jo-seon cho sae do-eup hu-bo-ji-ro geo-ron-doe-eot-deon gos-im-ni-da", "example_en": "Sindoan was a site discussed as a candidate for the new capital in early Joseon." },
-    { "id": "w04", "word": "명산", "reading": "myeong-san", "meaning": "Famous / sacred mountain", "example": "명산으로 꼽히는 계룡산에는 오래된 전설이 많이 전해집니다.", "example_reading": "myeong-san-eu-ro kkop-hi-neun gye-ryong-san-e-neun o-rae-doen jeon-seol-i man-i jeon-hae-jim-ni-da", "example_en": "Many old legends have been passed down about Gyeryongsan, regarded as a sacred mountain." },
-    { "id": "w05", "word": "전설", "reading": "jeon-seol", "meaning": "Legend / folktale", "example": "전설에 따르면 계룡산의 기운이 나라의 운을 좌우한다고 합니다.", "example_reading": "jeon-seol-e tta-reu-myeon gye-ryong-san-ui gi-un-i na-ra-ui un-eul jwa-u-han-da-go ham-ni-da", "example_en": "According to legend, Gyeryongsan's energy is said to determine the nation's fortune." }
+    {
+      "id": "w01",
+      "word": "봉우리",
+      "reading": "bong-u-ri",
+      "meaning": "Mountain peak",
+      "example": "산봉우리에 오르면 마을이 한눈에 내려다보입니다.",
+      "example_reading": "san-bong-u-ri-e o-reu-myeon ma-eul-i han-nun-e nae-ryeo-da-bo-im-ni-da",
+      "example_en": "From the mountain peak, you can look down over the whole village."
+    },
+    {
+      "id": "w02",
+      "word": "산신",
+      "reading": "san-sin",
+      "meaning": "Mountain spirit / deity",
+      "example": "산신에게 제사를 지내는 중악단이 계룡산에 있습니다.",
+      "example_reading": "san-sin-e-ge je-sa-reul ji-nae-neun jung-ak-dan-i gye-ryong-san-e it-seum-ni-da",
+      "example_en": "Jungakdan, a shrine for rites to the mountain spirit, is located on Gyeryongsan."
+    },
+    {
+      "id": "w03",
+      "word": "명당",
+      "reading": "myeong-dang",
+      "meaning": "Auspicious site (good location by feng shui)",
+      "example": "사람들은 이곳을 나라의 수도로 삼을 명당이라고 믿었습니다.",
+      "example_reading": "sa-ram-deul-eun i-gos-eul na-ra-ui su-do-ro sam-eul myeong-dang-i-ra-go mid-eot-seum-ni-da",
+      "example_en": "People believed this place was an auspicious site fit to become the nation's capital."
+    },
+    {
+      "id": "w04",
+      "word": "명산",
+      "reading": "myeong-san",
+      "meaning": "Famous / sacred mountain",
+      "example": "명산으로 꼽히는 계룡산에는 오래된 전설이 많이 전해집니다.",
+      "example_reading": "myeong-san-eu-ro kkop-hi-neun gye-ryong-san-e-neun o-rae-doen jeon-seol-i man-i jeon-hae-jim-ni-da",
+      "example_en": "Many old legends have been passed down about Gyeryongsan, regarded as a sacred mountain."
+    },
+    {
+      "id": "w05",
+      "word": "전설",
+      "reading": "jeon-seol",
+      "meaning": "Legend / folktale",
+      "example": "전설에 따르면 계룡산의 기운이 나라의 운을 좌우한다고 합니다.",
+      "example_reading": "jeon-seol-e tta-reu-myeon gye-ryong-san-ui gi-un-i na-ra-ui un-eul jwa-u-han-da-go ham-ni-da",
+      "example_en": "According to legend, Gyeryongsan's energy is said to determine the nation's fortune."
+    }
   ],
   "sentences": [
-    { "id": "s01", "ko": "계룡산은 산세가 닭과 용을 닮았다고 하여 붙여진 이름입니다.", "reading": "gye-ryong-san-eun san-se-ga dak-gwa yong-eul dalm-at-da-go ha-yeo bu-cheo-jin i-reum-im-ni-da", "en": "Gyeryongsan's name comes from its terrain resembling a chicken and a dragon." },
-    { "id": "s02", "ko": "산신에게 제사를 지내는 중악단이 계룡산에 있습니다.", "reading": "san-sin-e-ge je-sa-reul ji-nae-neun jung-ak-dan-i gye-ryong-san-e it-seum-ni-da", "en": "Jungakdan, a shrine for rites to the mountain spirit, is located on Gyeryongsan." },
-    { "id": "s03", "ko": "신도안은 조선 초 새 도읍 후보지로 거론되었던 곳입니다.", "reading": "sin-do-an-eun jo-seon cho sae do-eup hu-bo-ji-ro geo-ron-doe-eot-deon gos-im-ni-da", "en": "Sindoan was a site discussed as a candidate for the new capital in early Joseon." },
-    { "id": "s04", "ko": "명산으로 꼽히는 계룡산에는 오래된 전설이 많이 전해집니다.", "reading": "myeong-san-eu-ro kkop-hi-neun gye-ryong-san-e-neun o-rae-doen jeon-seol-i man-i jeon-hae-jim-ni-da", "en": "Many old legends have been passed down about Gyeryongsan, regarded as a sacred mountain." },
-    { "id": "s05", "ko": "전설에 따르면 계룡산의 기운이 나라의 운을 좌우한다고 합니다.", "reading": "jeon-seol-e tta-reu-myeon gye-ryong-san-ui gi-un-i na-ra-ui un-eul jwa-u-han-da-go ham-ni-da", "en": "According to legend, Gyeryongsan's energy is said to determine the nation's fortune." }
+    {
+      "id": "s01",
+      "ko": "산봉우리에 오르면 마을이 한눈에 내려다보입니다.",
+      "reading": "san-bong-u-ri-e o-reu-myeon ma-eul-i han-nun-e nae-ryeo-da-bo-im-ni-da",
+      "en": "From the mountain peak, you can look down over the whole village."
+    },
+    {
+      "id": "s02",
+      "ko": "산신에게 제사를 지내는 중악단이 계룡산에 있습니다.",
+      "reading": "san-sin-e-ge je-sa-reul ji-nae-neun jung-ak-dan-i gye-ryong-san-e it-seum-ni-da",
+      "en": "Jungakdan, a shrine for rites to the mountain spirit, is located on Gyeryongsan."
+    },
+    {
+      "id": "s03",
+      "ko": "사람들은 이곳을 나라의 수도로 삼을 명당이라고 믿었습니다.",
+      "reading": "sa-ram-deul-eun i-gos-eul na-ra-ui su-do-ro sam-eul myeong-dang-i-ra-go mid-eot-seum-ni-da",
+      "en": "People believed this place was an auspicious site fit to become the nation's capital."
+    },
+    {
+      "id": "s04",
+      "ko": "명산으로 꼽히는 계룡산에는 오래된 전설이 많이 전해집니다.",
+      "reading": "myeong-san-eu-ro kkop-hi-neun gye-ryong-san-e-neun o-rae-doen jeon-seol-i man-i jeon-hae-jim-ni-da",
+      "en": "Many old legends have been passed down about Gyeryongsan, regarded as a sacred mountain."
+    },
+    {
+      "id": "s05",
+      "ko": "전설에 따르면 계룡산의 기운이 나라의 운을 좌우한다고 합니다.",
+      "reading": "jeon-seol-e tta-reu-myeon gye-ryong-san-ui gi-un-i na-ra-ui un-eul jwa-u-han-da-go ham-ni-da",
+      "en": "According to legend, Gyeryongsan's energy is said to determine the nation's fortune."
+    }
   ],
   "dialogues": [
     {
       "id": "d01",
       "turns": [
-        { "speaker": "등산객", "text": "저기 저 제단 같은 건물은 뭔가요?", "reading": "jeo-gi jeo je-dan gat-eun geon-mul-eun mwon-ga-yo?", "en": "What's that altar-like building over there?" },
-        { "speaker": "문화해설사", "text": "중악단이라고, 계룡산 산신께 나라의 안녕을 빌던 제사 공간이에요.", "reading": "jung-ak-dan-i-ra-go, gye-ryong-san san-sin-kke na-ra-ui an-nyeong-eul bil-deon je-sa gong-gan-i-e-yo.", "en": "That's called Jungakdan — a ritual space where people prayed to the mountain spirit of Gyeryongsan for the nation's peace." },
-        { "speaker": "등산객", "text": "지금도 제사를 지내나요?", "reading": "ji-geum-do je-sa-reul ji-nae-na-yo?", "en": "Are rites still held there today?" },
-        { "speaker": "문화해설사", "text": "네, 지금도 매년 봄가을에 산신제가 열려서 많은 사람이 찾아옵니다.", "reading": "ne, ji-geum-do mae-nyeon bom-ga-eul-e san-sin-je-ga yeol-lyeo-seo man-eun sa-ram-i chaj-a-om-ni-da.", "en": "Yes, a mountain-spirit rite is still held every spring and fall, drawing many visitors." }
+        {
+          "speaker": "등산객",
+          "text": "저기 저 제단 같은 건물은 뭔가요?",
+          "reading": "jeo-gi jeo je-dan gat-eun geon-mul-eun mwon-ga-yo?",
+          "en": "What's that altar-like building over there?"
+        },
+        {
+          "speaker": "문화해설사",
+          "text": "중악단이라고, 계룡산 산신께 나라의 안녕을 빌던 제사 공간이에요.",
+          "reading": "jung-ak-dan-i-ra-go, gye-ryong-san san-sin-kke na-ra-ui an-nyeong-eul bil-deon je-sa gong-gan-i-e-yo.",
+          "en": "That's called Jungakdan — a ritual space where people prayed to the mountain spirit of Gyeryongsan for the nation's peace."
+        },
+        {
+          "speaker": "등산객",
+          "text": "지금도 제사를 지내나요?",
+          "reading": "ji-geum-do je-sa-reul ji-nae-na-yo?",
+          "en": "Are rites still held there today?"
+        },
+        {
+          "speaker": "문화해설사",
+          "text": "네, 지금도 매년 봄가을에 산신제가 열려서 많은 사람이 찾아옵니다.",
+          "reading": "ne, ji-geum-do mae-nyeon bom-ga-eul-e san-sin-je-ga yeol-lyeo-seo man-eun sa-ram-i chaj-a-om-ni-da.",
+          "en": "Yes, a mountain-spirit rite is still held every spring and fall, drawing many visitors."
+        }
       ],
       "question": "문화해설사가 설명하는 중악단은 어떤 곳인가요?",
       "question_en": "According to the cultural guide, what kind of place is Jungakdan?",
       "correct_answer": "산신께 나라의 안녕을 빌던 제사 공간",
-      "options": ["산신께 나라의 안녕을 빌던 제사 공간", "왕이 머물던 여름 별궁", "계룡산 등산로의 휴게소", "불교 승려들의 수련 도량"],
+      "options": [
+        "산신께 나라의 안녕을 빌던 제사 공간",
+        "왕이 머물던 여름 별궁",
+        "계룡산 등산로의 휴게소",
+        "불교 승려들의 수련 도량"
+      ],
       "explanation": "문화해설사는 중악단이 계룡산 산신에게 나라의 안녕을 빌던 제사 공간이며, 지금도 봄가을에 산신제가 열린다고 설명합니다."
     },
     {
       "id": "d02",
       "turns": [
-        { "speaker": "여행자", "text": "여기 신도안이라는 지명이 남아 있던데, 무슨 뜻이에요?", "reading": "yeo-gi sin-do-an-i-ra-neun ji-myeong-i nam-a it-deon-de, mu-seun tteu-si-e-yo?", "en": "I saw the place name Sindoan still remains here — what does it mean?" },
-        { "speaker": "마을 주민", "text": "조선을 세운 태조가 이곳을 새 도읍으로 삼으려 했던 데서 온 이름이에요.", "reading": "jo-seon-eul se-un tae-jo-ga i-gos-eul sae do-eub-eu-ro sam-eu-ryeo haet-deon de-seo on i-reum-i-e-yo.", "en": "It comes from the fact that Taejo, the founder of Joseon, once tried to make this place the new capital." },
-        { "speaker": "여행자", "text": "그런데 왜 실제로 도읍이 되지는 못했나요?", "reading": "geu-reon-de wae sil-je-ro do-eub-i doe-ji-neun mot-haet-na-yo?", "en": "But why didn't it actually become the capital?" },
-        { "speaker": "마을 주민", "text": "공사가 시작된 지 얼마 안 돼 한양이 더 낫다는 의견에 밀려 계획이 중단됐답니다.", "reading": "gong-sa-ga si-jak-doen ji eol-ma an dwae han-yang-i deo nat-da-neun ui-gyeon-e mil-lyeo gye-hoeg-i jung-dan-dwaet-dam-ni-da.", "en": "Soon after construction began, the plan was halted, losing out to the opinion that Hanyang was a better site." }
+        {
+          "speaker": "여행자",
+          "text": "여기 신도안이라는 지명이 남아 있던데, 무슨 뜻이에요?",
+          "reading": "yeo-gi sin-do-an-i-ra-neun ji-myeong-i nam-a it-deon-de, mu-seun tteu-si-e-yo?",
+          "en": "I saw the place name Sindoan still remains here — what does it mean?"
+        },
+        {
+          "speaker": "마을 주민",
+          "text": "조선을 세운 태조가 이곳을 새 도읍으로 삼으려 했던 데서 온 이름이에요.",
+          "reading": "jo-seon-eul se-un tae-jo-ga i-gos-eul sae do-eub-eu-ro sam-eu-ryeo haet-deon de-seo on i-reum-i-e-yo.",
+          "en": "It comes from the fact that Taejo, the founder of Joseon, once tried to make this place the new capital."
+        },
+        {
+          "speaker": "여행자",
+          "text": "그런데 왜 실제로 도읍이 되지는 못했나요?",
+          "reading": "geu-reon-de wae sil-je-ro do-eub-i doe-ji-neun mot-haet-na-yo?",
+          "en": "But why didn't it actually become the capital?"
+        },
+        {
+          "speaker": "마을 주민",
+          "text": "공사가 시작된 지 얼마 안 돼 한양이 더 낫다는 의견에 밀려 계획이 중단됐답니다.",
+          "reading": "gong-sa-ga si-jak-doen ji eol-ma an dwae han-yang-i deo nat-da-neun ui-gyeon-e mil-lyeo gye-hoeg-i jung-dan-dwaet-dam-ni-da.",
+          "en": "Soon after construction began, the plan was halted, losing out to the opinion that Hanyang was a better site."
+        }
       ],
       "question": "신도안이라는 지명은 어디에서 유래했나요?",
       "question_en": "Where does the place name Sindoan come from?",
       "correct_answer": "태조가 이곳을 새 도읍으로 삼으려 했던 일",
-      "options": ["태조가 이곳을 새 도읍으로 삼으려 했던 일", "신선들이 살았다는 전설", "일제강점기에 새로 지어진 마을", "계룡산 등산로의 새 이름"],
+      "options": [
+        "태조가 이곳을 새 도읍으로 삼으려 했던 일",
+        "신선들이 살았다는 전설",
+        "일제강점기에 새로 지어진 마을",
+        "계룡산 등산로의 새 이름"
+      ],
       "explanation": "마을 주민은 조선 태조가 이곳을 새 도읍으로 삼으려 했다가 계획이 중단된 데서 신도안이라는 지명이 유래했다고 설명합니다."
     }
   ]

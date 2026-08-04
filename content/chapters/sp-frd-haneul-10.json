@@ -1,0 +1,62 @@
+{
+  "id": "sp-frd-haneul-10",
+  "character_id": "haneul",
+  "title": "넌 이제 내 친구야",
+  "emoji": "🌟",
+  "story": [
+    {
+      "text": "떠나는 날 아침, 캐리어를 정리하는 내 손이 왠지 느려졌다. 하늘은 묵묵히 짐을 나눠 들며 먼저 문을 나섰다.",
+      "reading": "tteo-na-neun nal a-chim, kae-ri-eo-reul jeong-ni-ha-neun nae son-i waen-ji neu-ryeo-jyeot-da. ha-neul-eun muk-muk-hi jim-eul na-nwo deul-myeo meon-jeo mun-eul na-seot-da.",
+      "en": "On the morning I was leaving, my hands packing the suitcase moved slower than usual, somehow. Haneul silently helped carry the bags and headed out the door first."
+    },
+    {
+      "text": "\"역까지 안 와도 되는데.\" 내가 말하자, 그는 들은 척도 안 했다. \"배웅은 끝까지 하는 거야, 원래.\" 결국 그는 개찰구 앞까지 따라왔다.",
+      "reading": "yeok-kka-ji an wa-do doe-neun-de. nae-ga mal-ha-ja, geu-neun deul-eun cheok-do an haet-da. bae-ung-eun kkeut-kka-ji ha-neun geo-ya, won-lae. gyeol-guk geu-neun gae-chal-gu ap-kka-ji tta-ra-wat-da.",
+      "en": "\"You don't have to come all the way to the station.\" I said, but he didn't even acknowledge it. \"Seeing someone off means seeing it through to the end, always.\" In the end, he followed me all the way to the ticket gate.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "열차 시간이 다가오자 그가 불쑥 말했다. \"다음에 올 땐 미리 연락해. 스케줄 맞춰볼 테니까.\" 무심한 척했지만 진심이 느껴졌다.",
+      "reading": "yeol-cha si-gan-i da-ga-o-ja geu-ga bul-ssuk mal-haet-da. da-eum-e ol ttaen mi-ri yeol-lak-hae. seu-ke-jul mat-chwo-bol te-ni-kka. mu-sim-han cheok-haet-ji-man jin-sim-i neu-kkyeo-jyeot-da.",
+      "en": "As the train time drew near, he suddenly spoke up. \"Next time you come, let me know ahead. I'll try to line up my schedule.\" He acted indifferent, but I could feel the sincerity.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "\"약속이다. 진짜 또 와야 돼.\" 나는 새끼손가락을 내밀었다. 그는 잠시 머뭇거리다 마지못한 척 손가락을 걸었다.",
+      "reading": "yak-sog-i-da. jin-jja tto wa-ya dwae. na-neun sae-kki-son-ga-rag-eul nae-mil-eot-da. geu-neun jam-si meo-mut-geo-ri-da ma-ji-mot-han cheok son-ga-rag-eul geol-eot-da.",
+      "en": "\"It's a promise. You really have to come again.\" I held out my pinky. He hesitated for a second, then hooked his finger like he was doing it reluctantly.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "\"우리 이런 사이, 우정이라고 해도 되지?\" 내가 장난스레 묻자, 그는 잠시 나를 빤히 보다 대답했다. \"당연하지. 넌 이제 내 친구야.\"",
+      "reading": "u-ri i-reon sa-i, u-jeong-i-ra-go hae-do doe-ji? nae-ga jang-nan-seu-re mut-ja, geu-neun jam-si na-reul ppan-hi bo-da dae-dap-haet-da. dang-yeon-ha-ji. neon i-je nae chin-gu-ya.",
+      "en": "\"Can I call this — us — friendship?\" I asked, half-joking. He looked at me steadily for a moment before answering. \"Of course. You're my friend now.\"",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "\"이 우정은 영원히 갈 거야.\" 나는 웃으며 말했다. 그는 대답 대신 픽 웃고는, 손을 들어 내 머리를 가볍게 헝클어뜨렸다.",
+      "reading": "i u-jeong-eun yeong-won-hi gal geo-ya. na-neun us-eu-myeo mal-haet-da. geu-neun dae-dap dae-sin pik ut-go-neun, son-eul deul-eo nae meo-ri-reul ga-byeop-ge heong-keul-eo-tteu-lyeot-da.",
+      "en": "\"This friendship's going to last forever.\" I said with a smile. Instead of answering, he just smirked and reached out to ruffle my hair lightly.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "열차가 플랫폼을 떠날 때, 창밖으로 손을 흔드는 그가 점점 작아졌다. 오랜 친구와 함께한 열흘이, 오래도록 마음에 남을 것 같았다.",
+      "reading": "yeol-cha-ga peul-laet-pom-eul tteo-nal ttae, chang-bakk-eu-ro son-eul heun-deu-neun geu-ga jeom-jeom jag-a-jyeot-da. o-raen chin-gu-wa ham-kke-han yeol-heul-i, o-rae-do-rok ma-eum-e nam-eul geot gat-at-da.",
+      "en": "As the train pulled out of the platform, he grew smaller and smaller outside the window, waving. Ten days spent with an old friend — I had a feeling they'd stay with me for a long, long time."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "우정", "reading": "u-jeong", "meaning": "friendship", "example": "우리의 우정은 특별하다.", "example_reading": "u-ri-ui u-jeong-eun teuk-byeol-ha-da", "example_en": "Our friendship is special." },
+    { "id": "w02", "word": "약속하다", "reading": "yak-sok-ha-da", "meaning": "to promise", "example": "다시 만나기로 약속했다.", "example_reading": "da-si man-na-gi-ro yak-sok-haet-da", "example_en": "We promised to meet again." },
+    { "id": "w03", "word": "영원히", "reading": "yeong-won-hi", "meaning": "forever", "example": "이 우정은 영원히 계속될 거야.", "example_reading": "i u-jeong-eun yeong-won-hi gye-sok-doel geo-ya", "example_en": "This friendship will last forever." },
+    { "id": "w04", "word": "다음에", "reading": "da-eum-e", "meaning": "next time", "example": "다음에 또 놀러 올게.", "example_reading": "da-eum-e tto nol-leo ol-ge", "example_en": "I'll come visit again next time." },
+    { "id": "w05", "word": "배웅하다", "reading": "bae-ung-ha-da", "meaning": "to see someone off", "example": "친구를 공항까지 배웅했다.", "example_reading": "chin-gu-reul gong-hang-kka-ji bae-ung-haet-da", "example_en": "I saw my friend off at the airport." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "우리의 우정은 특별하다.", "reading": "u-ri-ui u-jeong-eun teuk-byeol-ha-da", "en": "Our friendship is special." },
+    { "id": "s02", "ko": "다시 만나기로 약속했다.", "reading": "da-si man-na-gi-ro yak-sok-haet-da", "en": "We promised to meet again." },
+    { "id": "s03", "ko": "이 우정은 영원히 계속될 거야.", "reading": "i u-jeong-eun yeong-won-hi gye-sok-doel geo-ya", "en": "This friendship will last forever." },
+    { "id": "s04", "ko": "다음에 또 놀러 올게.", "reading": "da-eum-e tto nol-leo ol-ge", "en": "I'll come visit again next time." },
+    { "id": "s05", "ko": "친구를 공항까지 배웅했다.", "reading": "chin-gu-reul gong-hang-kka-ji bae-ung-haet-da", "en": "I saw my friend off at the airport." }
+  ]
+}

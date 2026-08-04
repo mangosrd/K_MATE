@@ -1,0 +1,62 @@
+{
+  "id": "sp-day-kyuhyun-05",
+  "character_id": "kyuhyun",
+  "title": "쌀쌀한 날의 겉옷",
+  "emoji": "🌦️",
+  "story": [
+    {
+      "text": "공원 벤치에 앉아 하늘을 올려다보니, 아침보다 구름이 부쩍 낮게 깔려 있었다. 바람도 한결 서늘해진 느낌이었다.",
+      "reading": "gong-won ben-chi-e anj-a ha-neul-eul ol-lyeo-da-bo-ni, a-chim-bo-da gu-reum-i bu-jjeok nat-ge kkal-lyeo iss-eot-da. ba-ram-do han-gyeol seo-neul-hae-jin neu-kkim-i-eot-da.",
+      "en": "Sitting on a park bench and looking up at the sky, the clouds hung noticeably lower than in the morning. The wind felt cooler too."
+    },
+    {
+      "text": "\"오늘 날씨가 좀 변덕스럽네요.\" 규현이 휴대폰 화면을 들여다보며 중얼거렸다. \"아침이랑 완전 딴판이에요.\"",
+      "reading": "\"o-neul nal-ssi-ga jom byeon-deok-seu-reop-ne-yo.\" gyu-hyeon-i hyu-dae-pon hwa-myeon-eul deul-yeo-da-bo-myeo jung-eol-geo-ryeot-da. \"a-chim-i-rang wan-jeon ttan-pan-i-e-yo.\"",
+      "en": "\"The weather's a bit fickle today.\" Kyuhyun murmured, peering at his phone screen. \"Completely different from this morning.\"",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "\"기온이 다섯 도나 떨어졌대요.\" 그가 화면을 내 쪽으로 돌려 보여주며 말했다. \"그러니까 그렇게 얇게 입고 나온 거, 후회 중이죠?\"",
+      "reading": "\"gi-on-i da-seot do-na tteol-eo-jyeot-dae-yo.\" geu-ga hwa-myeon-eul nae jjok-eu-ro dol-lyeo bo-yeo-ju-myeo mal-haet-da. \"geu-reo-ni-kka geu-reo-ke yalb-ge ip-go na-on geo, hu-hoe jung-i-jyo?\"",
+      "en": "\"They say the temperature dropped five degrees.\" He turned the screen toward me. \"So, regretting wearing something so thin, are you?\"",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "내가 저도 모르게 어깨를 움츠리자, 그는 눈치 빠르게 그걸 알아챘다. \"거봐요, 쌀쌀하다니까. 그래서, 춥다고 순순히 말할 거예요, 말 거예요?\"",
+      "reading": "nae-ga jeo-do mo-reu-ge eo-kkae-reul um-cheu-ri-ja, geu-neun nun-chi ppa-reu-ge geu-geol al-a-chaet-da. \"geo-bwa-yo, ssal-ssal-ha-da-ni-kka. geu-rae-seo, chub-da-go sun-sun-hi mal-hal geo-ye-yo, mal geo-ye-yo?\"",
+      "en": "As I unconsciously hunched my shoulders, he noticed right away. \"See, I told you it's chilly. So — are you going to admit you're cold, or not?\"",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "그는 대답도 듣지 않고 가방에서 얇은 겉옷을 꺼내 내 어깨에 툭 걸쳐주었다. \"됐죠? 이런 날은 겉옷 하나쯤 챙기는 게 기본이에요.\"",
+      "reading": "geu-neun dae-dab-do deut-ji anh-go ga-bang-e-seo yalb-eun geot-ot-eul kkeon-nae nae eo-kkae-e tuk geol-chyeo-ju-eot-da. \"dwaet-jyo? i-reon nal-eun geot-ot ha-na-jjeum chaeng-gi-neun ge gi-bon-i-e-yo.\"",
+      "en": "Without waiting for an answer, he pulled a light jacket from his bag and draped it over my shoulders. \"There. On a day like this, bringing a jacket is just basic.\"",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "그때 후두둑, 굵은 빗방울이 하나둘 떨어지기 시작했다. 규현이 가방에서 태연하게 우산을 꺼내 폈다. \"이럴 줄 알았어요.\" 그가 능청스럽게 웃었다.",
+      "reading": "geu-ttae hu-du-duk, gulg-eun bit-bang-ul-i ha-na-dul tteol-eo-ji-gi si-jak-haet-da. gyu-hyeon-i ga-bang-e-seo tae-yeon-ha-ge u-san-eul kkeon-nae pyeot-da. \"i-reol jul al-at-eo-yo.\" geu-ga neung-cheong-seu-reop-ge us-eot-da.",
+      "en": "Just then, plip-plop, fat raindrops began to fall one by one. Kyuhyun casually pulled an umbrella from his bag and opened it. \"Figured this might happen.\" He smirked, cool as ever.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "우산 하나 아래 나란히 붙어 서서 처마 밑으로 뛰어가는 동안, 그의 웃음소리가 빗소리 사이로 유쾌하게 섞여 들었다.",
+      "reading": "u-san ha-na a-rae na-ran-hi but-eo seo-seo cheo-ma mit-eu-ro ttwi-eo-ga-neun dong-an, geu-ui us-eum-so-ri-ga bit-so-ri sa-i-ro yu-kwae-ha-ge seokk-yeo deul-eot-da.",
+      "en": "Huddled together under one umbrella, running toward the eaves, his laughter mixed cheerfully into the sound of the rain."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "날씨", "reading": "nal-ssi", "meaning": "weather", "example": "오늘 날씨 어때요?", "example_reading": "o-neul nal-ssi eo-ttae-yo", "example_en": "How's the weather today?" },
+    { "id": "w02", "word": "기온", "reading": "gi-on", "meaning": "temperature", "example": "오늘 기온이 많이 떨어졌어요.", "example_reading": "o-neul gi-on-i man-i tteol-eo-jyeot-eo-yo", "example_en": "The temperature dropped a lot today." },
+    { "id": "w03", "word": "쌀쌀하다", "reading": "ssal-ssal-ha-da", "meaning": "to be chilly", "example": "저녁에는 좀 쌀쌀해요.", "example_reading": "jeo-nyeog-e-neun jom ssal-ssal-hae-yo", "example_en": "It's a bit chilly in the evening." },
+    { "id": "w04", "word": "겉옷", "reading": "geot-ot", "meaning": "jacket, outerwear", "example": "겉옷을 챙겨 나왔어요.", "example_reading": "geot-ot-eul chaeng-gyeo na-wat-eo-yo", "example_en": "I brought a jacket with me." },
+    { "id": "w05", "word": "우산", "reading": "u-san", "meaning": "umbrella", "example": "우산 가지고 왔어요?", "example_reading": "u-san ga-ji-go wat-eo-yo", "example_en": "Did you bring an umbrella?" }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "오늘 날씨 어때요?", "reading": "o-neul nal-ssi eo-ttae-yo?", "en": "How's the weather today?" },
+    { "id": "s02", "ko": "오늘 기온이 몇 도예요?", "reading": "o-neul gi-on-i myeot do-ye-yo?", "en": "What's the temperature today?" },
+    { "id": "s03", "ko": "좀 쌀쌀하니까 겉옷 챙기세요.", "reading": "jom ssal-ssal-ha-ni-kka geot-ot chaeng-gi-se-yo.", "en": "It's a bit chilly, so bring a jacket." },
+    { "id": "s04", "ko": "우산 가지고 왔어요?", "reading": "u-san ga-ji-go wat-eo-yo?", "en": "Did you bring an umbrella?" },
+    { "id": "s05", "ko": "오늘은 비가 올 것 같아요.", "reading": "o-neul-eun bi-ga ol geot gat-a-yo.", "en": "It looks like it'll rain today." }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "id": "sp-day-haneul-05",
+  "character_id": "haneul",
+  "title": "오늘 날씨엔 이 옷",
+  "emoji": "🧥",
+  "story": [
+    {
+      "text": "아침부터 날씨가 흐렸다. 창문을 열자 서늘한 바람이 훅 들어왔다.",
+      "reading": "a-chim-bu-teo nal-ssi-ga heu-ryeot-da. chang-mun-eul yeol-ja seo-neul-han ba-ram-i huk deul-eo-wat-da.",
+      "en": "The weather was overcast from the morning. When I opened the window, a cool breeze rushed in.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "'오늘 날씨 좀 봐봐.' 하늘이 휴대폰 화면을 내밀었다. 일교차가 크다는 예보였다.",
+      "reading": "'o-neul nal-ssi jom bwa-bwa.' ha-neul-i hyu-dae-pon hwa-myeon-eul nae-mil-eot-da. il-gyo-cha-ga keu-da-neun ye-bo-yeot-da.",
+      "en": "\"Check today's weather.\" Haneul held out his phone screen. The forecast said the temperature gap would be big."
+    },
+    {
+      "text": "'반팔만 입고 나가지 마. 아침엔 꽤 추워.' 그가 툭 내뱉듯 말했다.",
+      "reading": "'ban-pal-man ip-go na-ga-ji ma. a-chim-en kkwae chu-wo.' geu-ga tuk nae-baet-deut mal-haet-da.",
+      "en": "\"Don't go out in just short sleeves. It's pretty cold in the morning.\" He said it bluntly.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "'낮에는 또 덥다던데.' 내가 중얼거리자, 하늘은 얇은 겉옷 하나를 내 손에 쥐여줬다. '벗었다 입었다 해.'",
+      "reading": "'naj-e-neun tto deop-da-deon-de.' nae-ga jung-eol-geo-ri-ja, ha-neul-eun yalb-eun geot-ot ha-na-reul nae son-e jwi-yeo-jwot-da. 'beos-eot-da ib-eot-da hae.'",
+      "en": "\"But I heard it'll get hot in the afternoon.\" I muttered, and Haneul pressed a light jacket into my hand. \"Just take it off and put it back on as needed.\"",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "'비도 온대. 우산 챙겼어?' 그가 물었다. 나는 가방 속 접이식 우산을 흔들어 보였다.",
+      "reading": "'bi-do on-dae. u-san chaeng-gyeoss-eo?' geu-ga mul-eot-da. na-neun ga-bang sok jeob-i-sik u-san-eul heun-deul-eo bo-yeot-da.",
+      "en": "\"They say it might rain too. Did you bring an umbrella?\" he asked. I showed him the folding umbrella tucked in my bag.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "'오늘 옷차림 그거면 됐어. 나쁘지 않네.' 그가 내 위아래를 한 번 훑고는 짧게 평가했다.",
+      "reading": "'o-neul ot-cha-rim geu-geo-myeon dwaess-eo. na-ppeu-ji anh-ne.' geu-ga nae wi-a-rae-reul han beon hult-go-neun jjalb-ge pyeong-ga-haet-da.",
+      "en": "\"That outfit works for today. Not bad.\" He gave me a quick once-over and delivered his brief verdict.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "무심한 말투였지만, 나는 왠지 웃음이 났다. 오늘도 날씨보다 이 사람 챙김이 더 든든했다.",
+      "reading": "mu-sim-han mal-tu-yeot-ji-man, na-neun waen-ji us-eum-i nat-da. o-neul-do nal-ssi-bo-da i sa-ram chaeng-gim-i deo deun-deun-haet-da.",
+      "en": "His tone was indifferent as ever, but somehow it made me smile. Today, too, his care felt more reassuring than the weather report."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "날씨", "reading": "nal-ssi", "meaning": "weather", "example": "오늘 날씨가 어때요?", "example_reading": "o-neul nal-ssi-ga eo-ttae-yo?", "example_en": "How's the weather today?" },
+    { "id": "w02", "word": "춥다", "reading": "chup-da", "meaning": "to be cold", "example": "밖이 많이 추워요.", "example_reading": "bakk-i man-i chu-wo-yo", "example_en": "It's very cold outside." },
+    { "id": "w03", "word": "덥다", "reading": "deop-da", "meaning": "to be hot", "example": "오후에는 더워질 거예요.", "example_reading": "o-hu-e-neun deo-wo-jil geo-ye-yo", "example_en": "It'll get hot in the afternoon." },
+    { "id": "w04", "word": "우산", "reading": "u-san", "meaning": "umbrella", "example": "우산 가지고 왔어요?", "example_reading": "u-san ga-ji-go wa-sseo-yo?", "example_en": "Did you bring an umbrella?" },
+    { "id": "w05", "word": "옷차림", "reading": "ot-cha-rim", "meaning": "outfit, attire", "example": "오늘 옷차림이 편해 보여요.", "example_reading": "o-neul ot-cha-rim-i pyeon-hae bo-yeo-yo", "example_en": "Your outfit looks comfortable today." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "오늘 날씨 어때요?", "reading": "o-neul nal-ssi eo-ttae-yo?", "en": "How's the weather today?" },
+    { "id": "s02", "ko": "날씨가 추워요.", "reading": "nal-ssi-ga chu-wo-yo", "en": "The weather is cold." },
+    { "id": "s03", "ko": "오후에는 더워요.", "reading": "o-hu-e-neun deo-wo-yo", "en": "It's hot in the afternoon." },
+    { "id": "s04", "ko": "우산을 챙기세요.", "reading": "u-san-eul chaeng-gi-se-yo", "en": "Bring an umbrella." },
+    { "id": "s05", "ko": "오늘 옷차림이 좋네요.", "reading": "o-neul ot-cha-rim-i jo-ne-yo", "en": "Your outfit is nice today." }
+  ]
+}

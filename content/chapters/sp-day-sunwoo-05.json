@@ -1,0 +1,93 @@
+{
+  "id": "sp-day-sunwoo-05",
+  "character_id": "sunwoo",
+  "title": "일교차가 심하다카네",
+  "emoji": "🌤️",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "창밖 하늘은 맑았지만, 선우는 핸드폰으로 일기예보부터 확인했다.",
+      "reading": "chang-bakk ha-neul-eun malg-at-ji-man, seon-u-neun haen-deu-pon-eu-ro il-gi-ye-bo-bu-teo hwak-in-haet-da.",
+      "en": "The sky outside the window was clear, but Sunwoo checked the weather forecast on his phone first.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "\"오늘 일교차가 심하다카네. 아침엔 쌀쌀하고 낮에는 덥고.\" 그가 화면을 내밀며 미간을 좁혔다.",
+      "reading": "\"o-neul il-gyo-cha-ga sim-ha-da-ka-ne. a-chim-en ssal-ssal-ha-go naj-e-neun deop-go.\" geu-ga hwa-myeon-eul nae-mil-myeo mi-gan-eul jop-hyeot-da.",
+      "en": "\"They say today's temperature swing is big. Chilly in the morning, hot in the afternoon.\" He held out the screen, brow furrowed.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "바닷바람 때문인지 아침 공기가 유독 습하게 느껴졌다. 옷이 살짝 눅눅해지는 기분이었다.",
+      "reading": "ba-da-ba-ram ttae-mun-in-ji a-chim gong-gi-ga yu-dok seup-ha-ge neu-kkyeo-jyeot-da. os-i sal-jjak nuk-nuk-hae-ji-neun gi-bun-i-eot-da.",
+      "en": "Maybe because of the sea breeze, the morning air felt unusually humid. It felt like my clothes were getting slightly damp.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "\"얇은 겉옷 하나 걸치고 나온나. 감기 걸리면 니만 손해다.\" 그가 잔소리하듯 말했지만 눈빛은 걱정이 가득했다.",
+      "reading": "\"yalb-eun geot-os ha-na geol-chi-go na-on-na. gam-gi geol-li-myeon ni-man son-hae-da.\" geu-ga jan-so-ri-ha-deut mal-haet-ji-man nun-bit-eun geok-jeong-i ga-deuk-haet-da.",
+      "en": "\"Throw on a thin jacket before you come out. If you catch a cold, you're the one who loses out.\" He said it like he was nagging, but his eyes were full of worry.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "결국 나는 옷장에서 얇은 카디건을 하나 꺼내 걸쳤다. 그제야 선우가 만족한 듯 고개를 끄덕였다.",
+      "reading": "gyeol-guk na-neun ot-jang-e-seo yalb-eun ka-di-geon-eul ha-na kkeo-nae geol-chyeot-da. geu-je-ya seon-u-ga man-jok-han deut go-gae-reul kkeu-deok-yeot-da.",
+      "en": "In the end, I pulled a thin cardigan out of my closet and put it on. Only then did Sunwoo nod, looking satisfied."
+    },
+    {
+      "text": "\"우산도 챙기라. 오후엔 비 온단다.\" 그의 말에 나는 서둘러 가방에 작은 우산을 밀어 넣었다.",
+      "reading": "\"u-san-do chaeng-gi-ra. o-hu-en bi on-dan-da.\" geu-ui mal-e na-neun seo-dul-leo ga-bang-e jak-eun u-san-eul mil-eo neoh-eot-da.",
+      "en": "\"Bring an umbrella too. It's supposed to rain in the afternoon.\" At his words, I hurriedly stuffed a small umbrella into my bag.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "\"날씨 단어부터 대화 문제까지, 오늘도 끝까지 잘 챙겨봐라.\"",
+      "reading": "\"nal-ssi dan-eo-bu-teo dae-hwa mun-je-kka-ji, o-neul-do kkeut-kka-ji jal chaeng-gyeo-bwa-ra.\"",
+      "en": "\"From the weather words to the conversation questions — pack it all in and get through it today too.\""
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "일교차", "reading": "il-gyo-cha", "meaning": "daily temperature range/difference", "example": "환절기에는 일교차가 크다.", "example_reading": "hwan-jeol-gi-e-neun il-gyo-cha-ga keu-da", "example_en": "The daily temperature range is large during the change of seasons." },
+    { "id": "w02", "word": "습하다", "reading": "seup-ha-da", "meaning": "to be humid", "example": "장마철에는 공기가 습하다.", "example_reading": "jang-ma-cheol-e-neun gong-gi-ga seup-ha-da", "example_en": "The air is humid during the rainy season." },
+    { "id": "w03", "word": "겉옷", "reading": "geot-ot", "meaning": "outerwear, jacket", "example": "쌀쌀할 때는 겉옷을 챙기는 게 좋다.", "example_reading": "ssal-ssal-hal ttae-neun geot-os-eul chaeng-gi-neun ge jo-ta", "example_en": "It's good to bring outerwear when it's chilly." },
+    { "id": "w04", "word": "일기예보", "reading": "il-gi-ye-bo", "meaning": "weather forecast", "example": "오늘 아침 일기예보를 확인했다.", "example_reading": "o-neul a-chim il-gi-ye-bo-reul hwak-in-haet-da", "example_en": "I checked this morning's weather forecast." },
+    { "id": "w05", "word": "챙기다", "reading": "chaeng-gi-da", "meaning": "to bring, pack, take along", "example": "나갈 때 우산을 꼭 챙기세요.", "example_reading": "na-gal ttae u-san-eul kkok chaeng-gi-se-yo", "example_en": "Be sure to bring an umbrella when you go out." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "오늘은 일교차가 크다니까 겉옷을 챙기자.", "reading": "o-neul-eun il-gyo-cha-ga keu-da-ni-kka geot-os-eul chaeng-gi-ja", "en": "They say the temperature swing is big today, so let's bring a jacket." },
+    { "id": "s02", "ko": "바닷가라 그런지 공기가 꽤 습하다.", "reading": "ba-dat-ga-ra geu-reon-ji gong-gi-ga kkwae seup-ha-da", "en": "Maybe because it's by the sea, the air is quite humid." },
+    { "id": "s03", "ko": "얇은 겉옷 하나쯤은 걸치는 게 좋겠다.", "reading": "yalb-eun geot-os ha-na-jjeum-eun geol-chi-neun ge jo-ket-da", "en": "It'd be good to put on at least one thin jacket." },
+    { "id": "s04", "ko": "일기예보를 보니 오후에 비가 온다고 한다.", "reading": "il-gi-ye-bo-reul bo-ni o-hu-e bi-ga on-da-go han-da", "en": "According to the forecast, it's supposed to rain in the afternoon." },
+    { "id": "s05", "ko": "우산을 챙기는 걸 깜빡할 뻔했다.", "reading": "u-san-eul chaeng-gi-neun geol kkam-ppak-hal ppeon-haet-da", "en": "I almost forgot to bring an umbrella." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "선우", "text": "오늘 일교차 장난 아니라카는데, 니 반팔만 입고 나올 생각이었나?", "reading": "o-neul il-gyo-cha jang-nan a-ni-ra-ka-neun-de, ni ban-pal-man ib-go na-ol saeng-gak-i-eot-na?", "en": "They say today's temperature swing is no joke — were you seriously planning to come out in just short sleeves?" },
+        { "speaker": "승객", "text": "어? 그렇게 심해? 일기예보 못 봤는데.", "reading": "eo? geu-reo-ke sim-hae? il-gi-ye-bo mot bwat-neun-de.", "en": "Huh? Is it that bad? I didn't see the forecast." },
+        { "speaker": "선우", "text": "봐라, 아침 열몇 도에 낮엔 스물몇 도란다. 겉옷 하나는 걸치고 나온나.", "reading": "bwa-ra, a-chim yeol-myeot do-e naj-en seu-mul-myeot do-ran-da. geot-os ha-na-neun geol-chi-go na-on-na.", "en": "Look, it's like the low teens in the morning and mid-twenties in the afternoon. Put on a jacket before you come out." },
+        { "speaker": "승객", "text": "알았다, 알았어. 챙겨 입을게.", "reading": "al-at-da, al-at-eo. chaeng-gyeo ib-eul-ge.", "en": "Okay, okay. I'll bundle up." }
+      ],
+      "question": "선우가 승객에게 겉옷을 챙기라고 한 이유는 무엇인가요?",
+      "question_en": "Why did Sunwoo tell the passenger to bring a jacket?",
+      "correct_answer": "일교차가 심해서",
+      "options": ["일교차가 심해서", "비가 많이 와서", "바람이 강해서", "미세먼지가 심해서"],
+      "explanation": "선우는 아침과 낮의 기온차, 즉 일교차가 크다며 겉옷을 챙기라고 말했습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "선우", "text": "오후엔 비 온단다. 우산 챙겼나?", "reading": "o-hu-en bi on-dan-da. u-san chaeng-gyeot-na?", "en": "It's supposed to rain in the afternoon. Did you bring an umbrella?" },
+        { "speaker": "승객", "text": "아 맞다, 깜빡했다. 다시 들어가야겠네.", "reading": "a mat-da, kkam-ppak-haet-da. da-si deul-eo-ga-ya-get-ne.", "en": "Ah right, I forgot. I guess I have to go back in." },
+        { "speaker": "선우", "text": "됐다, 내한테 접이식 우산 하나 더 있다. 이거 써라.", "reading": "dwaet-da, nae-han-te jeob-i-sik u-san ha-na deo it-da. i-geo sseo-ra.", "en": "It's fine, I've got an extra folding umbrella. Use this one." },
+        { "speaker": "승객", "text": "역시 니는 준비성이 좋다니까.", "reading": "yeok-si ni-neun jun-bi-seong-i jo-ta-ni-kka.", "en": "You really are always well-prepared." }
+      ],
+      "question": "승객이 우산을 챙기지 못한 것을 알았을 때 선우는 어떻게 했나요?",
+      "question_en": "What did Sunwoo do when he found out the passenger forgot her umbrella?",
+      "correct_answer": "자신의 여분 우산을 빌려주었다",
+      "options": ["자신의 여분 우산을 빌려주었다", "편의점에서 새로 사 주었다", "비가 그칠 때까지 기다리자고 했다", "택시를 불러 주었다"],
+      "explanation": "선우는 자신이 가진 여분의 접이식 우산을 승객에게 빌려주었습니다."
+    }
+  ]
+}

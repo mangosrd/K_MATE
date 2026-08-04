@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import BottomNav from "@/components/ui/BottomNav";
-import { MOCK_REGIONS, MOCK_ALL_PROGRESS, MOCK_ECONOMY, MOCK_USER, MOCK_CHARACTERS } from "@/lib/db/mock";
+import { MOCK_REGIONS, MOCK_ALL_PROGRESS, MOCK_ECONOMY, MOCK_USER, MOCK_CHARACTERS, getChaptersForCharacter } from "@/lib/db/mock";
 import { getEffectiveUserId } from "@/lib/auth/store";
 import { useLanguage } from "@/components/LanguageContext";
 import type { Progress } from "@/types/database";
@@ -97,7 +97,18 @@ export default function MapPage() {
             const progress = Object.values(allProgress).find(
               (p) => p.character_id === region.character_ids[0]
             );
-            const visited = progress?.visited_places.length ?? 0;
+            // "방문 장소"는 예전엔 지역 페이지에 들어가기만 하면 명소 전체가 즉시
+            // "방문함"으로 기록돼서, 실제로 아무것도 안 배워도 진도가 꽉 차 보이는
+            // 의미 없는 숫자였다. 대신 그 지역 캐릭터의 실제 지역 챕터(ch-*) 완료
+            // 비율에 비례해서 계산한다 — 예: 10개 챕터 중 3개를 끝냈으면 명소 5곳 중
+            // round(5 * 3/10) = 2곳 방문한 것으로 표시.
+            const regionChapters = getChaptersForCharacter(region.character_ids[0])
+              .filter((ch) => ch.id.startsWith("ch-"));
+            const completedCount = (progress?.stamps ?? [])
+              .filter((id) => regionChapters.some((ch) => ch.id === id)).length;
+            const visited = regionChapters.length > 0
+              ? Math.round((completedCount / regionChapters.length) * region.place_count)
+              : 0;
             const pct = Math.round((visited / region.place_count) * 100);
             const isRegionLocked = region.is_locked;
 

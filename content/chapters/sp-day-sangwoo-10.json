@@ -1,0 +1,98 @@
+{
+  "id": "sp-day-sangwoo-10",
+  "character_id": "sangwoo",
+  "title": "오늘의 비행 일지",
+  "emoji": "🌇",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "금강을 따라 걷던 우리는 어느새 하루의 끝자락에 다다랐습니다. 하늘이 서서히 붉게 물들기 시작했습니다.",
+      "reading": "geum-gang-eul tta-ra geot-deon u-ri-neun eo-neu-sae ha-ru-ui kkeut-ja-rag-e da-da-rass-seum-ni-da. ha-neul-i seo-seo-hi bulg-ge mul-deul-gi si-jak-haet-seum-ni-da.",
+      "en": "As we walked along the Geumgang River, we found ourselves at the tail end of the day before we knew it. The sky slowly began to turn red."
+    },
+    {
+      "text": "강물 위로 번지는 노을을 보며, 저는 잠시 걸음을 멈췄습니다. '오늘 하늘이 유독 곱습니다.' 당신도 고개를 끄덕이며 동의했습니다.",
+      "reading": "gang-mul wi-ro beon-ji-neun no-eul-eul bo-myeo, jeo-neun jam-si geol-eum-eul meom-chwot-seum-ni-da. o-neul ha-neul-i yu-dok gop-seum-ni-da. dang-sin-do go-gae-reul kkeu-deog-i-myeo dong-ui-haet-seum-ni-da.",
+      "en": "Watching the sunset glow spread across the river, I paused my steps for a moment. \"Today's sky is especially beautiful.\" You nodded in agreement too.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "저는 원래 하루를 대충 넘기는 걸 싫어합니다. 좋았든 힘들었든, 제대로 마무리를 지어야 다음 날을 새로 시작할 수 있으니까요.",
+      "reading": "jeo-neun won-lae ha-ru-reul dae-chung neom-gi-neun geol sil-eo-ham-ni-da. jo-at-deun him-deul-eot-deun, je-dae-ro ma-mu-ri-reul ji-eo-ya da-eum nal-eul sae-ro si-jak-hal su it-eu-ni-kka-yo.",
+      "en": "I've never liked letting a day pass by half-heartedly. Whether it was good or hard, I believe you have to properly wrap it up before you can truly begin the next one.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "'저는 매일 밤 짧게라도 일지를 씁니다. 비행 일지를 쓰던 버릇이 어디 안 가는 모양입니다.' 저는 조금 멋쩍게 웃으며 말했습니다.",
+      "reading": "jeo-neun mae-il bam jjalb-ge-ra-do il-ji-reul sseum-ni-da. bi-haeng il-ji-reul sseu-deon beo-reut-i eo-di an ga-neun mo-yang-im-ni-da. jeo-neun jo-geum meot-jjeok-ge us-eu-myeo mal-haet-seum-ni-da.",
+      "en": "\"I write a log every night, even if it's short. It seems the habit of writing flight logs never really goes away.\" I said, laughing a little sheepishly.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "'그럼 오늘도 일지에 쓰시겠네요?' 당신이 장난스럽게 묻자, 저는 잠시 뜸을 들이다 답했습니다. '아마도요. 오늘은 특히 쓸 말이 많을 것 같습니다.'",
+      "reading": "geu-reom o-neul-do il-ji-e sseu-si-get-ne-yo? dang-sin-i jang-nan-seu-reop-ge mut-ja, jeo-neun jam-si tteum-eul deul-i-da dap-haet-seum-ni-da. a-ma-do-yo. o-neul-eun teuk-hi sseul mal-i man-eul geot gat-seum-ni-da.",
+      "en": "\"So you'll write about today too?\" you asked playfully, and I paused for a moment before answering. \"Probably. I have a feeling there'll be a lot to write about today especially.\""
+    },
+    {
+      "text": "노을이 완전히 저물자, 저는 조심스레 말했습니다. '이제 귀가하셔야 할 시간입니다. 너무 늦으면 내일 컨디션에 영향이 갑니다.'",
+      "reading": "no-eul-i wan-jeon-hi jeo-mul-ja, jeo-neun jo-sim-seu-re mal-haet-seum-ni-da. i-je gwi-ga-ha-syeo-ya hal si-gan-im-ni-da. neo-mu neuj-eu-myeon nae-il keon-di-syeon-e yeong-hyang-i gam-ni-da.",
+      "en": "As the sunset fully faded, I said carefully, \"It's about time to head home now. If it gets too late, it'll affect your condition tomorrow.\"",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "저는 결국 당신을 집 앞까지 배웅하기로 했습니다. '여기까지가 오늘의 마지막 순서입니다.' 대문 앞에 서서, 저는 어쩐지 이 순간이 조금 더 길었으면 했습니다.",
+      "reading": "jeo-neun gyeol-guk dang-sin-eul jib ap-kka-ji bae-ung-ha-gi-ro haet-seum-ni-da. yeo-gi-kka-ji-ga o-neul-ui ma-ji-mak sun-seo-im-ni-da. dae-mun ap-e seo-seo, jeo-neun eo-jjeon-ji i sun-gan-i jo-geum deo gil-eot-eu-myeon haet-seum-ni-da.",
+      "en": "In the end, I decided to walk you all the way to your door. \"This is the last item on today's agenda.\" Standing in front of your gate, for some reason, I found myself wishing this moment could last just a little longer.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "'오늘 하루도 수고 많으셨습니다.' 저는 정중히 인사를 건넸습니다. 당신이 웃으며 손을 흔드는 모습까지 지켜본 뒤에야, 저는 발걸음을 돌렸습니다. 오늘의 일지에는, 아마 평소보다 긴 문장이 남을 것 같습니다.",
+      "reading": "o-neul ha-ru-do su-go man-eu-syeot-seum-ni-da. jeo-neun jeong-jung-hi in-sa-reul geon-nes-seum-ni-da. dang-sin-i us-eu-myeo son-eul heun-deu-neun mo-seub-kka-ji ji-kyeo-bon dwi-e-ya, jeo-neun bal-geol-eum-eul dol-lyeot-seum-ni-da. o-neul-ui il-ji-e-neun, a-ma pyeong-so-bo-da gin mun-jang-i nam-eul geot gat-seum-ni-da.",
+      "en": "\"Thank you for your hard work today too.\" I gave a polite parting greeting. Only after watching you wave and smile did I finally turn to leave. I have a feeling tonight's log entry will end up longer than usual."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "마무리", "reading": "ma-mu-ri", "meaning": "wrapping up, closing (a day/task)", "example": "제대로 마무리를 지어야 합니다.", "example_reading": "je-dae-ro ma-mu-ri-reul ji-eo-ya ham-ni-da", "example_en": "You have to properly wrap things up." },
+    { "id": "w02", "word": "노을", "reading": "no-eul", "meaning": "sunset/sunrise glow", "example": "강물 위로 노을이 번졌습니다.", "example_reading": "gang-mul wi-ro no-eul-i beon-jyeoss-seum-ni-da", "example_en": "The sunset glow spread across the river." },
+    { "id": "w03", "word": "배웅", "reading": "bae-ung", "meaning": "seeing someone off", "example": "집 앞까지 배웅하겠습니다.", "example_reading": "jib ap-kka-ji bae-ung-ha-get-seum-ni-da", "example_en": "I'll see you off all the way to your door." },
+    { "id": "w04", "word": "일지", "reading": "il-ji", "meaning": "log, journal", "example": "매일 밤 짧게 일지를 씁니다.", "example_reading": "mae-il bam jjalb-ge il-ji-reul sseum-ni-da", "example_en": "I write a short log every night." },
+    { "id": "w05", "word": "귀가", "reading": "gwi-ga", "meaning": "heading/returning home", "example": "이제 귀가하셔야 할 시간입니다.", "example_reading": "i-je gwi-ga-ha-syeo-ya hal si-gan-im-ni-da", "example_en": "It's about time to head home now." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "오늘 하루도 잘 마무리해야겠습니다.", "reading": "o-neul ha-ru-do jal ma-mu-ri-hae-ya-get-seum-ni-da", "en": "I should wrap up today properly too." },
+    { "id": "s02", "ko": "노을이 정말 아름답네요.", "reading": "no-eul-i jeong-mal a-reum-dap-ne-yo", "en": "The sunset glow is really beautiful." },
+    { "id": "s03", "ko": "집까지 배웅해 드리겠습니다.", "reading": "jib-kka-ji bae-ung-hae deu-ri-get-seum-ni-da", "en": "I'll walk you all the way home." },
+    { "id": "s04", "ko": "오늘 일도 일지에 적어 두겠습니다.", "reading": "o-neul il-do il-ji-e jeog-eo du-get-seum-ni-da", "en": "I'll jot down today's events in my log too." },
+    { "id": "s05", "ko": "너무 늦기 전에 귀가하는 게 좋겠습니다.", "reading": "neo-mu neuj-gi jeon-e gwi-ga-ha-neun ge jo-ket-seum-ni-da", "en": "It'd be good to head home before it gets too late." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "승객", "text": "오늘 하루 진짜 알차게 보낸 것 같아요.", "reading": "o-neul ha-ru jin-jja al-cha-ge bo-naen geot gat-a-yo", "en": "I feel like we spent today really well." },
+        { "speaker": "상우", "text": "저도 그렇게 생각합니다. 이 정도면 만족스러운 하루의 마무리입니다.", "reading": "jeo-do geu-reo-ke saeng-gak-ham-ni-da. i jeong-do-myeon man-jok-seu-reo-un ha-ru-ui ma-mu-ri-im-ni-da", "en": "I think so too. This is about a satisfying way to close out the day." },
+        { "speaker": "승객", "text": "기장님은 하루를 꼭 그렇게 정리하듯 끝내시네요.", "reading": "gi-jang-nim-eun ha-ru-reul kkok geu-reo-ke jeong-li-ha-deut kkeut-nae-si-ne-yo", "en": "You always end the day like you're wrapping something up, Captain." },
+        { "speaker": "상우", "text": "제 나름의 방식입니다. 흐지부지 넘어가는 것보다는 낫다고 생각합니다.", "reading": "je na-rum-ui bang-sig-im-ni-da. heu-ji-bu-ji neom-eo-ga-neun geot-bo-da-neun nat-da-go saeng-gak-ham-ni-da", "en": "It's just my own way of doing things. I think it's better than letting the day fizzle out without notice." }
+      ],
+      "question": "상우가 하루를 마무리하는 방식에 대해 알 수 있는 것은?",
+      "question_en": "What can we tell about how Sangwoo wraps up his day?",
+      "correct_answer": "하루를 대충 넘기지 않고 나름의 방식으로 정리하려 한다",
+      "options": ["하루를 대충 넘기지 않고 나름의 방식으로 정리하려 한다", "매일 새로운 계획을 세우는 데만 집중한다", "하루의 마무리에 별 의미를 두지 않는다", "다른 사람에게 하루 정리를 맡긴다"],
+      "explanation": "상우는 하루를 흐지부지 넘기지 않고, 자신만의 방식으로 제대로 정리하며 마무리하려는 태도를 보입니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "상우", "text": "이제 슬슬 귀가하셔야 할 시간입니다.", "reading": "i-je seul-seul gwi-ga-ha-syeo-ya hal si-gan-im-ni-da", "en": "It's about time you started heading home now." },
+        { "speaker": "승객", "text": "벌써요? 조금만 더 있다 가면 안 돼요?", "reading": "beol-sseo-yo? jo-geum-man deo it-da ga-myeon an dwae-yo", "en": "Already? Can't we stay just a little longer?" },
+        { "speaker": "상우", "text": "…솔직히 저도 그러고 싶습니다만, 내일 일정을 생각하면 이쯤에서 마무리하는 게 맞습니다.", "reading": "…sol-jik-hi jeo-do geu-reo-go sip-seum-ni-da-man, nae-il il-jeong-eul saeng-gak-ha-myeon i-jjeum-e-seo ma-mu-ri-ha-neun ge mat-seum-ni-da", "en": "...Honestly, I'd like that too, but thinking about tomorrow's schedule, it's right to wrap things up around now." },
+        { "speaker": "승객", "text": "알겠어요. 그럼 집 앞까지만 데려다주세요.", "reading": "al-get-eo-yo. geu-reom jib ap-kka-ji-man de-ryeo-da-ju-se-yo", "en": "Alright. Then just walk me to my door." }
+      ],
+      "question": "상우가 아쉬움을 느끼면서도 귀가를 권한 이유는?",
+      "question_en": "Why does Sangwoo urge her to head home even while feeling reluctant himself?",
+      "correct_answer": "내일 일정을 고려해 하루를 적절히 마무리하는 것이 맞다고 생각해서",
+      "options": ["내일 일정을 고려해 하루를 적절히 마무리하는 것이 맞다고 생각해서", "더 이상 함께 있고 싶지 않아서", "집에 급한 일이 생겨서", "승객이 지루해한다고 느껴서"],
+      "explanation": "상우는 아쉬운 마음이 들면서도, 내일 일정을 고려해 하루를 적절한 때에 마무리하는 것이 맞다고 판단해 귀가를 권합니다."
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 """backend/services/llm_service.py 에 최종 반영한 extract_word_suggestion 로직을
-groq 등 백엔드 전체 의존성 없이 독립적으로 검증하기 위한 스크립트 (BERT 우선, Kiwi 후보 추출)"""
+gemini-genai 등 백엔드 전체 의존성 없이 독립적으로 검증하기 위한 스크립트 (BERT 우선, Kiwi 후보 추출)"""
 import os
 os.environ.setdefault("KMP_DUPLICATE_LIB_OK", "TRUE")
 

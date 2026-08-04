@@ -1,0 +1,98 @@
+{
+  "id": "sp-frd-sangwoo-04",
+  "character_id": "sangwoo",
+  "title": "18번을 부탁드립니다",
+  "emoji": "🎤",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "저녁을 든든히 먹고 나니, 친구가 노래방 간판을 가리켰습니다. \"기장님, 오늘 목청 좀 풀어볼까요?\"",
+      "reading": "jeo-nyeog-eul deun-deun-hi meok-go na-ni, chin-gu-ga no-rae-bang gan-pan-eul ga-ri-kyeot-seum-ni-da. \"gi-jang-nim, o-neul mok-cheong jom pul-eo-bol-kka-yo?\"",
+      "en": "After a hearty dinner, my friend pointed at a karaoke sign. \"Captain, shall we warm up our voices tonight?\""
+    },
+    {
+      "text": "작은 방에 마이크 두 개가 놓였습니다. \"제 '18번'부터 예약하겠습니다.\" 저는 진지하게 리모컨 버튼을 눌렀습니다.",
+      "reading": "jag-eun bang-e ma-i-keu du gae-ga noh-yeot-seum-ni-da. \"je 'sip-pal-beon'-bu-teo ye-yak-ha-get-seum-ni-da.\" jeo-neun jin-ji-ha-ge ri-mo-keon beo-teun-eul nul-leot-seum-ni-da.",
+      "en": "Two microphones sat in the small room. \"I'll reserve my 'go-to song' first.\" I pressed the remote button with total seriousness.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "친구도 지지 않고 자신의 '애창곡'을 연달아 예약했습니다. 화면 속 예약 목록이 금세 길어졌습니다.",
+      "reading": "chin-gu-do ji-ji an-ko ja-sin-ui 'ae-chang-gok'-eul yeon-dal-a ye-yak-haess-seum-ni-da. hwa-myeon sok ye-yak mok-log-i geum-se gil-eo-jyeot-seum-ni-da.",
+      "en": "Not to be outdone, my friend reserved their own 'favorite song' one after another. The reservation list on the screen quickly grew long.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "전주가 흐르자 친구가 먼저 마이크를 잡았습니다. 저는 박수로 박자를 맞추며 대기했습니다.",
+      "reading": "jeon-ju-ga heu-reu-ja chin-gu-ga meon-jeo ma-i-keu-reul jab-at-seum-ni-da. jeo-neun bak-su-ro bak-ja-reul mat-chu-myeo dae-gi-haess-seum-ni-da.",
+      "en": "As the intro played, my friend grabbed the mic first. I waited, clapping along to the beat."
+    },
+    {
+      "text": "제 차례가 되자 친구가 '탬버린'을 건넸습니다. \"기장님은 흔들기 담당이에요.\" 저는 순순히 리듬을 탔습니다.",
+      "reading": "je cha-rye-ga doe-ja chin-gu-ga 'taem-beo-rin'-eul geon-naess-seum-ni-da. \"gi-jang-nim-eun heun-deul-gi dam-dang-i-e-yo.\" jeo-neun sun-sun-hi ri-deum-eul tass-seum-ni-da.",
+      "en": "When my turn came, my friend handed me a 'tambourine'. \"Captain, you're on shaking duty.\" I obediently went along with the rhythm.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "다음 곡에서는 제가 마이크를 잡았습니다. 평소와 달리 감정을 실어 '열창'했더니, 친구가 눈을 크게 떴습니다.",
+      "reading": "da-eum gog-e-seo-neun je-ga ma-i-keu-reul jab-at-seum-ni-da. pyeong-so-wa dal-li gam-jeong-eul sil-eo 'yeol-chang'-haess-deo-ni, chin-gu-ga nun-eul keu-ge tteot-seum-ni-da.",
+      "en": "On the next song, I took the mic myself. Unlike usual, I sang with real emotion — I 'sang passionately' — and my friend's eyes went wide.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "\"방금 그 소절, '소름' 돋았어.\" 친구의 진심 어린 반응에, 저도 모르게 어깨가 으쓱해졌습니다.",
+      "reading": "\"bang-geum geu so-jeol, 'so-reum' dod-a-sseo.\" chin-gu-ui jin-sim eo-rin ban-eung-e, jeo-do mo-reu-ge eo-kkae-ga eu-sseuk-hae-jyeot-seum-ni-da.",
+      "en": "\"That last line just now, I got 'chills'.\" At my friend's sincere reaction, I couldn't help but feel a little proud.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "번쩍이는 조명 아래, 목이 다 쉬도록 노래를 불렀습니다. 그날 밤 나눈 대화를 들려드리겠습니다.",
+      "reading": "beon-jjeok-i-neun jo-myeong a-rae, mog-i da swi-do-rok no-rae-reul bul-leot-seum-ni-da. geu-nal bam na-nun dae-hwa-reul deul-lyeo-deu-ri-get-seum-ni-da.",
+      "en": "Under the flashing lights, we sang until our voices went hoarse. Let me share the conversation we had that night."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "18번", "reading": "sip-pal-beon", "meaning": "one's go-to song (idiom, lit. 'number 18')", "example": "제 18번은 발라드입니다.", "example_reading": "je sip-pal-beon-eun bal-la-deu-im-ni-da", "example_en": "My go-to song is a ballad." },
+    { "id": "w02", "word": "애창곡", "reading": "ae-chang-gok", "meaning": "one's favorite song to sing", "example": "이 노래가 제 애창곡입니다.", "example_reading": "i no-rae-ga je ae-chang-gok-im-ni-da", "example_en": "This song is my favorite song to sing." },
+    { "id": "w03", "word": "탬버린", "reading": "taem-beo-rin", "meaning": "tambourine", "example": "친구가 탬버린을 흔들며 응원했습니다.", "example_reading": "chin-gu-ga taem-beo-rin-eul heun-deul-myeo eung-won-haess-seum-ni-da", "example_en": "My friend cheered, shaking the tambourine." },
+    { "id": "w04", "word": "열창하다", "reading": "yeol-chang-ha-da", "meaning": "to sing passionately, with all one's heart", "example": "그는 눈을 감고 열창했습니다.", "example_reading": "geu-neun nun-eul gam-go yeol-chang-haess-seum-ni-da", "example_en": "He closed his eyes and sang passionately." },
+    { "id": "w05", "word": "소름", "reading": "so-reum", "meaning": "goosebumps, chills (from being moved)", "example": "그 고음에 소름이 돋았습니다.", "example_reading": "geu go-eum-e so-reum-i dod-at-seum-ni-da", "example_en": "Goosebumps rose at that high note." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "제 18번은 언제나 같습니다.", "reading": "je sip-pal-beon-eun eon-je-na gat-seum-ni-da", "en": "My go-to song is always the same." },
+    { "id": "s02", "ko": "이 노래가 저의 애창곡입니다.", "reading": "i no-rae-ga jeo-ui ae-chang-gok-im-ni-da", "en": "This song is my favorite song to sing." },
+    { "id": "s03", "ko": "친구가 탬버린을 신나게 흔들었습니다.", "reading": "chin-gu-ga taem-beo-rin-eul sin-na-ge heun-deul-eot-seum-ni-da", "en": "My friend shook the tambourine excitedly." },
+    { "id": "s04", "ko": "마지막 곡을 힘껏 열창했습니다.", "reading": "ma-ji-mak gog-eul him-kkeot yeol-chang-haess-seum-ni-da", "en": "I passionately sang the last song with all my strength." },
+    { "id": "s05", "ko": "고음 부분에서 소름이 돋았습니다.", "reading": "go-eum bu-bun-e-seo so-reum-i dod-at-seum-ni-da", "en": "I got goosebumps at the high note part." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "상우", "text": "곡 번호를 입력하면 되는 겁니까? 저는 이 번호로 하겠습니다.", "reading": "gok beon-ho-reul ib-lyeog-ha-myeon doe-neun geob-ni-kka? jeo-neun i beon-ho-ro ha-get-seum-ni-da.", "en": "Do I just enter the song number? I'll go with this number." },
+        { "speaker": "승객", "text": "오, 그거 완전 옛날 노래잖아. 그게 너의 18번이야?", "reading": "o, geu-geo wan-jeon yet-nal no-rae-ja-na. geu-ge neo-ui sip-pal-beon-i-ya?", "en": "Oh, that's such an old song. Is that your go-to song?" },
+        { "speaker": "상우", "text": "고등학교 때부터 즐겨 불렀습니다. 실망시키지 않겠습니다.", "reading": "go-deung-hak-gyo ttae-bu-teo jeul-gyeo bul-leot-seum-ni-da. sil-mang-si-ki-ji an-ket-seum-ni-da.", "en": "I've enjoyed singing it since high school. I won't disappoint you." },
+        { "speaker": "승객", "text": "기대할게, 기장님!", "reading": "gi-dae-hal-ge, gi-jang-nim!", "en": "I'll look forward to it, Captain!" }
+      ],
+      "question": "상우의 '18번'은 언제부터 즐겨 부른 노래인가요?",
+      "question_en": "Since when has Sangwoo enjoyed singing his 'go-to song'?",
+      "correct_answer": "고등학교 때부터",
+      "options": ["고등학교 때부터", "대학교 때부터", "입사한 후부터", "어제부터"],
+      "explanation": "상우는 고등학교 때부터 그 노래를 즐겨 불렀다고 말했습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "승객", "text": "다음 곡은 내가 부를게. 탬버린 좀 쳐 줘.", "reading": "da-eum gog-eun nae-ga bu-reul-ge. taem-beo-rin jom chyeo jwo.", "en": "I'll sing the next song. Play the tambourine for me." },
+        { "speaker": "상우", "text": "알겠습니다. 박자에 맞춰 성실히 흔들겠습니다.", "reading": "al-get-seum-ni-da. bak-ja-e mat-chwo seong-sil-hi heun-deul-get-seum-ni-da.", "en": "Understood. I'll shake it faithfully in time with the beat." },
+        { "speaker": "승객", "text": "어때, 나 열창했지? 소름 돋지 않았어?", "reading": "eo-ttae, na yeol-chang-haet-ji? so-reum dod-ji an-ass-eo?", "en": "How was it, I sang my heart out, right? Didn't you get chills?" },
+        { "speaker": "상우", "text": "네, 솔직히 조금 놀랐습니다. 방금 그 고음, 인상적이었습니다.", "reading": "ne, sol-jik-hi jo-geum nol-lat-seum-ni-da. bang-geum geu go-eum, in-sang-jeog-i-eot-seum-ni-da.", "en": "Yes, honestly I was a bit surprised. That high note just now was impressive." }
+      ],
+      "question": "상우는 친구의 노래를 듣고 어떤 반응을 보였나요?",
+      "question_en": "How did Sangwoo react after hearing his friend's song?",
+      "correct_answer": "고음에 솔직히 놀라며 인상적이었다고 말했다",
+      "options": ["고음에 솔직히 놀라며 인상적이었다고 말했다", "귀를 막고 싫어했다", "노래를 그만하라고 했다", "아무 반응도 하지 않았다"],
+      "explanation": "상우는 친구의 고음에 솔직히 놀랐다고 하면서 인상적이었다는 반응을 보였습니다."
+    }
+  ]
+}

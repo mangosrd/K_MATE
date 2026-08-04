@@ -2,65 +2,152 @@
 
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import Image from "next/image";
 import BottomNav from "@/components/ui/BottomNav";
-import { MOCK_USER, MOCK_PROGRESS, MOCK_ECONOMY } from "@/lib/db/mock";
+import { MOCK_USER, MOCK_PROGRESS, MOCK_ECONOMY, MOCK_CHARACTERS, getChaptersForCharacter, getRegionById } from "@/lib/db/mock";
 import { getLocalVocab } from "@/lib/vocab/store";
 import { getAllLocalDiaries } from "@/lib/diary/store";
-import { getCurrentUser, getEffectiveUserId, logout as clearSession } from "@/lib/auth/store";
+import {
+  getEffectiveUserId,
+  logout as clearSession,
+  getPreferredCaptainId,
+  setPreferredCaptainId,
+} from "@/lib/auth/store";
+import { useAuthUser } from "@/lib/auth/useAuthUser";
 import { useLanguage } from "@/components/LanguageContext";
 import LanguageModal from "@/components/LanguageModal";
+import ThemeModal from "@/components/ThemeModal";
 import WithdrawModal from "@/components/WithdrawModal";
+import MateSelectModal from "@/components/MateSelectModal";
+import AdRewardModal from "@/components/AdRewardModal";
+import { getRemainingAds, completeAdView, MAX_ADS_PER_DAY, COINS_PER_AD } from "@/lib/ads/adStore";
 import type { Progress } from "@/types/database";
+import ProfileCard from "./components/ProfileCard";
+import PremiumCard from "./components/PremiumCard";
+import CaptainCard from "./components/CaptainCard";
+import StatisticsGrid from "./components/StatisticsGrid";
+import SettingsSection from "./components/SettingsSection";
+import SettingItem from "./components/SettingItem";
 import styles from "./me.module.css";
 
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
+const APP_VERSION = "1.0.0";
 
 export default function MePage() {
   const router = useRouter();
   const { language, t } = useLanguage();
   const [showLangModal, setShowLangModal] = useState(false);
+  const [showThemeModal, setShowThemeModal] = useState(false);
   const [showWithdrawModal, setShowWithdrawModal] = useState(false);
+  const [showMateModal, setShowMateModal] = useState(false);
+  const [showAdModal, setShowAdModal] = useState(false);
+  const [adRemaining, setAdRemaining] = useState(MAX_ADS_PER_DAY); // SSR safe default
 
-  const authUser = getCurrentUser();
+  const { authUser } = useAuthUser();
   const displayName = authUser?.name ?? MOCK_USER.name;
-  const displayLevel = MOCK_USER.level; // 레벨 시스템은 아직 백엔드에 없어 목업 유지
+  // 예전엔 레벨 시스템이 백엔드에 없어서 목업(MOCK_USER.level, 항상 1)을 그대로
+  // 보여줬는데, 이제 실제로 챕터 진도에 비례해서 오르는 백엔드 값을 쓴다.
+  const [displayLevel, setDisplayLevel] = useState(MOCK_USER.level);
 
   const [coins, setCoins] = useState(MOCK_ECONOMY.coins);
   const [progress, setProgress] = useState<Progress>(MOCK_PROGRESS);
-  const vocab = getLocalVocab();
-  const diaries = getAllLocalDiaries();
-  const masteredCount = vocab.filter((v) => v.mastery === "mastered").length;
-  const unlockedDiaries = diaries.filter((d) => d.unlocked).length;
+  const [membership, setMembership] = useState(MOCK_USER.membership);
+  const [freeSlots, setFreeSlots] = useState(MOCK_USER.free_character_slots);
+
+  // getLocalVocab/getAllLocalDiaries는 localStorage를 직접 읽는데, 서버는 항상 빈
+  // 배열을 볼 수밖에 없어 렌더 본문에서 바로 부르면 하이드레이션 결과가 서버(0)와
+  // 클라이언트(실제 값)에서 서로 달라 에러가 난다. 마운트 후에만(클라이언트에서만) 채운다.
+  const [vocabCount, setVocabCount] = useState(0);
+  const [masteredCount, setMasteredCount] = useState(0);
+  const [unlockedDiaries, setUnlockedDiaries] = useState(0);
+  useEffect(() => {
+    const vocab = getLocalVocab();
+    const diaries = getAllLocalDiaries();
+    setVocabCount(vocab.length);
+    setMasteredCount(vocab.filter((v) => v.mastery === "mastered").length);
+    setUnlockedDiaries(diaries.filter((d) => d.unlocked).length);
+    // 광고 남은 횟수 (localStorage → 클라이언트에서만)
+    setAdRemaining(getRemainingAds());
+  }, []);
+
+  // 메이트 카드에 표시할 기장 — 사용자가 마이페이지에서 바꾼 선호값(localStorage)을 따른다.
+  // 서버에서 내려주는 값이 없으니 마운트 이후에만 실제 값으로 갱신해 하이드레이션 불일치를 피한다.
+  const [mateId, setMateId] = useState("kyuhyun");
+  useEffect(() => {
+    setMateId(getPreferredCaptainId());
+  }, []);
+  const mate = MOCK_CHARACTERS.find((c) => c.id === mateId) ?? MOCK_CHARACTERS[0];
 
   useEffect(() => {
     const userId = getEffectiveUserId();
 
     fetch(`${BACKEND_URL}/user/${userId}`)
       .then((res) => (res.ok ? res.json() : null))
-      .then((data) => { if (data) setCoins(data.coins); })
-      .catch(() => {});
-
-    fetch(`${BACKEND_URL}/progress/${userId}/kyuhyun`)
-      .then((res) => (res.ok ? res.json() : null))
-      .then((data) => { if (data) setProgress(data); })
+      .then((data) => {
+        if (!data) return;
+        setCoins(data.coins);
+        if (data.membership) setMembership(data.membership);
+        if (Array.isArray(data.free_char_slots)) setFreeSlots(data.free_char_slots);
+        if (typeof data.level === "number") setDisplayLevel(data.level);
+      })
       .catch(() => {});
   }, []);
 
-  const affinityStars = Math.round(progress.affinity / 20);
+  useEffect(() => {
+    const userId = getEffectiveUserId();
+    fetch(`${BACKEND_URL}/progress/${userId}/${mateId}`)
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => { if (data) setProgress(data); })
+      .catch(() => {});
+  }, [mateId]);
+
+  // "방문 장소" — 예전엔 지역 페이지에 들어가기만 하면 명소 전체가 즉시 방문한 걸로
+  // 기록돼서 의미 없는 숫자였다(app/region/[regionId]/RegionView.tsx에서 제거함).
+  // 대신 이 메이트의 실제 지역 챕터(ch-*) 완료 비율에 비례해서 계산한다.
+  const mateRegion = getRegionById(mate.region_id);
+  const mateRegionChapters = getChaptersForCharacter(mate.id).filter((ch) => ch.id.startsWith("ch-"));
+  const mateCompletedCount = (progress.stamps ?? [])
+    .filter((id) => mateRegionChapters.some((ch) => ch.id === id)).length;
+  const visitedPlacesCount = mateRegion && mateRegionChapters.length > 0
+    ? Math.round((mateCompletedCount / mateRegionChapters.length) * mateRegion.place_count)
+    : 0;
+
+  const handleSelectMate = (characterId: string) => {
+    setPreferredCaptainId(characterId);
+    setMateId(characterId);
+  };
 
   const handleLogout = () => {
     clearSession();
     router.push("/login");
   };
 
+  const handleAdReward = async (earnedCoins: number) => {
+    // 1. 로컬 카운터 업데이트
+    completeAdView();
+    setAdRemaining(getRemainingAds());
+    // 2. 코인 즉시 반영 (낙관적 업데이트)
+    const newCoins = coins + earnedCoins;
+    setCoins(newCoins);
+    // 3. 백엔드 동기화 (실패해도 UX 영향 없음)
+    try {
+      const userId = getEffectiveUserId();
+      await fetch(`${BACKEND_URL}/user/${userId}/add-coins`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ coins: earnedCoins, reason: "ad_reward" }),
+      });
+    } catch { /* no-op — 백엔드 없으면 로컬값 유지 */ }
+  };
+
   const getLangName = (lang: string) => {
     switch (lang) {
-      case "en": return "🇺🇸 English";
-      case "ru": return "🇷🇺 Русский";
-      case "zh": return "🇨🇳 中文";
-      case "ja": return "🇯🇵 日本語";
-      default:   return "🇰🇷 한국어";
+      case "en": return "English";
+      case "ru": return "Русский";
+      case "zh": return "中文";
+      case "ja": return "日本語";
+      case "zh-TW": return "繁體中文";
+      case "th": return "ภาษาไทย";
+      default:   return "한국어";
     }
   };
 
@@ -77,99 +164,102 @@ export default function MePage() {
         </header>
 
         <div className={styles.inner}>
-          {/* 프로필 카드 */}
-          <div className={styles.profileCard}>
-            <div className={styles.profileBg} aria-hidden="true" />
-            <div className={styles.profileContent}>
-              <div className={styles.profileAvatar}>
-                {displayName.charAt(0).toUpperCase()}
-              </div>
-              <div className={styles.profileInfo}>
-                <p className={styles.profileName}>{displayName}</p>
-                <p className={styles.profileLevel}>{t("beginnerLearner")} · Lv.{displayLevel}</p>
-              </div>
-              <div className={styles.profileCoin}>
-                <p className={styles.coinNum}>🪙 {coins}</p>
-                <p className={styles.coinLabel}>{t("coins")}</p>
-              </div>
-            </div>
-          </div>
+          <ProfileCard
+            displayName={displayName}
+            levelLabel={`${t("beginnerLearner")} · Lv.${displayLevel}`}
+            coins={coins}
+            coinLabel={t("coins")}
+          />
 
-          {/* 메이트 카드 */}
-          <div className={styles.mateCard}>
-            <div className={styles.mateAvatar}>
-              <Image src="/characters/kyuhyun.png" alt="양규현 기장" width={50} height={50} className={styles.mateAvatarImg} />
-            </div>
-            <div className={styles.mateInfo}>
+          {/* 광고 보기 코인 배너 */}
+          <div className={styles.adBanner}>
+            <div className={styles.adBannerLeft}>
+              <span className={styles.adBannerIcon}>📺</span>
               <div>
-                <p className={styles.mateName}>양규현 기장과의 노선</p>
-                <p className={styles.mateNameEn}>Route with Captain Yang Kyuhyun</p>
-              </div>
-              <div className={styles.affinityRow}>
-                {Array.from({ length: 5 }).map((_, i) => (
-                  <span key={i} style={{ fontSize: 16 }}>
-                    {i < affinityStars ? "❤️" : "🤍"}
-                  </span>
-                ))}
-                <span style={{ fontSize: 12, color: "var(--text-muted)", marginLeft: 4 }}>
-                  {progress.affinity} / 100
-                </span>
-              </div>
-              <div className={styles.streakRow}>
-                <span>🔥</span>
-                <span className={styles.streakNum}>{progress.streak_days}일 연속</span>
+                <p className={styles.adBannerTitle}>광고 보고 코인 받기</p>
+                <p className={styles.adBannerSub}>
+                  1회당 🪙 {COINS_PER_AD}코인 · 오늘 {adRemaining}회 남음
+                </p>
               </div>
             </div>
+            <button
+              id="btn-watch-ad"
+              className={`btn btn-sm ${styles.adBannerBtn}`}
+              disabled={adRemaining <= 0}
+              onClick={() => setShowAdModal(true)}
+            >
+              {adRemaining > 0 ? "보기" : "완료"}
+            </button>
           </div>
 
-          {/* 학습 통계 */}
-          <div>
-            <p className="section-title">{t("learningStats")}</p>
-            <div className={styles.statsGrid}>
-              {[
-                { icon: "📖", num: vocab.length,                             labelKey: "learnedWords" },
-                { icon: "✅", num: masteredCount,                             labelKey: "mastered" },
-                { icon: "🗺️", num: progress.visited_places.length,           labelKey: "visitedPlaces" },
-                { icon: "📔", num: unlockedDiaries,                           labelKey: "diaries" },
-              ].map((stat) => (
-                <div key={stat.labelKey} className={styles.statItem}>
-                  <span className={styles.statIcon}>{stat.icon}</span>
-                  <span className={styles.statNum}>{stat.num}</span>
-                  <span className={styles.statKo}>{t(stat.labelKey)}</span>
-                </div>
-              ))}
-            </div>
-          </div>
+          <PremiumCard
+            isPremium={membership === "premium"}
+            titleText={membership === "premium" ? t("premiumActiveTitle") : t("premiumUpgradeTitle")}
+            subText={
+              membership === "premium"
+                ? t("premiumActiveSub")
+                : t("premiumUpgradeSub")
+            }
+            ctaText={membership === "premium" ? t("manageArrow") : t("viewArrow")}
+          />
 
-          {/* 설정 ([나] 카테고리 내 언어 설정 버튼 활성화) */}
-          <div>
-            <p className="section-title">{t("settings")}</p>
-            <div className={styles.settingList}>
-              <button
-                className={styles.settingItem}
-                onClick={() => setShowLangModal(true)}
-                id="btn-language-setting"
-              >
-                <span>{t("langSettings")}</span>
-                <span className={styles.settingValue}>{getLangName(language)} ›</span>
-              </button>
+          <CaptainCard
+            mate={mate}
+            progress={progress}
+            titleText={t("mateRouteTitle", { name: mate.name })}
+            taglineText={t(`mateTagline_${mate.id}`)}
+            changeLabel={t("changeMate")}
+            streakLabel={t("daysStreak")}
+            onChangeClick={() => setShowMateModal(true)}
+          />
 
-              <button className={styles.settingItem} onClick={handleLogout} style={{ color: "#ef4444" }}>
-                <span>🚪 {t("logout")}</span>
-              </button>
+          <StatisticsGrid
+            title={t("learningStats")}
+            stats={[
+              { icon: "📖", num: vocabCount, label: t("learnedWords") },
+              { icon: "✅", num: masteredCount, label: t("mastered") },
+              { icon: "🗺️", num: visitedPlacesCount, label: t("visitedPlaces") },
+              { icon: "📔", num: unlockedDiaries, label: t("diaries") },
+            ]}
+          />
 
-              {authUser && (
-                <button
-                  className={styles.settingItem}
-                  onClick={() => setShowWithdrawModal(true)}
-                  style={{ color: "#94a3b8", fontSize: 13, fontWeight: 500 }}
-                  id="btn-withdraw-account"
-                >
-                  <span>{t("withdrawAccount")}</span>
-                </button>
-              )}
-            </div>
-          </div>
+          <SettingsSection title={t("settingsAccount")}>
+            <SettingItem icon="👤" label={t("editProfile")} href="/me/edit-profile" id="btn-edit-profile" />
+            <SettingItem icon="💳" label={t("paymentMethods")} href="/me/payment-methods" id="btn-payment-methods" />
+            <SettingItem icon="🔒" label={t("securitySettings")} href="/me/security" id="btn-security" />
+          </SettingsSection>
+
+          <SettingsSection title={t("settingsGeneral")}>
+            <SettingItem
+              icon="🔤"
+              label={t("langSettings")}
+              value={getLangName(language)}
+              onClick={() => setShowLangModal(true)}
+              id="btn-language-setting"
+            />
+            <SettingItem icon="🔔" label={t("notificationSettings")} href="/me/notifications" id="btn-notifications" />
+            <SettingItem icon="🎨" label={t("themeSettings")} onClick={() => setShowThemeModal(true)} id="btn-theme-setting" />
+          </SettingsSection>
+
+          <SettingsSection title={t("settingsLegal")}>
+            <SettingItem icon="📄" label={t("termsOfService")} href="/legal/terms" isExternal id="btn-terms" />
+            <SettingItem icon="🛡️" label={t("privacyPolicy")} href="/legal/privacy" isExternal id="btn-privacy" />
+            <SettingItem icon="🎧" label={t("customerSupport")} href="/support" isExternal id="btn-support" />
+            <SettingItem icon="ℹ️" label={t("appVersion")} value={`v${APP_VERSION}`} />
+          </SettingsSection>
+
+          <SettingsSection title={t("settingsOther")}>
+            <SettingItem icon="🚪" label={t("logout")} onClick={handleLogout} id="btn-logout" />
+            {authUser && (
+              <SettingItem
+                icon="🗑️"
+                label={t("withdrawAccount")}
+                isDanger
+                onClick={() => setShowWithdrawModal(true)}
+                id="btn-withdraw-account"
+              />
+            )}
+          </SettingsSection>
         </div>
       </div>
 
@@ -178,8 +268,29 @@ export default function MePage() {
       {/* 🌐 언어 선택 모달 */}
       <LanguageModal isOpen={showLangModal} onClose={() => setShowLangModal(false)} />
 
+      {/* 🎨 테마 선택 모달 */}
+      <ThemeModal isOpen={showThemeModal} onClose={() => setShowThemeModal(false)} />
+
       {/* ⚠️ 회원 탈퇴 모달 */}
       <WithdrawModal isOpen={showWithdrawModal} onClose={() => setShowWithdrawModal(false)} />
+
+      {/* ✈️ 메이트(기장) 선택 모달 — 유료 기장(용우/선우/상우)은 프리미엄 결제 전엔 선택 불가 */}
+      <MateSelectModal
+        isOpen={showMateModal}
+        onClose={() => setShowMateModal(false)}
+        currentMateId={mateId}
+        membership={membership}
+        freeSlots={freeSlots}
+        onSelect={handleSelectMate}
+      />
+
+      {/* 📺 광고 보상 모달 */}
+      <AdRewardModal
+        isOpen={showAdModal}
+        remainingCount={adRemaining}
+        onClose={() => setShowAdModal(false)}
+        onRewardEarned={handleAdReward}
+      />
     </>
   );
 }

@@ -1,0 +1,98 @@
+{
+  "id": "sp-day-sangwoo-03",
+  "character_id": "sangwoo",
+  "title": "편의점 브리핑",
+  "emoji": "🏪",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "숙소로 돌아가는 길, 편의점에 잠깐 들르기로 했습니다. 내일 아침거리와 물을 미리 사두는 게 좋을 것 같았습니다.",
+      "reading": "suk-so-ro dol-a-ga-neun gil, pyeon-ui-jeom-e jam-kkan deul-leu-gi-ro haet-seum-ni-da. nae-il a-chim-geo-ri-wa mul-eul mi-ri sa-du-neun ge jo-eul geot gat-at-seum-ni-da.",
+      "en": "On the way back to the guesthouse, we decided to stop by a convenience store for a moment. It seemed like a good idea to pick up breakfast items and water in advance for tomorrow."
+    },
+    {
+      "text": "저는 삼각김밥을 하나 집어 들고는 뒷면부터 확인했습니다. 유통기한이 넉넉히 남아 있는지 보는 게 먼저입니다.",
+      "reading": "jeo-neun sam-gak-gim-bap-eul ha-na jib-eo deul-go-neun dwit-myeon-bu-teo hwak-in-haet-seum-ni-da. yu-tong-gi-han-i neok-neok-hi nam-a it-neun-ji bo-neun ge meon-jeo-im-ni-da.",
+      "en": "I picked up a triangle kimbap and immediately checked the back label. Making sure the expiration date has plenty of time left is always the first step.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "'화물 상태 점검 같은 겁니다.' 제 설명에 당신은 '편의점에서까지 그런 표현을 쓸 줄이야'라며 웃었습니다.",
+      "reading": "hwa-mul sang-tae jeom-geom gat-eun geob-ni-da. je seol-myeong-e dang-sin-eun pyeon-ui-jeom-e-seo-kka-ji geu-reon pyo-hyeon-eul sseul jul-i-ya-ra-myeo us-eot-seum-ni-da.",
+      "en": "\"It's like a cargo inspection.\" At my explanation, you laughed, saying, \"I can't believe you'd use that phrase even in a convenience store.\""
+    },
+    {
+      "text": "당신이 냉장고 앞에서 '원플러스원'이라고 적힌 음료를 발견하고는 반색했습니다. 저도 모르게 하나 더 집어 들었습니다.",
+      "reading": "dang-sin-i naeng-jang-go ap-e-seo won-peul-leo-seu-won-i-ra-go jeog-hin eum-ryo-reul bal-gyeon-ha-go-neun ban-saek-haet-seum-ni-da. jeo-do mo-reu-ge ha-na deo jib-eo deul-eot-seum-ni-da.",
+      "en": "You spotted a drink labeled \"buy-one-get-one\" by the fridge and lit up. Before I knew it, I'd grabbed a second one too.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "계산대에서 직원이 '적립하시겠어요?'라고 물었습니다. 저는 앱을 켜서 바코드를 내밀며 '네, 부탁드립니다'라고 답했습니다.",
+      "reading": "gye-san-dae-e-seo jig-won-i jeog-lip-ha-si-get-eo-yo-ra-go mul-eot-seum-ni-da. jeo-neun aeb-eul kyeo-seo ba-ko-deu-reul nae-mil-myeo ne, bu-tak-deu-rim-ni-da-ra-go dap-haet-seum-ni-da.",
+      "en": "At the register, the staff asked, \"Would you like to accumulate points?\" I opened the app and held out my barcode, replying, \"Yes, please.\"",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "출입구 근처에서는 새로 나온 과자 시식 행사가 한창이었습니다. 당신이 하나 집어 먹어보라며 제 손에 쥐여주었습니다.",
+      "reading": "chul-ip-gu geun-cheo-e-seo-neun sae-ro na-on gwa-ja si-sik haeng-sa-ga han-chang-i-eot-seum-ni-da. dang-sin-i ha-na jib-eo meog-eo-bo-ra-myeo je son-e jwi-yeo-ju-eot-seum-ni-da.",
+      "en": "Near the entrance, a sampling event for a new snack was in full swing. You picked one up and pressed it into my hand, telling me to try it.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "결국 대용량 과자 한 봉지를 사서, 저는 작은 지퍼백에 나눠 담기 시작했습니다. '소분해두면 다니면서 먹기 편합니다.'",
+      "reading": "gyeol-guk dae-yong-lyang gwa-ja han bong-ji-reul sa-seo, jeo-neun jak-eun ji-peo-baeg-e na-nwo dam-gi si-jak-haet-seum-ni-da. so-bun-hae-du-myeon da-ni-myeon-seo meok-gi pyeon-ham-ni-da.",
+      "en": "In the end we bought a large bag of snacks, and I started portioning it out into small zip bags. \"If you divide it up like this, it's easier to snack on while we're out and about.\"",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "당신은 그런 저를 보며 '편의점 하나도 이렇게 진지하게 다니는 사람은 처음 봐요'라고 했습니다. 저는 그저, 함께하는 사소한 순간도 허투루 넘기고 싶지 않을 뿐입니다.",
+      "reading": "dang-sin-eun geu-reon jeo-reul bo-myeo pyeon-ui-jeom ha-na-do i-reo-ke jin-ji-ha-ge da-ni-neun sa-ram-eun cheo-eum bwa-yo-ra-go haet-seum-ni-da. jeo-neun geu-jeo, ham-kke-ha-neun sa-so-han sun-gan-do heo-tu-ru neom-gi-go sip-ji an-eul ppun-im-ni-da.",
+      "en": "Watching me, you said, \"You're the first person I've seen take even a convenience store this seriously.\" I simply don't want to let even the small, ordinary moments we share pass by carelessly."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "유통기한", "reading": "yu-tong-gi-han", "meaning": "expiration date", "example": "유통기한이 넉넉히 남아 있는지 확인합니다.", "example_reading": "yu-tong-gi-han-i neok-neok-hi nam-a it-neun-ji hwak-in-ham-ni-da", "example_en": "I check whether there's plenty of time left before it expires." },
+    { "id": "w02", "word": "원플러스원", "reading": "won-peul-leo-seu-won", "meaning": "buy-one-get-one (1+1 promotion)", "example": "이 음료는 원플러스원입니다.", "example_reading": "i eum-ryo-neun won-peul-leo-seu-won-im-ni-da", "example_en": "This drink is a buy-one-get-one deal." },
+    { "id": "w03", "word": "적립", "reading": "jeog-lip", "meaning": "point accumulation", "example": "포인트 적립하시겠어요?", "example_reading": "po-in-teu jeog-lip-ha-si-get-eo-yo", "example_en": "Would you like to accumulate points?" },
+    { "id": "w04", "word": "시식", "reading": "si-sik", "meaning": "food sampling, tasting", "example": "새 과자 시식 행사를 하고 있습니다.", "example_reading": "sae gwa-ja si-sik haeng-sa-reul ha-go it-seum-ni-da", "example_en": "They're holding a sampling event for a new snack." },
+    { "id": "w05", "word": "소분", "reading": "so-bun", "meaning": "portioning into smaller amounts", "example": "소분해두면 먹기 편합니다.", "example_reading": "so-bun-hae-du-myeon meok-gi pyeon-ham-ni-da", "example_en": "If you portion it out, it's easier to eat." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "유통기한이 언제까지인지 확인해 보겠습니다.", "reading": "yu-tong-gi-han-i eon-je-kka-ji-in-ji hwak-in-hae bo-get-seum-ni-da", "en": "Let me check how long until the expiration date." },
+    { "id": "s02", "ko": "이 제품은 지금 원플러스원 행사 중입니다.", "reading": "i je-pum-eun ji-geum won-peul-leo-seu-won haeng-sa jung-im-ni-da", "en": "This product is currently on a buy-one-get-one promotion." },
+    { "id": "s03", "ko": "회원 카드로 적립해 드릴까요?", "reading": "hoe-won ka-deu-ro jeog-lip-hae deu-ril-kka-yo", "en": "Shall I accumulate points on your membership card?" },
+    { "id": "s04", "ko": "저쪽에서 시식 행사를 하고 있네요.", "reading": "jeo-jjog-e-seo si-sik haeng-sa-reul ha-go it-ne-yo", "en": "They're holding a sampling event over there." },
+    { "id": "s05", "ko": "많으니까 소분해서 가져가면 좋겠습니다.", "reading": "man-eu-ni-kka so-bun-hae-seo ga-jyeo-ga-myeon jo-ket-seum-ni-da", "en": "Since there's a lot, it'd be good to portion it out before taking it." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "상우", "text": "이 삼각김밥, 유통기한이 오늘까지네요. 다른 걸로 고릅시다.", "reading": "i sam-gak-gim-bap, yu-tong-gi-han-i o-neul-kka-ji-ne-yo. da-reun geol-lo go-reup-si-da", "en": "This triangle kimbap's expiration date is today. Let's pick a different one." },
+        { "speaker": "승객", "text": "그런 것까지 다 확인하고 사요?", "reading": "geu-reon geot-kka-ji da hwak-in-ha-go sa-yo", "en": "You check even that before buying?" },
+        { "speaker": "상우", "text": "당연합니다. 확인 절차를 생략하면 꼭 문제가 생기더군요.", "reading": "dang-yeon-ham-ni-da. hwak-in jeol-cha-reul saeng-lyak-ha-myeon kkok mun-je-ga saeng-gi-deo-gun-yo", "en": "Of course. Whenever I skip the inspection step, something always goes wrong." },
+        { "speaker": "승객", "text": "비행기도 아니고 삼각김밥인데요.", "reading": "bi-haeng-gi-do a-ni-go sam-gak-gim-bap-in-de-yo", "en": "It's just a triangle kimbap, not an airplane." }
+      ],
+      "question": "상우가 삼각김밥을 고를 때 보이는 태도는?",
+      "question_en": "What attitude does Sangwoo show when picking out the triangle kimbap?",
+      "correct_answer": "작은 물건을 고를 때도 꼼꼼하게 확인 절차를 지키는 태도",
+      "options": ["작은 물건을 고를 때도 꼼꼼하게 확인 절차를 지키는 태도", "아무거나 빨리 고르고 싶어 하는 태도", "가격에만 신경 쓰는 태도", "승객의 의견을 무시하는 태도"],
+      "explanation": "상우는 사소한 물건을 살 때도 유통기한 같은 확인 절차를 철저히 지키는 꼼꼼한 성격을 보여줍니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "승객", "text": "이거 원플러스원이래요! 하나 더 가져올게요.", "reading": "i-geo won-peul-leo-seu-won-i-rae-yo! ha-na deo ga-jyeo-ol-ge-yo", "en": "This is buy-one-get-one! I'll go grab another one." },
+        { "speaker": "상우", "text": "잘 찾으셨습니다. 계산할 때 적립도 같이 해 드리겠습니다.", "reading": "jal chaj-eu-syeoss-seum-ni-da. gye-san-hal ttae jeog-lip-do gat-i hae deu-ri-get-seum-ni-da", "en": "Good find. I'll also take care of the point accumulation when we pay." },
+        { "speaker": "승객", "text": "포인트 쌓아서 뭐 하시게요?", "reading": "po-in-teu ssa-a-seo mwo ha-si-ge-yo", "en": "What are you going to do with the accumulated points?" },
+        { "speaker": "상우", "text": "다음에 여기 다시 올 때 쓰면 됩니다. 다음도 있어야 하니까요.", "reading": "da-eum-e yeo-gi da-si ol ttae sseu-myeon doem-ni-da. da-eum-do it-eo-ya ha-ni-kka-yo", "en": "We can use them next time we come back here. After all, there has to be a next time." }
+      ],
+      "question": "상우가 포인트를 적립하는 이유로 넌지시 드러나는 것은?",
+      "question_en": "What is subtly implied as the reason Sangwoo accumulates points?",
+      "correct_answer": "다음에 또 함께 오고 싶은 마음이 은근히 드러난다",
+      "options": ["다음에 또 함께 오고 싶은 마음이 은근히 드러난다", "포인트를 모아 큰 상품을 받고 싶어서", "적립이 규정상 의무이기 때문에", "직원의 부탁을 거절하기 어려워서"],
+      "explanation": "상우는 '다음도 있어야 하니까요'라는 말로, 앞으로도 함께 이곳에 다시 오고 싶은 마음을 은근히 드러냅니다."
+    }
+  ]
+}

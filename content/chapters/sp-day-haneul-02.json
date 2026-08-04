@@ -1,0 +1,67 @@
+{
+  "id": "sp-day-haneul-02",
+  "character_id": "haneul",
+  "title": "객리단길, 아메리카노 한 잔",
+  "emoji": "☕",
+  "story": [
+    {
+      "text": "객리단길은 여전히 붐볐다. 좁은 골목 사이로 오래된 한옥과 낮은 카페 간판들이 뒤섞여 있었다.",
+      "reading": "gaek-ri-dan-gil-eun yeo-jeon-hi bum-byeot-da. jop-eun gol-mok sa-i-ro o-rae-doen han-ok-gwa naj-eun ka-pe gan-pan-deul-i dwi-seok-yeo iss-eot-da.",
+      "en": "Gaekridan-gil was as crowded as ever. Old hanok houses and low-hanging cafe signs mingled together along the narrow alley."
+    },
+    {
+      "text": "하늘은 메뉴판도 보지 않고 익숙하게 줄을 섰다. '뭐 마실 거야, 정해.' 그가 재촉했다.",
+      "reading": "ha-neul-eun me-nyu-pan-do bo-ji anh-go ik-suk-ha-ge jul-eul seot-da. 'mwo ma-sil geo-ya, jeong-hae.' geu-ga jae-chok-haet-da.",
+      "en": "Haneul got in line without even glancing at the menu, like he'd done it a hundred times. \"What are you drinking? Decide,\" he prodded."
+    },
+    {
+      "text": "나는 메뉴를 훑어보다 우물쭈물했다. 그러자 그가 먼저 나서서 '아이스 아메리카노 한 잔이랑—' 하고 주문을 시작했다.",
+      "reading": "na-neun me-nyu-reul hult-eo-bo-da u-mul-jju-mul-haet-da. geu-reo-ja geu-ga meon-jeo na-seo-seo 'a-i-seu a-me-ri-ka-no han jan-i-rang—' ha-go ju-mun-eul si-jak-haet-da.",
+      "en": "I was still hesitating over the menu when he stepped in ahead of me. \"One iced americano—\" he started ordering.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "'저는 따뜻한 라떼 주문할게요.' 내가 겨우 끼어들자, 그는 픽 웃으며 점원에게 다시 말했다.",
+      "reading": "'jeo-neun tta-tteut-han la-tte ju-mun-hal-kke-yo.' nae-ga gyeo-u kki-eo-deul-ja, geu-neun pik us-eu-myeo jeom-won-e-ge da-si mal-haet-da.",
+      "en": "\"I'll order a hot latte,\" I managed to cut in. He gave a small smirk and repeated it to the clerk himself.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "'포장이세요, 드시고 가세요?' 점원이 묻자, 하늘이 나 대신 '테이크아웃이요.' 하고 답했다. 내 취향을 벌써 다 아는 사람처럼.",
+      "reading": "'po-jang-i-se-yo, deu-si-go ga-se-yo?' jeom-won-i mud-ja, ha-neul-i na dae-sin 'te-i-keu-a-ut-i-yo.' ha-go dap-haet-da. nae chwi-hyang-eul beol-sseo da a-neun sa-ram-cheo-reom.",
+      "en": "\"For here or to go?\" the clerk asked. Haneul answered \"To go,\" on my behalf — like someone who already knew all my preferences by heart.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "'얼마예요?' 내가 지갑을 꺼내려 하자, 하늘은 벌써 카드를 내밀고 있었다. '됐어, 넣어둬.'",
+      "reading": "'eol-ma-ye-yo?' nae-ga ji-gab-eul kkae-nae-ryeo ha-ja, ha-neul-eun beol-sseo ka-deu-reul nae-mil-go iss-eot-da. 'dwaess-eo, neo-eo-dwo.'",
+      "en": "\"How much is it?\" I reached for my wallet, but Haneul had already held out his card. \"Don't bother. Put that away.\"",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "진동벨이 울리자 그는 누구보다 먼저 일어나 음료를 받아 왔다. 내 컵을 먼저 건네주는 손이 무뚝뚝하면서도 조심스러웠다.",
+      "reading": "jin-dong-bel-i ul-li-ja geu-neun nu-gu-bo-da meon-jeo il-eo-na eum-nyo-reul bad-a wat-da. nae keop-eul meon-jeo geon-ne-ju-neun son-i mu-ttuk-ttuk-ha-myeon-seo-do jo-sim-seu-reo-wot-da.",
+      "en": "When the buzzer rang, he was up before anyone else to grab our drinks. The hand that passed me my cup first was blunt, and yet careful.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "창가에 나란히 앉아 커피를 마시며, 나는 생각했다. 무심한 척해도, 이 사람은 늘 내 몫부터 챙긴다고.",
+      "reading": "chang-ga-e na-ran-hi anj-a keo-pi-reul ma-si-myeo, na-neun saeng-gak-haet-da. mu-sim-han cheok-hae-do, i sa-ram-eun neul nae mok-bu-teo chaeng-gin-da-go.",
+      "en": "Sitting side by side by the window, sipping our coffee, I thought to myself — no matter how indifferent he acted, this person always looked out for me first."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "주문하다", "reading": "ju-mun-ha-da", "meaning": "to order", "example": "저 커피 한 잔 주문할게요.", "example_reading": "jeo keo-pi han jan ju-mun-hal-kke-yo", "example_en": "I'll order a cup of coffee." },
+    { "id": "w02", "word": "아이스", "reading": "a-i-seu", "meaning": "iced", "example": "아이스 아메리카노 한 잔 주세요.", "example_reading": "a-i-seu a-me-ri-ka-no han jan ju-se-yo", "example_en": "One iced americano, please." },
+    { "id": "w03", "word": "테이크아웃", "reading": "te-i-keu-a-ut", "meaning": "takeout, to go", "example": "테이크아웃 되나요?", "example_reading": "te-i-keu-a-ut doe-na-yo?", "example_en": "Can I get this to go?" },
+    { "id": "w04", "word": "진동벨", "reading": "jin-dong-bel", "meaning": "buzzer, pager", "example": "진동벨이 울리면 가져가세요.", "example_reading": "jin-dong-bel-i ul-li-myeon ga-jyeo-ga-se-yo", "example_en": "When the buzzer rings, please come pick it up." },
+    { "id": "w05", "word": "얼마예요", "reading": "eol-ma-ye-yo", "meaning": "how much is it?", "example": "이거 얼마예요?", "example_reading": "i-geo eol-ma-ye-yo?", "example_en": "How much is this?" }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "아이스 아메리카노 한 잔 주세요.", "reading": "a-i-seu a-me-ri-ka-no han jan ju-se-yo", "en": "One iced americano, please." },
+    { "id": "s02", "ko": "따뜻한 걸로 주문할게요.", "reading": "tta-tteut-han geol-lo ju-mun-hal-kke-yo", "en": "I'll order a hot one." },
+    { "id": "s03", "ko": "테이크아웃 되나요?", "reading": "te-i-keu-a-ut doe-na-yo?", "en": "Can I get this to go?" },
+    { "id": "s04", "ko": "이거 얼마예요?", "reading": "i-geo eol-ma-ye-yo?", "en": "How much is this?" },
+    { "id": "s05", "ko": "진동벨 울리면 가져갈게요.", "reading": "jin-dong-bel ul-li-myeon ga-jyeo-gal-kke-yo", "en": "I'll come get it when the buzzer rings." }
+  ]
+}

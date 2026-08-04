@@ -1,0 +1,98 @@
+{
+  "id": "sp-day-sangwoo-06",
+  "character_id": "sangwoo",
+  "title": "주말의 정비 시간",
+  "emoji": "🛩️",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "일요일 오후, 당신이 제 집에 놀러 왔을 때 저는 거실 테이블에 앉아 작은 부품들을 늘어놓고 있었습니다.",
+      "reading": "il-yo-il o-hu, dang-sin-i je jib-e nol-leo wass-eul ttae jeo-neun geo-sil te-i-beul-e anj-a jak-eun bu-pum-deul-eul neul-eo-noh-go it-seot-seum-ni-da.",
+      "en": "Sunday afternoon, when you came over to visit, I was sitting at the living room table with small parts spread out in front of me."
+    },
+    {
+      "text": "'모형 비행기입니다. 저의 유일한 여가 활동이라고 할 수 있겠습니다.' 저는 조심스럽게 설명했습니다. 딱히 자랑할 만한 취미는 아니라고 생각하면서도요.",
+      "reading": "mo-hyeong bi-haeng-gi-im-ni-da. jeo-ui yu-il-han yeo-ga hwal-dong-i-ra-go hal su it-get-seum-ni-da. jeo-neun jo-sim-seu-reop-ge seol-myeong-haet-seum-ni-da. ttak-hi ja-rang-hal man-han chwi-mi-neun a-ni-ra-go saeng-gak-ha-myeon-seo-yo.",
+      "en": "\"A model airplane. I suppose you could call it my one and only leisure activity.\" I explained carefully, even as I thought it wasn't much of a hobby to boast about.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "핀셋으로 작은 부품 하나를 조립하는 데만도 한참이 걸립니다. 한번 몰입하면 시간 가는 줄을 모릅니다.",
+      "reading": "pin-set-eu-ro jak-eun bu-pum ha-na-reul jo-rip-ha-neun de-man-do han-cham-i geol-lim-ni-da. han-beon mol-ib-ha-myeon si-gan ga-neun jul-eul mo-reum-ni-da.",
+      "en": "Just assembling one small part with tweezers takes quite a while. Once I get immersed, I lose all track of time.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "당신은 턱을 괴고 앉아 그런 저를 가만히 지켜보았습니다. '평소 기내 방송할 때랑 완전 다른 사람 같아요'라고 하더군요. 저는 딱히 반박하지 않았습니다.",
+      "reading": "dang-sin-eun teok-eul goe-go anj-a geu-reon jeo-reul ga-man-hi ji-kyeo-bo-at-seum-ni-da. pyeong-so gi-nae bang-song-hal ttae-rang wan-jeon da-reun sa-ram gat-a-yo-ra-go ha-deo-gun-yo. jeo-neun ttak-hi ban-bak-ha-ji an-at-seum-ni-da.",
+      "en": "Resting your chin on your hand, you sat and quietly watched me work. \"You seem like a totally different person compared to when you're making cabin announcements,\" you said. I didn't bother arguing the point."
+    },
+    {
+      "text": "'이렇게 손을 움직이고 있으면 머리가 비워집니다. 저에게는 일종의 재충전인 셈입니다.' 저는 완성된 날개 한쪽을 조심스레 내려놓으며 말했습니다.",
+      "reading": "i-reo-ke son-eul um-jig-i-go it-eu-myeon meo-ri-ga bi-wo-jim-ni-da. jeo-e-ge-neun il-jong-ui jae-chung-jeon-in sem-im-ni-da. jeo-neun wan-seong-doen nal-gae han-jjok-eul jo-sim-seu-re nae-ryeo-noh-eu-myeo mal-haet-seum-ni-da.",
+      "en": "\"Moving my hands like this clears my head. For me, it's a kind of recharging.\" I said, carefully setting down one finished wing.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "저는 웃으며 덧붙였습니다. '비행기를 정비하는 게 제 일인데, 쉬는 날에도 결국 비행기를 정비하고 있군요.' 당신은 그 말에 소리 내어 웃었습니다.",
+      "reading": "jeo-neun us-eu-myeo deot-bu-chyeot-seum-ni-da. bi-haeng-gi-reul jeong-bi-ha-neun ge je il-in-de, swi-neun nal-e-do gyeol-guk bi-haeng-gi-reul jeong-bi-ha-go it-gun-yo. dang-sin-eun geu mal-e so-ri nae-eo us-eot-seum-ni-da.",
+      "en": "I smiled and added, \"Maintaining airplanes is my job, and yet even on my day off, here I am, maintaining an airplane after all.\" You laughed out loud at that.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "조립을 마친 뒤, 저는 상자를 정리하며 제안했습니다. '바람도 쐴 겸, 잠깐 산책하러 나갈까요?' 당신은 기다렸다는 듯 벌떡 일어섰습니다.",
+      "reading": "jo-rip-eul ma-chin dwi, jeo-neun sang-ja-reul jeong-li-ha-myeo je-an-haet-seum-ni-da. ba-ram-do sswoel gyeom, jam-kkan san-chaek-ha-reo na-gal-kka-yo. dang-sin-eun gi-da-ryeot-da-neun deut beol-tteok il-eo-seot-seum-ni-da.",
+      "en": "After finishing the assembly, I tidied up the box and suggested, \"Shall we get some fresh air and go for a short walk?\" You popped up as if you'd been waiting for exactly that.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "완성된 모형 비행기를 창가에 올려두고, 우리는 나란히 집을 나섰습니다. 별일 없는 하루였지만, 이상하게 마음은 가득 찼습니다.",
+      "reading": "wan-seong-doen mo-hyeong bi-haeng-gi-reul chang-ga-e ol-lyeo-du-go, u-ri-neun na-ran-hi jib-eul na-seot-seum-ni-da. byeol-il eop-neun ha-ru-yeot-ji-man, i-sang-ha-ge ma-eum-eun ga-deuk chass-seum-ni-da.",
+      "en": "We set the finished model plane on the windowsill and stepped out of the apartment side by side. It had been an uneventful day, but strangely, my heart felt completely full."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "여가", "reading": "yeo-ga", "meaning": "leisure time", "example": "이게 저의 유일한 여가 활동입니다.", "example_reading": "i-ge jeo-ui yu-il-han yeo-ga hwal-dong-im-ni-da", "example_en": "This is my one and only leisure activity." },
+    { "id": "w02", "word": "재충전", "reading": "jae-chung-jeon", "meaning": "recharging (energy or mind)", "example": "손을 움직이면 재충전이 됩니다.", "example_reading": "son-eul um-jig-i-myeon jae-chung-jeon-i doem-ni-da", "example_en": "Moving my hands recharges me." },
+    { "id": "w03", "word": "몰입", "reading": "mol-ib", "meaning": "immersion, flow state", "example": "한번 몰입하면 시간 가는 줄 모릅니다.", "example_reading": "han-beon mol-ib-ha-myeon si-gan ga-neun jul mo-reum-ni-da", "example_en": "Once I get immersed, I lose track of time." },
+    { "id": "w04", "word": "산책", "reading": "san-chaek", "meaning": "walk, stroll", "example": "잠깐 산책하러 나갈까요?", "example_reading": "jam-kkan san-chaek-ha-reo na-gal-kka-yo", "example_en": "Shall we go for a short walk?" },
+    { "id": "w05", "word": "정비", "reading": "jeong-bi", "meaning": "maintenance, servicing", "example": "쉬는 날에도 비행기를 정비하고 있습니다.", "example_reading": "swi-neun nal-e-do bi-haeng-gi-reul jeong-bi-ha-go it-seum-ni-da", "example_en": "Even on my day off, I'm maintaining an airplane." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "이게 저의 유일한 여가 활동입니다.", "reading": "i-ge jeo-ui yu-il-han yeo-ga hwal-dong-im-ni-da", "en": "This is my one and only leisure activity." },
+    { "id": "s02", "ko": "이 시간이 저에게는 재충전입니다.", "reading": "i si-gan-i jeo-e-ge-neun jae-chung-jeon-im-ni-da", "en": "This time is a form of recharging for me." },
+    { "id": "s03", "ko": "몰입하다 보면 시간 가는 줄 모릅니다.", "reading": "mol-ib-ha-da bo-myeon si-gan ga-neun jul mo-reum-ni-da", "en": "When I get immersed, I lose track of time." },
+    { "id": "s04", "ko": "저녁에 가볍게 산책이라도 할까요?", "reading": "jeo-nyeog-e ga-byeop-ge san-chaeg-i-ra-do hal-kka-yo", "en": "Shall we take a light walk this evening?" },
+    { "id": "s05", "ko": "쉬는 날에도 모형 비행기를 정비합니다.", "reading": "swi-neun nal-e-do mo-hyeong bi-haeng-gi-reul jeong-bi-ham-ni-da", "en": "Even on my day off, I tune up model airplanes." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "승객", "text": "이게 기장님 취미예요? 되게 의외예요.", "reading": "i-ge gi-jang-nim chwi-mi-ye-yo? doe-ge ui-oe-ye-yo", "en": "This is your hobby, Captain? That's pretty unexpected." },
+        { "speaker": "상우", "text": "제 유일한 여가입니다. 규칙적으로 손을 움직이는 게 마음이 편합니다.", "reading": "je yu-il-han yeo-ga-im-ni-da. gyu-chik-jeog-eu-ro son-eul um-jig-i-neun ge ma-eum-i pyeon-ham-ni-da", "en": "It's my only leisure activity. Moving my hands in a set rhythm calms my mind." },
+        { "speaker": "승객", "text": "저도 한번 해봐도 돼요?", "reading": "jeo-do han-beon hae-bwa-do dwae-yo", "en": "Can I try it too?" },
+        { "speaker": "상우", "text": "물론입니다. 다만 부품이 작으니, 천천히 하십시오.", "reading": "mul-lon-im-ni-da. da-man bu-pum-i jak-eu-ni, cheon-cheon-hi ha-sip-si-o", "en": "Of course. Just take it slow, since the parts are small." }
+      ],
+      "question": "상우에게 모형 비행기 조립이 갖는 의미는?",
+      "question_en": "What does building model airplanes mean to Sangwoo?",
+      "correct_answer": "마음을 편안하게 해 주는 유일한 여가 활동",
+      "options": ["마음을 편안하게 해 주는 유일한 여가 활동", "직업상 반드시 해야 하는 훈련", "돈을 벌기 위한 부업", "친구에게 선물하기 위한 활동"],
+      "explanation": "상우는 모형 비행기 조립을 마음을 편안하게 해 주는 자신의 유일한 여가 활동이라고 설명합니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "상우", "text": "완성했습니다. 이걸로 오늘의 정비 작업은 끝입니다.", "reading": "wan-seong-haet-seum-ni-da. i-geol-lo o-neul-ui jeong-bi jag-eob-eun kkeut-im-ni-da", "en": "Finished. That wraps up today's maintenance work." },
+        { "speaker": "승객", "text": "진짜 비행기 정비하는 것처럼 말씀하시네요.", "reading": "jin-jja bi-haeng-gi jeong-bi-ha-neun geot-cheo-reom mal-sseum-ha-si-ne-yo", "en": "You're talking like you're really servicing an airplane." },
+        { "speaker": "상우", "text": "저한테는 비슷합니다. 손끝으로 하나씩 확인하는 과정이니까요.", "reading": "jeo-han-te-neun bi-seut-ham-ni-da. son-kkeut-eu-ro ha-na-ssik hwak-in-ha-neun gwa-jeong-i-ni-kka-yo", "en": "It feels similar to me. It's a process of checking each piece by hand, one at a time." },
+        { "speaker": "승객", "text": "그럼 이제 우리도 정비 끝났으니 나갈까요?", "reading": "geu-reom i-je u-ri-do jeong-bi kkeut-nass-eu-ni na-gal-kka-yo", "en": "Then now that maintenance is done, shall we head out?" }
+      ],
+      "question": "상우가 모형 비행기 조립을 실제 정비에 비유한 이유는?",
+      "question_en": "Why does Sangwoo compare model plane assembly to real maintenance work?",
+      "correct_answer": "부품 하나하나를 손끝으로 확인하는 과정이 비슷하다고 느껴서",
+      "options": ["부품 하나하나를 손끝으로 확인하는 과정이 비슷하다고 느껴서", "모형 비행기가 실제 비행기와 같은 회사 제품이라서", "정비사 자격증이 있어서", "취미로 돈을 벌고 싶어서"],
+      "explanation": "상우는 부품을 손끝으로 하나씩 확인하는 과정이 실제 비행기 정비와 비슷하게 느껴진다고 설명했습니다."
+    }
+  ]
+}

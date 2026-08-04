@@ -1,0 +1,98 @@
+{
+  "id": "sp-day-yongwoo-03",
+  "character_id": "yongwoo",
+  "title": "1+1의 정석",
+  "emoji": "🏪",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "숙소 근처 편의점 불빛이 유난히 환하게 느껴지는 밤이었다. 야식이 당긴다는 내 말에 용우가 못 이기는 척 슬리퍼를 꿰신고 따라나섰다.",
+      "reading": "suk-so geun-cheo pyeon-ui-jeom bul-bit-i yu-nan-hi hwan-ha-ge neu-kkyeo-ji-neun bam-i-eot-da. ya-sig-i dang-gin-da-neun nae mal-e yong-u-ga mot i-gi-neun cheok seul-li-peo-reul kkwe-sin-go tta-ra-na-seot-da.",
+      "en": "It was a night when the convenience store lights near the guesthouse seemed unusually bright. When I said I was craving a late-night snack, Yongwoo grumbled but slipped on his sandals and came along anyway."
+    },
+    {
+      "text": "냉장고 앞에서 아무 컵라면이나 집으려 하자, 그가 손목을 탁 잡았다. '뭘 그냥 집어. 저기 원 플러스 원 붙어 있는 거 안 보여?'",
+      "reading": "naeng-jang-go ap-e-seo a-mu keob-ra-myeon-i-na jib-eu-ryeo ha-ja, geu-ga son-mok-eul tak jab-at-da. mwol geu-nyang jib-eo. jeo-gi won peul-leo-seu won but-eo it-neun geo an bo-yeo?",
+      "en": "As I reached for a random cup of ramen from the fridge, he grabbed my wrist. \"Why grab just anything. Don't you see the buy-one-get-one tag over there?\"",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "그가 가리킨 진열대엔 노란 스티커가 붙은 라면 두 봉지가 나란히 있었다. '같은 돈으로 하나 더 먹을 수 있는데 왜 그냥 지나가.' 잔소리인지 알뜰함인지 모를 말투였다.",
+      "reading": "geu-ga ga-ri-kin jin-yeol-dae-en no-ran seu-ti-keo-ga but-eun ra-myeon du bong-ji-ga na-ran-hi iss-eot-da. gat-eun don-eu-ro ha-na deo meog-eul su in-neun-de wae geu-nyang ji-na-ga. jan-so-ri-in-ji al-tteul-ham-in-ji mo-reul mal-tu-yeot-da.",
+      "en": "On the shelf he'd pointed to sat two packs of ramen with matching yellow tags, side by side. \"You can get one more for the same money — why just walk past.\" I couldn't tell if it was nagging or thriftiness."
+    },
+    {
+      "text": "삼각김밥을 하나 집으려는데, 이번엔 그가 유통기한부터 확인했다. '뒤에 숨겨진 것 말고 앞에 있는 걸로 골라, 유통기한 얼마 안 남았으면 안 산다.'",
+      "reading": "sam-gak-gim-bap-eul ha-na jib-eu-ryeo-neun-de, i-beon-en geu-ga yu-tong-gi-han-bu-teo hwag-in-haet-da. dwi-e sum-gyeo-jin geot mal-go ap-e in-neun geol-lo gol-la, yu-tong-gi-han eol-ma an nam-ass-eu-myeon an san-da.",
+      "en": "I reached for a triangle kimbap, but this time he checked the expiration date first. \"Pick the ones in front, not the ones hidden in back — if there's not much time left before it expires, don't buy it.\"",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "계산대 앞에서 직원이 물었다. '봉투 필요하세요?' 내가 고개를 끄덕이려 하자 용우가 먼저 에코백을 펼쳐 보였다. '아니요, 여기 담을게요. 봉투는 돈 아깝다.'",
+      "reading": "gye-san-dae ap-e-seo jig-won-i mul-eot-da. bong-tu pil-yo-ha-se-yo? nae-ga go-gae-reul kkeu-deok-i-ryeo ha-ja yong-u-ga meon-jeo e-ko-baeg-eul pyeol-chyeo bo-yeot-da. a-ni-yo, yeo-gi dam-eul-ge-yo. bong-tu-neun don a-kkap-da.",
+      "en": "At the register, the clerk asked, \"Would you like a bag?\" Just as I was about to nod, Yongwoo pulled out an eco bag first. \"No, we'll put it in here. Buying a bag's a waste of money.\"",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "'적립 카드 있으세요?' 직원의 물음에 그는 익숙하게 앱 화면을 내밀었다. '이렇게 적립하면 나중에 쿠폰으로 쓴다. 니도 하나 만들어라.'",
+      "reading": "jeog-rip ka-deu iss-eu-se-yo? jig-won-ui mul-eum-e geu-neun ig-suk-ha-ge aeb hwa-myeon-eul nae-mil-eot-da. i-reo-ke jeog-rip-ha-myeon na-jung-e ku-pon-eu-ro sseun-da. ni-do ha-na man-deul-eo-ra.",
+      "en": "\"Do you have a membership card?\" the clerk asked. He held out his app screen with practiced ease. \"If you earn points like this, you can use them as a coupon later. You should make one too.\"",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "라면 두 개를 사 들고 편의점 앞 테이블에 앉자, 용우가 온수기 버튼을 대신 눌러주며 물었다. '삼각김밥은 데워 먹을 거야? 저기 전자레인지 있다.'",
+      "reading": "ra-myeon du gae-reul sa deul-go pyeon-ui-jeom ap te-i-beul-e anj-ja, yong-u-ga on-su-gi beo-teun-eul dae-sin nul-leo-ju-myeo mul-eot-da. sam-gak-gim-bap-eun de-wo meog-eul geo-ya? jeo-gi jeon-ja-re-in-ji it-da.",
+      "en": "We sat down at the table outside with our two packs of ramen, and Yongwoo pressed the hot water dispenser button for me, asking, \"Are you going to heat up the kimbap? There's a microwave over there.\"",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "별것 아닌 편의점 나들이였는데, 나가는 길엔 꽤 그럴듯한 꿀팁이 하나 늘어 있었다.",
+      "reading": "byeol-geot a-nin pyeon-ui-jeom na-deul-i-i-eot-neun-de, na-ga-neun gil-en kkwae geu-reol-deu-tan kkul-tib-i ha-na neul-eo iss-eot-da.",
+      "en": "It was nothing more than an ordinary convenience store run, but by the time we left, I'd picked up one pretty solid tip."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "원 플러스 원", "reading": "won peul-leo-seu won", "meaning": "buy-one-get-one (1+1) promotion", "example": "이 과자는 지금 원 플러스 원이에요.", "example_reading": "i gwa-ja-neun ji-geum won peul-leo-seu won-i-e-yo", "example_en": "These snacks are buy-one-get-one right now." },
+    { "id": "w02", "word": "유통기한", "reading": "yu-tong-gi-han", "meaning": "expiration date, sell-by date", "example": "유통기한을 확인하고 샀다.", "example_reading": "yu-tong-gi-han-eul hwag-in-ha-go sat-da", "example_en": "I checked the expiration date before buying it." },
+    { "id": "w03", "word": "적립하다", "reading": "jeog-rip-ha-da", "meaning": "to accumulate points (membership/loyalty points)", "example": "포인트를 적립하면 할인받을 수 있어요.", "example_reading": "po-in-teu-reul jeog-rip-ha-myeon hal-in-bad-eul su iss-eo-yo", "example_en": "If you earn points, you can get a discount." },
+    { "id": "w04", "word": "봉투", "reading": "bong-tu", "meaning": "bag (plastic/paper bag)", "example": "봉투는 따로 필요 없어요.", "example_reading": "bong-tu-neun tta-ro pil-yo eop-seo-yo", "example_en": "I don't need a separate bag." },
+    { "id": "w05", "word": "데우다", "reading": "de-u-da", "meaning": "to heat up (food, e.g. in a microwave)", "example": "전자레인지에 데워서 먹었다.", "example_reading": "jeon-ja-re-in-ji-e de-wo-seo meog-eot-da", "example_en": "I heated it up in the microwave and ate it." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "이 라면은 원 플러스 원 행사 중이에요.", "reading": "i ra-myeon-eun won peul-leo-seu won haeng-sa jung-i-e-yo", "en": "This ramen is on a buy-one-get-one promotion." },
+    { "id": "s02", "ko": "물건을 살 때는 유통기한부터 확인해야 한다.", "reading": "mul-geon-eul sal ttae-neun yu-tong-gi-han-bu-teo hwag-in-hae-ya han-da", "en": "When buying something, you should check the expiration date first." },
+    { "id": "s03", "ko": "적립 카드가 있으면 포인트를 적립할 수 있어요.", "reading": "jeog-rip ka-deu-ga iss-eu-myeon po-in-teu-reul jeog-rip-hal su iss-eo-yo", "en": "If you have a membership card, you can earn points." },
+    { "id": "s04", "ko": "봉투는 안 주셔도 돼요, 가방에 넣을게요.", "reading": "bong-tu-neun an ju-syeo-do dwae-yo, ga-bang-e neo-eul-ge-yo", "en": "You don't need to give me a bag, I'll put it in my bag." },
+    { "id": "s05", "ko": "삼각김밥은 데워 먹으면 훨씬 맛있어요.", "reading": "sam-gak-gim-bap-eun de-wo meog-eu-myeon hwol-ssin mas-iss-eo-yo", "en": "Triangle kimbap tastes much better when heated up." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "승객", "text": "그냥 아무거나 집으려고 했는데 왜 말려요?", "reading": "geu-nyang a-mu-geo-na jib-eu-ryeo-go haess-neun-de wae mal-lyeo-yo?", "en": "I was just going to grab anything, why'd you stop me?" },
+        { "speaker": "용우", "text": "저기 원 플러스 원 붙어 있잖아. 같은 돈으로 하나 더 먹을 수 있는데.", "reading": "jeo-gi won peul-leo-seu won but-eo it-jan-a. gat-eun don-eu-ro ha-na deo meog-eul su in-neun-de.", "en": "There's a buy-one-get-one tag right there. You can get one more for the same money." },
+        { "speaker": "승객", "text": "그런 것도 다 챙겨 봐요? 은근 알뜰하네요.", "reading": "geu-reon geot-do da chaeng-gyeo bwa-yo? eun-geun al-tteul-ha-ne-yo.", "en": "You even keep track of that stuff? You're pretty thrifty." },
+        { "speaker": "용우", "text": "알뜰이 아니라 상식이지. 이런 건 눈여겨봐야 한다.", "reading": "al-tteul-i a-ni-ra sang-sig-i-ji. i-reon geon nun-yeo-gyeo-bwa-ya han-da.", "en": "It's not thrift, it's common sense. You have to keep an eye out for this stuff." }
+      ],
+      "question": "용우가 라면 매대 앞에서 승객을 멈춰 세운 이유로 가장 알맞은 것은?",
+      "question_en": "What best explains why Yongwoo stopped the passenger in front of the ramen shelf?",
+      "correct_answer": "원 플러스 원 상품을 알려주기 위해서",
+      "options": ["원 플러스 원 상품을 알려주기 위해서", "그 라면이 유통기한이 지나서", "다른 라면을 추천하려고", "계산대가 붐벼서 서두르라고"],
+      "explanation": "용우는 같은 값으로 하나를 더 받을 수 있는 원 플러스 원 상품을 놓치지 말라고 알려준 것이었습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "용우", "text": "적립 카드 있으세요? 라고 물으면 이 앱 화면 보여주면 돼.", "reading": "jeog-rip ka-deu iss-eu-se-yo? ra-go mul-eu-myeon i aeb hwa-myeon bo-yeo-ju-myeon dwae.", "en": "If they ask 'do you have a membership card,' just show them this app screen." },
+        { "speaker": "승객", "text": "저는 그런 거 안 만들어서 없는데요.", "reading": "jeo-neun geu-reon geo an man-deul-eo-seo eop-neun-de-yo.", "en": "I never made one, so I don't have it." },
+        { "speaker": "용우", "text": "적립해두면 나중에 쿠폰으로 쓸 수 있다. 하나 만들어라.", "reading": "jeog-rip-hae-du-myeon na-jung-e ku-pon-eu-ro sseul su it-da. ha-na man-deul-eo-ra.", "en": "If you build up points, you can use them as a coupon later. Go make one." },
+        { "speaker": "승객", "text": "알겠어요, 이따 앱 깔아 볼게요.", "reading": "al-gess-eo-yo, i-tta aeb kkal-a bol-ge-yo.", "en": "Okay, I'll download the app later." }
+      ],
+      "question": "용우가 승객에게 적립 카드를 만들라고 권한 이유로 가장 알맞은 것은?",
+      "question_en": "What best explains why Yongwoo recommended the passenger make a membership card?",
+      "correct_answer": "쌓인 포인트를 나중에 쿠폰처럼 쓸 수 있어서",
+      "options": ["쌓인 포인트를 나중에 쿠폰처럼 쓸 수 있어서", "카드가 없으면 계산이 안 돼서", "직원이 반드시 만들라고 해서", "카드가 있어야 봉투를 받을 수 있어서"],
+      "explanation": "용우는 적립한 포인트를 나중에 쿠폰처럼 쓸 수 있다며 승객에게 카드를 만들어 두라고 권했습니다."
+    }
+  ]
+}

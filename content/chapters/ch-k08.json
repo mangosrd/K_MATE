@@ -41,17 +41,82 @@
     }
   ],
   "words": [
-    { "id": "w01", "word": "대학로", "reading": "dae-hak-ro", "meaning": "Daehak-ro (theater district)", "example": "대학로는 연극의 거리예요.", "example_reading": "dae-hak-ro-neun yeon-geug-ui geo-ri-ye-yo", "example_en": "Daehak-ro is the street of theater." },
-    { "id": "w02", "word": "소극장", "reading": "so-geuk-jang", "meaning": "Small theater", "example": "이 소극장은 배우와 아주 가까워요.", "example_reading": "i so-geuk-jang-eun bae-u-wa a-ju ga-kka-wo-yo", "example_en": "This small theater puts you very close to the actors." },
-    { "id": "w03", "word": "연극", "reading": "yeon-geuk", "meaning": "Play / theater performance", "example": "오늘 저녁 연극 표를 예매했어요.", "example_reading": "o-neul jeo-nyeok yeon-geuk pyo-reul ye-mae-hae-sseo-yo", "example_en": "I booked tickets for tonight's play." },
-    { "id": "w04", "word": "뮤지컬", "reading": "myu-ji-keol", "meaning": "Musical", "example": "한국 뮤지컬 수준이 정말 높아요.", "example_reading": "han-guk myu-ji-keol su-jun-i jeong-mal nop-a-yo", "example_en": "The level of Korean musicals is really high." },
-    { "id": "w05", "word": "배우", "reading": "bae-u", "meaning": "Actor", "example": "저 배우 연기가 정말 훌륭해요.", "example_reading": "jeo bae-u yeon-gi-ga jeong-mal hul-lyung-hae-yo", "example_en": "That actor's performance is truly wonderful." }
+    {
+      "id": "w01",
+      "word": "예술",
+      "reading": "ye-sul",
+      "meaning": "Art",
+      "example": "이 거리는 다양한 공연 예술을 즐길 수 있는 곳으로 유명합니다.",
+      "example_reading": "i geo-ri-neun da-yang-han gong-yeon ye-sul-eul jeul-gil su it-neun gos-eu-ro yu-myeong-ham-ni-da",
+      "example_en": "This street is famous as a place where you can enjoy various performing arts."
+    },
+    {
+      "id": "w02",
+      "word": "소극장",
+      "reading": "so-geuk-jang",
+      "meaning": "Small theater",
+      "example": "이 소극장은 배우와 아주 가까워요.",
+      "example_reading": "i so-geuk-jang-eun bae-u-wa a-ju ga-kka-wo-yo",
+      "example_en": "This small theater puts you very close to the actors."
+    },
+    {
+      "id": "w03",
+      "word": "연극",
+      "reading": "yeon-geuk",
+      "meaning": "Play / theater performance",
+      "example": "오늘 저녁 연극 표를 예매했어요.",
+      "example_reading": "o-neul jeo-nyeok yeon-geuk pyo-reul ye-mae-hae-sseo-yo",
+      "example_en": "I booked tickets for tonight's play."
+    },
+    {
+      "id": "w04",
+      "word": "뮤지컬",
+      "reading": "myu-ji-keol",
+      "meaning": "Musical",
+      "example": "한국 뮤지컬 수준이 정말 높아요.",
+      "example_reading": "han-guk myu-ji-keol su-jun-i jeong-mal nop-a-yo",
+      "example_en": "The level of Korean musicals is really high."
+    },
+    {
+      "id": "w05",
+      "word": "배우",
+      "reading": "bae-u",
+      "meaning": "Actor",
+      "example": "저 배우 연기가 정말 훌륭해요.",
+      "example_reading": "jeo bae-u yeon-gi-ga jeong-mal hul-lyung-hae-yo",
+      "example_en": "That actor's performance is truly wonderful."
+    }
   ],
   "sentences": [
-    { "id": "s01", "ko": "대학로에는 공연장이 정말 많습니다.", "reading": "dae-hak-ro-e-neun gong-yeon-jang-i jeong-mal man-seum-ni-da", "en": "There are so many performance venues in Daehak-ro." },
-    { "id": "s02", "ko": "소극장은 배우와 관객이 가깝습니다.", "reading": "so-geuk-jang-eun bae-u-wa gwan-gaeg-i ga-kkap-seum-ni-da", "en": "In a small theater, the actors and audience are close." },
-    { "id": "s03", "ko": "연극을 보고 나면 여운이 오래 남습니다.", "reading": "yeon-geug-eul bo-go na-myeon yeo-un-i o-rae nam-seum-ni-da", "en": "The lingering feeling stays long after watching a play." },
-    { "id": "s04", "ko": "뮤지컬 무대는 화려하고 웅장합니다.", "reading": "myu-ji-keol mu-dae-neun hwa-ryeo-ha-go ung-jang-ham-ni-da", "en": "A musical's stage is splendid and grand." },
-    { "id": "s05", "ko": "배우들의 열정이 관객에게 전해집니다.", "reading": "bae-u-deul-ui yeol-jeong-i gwan-gaeg-e-ge jeon-hae-jim-ni-da", "en": "The actors' passion is conveyed to the audience." }
+    {
+      "id": "s01",
+      "ko": "대학로에는 공연장이 정말 많습니다.",
+      "reading": "dae-hak-ro-e-neun gong-yeon-jang-i jeong-mal man-seum-ni-da",
+      "en": "There are so many performance venues in Daehak-ro."
+    },
+    {
+      "id": "s02",
+      "ko": "소극장은 배우와 관객이 가깝습니다.",
+      "reading": "so-geuk-jang-eun bae-u-wa gwan-gaeg-i ga-kkap-seum-ni-da",
+      "en": "In a small theater, the actors and audience are close."
+    },
+    {
+      "id": "s03",
+      "ko": "연극을 보고 나면 여운이 오래 남습니다.",
+      "reading": "yeon-geug-eul bo-go na-myeon yeo-un-i o-rae nam-seum-ni-da",
+      "en": "The lingering feeling stays long after watching a play."
+    },
+    {
+      "id": "s04",
+      "ko": "뮤지컬 무대는 화려하고 웅장합니다.",
+      "reading": "myu-ji-keol mu-dae-neun hwa-ryeo-ha-go ung-jang-ham-ni-da",
+      "en": "A musical's stage is splendid and grand."
+    },
+    {
+      "id": "s05",
+      "ko": "배우들의 열정이 관객에게 전해집니다.",
+      "reading": "bae-u-deul-ui yeol-jeong-i gwan-gaeg-e-ge jeon-hae-jim-ni-da",
+      "en": "The actors' passion is conveyed to the audience."
+    }
   ]
 }

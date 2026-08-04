@@ -1,0 +1,93 @@
+{
+  "id": "sp-day-yongwoo-10",
+  "character_id": "yongwoo",
+  "title": "오늘 하루도 수고했다",
+  "emoji": "🌇",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "오늘 하루도 이런저런 일로 정신없이 지나갔다. 저녁 설거지를 마치자 용우가 옥상 쪽을 턱짓했다. '올라가자, 오늘 하늘 좋다더라.'",
+      "reading": "o-neul ha-ru-do i-reon-jeo-reon il-lo jeong-sin-eop-si ji-na-gat-da. jeo-nyeok seol-geo-ji-reul ma-chi-ja yong-u-ga ok-sang jjog-eul teok-jit-haet-da. ol-la-ga-ja, o-neul ha-neul jo-ta-deo-ra.",
+      "en": "Today, too, had flown by in a blur of this and that. Once the dinner dishes were done, Yongwoo nodded toward the rooftop. \"Let's go up, I heard the sky's supposed to be nice tonight.\""
+    },
+    {
+      "text": "캔 두 개를 챙겨 옥상 바닥에 나란히 앉았다. 낮 동안 쌓인 피곤함이 시원한 바람에 조금씩 씻겨 나가는 것 같았다.",
+      "reading": "kaen du gae-reul chaeng-gyeo ok-sang ba-dag-e na-ran-hi anj-at-da. nat dong-an ssah-in pi-gon-ham-i si-won-han ba-ram-e jo-geum-ssik ssit-kyeo na-ga-neun geot gat-at-da.",
+      "en": "We grabbed two cans and sat side by side on the rooftop floor. The tiredness that had built up all day seemed to wash away little by little in the cool breeze."
+    },
+    {
+      "text": "하늘이 서서히 붉게 물들기 시작했다. '저 노을 색 좀 봐라. 매일 봐도 안 질린다.' 용우가 하늘을 올려다보며 나지막이 말했다.",
+      "reading": "ha-neul-i seo-seo-hi burk-ge mul-deul-gi si-jak-haet-da. jeo no-eul saek jom bwa-ra. mae-il bwa-do an jil-lin-da. yong-u-ga ha-neul-eul ol-lyeo-da-bo-myeo na-ji-mag-i mal-haet-da.",
+      "en": "The sky slowly began to turn red. \"Look at that sunset color. I never get tired of it, even seeing it every day.\" Yongwoo said quietly, looking up at the sky.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "'오늘 하루도 나름 알차게 보낸 것 같아 뿌듯하네요.' 내가 중얼거리자 그가 피식 웃으며 캔을 부딪쳤다. '그래, 그 정도면 잘 산 거다.'",
+      "reading": "o-neul ha-ru-do na-reum al-cha-ge bo-naen geot gat-a ppu-deut-ha-ne-yo. nae-ga jung-eol-geo-ri-ja geu-ga pi-sik us-eu-myeo kaen-eul bu-dit-chyeot-da. geu-rae, geu jeong-do-myeon jal san geo-da.",
+      "en": "\"I feel pretty fulfilled — today felt like a fairly full day too.\" I murmured, and he gave a short laugh and clinked his can against mine. \"Yeah. If that's how you feel, you lived it well.\"",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "'매일 이렇게 하루를 마무리하는 것도 나쁘지 않네요.' 별거 아닌 하루의 끝인데도, 이 순간이 자꾸 특별하게 느껴졌다.",
+      "reading": "mae-il i-reo-ke ha-ru-reul ma-mu-ri-ha-neun geot-do na-ppeu-ji an-ne-yo. byeol-geo a-nin ha-ru-ui kkeut-in-de-do, i sun-gan-i ja-kku teuk-byeol-ha-ge neu-kkyeo-jyeot-da.",
+      "en": "\"Ending the day like this every night wouldn't be so bad, either.\" Even though it was just the end of an unremarkable day, this moment kept feeling special.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "노을이 다 지고 하늘에 어스름이 내려앉아도, 그 여운은 쉽게 가시지 않았다. 용우도 같은 걸 느끼는지 한동안 말없이 앉아 있었다.",
+      "reading": "no-eul-i da ji-go ha-neul-e eo-seu-reum-i nae-ryeo-anj-a-do, geu yeo-un-eun swip-ge ga-si-ji an-at-da. yong-u-do gat-eun geol neu-kki-neun-ji han-dong-an mal-eop-si anj-a iss-eot-da.",
+      "en": "Even after the sunset had fully faded and dusk settled over the sky, the lingering warmth of it didn't easily go away. Yongwoo, too, seemed to feel the same thing, sitting quietly beside me for a while.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "'이런 평범한 하루도 소중히 여길 줄 알아야 한다.' 그가 툭 던진 말이 오래도록 마음에 남았다. 특별할 것 없던 오늘 하루가, 그렇게 가장 소중한 하루로 남았다.",
+      "reading": "i-reon pyeong-beom-han ha-ru-do so-jung-hi yeo-gil jul al-a-ya han-da. geu-ga tuk deon-jin mal-i o-rae-do-rok ma-eum-e nam-at-da. teuk-byeol-hal geot eop-deon o-neul ha-ru-ga, geu-reo-ke ga-jang so-jung-han ha-ru-ro nam-at-da.",
+      "en": "\"You've got to know how to cherish even an ordinary day like this.\" The offhand remark he tossed out stayed with me for a long time. This day, which had nothing special about it, ended up staying with me as the most precious day of all.",
+      "highlight_word_id": "w05"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "하루를 마무리하다", "reading": "ha-ru-reul ma-mu-ri-ha-da", "meaning": "to wrap up / end the day", "example": "따뜻한 차 한 잔으로 하루를 마무리했다.", "example_reading": "tta-tteut-han cha han jan-eu-ro ha-ru-reul ma-mu-ri-haet-da", "example_en": "I ended the day with a warm cup of tea." },
+    { "id": "w02", "word": "뿌듯하다", "reading": "ppu-deut-ha-da", "meaning": "to feel fulfilled, proud (of how something went)", "example": "할 일을 다 끝내고 나니 뿌듯했다.", "example_reading": "hal il-eul da kkeut-nae-go na-ni ppu-deut-haet-da", "example_en": "After finishing everything I had to do, I felt fulfilled." },
+    { "id": "w03", "word": "노을", "reading": "no-eul", "meaning": "the glow of a sunset or sunrise", "example": "바닷가에서 노을을 함께 봤다.", "example_reading": "ba-dat-ga-e-seo no-eul-eul ham-kke bwat-da", "example_en": "We watched the sunset together at the beach." },
+    { "id": "w04", "word": "여운", "reading": "yeo-un", "meaning": "a lingering feeling or afterglow left by an experience", "example": "그 영화는 끝나고도 여운이 오래 남았다.", "example_reading": "geu yeong-hwa-neun kkeut-na-go-do yeo-un-i o-rae nam-at-da", "example_en": "That movie left a lingering feeling long after it ended." },
+    { "id": "w05", "word": "소중히 여기다", "reading": "so-jung-hi yeo-gi-da", "meaning": "to cherish, to treasure something", "example": "평범한 순간들도 소중히 여겨야 한다.", "example_reading": "pyeong-beom-han sun-gan-deul-do so-jung-hi yeo-gyeo-ya han-da", "example_en": "You should cherish even ordinary moments." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "오늘도 산책으로 하루를 마무리했다.", "reading": "o-neul-do san-chaeg-eu-ro ha-ru-reul ma-mu-ri-haet-da", "en": "I ended today with a walk, too." },
+    { "id": "s02", "ko": "하루를 알차게 보내고 나니 마음이 뿌듯했다.", "reading": "ha-ru-reul al-cha-ge bo-nae-go na-ni ma-eum-i ppu-deut-haet-da", "en": "After spending the day fully, I felt fulfilled." },
+    { "id": "s03", "ko": "옥상에 앉아 노을이 지는 걸 오래 바라봤다.", "reading": "ok-sang-e anj-a no-eul-i ji-neun geol o-rae ba-ra-bwat-da", "en": "I sat on the rooftop and watched the sunset fade for a long time." },
+    { "id": "s04", "ko": "오늘 하루의 여운이 마음에 오래 남았다.", "reading": "o-neul ha-ru-ui yeo-un-i ma-eum-e o-rae nam-at-da", "en": "The lingering feeling of today stayed with me for a long time." },
+    { "id": "s05", "ko": "평범한 하루하루를 소중히 여기며 살고 싶다.", "reading": "pyeong-beom-han ha-ru-ha-ru-reul so-jung-hi yeo-gi-myeo sal-go sip-da", "en": "I want to live cherishing each ordinary day." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "용우", "text": "올라가자, 오늘 하늘 좋다더라.", "reading": "ol-la-ga-ja, o-neul ha-neul jo-ta-deo-ra.", "en": "Let's go up, I heard the sky's supposed to be nice tonight." },
+        { "speaker": "승객", "text": "옥상에서 뭐 하려고요?", "reading": "ok-sang-e-seo mwo ha-ryeo-go-yo?", "en": "What are we going to do on the rooftop?" },
+        { "speaker": "용우", "text": "노을 보면서 하루 마무리하는 거지. 별거 있나.", "reading": "no-eul bo-myeon-seo ha-ru ma-mu-ri-ha-neun geo-ji. byeol-geo it-na.", "en": "Just watch the sunset and wrap up the day. Nothing fancy." },
+        { "speaker": "승객", "text": "그런 것도 좋아하는 사람인 줄 몰랐어요.", "reading": "geu-reon geot-do jo-a-ha-neun sa-ram-in jul mol-lass-eo-yo.", "en": "I didn't know you were the type to enjoy something like that." }
+      ],
+      "question": "용우가 승객에게 옥상에 올라가자고 한 이유로 가장 알맞은 것은?",
+      "question_en": "What best explains why Yongwoo suggested going up to the rooftop?",
+      "correct_answer": "노을을 보며 편안하게 하루를 마무리하고 싶어서",
+      "options": ["노을을 보며 편안하게 하루를 마무리하고 싶어서", "옥상에서 급한 전화를 받아야 해서", "빨래를 걷어야 해서", "이웃과 약속이 있어서"],
+      "explanation": "용우는 노을을 보며 하루를 마무리하고 싶어서 승객에게 옥상에 올라가자고 했습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "승객", "text": "오늘 하루도 나름 알차게 보낸 것 같아 뿌듯하네요.", "reading": "o-neul ha-ru-do na-reum al-cha-ge bo-naen geot gat-a ppu-deut-ha-ne-yo.", "en": "I feel pretty fulfilled — today felt like a fairly full day too." },
+        { "speaker": "용우", "text": "그래, 그 정도면 잘 산 거다.", "reading": "geu-rae, geu jeong-do-myeon jal san geo-da.", "en": "Yeah. If that's how you feel, you lived it well." },
+        { "speaker": "승객", "text": "근데 특별한 일도 없었는데 왜 이렇게 기분이 좋을까요?", "reading": "geun-de teuk-byeol-han il-do eop-seot-neun-de wae i-reo-ke gi-bun-i jo-eul-kka-yo?", "en": "But nothing special even happened, so why do I feel this good?" },
+        { "speaker": "용우", "text": "평범한 하루도 소중히 여길 줄 알아야 한다. 그게 다야.", "reading": "pyeong-beom-han ha-ru-do so-jung-hi yeo-gil jul al-a-ya han-da. geu-ge da-ya.", "en": "You've got to know how to cherish even an ordinary day. That's all it is." }
+      ],
+      "question": "용우가 말한 '평범한 하루도 소중히 여겨야 한다'는 말의 의미로 가장 알맞은 것은?",
+      "question_en": "What best captures the meaning of Yongwoo's remark that \"you have to cherish even an ordinary day\"?",
+      "correct_answer": "특별한 사건이 없어도 일상의 하루하루가 소중한 가치를 지닌다는 뜻",
+      "options": ["특별한 사건이 없어도 일상의 하루하루가 소중한 가치를 지닌다는 뜻", "매일 특별한 이벤트를 만들어야 한다는 뜻", "평범한 하루는 빨리 잊어야 한다는 뜻", "일상보다 특별한 여행이 더 중요하다는 뜻"],
+      "explanation": "용우는 특별한 사건이 없어도 평범한 하루하루를 소중히 여기는 태도가 중요하다고 말했습니다."
+    }
+  ]
+}

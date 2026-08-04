@@ -11,7 +11,8 @@ from schemas.schemas import (
     DiaryItemResponse,
 )
 from services.llm_service import load_persona, llm_chat
-from models.models import DiaryEntry, Economy
+from services.access_control import check_character_access
+from models.models import DiaryEntry, Economy, User, Character
 import uuid
 from datetime import datetime
 
@@ -40,6 +41,14 @@ Rules:
 @router.post("/generate", response_model=DiaryGenerateResponse)
 async def generate_diary(req: DiaryGenerateRequest, db: Session = Depends(get_db)):
     """기장 일기 생성"""
+    user = db.query(User).filter(User.id == req.user_id).first()
+    if not user:
+        raise HTTPException(status_code=404, detail=f"User '{req.user_id}' not found")
+    character = db.query(Character).filter(Character.id == req.character_id).first()
+    if not character:
+        raise HTTPException(status_code=404, detail=f"Character '{req.character_id}' not found")
+    check_character_access(user, character)
+
     persona = load_persona(req.character_id)
 
     events_text = (
@@ -92,7 +101,16 @@ def unlock_diary(req: DiaryUnlockRequest, db: Session = Depends(get_db)):
     if not entry:
         raise HTTPException(status_code=404, detail="Diary entry not found")
 
-    economy = db.query(Economy).filter(Economy.user_id == req.user_id).first()
+    user = db.query(User).filter(User.id == req.user_id).first()
+    if not user:
+        raise HTTPException(status_code=404, detail=f"User '{req.user_id}' not found")
+    character = db.query(Character).filter(Character.id == entry.character_id).first()
+    if character:
+        check_character_access(user, character)
+
+    # with_for_update로 잠가서, 연타나 이중 요청으로 같은 유저의 두 요청이 거의 동시에
+    # 들어와도 코인 차감이 한쪽만 반영되거나 잔액이 꼬이지 않게 한다.
+    economy = db.query(Economy).filter(Economy.user_id == req.user_id).with_for_update().first()
     if not economy:
         raise HTTPException(status_code=404, detail="Economy record not found")
 
@@ -119,6 +137,14 @@ def unlock_diary(req: DiaryUnlockRequest, db: Session = Depends(get_db)):
 @router.get("/{user_id}/{character_id}", response_model=list[DiaryItemResponse])
 def get_diaries(user_id: str, character_id: str, db: Session = Depends(get_db)):
     """캐릭터별 일기 목록 조회"""
+    user = db.query(User).filter(User.id == user_id).first()
+    if not user:
+        raise HTTPException(status_code=404, detail=f"User '{user_id}' not found")
+    character = db.query(Character).filter(Character.id == character_id).first()
+    if not character:
+        raise HTTPException(status_code=404, detail=f"Character '{character_id}' not found")
+    check_character_access(user, character)
+
     entries = (
         db.query(DiaryEntry)
         .filter(DiaryEntry.user_id == user_id, DiaryEntry.character_id == character_id)

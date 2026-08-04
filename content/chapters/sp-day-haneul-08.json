@@ -1,0 +1,62 @@
+{
+  "id": "sp-day-haneul-08",
+  "character_id": "haneul",
+  "title": "소박한 집들이",
+  "emoji": "🏠",
+  "story": [
+    {
+      "text": "이사한 지 일주일. 아직 짐 정리도 덜 끝난 집에 하늘이 불쑥 찾아왔다.",
+      "reading": "i-sa-han ji il-ju-il. a-jik jim jeong-ri-do deol kkeut-nan jib-e ha-neul-i bul-ssuk chaj-a-wat-da.",
+      "en": "A week since I'd moved. Haneul showed up unannounced at my apartment, which was still half-unpacked.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "'집들이 안 해?' 그가 신발을 벗으며 물었다. 손에는 휴지와 세제가 들려 있었다.",
+      "reading": "'jip-deul-i an hae?' geu-ga sin-bal-eul beos-eu-myeo mul-eot-da. son-e-neun hyu-ji-wa se-je-ga deul-lyeo iss-eot-da.",
+      "en": "\"Not having a housewarming?\" he asked, taking off his shoes. In his hands were tissues and detergent.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "'이게 뭐야.' 내가 묻자, 그는 무심하게 던지듯 내밀었다. '이사 선물. 원래 이런 거 사는 거래.'",
+      "reading": "'i-ge mwo-ya.' nae-ga mud-ja, geu-neun mu-sim-ha-ge deon-ji-deut nae-mil-eot-da. 'i-sa seon-mul. won-lae i-reon geo sa-neun geo-rae.'",
+      "en": "\"What's this?\" I asked. He held it out offhandedly. \"Housewarming gift. Apparently this is what you're supposed to buy.\"",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "짐을 옮기다 마주친 옆집 아주머니께 하늘이 먼저 인사를 건넸다. '안녕하세요, 옆집에 이사 왔습니다.'",
+      "reading": "jim-eul om-gi-da ma-ju-chin yeop-jib a-ju-meo-ni-kke ha-neul-i meon-jeo in-sa-reul geon-ne-ss-da. 'an-nyeong-ha-se-yo, yeop-jib-e i-sa wat-seum-ni-da.'",
+      "en": "When we ran into the neighbor lady while carrying boxes, Haneul greeted her first. \"Hello, we just moved in next door.\"",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "아주머니는 반갑게 웃으며 떡 한 접시를 건넸다. '이웃끼리 잘 지내요.' 하늘이 두 손으로 공손히 받았다.",
+      "reading": "a-ju-meo-ni-neun ban-gap-ge us-eu-myeo tteok han jeop-si-reul geon-ne-ss-da. 'i-us-kki-ri jal ji-nae-yo.' ha-neul-i du son-eu-ro gong-son-hi bad-at-da.",
+      "en": "The neighbor smiled warmly and handed over a plate of rice cakes. \"Let's get along as neighbors.\" Haneul received it with both hands, politely.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "저녁엔 좁은 거실에 앉아 라면을 끓여 먹었다. 대단할 것 없는 집들이였지만, 그거면 충분했다.",
+      "reading": "jeo-nyeog-en jop-eun geo-sil-e anj-a ra-myeon-eul kkeul-yeo meog-eot-da. dae-dan-hal geot eop-neun jip-deul-i-yeot-ji-man, geu-geo-myeon chung-bun-haet-da.",
+      "en": "That evening, we sat in the cramped living room and cooked ramen. It wasn't much of a housewarming, but it was enough."
+    },
+    {
+      "text": "'앞으로 여기가 니 집이네.' 하늘이 방을 둘러보며 말했다. 무뚝뚝한 말투였지만, 어쩐지 든든하게 들렸다.",
+      "reading": "'ap-eu-ro yeo-gi-ga ni jib-i-ne.' ha-neul-i bang-eul dul-leo-bo-myeo mal-haet-da. mu-ttuk-ttuk-han mal-tu-yeot-ji-man, eo-jjeon-ji deun-deun-ha-ge deul-lyeot-da.",
+      "en": "\"So this is your place from now on.\" Haneul said, looking around the room. His tone was blunt as ever, but somehow it sounded reassuring."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "이사", "reading": "i-sa", "meaning": "moving house", "example": "다음 주에 이사해요.", "example_reading": "da-eum ju-e i-sa-hae-yo", "example_en": "I'm moving next week." },
+    { "id": "w02", "word": "집들이", "reading": "jip-deul-i", "meaning": "housewarming", "example": "이번 주말에 집들이 할 거예요.", "example_reading": "i-beon ju-mal-e jip-deul-i hal geo-ye-yo", "example_en": "I'm having a housewarming this weekend." },
+    { "id": "w03", "word": "이웃", "reading": "i-ut", "meaning": "neighbor", "example": "저희는 좋은 이웃이에요.", "example_reading": "jeo-hui-neun jo-eun i-us-i-e-yo", "example_en": "We're good neighbors." },
+    { "id": "w04", "word": "인사하다", "reading": "in-sa-ha-da", "meaning": "to greet", "example": "이웃에게 인사했어요.", "example_reading": "i-us-e-ge in-sa-haess-eo-yo", "example_en": "I greeted my neighbor." },
+    { "id": "w05", "word": "선물", "reading": "seon-mul", "meaning": "gift", "example": "이건 작은 선물이에요.", "example_reading": "i-geon jak-eun seon-mul-i-e-yo", "example_en": "This is a small gift." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "이사는 언제 해요?", "reading": "i-sa-neun eon-je hae-yo?", "en": "When are you moving?" },
+    { "id": "s02", "ko": "집들이에 초대할게요.", "reading": "jip-deul-i-e cho-dae-hal-kke-yo", "en": "I'll invite you to my housewarming." },
+    { "id": "s03", "ko": "저희 옆집 이웃이에요.", "reading": "jeo-hui yeop-jib i-us-i-e-yo", "en": "We're the neighbors next door." },
+    { "id": "s04", "ko": "먼저 인사할게요.", "reading": "meon-jeo in-sa-hal-kke-yo", "en": "I'll greet them first." },
+    { "id": "s05", "ko": "이거 작은 선물이에요.", "reading": "i-geo jak-eun seon-mul-i-e-yo", "en": "This is a small gift." }
+  ]
+}

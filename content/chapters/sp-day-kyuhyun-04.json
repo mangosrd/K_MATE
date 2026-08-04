@@ -1,0 +1,62 @@
+{
+  "id": "sp-day-kyuhyun-04",
+  "character_id": "kyuhyun",
+  "title": "환승은 이쪽으로",
+  "emoji": "🚇",
+  "story": [
+    {
+      "text": "출근 시간이 살짝 지난 오후, 역사 안은 그래도 사람들로 북적였다. 규현이 성큼성큼 개찰구 쪽으로 앞서 걸어갔다.",
+      "reading": "chul-geun si-gan-i sal-jjak ji-nan o-hu, yeok-sa an-eun geu-rae-do sa-ram-deul-lo buk-jeok-yeot-da. gyu-hyeon-i seong-keum-seong-keum gae-chal-gu jjok-eu-ro ap-seo geol-eo-gat-da.",
+      "en": "It was just past rush hour, but the station was still crowded with people. Kyuhyun strode ahead toward the ticket gates."
+    },
+    {
+      "text": "\"지하철 타본 지 오래됐죠?\" 그가 뒤돌아보며 씩 웃었다. \"저만 믿고 따라오면 돼요, 아가씨.\"",
+      "reading": "\"ji-ha-cheol ta-bon ji o-rae-dwaet-jyo?\" geu-ga dwi-dol-a-bo-myeo ssik us-eot-da. \"jeo-man mid-go tta-ra-o-myeon dwae-yo, a-ga-ssi.\"",
+      "en": "\"It's been a while since you rode the subway, hasn't it?\" He glanced back and grinned. \"Just trust me and follow along, miss.\"",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "내가 교통카드를 찍으려다 단말기에 두 번이나 튕기자, 그가 옆에서 낮게 웃으며 손끝으로 카드 방향을 살짝 바로잡아 주었다.",
+      "reading": "nae-ga gyo-tong-ka-deu-reul jjig-eu-ryeo-da dan-mal-gi-e du beon-i-na tweong-gi-ja, geu-ga yeop-e-seo nat-ge us-eu-myeo son-kkeut-eu-ro ka-deu bang-hyang-eul sal-jjak ba-ro-jab-a ju-eot-da.",
+      "en": "As I tried to tap my transit card and got rejected by the reader twice, he chuckled beside me and gently adjusted the card's angle for me.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "플랫폼에 서서 그가 설명했다. \"여기서 두 정거장 가서, 2호선으로 환승해야 해요. 안내 방송 잘 들어요, 알겠죠?\"",
+      "reading": "peul-laet-pom-e seo-seo geu-ga seol-myeong-haet-da. \"yeo-gi-seo du jeong-geo-jang ga-seo, i-ho-seon-eu-ro hwan-seung-hae-ya hae-yo. an-nae bang-song jal deul-eo-yo, al-get-jyo?\"",
+      "en": "Standing on the platform, he explained. \"We go two stops from here, then transfer to Line 2. Listen carefully for the announcement, got it?\"",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "열차 안은 발 디딜 틈 없이 붐볐다. 손잡이 하나를 사이에 두고 나란히 선 규현이 몸을 살짝 기울여 사람들 사이의 공간을 만들어 주었다.",
+      "reading": "yeol-cha an-eun bal di-dil teum eop-si bum-byeot-da. son-jab-i ha-na-reul sa-i-e du-go na-ran-hi seon gyu-hyeon-i mom-eul sal-jjak gi-ul-yeo sa-ram-deul sa-i-ui gong-gan-eul man-deul-eo ju-eot-da.",
+      "en": "Inside the train, there wasn't even room to set a foot down. Standing beside me, sharing one handle, Kyuhyun leaned his body slightly to make a little space for me among the crowd."
+    },
+    {
+      "text": "환승을 마치고 밖으로 나오니, 버스 정류장 표지판이 눈에 들어왔다. \"저기예요. 5분 뒤에 버스 와요.\" 그가 정류장을 가리켰다.",
+      "reading": "hwan-seung-eul ma-chi-go bakk-eu-ro na-o-ni, beo-seu jeong-nyu-jang pyo-ji-pan-i nun-e deul-eo-wat-da. \"jeo-gi-ye-yo. o-bun dwi-e beo-seu wa-yo.\" geu-ga jeong-nyu-jang-eul ga-ri-kyeot-da.",
+      "en": "After finishing the transfer and stepping outside, a bus stop sign came into view. \"There it is. The bus comes in five minutes.\" He pointed to the stop.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "버스에 올라 창가 자리에 앉자 그가 작게 속삭였다. \"이번에 내려요. 벨 누르는 거, 이번엔 아가씨가 해볼래요?\" 나는 웃으며 조심스레 하차 벨을 눌렀다.",
+      "reading": "beo-seu-e ol-la chang-ga ja-ri-e anj-ja geu-ga jak-ge sok-sag-yeot-da. \"i-beon-e nae-ryeo-yo. bel nu-reu-neun geo, i-beon-en a-ga-ssi-ga hae-bol-lae-yo?\" na-neun us-eu-myeo jo-sim-seu-re ha-cha bel-eul nul-leot-da.",
+      "en": "As we boarded the bus and sat by the window, he whispered, \"We're getting off at this stop. Want to press the bell this time?\" I laughed and carefully pressed the stop button.",
+      "highlight_word_id": "w05"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "지하철", "reading": "ji-ha-cheol", "meaning": "subway", "example": "저는 지하철로 출근해요.", "example_reading": "jeo-neun ji-ha-cheol-lo chul-geun-hae-yo", "example_en": "I commute to work by subway." },
+    { "id": "w02", "word": "환승하다", "reading": "hwan-seung-ha-da", "meaning": "to transfer (trains/buses)", "example": "여기서 3호선으로 환승하세요.", "example_reading": "yeo-gi-seo sam-ho-seon-eu-ro hwan-seung-ha-se-yo", "example_en": "Please transfer to Line 3 here." },
+    { "id": "w03", "word": "교통카드", "reading": "gyo-tong-ka-deu", "meaning": "transit card", "example": "교통카드를 단말기에 찍으세요.", "example_reading": "gyo-tong-ka-deu-reul dan-mal-gi-e jjig-eu-se-yo", "example_en": "Tap your transit card on the reader." },
+    { "id": "w04", "word": "정류장", "reading": "jeong-nyu-jang", "meaning": "bus stop", "example": "정류장에서 버스를 기다려요.", "example_reading": "jeong-nyu-jang-e-seo beo-seu-reul gi-da-ryeo-yo", "example_en": "I'm waiting for the bus at the stop." },
+    { "id": "w05", "word": "내리다", "reading": "nae-ri-da", "meaning": "to get off (a vehicle)", "example": "다음 역에서 내릴게요.", "example_reading": "da-eum yeok-e-seo nae-ril-ge-yo", "example_en": "I'll get off at the next station." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "이 버스가 강남 가나요?", "reading": "i beo-seu-ga gang-nam ga-na-yo?", "en": "Does this bus go to Gangnam?" },
+    { "id": "s02", "ko": "다음 역에서 내릴게요.", "reading": "da-eum yeok-e-seo nae-ril-ge-yo.", "en": "I'll get off at the next station." },
+    { "id": "s03", "ko": "몇 호선으로 환승해요?", "reading": "myeot ho-seon-eu-ro hwan-seung-hae-yo?", "en": "Which line do I transfer to?" },
+    { "id": "s04", "ko": "교통카드 여기 있어요.", "reading": "gyo-tong-ka-deu yeo-gi iss-eo-yo.", "en": "Here's my transit card." },
+    { "id": "s05", "ko": "이번 정류장에서 내려요.", "reading": "i-beon jeong-nyu-jang-e-seo nae-ryeo-yo.", "en": "I'm getting off at this stop." }
+  ]
+}

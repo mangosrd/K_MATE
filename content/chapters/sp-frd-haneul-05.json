@@ -1,0 +1,62 @@
+{
+  "id": "sp-frd-haneul-05",
+  "character_id": "haneul",
+  "title": "맛집 줄 서기와 음식 나누기",
+  "emoji": "🍲",
+  "story": [
+    {
+      "text": "남부시장 청년몰 안, 허름한 콩나물국밥집 앞에 줄이 구불구불 이어져 있었다. \"여기가 그렇게 유명하다며?\" 나는 눈을 크게 떴다.",
+      "reading": "nam-bu-si-jang cheong-nyeon-mol an, heo-reum-han kong-na-mul-guk-bap-jib ap-e jul-i gu-bul-gu-bul i-eo-jyeo iss-eot-da. yeo-gi-ga geu-reo-ke yu-myeong-ha-da-myeo? na-neun nun-eul keu-ge tteot-da.",
+      "en": "Inside Nambu Market's youth mall, a line snaked in front of a plain-looking bean-sprout soup place. \"This is supposed to be that famous?\" I widened my eyes."
+    },
+    {
+      "text": "\"일단 줄을 서. 맛없으면 내가 다 책임진다.\" 하늘이 자신만만하게 나를 줄 끝으로 이끌었다.",
+      "reading": "il-dan jul-eul seo. mas-eop-seu-myeon nae-ga da chaeg-im-jin-da. ha-neul-i ja-sin-man-man-ha-ge na-reul jul kkeut-eu-ro i-kkeul-eot-da.",
+      "en": "\"Just get in line first. If it's no good, I'll take full responsibility.\" Haneul confidently led me to the back of the line.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "삼십 분이 지나도 줄은 줄어들 기미가 없었다. \"웨이팅이 너무 긴 거 아니에요?\" 내가 투덜대자, 그는 태연하게 휴대폰만 들여다봤다.",
+      "reading": "sam-sip bun-i ji-na-do jul-eun jul-eo-deul gi-mi-ga eop-seot-da. we-i-ting-i neo-mu gin geo a-ni-e-yo? nae-ga tu-deol-dae-ja, geu-neun tae-yeon-ha-ge hyu-dae-pon-man deul-yeo-da-bwat-da.",
+      "en": "Thirty minutes passed and the line barely moved. \"Isn't this waiting time way too long?\" I grumbled, but he just calmly stared at his phone.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "드디어 자리에 앉자 하늘이 메뉴판도 안 보고 외쳤다. \"곱빼기 두 그릇이요.\" \"그렇게 많이?\" 내가 놀라자, 그는 어깨를 으쓱했다. \"너 원래 잘 먹잖아.\"",
+      "reading": "deu-di-eo ja-ri-e anj-ja ha-neul-i me-nyu-pan-do an bo-go oe-chyeot-da. gop-ppae-gi du geu-reut-i-yo. geu-reo-ke man-i? nae-ga nol-la-ja, geu-neun eo-kkae-reul eu-sseuk-haet-da. neo won-lae jal meok-jan-a.",
+      "en": "We finally sat down, and Haneul called out without even looking at the menu: \"Two extra-large bowls.\" \"That much?\" I was surprised, but he just shrugged. \"You always eat a lot anyway.\"",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "국밥이 나오자 그는 자기 그릇에서 계란을 슬쩍 내 쪽으로 밀어줬다. 말없이 나눠 먹는 그 손짓이 익숙했다.",
+      "reading": "guk-bab-i na-o-ja geu-neun ja-gi geu-reus-e-seo gye-ran-eul seul-jjeok nae jjog-eu-ro mil-eo-jwot-da. mal-eop-si na-nwo meong-neun geu son-jis-i ik-suk-haet-da.",
+      "en": "When the soup arrived, he quietly slid the egg from his bowl over to mine. That wordless gesture of sharing food felt familiar.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "다 먹고도 성에 안 찼는지, 하늘은 순대 한 접시를 더 포장했다. \"숙소 가서 야식으로 먹자.\" 그의 배려는 늘 이렇게 조용했다.",
+      "reading": "da meok-go-do seong-e an chass-neun-ji, ha-neul-eun sun-dae han jeop-si-reul deo po-jang-haet-da. suk-so ga-seo ya-sig-eu-ro meok-ja. geu-ui bae-ryeo-neun neul i-reo-ke jo-yong-haet-da.",
+      "en": "Even after finishing, it seemed like he wasn't satisfied, so Haneul got another plate of sundae packed to go. \"We'll eat it as a late-night snack back at the room.\" His thoughtfulness was always this quiet.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "시장을 나서며 배가 두둑해진 나는 웃음이 났다. 긴 웨이팅도, 그와 함께라면 기다릴 만한 시간이었다.",
+      "reading": "si-jang-eul na-seo-myeo bae-ga du-duk-hae-jin na-neun us-eum-i nat-da. gin we-i-ting-do, geu-wa ham-kke-ra-myeon gi-da-ril man-han si-gan-i-eot-da.",
+      "en": "Walking out of the market with a nice full stomach, I couldn't help but smile. Even the long wait — with him, it was time worth waiting through."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "웨이팅", "reading": "we-i-ting", "meaning": "waiting, wait time (for a table)", "example": "이 식당은 웨이팅이 한 시간이다.", "example_reading": "i sik-dang-eun we-i-ting-i han si-gan-i-da", "example_en": "The wait at this restaurant is an hour." },
+    { "id": "w02", "word": "줄을 서다", "reading": "jul-eul seo-da", "meaning": "to stand in line", "example": "우리는 삼십 분 동안 줄을 섰다.", "example_reading": "u-ri-neun sam-sip bun dong-an jul-eul seot-da", "example_en": "We stood in line for thirty minutes." },
+    { "id": "w03", "word": "곱빼기", "reading": "gop-ppae-gi", "meaning": "extra-large portion, double serving", "example": "배고파서 곱빼기로 시켰다.", "example_reading": "bae-go-pa-seo gop-ppae-gi-ro si-kyeot-da", "example_en": "I was hungry so I ordered a double portion." },
+    { "id": "w04", "word": "포장하다", "reading": "po-jang-ha-da", "meaning": "to pack/box up food to go", "example": "남은 음식을 포장해 갔다.", "example_reading": "nam-eun eum-sig-eul po-jang-hae gat-da", "example_en": "I packed the leftover food to go." },
+    { "id": "w05", "word": "나눠 먹다", "reading": "na-nwo meok-da", "meaning": "to share food", "example": "친구와 음식을 나눠 먹었다.", "example_reading": "chin-gu-wa eum-sig-eul na-nwo meog-eot-da", "example_en": "I shared food with my friend." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "이 식당은 웨이팅이 한 시간이다.", "reading": "i sik-dang-eun we-i-ting-i han si-gan-i-da", "en": "The wait at this restaurant is an hour." },
+    { "id": "s02", "ko": "우리는 삼십 분 동안 줄을 섰다.", "reading": "u-ri-neun sam-sip bun dong-an jul-eul seot-da", "en": "We stood in line for thirty minutes." },
+    { "id": "s03", "ko": "배고파서 곱빼기로 시켰다.", "reading": "bae-go-pa-seo gop-ppae-gi-ro si-kyeot-da", "en": "I was hungry so I ordered a double portion." },
+    { "id": "s04", "ko": "남은 음식을 포장해 갔다.", "reading": "nam-eun eum-sig-eul po-jang-hae gat-da", "en": "I packed the leftover food to go." },
+    { "id": "s05", "ko": "친구와 음식을 나눠 먹었다.", "reading": "chin-gu-wa eum-sig-eul na-nwo meog-eot-da", "en": "I shared food with my friend." }
+  ]
+}

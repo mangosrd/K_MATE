@@ -1,0 +1,98 @@
+{
+  "id": "sp-day-sunwoo-04",
+  "character_id": "sunwoo",
+  "title": "서면에서 갈아타는 법",
+  "emoji": "🚇",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "지하철역 입구는 퇴근길 인파로 북적였다. 개찰구 앞에서 나는 가방 속 교통카드를 더듬어 찾았다.",
+      "reading": "ji-ha-cheol-yeok ib-gu-neun toe-geun-gil in-pa-ro buk-jeok-yeot-da. gae-chal-gu ap-e-seo na-neun ga-bang sok gyo-tong-ka-deu-reul deo-deum-eo chaj-at-da.",
+      "en": "The subway station entrance was crowded with the evening rush. In front of the ticket gate, I fumbled through my bag looking for my transportation card.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "\"몇 호선 타야 되는지는 알고 있제?\" 선우가 옆에서 놀리듯 물었다. 나는 말없이 노선도만 뚫어져라 쳐다봤다.",
+      "reading": "\"myeot ho-seon ta-ya doe-neun-ji-neun al-go it-je?\" seon-u-ga yeop-e-seo nol-li-deut mul-eot-da. na-neun mal-eop-si no-seon-do-man ttul-eo-jyeo-ra chyeo-da-bwat-da.",
+      "en": "\"You do know which line to take, right?\" Sunwoo asked teasingly beside me. I said nothing and just stared hard at the route map.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "\"서면에서 2호선으로 환승해야 돼. 안 그러면 완전 반대로 간다.\" 그가 손가락으로 노선도를 짚으며 설명했다.",
+      "reading": "\"seo-myeon-e-seo i-ho-seon-eu-ro hwan-seung-hae-ya dwae. an geu-reo-myeon wan-jeon ban-dae-ro gan-da.\" geu-ga son-ga-rak-eu-ro no-seon-do-reul jip-eu-myeo seol-myeong-haet-da.",
+      "en": "\"You have to transfer to Line 2 at Seomyeon. Otherwise you'll go completely the wrong way.\" He explained, pointing at the route map with his finger.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "지하철에 올라타자 그는 익숙하게 손잡이를 잡고 흔들리는 몸을 지탱했다. 나는 그 옆에서 균형을 잡느라 애를 먹었다.",
+      "reading": "ji-ha-cheol-e ol-la-ta-ja geu-neun ik-suk-ha-ge son-jab-i-reul jab-go heun-deul-li-neun mom-eul ji-taeng-haet-da. na-neun geu yeop-e-seo gyun-hyeong-eul jab-neu-ra ae-reul meog-eot-da.",
+      "en": "Once we got on the subway, he steadied his swaying body by casually gripping a handle, like it was second nature. Beside him, I struggled just to keep my balance."
+    },
+    {
+      "text": "역에서 내려 버스로 갈아탈 때, 그는 정류장 번호까지 정확히 외우고 있었다. \"저 버스, 3번째 정류장에서 내리면 된다.\"",
+      "reading": "yeok-e-seo nae-ryeo beo-seu-ro gal-a-tal ttae, geu-neun jeong-nyu-jang beon-ho-kka-ji jeong-hwak-hi oe-u-go iss-eot-da. \"jeo beo-seu, se beon-jjae jeong-nyu-jang-e-seo nae-ri-myeon doen-da.\"",
+      "en": "When we got off at the station to switch to a bus, he had even the stop number memorized exactly. \"Get off that bus at the third stop.\""
+    },
+    {
+      "text": "내릴 정류장이 다가오자 그가 먼저 손을 뻗어 하차벨을 눌렀다. \"자, 다음이 우리 내릴 곳이다.\"",
+      "reading": "nae-ril jeong-nyu-jang-i da-ga-o-ja geu-ga meon-jeo son-eul ppeot-eo ha-cha-bel-eul nul-leot-da. \"ja, da-eum-i u-ri nae-ril go-si-da.\"",
+      "en": "As our stop approached, he reached out first and pressed the get-off bell. \"Alright, next one's where we get off.\"",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "버스에서 내리며 그가 시계를 흘긋 보더니 웃었다. \"딱 맞다, 막차 놓칠까 봐 조마조마했다 아이가.\"",
+      "reading": "beo-seu-e-seo nae-ri-myeo geu-ga si-gye-reul heul-geut bo-deo-ni us-eot-da. \"ttak mat-da, mak-cha nod-chil-kka bwa jo-ma-jo-ma-haet-da a-i-ga.\"",
+      "en": "Getting off the bus, he glanced at his watch and laughed. \"Just in time. I was worried we'd miss the last bus.\"",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "\"오늘 배운 단어, 대화까지 마지막 문제 하나까지 놓치지 말고 풀어봐라.\"",
+      "reading": "\"o-neul bae-un dan-eo, dae-hwa-kka-ji ma-ji-mak mun-je ha-na-kka-ji nod-chi-ji mal-go pul-eo-bwa-ra.\"",
+      "en": "\"Don't miss even the last question — go through today's words and conversation all the way to the end.\""
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "교통카드", "reading": "gyo-tong-ka-deu", "meaning": "transportation (transit) card", "example": "교통카드를 찍고 버스에 올랐다.", "example_reading": "gyo-tong-ka-deu-reul jjik-go beo-seu-e ol-lat-da", "example_en": "I tapped my transit card and got on the bus." },
+    { "id": "w02", "word": "환승하다", "reading": "hwan-seung-ha-da", "meaning": "to transfer (trains/buses)", "example": "이 역에서 1호선으로 환승할 수 있다.", "example_reading": "i yeok-e-seo il-ho-seon-eu-ro hwan-seung-hal su it-da", "example_en": "You can transfer to Line 1 at this station." },
+    { "id": "w03", "word": "하차벨", "reading": "ha-cha-bel", "meaning": "stop bell / get-off button (on a bus)", "example": "내릴 곳에서 미리 하차벨을 눌렀다.", "example_reading": "nae-ril go-seul-e-seo mi-ri ha-cha-bel-eul nul-leot-da", "example_en": "I pressed the get-off bell in advance before my stop." },
+    { "id": "w04", "word": "노선도", "reading": "no-seon-do", "meaning": "route map", "example": "역 안에 붙어 있는 노선도를 살펴봤다.", "example_reading": "yeok an-e but-eo it-neun no-seon-do-reul sal-pyeo-bwat-da", "example_en": "I looked over the route map posted inside the station." },
+    { "id": "w05", "word": "막차", "reading": "mak-cha", "meaning": "the last train/bus", "example": "서두르지 않으면 막차를 놓친다.", "example_reading": "seo-du-reu-ji anh-eu-myeon mak-cha-reul noch-chin-da", "example_en": "If you don't hurry, you'll miss the last bus." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "교통카드를 찍고 개찰구를 통과했다.", "reading": "gyo-tong-ka-deu-reul jjik-go gae-chal-gu-reul tong-gwa-haet-da", "en": "I tapped my transit card and passed through the ticket gate." },
+    { "id": "s02", "ko": "이번 역에서 2호선으로 환승해야 한다.", "reading": "i-beon yeok-e-seo i-ho-seon-eu-ro hwan-seung-hae-ya han-da", "en": "I need to transfer to Line 2 at this station." },
+    { "id": "s03", "ko": "내릴 정류장이 다가오자 하차벨을 눌렀다.", "reading": "nae-ril jeong-nyu-jang-i da-ga-o-ja ha-cha-bel-eul nul-leot-da", "en": "As my stop approached, I pressed the get-off bell." },
+    { "id": "s04", "ko": "노선도를 보며 가는 길을 확인했다.", "reading": "no-seon-do-reul bo-myeo ga-neun gil-eul hwak-in-haet-da", "en": "I checked my route by looking at the route map." },
+    { "id": "s05", "ko": "서두르지 않으면 막차를 놓칠 것 같다.", "reading": "seo-du-reu-ji anh-eu-myeon mak-cha-reul noch-chil geot gat-da", "en": "If I don't hurry, I think I'll miss the last bus." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "선우", "text": "여서 서면 갈라믄 2호선 갈아타야 된다. 알제?", "reading": "yeo-seo seo-myeon gal-la-myeon i-ho-seon gal-a-ta-ya doen-da. al-je?", "en": "To get to Seomyeon from here, you gotta transfer to Line 2. Got it?" },
+        { "speaker": "승객", "text": "어, 알아. 근데 환승 게이트가 어디였지?", "reading": "eo, al-a. geun-de hwan-seung ge-i-teu-ga eo-di-eot-ji?", "en": "Yeah, I know. But where was the transfer gate?" },
+        { "speaker": "선우", "text": "저짝이다, 표지판 보이나? 내 따라온나.", "reading": "jeo-jjak-i-da, pyo-ji-pan bo-i-na? nae tta-ra-on-na.", "en": "Over there, see the sign? Just follow me." },
+        { "speaker": "승객", "text": "니 없었으면 나 진짜 헤맸겠다.", "reading": "ni eop-seot-eu-myeon na jin-jja he-maet-get-da.", "en": "If it weren't for you, I really would've gotten lost." }
+      ],
+      "question": "두 사람이 환승해야 하는 역은 어디인가요?",
+      "question_en": "Which station do the two of them need to transfer at?",
+      "correct_answer": "서면",
+      "options": ["서면", "광안", "해운대", "남포"],
+      "explanation": "선우는 서면에서 2호선으로 갈아타야 한다고 알려주었습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "선우", "text": "다음다음 정류장에서 내리는 거 맞제? 하차벨 내가 누를게.", "reading": "da-eum-da-eum jeong-nyu-jang-e-seo nae-ri-neun geo mat-je? ha-cha-bel nae-ga nul-leul-ge.", "en": "We get off two stops from now, right? I'll press the bell." },
+        { "speaker": "승객", "text": "어, 맞아. 근데 이 버스 막차 아니지?", "reading": "eo, maj-a. geun-de i beo-seu mak-cha a-ni-ji?", "en": "Yeah, that's right. But this isn't the last bus, is it?" },
+        { "speaker": "선우", "text": "아니다, 아직 몇 대 더 있다. 걱정 마라.", "reading": "a-ni-da, a-jik myeot dae deo it-da. geok-jeong ma-ra.", "en": "No, there are still a few more. Don't worry." },
+        { "speaker": "승객", "text": "다행이다. 아까 노선도 보니까 막차 시간이 애매하더라고.", "reading": "da-haeng-i-da. a-kka no-seon-do bo-ni-kka mak-cha si-gan-i ae-mae-ha-deo-ra-go.", "en": "Good. Looking at the route map earlier, the last-bus time seemed unclear." }
+      ],
+      "question": "승객이 걱정한 것은 무엇인가요?",
+      "question_en": "What was the passenger worried about?",
+      "correct_answer": "막차를 놓칠까 봐",
+      "options": ["막차를 놓칠까 봐", "버스를 잘못 탈까 봐", "요금이 부족할까 봐", "길을 잃을까 봐"],
+      "explanation": "승객은 노선도를 보고 막차 시간이 애매해 보여 걱정했다고 말합니다."
+    }
+  ]
+}

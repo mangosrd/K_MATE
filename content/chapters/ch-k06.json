@@ -46,17 +46,82 @@
     }
   ],
   "words": [
-    { "id": "w01", "word": "명동", "reading": "myeong-dong", "meaning": "Myeongdong", "example": "명동은 쇼핑의 중심지예요.", "example_reading": "myeong-dong-eun syo-ping-ui jung-sim-ji-ye-yo", "example_en": "Myeongdong is the center of shopping." },
-    { "id": "w02", "word": "홍대", "reading": "hong-dae", "meaning": "Hongdae", "example": "홍대는 젊음의 거리로 유명해요.", "example_reading": "hong-dae-neun jeol-meum-ui geo-ri-ro yu-myeong-hae-yo", "example_en": "Hongdae is famous as the street of youth." },
-    { "id": "w03", "word": "화장품", "reading": "hwa-jang-pum", "meaning": "Cosmetics", "example": "이 화장품 가게는 정말 인기가 많아요.", "example_reading": "i hwa-jang-pum ga-ge-neun jeong-mal in-gi-ga man-a-yo", "example_en": "This cosmetics shop is really popular." },
-    { "id": "w04", "word": "버스킹", "reading": "beo-seu-king", "meaning": "Busking", "example": "홍대에서 버스킹 공연을 볼 수 있어요.", "example_reading": "hong-dae-e-seo beo-seu-king gong-yeon-eul bol su i-sseo-yo", "example_en": "You can watch busking performances in Hongdae." },
-    { "id": "w05", "word": "유행", "reading": "yu-haeng", "meaning": "Trend / fashion", "example": "요즘 유행하는 스타일이 뭐예요?", "example_reading": "yo-jeum yu-haeng-ha-neun seu-ta-il-i mwo-ye-yo", "example_en": "What style is trending these days?" }
+    {
+      "id": "w01",
+      "word": "번화가",
+      "reading": "beon-hwa-ga",
+      "meaning": "Bustling downtown area",
+      "example": "이 번화가는 언제나 사람들로 북적입니다.",
+      "example_reading": "i beon-hwa-ga-neun eon-je-na sa-ram-deul-lo buk-jeog-im-ni-da",
+      "example_en": "This bustling downtown area is always crowded with people."
+    },
+    {
+      "id": "w02",
+      "word": "거리",
+      "reading": "geo-ri",
+      "meaning": "Street",
+      "example": "거리 곳곳에서 버스킹 공연을 볼 수 있습니다.",
+      "example_reading": "geo-ri got-god-e-seo beo-seu-king gong-yeon-eul bol su it-seum-ni-da",
+      "example_en": "You can see busking performances all over the street."
+    },
+    {
+      "id": "w03",
+      "word": "화장품",
+      "reading": "hwa-jang-pum",
+      "meaning": "Cosmetics",
+      "example": "이 화장품 가게는 정말 인기가 많아요.",
+      "example_reading": "i hwa-jang-pum ga-ge-neun jeong-mal in-gi-ga man-a-yo",
+      "example_en": "This cosmetics shop is really popular."
+    },
+    {
+      "id": "w04",
+      "word": "버스킹",
+      "reading": "beo-seu-king",
+      "meaning": "Busking",
+      "example": "홍대에서 버스킹 공연을 볼 수 있어요.",
+      "example_reading": "hong-dae-e-seo beo-seu-king gong-yeon-eul bol su i-sseo-yo",
+      "example_en": "You can watch busking performances in Hongdae."
+    },
+    {
+      "id": "w05",
+      "word": "유행",
+      "reading": "yu-haeng",
+      "meaning": "Trend / fashion",
+      "example": "요즘 유행하는 스타일이 뭐예요?",
+      "example_reading": "yo-jeum yu-haeng-ha-neun seu-ta-il-i mwo-ye-yo",
+      "example_en": "What style is trending these days?"
+    }
   ],
   "sentences": [
-    { "id": "s01", "ko": "명동에서 다양한 화장품을 구경했어요.", "reading": "myeong-dong-e-seo da-yang-han hwa-jang-pum-eul gu-gyeong-hae-sseo-yo", "en": "I looked around at various cosmetics in Myeongdong." },
-    { "id": "s02", "ko": "홍대 거리는 밤에도 활기찹니다.", "reading": "hong-dae geo-ri-neun bam-e-do hwal-gi-cham-ni-da", "en": "Hongdae's streets are lively even at night." },
-    { "id": "s03", "ko": "화장품 가게 직원이 친절하게 설명해줍니다.", "reading": "hwa-jang-pum ga-ge jig-won-i chin-jeol-ha-ge seol-myeong-hae-jum-ni-da", "en": "The cosmetics shop staff kindly explains the products." },
-    { "id": "s04", "ko": "버스킹 공연을 구경하는 사람들이 많습니다.", "reading": "beo-seu-king gong-yeon-eul gu-gyeong-ha-neun sa-ram-deul-i man-seum-ni-da", "en": "Many people gather to watch the busking performance." },
-    { "id": "s05", "ko": "유행에 민감한 젊은이들이 많이 모입니다.", "reading": "yu-haeng-e min-gam-han jeol-meun-i-deul-i man-i mo-im-ni-da", "en": "Many trend-conscious young people gather here." }
+    {
+      "id": "s01",
+      "ko": "명동에서 다양한 화장품을 구경했어요.",
+      "reading": "myeong-dong-e-seo da-yang-han hwa-jang-pum-eul gu-gyeong-hae-sseo-yo",
+      "en": "I looked around at various cosmetics in Myeongdong."
+    },
+    {
+      "id": "s02",
+      "ko": "홍대 거리는 밤에도 활기찹니다.",
+      "reading": "hong-dae geo-ri-neun bam-e-do hwal-gi-cham-ni-da",
+      "en": "Hongdae's streets are lively even at night."
+    },
+    {
+      "id": "s03",
+      "ko": "화장품 가게 직원이 친절하게 설명해줍니다.",
+      "reading": "hwa-jang-pum ga-ge jig-won-i chin-jeol-ha-ge seol-myeong-hae-jum-ni-da",
+      "en": "The cosmetics shop staff kindly explains the products."
+    },
+    {
+      "id": "s04",
+      "ko": "버스킹 공연을 구경하는 사람들이 많습니다.",
+      "reading": "beo-seu-king gong-yeon-eul gu-gyeong-ha-neun sa-ram-deul-i man-seum-ni-da",
+      "en": "Many people gather to watch the busking performance."
+    },
+    {
+      "id": "s05",
+      "ko": "유행에 민감한 젊은이들이 많이 모입니다.",
+      "reading": "yu-haeng-e min-gam-han jeol-meun-i-deul-i man-i mo-im-ni-da",
+      "en": "Many trend-conscious young people gather here."
+    }
   ]
 }

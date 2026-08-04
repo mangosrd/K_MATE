@@ -1,0 +1,67 @@
+{
+  "id": "sp-frd-kyuhyun-03",
+  "character_id": "kyuhyun",
+  "title": "요즘 애들 말, 알려줄게",
+  "emoji": "🔥",
+  "story": [
+    {
+      "text": "홍대 거리는 형형색색의 간판들로 화려하게 빛나고 있었다. 규현은 아이스크림을 하나씩 사서 건네며 앞장서 걸었다.",
+      "reading": "hong-dae geo-ri-neun hyeong-hyeong-saek-saeg-ui gan-pan-deul-lo hwa-lyeo-ha-ge bit-na-go iss-eot-da. gyu-hyeon-eun a-i-seu-keu-lim-eul ha-na-ssik sa-seo geon-ne-myeo ap-jang-seo geol-eot-da.",
+      "en": "Hongdae's streets glittered with colorful signs of every kind. Kyuhyun bought us each an ice cream and led the way, walking ahead."
+    },
+    {
+      "text": "\"우와, 이 거리 진짜 신기하다!\" 나는 두리번거리며 감탄했다.",
+      "reading": "\"u-wa, i geo-ri jin-jja sin-gi-ha-da!\" na-neun du-ri-beon-geo-ri-myeo gam-tan-haet-da.",
+      "en": "\"Wow, this street is seriously amazing!\" I marveled, looking all around."
+    },
+    {
+      "text": "그때 갑자기 근처 버스킹 공연자가 화려하게 백덤블링을 선보였다. 나는 깜짝 놀라 소리쳤다. \"헐, 대박!\"",
+      "reading": "geu-ttae gap-ja-gi geun-cheo beo-seu-king gong-yeon-ja-ga hwa-lyeo-ha-ge baek-deom-beul-ling-eul seon-bo-yeot-da. na-neun kkam-jjak nol-la so-ri-chyeot-da. \"heol, dae-bak!\"",
+      "en": "Just then, a street performer nearby suddenly pulled off a flashy backflip. Startled, I blurted out, \"Whoa, no way!\"",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "규현이 낄낄 웃었다. \"'대박'이라고 하는 거예요, 아가씨. 그게 원래 표현이에요.\" 그가 네온사인을 손가락으로 가리켰다.",
+      "reading": "gyu-hyeon-i kkil-kkil us-eot-da. \"'dae-bak'-i-ra-go ha-neun geo-ye-yo, a-ga-ssi. geu-ge won-lae pyo-hyeon-i-e-yo.\" geu-ga ne-on-sa-in-eul son-ga-rag-eu-ro ga-ri-kyeot-da.",
+      "en": "Kyuhyun chuckled. \"That's called saying 'daebak,' miss. That's the original expression.\" He pointed at the neon sign with his finger.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "나는 조심스레 그 말을 따라했다. \"다...대박?\" 규현이 손뼉을 치며 웃었다. \"그렇지! 인정!\"",
+      "reading": "na-neun jo-sim-seu-re geu mal-eul tta-ra-haet-da. \"da...dae-bak?\" gyu-hyeon-i son-ppyeog-eul chi-myeo us-eot-da. \"geu-reoh-ji! in-jeong!\"",
+      "en": "I cautiously repeated the word. \"D-daebak?\" Kyuhyun clapped and laughed. \"That's it! I approve!\"",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "\"레알 잘하는데요?\" 그가 눈을 크게 뜨며 감탄하는 척했다. \"'레알'은 '진짜'라는 뜻이에요.\"",
+      "reading": "\"le-al jal-ha-neun-de-yo?\" geu-ga nun-eul keu-ge tteu-myeo gam-tan-ha-neun cheog-haet-da. \"'le-al'-eun 'jin-jja'-ra-neun tteus-i-e-yo.\"",
+      "en": "\"For real, you're good at this?\" He widened his eyes, pretending to be impressed. \"'Leal' means 'really' or 'for real.'\"",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "붕어빵 노점 앞에 늘어선 긴 줄을 보고 나는 한숨을 쉬며 중얼거렸다. \"아, 완전 킹받네, 배고픈데.\" 규현이 큰 소리로 웃음을 터뜨렸다. \"방금 그거, 완벽했어요.\"",
+      "reading": "bung-eo-ppang no-jeom ap-e neul-eo-seon gin jul-eul bo-go na-neun han-sum-eul swi-myeo jung-eol-geo-ryeot-da. \"a, wan-jeon king-bat-ne, bae-go-peun-de.\" gyu-hyeon-i keun so-ri-ro us-eum-eul teo-tteu-lyeot-da. \"bang-geum geu-geo, wan-byeok-haet-eo-yo.\"",
+      "en": "Seeing the long line in front of the fish-shaped bread stall, I sighed and muttered, \"Ugh, that's so infuriating, and I'm hungry.\" Kyuhyun burst out laughing loudly. \"That was perfect, just now.\"",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "붕어빵을 한입 베어 물며 규현이 덧붙였다. \"이렇게 하나씩 늘려 가면, 아가씨도 곧 진짜 한국 사람 다 됐다고 할걸요?\"",
+      "reading": "bung-eo-ppang-eul han-ib be-eo mul-myeo gyu-hyeon-i deot-but-yeot-da. \"i-reoh-ge ha-na-ssik neul-lyeo ga-myeon, a-ga-ssi-do got jin-jja han-guk sa-ram da dwaet-da-go hal-geol-yo?\"",
+      "en": "Taking a bite of the fish-shaped bread, Kyuhyun added, \"If you keep picking these up one by one, people will soon say you're basically a real Korean.\""
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "대박", "reading": "dae-bak", "meaning": "awesome, amazing (exclamation)", "example": "오늘 콘서트 진짜 대박이었어!", "example_reading": "o-neul kon-seo-teu jin-jja dae-bag-i-eot-eo!", "example_en": "Today's concert was seriously amazing!" },
+    { "id": "w02", "word": "인정", "reading": "in-jeong", "meaning": "I agree, fair enough (slang for acknowledging something)", "example": "그건 인정!", "example_reading": "geu-geon in-jeong!", "example_en": "I'll give you that one!" },
+    { "id": "w03", "word": "레알", "reading": "le-al", "meaning": "for real, seriously (slang from English 'real')", "example": "레알? 진짜야?", "example_reading": "le-al? jin-jja-ya?", "example_en": "For real? Are you serious?" },
+    { "id": "w04", "word": "킹받다", "reading": "king-bat-da", "meaning": "to be so infuriating, so annoying (slang)", "example": "이거 완전 킹받네.", "example_reading": "i-geo wan-jeon king-bat-ne", "example_en": "This is so infuriating." },
+    { "id": "w05", "word": "헐", "reading": "heol", "meaning": "whoa, oh my (exclamation of shock/surprise)", "example": "헐, 진짜야?", "example_reading": "heol, jin-jja-ya?", "example_en": "Whoa, seriously?" }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "대박! 진짜 신기하다.", "reading": "dae-bak! jin-jja sin-gi-ha-da.", "en": "No way! That's amazing." },
+    { "id": "s02", "ko": "그건 인정!", "reading": "geu-geon in-jeong!", "en": "I'll give you that one!" },
+    { "id": "s03", "ko": "레알? 완전 신기하다.", "reading": "le-al? wan-jeon sin-gi-ha-da.", "en": "For real? That's totally amazing." },
+    { "id": "s04", "ko": "아, 완전 킹받네.", "reading": "a, wan-jeon king-bat-ne.", "en": "Ugh, that's so infuriating." },
+    { "id": "s05", "ko": "헐, 대박이다!", "reading": "heol, dae-bag-i-da!", "en": "Whoa, that's awesome!" }
+  ]
+}

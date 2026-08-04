@@ -1,0 +1,97 @@
+{
+  "id": "sp-day-sunwoo-02",
+  "character_id": "sunwoo",
+  "title": "오늘의 당 충전",
+  "emoji": "☕",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "전포 카페거리에는 사람들이 삼삼오오 모여 있었다. 유리창 너머로 원두 볶는 냄새가 은은하게 풍겼다.",
+      "reading": "jeon-po ka-pe-geo-ri-e-neun sa-ram-deul-i sam-sam-o-o mo-yeo iss-eot-da. yu-ri-chang neo-meo won-du bokk-neun naem-sae-ga eun-eun-ha-ge pung-gyeot-da.",
+      "en": "Jeonpo Café Street was dotted with small clusters of people. Through the glass windows, the faint smell of roasting coffee beans drifted out."
+    },
+    {
+      "text": "메뉴판 앞에서 한참을 고민하는 나를 보며 선우가 픽 웃었다. \"또 시작이네, 이 결정 장애.\"",
+      "reading": "me-nyu-pan ap-e-seo han-cham-eul go-min-ha-neun na-reul bo-myeo seon-u-ga pik us-eot-da. \"tto si-jak-i-ne, i gyeol-jeong jang-ae.\"",
+      "en": "Watching me agonize in front of the menu board, Sunwoo smirked. \"Here we go again, Miss Indecisive.\""
+    },
+    {
+      "text": "\"그럼 니는 뭐 마실 낀데?\" 내가 묻자 그는 망설임 없이 대답했다. \"나는 그냥 아메리카노. 샷 하나만 추가하고.\"",
+      "reading": "\"geu-reom ni-neun mwo ma-sil kkin-de?\" nae-ga mut-ja geu-neun mang-seol-im eop-si dae-dap-haet-da. \"na-neun geu-nyang a-me-ri-ka-no. syas ha-na-man chu-ga-ha-go.\"",
+      "en": "\"Then what are you gonna drink?\" I asked, and he answered without hesitation. \"I'll just get an Americano. With one extra shot.\"",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "결국 나도 그를 따라 아메리카노를 주문했다. \"얼음은 적게 넣어 주세요.\" 직원에게 조심스레 덧붙였다.",
+      "reading": "gyeol-guk na-do geu-reul tta-ra a-me-ri-ka-no-reul ju-mun-haet-da. \"eol-eum-eun jeok-ge neo-eo ju-se-yo.\" jik-won-e-ge jo-sim-seu-re deot-bu-tyeot-da.",
+      "en": "In the end I followed his lead and ordered an Americano too. \"Please put less ice in it,\" I added carefully to the staff.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "진동벨을 받아 들고 창가 자리에 앉았다. 선우는 벨을 손안에서 빙글빙글 돌리며 장난을 쳤다.",
+      "reading": "jin-dong-bel-eul bad-a deul-go chang-ga ja-ri-e anj-at-da. seon-u-neun bel-eul son-an-e-seo bing-geul-bing-geul dol-li-myeo jang-nan-eul chyeot-da.",
+      "en": "I took the buzzer and sat down by the window. Sunwoo spun the buzzer around in his hand, goofing around.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "\"이거 울리기 전까지 니 결정 장애 얘기나 좀 더 해보자.\" 그가 짓궂게 웃으며 턱을 괴었다.",
+      "reading": "\"i-geo ul-li-gi jeon-kka-ji ni gyeol-jeong jang-ae yae-gi-na jom deo hae-bo-ja.\" geu-ga jit-gut-ge us-eu-myeo teok-eul goe-eot-da.",
+      "en": "\"Let's talk more about your indecisiveness before this thing goes off.\" He grinned mischievously, resting his chin on his hand."
+    },
+    {
+      "text": "얼마 지나지 않아 벨이 요란하게 울렸다. \"어? 나갈 때 포장해서 바다 보면서 마시까?\" 선우가 눈을 반짝이며 물었다.",
+      "reading": "eol-ma ji-na-ji anh-a bel-i yo-ran-ha-ge ul-lyeot-da. \"eo? na-gal ttae po-jang-hae-seo ba-da bo-myeon-seo ma-si-kka?\" seon-u-ga nun-eul ban-jjak-i-myeo mul-eot-da.",
+      "en": "Before long, the buzzer buzzed loudly. \"Oh? Should we get it to-go and drink it looking at the sea?\" Sunwoo asked, eyes sparkling.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "\"단어랑 대화 문제, 오늘도 끝까지 같이 풀어보자.\" 그가 잔을 들며 씩 웃었다.",
+      "reading": "\"dan-eo-rang dae-hwa mun-je, o-neul-do kkeut-kka-ji gat-i pul-eo-bo-ja.\" geu-ga jan-eul deul-myeo ssik us-eot-da.",
+      "en": "\"Let's go through today's words and conversation questions together, all the way to the end.\" He grinned, lifting his cup."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "주문하다", "reading": "ju-mun-ha-da", "meaning": "to order (food/drinks)", "example": "저는 라떼 한 잔을 주문했다.", "example_reading": "jeo-neun la-tte han jan-eul ju-mun-haet-da", "example_en": "I ordered a cup of latte." },
+    { "id": "w02", "word": "추가하다", "reading": "chu-ga-ha-da", "meaning": "to add (extra)", "example": "에스프레소 샷을 하나 추가했다.", "example_reading": "e-seu-peu-re-so syas-eul ha-na chu-ga-haet-da", "example_en": "I added an extra shot of espresso." },
+    { "id": "w03", "word": "얼음", "reading": "eol-eum", "meaning": "ice", "example": "더운 날엔 얼음을 가득 넣어 마신다.", "example_reading": "deo-un nal-en eol-eum-eul ga-deuk neo-eo ma-sin-da", "example_en": "On hot days, I drink it with plenty of ice." },
+    { "id": "w04", "word": "진동벨", "reading": "jin-dong-bel", "meaning": "buzzer (pager given at cafes to signal an order is ready)", "example": "진동벨이 울리자 자리에서 일어났다.", "example_reading": "jin-dong-bel-i ul-li-ja ja-ri-e-seo il-eo-nat-da", "example_en": "When the buzzer went off, I got up from my seat." },
+    { "id": "w05", "word": "포장", "reading": "po-jang", "meaning": "to-go, takeout packaging", "example": "시간이 없어서 포장해 달라고 했다.", "example_reading": "si-gan-i eop-seo-seo po-jang-hae dal-la-go haet-da", "example_en": "I didn't have time, so I asked for it to-go." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "저는 아이스 아메리카노 한 잔 주문할게요.", "reading": "jeo-neun a-i-seu a-me-ri-ka-no han jan ju-mun-hal-ge-yo", "en": "I'll order one iced Americano." },
+    { "id": "s02", "ko": "샷 하나만 추가해 주세요.", "reading": "syas ha-na-man chu-ga-hae ju-se-yo", "en": "Please add just one extra shot." },
+    { "id": "s03", "ko": "얼음은 적게 넣어 주세요.", "reading": "eol-eum-eun jeok-ge neo-eo ju-se-yo", "en": "Please put in less ice." },
+    { "id": "s04", "ko": "진동벨이 울리면 가지러 갈게요.", "reading": "jin-dong-bel-i ul-li-myeon ga-ji-reo gal-ge-yo", "en": "I'll come get it when the buzzer rings." },
+    { "id": "s05", "ko": "포장해서 나갈까 아니면 여기서 마실까 고민된다.", "reading": "po-jang-hae-seo na-gal-kka a-ni-myeon yeo-gi-seo ma-sil-kka go-min-doen-da", "en": "I'm torn between getting it to-go or drinking it here." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "선우", "text": "이모, 아메리카노 하나랑 라떼 하나요. 라떼는 얼음 적게요.", "reading": "i-mo, a-me-ri-ka-no ha-na-rang la-tte ha-na-yo. la-tte-neun eol-eum jeok-ge-yo.", "en": "Ma'am, one Americano and one latte. Less ice in the latte." },
+        { "speaker": "승객", "text": "나 샷 하나 추가해도 돼? 오늘따라 좀 피곤해서.", "reading": "na syas ha-na chu-ga-hae-do dwae? o-neul-tta-ra jom pi-gon-hae-seo.", "en": "Can I add an extra shot? I'm feeling extra tired today." },
+        { "speaker": "선우", "text": "당연하지. 이모, 라떼에 샷 하나 추가요.", "reading": "dang-yeon-ha-ji. i-mo, la-tte-e syas ha-na chu-ga-yo.", "en": "Of course. Ma'am, add one shot to the latte." },
+        { "speaker": "승객", "text": "고맙다. 니 은근 세심하다.", "reading": "go-map-da. ni eun-geun se-sim-ha-da.", "en": "Thanks. You're surprisingly thoughtful." }
+      ],
+      "question": "승객이 라떼에 추가로 요청한 것은 무엇인가요?",
+      "question_en": "What did the passenger additionally request for her latte?",
+      "correct_answer": "샷 하나 추가",
+      "options": ["샷 하나 추가", "얼음 많이", "시럽 추가", "우유 없이"],
+      "explanation": "승객은 피곤하다며 라떼에 샷을 하나 추가해 달라고 요청했습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "선우", "text": "벨 울린다. 니 것도 같이 가지고 올게.", "reading": "bel ul-lin-da. ni geot-do gat-i ga-ji-go ol-ge.", "en": "The buzzer's ringing. I'll bring yours too." },
+        { "speaker": "승객", "text": "고마워. 근데 우리 이거 포장해서 바다 앞에서 마실까?", "reading": "go-ma-wo. geun-de u-ri i-geo po-jang-hae-seo ba-da ap-e-seo ma-sil-kka?", "en": "Thanks. But should we get this to-go and drink it by the sea?" },
+        { "speaker": "선우", "text": "오, 그거 좋다. 여기 사장님요, 포장으로 바꿔주세요.", "reading": "o, geu-geo jo-ta. yeo-gi sa-jang-nim-yo, po-jang-eu-ro ba-kkwo-ju-se-yo.", "en": "Oh, that's good. Excuse me, could you switch this to to-go?" },
+        { "speaker": "승객", "text": "역시 니는 이럴 때 반응이 빠르다.", "reading": "yeok-si ni-neun i-reol ttae ban-eung-i ppa-reu-da.", "en": "As expected, you're quick to react in moments like this." }
+      ],
+      "question": "두 사람이 카페에서 마지막에 결정한 것은 무엇인가요?",
+      "question_en": "What did the two of them decide to do at the end, at the cafe?",
+      "correct_answer": "음료를 포장해서 바다 앞에서 마시기로 했다",
+      "options": ["음료를 포장해서 바다 앞에서 마시기로 했다", "카페에 더 오래 앉아 있기로 했다", "음료를 환불받기로 했다", "다른 카페로 옮기기로 했다"],
+      "explanation": "승객의 제안으로 두 사람은 음료를 포장해서 바다를 보며 마시기로 결정했습니다."
+    }
+  ]
+}

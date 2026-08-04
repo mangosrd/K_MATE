@@ -1,0 +1,67 @@
+{
+  "id": "sp-frd-kyuhyun-02",
+  "character_id": "kyuhyun",
+  "title": "치맥 없인 못 살아",
+  "emoji": "🍗",
+  "story": [
+    {
+      "text": "해 질 녘, 을지로 골목 낡은 호프집 간판에 불이 켜졌다. 규현이 앞장서 문을 열었다.",
+      "reading": "hae jil nyeok, eul-ji-ro gol-mok nalg-eun ho-peu-jib gan-pan-e bul-i kyeo-jyeot-da. gyu-hyeon-i ap-jang-seo mun-eul yeol-eot-da.",
+      "en": "As dusk fell, the lights came on over the sign of an old pub tucked away in an Euljiro alley. Kyuhyun led the way and pushed open the door."
+    },
+    {
+      "text": "\"한국 왔으면 치맥이지, 아가씨. 이건 국룰이에요.\" 그가 자리에 앉으며 당당하게 메뉴판을 내밀었다.",
+      "reading": "\"han-guk wat-eu-myeon chi-maeg-i-ji, a-ga-ssi. i-geon guk-lyul-i-e-yo.\" geu-ga ja-ri-e anj-eu-myeo dang-dang-ha-ge me-nyu-pan-eul nae-mil-eot-da.",
+      "en": "\"If you're in Korea, it's chimaek, miss. That's just the unwritten rule.\" He sat down and confidently held out the menu.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "잠시 뒤 노릇노릇한 후라이드 치킨과 얼음처럼 차가운 생맥주 두 잔이 테이블 위에 놓였다.",
+      "reading": "jam-si dwi no-reut-no-reut-han hu-ra-i-deu chi-kin-gwa eol-eum-cheo-reom cha-ga-un saeng-maek-ju du jan-i te-i-beul wi-e noh-yeot-da.",
+      "en": "A little while later, golden-brown fried chicken and two glasses of draft beer as cold as ice were set on the table."
+    },
+    {
+      "text": "\"자, 잔 들어요.\" 규현이 잔을 들며 씩 웃었다. \"우리의 재회를 위하여, 건배!\"",
+      "reading": "\"ja, jan deul-eo-yo.\" gyu-hyeon-i jan-eul deul-myeo ssik us-eot-da. \"u-ri-ui jae-hoe-reul wi-ha-yeo, geon-bae!\"",
+      "en": "\"Come on, raise your glass.\" Kyuhyun lifted his glass with a grin. \"To our reunion—cheers!\"",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "쨍, 하고 부딪힌 잔에서 청량한 소리가 울렸다. 시원한 맥주 한 모금에 하루의 피로가 싹 풀리는 기분이었다.",
+      "reading": "jjaeng, ha-go bu-dit-hin jan-e-seo cheong-nyang-han so-ri-ga ul-lyeot-da. si-won-han maek-ju han mo-geum-e ha-ru-ui pi-ro-ga ssak pul-li-neun gi-bun-i-eot-da.",
+      "en": "The glasses clinked with a crisp, refreshing sound. One cool sip of beer, and it felt like the whole day's fatigue melted away.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "\"크으, 시원하다.\" 내가 감탄하자 규현이 흐뭇하게 웃으며 치킨 다리 하나를 내 접시에 놓아 주었다. \"안주는 이게 진리지.\"",
+      "reading": "\"keu-eu, si-won-ha-da.\" nae-ga gam-tan-ha-ja gyu-hyeon-i heu-mut-ha-ge us-eu-myeo chi-kin da-ri ha-na-reul nae jeob-si-e noh-a ju-eot-da. \"an-ju-neun i-ge jil-li-ji.\"",
+      "en": "\"Ahh, refreshing.\" As I sighed in satisfaction, Kyuhyun smiled fondly and set a chicken leg on my plate. \"This right here is the real bar snack.\"",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "\"오늘 같은 날은 야식도 하나 더 시켜야 되는데.\" 그가 눈을 반짝이며 핸드폰을 집어 들었다. \"어때요, 계속 갈까요?\"",
+      "reading": "\"o-neul gat-eun nal-eun ya-sik-do ha-na deo si-kyeo-ya doe-neun-de.\" geu-ga nun-eul ban-jjag-i-myeo haen-deu-pon-eul jib-eo deul-eot-da. \"eo-ttae-yo, gye-sok gal-kka-yo?\"",
+      "en": "\"A night like this really calls for one more round of late-night snacks.\" His eyes sparkled as he picked up his phone. \"What do you say, should we keep going?\"",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "늦은 밤까지 이어진 수다와 웃음 속에서, 나는 이 능글맞은 친구와 함께라면 무엇을 해도 즐겁다는 걸 새삼 느꼈다.",
+      "reading": "neuj-eun bam-kka-ji i-eo-jin su-da-wa us-eum sog-e-seo, na-neun i neung-geul-maj-eun chin-gu-wa ham-kke-ra-myeon mu-eos-eul hae-do jeul-geob-da-neun geol sae-sam neu-kkyeot-da.",
+      "en": "In the chatter and laughter that stretched late into the night, I realized once again that anything was fun as long as I was with this smooth-talking friend of mine."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "치맥", "reading": "chi-maek", "meaning": "chicken and beer (a classic Korean combo)", "example": "오늘 저녁은 치맥 어때?", "example_reading": "o-neul jeo-nyeog-eun chi-maek eo-ttae?", "example_en": "How about chicken and beer for dinner tonight?" },
+    { "id": "w02", "word": "건배", "reading": "geon-bae", "meaning": "cheers, a toast", "example": "건배! 우리의 우정을 위하여!", "example_reading": "geon-bae! u-ri-ui u-jeong-eul wi-ha-yeo!", "example_en": "Cheers! To our friendship!" },
+    { "id": "w03", "word": "시원하다", "reading": "si-won-ha-da", "meaning": "to be refreshing, cool (drinks, weather)", "example": "이 맥주 정말 시원하다.", "example_reading": "i maek-ju jeong-mal si-won-ha-da", "example_en": "This beer is really refreshing." },
+    { "id": "w04", "word": "안주", "reading": "an-ju", "meaning": "food eaten while drinking alcohol", "example": "안주로 뭐 시킬까?", "example_reading": "an-ju-ro mwo si-kil-kka?", "example_en": "What should we order to go with the drinks?" },
+    { "id": "w05", "word": "야식", "reading": "ya-sik", "meaning": "late-night snack, late-night food", "example": "야식으로 라면 먹을까?", "example_reading": "ya-sig-eu-ro ra-myeon meog-eul-kka?", "example_en": "Should we eat ramen as a late-night snack?" }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "치맥 어때요?", "reading": "chi-maek eo-ttae-yo?", "en": "How about chicken and beer?" },
+    { "id": "s02", "ko": "건배! 우리의 재회를 위하여.", "reading": "geon-bae! u-ri-ui jae-hoe-reul wi-ha-yeo.", "en": "Cheers! To our reunion." },
+    { "id": "s03", "ko": "이 맥주 진짜 시원하다.", "reading": "i maek-ju jin-jja si-won-ha-da.", "en": "This beer is really refreshing." },
+    { "id": "s04", "ko": "안주는 뭐로 할까?", "reading": "an-ju-neun mwo-ro hal-kka?", "en": "What should we get for a snack?" },
+    { "id": "s05", "ko": "야식 시킬까?", "reading": "ya-sik si-kil-kka?", "en": "Should we order some late-night food?" }
+  ]
+}

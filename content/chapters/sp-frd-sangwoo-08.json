@@ -1,0 +1,98 @@
+{
+  "id": "sp-frd-sangwoo-08",
+  "character_id": "sangwoo",
+  "title": "대청호, 불멍의 밤",
+  "emoji": "🏕️",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "대청호 근처 캠핑장에 도착하니 이미 해가 뉘엿뉘엿 저물고 있었습니다.",
+      "reading": "dae-cheong-ho geun-cheo kaem-ping-jang-e do-chak-ha-ni i-mi hae-ga nwi-eot-nwi-eot jeo-mul-go it-eot-seum-ni-da.",
+      "en": "By the time we arrived near Daecheongho, the sun was already setting slowly."
+    },
+    {
+      "text": "\"오늘은 이 '캠핑장'에서 하룻밤 묵겠습니다.\" 저는 예약 확인증을 다시 한번 점검했습니다.",
+      "reading": "\"o-neul-eun i 'kaem-ping-jang'-e-seo ha-rut-bam muk-get-seum-ni-da.\" jeo-neun ye-yak hwag-in-jeung-eul da-si han-beon jeom-geom-haess-seum-ni-da.",
+      "en": "\"Tonight, we'll be staying overnight at this 'campsite'.\" I double-checked the reservation confirmation once more.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "친구와 함께 '장작'을 나르며 자리를 정리했습니다. 손에 나뭇가지 냄새가 배었습니다.",
+      "reading": "chin-gu-wa ham-kke 'jang-jak'-eul na-reu-myeo ja-ri-reul jeong-ri-haess-seum-ni-da. son-e na-mut-ga-ji naem-sae-ga bae-eot-seum-ni-da.",
+      "en": "Together with my friend, I carried 'firewood' and set up the site. My hands became scented with the smell of branches.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "텐트 옆에 작은 화로를 놓고, 성냥으로 불씨를 살렸습니다. 연기가 매워 둘 다 눈물을 찔끔거렸습니다.",
+      "reading": "ten-teu yeop-e jag-eun hwa-ro-reul noh-go, seong-nyang-eu-ro bul-ssi-reul sal-lyeot-seum-ni-da. yeon-gi-ga mae-wo dul da nun-mul-eul jjil-kkeum-geo-ryeot-seum-ni-da.",
+      "en": "We placed a small fire pit beside the tent and coaxed a flame to life with matches. The smoke stung, and we both teared up a little."
+    },
+    {
+      "text": "밤이 깊어지기 전, '텐트'부터 단단히 고정해 두었습니다. 관제사의 습관대로 매듭까지 두 번 확인했습니다.",
+      "reading": "bam-i gip-eo-ji-gi jeon, 'ten-teu'-bu-teo dan-dan-hi go-jeong-hae du-eot-seum-ni-da. gwan-je-sa-ui seup-gwan-dae-ro mae-deup-kka-ji du beon hwag-in-haess-seum-ni-da.",
+      "en": "Before the night got too deep, we secured the 'tent' firmly first. True to my controller's habits, I checked the knots twice.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "타닥타닥, '모닥불'이 기분 좋게 타올랐습니다. 우리는 각자 의자를 끌어와 나란히 앉았습니다.",
+      "reading": "ta-dak-ta-dak, 'mo-dak-bul'-i gi-bun jo-ke ta-ol-lat-seum-ni-da. u-ri-neun gak-ja ui-ja-reul kkeul-eo-wa na-ran-hi anj-at-seum-ni-da.",
+      "en": "Crackle, crackle — the 'bonfire' burned pleasantly. We each pulled up a chair and sat side by side.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "말없이 불꽃만 바라보는, 이른바 '불멍'의 시간이었습니다. 아무 말이 없어도 어색하지 않았습니다.",
+      "reading": "mal-eob-si bul-kkot-man ba-ra-bo-neun, i-reun-ba 'bul-meong'-ui si-gan-i-eot-seum-ni-da. a-mu mal-i eob-seo-do eo-saek-ha-ji an-at-seum-ni-da.",
+      "en": "It was a time of what's called 'fire-gazing' — staring wordlessly at the flames. Even without a word, it didn't feel awkward.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "장작 타는 소리만이 조용히 밤을 채웠습니다. 그날 밤 나눈 대화를 들려드리겠습니다.",
+      "reading": "jang-jak ta-neun so-ri-man-i jo-yong-hi bam-eul chae-wot-seum-ni-da. geu-nal bam na-nun dae-hwa-reul deul-lyeo-deu-ri-get-seum-ni-da.",
+      "en": "Only the sound of crackling firewood quietly filled the night. Let me share the conversation we had that night."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "캠핑장", "reading": "kaem-ping-jang", "meaning": "campsite", "example": "이번 주말엔 캠핑장을 예약했습니다.", "example_reading": "i-beon ju-mal-en kaem-ping-jang-eul ye-yak-haess-seum-ni-da", "example_en": "I booked a campsite for this weekend." },
+    { "id": "w02", "word": "장작", "reading": "jang-jak", "meaning": "firewood", "example": "장작을 넉넉히 준비했습니다.", "example_reading": "jang-jag-eul neok-neog-hi jun-bi-haess-seum-ni-da", "example_en": "I prepared plenty of firewood." },
+    { "id": "w03", "word": "불멍", "reading": "bul-meong", "meaning": "zoning out while staring at a fire", "example": "불멍을 하다 보니 시간 가는 줄 몰랐습니다.", "example_reading": "bul-meong-eul ha-da bo-ni si-gan ga-neun jul mol-lat-seum-ni-da", "example_en": "I lost track of time while fire-gazing." },
+    { "id": "w04", "word": "텐트", "reading": "ten-teu", "meaning": "tent", "example": "텐트 안이 생각보다 아늑했습니다.", "example_reading": "ten-teu an-i saeng-gak-bo-da a-neuk-haess-seum-ni-da", "example_en": "The inside of the tent was cozier than expected." },
+    { "id": "w05", "word": "모닥불", "reading": "mo-dak-bul", "meaning": "bonfire, campfire", "example": "모닥불 앞에서 이야기를 나눴습니다.", "example_reading": "mo-dak-bul ap-e-seo i-ya-gi-reul na-nwot-seum-ni-da", "example_en": "We talked in front of the bonfire." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "이번 주말엔 캠핑장을 예약했습니다.", "reading": "i-beon ju-mal-en kaem-ping-jang-eul ye-yak-haess-seum-ni-da", "en": "I booked a campsite for this weekend." },
+    { "id": "s02", "ko": "장작을 넉넉히 준비했습니다.", "reading": "jang-jag-eul neok-neog-hi jun-bi-haess-seum-ni-da", "en": "I prepared plenty of firewood." },
+    { "id": "s03", "ko": "불멍을 하다 보니 시간 가는 줄 몰랐습니다.", "reading": "bul-meong-eul ha-da bo-ni si-gan ga-neun jul mol-lat-seum-ni-da", "en": "I lost track of time while fire-gazing." },
+    { "id": "s04", "ko": "텐트 안이 생각보다 아늑했습니다.", "reading": "ten-teu an-i saeng-gak-bo-da a-neuk-haess-seum-ni-da", "en": "The inside of the tent was cozier than expected." },
+    { "id": "s05", "ko": "모닥불 앞에서 이야기를 나눴습니다.", "reading": "mo-dak-bul ap-e-seo i-ya-gi-reul na-nwot-seum-ni-da", "en": "We talked in front of the bonfire." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "상우", "text": "텐트는 제가 칠 테니, 장작은 좀 모아 줄 수 있습니까?", "reading": "ten-teu-neun je-ga chil te-ni, jang-jag-eun jom mo-a jul su it-seum-ni-kka?", "en": "I'll pitch the tent, so could you gather some firewood?" },
+        { "speaker": "승객", "text": "그래, 이 정도면 충분하겠지?", "reading": "geu-rae, i jeong-do-myeon chung-bun-ha-get-ji?", "en": "Sure, this much should be enough, right?" },
+        { "speaker": "상우", "text": "네, 캠핑장 규정상 정해진 구역에서만 주워야 합니다.", "reading": "ne, kaem-ping-jang gyu-jeong-sang jeong-hae-jin gu-yeog-e-seo-man ju-wo-ya ham-ni-da.", "en": "Yes, but per the campsite rules, we can only gather it from the designated area." },
+        { "speaker": "승객", "text": "역시 꼼꼼하네. 알겠어, 규칙대로 할게.", "reading": "yeok-si kkom-kkom-ha-ne. al-gess-eo, gyu-chik-dae-ro hal-ge.", "en": "So thorough, as always. Got it, I'll follow the rules." }
+      ],
+      "question": "캠핑장에서 장작을 구할 때 지켜야 할 규칙은 무엇인가요?",
+      "question_en": "What rule has to be followed when gathering firewood at the campsite?",
+      "correct_answer": "정해진 구역에서만 주워야 한다",
+      "options": ["정해진 구역에서만 주워야 한다", "밤에만 주울 수 있다", "직원에게 돈을 내야 한다", "장작을 주울 수 없다"],
+      "explanation": "상우는 캠핑장 규정상 정해진 구역에서만 장작을 주워야 한다고 설명했습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "승객", "text": "이렇게 불만 보고 있어도 하나도 안 지루하다.", "reading": "i-reo-ke bul-man bo-go it-eo-do ha-na-do an ji-ru-ha-da.", "en": "Even just staring at the fire like this, it's not boring at all." },
+        { "speaker": "상우", "text": "저도 그렇습니다. '불멍'이라는 말, 이제야 이해가 됩니다.", "reading": "jeo-do geu-reo-seum-ni-da. 'bul-meong'-i-ra-neun mal, i-je-ya i-hae-ga doem-ni-da.", "en": "Same here. Now I finally understand what people mean by 'fire-gazing'." },
+        { "speaker": "승객", "text": "그치? 아무 생각 없이 있어도 마음이 편해.", "reading": "geu-chi? a-mu saeng-gag eob-si it-eo-do ma-eum-i pyeon-hae.", "en": "Right? Even with an empty mind, it feels comfortable." },
+        { "speaker": "상우", "text": "네. 관제탑에서는 상상도 못 할 여유입니다.", "reading": "ne. gwan-je-tab-e-seo-neun sang-sang-do mot hal yeo-yu-im-ni-da.", "en": "Yes. It's a kind of leisure I could never imagine having at the control tower." }
+      ],
+      "question": "상우가 '불멍'을 하며 느낀 점은 무엇인가요?",
+      "question_en": "What did Sangwoo feel while doing 'fire-gazing'?",
+      "correct_answer": "관제탑에서는 상상도 못 할 여유를 느꼈다",
+      "options": ["관제탑에서는 상상도 못 할 여유를 느꼈다", "빨리 잠자리에 들고 싶었다", "불이 꺼질까 봐 계속 걱정했다", "친구와 할 말이 없어 어색했다"],
+      "explanation": "상우는 불멍을 하며 관제탑 업무에서는 느낄 수 없는 여유를 느꼈다고 말했습니다."
+    }
+  ]
+}

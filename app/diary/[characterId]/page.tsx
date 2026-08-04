@@ -4,10 +4,12 @@ import { useState, useEffect, use } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import BottomNav from "@/components/ui/BottomNav";
-import { getCharacterById, getDiaryForCharacter, MOCK_ECONOMY } from "@/lib/db/mock";
+import LoadingSplash from "@/components/LoadingSplash";
+import { getCharacterById, MOCK_ECONOMY, canAccessCharacter } from "@/lib/db/mock";
 import { getLocalDiaries } from "@/lib/diary/store";
 import { getEffectiveUserId } from "@/lib/auth/store";
 import { useLanguage } from "@/components/LanguageContext";
+import { useMembership, useFreeCharSlots } from "@/lib/auth/useAuthUser";
 import type { DiaryEntry } from "@/types/database";
 import styles from "./char-diary.module.css";
 
@@ -19,10 +21,11 @@ export default function CharDiaryPage({ params }: { params: Promise<{ characterI
   const { characterId } = use(params);
   const { t } = useLanguage();
   const char = getCharacterById(characterId);
-  const initialDiaries = getDiaryForCharacter(characterId);
+  const { membership, membershipLoaded } = useMembership();
+  const { freeSlots, freeSlotsLoaded } = useFreeCharSlots();
 
   const [tab, setTab] = useState<Tab>("all");
-  const [diaries, setDiaries] = useState(initialDiaries);
+  const [diaries, setDiaries] = useState<DiaryEntry[]>([]);
   const [coins, setCoins] = useState(MOCK_ECONOMY.coins);
   const [unlockModal, setUnlockModal] = useState<DiaryEntry | null>(null);
   const [selected, setSelected] = useState<DiaryEntry | null>(null);
@@ -36,11 +39,13 @@ export default function CharDiaryPage({ params }: { params: Promise<{ characterI
       .then((remote: DiaryEntry[]) => {
         const remoteIds = new Set(remote.map((d) => d.id));
         const merged = [...remote, ...local.filter((d) => !remoteIds.has(d.id))];
-        // 실제로 생성된 일기가 있으면 그걸 보여주고, 없으면 데모용 mock 일기를 유지한다
-        if (merged.length > 0) setDiaries(merged);
+        // 일기가 하나도 없는 캐릭터에게 예전엔 데모용 mock 일기를 그대로 보여주고 있었다 —
+        // 실제 DB에 없는 id라 "해금" 시도하면 실패하는 가짜 데이터였다. 항상 실제 값(비어
+        // 있으면 빈 배열)으로 덮어써서 정직한 빈 상태를 보여준다.
+        setDiaries(merged);
       })
       .catch(() => {
-        if (local.length > 0) setDiaries([...local, ...initialDiaries]);
+        setDiaries(local);
       });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [characterId]);
@@ -82,6 +87,40 @@ export default function CharDiaryPage({ params }: { params: Promise<{ characterI
 
   if (!char) return null;
 
+  // 접근 제어는 반드시 모든 훅 선언 이후, 컴포넌트 로직 마지막에서 체크한다 — 위로
+  // 올리면 canAccess가 리렌더링 중 바뀔 때 훅 호출 순서가 달라져 런타임 에러가 난다.
+  // 목록 페이지(/diary)는 잠긴 캐릭터로 가는 링크를 안 보여주지만, URL을 직접 치고
+  // 들어오면 그대로 뚫려있었다 — 여기서 실제로 막아야 한다.
+  // membership/freeSlots는 마운트 직후엔 항상 기본값(무료회원)으로 시작해서 실제 백엔드
+  // 조회가 끝나기 전까진, 진짜 프리미엄 회원도 잠깐 🔒 잠금 화면을 봤다가 콘텐츠로 바뀌는
+  // 깜빡임이 있었다. 다만 이 대기가 필요한 건 프리미엄 전용 캐릭터일 때뿐이다 — 규현/하늘
+  // 같은 무료 캐릭터는 canAccessCharacter가 membership 값을 보기도 전에 이미 true를
+  // 반환하므로, 이 캐릭터들까지 매번 로딩 화면을 띄우면(뒤로가기로 재진입할 때마다 등)
+  // 불필요한 깜빡임만 새로 생긴다.
+  if (char.requires_premium && (!membershipLoaded || !freeSlotsLoaded)) {
+    return <LoadingSplash />;
+  }
+
+  const canAccess = canAccessCharacter(characterId, membership, freeSlots);
+  if (!canAccess) {
+    return (
+      <>
+        <div className="page-content" style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", minHeight: "80vh", padding: "20px", textAlign: "center" }}>
+          <div style={{ fontSize: "64px", marginBottom: "16px" }}>🔒</div>
+          <h2 style={{ fontSize: "20px", fontWeight: "800", marginBottom: "8px" }}>{t("diaryLockTitle", { name: char.name })}</h2>
+          <p style={{ fontSize: "14px", color: "var(--text-muted)", marginBottom: "24px", maxWidth: "300px" }}>
+            {t("premiumLockSub")}
+          </p>
+          <div style={{ display: "flex", gap: "12px" }}>
+            <Link href="/diary" className="btn btn-secondary">{t("backToListBtn")}</Link>
+            <Link href="/premium" className="btn btn-gold">{t("viewPremiumBtn")}</Link>
+          </div>
+        </div>
+        <BottomNav />
+      </>
+    );
+  }
+
   return (
     <>
       <div className="page-content">
@@ -97,6 +136,28 @@ export default function CharDiaryPage({ params }: { params: Promise<{ characterI
               <p className={styles.headerSub}>{char.name}&apos;s Diary</p>
             </div>
           </div>
+          {/* 편지함 pill 버튼 */}
+          <Link
+            href={`/letters/${char.id}`}
+            id="btn-open-letters"
+            className={styles.headerPill}
+            title={t("letterMailboxLinkTitle")}
+          >
+            <span style={{ fontSize: 14 }}>💌</span>
+            <span>편지함</span>
+          </Link>
+
+          {/* 포토앨범 pill 버튼 */}
+          <Link
+            href={`/gallery/${char.id}`}
+            id="btn-open-gallery"
+            className={styles.headerPill}
+            title={t("galleryTitle")}
+          >
+            <span style={{ fontSize: 14 }}>🖼️</span>
+            <span>앨범</span>
+          </Link>
+
           <div className="coin-badge">
             <span className="coin-icon">🪙</span>
             <span>{coins}</span>
@@ -120,10 +181,16 @@ export default function CharDiaryPage({ params }: { params: Promise<{ characterI
           {/* 일기 없음 */}
           {filtered.length === 0 && (
             <div className={styles.empty}>
-              <p>📔</p>
-              <p>{t("diaryEmptyMsg", { name: char.name })}</p>
+              <Image
+                src="/diary-empty.png"
+                alt="일기 없음"
+                width={160}
+                height={160}
+                style={{ objectFit: "contain", opacity: 0.9 }}
+              />
+              <p className={styles.emptyMsg}>{t("diaryEmptyMsg", { name: char.name })}</p>
               <Link href={`/chat/${char.id}`} className="btn btn-primary btn-sm">
-                💬 {t("diaryEmptyBtn", { name: char.name })}
+                {t("diaryEmptyBtn", { name: char.name })}
               </Link>
             </div>
           )}
@@ -199,7 +266,7 @@ export default function CharDiaryPage({ params }: { params: Promise<{ characterI
               <button className={`btn btn-secondary btn-lg ${styles.pillBtn}`} onClick={() => setUnlockModal(null)}>✕</button>
               {coins >= unlockModal.unlock_cost
                 ? <button className={`btn btn-gold btn-lg ${styles.pillBtn}`} onClick={handleUnlock}>🪙 {unlockModal.unlock_cost} {t("unlockBtn")}</button>
-                : <Link href="/premium" className={`btn btn-primary btn-lg ${styles.pillBtn}`}>SHOP</Link>}
+                : <Link href="/coins" className={`btn btn-primary btn-lg ${styles.pillBtn}`}>SHOP</Link>}
             </div>
           </div>
         </div>

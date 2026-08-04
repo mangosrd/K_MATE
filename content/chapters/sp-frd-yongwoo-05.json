@@ -1,0 +1,93 @@
+{
+  "id": "sp-frd-yongwoo-05",
+  "character_id": "yongwoo",
+  "title": "배고파 죽겠다, 얼른",
+  "emoji": "🍲",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "이른 아침부터 향한 곳은 제주에서 소문난 고기국수집이었다. 문을 열기도 전인데 벌써 골목까지 긴 줄이 늘어서 있었다.",
+      "reading": "i-reun a-chim-bu-teo hyang-han got-eun je-ju-e-seo so-mun-nan go-gi-guk-su-jib-i-eot-da. mun-eul yeol-gi-do jeon-in-de beol-sseo gol-mok-kka-ji gin jul-i neul-eo-seo iss-eot-da.",
+      "en": "The place we headed to early that morning was a famous meat-noodle restaurant here in Jeju. Even before it opened, a long line already stretched all the way down the alley."
+    },
+    {
+      "text": "웨이팅 앱에 뜬 대기 인원을 보고 한숨이 났다. 지루해하는 나와 달리, 용우는 여유롭게 벽에 기대선 채 핸드폰을 들여다보고 있었다.",
+      "reading": "we-i-ting aeb-e tteun dae-gi in-won-eul bo-go han-sum-i nat-da. ji-ru-hae-ha-neun na-wa dal-li, yong-u-neun yeo-yu-rop-ge byeog-e gi-dae-seon chae haen-deu-pon-eul deul-yeo-da-bo-go iss-eot-da.",
+      "en": "I sighed at the number of parties waiting shown on the app. Unlike me, bored out of my mind, Yongwoo leaned against the wall at ease, scrolling on his phone.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "드디어 자리에 앉자 용우가 메뉴판도 안 보고 주문했다. '고기국수 두 개, 하나는 곱빼기로 주세요.' 배고픈 나를 아는 듯한 눈치였다.",
+      "reading": "deu-di-eo ja-ri-e anj-ja yong-u-ga me-nyu-pan-do an bo-go ju-mun-haet-da. go-gi-guk-su du gae, ha-na-neun gop-ppae-gi-ro ju-se-yo. bae-go-peun na-reul a-neun deut-han nun-chi-yeot-da.",
+      "en": "When we finally sat down, Yongwoo ordered without even glancing at the menu. 'Two meat noodles, one of them a double portion, please.' It felt like he already knew exactly how hungry I was.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "'앞접시 좀 더 주세요.' 국수가 나오자마자 용우가 자기 그릇에서 고기를 덜어 내 접시에 놓아 주었다. '많이 먹어라. 남기지 말고.'",
+      "reading": "ap-jeop-si jom deo ju-se-yo. guk-su-ga na-o-ja-ma-ja yong-u-ga ja-gi geu-reus-e-seo go-gi-reul deol-eo nae jeop-si-e noh-a ju-eot-da. man-i meog-eo-ra. nam-gi-ji mal-go.",
+      "en": "'Could we get another small plate, please.' The moment the noodles arrived, Yongwoo scooped some meat from his own bowl onto my plate. 'Eat plenty. Don't leave any.'",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "옆 테이블에서는 재료소진으로 주문이 막혔다는 안내에 손님들이 아쉬워하고 있었다. '늦게 왔으면 우리도 저 꼴 날 뻔했다.' 용우가 안도한 듯 중얼거렸다.",
+      "reading": "yeop te-i-beul-e-seo-neun jae-ryo-so-jin-eu-ro ju-mun-i mag-hyeott-da-neun an-nae-e son-nim-deul-i a-swi-wo-ha-go iss-eot-da. neuj-ge wass-eu-myeon u-ri-do jeo kkol nal ppeon-haet-da. yong-u-ga an-do-han deut jung-eol-geo-ryeot-da.",
+      "en": "At the next table, customers looked disappointed at being told orders were cut off due to sold-out ingredients. 'If we'd come any later, that could've been us.' Yongwoo muttered, sounding relieved.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "'용우 왔나!' 주방에서 나온 사장님이 반갑게 인사를 건넸다. 몇 년째 단골이라는 듯, 묻지도 않은 서비스 반찬이 하나둘 테이블에 놓였다.",
+      "reading": "yong-u wat-na! ju-bang-e-seo na-on sa-jang-nim-i ban-gap-ge in-sa-reul geon-net-da. myeot nyeon-jjae dan-gol-i-ra-neun deut, mut-ji-do an-eun seo-bi-seu ban-chan-i ha-na-dul te-i-beul-e noh-yeot-da.",
+      "en": "'Yongwoo, you're here!' The owner came out from the kitchen and greeted him warmly. Like a regular of many years, complimentary side dishes started appearing on the table one after another, without anyone even asking.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "배가 터질 듯 든든하게 먹고 가게를 나섰다. '줄 서느라 힘들었제? 그래도 맛있었으면 됐다.' 뿌듯한 표정으로 걷는 용우 옆에서 나도 모르게 웃음이 났다.",
+      "reading": "bae-ga teo-jil deut deun-deun-ha-ge meok-go ga-ge-reul na-seot-da. jul seo-neu-ra him-deul-eot-je? geu-rae-do mas-iss-eoss-eu-myeon dwaet-da. ppu-deut-han pyo-jeong-eu-ro geot-neun yong-u yeop-e-seo na-do mo-reu-ge us-eum-i nat-da.",
+      "en": "We left the restaurant so full we felt like we'd burst. 'Waiting in line was rough, huh? Well, as long as it was good, that's what matters.' Walking beside Yongwoo's proud-looking face, I couldn't help but smile."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "웨이팅", "reading": "we-i-ting", "meaning": "waiting in line (for a restaurant), a waitlist", "example": "웨이팅이 길어서 한 시간을 기다렸다.", "example_reading": "we-i-ting-i gil-eo-seo han si-gan-eul gi-da-ryeot-da", "example_en": "The wait was so long we waited a whole hour." },
+    { "id": "w02", "word": "곱빼기", "reading": "gop-ppae-gi", "meaning": "a large/double portion of food", "example": "배고파서 곱빼기로 시켰다.", "example_reading": "bae-go-pa-seo gop-ppae-gi-ro si-kyeot-da", "example_en": "I was so hungry I ordered a double portion." },
+    { "id": "w03", "word": "앞접시", "reading": "ap-jeop-si", "meaning": "a small individual serving plate", "example": "앞접시에 덜어서 나눠 먹었다.", "example_reading": "ap-jeop-si-e deol-eo-seo na-nwo meog-eot-da", "example_en": "We portioned it onto small plates and shared." },
+    { "id": "w04", "word": "재료소진", "reading": "jae-ryo-so-jin", "meaning": "out of ingredients, sold out (of a dish)", "example": "재료소진으로 주문이 마감됐다.", "example_reading": "jae-ryo-so-jin-eu-ro ju-mun-i ma-gam-dwaet-da", "example_en": "Orders closed because the ingredients ran out." },
+    { "id": "w05", "word": "단골", "reading": "dan-gol", "meaning": "a regular customer", "example": "그는 이 식당의 오랜 단골이다.", "example_reading": "geu-neun i sig-dang-ui o-raen dan-gol-i-da", "example_en": "He's been a longtime regular at this restaurant." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "고기국수집 앞에는 웨이팅 줄이 길게 늘어서 있었다.", "reading": "go-gi-guk-su-jib ap-e-neun we-i-ting jul-i gil-ge neul-eo-seo iss-eot-da", "en": "A long waiting line stretched in front of the meat-noodle restaurant." },
+    { "id": "s02", "ko": "용우는 배고픈 나를 위해 곱빼기를 시켰다.", "reading": "yong-u-neun bae-go-peun na-reul wi-hae gop-ppae-gi-reul si-kyeot-da", "en": "Yongwoo ordered a double portion for me since I was hungry." },
+    { "id": "s03", "ko": "그는 앞접시에 고기를 덜어 나에게 주었다.", "reading": "geu-neun ap-jeop-si-e go-gi-reul deol-eo na-e-ge ju-eot-da", "en": "He portioned some meat onto a small plate and gave it to me." },
+    { "id": "s04", "ko": "옆 테이블은 재료소진으로 더 주문할 수 없었다.", "reading": "yeop te-i-beul-eun jae-ryo-so-jin-eu-ro deo ju-mun-hal su eob-seot-da", "en": "The next table couldn't order more since the ingredients ran out." },
+    { "id": "s05", "ko": "용우는 이 식당의 오래된 단골이었다.", "reading": "yong-u-neun i sig-dang-ui o-rae-doen dan-gol-i-eot-da", "en": "Yongwoo turned out to be a longtime regular at this restaurant." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "승객", "text": "이 웨이팅 언제 끝나. 배고파 죽겠어.", "reading": "i we-i-ting eon-je kkeut-na. bae-go-pa juk-get-eo.", "en": "When is this wait going to end. I'm starving to death." },
+        { "speaker": "용우", "text": "조금만 참아라. 여긴 기다릴 가치가 있는 집이다.", "reading": "jo-geum-man cham-a-ra. yeo-gin gi-da-ril ga-chi-ga iss-neun jib-i-da.", "en": "Just hold on a little. This place is worth the wait." },
+        { "speaker": "승객", "text": "그렇게 자신 있어? 곱빼기까지 시킬 기세네.", "reading": "geu-reo-ke ja-sin iss-eo? gop-ppae-gi-kka-ji si-kil gi-se-ne.", "en": "You're that confident? You look ready to order a double portion." },
+        { "speaker": "용우", "text": "당연하지. 니 몫까지 내가 다 챙긴다.", "reading": "dang-yeon-ha-ji. ni mok-kka-ji nae-ga da chaeng-gin-da.", "en": "Of course. I'll make sure you get plenty too." }
+      ],
+      "question": "용우가 곱빼기를 시키려는 이유로 가장 알맞은 것은?",
+      "question_en": "What best explains why Yongwoo is ready to order a double portion?",
+      "correct_answer": "배고픈 손님을 든든하게 먹이고 싶어서다",
+      "options": ["배고픈 손님을 든든하게 먹이고 싶어서다", "자기가 원래 많이 먹는 사람이라서다", "가게에서 곱빼기를 추천해서다", "웨이팅이 길어서 화가 나서다"],
+      "explanation": "용우는 배고파하는 손님을 든든하게 먹이고 싶은 마음에 곱빼기를 자신 있게 주문합니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "승객", "text": "저 테이블은 재료소진이라 못 먹는대. 우리는 다행이다.", "reading": "jeo te-i-beul-eun jae-ryo-so-jin-i-ra mot meong-neun-dae. u-ri-neun da-haeng-i-da.", "en": "That table can't order because the ingredients ran out. Good thing we made it in time." },
+        { "speaker": "용우", "text": "그러니까 내가 서두르자 안 했나. 단골이라 그런지 서비스도 나온다.", "reading": "geu-reo-ni-kka nae-ga seo-du-reu-ja an haen-na. dan-gol-i-ra geu-reon-ji seo-bi-seu-do na-on-da.", "en": "See, didn't I say we should hurry. Guess being a regular gets us free side dishes too." },
+        { "speaker": "승객", "text": "역시 단골 파워 대단하네. 이 반찬은 뭐야?", "reading": "yeok-si dan-gol pa-wo dae-dan-ha-ne. i ban-chan-eun mwo-ya?", "en": "The power of being a regular is impressive. What's this side dish?" },
+        { "speaker": "용우", "text": "몰라도 된다. 그냥 많이 먹어라.", "reading": "mol-la-do doen-da. geu-nyang man-i meog-eo-ra.", "en": "You don't need to know. Just eat plenty." }
+      ],
+      "question": "용우가 서두르자고 재촉했던 이유로 가장 알맞은 것은?",
+      "question_en": "What best explains why Yongwoo urged us to hurry earlier?",
+      "correct_answer": "재료소진으로 먹고 싶은 음식을 못 먹을까 걱정해서다",
+      "options": ["재료소진으로 먹고 싶은 음식을 못 먹을까 걱정해서다", "사장님과 약속 시간이 있어서다", "다른 일정이 밀려 있어서다", "웨이팅 줄이 짧아지길 바라서다"],
+      "explanation": "용우는 재료소진으로 원하는 음식을 못 먹게 될까 봐 미리 서둘러 온 것이었습니다."
+    }
+  ]
+}

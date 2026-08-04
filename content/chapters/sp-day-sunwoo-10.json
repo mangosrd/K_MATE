@@ -1,0 +1,98 @@
+{
+  "id": "sp-day-sunwoo-10",
+  "character_id": "sunwoo",
+  "title": "노을 속으로",
+  "emoji": "🌇",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "동백섬 산책로 끝자락, 하늘이 붉은 노을로 서서히 물들기 시작했다.",
+      "reading": "dong-baek-seom san-chaek-ro kkeut-ja-rak, ha-neul-i bulg-eun no-eul-lo seo-seo-hi mul-deul-gi si-jak-haet-da.",
+      "en": "At the far end of the Dongbaek Island trail, the sky slowly began to be dyed in a red sunset glow.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "오늘 하루를 되짚어보니 별일 아닌 순간들로 가득했다. 그런데도 이상하게 마음 한구석이 뿌듯했다.",
+      "reading": "o-neul ha-ru-reul doe-jip-eo-bo-ni byeol-il a-nin sun-gan-deul-lo ga-deuk-haet-da. geu-reon-de-do i-sang-ha-ge ma-eum han-gu-seog-i ppu-deut-haet-da.",
+      "en": "Looking back on the day, it had been full of moments that were nothing special. Yet strangely, a corner of my heart felt full.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "\"오늘 진짜 알차게 보냈다, 그자?\" 선우가 난간에 팔을 걸치며 물었다. 나는 그저 고개를 끄덕였다.",
+      "reading": "\"o-neul jin-jja al-cha-ge bo-naet-da, geu-ja?\" seon-u-ga nan-gan-e pal-eul geol-chi-myeo mul-eot-da. na-neun geu-jeo go-gae-reul kkeu-deok-yeot-da.",
+      "en": "\"We really made good use of today, huh?\" Sunwoo asked, leaning his arm on the railing. I just nodded."
+    },
+    {
+      "text": "노을이 점점 옅어지자 그가 자리에서 일어나며 손을 내밀었다. \"슬슬 하루 마무리하러 가자.\"",
+      "reading": "no-eul-i jeom-jeom yeot-eo-ji-ja geu-ga ja-ri-e-seo il-eo-na-myeo son-eul nae-mil-eot-da. \"seul-seul ha-ru ma-mu-ri-ha-reo ga-ja.\"",
+      "en": "As the sunset light slowly faded, he stood up and held out his hand. \"Let's go wrap up the day, little by little.\"",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "집 앞 골목까지 걸어가는 내내, 그는 평소와 다름없이 시답잖은 농담을 늘어놓았다.",
+      "reading": "jib ap gol-mog-kka-ji geol-eo-ga-neun nae-nae, geu-neun pyeong-so-wa da-reum-eop-si si-dap-jan-eun nong-dam-eul neul-eo-noh-at-da.",
+      "en": "The whole walk to the alley in front of my house, he kept rambling on with silly jokes, same as always."
+    },
+    {
+      "text": "현관 앞에 도착하자 그가 끝까지 배웅해 주었다. \"들어가라. 문 잠그는 소리 듣고 갈 끼다.\"",
+      "reading": "hyeon-gwan ap-e do-chak-ha-ja geu-ga kkeut-kka-ji bae-ung-hae ju-eot-da. \"deul-eo-ga-ra. mun jam-geu-neun so-ri deut-go gal kki-da.\"",
+      "en": "When we reached my front door, he saw me off all the way. \"Go on in. I'll head off once I hear the door lock.\"",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "\"내일 또 보자.\" 짧은 작별 인사를 나누고 돌아서는 그의 뒷모습이 노을 속으로 천천히 사라졌다.",
+      "reading": "\"nae-il tto bo-ja.\" jjalb-eun jak-byeol in-sa-reul na-nu-go dol-a-seo-neun geu-ui dwit-mo-seub-i no-eul sog-eu-ro cheon-cheon-hi sa-ra-jyeot-da.",
+      "en": "\"See you again tomorrow.\" After a brief farewell, his figure as he turned away slowly disappeared into the sunset.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "\"오늘 챕터, 마지막 단어랑 대화까지 뿌듯하게 마무리해봐라.\"",
+      "reading": "\"o-neul chaeb-teo, ma-ji-mak dan-eo-rang dae-hwa-kka-ji ppu-deut-ha-ge ma-mu-ri-hae-bwa-ra.\"",
+      "en": "\"Wrap up today's chapter, right down to the last word and conversation, and feel good about it.\""
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "노을", "reading": "no-eul", "meaning": "sunset glow, afterglow", "example": "저녁 하늘에 붉은 노을이 번졌다.", "example_reading": "jeo-nyeok ha-neul-e bulg-eun no-eul-i beon-jyeot-da", "example_en": "A red sunset glow spread across the evening sky." },
+    { "id": "w02", "word": "뿌듯하다", "reading": "ppu-deut-ha-da", "meaning": "to feel fulfilled, proud", "example": "하루를 알차게 보내서 뿌듯했다.", "example_reading": "ha-ru-reul al-cha-ge bo-nae-seo ppu-deut-haet-da", "example_en": "I felt fulfilled after spending the day so well." },
+    { "id": "w03", "word": "마무리하다", "reading": "ma-mu-ri-ha-da", "meaning": "to wrap up, finish", "example": "오늘 일을 잘 마무리했다.", "example_reading": "o-neul il-eul jal ma-mu-ri-haet-da", "example_en": "I wrapped up today's work well." },
+    { "id": "w04", "word": "배웅하다", "reading": "bae-ung-ha-da", "meaning": "to see someone off", "example": "그는 집 앞까지 나를 배웅해 주었다.", "example_reading": "geu-neun jib ap-kka-ji na-reul bae-ung-hae ju-eot-da", "example_en": "He saw me off all the way to my front door." },
+    { "id": "w05", "word": "작별 인사", "reading": "jak-byeol in-sa", "meaning": "farewell greeting, goodbye", "example": "우리는 짧게 작별 인사를 나눴다.", "example_reading": "u-ri-neun jjalb-ge jak-byeol in-sa-reul na-nwot-da", "example_en": "We exchanged a brief farewell." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "하늘이 붉은 노을로 물들었다.", "reading": "ha-neul-i bulg-eun no-eul-lo mul-deul-eot-da", "en": "The sky was dyed with a red sunset glow." },
+    { "id": "s02", "ko": "오늘 하루를 알차게 보내서 뿌듯하다.", "reading": "o-neul ha-ru-reul al-cha-ge bo-nae-seo ppu-deut-ha-da", "en": "I feel fulfilled for spending today so well." },
+    { "id": "s03", "ko": "이제 슬슬 하루를 마무리할 시간이다.", "reading": "i-je seul-seul ha-ru-reul ma-mu-ri-hal si-gan-i-da", "en": "It's about time to wrap up the day now." },
+    { "id": "s04", "ko": "그는 집 앞까지 나를 배웅해 주었다.", "reading": "geu-neun jib ap-kka-ji na-reul bae-ung-hae ju-eot-da", "en": "He saw me off all the way to my front door." },
+    { "id": "s05", "ko": "우리는 웃으며 작별 인사를 나눴다.", "reading": "u-ri-neun us-eu-myeo jak-byeol in-sa-reul na-nwot-da", "en": "We exchanged a farewell with smiles." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "선우", "text": "오늘 하루 어땠노? 나름 알차지 않았나?", "reading": "o-neul ha-ru eo-ttaet-no? na-reum al-cha-ji anh-at-na?", "en": "How was today? Pretty fulfilling in its own way, wasn't it?" },
+        { "speaker": "승객", "text": "어, 진짜 알찼어. 별거 아닌 하루 같은데 왜 이렇게 뿌듯하지?", "reading": "eo, jin-jja al-chat-eo. byeol-geo a-nin ha-ru gat-eun-de wae i-reo-ke ppu-deut-ha-ji?", "en": "Yeah, it really was. It feels like such an ordinary day, but why does it feel so fulfilling?" },
+        { "speaker": "선우", "text": "원래 소중한 건 별거 아닌 순간에 숨어 있는 법이다.", "reading": "won-lae so-jung-han geon byeol-geo a-nin sun-gan-e sum-eo it-neun beob-i-da.", "en": "Precious things are usually hiding in ordinary moments, that's just how it is." },
+        { "speaker": "승객", "text": "니 오늘 은근 철학자 같다.", "reading": "ni o-neul eun-geun cheol-hak-ja gat-da.", "en": "You're being surprisingly philosophical today." }
+      ],
+      "question": "선우가 노을을 보며 승객에게 전한 생각은 무엇인가요?",
+      "question_en": "What thought did Sunwoo share with the passenger while watching the sunset?",
+      "correct_answer": "소중한 것은 별거 아닌 순간 속에 숨어 있다는 것",
+      "options": ["소중한 것은 별거 아닌 순간 속에 숨어 있다는 것", "특별한 이벤트를 자주 해야 한다는 것", "노을을 매일 봐야 한다는 것", "하루를 계획적으로 살아야 한다는 것"],
+      "explanation": "선우는 소중한 것들이 오히려 별거 아닌 평범한 순간 속에 숨어 있다는 생각을 전했습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "선우", "text": "다 왔다. 오늘도 잘 챙겨줘서 고맙다.", "reading": "da wat-da. o-neul-do jal chaeng-gyeo-jwo-seo go-map-da.", "en": "We're here. Thanks for looking out for me today too." },
+        { "speaker": "승객", "text": "내가 더 고맙지. 하루 종일 같이 다녀줘서.", "reading": "nae-ga deo go-map-ji. ha-ru jong-il gat-i da-nyeo-jwo-seo.", "en": "I'm the one who's more thankful. For spending the whole day with me." },
+        { "speaker": "선우", "text": "들어가라. 문 잠그는 소리 듣고 갈 끼다.", "reading": "deul-eo-ga-ra. mun jam-geu-neun so-ri deut-go gal kki-da.", "en": "Go on in. I'll head off once I hear the door lock." },
+        { "speaker": "승객", "text": "알았어. 내일 또 보자, 선우야.", "reading": "al-at-eo. nae-il tto bo-ja, seon-u-ya.", "en": "Okay. See you again tomorrow, Sunwoo." }
+      ],
+      "question": "선우가 승객이 집에 들어갈 때 한 행동은 무엇인가요?",
+      "question_en": "What did Sunwoo do as the passenger went into her house?",
+      "correct_answer": "문 잠그는 소리를 들을 때까지 기다려 주었다",
+      "options": ["문 잠그는 소리를 들을 때까지 기다려 주었다", "먼저 인사하고 바로 돌아갔다", "집 안까지 따라 들어갔다", "다음 약속을 바로 잡았다"],
+      "explanation": "선우는 승객이 문을 잠그는 소리를 들을 때까지 자리를 지키며 배웅해 주었습니다."
+    }
+  ]
+}

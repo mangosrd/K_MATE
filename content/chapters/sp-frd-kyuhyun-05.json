@@ -1,0 +1,67 @@
+{
+  "id": "sp-frd-kyuhyun-05",
+  "character_id": "kyuhyun",
+  "title": "이 집은 줄 서서라도 먹어야 돼",
+  "emoji": "🍜",
+  "story": [
+    {
+      "text": "규현이 지도 앱을 보여주며 자신 있게 말했다. \"여기 완전 찐 맛집이에요. 제가 책임질게요.\"",
+      "reading": "gyu-hyeon-i ji-do aeb-eul bo-yeo-ju-myeo ja-sin it-ge mal-haet-da. \"yeo-gi wan-jeon jjin mat-jib-i-e-yo. je-ga chaeg-im-jil-ge-yo.\"",
+      "en": "Kyuhyun showed me a map app, speaking with total confidence. \"This place is a legit hidden gem. I'll take full responsibility.\"",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "골목 안쪽 식당 앞에는 이미 긴 줄이 늘어서 있었다. \"웨이팅이 이 정도면 맛은 보장된 거예요, 아가씨.\"",
+      "reading": "gol-mok an-jjok sik-dang ap-e-neun i-mi gin jul-i neul-eo-seo iss-eot-da. \"we-i-ting-i i jeong-do-myeon mas-eun bo-jang-doen geo-ye-yo, a-ga-ssi.\"",
+      "en": "A long line already stretched in front of the restaurant tucked inside the alley. \"With a wait like this, the taste is guaranteed, miss.\"",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "삼십 분 넘게 기다린 끝에 자리에 앉자, 규현은 익숙하게 메뉴 두어 개를 골랐다. \"여기는 이모님이 저 단골인 거 아시거든요.\"",
+      "reading": "sam-sib bun neom-ge gi-da-lin kkeut-e ja-ri-e anj-ja, gyu-hyeon-eun ik-suk-ha-ge me-nyu du-eo gae-reul gol-lat-da. \"yeo-gi-neun i-mo-nim-i jeo dan-gol-in geo a-si-geo-deun-yo.\"",
+      "en": "After waiting over thirty minutes, we finally sat down, and Kyuhyun casually ordered a couple of dishes like he'd done it a hundred times. \"The owner here knows I'm a regular.\"",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "김이 모락모락 나는 그릇이 테이블에 놓이자마자, 그는 앞접시에 먼저 덜어서 내 쪽으로 밀어 주었다. \"일단 먹어 보고 판단해요.\"",
+      "reading": "gim-i mo-rak-mo-rak na-neun geu-reus-i te-i-beul-e noh-i-ja-ma-ja, geu-neun ap-jeob-si-e meon-jeo deol-eo-seo nae jjog-eu-ro mil-eo ju-eot-da. \"il-dan meog-eo bo-go pan-dan-hae-yo.\"",
+      "en": "The moment a steaming bowl landed on the table, he scooped some onto a small plate first and slid it over to me. \"Just try it before you decide.\""
+    },
+    {
+      "text": "한 입 먹자마자 나도 모르게 감탄사가 터져 나왔다. \"미쳤다, 이거 진짜 맛있어요.\" 규현이 흐뭇하게 웃으며 반찬 하나를 더 나눠 먹자며 덜어 주었다.",
+      "reading": "han ib meok-ja-ma-ja na-do mo-reu-ge gam-tan-sa-ga teo-jyeo na-wat-da. \"mi-chyeot-da, i-geo jin-jja mas-iss-eo-yo.\" gyu-hyeon-i heu-mut-ha-ge us-eu-myeo ban-chan ha-na-reul deo na-nwo meok-ja-myeo deol-eo ju-eot-da.",
+      "en": "The moment I took a bite, an exclamation burst out of me before I could stop it. \"This is insane, it's actually so good.\" Kyuhyun smiled fondly and scooped out another side dish for us to share.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "\"거봐요, 제 입맛 믿으라니까.\" 그가 어깨를 으쓱하며 젓가락을 다시 들었다. \"그래서, 여기 또 올 거죠?\"",
+      "reading": "\"geo-bwa-yo, je ib-mat mid-eu-ra-ni-kka.\" geu-ga eo-kkae-reul eu-sseuk-ha-myeo jeot-ga-rag-eul da-si deul-eot-da. \"geu-rae-seo, yeo-gi tto ol geo-jyo?\"",
+      "en": "\"See? I told you to trust my taste.\" He shrugged and picked his chopsticks back up. \"So? You're coming back here again, right?\"",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "배가 부른데도 그는 근처 후식 맛집까지 나를 이끌었다. \"밥은 배로 먹고, 디저트는 마음으로 먹는 거예요.\"",
+      "reading": "bae-ga bu-reun-de-do geu-neun geun-cheo hu-sik mat-jib-kka-ji na-reul i-kkeul-eot-da. \"bab-eun bae-ro meok-go, di-jeo-teu-neun ma-eum-eu-ro meong-neun geo-ye-yo.\"",
+      "en": "Even though I was already full, he dragged me off to a dessert spot nearby. \"You eat a meal with your stomach, but dessert you eat with your heart.\""
+    },
+    {
+      "text": "줄 서고, 나눠 먹고, 또 줄 선 하루였지만 이상하게 하나도 힘들지 않았다. 규현과 함께라면 기다림조차 즐거웠다.",
+      "reading": "jul seo-go, na-nwo meok-go, tto jul seon ha-ru-yeot-ji-man i-sang-ha-ge ha-na-do him-deul-ji an-at-da. gyu-hyeon-gwa ham-kke-ra-myeon gi-da-lim-jo-cha jeul-geo-wot-da.",
+      "en": "A day of standing in line, sharing food, then standing in line again — but strangely, none of it felt tiring. With Kyuhyun, even the waiting was fun."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "맛집", "reading": "mat-jip", "meaning": "a great restaurant, a place known for delicious food", "example": "이 동네 맛집 좀 추천해 줘.", "example_reading": "i dong-ne mat-jip jom chu-cheon-hae jwo", "example_en": "Recommend a good restaurant in this neighborhood." },
+    { "id": "w02", "word": "웨이팅", "reading": "we-i-ting", "meaning": "waiting (in line, especially for a restaurant)", "example": "웨이팅이 한 시간이래요.", "example_reading": "we-i-ting-i han si-gan-i-rae-yo", "example_en": "They said the wait is an hour." },
+    { "id": "w03", "word": "단골", "reading": "dan-gol", "meaning": "a regular customer", "example": "저는 이 가게 단골이에요.", "example_reading": "jeo-neun i ga-ge dan-gol-i-e-yo", "example_en": "I'm a regular at this shop." },
+    { "id": "w04", "word": "나눠 먹다", "reading": "na-nwo meok-da", "meaning": "to share food, to eat together dividing it up", "example": "우리 이거 나눠 먹자.", "example_reading": "u-ri i-geo na-nwo meok-ja", "example_en": "Let's share this." },
+    { "id": "w05", "word": "입맛", "reading": "ib-mat", "meaning": "one's taste, appetite (regarding food)", "example": "오늘은 입맛이 없어요.", "example_reading": "o-neul-eun ib-mas-i eop-seo-yo", "example_en": "I have no appetite today." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "여기 완전 맛집이에요.", "reading": "yeo-gi wan-jeon mat-jib-i-e-yo.", "en": "This place is a total hidden gem." },
+    { "id": "s02", "ko": "웨이팅이 얼마나 걸려요?", "reading": "we-i-ting-i eol-ma-na geol-lyeo-yo?", "en": "How long is the wait?" },
+    { "id": "s03", "ko": "저 여기 단골이에요.", "reading": "jeo yeo-gi dan-gol-i-e-yo.", "en": "I'm a regular here." },
+    { "id": "s04", "ko": "우리 이 음식 나눠 먹을까?", "reading": "u-ri i eum-sik na-nwo meog-eul-kka?", "en": "Should we share this food?" },
+    { "id": "s05", "ko": "오늘따라 입맛이 없어요.", "reading": "o-neul-tta-ra ib-mas-i eop-seo-yo.", "en": "I have no appetite today for some reason." }
+  ]
+}

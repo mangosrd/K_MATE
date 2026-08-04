@@ -47,46 +47,161 @@
     }
   ],
   "words": [
-    { "id": "w01", "word": "용두암", "reading": "yong-du-am", "meaning": "Yongduam (Dragon Head Rock)", "example": "용두암은 용의 머리를 닮은 검은 화산암입니다.", "example_reading": "yong-du-am-eun yong-ui meo-ri-reul dalm-eun geom-eun hwa-san-am-im-ni-da", "example_en": "Yongduam is a black volcanic rock resembling a dragon's head." },
-    { "id": "w02", "word": "파도", "reading": "pa-do", "meaning": "Wave", "example": "파도가 오랜 세월 바위를 깎아 지금의 모습을 만들었습니다.", "example_reading": "pa-do-ga o-raen se-wol ba-wi-reul kkakk-a ji-geum-ui mo-seub-eul man-deul-eoss-seum-ni-da", "example_en": "Waves carved the rock over long years into its current shape." },
-    { "id": "w03", "word": "용머리해안", "reading": "yong-meo-ri-hae-an", "meaning": "Dragon Head Coast (Yongmeori Coast)", "example": "용머리해안은 층층이 쌓인 지층이 신비롭습니다.", "example_reading": "yong-meo-ri-hae-an-eun cheung-cheung-i ssa-in ji-cheung-i sin-bi-rop-seum-ni-da", "example_en": "Yongmeori Coast's layered rock strata are mysterious." },
-    { "id": "w04", "word": "지층", "reading": "ji-cheung", "meaning": "Rock strata / geological layers", "example": "지층 하나하나가 수백만 년의 시간을 품고 있습니다.", "example_reading": "ji-cheung ha-na-ha-na-ga su-baeng-man nyeon-ui si-gan-eul pum-go it-seum-ni-da", "example_en": "Each layer of rock holds millions of years of time." },
-    { "id": "w05", "word": "전설", "reading": "jeon-seol", "meaning": "Legend", "example": "전설에 따르면 용이 하늘로 오르려다 바위가 되었다고 합니다.", "example_reading": "jeon-seol-e tta-reu-myeon yong-i ha-neul-lo o-reu-ryeo-da ba-wi-ga doe-eot-da-go ham-ni-da", "example_en": "According to legend, a dragon trying to ascend to heaven turned to stone." }
+    {
+      "id": "w01",
+      "word": "바위",
+      "reading": "ba-wi",
+      "meaning": "Rock",
+      "example": "파도가 오랜 세월 바위를 깎아 신비한 모양을 만들었습니다.",
+      "example_reading": "pa-do-ga o-raen se-wol ba-wi-reul kkak-a sin-bi-han mo-yang-eul man-deul-eot-seum-ni-da",
+      "example_en": "Over a long time, the waves carved the rock into a mysterious shape."
+    },
+    {
+      "id": "w02",
+      "word": "파도",
+      "reading": "pa-do",
+      "meaning": "Wave",
+      "example": "파도가 오랜 세월 바위를 깎아 지금의 모습을 만들었습니다.",
+      "example_reading": "pa-do-ga o-raen se-wol ba-wi-reul kkakk-a ji-geum-ui mo-seub-eul man-deul-eoss-seum-ni-da",
+      "example_en": "Waves carved the rock over long years into its current shape."
+    },
+    {
+      "id": "w03",
+      "word": "해안선",
+      "reading": "hae-an-seon",
+      "meaning": "Coastline",
+      "example": "해안선을 따라 걸으며 파도 소리를 들었습니다.",
+      "example_reading": "hae-an-seon-eul tta-ra geol-eu-myeo pa-do so-ri-reul deul-eot-seum-ni-da",
+      "example_en": "I listened to the sound of the waves while walking along the coastline."
+    },
+    {
+      "id": "w04",
+      "word": "지층",
+      "reading": "ji-cheung",
+      "meaning": "Rock strata / geological layers",
+      "example": "지층 하나하나가 수백만 년의 시간을 품고 있습니다.",
+      "example_reading": "ji-cheung ha-na-ha-na-ga su-baeng-man nyeon-ui si-gan-eul pum-go it-seum-ni-da",
+      "example_en": "Each layer of rock holds millions of years of time."
+    },
+    {
+      "id": "w05",
+      "word": "전설",
+      "reading": "jeon-seol",
+      "meaning": "Legend",
+      "example": "전설에 따르면 용이 하늘로 오르려다 바위가 되었다고 합니다.",
+      "example_reading": "jeon-seol-e tta-reu-myeon yong-i ha-neul-lo o-reu-ryeo-da ba-wi-ga doe-eot-da-go ham-ni-da",
+      "example_en": "According to legend, a dragon trying to ascend to heaven turned to stone."
+    }
   ],
   "sentences": [
-    { "id": "s01", "ko": "용두암은 용의 머리를 닮은 검은 화산암입니다.", "reading": "yong-du-am-eun yong-ui meo-ri-reul dalm-eun geom-eun hwa-san-am-im-ni-da", "en": "Yongduam is a black volcanic rock resembling a dragon's head." },
-    { "id": "s02", "ko": "파도가 오랜 세월 바위를 깎아 지금의 모습을 만들었습니다.", "reading": "pa-do-ga o-raen se-wol ba-wi-reul kkakk-a ji-geum-ui mo-seub-eul man-deul-eoss-seum-ni-da", "en": "Waves carved the rock over long years into its current shape." },
-    { "id": "s03", "ko": "용머리해안은 층층이 쌓인 지층이 신비롭습니다.", "reading": "yong-meo-ri-hae-an-eun cheung-cheung-i ssa-in ji-cheung-i sin-bi-rop-seum-ni-da", "en": "Yongmeori Coast's layered rock strata are mysterious." },
-    { "id": "s04", "ko": "지층 하나하나가 수백만 년의 시간을 품고 있습니다.", "reading": "ji-cheung ha-na-ha-na-ga su-baeng-man nyeon-ui si-gan-eul pum-go it-seum-ni-da", "en": "Each layer of rock holds millions of years of time." },
-    { "id": "s05", "ko": "전설에 따르면 용이 하늘로 오르려다 바위가 되었다고 합니다.", "reading": "jeon-seol-e tta-reu-myeon yong-i ha-neul-lo o-reu-ryeo-da ba-wi-ga doe-eot-da-go ham-ni-da", "en": "According to legend, a dragon trying to ascend to heaven turned to stone." }
+    {
+      "id": "s01",
+      "ko": "파도가 오랜 세월 바위를 깎아 신비한 모양을 만들었습니다.",
+      "reading": "pa-do-ga o-raen se-wol ba-wi-reul kkak-a sin-bi-han mo-yang-eul man-deul-eot-seum-ni-da",
+      "en": "Over a long time, the waves carved the rock into a mysterious shape."
+    },
+    {
+      "id": "s02",
+      "ko": "파도가 오랜 세월 바위를 깎아 지금의 모습을 만들었습니다.",
+      "reading": "pa-do-ga o-raen se-wol ba-wi-reul kkakk-a ji-geum-ui mo-seub-eul man-deul-eoss-seum-ni-da",
+      "en": "Waves carved the rock over long years into its current shape."
+    },
+    {
+      "id": "s03",
+      "ko": "해안선을 따라 걸으며 파도 소리를 들었습니다.",
+      "reading": "hae-an-seon-eul tta-ra geol-eu-myeo pa-do so-ri-reul deul-eot-seum-ni-da",
+      "en": "I listened to the sound of the waves while walking along the coastline."
+    },
+    {
+      "id": "s04",
+      "ko": "지층 하나하나가 수백만 년의 시간을 품고 있습니다.",
+      "reading": "ji-cheung ha-na-ha-na-ga su-baeng-man nyeon-ui si-gan-eul pum-go it-seum-ni-da",
+      "en": "Each layer of rock holds millions of years of time."
+    },
+    {
+      "id": "s05",
+      "ko": "전설에 따르면 용이 하늘로 오르려다 바위가 되었다고 합니다.",
+      "reading": "jeon-seol-e tta-reu-myeon yong-i ha-neul-lo o-reu-ryeo-da ba-wi-ga doe-eot-da-go ham-ni-da",
+      "en": "According to legend, a dragon trying to ascend to heaven turned to stone."
+    }
   ],
   "dialogues": [
     {
       "id": "d01",
       "turns": [
-        { "speaker": "관광객", "text": "여기 사진 찍기 정말 좋네요. 언제 오는 게 제일 예뻐요?", "reading": "yeo-gi sa-jin jjik-gi jeong-mal jo-eun-ne-yo.", "en": "This is such a great photo spot. When's the best time to come?" },
-        { "speaker": "사진작가", "text": "해 질 무렵이 최고예요. 노을이 바위를 붉게 물들이거든요.", "reading": "hae jil mu-ryeob-i choe-go-ye-yo.", "en": "Sunset is the best. The glow dyes the rocks red." },
-        { "speaker": "관광객", "text": "그럼 파도가 높은 날은 피해야겠죠?", "reading": "geu-reom pa-do-ga nop-eun nal-eun pi-hae-ya-get-jyo?", "en": "Then I should avoid days with high waves, right?" },
-        { "speaker": "사진작가", "text": "네, 파도가 너무 높으면 안전하지 않으니 잔잔한 날을 골라 오세요.", "reading": "ne, pa-do-ga neo-mu nop-eu-myeon an-jeon-ha-ji an-eu-ni jan-jan-han nal-eul gol-la o-se-yo.", "en": "Yes, if the waves are too high it's not safe, so pick a calm day to come." }
+        {
+          "speaker": "관광객",
+          "text": "여기 사진 찍기 정말 좋네요. 언제 오는 게 제일 예뻐요?",
+          "reading": "yeo-gi sa-jin jjik-gi jeong-mal jo-eun-ne-yo.",
+          "en": "This is such a great photo spot. When's the best time to come?"
+        },
+        {
+          "speaker": "사진작가",
+          "text": "해 질 무렵이 최고예요. 노을이 바위를 붉게 물들이거든요.",
+          "reading": "hae jil mu-ryeob-i choe-go-ye-yo.",
+          "en": "Sunset is the best. The glow dyes the rocks red."
+        },
+        {
+          "speaker": "관광객",
+          "text": "그럼 파도가 높은 날은 피해야겠죠?",
+          "reading": "geu-reom pa-do-ga nop-eun nal-eun pi-hae-ya-get-jyo?",
+          "en": "Then I should avoid days with high waves, right?"
+        },
+        {
+          "speaker": "사진작가",
+          "text": "네, 파도가 너무 높으면 안전하지 않으니 잔잔한 날을 골라 오세요.",
+          "reading": "ne, pa-do-ga neo-mu nop-eu-myeon an-jeon-ha-ji an-eu-ni jan-jan-han nal-eul gol-la o-se-yo.",
+          "en": "Yes, if the waves are too high it's not safe, so pick a calm day to come."
+        }
       ],
       "question": "사진작가가 추천한 방문 시간은 언제인가요?",
       "question_en": "When did the photographer recommend visiting?",
       "correct_answer": "해 질 무렵",
-      "options": ["해 질 무렵", "이른 아침", "한밤중", "파도가 높은 날"],
+      "options": [
+        "해 질 무렵",
+        "이른 아침",
+        "한밤중",
+        "파도가 높은 날"
+      ],
       "explanation": "사진작가는 '해 질 무렵이 최고'라며 노을이 바위를 붉게 물들인다고 설명했습니다."
     },
     {
       "id": "d02",
       "turns": [
-        { "speaker": "아이", "text": "엄마, 저 바위는 왜 저렇게 층층이 쌓여 있어요?", "reading": "eom-ma, jeo ba-wi-neun wae jeo-reo-ke cheung-cheung-i ssa-yeo it-eo-yo?", "en": "Mom, why is that rock stacked in layers like that?" },
-        { "speaker": "엄마", "text": "저건 지층이라고 해. 화산이 여러 번 폭발하면서 쌓인 거래.", "reading": "jeo-geon ji-cheung-i-ra-go hae.", "en": "That's called rock strata. It's said to have built up from the volcano erupting many times." },
-        { "speaker": "아이", "text": "그럼 진짜 오래된 거예요?", "reading": "geu-reom jin-jja o-rae-doen geo-ye-yo?", "en": "So it's really old?" },
-        { "speaker": "엄마", "text": "응, 수백만 년 전부터 쌓여온 거라고 하더라.", "reading": "eung, su-baeng-man nyeon jeon-bu-teo ssa-yeo-on geo-ra-go ha-deo-ra.", "en": "Yes, they say it's been building up since millions of years ago." }
+        {
+          "speaker": "아이",
+          "text": "엄마, 저 바위는 왜 저렇게 층층이 쌓여 있어요?",
+          "reading": "eom-ma, jeo ba-wi-neun wae jeo-reo-ke cheung-cheung-i ssa-yeo it-eo-yo?",
+          "en": "Mom, why is that rock stacked in layers like that?"
+        },
+        {
+          "speaker": "엄마",
+          "text": "저건 지층이라고 해. 화산이 여러 번 폭발하면서 쌓인 거래.",
+          "reading": "jeo-geon ji-cheung-i-ra-go hae.",
+          "en": "That's called rock strata. It's said to have built up from the volcano erupting many times."
+        },
+        {
+          "speaker": "아이",
+          "text": "그럼 진짜 오래된 거예요?",
+          "reading": "geu-reom jin-jja o-rae-doen geo-ye-yo?",
+          "en": "So it's really old?"
+        },
+        {
+          "speaker": "엄마",
+          "text": "응, 수백만 년 전부터 쌓여온 거라고 하더라.",
+          "reading": "eung, su-baeng-man nyeon jeon-bu-teo ssa-yeo-on geo-ra-go ha-deo-ra.",
+          "en": "Yes, they say it's been building up since millions of years ago."
+        }
       ],
       "question": "엄마가 아이에게 설명한 지층의 특징은 무엇인가요?",
       "question_en": "What did Mom explain as the characteristic of the rock strata?",
       "correct_answer": "화산이 여러 번 폭발하며 오랜 시간 쌓인 것",
-      "options": ["화산이 여러 번 폭발하며 오랜 시간 쌓인 것", "사람이 인공적으로 쌓은 것", "최근 몇 년 사이에 생긴 것", "파도가 하루 만에 만든 것"],
+      "options": [
+        "화산이 여러 번 폭발하며 오랜 시간 쌓인 것",
+        "사람이 인공적으로 쌓은 것",
+        "최근 몇 년 사이에 생긴 것",
+        "파도가 하루 만에 만든 것"
+      ],
       "explanation": "엄마는 지층이 '화산이 여러 번 폭발하면서 쌓인 것'이며 '수백만 년 전부터 쌓여온 것'이라고 설명했습니다."
     }
   ]

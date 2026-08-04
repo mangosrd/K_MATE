@@ -1,0 +1,93 @@
+{
+  "id": "sp-frd-yongwoo-02",
+  "character_id": "yongwoo",
+  "title": "치킨 식기 전에 와라",
+  "emoji": "🍗",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "첫날 저녁, 용우는 나를 공항 근처 허름한 골목 안 치킨집으로 데려갔다. '여기가 진짜다. 관광객들은 잘 모른다.'",
+      "reading": "cheot-nal jeo-nyeok, yong-u-neun na-reul gong-hang geun-cheo heo-reum-han gol-mok an chi-kin-jib-eu-ro de-ryeo-gat-da. yeo-gi-ga jin-jja-da. gwan-gwang-gaek-deul-eun jal mo-reun-da.",
+      "en": "On the first evening, Yongwoo took me to a shabby chicken place tucked in an alley near the airport. 'This is the real deal. Tourists never find it.'"
+    },
+    {
+      "text": "가게 안에는 노릇노릇하게 튀겨지는 치킨 냄새가 가득했다. 낡은 테이블에 자리를 잡자마자 용우가 익숙하게 손을 들었다.",
+      "reading": "ga-ge an-e-neun no-reut-no-reut-ha-ge twi-gyeo-ji-neun chi-kin naem-sae-ga ga-deuk-haet-da. nalg-eun te-i-beul-e ja-ri-reul jap-ja-ma-ja yong-u-ga ig-suk-ha-ge son-eul deul-eot-da.",
+      "en": "The shop was full of the smell of chicken frying to a golden crisp. The moment we sat at a worn-out table, Yongwoo raised his hand like he'd done it a hundred times.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "'이모, 여기 반반에 생맥 두 잔이요.' 메뉴판도 안 보고 시키는 걸 보니, 몇 번을 와본 게 분명했다.",
+      "reading": "i-mo, yeo-gi ban-ban-e saeng-maek du jan-i-yo. me-nyu-pan-do an bo-go si-ki-neun geol bo-ni, myeot beon-eul wa-bon ge bun-myeong-haet-da.",
+      "en": "'Ma'am, half-and-half and two draft beers, please.' Ordering without even glancing at the menu, he'd clearly been here more than a few times."
+    },
+    {
+      "text": "치킨이 나오자 용우가 잔을 들어 건배를 청했다. '오늘은 다리부터 먹어라. 그게 원래 순서다.' 시답잖은 잔소리에 웃음이 났다.",
+      "reading": "chi-kin-i na-o-ja yong-u-ga jan-eul deul-eo geon-bae-reul cheong-haet-da. o-neul-eun da-ri-bu-teo meog-eo-ra. geu-ge won-lae sun-seo-da. si-dap-jjan-eun jan-so-ri-e us-eum-i nat-da.",
+      "en": "As the chicken arrived, Yongwoo lifted his glass to propose a toast. 'Eat the drumstick first today. That's the proper order.' I couldn't help laughing at his silly nagging.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "맥주 한 모금에 하루의 피곤이 씻겨 내려가는 것 같았다. 우리는 안주를 나눠 먹으며 오래된 이야기들을 꺼내 놓았다.",
+      "reading": "maeg-ju han mo-geum-e ha-ru-ui pi-gon-i ssit-gyeo nae-ryeo-ga-neun geot gat-at-da. u-ri-neun an-ju-reul na-nwo meog-eu-myeo o-rae-doen i-ya-gi-deul-eul kkeo-nae noh-at-da.",
+      "en": "One sip of beer and the day's exhaustion seemed to wash away. We shared the food and dug up old stories from years back.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "잔이 몇 번 더 오가자, 평소 말수 적은 용우도 술기운에 조금씩 말이 많아졌다. '니 그동안 힘든 일은 없었나. 진작 좀 연락하지.'",
+      "reading": "jan-i myeot beon deo o-ga-ja, pyeong-so mal-su jeog-eun yong-u-do sul-gi-un-e jo-geum-ssik mal-i man-a-jyeot-da. ni geu-dong-an him-deun il-eun eob-seon-na. jin-jak jom yeon-lag-ha-ji.",
+      "en": "After a few more rounds, even Yongwoo, usually a man of few words, started talking more as the alcohol loosened him up. 'Was anything hard for you all this time. You should've called sooner.'",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "가게를 나설 때는 배도 마음도 든든했다. '낼은 일찍 깨워줄 테니까 각오해라.' 앞장서 걷는 뒷모습이 오늘따라 유난히 든든해 보였다.",
+      "reading": "ga-ge-reul na-seol ttae-neun bae-do ma-eum-do deun-deun-haet-da. nael-eun il-jjik kkae-wo-jul te-ni-kka gag-o-hae-ra. ap-jang-seo geot-neun dwit-mo-seub-i o-neul-tta-ra yu-nan-hi deun-deun-hae bo-yeot-da.",
+      "en": "Leaving the shop, both my stomach and my heart felt full. 'I'll wake you up early tomorrow, so brace yourself.' Watching him walk ahead of me, his back looked unusually reliable today.",
+      "highlight_word_id": "w05"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "노릇노릇하다", "reading": "no-reut-no-reut-ha-da", "meaning": "to be golden-brown, nicely crisped (fried food)", "example": "치킨이 노릇노릇하게 잘 튀겨졌다.", "example_reading": "chi-kin-i no-reut-no-reut-ha-ge jal twi-gyeo-jyeot-da", "example_en": "The chicken was fried to a perfect golden crisp." },
+    { "id": "w02", "word": "건배", "reading": "geon-bae", "meaning": "toast, cheers (raising glasses together)", "example": "우리는 잔을 부딪치며 건배했다.", "example_reading": "u-ri-neun jan-eul bu-dit-chi-myeo geon-bae-haet-da", "example_en": "We clinked glasses and toasted." },
+    { "id": "w03", "word": "안주", "reading": "an-ju", "meaning": "food eaten alongside alcoholic drinks", "example": "맥주에는 역시 안주가 빠질 수 없다.", "example_reading": "maeg-ju-e-neun yeok-si an-ju-ga ppa-jil su eob-da", "example_en": "You can't have beer without a good side dish." },
+    { "id": "w04", "word": "술기운", "reading": "sul-gi-un", "meaning": "the effect of alcohol, tipsiness", "example": "술기운이 올라 얼굴이 발그레해졌다.", "example_reading": "sul-gi-un-i ol-la eol-gul-i bal-geu-re-hae-jyeot-da", "example_en": "The alcohol kicked in and his face turned rosy." },
+    { "id": "w05", "word": "든든하다", "reading": "deun-deun-ha-da", "meaning": "to feel secure, reassured, reliable", "example": "그가 옆에 있으니 마음이 든든했다.", "example_reading": "geu-ga yeop-e iss-eu-ni ma-eum-i deun-deun-haet-da", "example_en": "With him by my side, I felt reassured." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "치킨집 안에는 노릇노릇한 치킨 냄새가 가득했다.", "reading": "chi-kin-jib an-e-neun no-reut-no-reut-han chi-kin naem-sae-ga ga-deuk-haet-da", "en": "The chicken place was filled with the smell of golden, crispy chicken." },
+    { "id": "s02", "ko": "용우가 잔을 들어 건배를 청했다.", "reading": "yong-u-ga jan-eul deul-eo geon-bae-reul cheong-haet-da", "en": "Yongwoo raised his glass and proposed a toast." },
+    { "id": "s03", "ko": "우리는 안주를 나눠 먹으며 이야기를 나눴다.", "reading": "u-ri-neun an-ju-reul na-nwo meog-eu-myeo i-ya-gi-reul na-nwot-da", "en": "We shared the food and talked over drinks." },
+    { "id": "s04", "ko": "술기운이 오르자 그는 평소보다 말이 많아졌다.", "reading": "sul-gi-un-i o-reu-ja geu-neun pyeong-so-bo-da mal-i man-a-jyeot-da", "en": "As the alcohol kicked in, he grew chattier than usual." },
+    { "id": "s05", "ko": "그가 앞장서 걷는 모습이 든든해 보였다.", "reading": "geu-ga ap-jang-seo geot-neun mo-seub-i deun-deun-hae bo-yeot-da", "en": "Watching him walk ahead of me, he looked reassuringly reliable." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "용우", "text": "이모, 여기 반반에 생맥 두 잔이요. …다리부터 먹어라, 그게 순서다.", "reading": "i-mo, yeo-gi ban-ban-e saeng-maek du jan-i-yo. da-ri-bu-teo meog-eo-ra, geu-ge sun-seo-da.", "en": "Ma'am, half-and-half and two draft beers, please. ...Eat the drumstick first, that's the order." },
+        { "speaker": "승객", "text": "치킨 먹는 데 무슨 순서가 있어. 아무거나 먼저 먹어도 되지.", "reading": "chi-kin meong-neun de mu-seun sun-seo-ga iss-eo. a-mu-geo-na meon-jeo meog-eo-do doe-ji.", "en": "Since when is there an order to eating chicken. I can eat whatever piece first." },
+        { "speaker": "용우", "text": "순서가 있어야 맛있게 먹지. 잔소리 아니고 진심이다.", "reading": "sun-seo-ga iss-eo-ya mas-it-ge meok-ji. jan-so-ri a-ni-go jin-sim-i-da.", "en": "It only tastes right if you follow the order. This isn't nagging, I mean it." },
+        { "speaker": "승객", "text": "알겠어, 알겠어. 자, 건배부터 하자.", "reading": "al-get-eo, al-get-eo. ja, geon-bae-bu-teo ha-ja.", "en": "Okay, okay. Come on, let's toast first." }
+      ],
+      "question": "용우가 치킨 먹는 순서까지 챙기는 모습에서 알 수 있는 것은?",
+      "question_en": "What does Yongwoo's insistence on even the order of eating chicken reveal about him?",
+      "correct_answer": "사소한 것까지 챙기는 다정한 성격이 드러난다",
+      "options": ["사소한 것까지 챙기는 다정한 성격이 드러난다", "음식에 대해 매우 예민하고 까다롭다", "손님을 놀리려고 장난친 것이다", "치킨을 별로 좋아하지 않는다"],
+      "explanation": "용우는 사소해 보이는 것까지 챙기는 말투 속에 상대를 향한 다정함을 드러냅니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "용우", "text": "니 그동안 힘든 일은 없었나. 진작 좀 연락하지.", "reading": "ni geu-dong-an him-deun il-eun eob-seon-na. jin-jak jom yeon-lag-ha-ji.", "en": "Was anything hard for you all this time. You should've called sooner." },
+        { "speaker": "승객", "text": "괜히 바쁠까 봐 연락 못 했어. 미안.", "reading": "gwaen-hi ba-ppeul-kka bwa yeon-lag mot haess-eo. mi-an.", "en": "I didn't want to bother you since you seemed busy. Sorry." },
+        { "speaker": "용우", "text": "바빠도 힘들면 말해라. …술기운에 하는 말 아니다, 진심이다.", "reading": "ba-ppa-do him-deul-myeon mal-hae-ra. sul-gi-un-e ha-neun mal a-ni-da, jin-sim-i-da.", "en": "Even if I'm busy, tell me when it's hard. ...I'm not saying this because I'm tipsy, I mean it." },
+        { "speaker": "승객", "text": "고마워. 너도 힘든 일 있으면 나한테 말해.", "reading": "go-ma-wo. neo-do him-deun il iss-eu-myeon na-han-te mal-hae.", "en": "Thanks. You tell me too, if anything's hard for you." }
+      ],
+      "question": "이 대화에서 용우가 전하고 싶었던 마음으로 가장 알맞은 것은?",
+      "question_en": "What feeling was Yongwoo trying to convey in this conversation?",
+      "correct_answer": "취기와 상관없이 진심으로 상대를 걱정하고 있다",
+      "options": ["취기와 상관없이 진심으로 상대를 걱정하고 있다", "술 취해서 아무 말이나 하고 있다", "연락을 자주 안 한 것에 화가 났다", "그냥 예의상 물어본 것이다"],
+      "explanation": "용우는 술기운 때문이 아니라 진심으로 상대를 걱정하고 있다는 것을 분명히 밝힙니다."
+    }
+  ]
+}

@@ -46,17 +46,82 @@
     }
   ],
   "words": [
-    { "id": "w01", "word": "경복궁", "reading": "gyeong-bok-gung", "meaning": "Gyeongbokgung Palace", "example": "경복궁은 조선시대 정궁이에요.", "example_reading": "gyeong-bok-gung-eun jo-seon-si-dae jeong-gung-i-e-yo", "example_en": "Gyeongbokgung is the main Joseon palace." },
-    { "id": "w02", "word": "수문장", "reading": "su-mun-jang", "meaning": "Palace Gate Guard", "example": "수문장 교대의식을 관람하세요.", "example_reading": "su-mun-jang gyo-dae-ui-sik-eun gwan-ram-ha-se-yo", "example_en": "Watch the Royal Guard Changing Ceremony." },
-    { "id": "w03", "word": "근정전", "reading": "geun-jeong-jeon", "meaning": "Main Throne Hall", "example": "근정전은 국왕의 즉위식이 열린 곳입니다.", "example_reading": "geun-jeong-jeon-eun guk-wang-ui jeuk-wi-sik-i yeol-rin got-im-ni-da", "example_en": "Geunjeongjeon is where coronation held." },
-    { "id": "w04", "word": "광화문", "reading": "gwang-hwa-mun", "meaning": "Gwanghwamun Gate", "example": "광화문 앞에서 만나요.", "example_reading": "gwang-hwa-mun ap-e-seo man-na-yo", "example_en": "Let's meet in front of Gwanghwamun." },
-    { "id": "w05", "word": "한복", "reading": "han-bok", "meaning": "Traditional Hanbok", "example": "한복을 입으면 무료 입장입니다.", "example_reading": "han-bok-eul ib-eu-myeon mu-ryo ib-jang-im-ni-da", "example_en": "Admission is free if you wear Hanbok." }
+    {
+      "id": "w01",
+      "word": "궁궐",
+      "reading": "gung-gwol",
+      "meaning": "Royal palace",
+      "example": "궁궐은 옛 임금이 나랏일을 보던 곳입니다.",
+      "example_reading": "gung-gwol-eun yet im-geum-i na-rat-il-eul bo-deon gos-im-ni-da",
+      "example_en": "A royal palace is where a king of the past attended to state affairs."
+    },
+    {
+      "id": "w02",
+      "word": "수문장",
+      "reading": "su-mun-jang",
+      "meaning": "Palace Gate Guard",
+      "example": "수문장 교대의식을 관람하세요.",
+      "example_reading": "su-mun-jang gyo-dae-ui-sik-eun gwan-ram-ha-se-yo",
+      "example_en": "Watch the Royal Guard Changing Ceremony."
+    },
+    {
+      "id": "w03",
+      "word": "정전",
+      "reading": "jeong-jeon",
+      "meaning": "Main hall (throne hall)",
+      "example": "정전은 궁궐에서 가장 중요한 건물입니다.",
+      "example_reading": "jeong-jeon-eun gung-gwol-e-seo ga-jang jung-yo-han geon-mul-im-ni-da",
+      "example_en": "The main hall is the most important building in a palace."
+    },
+    {
+      "id": "w04",
+      "word": "정문",
+      "reading": "jeong-mun",
+      "meaning": "Main gate",
+      "example": "정문을 지나야 궁궐 안으로 들어갈 수 있습니다.",
+      "example_reading": "jeong-mun-eul ji-na-ya gung-gwol an-eu-ro deul-eo-gal su it-seum-ni-da",
+      "example_en": "You must pass through the main gate to enter the palace."
+    },
+    {
+      "id": "w05",
+      "word": "한복",
+      "reading": "han-bok",
+      "meaning": "Traditional Hanbok",
+      "example": "한복을 입으면 무료 입장입니다.",
+      "example_reading": "han-bok-eul ib-eu-myeon mu-ryo ib-jang-im-ni-da",
+      "example_en": "Admission is free if you wear Hanbok."
+    }
   ],
   "sentences": [
-    { "id": "s01", "ko": "경복궁은 조선의 으뜸 궁궐입니다.", "reading": "gyeong-bok-gung-eun jo-seon-ui eu-tteum gung-gwol-im-ni-da", "en": "Gyeongbokgung is the main palace of Joseon." },
-    { "id": "s02", "ko": "수문장 교대의식은 매일 열립니다.", "reading": "su-mun-jang gyo-dae-ui-sik-eun mae-il yeol-rim-ni-da", "en": "Guard Changing Ceremony is held daily." },
-    { "id": "s03", "ko": "한복을 입고 근정전을 걸어보세요.", "reading": "han-bok-eul ib-go geun-jeong-jeon-eul geol-eo-bo-se-yo", "en": "Walk through Geunjeongjeon in Hanbok." },
-    { "id": "s04", "ko": "광화문 광장은 서울의 중심입니다.", "reading": "gwang-hwa-mun gwang-jang-eun seo-ul-ui jung-sim-im-ni-da", "en": "Gwanghwamun Square is the heart of Seoul." },
-    { "id": "s05", "ko": "조선 왕조 600년 역사가 담겨 있습니다.", "reading": "jo-seon wang-jo yuk-baek-nyeon yeok-sa-ga dam-gyeo it-seum-ni-da", "en": "It holds 600 years of Joseon Dynasty history." }
+    {
+      "id": "s01",
+      "ko": "경복궁은 조선의 으뜸 궁궐입니다.",
+      "reading": "gyeong-bok-gung-eun jo-seon-ui eu-tteum gung-gwol-im-ni-da",
+      "en": "Gyeongbokgung is the main palace of Joseon."
+    },
+    {
+      "id": "s02",
+      "ko": "수문장 교대의식은 매일 열립니다.",
+      "reading": "su-mun-jang gyo-dae-ui-sik-eun mae-il yeol-rim-ni-da",
+      "en": "Guard Changing Ceremony is held daily."
+    },
+    {
+      "id": "s03",
+      "ko": "한복을 입고 근정전을 걸어보세요.",
+      "reading": "han-bok-eul ib-go geun-jeong-jeon-eul geol-eo-bo-se-yo",
+      "en": "Walk through Geunjeongjeon in Hanbok."
+    },
+    {
+      "id": "s04",
+      "ko": "광화문 광장은 서울의 중심입니다.",
+      "reading": "gwang-hwa-mun gwang-jang-eun seo-ul-ui jung-sim-im-ni-da",
+      "en": "Gwanghwamun Square is the heart of Seoul."
+    },
+    {
+      "id": "s05",
+      "ko": "조선 왕조 600년 역사가 담겨 있습니다.",
+      "reading": "jo-seon wang-jo yuk-baek-nyeon yeok-sa-ga dam-gyeo it-seum-ni-da",
+      "en": "It holds 600 years of Joseon Dynasty history."
+    }
   ]
 }

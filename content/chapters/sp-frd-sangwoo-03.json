@@ -1,0 +1,98 @@
+{
+  "id": "sp-frd-sangwoo-03",
+  "character_id": "sangwoo",
+  "title": "완전 대박입니다",
+  "emoji": "🔥",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "오후의 공주 원도심, 골목 안 작은 카페에 친구와 마주 앉았습니다.",
+      "reading": "o-hu-ui gong-ju won-do-sim, gol-mok an jak-eun ka-pe-e chin-gu-wa ma-ju anj-at-seum-ni-da.",
+      "en": "In the afternoon, in Gongju's old town, I sat across from my friend in a small café tucked in an alley."
+    },
+    {
+      "text": "친구가 휴대폰 화면을 들이밀며 소리쳤습니다. \"이거 봐, 완전 '대박'이지 않아?\" 저는 화면을 보며 최대한 자연스럽게 대답했습니다. \"...대박, 입니다.\"",
+      "reading": "chin-gu-ga hyu-dae-pon hwa-myeon-eul deul-i-mil-myeo so-ri-chyeot-seum-ni-da. \"i-geo bwa, wan-jeon 'dae-bak'-i-ji an-a?\" jeo-neun hwa-myeon-eul bo-myeo choe-dae-han ja-yeon-seu-reop-ge dae-dab-haess-seum-ni-da. \"...dae-bak, im-ni-da.\"",
+      "en": "My friend thrust their phone screen at me and exclaimed, \"Look at this, isn't it totally 'daebak'?\" I looked at the screen and answered as naturally as I could. \"...Daebak, indeed.\"",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "말투가 어색했는지 친구가 배를 잡고 웃었습니다. \"'인정'할 땐 그냥 '인정'이라고만 하면 돼. 격식 안 차려도 괜찮아.\"",
+      "reading": "mal-tu-ga eo-saek-haess-neun-ji chin-gu-ga bae-reul jap-go us-eot-seum-ni-da. \"'in-jeong'-hal ttaen geu-nyang 'in-jeong'-i-ra-go-man ha-myeon dwae. gyeok-sik an cha-ryeo-do gwaen-chan-a.\"",
+      "en": "My friend clutched their stomach laughing at how awkward my tone sounded. \"When you agree, just say 'injeong'. You don't need to be so formal.\"",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "레벨 낮은 관제사가 새 무선 교신 용어를 익히듯, 저는 진지하게 수첩까지 꺼내 들었습니다.",
+      "reading": "re-bel naj-eun gwan-je-sa-ga sae mu-seon gyo-sin yong-eo-reul ig-hi-deut, jeo-neun jin-ji-ha-ge su-cheop-kka-ji kkeo-nae deul-eot-seum-ni-da.",
+      "en": "Like a rookie controller memorizing new radio phrases, I earnestly pulled out my notebook."
+    },
+    {
+      "text": "\"요즘 '유행어'는 하루가 다르게 바뀝니다. 관제 용어보다 갱신 속도가 빠르네요.\" 저의 진지한 감탄에 친구는 또 한 번 웃음을 터뜨렸습니다.",
+      "reading": "\"yo-jeum 'yu-haeng-eo'-neun ha-ru-ga da-reu-ge ba-kkwim-ni-da. gwan-je yong-eo-bo-da gaeng-sin sok-do-ga ppa-reu-ne-yo.\" jeo-ui jin-ji-han gam-tan-e chin-gu-neun tto han beon us-eum-eul teo-tteu-ryeot-seum-ni-da.",
+      "en": "\"These days, 'buzzwords' change day by day. They update faster than air traffic control terminology.\" At my earnest remark, my friend burst out laughing again.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "친구가 처음 듣는 '신조어' 하나를 던졌습니다. 저는 뜻을 몰라 눈만 껌뻑였고, 결국 손을 들고 항복을 선언했습니다.",
+      "reading": "chin-gu-ga cheo-eum deut-neun 'sin-jo-eo' ha-na-reul deon-jyeot-seum-ni-da. jeo-neun tteus-eul mol-la nun-man kkeom-ppyeog-yeot-go, gyeol-guk son-eul deul-go hang-bog-eul seon-eon-haess-seum-ni-da.",
+      "en": "My friend threw out a newly coined word I'd never heard before. Not knowing the meaning, I just blinked, and eventually raised my hand in surrender.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "\"오늘 기장님 표정, 완전 '레전드'예요.\" 친구가 제 얼빠진 얼굴을 사진으로 남기며 낄낄댔습니다. 저도 결국 따라 웃고 말았습니다.",
+      "reading": "\"o-neul gi-jang-nim pyo-jeong, wan-jeon 're-jeon-deu'-ye-yo.\" chin-gu-ga je eol-ppa-jin eol-gul-eul sa-jin-eu-ro nam-gi-myeo kkil-kkil-daess-seum-ni-da. jeo-do gyeol-guk tta-ra ut-go mal-at-seum-ni-da.",
+      "en": "\"Captain, your face right now is absolutely 'legendary'.\" My friend snapped a photo of my dumbfounded expression, giggling. In the end, I couldn't help but laugh along too.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "격식과 신조어 사이, 어색하지만 즐거운 시간이었습니다. 그날 카페에서 나눈 대화를 들려드리겠습니다.",
+      "reading": "gyeok-sik-gwa sin-jo-eo sa-i, eo-saek-ha-ji-man jeul-geo-un si-gan-i-eot-seum-ni-da. geu-nal ka-pe-e-seo na-nun dae-hwa-reul deul-lyeo-deu-ri-get-seum-ni-da.",
+      "en": "Caught between formality and buzzwords, it was an awkward but fun time. Let me share the conversation we had at the café that day."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "대박", "reading": "dae-bak", "meaning": "awesome, amazing (slang)", "example": "이 영화 완전 대박이야.", "example_reading": "i yeong-hwa wan-jeon dae-bag-i-ya", "example_en": "This movie is totally awesome." },
+    { "id": "w02", "word": "인정", "reading": "in-jeong", "meaning": "agreed, I acknowledge that (slang)", "example": "그건 인정.", "example_reading": "geu-geon in-jeong.", "example_en": "That, I'll admit." },
+    { "id": "w03", "word": "유행어", "reading": "yu-haeng-eo", "meaning": "buzzword, popular catchphrase", "example": "요즘 유행어를 다 알아?", "example_reading": "yo-jeum yu-haeng-eo-reul da al-a?", "example_en": "Do you know all the buzzwords these days?" },
+    { "id": "w04", "word": "신조어", "reading": "sin-jo-eo", "meaning": "newly coined word", "example": "신조어는 너무 빨리 생겨납니다.", "example_reading": "sin-jo-eo-neun neo-mu ppal-li saeng-gyeo-nam-ni-da", "example_en": "New coined words appear so quickly." },
+    { "id": "w05", "word": "레전드", "reading": "re-jeon-deu", "meaning": "legend, legendary (slang for something amazing/memorable)", "example": "오늘 경기는 진짜 레전드였다.", "example_reading": "o-neul gyeong-gi-neun jin-jja re-jeon-deu-yeot-da", "example_en": "Today's match was seriously legendary." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "이 노래 완전 대박이야.", "reading": "i no-rae wan-jeon dae-bag-i-ya", "en": "This song is totally awesome." },
+    { "id": "s02", "ko": "네 말에 전적으로 인정.", "reading": "ne mal-e jeon-jeog-eu-ro in-jeong", "en": "I completely agree with what you said." },
+    { "id": "s03", "ko": "요즘 유행어는 따라가기 힘듭니다.", "reading": "yo-jeum yu-haeng-eo-neun tta-ra-ga-gi him-deum-ni-da", "en": "These days, it's hard to keep up with the buzzwords." },
+    { "id": "s04", "ko": "신조어를 하나 배웠습니다.", "reading": "sin-jo-eo-reul ha-na bae-wot-seum-ni-da", "en": "I learned a new coined word." },
+    { "id": "s05", "ko": "그 장면은 정말 레전드였습니다.", "reading": "geu jang-myeon-eun jeong-mal re-jeon-deu-yeot-seum-ni-da", "en": "That scene was truly legendary." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "상우", "text": "저기, 이 상황에서 '대박'이라고 말하면 자연스럽습니까?", "reading": "jeo-gi, i sang-hwang-e-seo 'dae-bak'-i-ra-go mal-ha-myeon ja-yeon-seu-reop-seum-ni-kka?", "en": "Excuse me, would it sound natural to say 'daebak' in this situation?" },
+        { "speaker": "승객", "text": "그럼! 문장으로 안 만들어도 돼. 그냥 짧게 '대박!' 이렇게만 외치면 돼.", "reading": "geu-reom! mun-jang-eu-ro an man-deul-eo-do dwae. geu-nyang jjal-ge 'dae-bak!' i-reo-ke-man oe-chi-myeon dwae.", "en": "Of course! You don't even need to make it a full sentence. Just shout it short — 'Daebak!' — like that." },
+        { "speaker": "상우", "text": "알겠습니다. 그럼... 대박?", "reading": "al-get-seum-ni-da. geu-reom... dae-bak?", "en": "Understood. So... daebak?" },
+        { "speaker": "승객", "text": "풋, 완벽해! 이 정도면 인정.", "reading": "put, wan-byeok-hae! i jeong-do-myeon in-jeong.", "en": "Ha, perfect! That's good enough — I'll give you credit." }
+      ],
+      "question": "승객이 상우에게 알려준 '대박'의 올바른 사용법은 무엇인가요?",
+      "question_en": "What did the passenger teach Sangwoo about how to correctly use 'daebak'?",
+      "correct_answer": "문장을 만들지 않고 짧게 감탄사처럼 외치면 된다",
+      "options": ["문장을 만들지 않고 짧게 감탄사처럼 외치면 된다", "반드시 완전한 문장으로 말해야 한다", "영어로 번역해서 말해야 한다", "손을 흔들면서 말해야 한다"],
+      "explanation": "승객은 '대박'이 문장을 갖추지 않아도 짧은 감탄사처럼 외치기만 하면 자연스럽다고 알려주었습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "상우", "text": "오늘 배운 '유행어'들을 정리해 봤습니다. 실전에서 한번 써 보겠습니다.", "reading": "o-neul bae-un 'yu-haeng-eo'-deul-eul jeong-ri-hae bwat-seum-ni-da. sil-jeon-e-seo han-beon sseo bo-get-seum-ni-da.", "en": "I organized the 'buzzwords' I learned today. I'll try using them for real." },
+        { "speaker": "승객", "text": "오, 좋아! 어디 한번 해 봐.", "reading": "o, jo-a! eo-di han-beon hae bwa.", "en": "Oh, nice! Go ahead, give it a try." },
+        { "speaker": "상우", "text": "오늘 이 시간, 저에게는 완전 '레전드'입니다.", "reading": "o-neul i si-gan, jeo-e-ge-neun wan-jeon 're-jeon-deu'-im-ni-da.", "en": "This time today is, for me, totally 'legendary'." },
+        { "speaker": "승객", "text": "와, 이제 진짜 유행어 좀 아네! 이 정도면 합격이야.", "reading": "wa, i-je jin-jja yu-haeng-eo jom a-ne! i jeong-do-myeon hab-gyeog-i-ya.", "en": "Wow, you actually know buzzwords now! This much, you pass." }
+      ],
+      "question": "상우가 마지막에 사용한 유행어는 무엇을 표현하기 위한 것이었나요?",
+      "question_en": "What was the buzzword Sangwoo used at the end meant to express?",
+      "correct_answer": "친구와 보낸 오늘 이 시간이 자신에게 특별하고 기억에 남는다는 것",
+      "options": ["친구와 보낸 오늘 이 시간이 자신에게 특별하고 기억에 남는다는 것", "오늘 배운 유행어가 너무 어렵다는 것", "빨리 집에 가고 싶다는 것", "다음에 또 오고 싶지 않다는 것"],
+      "explanation": "상우는 '레전드'라는 유행어를 사용해 친구와 함께 보낸 오늘이 자신에게 특별하고 잊지 못할 시간이라는 뜻을 전했습니다."
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "id": "sp-day-yongwoo-01",
+  "character_id": "yongwoo",
+  "title": "제주 아침, 늦잠은 없다",
+  "emoji": "☀️",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "제주 게스트하우스의 아침은 이르게 시작됐다. 커튼 틈으로 새어 든 햇살에 눈을 떴을 땐 이미 방 안 가득 볕이 들어와 있었다.",
+      "reading": "je-ju ge-seu-teu-ha-u-seu-ui a-chim-eun i-reu-ge si-jak-doet-da. keo-teun teum-eu-ro sae-eo deun haet-sal-e nun-eul tteoss-eul ttaen i-mi bang an ga-deuk byeot-i deul-eo wa iss-eot-da.",
+      "en": "The morning at the Jeju guesthouse started early. By the time I opened my eyes to the sunlight slipping through the curtain gap, the room was already flooded with light."
+    },
+    {
+      "text": "화들짝 놀라 시계를 보니 벌써 아홉 시가 다 되어 있었다. 마당에서는 늦잠 자는 걸 귀신같이 눈치챈 용우의 목소리가 들려왔다.",
+      "reading": "hwa-deul-jjak nol-la si-gye-reul bo-ni beol-sseo a-hop si-ga da doe-eo iss-eot-da. ma-dang-e-seo-neun neut-jam ja-neun geol gwi-sin-gat-i nun-chi-chaen yong-u-ui mok-so-ri-ga deul-lyeo-wat-da.",
+      "en": "I jolted up, startled — the clock already read nearly nine. From the courtyard, Yongwoo's voice rang out, as if he'd sensed my oversleeping like a ghost.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "'야, 해가 중천인데 아직도 자냐. 빨리 안 나와?' 문 두드리는 소리가 이어졌다.",
+      "reading": "ya, hae-ga jung-cheon-in-de a-jik-do ja-nya. ppal-li an na-wa? mun du-deu-ri-neun so-ri-ga i-eo-jyeot-da.",
+      "en": "\"Hey, the sun's already high in the sky and you're still asleep? Get out here.\" The knocking on the door kept going."
+    },
+    {
+      "text": "허둥지둥 세수만 하고 나가자, 마당 평상에는 이미 아침상이 차려져 있었다. 그는 팔짱을 끼고 서서 기지개를 켜는 나를 못마땅한 눈으로 훑었다.",
+      "reading": "heo-dung-ji-dung se-su-man ha-go na-ga-ja, ma-dang pyeong-sang-e-neun i-mi a-chim-sang-i cha-ryeo-jyeo iss-eot-da. geu-neun pal-jjang-eul kki-go seo-seo gi-ji-gae-reul kyeo-neun na-reul mot-mat-tang-han nun-eu-ro hult-eot-da.",
+      "en": "I hurriedly washed my face and rushed out, only to find breakfast already laid out on the courtyard bench. He stood with his arms crossed, eyeing me with disapproval as I stretched.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "'아직 잠이 덜 깼네.' 용우가 국그릇을 내 앞으로 밀어주며 말했다. 무뚝뚝한 손짓이었지만 국은 딱 먹기 좋은 온도였다.",
+      "reading": "a-jik jam-i deol kkaen-ne. yong-u-ga guk-geu-reut-eul nae ap-eu-ro mil-eo-ju-myeo mal-haet-da. mu-ttuk-ttuk-han son-jit-i-eot-ji-man guk-eun ttak meok-gi jo-eun on-do-yeot-da.",
+      "en": "\"You're still not fully awake.\" Yongwoo said, sliding the soup bowl toward me. His gesture was gruff, but the soup was at exactly the right temperature to eat.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "밥을 먹으며 부스스한 머리를 손으로 대충 정리하자, 용우가 피식 웃으며 머리 위 까치집을 톡톡 건드렸다.",
+      "reading": "bab-eul meog-eu-myeo bu-seu-seu-han meo-ri-reul son-eu-ro dae-chung jeong-ni-ha-ja, yong-u-ga pi-sik us-eu-myeo meo-ri wi kka-chi-jib-eul tok-tok geon-deu-ryeot-da.",
+      "en": "As I ate and tried to smooth down my tousled hair with my hand, Yongwoo let out a short laugh and tapped the little bird's nest on top of my head.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "'그래도 이렇게 하루를 시작하니 나쁘지 않네.' 그가 먼저 일어나 그릇을 정리하며 말했다. '다 먹었으면 나가자, 날씨 좋을 때 움직여야지.'",
+      "reading": "geu-rae-do i-reo-ke ha-ru-reul si-jak-ha-ni na-ppeu-ji an-ne. geu-ga meon-jeo il-eo-na geu-reut-eul jeong-ni-ha-myeo mal-haet-da. da meog-eoss-eu-myeon na-ga-ja, nal-ssi jo-eul ttae um-jig-yeo-ya-ji.",
+      "en": "\"Still, starting the day like this isn't so bad.\" he said, standing up first and clearing the dishes. \"If you're done eating, let's head out — better to move while the weather's good.\"",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "아직 잠이 덜 깬 얼굴로 그를 따라나서면서도, 이런 아침이 매일이어도 나쁘지 않겠다고 생각했다.",
+      "reading": "a-jik jam-i deol kkaen eol-gul-lo geu-reul tta-ra-na-seo-myeon-seo-do, i-reon a-chim-i mae-il-i-eo-do na-ppeu-ji an-ket-da-go saeng-gak-haet-da.",
+      "en": "Still half-asleep, I followed him out the door, thinking that if every morning could be like this, it wouldn't be so bad."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "늦잠", "reading": "neut-jam", "meaning": "oversleeping", "example": "늦잠을 자서 아침을 걸렀다.", "example_reading": "neut-jam-eul ja-seo a-chim-eul geol-leot-da", "example_en": "I overslept and skipped breakfast." },
+    { "id": "w02", "word": "기지개를 켜다", "reading": "gi-ji-gae-reul kyeo-da", "meaning": "to stretch one's body", "example": "일어나자마자 크게 기지개를 켰다.", "example_reading": "il-eo-na-ja-ma-ja keu-ge gi-ji-gae-reul kyeot-da", "example_en": "I stretched wide the moment I got up." },
+    { "id": "w03", "word": "잠이 덜 깨다", "reading": "jam-i deol kkae-da", "meaning": "to not be fully awake", "example": "잠이 덜 깨서 말이 어눌했다.", "example_reading": "jam-i deol kkae-seo mal-i eo-nul-haet-da", "example_en": "I wasn't fully awake, so my words came out sluggish." },
+    { "id": "w04", "word": "부스스하다", "reading": "bu-seu-seu-ha-da", "meaning": "to look disheveled or tousled (esp. right after waking)", "example": "부스스한 머리로 거울을 봤다.", "example_reading": "bu-seu-seu-han meo-ri-ro geo-ul-eul bwat-da", "example_en": "I looked in the mirror with my hair all tousled." },
+    { "id": "w05", "word": "하루를 시작하다", "reading": "ha-ru-reul si-jak-ha-da", "meaning": "to start the day", "example": "그는 매일 산책으로 하루를 시작한다.", "example_reading": "geu-neun mae-il san-chaek-eu-ro ha-ru-reul si-jak-han-da", "example_en": "He starts every day with a walk." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "늦잠을 자서 하마터면 아침을 놓칠 뻔했다.", "reading": "neut-jam-eul ja-seo ha-ma-teo-myeon a-chim-eul noch-il ppeon-haet-da", "en": "I overslept and nearly missed breakfast." },
+    { "id": "s02", "ko": "일어나자마자 크게 기지개를 켰다.", "reading": "il-eo-na-ja-ma-ja keu-ge gi-ji-gae-reul kyeot-da", "en": "I stretched wide the moment I woke up." },
+    { "id": "s03", "ko": "아직 잠이 덜 깨서 정신이 없었다.", "reading": "a-jik jam-i deol kkae-seo jeong-sin-i eop-seot-da", "en": "I was still not fully awake, so I felt dazed." },
+    { "id": "s04", "ko": "부스스한 머리를 대충 정리하고 나갔다.", "reading": "bu-seu-seu-han meo-ri-reul dae-chung jeong-ni-ha-go na-gat-da", "en": "I roughly fixed my tousled hair and headed out." },
+    { "id": "s05", "ko": "우리는 아침 산책으로 하루를 시작했다.", "reading": "u-ri-neun a-chim san-chaek-eu-ro ha-ru-reul si-jak-haet-da", "en": "We started the day with a morning walk." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "용우", "text": "야, 해가 중천인데 아직도 자? 얼른 씻고 나와라.", "reading": "ya, hae-ga jung-cheon-in-de a-jik-do ja? eol-leun ssit-go na-wa-ra.", "en": "Hey, the sun's already high and you're still asleep? Wash up and come out quick." },
+        { "speaker": "승객", "text": "죄송해요, 조금만 더 잘게요...", "reading": "joe-song-hae-yo, jo-geum-man deo jal-ge-yo...", "en": "Sorry, just a few more minutes..." },
+        { "speaker": "용우", "text": "안 된다. 국 식는다, 얼른 나와.", "reading": "an doen-da. guk sing-neun-da, eol-leun na-wa.", "en": "No way. The soup's getting cold, come out now." },
+        { "speaker": "승객", "text": "네네, 갈게요!", "reading": "ne-ne, gal-ge-yo!", "en": "Okay okay, I'm coming!" }
+      ],
+      "question": "용우가 승객을 재촉한 이유로 가장 알맞은 것은?",
+      "question_en": "What best explains why Yongwoo hurried the passenger along?",
+      "correct_answer": "국이 식기 전에 아침을 먹이고 싶어서",
+      "options": ["국이 식기 전에 아침을 먹이고 싶어서", "비행 시간에 늦을까 봐", "다른 손님이 기다리고 있어서", "숙소를 나가야 할 시간이라서"],
+      "explanation": "용우는 이미 차려놓은 아침이 식을까 봐 승객을 서둘러 깨웠습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "용우", "text": "오전엔 시간 있으니까 바다나 보러 갈까.", "reading": "o-jeon-en si-gan iss-eu-ni-kka ba-da-na bo-reo gal-kka.", "en": "I've got time this morning, want to go see the ocean?" },
+        { "speaker": "승객", "text": "좋아요! 근데 오늘 비행 없어요?", "reading": "jo-a-yo! geun-de o-neul bi-haeng eop-seo-yo?", "en": "Sounds great! But don't you have a flight today?" },
+        { "speaker": "용우", "text": "새벽 비행 하나 끝냈다. 오후에 하나 더 있고.", "reading": "sae-byeok bi-haeng ha-na kkeut-naet-da. o-hu-e ha-na deo it-go.", "en": "I already finished one dawn flight. There's one more in the afternoon." },
+        { "speaker": "승객", "text": "그럼 오전엔 완전 자유네요.", "reading": "geu-reom o-jeon-en wan-jeon ja-yu-ne-yo.", "en": "So the morning's totally free, then." }
+      ],
+      "question": "이 대화를 통해 알 수 있는 용우의 오늘 일정은?",
+      "question_en": "Based on this conversation, what can you tell about Yongwoo's schedule today?",
+      "correct_answer": "새벽 비행을 마쳤고 오후에 비행이 하나 더 있다",
+      "options": ["새벽 비행을 마쳤고 오후에 비행이 하나 더 있다", "오늘은 비행이 전혀 없다", "오후 비행을 마치고 쉬는 중이다", "저녁 비행을 준비하고 있다"],
+      "explanation": "용우는 새벽 비행을 이미 마쳤고, 오후에 비행이 하나 더 있어서 오전 시간이 비어 있다고 말했습니다."
+    }
+  ]
+}

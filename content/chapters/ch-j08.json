@@ -47,46 +47,161 @@
     }
   ],
   "words": [
-    { "id": "w01", "word": "초가집", "reading": "cho-ga-jip", "meaning": "Thatched-roof house", "example": "초가집은 억새로 지붕을 엮어 만든 제주의 전통 가옥입니다.", "example_reading": "cho-ga-jib-eun eok-sae-ro ji-bung-eul yeok-eo man-deun je-ju-ui jeon-tong ga-og-im-ni-da", "example_en": "The thatched-roof house is a traditional Jeju home with a roof woven from silver grass." },
-    { "id": "w02", "word": "정낭", "reading": "jeong-nang", "meaning": "Jeongnang (three horizontal wooden bars used as a gate)", "example": "정낭 세 개가 걸쳐 있으면 집에 아무도 없다는 뜻입니다.", "example_reading": "jeong-nang se gae-ga geol-cheo it-eu-myeon jib-e a-mu-do eop-da-neun tteus-im-ni-da", "example_en": "If all three jeongnang bars are up, it means no one is home." },
-    { "id": "w03", "word": "올레", "reading": "ol-le", "meaning": "Olle (narrow stone-walled path to a house)", "example": "올레는 큰길에서 집 마당까지 이어지는 좁은 길입니다.", "example_reading": "ol-le-neun keun-gil-e-seo jip ma-dang-kka-ji i-eo-ji-neun jop-eun gil-im-ni-da", "example_en": "Olle is a narrow path connecting the main road to the yard." },
-    { "id": "w04", "word": "돌담", "reading": "dol-dam", "meaning": "Stone wall", "example": "돌담은 거센 제주 바람을 막아주는 지혜의 산물입니다.", "example_reading": "dol-dam-eun geo-sen je-ju ba-ram-eul mag-a-ju-neun ji-hye-ui san-mul-im-ni-da", "example_en": "The stone wall is a product of wisdom that blocks Jeju's fierce winds." },
-    { "id": "w05", "word": "안거리", "reading": "an-geo-ri", "meaning": "Inner house (main living quarters)", "example": "안거리는 부모님이 지내는 안채를 가리킵니다.", "example_reading": "an-geo-ri-neun bu-mo-nim-i ji-nae-neun an-chae-reul ga-ri-kim-ni-da", "example_en": "Angeori refers to the inner quarters where the parents lived." }
+    {
+      "id": "w01",
+      "word": "초가집",
+      "reading": "cho-ga-jip",
+      "meaning": "Thatched-roof house",
+      "example": "초가집은 억새로 지붕을 엮어 만든 제주의 전통 가옥입니다.",
+      "example_reading": "cho-ga-jib-eun eok-sae-ro ji-bung-eul yeok-eo man-deun je-ju-ui jeon-tong ga-og-im-ni-da",
+      "example_en": "The thatched-roof house is a traditional Jeju home with a roof woven from silver grass."
+    },
+    {
+      "id": "w02",
+      "word": "대문",
+      "reading": "dae-mun",
+      "meaning": "Front gate; main door",
+      "example": "대문을 열고 마당으로 들어갔습니다.",
+      "example_reading": "dae-mun-eul yeol-go ma-dang-eu-ro deul-eo-gat-seum-ni-da",
+      "example_en": "I opened the front gate and went into the yard."
+    },
+    {
+      "id": "w03",
+      "word": "올레",
+      "reading": "ol-le",
+      "meaning": "Olle (narrow stone-walled path to a house)",
+      "example": "올레는 큰길에서 집 마당까지 이어지는 좁은 길입니다.",
+      "example_reading": "ol-le-neun keun-gil-e-seo jip ma-dang-kka-ji i-eo-ji-neun jop-eun gil-im-ni-da",
+      "example_en": "Olle is a narrow path connecting the main road to the yard."
+    },
+    {
+      "id": "w04",
+      "word": "돌담",
+      "reading": "dol-dam",
+      "meaning": "Stone wall",
+      "example": "돌담은 거센 제주 바람을 막아주는 지혜의 산물입니다.",
+      "example_reading": "dol-dam-eun geo-sen je-ju ba-ram-eul mag-a-ju-neun ji-hye-ui san-mul-im-ni-da",
+      "example_en": "The stone wall is a product of wisdom that blocks Jeju's fierce winds."
+    },
+    {
+      "id": "w05",
+      "word": "안채",
+      "reading": "an-chae",
+      "meaning": "Main house (inner quarters)",
+      "example": "안채에는 주로 나이 드신 어른들이 지내셨습니다.",
+      "example_reading": "an-chae-e-neun ju-ro na-i deu-sin eo-reun-deul-i ji-nae-syeot-seum-ni-da",
+      "example_en": "The main house was usually where the elders of the family lived."
+    }
   ],
   "sentences": [
-    { "id": "s01", "ko": "초가집은 억새로 지붕을 엮어 만든 제주의 전통 가옥입니다.", "reading": "cho-ga-jib-eun eok-sae-ro ji-bung-eul yeok-eo man-deun je-ju-ui jeon-tong ga-og-im-ni-da", "en": "The thatched-roof house is a traditional Jeju home with a roof woven from silver grass." },
-    { "id": "s02", "ko": "정낭 세 개가 걸쳐 있으면 집에 아무도 없다는 뜻입니다.", "reading": "jeong-nang se gae-ga geol-cheo it-eu-myeon jib-e a-mu-do eop-da-neun tteus-im-ni-da", "en": "If all three jeongnang bars are up, it means no one is home." },
-    { "id": "s03", "ko": "올레는 큰길에서 집 마당까지 이어지는 좁은 길입니다.", "reading": "ol-le-neun keun-gil-e-seo jip ma-dang-kka-ji i-eo-ji-neun jop-eun gil-im-ni-da", "en": "Olle is a narrow path connecting the main road to the yard." },
-    { "id": "s04", "ko": "돌담은 거센 제주 바람을 막아주는 지혜의 산물입니다.", "reading": "dol-dam-eun geo-sen je-ju ba-ram-eul mag-a-ju-neun ji-hye-ui san-mul-im-ni-da", "en": "The stone wall is a product of wisdom that blocks Jeju's fierce winds." },
-    { "id": "s05", "ko": "안거리는 부모님이 지내는 안채를 가리킵니다.", "reading": "an-geo-ri-neun bu-mo-nim-i ji-nae-neun an-chae-reul ga-ri-kim-ni-da", "en": "Angeori refers to the inner quarters where the parents lived." }
+    {
+      "id": "s01",
+      "ko": "초가집은 억새로 지붕을 엮어 만든 제주의 전통 가옥입니다.",
+      "reading": "cho-ga-jib-eun eok-sae-ro ji-bung-eul yeok-eo man-deun je-ju-ui jeon-tong ga-og-im-ni-da",
+      "en": "The thatched-roof house is a traditional Jeju home with a roof woven from silver grass."
+    },
+    {
+      "id": "s02",
+      "ko": "대문을 열고 마당으로 들어갔습니다.",
+      "reading": "dae-mun-eul yeol-go ma-dang-eu-ro deul-eo-gat-seum-ni-da",
+      "en": "I opened the front gate and went into the yard."
+    },
+    {
+      "id": "s03",
+      "ko": "올레는 큰길에서 집 마당까지 이어지는 좁은 길입니다.",
+      "reading": "ol-le-neun keun-gil-e-seo jip ma-dang-kka-ji i-eo-ji-neun jop-eun gil-im-ni-da",
+      "en": "Olle is a narrow path connecting the main road to the yard."
+    },
+    {
+      "id": "s04",
+      "ko": "돌담은 거센 제주 바람을 막아주는 지혜의 산물입니다.",
+      "reading": "dol-dam-eun geo-sen je-ju ba-ram-eul mag-a-ju-neun ji-hye-ui san-mul-im-ni-da",
+      "en": "The stone wall is a product of wisdom that blocks Jeju's fierce winds."
+    },
+    {
+      "id": "s05",
+      "ko": "안채에는 주로 나이 드신 어른들이 지내셨습니다.",
+      "reading": "an-chae-e-neun ju-ro na-i deu-sin eo-reun-deul-i ji-nae-syeot-seum-ni-da",
+      "en": "The main house was usually where the elders of the family lived."
+    }
   ],
   "dialogues": [
     {
       "id": "d01",
       "turns": [
-        { "speaker": "관광객", "text": "저 나무 막대 세 개는 뭔가요? 대문이 없는 것 같은데요.", "reading": "jeo na-mu mak-dae se gae-neun mwon-ga-yo?", "en": "What are those three wooden bars? It looks like there's no gate." },
-        { "speaker": "해설사", "text": "저게 바로 정낭이에요. 세 개가 다 걸려 있으면 주인이 멀리 외출했다는 뜻이랍니다.", "reading": "jeo-ge ba-ro jeong-nang-i-e-yo.", "en": "That's jeongnang. If all three are up, it means the owner has gone out far away." },
-        { "speaker": "관광객", "text": "그럼 하나만 걸려 있으면요?", "reading": "geu-reom ha-na-man geol-lyeo it-eu-myeon-yo?", "en": "Then what if only one is up?" },
-        { "speaker": "해설사", "text": "잠깐 이웃집에 갔다는 뜻이에요. 제주만의 재미있는 신호 체계지요.", "reading": "jam-kkan i-ut-jib-e gat-da-neun tteus-i-e-yo.", "en": "It means they've briefly gone to a neighbor's house. It's Jeju's own fun signal system." }
+        {
+          "speaker": "관광객",
+          "text": "저 나무 막대 세 개는 뭔가요? 대문이 없는 것 같은데요.",
+          "reading": "jeo na-mu mak-dae se gae-neun mwon-ga-yo?",
+          "en": "What are those three wooden bars? It looks like there's no gate."
+        },
+        {
+          "speaker": "해설사",
+          "text": "저게 바로 정낭이에요. 세 개가 다 걸려 있으면 주인이 멀리 외출했다는 뜻이랍니다.",
+          "reading": "jeo-ge ba-ro jeong-nang-i-e-yo.",
+          "en": "That's jeongnang. If all three are up, it means the owner has gone out far away."
+        },
+        {
+          "speaker": "관광객",
+          "text": "그럼 하나만 걸려 있으면요?",
+          "reading": "geu-reom ha-na-man geol-lyeo it-eu-myeon-yo?",
+          "en": "Then what if only one is up?"
+        },
+        {
+          "speaker": "해설사",
+          "text": "잠깐 이웃집에 갔다는 뜻이에요. 제주만의 재미있는 신호 체계지요.",
+          "reading": "jam-kkan i-ut-jib-e gat-da-neun tteus-i-e-yo.",
+          "en": "It means they've briefly gone to a neighbor's house. It's Jeju's own fun signal system."
+        }
       ],
       "question": "정낭 세 개가 모두 걸려 있을 때의 의미는 무엇인가요?",
       "question_en": "What does it mean when all three jeongnang bars are up?",
       "correct_answer": "주인이 멀리 외출했다는 뜻",
-      "options": ["주인이 멀리 외출했다는 뜻", "손님을 환영한다는 뜻", "집을 수리 중이라는 뜻", "곧 돌아온다는 뜻"],
+      "options": [
+        "주인이 멀리 외출했다는 뜻",
+        "손님을 환영한다는 뜻",
+        "집을 수리 중이라는 뜻",
+        "곧 돌아온다는 뜻"
+      ],
       "explanation": "해설사는 정낭 세 개가 다 걸려 있으면 주인이 멀리 외출했다는 뜻이라고 설명했습니다."
     },
     {
       "id": "d02",
       "turns": [
-        { "speaker": "학생1", "text": "제주 전통 가옥 리포트, 뭘 중심으로 쓸까?", "reading": "je-ju jeon-tong ga-ok ri-po-teu, mwol jung-sim-eu-ro sseul-kka?", "en": "For the Jeju traditional house report, what should we focus on?" },
-        { "speaker": "학생2", "text": "돌담이랑 올레 이야기를 같이 넣으면 좋을 것 같아. 둘 다 바람 때문에 생긴 거잖아.", "reading": "dol-dam-i-rang ol-le i-ya-gi-reul gat-i neo-eu-myeon jo-eul geot ga-ta.", "en": "I think it'd be good to include both the stone wall and olle path — they both exist because of the wind." },
-        { "speaker": "학생1", "text": "맞다, 제주는 바람이 유독 세니까.", "reading": "mat-da, je-ju-neun ba-ram-i yu-dok se-ni-kka.", "en": "Right, Jeju's wind is especially strong." },
-        { "speaker": "학생2", "text": "그래서 초가집도 지붕을 낮고 단단하게 엮은 거고.", "reading": "geu-rae-seo cho-ga-jib-do ji-bung-eul naj-go dan-dan-ha-ge yeok-eun geo-go.", "en": "That's also why the thatched roofs are woven low and sturdy." }
+        {
+          "speaker": "학생1",
+          "text": "제주 전통 가옥 리포트, 뭘 중심으로 쓸까?",
+          "reading": "je-ju jeon-tong ga-ok ri-po-teu, mwol jung-sim-eu-ro sseul-kka?",
+          "en": "For the Jeju traditional house report, what should we focus on?"
+        },
+        {
+          "speaker": "학생2",
+          "text": "돌담이랑 올레 이야기를 같이 넣으면 좋을 것 같아. 둘 다 바람 때문에 생긴 거잖아.",
+          "reading": "dol-dam-i-rang ol-le i-ya-gi-reul gat-i neo-eu-myeon jo-eul geot ga-ta.",
+          "en": "I think it'd be good to include both the stone wall and olle path — they both exist because of the wind."
+        },
+        {
+          "speaker": "학생1",
+          "text": "맞다, 제주는 바람이 유독 세니까.",
+          "reading": "mat-da, je-ju-neun ba-ram-i yu-dok se-ni-kka.",
+          "en": "Right, Jeju's wind is especially strong."
+        },
+        {
+          "speaker": "학생2",
+          "text": "그래서 초가집도 지붕을 낮고 단단하게 엮은 거고.",
+          "reading": "geu-rae-seo cho-ga-jib-do ji-bung-eul naj-go dan-dan-ha-ge yeok-eun geo-go.",
+          "en": "That's also why the thatched roofs are woven low and sturdy."
+        }
       ],
       "question": "학생2가 리포트에 함께 넣자고 제안한 두 가지는 무엇인가요?",
       "question_en": "What two things did Student 2 suggest including together in the report?",
       "correct_answer": "돌담과 올레",
-      "options": ["돌담과 올레", "정낭과 안거리", "초가집과 기와집", "바람과 파도"],
+      "options": [
+        "돌담과 올레",
+        "정낭과 안거리",
+        "초가집과 기와집",
+        "바람과 파도"
+      ],
       "explanation": "학생2는 '돌담이랑 올레 이야기를 같이 넣으면 좋겠다'고 제안했습니다."
     }
   ]

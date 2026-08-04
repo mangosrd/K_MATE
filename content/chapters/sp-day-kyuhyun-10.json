@@ -1,0 +1,62 @@
+{
+  "id": "sp-day-kyuhyun-10",
+  "character_id": "kyuhyun",
+  "title": "잘 자요, 내일 봐요",
+  "emoji": "🌇",
+  "story": [
+    {
+      "text": "동네 언덕 위 작은 전망대에 오르니, 서울 하늘 전체가 붉게 물들어 있었다. 하루의 끝을 알리는 빛이었다.",
+      "reading": "dong-ne eon-deok wi jak-eun jeon-mang-dae-e o-reu-ni, seo-ul ha-neul jeon-che-ga bulg-ge mul-deul-eo iss-eot-da. ha-ru-ui kkeut-eul al-li-neun bit-i-eot-da.",
+      "en": "Climbing up to the small lookout on the neighborhood hill, the whole Seoul sky had turned red. It was the light that signaled the day's end."
+    },
+    {
+      "text": "\"저녁노을이 오늘따라 유난히 예쁘네요.\" 규현이 난간에 팔을 기댄 채 하늘을 바라보며 나지막이 말했다.",
+      "reading": "\"jeo-nyeong-no-eul-i o-neul-tta-ra yu-nan-hi ye-ppeu-ne-yo.\" gyu-hyeon-i nan-gan-e pal-eul gi-daen chae ha-neul-eul ba-ra-bo-myeo na-ji-mag-i mal-haet-da.",
+      "en": "\"The sunset looks especially pretty today.\" Kyuhyun said quietly, leaning on the railing and gazing up at the sky.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "\"슬슬 오늘 하루도 마무리해야겠죠?\" 그가 몸을 돌려 나를 바라보았다. \"오늘 하루 어땠어요, 아가씨?\"",
+      "reading": "\"seul-seul o-neul ha-ru-do ma-mu-ri-hae-ya-get-jyo?\" geu-ga mom-eul dol-lyeo na-reul ba-ra-bo-at-da. \"o-neul ha-ru eo-ttaess-eo-yo, a-ga-ssi?\"",
+      "en": "\"Guess it's about time we wrap up the day too, huh?\" He turned to look at me. \"How was your day today, miss?\"",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "\"정말 즐거웠어요. 아침부터 지금까지, 다요.\" 내 대답에 그는 잠깐 말이 없다가, 어색하게 헛기침을 했다.",
+      "reading": "\"jeong-mal jeul-geo-wo-sseo-yo. a-chim-bu-teo ji-geum-kka-ji, da-yo.\" nae dae-dab-e geu-neun jam-kkan mal-i eob-da-ga, eo-saek-ha-ge heot-gi-chim-eul haet-da.",
+      "en": "\"I really had fun. From this morning all the way until now, all of it.\" At my answer, he went quiet for a moment, then cleared his throat awkwardly."
+    },
+    {
+      "text": "\"…이런 평범한 하루도, 가끔은 되게 소중하네요.\" 그가 낮은 목소리로 중얼거리더니, 이내 장난스러운 얼굴로 돌아왔다. \"라고, 방금 잠깐 진지해졌던 걸로 해두죠.\"",
+      "reading": "\"…i-reon pyeong-beom-han ha-ru-do, ga-kkeum-eun doe-ge so-jung-ha-ne-yo.\" geu-ga naj-eun mok-so-ri-ro jung-eol-geo-ri-deo-ni, i-nae jang-nan-seu-reo-un eol-gul-lo dol-a-wat-da. \"ra-go, bang-geum jam-kkan jin-ji-hae-jyeot-deon geol-lo hae-du-jyo.\"",
+      "en": "\"...Even an ordinary day like this can feel really precious sometimes.\" He murmured in a low voice, then quickly slipped back into his teasing expression. \"Let's just say I got a little serious there for a second.\"",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "언덕을 내려와 집 앞 골목까지, 그는 끝까지 나를 배웅했다. 대문 앞에 멈춰 선 그가 두 손을 주머니에 찔러 넣으며 씩 웃었다.",
+      "reading": "eon-deog-eul nae-ryeo-wa jib ap gol-mok-kka-ji, geu-neun kkeut-kka-ji na-reul bae-ung-haet-da. dae-mun ap-e meom-chwo seon geu-ga du son-eul ju-meo-ni-e jjil-leo neoh-eu-myeo ssik us-eot-da.",
+      "en": "All the way down the hill and to the alley in front of my house, he walked me home the whole way. Stopping at the gate, he stuck both hands in his pockets and grinned.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "\"잘 자요, 내일 봐요.\" 그가 가볍게 손을 흔들고 돌아섰다. 멀어지는 그의 뒷모습을 보며, 나는 오늘 하루가 오래도록 기억에 남을 것 같다고 생각했다.",
+      "reading": "\"jal ja-yo, nae-il bwa-yo.\" geu-ga ga-byeop-ge son-eul heun-deul-go dol-a-seot-da. meol-eo-ji-neun geu-ui dwit-mo-seub-eul bo-myeo, na-neun o-neul ha-ru-ga o-rae-do-rok gi-eog-e nam-eul geot gat-da-go saeng-gak-haet-da.",
+      "en": "\"Good night, see you tomorrow.\" He waved lightly and turned away. Watching his figure grow smaller in the distance, I thought that today would stay in my memory for a long time.",
+      "highlight_word_id": "w05"
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "하루를 마무리하다", "reading": "ha-ru-reul ma-mu-ri-ha-da", "meaning": "to wrap up the day", "example": "이제 하루를 마무리할 시간이에요.", "example_reading": "i-je ha-ru-reul ma-mu-ri-hal si-gan-i-e-yo", "example_en": "It's time to wrap up the day now." },
+    { "id": "w02", "word": "저녁노을", "reading": "jeo-nyeong-no-eul", "meaning": "evening sunset glow", "example": "저녁노을이 정말 예뻐요.", "example_reading": "jeo-nyeong-no-eul-i jeong-mal ye-ppeo-yo", "example_en": "The evening sunset is really pretty." },
+    { "id": "w03", "word": "배웅하다", "reading": "bae-ung-ha-da", "meaning": "to see someone off", "example": "집 앞까지 배웅해 줬어요.", "example_reading": "jib ap-kka-ji bae-ung-hae jwoss-eo-yo", "example_en": "He walked me all the way to my door." },
+    { "id": "w04", "word": "소중하다", "reading": "so-jung-ha-da", "meaning": "to be precious", "example": "오늘 하루가 참 소중했어요.", "example_reading": "o-neul ha-ru-ga cham so-jung-haess-eo-yo", "example_en": "Today was truly precious." },
+    { "id": "w05", "word": "잘 자요", "reading": "jal ja-yo", "meaning": "good night", "example": "잘 자요, 내일 봐요.", "example_reading": "jal ja-yo, nae-il bwa-yo", "example_en": "Good night, see you tomorrow." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "오늘 하루 어땠어요?", "reading": "o-neul ha-ru eo-ttaess-eo-yo?", "en": "How was your day today?" },
+    { "id": "s02", "ko": "오늘도 수고했어요.", "reading": "o-neul-do su-go-haess-eo-yo.", "en": "Good work today too." },
+    { "id": "s03", "ko": "조심히 들어가요.", "reading": "jo-sim-hi deul-eo-ga-yo.", "en": "Get home safe." },
+    { "id": "s04", "ko": "오늘 정말 즐거웠어요.", "reading": "o-neul jeong-mal jeul-geo-wo-sseo-yo.", "en": "I really had fun today." },
+    { "id": "s05", "ko": "잘 자요, 내일 봐요.", "reading": "jal ja-yo, nae-il bwa-yo.", "en": "Good night, see you tomorrow." }
+  ]
+}

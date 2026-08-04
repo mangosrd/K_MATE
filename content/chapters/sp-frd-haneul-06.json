@@ -1,0 +1,62 @@
+{
+  "id": "sp-frd-haneul-06",
+  "character_id": "haneul",
+  "title": "고민 상담과 깊은 우정",
+  "emoji": "🫂",
+  "story": [
+    {
+      "text": "전주천을 따라 걷는 밤, 물소리만 낮게 울렸다. 평소와 달리 말이 없는 나를, 하늘이 힐끗 쳐다봤다.",
+      "reading": "jeon-ju-cheon-eul tta-ra geot-neun bam, mul-so-ri-man nat-ge ul-lyeot-da. pyeong-so-wa dal-li mal-i eop-neun na-reul, ha-neul-i hil-kkeut chyeo-da-bwat-da.",
+      "en": "Walking along Jeonjucheon stream at night, only the low sound of water echoed. Haneul glanced over at me, uncharacteristically quiet."
+    },
+    {
+      "text": "\"무슨 고민 있어?\" 그가 대뜸 물었다. 돌려 말하는 법이 없는 그다웠다.",
+      "reading": "mu-seun go-min iss-eo? geu-ga dae-tteum mul-eot-da. dol-lyeo mal-ha-neun beob-i eop-neun geu-da-wot-da.",
+      "en": "\"You've got some kind of worry, don't you?\" he asked, straight out. So like him, never one to beat around the bush.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "나는 잠시 망설이다, 요즘 마음 한구석을 짓누르던 이야기를 조금씩 털어놓기 시작했다. 잘하고 있는 건지, 이 길이 맞는 건지 모르겠다고.",
+      "reading": "na-neun jam-si mang-seol-i-da, yo-jeum ma-eum han-gu-seog-eul jin-nu-reu-deon i-ya-gi-reul jo-geum-ssik teol-eo-noh-gi si-jak-haet-da. jal-ha-go it-neun geon-ji, i gil-i maj-neun geon-ji mo-reu-get-da-go.",
+      "en": "I hesitated for a moment, then slowly began to open up about what had been weighing on a corner of my mind lately — that I didn't know if I was doing okay, if this was even the right path.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "하늘은 아무 말 없이 듣기만 했다. 다 듣고 나서야 짧게 말했다. \"정답 몰라도 돼. 그냥 곁에 있을 테니까.\"",
+      "reading": "ha-neul-eun a-mu mal eop-si deut-gi-man haet-da. da deut-go na-seo-ya jjalb-ge mal-haet-da. jeong-dap mol-la-do dwae. geu-nyang gyeot-e iss-eul te-ni-kka.",
+      "en": "Haneul just listened, without a word. Only after I finished did he say, simply, \"You don't have to know the answer. I'll just stay by your side.\"",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "그는 손에 쥐고 있던 따뜻한 캔 커피를 아무 말 없이 내밀었다. \"위로한다\"는 말 한마디 없이도, 그 방식이 그를 닮아 있었다.",
+      "reading": "geu-neun son-e jwi-go it-deon tta-tteut-han kaen keo-pi-reul a-mu mal eop-si nae-mil-eot-da. wi-ro-han-da-neun mal han-ma-di eop-si-do, geu bang-sig-i geu-reul dalm-a iss-eot-da.",
+      "en": "Wordlessly, he held out the warm canned coffee he'd been holding. Without ever saying the words \"I'm comforting you,\" this quiet gesture was exactly like him.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "\"진심으로 하는 말인데, 넌 지금도 충분히 잘하고 있어.\" 낮은 목소리가 물소리에 섞여 들렸다. 흔치 않은 그의 진심이 마음 깊이 박혔다.",
+      "reading": "jin-sim-eu-ro ha-neun mal-in-de, neon ji-geum-do chung-bun-hi jal-ha-go iss-eo. naj-eun mok-so-ri-ga mul-so-ri-e seokk-yeo deul-lyeot-da. heun-chi anh-eun geu-ui jin-sim-i ma-eum gip-i bak-hyeot-da.",
+      "en": "\"I mean this sincerely — you're already doing plenty well right now.\" His low voice mixed in with the sound of the water. His rare sincerity sank deep into my heart.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "강바람이 선선하게 불었다. 말 몇 마디 나눴을 뿐인데, 마음 한구석이 훨씬 가벼워져 있었다. 이런 게 진짜 친구구나, 싶었다.",
+      "reading": "gang-ba-ram-i seon-seon-ha-ge bul-eot-da. mal myeot ma-di na-nwoss-eul ppun-in-de, ma-eum han-gu-seog-i hwol-ssin ga-byeo-wo-jyeo iss-eot-da. i-reon ge jin-jja chin-gu-gu-na, sip-eot-da.",
+      "en": "A cool breeze drifted off the river. We'd only exchanged a few words, but the weight on my mind felt so much lighter. This, I thought, is what a real friend is."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "고민", "reading": "go-min", "meaning": "worry, concern", "example": "요즘 고민이 많아요.", "example_reading": "yo-jeum go-min-i man-a-yo", "example_en": "I have a lot on my mind lately." },
+    { "id": "w02", "word": "털어놓다", "reading": "teol-eo-noh-da", "meaning": "to open up, confess (a worry)", "example": "친구에게 고민을 털어놓았다.", "example_reading": "chin-gu-e-ge go-min-eul teol-eo-noh-at-da", "example_en": "I opened up about my worries to my friend." },
+    { "id": "w03", "word": "위로하다", "reading": "wi-ro-ha-da", "meaning": "to comfort, console", "example": "그는 조용히 나를 위로해 줬다.", "example_reading": "geu-neun jo-yong-hi na-reul wi-ro-hae jwot-da", "example_en": "He quietly comforted me." },
+    { "id": "w04", "word": "진심", "reading": "jin-sim", "meaning": "sincerity, true heart", "example": "진심으로 고마워.", "example_reading": "jin-sim-eu-ro go-ma-wo", "example_en": "Thank you, sincerely." },
+    { "id": "w05", "word": "곁에 있다", "reading": "gyeot-e it-da", "meaning": "to be by someone's side", "example": "힘들 때 곁에 있어 줘서 고마워.", "example_reading": "him-deul ttae gyeot-e iss-eo jwo-seo go-ma-wo", "example_en": "Thanks for being by my side when things were hard." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "요즘 고민이 많아요.", "reading": "yo-jeum go-min-i man-a-yo", "en": "I have a lot on my mind lately." },
+    { "id": "s02", "ko": "친구에게 고민을 털어놓았다.", "reading": "chin-gu-e-ge go-min-eul teol-eo-noh-at-da", "en": "I opened up about my worries to my friend." },
+    { "id": "s03", "ko": "그는 조용히 나를 위로해 줬다.", "reading": "geu-neun jo-yong-hi na-reul wi-ro-hae jwot-da", "en": "He quietly comforted me." },
+    { "id": "s04", "ko": "진심으로 고마워.", "reading": "jin-sim-eu-ro go-ma-wo", "en": "Thank you, sincerely." },
+    { "id": "s05", "ko": "힘들 때 곁에 있어 줘서 고마워.", "reading": "him-deul ttae gyeot-e iss-eo jwo-seo go-ma-wo", "en": "Thanks for being by my side when things were hard." }
+  ]
+}

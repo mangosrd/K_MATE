@@ -1,0 +1,93 @@
+{
+  "id": "sp-day-sunwoo-09",
+  "character_id": "sunwoo",
+  "title": "기사님이 아시는 지름길",
+  "emoji": "🚕",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "약속 시간이 코앞인데 버스는 감감무소식이었다. 선우가 도로 쪽으로 손을 번쩍 들며 택시를 잡았다.",
+      "reading": "yak-sok si-gan-i ko-ap-in-de beo-seu-neun gam-gam-mu-so-sig-i-eot-da. seon-u-ga do-ro jjog-eu-ro son-eul beon-jjeok deul-myeo taek-si-reul jab-at-da.",
+      "en": "Our appointment time was right around the corner, but there was no sign of the bus. Sunwoo shot his hand up toward the road and hailed a taxi."
+    },
+    {
+      "text": "\"기사님, 광안리 쪽으로 가주세요.\" 그가 문을 열며 나부터 태우고는 재빨리 목적지를 말했다.",
+      "reading": "\"gi-sa-nim, gwang-an-ri jjog-eu-ro ga-ju-se-yo.\" geu-ga mun-eul yeol-myeo na-bu-teo tae-u-go-neun jae-ppal-li mok-jeok-ji-reul mal-haet-da.",
+      "en": "\"Sir, please head toward Gwangalli.\" He opened the door, got me in first, and quickly told the driver our destination.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "\"목적지까지 시간 얼마나 걸릴까요?\" 내가 조심스레 묻자 기사님이 웃으며 대답했다. \"금방입니다, 지름길로 가면 되니까요.\"",
+      "reading": "\"mok-jeok-ji-kka-ji si-gan eol-ma-na geol-lil-kka-yo?\" nae-ga jo-sim-seu-re mut-ja gi-sa-nim-i us-eu-myeo dae-dap-haet-da. \"geum-bang-im-ni-da, ji-reum-gil-lo ga-myeon doe-ni-kka-yo.\"",
+      "en": "\"How long will it take to get to our destination?\" I asked carefully, and the driver answered with a laugh. \"It'll be quick, we'll take a shortcut.\"",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "내비게이션 화면 속 파란 선이 낯선 골목으로 안내하자 선우가 고개를 갸웃했다. \"어? 이 길 맞나?\"",
+      "reading": "nae-bi-ge-i-syeon hwa-myeon sok pa-ran seon-i nat-seon gol-mog-eu-ro an-nae-ha-ja seon-u-ga go-gae-reul gya-ut-haet-da. \"eo? i gil mat-na?\"",
+      "en": "As the blue line on the navigation screen guided us into an unfamiliar alley, Sunwoo tilted his head. \"Huh? Is this the right way?\"",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "\"기사님이 아시는 지름길이 더 빠릅니다.\" 기사님의 자신만만한 말에 선우도 순순히 고개를 끄덕였다.",
+      "reading": "\"gi-sa-nim-i a-si-neun ji-reum-gil-i deo ppa-reum-ni-da.\" gi-sa-nim-ui ja-sin-man-man-han mal-e seon-u-do sun-sun-hi go-gae-reul kkeu-deok-yeot-da.",
+      "en": "\"The shortcut I know is faster.\" At the driver's confident words, Sunwoo obediently nodded along.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "택시가 목적지 앞에 멈춰 서자, 선우는 재빨리 지갑을 꺼내 요금을 계산했다. \"내가 낼게, 오늘은.\"",
+      "reading": "taek-si-ga mok-jeok-ji ap-e meom-chwo seo-ja, seon-u-neun jae-ppal-li ji-gab-eul kkeo-nae yo-geum-eul gye-san-haet-da. \"nae-ga nael-ge, o-neul-eun.\"",
+      "en": "As the taxi pulled up in front of our destination, Sunwoo quickly pulled out his wallet and paid the fare. \"I'll pay, today.\"",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "\"단어랑 대화, 지름길 찾듯 재밌게 풀어봐라.\"",
+      "reading": "\"dan-eo-rang dae-hwa, ji-reum-gil chat-deut jae-mi-it-ge pul-eo-bwa-ra.\"",
+      "en": "\"Go through the words and conversation as if you're finding a shortcut — have fun with it.\""
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "기사님", "reading": "gi-sa-nim", "meaning": "driver (respectful term of address)", "example": "택시 기사님께 감사 인사를 드렸다.", "example_reading": "taek-si gi-sa-nim-kke gam-sa in-sa-reul deu-ryeot-da", "example_en": "I thanked the taxi driver." },
+    { "id": "w02", "word": "목적지", "reading": "mok-jeok-ji", "meaning": "destination", "example": "내비게이션에 목적지를 입력했다.", "example_reading": "nae-bi-ge-i-syeon-e mok-jeok-ji-reul ib-lyeok-haet-da", "example_en": "I entered the destination into the navigation app." },
+    { "id": "w03", "word": "지름길", "reading": "ji-reum-gil", "meaning": "shortcut", "example": "이 골목이 지름길이라 더 빠르다.", "example_reading": "i gol-mog-i ji-reum-gil-i-ra deo ppa-reu-da", "example_en": "This alley is a shortcut, so it's faster." },
+    { "id": "w04", "word": "내비게이션", "reading": "nae-bi-ge-i-syeon", "meaning": "navigation (GPS system/app)", "example": "내비게이션 없이는 길을 찾기 어렵다.", "example_reading": "nae-bi-ge-i-syeon eop-si-neun gil-eul chat-gi eo-ryeop-da", "example_en": "It's hard to find your way without navigation." },
+    { "id": "w05", "word": "요금", "reading": "yo-geum", "meaning": "fare, fee", "example": "택시 요금이 생각보다 많이 나왔다.", "example_reading": "taek-si yo-geum-i saeng-gak-bo-da man-i na-wat-da", "example_en": "The taxi fare came out higher than expected." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "택시 기사님께 목적지를 말씀드렸다.", "reading": "taek-si gi-sa-nim-kke mok-jeok-ji-reul mal-sseum-deu-ryeot-da", "en": "I told the taxi driver our destination." },
+    { "id": "s02", "ko": "이 길이 지름길이라 더 빠르다.", "reading": "i gil-i ji-reum-gil-i-ra deo ppa-reu-da", "en": "This road is a shortcut, so it's faster." },
+    { "id": "s03", "ko": "내비게이션이 갑자기 길을 잘못 안내했다.", "reading": "nae-bi-ge-i-syeon-i gap-ja-gi gil-eul jal-mot an-nae-haet-da", "en": "The navigation suddenly gave the wrong directions." },
+    { "id": "s04", "ko": "요금이 생각보다 많이 나왔다.", "reading": "yo-geum-i saeng-gak-bo-da man-i na-wat-da", "en": "The fare came out to more than expected." },
+    { "id": "s05", "ko": "목적지에 거의 다 왔다.", "reading": "mok-jeok-ji-e geo-ui da wat-da", "en": "We've almost arrived at our destination." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "선우", "text": "기사님, 광안리 민락수변공원 쪽으로 가주이소.", "reading": "gi-sa-nim, gwang-an-ri mil-lak-su-byeon-gong-won jjog-eu-ro ga-ju-i-so.", "en": "Sir, please head toward Minrak Waterside Park in Gwangalli." },
+        { "speaker": "승객", "text": "이 시간에 그쪽 길 안 막힐까?", "reading": "i si-gan-e geu-jjok gil an mak-hil-kka?", "en": "Won't that road be jammed at this hour?" },
+        { "speaker": "선우", "text": "기사님이 지름길 아신다니까 금방 갈 끼다.", "reading": "gi-sa-nim-i ji-reum-gil a-sin-da-ni-kka geum-bang gal kki-da.", "en": "The driver knows a shortcut, so we'll get there quickly." },
+        { "speaker": "승객", "text": "그럼 다행이고. 늦으면 큰일이거든.", "reading": "geu-reom da-haeng-i-go. neuj-eu-myeon keun-il-i-geo-deun.", "en": "That's a relief then. It'd be a big problem if we're late." }
+      ],
+      "question": "선우와 승객이 향하고 있는 목적지는 어디인가요?",
+      "question_en": "Where are Sunwoo and the passenger headed?",
+      "correct_answer": "광안리 민락수변공원",
+      "options": ["광안리 민락수변공원", "해운대 해수욕장", "부산역", "김해공항"],
+      "explanation": "선우는 기사님께 광안리 민락수변공원 쪽으로 가 달라고 목적지를 말했습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "승객", "text": "어? 내비가 자꾸 이상한 골목으로 가라는데?", "reading": "eo? nae-bi-ga ja-kku i-sang-han gol-mog-eu-ro ga-ra-neun-de?", "en": "Huh? The navigation keeps telling us to go down some weird alley?" },
+        { "speaker": "선우", "text": "가끔 저래 오류난다. 기사님, 그냥 아시는 길로 가도 될까요?", "reading": "ga-kkeum jeo-rae o-ryu-nan-da. gi-sa-nim, geu-nyang a-si-neun gil-lo ga-do doel-kka-yo?", "en": "It glitches like that sometimes. Sir, could you just take the way you know?" },
+        { "speaker": "승객", "text": "그럽시다, 내가 이 동네 삼십 년 살았어요.", "reading": "geu-reop-si-da, nae-ga i dong-ne sam-sip nyeon sal-at-eo-yo.", "en": "Sure thing, I've lived in this neighborhood for thirty years." },
+        { "speaker": "선우", "text": "역시 사람이 낫다니까.", "reading": "yeok-si sa-ram-i nat-da-ni-kka.", "en": "See, a person really is better than a machine." }
+      ],
+      "question": "내비게이션에 문제가 생겼을 때 세 사람은 어떻게 했나요?",
+      "question_en": "What did the three of them do when the navigation had a problem?",
+      "correct_answer": "기사님이 아는 길로 가기로 했다",
+      "options": ["기사님이 아는 길로 가기로 했다", "내비게이션 앱을 새로 깔았다", "택시에서 내려서 걸어갔다", "다른 택시로 갈아탔다"],
+      "explanation": "내비게이션이 이상한 길을 안내하자 세 사람은 삼십 년간 동네에 산 기사님이 아는 길로 가기로 했습니다."
+    }
+  ]
+}

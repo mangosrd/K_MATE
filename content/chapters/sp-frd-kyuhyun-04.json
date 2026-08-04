@@ -1,0 +1,67 @@
+{
+  "id": "sp-frd-kyuhyun-04",
+  "character_id": "kyuhyun",
+  "title": "노래방에서는 내가 진리다",
+  "emoji": "🎤",
+  "story": [
+    {
+      "text": "저녁을 든든히 먹고 나오니 규현이 골목 끝 노래방 간판을 가리켰다. \"2차는 여기예요, 아가씨. 이의 있어요?\"",
+      "reading": "jeo-nyeog-eul deun-deun-hi meok-go na-o-ni gyu-hyeon-i gol-mok kkeut no-rae-bang gan-pan-eul ga-ri-kyeot-da. \"i-cha-neun yeo-gi-ye-yo, a-ga-ssi. i-ui iss-eo-yo?\"",
+      "en": "After eating dinner until we were full, Kyuhyun pointed to a karaoke sign at the end of the alley as we stepped outside. \"Round two is here, miss. Any objections?\"",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "작은 방에 들어서자마자 그는 리모컨을 낚아채더니 능숙하게 신청곡 번호를 눌렀다. \"제일 먼저 부르는 건 접니다.\"",
+      "reading": "jag-eun bang-e deul-eo-seo-ja-ma-ja geu-neun ri-mo-kon-eul nakk-a-chae-deo-ni neung-suk-ha-ge sin-cheong-gok beon-ho-reul nul-leot-da. \"je-il meon-jeo bu-reu-neun geon jeom-ni-da.\"",
+      "en": "The moment we stepped into the small room, he snatched up the remote and skillfully punched in a request number. \"I'm singing first.\"",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "전주가 흐르자 그는 마이크를 고쳐 잡고 눈을 지그시 감으며 낮고 굵은 목소리로 열창하기 시작했다.",
+      "reading": "jeon-ju-ga heu-reu-ja geu-neun ma-i-keu-reul go-chyeo jap-go nun-eul ji-geu-si gam-eu-myeo nat-go gulg-eun mok-so-ri-ro yeol-chang-ha-gi si-jak-haet-da.",
+      "en": "As the intro played, he adjusted his grip on the mic, closed his eyes gently, and began singing his heart out in a low, deep voice.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "노래가 끝나자 나는 얼떨떨한 얼굴로 박수를 쳤다. \"기장님, 이 정도면 딴따라 하셔도 되겠는데요?\" 그는 헛기침을 하며 마이크를 슬쩍 내려놓았다.",
+      "reading": "no-rae-ga kkeut-na-ja na-neun eol-tteol-tteol-han eol-gul-lo bak-su-reul chyeot-da. \"gi-jang-nim, i jeong-do-myeon ttan-tta-ra ha-syeo-do doe-get-neun-de-yo?\" geu-neun heot-gi-chim-eul ha-myeo ma-i-keu-reul seul-jjeok nae-ryeo-noh-at-da.",
+      "en": "When the song ended, I clapped, my expression a mix of surprise and awe. \"Captain, at this rate you could go pro.\" He cleared his throat and quietly set the mic down."
+    },
+    {
+      "text": "\"그래서, 아가씨는 안 부를 거예요?\" 그가 리모컨을 내밀며 씩 웃었다. 나는 마지못해 신청곡 하나를 눌렀다.",
+      "reading": "\"geu-rae-seo, a-ga-ssi-neun an bu-reul geo-ye-yo?\" geu-ga ri-mo-kon-eul nae-mil-myeo ssik us-eot-da. na-neun ma-ji-mot-hae sin-cheong-gok ha-na-reul nul-leot-da.",
+      "en": "\"So? Aren't you gonna sing, miss?\" He held out the remote with a grin. Reluctantly, I punched in a request of my own."
+    },
+    {
+      "text": "막상 노래를 시작하자 음정이 제멋대로 흔들렸다. 규현이 참지 못하고 웃음을 터뜨렸다. \"괜찮아요, 음치도 매력이죠.\"",
+      "reading": "mak-sang no-rae-reul si-jak-ha-ja eum-jeong-i je-meot-dae-ro heun-deul-lyeot-da. gyu-hyeon-i cham-ji mot-ha-go us-eum-eul teo-tteu-lyeot-da. \"gwaen-chan-a-yo, eum-chi-do mae-lyeok-i-jyo.\"",
+      "en": "But once I actually started singing, my pitch wobbled all over the place. Kyuhyun couldn't hold it in and burst out laughing. \"It's fine, being tone-deaf has its own charm.\"",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "후렴구에서 그가 슬쩍 탬버린을 흔들며 화음을 넣어 주었다. 두 목소리가 맞아떨어지는 순간, 온몸에 소름이 돋았다.",
+      "reading": "hu-lyeom-gu-e-seo geu-ga seul-jjeok taem-beo-lin-eul heun-deul-myeo hwa-eum-eul neoh-eo ju-eot-da. du mok-so-ri-ga maj-a-tteol-eo-ji-neun sun-gan, on-mom-e so-reum-i dod-at-da.",
+      "en": "At the chorus, he quietly shook a tambourine and slipped in harmony. The moment our two voices lined up perfectly, chills ran down my whole body.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "곡이 끝나기 무섭게 규현은 다시 번호판을 두드렸다. \"한 곡만 더요. 오늘 밤은 안 끝나요, 아가씨.\"",
+      "reading": "gog-i kkeut-na-gi mu-seop-ge gyu-hyeon-eun da-si beon-ho-pan-eul du-deu-lyeot-da. \"han gok-man deo-yo. o-neul bam-eun an kkeut-na-yo, a-ga-ssi.\"",
+      "en": "The instant the song ended, Kyuhyun was already tapping out another number. \"Just one more song. Tonight's not over yet, miss.\""
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "노래방", "reading": "no-rae-bang", "meaning": "karaoke room", "example": "우리 노래방 갈까?", "example_reading": "u-ri no-rae-bang gal-kka?", "example_en": "Shall we go to a karaoke room?" },
+    { "id": "w02", "word": "신청곡", "reading": "sin-cheong-gok", "meaning": "a requested song", "example": "신청곡 번호가 몇 번이에요?", "example_reading": "sin-cheong-gok beon-ho-ga myeot beon-i-e-yo?", "example_en": "What's the number for the requested song?" },
+    { "id": "w03", "word": "음치", "reading": "eum-chi", "meaning": "a person who is tone-deaf, can't sing well", "example": "저는 완전 음치예요.", "example_reading": "jeo-neun wan-jeon eum-chi-ye-yo", "example_en": "I'm totally tone-deaf." },
+    { "id": "w04", "word": "소름", "reading": "so-reum", "meaning": "goosebumps, chills (often used as 소름 돋다, to get chills)", "example": "소름 돋았어!", "example_reading": "so-reum dod-at-eo!", "example_en": "I got goosebumps!" },
+    { "id": "w05", "word": "열창하다", "reading": "yeol-chang-ha-da", "meaning": "to sing passionately, with all one's heart", "example": "그는 무대에서 열창했다.", "example_reading": "geu-neun mu-dae-e-seo yeol-chang-haet-da", "example_en": "He sang his heart out on stage." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "오늘은 노래방 가자!", "reading": "o-neul-eun no-rae-bang ga-ja!", "en": "Let's go to karaoke today!" },
+    { "id": "s02", "ko": "신청곡 번호 좀 알려 줄래?", "reading": "sin-cheong-gok beon-ho jom al-lyeo jul-lae?", "en": "Can you tell me the song request number?" },
+    { "id": "s03", "ko": "나 완전 음치야.", "reading": "na wan-jeon eum-chi-ya.", "en": "I'm totally tone-deaf." },
+    { "id": "s04", "ko": "그 노래 듣고 소름 돋았어.", "reading": "geu no-rae deut-go so-reum dod-at-eo.", "en": "I got chills listening to that song." },
+    { "id": "s05", "ko": "오늘 진짜 열창했다.", "reading": "o-neul jin-jja yeol-chang-haet-da.", "en": "I really sang my heart out today." }
+  ]
+}

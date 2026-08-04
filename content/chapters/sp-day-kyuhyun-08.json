@@ -1,0 +1,62 @@
+{
+  "id": "sp-day-kyuhyun-08",
+  "character_id": "kyuhyun",
+  "title": "이사떡 돌리는 날",
+  "emoji": "🏠",
+  "story": [
+    {
+      "text": "아직 채 정리되지 않은 상자들 사이로, 초인종이 울렸다. 문을 열자 규현이 커다란 종이 상자를 품에 안고 서 있었다.",
+      "reading": "a-jik chae jeong-ni-doe-ji anh-eun sang-ja-deul sa-i-ro, cho-in-jong-i ul-lyeot-da. mun-eul yeol-ja gyu-hyeon-i keo-da-ran jong-i sang-ja-reul pum-e an-go seo iss-eot-da.",
+      "en": "Amid still half-unpacked boxes, the doorbell rang. When I opened the door, Kyuhyun was standing there holding a large box in his arms."
+    },
+    {
+      "text": "\"그래서, 집들이 선물은 준비했어요?\" 그가 씩 웃으며 물었다. \"저는 이미 준비해 왔는데.\"",
+      "reading": "\"geu-rae-seo, jib-deul-i seon-mul-eun jun-bi-haet-eo-yo?\" geu-ga ssik us-eu-myeo mul-eot-da. \"jeo-neun i-mi jun-bi-hae wat-neun-de.\"",
+      "en": "\"So, did you prepare a housewarming gift?\" He grinned and asked. \"I already brought mine, you know.\"",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "상자를 열자 붉은 팥고물이 소복하게 덮인 시루떡이 나왔다. \"이사떡이에요. 옛날부터 이웃한테 이거 돌리면서 인사하는 거거든요.\"",
+      "reading": "sang-ja-reul yeol-ja bulg-eun pat-go-mul-i so-bok-ha-ge deop-in si-ru-tteok-i na-wat-da. \"i-sa-tteok-i-e-yo. yet-nal-bu-teo i-us-han-te i-geo dol-li-myeon-seo in-sa-ha-neun geo-geo-deun-yo.\"",
+      "en": "Opening the box revealed steamed rice cake, generously covered in red bean topping. \"It's moving-in rice cake. It's a tradition — you give this to your neighbors as a way of introducing yourself.\"",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "\"자, 그럼 옆집부터 가볼까요?\" 그가 앞장서서 복도로 나섰다. \"새로 이사 온 이웃한테 얼굴도장 찍는 거, 생각보다 중요해요.\"",
+      "reading": "\"ja, geu-reom yeop-jib-bu-teo ga-bol-kka-yo?\" geu-ga ap-jang-seo-seo bok-do-ro na-seot-da. \"sae-ro i-sa on i-us-han-te eol-gul-do-jang jjik-neun geo, saeng-gak-bo-da jung-yo-hae-yo.\"",
+      "en": "\"Alright, shall we start with the place next door?\" He led the way out into the hallway. \"Making a good first impression on your new neighbors matters more than you'd think.\"",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "옆집 문이 열리자 나는 떡 접시를 내밀며 어색하게 인사했다. \"안녕하세요, 새로 이사 왔어요. 앞으로 잘 부탁드려요.\" 규현이 옆에서 흐뭇하게 지켜보고 있었다.",
+      "reading": "yeop-jib mun-i yeol-li-ja na-neun tteok jeop-si-reul nae-mil-myeo eo-saek-ha-ge in-sa-haet-da. \"an-nyeong-ha-se-yo, sae-ro i-sa wat-eo-yo. ap-eu-ro jal bu-tak-deu-ryeo-yo.\" gyu-hyeon-i yeop-e-seo heu-mut-ha-ge ji-kyeo-bo-go iss-eot-da.",
+      "en": "When the neighbor's door opened, I held out the plate of rice cake and greeted them awkwardly. \"Hello, I just moved in. I look forward to getting along with you.\" Kyuhyun watched beside me with a satisfied look.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "이웃 아주머니가 웃으며 떡을 받더니, 장난스럽게 한마디 덧붙였다. \"층간소음만 조심하면 돼요, 다른 건 걱정 없어요.\" 규현이 짐짓 정색하며 끼어들었다. \"저희 아가씨는 발소리도 없이 다니는데요.\"",
+      "reading": "i-us a-ju-meo-ni-ga us-eu-myeo tteog-eul bad-deo-ni, jang-nan-seu-reop-ge han-ma-di deot-but-yeot-da. \"cheung-gan-so-eum-man jo-sim-ha-myeon dwae-yo, da-reun geon geok-jeong eop-seo-yo.\" gyu-hyeon-i jim-jit jeong-saek-ha-myeo kki-eo-deul-eot-da. \"jeo-hui a-ga-ssi-neun bal-so-ri-do eop-si da-ni-neun-de-yo.\"",
+      "en": "The neighbor auntie smiled and took the rice cake, then teasingly added, \"Just watch out for noise between the floors, that's all.\" Kyuhyun cut in with mock seriousness. \"This lady walks around without even making a footstep, I'll have you know.\"",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "몇 집을 더 돌고 나서야 집으로 돌아왔다. 빈 상자를 정리하며 그가 말했다. \"이 정도면 나름 순조로운 첫 인사였네요.\" 그의 목소리에는 뿌듯함이 묻어 있었다.",
+      "reading": "myeot jib-eul deo dol-go na-seo-ya jib-eu-ro dol-a-wat-da. bin sang-ja-reul jeong-ni-ha-myeo geu-ga mal-haet-da. \"i jeong-do-myeon na-reum sun-jo-ro-un cheot in-sa-yeot-ne-yo.\" geu-ui mok-so-ri-e-neun ppu-deut-ham-i mud-eo iss-eot-da.",
+      "en": "After a few more doors, we finally came back home. As he folded up the empty box, he said, \"All in all, that was a pretty smooth first greeting.\" There was a note of quiet pride in his voice."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "집들이", "reading": "jib-deul-i", "meaning": "housewarming party", "example": "다음 주에 집들이를 할 거예요.", "example_reading": "da-eum ju-e jib-deul-i-reul hal geo-ye-yo", "example_en": "I'm going to have a housewarming party next week." },
+    { "id": "w02", "word": "이웃", "reading": "i-ut", "meaning": "neighbor", "example": "옆집 이웃과 인사를 나눴어요.", "example_reading": "yeop-jib i-ut-gwa in-sa-reul na-nwoss-eo-yo", "example_en": "I exchanged greetings with my next-door neighbor." },
+    { "id": "w03", "word": "인사하다", "reading": "in-sa-ha-da", "meaning": "to greet", "example": "새 이웃에게 인사했어요.", "example_reading": "sae i-us-e-ge in-sa-haess-eo-yo", "example_en": "I greeted my new neighbor." },
+    { "id": "w04", "word": "이사떡", "reading": "i-sa-tteok", "meaning": "moving-in rice cake (housewarming gift)", "example": "이사떡을 이웃에게 돌렸어요.", "example_reading": "i-sa-tteog-eul i-us-e-ge dol-lyeoss-eo-yo", "example_en": "I handed out moving-in rice cake to my neighbors." },
+    { "id": "w05", "word": "층간소음", "reading": "cheung-gan-so-eum", "meaning": "noise between floors", "example": "층간소음 때문에 조심하고 있어요.", "example_reading": "cheung-gan-so-eum ttae-mun-e jo-sim-ha-go iss-eo-yo", "example_en": "I'm being careful because of noise between floors." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "이사 온 지 얼마 안 됐어요.", "reading": "i-sa on ji eol-ma an dwaess-eo-yo.", "en": "I just moved in recently." },
+    { "id": "s02", "ko": "앞으로 잘 부탁드려요.", "reading": "ap-eu-ro jal bu-tak-deu-ryeo-yo.", "en": "I look forward to getting along with you." },
+    { "id": "s03", "ko": "떡 좀 드셔보세요.", "reading": "tteok jom deu-syeo-bo-se-yo.", "en": "Please try some rice cake." },
+    { "id": "s04", "ko": "시끄럽게 해서 죄송해요.", "reading": "si-kkeu-reop-ge hae-seo joe-song-hae-yo.", "en": "Sorry for being noisy." },
+    { "id": "s05", "ko": "필요한 거 있으면 말씀하세요.", "reading": "pil-yo-han geo iss-eu-myeon mal-sseum-ha-se-yo.", "en": "If you need anything, let me know." }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "id": "sp-day-kyuhyun-03",
+  "character_id": "kyuhyun",
+  "title": "편의점 꿀템 탐방",
+  "emoji": "🏪",
+  "story": [
+    {
+      "text": "해가 뉘엿뉘엿 지는 저녁, 동네 편의점의 환한 불빛이 골목을 밝히고 있었다.",
+      "reading": "hae-ga nwi-yeot-nwi-yeot ji-neun jeo-nyeok, dong-ne pyeon-ui-jeom-ui hwan-han bul-bit-i gol-mok-eul balk-hi-go iss-eot-da.",
+      "en": "As the sun set slowly in the evening, the bright lights of the neighborhood convenience store lit up the alley."
+    },
+    {
+      "text": "\"여기가 바로 제 아지트예요, 아가씨.\" 규현이 자동문을 지나며 씩 웃었다. \"편의점, 제대로 돌아본 적 없죠?\"",
+      "reading": "\"yeo-gi-ga ba-ro je a-ji-teu-ye-yo, a-ga-ssi.\" gyu-hyeon-i ja-dong-mun-eul ji-na-myeo ssik us-eot-da. \"pyeon-ui-jeom, je-dae-ro dol-a-bon jeok eop-jyo?\"",
+      "en": "\"This right here is my hideout, miss.\" Kyuhyun grinned as he passed through the automatic doors. \"You've never really explored a convenience store properly, have you?\"",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "그는 냉장 코너로 성큼성큼 걸어가더니 삼각김밥 하나를 집어 들었다. \"이게 참치마요예요. 편의점 오면 일단 이것부터 먹어야 되는데.\"",
+      "reading": "geu-neun naeng-jang ko-neo-ro seong-keum-seong-keum geol-eo-ga-deo-ni sam-gak-gim-bab ha-na-reul jib-eo deul-eot-da. \"i-ge cham-chi-ma-yo-ye-yo. pyeon-ui-jeom o-myeon il-dan i-geot-bu-teo meog-eo-ya doe-neun-de.\"",
+      "en": "He strode over to the refrigerated section and picked up a triangle-shaped rice ball. \"This is tuna mayo. If you come to a convenience store, you've got to eat this first.\"",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "\"자, 여기 이 노란 딱지 보이죠?\" 그가 음료수 진열대의 스티커를 가리켰다. \"이건 하나 사면 하나 더 주는 거예요. 이런 걸 놓치면 손해거든요.\"",
+      "reading": "\"ja, yeo-gi i no-ran ttak-ji bo-i-jyo?\" geu-ga eum-nyo-su jin-yeol-dae-ui seu-ti-keo-reul ga-ri-kyeot-da. \"i-geon ha-na sa-myeon ha-na deo ju-neun geo-ye-yo. i-reon geol not-chi-myeon son-hae-geo-deun-yo.\"",
+      "en": "\"See this yellow sticker here?\" He pointed at a sticker on the drink shelf. \"This means buy one, get one free. Missing a deal like this would be a real loss.\"",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "계산대 앞에 서자 그가 슬쩍 귀띔했다. \"이거 계산해 주세요, 하면 끝이에요. 어렵지 않죠?\"",
+      "reading": "gye-san-dae ap-e seo-ja geu-ga seul-jjeok gwi-ttim-haet-da. \"i-geo gye-san-hae ju-se-yo, ha-myeon kkeut-i-e-yo. eo-ryeop-ji anh-jyo?\"",
+      "en": "As we stood at the register, he whispered a tip. \"You just say, 'Please ring this up.' That's all there is to it. Not so hard, right?\"",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "직원이 물었다. \"봉투 필요하세요?\" 내가 우물쭈물하자 규현이 대신 대답했다. \"괜찮아요, 저희 둘이 나눠 들면 되니까요.\" 하고는 나를 향해 눈을 찡긋했다.",
+      "reading": "jig-won-i mul-eot-da. \"bong-tu pil-yo-ha-se-yo?\" nae-ga u-mul-jju-mul-ha-ja gyu-hyeon-i dae-sin dae-dab-haet-da. \"gwaen-chan-a-yo, jeo-hui dul-i na-nwo deul-myeon doe-ni-kka-yo.\" ha-go-neun na-reul hyang-hae nun-eul jjing-geut-haet-da.",
+      "en": "The clerk asked, \"Do you need a bag?\" As I hesitated, Kyuhyun answered for me. \"No thanks, we'll just split it between the two of us.\" Then he winked at me.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "편의점 앞 파라솔 아래 나란히 앉아 삼각김밥을 나눠 먹는 동안, 밤바람이 선선하게 불어왔다. 그가 낮게 웃으며 중얼거렸다. \"이런 게 은근히 재밌지 않아요?\"",
+      "reading": "pyeon-ui-jeom ap pa-ra-sol a-rae na-ran-hi anj-a sam-gak-gim-bab-eul na-nwo meong-neun dong-an, bam-ba-ram-i seon-seon-ha-ge bul-eo-wat-da. geu-ga nat-ge us-eu-myeo jung-eol-geo-ryeot-da. \"i-reon ge eun-geun-hi jae-mit-ji anh-a-yo?\"",
+      "en": "Sitting side by side under the parasol outside the store, sharing the rice ball, a cool night breeze drifted by. He chuckled quietly. \"Isn't this kind of thing secretly fun?\""
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "편의점", "reading": "pyeon-ui-jeom", "meaning": "convenience store", "example": "편의점에서 물을 샀다.", "example_reading": "pyeon-ui-jeom-e-seo mul-eul sat-da", "example_en": "I bought water at the convenience store." },
+    { "id": "w02", "word": "삼각김밥", "reading": "sam-gak-gim-bab", "meaning": "triangle rice ball (gimbap)", "example": "삼각김밥은 간단하고 맛있다.", "example_reading": "sam-gak-gim-bab-eun gan-dan-ha-go mas-it-da", "example_en": "Triangle gimbap is simple and delicious." },
+    { "id": "w03", "word": "계산하다", "reading": "gye-san-ha-da", "meaning": "to pay, to check out", "example": "카드로 계산했어요.", "example_reading": "ka-deu-ro gye-san-haet-eo-yo", "example_en": "I paid by card." },
+    { "id": "w04", "word": "봉투", "reading": "bong-tu", "meaning": "bag", "example": "봉투 하나 주세요.", "example_reading": "bong-tu ha-na ju-se-yo", "example_en": "Please give me a bag." },
+    { "id": "w05", "word": "원플러스원", "reading": "won-peul-leo-seu-won", "meaning": "buy one get one free (1+1)", "example": "이 라면은 원플러스원 행사 중이에요.", "example_reading": "i ra-myeon-eun won-peul-leo-seu-won haeng-sa jung-i-e-yo", "example_en": "This ramen is on a buy-one-get-one promotion." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "이거 계산해 주세요.", "reading": "i-geo gye-san-hae ju-se-yo.", "en": "Please ring this up." },
+    { "id": "s02", "ko": "봉투 필요하세요?", "reading": "bong-tu pil-yo-ha-se-yo?", "en": "Do you need a bag?" },
+    { "id": "s03", "ko": "이거 원플러스원이에요.", "reading": "i-geo won-peul-leo-seu-won-i-e-yo.", "en": "This is a buy-one-get-one item." },
+    { "id": "s04", "ko": "카드로 계산할게요.", "reading": "ka-deu-ro gye-san-hal-ge-yo.", "en": "I'll pay by card." },
+    { "id": "s05", "ko": "영수증 필요하세요?", "reading": "yeong-su-jeung pil-yo-ha-se-yo?", "en": "Do you need a receipt?" }
+  ]
+}

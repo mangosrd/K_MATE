@@ -48,21 +48,63 @@
 .profileName  { font-size: 18px; font-weight: 800; color: #fff; }
 .profileLevel { font-size: 12px; color: rgba(255,255,255,0.8); margin-top: 3px; }
 
-.profileCoin { text-align: right; }
+.profileCoin { text-align: right; display: block; text-decoration: none; }
 .coinNum     { font-size: 15px; font-weight: 800; color: #FFE068; }
 .coinLabel   { font-size: 10px; color: rgba(255,255,255,0.7); margin-top: 2px; }
 
-/* 메이트 카드 */
+/* 프리미엄 진입 카드 — 마이페이지에서 바로 구독 화면으로 갈 수 있는 상시 입구.
+   예전엔 잠긴 콘텐츠를 먼저 눌러야만(지도/채팅/학습에서 조건부로) 나와서 진입이
+   번거로웠다. */
+.premiumCard {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: 14px var(--space-lg);
+  border-radius: var(--radius-xl);
+  background: var(--gold-light);
+  border: 1px solid var(--gold);
+  text-decoration: none;
+}
+.premiumCardActive { background: var(--bg-surface); border-color: var(--border-subtle); }
+.premiumIcon { font-size: 24px; flex-shrink: 0; }
+.premiumInfo { flex: 1; min-width: 0; }
+.premiumTitle { font-size: 14px; font-weight: 800; color: var(--gold); }
+.premiumCardActive .premiumTitle { color: var(--text-primary); }
+.premiumSub { font-size: 11px; color: var(--text-muted); margin-top: 2px; }
+.premiumArrow { font-size: 12px; font-weight: 700; color: var(--gold); flex-shrink: 0; }
+.premiumCardActive .premiumArrow { color: var(--text-muted); }
+
+/* 메이트(기장) 카드 */
 .mateCard {
   display: flex;
   align-items: center;
   gap: var(--space-md);
-  background: #fff;
-  border: 1px solid #e2e8f0;
-  border-left: 4px solid var(--red);
+  background: var(--bg-base);
+  border: 1px solid var(--border-subtle);
+  border-left: 4px solid #FF8A3D;
   border-radius: var(--radius-lg);
   padding: var(--space-md);
   box-shadow: var(--shadow-xs);
+}
+
+.mateHeaderRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.changeMateBtn {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-secondary);
+  background: var(--bg-elevated);
+  border: none;
+  border-radius: var(--radius-full);
+  padding: 4px 10px;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .mateAvatar {
@@ -102,8 +144,8 @@
   flex-direction: column;
   align-items: center;
   gap: 2px;
-  background: #fff;
-  border: 1px solid #e2e8f0;
+  background: var(--bg-base);
+  border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
   padding: var(--space-md) var(--space-sm);
   box-shadow: var(--shadow-xs);
@@ -119,11 +161,11 @@
   display: flex;
   flex-direction: column;
   gap: 1px;
-  background: #e2e8f0;
+  background: var(--border-subtle);
   border-radius: var(--radius-lg);
   overflow: hidden;
   margin-top: var(--space-sm);
-  border: 1px solid #e2e8f0;
+  border: 1px solid var(--border-subtle);
   box-shadow: var(--shadow-xs);
 }
 
@@ -135,33 +177,115 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px var(--space-md);
-  background: #ffffff;
+  padding: 12px var(--space-md);
+  background: var(--bg-base);
   color: var(--text-primary);
-  font-size: 15px;
+  font-size: 14px;
   font-family: var(--font-sans);
   font-weight: 600;
   cursor: pointer;
+  text-decoration: none;
   transition: background var(--transition-fast);
   -webkit-tap-highlight-color: transparent;
 }
 
 .settingItem:hover {
-  background: #f8fafc;
+  background: var(--bg-surface);
+}
+
+.settingLeft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.settingIcon {
+  font-size: 18px;
+  width: 20px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.settingLabel {
+  color: var(--text-primary);
+}
+
+.settingLabelDanger {
+  color: var(--color-error);
+}
+
+.settingRight {
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .settingValue {
   font-size: 13px;
   font-weight: 600;
-  color: #64748b;
+  color: var(--text-secondary);
 }
 
 .settingChevron {
-  font-size: 20px;
-  color: #94a3b8;
+  font-size: 16px;
+  color: var(--text-muted);
 }
 
 .logoutBtn {
   color: var(--red) !important;
   font-weight: 700;
+}
+
+/* ── 광고 보기 코인 배너 ─────────────────────────────── */
+.adBanner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  padding: 12px var(--space-md);
+  border-radius: var(--radius-lg);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-xs);
+}
+
+.adBannerLeft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  min-width: 0;
+}
+
+.adBannerIcon {
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.adBannerTitle {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.adBannerSub {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 2px;
+  white-space: nowrap;
+}
+
+.adBannerBtn {
+  background: linear-gradient(135deg, #CD2E3A, #003478) !important;
+  color: #fff !important;
+  border: none !important;
+  font-weight: 700 !important;
+  flex-shrink: 0;
+  min-width: 52px;
+}
+
+.adBannerBtn:disabled {
+  background: var(--bg-elevated) !important;
+  color: var(--text-muted) !important;
+  cursor: not-allowed;
 }

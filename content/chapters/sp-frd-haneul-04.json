@@ -1,0 +1,62 @@
+{
+  "id": "sp-frd-haneul-04",
+  "character_id": "haneul",
+  "title": "노래방에서 신나게 부르기",
+  "emoji": "🎤",
+  "story": [
+    {
+      "text": "번화가의 노래방 간판이 알록달록하게 빛났다. 하늘은 익숙하게 앞장서서 작은 방 하나를 골랐다.",
+      "reading": "beon-hwa-ga-ui no-rae-bang gan-pan-i al-lok-dal-lok-ha-ge bit-nat-da. ha-neul-eun ik-suk-ha-ge ap-jang-seo-seo jak-eun bang ha-na-reul gol-lat-da.",
+      "en": "The noraebang sign in the busy street glowed in bright colors. Haneul strode ahead like he'd done this a hundred times and picked out a small room."
+    },
+    {
+      "text": "그는 리모컨을 집더니 능숙하게 번호를 눌렀다. \"일단 내가 하나 예약해놨어.\" 첫 곡부터 신나는 곡이 흘러나왔다.",
+      "reading": "geu-neun ri-mo-keon-eul jib-deo-ni neung-suk-ha-ge beon-ho-reul nul-leot-da. il-dan nae-ga ha-na ye-yak-hae-nwass-eo. cheot gok-bu-teo sin-na-neun gog-i heul-leo-na-wat-da.",
+      "en": "He grabbed the remote and punched in numbers with practiced ease. \"I already queued one up first.\" An upbeat track started playing right away.",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "\"내 신청곡이야.\" 나는 마이크를 붙잡고 좋아하는 노래 번호를 눌렀다. 예상보다 잘 부르는 내 모습에 하늘이 눈썹을 슬쩍 올렸다.",
+      "reading": "nae sin-cheong-gog-i-ya. na-neun ma-i-keu-reul but-jap-go jo-a-ha-neun no-rae beon-ho-reul nul-leot-da. ye-sang-bo-da jal bu-reu-neun nae mo-seub-e ha-neul-i nun-sseob-eul seul-jjeok ol-lyeot-da.",
+      "en": "\"This one's my request.\" I grabbed the mic and punched in the number for a song I liked. Haneul raised an eyebrow slightly, surprised I could actually sing.",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "그러다 화면에 낯선 발라드가 떴다. \"이건 내 애창곡이야.\" 그가 담담하게 마이크를 넘겨받았다. 반전이었다. 무뚝뚝한 그가 부르는 노래는 의외로 다정했다.",
+      "reading": "geu-reo-da hwa-myeon-e nat-seon bal-la-deu-ga tteot-da. i-geon nae ae-chang-gog-i-ya. geu-ga dam-dam-ha-ge ma-i-keu-reul neom-gyeo-bad-at-da. ban-jeon-i-eot-da. mu-ttuk-ttuk-han geu-ga bu-reu-neun no-rae-neun ui-oe-ro da-jeong-haet-da.",
+      "en": "Then an unfamiliar ballad popped up on screen. \"This is my go-to song,\" he said flatly, taking the mic. It was a twist — the song this blunt guy sang turned out surprisingly gentle.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "점수가 뜨자마자 그는 승부욕을 드러냈다. \"몇 점 나왔어? 나보다 낮으면 안 되는데.\" 순위를 두고 우리는 유치하게 다퉜다.",
+      "reading": "jeom-su-ga tteu-ja-ma-ja geu-neun seung-bu-yog-eul deu-reo-naet-da. myeot jeom na-wass-eo? na-bo-da naj-eu-myeon an doe-neun-de. sun-wi-reul du-go u-ri-neun yu-chi-ha-ge da-twot-da.",
+      "en": "The moment the score popped up, his competitive streak came out. \"What'd you get? You'd better not score lower than me.\" We bickered childishly over the ranking.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "신이 난 나는 탬버린을 마구 흔들며 소리를 질렀다. 하늘도 어느새 박자에 맞춰 어깨를 들썩이고 있었다.",
+      "reading": "sin-i nan na-neun taem-beo-rin-eul ma-gu heun-deul-myeo so-ri-reul jil-leot-da. ha-neul-do eo-neu-sae bak-ja-e mat-chwo eo-kkae-reul deul-sseog-i-go iss-eot-da.",
+      "en": "Getting excited, I shook the tambourine wildly and shouted along. Before I knew it, even Haneul was bobbing his shoulders to the beat.",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "문 밖으로 나오니 밤공기가 시원했다. \"다음엔 내가 방 예약할게.\" 나는 웃으며 말했고, 하늘도 드물게 활짝 웃었다.",
+      "reading": "mun bakk-eu-ro na-o-ni bam-gong-gi-ga si-won-haet-da. da-eum-en nae-ga bang ye-yak-hal-kke. na-neun us-eu-myeo mal-haet-go, ha-neul-do deu-mul-ge hwal-jjak us-eot-da.",
+      "en": "Stepping outside, the night air felt cool and refreshing. \"Next time, I'll book the room,\" I said with a laugh, and even Haneul, rare for him, grinned wide."
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "신청곡", "reading": "sin-cheong-gok", "meaning": "requested song", "example": "제 신청곡 불러도 될까요?", "example_reading": "je sin-cheong-gok bul-leo-do doel-kka-yo?", "example_en": "Can I sing my requested song?" },
+    { "id": "w02", "word": "예약하다", "reading": "ye-yak-ha-da", "meaning": "to reserve, book, queue up", "example": "노래 한 곡 예약했어요.", "example_reading": "no-rae han gok ye-yak-haess-eo-yo", "example_en": "I queued up a song." },
+    { "id": "w03", "word": "점수", "reading": "jeom-su", "meaning": "score, points", "example": "이번엔 점수가 잘 나왔다.", "example_reading": "i-beon-en jeom-su-ga jal na-wat-da", "example_en": "I got a good score this time." },
+    { "id": "w04", "word": "애창곡", "reading": "ae-chang-gok", "meaning": "one's favorite song to sing", "example": "제 애창곡은 발라드예요.", "example_reading": "je ae-chang-gog-eun bal-la-deu-ye-yo", "example_en": "My go-to song is a ballad." },
+    { "id": "w05", "word": "탬버린", "reading": "taem-beo-rin", "meaning": "tambourine", "example": "탬버린을 흔들며 노래를 불렀다.", "example_reading": "taem-beo-rin-eul heun-deul-myeo no-rae-reul bul-leot-da", "example_en": "I sang while shaking the tambourine." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "제 신청곡 불러도 될까요?", "reading": "je sin-cheong-gok bul-leo-do doel-kka-yo?", "en": "Can I sing my requested song?" },
+    { "id": "s02", "ko": "노래 한 곡 예약했어요.", "reading": "no-rae han gok ye-yak-haess-eo-yo", "en": "I queued up a song." },
+    { "id": "s03", "ko": "이번엔 점수가 잘 나왔다.", "reading": "i-beon-en jeom-su-ga jal na-wat-da", "en": "I got a good score this time." },
+    { "id": "s04", "ko": "제 애창곡은 발라드예요.", "reading": "je ae-chang-gog-eun bal-la-deu-ye-yo", "en": "My go-to song is a ballad." },
+    { "id": "s05", "ko": "탬버린을 흔들며 노래를 불렀다.", "reading": "taem-beo-rin-eul heun-deul-myeo no-rae-reul bul-leot-da", "en": "I sang while shaking the tambourine." }
+  ]
+}

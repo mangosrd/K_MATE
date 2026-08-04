@@ -46,17 +46,82 @@
     }
   ],
   "words": [
-    { "id": "w01", "word": "야경", "reading": "ya-gyeong", "meaning": "Night view", "example": "서울 야경이 정말 아름다워요.", "example_reading": "seo-ul ya-gyeong-i jeong-mal a-reum-da-wo-yo", "example_en": "Seoul's night view is really beautiful." },
-    { "id": "w02", "word": "불꽃축제", "reading": "bul-kkot-chuk-je", "meaning": "Fireworks festival", "example": "매년 가을 한강 불꽃축제가 열려요.", "example_reading": "mae-nyeon ga-eul han-gang bul-kkot-chuk-je-ga yeol-lyeo-yo", "example_en": "The Han River fireworks festival is held every autumn." },
-    { "id": "w03", "word": "한강공원", "reading": "han-gang-gong-won", "meaning": "Han River Park", "example": "한강공원에 돗자리를 펴고 앉아요.", "example_reading": "han-gang-gong-won-e dot-ja-ri-reul pyeo-go anj-a-yo", "example_en": "I spread a mat and sit at Han River Park." },
-    { "id": "w04", "word": "치맥", "reading": "chi-maek", "meaning": "Chicken & beer", "example": "불꽃축제 날엔 치맥이 필수예요.", "example_reading": "bul-kkot-chuk-je nal-en chi-maeg-i pil-su-ye-yo", "example_en": "Chimaek is a must on fireworks festival day." },
-    { "id": "w05", "word": "마무리", "reading": "ma-mu-ri", "meaning": "Wrap-up / finale", "example": "이제 규현 기장과의 서울 여행을 마무리할 시간이에요.", "example_reading": "i-je gyu-hyeon gi-jang-gwa-ui seo-ul yeo-haeng-eul ma-mu-ri-hal si-gan-i-e-yo", "example_en": "It's time to wrap up the Seoul trip with Captain Kyuhyun." }
+    {
+      "id": "w01",
+      "word": "야경",
+      "reading": "ya-gyeong",
+      "meaning": "Night view",
+      "example": "서울 야경이 정말 아름다워요.",
+      "example_reading": "seo-ul ya-gyeong-i jeong-mal a-reum-da-wo-yo",
+      "example_en": "Seoul's night view is really beautiful."
+    },
+    {
+      "id": "w02",
+      "word": "불꽃축제",
+      "reading": "bul-kkot-chuk-je",
+      "meaning": "Fireworks festival",
+      "example": "매년 가을 한강 불꽃축제가 열려요.",
+      "example_reading": "mae-nyeon ga-eul han-gang bul-kkot-chuk-je-ga yeol-lyeo-yo",
+      "example_en": "The Han River fireworks festival is held every autumn."
+    },
+    {
+      "id": "w03",
+      "word": "공원",
+      "reading": "gong-won",
+      "meaning": "Park",
+      "example": "공원 잔디밭에 앉아 야경을 감상했습니다.",
+      "example_reading": "gong-won jan-di-bat-e anj-a ya-gyeong-eul gam-sang-haet-seum-ni-da",
+      "example_en": "I sat on the park lawn and enjoyed the night view."
+    },
+    {
+      "id": "w04",
+      "word": "치맥",
+      "reading": "chi-maek",
+      "meaning": "Chicken & beer",
+      "example": "불꽃축제 날엔 치맥이 필수예요.",
+      "example_reading": "bul-kkot-chuk-je nal-en chi-maeg-i pil-su-ye-yo",
+      "example_en": "Chimaek is a must on fireworks festival day."
+    },
+    {
+      "id": "w05",
+      "word": "마무리",
+      "reading": "ma-mu-ri",
+      "meaning": "Wrap-up / finale",
+      "example": "이제 규현 기장과의 서울 여행을 마무리할 시간이에요.",
+      "example_reading": "i-je gyu-hyeon gi-jang-gwa-ui seo-ul yeo-haeng-eul ma-mu-ri-hal si-gan-i-e-yo",
+      "example_en": "It's time to wrap up the Seoul trip with Captain Kyuhyun."
+    }
   ],
   "sentences": [
-    { "id": "s01", "ko": "야경을 보러 전망 좋은 곳을 찾아갑니다.", "reading": "ya-gyeong-eul bo-reo jeon-mang jo-eun gos-eul chaj-a-gam-ni-da", "en": "I go find a spot with a good view to see the night scenery." },
-    { "id": "s02", "ko": "불꽃축제 날에는 한강이 인파로 가득합니다.", "reading": "bul-kkot-chuk-je nal-e-neun han-gang-i in-pa-ro ga-deuk-ham-ni-da", "en": "On fireworks festival day, the Han River is packed with people." },
-    { "id": "s03", "ko": "한강공원에서 돗자리를 펴고 기다립니다.", "reading": "han-gang-gong-won-e-seo dot-ja-ri-reul pyeo-go gi-da-rim-ni-da", "en": "I spread a mat and wait at Han River Park." },
-    { "id": "s04", "ko": "치맥은 여름밤과 정말 잘 어울립니다.", "reading": "chi-maeg-eun yeo-reum-bam-gwa jeong-mal jal eo-ul-lim-ni-da", "en": "Chimaek pairs really well with summer nights." },
-    { "id": "s05", "ko": "마무리 인사를 나누며 여행을 끝냅니다.", "reading": "ma-mu-ri in-sa-reul na-nu-myeo yeo-haeng-eul kkeut-naem-ni-da", "en": "We end the trip while exchanging closing greetings." }
+    {
+      "id": "s01",
+      "ko": "야경을 보러 전망 좋은 곳을 찾아갑니다.",
+      "reading": "ya-gyeong-eul bo-reo jeon-mang jo-eun gos-eul chaj-a-gam-ni-da",
+      "en": "I go find a spot with a good view to see the night scenery."
+    },
+    {
+      "id": "s02",
+      "ko": "불꽃축제 날에는 한강이 인파로 가득합니다.",
+      "reading": "bul-kkot-chuk-je nal-e-neun han-gang-i in-pa-ro ga-deuk-ham-ni-da",
+      "en": "On fireworks festival day, the Han River is packed with people."
+    },
+    {
+      "id": "s03",
+      "ko": "한강공원에서 돗자리를 펴고 기다립니다.",
+      "reading": "han-gang-gong-won-e-seo dot-ja-ri-reul pyeo-go gi-da-rim-ni-da",
+      "en": "I spread a mat and wait at Han River Park."
+    },
+    {
+      "id": "s04",
+      "ko": "치맥은 여름밤과 정말 잘 어울립니다.",
+      "reading": "chi-maeg-eun yeo-reum-bam-gwa jeong-mal jal eo-ul-lim-ni-da",
+      "en": "Chimaek pairs really well with summer nights."
+    },
+    {
+      "id": "s05",
+      "ko": "마무리 인사를 나누며 여행을 끝냅니다.",
+      "reading": "ma-mu-ri in-sa-reul na-nu-myeo yeo-haeng-eul kkeut-naem-ni-da",
+      "en": "We end the trip while exchanging closing greetings."
+    }
   ]
 }

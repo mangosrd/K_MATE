@@ -1,0 +1,98 @@
+{
+  "id": "sp-day-sangwoo-07",
+  "character_id": "sangwoo",
+  "title": "증상 보고",
+  "emoji": "💊",
+  "level": "intermediate_advanced",
+  "story": [
+    {
+      "text": "오후부터 당신 목소리가 이상하다 싶더니, 결국 열이 올랐습니다. 저는 두말없이 근처 병원으로 데려갔습니다.",
+      "reading": "o-hu-bu-teo dang-sin mok-so-ri-ga i-sang-ha-da ssip-deo-ni, gyeol-guk yeol-i ol-lat-seum-ni-da. jeo-neun du-mal-eop-si geun-cheo byeong-won-eu-ro de-ryeo-gass-seum-ni-da.",
+      "en": "From the afternoon your voice had sounded off, and in the end you ran a fever. Without a word of argument, I took you straight to a nearby clinic."
+    },
+    {
+      "text": "접수를 마치고 진료를 기다리는 동안, 저는 당신 이마에 손을 얹어 보며 몇 번이고 온도를 가늠했습니다.",
+      "reading": "jeob-su-reul ma-chi-go jin-lyo-reul gi-da-ri-neun dong-an, jeo-neun dang-sin i-ma-e son-eul eonj-eo bo-myeo myeot beon-i-go on-do-reul ga-neum-haet-seum-ni-da.",
+      "en": "While we waited for the consultation after checking in, I kept placing my hand on your forehead, gauging your temperature again and again.",
+      "highlight_word_id": "w04"
+    },
+    {
+      "text": "의사가 증상을 묻자, 당신이 미처 말하지 못한 부분까지 제가 옆에서 조용히 덧붙였습니다. '어제저녁부터 오한도 있었습니다.'",
+      "reading": "ui-sa-ga jeung-sang-eul mut-ja, dang-sin-i mi-cheo mal-ha-ji mot-han bu-bun-kka-ji je-ga yeop-e-seo jo-yong-hi deot-bu-chyeot-seum-ni-da. eo-je-jeo-nyeog-bu-teo o-han-do it-seot-seum-ni-da.",
+      "en": "When the doctor asked about your symptoms, I quietly added even the details you hadn't managed to mention. \"There's been chills since last evening as well.\"",
+      "highlight_word_id": "w01"
+    },
+    {
+      "text": "당신은 '무슨 브리핑하시는 것 같아요'라며 작게 웃었습니다. 저는 진지하게 답했습니다. '정확한 보고가 정확한 처방으로 이어지니까요.'",
+      "reading": "dang-sin-eun mu-seun beu-ri-ping-ha-si-neun geot gat-a-yo-ra-myeo jak-ge us-eot-seum-ni-da. jeo-neun jin-ji-ha-ge dap-haet-seum-ni-da. jeong-hwak-han bo-go-ga jeong-hwak-han cheo-bang-eu-ro i-eo-ji-ni-kka-yo.",
+      "en": "You laughed softly, saying, \"It's like you're giving some kind of briefing.\" I answered seriously: \"An accurate report leads to accurate treatment.\""
+    },
+    {
+      "text": "진료가 끝나고, 저는 처방전을 받아 들며 다음 목적지를 정했습니다. '이제 약국으로 이동하겠습니다.'",
+      "reading": "jin-lyo-ga kkeut-na-go, jeo-neun cheo-bang-jeon-eul bad-a deul-myeo da-eum mok-jeok-ji-reul jeong-haet-seum-ni-da. i-je yak-gug-eu-ro i-dong-ha-get-seum-ni-da.",
+      "en": "Once the consultation was over, I took the prescription and set our next destination. \"Now we'll head to the pharmacy.\"",
+      "highlight_word_id": "w02"
+    },
+    {
+      "text": "약사가 '이 약은 졸릴 수 있는 부작용이 있어요'라고 안내하자, 저는 곧바로 물었습니다. '운전에도 지장이 있습니까? 오늘은 제가 옆에 있을 테니 상관없긴 합니다만.'",
+      "reading": "yak-sa-ga i yag-eun jol-lil su it-neun bu-jag-yong-i i-sseo-yo-ra-go an-nae-ha-ja, jeo-neun got-ba-ro mul-eot-seum-ni-da. un-jeon-e-do ji-jang-i it-seum-ni-kka? o-neul-eun je-ga yeop-e it-eul te-ni sang-gwan-eop-git ham-ni-da-man.",
+      "en": "When the pharmacist explained, \"This medicine may cause drowsiness as a side effect,\" I asked right away, \"Would it interfere with driving? Though I'll be right beside you today, so it hardly matters, I suppose.\"",
+      "highlight_word_id": "w05"
+    },
+    {
+      "text": "저는 약봉지를 살피며 복용법을 하나하나 짚었습니다. '하루 세 번, 식후 삼십 분입니다.' 그러고는 휴대폰에 알람을 세 개나 맞춰 두었습니다.",
+      "reading": "jeo-neun yak-bong-ji-reul sal-pi-myeo bok-yong-beob-eul ha-na-ha-na jib-eot-seum-ni-da. ha-ru se beon, sik-hu sam-sib bun-im-ni-da. geu-reo-go-neun hyu-dae-pon-e al-lam-eul se gae-na maj-chwo du-eot-seum-ni-da.",
+      "en": "I looked over the medicine packet, pointing out the dosage instructions one by one. \"Three times a day, thirty minutes after meals.\" Then I set three separate alarms on my phone.",
+      "highlight_word_id": "w03"
+    },
+    {
+      "text": "당신은 '알람까지 안 맞춰도 돼요'라며 웃었지만, 저는 고개를 저었습니다. '이번만은 제 방식대로 하겠습니다. 빨리 나으셔야 하니까요.'",
+      "reading": "dang-sin-eun al-lam-kka-ji an maj-chwo-do dwae-yo-ra-myeo us-eot-ji-man, jeo-neun go-gae-reul jeo-eot-seum-ni-da. i-beon-man-eun je bang-sig-dae-ro ha-get-seum-ni-da. ppal-li na-eu-syeo-ya ha-ni-kka-yo.",
+      "en": "You laughed and said, \"You don't have to set alarms too,\" but I shook my head. \"Just this once, I'll do it my way. You need to get better soon.\""
+    }
+  ],
+  "words": [
+    { "id": "w01", "word": "증상", "reading": "jeung-sang", "meaning": "symptom", "example": "의사가 증상을 물었습니다.", "example_reading": "ui-sa-ga jeung-sang-eul mul-eot-seum-ni-da", "example_en": "The doctor asked about the symptoms." },
+    { "id": "w02", "word": "처방전", "reading": "cheo-bang-jeon", "meaning": "prescription", "example": "처방전을 받아서 약국으로 갑니다.", "example_reading": "cheo-bang-jeon-eul bad-a-seo yak-gug-eu-ro gam-ni-da", "example_en": "I'll take the prescription and go to the pharmacy." },
+    { "id": "w03", "word": "복용법", "reading": "bok-yong-beop", "meaning": "dosage instructions, how to take medicine", "example": "복용법을 정확히 지켜야 합니다.", "example_reading": "bok-yong-beob-eul jeong-hwak-hi ji-kyeo-ya ham-ni-da", "example_en": "You need to follow the dosage instructions precisely." },
+    { "id": "w04", "word": "진료", "reading": "jin-lyo", "meaning": "medical examination, consultation", "example": "진료를 기다리고 있습니다.", "example_reading": "jin-lyo-reul gi-da-ri-go it-seum-ni-da", "example_en": "We're waiting for the consultation." },
+    { "id": "w05", "word": "부작용", "reading": "bu-jag-yong", "meaning": "side effect", "example": "이 약은 졸릴 수 있는 부작용이 있습니다.", "example_reading": "i yag-eun jol-lil su it-neun bu-jag-yong-i it-seum-ni-da", "example_en": "This medicine has a side effect of possible drowsiness." }
+  ],
+  "sentences": [
+    { "id": "s01", "ko": "요즘 어떤 증상이 있으십니까?", "reading": "yo-jeum eo-tteon jeung-sang-i i-sseu-sim-ni-kka", "en": "What symptoms have you been having lately?" },
+    { "id": "s02", "ko": "처방전을 가지고 약국으로 가세요.", "reading": "cheo-bang-jeon-eul ga-ji-go yak-gug-eu-ro ga-se-yo", "en": "Take the prescription and go to the pharmacy." },
+    { "id": "s03", "ko": "복용법을 다시 한번 설명해 드리겠습니다.", "reading": "bok-yong-beob-eul da-si han-beon seol-myeong-hae deu-ri-get-seum-ni-da", "en": "Let me explain the dosage instructions once more." },
+    { "id": "s04", "ko": "오늘 진료 예약하셨습니까?", "reading": "o-neul jin-lyo ye-yak-ha-syeot-seum-ni-kka", "en": "Did you make a reservation for today's consultation?" },
+    { "id": "s05", "ko": "이 약은 부작용이 거의 없습니다.", "reading": "i yag-eun bu-jag-yong-i geo-ui eop-seum-ni-da", "en": "This medicine has almost no side effects." }
+  ],
+  "dialogues": [
+    {
+      "id": "d01",
+      "turns": [
+        { "speaker": "상우", "text": "어디가 어떻게 안 좋으십니까? 증상을 정확히 말씀해 주십시오.", "reading": "eo-di-ga eo-tteo-ke an jo-eu-sim-ni-kka? jeung-sang-eul jeong-hwak-hi mal-sseum-hae ju-sip-si-o", "en": "Where and how do you feel unwell? Please tell me the symptoms precisely." },
+        { "speaker": "승객", "text": "그냥 목이 좀 따갑고 열이 나는 것 같아요.", "reading": "geu-nyang mog-i jom tta-gap-go yeol-i na-neun geot gat-a-yo", "en": "My throat just feels a bit sore and I think I have a fever." },
+        { "speaker": "상우", "text": "언제부터 그랬습니까? 어젯밤부터입니까?", "reading": "eon-je-bu-teo geu-raet-seum-ni-kka? eo-jet-bam-bu-teo-im-ni-kka", "en": "Since when? Since last night?" },
+        { "speaker": "승객", "text": "네, 맞아요. 근데 꼭 취조받는 기분이에요.", "reading": "ne, maj-a-yo. geun-de kkok chwi-jo-bad-neun gi-bun-i-e-yo", "en": "Yes, that's right. But it kind of feels like I'm being interrogated." }
+      ],
+      "question": "상우가 증상을 자세히 물어본 이유는?",
+      "question_en": "Why did Sangwoo ask about the symptoms in such detail?",
+      "correct_answer": "의사에게 정확한 상태를 전달해서 제대로 된 진료를 받게 하려고",
+      "options": ["의사에게 정확한 상태를 전달해서 제대로 된 진료를 받게 하려고", "승객을 의심하고 있어서", "병원 규정상 반드시 물어야 해서", "그냥 대화 소재가 없어서"],
+      "explanation": "상우는 정확한 증상 정보를 파악해 의사에게 잘 전달하고, 승객이 제대로 된 진료를 받을 수 있도록 하려 했습니다."
+    },
+    {
+      "id": "d02",
+      "turns": [
+        { "speaker": "승객", "text": "약이 이렇게 많아요? 하루에 다 먹어야 해요?", "reading": "yag-i i-reo-ke man-a-yo? ha-ru-e da meog-eo-ya hae-yo", "en": "There's this much medicine? Do I have to take it all in one day?" },
+        { "speaker": "상우", "text": "아닙니다. 복용법을 보니 하루 세 번, 식후에 나눠 드시면 됩니다.", "reading": "a-nim-ni-da. bok-yong-beob-eul bo-ni ha-ru se beon, sik-hu-e na-nwo deu-si-myeon doem-ni-da", "en": "No. According to the dosage instructions, you just take it three times a day, after meals." },
+        { "speaker": "승객", "text": "그걸 다 외우시게요?", "reading": "geu-geol da oe-u-si-ge-yo", "en": "Are you going to memorize all of that?" },
+        { "speaker": "상우", "text": "제가 알람을 맞춰 드리겠습니다. 잊어버리는 것보다 나으니까요.", "reading": "je-ga al-lam-eul maj-chwo deu-ri-get-seum-ni-da. ij-eo-beo-ri-neun geot-bo-da na-eu-ni-kka-yo", "en": "I'll set alarms for you. It's better than forgetting." }
+      ],
+      "question": "상우가 알람을 맞춰주겠다고 한 이유는?",
+      "question_en": "Why did Sangwoo offer to set alarms for her?",
+      "correct_answer": "복용법을 잊지 않고 제때 약을 먹게 하기 위해서",
+      "options": ["복용법을 잊지 않고 제때 약을 먹게 하기 위해서", "약을 너무 많이 처방받아서 확인하려고", "약사가 알람 설정을 요청해서", "본인의 휴대폰을 시험해보고 싶어서"],
+      "explanation": "상우는 복용 시간을 잊지 않도록 알람을 맞춰서, 승객이 제때 약을 챙겨 먹을 수 있게 도우려 했습니다."
+    }
+  ]
+}
