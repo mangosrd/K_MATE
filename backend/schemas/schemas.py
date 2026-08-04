@@ -259,6 +259,19 @@ class PreferencesUpdateRequest(BaseModel):
     notify_marketing: Optional[bool] = None
 
 
+class PushDeviceRegisterRequest(BaseModel):
+    token: str = Field(..., min_length=20, max_length=255)
+    platform: Literal["android"] = "android"
+
+
+class PushDeviceRemoveRequest(BaseModel):
+    token: str = Field(..., min_length=20, max_length=255)
+
+
+class PushDeviceResponse(BaseModel):
+    success: bool
+
+
 # ── 결제 수단 (시뮬레이션 — 카드 전체 번호는 저장하지 않음) ────
 class PaymentMethodResponse(BaseModel):
     id: str

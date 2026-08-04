@@ -66,6 +66,7 @@ class User(Base):
     economy         = relationship("Economy", back_populates="user", uselist=False)
     payment_methods = relationship("PaymentMethod", back_populates="user")
     letters         = relationship("Letter", back_populates="user")
+    push_devices    = relationship("PushDevice", back_populates="user")
 
 
 # ── 권역 ──────────────────────────────────────────────────
@@ -179,6 +180,21 @@ class Letter(Base):
 
 
 # ── 단어장 ────────────────────────────────────────────────
+class PushDevice(Base):
+    """A native FCM registration token belonging to one signed-in account."""
+    __tablename__ = "push_devices"
+
+    id         = Column(String(36), primary_key=True)
+    user_id    = Column(String(36), ForeignKey("users.id"), nullable=False)
+    token      = Column(String(255), unique=True, nullable=False)
+    platform   = Column(String(20), default="android", nullable=False)
+    active     = Column(Boolean, default=True, nullable=False)
+    created_at = Column(DateTime, server_default=func.now())
+    updated_at = Column(DateTime, server_default=func.now(), onupdate=func.now())
+
+    user = relationship("User", back_populates="push_devices")
+
+
 class VocabItem(Base):
     __tablename__ = "vocab_items"
 

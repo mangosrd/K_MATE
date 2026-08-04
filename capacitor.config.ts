@@ -17,6 +17,11 @@ const config: CapacitorConfig = {
     url: 'https://k-mate-v1q6.vercel.app',
     cleartext: false,
   },
+  plugins: {
+    PushNotifications: {
+      presentationOptions: ['alert', 'sound'],
+    },
+  },
 };
 
 export default config;

@@ -12,7 +12,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 from database import check_connection, get_settings, initialize_database
-from routers import chat, diary, vocab, progress, memory, auth, account, translate, gallery, billing, letters
+from routers import chat, diary, vocab, progress, memory, auth, account, translate, gallery, billing, letters, notifications
 from schemas.schemas import HealthResponse
 
 # Windows 콘솔(cp949)에서 이모지 print 시 UnicodeEncodeError로 서버가 죽는 것 방지
@@ -62,6 +62,7 @@ app.include_router(translate.router)
 app.include_router(gallery.router)
 app.include_router(billing.router)
 app.include_router(letters.router)
+app.include_router(notifications.router)
 
 
 # ── 헬스체크 ──────────────────────────────────────────────

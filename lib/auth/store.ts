@@ -32,10 +32,12 @@ export function setCurrentUser(user: AuthUser) {
   // 서버 컴포넌트(예: /learn/[characterId])는 localStorage를 못 읽으므로,
   // 로그인 유저 id를 쿠키로도 남겨서 서버에서도 실제 멤버십을 확인할 수 있게 한다.
   document.cookie = `kmate_uid=${user.id}; path=/; max-age=${SESSION_MAX_AGE_SECONDS}; samesite=lax`;
+  window.dispatchEvent(new Event("kmate-auth-changed"));
 }
 
 export function logout() {
   if (typeof window === "undefined") return;
+  window.dispatchEvent(new Event("kmate-auth-logging-out"));
   localStorage.removeItem(STORAGE_KEY);
   localStorage.removeItem(ACCESS_TOKEN_KEY);
   document.cookie = "kmate_uid=; path=/; max-age=0";

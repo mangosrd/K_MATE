@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { LanguageProvider } from "@/components/LanguageContext";
 import { ThemeProvider } from "@/components/ThemeContext";
+import PushNotificationSetup from "@/components/PushNotificationSetup";
 
 export const metadata: Metadata = {
   title: "K-MATE — Learn Korean with Your AI Travel Companion",
@@ -28,6 +29,7 @@ export default function RootLayout({
         <ThemeProvider>
           <LanguageProvider>
             <div className="app-shell">{children}</div>
+            <PushNotificationSetup />
           </LanguageProvider>
         </ThemeProvider>
       </body>

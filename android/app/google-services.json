@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "907865296302",
+    "project_id": "k-mate-40be4",
+    "storage_bucket": "k-mate-40be4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907865296302:android:c731764768f066ba484c3f",
+        "android_client_info": {
+          "package_name": "com.kmate.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUloFtwiHNpuie_WXJH2eurbvYPGHGLVs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

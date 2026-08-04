@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@capacitor/push-notifications": "^8.1.2",
     "@google/genai": "^2.14.0",
     "@portone/browser-sdk": "^0.1.9",
     "cordova-plugin-purchase": "^13.18.0",
