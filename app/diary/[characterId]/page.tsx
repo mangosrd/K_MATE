@@ -7,7 +7,7 @@ import BottomNav from "@/components/ui/BottomNav";
 import LoadingSplash from "@/components/LoadingSplash";
 import { getCharacterById, MOCK_ECONOMY, canAccessCharacter } from "@/lib/db/mock";
 import { getLocalDiaries } from "@/lib/diary/store";
-import { getEffectiveUserId } from "@/lib/auth/store";
+import { getEffectiveUserId, setPreferredCaptainId } from "@/lib/auth/store";
 import { useLanguage } from "@/components/LanguageContext";
 import { useMembership, useFreeCharSlots } from "@/lib/auth/useAuthUser";
 import type { DiaryEntry } from "@/types/database";
@@ -30,6 +30,10 @@ export default function CharDiaryPage({ params }: { params: Promise<{ characterI
   const [unlockModal, setUnlockModal] = useState<DiaryEntry | null>(null);
   const [selected, setSelected] = useState<DiaryEntry | null>(null);
   const [unlockAnim, setUnlockAnim] = useState<string | null>(null);
+
+  useEffect(() => {
+    setPreferredCaptainId(characterId);
+  }, [characterId]);
 
   useEffect(() => {
     const local = getLocalDiaries(characterId);

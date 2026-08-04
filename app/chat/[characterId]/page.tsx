@@ -12,7 +12,7 @@ import { MOCK_CHARACTERS, canAccessCharacter } from "@/lib/db/mock";
 import { addVocabWord } from "@/lib/vocab/store";
 import { addLocalDiary } from "@/lib/diary/store";
 import { getChatHistory, saveChatHistory, clearChatHistory } from "@/lib/chat/store";
-import { getEffectiveUserId, getCurrentUser } from "@/lib/auth/store";
+import { getEffectiveUserId, getCurrentUser, setPreferredCaptainId } from "@/lib/auth/store";
 import { useMembership, useFreeCharSlots } from "@/lib/auth/useAuthUser";
 
 const REGION_NAMES: Record<string, string> = {
@@ -34,6 +34,10 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
   const { membership, membershipLoaded } = useMembership();
   const { freeSlots, freeSlotsLoaded } = useFreeCharSlots();
   const canAccess = canAccessCharacter(characterId, membership, freeSlots);
+
+  useEffect(() => {
+    setPreferredCaptainId(characterId);
+  }, [characterId]);
 
   // 실제 캐릭터 데이터 조회
   const char = MOCK_CHARACTERS.find((c) => c.id === characterId) ?? {

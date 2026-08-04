@@ -94,14 +94,17 @@ export default function BottomNav() {
   const { t } = useLanguage();
   // 선호 기장 ID를 localStorage에서 읽어 학습 탭 목적지로 사용 (SSR safe)
   const [learnHref, setLearnHref] = useState("/learn/kyuhyun");
+  const [chatHref, setChatHref] = useState("/chat/kyuhyun");
   useEffect(() => {
-    setLearnHref(`/learn/${getPreferredCaptainId()}`);
+    const captainId = getPreferredCaptainId();
+    setLearnHref(`/learn/${captainId}`);
+    setChatHref(`/chat/${captainId}`);
   }, []);
 
   const navItems = [
     { href: "/map",      key: "map" },
     { href: learnHref,  key: "learn" },
-    { href: "/chat",    key: "chat" },
+    { href: chatHref,    key: "chat" },
     { href: "/vocab",   key: "vocab" },
     { href: "/me",      key: "me" },
   ];
@@ -109,7 +112,7 @@ export default function BottomNav() {
   return (
     <nav className="bottom-nav" role="navigation" aria-label="Main navigation">
       {navItems.map((item) => {
-        const baseHref = item.href === "/learn/kyuhyun" ? "/learn" : item.href;
+        const baseHref = item.key === "learn" ? "/learn" : item.key === "chat" ? "/chat" : item.href;
         const isActive = pathname.startsWith(baseHref);
         const Icon = NAV_ICONS[item.key];
 

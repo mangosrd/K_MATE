@@ -6,7 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "./learn.module.css";
 import { SPECIAL_CHAPTERS, MOCK_CHARACTERS, isChapterUnlocked } from "@/lib/db/mock";
-import { getEffectiveUserId } from "@/lib/auth/store";
+import { getEffectiveUserId, setPreferredCaptainId } from "@/lib/auth/store";
 import { useLanguage } from "@/components/LanguageContext";
 import type { Character, Chapter } from "@/types/database";
 
@@ -28,6 +28,10 @@ export default function LearnView({ char, chapters }: LearnViewProps) {
   const [specialCategory, setSpecialCategory] = useState<"romance" | "daily" | "friendship">("romance");
   const [selectedCaptainId, setSelectedCaptainId] = useState<string>(char.id);
   const [stamps, setStamps] = useState<string[]>([]);
+
+  useEffect(() => {
+    setPreferredCaptainId(char.id);
+  }, [char.id]);
 
   useEffect(() => {
     fetch(`${BACKEND_URL}/progress/${getEffectiveUserId()}/${char.id}`)
@@ -192,7 +196,10 @@ export default function LearnView({ char, chapters }: LearnViewProps) {
                   <button
                     key={c.id}
                     className={`${styles.captainPill} ${selectedCaptainId === c.id ? styles.captainActive : ""}`}
-                    onClick={() => setSelectedCaptainId(c.id)}
+                    onClick={() => {
+                      setSelectedCaptainId(c.id);
+                      setPreferredCaptainId(c.id);
+                    }}
                   >
                     <span>{c.emoji}</span>
                     <span>{c.name} {t("captainBadge")}</span>
