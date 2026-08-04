@@ -38,7 +38,9 @@ public class NativeGoogleAuthPlugin extends Plugin {
                         JSObject response = new JSObject(); response.put("idToken", google.getIdToken()); call.resolve(response);
                     } catch (Exception error) { call.reject("Google credential could not be read", error); }
                 }
-                @Override public void onError(GetCredentialException error) { call.reject("Google sign-in was cancelled or failed", error); }
+                @Override public void onError(GetCredentialException error) {
+                    call.reject("Google sign-in failed: " + error.getMessage(), error);
+                }
             });
     }
 }

@@ -186,6 +186,12 @@ export default function LoginView() {
               {t("continueGoogle")}
             </button>
 
+            {error && (
+              <p className={styles.formError} role="alert" id="google-auth-error">
+                {error}
+              </p>
+            )}
+
             <p className={styles.signupHint}>
               이미 계정이 있으신가요?{" "}
               <button type="button" className={styles.signupLink} onClick={() => switchMode("login")} id="btn-go-login">
