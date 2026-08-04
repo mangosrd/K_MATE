@@ -119,6 +119,13 @@ Rules:
 # 무료 티어 키 기준: pro 계열 모델은 할당량이 0이라 전부 실패하고, gemini-flash-latest
 # (gemini-3.6-flash)는 응답이 깨져서 나왔다(시스템 지시문 조각이나 "Idea 3:" 같은 스크래치
 # 패드 텍스트가 그대로 샘) — 실제로 유일하게 안정적으로 동작한 게 flash-lite였다.
+# 운영 원가 메모 (2026-08-04, Gemini Developer API 가격표 기준):
+# Gemini 3.5 Flash-Lite 유료 티어는 입력 $0.30 / 1M tokens, 출력 $2.50 / 1M tokens.
+# 예: 대화 2,000 input + 150 output tokens는 약 $0.000975 (환율·서버비 제외)다.
+# 예: 편지 1,500 input + 400 output tokens는 약 $0.00145 (환율·서버비 제외)다.
+# 이 서비스는 Gemini Search grounding과 음성 생성 API를 호출하지 않는다. 해당 기능은
+# 별도 원가가 생길 수 있으므로 다시 도입하려면 이 주석과 요금 기준을 함께 갱신한다.
+# `gemini-flash-lite-latest`는 제공사 최신 별칭이므로 유료 전환 전에 실제 모델명/요금을 재확인한다.
 async def llm_chat(
     messages: list[dict],
     model: str = "gemini-flash-lite-latest",

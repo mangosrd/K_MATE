@@ -18,6 +18,10 @@ import type { ChapterContent, ChapterWord as Word, ChapterSentence as Sentence, 
 
 // ── 기장별 전용 음성 톤 조절 함수 (TTS) ─────────────────────────
 async function playCaptainVoice(text: string, characterId: string) {
+  // 음성 생성(TTS)은 유료 API 원가와 운영 복잡도를 늘리므로 현재 서비스에서 사용하지 않는다.
+  // 기존 버튼은 숨겨 두었고, 이 조기 반환으로 ElevenLabs/브라우저 TTS는 호출되지 않는다.
+  return;
+
   if (typeof window === "undefined") return;
 
   try {
@@ -28,7 +32,7 @@ async function playCaptainVoice(text: string, characterId: string) {
     });
 
     const contentType = res.headers.get("content-type");
-    if (res.ok && contentType && contentType.includes("audio/mpeg")) {
+    if (res.ok && contentType?.includes("audio/mpeg")) {
       const blob = await res.blob();
       const audioUrl = URL.createObjectURL(blob);
       const audio = new Audio(audioUrl);
@@ -61,9 +65,9 @@ async function playCaptainVoice(text: string, characterId: string) {
   const nativeKoVoice = voices.find((v) => v.lang.includes("ko"));
 
   if (nativeMaleKoVoice) {
-    utterance.voice = nativeMaleKoVoice;
+    utterance.voice = nativeMaleKoVoice ?? null;
   } else if (nativeKoVoice) {
-    utterance.voice = nativeKoVoice;
+    utterance.voice = nativeKoVoice ?? null;
   }
 
   window.speechSynthesis.speak(utterance);
@@ -191,7 +195,8 @@ function generateExercises(words: Word[], sentences: Sentence[], dialogues: Dial
   });
 
   // 5. 듣기 문제 (Listening)
-  words.slice(0, 3).forEach((w) => {
+  // 유료 음성 생성 기능을 운영하지 않으므로 듣기 전용 문제는 출제하지 않는다.
+  if (false) words.slice(0, 3).forEach((w) => {
     const wrong = shuffle(words.filter((item) => item.word !== w.word))
       .slice(0, 3)
       .map((item) => item.word);

@@ -14,13 +14,26 @@ from services.llm_service import generate_letter_reply
 from services.access_control import check_character_access
 from services.session_auth import require_current_user, require_same_user
 from models.models import Letter, Character, Economy, User
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
+from zoneinfo import ZoneInfo
 import uuid
 
 router = APIRouter(prefix="/letters", tags=["letters"])
 
 LETTER_COST = 10  # 코인 — 일기(5)보다 비싸고 사진첩 스탠딩 일러스트(15)보다 저렴
 REPLY_DELAY = timedelta(hours=24)
+KST = ZoneInfo("Asia/Seoul")
+
+
+def _today_kst_bounds_as_utc() -> tuple[datetime, datetime]:
+    """Return the current Korean calendar day as UTC-naive database bounds."""
+    now_kst = datetime.now(KST)
+    start_kst = now_kst.replace(hour=0, minute=0, second=0, microsecond=0)
+    end_kst = start_kst + timedelta(days=1)
+    return (
+        start_kst.astimezone(timezone.utc).replace(tzinfo=None),
+        end_kst.astimezone(timezone.utc).replace(tzinfo=None),
+    )
 
 
 def _fallback_letter_reply(character_id: str) -> str:
@@ -82,6 +95,25 @@ def send_letter(req: LetterSendRequest, current_user_id: str = Depends(require_c
     if not economy:
         raise HTTPException(status_code=404, detail="Economy record not found")
 
+    # 기장님별로 한국 시간 기준 하루 한 번만 보낼 수 있다. 경제 행 잠금 뒤에
+    # 검사하므로 동시에 두 번 눌러도 코인이 중복 차감되지 않는다.
+    day_start, day_end = _today_kst_bounds_as_utc()
+    already_sent_today = (
+        db.query(Letter.id)
+        .filter(
+            Letter.user_id == req.user_id,
+            Letter.character_id == req.character_id,
+            Letter.sent_at >= day_start,
+            Letter.sent_at < day_end,
+        )
+        .first()
+    )
+    if already_sent_today:
+        raise HTTPException(
+            status_code=429,
+            detail="이 기장님께는 오늘 이미 편지를 보냈어요. 내일 다시 마음을 전해 주세요.",
+        )
+
     if economy.coins < LETTER_COST:
         raise HTTPException(status_code=400, detail="코인이 부족합니다")
 
@@ -93,6 +125,8 @@ def send_letter(req: LetterSendRequest, current_user_id: str = Depends(require_c
         character_id=req.character_id,
         content=req.content.strip(),
         reply_content=None,
+        # KST 기준 일일 제한을 일관되게 계산하도록 새 편지는 UTC로 명시한다.
+        sent_at=datetime.now(timezone.utc).replace(tzinfo=None),
         reply_ready_at=datetime.now() + REPLY_DELAY,
         is_read=False,
     )

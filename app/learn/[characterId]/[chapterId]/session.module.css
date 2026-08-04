@@ -604,4 +604,8 @@
   text-align: center;
   width: 100%;
 }
-
+.voicePlayBtn,
+.inlineListenBtn,
+.audioPlayBtn {
+  display: none;
+}
