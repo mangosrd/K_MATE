@@ -11,7 +11,7 @@ import sys
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
-from database import get_settings, initialize_database
+from database import check_connection, get_settings, initialize_database
 from routers import chat, diary, vocab, progress, memory, auth, account, translate, gallery, billing, letters
 from schemas.schemas import HealthResponse
 
