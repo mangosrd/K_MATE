@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   height: 100dvh;
-  padding-bottom: var(--nav-height);
+  /* Keep the composer entirely above the fixed 68px bottom navigation. */
+  padding-bottom: calc(68px + env(safe-area-inset-bottom, 0px));
   background: var(--bg-base);
 }
 
@@ -174,6 +175,8 @@
 
 .chatInput {
   flex: 1;
+  /* A long placeholder must never push the send button off-screen. */
+  min-width: 0;
   background: var(--bg-surface);
   border: 1.5px solid var(--border-default);
   border-radius: var(--radius-full);
