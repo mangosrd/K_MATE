@@ -77,7 +77,7 @@ export default function LoginView() {
   }
 
   return (
-    <main className={styles.page}>
+    <main className={`${styles.page} ${mode !== "start" ? styles.authPage : ""}`}>
       {/* 상단 그라디언트 배경 */}
       <div className={styles.bgTop} aria-hidden="true" />
       <div className={styles.bgPattern} aria-hidden="true" />

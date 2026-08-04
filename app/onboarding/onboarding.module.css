@@ -140,4 +140,19 @@
 .tutorialDesc  { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
 
 /* 네비 로우 */
-.navRow { display: flex; justify-content: space-between; align-items: center; margin-top: auto; padding-bottom: var(--space-md); }
+.navRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-md);
+  margin-top: auto;
+  padding-bottom: var(--space-md);
+}
+
+.navRow :global(.btn) {
+  min-height: 48px;
+  padding: 12px 18px;
+  font-size: 14px;
+  line-height: 1.25;
+  white-space: nowrap;
+}

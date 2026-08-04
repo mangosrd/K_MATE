@@ -139,7 +139,7 @@ export default function ChatSelectPage() {
                       className={`btn btn-secondary btn-sm ${styles.chatBtn}`}
                       id={`btn-unlock-${char.id}`}
                     >
-                      ⭐ {t("lockedPremium")}
+                      🔒 {t("premiumOnly")}
                     </Link>
                   )}
                 </div>

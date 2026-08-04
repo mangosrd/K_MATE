@@ -42,11 +42,19 @@
 
 /* 기장 배지 */
 .captainBadge {
-  position: absolute; top: 10px; right: 10px;
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  z-index: 2;
+  max-width: calc(100% - 24px);
+  transform: translateX(-50%);
 }
 
 /* 아이콘 */
-.charIconWrap { position: relative; }
+.charIconWrap {
+  position: relative;
+  margin-top: 30px;
+}
 
 .charIcon {
   width: 100px; height: 100px; border-radius: 50%;
@@ -92,7 +100,14 @@
 .affinityRow { display: flex; align-items: center; gap: 2px; }
 
 /* 버튼 */
-.chatBtn { width: 100%; justify-content: center; text-align: center; }
+.chatBtn {
+  width: 100%;
+  min-height: 46px;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.25;
+  white-space: normal;
+}
 
 /* 무료 안내 */
 .freeNotice {
