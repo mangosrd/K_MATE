@@ -67,9 +67,6 @@ export default function LearnView({ char, chapters }: LearnViewProps) {
             <p className={styles.headerSub}>Study with Captain {activeCaptain.name}</p>
           </div>
         </div>
-        <Link href={`/chat/${activeCaptain.id}`} className="btn btn-primary btn-sm" id="btn-go-chat">
-          💬 {t("chatTitle")}
-        </Link>
       </header>
 
       <div className={styles.inner}>
@@ -92,6 +89,26 @@ export default function LearnView({ char, chapters }: LearnViewProps) {
         {/* 1. 지역 문화 커리큘럼 탭 */}
         {tab === "regional" && (
           <>
+            <section className={styles.captainHub} aria-label={`${activeCaptain.name} ${t("learnTitle")}`}>
+              <div className={styles.captainHubProfile}>
+                <Image
+                  src={`/characters/${activeCaptain.id}.png`}
+                  alt={activeCaptain.name}
+                  width={56}
+                  height={56}
+                  className={styles.captainHubAvatar}
+                />
+                <div className={styles.captainHubText}>
+                  <p className={styles.captainHubEyebrow}>✈️ {t("learnTitle")}</p>
+                  <h2>{activeCaptain.name} {t("captainBadge")}</h2>
+                  <p>Study with Captain {activeCaptain.name}</p>
+                </div>
+              </div>
+              <Link href={`/chat/${activeCaptain.id}`} className="btn btn-primary btn-sm" id="btn-go-chat">
+                💬 {t("chatTitle")}
+              </Link>
+            </section>
+
             {/* 진도 요약 */}
             <div className={styles.progressCard}>
               <div className={styles.progressInfo}>

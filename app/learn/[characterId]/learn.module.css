@@ -20,6 +20,26 @@
 
 .inner { padding: var(--space-md); display: flex; flex-direction: column; gap: var(--space-lg); }
 
+/* The captain remains visible as a companion without competing with chapters. */
+.captainHub {
+  display: flex; align-items: center; justify-content: space-between; gap: var(--space-sm);
+  padding: 10px 12px;
+  background: var(--bg-base);
+  border: 1.5px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-xs);
+}
+.captainHubProfile { display: flex; align-items: center; gap: 10px; min-width: 0; }
+.captainHubAvatar {
+  width: 56px; height: 56px; flex-shrink: 0; border-radius: 50%; object-fit: cover;
+  border: 2px solid var(--red); box-shadow: 0 4px 12px rgba(205,46,58,0.18);
+}
+.captainHubText { min-width: 0; }
+.captainHubEyebrow { color: var(--blue); font-size: 10px; font-weight: 800; letter-spacing: 0.03em; }
+.captainHubText h2 { color: var(--text-primary); font-size: 15px; font-weight: 800; line-height: 1.25; }
+.captainHubText p:last-child { color: var(--text-muted); font-size: 11px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.captainHub :global(.btn) { flex-shrink: 0; min-height: 38px; padding-inline: 12px; }
+
 /* 진도 카드 */
 .progressCard {
   display: flex; align-items: center; justify-content: space-between;
