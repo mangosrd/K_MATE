@@ -12,7 +12,7 @@ import styles from "./login.module.css";
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
 
 interface NativeGoogleAuthPlugin {
-  signIn(options: { serverClientId: string }): Promise<{ idToken: string }>;
+  signIn(options: { serverClientId: string }): Promise<{ idToken: string; nonce: string }>;
 }
 const NativeGoogleAuth = registerPlugin<NativeGoogleAuthPlugin>("NativeGoogleAuth");
 
@@ -68,7 +68,7 @@ export default function LoginView() {
         const config = await configResponse.json();
         if (!configResponse.ok) throw new Error(config.detail || "Google login is not configured");
         const nativeResult = await NativeGoogleAuth.signIn({ serverClientId: config.client_id });
-        const loginResponse = await fetch(`${BACKEND_URL}/auth/google/native`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ id_token: nativeResult.idToken }) });
+        const loginResponse = await fetch(`${BACKEND_URL}/auth/google/native`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ id_token: nativeResult.idToken, nonce: nativeResult.nonce }) });
         const user = await loginResponse.json();
         if (!loginResponse.ok) throw new Error(user.detail || "Google login failed");
         setCurrentUser(user);

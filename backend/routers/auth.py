@@ -101,6 +101,9 @@ def google_native_login(payload: dict, db: Session = Depends(get_db)):
         profile = google_id_token.verify_oauth2_token(token, google_requests.Request(), get_settings().google_client_id)
     except ValueError:
         raise HTTPException(status_code=401, detail="Google login verification failed")
+    nonce = str(payload.get("nonce", ""))
+    if not nonce or profile.get("nonce") != nonce:
+        raise HTTPException(status_code=401, detail="Google login verification failed")
     return _to_response(_find_or_create_google_user(profile, db))
 
 

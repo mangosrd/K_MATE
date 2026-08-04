@@ -1,6 +1,7 @@
 package com.kmate.app;
 
 import android.os.CancellationSignal;
+import java.util.UUID;
 import androidx.credentials.Credential;
 import androidx.credentials.CredentialManager;
 import androidx.credentials.CredentialManagerCallback;
@@ -23,7 +24,8 @@ public class NativeGoogleAuthPlugin extends Plugin {
     public void signIn(PluginCall call) {
         String clientId = call.getString("serverClientId");
         if (clientId == null || clientId.isEmpty()) { call.reject("Google client ID is missing"); return; }
-        GetSignInWithGoogleOption option = new GetSignInWithGoogleOption.Builder(clientId).build();
+        String nonce = UUID.randomUUID().toString();
+        GetSignInWithGoogleOption option = new GetSignInWithGoogleOption.Builder(clientId).setNonce(nonce).build();
         GetCredentialRequest request = new GetCredentialRequest.Builder().addCredentialOption(option).build();
         CredentialManager manager = CredentialManager.create(getActivity());
         manager.getCredentialAsync(getActivity(), request, new CancellationSignal(), ContextCompat.getMainExecutor(getContext()),
@@ -35,7 +37,10 @@ public class NativeGoogleAuthPlugin extends Plugin {
                     }
                     try {
                         GoogleIdTokenCredential google = GoogleIdTokenCredential.createFrom(((CustomCredential) credential).getData());
-                        JSObject response = new JSObject(); response.put("idToken", google.getIdToken()); call.resolve(response);
+                        JSObject response = new JSObject();
+                        response.put("idToken", google.getIdToken());
+                        response.put("nonce", nonce);
+                        call.resolve(response);
                     } catch (Exception error) { call.reject("Google credential could not be read", error); }
                 }
                 @Override public void onError(GetCredentialException error) {
