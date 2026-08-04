@@ -79,16 +79,15 @@ export default function DiarySelectPage() {
                       char.region_id === "busan" ? "부산·경남" :
                       char.region_id === "chungcheong" ? "충청·공주" : "제주"
                     }</p>
+                    {char.requires_premium && !canAccess
+                      ? <span className={`badge badge-gold ${styles.accessBadge}`}>⭐ {t("premiumOnly")}</span>
+                      : <span className={`badge badge-mint ${styles.accessBadge}`}>✓ OPEN</span>}
                     {canAccess && (
                       <p className={styles.diaryCount}>
                         {t("diaryTitle")} {unlocked}/{total} {t("unlockedStatus")}
                       </p>
                     )}
                   </div>
-
-                  {char.requires_premium && !canAccess
-                    ? <span className={`badge badge-gold ${styles.accessBadge}`}>⭐ {t("premiumOnly")}</span>
-                    : <span className={`badge badge-mint ${styles.accessBadge}`}>✓ OPEN</span>}
 
                   {canAccess ? (
                     <Link href={`/diary/${char.id}`} className="btn btn-primary btn-sm" id={`btn-diary-${char.id}`}>
