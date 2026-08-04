@@ -21,6 +21,7 @@ from urllib.parse import urlencode
 import httpx
 from google.auth.transport import requests as google_requests
 from google.oauth2 import id_token as google_id_token
+from services.session_auth import issue_access_token
 
 router = APIRouter(prefix="/auth", tags=["auth"])
 
@@ -62,6 +63,7 @@ def _to_response(user: User) -> AuthUserResponse:
         email=user.email,
         language=user.language,
         membership=user.membership.value if hasattr(user.membership, "value") else user.membership,
+        access_token=issue_access_token(user.id),
     )
 
 

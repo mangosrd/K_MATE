@@ -3,6 +3,7 @@
 import { MOCK_USER } from "@/lib/db/mock";
 
 const STORAGE_KEY = "kmate_auth_user";
+const ACCESS_TOKEN_KEY = "kmate_access_token";
 
 export interface AuthUser {
   id: string;
@@ -10,6 +11,7 @@ export interface AuthUser {
   email: string;
   language: string;
   membership: string;
+  access_token?: string;
 }
 
 export function getCurrentUser(): AuthUser | null {
@@ -25,6 +27,7 @@ export function getCurrentUser(): AuthUser | null {
 export function setCurrentUser(user: AuthUser) {
   if (typeof window === "undefined") return;
   localStorage.setItem(STORAGE_KEY, JSON.stringify(user));
+  if (user.access_token) localStorage.setItem(ACCESS_TOKEN_KEY, user.access_token);
   // 서버 컴포넌트(예: /learn/[characterId])는 localStorage를 못 읽으므로,
   // 로그인 유저 id를 쿠키로도 남겨서 서버에서도 실제 멤버십을 확인할 수 있게 한다.
   document.cookie = `kmate_uid=${user.id}; path=/; max-age=${60 * 60 * 24 * 30}; samesite=lax`;
@@ -33,7 +36,14 @@ export function setCurrentUser(user: AuthUser) {
 export function logout() {
   if (typeof window === "undefined") return;
   localStorage.removeItem(STORAGE_KEY);
+  localStorage.removeItem(ACCESS_TOKEN_KEY);
   document.cookie = "kmate_uid=; path=/; max-age=0";
+}
+
+export function getAuthHeaders(): Record<string, string> {
+  if (typeof window === "undefined") return {};
+  const token = localStorage.getItem(ACCESS_TOKEN_KEY);
+  return token ? { Authorization: `Bearer ${token}` } : {};
 }
 
 // 회원 탈퇴 시 이 계정으로 남아있던 로컬 캐시(단어장/일기/선호 메이트/세션)를 모두 지운다.
@@ -91,7 +101,7 @@ export async function ensureGuestAccount(): Promise<void> {
   if (getCurrentUser()) return; // 로그인 계정이 있으면 게스트 발급 자체가 불필요
 
   const existing = getCachedGuestId();
-  if (existing) {
+  if (existing && localStorage.getItem(ACCESS_TOKEN_KEY)) {
     document.cookie = `kmate_uid=${existing}; path=/; max-age=${60 * 60 * 24 * 30}; samesite=lax`;
     return;
   }
@@ -101,8 +111,9 @@ export async function ensureGuestAccount(): Promise<void> {
     const res = await fetch(`${BACKEND_URL}/auth/guest`, { method: "POST" });
     if (!res.ok) return;
     const data = await res.json();
-    if (data.id) {
+    if (data.id && data.access_token) {
       localStorage.setItem(GUEST_ID_KEY, data.id);
+      localStorage.setItem(ACCESS_TOKEN_KEY, data.access_token);
       document.cookie = `kmate_uid=${data.id}; path=/; max-age=${60 * 60 * 24 * 30}; samesite=lax`;
     }
   } catch {

@@ -213,6 +213,7 @@ class AuthUserResponse(BaseModel):
     email: Optional[str] = None
     language: str
     membership: str
+    access_token: str
 
 
 class WithdrawRequest(BaseModel):

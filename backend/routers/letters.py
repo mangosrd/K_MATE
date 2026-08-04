@@ -12,6 +12,7 @@ from database import get_db
 from schemas.schemas import LetterSendRequest, LetterSendResponse, LetterResponse
 from services.llm_service import generate_letter_reply
 from services.access_control import check_character_access
+from services.session_auth import require_current_user, require_same_user
 from models.models import Letter, Character, Economy, User
 from datetime import datetime, timedelta
 import uuid
@@ -20,6 +21,30 @@ router = APIRouter(prefix="/letters", tags=["letters"])
 
 LETTER_COST = 10  # 코인 — 일기(5)보다 비싸고 사진첩 스탠딩 일러스트(15)보다 저렴
 REPLY_DELAY = timedelta(hours=24)
+
+
+def _fallback_letter_reply(character_id: str) -> str:
+    """A character-specific reply used only when the AI provider is unavailable."""
+    replies = {
+        "kyuhyun": "아가씨가 남긴 편지, 비행 끝나고 천천히 읽었어요. 괜히 몇 번이나 다시 보게 되네. 다음 편지도 기다리고 있을게요. — 규현",
+        "haneul": "편지 잘 읽었어요. 당신이 말한 그 하루, 생각보다 오래 남네요. 다음엔 너무 혼자 끌어안지 말고 조금 더 적어줘요. — 하늘",
+        "sunwoo": "야, 편지 너무 진지한 거 아이가. 읽고 괜히 내가 더 말 많아질 뻔했네. 다음엔 직접도 좀 들려줘라. — 선우",
+        "sangwoo": "타워, 편지 수신 완료했습니다. 남겨 준 마음은 안전하게 보관하겠습니다. 다음 교신도 기다리고 있겠습니다. — 상우",
+        "yongwoo": "편지 잘 받았다. 네가 적어 준 얘기, 내가 챙겨 봤으니까 너무 걱정하지 마. 다음엔 네 얘기 조금 더 자세히 들려줘. — 용우",
+    }
+    return replies.get(character_id, "편지 잘 읽었습니다. 다음 편지도 기다리고 있을게요.")
+
+
+async def _generate_reply_or_fallback(character_id: str, content: str) -> str:
+    """Retry once, then deliver a safe in-character reply instead of leaving mail pending forever."""
+    for _ in range(2):
+        try:
+            reply = (await generate_letter_reply(character_id, content)).strip()
+            if reply:
+                return reply
+        except Exception as exc:
+            print(f"[letters] reply generation failed for {character_id}: {type(exc).__name__}", flush=True)
+    return _fallback_letter_reply(character_id)
 
 
 def _to_response(letter: Letter) -> LetterResponse:
@@ -36,8 +61,9 @@ def _to_response(letter: Letter) -> LetterResponse:
 
 
 @router.post("/send", response_model=LetterSendResponse)
-def send_letter(req: LetterSendRequest, db: Session = Depends(get_db)):
+def send_letter(req: LetterSendRequest, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
     """편지지를 코인으로 구매해서 편지를 보낸다. 답장은 24시간 뒤에 생긴다."""
+    require_same_user(current_user_id, req.user_id)
     character = db.query(Character).filter(Character.id == req.character_id).first()
     if not character:
         raise HTTPException(status_code=404, detail=f"Character '{req.character_id}' not found")
@@ -81,8 +107,9 @@ def send_letter(req: LetterSendRequest, db: Session = Depends(get_db)):
 
 
 @router.get("/{user_id}/{character_id}", response_model=list[LetterResponse])
-async def list_letters(user_id: str, character_id: str, db: Session = Depends(get_db)):
+async def list_letters(user_id: str, character_id: str, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
     """우편함 조회 — 답장 시간이 지났는데 아직 안 만들어진 편지는 이 시점에 생성한다."""
+    require_same_user(current_user_id, user_id)
     user = db.query(User).filter(User.id == user_id).first()
     if not user:
         raise HTTPException(status_code=404, detail=f"User '{user_id}' not found")
@@ -101,18 +128,19 @@ async def list_letters(user_id: str, character_id: str, db: Session = Depends(ge
     now = datetime.now()
     for letter in letters:
         if letter.reply_content is None and now >= letter.reply_ready_at:
-            letter.reply_content = await generate_letter_reply(character_id, letter.content)
+            letter.reply_content = await _generate_reply_or_fallback(character_id, letter.content)
     db.commit()
 
     return [_to_response(letter) for letter in letters]
 
 
 @router.post("/{letter_id}/read", response_model=LetterResponse)
-def mark_letter_read(letter_id: str, db: Session = Depends(get_db)):
+def mark_letter_read(letter_id: str, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
     """답장을 읽음 처리 (우편함 안 읽은 편지 배지 표시용)"""
     letter = db.query(Letter).filter(Letter.id == letter_id).first()
     if not letter:
         raise HTTPException(status_code=404, detail="Letter not found")
+    require_same_user(current_user_id, letter.user_id)
 
     letter.is_read = True
     db.commit()

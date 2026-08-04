@@ -6,7 +6,7 @@ import Image from "next/image";
 import BottomNav from "@/components/ui/BottomNav";
 import LoadingSplash from "@/components/LoadingSplash";
 import { getCharacterById, MOCK_ECONOMY, canAccessCharacter } from "@/lib/db/mock";
-import { getEffectiveUserId } from "@/lib/auth/store";
+import { getAuthHeaders, getEffectiveUserId } from "@/lib/auth/store";
 import { useMembership, useFreeCharSlots } from "@/lib/auth/useAuthUser";
 import { useLanguage } from "@/components/LanguageContext";
 import styles from "./letters.module.css";
@@ -46,14 +46,14 @@ export default function LettersPage({ params }: { params: Promise<{ characterId:
 
   const load = () => {
     const userId = getEffectiveUserId();
-    fetch(`${BACKEND_URL}/letters/${userId}/${characterId}`)
+    fetch(`${BACKEND_URL}/letters/${userId}/${characterId}`, { headers: getAuthHeaders() })
       .then((res) => (res.ok ? res.json() : []))
       .then((data: Letter[]) => {
         setLetters(data);
         // 답장이 방금 생성됐을 수도 있으니, 화면에 보여준 김에 읽음 처리한다.
         data.forEach((l) => {
           if (l.is_reply_ready && l.reply_content && !l.is_read) {
-            fetch(`${BACKEND_URL}/letters/${l.id}/read`, { method: "POST" }).catch(() => {});
+            fetch(`${BACKEND_URL}/letters/${l.id}/read`, { method: "POST", headers: getAuthHeaders() }).catch(() => {});
           }
         });
       })
@@ -74,7 +74,7 @@ export default function LettersPage({ params }: { params: Promise<{ characterId:
     try {
       const res = await fetch(`${BACKEND_URL}/letters/send`, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", ...getAuthHeaders() },
         body: JSON.stringify({
           user_id: getEffectiveUserId(),
           character_id: characterId,
