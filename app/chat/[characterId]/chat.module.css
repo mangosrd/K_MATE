@@ -15,7 +15,7 @@
   background: var(--bg-base);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-bottom: 2px solid var(--red);
+  border-bottom: 2px solid var(--blue);
   flex-shrink: 0;
 }
 
