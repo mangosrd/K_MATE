@@ -14,8 +14,8 @@ const config: CapacitorConfig = {
   appName: 'K-MATE',
   webDir: 'public',
   server: {
-    url: 'http://10.0.2.2:3000',
-    cleartext: true,
+    url: 'https://k-mate-v1q6.vercel.app',
+    cleartext: false,
   },
 };
 

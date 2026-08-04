@@ -240,34 +240,30 @@ export default function PremiumView() {
             해금돼있으므로 이 섹션 자체가 의미가 없다(무료 캐릭터만 있던 free_char_slots에
             남아있는 값과 뒤섞여 "안 눌렀는데 해금됨"으로 오해를 살 뿐이라 아예 숨긴다). */}
         {!isAlreadyPremium && charPacks.length > 0 && (
-          <div style={{ marginTop: 28 }}>
-            <p style={{ fontSize: 13, fontWeight: 700, color: "var(--text-muted)", textAlign: "center", marginBottom: 10 }}>
+          <section className={styles.characterPacks} aria-label="개별 기장 해금">
+            <p className={styles.characterPacksIntro}>
               {t("unlockJustOneIntro")}
             </p>
-            <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+            <div className={styles.characterPacksList}>
               {charPacks.map((pack) => {
                 const char = MOCK_CHARACTERS.find((c) => c.id === pack.character_id);
                 const isUnlocked = unlockedChars.includes(pack.character_id);
                 return (
                   <div
                     key={pack.product_id}
-                    style={{
-                      display: "flex", alignItems: "center", justifyContent: "space-between",
-                      padding: "10px 14px", borderRadius: 14,
-                      background: "var(--bg-surface)", border: "1px solid var(--border-subtle)",
-                    }}
+                    className={styles.characterPack}
                   >
-                    <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+                    <div className={styles.characterPackInfo}>
                       {char && (
                         <Image src={`/characters/${char.id}.png`} alt={char.name} width={32} height={32} style={{ borderRadius: "50%" }} />
                       )}
-                      <span style={{ fontSize: 14, fontWeight: 700 }}>{char ? char.name : pack.label}</span>
+                      <span className={styles.characterPackName}>{char ? char.name : pack.label}</span>
                     </div>
                     {isUnlocked ? (
-                      <span style={{ fontSize: 12, color: "var(--mint)", fontWeight: 700 }}>{t("unlockedLabel")}</span>
+                      <span className={styles.characterPackUnlocked}>{t("unlockedLabel")}</span>
                     ) : (
                       <button
-                        className="btn btn-secondary btn-sm"
+                        className={`btn btn-secondary btn-sm ${styles.characterPackButton}`}
                         onClick={() => handleUnlockCharacter(pack)}
                         disabled={buyingCharId === pack.character_id}
                       >
@@ -278,7 +274,7 @@ export default function PremiumView() {
                 );
               })}
             </div>
-          </div>
+          </section>
         )}
 
         <Link href="/map" className="btn btn-ghost" style={{ textAlign: "center", marginTop: 16 }}>

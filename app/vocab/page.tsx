@@ -40,6 +40,8 @@ export default function VocabPage() {
   const [showAnswer, setShowAnswer] = useState(false);
   const [vocab, setVocab] = useState<VocabItem[]>([]);
   const [showResetModal, setShowResetModal] = useState(false);
+  const [isResetting, setIsResetting] = useState(false);
+  const [resetError, setResetError] = useState<string | null>(null);
 
   const loadVocab = () => {
     const local = getLocalVocab();
@@ -61,18 +63,22 @@ export default function VocabPage() {
   }, []);
 
   const handleReset = async () => {
-    // 1) 로컬스토리지 삭제
-    clearLocalVocab();
-    setVocab([]);
-    setShowResetModal(false);
-
-    // 2) DB에서도 삭제 (best-effort — 실패해도 로컬은 이미 지워진 상태)
+    setIsResetting(true);
+    setResetError(null);
     try {
-      await fetch(`${BACKEND_URL}/vocab/${getEffectiveUserId()}`, {
+      const response = await fetch(`${BACKEND_URL}/vocab/${getEffectiveUserId()}`, {
         method: "DELETE",
       });
+      if (!response.ok) throw new Error(`Vocabulary deletion failed (${response.status})`);
+
+      // Clear the browser cache only after the database accepts the deletion.
+      clearLocalVocab();
+      setVocab([]);
+      setShowResetModal(false);
     } catch {
-      // 백엔드가 꺼져있어도 로컬은 이미 초기화됨
+      setResetError("단어장 초기화에 실패했습니다. 네트워크 연결 후 다시 시도해 주세요.");
+    } finally {
+      setIsResetting(false);
     }
   };
 
@@ -354,7 +360,7 @@ export default function VocabPage() {
           className="modal-overlay"
           role="dialog"
           aria-modal="true"
-          onClick={() => setShowResetModal(false)}
+          onClick={() => { if (!isResetting) setShowResetModal(false); }}
         >
           <div className="modal-sheet" onClick={(e) => e.stopPropagation()} style={{ textAlign: "center" }}>
             <div className="modal-handle" />
@@ -364,11 +370,17 @@ export default function VocabPage() {
               저장된 단어 <strong>{vocab.length}개</strong>가 모두 삭제됩니다.<br />
               이 작업은 되돌릴 수 없어요.
             </p>
+            {resetError && (
+              <p role="alert" style={{ fontSize: 13, color: "var(--red)", fontWeight: 700, marginBottom: 16 }}>
+                {resetError}
+              </p>
+            )}
             <div style={{ display: "flex", gap: 10 }}>
               <button
                 className="btn btn-secondary btn-lg"
                 style={{ flex: 1 }}
                 onClick={() => setShowResetModal(false)}
+                disabled={isResetting}
                 id="btn-reset-cancel"
               >
                 취소
@@ -377,9 +389,10 @@ export default function VocabPage() {
                 className="btn btn-lg"
                 style={{ flex: 1, background: "var(--red)", color: "#fff", border: "none" }}
                 onClick={handleReset}
+                disabled={isResetting}
                 id="btn-reset-confirm"
               >
-                초기화
+                {isResetting ? "초기화 중..." : "초기화"}
               </button>
             </div>
           </div>
