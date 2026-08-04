@@ -6,6 +6,7 @@
 from fastapi import APIRouter, HTTPException, Depends
 from sqlalchemy.orm import Session
 from database import get_db
+from services.support_email import notify_support_team
 from schemas.schemas import (
     ProfileUpdateRequest, ChangePasswordRequest, SimpleSuccessResponse,
     PreferencesResponse, PreferencesUpdateRequest,
@@ -196,6 +197,13 @@ def create_support_ticket(req: SupportTicketRequest, db: Session = Depends(get_d
     )
     db.add(ticket)
     db.commit()
+    notify_support_team(
+        ticket_id=ticket.id,
+        name=ticket.name,
+        email=ticket.email,
+        category=ticket.category,
+        message=ticket.message,
+    )
     return SupportTicketResponse(success=True, ticket_id=ticket.id)
 
 
@@ -230,4 +238,3 @@ def add_coins(user_id: str, req: AddCoinsRequest, db: Session = Depends(get_db))
     economy.coins += req.coins
     db.commit()
     return AddCoinsResponse(success=True, total_coins=economy.coins)
-

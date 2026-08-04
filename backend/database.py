@@ -29,6 +29,12 @@ class Settings(BaseSettings):
     google_play_service_account_file: str = ""
     internal_api_secret: str = ""
     portone_api_secret: str = ""
+    support_to_email: str = ""
+    smtp_host: str = ""
+    smtp_port: int = 587
+    smtp_user: str = ""
+    smtp_password: str = ""
+    smtp_from_email: str = ""
 
     class Config:
         env_file = ".env"
