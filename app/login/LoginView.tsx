@@ -133,9 +133,6 @@ export default function LoginView() {
               <GoogleIcon />
               {t("continueGoogle")}
             </button>
-            <button className="btn btn-secondary btn-lg" id="btn-apple-login">
-              {t("continueApple")}
-            </button>
 
             <p className={styles.signupHint}>
               이미 계정이 있으신가요?{" "}
