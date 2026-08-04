@@ -19,7 +19,7 @@ import uuid
 # 프리미엄 구독 가격 — app/premium/PremiumView.tsx의 표시 가격과 반드시 일치해야 한다
 # (여기 값이 실제 결제 검증 기준 금액이라, 프론트 표시와 어긋나면 결제가 거부된다).
 PREMIUM_PRICE_KRW = 5900
-PREMIUM_WELCOME_COINS = 1000
+PREMIUM_WELCOME_COINS = 500
 
 router = APIRouter(prefix="/billing", tags=["billing"])
 

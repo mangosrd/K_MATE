@@ -231,6 +231,24 @@ export default function VocabPage() {
         </header>
 
         <div className={styles.inner}>
+          <section className={styles.studyHero}>
+            <div className={styles.studyHeroCopy}>
+              <span className={styles.studyEyebrow}>✦ {t("practiceVocab")}</span>
+              <h2>{filtered.length > 0 ? `${filtered.length} ${t("learnedWords")}` : t("vocabTitle")}</h2>
+              <p>{filtered.length > 0 ? `${mastered} ${t("masteredWords")} · ${reviewing} ${t("wordStatusReview")}` : t("vocabSub")}</p>
+            </div>
+            {filtered.length > 0 ? (
+              <button
+                className={styles.studyHeroBtn}
+                onClick={() => { setPracticeMode(true); setPracticeIdx(0); setShowAnswer(false); }}
+              >
+                {t("practiceVocab")} →
+              </button>
+            ) : (
+              <span className={styles.studyHeroEmoji}>📚</span>
+            )}
+          </section>
+
           {/* 기장별 탭 */}
           <div className={styles.regionTabs} role="tablist">
             {CHARACTER_TABS.map((tab) => {
@@ -283,7 +301,7 @@ export default function VocabPage() {
             <div className={styles.statDivider} />
             <div className={styles.statItem}>
               <span className={styles.statNum} style={{ color: "var(--color-warning)" }}>{reviewing}</span>
-              <span className={styles.statKo}>{t("mastered")}</span>
+              <span className={styles.statKo}>{t("wordStatusReview")}</span>
             </div>
           </div>
 
