@@ -3,12 +3,18 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
+import { Capacitor, registerPlugin } from "@capacitor/core";
 import { useLanguage } from "@/components/LanguageContext";
 import { setCurrentUser } from "@/lib/auth/store";
 import LoadingSplash from "@/components/LoadingSplash";
 import styles from "./login.module.css";
 
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
+
+interface NativeGoogleAuthPlugin {
+  signIn(options: { serverClientId: string }): Promise<{ idToken: string }>;
+}
+const NativeGoogleAuth = registerPlugin<NativeGoogleAuthPlugin>("NativeGoogleAuth");
 
 type Mode = "start" | "login" | "signup";
 
@@ -53,8 +59,26 @@ export default function LoginView() {
       });
   }, [router]);
 
-  const startGoogleLogin = () => {
+  const startGoogleLogin = async () => {
     setError(null);
+    if (Capacitor.isNativePlatform()) {
+      setLoading(true);
+      try {
+        const configResponse = await fetch(`${BACKEND_URL}/auth/google/client-id`);
+        const config = await configResponse.json();
+        if (!configResponse.ok) throw new Error(config.detail || "Google login is not configured");
+        const nativeResult = await NativeGoogleAuth.signIn({ serverClientId: config.client_id });
+        const loginResponse = await fetch(`${BACKEND_URL}/auth/google/native`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ id_token: nativeResult.idToken }) });
+        const user = await loginResponse.json();
+        if (!loginResponse.ok) throw new Error(user.detail || "Google login failed");
+        setCurrentUser(user);
+        router.push("/map");
+      } catch (reason) {
+        setError(reason instanceof Error ? reason.message : "Google login failed. Please try again.");
+        setLoading(false);
+      }
+      return;
+    }
     window.location.assign(`${BACKEND_URL}/auth/google/start`);
   };
 

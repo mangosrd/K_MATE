@@ -19,6 +19,8 @@ import secrets
 import time
 from urllib.parse import urlencode
 import httpx
+from google.auth.transport import requests as google_requests
+from google.oauth2 import id_token as google_id_token
 
 router = APIRouter(prefix="/auth", tags=["auth"])
 
@@ -61,6 +63,45 @@ def _to_response(user: User) -> AuthUserResponse:
         language=user.language,
         membership=user.membership.value if hasattr(user.membership, "value") else user.membership,
     )
+
+
+def _find_or_create_google_user(profile: dict, db: Session) -> User:
+    email = profile.get("email")
+    if not email or not profile.get("email_verified"):
+        raise HTTPException(status_code=400, detail="A verified Google email address is required.")
+
+    user = db.query(User).filter(User.email == email).first()
+    if not user:
+        user = User(id=str(uuid.uuid4()), name=profile.get("name") or email.split("@", 1)[0], email=email,
+                    password_hash=None, language="ko", membership="free", free_char_slots=["kyuhyun", "haneul"])
+        db.add(user)
+        db.flush()
+        db.add(Economy(id=str(uuid.uuid4()), user_id=user.id, coins=35))
+        db.commit()
+        db.refresh(user)
+    elif user.is_withdrawn:
+        raise HTTPException(status_code=401, detail="This account has been withdrawn.")
+    return user
+
+
+@router.get("/google/client-id")
+def google_client_id():
+    client_id = get_settings().google_client_id
+    if not client_id:
+        raise HTTPException(status_code=503, detail="Google login is not configured")
+    return {"client_id": client_id}
+
+
+@router.post("/google/native", response_model=AuthUserResponse)
+def google_native_login(payload: dict, db: Session = Depends(get_db)):
+    token = str(payload.get("id_token", ""))
+    if not token:
+        raise HTTPException(status_code=400, detail="Google ID token is required")
+    try:
+        profile = google_id_token.verify_oauth2_token(token, google_requests.Request(), get_settings().google_client_id)
+    except ValueError:
+        raise HTTPException(status_code=401, detail="Google login verification failed")
+    return _to_response(_find_or_create_google_user(profile, db))
 
 
 @router.get("/google/start")
@@ -119,28 +160,7 @@ def google_callback(code: str, state: str, request: Request, db: Session = Depen
     except httpx.HTTPError:
         raise HTTPException(status_code=502, detail="Google could not complete the login. Please try again.")
 
-    email = profile.get("email")
-    if not email or not profile.get("email_verified"):
-        raise HTTPException(status_code=400, detail="A verified Google email address is required.")
-
-    user = db.query(User).filter(User.email == email).first()
-    if not user:
-        user = User(
-            id=str(uuid.uuid4()),
-            name=profile.get("name") or email.split("@", 1)[0],
-            email=email,
-            password_hash=None,
-            language="ko",
-            membership="free",
-            free_char_slots=["kyuhyun", "haneul"],
-        )
-        db.add(user)
-        db.flush()
-        db.add(Economy(id=str(uuid.uuid4()), user_id=user.id, coins=35))
-        db.commit()
-        db.refresh(user)
-    elif user.is_withdrawn:
-        raise HTTPException(status_code=401, detail="This account has been withdrawn.")
+    user = _find_or_create_google_user(profile, db)
 
     handoff = _sign_payload({"user_id": user.id, "exp": time.time() + 120})
     response = RedirectResponse(f"{settings.frontend_url.rstrip('/')}/login?oauth_code={handoff}")
