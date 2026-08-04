@@ -127,8 +127,8 @@ def initialize_database() -> bool:
                     text("INSERT INTO characters (id, region_id, name, requires_premium) VALUES (:id, :region_id, :name, :requires_premium) ON DUPLICATE KEY UPDATE id = id"),
                     {"id": character_id, "region_id": region_id, "name": name, "requires_premium": requires_premium},
                 )
-        print("[DB] schema and seed data are ready")
+        print("[DB] schema and seed data are ready", flush=True)
         return True
     except Exception as e:
-        print(f"[DB] schema initialization failed: {e}")
+        print(f"[DB] schema initialization failed: {e}", flush=True)
         return False
