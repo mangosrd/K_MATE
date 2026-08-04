@@ -3,7 +3,7 @@
 결제 수단(시뮬레이션), 고객 지원 문의.
 """
 
-from fastapi import APIRouter, HTTPException, Depends
+from fastapi import APIRouter, HTTPException, Depends, BackgroundTasks
 from sqlalchemy.orm import Session
 from database import get_db
 from services.support_email import notify_support_team
@@ -186,7 +186,11 @@ def delete_payment_method(method_id: str, db: Session = Depends(get_db)):
 
 # ── 고객 지원 문의 ────────────────────────────────────────────
 @router.post("/support/tickets", response_model=SupportTicketResponse)
-def create_support_ticket(req: SupportTicketRequest, db: Session = Depends(get_db)):
+def create_support_ticket(
+    req: SupportTicketRequest,
+    background_tasks: BackgroundTasks,
+    db: Session = Depends(get_db),
+):
     ticket = SupportTicket(
         id=str(uuid.uuid4()),
         user_id=req.user_id,
@@ -197,7 +201,8 @@ def create_support_ticket(req: SupportTicketRequest, db: Session = Depends(get_d
     )
     db.add(ticket)
     db.commit()
-    notify_support_team(
+    background_tasks.add_task(
+        notify_support_team,
         ticket_id=ticket.id,
         name=ticket.name,
         email=ticket.email,
