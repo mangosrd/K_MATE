@@ -4,6 +4,7 @@ import { MOCK_USER } from "@/lib/db/mock";
 
 const STORAGE_KEY = "kmate_auth_user";
 const ACCESS_TOKEN_KEY = "kmate_access_token";
+const SESSION_MAX_AGE_SECONDS = 60 * 60 * 24 * 365;
 
 export interface AuthUser {
   id: string;
@@ -30,7 +31,7 @@ export function setCurrentUser(user: AuthUser) {
   if (user.access_token) localStorage.setItem(ACCESS_TOKEN_KEY, user.access_token);
   // 서버 컴포넌트(예: /learn/[characterId])는 localStorage를 못 읽으므로,
   // 로그인 유저 id를 쿠키로도 남겨서 서버에서도 실제 멤버십을 확인할 수 있게 한다.
-  document.cookie = `kmate_uid=${user.id}; path=/; max-age=${60 * 60 * 24 * 30}; samesite=lax`;
+  document.cookie = `kmate_uid=${user.id}; path=/; max-age=${SESSION_MAX_AGE_SECONDS}; samesite=lax`;
 }
 
 export function logout() {
@@ -102,7 +103,7 @@ export async function ensureGuestAccount(): Promise<void> {
 
   const existing = getCachedGuestId();
   if (existing && localStorage.getItem(ACCESS_TOKEN_KEY)) {
-    document.cookie = `kmate_uid=${existing}; path=/; max-age=${60 * 60 * 24 * 30}; samesite=lax`;
+    document.cookie = `kmate_uid=${existing}; path=/; max-age=${SESSION_MAX_AGE_SECONDS}; samesite=lax`;
     return;
   }
 
@@ -114,7 +115,7 @@ export async function ensureGuestAccount(): Promise<void> {
     if (data.id && data.access_token) {
       localStorage.setItem(GUEST_ID_KEY, data.id);
       localStorage.setItem(ACCESS_TOKEN_KEY, data.access_token);
-      document.cookie = `kmate_uid=${data.id}; path=/; max-age=${60 * 60 * 24 * 30}; samesite=lax`;
+      document.cookie = `kmate_uid=${data.id}; path=/; max-age=${SESSION_MAX_AGE_SECONDS}; samesite=lax`;
     }
   } catch {
     /* no-op */

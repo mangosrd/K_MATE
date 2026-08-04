@@ -11,7 +11,9 @@ from fastapi import Header, HTTPException
 
 from database import get_settings
 
-TOKEN_TTL_SECONDS = 60 * 60 * 24 * 30
+# The app remains signed in between launches. Revocation is handled by logout or
+# account withdrawal; this token only authorizes the user-owned letter endpoints.
+TOKEN_TTL_SECONDS = 60 * 60 * 24 * 365
 
 
 def issue_access_token(user_id: str) -> str:

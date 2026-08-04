@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { Capacitor, registerPlugin } from "@capacitor/core";
 import { useLanguage } from "@/components/LanguageContext";
-import { setCurrentUser } from "@/lib/auth/store";
+import { getCurrentUser, setCurrentUser } from "@/lib/auth/store";
 import LoadingSplash from "@/components/LoadingSplash";
 import styles from "./login.module.css";
 
@@ -38,7 +38,12 @@ export default function LoginView() {
 
   useEffect(() => {
     const oauthCode = new URLSearchParams(window.location.search).get("oauth_code");
-    if (!oauthCode) return;
+    if (!oauthCode) {
+      // The root route can be opened after an app restart. If this browser already
+      // has a valid local session, never make the user sign in again just to enter.
+      if (getCurrentUser()) router.replace("/map");
+      return;
+    }
 
     setLoading(true);
     fetch(`${BACKEND_URL}/auth/google/exchange`, {

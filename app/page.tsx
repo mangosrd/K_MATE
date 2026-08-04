@@ -1,6 +1,8 @@
 import { redirect } from "next/navigation";
+import { cookies } from "next/headers";
 
-// 루트 접속 시 로그인 화면으로 리다이렉트
-export default function Home() {
-  redirect("/login");
+// Keep a signed-in visitor in the app instead of showing the login screen again on every launch.
+export default async function Home() {
+  const cookieStore = await cookies();
+  redirect(cookieStore.get("kmate_uid")?.value ? "/map" : "/login");
 }
