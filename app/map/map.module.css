@@ -148,6 +148,7 @@
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   position: relative;
+  touch-action: manipulation;
 }
 
 .ticket:hover {
@@ -163,15 +164,17 @@
   padding: 20px;
   background: linear-gradient(135deg, #003478 0%, #002255 100%);
   color: #ffffff;
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(66px, 1fr) minmax(112px, 1.25fr) minmax(78px, 1fr);
   align-items: center;
-  justify-content: space-between;
+  gap: 8px;
   border-radius: var(--radius-xl) var(--radius-xl) 0 0;
 }
 
 .ticketOrigin {
   display: flex;
   flex-direction: column;
+  min-width: 0;
 }
 
 .ticketCodeSmall {
@@ -192,17 +195,23 @@
   flex-direction: column;
   align-items: center;
   gap: 4px;
+  min-width: 0;
 }
 
 .ticketEmoji {
   font-size: 24px;
+  line-height: 1;
+  height: 28px;
+  display: grid;
+  place-items: center;
 }
 
 .ticketFlight {
   display: flex;
   align-items: center;
   gap: 6px;
-  width: 90px;
+  width: 100%;
+  min-width: 0;
   position: relative;
 }
 
@@ -215,6 +224,8 @@
 .planeIcon {
   font-size: 14px;
   color: #ffffff;
+  line-height: 1;
+  flex-shrink: 0;
 }
 
 .openBadge {
@@ -224,12 +235,15 @@
   padding: 2px 8px;
   border-radius: var(--radius-full);
   letter-spacing: 0.05em;
+  line-height: 1.2;
+  white-space: nowrap;
 }
 
 .ticketDest {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  min-width: 0;
 }
 
 .ticketCode {
@@ -249,6 +263,7 @@
 .ticketCityEn {
   font-size: 10px;
   color: rgba(255, 255, 255, 0.7);
+  white-space: nowrap;
 }
 
 /* ✂️ 원형 노치(Notch) 점선 구분선 */
@@ -291,7 +306,8 @@
 /* ── 탑승권 하단 메타 정보 ──────────────────────────────── */
 .ticketBottom {
   padding: 16px 20px;
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(70px, 1fr) minmax(64px, 1fr) minmax(130px, 1.45fr) 20px;
   align-items: center;
   gap: 18px;
   background: var(--bg-base);
@@ -326,6 +342,7 @@
   flex-direction: column;
   gap: 6px;
   flex: 1;
+  min-width: 0;
 }
 
 .progressRow {
@@ -361,4 +378,14 @@
   font-size: 20px;
   color: var(--text-muted);
   font-weight: 700;
+  line-height: 1;
+  justify-self: end;
+}
+
+@media (max-width: 360px) {
+  .ticketTop { padding: 18px 16px; grid-template-columns: 58px minmax(100px, 1fr) 70px; }
+  .ticketBottom { padding: 14px 16px; gap: 10px; grid-template-columns: 62px 56px minmax(104px, 1fr) 16px; }
+  .ticketCodeSmall, .ticketCode { font-size: 18px; }
+  .ticketCity { font-size: 12px; }
+  .ticketCityEn { font-size: 9px; }
 }
