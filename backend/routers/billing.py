@@ -19,6 +19,7 @@ import uuid
 # 프리미엄 구독 가격 — app/premium/PremiumView.tsx의 표시 가격과 반드시 일치해야 한다
 # (여기 값이 실제 결제 검증 기준 금액이라, 프론트 표시와 어긋나면 결제가 거부된다).
 PREMIUM_PRICE_KRW = 5900
+PREMIUM_WELCOME_COINS = 1000
 
 router = APIRouter(prefix="/billing", tags=["billing"])
 
@@ -61,7 +62,7 @@ def verify_android_purchase(req: AndroidPurchaseVerifyRequest, db: Session = Dep
     """안드로이드 앱에서 발생한 Google Play 구독 결제를 서버에서 검증하고,
     유효하면 프리미엄 멤버십으로 승격한다.
     """
-    user = db.query(User).filter(User.id == req.user_id).first()
+    user = db.query(User).filter(User.id == req.user_id).with_for_update().first()
     if not user:
         raise HTTPException(status_code=404, detail="User not found")
 
@@ -87,16 +88,9 @@ def verify_android_purchase(req: AndroidPurchaseVerifyRequest, db: Session = Dep
             success=False, membership=user.membership, message="유효하지 않은 결제입니다."
         )
 
-    user.membership = "premium"
-    db.add(Purchase(
-        id=str(uuid.uuid4()),
-        user_id=req.user_id,
-        platform="google_play",
-        product_id=req.product_id,
-        purchase_token=req.purchase_token,
-        status="verified",
-    ))
-    db.commit()
+    _activate_premium_and_grant_welcome_coins(
+        db, user, "google_play", req.product_id, req.purchase_token
+    )
 
     return PurchaseVerifyResponse(success=True, membership=user.membership, message="결제가 확인되었습니다.")
 
@@ -130,6 +124,24 @@ def _grant_coins(db: Session, user_id: str, coins: int) -> int:
     economy.coins += coins
     db.flush()
     return economy.coins
+
+
+def _activate_premium_and_grant_welcome_coins(
+    db: Session, user: User, platform: str, product_id: str, purchase_token: str
+) -> int:
+    """Apply a verified 5,900 KRW premium purchase exactly once with its coin reward."""
+    user.membership = "premium"
+    total_coins = _grant_coins(db, user.id, PREMIUM_WELCOME_COINS)
+    db.add(Purchase(
+        id=str(uuid.uuid4()),
+        user_id=user.id,
+        platform=platform,
+        product_id=product_id,
+        purchase_token=purchase_token,
+        status="verified",
+    ))
+    db.commit()
+    return total_coins
 
 
 @router.post("/verify-android-coins", response_model=CoinPurchaseResponse)
@@ -464,7 +476,7 @@ async def verify_portone_character_purchase(req: PortonePaymentVerifyRequest, db
 @router.post("/verify-portone-membership", response_model=PurchaseVerifyResponse)
 async def verify_portone_membership(req: PortonePaymentVerifyRequest, db: Session = Depends(get_db)):
     """웹(포트원 KG이니시스)에서 발생한 프리미엄 구독 결제를 검증하고 승격한다."""
-    user = db.query(User).filter(User.id == req.user_id).first()
+    user = db.query(User).filter(User.id == req.user_id).with_for_update().first()
     if not user:
         raise HTTPException(status_code=404, detail="User not found")
 
@@ -484,16 +496,9 @@ async def verify_portone_membership(req: PortonePaymentVerifyRequest, db: Sessio
     if not is_valid:
         return PurchaseVerifyResponse(success=False, membership=user.membership, message="유효하지 않은 결제입니다.")
 
-    user.membership = "premium"
-    db.add(Purchase(
-        id=str(uuid.uuid4()),
-        user_id=req.user_id,
-        platform="portone",
-        product_id="kmate_premium_monthly",
-        purchase_token=req.payment_id,
-        status="verified",
-    ))
-    db.commit()
+    _activate_premium_and_grant_welcome_coins(
+        db, user, "portone", "kmate_premium_monthly", req.payment_id
+    )
 
     return PurchaseVerifyResponse(success=True, membership=user.membership, message="결제가 확인되었습니다.")
 

@@ -28,6 +28,8 @@ export interface ChatResponse {
     sentence: string;
   } | null;
   affinity_delta?: number;
+  coins_spent?: number;
+  remaining_coins?: number | null;
   free_messages_remaining?: number | null; // 무료 회원에게만 채워짐, 프리미엄이면 null
 }
 

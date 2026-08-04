@@ -171,6 +171,11 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
       ]);
       setFreeRemaining(data.free_messages_remaining ?? null);
 
+      if (data.coins_spent) {
+        setToast(`🪙 -${data.coins_spent}`);
+        setTimeout(() => setToast(null), 3000);
+      }
+
       if (data.callback_memory) {
         setCallbackMemory(data.callback_memory);
       }
@@ -532,8 +537,8 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
               >
                 {t("notNowBtn")}
               </button>
-              <Link href="/premium" className={`btn btn-primary btn-lg ${styles.pillBtn}`}>
-                {t("viewPremiumBtn")}
+              <Link href="/coins" className={`btn btn-primary btn-lg ${styles.pillBtn}`}>
+                {t("coinShopTitle")}
               </Link>
             </div>
           </div>

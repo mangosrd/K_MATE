@@ -9,7 +9,7 @@ from schemas.schemas import ChatRequest, ChatResponse, WordSuggestion
 from services.llm_service import (
     load_persona, build_system_prompt, llm_chat, extract_word_suggestion
 )
-from models.models import Character, Memory, Progress, User
+from models.models import Character, Memory, Progress, User, Economy
 from routers.progress import apply_streak
 from services.access_control import check_character_access
 import uuid
@@ -17,6 +17,7 @@ import uuid
 router = APIRouter(prefix="/chat", tags=["chat"])
 
 FREE_CHAT_LIMIT = 10
+CHAT_COIN_COST = 2
 
 
 @router.post("", response_model=ChatResponse)
@@ -37,12 +38,6 @@ async def chat(req: ChatRequest, db: Session = Depends(get_db)):
     # 1-1-1. 프리미엄 전용 캐릭터인데 이 유저는 접근 권한이 없으면 여기서 막는다 —
     # 프론트 잠금 화면은 API를 직접 호출하면 우회되므로 서버에서도 검증해야 한다.
     check_character_access(user, character)
-
-    if user.membership != "premium" and user.free_chat_count >= FREE_CHAT_LIMIT:
-        raise HTTPException(
-            status_code=402,
-            detail="무료 대화 10회를 모두 사용했습니다. 프리미엄으로 업그레이드하면 무제한으로 대화할 수 있어요.",
-        )
 
     # 2. 기장 페르소나 로드
     persona = load_persona(req.character_id)
@@ -90,10 +85,28 @@ async def chat(req: ChatRequest, db: Session = Depends(get_db)):
     # 짧다(맨 위에서부터 잠그면 LLM 응답 기다리는 몇 초 동안 같은 유저의 다른 요청이
     # 전부 막혀버린다). 이 좁은 구간만 잠가도 카운터가 두 요청 사이에 유실되는 걸 막을 수 있다.
     free_messages_remaining = None
+    coins_spent = 0
+    remaining_coins = None
     if user.membership != "premium":
         locked_user = db.query(User).filter(User.id == req.user_id).with_for_update().first()
-        locked_user.free_chat_count += 1
-        free_messages_remaining = max(0, FREE_CHAT_LIMIT - locked_user.free_chat_count)
+        if locked_user.free_chat_count < FREE_CHAT_LIMIT:
+            locked_user.free_chat_count += 1
+            free_messages_remaining = FREE_CHAT_LIMIT - locked_user.free_chat_count
+        else:
+            economy = (
+                db.query(Economy)
+                .filter(Economy.user_id == req.user_id)
+                .with_for_update()
+                .first()
+            )
+            if not economy or economy.coins < CHAT_COIN_COST:
+                raise HTTPException(
+                    status_code=402,
+                    detail=f"Free messages are used. Each chat costs {CHAT_COIN_COST} coins.",
+                )
+            economy.coins -= CHAT_COIN_COST
+            coins_spent = CHAT_COIN_COST
+            remaining_coins = economy.coins
 
     db.commit()
 
@@ -112,4 +125,6 @@ async def chat(req: ChatRequest, db: Session = Depends(get_db)):
         word_suggestion=word_suggestion,
         affinity_delta=1,
         free_messages_remaining=free_messages_remaining,
+        coins_spent=coins_spent,
+        remaining_coins=remaining_coins,
     )

@@ -23,7 +23,7 @@ const PERKS = [
   { icon: "📔", ko: "모든 일기 해금 가능", key: "perkAllDiaries" },
   { icon: "📖", ko: "전체 챕터 학습", key: "perkAllChapters" },
   { icon: "🗺️", ko: "모든 지역 탐방", key: "perkAllRegions" },
-  { icon: "🪙", ko: "코인 보너스 +50%", key: "perkCoinBonus" },
+  { icon: "🪙", ko: "1000코인 즉시 지급", key: "perkCoinBonus" },
   { icon: "⭐", ko: "신규 콘텐츠 우선 접근", key: "perkEarlyAccess" },
 ];
 

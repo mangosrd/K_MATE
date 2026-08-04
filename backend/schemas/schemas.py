@@ -37,6 +37,8 @@ class ChatResponse(BaseModel):
     affinity_delta: int = 1
     # 무료 회원에게만 채워짐(몇 번 남았는지) — 프리미엄은 제한이 없어 항상 None
     free_messages_remaining: Optional[int] = None
+    coins_spent: int = 0
+    remaining_coins: Optional[int] = None
 
 
 # ── 기억 ──────────────────────────────────────────────────
