@@ -27,6 +27,10 @@ class Settings(BaseSettings):
     frontend_url: str = "http://localhost:3000"
     google_play_package_name: str = "com.kmate.app"
     google_play_service_account_file: str = ""
+    google_client_id: str = ""
+    google_client_secret: str = ""
+    # Railway public domain used by the Google OAuth redirect URI.
+    backend_public_url: str = "https://kmate-production.up.railway.app"
     internal_api_secret: str = ""
     portone_api_secret: str = ""
     support_to_email: str = ""

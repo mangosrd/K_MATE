@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { useLanguage } from "@/components/LanguageContext";
@@ -29,6 +29,34 @@ export default function LoginView() {
   const [password, setPassword] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    const oauthCode = new URLSearchParams(window.location.search).get("oauth_code");
+    if (!oauthCode) return;
+
+    setLoading(true);
+    fetch(`${BACKEND_URL}/auth/google/exchange`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ oauth_code: oauthCode }),
+    })
+      .then(async (res) => {
+        const data = await res.json();
+        if (!res.ok) throw new Error(data.detail || "Google login failed");
+        setCurrentUser(data);
+        router.replace("/map");
+      })
+      .catch((reason: Error) => {
+        setError(reason.message || "Google login failed. Please try again.");
+        setLoading(false);
+        router.replace("/login");
+      });
+  }, [router]);
+
+  const startGoogleLogin = () => {
+    setError(null);
+    window.location.assign(`${BACKEND_URL}/auth/google/start`);
+  };
 
   const resetForm = () => {
     setName("");
@@ -129,7 +157,7 @@ export default function LoginView() {
 
             <div className={styles.dividerOr}>{t("orDivider")}</div>
 
-            <button className="btn btn-secondary btn-lg" id="btn-google-login" disabled title="Google login is not available yet">
+            <button className="btn btn-secondary btn-lg" id="btn-google-login" onClick={startGoogleLogin}>
               <GoogleIcon />
               {t("continueGoogle")}
             </button>
