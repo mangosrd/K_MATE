@@ -12,6 +12,14 @@ const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:800
 
 type Mode = "start" | "login" | "signup";
 
+const LOGIN_CAPTAINS = [
+  { id: "kyuhyun", name: "규현" },
+  { id: "haneul", name: "하늘" },
+  { id: "sunwoo", name: "선우" },
+  { id: "sangwoo", name: "상우" },
+  { id: "yongwoo", name: "용우" },
+];
+
 export default function LoginView() {
   const { t } = useLanguage();
   const router = useRouter();
@@ -95,20 +103,16 @@ export default function LoginView() {
       {/* 캐릭터 미리보기 */}
       {mode === "start" && (
         <div className={styles.characterRow} aria-hidden="true">
-          {[
-            { id: "kyuhyun", name: "규현" },
-            { id: "haneul", name: "하늘" },
-            { id: "sunwoo", name: "선우" },
-            { id: "sangwoo", name: "상우" },
-            { id: "yongwoo", name: "용우" },
-          ].map((c) => (
-            <div key={c.name} className={styles.characterChip}>
-              <span className={styles.characterEmoji}>
-                <Image src={`/characters/${c.id}.png`} alt={c.name} width={48} height={48} className={styles.characterEmojiImg} />
-              </span>
-              <span className={styles.characterName}>{c.name}</span>
-            </div>
-          ))}
+          <div className={styles.characterTrack}>
+            {[...LOGIN_CAPTAINS, ...LOGIN_CAPTAINS].map((c, index) => (
+              <div key={`${c.id}-${index}`} className={styles.characterChip}>
+                <span className={styles.characterEmoji}>
+                  <Image src={`/characters/${c.id}.png`} alt="" width={48} height={48} className={styles.characterEmojiImg} />
+                </span>
+                <span className={styles.characterName}>{c.name}</span>
+              </div>
+            ))}
+          </div>
         </div>
       )}
 

@@ -100,21 +100,25 @@
 
 /* 캐릭터 미리보기 */
 .characterRow {
-  display: flex;
   width: 100%;
-  gap: var(--space-sm);
-  overflow-x: auto;
-  overscroll-behavior-x: contain;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-  padding: 0 2px 6px;
+  overflow: hidden;
+  padding: 0 0 6px;
   position: relative;
   z-index: 1;
 }
 
-.characterRow::-webkit-scrollbar {
-  display: none;
+.characterTrack {
+  display: flex;
+  width: max-content;
+  gap: var(--space-sm);
+  padding: 0 2px;
+  animation: captain-rail 24s linear infinite;
+  will-change: transform;
+}
+
+@keyframes captain-rail {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-50% + 4px)); }
 }
 
 .characterChip {
@@ -128,7 +132,10 @@
   border-radius: var(--radius-md);
   padding: 8px;
   backdrop-filter: blur(8px);
-  scroll-snap-align: start;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .characterTrack { animation-play-state: paused; }
 }
 
 .characterEmoji {
