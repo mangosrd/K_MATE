@@ -505,6 +505,10 @@ async def verify_portone_membership(req: PortonePaymentVerifyRequest, db: Sessio
 
 @router.post("/ads/watch", response_model=WatchAdResponse)
 def watch_ad(req: WatchAdRequest, db: Session = Depends(get_db)):
+    raise HTTPException(
+        status_code=410,
+        detail="Ad rewards are unavailable until verified rewarded-ad delivery is enabled.",
+    )
     """보상형 광고 시청 완료 보상 — 1회당 5코인, 하루 최대 100코인(20회)까지.
 
     실제 광고 SDK가 붙기 전까지는 프론트가 시뮬레이션(카운트다운 모달) 재생 후 이

@@ -18,7 +18,6 @@ import LanguageModal from "@/components/LanguageModal";
 import ThemeModal from "@/components/ThemeModal";
 import WithdrawModal from "@/components/WithdrawModal";
 import MateSelectModal from "@/components/MateSelectModal";
-import AdRewardModal from "@/components/AdRewardModal";
 import { getRemainingAds, completeAdView, MAX_ADS_PER_DAY, COINS_PER_AD } from "@/lib/ads/adStore";
 import type { Progress } from "@/types/database";
 import ProfileCard from "./components/ProfileCard";
@@ -236,7 +235,6 @@ export default function MePage() {
 
           <SettingsSection title={t("settingsAccount")}>
             <SettingItem icon="👤" label={t("editProfile")} href="/me/edit-profile" id="btn-edit-profile" />
-            <SettingItem icon="💳" label={t("paymentMethods")} href="/me/payment-methods" id="btn-payment-methods" />
             <SettingItem icon="🔒" label={t("securitySettings")} href="/me/security" id="btn-security" />
           </SettingsSection>
 
@@ -296,12 +294,6 @@ export default function MePage() {
       />
 
       {/* 📺 광고 보상 모달 */}
-      <AdRewardModal
-        isOpen={showAdModal}
-        remainingCount={adRemaining}
-        onClose={() => setShowAdModal(false)}
-        onRewardEarned={handleAdReward}
-      />
     </>
   );
 }

@@ -228,6 +228,10 @@ class AddCoinsResponse(BaseModel):
 
 @router.post("/user/{user_id}/add-coins", response_model=AddCoinsResponse)
 def add_coins(user_id: str, req: AddCoinsRequest, db: Session = Depends(get_db)):
+    raise HTTPException(
+        status_code=410,
+        detail="Ad rewards are unavailable until verified rewarded-ad delivery is enabled.",
+    )
     """코인 직접 지급 — 광고 보상(AdRewardModal) 등 내부 용도."""
     from models.models import Economy
     user = db.query(User).filter(User.id == user_id).first()

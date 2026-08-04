@@ -129,7 +129,7 @@ export default function LoginView() {
 
             <div className={styles.dividerOr}>{t("orDivider")}</div>
 
-            <button className="btn btn-secondary btn-lg" id="btn-google-login">
+            <button className="btn btn-secondary btn-lg" id="btn-google-login" disabled title="Google login is not available yet">
               <GoogleIcon />
               {t("continueGoogle")}
             </button>

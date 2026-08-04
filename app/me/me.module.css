@@ -238,7 +238,7 @@
 
 /* ── 광고 보기 코인 배너 ─────────────────────────────── */
 .adBanner {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: space-between;
   gap: var(--space-md);
