@@ -59,13 +59,7 @@ export default function LearnView({ char, chapters }: LearnViewProps) {
       <header className={styles.header}>
         <Link href={`/region/${char.region_id}`} className={styles.backBtn}>‹</Link>
         <div className={styles.headerCenter}>
-          <div className={styles.headerAvatar}>
-            <Image src={`/characters/${activeCaptain.id}.png`} alt={activeCaptain.name} width={44} height={44} className={styles.headerAvatarImg} />
-          </div>
-          <div>
-            <h1 className={styles.headerTitle}>{activeCaptain.name} {t("learnTitle")}</h1>
-            <p className={styles.headerSub}>Study with Captain {activeCaptain.name}</p>
-          </div>
+          <h1 className={styles.headerTitle}>{t("learn")}</h1>
         </div>
       </header>
 
