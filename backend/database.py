@@ -125,6 +125,13 @@ def initialize_database() -> bool:
             ("sangwoo", "chungcheong", "상우", True),
             ("yongwoo", "jeju", "용우", True),
         ]
+        gallery_images = [
+            ("gallery-kyuhyun-01", "kyuhyun", "/gallery/kyuhyun/standing-01.png", "Yang Kyuhyun", 1, 0),
+            ("gallery-haneul-01", "haneul", "/gallery/haneul/standing-01.png", "Oh Haneul", 1, 0),
+            ("gallery-sunwoo-01", "sunwoo", "/gallery/sunwoo/standing-01.png", "Cha Sunwoo", 1, 0),
+            ("gallery-sangwoo-01", "sangwoo", "/gallery/sangwoo/standing-01.png", "Cheon Sangwoo", 1, 0),
+            ("gallery-yongwoo-01", "yongwoo", "/gallery/yongwoo/standing-01.png", "Kwon Yongwoo", 1, 0),
+        ]
         with engine.begin() as connection:
             for region_id, name, name_en, airport_code, is_locked in regions:
                 connection.execute(
@@ -135,6 +142,12 @@ def initialize_database() -> bool:
                 connection.execute(
                     text("INSERT INTO characters (id, region_id, name, requires_premium) VALUES (:id, :region_id, :name, :requires_premium) ON DUPLICATE KEY UPDATE id = id"),
                     {"id": character_id, "region_id": region_id, "name": name, "requires_premium": requires_premium},
+                )
+        with engine.begin() as connection:
+            for image_id, character_id, image_url, title, image_order, unlock_cost in gallery_images:
+                connection.execute(
+                    text("INSERT INTO gallery_images (id, character_id, image_url, title, `order`, unlock_cost) VALUES (:id, :character_id, :image_url, :title, :image_order, :unlock_cost) ON DUPLICATE KEY UPDATE id = id"),
+                    {"id": image_id, "character_id": character_id, "image_url": image_url, "title": title, "image_order": image_order, "unlock_cost": unlock_cost},
                 )
         print("[DB] schema and seed data are ready", flush=True)
         return True
