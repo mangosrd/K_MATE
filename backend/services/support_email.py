@@ -39,8 +39,12 @@ def notify_support_team(*, ticket_id: str, name: str, email: str, category: str,
     )
 
     try:
-        with smtplib.SMTP(settings.smtp_host, settings.smtp_port, timeout=15) as smtp:
-            smtp.starttls()
+        # Daum uses implicit SSL on port 465; Gmail and most other providers
+        # use STARTTLS on port 587.
+        smtp_client = smtplib.SMTP_SSL if settings.smtp_port == 465 else smtplib.SMTP
+        with smtp_client(settings.smtp_host, settings.smtp_port, timeout=15) as smtp:
+            if settings.smtp_port != 465:
+                smtp.starttls()
             smtp.login(settings.smtp_user, settings.smtp_password)
             smtp.send_message(mail)
         return True
