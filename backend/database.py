@@ -92,3 +92,43 @@ def check_connection() -> bool:
     except Exception as e:
         print(f"[DB] 연결 실패: {e}")
         return False
+
+
+def initialize_database() -> bool:
+    """Create tables and essential reference data for a new deployment."""
+    try:
+        # Register every model before creating the schema. Local import avoids
+        # the database <-> model import cycle during normal application load.
+        import models.models  # noqa: F401
+
+        Base.metadata.create_all(bind=engine)
+        regions = [
+            ("seoul", "서울·경기", "Seoul & Gyeonggi", "SEL", False),
+            ("jeonju", "전주·전라", "Jeonju & Jeolla", "JWJ", False),
+            ("busan", "부산·경남", "Busan & Gyeongnam", "PUS", True),
+            ("chungcheong", "충청·공주", "Chungcheong & Gongju", "OSN", True),
+            ("jeju", "제주", "Jeju Island", "CJU", True),
+        ]
+        characters = [
+            ("kyuhyun", "seoul", "규현", False),
+            ("haneul", "jeonju", "하늘", False),
+            ("sunwoo", "busan", "선우", True),
+            ("sangwoo", "chungcheong", "상우", True),
+            ("yongwoo", "jeju", "용우", True),
+        ]
+        with engine.begin() as connection:
+            for region_id, name, name_en, airport_code, is_locked in regions:
+                connection.execute(
+                    text("INSERT INTO regions (id, name, name_en, airport_code, is_locked) VALUES (:id, :name, :name_en, :airport_code, :is_locked) ON DUPLICATE KEY UPDATE id = id"),
+                    {"id": region_id, "name": name, "name_en": name_en, "airport_code": airport_code, "is_locked": is_locked},
+                )
+            for character_id, region_id, name, requires_premium in characters:
+                connection.execute(
+                    text("INSERT INTO characters (id, region_id, name, requires_premium) VALUES (:id, :region_id, :name, :requires_premium) ON DUPLICATE KEY UPDATE id = id"),
+                    {"id": character_id, "region_id": region_id, "name": name, "requires_premium": requires_premium},
+                )
+        print("[DB] schema and seed data are ready")
+        return True
+    except Exception as e:
+        print(f"[DB] schema initialization failed: {e}")
+        return False

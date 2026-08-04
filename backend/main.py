@@ -11,7 +11,7 @@ import sys
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
-from database import check_connection, get_settings
+from database import get_settings, initialize_database
 from routers import chat, diary, vocab, progress, memory, auth, account, translate, gallery, billing, letters
 from schemas.schemas import HealthResponse
 
@@ -25,7 +25,7 @@ settings = get_settings()
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """앱 시작/종료 훅"""
-    db_ok = check_connection()
+    db_ok = initialize_database()
     if db_ok:
         print("✅ MySQL 연결 성공")
     else:
