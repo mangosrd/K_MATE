@@ -8,6 +8,7 @@ from sqlalchemy.orm import DeclarativeBase, sessionmaker
 from pydantic_settings import BaseSettings
 from functools import lru_cache
 import os
+import traceback
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -130,5 +131,6 @@ def initialize_database() -> bool:
         print("[DB] schema and seed data are ready", flush=True)
         return True
     except Exception as e:
-        print(f"[DB] schema initialization failed: {e}", flush=True)
+        print(f"[DB] schema initialization failed ({type(e).__name__}): {e!r}", flush=True)
+        traceback.print_exc()
         return False
