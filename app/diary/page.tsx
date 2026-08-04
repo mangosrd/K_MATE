@@ -72,12 +72,7 @@ export default function DiarySelectPage() {
                   </div>
 
                   <div className={styles.charInfo}>
-                    <div className={styles.charNameRow}>
-                      <p className={styles.charName}>{char.name}</p>
-                      {char.requires_premium && !canAccess
-                        ? <span className="badge badge-gold">⭐ {t("premiumOnly")}</span>
-                        : <span className="badge badge-mint">✓ OPEN</span>}
-                    </div>
+                    <p className={styles.charName}>{char.name}</p>
                     <p className={styles.charRegion}>📍 {
                       char.region_id === "seoul" ? "서울·경기" :
                       char.region_id === "jeonju" ? "전주·전라" :
@@ -90,6 +85,10 @@ export default function DiarySelectPage() {
                       </p>
                     )}
                   </div>
+
+                  {char.requires_premium && !canAccess
+                    ? <span className={`badge badge-gold ${styles.accessBadge}`}>⭐ {t("premiumOnly")}</span>
+                    : <span className={`badge badge-mint ${styles.accessBadge}`}>✓ OPEN</span>}
 
                   {canAccess ? (
                     <Link href={`/diary/${char.id}`} className="btn btn-primary btn-sm" id={`btn-diary-${char.id}`}>

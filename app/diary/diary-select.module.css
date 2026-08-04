@@ -5,7 +5,10 @@
 .charList { display: flex; flex-direction: column; gap: var(--space-sm); }
 
 .charCard {
-  display: flex; align-items: center; gap: var(--space-md);
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: var(--space-sm);
   background: var(--bg-base);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
@@ -22,8 +25,14 @@
   display: flex; align-items: center; justify-content: center;
   font-size: 26px; flex-shrink: 0;
 }
-.charInfo { flex: 1; display: flex; flex-direction: column; gap: 3px; }
-.charNameRow { display: flex; align-items: center; gap: var(--space-sm); }
-.charName    { font-size: 16px; font-weight: 800; color: var(--text-primary); }
+.charInfo { min-width: 0; display: flex; flex-direction: column; gap: 3px; }
+.charName { font-size: 16px; font-weight: 800; color: var(--text-primary); white-space: nowrap; }
 .charRegion  { font-size: 12px; color: var(--text-muted); }
 .diaryCount  { font-size: 12px; color: var(--blue); font-weight: 600; }
+.accessBadge { justify-self: end; }
+
+@media (max-width: 360px) {
+  .charCard { grid-template-columns: 52px minmax(0, 1fr) auto; }
+  .accessBadge { grid-column: 2 / 4; grid-row: 2; justify-self: start; }
+  .charCard :global(.btn) { grid-column: 3; grid-row: 1 / 3; }
+}
