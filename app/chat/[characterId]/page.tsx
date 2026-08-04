@@ -345,7 +345,7 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
             {t("chatLockSub")}
           </p>
           <div style={{ display: "flex", gap: "12px" }}>
-            <Link href="/chat" className="btn btn-secondary">{t("backToListBtn")}</Link>
+            <Link href={`/captain/${characterId}`} className="btn btn-secondary">{t("backToListBtn")}</Link>
             <Link href="/premium" className="btn btn-gold">{t("viewPremiumBtn")}</Link>
           </div>
         </div>
@@ -359,7 +359,7 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
       <div className={styles.chatShell}>
         {/* 헤더 */}
         <header className={styles.chatHeader}>
-          <Link href="/map" className={styles.backBtn} aria-label="Back to map">
+          <Link href={`/captain/${characterId}`} className={styles.backBtn} aria-label="Back to captain menu">
             ‹
           </Link>
           <div className={styles.charInfo}>

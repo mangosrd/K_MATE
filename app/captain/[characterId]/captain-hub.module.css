@@ -1,0 +1,111 @@
+.backButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  margin-right: 2px;
+  color: var(--text-secondary);
+  font-size: 34px;
+  line-height: 1;
+}
+
+.subtitle {
+  max-width: 260px;
+  overflow: hidden;
+  color: var(--text-muted);
+  font-size: 11px;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: var(--space-md);
+}
+
+.profileCard {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px;
+  border: 1.5px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  background: var(--bg-base);
+  box-shadow: var(--shadow-xs);
+}
+
+.avatar {
+  width: 82px;
+  height: 82px;
+  flex-shrink: 0;
+  border: 3px solid var(--red);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.eyebrow {
+  margin-bottom: 4px;
+  color: var(--red);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+}
+
+.profileCard h2 {
+  color: var(--text-primary);
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.profileCard p:last-child {
+  margin-top: 4px;
+  color: var(--text-muted);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.menuGrid {
+  display: grid;
+  gap: 10px;
+}
+
+.menuCard {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  min-height: 82px;
+  padding: 13px 15px;
+  border: 1.5px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  background: var(--bg-base);
+  box-shadow: var(--shadow-xs);
+  text-decoration: none;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.menuCard:active { transform: scale(0.985); }
+.menuCard:hover { box-shadow: var(--shadow-md); }
+
+.menuIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  font-size: 24px;
+}
+
+.menuCopy { display: flex; min-width: 0; flex: 1; flex-direction: column; gap: 3px; }
+.menuCopy strong { color: var(--text-primary); font-size: 17px; font-weight: 800; }
+.menuCopy small { overflow: hidden; color: var(--text-muted); font-size: 11px; text-overflow: ellipsis; white-space: nowrap; }
+.arrow { color: var(--text-muted); font-size: 30px; font-weight: 400; }
+
+.blue .menuIcon { background: var(--blue-light); }
+.red .menuIcon { background: var(--red-light); }
+.gold .menuIcon { background: var(--gold-light); }
