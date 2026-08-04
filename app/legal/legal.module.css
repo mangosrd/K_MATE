@@ -9,7 +9,7 @@
 .card {
   width: 100%;
   max-width: 640px;
-  background: #ffffff;
+  background: var(--bg-base);
   border-radius: 20px;
   padding: 28px 24px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
@@ -27,7 +27,7 @@
 .title {
   font-size: 22px;
   font-weight: 800;
-  color: #0f172a;
+  color: var(--text-primary);
   margin: 0 0 6px 0;
 }
 
@@ -44,7 +44,7 @@
 .heading {
   font-size: 15px;
   font-weight: 700;
-  color: #0f172a;
+  color: var(--text-primary);
   margin: 0 0 8px 0;
 }
 

@@ -142,7 +142,7 @@
 .ticket {
   display: block;
   text-decoration: none;
-  background: #ffffff;
+  background: var(--bg-base);
   border-radius: var(--radius-xl);
   border: 1px solid #e2e8f0;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
@@ -294,7 +294,7 @@
   display: flex;
   align-items: center;
   gap: 18px;
-  background: #ffffff;
+  background: var(--bg-base);
   border-radius: 0 0 var(--radius-xl) var(--radius-xl);
 }
 
@@ -309,7 +309,7 @@
   font-size: 10px;
   font-weight: 800;
   letter-spacing: 0.08em;
-  color: #64748b;
+  color: var(--text-secondary);
   text-transform: uppercase;
   line-height: 1;
 }
@@ -317,7 +317,7 @@
 .metaValue {
   font-size: 13px;
   font-weight: 800;
-  color: #0f172a;
+  color: var(--text-primary);
   line-height: 1;
 }
 
@@ -353,12 +353,12 @@
 .progressPct {
   font-size: 12px;
   font-weight: 800;
-  color: #0f172a;
+  color: var(--text-primary);
   min-width: 32px;
 }
 
 .ticketArrow {
   font-size: 20px;
-  color: #94a3b8;
+  color: var(--text-muted);
   font-weight: 700;
 }

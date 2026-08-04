@@ -139,6 +139,19 @@
   color: #B4BAC6;
 }
 
+/* Keep brand-tinted panels readable when the page switches to dark mode. */
+:root[data-theme="dark"] .badge-blue,
+:root[data-theme="dark"] .badge-primary {
+  background: #1E2D45;
+  color: #B7D7FF;
+  border-color: #4A78A8;
+}
+
+:root[data-theme="dark"] .badge-gold {
+  background: #3A311F;
+  color: #F5CF79;
+}
+
 :root[data-theme="dark"] .modal-sheet {
   background: var(--bg-surface);
   color: var(--text-primary);

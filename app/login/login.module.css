@@ -8,7 +8,7 @@
   position: relative;
   overflow: hidden;
   gap: var(--space-lg);
-  background: #fff;
+  background: var(--bg-base);
 }
 
 /* Keep the decorative header above, not over, authentication fields. */
@@ -147,7 +147,7 @@
 /* 하단 카드 */
 .bottomCard {
   width: 100%;
-  background: #fff;
+  background: var(--bg-base);
   border-radius: var(--radius-xl);
   padding: var(--space-lg);
   box-shadow: 0 -4px 0 0 var(--red), var(--shadow-lg);
@@ -226,7 +226,7 @@
   font-size: 15px;
   font-family: inherit;
   color: var(--text-primary);
-  background: #fff;
+  background: var(--bg-base);
 }
 .formInput:focus {
   outline: none;

@@ -6,7 +6,7 @@
 
 .charCard {
   display: flex; align-items: center; gap: var(--space-md);
-  background: #fff;
+  background: var(--bg-base);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
   padding: var(--space-md);
@@ -14,7 +14,7 @@
   transition: box-shadow var(--transition-fast);
 }
 .charCard:hover:not(.charLocked) { box-shadow: var(--shadow-sm); }
-.charLocked { opacity: 0.65; }
+.charLocked { background: var(--bg-elevated); }
 
 .charAvatar {
   width: 52px; height: 52px; border-radius: 50%;

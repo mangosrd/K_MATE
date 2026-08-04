@@ -15,7 +15,7 @@
   display: flex; flex-direction: column;
   align-items: center; justify-content: center;
   gap: var(--space-lg);
-  background: #fff;
+  background: var(--bg-base);
 }
 .introEmoji { font-size: 56px; margin-bottom: var(--space-sm); }
 .introTitle { font-size: 26px; font-weight: 900; color: var(--text-primary); text-align: center; }
@@ -51,7 +51,7 @@
   display: flex; flex-direction: column;
   align-items: center; justify-content: center;
   gap: var(--space-lg);
-  background: #fff;
+  background: var(--bg-base);
 }
 .completeEmoji { font-size: 64px; }
 .completeTitle { font-size: 36px; font-weight: 900; color: var(--text-primary); }
@@ -84,7 +84,7 @@
 .storyHeader {
   display: flex; align-items: center; gap: var(--space-sm);
   padding: var(--space-sm) var(--space-md);
-  background: rgba(255,255,255,0.97);
+  background: var(--bg-base);
   border-bottom: 1px solid var(--border-subtle);
   position: sticky; top: 0; z-index: 10;
 }
@@ -133,7 +133,7 @@
 .storySpeakerName { font-size: 12px; font-weight: 700; color: #3a5468; padding-left: 2px; }
 
 .storyBubble {
-  background: #fff;
+  background: var(--bg-base);
   border-radius: 4px var(--radius-lg) var(--radius-lg) var(--radius-lg);
   padding: 12px 14px;
   box-shadow: var(--shadow-xs);
@@ -220,7 +220,7 @@
 }
 
 .vocabReviewItem {
-  background: #fff;
+  background: var(--bg-base);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
   padding: 14px 16px;
@@ -243,7 +243,7 @@
 .dlgSpeaker { font-size: 11px; font-weight: 700; color: var(--text-muted); padding: 0 4px; }
 
 .dlgBubble {
-  background: #fff;
+  background: var(--bg-base);
   border: 1.5px solid var(--border-subtle);
   border-radius: var(--radius-lg);
   padding: 10px 14px;
@@ -265,7 +265,7 @@
   width: 100%; max-width: var(--mobile-max);
   display: flex; align-items: center; gap: var(--space-sm);
   padding: var(--space-sm) var(--space-md);
-  background: rgba(255,255,255,0.97);
+  background: var(--bg-base);
   border-bottom: 1px solid var(--border-subtle);
   position: sticky; top: 0; z-index: 10;
 }
@@ -317,7 +317,7 @@
 /* ── 플래시카드 ───────────────────────────────────────────── */
 .flashCard {
   width: 100%; min-height: 200px;
-  background: #fff;
+  background: var(--bg-base);
   border-radius: var(--radius-xl);
   border: 2px solid var(--border-subtle);
   box-shadow: var(--shadow-md);
@@ -363,7 +363,7 @@
 .mcOptions { display: flex; flex-direction: column; gap: var(--space-sm); }
 .mcOption {
   padding: 14px var(--space-md);
-  background: #fff;
+  background: var(--bg-base);
   border: 1.5px solid var(--border-subtle);
   border-radius: var(--radius-md);
   font-size: 14px; font-weight: 600; font-family: var(--font-sans);
@@ -477,7 +477,7 @@
 }
 
 .inlineListenBtn {
-  background: #fff;
+  background: var(--bg-base);
   border: 1.5px solid var(--blue-mid);
   border-radius: 50%;
   width: 34px; height: 34px;
@@ -604,5 +604,4 @@
   text-align: center;
   width: 100%;
 }
-
 

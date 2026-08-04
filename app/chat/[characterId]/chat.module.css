@@ -12,7 +12,7 @@
   align-items: center;
   gap: var(--space-sm);
   padding: 10px var(--space-md);
-  background: rgba(255,255,255,0.97);
+  background: var(--bg-base);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 2px solid var(--red);
@@ -136,7 +136,7 @@
   align-items: center;
   gap: var(--space-sm);
   padding: var(--space-sm) var(--space-md);
-  background: rgba(255,255,255,0.97);
+  background: var(--bg-base);
   border-top: 1px solid var(--border-subtle);
   flex-shrink: 0;
   box-shadow: 0 -2px 8px rgba(0,0,0,0.05);

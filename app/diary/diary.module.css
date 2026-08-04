@@ -6,7 +6,7 @@
 
 .charCard {
   display: flex; align-items: center; gap: var(--space-md);
-  background: #fff;
+  background: var(--bg-base);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
   padding: var(--space-md);

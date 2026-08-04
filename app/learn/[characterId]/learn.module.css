@@ -1,7 +1,7 @@
 .header {
   display: flex; align-items: center; gap: var(--space-sm);
   padding: 10px var(--space-md);
-  background: rgba(255,255,255,0.97);
+  background: var(--bg-base);
   border-bottom: 2px solid var(--blue);
   position: sticky; top: 0; z-index: 50;
 }
@@ -62,7 +62,7 @@
 /* 챕터 카드 */
 .chapterCard {
   display: flex; gap: var(--space-md);
-  background: #fff;
+  background: var(--bg-base);
   border: 1.5px solid var(--border-subtle);
   border-radius: var(--radius-lg);
   padding: var(--space-md);
@@ -72,7 +72,7 @@
   margin-bottom: 8px;
 }
 .chapterCard:hover:not(.chapterLocked) { box-shadow: var(--shadow-md); transform: translateY(-1px); }
-.chapterLocked { opacity: 0.55; cursor: not-allowed; }
+.chapterLocked { background: var(--bg-elevated); cursor: not-allowed; }
 .chapterDone   { border-color: var(--mint); }
 .chapterActive { border-color: var(--red); border-width: 2px; }
 
@@ -128,7 +128,7 @@
   cursor: pointer; transition: all var(--transition-fast);
 }
 .tabActive {
-  background: #fff; color: var(--blue);
+  background: var(--bg-base); color: var(--blue);
   box-shadow: var(--shadow-xs);
 }
 
@@ -136,7 +136,7 @@
 .specialSection { display: flex; flex-direction: column; gap: var(--space-md); }
 
 .captainSelectorBox {
-  background: #fff;
+  background: var(--bg-base);
   border: 1.5px solid var(--border-subtle);
   border-radius: var(--radius-lg);
   padding: var(--space-md);
@@ -160,7 +160,7 @@
 .subTabBar { display: flex; gap: 6px; overflow-x: auto; }
 .subTabBtn {
   flex: 1; padding: 8px 12px;
-  background: #fff; border: 1.5px solid var(--border-subtle);
+  background: var(--bg-base); border: 1.5px solid var(--border-subtle);
   border-radius: var(--radius-full);
   font-size: 12px; font-weight: 700; color: var(--text-secondary);
   cursor: pointer; white-space: nowrap; transition: all var(--transition-fast);
@@ -178,4 +178,3 @@
 .specialBadge { font-size: 10px; font-weight: 800; color: var(--gold); }
 .specialTitle { font-size: 16px; font-weight: 800; color: var(--text-primary); }
 .specialMeta  { font-size: 11px; color: var(--text-secondary); }
-

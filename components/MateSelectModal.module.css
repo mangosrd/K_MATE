@@ -12,7 +12,7 @@
 }
 
 .modalCard {
-  background: #ffffff;
+  background: var(--bg-base);
   border-radius: 24px;
   width: 100%;
   max-width: 400px;
@@ -31,7 +31,7 @@
 .modalTitle {
   font-size: 18px;
   font-weight: 700;
-  color: #0f172a;
+  color: var(--text-primary);
   margin: 0;
 }
 
@@ -111,7 +111,7 @@
 .mateName {
   font-size: 15px;
   font-weight: 700;
-  color: #0f172a;
+  color: var(--text-primary);
 }
 
 .mateTags {
