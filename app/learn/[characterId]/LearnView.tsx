@@ -59,7 +59,7 @@ export default function LearnView({ char, chapters }: LearnViewProps) {
       <header className={styles.header}>
         <Link href={`/region/${char.region_id}`} className={styles.backBtn}>‹</Link>
         <div className={styles.headerCenter}>
-          <h1 className={styles.headerTitle}>{t("learn")}</h1>
+          <h1 className={styles.headerTitle}>{t("learnPageTitle")}</h1>
         </div>
       </header>
 
