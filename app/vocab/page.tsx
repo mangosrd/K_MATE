@@ -260,7 +260,7 @@ export default function VocabPage() {
                   ) : (
                     <span className={styles.regionTabEmoji}>{tab.emoji}</span>
                   )}
-                  <span className={styles.regionTabName}>{tab.name}</span>
+                  <span className={styles.regionTabName}>{tab.id === "all" ? t("tabAll") : tab.name}</span>
                   {count > 0 && (
                     <span className={styles.tabCount}>{count}</span>
                   )}

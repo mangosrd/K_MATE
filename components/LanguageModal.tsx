@@ -23,7 +23,7 @@ export default function LanguageModal({ isOpen, onClose }: LanguageModalProps) {
     <div className={styles.modalOverlay} onClick={onClose}>
       <div className={styles.modalCard} onClick={(e) => e.stopPropagation()}>
         <div className={styles.modalHeader}>
-          <h3 className={styles.modalTitle}>🌐 {t("selectLang")}</h3>
+          <h3 className={styles.modalTitle}>{t("selectLang")}</h3>
           <button className={styles.closeBtn} onClick={onClose}>✕</button>
         </div>
         <p className={styles.modalSub}>

@@ -13,7 +13,7 @@ import {
   setPreferredCaptainId,
 } from "@/lib/auth/store";
 import { useAuthUser } from "@/lib/auth/useAuthUser";
-import { useLanguage } from "@/components/LanguageContext";
+import { useLanguage, type Language } from "@/components/LanguageContext";
 import LanguageModal from "@/components/LanguageModal";
 import ThemeModal from "@/components/ThemeModal";
 import WithdrawModal from "@/components/WithdrawModal";
@@ -32,9 +32,20 @@ import styles from "./me.module.css";
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
 const APP_VERSION = "1.0.0";
 
+const AD_COPY: Record<Language, { title: string; sub: (remaining: number) => string; watch: string; done: string }> = {
+  ko: { title: "광고 보고 코인 받기", sub: (n) => `1회당 🪙 ${COINS_PER_AD}코인 · 오늘 ${n}회 남음`, watch: "보기", done: "완료" },
+  en: { title: "Watch an ad, earn coins", sub: (n) => `🪙 ${COINS_PER_AD} coins per ad · ${n} left today`, watch: "Watch", done: "Done" },
+  ru: { title: "Смотрите рекламу и получайте монеты", sub: (n) => `🪙 ${COINS_PER_AD} монет за рекламу · осталось ${n}`, watch: "Смотреть", done: "Готово" },
+  zh: { title: "观看广告赚取金币", sub: (n) => `每次 🪙 ${COINS_PER_AD} 金币 · 今天还剩 ${n} 次`, watch: "观看", done: "完成" },
+  ja: { title: "広告を見てコインを獲得", sub: (n) => `1回につき 🪙 ${COINS_PER_AD} コイン・残り ${n} 回`, watch: "見る", done: "完了" },
+  "zh-TW": { title: "觀看廣告賺取金幣", sub: (n) => `每次 🪙 ${COINS_PER_AD} 金幣 · 今天剩 ${n} 次`, watch: "觀看", done: "完成" },
+  th: { title: "ดูโฆษณาเพื่อรับเหรียญ", sub: (n) => `รับ 🪙 ${COINS_PER_AD} เหรียญต่อครั้ง · เหลือ ${n} ครั้งวันนี้`, watch: "ดู", done: "เสร็จแล้ว" },
+};
+
 export default function MePage() {
   const router = useRouter();
   const { language, t } = useLanguage();
+  const adCopy = AD_COPY[language];
   const [showLangModal, setShowLangModal] = useState(false);
   const [showThemeModal, setShowThemeModal] = useState(false);
   const [showWithdrawModal, setShowWithdrawModal] = useState(false);
@@ -176,9 +187,9 @@ export default function MePage() {
             <div className={styles.adBannerLeft}>
               <span className={styles.adBannerIcon}>📺</span>
               <div>
-                <p className={styles.adBannerTitle}>광고 보고 코인 받기</p>
+                <p className={styles.adBannerTitle}>{adCopy.title}</p>
                 <p className={styles.adBannerSub}>
-                  1회당 🪙 {COINS_PER_AD}코인 · 오늘 {adRemaining}회 남음
+                  {adCopy.sub(adRemaining)}
                 </p>
               </div>
             </div>
@@ -188,7 +199,7 @@ export default function MePage() {
               disabled={adRemaining <= 0}
               onClick={() => setShowAdModal(true)}
             >
-              {adRemaining > 0 ? "보기" : "완료"}
+              {adRemaining > 0 ? adCopy.watch : adCopy.done}
             </button>
           </div>
 
