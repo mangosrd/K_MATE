@@ -6,6 +6,7 @@
   position: sticky; top: 0; z-index: 50;
 }
 .backBtn { font-size: 28px; color: var(--text-secondary); flex-shrink: 0; }
+:global(.page-header) .backBtn { display: none; }
 .headerCenter { display: flex; align-items: center; gap: var(--space-sm); flex: 1; }
 .headerAvatar {
   width: 36px; height: 36px; border-radius: 50%;
