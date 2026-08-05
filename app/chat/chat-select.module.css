@@ -50,6 +50,49 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  opacity: 0;
+  transition: opacity 180ms ease;
+}
+
+.lobbyVideoReady { opacity: 1; }
+
+.videoLoading {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 28px;
+  background:
+    radial-gradient(circle at 50% 37%, rgba(96, 169, 255, 0.46), transparent 32%),
+    linear-gradient(155deg, #002d67 0%, #075eae 53%, #bf344a 100%);
+  color: #fff;
+  text-align: center;
+}
+
+.videoLoading strong { font-size: 18px; font-weight: 800; }
+.videoLoading small { color: rgba(255, 255, 255, 0.78); font-size: 12px; }
+
+.loadingPlane {
+  display: grid;
+  width: 64px;
+  height: 64px;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.14);
+  font-size: 30px;
+  animation: planeReady 1.3s ease-in-out infinite;
+}
+
+.videoLoadingFallback { pointer-events: none; }
+
+@keyframes planeReady {
+  0%, 100% { transform: translateY(0) rotate(-8deg); }
+  50% { transform: translateY(-8px) rotate(7deg); }
 }
 
 .videoShade {

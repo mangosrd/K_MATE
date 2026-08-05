@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback } from "react";
+import { useCallback, useState } from "react";
 import Link from "next/link";
 import BottomNav from "@/components/ui/BottomNav";
 import { MOCK_CHARACTERS, canAccessCharacter } from "@/lib/db/mock";
@@ -27,6 +27,7 @@ export default function ChatSelectPage() {
   const { t } = useLanguage();
   const { membership } = useMembership();
   const { freeSlots } = useFreeCharSlots();
+  const [videoState, setVideoState] = useState<"loading" | "ready" | "failed">("loading");
   // Some Android WebViews stop instead of honoring the native `loop` attribute.
   // Explicitly restarting on the final frame keeps the lobby alive after 10 seconds.
   const restartLobbyVideo = useCallback((video: HTMLVideoElement) => {
@@ -56,12 +57,14 @@ export default function ChatSelectPage() {
 
           <section className={styles.videoStage} aria-label={t("selectCaptain")}>
             <video
-              className={styles.lobbyVideo}
+              className={`${styles.lobbyVideo} ${videoState === "ready" ? styles.lobbyVideoReady : ""}`}
               src="/media/captain-lobby.mp4"
               autoPlay
               muted
               playsInline
               preload="auto"
+              onCanPlay={() => setVideoState("ready")}
+              onError={() => setVideoState("failed")}
               onEnded={(event) => restartLobbyVideo(event.currentTarget)}
               onTimeUpdate={(event) => {
                 const video = event.currentTarget;
@@ -71,6 +74,17 @@ export default function ChatSelectPage() {
               }}
               aria-hidden="true"
             />
+            {videoState !== "ready" && (
+              <div
+                className={`${styles.videoLoading} ${videoState === "failed" ? styles.videoLoadingFallback : ""}`}
+                role="status"
+                aria-live="polite"
+              >
+                <span className={styles.loadingPlane} aria-hidden="true">✈️</span>
+                <strong>{videoState === "failed" ? "기장님들이 로비로 이동 중이에요…" : "기장님들이 꽃단장 하는 중…"}</strong>
+                <small>잠시만 기다려 주세요</small>
+              </div>
+            )}
             <div className={styles.videoShade} aria-hidden="true" />
 
             {CAPTAIN_HOTSPOTS.map(({ characterId, className }) => {
