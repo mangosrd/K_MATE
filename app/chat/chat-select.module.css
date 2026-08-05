@@ -103,8 +103,15 @@
 .hotspotLabel small { color: rgba(255, 255, 255, 0.82); font-size: 10px; }
 
 .hotspotLocked .hotspotLabel {
-  background: rgba(51, 38, 15, 0.86);
-  border-color: rgba(255, 220, 135, 0.78);
+  background: rgba(29, 34, 43, 0.9);
+  border-color: rgba(210, 216, 224, 0.72);
+}
+
+/* Locked captains remain in the lounge, but their own part of the video is gray. */
+.hotspotLocked {
+  background: rgba(31, 37, 46, 0.22);
+  backdrop-filter: grayscale(1) brightness(0.72);
+  -webkit-backdrop-filter: grayscale(1) brightness(0.72);
 }
 
 /* 720×1280 원본 영상에서 각 인물의 좌석 위치를 비율로 고정한다. */
@@ -119,20 +126,6 @@
   color: var(--text-muted);
   font-size: 12px;
   text-align: center;
-}
-
-.premiumLink {
-  display: block;
-  margin-top: var(--space-sm);
-  padding: 12px 14px;
-  border: 1px solid rgba(207, 151, 29, 0.42);
-  border-radius: var(--radius-lg);
-  background: #fff8e8;
-  color: #9a6808;
-  font-size: 13px;
-  font-weight: 800;
-  text-align: center;
-  text-decoration: none;
 }
 
 @media (prefers-reduced-motion: reduce) {

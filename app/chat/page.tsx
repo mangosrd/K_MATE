@@ -12,8 +12,8 @@ type Hotspot = {
   className: string;
 };
 
-// The video is composed around these five fixed seats. Keeping the hit areas in
-// percentages lets the same layout scale cleanly across every phone width.
+// The video is composed around these five fixed seats. Percentage hit areas
+// preserve the intended positions on every phone width.
 const CAPTAIN_HOTSPOTS: Hotspot[] = [
   { characterId: "sangwoo", className: "sangwoo" },
   { characterId: "haneul", className: "haneul" },
@@ -39,7 +39,7 @@ export default function ChatSelectPage() {
 
         <main className={styles.lobby}>
           <div className={styles.lobbyIntro}>
-            <p className={styles.lobbyEyebrow}>✈ K-MATE FLIGHT LOUNGE</p>
+            <p className={styles.lobbyEyebrow}>K-MATE FLIGHT LOUNGE</p>
             <h2>{t("selectCaptain")}</h2>
             <p>{t("selectCaptainSub")}</p>
           </div>
@@ -60,6 +60,7 @@ export default function ChatSelectPage() {
             {CAPTAIN_HOTSPOTS.map(({ characterId, className }) => {
               const char = MOCK_CHARACTERS.find((item) => item.id === characterId);
               if (!char) return null;
+
               const canAccess = canAccessCharacter(char.id, membership, freeSlots);
               const href = canAccess ? `/chat/${char.id}` : "/premium";
 
@@ -69,7 +70,9 @@ export default function ChatSelectPage() {
                   href={href}
                   className={`${styles.hotspot} ${styles[className]} ${!canAccess ? styles.hotspotLocked : ""}`}
                   id={`captain-hotspot-${char.id}`}
-                  aria-label={canAccess ? `${char.name} ${t("captainBadge")} ${t("startChat")}` : `${char.name} ${t("premiumOnly")}`}
+                  aria-label={canAccess
+                    ? `${char.name} ${t("captainBadge")} ${t("startChat")}`
+                    : `${char.name} ${t("premiumOnly")}`}
                 >
                   <span className={styles.hotspotLabel}>
                     <strong>{char.name}</strong>
@@ -81,12 +84,6 @@ export default function ChatSelectPage() {
           </section>
 
           <p className={styles.tapHint}>기장님을 탭하면 바로 대화를 시작할 수 있어요.</p>
-
-          {membership !== "premium" && (
-            <Link href="/premium" className={styles.premiumLink}>
-              ⭐ {t("premiumOnly")} · 모든 기장님과 대화하기 →
-            </Link>
-          )}
         </main>
       </div>
       <BottomNav />

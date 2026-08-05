@@ -94,17 +94,15 @@ export default function BottomNav() {
   const { t } = useLanguage();
   // 선호 기장 ID를 localStorage에서 읽어 학습 탭 목적지로 사용 (SSR safe)
   const [learnHref, setLearnHref] = useState("/learn/kyuhyun");
-  const [chatHref, setChatHref] = useState("/chat/kyuhyun");
   useEffect(() => {
     const captainId = getPreferredCaptainId();
     setLearnHref(`/learn/${captainId}`);
-    setChatHref(`/chat/${captainId}`);
   }, []);
 
   const navItems = [
     { href: "/map",      key: "map" },
     { href: learnHref,  key: "learn" },
-    { href: chatHref,    key: "chat" },
+    { href: "/chat",   key: "chat" },
     { href: "/vocab",   key: "vocab" },
     { href: "/me",      key: "me" },
   ];
