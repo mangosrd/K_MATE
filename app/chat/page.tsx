@@ -78,7 +78,9 @@ export default function ChatSelectPage() {
               if (!char) return null;
 
               const canAccess = canAccessCharacter(char.id, membership, freeSlots);
-              const href = canAccess ? `/chat/${char.id}` : "/premium";
+              // Open a free captain's room first; locked content still routes
+              // to the premium screen at the actual access point.
+              const href = canAccess ? `/captain/${char.id}` : "/premium";
 
               return (
                 <Link
