@@ -123,13 +123,28 @@
 /* 저장된 단어 */
 .savedWordsRow {
   display: flex;
+  align-items: center;
   gap: var(--space-xs);
-  padding: 0 var(--space-md) var(--space-sm);
+  min-height: 34px;
+  padding: 6px var(--space-md);
   flex-wrap: wrap;
   flex-shrink: 0;
   background: var(--bg-base);
+  border-top: 1px solid var(--border-subtle);
+  overflow: hidden;
 }
-.wordChip { font-size: 12px; }
+.wordChip {
+  display: inline-flex;
+  align-items: center;
+  max-width: 100%;
+  min-height: 24px;
+  padding: 3px 10px;
+  font-size: 12px;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 /* 입력창 */
 .inputArea {

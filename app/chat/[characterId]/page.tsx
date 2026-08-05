@@ -25,6 +25,16 @@ const REGION_NAMES: Record<string, string> = {
 
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
 
+// The first line is shown before the API is called, so it must carry the same
+// character voice as the server prompt instead of falling back to an airline notice.
+const CAPTAIN_OPENINGS: Record<string, string> = {
+  kyuhyun: "좋은 아침이에요, 아가씨. 오늘은 어떤 기분으로 하루를 시작했어요?",
+  haneul: "왔어요? 오늘 하루는 어땠는지, 천천히 들려줘요.",
+  sunwoo: "왔나? 오늘 뭐 하고 있었는데. 얼른 얘기해 봐.",
+  sangwoo: "반갑습니다. 오늘 당신의 하루는 어떤지 들려주시겠어요?",
+  yongwoo: "왔네. 오늘은 무슨 일 있었어? 편하게 말해.",
+};
+
 
 import { useLanguage } from "@/components/LanguageContext";
 
@@ -59,6 +69,8 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
       content: `안녕하세요, 승객 여러분. 저는 ${char.name} 기장입니다. ${REGION_NAMES[char.region_id] ?? "한국"} 탑승을 환영합니다! ✈️ 안전한 여행을 위해 좌석 벨트를 착용해 주시기 바랍니다.`,
     },
   ];
+  INITIAL_MESSAGES[0].content =
+    CAPTAIN_OPENINGS[char.id] ?? "반가워요. 오늘은 어떤 이야기를 나누고 싶어요?";
 
   const [messages, setMessages] = useState<ChatMessage[]>(INITIAL_MESSAGES);
   const [input, setInput] = useState("");
