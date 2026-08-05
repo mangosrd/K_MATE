@@ -1,5 +1,6 @@
 "use client";
 
+import { useCallback } from "react";
 import Link from "next/link";
 import BottomNav from "@/components/ui/BottomNav";
 import { MOCK_CHARACTERS, canAccessCharacter } from "@/lib/db/mock";
@@ -26,6 +27,15 @@ export default function ChatSelectPage() {
   const { t } = useLanguage();
   const { membership } = useMembership();
   const { freeSlots } = useFreeCharSlots();
+  // Some Android WebViews stop instead of honoring the native `loop` attribute.
+  // Explicitly restarting on the final frame keeps the lobby alive after 10 seconds.
+  const restartLobbyVideo = useCallback((video: HTMLVideoElement) => {
+    video.currentTime = 0;
+    void video.play().catch(() => {
+      // A muted video is normally allowed to autoplay. If a device temporarily
+      // blocks it, the next tap on a captain still proceeds to the chat route.
+    });
+  }, []);
 
   return (
     <>
@@ -49,10 +59,16 @@ export default function ChatSelectPage() {
               className={styles.lobbyVideo}
               src="/media/captain-lobby.mp4"
               autoPlay
-              loop
               muted
               playsInline
-              preload="metadata"
+              preload="auto"
+              onEnded={(event) => restartLobbyVideo(event.currentTarget)}
+              onTimeUpdate={(event) => {
+                const video = event.currentTarget;
+                if (video.duration && video.currentTime >= video.duration - 0.08) {
+                  restartLobbyVideo(video);
+                }
+              }}
               aria-hidden="true"
             />
             <div className={styles.videoShade} aria-hidden="true" />
