@@ -1,4 +1,4 @@
-.inner { padding: var(--space-md); display: flex; flex-direction: column; gap: var(--space-md); }
+.inner { padding: var(--space-xl) var(--space-md) var(--space-md); display: flex; flex-direction: column; gap: var(--space-md); }
 
 .studyHero {
   display: flex;
@@ -141,7 +141,7 @@
 
 .quizModeSwitch {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   width: 100%;
   padding: 4px;
   gap: 4px;
@@ -206,6 +206,11 @@
 .quizFeedback { display: flex; flex-direction: column; width: 100%; gap: 3px; padding: 12px 14px; border-radius: 14px; font-size: 13px; }
 .quizFeedbackCorrect { background: var(--mint-light); color: var(--mint); border: 1px solid var(--mint); }
 .quizFeedbackWrong { background: var(--red-light); color: var(--red); border: 1px solid var(--red-mid); }
+.oxActions { display: grid; grid-template-columns: 1fr 1fr; width: 100%; gap: 12px; }
+.oxActions button { min-height: 76px; border-radius: 18px; font: inherit; font-size: 32px; font-weight: 900; cursor: pointer; }
+.oxTrue { color: #147d55; background: var(--mint-light); border: 2px solid var(--mint); }
+.oxFalse { color: var(--red); background: var(--red-light); border: 2px solid var(--red-mid); }
+.oxActions button:disabled { opacity: .55; cursor: default; }
 .quizCompleteEmoji { margin: 30px 0 0; font-size: 54px; }
 .quizCompleteTitle { margin: 0; font-size: 24px; color: var(--text-primary); }
 .quizCompleteSub { margin: -10px 0 10px; color: var(--text-muted); font-size: 14px; }

@@ -59,14 +59,25 @@ const REVIEW_COPY: Record<Language, ReviewCopy> = {
   th: { choice: "แบบเลือกตอบ", written: "พิมพ์คำตอบ", choicePrompt: "เลือกความหมายของคำเกาหลีนี้", writtenPrompt: "อ่านความหมายและตัวอย่าง แล้วพิมพ์คำเกาหลี", answerPlaceholder: "พิมพ์คำเกาหลี", check: "ตรวจคำตอบ", correct: "ถูกต้อง!", incorrect: "ลองอีกครั้ง", answer: "คำตอบ", next: "ข้อถัดไป", complete: "ทบทวนเสร็จแล้ว!", completeSub: "คุณทบทวนคำศัพท์ครบแล้ว", back: "กลับไปคำศัพท์", exit: "ออกจากการทบทวน" },
 };
 
+const OX_COPY: Record<Language, { label: string; prompt: string }> = {
+  ko: { label: "O / X", prompt: "아래 뜻이 이 단어와 맞으면 O, 아니면 X를 누르세요" },
+  en: { label: "True / False", prompt: "Press O if this meaning matches the Korean word, or X if it does not" },
+  ru: { label: "О / Х", prompt: "Нажмите О, если значение верное, или Х, если неверное" },
+  zh: { label: "O / X", prompt: "如果释义正确请按 O，不正确请按 X" },
+  ja: { label: "O / X", prompt: "意味が合っていれば O、違っていれば X を押してください" },
+  "zh-TW": { label: "O / X", prompt: "如果釋義正確請按 O，不正確請按 X" },
+  th: { label: "O / X", prompt: "กด O หากความหมายถูกต้อง หรือ X หากไม่ถูกต้อง" },
+};
+
 function normalizeKoreanAnswer(value: string) {
   return value.replace(/\s+/g, "").trim();
 }
 
 function VocabQuiz({ items, language, onExit }: { items: VocabItem[]; language: Language; onExit: () => void }) {
   const copy = REVIEW_COPY[language];
+  const oxCopy = OX_COPY[language];
   const [index, setIndex] = useState(0);
-  const [mode, setMode] = useState<"choice" | "written">("choice");
+  const [mode, setMode] = useState<"choice" | "written" | "ox">("choice");
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   const [typedAnswer, setTypedAnswer] = useState("");
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
@@ -91,6 +102,11 @@ function VocabQuiz({ items, language, onExit }: { items: VocabItem[]; language: 
       .slice(0, 3);
     return [index, ...distractors].sort((a, b) => ((a * 11 + index * 5) % items.length) - ((b * 11 + index * 5) % items.length));
   })();
+  const wrongOxIndex = items
+    .map((_, itemIndex) => itemIndex)
+    .find((itemIndex) => itemIndex !== index && meaningAt(itemIndex) !== meaningAt(index));
+  const oxIsTrue = index % 2 === 0 || wrongOxIndex === undefined;
+  const oxMeaningIndex = oxIsTrue ? index : wrongOxIndex;
 
   const resetQuestion = () => {
     setSelectedIndex(null);
@@ -130,6 +146,12 @@ function VocabQuiz({ items, language, onExit }: { items: VocabItem[]; language: 
     setIsCorrect(normalizeKoreanAnswer(typedAnswer) === normalizeKoreanAnswer(item.word));
   };
 
+  const submitOx = (answer: boolean) => {
+    if (isCorrect) return;
+    setSelectedIndex(answer ? 1 : 0);
+    setIsCorrect(answer === oxIsTrue);
+  };
+
   return (
     <>
       <div className="page-content">
@@ -148,6 +170,7 @@ function VocabQuiz({ items, language, onExit }: { items: VocabItem[]; language: 
           <div className={styles.quizModeSwitch} role="tablist" aria-label={copy.choicePrompt}>
             <button className={mode === "choice" ? styles.quizModeActive : ""} onClick={() => { setMode("choice"); resetQuestion(); }}>{copy.choice}</button>
             <button className={mode === "written" ? styles.quizModeActive : ""} onClick={() => { setMode("written"); resetQuestion(); }}>{copy.written}</button>
+            <button className={mode === "ox" ? styles.quizModeActive : ""} onClick={() => { setMode("ox"); resetQuestion(); }}>{oxCopy.label}</button>
           </div>
 
           {mode === "choice" ? (
@@ -174,7 +197,7 @@ function VocabQuiz({ items, language, onExit }: { items: VocabItem[]; language: 
                 })}
               </div>
             </>
-          ) : (
+          ) : mode === "written" ? (
             <>
               <section className={styles.quizQuestionCard}>
                 <p className={styles.quizPrompt}>{copy.writtenPrompt}</p>
@@ -190,6 +213,18 @@ function VocabQuiz({ items, language, onExit }: { items: VocabItem[]; language: 
                 <input value={typedAnswer} onChange={(event) => setTypedAnswer(event.target.value)} placeholder={copy.answerPlaceholder} autoCapitalize="none" autoCorrect="off" />
                 <button className="btn btn-primary" type="submit" disabled={!typedAnswer.trim() || isCorrect === true}>{copy.check}</button>
               </form>
+            </>
+          ) : (
+            <>
+              <section className={styles.quizQuestionCard}>
+                <p className={styles.quizPrompt}>{oxCopy.prompt}</p>
+                <p className={styles.quizWord}>{item.word}</p>
+                <p className={styles.quizMeaning}>{meaningAt(oxMeaningIndex)}</p>
+              </section>
+              <div className={styles.oxActions}>
+                <button className={styles.oxTrue} onClick={() => submitOx(true)} disabled={isCorrect === true}>O</button>
+                <button className={styles.oxFalse} onClick={() => submitOx(false)} disabled={isCorrect === true}>X</button>
+              </div>
             </>
           )}
 
@@ -385,7 +420,7 @@ export default function VocabPage() {
             <p style={{ fontSize: 11, color: "var(--text-muted)", fontWeight: 500 }}>{t("vocabSub")}</p>
           </div>
           <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
-            {filtered.length > 0 && (
+            {false && filtered.length > 0 && (
               <button
                 className="btn btn-primary btn-sm"
                 onClick={() => { setPracticeMode(true); setPracticeIdx(0); setShowAnswer(false); }}
