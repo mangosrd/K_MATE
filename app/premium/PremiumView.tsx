@@ -12,7 +12,6 @@ import {
   isPlayBillingAvailable, initPlayBilling, purchasePremium, purchaseCharacterPack,
   type CharacterPackId,
 } from "@/lib/billing/playBilling";
-import { purchaseMembershipWeb, purchaseCharacterPackWeb } from "@/lib/billing/portone";
 import styles from "./premium.module.css";
 
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
@@ -122,17 +121,12 @@ export default function PremiumView() {
     // 버튼이 "처리 중..."에서 영원히 안 풀리는 사고가 실제로 났던 지점이라 finally로
     // 한 번 더 방어한다.
     try {
-      const result = await purchaseMembershipWeb(PREMIUM_PRICE_KRW);
-      if (!result.success) {
-        setError(result.message);
-        return;
-      }
+      setError("결제는 Android 앱의 Google Play에서만 이용할 수 있어요.");
+      return;
       // 로그인 계정이면 캐시도 같이 갱신 — 게스트는 로그인 세션이 없으므로 건드리지
       // 않는다(useMembership이 다음 화면에서 백엔드 최신값을 다시 조회해 보여준다).
       // 예전엔 이 조건 없이 authUser를 그대로 펼쳐써서, 게스트가 구독해도 실제로는
       // 깨진(id/email 없는) 로그인 세션이 만들어져 다른 화면에서 오작동할 수 있었다.
-      if (authUser) setCurrentUser({ ...authUser, membership: result.membership });
-      router.push("/map");
     } finally {
       setLoading(false);
     }
@@ -155,16 +149,8 @@ export default function PremiumView() {
     }
 
     // 웹: 포트원(KG이니시스) 결제창을 띄우고, 결제가 실제로 확인되면 백엔드가 해금한다.
-    try {
-      const result = await purchaseCharacterPackWeb(pack.product_id, pack.price_krw, pack.label);
-      if (result.success) {
-        setUnlockedChars(result.freeCharSlots);
-      } else {
-        setError(result.message);
-      }
-    } finally {
-      setBuyingCharId(null);
-    }
+    setError("결제는 Android 앱의 Google Play에서만 이용할 수 있어요.");
+    setBuyingCharId(null);
   };
 
   return (

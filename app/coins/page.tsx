@@ -9,7 +9,6 @@ import { useLanguage } from "@/components/LanguageContext";
 import {
   isPlayBillingAvailable, initPlayBilling, purchaseCoinPack, type CoinPackId,
 } from "@/lib/billing/playBilling";
-import { purchaseCoinPackWeb } from "@/lib/billing/portone";
 import styles from "./coins.module.css";
 
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
@@ -95,16 +94,8 @@ export default function CoinsPage() {
     }
 
     // 웹: 포트원(KG이니시스) 결제창을 띄우고, 결제가 실제로 확인되면 백엔드가 코인을 지급한다.
-    try {
-      const result = await purchaseCoinPackWeb(pack.product_id, pack.price_krw, t(PACK_LABEL_KEYS[pack.product_id] ?? "coins"));
-      if (result.success) {
-        setCoins(result.totalCoins);
-      } else {
-        setError(result.message);
-      }
-    } finally {
-      setBuyingId(null);
-    }
+    setError("결제는 Android 앱의 Google Play에서만 이용할 수 있어요.");
+    setBuyingId(null);
   };
 
   return (

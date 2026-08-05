@@ -247,6 +247,7 @@ def web_coin_purchase_dev(req: AndroidPurchaseVerifyRequest, db: Session = Depen
 
 @router.post("/verify-portone-coins", response_model=CoinPurchaseResponse)
 async def verify_portone_coin_purchase(req: PortonePaymentVerifyRequest, db: Session = Depends(get_db)):
+    raise HTTPException(status_code=410, detail="PortOne payments are no longer supported. Use Google Play Billing.")
     """웹(포트원 KG이니시스)에서 발생한 코인팩 결제를 서버가 직접 조회해서 검증하고 지급한다.
     payment_id를 영수증(purchase_token 자리)으로 써서 중복 지급 방지 로직을 그대로 재사용한다.
     """
@@ -426,6 +427,7 @@ def web_character_purchase_dev(req: AndroidPurchaseVerifyRequest, db: Session = 
 
 @router.post("/verify-portone-character", response_model=CharacterPurchaseResponse)
 async def verify_portone_character_purchase(req: PortonePaymentVerifyRequest, db: Session = Depends(get_db)):
+    raise HTTPException(status_code=410, detail="PortOne payments are no longer supported. Use Google Play Billing.")
     """웹(포트원 KG이니시스)에서 발생한 캐릭터 개별 잠금해제 결제를 검증하고 지급한다."""
     user = db.query(User).filter(User.id == req.user_id).first()
     if not user:
@@ -476,6 +478,7 @@ async def verify_portone_character_purchase(req: PortonePaymentVerifyRequest, db
 
 @router.post("/verify-portone-membership", response_model=PurchaseVerifyResponse)
 async def verify_portone_membership(req: PortonePaymentVerifyRequest, db: Session = Depends(get_db)):
+    raise HTTPException(status_code=410, detail="PortOne payments are no longer supported. Use Google Play Billing.")
     """웹(포트원 KG이니시스)에서 발생한 프리미엄 구독 결제를 검증하고 승격한다."""
     user = db.query(User).filter(User.id == req.user_id).with_for_update().first()
     if not user:
