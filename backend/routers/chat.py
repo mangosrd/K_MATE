@@ -10,7 +10,7 @@ from services.llm_service import (
     load_persona, build_system_prompt, llm_chat, extract_word_suggestion
 )
 from models.models import Character, Memory, Progress, User, Economy
-from routers.progress import apply_streak
+from routers.progress import record_daily_affinity
 from services.access_control import check_character_access
 import uuid
 
@@ -78,7 +78,8 @@ async def chat(req: ChatRequest, db: Session = Depends(get_db)):
         progress = Progress(id=str(uuid.uuid4()), user_id=req.user_id, character_id=req.character_id)
         db.add(progress)
         db.flush()
-    apply_streak(progress)  # 호감도(하루 1회)·연속일수 갱신을 여기서 함께 처리한다
+    # Chat can grow affinity, but only completed lessons earn a day streak.
+    record_daily_affinity(progress)
 
     # 7-1. 무료 회원이면 대화 횟수 차감(정상적으로 답변을 받은 경우에만 카운트)
     # with_for_update로 다시 잠깐 잠가서 증가시킨다 — LLM 호출이 끝난 뒤라 잠그는 구간이

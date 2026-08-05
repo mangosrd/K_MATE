@@ -219,7 +219,6 @@ export default function MePage() {
             titleText={t("mateRouteTitle", { name: mate.name })}
             taglineText={t(`mateTagline_${mate.id}`)}
             changeLabel={t("changeMate")}
-            streakLabel={t("daysStreak")}
             onChangeClick={() => setShowMateModal(true)}
           />
 

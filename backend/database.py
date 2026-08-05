@@ -115,6 +115,19 @@ def initialize_database() -> bool:
         import models.models  # noqa: F401
 
         Base.metadata.create_all(bind=engine)
+        # create_all does not add columns to an already deployed table. Keep this
+        # tiny migration idempotent so Railway upgrades existing user data safely.
+        with engine.begin() as connection:
+            has_last_study_at = connection.execute(
+                text("""
+                    SELECT COUNT(*) FROM information_schema.columns
+                    WHERE table_schema = DATABASE()
+                      AND table_name = 'progress'
+                      AND column_name = 'last_study_at'
+                """)
+            ).scalar()
+            if not has_last_study_at:
+                connection.execute(text("ALTER TABLE progress ADD COLUMN last_study_at DATETIME NULL"))
         regions = [
             ("seoul", "서울·경기", "Seoul & Gyeonggi", "SEL", False),
             ("jeonju", "전주·전라", "Jeonju & Jeolla", "JWJ", False),

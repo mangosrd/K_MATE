@@ -123,6 +123,8 @@ class Progress(Base):
     visited_places = Column(JSON, default=list)
     streak_days    = Column(Integer, default=0, nullable=False)
     last_active_at = Column(DateTime, server_default=func.now())
+    # Streaks are earned by completing lessons only; chat activity is tracked separately.
+    last_study_at  = Column(DateTime, nullable=True)
 
     user      = relationship("User", back_populates="progress")
     character = relationship("Character", back_populates="progress")

@@ -20,6 +20,15 @@ import uuid
 router = APIRouter(tags=["progress"])
 
 
+def record_daily_affinity(prog: Progress) -> None:
+    """Keep relationship progress to one point per captain per calendar day."""
+    today = datetime.now().date()
+    last_date = prog.last_active_at.date() if prog.last_active_at else None
+    if last_date != today or prog.affinity == 0:
+        prog.affinity = min(100, prog.affinity + 1)
+    prog.last_active_at = datetime.now()
+
+
 def apply_streak(prog: Progress) -> None:
     """오늘 활동을 기준으로 연속 일수(streak_days)와 호감도(affinity)를 함께 갱신한다.
 
@@ -30,8 +39,7 @@ def apply_streak(prog: Progress) -> None:
     채팅(chat.py)과 챕터 완료(update_progress) 양쪽에서 공유해서 쓴다.
     """
     today = datetime.now().date()
-    last_date = prog.last_active_at.date() if prog.last_active_at else None
-    is_first_activity_today = last_date != today
+    last_date = prog.last_study_at.date() if prog.last_study_at else None
 
     if prog.streak_days == 0:
         # 이 캐릭터와 처음 활동하는 날 (last_active_at이 server_default로 이미 채워져
@@ -44,10 +52,7 @@ def apply_streak(prog: Progress) -> None:
     else:
         prog.streak_days = 1
 
-    if is_first_activity_today:
-        prog.affinity = min(100, prog.affinity + 1)
-
-    prog.last_active_at = datetime.now()
+    prog.last_study_at = datetime.now()
 
 
 # ── 레벨 ──────────────────────────────────────────────────
@@ -142,6 +147,7 @@ def update_progress(req: ProgressUpdate, db: Session = Depends(get_db)):
 
     if req.add_stamp and req.add_stamp not in (prog.stamps or []):
         prog.stamps = (prog.stamps or []) + [req.add_stamp]
+    record_daily_affinity(prog)
     apply_streak(prog)
 
     # 레벨 재계산 — autoflush가 꺼져 있어서(database.py) 방금 바뀐 current_step이

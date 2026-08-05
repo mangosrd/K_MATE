@@ -8,7 +8,6 @@ interface CaptainCardProps {
   titleText: string;
   taglineText: string;
   changeLabel: string;
-  streakLabel: string;
   onChangeClick: () => void;
 }
 
@@ -18,7 +17,6 @@ export default function CaptainCard({
   titleText,
   taglineText,
   changeLabel,
-  streakLabel,
   onChangeClick,
 }: CaptainCardProps) {
   const affinityStars = Math.round(progress.affinity / 20);
@@ -47,8 +45,8 @@ export default function CaptainCard({
           </span>
         </div>
         <div className={styles.streakRow}>
-          <span>🔥</span>
-          <span className={styles.streakNum}>{progress.streak_days} {streakLabel}</span>
+          <span>💗</span>
+          <span className={styles.streakNum}>D+{progress.streak_days}</span>
         </div>
       </div>
     </div>
