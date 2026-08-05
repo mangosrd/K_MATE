@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect, useCallback, use } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import BottomNav from "@/components/ui/BottomNav";
 import LoadingSplash from "@/components/LoadingSplash";
@@ -50,6 +51,7 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
   const { language, t } = useLanguage();
   const { membership, membershipLoaded } = useMembership();
   const { freeSlots, freeSlotsLoaded } = useFreeCharSlots();
+  const router = useRouter();
   const canAccess = canAccessCharacter(characterId, membership, freeSlots);
 
   useEffect(() => {
@@ -69,6 +71,12 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
     requires_premium: false,
     avatar_url: "",
   };
+
+  useEffect(() => {
+    if (char.requires_premium && membershipLoaded && freeSlotsLoaded && !canAccess) {
+      router.replace("/premium");
+    }
+  }, [canAccess, char.requires_premium, freeSlotsLoaded, membershipLoaded, router]);
 
   const INITIAL_MESSAGES: ChatMessage[] = [
     {
@@ -360,22 +368,7 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
   }
 
   if (!canAccess) {
-    return (
-      <>
-        <div className="page-content" style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", minHeight: "80vh", padding: "20px", textAlign: "center" }}>
-          <div style={{ fontSize: "64px", marginBottom: "16px" }}>🔒</div>
-          <h2 style={{ fontSize: "20px", fontWeight: "800", marginBottom: "8px" }}>{t("chatLockTitle", { name: char.name })}</h2>
-          <p style={{ fontSize: "14px", color: "var(--text-muted)", marginBottom: "24px", maxWidth: "300px" }}>
-            {t("chatLockSub")}
-          </p>
-          <div style={{ display: "flex", gap: "12px" }}>
-            <Link href={`/captain/${characterId}`} className="btn btn-secondary">{t("backToListBtn")}</Link>
-            <Link href="/premium" className="btn btn-gold">{t("viewPremiumBtn")}</Link>
-          </div>
-        </div>
-        <BottomNav />
-      </>
-    );
+    return <LoadingSplash />;
   }
 
   return (

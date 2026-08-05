@@ -94,9 +94,9 @@ export default function DiarySelectPage() {
                       {t("diaryTitle")} →
                     </Link>
                   ) : (
-                    <button disabled className="btn btn-secondary btn-sm" id={`btn-premium-diary-${char.id}`} style={{ opacity: 0.6, cursor: "not-allowed" }}>
-                      🔒 {t("lockedStatus")}
-                    </button>
+                    <Link href="/premium" className="btn btn-secondary btn-sm" id={`btn-premium-diary-${char.id}`}>
+                      🔒 {t("premiumOnly")}
+                    </Link>
                   )}
                 </div>
               );

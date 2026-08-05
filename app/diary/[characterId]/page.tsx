@@ -2,6 +2,7 @@
 
 import { useState, useEffect, use } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import BottomNav from "@/components/ui/BottomNav";
 import LoadingSplash from "@/components/LoadingSplash";
@@ -23,6 +24,14 @@ export default function CharDiaryPage({ params }: { params: Promise<{ characterI
   const char = getCharacterById(characterId);
   const { membership, membershipLoaded } = useMembership();
   const { freeSlots, freeSlotsLoaded } = useFreeCharSlots();
+  const router = useRouter();
+  const canAccess = char ? canAccessCharacter(characterId, membership, freeSlots) : false;
+
+  useEffect(() => {
+    if (char?.requires_premium && membershipLoaded && freeSlotsLoaded && !canAccess) {
+      router.replace("/premium");
+    }
+  }, [canAccess, char?.requires_premium, freeSlotsLoaded, membershipLoaded, router]);
 
   const [tab, setTab] = useState<Tab>("all");
   const [diaries, setDiaries] = useState<DiaryEntry[]>([]);
@@ -105,24 +114,8 @@ export default function CharDiaryPage({ params }: { params: Promise<{ characterI
     return <LoadingSplash />;
   }
 
-  const canAccess = canAccessCharacter(characterId, membership, freeSlots);
   if (!canAccess) {
-    return (
-      <>
-        <div className="page-content" style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", minHeight: "80vh", padding: "20px", textAlign: "center" }}>
-          <div style={{ fontSize: "64px", marginBottom: "16px" }}>🔒</div>
-          <h2 style={{ fontSize: "20px", fontWeight: "800", marginBottom: "8px" }}>{t("diaryLockTitle", { name: char.name })}</h2>
-          <p style={{ fontSize: "14px", color: "var(--text-muted)", marginBottom: "24px", maxWidth: "300px" }}>
-            {t("premiumLockSub")}
-          </p>
-          <div style={{ display: "flex", gap: "12px" }}>
-            <Link href="/diary" className="btn btn-secondary">{t("backToListBtn")}</Link>
-            <Link href="/premium" className="btn btn-gold">{t("viewPremiumBtn")}</Link>
-          </div>
-        </div>
-        <BottomNav />
-      </>
-    );
+    return <LoadingSplash />;
   }
 
   return (

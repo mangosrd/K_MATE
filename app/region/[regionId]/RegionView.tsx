@@ -201,9 +201,9 @@ export default function RegionView({ region }: { region: Region }) {
                           </Link>
                         </div>
                       ) : (
-                        <button disabled className="btn btn-secondary btn-sm" id={`btn-unlock-${char.id}`} style={{ opacity: 0.6, cursor: "not-allowed" }}>
+                        <Link href="/premium" className="btn btn-secondary btn-sm" id={`btn-unlock-${char.id}`}>
                           {t("premiumLockedBtn")}
-                        </button>
+                        </Link>
                       )}
                     </div>
                   </div>
