@@ -376,8 +376,9 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
       <div className={styles.chatShell}>
         {/* 헤더 */}
         <header className={styles.chatHeader}>
-          <Link href={`/captain/${characterId}`} className={styles.backBtn} aria-label="Back to captain menu">
-            ‹
+          <Link href="/chat" className={styles.backBtn} aria-label="기장님 선택으로 돌아가기">
+            <span aria-hidden="true">‹</span>
+            <span>기장님 선택</span>
           </Link>
           <div className={styles.charInfo}>
             <div className={styles.charAvatar}>

@@ -1,7 +1,5 @@
-import { notFound } from "next/navigation";
-import BottomNav from "@/components/ui/BottomNav";
+import { notFound, redirect } from "next/navigation";
 import { getCharacterById } from "@/lib/db/mock";
-import CaptainHubView from "./CaptainHubView";
 
 export default async function CaptainHubPage({ params }: { params: Promise<{ characterId: string }> }) {
   const { characterId } = await params;
@@ -9,10 +7,7 @@ export default async function CaptainHubPage({ params }: { params: Promise<{ cha
 
   if (!character) notFound();
 
-  return (
-    <>
-      <CaptainHubView character={character} />
-      <BottomNav />
-    </>
-  );
+  // The regional captain card already exposes study, chat, and diary actions.
+  // Keep old links working without showing the duplicate captain menu.
+  redirect(`/region/${character.region_id}`);
 }
