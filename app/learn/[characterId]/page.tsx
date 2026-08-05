@@ -13,8 +13,15 @@ export async function generateMetadata({ params }: { params: Promise<{ character
   return { title: `${char?.name ?? ""}와 공부하기 — K-MATE` };
 }
 
-export default async function LearnPage({ params }: { params: Promise<{ characterId: string }> }) {
+export default async function LearnPage({
+  params,
+  searchParams,
+}: {
+  params: Promise<{ characterId: string }>;
+  searchParams: Promise<{ tab?: string }>;
+}) {
   const { characterId } = await params;
+  const { tab } = await searchParams;
   const char = getCharacterById(characterId);
   if (!char) notFound();
 
@@ -38,7 +45,9 @@ export default async function LearnPage({ params }: { params: Promise<{ characte
   }
 
   const canAccess = canAccessCharacter(characterId, membership, freeCharSlots);
-  if (!canAccess) {
+  // 프리미엄 기장의 지역 학습은 계속 막되, 스페셜 스토리 탭은 개별 5코인 해금과
+  // 프리미엄 결제 이력의 영구 소장을 지원하므로 목록 자체는 열어둔다.
+  if (!canAccess && tab !== "special") {
     redirect("/premium");
   }
 

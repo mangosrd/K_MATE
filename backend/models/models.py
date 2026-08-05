@@ -276,6 +276,36 @@ class Purchase(Base):
     __table_args__ = (UniqueConstraint("platform", "purchase_token", name="uq_purchase_token"),)
 
 
+# ── 학습 경제 ──────────────────────────────────────────────
+# 수업 시작 비용과 완료 보상은 클라이언트가 아닌 서버에서만 계산한다. 그래야 앱을
+# 수정해도 무료 입장·보상 중복 지급을 우회할 수 없다.
+class LessonSession(Base):
+    __tablename__ = "lesson_sessions"
+
+    id           = Column(String(36), primary_key=True)
+    user_id      = Column(String(36), ForeignKey("users.id"), nullable=False)
+    character_id = Column(String(50), ForeignKey("characters.id"), nullable=False)
+    chapter_id   = Column(String(100), nullable=False)
+    entry_cost   = Column(Integer, default=3, nullable=False)
+    reward_coins = Column(Integer, nullable=True)
+    completed    = Column(Boolean, default=False, nullable=False)
+    created_at   = Column(DateTime, server_default=func.now())
+    completed_at = Column(DateTime, nullable=True)
+
+
+# 프리미엄을 한 번 결제한 유저는 스토리만큼은 구독 만료 후에도 계속 소장한다.
+# 무료 유저도 원하는 스토리는 5코인으로 영구 해금할 수 있다.
+class StoryUnlock(Base):
+    __tablename__ = "story_unlocks"
+    __table_args__ = (UniqueConstraint("user_id", "chapter_id", name="uq_story_unlock"),)
+
+    id          = Column(String(36), primary_key=True)
+    user_id     = Column(String(36), ForeignKey("users.id"), nullable=False)
+    chapter_id  = Column(String(100), nullable=False)
+    unlock_cost = Column(Integer, default=5, nullable=False)
+    unlocked_at = Column(DateTime, server_default=func.now())
+
+
 # ── 고객 지원 문의 ────────────────────────────────────────
 class SupportTicket(Base):
     __tablename__ = "support_tickets"

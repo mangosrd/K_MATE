@@ -262,14 +262,15 @@ export default function LearningSessionPage({
   const { membership, membershipLoaded } = useMembership();
   const { freeSlots, freeSlotsLoaded } = useFreeCharSlots();
   const router = useRouter();
+  const isSpecialStory = chapterId.startsWith("sp-");
   const requiresPremium = getCharacterById(characterId)?.requires_premium ?? false;
   const canAccess = canAccessCharacter(characterId, membership, freeSlots);
 
   useEffect(() => {
-    if (requiresPremium && membershipLoaded && freeSlotsLoaded && !canAccess) {
+    if (!isSpecialStory && requiresPremium && membershipLoaded && freeSlotsLoaded && !canAccess) {
       router.replace("/premium");
     }
-  }, [canAccess, freeSlotsLoaded, membershipLoaded, requiresPremium, router]);
+  }, [canAccess, freeSlotsLoaded, isSpecialStory, membershipLoaded, requiresPremium, router]);
 
   // 챕터 콘텐츠는 이제 챕터별로 쪼개진 청크를 동적 import로 그때그때 받아온다
   // (lib/content/chapters.ts 참고) — chapterId가 바뀔 때마다 새로 받아와야 한다.
@@ -336,6 +337,10 @@ export default function LearningSessionPage({
   const tr = (text: string) => substituteTranslations(text, translationMap);
 
   const [phase, setPhase] = useState<Phase>("intro");
+  const [lessonSessionId, setLessonSessionId] = useState<string | null>(null);
+  const [entryError, setEntryError] = useState("");
+  const [isStarting, setIsStarting] = useState(false);
+  const [rewardCoins, setRewardCoins] = useState<number | null>(null);
   const [currentIdx, setCurrentIdx] = useState(0);
   const [storyIdx, setStoryIdx] = useState(0);
 
@@ -382,6 +387,9 @@ export default function LearningSessionPage({
     setStoryIdx(0);
     setScore(0);
     setCorrectCount(0);
+    setLessonSessionId(null);
+    setEntryError("");
+    setRewardCoins(null);
   }, [chapterId]);
 
   const totalExercises = exercises.length;
@@ -405,6 +413,9 @@ export default function LearningSessionPage({
   // 그 차단을 그냥 우회할 수 있었다.
   const [stamps, setStamps] = useState<string[]>([]);
   const [stampsLoaded, setStampsLoaded] = useState(false);
+  const [storyAccess, setStoryAccess] = useState<boolean | null>(isSpecialStory ? null : true);
+  const [storyUnlocking, setStoryUnlocking] = useState(false);
+  const [storyAccessError, setStoryAccessError] = useState("");
 
   useEffect(() => {
     fetch(`${BACKEND_URL}/progress/${getEffectiveUserId()}/${characterId}`)
@@ -413,6 +424,37 @@ export default function LearningSessionPage({
       .catch(() => {})
       .finally(() => setStampsLoaded(true));
   }, [characterId]);
+
+  useEffect(() => {
+    if (!isSpecialStory) {
+      setStoryAccess(true);
+      return;
+    }
+    setStoryAccess(null);
+    fetch(`${BACKEND_URL}/learning/story-access/${getEffectiveUserId()}/${chapterId}`)
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => setStoryAccess(Boolean(data?.has_access)))
+      .catch(() => setStoryAccess(false));
+  }, [chapterId, isSpecialStory]);
+
+  const unlockStory = async () => {
+    setStoryUnlocking(true);
+    setStoryAccessError("");
+    try {
+      const res = await fetch(`${BACKEND_URL}/learning/unlock-story`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ user_id: getEffectiveUserId(), chapter_id: chapterId }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) throw new Error(data.detail || "스토리를 해금할 수 없어요.");
+      setStoryAccess(true);
+    } catch (error) {
+      setStoryAccessError(error instanceof Error ? error.message : "스토리를 해금할 수 없어요.");
+    } finally {
+      setStoryUnlocking(false);
+    }
+  };
 
   const handleCheckAnswer = (answerToTest?: string) => {
     if (isSubmitted && isCorrect) return;
@@ -461,7 +503,7 @@ export default function LearningSessionPage({
     }
   };
 
-  const handleNext = () => {
+  const handleNext = async () => {
     if (currentIdx + 1 >= totalExercises) {
       setPhase("complete");
       // 로컬 stamps에도 바로 반영해둔다 — 안 하면 "다음 챕터" 버튼으로 바로 이동했을 때
@@ -471,16 +513,23 @@ export default function LearningSessionPage({
       // 기다렸다 반영하는 방식으론 이 경쟁 상태를 막을 수 없다.
       setStamps((prev) => (prev.includes(chapterId) ? prev : [...prev, chapterId]));
       // 챕터 완료를 백엔드 진도에 기록 (best-effort — 실패해도 화면 흐름엔 영향 없음)
-      fetch(`${BACKEND_URL}/progress`, {
-        method: "PUT",
+      if (!lessonSessionId) return;
+      fetch(`${BACKEND_URL}/learning/complete`, {
+        method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           user_id: getEffectiveUserId(),
-          character_id: characterId,
+          session_id: lessonSessionId,
           step_delta: totalExercises,
           add_stamp: chapterId,
         }),
-      }).catch(() => {});
+      })
+        .then((res) => (res.ok ? res.json() : Promise.reject()))
+        .then((data) => {
+          setRewardCoins(data.reward_coins ?? 0);
+          setStamps(data.stamps ?? []);
+        })
+        .catch(() => setRewardCoins(0));
     } else {
       setCurrentIdx((i) => i + 1);
     }
@@ -501,7 +550,28 @@ export default function LearningSessionPage({
         sentence_translation: data.example_en,
       });
     }
-    handleNext();
+    void handleNext();
+  };
+
+  const handleStartLesson = async () => {
+    setEntryError("");
+    setIsStarting(true);
+    try {
+      const res = await fetch(`${BACKEND_URL}/learning/start`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ user_id: getEffectiveUserId(), character_id: characterId, chapter_id: chapterId }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) throw new Error(data.detail || "학습을 시작할 수 없어요.");
+      setLessonSessionId(data.session_id);
+      setStoryIdx(0);
+      setPhase("story");
+    } catch (error) {
+      setEntryError(error instanceof Error ? error.message : "학습을 시작할 수 없어요.");
+    } finally {
+      setIsStarting(false);
+    }
   };
 
   const handleStartSTT = () => {
@@ -547,13 +617,14 @@ export default function LearningSessionPage({
   // 프리미엄 전용 캐릭터일 때만 필요하다 — 무료 캐릭터는 membership을 보기도 전에 이미
   // 접근이 허용되므로, 규현/하늘 챕터에 뒤로가기로 재진입할 때마다 로딩 화면이 뜨는
   // 불필요한 깜빡임이 새로 생겼었다.
-  if (requiresPremium && membershipLoaded && freeSlotsLoaded && !canAccess) {
+  if (!isSpecialStory && requiresPremium && membershipLoaded && freeSlotsLoaded && !canAccess) {
     return <LoadingSplash message={t("loadingChapter")} />;
   }
 
   if (
     !stampsLoaded || !contentLoaded || !minLoadingTimeElapsed ||
-    (requiresPremium && (!membershipLoaded || !freeSlotsLoaded))
+    (!isSpecialStory && requiresPremium && (!membershipLoaded || !freeSlotsLoaded)) ||
+    (isSpecialStory && storyAccess === null)
   ) {
     return <LoadingSplash message={t(loadingPhase === "landing" ? "loadingChapter" : "loadingChapterDone")} />;
   }
@@ -562,9 +633,27 @@ export default function LearningSessionPage({
   // 이전엔 이 페이지(실제 챕터 콘텐츠)에는 프리미엄 체크가 전혀 없었다. 목록 페이지
   // (/learn/[characterId])에서만 막고 있어서, 무료 회원도 프리미엄 캐릭터의 챕터 URL을
   // 직접 알면(주소창 입력, 공유 링크 등) 그대로 들어가 전체 콘텐츠를 볼 수 있었다.
-  if (!canAccess) return <LoadingSplash message={t("loadingChapter")} />;
+  if (!isSpecialStory && !canAccess) return <LoadingSplash message={t("loadingChapter")} />;
 
-  if (!isChapterUnlocked(chapterId, characterId, stamps)) {
+  if (isSpecialStory && !storyAccess) {
+    return (
+      <main className={styles.page}>
+        <div className={styles.introCard}>
+          <div className={styles.introEmoji}>🔒</div>
+          <h1 className={styles.introTitle}>이 스토리는 아직 잠겨 있어요</h1>
+          <p className={styles.introTitleEn}>프리미엄을 결제하면 모든 스토리를 영구 소장할 수 있고, 이 스토리만 5코인으로 해금할 수도 있어요.</p>
+          <button className="btn btn-primary btn-lg" onClick={() => void unlockStory()} disabled={storyUnlocking}>
+            {storyUnlocking ? "해금 중…" : "🪙 5코인으로 스토리 해금"}
+          </button>
+          <Link href="/premium" className="btn btn-secondary btn-lg">⭐ 프리미엄 보기</Link>
+          {storyAccessError && <p style={{ color: "var(--red)", textAlign: "center", fontWeight: 700 }}>{storyAccessError}</p>}
+          <Link href={backToListHref} className="btn btn-text">{t("backToList")}</Link>
+        </div>
+      </main>
+    );
+  }
+
+  if (!isSpecialStory && !isChapterUnlocked(chapterId, characterId, stamps)) {
     return (
       <main className={styles.page}>
         <div className={styles.introCard}>
@@ -623,11 +712,13 @@ export default function LearningSessionPage({
           </div>
           <button
             className="btn btn-primary btn-lg"
-            onClick={() => { setStoryIdx(0); setPhase("story"); }}
+            onClick={() => void handleStartLesson()}
+            disabled={isStarting}
             id="btn-start-session"
           >
-            {t("startLearn")}
+            {isStarting ? "학습 준비 중…" : `${t("startLearn")} · 🪙 3`}
           </button>
+          {entryError && <p style={{ color: "var(--red)", textAlign: "center", marginTop: 10, fontWeight: 700 }}>{entryError}</p>}
           <Link href={backToListHref} className="btn btn-ghost" style={{ textAlign: "center" }}>
             {t("backToList")}
           </Link>
@@ -826,7 +917,7 @@ export default function LearningSessionPage({
               <span className={styles.rStatLabel}>{t("wrongLabel")}</span>
             </div>
             <div className={styles.resultStat}>
-              <span className={styles.rStatNum}>🪙 +{Math.floor(score / 10)}</span>
+              <span className={styles.rStatNum}>🪙 +{rewardCoins ?? "…"}</span>
               <span className={styles.rStatLabel}>{t("coinEarned")}</span>
             </div>
           </div>

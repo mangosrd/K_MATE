@@ -42,13 +42,13 @@
 }
 .passportEmoji { font-size: 32px; }
 
-.passportInfo { flex: 1; }
+.passportInfo { flex: 1; min-width: 0; }
 .passportCountry {
   font-size: 9px; font-weight: 800; letter-spacing: 0.15em;
   color: rgba(255,255,255,0.55); margin-bottom: 3px;
 }
-.passportRegion   { font-size: 22px; font-weight: 900; color: #fff; letter-spacing: -0.01em; line-height: 1.2; }
-.passportRegionEn { font-size: 12px; color: rgba(255,255,255,0.65); font-weight: 500; margin-top: 2px; }
+.passportRegion   { font-size: 22px; font-weight: 900; color: #fff; letter-spacing: -0.01em; line-height: 1.2; overflow-wrap: anywhere; }
+.passportRegionEn { font-size: 12px; color: rgba(255,255,255,0.65); font-weight: 500; margin-top: 2px; overflow-wrap: anywhere; }
 
 /* 여권 하단 OCR 라인 */
 .passportFooter {
@@ -136,9 +136,8 @@
 .charInfo { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 6px; }
 .charNameRow { display: flex; align-items: center; gap: var(--space-sm); flex-wrap: wrap; }
 .charName    { font-size: 18px; font-weight: 800; color: var(--text-primary); }
-.charDesc    { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
-.charDescEn  { font-size: 11px; color: var(--text-muted); }
-.charTags    { display: flex; gap: 5px; flex-wrap: wrap; }
+.charProfile { display: flex; gap: 5px; flex-wrap: wrap; }
+.charProfile span { font-size: 11px; color: var(--text-secondary); background: var(--bg-muted); border-radius: 999px; padding: 4px 7px; overflow-wrap: anywhere; }
 
 .affinityRow { display: flex; align-items: center; gap: 2px; }
 .affinityNum { font-size: 11px; color: var(--text-muted); margin-left: 4px; }
@@ -161,3 +160,6 @@
 .placeEmoji   { font-size: 22px; }
 .placeName    { font-size: 12px; font-weight: 700; color: var(--text-primary); }
 .placeNameEn  { font-size: 10px; color: var(--text-muted); }
+
+[data-language="ru"] .passportRegion { font-size: 19px; }
+[data-language="ru"] .passportCountry { letter-spacing: 0.07em; }

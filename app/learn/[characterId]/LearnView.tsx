@@ -186,7 +186,7 @@ export default function LearnView({ char, chapters }: LearnViewProps) {
           </>
         )}
 
-        {/* 2. 스페셜 주제별 스토리 탭 (로맨스/일상/친구 30 챕터) */}
+        {/* 2. 스페셜 주제별 스토리 탭 — 순서 강제가 아닌 개별 영구 소장 콘텐츠 */}
         {tab === "special" && (
           <section className={styles.specialSection}>
             <div className={styles.captainSelectorBox}>
@@ -247,10 +247,9 @@ export default function LearnView({ char, chapters }: LearnViewProps) {
                 // 지역 챕터와 절대 섞이지 않음), 완료 배지를 보여줄 수 있다 — 예전엔 이 탭이
                 // 진행 상태를 아예 보여주지 않고 항상 🔒만 표시했다.
                 const isCompleted = stamps.includes(sc.id);
-                // 프리미엄 잠금(⭐)과는 별개로, 같은 캐릭터·같은 카테고리 안에서 이전 챕터를
-                // 완료하기 전까지는 다음 챕터로 못 넘어가게 막는다 — 예전엔 잠금 아이콘만
-                // 보여줄 뿐 실제로는 아무 챕터나 순서 없이 자유롭게 들어갈 수 있었다.
-                const isSequenceLocked = !isCompleted && !isChapterUnlocked(sc.id, activeCaptain.id, stamps);
+                // 스토리는 챕터 순서를 강제하지 않는다. 프리미엄 구매자는 전체를 영구 소장하고,
+                // 무료 회원은 원하는 에피소드 하나만 5코인으로 영구 해금할 수 있다.
+                const isSequenceLocked = false;
                 return (
                   <div key={sc.id} className={styles.chapterRow}>
                     <Link

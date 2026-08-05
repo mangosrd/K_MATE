@@ -158,6 +158,47 @@ class ProgressUpdate(BaseModel):
     add_stamp: Optional[str] = None
 
 
+# ── 학습 경제 ──────────────────────────────────────────────
+class LessonStartRequest(BaseModel):
+    user_id: str
+    character_id: str
+    chapter_id: str
+
+
+class LessonStartResponse(BaseModel):
+    session_id: str
+    entry_cost: int
+    remaining_coins: int
+
+
+class LessonCompleteRequest(BaseModel):
+    user_id: str
+    session_id: str
+    step_delta: int = 0
+    add_stamp: Optional[str] = None
+
+
+class LessonCompleteResponse(BaseModel):
+    reward_coins: int
+    total_coins: int
+    stamps: List[str]
+
+
+class StoryAccessResponse(BaseModel):
+    has_access: bool
+    access_type: Literal["premium_permanent", "coin_unlock", "locked"]
+    unlock_cost: int = 5
+
+
+class StoryUnlockRequest(BaseModel):
+    user_id: str
+    chapter_id: str
+
+
+class StoryUnlockResponse(StoryAccessResponse):
+    remaining_coins: int
+
+
 # ── 캐릭터 ────────────────────────────────────────────────
 class CharacterResponse(BaseModel):
     id: str
