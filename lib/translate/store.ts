@@ -28,7 +28,9 @@ function cacheKey(item: TranslatableItem, lang: string): string {
 
 // 이 언어들만 실제로 번역이 필요하다 — 콘텐츠 원본이 이미 한국어(ko)+영어(en)라
 // 그 둘은 번역할 필요가 없다.
-const TRANSLATABLE_LANGS = new Set(["ru", "zh", "ja", "zh-TW", "th"]);
+// Vocabulary glosses are stored in English, so Korean users need a translated
+// gloss too. English remains the source language and does not need a request.
+const TRANSLATABLE_LANGS = new Set(["ko", "ru", "zh", "ja", "zh-TW", "th"]);
 
 export async function translateBatch(items: TranslatableItem[], targetLang: string): Promise<string[]> {
   if (!TRANSLATABLE_LANGS.has(targetLang) || typeof window === "undefined") {

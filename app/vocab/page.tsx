@@ -6,7 +6,7 @@ import Image from "next/image";
 import BottomNav from "@/components/ui/BottomNav";
 import { getLocalVocab, clearLocalVocab } from "@/lib/vocab/store";
 import { getEffectiveUserId } from "@/lib/auth/store";
-import { useLanguage } from "@/components/LanguageContext";
+import { useLanguage, type Language } from "@/components/LanguageContext";
 import { useTranslatedTexts } from "@/lib/translate/store";
 import { MOCK_CHARACTERS } from "@/lib/db/mock";
 import type { VocabItem } from "@/types/database";
@@ -31,6 +31,181 @@ const CHARACTER_TABS = [
 const charNameMap: Record<string, string> = Object.fromEntries(
   MOCK_CHARACTERS.map((c) => [c.id, c.name])
 );
+
+type ReviewCopy = {
+  choice: string;
+  written: string;
+  choicePrompt: string;
+  writtenPrompt: string;
+  answerPlaceholder: string;
+  check: string;
+  correct: string;
+  incorrect: string;
+  answer: string;
+  next: string;
+  complete: string;
+  completeSub: string;
+  back: string;
+  exit: string;
+};
+
+const REVIEW_COPY: Record<Language, ReviewCopy> = {
+  ko: { choice: "객관식", written: "직접 입력", choicePrompt: "이 한국어 단어의 뜻을 고르세요", writtenPrompt: "뜻과 예문을 보고 한국어 단어를 입력하세요", answerPlaceholder: "한국어 단어를 입력하세요", check: "정답 확인", correct: "정답이에요!", incorrect: "다시 생각해 봐요.", answer: "정답", next: "다음 문제", complete: "복습 완료!", completeSub: "모든 단어를 복습했어요.", back: "단어장으로", exit: "복습 나가기" },
+  en: { choice: "Multiple choice", written: "Type answer", choicePrompt: "Choose the meaning of this Korean word", writtenPrompt: "Read the meaning and example, then type the Korean word", answerPlaceholder: "Type the Korean word", check: "Check answer", correct: "Correct!", incorrect: "Try again.", answer: "Answer", next: "Next question", complete: "Review complete!", completeSub: "You reviewed every word.", back: "Back to vocab", exit: "Exit review" },
+  ru: { choice: "Выбор", written: "Ввести ответ", choicePrompt: "Выберите значение этого корейского слова", writtenPrompt: "Прочитайте значение и пример, затем введите корейское слово", answerPlaceholder: "Введите корейское слово", check: "Проверить", correct: "Верно!", incorrect: "Попробуйте ещё раз.", answer: "Ответ", next: "Следующий вопрос", complete: "Повторение завершено!", completeSub: "Вы повторили все слова.", back: "К словарю", exit: "Выйти" },
+  zh: { choice: "选择题", written: "输入答案", choicePrompt: "请选择这个韩语单词的意思", writtenPrompt: "阅读释义和例句后，输入韩语单词", answerPlaceholder: "输入韩语单词", check: "检查答案", correct: "回答正确！", incorrect: "再试一次。", answer: "答案", next: "下一题", complete: "复习完成！", completeSub: "你已复习全部单词。", back: "返回生词本", exit: "退出复习" },
+  ja: { choice: "選択問題", written: "入力問題", choicePrompt: "この韓国語の意味を選んでください", writtenPrompt: "意味と例文を見て、韓国語の単語を入力してください", answerPlaceholder: "韓国語の単語を入力", check: "答えを確認", correct: "正解です！", incorrect: "もう一度考えてみましょう。", answer: "答え", next: "次の問題", complete: "復習完了！", completeSub: "すべての単語を復習しました。", back: "単語帳へ", exit: "復習を終了" },
+  "zh-TW": { choice: "選擇題", written: "輸入答案", choicePrompt: "請選擇這個韓語單字的意思", writtenPrompt: "閱讀釋義和例句後，輸入韓語單字", answerPlaceholder: "輸入韓語單字", check: "檢查答案", correct: "答對了！", incorrect: "再想想看。", answer: "答案", next: "下一題", complete: "複習完成！", completeSub: "你已複習全部單字。", back: "返回生詞本", exit: "離開複習" },
+  th: { choice: "แบบเลือกตอบ", written: "พิมพ์คำตอบ", choicePrompt: "เลือกความหมายของคำเกาหลีนี้", writtenPrompt: "อ่านความหมายและตัวอย่าง แล้วพิมพ์คำเกาหลี", answerPlaceholder: "พิมพ์คำเกาหลี", check: "ตรวจคำตอบ", correct: "ถูกต้อง!", incorrect: "ลองอีกครั้ง", answer: "คำตอบ", next: "ข้อถัดไป", complete: "ทบทวนเสร็จแล้ว!", completeSub: "คุณทบทวนคำศัพท์ครบแล้ว", back: "กลับไปคำศัพท์", exit: "ออกจากการทบทวน" },
+};
+
+function normalizeKoreanAnswer(value: string) {
+  return value.replace(/\s+/g, "").trim();
+}
+
+function VocabQuiz({ items, language, onExit }: { items: VocabItem[]; language: Language; onExit: () => void }) {
+  const copy = REVIEW_COPY[language];
+  const [index, setIndex] = useState(0);
+  const [mode, setMode] = useState<"choice" | "written">("choice");
+  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+  const [typedAnswer, setTypedAnswer] = useState("");
+  const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
+
+  const translationItems = items.flatMap((item) => [
+    { text: item.meaning, contextKo: item.word },
+    { text: item.sentence_translation || item.sentence, contextKo: item.sentence },
+  ]);
+  const translations = useTranslatedTexts(translationItems, language);
+  const item = items[index];
+
+  const meaningAt = (itemIndex: number) => translations[itemIndex * 2] ?? items[itemIndex].meaning;
+  const sentenceAt = (itemIndex: number) =>
+    translations[itemIndex * 2 + 1] ?? items[itemIndex].sentence_translation ?? items[itemIndex].sentence;
+
+  const optionIndexes = (() => {
+    const currentMeaning = meaningAt(index);
+    const distractors = items
+      .map((_, itemIndex) => itemIndex)
+      .filter((itemIndex) => itemIndex !== index && meaningAt(itemIndex) !== currentMeaning)
+      .sort((a, b) => ((a * 17 + index * 7) % items.length) - ((b * 17 + index * 7) % items.length))
+      .slice(0, 3);
+    return [index, ...distractors].sort((a, b) => ((a * 11 + index * 5) % items.length) - ((b * 11 + index * 5) % items.length));
+  })();
+
+  const resetQuestion = () => {
+    setSelectedIndex(null);
+    setTypedAnswer("");
+    setIsCorrect(null);
+  };
+
+  const nextQuestion = () => {
+    resetQuestion();
+    setIndex((current) => current + 1);
+  };
+
+  if (!item || index >= items.length) {
+    return (
+      <>
+        <div className="page-content">
+          <div className={styles.practiceArea}>
+            <p className={styles.quizCompleteEmoji}>🎉</p>
+            <h1 className={styles.quizCompleteTitle}>{copy.complete}</h1>
+            <p className={styles.quizCompleteSub}>{copy.completeSub}</p>
+            <button className="btn btn-primary btn-lg" onClick={onExit}>{copy.back}</button>
+          </div>
+        </div>
+        <BottomNav />
+      </>
+    );
+  }
+
+  const selectChoice = (optionIndex: number) => {
+    if (isCorrect) return;
+    setSelectedIndex(optionIndex);
+    setIsCorrect(optionIndex === index);
+  };
+
+  const submitWritten = () => {
+    if (!typedAnswer.trim() || isCorrect) return;
+    setIsCorrect(normalizeKoreanAnswer(typedAnswer) === normalizeKoreanAnswer(item.word));
+  };
+
+  return (
+    <>
+      <div className="page-content">
+        <header className={styles.practiceHeader}>
+          <button onClick={onExit} className={styles.closeBtn} aria-label={copy.exit}>←</button>
+          <div>
+            <p className={styles.practiceTitle}>{copy.choicePrompt}</p>
+            <p className={styles.practiceSub}>{index + 1} / {items.length}</p>
+          </div>
+          <div className={styles.practiceProgress}>
+            <div className="progress-bar"><div className="progress-fill" style={{ width: `${(index / items.length) * 100}%` }} /></div>
+          </div>
+        </header>
+
+        <div className={styles.practiceArea}>
+          <div className={styles.quizModeSwitch} role="tablist" aria-label={copy.choicePrompt}>
+            <button className={mode === "choice" ? styles.quizModeActive : ""} onClick={() => { setMode("choice"); resetQuestion(); }}>{copy.choice}</button>
+            <button className={mode === "written" ? styles.quizModeActive : ""} onClick={() => { setMode("written"); resetQuestion(); }}>{copy.written}</button>
+          </div>
+
+          {mode === "choice" ? (
+            <>
+              <section className={styles.quizQuestionCard}>
+                <p className={styles.quizPrompt}>{copy.choicePrompt}</p>
+                <p className={styles.quizWord}>{item.word}</p>
+                {item.reading && <p className={styles.flashReading}>[{item.reading}]</p>}
+              </section>
+              <div className={styles.choiceList}>
+                {optionIndexes.map((optionIndex) => {
+                  const isSelected = selectedIndex === optionIndex;
+                  const isRight = optionIndex === index;
+                  return (
+                    <button
+                      key={optionIndex}
+                      className={`${styles.choiceOption} ${isSelected ? (isRight ? styles.choiceCorrect : styles.choiceWrong) : ""}`}
+                      onClick={() => selectChoice(optionIndex)}
+                      disabled={isCorrect === true}
+                    >
+                      {meaningAt(optionIndex)}
+                    </button>
+                  );
+                })}
+              </div>
+            </>
+          ) : (
+            <>
+              <section className={styles.quizQuestionCard}>
+                <p className={styles.quizPrompt}>{copy.writtenPrompt}</p>
+                <p className={styles.quizMeaning}>{meaningAt(index)}</p>
+                {item.sentence && (
+                  <div className={styles.quizExample}>
+                    <p>“{item.sentence}”</p>
+                    <p>{sentenceAt(index)}</p>
+                  </div>
+                )}
+              </section>
+              <form className={styles.writtenForm} onSubmit={(event) => { event.preventDefault(); submitWritten(); }}>
+                <input value={typedAnswer} onChange={(event) => setTypedAnswer(event.target.value)} placeholder={copy.answerPlaceholder} autoCapitalize="none" autoCorrect="off" />
+                <button className="btn btn-primary" type="submit" disabled={!typedAnswer.trim() || isCorrect === true}>{copy.check}</button>
+              </form>
+            </>
+          )}
+
+          {isCorrect !== null && (
+            <div className={`${styles.quizFeedback} ${isCorrect ? styles.quizFeedbackCorrect : styles.quizFeedbackWrong}`} role="status">
+              <strong>{isCorrect ? copy.correct : copy.incorrect}</strong>
+              {!isCorrect && <span>{copy.answer}: {item.word} · {meaningAt(index)}</span>}
+            </div>
+          )}
+          {isCorrect && <button className="btn btn-primary btn-lg" onClick={nextQuestion}>{copy.next}</button>}
+        </div>
+      </div>
+      <BottomNav />
+    </>
+  );
+}
 
 export default function VocabPage() {
   const { t, language } = useLanguage();
@@ -118,6 +293,8 @@ export default function VocabPage() {
 
   // ── 연습 모드 ────────────────────────────────────────────────────────────
   if (practiceMode && filtered.length > 0) {
+    return <VocabQuiz items={filtered} language={language} onExit={exitPractice} />;
+
     const isFinished = practiceIdx >= filtered.length;
 
     if (isFinished) {

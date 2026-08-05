@@ -20,6 +20,7 @@ from services.llm_service import llm_chat
 router = APIRouter(tags=["translate"])
 
 LANG_NAMES = {
+    "ko": "Korean",
     "ru": "Russian",
     "zh": "Simplified Chinese",
     "ja": "Japanese",
@@ -52,9 +53,9 @@ async def _translate_batch(items: list[TranslateItem], lang_name: str) -> list[s
         f"Translate each numbered line below into standard, dictionary-accurate {lang_name} — "
         f"the kind of wording you'd find in a formal bilingual dictionary, not slang or a loose "
         f"paraphrase. Each line is either a short vocabulary gloss (a word's core meaning) or an "
-        f"example-sentence translation, given in English. Where a '(Korean source: ...)' note is "
-        f"included, use it to resolve any ambiguity in the English — translate the actual meaning "
-        f"of the Korean source, not just the English text in isolation. Output ONLY the {lang_name} "
+        f"example-sentence translation, given in Korean or English. Where a '(Korean source: ...)' note is "
+        f"included, use it to resolve any ambiguity — translate the actual meaning of the Korean source, "
+        f"not just the text in isolation. Output ONLY the {lang_name} "
         f"translation itself, without the Korean source note. "
         f"Reply with the exact same numbering, one translation per line, and nothing else "
         f"(no explanations, no extra commentary).\n\n{numbered}"
