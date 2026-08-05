@@ -9,7 +9,7 @@
 }
 
 .headerTitle {
-  font-size: 22px;
+  font-size: clamp(21px, 6.2vw, 28px);
   font-weight: 800;
   color: var(--text-primary);
   letter-spacing: -0.02em;
@@ -25,10 +25,12 @@
 
 /* 🌺 붉은색 태극 그라디언트 히어로 배너 (Taegeuk Red to Navy Gradient) */
 .heroBanner {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
   justify-content: space-between;
   margin: var(--space-xs) var(--space-md) var(--space-md);
+  gap: 12px;
   padding: 20px 22px;
   background: linear-gradient(135deg, #CD2E3A 0%, #7e162b 45%, #003478 100%);
   border-radius: var(--radius-xl);
@@ -50,14 +52,14 @@
 }
 
 .bannerTitle {
-  font-size: 19px;
+  font-size: clamp(18px, 5.5vw, 24px);
   font-weight: 800;
   letter-spacing: -0.01em;
   color: #ffffff;
 }
 
 .bannerSub {
-  font-size: 12px;
+  font-size: clamp(12px, 3.7vw, 15px);
   color: rgba(255, 255, 255, 0.88);
   margin-top: 4px;
 }
@@ -70,7 +72,7 @@
   backdrop-filter: blur(10px);
   padding: 6px 14px;
   border-radius: var(--radius-lg);
-  font-size: 13px;
+  font-size: clamp(11px, 3.3vw, 13px);
   font-weight: 800;
   border: 1px solid rgba(255, 255, 255, 0.35);
   color: #ffffff;
@@ -100,7 +102,8 @@
   flex-direction: column;
   align-items: center;
   gap: 2px;
-  flex: 1;
+  flex: 1 1 0;
+  min-width: 0;
 }
 
 .statNum {
@@ -114,6 +117,9 @@
   font-size: 11px;
   font-weight: 600;
   color: var(--text-muted);
+  line-height: 1.25;
+  text-align: center;
+  overflow-wrap: anywhere;
 }
 
 .statDivider {
@@ -165,7 +171,7 @@
   background: linear-gradient(135deg, #003478 0%, #002255 100%);
   color: #ffffff;
   display: grid;
-  grid-template-columns: minmax(66px, 1fr) minmax(112px, 1.25fr) minmax(78px, 1fr);
+  grid-template-columns: minmax(56px, .85fr) minmax(94px, 1.25fr) minmax(76px, 1.1fr);
   align-items: center;
   gap: 8px;
   border-radius: var(--radius-xl) var(--radius-xl) 0 0;
@@ -188,6 +194,8 @@
   font-size: 12px;
   color: rgba(255, 255, 255, 0.75);
   margin-top: 2px;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
 }
 
 .ticketMid {
@@ -258,12 +266,17 @@
   font-weight: 800;
   color: #ffffff;
   margin-top: 2px;
+  line-height: 1.2;
+  text-align: right;
+  overflow-wrap: anywhere;
 }
 
 .ticketCityEn {
   font-size: 10px;
   color: rgba(255, 255, 255, 0.7);
-  white-space: nowrap;
+  line-height: 1.2;
+  text-align: right;
+  overflow-wrap: anywhere;
 }
 
 /* ✂️ 원형 노치(Notch) 점선 구분선 */
@@ -307,9 +320,9 @@
 .ticketBottom {
   padding: 16px 20px;
   display: grid;
-  grid-template-columns: minmax(70px, 1fr) minmax(64px, 1fr) minmax(130px, 1.45fr) 20px;
+  grid-template-columns: minmax(0, .9fr) minmax(0, .85fr) minmax(0, 1.35fr) 16px;
   align-items: center;
-  gap: 18px;
+  gap: 12px;
   background: var(--bg-base);
   border-radius: 0 0 var(--radius-xl) var(--radius-xl);
 }
@@ -318,23 +331,25 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
-  min-width: 68px;
+  min-width: 0;
 }
 
 .metaLabel {
-  font-size: 10px;
+  font-size: clamp(8px, 2.7vw, 10px);
   font-weight: 800;
   letter-spacing: 0.08em;
   color: var(--text-secondary);
   text-transform: uppercase;
-  line-height: 1;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
 }
 
 .metaValue {
-  font-size: 13px;
+  font-size: clamp(11px, 3.3vw, 13px);
   font-weight: 800;
   color: var(--text-primary);
-  line-height: 1;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
 }
 
 .ticketProgressWrap {
@@ -388,4 +403,26 @@
   .ticketCodeSmall, .ticketCode { font-size: 18px; }
   .ticketCity { font-size: 12px; }
   .ticketCityEn { font-size: 9px; }
+}
+
+/* Russian and Thai labels are deliberately longer than Korean. Keep the
+   hierarchy intact without letting a single translated string widen a ticket. */
+.mapPage[data-language="ru"] .ticketTop,
+.mapPage[data-language="th"] .ticketTop {
+  padding: 18px 16px;
+  gap: 6px;
+}
+
+.mapPage[data-language="ru"] .ticketCity,
+.mapPage[data-language="th"] .ticketCity { font-size: 12px; }
+.mapPage[data-language="ru"] .ticketCode,
+.mapPage[data-language="th"] .ticketCode { font-size: 21px; }
+.mapPage[data-language="ru"] .ticketBottom,
+.mapPage[data-language="th"] .ticketBottom { padding: 14px 16px; gap: 8px; }
+
+@media (max-width: 390px) {
+  .heroBanner { grid-template-columns: 1fr; }
+  .streakPill { justify-self: start; }
+  .ticketTop { padding: 18px 16px; }
+  .ticketBottom { padding: 14px 16px; gap: 8px; }
 }

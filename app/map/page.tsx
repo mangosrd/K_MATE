@@ -5,14 +5,78 @@ import Link from "next/link";
 import BottomNav from "@/components/ui/BottomNav";
 import { MOCK_REGIONS, MOCK_ALL_PROGRESS, MOCK_ECONOMY, MOCK_USER, MOCK_CHARACTERS, getChaptersForCharacter } from "@/lib/db/mock";
 import { getEffectiveUserId } from "@/lib/auth/store";
-import { useLanguage } from "@/components/LanguageContext";
+import { useLanguage, type Language } from "@/components/LanguageContext";
 import type { Progress } from "@/types/database";
 import styles from "./map.module.css";
 
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
 
+type RegionCopy = { origin: string; name: string; nameEn: string; open: string; locked: string };
+
+const REGION_COPY: Record<Language, Record<string, RegionCopy>> = {
+  ko: {
+    seoul: { origin: "인천", name: "서울·경기", nameEn: "Seoul & Gyeonggi", open: "이용 가능", locked: "잠김" },
+    jeonju: { origin: "인천", name: "전주·전라", nameEn: "Jeonju & Jeolla", open: "이용 가능", locked: "잠김" },
+    busan: { origin: "인천", name: "부산·경남", nameEn: "Busan & Gyeongnam", open: "이용 가능", locked: "잠김" },
+    chungcheong: { origin: "인천", name: "충청·공주", nameEn: "Chungcheong & Gongju", open: "이용 가능", locked: "잠김" },
+    jeju: { origin: "인천", name: "제주", nameEn: "Jeju Island", open: "이용 가능", locked: "잠김" },
+  },
+  en: {
+    seoul: { origin: "Incheon", name: "Seoul & Gyeonggi", nameEn: "Seoul & Gyeonggi", open: "OPEN", locked: "LOCKED" },
+    jeonju: { origin: "Incheon", name: "Jeonju & Jeolla", nameEn: "Jeonju & Jeolla", open: "OPEN", locked: "LOCKED" },
+    busan: { origin: "Incheon", name: "Busan & Gyeongnam", nameEn: "Busan & Gyeongnam", open: "OPEN", locked: "LOCKED" },
+    chungcheong: { origin: "Incheon", name: "Chungcheong & Gongju", nameEn: "Chungcheong & Gongju", open: "OPEN", locked: "LOCKED" },
+    jeju: { origin: "Incheon", name: "Jeju Island", nameEn: "Jeju Island", open: "OPEN", locked: "LOCKED" },
+  },
+  ru: {
+    seoul: { origin: "Инчхон", name: "Сеул и Кёнгидо", nameEn: "Seoul & Gyeonggi", open: "ОТКРЫТО", locked: "ЗАКРЫТО" },
+    jeonju: { origin: "Инчхон", name: "Чонджу и Чолла", nameEn: "Jeonju & Jeolla", open: "ОТКРЫТО", locked: "ЗАКРЫТО" },
+    busan: { origin: "Инчхон", name: "Пусан и Кённам", nameEn: "Busan & Gyeongnam", open: "ОТКРЫТО", locked: "ЗАКРЫТО" },
+    chungcheong: { origin: "Инчхон", name: "Чхунчхон и Конджу", nameEn: "Chungcheong & Gongju", open: "ОТКРЫТО", locked: "ЗАКРЫТО" },
+    jeju: { origin: "Инчхон", name: "Чеджу", nameEn: "Jeju Island", open: "ОТКРЫТО", locked: "ЗАКРЫТО" },
+  },
+  zh: {
+    seoul: { origin: "仁川", name: "首尔·京畿", nameEn: "Seoul & Gyeonggi", open: "开放", locked: "未开放" },
+    jeonju: { origin: "仁川", name: "全州·全罗", nameEn: "Jeonju & Jeolla", open: "开放", locked: "未开放" },
+    busan: { origin: "仁川", name: "釜山·庆南", nameEn: "Busan & Gyeongnam", open: "开放", locked: "未开放" },
+    chungcheong: { origin: "仁川", name: "忠清·公州", nameEn: "Chungcheong & Gongju", open: "开放", locked: "未开放" },
+    jeju: { origin: "仁川", name: "济州", nameEn: "Jeju Island", open: "开放", locked: "未开放" },
+  },
+  ja: {
+    seoul: { origin: "仁川", name: "ソウル・京畿", nameEn: "Seoul & Gyeonggi", open: "利用可能", locked: "ロック中" },
+    jeonju: { origin: "仁川", name: "全州・全羅", nameEn: "Jeonju & Jeolla", open: "利用可能", locked: "ロック中" },
+    busan: { origin: "仁川", name: "釜山・慶南", nameEn: "Busan & Gyeongnam", open: "利用可能", locked: "ロック中" },
+    chungcheong: { origin: "仁川", name: "忠清・公州", nameEn: "Chungcheong & Gongju", open: "利用可能", locked: "ロック中" },
+    jeju: { origin: "仁川", name: "済州", nameEn: "Jeju Island", open: "利用可能", locked: "ロック中" },
+  },
+  "zh-TW": {
+    seoul: { origin: "仁川", name: "首爾・京畿", nameEn: "Seoul & Gyeonggi", open: "開放", locked: "未開放" },
+    jeonju: { origin: "仁川", name: "全州・全羅", nameEn: "Jeonju & Jeolla", open: "開放", locked: "未開放" },
+    busan: { origin: "仁川", name: "釜山・慶南", nameEn: "Busan & Gyeongnam", open: "開放", locked: "未開放" },
+    chungcheong: { origin: "仁川", name: "忠清・公州", nameEn: "Chungcheong & Gongju", open: "開放", locked: "未開放" },
+    jeju: { origin: "仁川", name: "濟州", nameEn: "Jeju Island", open: "開放", locked: "未開放" },
+  },
+  th: {
+    seoul: { origin: "อินชอน", name: "โซล·คยองกี", nameEn: "Seoul & Gyeonggi", open: "เปิดแล้ว", locked: "ล็อกอยู่" },
+    jeonju: { origin: "อินชอน", name: "จอนจู·ชอลลา", nameEn: "Jeonju & Jeolla", open: "เปิดแล้ว", locked: "ล็อกอยู่" },
+    busan: { origin: "อินชอน", name: "ปูซาน·คยองนัม", nameEn: "Busan & Gyeongnam", open: "เปิดแล้ว", locked: "ล็อกอยู่" },
+    chungcheong: { origin: "อินชอน", name: "ชุงชอง·กงจู", nameEn: "Chungcheong & Gongju", open: "เปิดแล้ว", locked: "ล็อกอยู่" },
+    jeju: { origin: "อินชอน", name: "เชจู", nameEn: "Jeju Island", open: "เปิดแล้ว", locked: "ล็อกอยู่" },
+  },
+};
+
+const TICKET_LABELS: Record<Language, { mate: string; gate: string; progress: string; visitUnit: string; placeUnit: string }> = {
+  ko: { mate: "방문", gate: "장소", progress: "진도", visitUnit: "방문", placeUnit: "곳" },
+  en: { mate: "VISITS", gate: "PLACES", progress: "PROGRESS", visitUnit: "visits", placeUnit: "places" },
+  ru: { mate: "ПОСЕЩЕНИЯ", gate: "МЕСТА", progress: "ПРОГРЕСС", visitUnit: "посещений", placeUnit: "мест" },
+  zh: { mate: "访问", gate: "地点", progress: "进度", visitUnit: "次访问", placeUnit: "处" },
+  ja: { mate: "訪問", gate: "場所", progress: "進捗", visitUnit: "回訪問", placeUnit: "か所" },
+  "zh-TW": { mate: "造訪", gate: "地點", progress: "進度", visitUnit: "次造訪", placeUnit: "處" },
+  th: { mate: "เยี่ยมชม", gate: "สถานที่", progress: "ความคืบหน้า", visitUnit: "ครั้ง", placeUnit: "แห่ง" },
+};
+
 export default function MapPage() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const [coins, setCoins] = useState(MOCK_ECONOMY.coins);
   const [membership, setMembership] = useState(MOCK_USER.membership);
   const [allProgress, setAllProgress] = useState<Record<string, Progress>>(MOCK_ALL_PROGRESS);
@@ -46,7 +110,7 @@ export default function MapPage() {
 
   return (
     <>
-      <div className="page-content">
+      <div className={`page-content ${styles.mapPage}`} data-language={language}>
         {/* 헤더 */}
         <header className={styles.header}>
           <div>
@@ -94,6 +158,8 @@ export default function MapPage() {
           <p className={styles.sectionLabel}>{t("boardingPass")}</p>
 
           {MOCK_REGIONS.map((region) => {
+            const copy = REGION_COPY[language][region.id] ?? REGION_COPY.en[region.id];
+            const ticketLabels = TICKET_LABELS[language];
             const progress = Object.values(allProgress).find(
               (p) => p.character_id === region.character_ids[0]
             );
@@ -127,7 +193,7 @@ export default function MapPage() {
                 <div className={styles.ticketTop}>
                   <div className={styles.ticketOrigin}>
                     <span className={styles.ticketCodeSmall}>ICN</span>
-                    <span className={styles.ticketCitySmall}>인천</span>
+                    <span className={styles.ticketCitySmall}>{copy.origin}</span>
                   </div>
 
                   <div className={styles.ticketMid}>
@@ -137,14 +203,14 @@ export default function MapPage() {
                       <span className={styles.planeIcon}>✈</span>
                     </div>
                     <span className={styles.openBadge}>
-                      {isRegionLocked ? "🔒 LOCKED" : "OPEN"}
+                      {isRegionLocked ? `🔒 ${copy.locked}` : copy.open}
                     </span>
                   </div>
 
                   <div className={styles.ticketDest}>
                     <span className={styles.ticketCode}>{region.airport_code}</span>
-                    <span className={styles.ticketCity}>{region.name}</span>
-                    <span className={styles.ticketCityEn}>{region.name_en}</span>
+                    <span className={styles.ticketCity}>{copy.name}</span>
+                    <span className={styles.ticketCityEn}>{copy.nameEn}</span>
                   </div>
                 </div>
 
@@ -158,15 +224,15 @@ export default function MapPage() {
                 {/* 티켓 하단 진도 */}
                 <div className={styles.ticketBottom}>
                   <div className={styles.ticketMeta}>
-                    <span className={styles.metaLabel}>MATE</span>
-                    <span className={styles.metaValue}>{visited}/{region.place_count} {t("visit")}</span>
+                    <span className={styles.metaLabel}>{ticketLabels.mate}</span>
+                    <span className={styles.metaValue}>{visited}/{region.place_count} {ticketLabels.visitUnit}</span>
                   </div>
                   <div className={styles.ticketMeta}>
-                    <span className={styles.metaLabel}>GATE</span>
-                    <span className={styles.metaValue}>{region.place_count} {t("placesCount")}</span>
+                    <span className={styles.metaLabel}>{ticketLabels.gate}</span>
+                    <span className={styles.metaValue}>{region.place_count} {ticketLabels.placeUnit}</span>
                   </div>
                   <div className={styles.ticketProgressWrap}>
-                    <span className={styles.metaLabel}>PROGRESS</span>
+                    <span className={styles.metaLabel}>{ticketLabels.progress}</span>
                     <div className={styles.progressRow}>
                       <div className={styles.progressBar}>
                         <div className={styles.progressFill} style={{ width: `${pct}%` }} />
