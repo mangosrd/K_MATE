@@ -8,7 +8,9 @@
 규칙으로 한 번 더 검증한다.
 """
 from fastapi import HTTPException
+from sqlalchemy.orm import object_session
 from models.models import User, Character
+from services.membership import expire_premium_if_needed
 
 
 def check_character_access(user: User, character: Character) -> None:
@@ -16,6 +18,9 @@ def check_character_access(user: User, character: Character) -> None:
     접근하려 하면 403을 던진다. requires_premium이 아닌 캐릭터(규현/하늘 등)는
     항상 통과한다.
     """
+    session = object_session(user)
+    if session:
+        expire_premium_if_needed(session, user)
     if not character.requires_premium:
         return
     if user.membership == "premium":

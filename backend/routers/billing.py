@@ -11,6 +11,7 @@ from schemas.schemas import (
     WatchAdRequest, WatchAdResponse,
 )
 from models.models import User, Purchase, Economy
+from services.membership import activate_monthly_premium
 from services.play_billing import verify_subscription_purchase, verify_product_purchase
 from services.portone import verify_payment
 from services.ads import grant_ad_reward, AD_COIN_REWARD
@@ -18,7 +19,7 @@ import uuid
 
 # 프리미엄 구독 가격 — app/premium/PremiumView.tsx의 표시 가격과 반드시 일치해야 한다
 # (여기 값이 실제 결제 검증 기준 금액이라, 프론트 표시와 어긋나면 결제가 거부된다).
-PREMIUM_PRICE_KRW = 5900
+PREMIUM_PRICE_KRW = 4900
 PREMIUM_WELCOME_COINS = 500
 
 router = APIRouter(prefix="/billing", tags=["billing"])
@@ -46,7 +47,7 @@ COIN_PACKS: dict[str, dict] = {
     "kmate_coins_large":  {"coins": 500, "price_krw": 6600, "label": "코인 500개 (100개 보너스)"},
 }
 
-# 캐릭터 개별 잠금해제 — 구독(₩5,900/월) 부담스러운 유저를 위한 1회성 소액 결제.
+# 캐릭터 개별 잠금해제 — 구독(₩4,900/월) 부담스러운 유저를 위한 1회성 소액 결제.
 # 프리미엄 전용 캐릭터(sunwoo/sangwoo/yongwoo)만 대상. 구매하면 canAccessCharacter가
 # 이미 지원하는 free_char_slots 배열에 캐릭터를 추가하는 방식이라 별도 접근제어 로직이
 # 필요 없다 — kyuhyun/haneul이 원래 이 배열로 무료 제공되던 것과 완전히 같은 메커니즘.
@@ -129,8 +130,8 @@ def _grant_coins(db: Session, user_id: str, coins: int) -> int:
 def _activate_premium_and_grant_welcome_coins(
     db: Session, user: User, platform: str, product_id: str, purchase_token: str
 ) -> int:
-    """Apply a verified 5,900 KRW premium purchase exactly once with its coin reward."""
-    user.membership = "premium"
+    """Apply a verified one-month premium purchase exactly once with its coin reward."""
+    activate_monthly_premium(db, user, PREMIUM_PRICE_KRW)
     total_coins = _grant_coins(db, user.id, PREMIUM_WELCOME_COINS)
     db.add(Purchase(
         id=str(uuid.uuid4()),

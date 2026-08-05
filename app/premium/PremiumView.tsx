@@ -16,7 +16,7 @@ import { purchaseMembershipWeb, purchaseCharacterPackWeb } from "@/lib/billing/p
 import styles from "./premium.module.css";
 
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
-const PREMIUM_PRICE_KRW = 5900; // backend/routers/billing.py의 PREMIUM_PRICE_KRW와 반드시 일치
+const PREMIUM_PRICE_KRW = 4900; // backend/routers/billing.py의 PREMIUM_PRICE_KRW와 반드시 일치
 
 const PERKS = [
   { icon: "🧑‍🤝‍🧑", ko: "모든 메이트 이용", key: "perkAllMates" },
@@ -217,7 +217,7 @@ export default function PremiumView() {
           <div className={styles.priceTop}>
             <div>
               <p className={styles.priceLabel}>{t("monthlySub")}</p>
-              <p className={styles.priceAmount}>₩5,900<span className={styles.pricePer}>{t("perMonth")}</span></p>
+              <p className={styles.priceAmount}>₩4,900<span className={styles.pricePer}>{t("perMonth")}</span></p>
             </div>
             <div className={styles.priceBadge}>BEST</div>
           </div>

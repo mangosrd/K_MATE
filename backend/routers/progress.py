@@ -212,6 +212,8 @@ def get_user(user_id: str, db: Session = Depends(get_db)):
     user = db.query(User).filter(User.id == user_id).first()
     if not user:
         raise HTTPException(status_code=404, detail="User not found")
+    from services.membership import expire_premium_if_needed
+    expire_premium_if_needed(db, user)
     economy = db.query(Economy).filter(Economy.user_id == user_id).first()
     return UserResponse(
         id=user.id, name=user.name, language=user.language,
