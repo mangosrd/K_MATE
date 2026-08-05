@@ -91,7 +91,10 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
   // 서버는 localStorage에 접근할 수 없어 항상 "resolved"로 렌더한다 — 초기값을
   // getChatHistory()로 바로 잡으면 서버/클라이언트 렌더 결과가 달라져 하이드레이션
   // 에러가 난다. 마운트 후에만(클라이언트에서만) 저장된 대화가 있는지 확인한다.
-  const [resumeChoice, setResumeChoice] = useState<"pending" | "resolved">("resolved");
+  // Do not write the greeting to storage until we have checked for an existing
+  // conversation. Otherwise the initial render can overwrite it before the
+  // user gets a chance to press "continue".
+  const [resumeChoice, setResumeChoice] = useState<"checking" | "pending" | "resolved">("checking");
 
   useEffect(() => {
     // 저장된 기록이 시작 인사말(캐릭터가 먼저 건 말) 하나뿐이면 "대화"라고 볼 수
@@ -101,6 +104,8 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
     const history = getChatHistory(characterId);
     if (history?.some((m) => m.role === "user")) {
       setResumeChoice("pending");
+    } else {
+      setResumeChoice("resolved");
     }
   }, [characterId]);
   const [isListening, setIsListening] = useState(false);

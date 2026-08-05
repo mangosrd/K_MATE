@@ -418,7 +418,7 @@ def predict_word_levels(words: list[str]) -> dict[str, str] | None:
     return None
 
 
-async def _lookup_word_meaning(word: str) -> str:
+async def _lookup_word_meaning(word: str, context: str) -> str:
     """단어가 국립국어원 표준국어대사전 기준으로 학습할 만한 표준어 명사/형용사(동사 포함)인지
     LLM으로 함께 판단하면서 간단한 영어 뜻을 조회한다.
 
@@ -435,18 +435,21 @@ async def _lookup_word_meaning(word: str) -> str:
                 "content": (
                     "You are a Korean dictionary editor following 국립국어원 표준국어대사전 "
                     "(the National Institute of Korean Language's standard dictionary) conventions. "
-                    "Given a single Korean word, decide whether it is a standard dictionary headword "
-                    "worth teaching a language learner. Prefer common nouns and adjectives (everyday "
-                    "verbs are fine too). REJECT: proper nouns (place names, person names, brand/"
-                    "landmark names), sentence fragments or verb/adjective endings that aren't a "
-                    "dictionary base form, particles, interjections, and non-standard slang or dialect "
-                    "forms.\n"
-                    "If it qualifies, reply with ONLY its most common English meaning in 1-4 words.\n"
+                    "Given a Korean candidate and the exact sentence where it appeared, decide whether "
+                    "that surface form is being used as a standard dictionary headword worth teaching a "
+                    "language learner. Context is mandatory: reject a spelling if it is a conjugated verb/"
+                    "adjective form, connective ending, particle, or sentence fragment in this sentence, "
+                    "even when the same spelling can be a noun in another context. For example, reject "
+                    "'가면' when it means 'if/goes', but accept it as 'mask' only when the sentence clearly "
+                    "uses the noun meaning. Prefer common nouns and adjectives; everyday base-form verbs "
+                    "are fine too. REJECT proper nouns (place names, person names, brands, landmarks), "
+                    "non-standard slang, and dialect forms.\n"
+                    "If it qualifies, reply with ONLY the English meaning used in THIS context, in 1-4 words.\n"
                     "If it does NOT qualify, reply with exactly: REJECT\n"
                     "No explanation, no Korean, no surrounding punctuation or quotes."
                 ),
             },
-            {"role": "user", "content": word},
+            {"role": "user", "content": f"Candidate: {word}\nContext: {context}"},
         ]
         meaning = await llm_chat(messages, temperature=0.0, max_tokens=16)
         cleaned = meaning.strip().strip(".\"'“”' ")
@@ -479,7 +482,7 @@ async def extract_word_suggestion(reply: str) -> dict | None:
         ordered = sorted(korean_words, key=lambda w: _LEVEL_RANK.get(levels[w], 0), reverse=True)
 
     for word in ordered[:3]:
-        meaning = await _lookup_word_meaning(word)
+        meaning = await _lookup_word_meaning(word, reply)
         if meaning:
             return {
                 "word": word,
