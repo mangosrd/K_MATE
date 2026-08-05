@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { cookies } from "next/headers";
 import BottomNav from "@/components/ui/BottomNav";
 import { getCharacterById, getChaptersForCharacter, canAccessCharacter, MOCK_USER } from "@/lib/db/mock";
 import LearnView from "./LearnView";
-import LockedNotice from "./LockedNotice";
 
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
 
@@ -40,12 +39,7 @@ export default async function LearnPage({ params }: { params: Promise<{ characte
 
   const canAccess = canAccessCharacter(characterId, membership, freeCharSlots);
   if (!canAccess) {
-    return (
-      <>
-        <LockedNotice charName={char.name} />
-        <BottomNav />
-      </>
-    );
+    redirect("/premium");
   }
 
   const chapters = getChaptersForCharacter(characterId);

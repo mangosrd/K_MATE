@@ -2,6 +2,7 @@
 
 import { useState, use, useEffect, useMemo } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import styles from "./session.module.css";
 import LoadingSplash from "@/components/LoadingSplash";
@@ -260,6 +261,15 @@ export default function LearningSessionPage({
   const { t, language } = useLanguage();
   const { membership, membershipLoaded } = useMembership();
   const { freeSlots, freeSlotsLoaded } = useFreeCharSlots();
+  const router = useRouter();
+  const requiresPremium = getCharacterById(characterId)?.requires_premium ?? false;
+  const canAccess = canAccessCharacter(characterId, membership, freeSlots);
+
+  useEffect(() => {
+    if (requiresPremium && membershipLoaded && freeSlotsLoaded && !canAccess) {
+      router.replace("/premium");
+    }
+  }, [canAccess, freeSlotsLoaded, membershipLoaded, requiresPremium, router]);
 
   // 챕터 콘텐츠는 이제 챕터별로 쪼개진 청크를 동적 import로 그때그때 받아온다
   // (lib/content/chapters.ts 참고) — chapterId가 바뀔 때마다 새로 받아와야 한다.
@@ -537,7 +547,10 @@ export default function LearningSessionPage({
   // 프리미엄 전용 캐릭터일 때만 필요하다 — 무료 캐릭터는 membership을 보기도 전에 이미
   // 접근이 허용되므로, 규현/하늘 챕터에 뒤로가기로 재진입할 때마다 로딩 화면이 뜨는
   // 불필요한 깜빡임이 새로 생겼었다.
-  const requiresPremium = getCharacterById(characterId)?.requires_premium ?? false;
+  if (requiresPremium && membershipLoaded && freeSlotsLoaded && !canAccess) {
+    return <LoadingSplash message={t("loadingChapter")} />;
+  }
+
   if (
     !stampsLoaded || !contentLoaded || !minLoadingTimeElapsed ||
     (requiresPremium && (!membershipLoaded || !freeSlotsLoaded))
@@ -549,24 +562,7 @@ export default function LearningSessionPage({
   // 이전엔 이 페이지(실제 챕터 콘텐츠)에는 프리미엄 체크가 전혀 없었다. 목록 페이지
   // (/learn/[characterId])에서만 막고 있어서, 무료 회원도 프리미엄 캐릭터의 챕터 URL을
   // 직접 알면(주소창 입력, 공유 링크 등) 그대로 들어가 전체 콘텐츠를 볼 수 있었다.
-  const canAccess = canAccessCharacter(characterId, membership, freeSlots);
-  if (!canAccess) {
-    return (
-      <main className={styles.page}>
-        <div className={styles.introCard}>
-          <div className={styles.introEmoji}>🔒</div>
-          <h1 className={styles.introTitle}>{t("premiumLockedTitle")}</h1>
-          <p className={styles.introTitleEn}>{t("premiumLockedSub")}</p>
-          <Link href="/premium" className="btn btn-gold btn-lg" style={{ textAlign: "center" }}>
-            ⭐ {t("premiumOnly")}
-          </Link>
-          <Link href={backToListHref} className="btn btn-secondary btn-lg" style={{ textAlign: "center", marginTop: 8 }}>
-            {t("backToList")}
-          </Link>
-        </div>
-      </main>
-    );
-  }
+  if (!canAccess) return <LoadingSplash message={t("loadingChapter")} />;
 
   if (!isChapterUnlocked(chapterId, characterId, stamps)) {
     return (
