@@ -1,50 +1,31 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import BottomNav from "@/components/ui/BottomNav";
-import { MOCK_CHARACTERS, MOCK_ALL_PROGRESS, canAccessCharacter } from "@/lib/db/mock";
-import { getEffectiveUserId } from "@/lib/auth/store";
+import { MOCK_CHARACTERS, canAccessCharacter } from "@/lib/db/mock";
 import { useMembership, useFreeCharSlots } from "@/lib/auth/useAuthUser";
 import { useLanguage } from "@/components/LanguageContext";
-import type { Progress } from "@/types/database";
 import styles from "./chat-select.module.css";
 
-const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
+type Hotspot = {
+  characterId: string;
+  className: string;
+};
+
+// The video is composed around these five fixed seats. Keeping the hit areas in
+// percentages lets the same layout scale cleanly across every phone width.
+const CAPTAIN_HOTSPOTS: Hotspot[] = [
+  { characterId: "sangwoo", className: "sangwoo" },
+  { characterId: "haneul", className: "haneul" },
+  { characterId: "kyuhyun", className: "kyuhyun" },
+  { characterId: "yongwoo", className: "yongwoo" },
+  { characterId: "sunwoo", className: "sunwoo" },
+];
 
 export default function ChatSelectPage() {
   const { t } = useLanguage();
   const { membership } = useMembership();
   const { freeSlots } = useFreeCharSlots();
-  const isPremium = membership === "premium";
-  const [allProgress, setAllProgress] = useState<Record<string, Progress>>(MOCK_ALL_PROGRESS);
-
-  useEffect(() => {
-    const userId = getEffectiveUserId();
-    Promise.all(
-      MOCK_CHARACTERS.map((c) =>
-        fetch(`${BACKEND_URL}/progress/${userId}/${c.id}`)
-          .then((res) => (res.ok ? res.json() : null))
-          .catch(() => null)
-      )
-    ).then((results) => {
-      const merged: Record<string, Progress> = {};
-      results.forEach((p) => { if (p) merged[p.character_id] = p; });
-      if (Object.keys(merged).length > 0) setAllProgress(merged);
-    });
-  }, []);
-
-  const getRouteName = (regionId: string) => {
-    switch (regionId) {
-      case "seoul": return t("seoulRoute");
-      case "jeonju": return t("jeonjuRoute");
-      case "busan": return t("busanRoute");
-      case "chungcheong": return t("chungcheongRoute");
-      case "jeju": return t("jejuRoute");
-      default: return `${regionId} ${t("routeLabel")}`;
-    }
-  };
 
   return (
     <>
@@ -52,113 +33,61 @@ export default function ChatSelectPage() {
         <header className="page-header">
           <div>
             <h1 className="page-title">{t("chatTitle")}</h1>
-            <p style={{ fontSize: 11, color: "var(--text-muted)", fontWeight: 500 }}>
-              {t("chatSub")}
-            </p>
+            <p className={styles.pageSub}>{t("chatSub")}</p>
           </div>
         </header>
 
-        <div className={styles.inner}>
-          {/* 안내 배너 */}
-          <div className={styles.banner}>
-            <span className={styles.bannerIcon}>✈️</span>
-            <div>
-              <p className={styles.bannerTitle}>{t("selectCaptain")}</p>
-              <p className={styles.bannerSub}>{t("selectCaptainSub")}</p>
-            </div>
+        <main className={styles.lobby}>
+          <div className={styles.lobbyIntro}>
+            <p className={styles.lobbyEyebrow}>✈ K-MATE FLIGHT LOUNGE</p>
+            <h2>{t("selectCaptain")}</h2>
+            <p>{t("selectCaptainSub")}</p>
           </div>
 
-          {/* 캐릭터 그리드 */}
-          <div className={styles.charGrid}>
-            {MOCK_CHARACTERS.map((char) => {
+          <section className={styles.videoStage} aria-label={t("selectCaptain")}>
+            <video
+              className={styles.lobbyVideo}
+              src="/media/captain-lobby.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="metadata"
+              aria-hidden="true"
+            />
+            <div className={styles.videoShade} aria-hidden="true" />
+
+            {CAPTAIN_HOTSPOTS.map(({ characterId, className }) => {
+              const char = MOCK_CHARACTERS.find((item) => item.id === characterId);
+              if (!char) return null;
               const canAccess = canAccessCharacter(char.id, membership, freeSlots);
-              const progress = allProgress[char.id];
-              const affinity = progress?.affinity ?? 0;
-              const affinityStars = Math.round(affinity / 20);
+              const href = canAccess ? `/chat/${char.id}` : "/premium";
 
               return (
-                <div
+                <Link
                   key={char.id}
-                  className={`${styles.charCard} ${!canAccess ? styles.charLocked : ""}`}
-                  id={`char-card-${char.id}`}
+                  href={href}
+                  className={`${styles.hotspot} ${styles[className]} ${!canAccess ? styles.hotspotLocked : ""}`}
+                  id={`captain-hotspot-${char.id}`}
+                  aria-label={canAccess ? `${char.name} ${t("captainBadge")} ${t("startChat")}` : `${char.name} ${t("premiumOnly")}`}
                 >
-                  {/* 기장 배지 */}
-                  <div className={styles.captainBadge}>
-                    {canAccess
-                      ? <span className="badge badge-blue">✈️ {t("captainBadge")}</span>
-                      : <span className="badge badge-gold">⭐ {t("premiumOnly")}</span>}
-                  </div>
-
-                  {/* 기장 일러스트 */}
-                  <div className={styles.charIconWrap}>
-                    <div className={`${styles.charIcon} ${!canAccess ? styles.charIconLocked : ""}`}>
-                      <Image
-                        src={`/characters/${char.id}.png`}
-                        alt={`${char.name} ${t("captainBadge")}`}
-                        width={80}
-                        height={80}
-                        className={styles.charImg}
-                        onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
-                      />
-                      <span className={styles.charEmojiBack}>{char.emoji}</span>
-                      {!canAccess && <div className={styles.lockOverlay}>🔒</div>}
-                    </div>
-                  </div>
-
-                  {/* 이름 & 노선 */}
-                  <div className={styles.charMeta}>
-                    <p className={styles.charName}>{char.name} {t("captainBadge")}</p>
-                    <p className={styles.charRoute}>
-                      🛫 {getRouteName(char.region_id)}
-                    </p>
-                  </div>
-
-                  {/* 호감도 */}
-                  {canAccess && (
-                    <div className={styles.affinityRow}>
-                      {Array.from({ length: 5 }).map((_, i) => (
-                        <span key={i} style={{ fontSize: 12 }}>
-                          {i < affinityStars ? "❤️" : "🤍"}
-                        </span>
-                      ))}
-                    </div>
-                  )}
-
-                  {/* 버튼 */}
-                  {canAccess ? (
-                    <Link
-                      href={`/chat/${char.id}`}
-                      className={`btn btn-primary btn-sm ${styles.chatBtn}`}
-                      id={`btn-chat-${char.id}`}
-                    >
-                      {t("startChat")}
-                    </Link>
-                  ) : (
-                    <Link
-                      href="/premium"
-                      className={`btn btn-secondary btn-sm ${styles.chatBtn}`}
-                      id={`btn-unlock-${char.id}`}
-                    >
-                      🔒 {t("premiumOnly")}
-                    </Link>
-                  )}
-                </div>
+                  <span className={styles.hotspotLabel}>
+                    <strong>{char.name}</strong>
+                    <small>{canAccess ? t("startChat") : `🔒 ${t("premiumOnly")}`}</small>
+                  </span>
+                </Link>
               );
             })}
-          </div>
+          </section>
 
-          {/* 무료 안내 */}
-          {!isPremium && (
-            <div className={styles.freeNotice}>
-              <p className={styles.freeNoticeText}>
-                🆓 OPEN: <strong>양규현 · 오하늘</strong> {t("captainBadge")}
-              </p>
-              <Link href="/premium" className={styles.freeNoticeLink}>
-                ⭐ {t("premiumOnly")} →
-              </Link>
-            </div>
+          <p className={styles.tapHint}>기장님을 탭하면 바로 대화를 시작할 수 있어요.</p>
+
+          {membership !== "premium" && (
+            <Link href="/premium" className={styles.premiumLink}>
+              ⭐ {t("premiumOnly")} · 모든 기장님과 대화하기 →
+            </Link>
           )}
-        </div>
+        </main>
       </div>
       <BottomNav />
     </>

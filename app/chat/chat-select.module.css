@@ -1,123 +1,140 @@
-.inner {
-  padding: var(--space-md);
-  display: flex; flex-direction: column; gap: var(--space-lg);
+.pageSub {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 500;
 }
 
-/* 안내 배너 */
-.banner {
-  display: flex; align-items: center; gap: var(--space-md);
-  background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue) 100%);
-  border-radius: var(--radius-lg);
-  padding: var(--space-md) var(--space-lg);
-  box-shadow: var(--shadow-blue);
-}
-.bannerIcon  { font-size: 28px; flex-shrink: 0; }
-.bannerTitle { font-size: 15px; font-weight: 700; color: #fff; }
-.bannerSub   { font-size: 11px; color: rgba(255,255,255,0.65); margin-top: 2px; }
-
-/* 캐릭터 그리드 — 2열 */
-.charGrid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: var(--space-md);
+.lobby {
+  padding: 0 var(--space-md) calc(96px + env(safe-area-inset-bottom));
 }
 
-/* 캐릭터 카드 */
-.charCard {
-  display: flex; flex-direction: column; align-items: center; gap: var(--space-sm);
-  background: var(--bg-base);
-  border: 1.5px solid var(--border-subtle);
-  border-radius: var(--radius-xl);
-  padding: var(--space-md) var(--space-sm);
-  box-shadow: var(--shadow-sm);
+.lobbyIntro {
+  padding: var(--space-md) 2px var(--space-sm);
+}
+
+.lobbyEyebrow {
+  color: var(--red);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.lobbyIntro h2 {
+  margin-top: 4px;
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.lobbyIntro p:last-child {
+  margin-top: 4px;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.videoStage {
   position: relative;
-  transition: all var(--transition-fast);
-}
-.charCard:hover:not(.charLocked) {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
-  border-color: var(--red-mid);
-}
-.charLocked {
-  background: var(--bg-elevated);
-  border-color: var(--border-default);
-}
-
-/* 기장 배지 */
-.captainBadge {
-  position: absolute;
-  top: 12px;
-  left: 50%;
-  z-index: 2;
-  max-width: calc(100% - 24px);
-  transform: translateX(-50%);
-}
-
-/* 아이콘 */
-.charIconWrap {
-  position: relative;
-  margin-top: 30px;
-}
-
-.charIcon {
-  width: 100px; height: 100px; border-radius: 50%;
-  background: linear-gradient(135deg, var(--blue-light) 0%, #e8f0fe 100%);
-  border: 3px solid var(--blue-mid);
-  display: flex; align-items: center; justify-content: center;
-  position: relative; overflow: hidden;
-  transition: all var(--transition-fast);
-}
-.charCard:hover:not(.charLocked) .charIcon {
-  border-color: var(--red);
-  background: var(--red-light);
-  box-shadow: 0 0 20px rgba(205,46,58,0.2);
-}
-.charIconLocked { filter: grayscale(0.5); }
-
-/* 일러스트 이미지 */
-.charImg {
-  width: 100%; height: 100%;
-  object-fit: cover; border-radius: 50%;
-  position: absolute; inset: 0;
-  z-index: 1;
-}
-/* 이모지 폴백 (이미지 뒤에 숨어있다가 이미지 오류 시 보임) */
-.charEmojiBack {
-  font-size: 38px;
-  position: absolute; z-index: 0;
-}
-
-.lockOverlay {
-  position: absolute; inset: 0;
-  background: rgba(0,0,0,0.35); border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 24px;
-}
-
-/* 텍스트 */
-.charMeta { text-align: center; }
-.charName  { font-size: 16px; font-weight: 800; color: var(--text-primary); }
-.charRoute { font-size: 11px; color: var(--text-muted); margin-top: 3px; font-weight: 500; }
-
-/* 호감도 */
-.affinityRow { display: flex; align-items: center; gap: 2px; }
-
-/* 버튼 */
-.chatBtn {
+  overflow: hidden;
   width: 100%;
-  min-height: 46px;
-  justify-content: center;
-  text-align: center;
-  line-height: 1.25;
-  white-space: normal;
+  aspect-ratio: 9 / 16;
+  border: 2px solid var(--border-subtle);
+  border-radius: 28px;
+  background: #172233;
+  box-shadow: 0 16px 36px rgba(9, 30, 62, 0.2);
+  isolation: isolate;
 }
 
-/* 무료 안내 */
-.freeNotice {
-  display: flex; align-items: center; justify-content: space-between;
-  padding: var(--space-md);
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-lg);
+.lobbyVideo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.freeNoticeText { font-size: 13px; color: var(--text-secondary); }
+
+.videoShade {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(6, 16, 33, 0.05) 48%, rgba(6, 16, 33, 0.3) 100%);
+}
+
+.hotspot {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border: 2px solid transparent;
+  border-radius: 22px;
+  color: #fff;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: border-color 160ms ease, background-color 160ms ease, transform 160ms ease;
+}
+
+.hotspot:focus-visible,
+.hotspot:active {
+  border-color: rgba(255, 255, 255, 0.95);
+  background: rgba(7, 38, 83, 0.18);
+  transform: scale(0.98);
+  outline: none;
+}
+
+.hotspotLabel {
+  display: flex;
+  min-width: 72px;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  margin: 0 8px 9px;
+  padding: 5px 10px 6px;
+  border: 1px solid rgba(255, 255, 255, 0.58);
+  border-radius: 999px;
+  background: rgba(8, 19, 39, 0.78);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(6px);
+  font-size: 12px;
+  line-height: 1.1;
+}
+
+.hotspotLabel strong { font-size: 14px; }
+.hotspotLabel small { color: rgba(255, 255, 255, 0.82); font-size: 10px; }
+
+.hotspotLocked .hotspotLabel {
+  background: rgba(51, 38, 15, 0.86);
+  border-color: rgba(255, 220, 135, 0.78);
+}
+
+/* 720×1280 원본 영상에서 각 인물의 좌석 위치를 비율로 고정한다. */
+.sangwoo { top: 8%; left: 1%; width: 43%; height: 35%; }
+.haneul  { top: 8%; right: 1%; width: 44%; height: 35%; }
+.kyuhyun { top: 29%; left: 25%; width: 50%; height: 33%; }
+.yongwoo { top: 45%; left: 1%; width: 47%; height: 43%; }
+.sunwoo  { top: 46%; right: 1%; width: 47%; height: 42%; }
+
+.tapHint {
+  margin: var(--space-sm) 0;
+  color: var(--text-muted);
+  font-size: 12px;
+  text-align: center;
+}
+
+.premiumLink {
+  display: block;
+  margin-top: var(--space-sm);
+  padding: 12px 14px;
+  border: 1px solid rgba(207, 151, 29, 0.42);
+  border-radius: var(--radius-lg);
+  background: #fff8e8;
+  color: #9a6808;
+  font-size: 13px;
+  font-weight: 800;
+  text-align: center;
+  text-decoration: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hotspot { transition: none; }
+}
