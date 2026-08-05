@@ -1,12 +1,167 @@
 "use client";
 
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import BottomNav from "@/components/ui/BottomNav";
 import { MOCK_CHARACTERS, canAccessCharacter } from "@/lib/db/mock";
 import { useMembership, useFreeCharSlots } from "@/lib/auth/useAuthUser";
 import { useLanguage } from "@/components/LanguageContext";
 import styles from "./chat-select.module.css";
+
+// ── 뮤직 플레이어 ──────────────────────────────────────────────────────────
+const TRACKS = [
+  { id: "title",   title: "K-MATE 타이틀곡",    artist: "K-MATE OST",   src: "/media/music/title.mp3" },
+  { id: "kyuhyun", title: "규현 테마 - 서울 하늘",  artist: "양규현 기장",    src: "/media/music/kyuhyun.mp3" },
+  { id: "haneul",  title: "하늘 테마 - 전주 바람",  artist: "오하늘 기장",    src: "/media/music/haneul.mp3" },
+  { id: "sunwoo",  title: "선우 테마 - 부산 파도",  artist: "차선우 기장",    src: "/media/music/sunwoo.mp3" },
+  { id: "sangwoo", title: "상우 테마 - 충청 들판",  artist: "천상우 기장",    src: "/media/music/sangwoo.mp3" },
+  { id: "yongwoo", title: "용우 테마 - 제주 바다",  artist: "권용우 기장",    src: "/media/music/yongwoo.mp3" },
+];
+
+function MusicPlayer() {
+  const [trackIndex, setTrackIndex] = useState(0);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
+  const [progress, setProgress] = useState(0);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  const currentTrack = TRACKS[trackIndex];
+
+  // 오디오 요소 초기화
+  useEffect(() => {
+    const audio = new Audio();
+    audio.loop = false;
+    audio.preload = "metadata";
+    audioRef.current = audio;
+
+    const handleEnded = () => {
+      setTrackIndex((prev) => (prev + 1) % TRACKS.length);
+    };
+    const handleTimeUpdate = () => {
+      if (audio.duration) setProgress(audio.currentTime / audio.duration);
+    };
+
+    audio.addEventListener("ended", handleEnded);
+    audio.addEventListener("timeupdate", handleTimeUpdate);
+    return () => {
+      audio.removeEventListener("ended", handleEnded);
+      audio.removeEventListener("timeupdate", handleTimeUpdate);
+      audio.pause();
+    };
+  }, []);
+
+  // 트랙 변경 시 소스 교체
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (!audio) return;
+    audio.src = currentTrack.src;
+    audio.load();
+    if (isPlaying) {
+      void audio.play().catch(() => setIsPlaying(false));
+    }
+    setProgress(0);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [trackIndex]);
+
+  // 재생/일시정지
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (!audio) return;
+    if (isPlaying) {
+      if (!audio.src) audio.src = currentTrack.src;
+      void audio.play().catch(() => setIsPlaying(false));
+    } else {
+      audio.pause();
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isPlaying]);
+
+  const prev = () => setTrackIndex((i) => (i - 1 + TRACKS.length) % TRACKS.length);
+  const next = () => setTrackIndex((i) => (i + 1) % TRACKS.length);
+
+  const togglePlay = () => setIsPlaying((p) => !p);
+
+  return (
+    <div
+      className={`${styles.musicPlayer} ${isExpanded ? styles.musicPlayerExpanded : ""} ${isPlaying ? styles.musicPlayerPlaying : ""}`}
+      role="region"
+      aria-label="음악 플레이어"
+    >
+      {/* 축소 상태 — 재생 아이콘 + 제목 */}
+      <button
+        className={styles.musicCollapsed}
+        onClick={() => setIsExpanded((e) => !e)}
+        aria-label={isExpanded ? "플레이어 접기" : "플레이어 펼치기"}
+        id="music-player-toggle"
+      >
+        <span className={`${styles.musicNote} ${isPlaying ? styles.musicNoteSpinning : ""}`} aria-hidden="true">
+          🎵
+        </span>
+        <span className={styles.musicMiniTitle}>{currentTrack.title}</span>
+        <span className={styles.musicChevron} aria-hidden="true">{isExpanded ? "▾" : "▸"}</span>
+      </button>
+
+      {/* 확장 상태 — 풀 컨트롤 */}
+      {isExpanded && (
+        <div className={styles.musicControls}>
+          <div className={styles.musicInfo}>
+            <p className={styles.musicTitle}>{currentTrack.title}</p>
+            <p className={styles.musicArtist}>{currentTrack.artist}</p>
+          </div>
+
+          {/* 프로그레스 바 */}
+          <div className={styles.musicProgress} aria-hidden="true">
+            <div className={styles.musicProgressFill} style={{ width: `${progress * 100}%` }} />
+          </div>
+
+          {/* 버튼 */}
+          <div className={styles.musicButtons}>
+            <button
+              onClick={prev}
+              className={styles.musicBtn}
+              aria-label="이전 곡"
+              id="music-prev"
+            >
+              ⏮
+            </button>
+            <button
+              onClick={togglePlay}
+              className={`${styles.musicBtn} ${styles.musicBtnPlay}`}
+              aria-label={isPlaying ? "일시정지" : "재생"}
+              id="music-play-pause"
+            >
+              {isPlaying ? "⏸" : "▶"}
+            </button>
+            <button
+              onClick={next}
+              className={styles.musicBtn}
+              aria-label="다음 곡"
+              id="music-next"
+            >
+              ⏭
+            </button>
+          </div>
+
+          {/* 트랙 목록 */}
+          <ul className={styles.musicTrackList}>
+            {TRACKS.map((track, i) => (
+              <li key={track.id}>
+                <button
+                  className={`${styles.musicTrackItem} ${i === trackIndex ? styles.musicTrackItemActive : ""}`}
+                  onClick={() => { setTrackIndex(i); setIsPlaying(true); }}
+                  id={`music-track-${track.id}`}
+                >
+                  <span className={styles.musicTrackNum}>{i === trackIndex && isPlaying ? "♪" : `${i + 1}`}</span>
+                  <span className={styles.musicTrackName}>{track.title}</span>
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </div>
+  );
+}
 
 type Hotspot = {
   characterId: string;
@@ -116,6 +271,8 @@ export default function ChatSelectPage() {
           </section>
 
           <p className={styles.tapHint}>기장님을 탭하면 바로 대화를 시작할 수 있어요.</p>
+
+          <MusicPlayer />
         </main>
       </div>
       <BottomNav />

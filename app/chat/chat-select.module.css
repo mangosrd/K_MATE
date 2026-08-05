@@ -162,3 +162,216 @@
 @media (prefers-reduced-motion: reduce) {
   .hotspot { transition: none; }
 }
+
+/* ══════════════════════════════════════════════════════════
+   🎵 뮤직 플레이어 — 글래스모피즘
+   ══════════════════════════════════════════════════════════ */
+
+.musicPlayer {
+  margin: var(--space-sm) 0 var(--space-md);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 20px;
+  background: rgba(8, 19, 42, 0.55);
+  backdrop-filter: blur(18px) saturate(160%);
+  -webkit-backdrop-filter: blur(18px) saturate(160%);
+  box-shadow:
+    0 4px 24px rgba(0, 0, 0, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  overflow: hidden;
+  transition: box-shadow 220ms ease, border-color 220ms ease;
+}
+
+.musicPlayerPlaying {
+  border-color: rgba(177, 100, 255, 0.38);
+  box-shadow:
+    0 4px 28px rgba(141, 68, 255, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.14);
+}
+
+/* 축소 상태 헤더 */
+.musicCollapsed {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 16px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.musicNote {
+  flex-shrink: 0;
+  font-size: 20px;
+  line-height: 1;
+  display: inline-block;
+  transform-origin: center;
+}
+
+.musicNoteSpinning {
+  animation: noteBob 1.8s ease-in-out infinite;
+}
+
+@keyframes noteBob {
+  0%, 100% { transform: rotate(-12deg) scale(1);   }
+  25%       { transform: rotate(8deg)  scale(1.08); }
+  50%       { transform: rotate(-6deg) scale(1.04); }
+  75%       { transform: rotate(10deg) scale(1.06); }
+}
+
+.musicMiniTitle {
+  flex: 1;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+}
+
+.musicChevron {
+  flex-shrink: 0;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.55);
+  transition: transform 200ms ease;
+}
+
+/* 확장 패널 */
+.musicControls {
+  padding: 0 16px 14px;
+  animation: slideDown 200ms ease;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}
+
+.musicInfo {
+  padding: 2px 0 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.musicTitle {
+  font-size: 15px;
+  font-weight: 800;
+  color: #fff;
+  margin: 8px 0 2px;
+}
+
+.musicArtist {
+  font-size: 12px;
+  color: rgba(200, 180, 255, 0.8);
+}
+
+/* 프로그레스 바 */
+.musicProgress {
+  height: 3px;
+  border-radius: 99px;
+  background: rgba(255, 255, 255, 0.14);
+  overflow: hidden;
+  margin: 4px 0 12px;
+}
+
+.musicProgressFill {
+  height: 100%;
+  border-radius: 99px;
+  background: linear-gradient(90deg, #a78bfa, #f472b6);
+  transition: width 0.25s linear;
+}
+
+/* 컨트롤 버튼 */
+.musicButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.musicBtn {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 150ms ease, transform 120ms ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.musicBtn:active { transform: scale(0.92); }
+.musicBtn:hover  { background: rgba(255, 255, 255, 0.16); }
+
+.musicBtnPlay {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  border-color: rgba(167, 139, 250, 0.5);
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.38), rgba(244, 114, 182, 0.28));
+  box-shadow: 0 4px 14px rgba(139, 92, 246, 0.24);
+}
+
+.musicBtnPlay:hover {
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.55), rgba(244, 114, 182, 0.42));
+}
+
+/* 트랙 목록 */
+.musicTrackList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.musicTrackItem {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 8px;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 12px;
+  cursor: pointer;
+  text-align: left;
+  transition: background 140ms ease, color 140ms ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.musicTrackItem:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+
+.musicTrackItemActive {
+  background: rgba(139, 92, 246, 0.18);
+  color: #fff;
+}
+
+.musicTrackNum {
+  flex-shrink: 0;
+  width: 18px;
+  font-size: 11px;
+  color: rgba(167, 139, 250, 0.9);
+  text-align: center;
+}
+
+.musicTrackName {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

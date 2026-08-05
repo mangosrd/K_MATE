@@ -94,6 +94,56 @@
 }
 .storyHeaderEmoji { font-size: 18px; }
 .storyHeaderTitle { font-size: 14px; font-weight: 800; color: var(--text-primary); }
+
+/* 헤더 오른쪽: 발음 토글 + 스킵 버튼 */
+.storyHeaderRight {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+/* 발음 토글 버튼 (가 abc) */
+.readingToggleBtn {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 4px 8px;
+  border: 1.5px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+  background: transparent;
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: border-color 150ms ease, background 150ms ease, color 150ms ease;
+  -webkit-tap-highlight-color: transparent;
+}
+.readingToggleBtn:hover {
+  border-color: var(--blue-mid);
+  color: var(--blue);
+}
+.readingToggleActive {
+  border-color: var(--blue);
+  background: var(--blue-light);
+  color: var(--blue);
+}
+.readingToggleBadge {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  opacity: 0.75;
+}
+
+/* 발음이 나타날 때 fade-in */
+.readingReveal {
+  animation: readingFadeIn 200ms ease;
+}
+@keyframes readingFadeIn {
+  from { opacity: 0; transform: translateY(-3px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
 .storySkipBtn {
   font-size: 12px; font-weight: 700; color: var(--text-muted);
   padding: 4px 8px; flex-shrink: 0;
@@ -172,27 +222,33 @@
   overflow-y: auto;
 }
 
+/* 단락 블럭: 본문 + (선택적) 발음 + 번역을 하나의 그룹으로 묶는다 */
+.novelBlock {
+  margin-bottom: var(--space-lg);
+}
+
 .novelPara {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.9;
   color: var(--text-primary);
-  margin-bottom: var(--space-md);
   letter-spacing: -0.01em;
+  margin-bottom: 0;
 }
 
 .novelReading {
   font-size: 11px;
   color: var(--text-muted);
-  margin-top: 2px;
-  margin-bottom: 4px;
+  margin-top: 3px;
+  margin-bottom: 2px;
+  animation: readingFadeIn 200ms ease;
 }
 
 .novelTranslation {
   font-size: 13px;
   color: var(--text-secondary);
   font-style: italic;
-  margin-bottom: var(--space-lg);
+  margin-top: 4px;
   line-height: 1.5;
 }
 

@@ -343,6 +343,8 @@ export default function LearningSessionPage({
   const [rewardCoins, setRewardCoins] = useState<number | null>(null);
   const [currentIdx, setCurrentIdx] = useState(0);
   const [storyIdx, setStoryIdx] = useState(0);
+  // 발음(로마자) 표시 여부 — 기본 숨김, 토글로 ON/OFF
+  const [showReading, setShowReading] = useState(false);
 
   // 다음 챕터 ID 계산 (e.g. ch-k01 ➔ ch-k02, sp-rom-kyuhyun-01 ➔ sp-rom-kyuhyun-02)
   // 접두사 길이가 고정 4글자(ch-k01)라고 가정하면 sp-rom-{name}-01처럼 접두사 길이가
@@ -390,6 +392,7 @@ export default function LearningSessionPage({
     setLessonSessionId(null);
     setEntryError("");
     setRewardCoins(null);
+    setShowReading(false);
   }, [chapterId]);
 
   const totalExercises = exercises.length;
@@ -427,6 +430,11 @@ export default function LearningSessionPage({
 
   useEffect(() => {
     if (!isSpecialStory) {
+      setStoryAccess(true);
+      return;
+    }
+    // DEV_MODE에서는 백엔드 없이도 스토리 접근 허용 (로컬 미리보기용)
+    if (process.env.NEXT_PUBLIC_DEV_MODE === "true") {
       setStoryAccess(true);
       return;
     }
@@ -557,6 +565,13 @@ export default function LearningSessionPage({
     setEntryError("");
     setIsStarting(true);
     try {
+      // DEV_MODE에서는 백엔드 없이 스토리 바로 진입 (로컬 미리보기용)
+      if (process.env.NEXT_PUBLIC_DEV_MODE === "true") {
+        setLessonSessionId("dev-session");
+        setStoryIdx(0);
+        setPhase("story");
+        return;
+      }
       const res = await fetch(`${BACKEND_URL}/learning/start`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -743,16 +758,29 @@ export default function LearningSessionPage({
               <span className={styles.storyHeaderEmoji}>{content.emoji}</span>
               <span className={styles.storyHeaderTitle}>{content.title}</span>
             </div>
-            <button className={styles.storySkipBtn} onClick={() => setPhase("session")}>
-              {t("storySkip")}
-            </button>
+            <div className={styles.storyHeaderRight}>
+              <button
+                className={`${styles.readingToggleBtn} ${showReading ? styles.readingToggleActive : ""}`}
+                onClick={() => setShowReading((v) => !v)}
+                aria-label={showReading ? "발음 숨기기" : "발음 보기"}
+                id="btn-toggle-reading"
+              >
+                {showReading ? "가" : "가"}
+                <span className={styles.readingToggleBadge}>abc</span>
+              </button>
+              <button className={styles.storySkipBtn} onClick={() => setPhase("session")}>
+                {t("storySkip")}
+              </button>
+            </div>
           </div>
 
           <div className={styles.novelBody}>
             {content.story.map((bubble, i) => (
-              <div key={i}>
+              <div key={i} className={styles.novelBlock}>
                 <p className={styles.novelPara}>{bubble.text}</p>
-                {bubble.reading && <p className={styles.novelReading}>[{bubble.reading}]</p>}
+                {bubble.reading && showReading && (
+                  <p className={styles.novelReading}>[{bubble.reading}]</p>
+                )}
                 {bubble.en && <p className={styles.novelTranslation}>{tr(bubble.en)}</p>}
               </div>
             ))}
@@ -843,9 +871,20 @@ export default function LearningSessionPage({
               <span className={styles.storyHeaderEmoji}>{content.emoji}</span>
               <span className={styles.storyHeaderTitle}>{content.title}</span>
             </div>
-            <button className={styles.storySkipBtn} onClick={() => setPhase("session")}>
-              {t("storySkip")}
-            </button>
+            <div className={styles.storyHeaderRight}>
+              <button
+                className={`${styles.readingToggleBtn} ${showReading ? styles.readingToggleActive : ""}`}
+                onClick={() => setShowReading((v) => !v)}
+                aria-label={showReading ? "발음 숨기기" : "발음 보기"}
+                id="btn-toggle-reading"
+              >
+                가
+                <span className={styles.readingToggleBadge}>abc</span>
+              </button>
+              <button className={styles.storySkipBtn} onClick={() => setPhase("session")}>
+                {t("storySkip")}
+              </button>
+            </div>
           </div>
 
           <div className={styles.storyThread}>
@@ -868,7 +907,9 @@ export default function LearningSessionPage({
                     </span>
                     <div className={styles.storyBubble}>
                       <p className={styles.storyText}>{bubble.text}</p>
-                      {bubble.reading && <p className={styles.storyReading}>[{bubble.reading}]</p>}
+                      {bubble.reading && showReading && (
+                        <p className={`${styles.storyReading} ${styles.readingReveal}`}>[{bubble.reading}]</p>
+                      )}
                       {bubble.en && <p className={styles.storyEn}>{tr(bubble.en)}</p>}
                       {word && (
                         <div className={styles.storyWordChip}>
