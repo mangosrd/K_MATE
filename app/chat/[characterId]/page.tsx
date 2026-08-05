@@ -35,6 +35,13 @@ const CAPTAIN_OPENINGS: Record<string, string> = {
   yongwoo: "왔네. 오늘은 무슨 일 있었어? 편하게 말해.",
 };
 
+Object.assign(CAPTAIN_OPENINGS, {
+  kyuhyun: "오늘도 찾아와 줘서 고마워, 아가씨. 오늘 하루는 어땠어?",
+  sunwoo: "왜 이제 옴 ㅠㅠ..? 오늘 뭐 했어?",
+  haneul: "반갑습니다. 오늘 하루는 어땠어요? 이야기 듣고 싶어요.",
+  sangwoo: "타워, 그쪽이 없어서 내 하늘이 잠깐 우울했는데… 거짓말 같이 마주하고 있으니 날씨가 맑아지는군요. 오늘 하루는 어땠습니까?",
+  yongwoo: "뭐 하다 이제 와.",
+});
 
 import { useLanguage } from "@/components/LanguageContext";
 
