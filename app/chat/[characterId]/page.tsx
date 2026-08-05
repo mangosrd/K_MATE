@@ -15,6 +15,7 @@ import { addLocalDiary } from "@/lib/diary/store";
 import { getChatHistory, saveChatHistory, clearChatHistory } from "@/lib/chat/store";
 import { getEffectiveUserId, getCurrentUser, setPreferredCaptainId } from "@/lib/auth/store";
 import { useMembership, useFreeCharSlots } from "@/lib/auth/useAuthUser";
+import { useLanguage, type Language } from "@/components/LanguageContext";
 
 const REGION_NAMES: Record<string, string> = {
   seoul: "서울·경기 노선",
@@ -28,23 +29,57 @@ const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:800
 
 // The first line is shown before the API is called, so it must carry the same
 // character voice as the server prompt instead of falling back to an airline notice.
-const CAPTAIN_OPENINGS: Record<string, string> = {
-  kyuhyun: "좋은 아침이에요, 아가씨. 오늘은 어떤 기분으로 하루를 시작했어요?",
-  haneul: "왔어요? 오늘 하루는 어땠는지, 천천히 들려줘요.",
-  sunwoo: "왔나? 오늘 뭐 하고 있었는데. 얼른 얘기해 봐.",
-  sangwoo: "반갑습니다. 오늘 당신의 하루는 어떤지 들려주시겠어요?",
-  yongwoo: "왔네. 오늘은 무슨 일 있었어? 편하게 말해.",
+const CAPTAIN_OPENINGS: Record<Language, Record<string, string>> = {
+  ko: {
+    kyuhyun: "오늘도 찾아와 줘서 고마워, 아가씨. 오늘 하루는 어땠어?",
+    haneul: "반갑습니다. 오늘 하루는 어땠어요? 이야기 듣고 싶어요.",
+    sunwoo: "왜 이제 옴 ㅠㅠ..? 오늘 뭐 했어?",
+    sangwoo: "타워, 그쪽이 없어서 내 하늘이 잠깐 우울했는데… 거짓말 같이 마주하고 있으니 날씨가 맑아지는군요. 오늘 하루는 어땠습니까?",
+    yongwoo: "뭐 하다 이제 와.",
+  },
+  en: {
+    kyuhyun: "Thank you for coming by again, miss. How was your day?",
+    haneul: "It is nice to see you. How was your day? I would love to hear about it.",
+    sunwoo: "Why are you only here now...? What did you do today?",
+    sangwoo: "Tower, the sky felt a little gloomy without you. But now that we are face to face, it is clearing up. How was your day?",
+    yongwoo: "What took you so long?",
+  },
+  ru: {
+    kyuhyun: "Спасибо, что снова заглянули, мадемуазель. Как прошёл ваш день?",
+    haneul: "Рад вас видеть. Как прошёл ваш день? Мне хочется послушать.",
+    sunwoo: "Почему ты только сейчас пришла ㅠㅠ..? Чем сегодня занималась?",
+    sangwoo: "Тауэр, без вас моё небо немного грустило. Но стоило нам встретиться — и оно прояснилось. Как прошёл ваш день?",
+    yongwoo: "Чем занималась так долго?",
+  },
+  zh: {
+    kyuhyun: "谢谢你今天又来找我，小姐。今天过得怎么样？",
+    haneul: "很高兴见到你。今天过得怎么样？我想听你说说。",
+    sunwoo: "怎么现在才来ㅠㅠ..? 今天都做什么了？",
+    sangwoo: "塔台，没有你的时候，我的天空有点忧郁。不过现在见到你，天气像奇迹一样放晴了。今天过得怎么样？",
+    yongwoo: "怎么现在才来？",
+  },
+  ja: {
+    kyuhyun: "今日も来てくれてありがとう、お嬢さん。今日はどんな一日だった？",
+    haneul: "会えてうれしいです。今日はどんな一日でしたか？お話を聞かせてください。",
+    sunwoo: "なんで今さら来たのㅠㅠ..? 今日何してたの？",
+    sangwoo: "タワー、あなたがいない間は私の空が少し曇っていました。でもこうして会えたら、嘘みたいに晴れてきました。今日はどんな一日でしたか？",
+    yongwoo: "今まで何してたの。",
+  },
+  "zh-TW": {
+    kyuhyun: "謝謝妳今天又來找我，小姐。今天過得怎麼樣？",
+    haneul: "很高興見到你。今天過得怎麼樣？我想聽你說說。",
+    sunwoo: "怎麼現在才來ㅠㅠ..? 今天都做什麼了？",
+    sangwoo: "塔台，沒有你的時候，我的天空有點憂鬱。不過現在見到你，天氣像奇蹟一樣放晴了。今天過得怎麼樣？",
+    yongwoo: "現在才來？剛剛在忙什麼。",
+  },
+  th: {
+    kyuhyun: "ขอบคุณที่แวะมาหาผมอีกนะครับ คุณหนู วันนี้เป็นอย่างไรบ้างครับ?",
+    haneul: "ยินดีที่ได้เจอนะครับ วันนี้เป็นอย่างไรบ้าง? ผมอยากฟังเรื่องของคุณครับ",
+    sunwoo: "ทำไมเพิ่งมาล่ะ ㅠㅠ..? วันนี้ทำอะไรมาบ้าง?",
+    sangwoo: "ทาวเวอร์ ตอนคุณไม่อยู่ท้องฟ้าของผมหม่นหมองไปนิดหน่อย แต่พอได้พบกันอีกครั้งฟ้าก็ใสขึ้นอย่างกับปาฏิหาริย์ วันนี้เป็นอย่างไรบ้างครับ?",
+    yongwoo: "ไปทำอะไรมา ถึงเพิ่งมาล่ะ",
+  },
 };
-
-Object.assign(CAPTAIN_OPENINGS, {
-  kyuhyun: "오늘도 찾아와 줘서 고마워, 아가씨. 오늘 하루는 어땠어?",
-  sunwoo: "왜 이제 옴 ㅠㅠ..? 오늘 뭐 했어?",
-  haneul: "반갑습니다. 오늘 하루는 어땠어요? 이야기 듣고 싶어요.",
-  sangwoo: "타워, 그쪽이 없어서 내 하늘이 잠깐 우울했는데… 거짓말 같이 마주하고 있으니 날씨가 맑아지는군요. 오늘 하루는 어땠습니까?",
-  yongwoo: "뭐 하다 이제 와.",
-});
-
-import { useLanguage } from "@/components/LanguageContext";
 
 export default function ChatPage({ params }: { params: Promise<{ characterId: string }> }) {
   const { characterId } = use(params);
@@ -78,14 +113,15 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
     }
   }, [canAccess, char.requires_premium, freeSlotsLoaded, membershipLoaded, router]);
 
+  const initialOpening =
+    CAPTAIN_OPENINGS[language][char.id] ?? "반가워요. 오늘은 어떤 이야기를 나누고 싶어요?";
   const INITIAL_MESSAGES: ChatMessage[] = [
     {
       role: "assistant",
       content: `안녕하세요, 승객 여러분. 저는 ${char.name} 기장입니다. ${REGION_NAMES[char.region_id] ?? "한국"} 탑승을 환영합니다! ✈️ 안전한 여행을 위해 좌석 벨트를 착용해 주시기 바랍니다.`,
     },
   ];
-  INITIAL_MESSAGES[0].content =
-    CAPTAIN_OPENINGS[char.id] ?? "반가워요. 오늘은 어떤 이야기를 나누고 싶어요?";
+  INITIAL_MESSAGES[0].content = initialOpening;
 
   const [messages, setMessages] = useState<ChatMessage[]>(INITIAL_MESSAGES);
   const [input, setInput] = useState("");
@@ -103,6 +139,18 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
   // conversation. Otherwise the initial render can overwrite it before the
   // user gets a chance to press "continue".
   const [resumeChoice, setResumeChoice] = useState<"checking" | "pending" | "resolved">("checking");
+
+  // LanguageContext restores the saved language after hydration. Until the user
+  // actually sends a message, replace the temporary Korean greeting with the
+  // selected language rather than leaving a mismatched first bubble behind.
+  useEffect(() => {
+    if (resumeChoice !== "resolved") return;
+    setMessages((previous) => (
+      previous.some((message) => message.role === "user")
+        ? previous
+        : [{ role: "assistant", content: initialOpening }]
+    ));
+  }, [characterId, initialOpening, resumeChoice]);
 
   useEffect(() => {
     // 저장된 기록이 시작 인사말(캐릭터가 먼저 건 말) 하나뿐이면 "대화"라고 볼 수

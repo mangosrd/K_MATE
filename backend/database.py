@@ -149,6 +149,27 @@ def initialize_database() -> bool:
             ("gallery-sangwoo-01", "sangwoo", "/gallery/sangwoo/standing-01.png", "Cheon Sangwoo", 1, 0),
             ("gallery-yongwoo-01", "yongwoo", "/gallery/yongwoo/standing-01.png", "Kwon Yongwoo", 1, 0),
         ]
+        # First portrait is free. The remaining uploaded gallery images are
+        # individual coin unlocks and are seeded safely on every startup.
+        gallery_photo_numbers = {
+            "kyuhyun": [*range(1, 12), 13],
+            "haneul": list(range(1, 12)),
+            "sunwoo": list(range(1, 8)),
+            "sangwoo": list(range(1, 11)),
+            "yongwoo": list(range(1, 11)),
+        }
+        for character_id, photo_numbers in gallery_photo_numbers.items():
+            for image_order, photo_number in enumerate(photo_numbers, start=2):
+                gallery_images.append(
+                    (
+                        f"gallery-{character_id}-{image_order:02d}",
+                        character_id,
+                        f"/gallery/{character_id}/photo-{photo_number:02d}.png",
+                        None,
+                        image_order,
+                        5,
+                    )
+                )
         with engine.begin() as connection:
             for region_id, name, name_en, airport_code, is_locked in regions:
                 connection.execute(
