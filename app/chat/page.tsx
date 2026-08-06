@@ -48,6 +48,39 @@ const RAW_TRACKS = [
   },
 ];
 
+// ── SVG 음악 컨트롤 아이콘 ──────────────────────────────────
+function IconPrev() {
+  return (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/>
+    </svg>
+  );
+}
+
+function IconNext() {
+  return (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/>
+    </svg>
+  );
+}
+
+function IconPlay() {
+  return (
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" style={{ marginLeft: "2px" }} aria-hidden="true">
+      <path d="M8 5v14l11-7z"/>
+    </svg>
+  );
+}
+
+function IconPause() {
+  return (
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+    </svg>
+  );
+}
+
 function MusicPlayer() {
   const { language } = useLanguage();
   const isKo = language === "ko";
@@ -160,7 +193,7 @@ function MusicPlayer() {
               aria-label="이전 곡"
               id="music-prev"
             >
-              ⏮
+              <IconPrev />
             </button>
             <button
               onClick={togglePlay}
@@ -168,7 +201,7 @@ function MusicPlayer() {
               aria-label={isPlaying ? "일시정지" : "재생"}
               id="music-play-pause"
             >
-              {isPlaying ? "⏸" : "▶"}
+              {isPlaying ? <IconPause /> : <IconPlay />}
             </button>
             <button
               onClick={next}
@@ -176,7 +209,7 @@ function MusicPlayer() {
               aria-label="다음 곡"
               id="music-next"
             >
-              ⏭
+              <IconNext />
             </button>
           </div>
 

@@ -296,30 +296,38 @@
   place-items: center;
   width: 40px;
   height: 40px;
-  border: 1px solid rgba(255, 255, 255, 0.22);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.08);
-  color: #fff;
-  font-size: 16px;
+  background: rgba(255, 255, 255, 0.07);
+  color: rgba(255, 255, 255, 0.9);
   cursor: pointer;
-  transition: background 150ms ease, transform 120ms ease;
+  transition: background 150ms ease, transform 120ms ease, color 150ms ease, border-color 150ms ease;
   -webkit-tap-highlight-color: transparent;
 }
 
 .musicBtn:active { transform: scale(0.92); }
-.musicBtn:hover  { background: rgba(255, 255, 255, 0.16); }
+.musicBtn:hover  {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.35);
+  color: #fff;
+}
 
 .musicBtnPlay {
   width: 50px;
   height: 50px;
-  font-size: 20px;
-  border-color: rgba(167, 139, 250, 0.5);
-  background: linear-gradient(135deg, rgba(139, 92, 246, 0.38), rgba(244, 114, 182, 0.28));
-  box-shadow: 0 4px 14px rgba(139, 92, 246, 0.24);
+  color: #fff;
+  border-color: rgba(167, 139, 250, 0.6);
+  background: linear-gradient(135deg, rgba(147, 51, 234, 0.75), rgba(236, 72, 153, 0.75));
+  box-shadow:
+    0 4px 18px rgba(168, 85, 247, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
 .musicBtnPlay:hover {
-  background: linear-gradient(135deg, rgba(139, 92, 246, 0.55), rgba(244, 114, 182, 0.42));
+  background: linear-gradient(135deg, rgba(147, 51, 234, 0.9), rgba(236, 72, 153, 0.9));
+  box-shadow:
+    0 6px 22px rgba(168, 85, 247, 0.55),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
 }
 
 /* 트랙 목록 */
