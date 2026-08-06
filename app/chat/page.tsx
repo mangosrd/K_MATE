@@ -9,23 +9,61 @@ import { useLanguage } from "@/components/LanguageContext";
 import styles from "./chat-select.module.css";
 
 // ── 뮤직 플레이어 ──────────────────────────────────────────────────────────
-const TRACKS = [
-  { id: "title",   title: "K-MATE 타이틀곡",    artist: "K-MATE OST",   src: "/media/music/title.mp3" },
-  { id: "kyuhyun", title: "규현 테마 - 서울 하늘",  artist: "양규현 기장",    src: "/media/music/kyuhyun.mp3" },
-  { id: "haneul",  title: "하늘 테마 - 전주 바람",  artist: "오하늘 기장",    src: "/media/music/haneul.mp3" },
-  { id: "sunwoo",  title: "선우 테마 - 부산 파도",  artist: "차선우 기장",    src: "/media/music/sunwoo.mp3" },
-  { id: "sangwoo", title: "상우 테마 - 충청 들판",  artist: "천상우 기장",    src: "/media/music/sangwoo.mp3" },
-  { id: "yongwoo", title: "용우 테마 - 제주 바다",  artist: "권용우 기장",    src: "/media/music/yongwoo.mp3" },
+const RAW_TRACKS = [
+  {
+    id: "title",
+    src: "/media/music/title.mp3",
+    ko: { title: "K-MATE 타이틀곡", artist: "K-MATE OST" },
+    en: { title: "K-MATE Main Theme", artist: "K-MATE OST" },
+  },
+  {
+    id: "kyuhyun",
+    src: "/media/music/kyuhyun.mp3",
+    ko: { title: "규현 테마", artist: "양규현 기장" },
+    en: { title: "Kyuhyun Theme", artist: "Captain Kyuhyun" },
+  },
+  {
+    id: "haneul",
+    src: "/media/music/haneul.mp3",
+    ko: { title: "하늘 테마", artist: "오하늘 기장" },
+    en: { title: "Haneul Theme", artist: "Captain Haneul" },
+  },
+  {
+    id: "sunwoo",
+    src: "/media/music/sunwoo.mp3",
+    ko: { title: "선우 테마", artist: "차선우 기장" },
+    en: { title: "Sunwoo Theme", artist: "Captain Sunwoo" },
+  },
+  {
+    id: "sangwoo",
+    src: "/media/music/sangwoo.mp3",
+    ko: { title: "상우 테마", artist: "천상우 기장" },
+    en: { title: "Sangwoo Theme", artist: "Captain Sangwoo" },
+  },
+  {
+    id: "yongwoo",
+    src: "/media/music/yongwoo.mp3",
+    ko: { title: "용우 테마", artist: "권용우 기장" },
+    en: { title: "Yongwoo Theme", artist: "Captain Yongwoo" },
+  },
 ];
 
 function MusicPlayer() {
+  const { language } = useLanguage();
+  const isKo = language === "ko";
+  const tracks = RAW_TRACKS.map((t) => ({
+    id: t.id,
+    src: t.src,
+    ...(isKo ? t.ko : t.en),
+  }));
+
   const [trackIndex, setTrackIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
   const [progress, setProgress] = useState(0);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
-  const currentTrack = TRACKS[trackIndex];
+  const currentTrack = tracks[trackIndex];
 
   // 오디오 요소 초기화
   useEffect(() => {
@@ -35,7 +73,7 @@ function MusicPlayer() {
     audioRef.current = audio;
 
     const handleEnded = () => {
-      setTrackIndex((prev) => (prev + 1) % TRACKS.length);
+      setTrackIndex((prev) => (prev + 1) % tracks.length);
     };
     const handleTimeUpdate = () => {
       if (audio.duration) setProgress(audio.currentTime / audio.duration);
@@ -48,7 +86,7 @@ function MusicPlayer() {
       audio.removeEventListener("timeupdate", handleTimeUpdate);
       audio.pause();
     };
-  }, []);
+  }, [tracks.length]);
 
   // 트랙 변경 시 소스 교체
   useEffect(() => {
@@ -76,8 +114,8 @@ function MusicPlayer() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isPlaying]);
 
-  const prev = () => setTrackIndex((i) => (i - 1 + TRACKS.length) % TRACKS.length);
-  const next = () => setTrackIndex((i) => (i + 1) % TRACKS.length);
+  const prev = () => setTrackIndex((i) => (i - 1 + tracks.length) % tracks.length);
+  const next = () => setTrackIndex((i) => (i + 1) % tracks.length);
 
   const togglePlay = () => setIsPlaying((p) => !p);
 
@@ -144,7 +182,7 @@ function MusicPlayer() {
 
           {/* 트랙 목록 */}
           <ul className={styles.musicTrackList}>
-            {TRACKS.map((track, i) => (
+            {tracks.map((track, i) => (
               <li key={track.id}>
                 <button
                   className={`${styles.musicTrackItem} ${i === trackIndex ? styles.musicTrackItemActive : ""}`}
