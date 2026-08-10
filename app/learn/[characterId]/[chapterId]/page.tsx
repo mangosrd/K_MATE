@@ -732,10 +732,12 @@ export default function LearningSessionPage({
   if (!isSpecialStory && !isChapterUnlocked(chapterId, characterId, stamps)) {
     return (
       <main className={styles.page}>
-        <div className={styles.introCard}>
-          <div className={styles.introEmoji}>🔒</div>
-          <h1 className={styles.introTitle}>{t("chapterLockedHint")}</h1>
-          <Link href={backToListHref} className="btn btn-primary btn-lg" style={{ textAlign: "center" }}>
+        <div className={styles.noticeCard}>
+          <div className={styles.noticeIcon} aria-hidden="true">🔒</div>
+          <div className={styles.noticeCopy}>
+            <h1 className={styles.noticeTitle}>{t("chapterLockedHint")}</h1>
+          </div>
+          <Link href={backToListHref} className={`btn btn-primary btn-lg ${styles.noticeButton}`}>
             {t("backToList")}
           </Link>
         </div>

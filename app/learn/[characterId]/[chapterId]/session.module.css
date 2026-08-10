@@ -77,6 +77,33 @@
 .introStartButton { width: 100%; min-height: 58px; }
 .introError { color: var(--red); text-align: center; font-weight: 700; }
 
+.noticeCard {
+  width: min(calc(100% - 40px), 380px);
+  min-height: 100dvh;
+  margin: 0 auto;
+  padding: max(32px, env(safe-area-inset-top)) 20px max(32px, env(safe-area-inset-bottom));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+.noticeIcon {
+  width: 88px;
+  height: 88px;
+  display: grid;
+  place-items: center;
+  border-radius: 28px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  font-size: 46px;
+  line-height: 1;
+}
+.noticeCopy { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.noticeTitle { color: var(--text-primary); font-size: 24px; line-height: 1.35; font-weight: 900; }
+.noticeButton { width: 100%; text-align: center; }
+
 @media (max-height: 720px) {
   .introCard { gap: 12px; padding-bottom: 18px; }
   .introHero { padding: 16px; }
