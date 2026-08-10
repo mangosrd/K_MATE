@@ -11,9 +11,9 @@
 .introCard {
   width: 100%; max-width: var(--mobile-max);
   min-height: 100dvh;
-  padding: max(18px, env(safe-area-inset-top)) var(--space-lg) 28px;
+  padding: max(32px, env(safe-area-inset-top)) var(--space-lg) max(48px, env(safe-area-inset-bottom));
   display: flex; flex-direction: column;
-  gap: 18px;
+  gap: clamp(24px, 4vh, 44px);
   background:
     radial-gradient(circle at 92% 4%, color-mix(in srgb, var(--red) 12%, transparent), transparent 28%),
     var(--bg-base);
@@ -31,20 +31,29 @@
   font-size: 11px; font-weight: 900; letter-spacing: .06em;
 }
 .introHero {
-  display: grid; grid-template-columns: 82px minmax(0, 1fr); gap: 16px; align-items: center;
-  padding: 22px; border-radius: 26px;
+  display: grid; grid-template-columns: 72px minmax(0, 1fr); gap: 14px; align-items: center;
+  padding: 20px; border-radius: 26px;
   background: var(--gradient-korea); box-shadow: var(--shadow-lg);
   color: #fff;
-  margin-top: auto;
+  margin-top: clamp(120px, 24vh, 280px);
 }
 .introEmoji {
-  width: 82px; height: 82px; display: grid; place-items: center;
-  border-radius: 24px; background: rgba(255,255,255,.16);
-  border: 1px solid rgba(255,255,255,.28); font-size: 45px;
+  width: 72px; height: 72px; display: grid; place-items: center;
+  border-radius: 22px; background: rgba(255,255,255,.16);
+  border: 1px solid rgba(255,255,255,.28); font-size: 40px;
 }
 .introHeading { min-width: 0; }
 .introEyebrow { display: block; margin-bottom: 6px; color: rgba(255,255,255,.72); font-size: 11px; font-weight: 800; }
-.introTitle { font-size: clamp(23px, 6vw, 31px); line-height: 1.2; font-weight: 900; color: #fff; text-align: left; }
+.introTitle {
+  font-size: clamp(20px, 5.4vw, 27px);
+  line-height: 1.24;
+  font-weight: 900;
+  color: #fff;
+  text-align: left;
+  letter-spacing: -0.025em;
+  overflow-wrap: anywhere;
+  text-wrap: balance;
+}
 
 .introStats {
   display: grid; grid-template-columns: repeat(3, 1fr); gap: 0;
@@ -57,13 +66,20 @@
 .introStat { display: flex; flex-direction: column; align-items: center; gap: 2px; }
 .introStat + .introStat { border-left: 1px solid var(--border-subtle); }
 .introStatNum   { font-size: 22px; font-weight: 900; color: var(--text-primary); }
-.introStatLabel { font-size: 11px; color: var(--text-muted); font-weight: 600; }
+.introStatLabel {
+  font-size: clamp(9px, 2.8vw, 11px);
+  line-height: 1.25;
+  color: var(--text-muted);
+  font-weight: 600;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
 
 .introRoute {
   display: none;
 }
 .introRoute i { display: none; }
-.introFooter { margin-bottom: auto; display: flex; flex-direction: column; gap: 12px; }
+.introFooter { display: flex; flex-direction: column; gap: 14px; }
 .introTypes {
   display: none;
 }
@@ -75,6 +91,16 @@
   font-size: 12px; font-weight: 600; color: var(--blue);
 }
 .introStartButton { width: 100%; min-height: 58px; }
+.introMainLink {
+  align-self: center;
+  padding: 10px 16px;
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-weight: 800;
+  text-align: center;
+  text-decoration: none;
+}
+.introMainLink:hover { color: var(--blue); }
 .introError { color: var(--red); text-align: center; font-weight: 700; }
 
 .noticeCard {
@@ -105,7 +131,8 @@
 .noticeButton { width: 100%; text-align: center; }
 
 @media (max-height: 720px) {
-  .introCard { gap: 12px; padding-bottom: 18px; }
+  .introCard { gap: 16px; padding-bottom: 24px; }
+  .introHero { margin-top: 48px; }
   .introHero { padding: 16px; }
   .introEmoji { width: 68px; height: 68px; font-size: 38px; }
   .introHero { grid-template-columns: 68px minmax(0, 1fr); }

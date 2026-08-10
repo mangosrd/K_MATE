@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
@@ -8,6 +8,7 @@ import styles from "./learn.module.css";
 import { SPECIAL_CHAPTERS, MOCK_CHARACTERS, isChapterUnlocked } from "@/lib/db/mock";
 import { getEffectiveUserId, setPreferredCaptainId } from "@/lib/auth/store";
 import { useLanguage } from "@/components/LanguageContext";
+import { useTranslationMap, TranslatableItem } from "@/lib/translate/store";
 import type { Character, Chapter } from "@/types/database";
 
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
@@ -18,7 +19,7 @@ interface LearnViewProps {
 }
 
 export default function LearnView({ char, chapters }: LearnViewProps) {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const searchParams = useSearchParams();
   // 스페셜 챕터 상세 화면에서 "챕터 목록으로"를 누르면 ?tab=special로 들어온다 — 그 경우 기본값
   // "regional"로 초기화해버리면 스페셜 탭을 보다 나간 사람이 엉뚱하게 지역 문화 탭을 보게 된다.
@@ -28,6 +29,17 @@ export default function LearnView({ char, chapters }: LearnViewProps) {
   const [specialCategory, setSpecialCategory] = useState<"romance" | "daily" | "friendship">("romance");
   const [selectedCaptainId, setSelectedCaptainId] = useState<string>(char.id);
   const [stamps, setStamps] = useState<string[]>([]);
+
+  const chapterTranslationItems = useMemo<TranslatableItem[]>(() => {
+    const allChapters = [...chapters, ...SPECIAL_CHAPTERS];
+    return allChapters.flatMap((chapter) => [
+      { text: chapter.title, force: true },
+      { text: chapter.title_en },
+      { text: chapter.description, force: true },
+    ]);
+  }, [chapters]);
+  const chapterTranslationMap = useTranslationMap(chapterTranslationItems, language);
+  const tr = (text: string) => chapterTranslationMap.get(text) ?? text;
 
   useEffect(() => {
     setPreferredCaptainId(char.id);
@@ -154,14 +166,14 @@ export default function LearnView({ char, chapters }: LearnViewProps) {
                           <div className={styles.chapterMeta}>
                             <div>
                               <p className={styles.chapterNum}>{t("totalChapters")} {chapter.order}</p>
-                              <p className={styles.chapterTitle}>{chapter.title}</p>
-                              <p className={styles.chapterTitleEn}>{chapter.title_en}</p>
+                              <p className={styles.chapterTitle}>{tr(chapter.title)}</p>
+                              <p className={styles.chapterTitleEn}>{tr(chapter.title_en)}</p>
                             </div>
                             {isActive && <span className="badge badge-red">{t("ongoing")}</span>}
                             {isCompleted && <span className="badge badge-mint">{t("completed")}</span>}
                             {isLocked && <span className="badge badge-muted">{t("locked")}</span>}
                           </div>
-                          <p className={styles.chapterDesc}>{chapter.description}</p>
+                          <p className={styles.chapterDesc}>{tr(chapter.description)}</p>
 
                           <div className={styles.stepDots}>
                             {/* 챕터 내부 문항 단위 진행률은 백엔드에 저장되지 않으므로(챕터 완료 여부만
@@ -266,8 +278,8 @@ export default function LearnView({ char, chapters }: LearnViewProps) {
                         <div className={styles.chapterMeta}>
                           <div>
                             <p className={styles.chapterNum}>{t("tabSpecial")} {sc.order}</p>
-                            <p className={styles.chapterTitle}>{sc.title}</p>
-                            <p className={styles.chapterTitleEn}>{sc.title_en}</p>
+                            <p className={styles.chapterTitle}>{tr(sc.title)}</p>
+                            <p className={styles.chapterTitleEn}>{tr(sc.title_en)}</p>
                           </div>
                           {isCompleted
                             ? <span className="badge badge-mint">{t("completed")}</span>
@@ -275,7 +287,7 @@ export default function LearnView({ char, chapters }: LearnViewProps) {
                               ? <span className="badge badge-muted">{t("locked")}</span>
                               : <span className="badge badge-gold">⭐ {t("premiumOnly")}</span>}
                         </div>
-                        <p className={styles.chapterDesc}>{sc.description}</p>
+                        <p className={styles.chapterDesc}>{tr(sc.description)}</p>
                       </div>
                     </Link>
                   </div>

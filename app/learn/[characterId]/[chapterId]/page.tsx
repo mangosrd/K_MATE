@@ -771,15 +771,6 @@ export default function LearningSessionPage({
     return (
       <main className={styles.page}>
         <div className={styles.introCard}>
-          <div className={styles.introTopbar}>
-            <Link href={backToListHref} className={styles.introBack} aria-label={t("backToList")}>
-              ‹
-            </Link>
-            <span className={styles.introStatus}>
-              {hasCompletedChapter ? `✓ ${t("completed")}` : "K-MATE LEARNING"}
-            </span>
-          </div>
-
           <section className={styles.introHero}>
             <div className={styles.introEmoji}>{content.emoji}</div>
             <div className={styles.introHeading}>
@@ -819,6 +810,9 @@ export default function LearningSessionPage({
                 : `${hasCompletedChapter ? "↻ " : ""}${t("startLearn")} · 🪙 ${hasCompletedChapter ? 0 : 3}`}
             </button>
             {entryError && <p className={styles.introError}>{entryError}</p>}
+            <Link href={backToListHref} className={styles.introMainLink}>
+              {t("goToLearnMain")}
+            </Link>
           </div>
         </div>
       </main>
