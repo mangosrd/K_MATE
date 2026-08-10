@@ -106,7 +106,9 @@
   background: var(--bg-elevated);
   border: 2px solid var(--border-subtle);
   transition: all var(--transition-fast);
+  overflow: hidden;
 }
+.chapterStamp { width: 100%; height: 100%; object-fit: contain; }
 .iconDone   { background: var(--mint-light); border-color: var(--mint); color: var(--mint); font-size: 20px; font-weight: 800; }
 .iconActive { background: var(--red-light);  border-color: var(--red);  box-shadow: 0 0 12px rgba(205,46,58,0.2); }
 .iconLocked { filter: grayscale(1); opacity: 0.5; }
