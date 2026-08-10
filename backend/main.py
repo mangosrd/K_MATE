@@ -8,6 +8,7 @@ Python 백엔드 진입점
 """
 
 import sys
+from threading import Thread
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
@@ -25,11 +26,17 @@ settings = get_settings()
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """앱 시작/종료 훅"""
-    db_ok = initialize_database()
-    if db_ok:
-        print("✅ MySQL 연결 성공")
-    else:
-        print("⚠️  MySQL 연결 실패 — 환경변수를 확인해주세요")
+    # Do not hold the HTTP server in startup while MySQL schema/seed work runs.
+    # A slow connection or metadata lock previously left Railway at
+    # "Waiting for application startup" and made every endpoint unavailable.
+    def initialize_in_background():
+        db_ok = initialize_database()
+        if db_ok:
+            print("[DB] MySQL initialization complete", flush=True)
+        else:
+            print("[DB] MySQL initialization failed", flush=True)
+
+    Thread(target=initialize_in_background, name="database-initializer", daemon=True).start()
     yield
     print("👋 K-MATE 백엔드 종료")
 
