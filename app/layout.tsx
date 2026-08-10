@@ -1,8 +1,27 @@
 import type { Metadata, Viewport } from "next";
+import localFont from "next/font/local";
 import "./globals.css";
 import { LanguageProvider } from "@/components/LanguageContext";
 import { ThemeProvider } from "@/components/ThemeContext";
 import PushNotificationSetup from "@/components/PushNotificationSetup";
+
+const dunggeunmiso = localFont({
+  src: [
+    {
+      path: "./fonts/Dunggeunmiso-Regular.otf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Dunggeunmiso-Bold.otf",
+      weight: "700 900",
+      style: "normal",
+    },
+  ],
+  variable: "--font-dunggeunmiso",
+  display: "swap",
+  fallback: ["Noto Sans KR", "Arial", "sans-serif"],
+});
 
 export const metadata: Metadata = {
   title: "K-MATE — Learn Korean with Your AI Travel Companion",
@@ -24,7 +43,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ko">
+    <html lang="ko" className={dunggeunmiso.variable}>
       <body>
         <ThemeProvider>
           <LanguageProvider>
