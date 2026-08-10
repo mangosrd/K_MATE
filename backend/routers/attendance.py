@@ -1,8 +1,7 @@
 """Weekly attendance rewards, calculated using Korea Standard Time."""
 
 import uuid
-from datetime import datetime, timedelta
-from zoneinfo import ZoneInfo
+from datetime import datetime, timedelta, timezone
 
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.exc import IntegrityError
@@ -13,7 +12,9 @@ from models.models import User, WeeklyAttendanceClaim
 from services.wallet import change_coins, get_wallet
 
 router = APIRouter(prefix="/attendance", tags=["attendance"])
-KST = ZoneInfo("Asia/Seoul")
+# Korea has no daylight-saving time. A fixed offset also works in slim
+# deployment images that do not include the IANA timezone database.
+KST = timezone(timedelta(hours=9), name="KST")
 
 
 def _today():

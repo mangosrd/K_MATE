@@ -337,8 +337,8 @@ export default function LearningSessionPage({
   useEffect(() => {
     setLoadingPhase("landing");
     setMinLoadingTimeElapsed(false);
-    const doneTextTimer = setTimeout(() => setLoadingPhase("done"), 2000);
-    const dismissTimer = setTimeout(() => setMinLoadingTimeElapsed(true), 3000);
+    const doneTextTimer = setTimeout(() => setLoadingPhase("done"), 350);
+    const dismissTimer = setTimeout(() => setMinLoadingTimeElapsed(true), 650);
     return () => {
       clearTimeout(doneTextTimer);
       clearTimeout(dismissTimer);

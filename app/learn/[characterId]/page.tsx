@@ -31,7 +31,10 @@ export default async function LearnPage({
   let membership: string = MOCK_USER.membership;
   let freeCharSlots: string[] = MOCK_USER.free_character_slots;
   try {
-    const res = await fetch(`${BACKEND_URL}/user/${userId}`, { cache: "no-store" });
+    const res = await fetch(`${BACKEND_URL}/user/${userId}`, {
+      cache: "no-store",
+      signal: AbortSignal.timeout(800),
+    });
     if (res.ok) {
       const data = await res.json();
       membership = data.membership;
