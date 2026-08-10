@@ -13,7 +13,6 @@ import { useLanguage } from "@/components/LanguageContext";
 import { canAccessCharacter, isChapterUnlocked, getCharacterById } from "@/lib/db/mock";
 import { useMembership, useFreeCharSlots } from "@/lib/auth/useAuthUser";
 import { useTranslationMap, substituteTranslations, TranslatableItem } from "@/lib/translate/store";
-import { getChapterStamp } from "@/lib/ui/chapter-stamps";
 
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
 import type { ChapterContent, ChapterWord as Word, ChapterSentence as Sentence, DialogueScene, DialogueTurn } from "@/types/content";
@@ -776,16 +775,7 @@ export default function LearningSessionPage({
           </div>
 
           <section className={styles.introHero}>
-            <div className={styles.introEmoji}>
-              <Image
-                src={getChapterStamp(chapterId, hasCompletedChapter ? "completed" : "default")}
-                alt=""
-                width={82}
-                height={82}
-                className={styles.introStamp}
-                priority
-              />
-            </div>
+            <div className={styles.introEmoji} aria-hidden="true">{content.emoji}</div>
             <div className={styles.introHeading}>
               <span className={styles.introEyebrow}>{t("sessionTagline")}</span>
               <h1 className={styles.introTitle}>{content.title}</h1>
