@@ -813,7 +813,9 @@ export default function LearningSessionPage({
               disabled={isStarting}
               id="btn-start-session"
             >
-              {isStarting ? "학습 준비 중…" : `${hasCompletedChapter ? "↻ " : ""}${t("startLearn")} · 🪙 3`}
+              {isStarting
+                ? "학습 준비 중…"
+                : `${hasCompletedChapter ? "↻ " : ""}${t("startLearn")} · 🪙 ${hasCompletedChapter ? 0 : 3}`}
             </button>
             {entryError && <p className={styles.introError}>{entryError}</p>}
           </div>

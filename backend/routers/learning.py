@@ -108,18 +108,20 @@ def start_lesson(req: LessonStartRequest, db: Session = Depends(get_db)):
         LessonSession.chapter_id == req.chapter_id,
         LessonSession.completed.is_(True),
     ).first() is not None
-    if economy.coins < LESSON_ENTRY_COST:
+    entry_cost = 0 if is_replay else LESSON_ENTRY_COST
+    if economy.coins < entry_cost:
         raise HTTPException(status_code=400, detail=f"코인이 부족합니다. 학습 시작에는 {LESSON_ENTRY_COST}코인이 필요합니다.")
     session = LessonSession(
         id=str(uuid.uuid4()), user_id=user.id, character_id=character.id,
-        chapter_id=req.chapter_id, entry_cost=LESSON_ENTRY_COST,
+        chapter_id=req.chapter_id, entry_cost=entry_cost,
     )
-    economy = change_coins(db, user.id, -LESSON_ENTRY_COST, "lesson_entry", reference_type="lesson_session", reference_id=session.id)
+    if entry_cost:
+        economy = change_coins(db, user.id, -entry_cost, "lesson_entry", reference_type="lesson_session", reference_id=session.id)
     db.add(session)
     db.commit()
     return LessonStartResponse(
         session_id=session.id,
-        entry_cost=LESSON_ENTRY_COST,
+        entry_cost=entry_cost,
         remaining_coins=economy.coins,
         is_replay=is_replay,
     )
