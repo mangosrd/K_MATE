@@ -187,6 +187,22 @@ def initialize_database() -> bool:
                     text("INSERT INTO gallery_images (id, character_id, image_url, title, `order`, unlock_cost) VALUES (:id, :character_id, :image_url, :title, :image_order, :unlock_cost) ON DUPLICATE KEY UPDATE id = id"),
                     {"id": image_id, "character_id": character_id, "image_url": image_url, "title": title, "image_order": image_order, "unlock_cost": unlock_cost},
                 )
+        story_seed = {
+            "kyuhyun": [("첫 비행", "베테랑 기장이 처음 조종간을 잡던 날"), ("밤의 활주로", "웃음 뒤에 숨겨 둔 오래된 약속"), ("다시, 이 노선", "그가 같은 노선을 계속 선택한 이유")],
+            "haneul": [("말보다 느린 마음", "무뚝뚝한 부기장의 첫 진심"), ("구름 사이", "흐린 날에만 떠오르는 기억"), ("착륙 후에", "끝내 전하지 못했던 한마디")],
+            "sunwoo": [("여름의 비행장", "장난꾸러기 소년의 꿈"), ("비타민의 비밀", "늘 웃어야 했던 진짜 이유"), ("네가 탄 비행기", "친구라는 선을 넘은 순간")],
+            "sangwoo": [("관제탑의 원칙", "FM 기장이 원칙을 세운 날"), ("예외 항목", "완벽한 계획에 없던 한 사람"), ("직진 허가", "사랑만큼은 우회하지 않기로 한 결심")],
+            "yongwoo": [("형의 자리", "누군가를 지키는 일이 익숙해진 이유"), ("잔소리의 온도", "거친 말 뒤에 감춘 걱정"), ("제주로 가는 길", "다시 돌아오겠다는 약속")],
+        }
+        with engine.begin() as connection:
+            for character_id, episodes in story_seed.items():
+                for episode_number, (title, summary) in enumerate(episodes, start=1):
+                    story_id = f"backstory-{character_id}-{episode_number}"
+                    body = f"{title}\n\n{summary}. 비행 전 조용한 라운지에서 {character_id}은 오래 간직해 온 기억을 천천히 꺼냈다. 익숙한 유니폼과 침착한 표정 뒤에도 처음 하늘을 올려다보던 날의 설렘은 그대로 남아 있었다.\n\n그날의 선택은 지금의 그를 만들었다. 그리고 이제, 누구에게도 말하지 않았던 이 이야기를 당신에게만 들려주기로 했다."
+                    connection.execute(
+                        text("INSERT INTO premium_stories (id, character_id, episode_number, title, summary, body, unlock_cost, is_published) VALUES (:id, :character_id, :episode_number, :title, :summary, :body, 10, 1) ON DUPLICATE KEY UPDATE title=VALUES(title), summary=VALUES(summary), body=VALUES(body), unlock_cost=10"),
+                        {"id": story_id, "character_id": character_id, "episode_number": episode_number, "title": title, "summary": summary, "body": body},
+                    )
         print("[DB] schema and seed data are ready", flush=True)
         return True
     except Exception as e:

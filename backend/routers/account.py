@@ -244,6 +244,7 @@ def add_coins(user_id: str, req: AddCoinsRequest, db: Session = Depends(get_db))
         db.add(economy)
         db.flush()
 
-    economy.coins += req.coins
+    from services.wallet import change_coins
+    economy = change_coins(db, user_id, req.coins, "manual_adjustment", reference_type="account")
     db.commit()
     return AddCoinsResponse(success=True, total_coins=economy.coins)

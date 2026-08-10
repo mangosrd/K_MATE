@@ -14,6 +14,7 @@ from services.llm_service import generate_letter_reply
 from services.access_control import check_character_access
 from services.session_auth import require_current_user, require_same_user
 from models.models import Letter, Character, Economy, User
+from services.wallet import change_coins
 from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 import uuid
@@ -117,8 +118,6 @@ def send_letter(req: LetterSendRequest, current_user_id: str = Depends(require_c
     if economy.coins < LETTER_COST:
         raise HTTPException(status_code=400, detail="코인이 부족합니다")
 
-    economy.coins -= LETTER_COST
-
     letter = Letter(
         id=str(uuid.uuid4()),
         user_id=req.user_id,
@@ -130,6 +129,7 @@ def send_letter(req: LetterSendRequest, current_user_id: str = Depends(require_c
         reply_ready_at=datetime.now() + REPLY_DELAY,
         is_read=False,
     )
+    economy = change_coins(db, req.user_id, -LETTER_COST, "letter_send", reference_type="letter", reference_id=letter.id)
     db.add(letter)
     db.commit()
     db.refresh(letter)

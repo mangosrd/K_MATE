@@ -199,6 +199,27 @@ class StoryUnlockResponse(StoryAccessResponse):
     remaining_coins: int
 
 
+class PremiumStoryItemResponse(BaseModel):
+    id: str
+    character_id: str
+    episode_number: int
+    title: str
+    summary: str
+    body: Optional[str] = None
+    unlock_cost: int
+    unlocked: bool
+
+
+class PremiumStoryUnlockRequest(BaseModel):
+    user_id: str
+
+
+class PremiumStoryUnlockResponse(BaseModel):
+    success: bool
+    remaining_coins: int
+    story: PremiumStoryItemResponse
+
+
 # ── 캐릭터 ────────────────────────────────────────────────
 class CharacterResponse(BaseModel):
     id: str

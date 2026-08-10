@@ -15,6 +15,7 @@ from schemas.schemas import (
     StoryAccessResponse, StoryUnlockRequest, StoryUnlockResponse,
 )
 from services.access_control import check_character_access
+from services.wallet import change_coins, get_wallet
 
 router = APIRouter(prefix="/learning", tags=["learning"])
 
@@ -77,13 +78,13 @@ def unlock_story(req: StoryUnlockRequest, db: Session = Depends(get_db)):
     user = db.query(User).filter(User.id == req.user_id).first()
     if not user:
         raise HTTPException(status_code=404, detail="User not found")
-    economy = _economy(db, user.id)
+    economy = get_wallet(db, user.id)
     has_access, access_type = _story_access(db, user.id, req.chapter_id)
     if has_access:
         return StoryUnlockResponse(has_access=True, access_type=access_type, unlock_cost=STORY_UNLOCK_COST, remaining_coins=economy.coins)
     if economy.coins < STORY_UNLOCK_COST:
         raise HTTPException(status_code=400, detail=f"코인이 부족합니다. 스토리 해금에는 {STORY_UNLOCK_COST}코인이 필요합니다.")
-    economy.coins -= STORY_UNLOCK_COST
+    economy = change_coins(db, user.id, -STORY_UNLOCK_COST, "special_story_unlock", reference_type="chapter", reference_id=req.chapter_id)
     db.add(StoryUnlock(id=str(uuid.uuid4()), user_id=user.id, chapter_id=req.chapter_id, unlock_cost=STORY_UNLOCK_COST))
     db.commit()
     return StoryUnlockResponse(has_access=True, access_type="coin_unlock", unlock_cost=STORY_UNLOCK_COST, remaining_coins=economy.coins)
@@ -101,14 +102,14 @@ def start_lesson(req: LessonStartRequest, db: Session = Depends(get_db)):
             raise HTTPException(status_code=403, detail="스토리를 먼저 해금해주세요.")
     else:
         check_character_access(user, character)
-    economy = _economy(db, user.id)
+    economy = get_wallet(db, user.id)
     if economy.coins < LESSON_ENTRY_COST:
         raise HTTPException(status_code=400, detail=f"코인이 부족합니다. 학습 시작에는 {LESSON_ENTRY_COST}코인이 필요합니다.")
-    economy.coins -= LESSON_ENTRY_COST
     session = LessonSession(
         id=str(uuid.uuid4()), user_id=user.id, character_id=character.id,
         chapter_id=req.chapter_id, entry_cost=LESSON_ENTRY_COST,
     )
+    economy = change_coins(db, user.id, -LESSON_ENTRY_COST, "lesson_entry", reference_type="lesson_session", reference_id=session.id)
     db.add(session)
     db.commit()
     return LessonStartResponse(session_id=session.id, entry_cost=LESSON_ENTRY_COST, remaining_coins=economy.coins)
@@ -121,7 +122,7 @@ def complete_lesson(req: LessonCompleteRequest, db: Session = Depends(get_db)):
     ).first()
     if not session:
         raise HTTPException(status_code=404, detail="학습 세션을 찾을 수 없습니다.")
-    economy = _economy(db, req.user_id)
+    economy = get_wallet(db, req.user_id)
     prog = db.query(Progress).filter(
         Progress.user_id == req.user_id, Progress.character_id == session.character_id
     ).first()
@@ -134,7 +135,7 @@ def complete_lesson(req: LessonCompleteRequest, db: Session = Depends(get_db)):
         session.reward_coins = secrets.randbelow(3) + 1
         session.completed = True
         session.completed_at = datetime.now()
-        economy.coins += session.reward_coins
+        economy = change_coins(db, req.user_id, session.reward_coins, "lesson_reward", reference_type="lesson_session", reference_id=session.id)
         prog.current_step = max(1, prog.current_step + max(0, req.step_delta))
         if req.add_stamp and req.add_stamp not in (prog.stamps or []):
             prog.stamps = (prog.stamps or []) + [req.add_stamp]

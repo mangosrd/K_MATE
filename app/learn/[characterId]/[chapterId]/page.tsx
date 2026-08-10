@@ -79,7 +79,7 @@ const CAPTAIN_SHORT_NAME: Record<string, string> = {
 };
 
 type Phase = "intro" | "story" | "vocab_review" | "session" | "complete";
-type ExerciseType = "flashcard" | "multiple_choice" | "fill_blank" | "sentence_match" | "listening_choice" | "speaking_practice" | "dialogue_comprehension";
+type ExerciseType = "flashcard" | "multiple_choice" | "fill_blank" | "sentence_match" | "sentence_builder" | "listening_choice" | "speaking_practice" | "dialogue_comprehension";
 
 interface ExerciseItem {
   id: string;
@@ -100,6 +100,37 @@ function shuffle<T>(arr: T[]): T[] {
 }
 
 function generateExercises(words: Word[], sentences: Sentence[], dialogues: DialogueScene[] = []): ExerciseItem[] {
+  // Predictable progression: memorize -> match meaning -> choose translation
+  // -> exactly two sentence-level translation exercises.
+  const review: ExerciseItem[] = words.map((w) => ({
+    id: `flash-${w.id}`, type: "flashcard", questionText: w.word, reading: w.reading,
+    correctAnswer: w.meaning, hintText: w.reading,
+    explanation: `${w.word} [${w.reading}] : ${w.meaning}`, options: [], originalData: w,
+  }));
+  const meaningMatch: ExerciseItem[] = words.map((w) => ({
+    id: `mc-${w.id}`, type: "multiple_choice", questionText: w.word, reading: w.reading,
+    correctAnswer: w.meaning, hintText: `${w.reading} · ${w.example}`,
+    explanation: `${w.word} [${w.reading}] = ${w.meaning}`,
+    options: shuffle([w.meaning, ...shuffle(words.filter((x) => x.id !== w.id)).slice(0, 3).map((x) => x.meaning)]),
+    originalData: w,
+  }));
+  const translationChoice: ExerciseItem[] = words.map((w) => ({
+    id: `translate-${w.id}`, type: "multiple_choice", questionText: w.meaning, reading: "",
+    correctAnswer: w.word, hintText: w.example_en,
+    explanation: `${w.meaning} = ${w.word} [${w.reading}]`,
+    options: shuffle([w.word, ...shuffle(words.filter((x) => x.id !== w.id)).slice(0, 3).map((x) => x.word)]),
+    originalData: w,
+  }));
+  const sentenceBuild: ExerciseItem[] = sentences.slice(0, 2).map((s) => ({
+    id: `sentence-${s.id}`, type: "sentence_builder", questionText: s.en, reading: s.reading,
+    correctAnswer: s.ko, hintText: s.reading,
+    explanation: `${s.en} = ${s.ko}`,
+    options: shuffle(s.ko.split(/\s+/)),
+    originalData: s,
+  }));
+  return [...review, ...meaningMatch, ...translationChoice, ...sentenceBuild];
+
+  /* Legacy generators below are retained temporarily for content migration. */
   const list: ExerciseItem[] = [];
 
   // 1. 플래시카드
@@ -366,6 +397,7 @@ export default function LearningSessionPage({
 
   // ── 문제 상태 ─────────────────────────────────────────────
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
+  const [selectedTokenIndexes, setSelectedTokenIndexes] = useState<number[]>([]);
   const [inputText, setInputText] = useState("");
   const [attempts, setAttempts] = useState(0);
   const [showHint, setShowHint] = useState(false);
@@ -401,6 +433,7 @@ export default function LearningSessionPage({
 
   useEffect(() => {
     setSelectedOption(null);
+    setSelectedTokenIndexes([]);
     setInputText("");
     setAttempts(0);
     setShowHint(false);
@@ -465,7 +498,7 @@ export default function LearningSessionPage({
   };
 
   const handleCheckAnswer = (answerToTest?: string) => {
-    if (isSubmitted && isCorrect) return;
+    if (isSubmitted) return;
 
     const answer = (answerToTest ?? selectedOption ?? inputText).trim();
     if (!answer) return;
@@ -473,10 +506,13 @@ export default function LearningSessionPage({
     const correct = currentEx.correctAnswer.trim();
     // 공백뿐 아니라 문장부호도 제거 — 음성 인식(STT) 결과는 마침표/물음표 등을 포함하지 않으므로,
     // 부호를 안 지우면 정답을 정확히 발음해도 정답 문장의 마침표 때문에 항상 오답 처리되는 문제가 있었다.
-    const normalize = (s: string) => s.replace(/[\s.,!?~…"'"'`.]/g, "").toLowerCase();
+    const normalize = (s: string) => s
+      .normalize("NFKC")
+      .toLocaleLowerCase()
+      .replace(/[\p{P}\p{S}\s]/gu, "");
     const cleanAnswer = normalize(answer);
     const cleanCorrect = normalize(correct);
-    const matches = cleanAnswer === cleanCorrect || cleanAnswer.includes(cleanCorrect);
+    const matches = cleanAnswer.length > 0 && cleanAnswer === cleanCorrect;
 
     if (matches) {
       setIsCorrect(true);
@@ -940,6 +976,9 @@ export default function LearningSessionPage({
   if (phase === "complete") {
     return (
       <main className={styles.page}>
+        <div className={styles.confetti} aria-hidden="true">
+          {Array.from({ length: 36 }, (_, index) => <span key={index} />)}
+        </div>
         <div className={styles.completeCard}>
           <div className={styles.completeEmoji}>🎉</div>
           <h1 className={styles.completeTitle}>{t("sessionComplete")}</h1>
@@ -1026,6 +1065,7 @@ export default function LearningSessionPage({
               {currentEx.type === "listening_choice" && (isSkipped ? "👁️ 시각 퀴즈 (스킵됨)" : "🎧 듣기 문제 · Listening")}
               {currentEx.type === "speaking_practice" && (isSkipped ? "👁️ 시각 퀴즈 (스킵됨)" : "🗣️ 문장 읽기 · Speaking Practice")}
               {currentEx.type === "dialogue_comprehension" && "💬 대화 상황 파악 · Dialogue Comprehension"}
+              {currentEx.type === "sentence_builder" && "🧩 배운 단어로 문장 완성"}
             </p>
 
             <div className={styles.headerBtnGroup}>
@@ -1094,6 +1134,34 @@ export default function LearningSessionPage({
                   {t("nextQuestion")}
                 </button>
               )}
+            </>
+          )}
+
+          {currentEx.type === "sentence_builder" && (
+            <>
+              <div className={styles.mcQuestion}>
+                <h2 className={styles.mcWord}>{tr(currentEx.questionText)}</h2>
+                <p className={styles.mcReading}>[{currentEx.reading}]</p>
+              </div>
+              <div className={styles.sentenceAnswer}>
+                {selectedTokenIndexes.length === 0 && <span>단어를 순서대로 눌러 문장을 완성하세요</span>}
+                {selectedTokenIndexes.map((tokenIndex) => (
+                  <button key={tokenIndex} onClick={() => !isSubmitted && setSelectedTokenIndexes((items) => items.filter((i) => i !== tokenIndex))}>
+                    {currentEx.options[tokenIndex]}
+                  </button>
+                ))}
+              </div>
+              <div className={styles.tokenBank}>
+                {currentEx.options.map((token, tokenIndex) => (
+                  <button key={`${token}-${tokenIndex}`} disabled={isSubmitted || selectedTokenIndexes.includes(tokenIndex)} onClick={() => setSelectedTokenIndexes((items) => [...items, tokenIndex])}>{token}</button>
+                ))}
+              </div>
+              {!isSubmitted && <button className="btn btn-primary btn-lg" disabled={!selectedTokenIndexes.length} onClick={() => handleCheckAnswer(selectedTokenIndexes.map((i) => currentEx.options[i]).join(" "))}>{t("checkAnswerWithCount", { n: 3 - attempts })}</button>}
+              {isSubmitted && <div className={styles.resultBox}>
+                <p className={isCorrect ? styles.correctText : styles.wrongText}>{isCorrect ? t("correctNotice") : `${t("wrongFinalPrefix")} ${currentEx.correctAnswer}`}</p>
+                <p className={styles.explanation}>{tr(currentEx.explanation)}</p>
+                <button className="btn btn-primary btn-lg" onClick={handleNext}>{t("nextQuestion")}</button>
+              </div>}
             </>
           )}
 

@@ -13,6 +13,7 @@ from database import get_db
 from schemas.schemas import GalleryImageResponse, GalleryUnlockRequest, GalleryUnlockResponse
 from services.access_control import check_character_access
 from models.models import GalleryImage, UserGalleryUnlock, Economy, User, Character
+from services.wallet import change_coins
 
 router = APIRouter(prefix="/gallery", tags=["gallery"])
 
@@ -81,7 +82,7 @@ def unlock_gallery_image(req: GalleryUnlockRequest, db: Session = Depends(get_db
     if economy.coins < image.unlock_cost:
         raise HTTPException(status_code=400, detail="코인이 부족합니다")
 
-    economy.coins -= image.unlock_cost
+    economy = change_coins(db, req.user_id, -image.unlock_cost, "gallery_unlock", reference_type="gallery_image", reference_id=image.id)
     db.add(UserGalleryUnlock(id=str(uuid.uuid4()), user_id=req.user_id, image_id=req.image_id))
     db.commit()
 

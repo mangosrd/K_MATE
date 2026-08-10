@@ -665,3 +665,38 @@
 .audioPlayBtn {
   display: none;
 }
+
+.confetti {
+  position: fixed;
+  inset: 0;
+  z-index: 5;
+  overflow: hidden;
+  pointer-events: none;
+}
+.confetti span {
+  position: absolute;
+  top: -12vh;
+  left: 50%;
+  width: 10px;
+  height: 18px;
+  border-radius: 3px;
+  background: var(--red);
+  animation: confetti-pop 3.6s infinite ease-in;
+}
+.confetti span:nth-child(5n + 1) { left: 12%; background: #facc15; animation-delay: -.4s; }
+.confetti span:nth-child(5n + 2) { left: 30%; background: #22c55e; animation-delay: -1.7s; }
+.confetti span:nth-child(5n + 3) { left: 52%; background: #3b82f6; animation-delay: -2.5s; }
+.confetti span:nth-child(5n + 4) { left: 72%; background: #ec4899; animation-delay: -.9s; }
+.confetti span:nth-child(5n) { left: 90%; background: #a855f7; animation-delay: -3.1s; }
+.confetti span:nth-child(3n) { width: 14px; height: 14px; border-radius: 50%; }
+.confetti span:nth-child(4n) { animation-duration: 4.8s; }
+.sentenceAnswer,.tokenBank{display:flex;min-height:68px;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px;padding:14px;border-radius:18px}.sentenceAnswer{border:2px dashed var(--border-default);background:var(--bg-surface);color:var(--text-muted)}.tokenBank{margin:12px 0}.sentenceAnswer button,.tokenBank button{padding:10px 14px;border:1.5px solid var(--border-default);border-radius:12px;background:var(--bg-base);color:var(--text-primary);font-weight:800;box-shadow:var(--shadow-xs)}.tokenBank button:disabled{opacity:.2}
+@keyframes confetti-pop {
+  0% { transform: translate3d(0, -8vh, 0) rotate(0deg); opacity: 0; }
+  12% { opacity: 1; }
+  45% { transform: translate3d(12vw, 42vh, 0) rotate(360deg); }
+  100% { transform: translate3d(-8vw, 112vh, 0) rotate(820deg); opacity: .2; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .confetti { display: none; }
+}

@@ -231,6 +231,20 @@ class Economy(Base):
     user = relationship("User", back_populates="economy")
 
 
+class CoinTransaction(Base):
+    __tablename__ = "coin_transactions"
+
+    id               = Column(String(36), primary_key=True)
+    user_id          = Column(String(36), ForeignKey("users.id"), nullable=False)
+    amount           = Column(Integer, nullable=False)
+    balance_after    = Column(Integer, nullable=False)
+    transaction_type = Column(String(50), nullable=False)
+    reference_type   = Column(String(50), nullable=True)
+    reference_id     = Column(String(100), nullable=True)
+    description      = Column(String(255), nullable=True)
+    created_at       = Column(DateTime, server_default=func.now())
+
+
 # ── 멤버십 ────────────────────────────────────────────────
 class Membership(Base):
     __tablename__ = "memberships"
@@ -303,6 +317,32 @@ class StoryUnlock(Base):
     user_id     = Column(String(36), ForeignKey("users.id"), nullable=False)
     chapter_id  = Column(String(100), nullable=False)
     unlock_cost = Column(Integer, default=5, nullable=False)
+    unlocked_at = Column(DateTime, server_default=func.now())
+
+
+class PremiumStory(Base):
+    __tablename__ = "premium_stories"
+    __table_args__ = (UniqueConstraint("character_id", "episode_number", name="uq_premium_story_episode"),)
+
+    id             = Column(String(36), primary_key=True)
+    character_id   = Column(String(50), ForeignKey("characters.id"), nullable=False)
+    episode_number = Column(Integer, nullable=False)
+    title          = Column(String(200), nullable=False)
+    summary        = Column(Text, nullable=False)
+    body           = Column(Text, nullable=False)
+    unlock_cost    = Column(Integer, default=10, nullable=False)
+    is_published   = Column(Boolean, default=True, nullable=False)
+    created_at     = Column(DateTime, server_default=func.now())
+
+
+class UserStoryUnlock(Base):
+    __tablename__ = "user_story_unlocks"
+    __table_args__ = (UniqueConstraint("user_id", "story_id", name="uq_user_premium_story"),)
+
+    id         = Column(String(36), primary_key=True)
+    user_id    = Column(String(36), ForeignKey("users.id"), nullable=False)
+    story_id   = Column(String(36), ForeignKey("premium_stories.id"), nullable=False)
+    coins_spent = Column(Integer, default=10, nullable=False)
     unlocked_at = Column(DateTime, server_default=func.now())
 
 

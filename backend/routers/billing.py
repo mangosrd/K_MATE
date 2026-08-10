@@ -122,8 +122,8 @@ def _grant_coins(db: Session, user_id: str, coins: int) -> int:
         economy = Economy(id=str(uuid.uuid4()), user_id=user_id, coins=0)
         db.add(economy)
         db.flush()
-    economy.coins += coins
-    db.flush()
+    from services.wallet import change_coins
+    economy = change_coins(db, user_id, coins, "purchase_reward", reference_type="billing")
     return economy.coins
 
 

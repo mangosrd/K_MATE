@@ -105,7 +105,8 @@ async def chat(req: ChatRequest, db: Session = Depends(get_db)):
                     status_code=402,
                     detail=f"Free messages are used. Each chat costs {CHAT_COIN_COST} coins.",
                 )
-            economy.coins -= CHAT_COIN_COST
+            from services.wallet import change_coins
+            economy = change_coins(db, req.user_id, -CHAT_COIN_COST, "chat_message", reference_type="character", reference_id=req.character_id)
             coins_spent = CHAT_COIN_COST
             remaining_coins = economy.coins
 

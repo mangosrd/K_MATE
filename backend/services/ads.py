@@ -10,6 +10,7 @@
 from datetime import date
 from sqlalchemy.orm import Session
 from models.models import User
+from services.wallet import change_coins
 
 AD_COIN_REWARD = 5
 AD_DAILY_CAP = 100
@@ -56,7 +57,7 @@ def grant_ad_reward(db: Session, user_id: str) -> tuple[bool, int, int]:
         return False, (AD_DAILY_CAP - user.ad_coins_today) // AD_COIN_REWARD, economy.coins
 
     user.ad_coins_today += AD_COIN_REWARD
-    economy.coins += AD_COIN_REWARD
+    economy = change_coins(db, user_id, AD_COIN_REWARD, "ad_reward", reference_type="rewarded_ad")
 
     db.commit()
     return True, (AD_DAILY_CAP - user.ad_coins_today) // AD_COIN_REWARD, economy.coins

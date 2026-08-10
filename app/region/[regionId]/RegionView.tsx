@@ -13,6 +13,7 @@ import { useMembership, useFreeCharSlots } from "@/lib/auth/useAuthUser";
 import { useLanguage, type Language } from "@/components/LanguageContext";
 import type { Region, Progress } from "@/types/database";
 import styles from "./region.module.css";
+import { getCaptainDisplayProfile } from "@/lib/captainProfiles";
 
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
 
@@ -184,7 +185,8 @@ export default function RegionView({ region }: { region: Region }) {
 
             <div className={styles.characterList}>
               {characters.map((char) => {
-                const profile = CAPTAIN_PROFILE[language][char.id] ?? CAPTAIN_PROFILE.en[char.id];
+                const displayProfile = getCaptainDisplayProfile(language, char.id);
+                const profile = { age: "", personality: displayProfile.description };
                 const canAccess = canAccessCharacter(char.id, membership, freeSlots);
                 const progress = allProgress[char.id];
                 const affinity = progress?.affinity ?? 0;

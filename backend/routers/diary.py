@@ -13,6 +13,7 @@ from schemas.schemas import (
 from services.llm_service import load_persona, llm_chat
 from services.access_control import check_character_access
 from models.models import DiaryEntry, Economy, User, Character
+from services.wallet import change_coins
 import uuid
 from datetime import datetime
 
@@ -123,7 +124,7 @@ def unlock_diary(req: DiaryUnlockRequest, db: Session = Depends(get_db)):
     if economy.coins < entry.unlock_cost:
         raise HTTPException(status_code=400, detail="코인이 부족합니다")
 
-    economy.coins -= entry.unlock_cost
+    economy = change_coins(db, req.user_id, -entry.unlock_cost, "diary_unlock", reference_type="diary", reference_id=entry.id)
     entry.unlocked = True
     db.commit()
 
