@@ -245,21 +245,6 @@ class CoinTransaction(Base):
     created_at       = Column(DateTime, server_default=func.now())
 
 
-class WeeklyAttendanceClaim(Base):
-    """One server-authoritative attendance reward per user and calendar day."""
-    __tablename__ = "weekly_attendance_claims"
-    __table_args__ = (
-        UniqueConstraint("user_id", "claim_date", name="uq_attendance_user_date"),
-    )
-
-    id           = Column(String(36), primary_key=True)
-    user_id      = Column(String(36), ForeignKey("users.id"), nullable=False)
-    claim_date   = Column(Date, nullable=False)
-    week_start   = Column(Date, nullable=False)
-    reward_coins = Column(Integer, nullable=False)
-    created_at   = Column(DateTime, server_default=func.now())
-
-
 # ── 멤버십 ────────────────────────────────────────────────
 class Membership(Base):
     __tablename__ = "memberships"
