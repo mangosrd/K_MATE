@@ -8,6 +8,7 @@ import styles from "./learn.module.css";
 import { SPECIAL_CHAPTERS, MOCK_CHARACTERS, isChapterUnlocked } from "@/lib/db/mock";
 import { getEffectiveUserId, setPreferredCaptainId } from "@/lib/auth/store";
 import { useLanguage } from "@/components/LanguageContext";
+import { getChapterStamp } from "@/lib/ui/chapter-stamps";
 import type { Character, Chapter } from "@/types/database";
 
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
@@ -147,7 +148,13 @@ export default function LearnView({ char, chapters }: LearnViewProps) {
                         title={isLocked ? t("chapterLockedHint") : undefined}
                       >
                         <div className={`${styles.chapterIcon} ${isCompleted ? styles.iconDone : ""} ${isActive ? styles.iconActive : ""} ${isLocked ? styles.iconLocked : ""}`}>
-                          <span className={styles.chapterEmoji} aria-hidden="true">{chapter.emoji}</span>
+                          <Image
+                            src={getChapterStamp(chapter.id, isCompleted ? "completed" : isLocked ? "locked" : "default")}
+                            alt=""
+                            width={52}
+                            height={52}
+                            className={styles.chapterStamp}
+                          />
                         </div>
 
                         <div className={styles.chapterInfo}>
@@ -258,8 +265,14 @@ export default function LearnView({ char, chapters }: LearnViewProps) {
                       aria-disabled={isSequenceLocked}
                       title={isSequenceLocked ? t("chapterLockedHint") : undefined}
                     >
-                      <div className={`${styles.chapterIcon} ${isCompleted ? styles.iconDone : ""} ${isSequenceLocked ? styles.iconLocked : ""}`}>
-                        <span className={styles.chapterEmoji} aria-hidden="true">{sc.emoji}</span>
+                      <div className={`${styles.chapterIcon} ${isCompleted ? styles.iconDone : styles.iconLocked}`}>
+                        <Image
+                          src={getChapterStamp(sc.id, isCompleted ? "completed" : isSequenceLocked ? "locked" : "default")}
+                          alt=""
+                          width={52}
+                          height={52}
+                          className={styles.chapterStamp}
+                        />
                       </div>
 
                       <div className={styles.chapterInfo}>
