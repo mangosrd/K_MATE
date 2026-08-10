@@ -419,6 +419,7 @@ export default function LearningSessionPage({
 
   const [score, setScore] = useState(0);
   const [correctCount, setCorrectCount] = useState(0);
+  const [wrongCount, setWrongCount] = useState(0);
 
   // "다음 챕터" 버튼은 같은 페이지 템플릿(app/learn/[characterId]/[chapterId]) 안에서
   // chapterId만 바뀌는 client-side 이동이라, Next.js가 이 컴포넌트를 재마운트하지 않고
@@ -431,6 +432,7 @@ export default function LearningSessionPage({
     setStoryIdx(0);
     setScore(0);
     setCorrectCount(0);
+    setWrongCount(0);
     setLessonSessionId(null);
     setEntryError("");
     setRewardCoins(null);
@@ -551,6 +553,7 @@ export default function LearningSessionPage({
       if (nextAttempts >= 3) {
         setIsCorrect(false);
         setIsSubmitted(true);
+        setWrongCount((count) => count + 1);
       } else {
         setIsCorrect(false);
         setSelectedOption(null);
@@ -644,6 +647,7 @@ export default function LearningSessionPage({
     setStoryIdx(0);
     setScore(0);
     setCorrectCount(0);
+    setWrongCount(0);
     setLessonSessionId(null);
     setRewardCoins(null);
     setReplaySession(true);
@@ -1036,7 +1040,7 @@ export default function LearningSessionPage({
               <span className={styles.rStatLabel}>{t("correctLabel")}</span>
             </div>
             <div className={styles.resultStat}>
-              <span className={styles.rStatNum}>{totalExercises - correctCount}</span>
+              <span className={styles.rStatNum}>{wrongCount}</span>
               <span className={styles.rStatLabel}>{t("wrongLabel")}</span>
             </div>
             <div className={styles.resultStat}>
