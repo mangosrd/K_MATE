@@ -35,6 +35,7 @@
   padding: 22px; border-radius: 26px;
   background: var(--gradient-korea); box-shadow: var(--shadow-lg);
   color: #fff;
+  margin-top: auto;
 }
 .introEmoji {
   width: 82px; height: 82px; display: grid; place-items: center;
@@ -59,14 +60,12 @@
 .introStatLabel { font-size: 11px; color: var(--text-muted); font-weight: 600; }
 
 .introRoute {
-  display: flex; align-items: center; justify-content: center; gap: 10px;
-  padding: 14px 16px; color: var(--blue); font-weight: 900;
-  background: var(--blue-light); border-radius: 18px;
+  display: none;
 }
-.introRoute i { width: min(44px, 9vw); height: 2px; background: var(--blue-mid); border-radius: 99px; }
-.introFooter { margin-top: auto; display: flex; flex-direction: column; gap: 12px; }
+.introRoute i { display: none; }
+.introFooter { margin-bottom: auto; display: flex; flex-direction: column; gap: 12px; }
 .introTypes {
-  display: flex; flex-wrap: wrap; gap: var(--space-sm); justify-content: center;
+  display: none;
 }
 .introType {
   background: var(--blue-light);

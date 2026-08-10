@@ -802,11 +802,6 @@ export default function LearningSessionPage({
           </div>
 
           <div className={styles.introFooter}>
-            <div className={styles.introTypes}>
-              <span className={styles.introType}>{t("listen")}</span>
-              <span className={styles.introType}>{t("romanizationChip")}</span>
-              <span className={styles.introType}>{t("hintChip")}</span>
-            </div>
             <button
               className={`${styles.introStartButton} btn btn-primary btn-lg`}
               onClick={() => void handleStartLesson()}
