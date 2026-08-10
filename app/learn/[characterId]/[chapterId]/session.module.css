@@ -11,27 +11,60 @@
 .introCard {
   width: 100%; max-width: var(--mobile-max);
   min-height: 100dvh;
-  padding: var(--space-2xl) var(--space-lg);
+  padding: max(18px, env(safe-area-inset-top)) var(--space-lg) 28px;
   display: flex; flex-direction: column;
-  align-items: center; justify-content: center;
-  gap: var(--space-lg);
-  background: var(--bg-base);
+  gap: 18px;
+  background:
+    radial-gradient(circle at 92% 4%, color-mix(in srgb, var(--red) 12%, transparent), transparent 28%),
+    var(--bg-base);
 }
-.introEmoji { font-size: 56px; margin-bottom: var(--space-sm); }
-.introTitle { font-size: 26px; font-weight: 900; color: var(--text-primary); text-align: center; }
-.introTitleEn { font-size: 13px; color: var(--text-muted); text-align: center; }
+.introTopbar { display: flex; align-items: center; justify-content: space-between; min-height: 42px; }
+.introBack {
+  width: 42px; height: 42px; display: grid; place-items: center;
+  border: 1px solid var(--border-subtle); border-radius: 50%;
+  color: var(--text-primary); background: var(--bg-surface);
+  font-size: 30px; line-height: 1;
+}
+.introStatus {
+  padding: 7px 12px; border-radius: var(--radius-full);
+  background: var(--blue-light); color: var(--blue);
+  font-size: 11px; font-weight: 900; letter-spacing: .06em;
+}
+.introHero {
+  display: grid; grid-template-columns: 82px minmax(0, 1fr); gap: 16px; align-items: center;
+  padding: 22px; border-radius: 26px;
+  background: var(--gradient-korea); box-shadow: var(--shadow-lg);
+  color: #fff;
+}
+.introEmoji {
+  width: 82px; height: 82px; display: grid; place-items: center;
+  border-radius: 24px; background: rgba(255,255,255,.16);
+  border: 1px solid rgba(255,255,255,.28); font-size: 45px;
+}
+.introHeading { min-width: 0; }
+.introEyebrow { display: block; margin-bottom: 6px; color: rgba(255,255,255,.72); font-size: 11px; font-weight: 800; }
+.introTitle { font-size: clamp(23px, 6vw, 31px); line-height: 1.2; font-weight: 900; color: #fff; text-align: left; }
 
 .introStats {
-  display: flex; gap: var(--space-lg);
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 0;
   background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-lg);
-  padding: var(--space-md) var(--space-lg);
+  border-radius: 22px;
+  padding: 17px 8px;
+  box-shadow: var(--shadow-xs);
 }
 .introStat { display: flex; flex-direction: column; align-items: center; gap: 2px; }
-.introStatNum   { font-size: 22px; font-weight: 800; color: var(--red); }
+.introStat + .introStat { border-left: 1px solid var(--border-subtle); }
+.introStatNum   { font-size: 22px; font-weight: 900; color: var(--text-primary); }
 .introStatLabel { font-size: 11px; color: var(--text-muted); font-weight: 600; }
 
+.introRoute {
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  padding: 14px 16px; color: var(--blue); font-weight: 900;
+  background: var(--blue-light); border-radius: 18px;
+}
+.introRoute i { width: min(44px, 9vw); height: 2px; background: var(--blue-mid); border-radius: 99px; }
+.introFooter { margin-top: auto; display: flex; flex-direction: column; gap: 12px; }
 .introTypes {
   display: flex; flex-wrap: wrap; gap: var(--space-sm); justify-content: center;
 }
@@ -41,6 +74,16 @@
   border-radius: var(--radius-full);
   padding: 5px 12px;
   font-size: 12px; font-weight: 600; color: var(--blue);
+}
+.introStartButton { width: 100%; min-height: 58px; }
+.introError { color: var(--red); text-align: center; font-weight: 700; }
+
+@media (max-height: 720px) {
+  .introCard { gap: 12px; padding-bottom: 18px; }
+  .introHero { padding: 16px; }
+  .introEmoji { width: 68px; height: 68px; font-size: 38px; }
+  .introHero { grid-template-columns: 68px minmax(0, 1fr); }
+  .introStats { padding: 12px 8px; }
 }
 
 /* ── 완료 ──────────────────────────────────────────────────── */

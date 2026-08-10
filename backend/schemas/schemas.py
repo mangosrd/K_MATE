@@ -169,6 +169,7 @@ class LessonStartResponse(BaseModel):
     session_id: str
     entry_cost: int
     remaining_coins: int
+    is_replay: bool = False
 
 
 class LessonCompleteRequest(BaseModel):

@@ -103,6 +103,11 @@ def start_lesson(req: LessonStartRequest, db: Session = Depends(get_db)):
     else:
         check_character_access(user, character)
     economy = get_wallet(db, user.id)
+    is_replay = db.query(LessonSession.id).filter(
+        LessonSession.user_id == user.id,
+        LessonSession.chapter_id == req.chapter_id,
+        LessonSession.completed.is_(True),
+    ).first() is not None
     if economy.coins < LESSON_ENTRY_COST:
         raise HTTPException(status_code=400, detail=f"코인이 부족합니다. 학습 시작에는 {LESSON_ENTRY_COST}코인이 필요합니다.")
     session = LessonSession(
@@ -112,7 +117,12 @@ def start_lesson(req: LessonStartRequest, db: Session = Depends(get_db)):
     economy = change_coins(db, user.id, -LESSON_ENTRY_COST, "lesson_entry", reference_type="lesson_session", reference_id=session.id)
     db.add(session)
     db.commit()
-    return LessonStartResponse(session_id=session.id, entry_cost=LESSON_ENTRY_COST, remaining_coins=economy.coins)
+    return LessonStartResponse(
+        session_id=session.id,
+        entry_cost=LESSON_ENTRY_COST,
+        remaining_coins=economy.coins,
+        is_replay=is_replay,
+    )
 
 
 @router.post("/complete", response_model=LessonCompleteResponse)
@@ -132,15 +142,23 @@ def complete_lesson(req: LessonCompleteRequest, db: Session = Depends(get_db)):
         db.flush()
     if not session.completed:
         # 원가 메모: Gemini 텍스트/음성은 학습 세션에 호출하지 않는다. 이 보상은 서버 RNG만 사용한다.
-        session.reward_coins = secrets.randbelow(3) + 1
+        previous_completion = db.query(LessonSession.id).filter(
+            LessonSession.user_id == req.user_id,
+            LessonSession.chapter_id == session.chapter_id,
+            LessonSession.id != session.id,
+            LessonSession.completed.is_(True),
+        ).first()
+        is_replay = previous_completion is not None
+        session.reward_coins = 0 if is_replay else secrets.randbelow(3) + 1
         session.completed = True
         session.completed_at = datetime.now()
-        economy = change_coins(db, req.user_id, session.reward_coins, "lesson_reward", reference_type="lesson_session", reference_id=session.id)
-        prog.current_step = max(1, prog.current_step + max(0, req.step_delta))
-        if req.add_stamp and req.add_stamp not in (prog.stamps or []):
-            prog.stamps = (prog.stamps or []) + [req.add_stamp]
-        record_daily_affinity(prog)
-        apply_streak(prog)
+        if not is_replay:
+            economy = change_coins(db, req.user_id, session.reward_coins, "lesson_reward", reference_type="lesson_session", reference_id=session.id)
+            prog.current_step = max(1, prog.current_step + max(0, req.step_delta))
+            if req.add_stamp and req.add_stamp not in (prog.stamps or []):
+                prog.stamps = (prog.stamps or []) + [req.add_stamp]
+            record_daily_affinity(prog)
+            apply_streak(prog)
         user = db.query(User).filter(User.id == req.user_id).first()
         db.flush()
         if user:

@@ -128,7 +128,16 @@ function generateExercises(words: Word[], sentences: Sentence[], dialogues: Dial
     options: shuffle(s.ko.split(/\s+/)),
     originalData: s,
   }));
-  return [...review, ...meaningMatch, ...translationChoice, ...sentenceBuild];
+  const sequence: ExerciseItem[] = [];
+  const sentenceInsertAt = Math.max(0, Math.floor(words.length / 2));
+  words.forEach((_, index) => {
+    sequence.push(review[index], meaningMatch[index]);
+    if (index === 0 && sentenceBuild[0]) sequence.push(sentenceBuild[0]);
+    sequence.push(translationChoice[index]);
+    if (index === sentenceInsertAt && sentenceBuild[1]) sequence.push(sentenceBuild[1]);
+  });
+  if (words.length === 0) sequence.push(...sentenceBuild);
+  return sequence;
 
   /* Legacy generators below are retained temporarily for content migration. */
   const list: ExerciseItem[] = [];
@@ -372,6 +381,7 @@ export default function LearningSessionPage({
   const [entryError, setEntryError] = useState("");
   const [isStarting, setIsStarting] = useState(false);
   const [rewardCoins, setRewardCoins] = useState<number | null>(null);
+  const [replaySession, setReplaySession] = useState(false);
   const [currentIdx, setCurrentIdx] = useState(0);
   const [storyIdx, setStoryIdx] = useState(0);
   // 발음(로마자) 표시 여부 — 기본 숨김, 토글로 ON/OFF
@@ -424,6 +434,7 @@ export default function LearningSessionPage({
     setLessonSessionId(null);
     setEntryError("");
     setRewardCoins(null);
+    setReplaySession(false);
     setShowReading(false);
   }, [chapterId]);
 
@@ -604,6 +615,7 @@ export default function LearningSessionPage({
       // DEV_MODE에서는 백엔드 없이 스토리 바로 진입 (로컬 미리보기용)
       if (process.env.NEXT_PUBLIC_DEV_MODE === "true") {
         setLessonSessionId("dev-session");
+        setReplaySession(stamps.includes(chapterId));
         setStoryIdx(0);
         setPhase("story");
         return;
@@ -616,6 +628,7 @@ export default function LearningSessionPage({
       const data = await res.json().catch(() => ({}));
       if (!res.ok) throw new Error(data.detail || "학습을 시작할 수 없어요.");
       setLessonSessionId(data.session_id);
+      setReplaySession(Boolean(data.is_replay));
       setStoryIdx(0);
       setPhase("story");
     } catch (error) {
@@ -623,6 +636,18 @@ export default function LearningSessionPage({
     } finally {
       setIsStarting(false);
     }
+  };
+
+  const handleReplay = () => {
+    setPhase("intro");
+    setCurrentIdx(0);
+    setStoryIdx(0);
+    setScore(0);
+    setCorrectCount(0);
+    setLessonSessionId(null);
+    setRewardCoins(null);
+    setReplaySession(true);
+    setEntryError("");
   };
 
   const handleStartSTT = () => {
@@ -736,15 +761,30 @@ export default function LearningSessionPage({
 
   // ── 인트로 화면 ─────────────────────────────────────────
   if (phase === "intro") {
+    const hasCompletedChapter = stamps.includes(chapterId);
     return (
       <main className={styles.page}>
         <div className={styles.introCard}>
-          <div className={styles.introEmoji}>{content.emoji}</div>
-          <h1 className={styles.introTitle}>{content.title}</h1>
-          <p className={styles.introTitleEn}>{t("sessionTagline")}</p>
+          <div className={styles.introTopbar}>
+            <Link href={backToListHref} className={styles.introBack} aria-label={t("backToList")}>
+              ‹
+            </Link>
+            <span className={styles.introStatus}>
+              {hasCompletedChapter ? `✓ ${t("completed")}` : "K-MATE LEARNING"}
+            </span>
+          </div>
+
+          <section className={styles.introHero}>
+            <div className={styles.introEmoji}>{content.emoji}</div>
+            <div className={styles.introHeading}>
+              <span className={styles.introEyebrow}>{t("sessionTagline")}</span>
+              <h1 className={styles.introTitle}>{content.title}</h1>
+            </div>
+          </section>
+
           <div className={styles.introStats}>
             <div className={styles.introStat}>
-              <span className={styles.introStatNum}>10</span>
+              <span className={styles.introStatNum}>{content.words.length}</span>
               <span className={styles.introStatLabel}>{t("chapterCount")}</span>
             </div>
             <div className={styles.introStat}>
@@ -756,23 +796,27 @@ export default function LearningSessionPage({
               <span className={styles.introStatLabel}>{t("chancesLabel")}</span>
             </div>
           </div>
-          <div className={styles.introTypes}>
-            <span className={styles.introType}>{t("listen")}</span>
-            <span className={styles.introType}>{t("romanizationChip")}</span>
-            <span className={styles.introType}>{t("hintChip")}</span>
+
+          <div className={styles.introRoute} aria-hidden="true">
+            <span>▣</span><i /><span>↔</span><i /><span>✓</span><i /><span>✎</span>
           </div>
-          <button
-            className="btn btn-primary btn-lg"
-            onClick={() => void handleStartLesson()}
-            disabled={isStarting}
-            id="btn-start-session"
-          >
-            {isStarting ? "학습 준비 중…" : `${t("startLearn")} · 🪙 3`}
-          </button>
-          {entryError && <p style={{ color: "var(--red)", textAlign: "center", marginTop: 10, fontWeight: 700 }}>{entryError}</p>}
-          <Link href={backToListHref} className="btn btn-ghost" style={{ textAlign: "center" }}>
-            {t("backToList")}
-          </Link>
+
+          <div className={styles.introFooter}>
+            <div className={styles.introTypes}>
+              <span className={styles.introType}>{t("listen")}</span>
+              <span className={styles.introType}>{t("romanizationChip")}</span>
+              <span className={styles.introType}>{t("hintChip")}</span>
+            </div>
+            <button
+              className={`${styles.introStartButton} btn btn-primary btn-lg`}
+              onClick={() => void handleStartLesson()}
+              disabled={isStarting}
+              id="btn-start-session"
+            >
+              {isStarting ? "학습 준비 중…" : `${hasCompletedChapter ? "↻ " : ""}${t("startLearn")} · 🪙 3`}
+            </button>
+            {entryError && <p className={styles.introError}>{entryError}</p>}
+          </div>
         </div>
       </main>
     );
@@ -997,11 +1041,14 @@ export default function LearningSessionPage({
               <span className={styles.rStatLabel}>{t("wrongLabel")}</span>
             </div>
             <div className={styles.resultStat}>
-              <span className={styles.rStatNum}>🪙 +{rewardCoins ?? "…"}</span>
-              <span className={styles.rStatLabel}>{t("coinEarned")}</span>
+              <span className={styles.rStatNum}>🪙 +{replaySession ? 0 : (rewardCoins ?? "…")}</span>
+              <span className={styles.rStatLabel}>{replaySession ? t("completed") : t("coinEarned")}</span>
             </div>
           </div>
           <div className={styles.completeActions}>
+            <button type="button" className="btn btn-primary btn-lg" onClick={handleReplay}>
+              ↻ {t("startLearn")}
+            </button>
             <Link href={`/learn/${characterId}/${nextChapterId}`} className="btn btn-primary btn-lg" id="btn-next-chapter">
               {t("nextChapter")} ({t("totalChapters")} {nextNum})
             </Link>
