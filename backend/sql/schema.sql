@@ -150,6 +150,18 @@ CREATE TABLE IF NOT EXISTS economies (
   FOREIGN KEY (user_id) REFERENCES users(id)
 ) ENGINE=InnoDB;
 
+CREATE TABLE IF NOT EXISTS weekly_attendance_claims (
+  id           VARCHAR(36) PRIMARY KEY DEFAULT (UUID()),
+  user_id      VARCHAR(36) NOT NULL,
+  claim_date   DATE        NOT NULL,
+  week_start   DATE        NOT NULL,
+  reward_coins INT         NOT NULL,
+  created_at   DATETIME    NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (user_id) REFERENCES users(id),
+  UNIQUE KEY uq_attendance_user_date (user_id, claim_date),
+  INDEX idx_attendance_user_week (user_id, week_start)
+) ENGINE=InnoDB;
+
 -- ── 멤버십 ───────────────────────────────────────────────────
 CREATE TABLE IF NOT EXISTS memberships (
   id          VARCHAR(36) PRIMARY KEY DEFAULT (UUID()),

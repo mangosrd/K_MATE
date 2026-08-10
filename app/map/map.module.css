@@ -23,6 +23,30 @@
   margin-top: 2px;
 }
 
+.headerActions { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+.attendanceButton { position: relative; width: 42px; height: 42px; border-radius: 14px; display: grid; place-items: center; border: 1px solid var(--border-subtle); background: var(--bg-surface); color: #003478; cursor: pointer; }
+.attendanceButton svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+.attendanceButtonReady { border-color: #cd2e3a; box-shadow: 0 5px 16px rgba(205,46,58,.18); }
+.readyDot { position: absolute; right: -2px; top: -2px; width: 10px; height: 10px; border-radius: 50%; background: #cd2e3a; border: 2px solid var(--bg-base); }
+.attendanceOverlay { position: fixed; inset: 0; z-index: 1000; display: grid; place-items: end center; background: rgba(15,23,42,.5); padding: 20px; }
+.attendanceModal { width: min(100%, 480px); position: relative; background: var(--bg-base); border-radius: 28px; padding: 26px 20px calc(22px + env(safe-area-inset-bottom)); box-shadow: 0 24px 60px rgba(0,0,0,.25); text-align: center; }
+.modalClose { position: absolute; right: 16px; top: 14px; border: 0; background: transparent; color: var(--text-muted); font-size: 28px; line-height: 1; cursor: pointer; }
+.calendarMark { width: 54px; height: 54px; margin: 0 auto 10px; display: grid; place-items: center; border-radius: 18px; color: #fff; background: linear-gradient(135deg,#cd2e3a,#003478); }
+.calendarMark svg { width: 28px; height: 28px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; }
+.attendanceModal h2 { color: var(--text-primary); font-size: 22px; font-weight: 900; }
+.attendanceSubtitle { margin-top: 4px; color: var(--text-muted); font-size: 13px; }
+.attendanceWeek { display: grid; grid-template-columns: repeat(7, minmax(0,1fr)); gap: 5px; margin: 20px 0 16px; }
+.attendanceDay { min-width: 0; padding: 10px 2px 8px; border: 1px solid var(--border-subtle); border-radius: 13px; background: var(--bg-surface); display: flex; flex-direction: column; align-items: center; gap: 5px; }
+.weekday { font-size: 11px; color: var(--text-secondary); font-weight: 800; white-space: nowrap; }
+.dayCoin { font-size: 13px; color: #b7791f; font-weight: 900; }
+.dayStatus { font-size: 8px; color: var(--text-muted); overflow-wrap: anywhere; line-height: 1.15; }
+.dayToday { border: 2px solid #cd2e3a; padding-top: 9px; padding-bottom: 7px; }
+.dayClaimed { background: #eaf7f2; border-color: #86cbb0; }
+.dayClaimed .dayCoin, .dayClaimed .dayStatus { color: #16805d; }
+.attendanceMessage { margin: 0 0 10px; color: #16805d; font-size: 14px; font-weight: 800; }
+.claimButton { width: 100%; min-height: 52px; border: 0; border-radius: 17px; color: #fff; background: linear-gradient(135deg,#cd2e3a,#b51f2b); font-size: 16px; font-weight: 900; cursor: pointer; box-shadow: 0 8px 22px rgba(205,46,58,.25); }
+.claimButton:disabled { background: #d7dce4; color: #7d8795; box-shadow: none; cursor: default; }
+
 /* 🌺 붉은색 태극 그라디언트 히어로 배너 (Taegeuk Red to Navy Gradient) */
 .heroBanner {
   display: grid;
