@@ -28,8 +28,8 @@
 .attendanceButton svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
 .attendanceButtonReady { border-color: #cd2e3a; box-shadow: 0 5px 16px rgba(205,46,58,.18); }
 .readyDot { position: absolute; right: -2px; top: -2px; width: 10px; height: 10px; border-radius: 50%; background: #cd2e3a; border: 2px solid var(--bg-base); }
-.attendanceOverlay { position: fixed; inset: 0; z-index: 1000; display: grid; place-items: end center; background: rgba(15,23,42,.5); padding: 20px; }
-.attendanceModal { width: min(100%, 480px); position: relative; background: var(--bg-base); border-radius: 28px; padding: 26px 20px calc(22px + env(safe-area-inset-bottom)); box-shadow: 0 24px 60px rgba(0,0,0,.25); text-align: center; }
+.attendanceOverlay { position: fixed; inset: 0; z-index: 1000; display: grid; place-items: end center; background: rgba(15,23,42,.5); padding: 16px 16px calc(104px + env(safe-area-inset-bottom)); }
+.attendanceModal { width: min(100%, 480px); max-height: calc(100dvh - 128px - env(safe-area-inset-bottom)); overflow-y: auto; overscroll-behavior: contain; position: relative; background: var(--bg-base); border-radius: 28px; padding: 22px 20px 20px; box-shadow: 0 24px 60px rgba(0,0,0,.25); text-align: center; }
 .modalClose { position: absolute; right: 16px; top: 14px; border: 0; background: transparent; color: var(--text-muted); font-size: 28px; line-height: 1; cursor: pointer; }
 .calendarMark { width: 54px; height: 54px; margin: 0 auto 10px; display: grid; place-items: center; border-radius: 18px; color: #fff; background: linear-gradient(135deg,#cd2e3a,#003478); }
 .calendarMark svg { width: 28px; height: 28px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; }
