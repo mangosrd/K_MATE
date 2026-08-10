@@ -20,6 +20,7 @@ from services.llm_service import llm_chat
 router = APIRouter(tags=["translate"])
 
 LANG_NAMES = {
+    "en": "English",
     "ko": "Korean",
     "ru": "Russian",
     "zh": "Simplified Chinese",

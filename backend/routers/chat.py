@@ -5,9 +5,9 @@
 from fastapi import APIRouter, HTTPException, Depends
 from sqlalchemy.orm import Session
 from database import get_db
-from schemas.schemas import ChatRequest, ChatResponse, WordSuggestion
+from schemas.schemas import ChatRequest, ChatResponse
 from services.llm_service import (
-    load_persona, build_system_prompt, llm_chat, extract_word_suggestion
+    load_persona, build_system_prompt, llm_chat
 )
 from models.models import Character, Memory, Progress, User, Economy
 from routers.progress import record_daily_affinity
@@ -112,11 +112,8 @@ async def chat(req: ChatRequest, db: Session = Depends(get_db)):
 
     db.commit()
 
-    # 8. 단어 추출 (+ LLM 사전 조회로 뜻 채우기)
-    word_data = await extract_word_suggestion(reply)
-    word_suggestion = WordSuggestion(**word_data) if word_data else None
-
-    # 9. 되짚기 카드 — 세션 초반(첫 대화)에만, 저장된 기억이 있으면 보여준다
+    # 대화는 친밀도와 기억에만 사용한다. 수업용 단어장은 정규 학습에서만 채운다.
+    # 8. 되짚기 카드 — 세션 초반(첫 대화)에만, 저장된 기억이 있으면 보여준다
     callback_memory = (
         memory_contents[0] if memory_contents and len(req.session_history) <= 1 else None
     )
@@ -124,7 +121,7 @@ async def chat(req: ChatRequest, db: Session = Depends(get_db)):
     return ChatResponse(
         reply=reply,
         callback_memory=callback_memory,
-        word_suggestion=word_suggestion,
+        word_suggestion=None,
         affinity_delta=1,
         free_messages_remaining=free_messages_remaining,
         coins_spent=coins_spent,

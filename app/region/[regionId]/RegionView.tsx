@@ -219,11 +219,8 @@ export default function RegionView({ region }: { region: Region }) {
                           ? <span className="badge badge-gold">{t("premiumBadge")}</span>
                           : <span className="badge badge-mint">{t("freeBadge")}</span>}
                       </div>
-                      <div className={styles.charProfile}>
-                        <span>{profile.age}</span>
-                        <span>{profile.personality}</span>
-                        <span>{regionCopy.name}</span>
-                      </div>
+                      <p className={styles.charDescription}>{profile.personality}</p>
+                      <span className={styles.charRegion}>{regionCopy.name}</span>
 
                       {/* 호감도 */}
                       {canAccess && (

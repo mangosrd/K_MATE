@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect, useCallback, use } from "react";
+import { useState, useRef, useEffect, use } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
@@ -10,7 +10,6 @@ import type { ChatMessage, ChatResponse } from "@/types/api";
 import styles from "./chat.module.css";
 
 import { MOCK_CHARACTERS, canAccessCharacter } from "@/lib/db/mock";
-import { addVocabWord } from "@/lib/vocab/store";
 import { addLocalDiary } from "@/lib/diary/store";
 import { getChatHistory, saveChatHistory, clearChatHistory } from "@/lib/chat/store";
 import { getEffectiveUserId, getCurrentUser, setPreferredCaptainId } from "@/lib/auth/store";
@@ -129,7 +128,6 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
   const [callbackMemory, setCallbackMemory] = useState<string | null>(null);
   const [toast, setToast] = useState<string | null>(null);
   const [showEndModal, setShowEndModal] = useState(false);
-  const [savedWords, setSavedWords] = useState<string[]>([]);
   const [showPaywall, setShowPaywall] = useState(false);
   const [freeRemaining, setFreeRemaining] = useState<number | null>(null);
   // 서버는 localStorage에 접근할 수 없어 항상 "resolved"로 렌더한다 — 초기값을
@@ -189,28 +187,6 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages, isLoading]);
 
-  // 단어 저장 토스트
-  const showToast = useCallback((word: string) => {
-    setSavedWords((prev) => [...prev, word]);
-    setToast(t("wordSavedToast", { word }));
-    setTimeout(() => setToast(null), 3000);
-  }, [t]);
-
-  // 단어장에 영구 저장 — 로컬(브라우저)에 우선 저장하고, 백엔드가 살아있으면 함께 동기화
-  const saveWordToVocab = useCallback(
-    (word: string, meaning: string, sentence: string) => {
-      addVocabWord({
-        character_id: characterId,
-        character_name: char.name,
-        word,
-        meaning,
-        sentence,
-        sentence_translation: "",
-      });
-    },
-    [characterId, char.name]
-  );
-
 
   const sendMessage = async () => {
     if (!input.trim() || isLoading) return;
@@ -264,14 +240,6 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
         setCallbackMemory(data.callback_memory);
       }
 
-      if (data.word_suggestion?.word) {
-        showToast(data.word_suggestion.word);
-        saveWordToVocab(
-          data.word_suggestion.word,
-          data.word_suggestion.meaning,
-          data.word_suggestion.sentence
-        );
-      }
     } catch {
       setMessages([
         ...newMessages,
@@ -498,17 +466,6 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
           )}
           <div ref={messagesEndRef} />
         </div>
-
-        {/* 저장된 단어 칩 */}
-        {savedWords.length > 0 && (
-          <div className={styles.savedWordsRow}>
-            {savedWords.slice(-3).map((w, i) => (
-              <span key={i} className={`badge badge-mint ${styles.wordChip}`}>
-                ✓ {w}
-              </span>
-            ))}
-          </div>
-        )}
 
         {/* 무료 대화 남은 횟수 안내 */}
         {freeRemaining !== null && (

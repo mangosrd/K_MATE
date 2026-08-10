@@ -83,14 +83,17 @@
 .sectionSub   { font-size: 12px; font-weight: 500; color: var(--text-muted); }
 
 /* ── 캐릭터 카드 ─────────────────────────────────────────── */
-.characterList { display: flex; flex-direction: column; gap: var(--space-md); }
+.characterList { display: flex; flex-direction: column; gap: 12px; }
 
 .charCard {
-  display: flex; gap: var(--space-md);
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr);
+  gap: 14px;
+  align-items: start;
   background: var(--bg-base);
   border: 1.5px solid var(--border-subtle);
   border-radius: var(--radius-xl);
-  padding: var(--space-md);
+  padding: 16px;
   box-shadow: var(--shadow-sm);
   transition: box-shadow var(--transition-fast);
 }
@@ -100,7 +103,7 @@
 .charLeft { flex-shrink: 0; }
 
 .charAvatar {
-  width: 72px; height: 72px;
+  width: 76px; height: 76px;
   border-radius: var(--radius-lg);
   background: var(--red-light);
   border: 2px solid var(--red-mid);
@@ -133,16 +136,25 @@
   z-index: 2;
 }
 
-.charInfo { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 6px; }
+.charInfo { min-width: 0; display: flex; flex-direction: column; gap: 8px; }
 .charNameRow { display: flex; align-items: center; gap: var(--space-sm); flex-wrap: wrap; }
 .charName    { font-size: 18px; font-weight: 800; color: var(--text-primary); }
-.charProfile { display: flex; gap: 5px; flex-wrap: wrap; }
-.charProfile span { font-size: 11px; color: var(--text-secondary); background: var(--bg-muted); border-radius: 999px; padding: 4px 7px; overflow-wrap: anywhere; }
+.charDescription { font-size: 13px; line-height: 1.55; color: var(--text-secondary); overflow-wrap: anywhere; }
+.charRegion { align-self: flex-start; font-size: 11px; color: var(--blue); background: var(--blue-light); border-radius: 999px; padding: 4px 8px; font-weight: 700; }
 
 .affinityRow { display: flex; align-items: center; gap: 2px; }
 .affinityNum { font-size: 11px; color: var(--text-muted); margin-left: 4px; }
 
-.charActions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 2px; }
+.charActions { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; margin-top: 2px; }
+.charActions :global(.btn) { min-width: 0; padding-inline: 6px; white-space: nowrap; }
+
+@media (max-width: 380px) {
+  .charCard { grid-template-columns: 64px minmax(0, 1fr); gap: 11px; padding: 14px; }
+  .charAvatar { width: 64px; height: 64px; }
+  .charName { font-size: 17px; }
+  .charDescription { font-size: 12px; }
+  .charActions :global(.btn) { font-size: 11px; }
+}
 
 /* ── 명소 그리드 ─────────────────────────────────────────── */
 .placeGrid {

@@ -1141,7 +1141,7 @@ export default function LearningSessionPage({
             <>
               <div className={styles.mcQuestion}>
                 <h2 className={styles.mcWord}>{tr(currentEx.questionText)}</h2>
-                <p className={styles.mcReading}>[{currentEx.reading}]</p>
+                {currentEx.reading && <p className={styles.mcReading}>[{currentEx.reading}]</p>}
               </div>
               <div className={styles.sentenceAnswer}>
                 {selectedTokenIndexes.length === 0 && <span>단어를 순서대로 눌러 문장을 완성하세요</span>}
@@ -1180,7 +1180,9 @@ export default function LearningSessionPage({
                     🔊
                   </button>
                 </div>
-                {!isFallbackVisualQuiz && <p className={styles.mcReading}>[{currentEx.reading}]</p>}
+                {!isFallbackVisualQuiz && currentEx.reading && (
+                  <p className={styles.mcReading}>[{currentEx.reading}]</p>
+                )}
                 {isFallbackVisualQuiz && (
                   <p className={styles.audioHint}>👆 🔊 버튼을 눌러 듣고 알맞은 답을 골라보세요</p>
                 )}
@@ -1256,7 +1258,7 @@ export default function LearningSessionPage({
                     🔊
                   </button>
                 </div>
-                <p className={styles.mcReading}>[{currentEx.reading}]</p>
+                {currentEx.reading && <p className={styles.mcReading}>[{currentEx.reading}]</p>}
                 <p className={styles.fbTranslation}>{tr((currentEx.originalData as Sentence).en)}</p>
               </div>
 
@@ -1328,7 +1330,7 @@ export default function LearningSessionPage({
                     🔊
                   </button>
                 </div>
-                <p className={styles.mcReading}>[{currentEx.reading}]</p>
+                {currentEx.reading && <p className={styles.mcReading}>[{currentEx.reading}]</p>}
                 <p className={styles.audioHint}>{tr((currentEx.originalData as Sentence).en)}</p>
                 <p className={styles.speakingInstruction}>
                   👇 아래 🎤 마이크 버튼을 누르고 위 문장을 한국어로 따라 읽으세요!

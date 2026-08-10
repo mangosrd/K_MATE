@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, use } from "react";
+import { useState, useEffect, use, useMemo } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
@@ -10,6 +10,7 @@ import { getCharacterById, MOCK_ECONOMY, canAccessCharacter } from "@/lib/db/moc
 import { getAuthHeaders, getEffectiveUserId } from "@/lib/auth/store";
 import { useMembership, useFreeCharSlots } from "@/lib/auth/useAuthUser";
 import { useLanguage } from "@/components/LanguageContext";
+import { substituteTranslations, useTranslationMap, type TranslatableItem } from "@/lib/translate/store";
 import styles from "./letters.module.css";
 
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
@@ -33,7 +34,7 @@ function formatDate(iso: string) {
 
 export default function LettersPage({ params }: { params: Promise<{ characterId: string }> }) {
   const { characterId } = use(params);
-  const { t } = useLanguage();
+  const { language, t } = useLanguage();
   const char = getCharacterById(characterId);
   const { membership, membershipLoaded } = useMembership();
   const { freeSlots, freeSlotsLoaded } = useFreeCharSlots();
@@ -52,6 +53,18 @@ export default function LettersPage({ params }: { params: Promise<{ characterId:
   const [draft, setDraft] = useState("");
   const [sending, setSending] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const replyTranslationItems = useMemo<TranslatableItem[]>(
+    () => letters.flatMap((letter) => letter.reply_content
+      ? [{
+          text: letter.reply_content,
+          contextKo: `${char?.name ?? characterId} 기장이 사용자에게 보낸 편지 답장`,
+          force: true,
+        }]
+      : []),
+    [characterId, char?.name, letters]
+  );
+  const replyTranslationMap = useTranslationMap(replyTranslationItems, language);
+  const translateReply = (text: string) => substituteTranslations(text, replyTranslationMap);
 
   const load = () => {
     const userId = getEffectiveUserId();
@@ -173,7 +186,7 @@ export default function LettersPage({ params }: { params: Promise<{ characterId:
                   {letter.is_reply_ready && letter.reply_content ? (
                     <div className={styles.replyBox}>
                       <p className={styles.replyLabel}>{t("replyFromLabel", { name: char.name })}</p>
-                      <p className={styles.replyContent}>{letter.reply_content}</p>
+                      <p className={styles.replyContent}>{translateReply(letter.reply_content)}</p>
                     </div>
                   ) : (
                     <div className={styles.waitingBox}>

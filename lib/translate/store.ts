@@ -14,10 +14,12 @@ export interface TranslatableItem {
   // 원본 한국어(단어 또는 예문) — 영어 글로스만 단독으로 번역하면 뜻이 모호해서
   // (예: "Rumor" 혼자면 속어로 오역되기 쉬움) 문맥으로 같이 보내면 정확도가 오른다.
   contextKo?: string;
+  // 한국어 원문의 편지처럼 영어 화면에서도 번역이 필요한 콘텐츠에 사용한다.
+  force?: boolean;
 }
 
 function cacheKey(item: TranslatableItem, lang: string): string {
-  const raw = item.text + "||" + (item.contextKo ?? "");
+  const raw = item.text + "||" + (item.contextKo ?? "") + "||" + (item.force ? "force" : "normal");
   let hash = 0;
   for (let i = 0; i < raw.length; i++) {
     hash = (hash << 5) - hash + raw.charCodeAt(i);
@@ -33,7 +35,7 @@ function cacheKey(item: TranslatableItem, lang: string): string {
 const TRANSLATABLE_LANGS = new Set(["ko", "ru", "zh", "ja", "zh-TW", "th"]);
 
 export async function translateBatch(items: TranslatableItem[], targetLang: string): Promise<string[]> {
-  if (!TRANSLATABLE_LANGS.has(targetLang) || typeof window === "undefined") {
+  if ((!TRANSLATABLE_LANGS.has(targetLang) && !items.some((item) => item.force)) || typeof window === "undefined") {
     return items.map((i) => i.text);
   }
 
@@ -82,7 +84,7 @@ export async function translateBatch(items: TranslatableItem[], targetLang: stri
 // 텍스트 배열을 현재 UI 언어로 번역해 보여주는 훅. 번역이 끝나기 전까지는(또는 목록
 // 자체가 바뀌는 순간에는) 원문을 그대로 보여주고, 끝나면 번역된 텍스트로 교체한다.
 export function useTranslatedTexts(items: TranslatableItem[], targetLang: string): string[] {
-  const depKey = targetLang + "::" + items.map((i) => i.text + "|" + (i.contextKo ?? "")).join("");
+  const depKey = targetLang + "::" + items.map((i) => i.text + "|" + (i.contextKo ?? "") + "|" + (i.force ? "1" : "0")).join("");
   const fallback = items.map((i) => i.text);
   const [state, setState] = useState<{ key: string; translated: string[] }>({
     key: depKey,
@@ -109,7 +111,7 @@ export function useTranslatedTexts(items: TranslatableItem[], targetLang: string
 // 원문(영어) → 번역문 조회용 Map을 만들어주는 훅. 학습 세션처럼 여러 군데서 서로 다른
 // 영어 조각(단어 뜻, 예문 번역, 스토리 문장 등)을 키로 찾아 써야 할 때 배열보다 쓰기 편하다.
 export function useTranslationMap(items: TranslatableItem[], targetLang: string): Map<string, string> {
-  const depKey = targetLang + "::" + items.map((i) => i.text + "|" + (i.contextKo ?? "")).join("");
+  const depKey = targetLang + "::" + items.map((i) => i.text + "|" + (i.contextKo ?? "") + "|" + (i.force ? "1" : "0")).join("");
   const [state, setState] = useState<{ key: string; map: Map<string, string> }>({
     key: depKey,
     map: new Map(),
