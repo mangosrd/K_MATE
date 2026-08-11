@@ -4,6 +4,7 @@ import "./globals.css";
 import { LanguageProvider } from "@/components/LanguageContext";
 import { ThemeProvider } from "@/components/ThemeContext";
 import PushNotificationSetup from "@/components/PushNotificationSetup";
+import TimezoneSync from "@/components/TimezoneSync";
 
 const dunggeunmiso = localFont({
   src: [
@@ -49,6 +50,7 @@ export default function RootLayout({
           <LanguageProvider>
             <div className="app-shell">{children}</div>
             <PushNotificationSetup />
+            <TimezoneSync />
           </LanguageProvider>
         </ThemeProvider>
       </body>

@@ -1,7 +1,7 @@
-"""Weekly attendance rewards, calculated using Korea Standard Time."""
+"""Weekly attendance rewards, calculated in each user's saved timezone."""
 
 import uuid
-from datetime import datetime, timedelta, timezone
+from datetime import timedelta
 
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.exc import IntegrityError
@@ -10,23 +10,16 @@ from sqlalchemy.orm import Session
 from database import get_db
 from models.models import User, WeeklyAttendanceClaim
 from services.wallet import change_coins, get_wallet
+from services.user_timezone import local_today
 
 router = APIRouter(prefix="/attendance", tags=["attendance"])
-# Korea has no daylight-saving time. A fixed offset also works in slim
-# deployment images that do not include the IANA timezone database.
-KST = timezone(timedelta(hours=9), name="KST")
-
-
-def _today():
-    return datetime.now(KST).date()
-
-
 def _reward(day) -> int:
     return 3 if day.weekday() < 5 else 5
 
 
-def _status(db: Session, user_id: str):
-    today = _today()
+def _status(db: Session, user: User):
+    user_id = user.id
+    today = local_today(user)
     week_start = today - timedelta(days=today.weekday())
     week_end = week_start + timedelta(days=6)
     claims = db.query(WeeklyAttendanceClaim).filter(
@@ -38,6 +31,7 @@ def _status(db: Session, user_id: str):
     return {
         "week_start": week_start.isoformat(),
         "today": today.isoformat(),
+        "timezone_name": user.timezone_name or "UTC",
         "claimed_today": today in claimed,
         "can_claim": today not in claimed,
         "current_coins": wallet.coins,
@@ -56,22 +50,24 @@ def _status(db: Session, user_id: str):
 
 @router.get("/{user_id}")
 def attendance_status(user_id: str, db: Session = Depends(get_db)):
-    if not db.query(User.id).filter(User.id == user_id).first():
+    user = db.query(User).filter(User.id == user_id).first()
+    if not user:
         raise HTTPException(status_code=404, detail="User not found")
-    return _status(db, user_id)
+    return _status(db, user)
 
 
 @router.post("/{user_id}/claim")
 def claim_attendance(user_id: str, db: Session = Depends(get_db)):
-    if not db.query(User.id).filter(User.id == user_id).first():
+    user = db.query(User).filter(User.id == user_id).first()
+    if not user:
         raise HTTPException(status_code=404, detail="User not found")
-    today = _today()
+    today = local_today(user)
     week_start = today - timedelta(days=today.weekday())
     if db.query(WeeklyAttendanceClaim.id).filter(
         WeeklyAttendanceClaim.user_id == user_id,
         WeeklyAttendanceClaim.claim_date == today,
     ).first():
-        result = _status(db, user_id)
+        result = _status(db, user)
         result["coins_awarded"] = 0
         return result
 
@@ -92,6 +88,6 @@ def claim_attendance(user_id: str, db: Session = Depends(get_db)):
         db.rollback()
         reward = 0
 
-    result = _status(db, user_id)
+    result = _status(db, user)
     result["coins_awarded"] = reward
     return result

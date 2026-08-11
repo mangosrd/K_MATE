@@ -312,6 +312,9 @@ class PreferencesResponse(BaseModel):
     notify_chat: bool
     notify_diary: bool
     notify_marketing: bool
+    timezone_name: str
+    timezone_mode: Literal["auto", "manual"]
+    timezone_can_change_at: Optional[datetime] = None
 
 
 class PreferencesUpdateRequest(BaseModel):
@@ -320,6 +323,8 @@ class PreferencesUpdateRequest(BaseModel):
     notify_chat: Optional[bool] = None
     notify_diary: Optional[bool] = None
     notify_marketing: Optional[bool] = None
+    timezone_name: Optional[str] = None
+    timezone_mode: Optional[Literal["auto", "manual"]] = None
 
 
 class PushDeviceRegisterRequest(BaseModel):

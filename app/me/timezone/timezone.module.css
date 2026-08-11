@@ -1,0 +1,8 @@
+.currentCard { padding: 18px; border-radius: var(--radius-xl); background: linear-gradient(135deg, var(--red-light), #e9f1ff); border: 1px solid var(--border-subtle); }
+.currentCard strong { display: block; font-size: 18px; color: var(--text-primary); }
+.currentCard span { display: block; margin-top: 5px; font-size: 12px; color: var(--text-secondary); }
+.actions { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; }
+.modeButton { padding: 13px 10px; border-radius: var(--radius-lg); border: 1px solid var(--border-default); color: var(--text-secondary); background: var(--bg-base); font: inherit; font-size: 13px; font-weight: 800; cursor: pointer; }
+.modeButtonActive { color: #fff; border-color: var(--red); background: var(--red); }
+.saveButton { padding: 14px; border: 0; border-radius: var(--radius-lg); color: #fff; background: var(--red); font: inherit; font-weight: 900; cursor: pointer; }
+.saveButton:disabled { opacity: .55; cursor: default; }

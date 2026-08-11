@@ -257,6 +257,7 @@ export default function MePage() {
             />
             <SettingItem icon="🔔" label={t("notificationSettings")} href="/me/notifications" id="btn-notifications" />
             <SettingItem icon="🎨" label={t("themeSettings")} onClick={() => setShowThemeModal(true)} id="btn-theme-setting" />
+            <SettingItem icon="🌐" label={language === "ko" ? "시간대 설정" : language === "ja" ? "タイムゾーン" : language === "zh" ? "时区设置" : language === "zh-TW" ? "時區設定" : language === "ru" ? "Часовой пояс" : language === "th" ? "เขตเวลา" : "Time zone"} href="/me/timezone" id="btn-timezone-setting" />
           </SettingsSection>
 
           <SettingsSection title={t("settingsLegal")}>

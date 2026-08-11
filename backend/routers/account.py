@@ -17,8 +17,26 @@ from schemas.schemas import (
 from models.models import User, PaymentMethod, SupportTicket
 import bcrypt
 import uuid
+from datetime import datetime, timedelta
+from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
 router = APIRouter(tags=["account"])
+
+
+def _timezone_can_change_at(user: User):
+    return user.timezone_updated_at + timedelta(hours=24) if user.timezone_updated_at else None
+
+
+def _preferences_response(user: User) -> PreferencesResponse:
+    return PreferencesResponse(
+        theme_pref=user.theme_pref,
+        notify_chat=user.notify_chat,
+        notify_diary=user.notify_diary,
+        notify_marketing=user.notify_marketing,
+        timezone_name=user.timezone_name or "UTC",
+        timezone_mode=user.timezone_mode or "auto",
+        timezone_can_change_at=_timezone_can_change_at(user),
+    )
 
 
 def _to_auth_response(user: User) -> AuthUserResponse:
@@ -74,12 +92,7 @@ def get_preferences(user_id: str, db: Session = Depends(get_db)):
     user = db.query(User).filter(User.id == user_id).first()
     if not user:
         raise HTTPException(status_code=404, detail="계정을 찾을 수 없습니다")
-    return PreferencesResponse(
-        theme_pref=user.theme_pref,
-        notify_chat=user.notify_chat,
-        notify_diary=user.notify_diary,
-        notify_marketing=user.notify_marketing,
-    )
+    return _preferences_response(user)
 
 
 @router.put("/user/{user_id}/preferences", response_model=PreferencesResponse)
@@ -97,14 +110,24 @@ def update_preferences(user_id: str, req: PreferencesUpdateRequest, db: Session 
     if req.notify_marketing is not None:
         user.notify_marketing = req.notify_marketing
 
+    timezone_changed = req.timezone_name is not None and req.timezone_name != (user.timezone_name or "UTC")
+    mode_changed = req.timezone_mode is not None and req.timezone_mode != (user.timezone_mode or "auto")
+    if timezone_changed or mode_changed:
+        next_timezone = req.timezone_name or user.timezone_name or "UTC"
+        try:
+            ZoneInfo(next_timezone)
+        except ZoneInfoNotFoundError:
+            raise HTTPException(status_code=400, detail="Invalid timezone")
+        can_change_at = _timezone_can_change_at(user)
+        if can_change_at and datetime.utcnow() < can_change_at:
+            raise HTTPException(status_code=429, detail=f"Timezone can be changed after {can_change_at.isoformat()}Z")
+        user.timezone_name = next_timezone
+        user.timezone_mode = req.timezone_mode or user.timezone_mode or "auto"
+        user.timezone_updated_at = datetime.utcnow()
+
     db.commit()
     db.refresh(user)
-    return PreferencesResponse(
-        theme_pref=user.theme_pref,
-        notify_chat=user.notify_chat,
-        notify_diary=user.notify_diary,
-        notify_marketing=user.notify_marketing,
-    )
+    return _preferences_response(user)
 
 
 # ── 결제 수단 (시뮬레이션) ────────────────────────────────────

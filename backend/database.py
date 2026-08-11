@@ -128,6 +128,20 @@ def initialize_database() -> bool:
             ).scalar()
             if not has_last_study_at:
                 connection.execute(text("ALTER TABLE progress ADD COLUMN last_study_at DATETIME NULL"))
+            user_columns = {
+                row[0] for row in connection.execute(
+                    text("""
+                        SELECT column_name FROM information_schema.columns
+                        WHERE table_schema = DATABASE() AND table_name = 'users'
+                    """)
+                ).all()
+            }
+            if "timezone_name" not in user_columns:
+                connection.execute(text("ALTER TABLE users ADD COLUMN timezone_name VARCHAR(64) NOT NULL DEFAULT 'UTC'"))
+            if "timezone_mode" not in user_columns:
+                connection.execute(text("ALTER TABLE users ADD COLUMN timezone_mode VARCHAR(10) NOT NULL DEFAULT 'auto'"))
+            if "timezone_updated_at" not in user_columns:
+                connection.execute(text("ALTER TABLE users ADD COLUMN timezone_updated_at DATETIME NULL"))
         regions = [
             ("seoul", "서울·경기", "Seoul & Gyeonggi", "SEL", False),
             ("jeonju", "전주·전라", "Jeonju & Jeolla", "JWJ", False),

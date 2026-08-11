@@ -14,7 +14,7 @@ const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:800
 type AttendanceDay = { date: string; reward: number; claimed: boolean; is_today: boolean; is_past: boolean };
 type AttendanceStatus = {
   week_start: string; today: string; claimed_today: boolean; can_claim: boolean;
-  current_coins: number; coins_awarded?: number; days: AttendanceDay[];
+  timezone_name: string; current_coins: number; coins_awarded?: number; days: AttendanceDay[];
 };
 
 const ATTENDANCE_COPY: Record<Language, {
@@ -334,7 +334,7 @@ export default function MapPage() {
             <p className={styles.attendanceSubtitle}>{ATTENDANCE_COPY[language].subtitle}</p>
             <div className={styles.attendanceWeek}>
               {attendance?.days.map((day) => {
-                const label = new Intl.DateTimeFormat(DATE_LOCALES[language], { weekday: "short", timeZone: "Asia/Seoul" }).format(new Date(`${day.date}T12:00:00+09:00`));
+                const label = new Intl.DateTimeFormat(DATE_LOCALES[language], { weekday: "short", timeZone: "UTC" }).format(new Date(`${day.date}T12:00:00Z`));
                 const status = day.claimed ? ATTENDANCE_COPY[language].claimed : day.is_past ? ATTENDANCE_COPY[language].missed : day.is_today ? ATTENDANCE_COPY[language].today : ATTENDANCE_COPY[language].upcoming;
                 return <div key={day.date} className={`${styles.attendanceDay} ${day.claimed ? styles.dayClaimed : ""} ${day.is_today ? styles.dayToday : ""}`}>
                   <span className={styles.weekday}>{label}</span>

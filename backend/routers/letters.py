@@ -16,25 +16,13 @@ from services.session_auth import require_current_user, require_same_user
 from models.models import Letter, Character, Economy, User
 from services.wallet import change_coins
 from datetime import datetime, timedelta, timezone
-from zoneinfo import ZoneInfo
+from services.user_timezone import local_day_utc_bounds
 import uuid
 
 router = APIRouter(prefix="/letters", tags=["letters"])
 
 LETTER_COST = 10  # 코인 — 일기(5)보다 비싸고 사진첩 스탠딩 일러스트(15)보다 저렴
 REPLY_DELAY = timedelta(hours=24)
-KST = ZoneInfo("Asia/Seoul")
-
-
-def _today_kst_bounds_as_utc() -> tuple[datetime, datetime]:
-    """Return the current Korean calendar day as UTC-naive database bounds."""
-    now_kst = datetime.now(KST)
-    start_kst = now_kst.replace(hour=0, minute=0, second=0, microsecond=0)
-    end_kst = start_kst + timedelta(days=1)
-    return (
-        start_kst.astimezone(timezone.utc).replace(tzinfo=None),
-        end_kst.astimezone(timezone.utc).replace(tzinfo=None),
-    )
 
 
 def _fallback_letter_reply(character_id: str) -> str:
@@ -98,7 +86,7 @@ def send_letter(req: LetterSendRequest, current_user_id: str = Depends(require_c
 
     # 기장님별로 한국 시간 기준 하루 한 번만 보낼 수 있다. 경제 행 잠금 뒤에
     # 검사하므로 동시에 두 번 눌러도 코인이 중복 차감되지 않는다.
-    day_start, day_end = _today_kst_bounds_as_utc()
+    day_start, day_end = local_day_utc_bounds(user)
     already_sent_today = (
         db.query(Letter.id)
         .filter(

@@ -1,9 +1,8 @@
 """Private player notes with delayed, zero-LLM captain comments."""
 
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timedelta
 import secrets
 import uuid
-from zoneinfo import ZoneInfo
 
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
@@ -12,10 +11,10 @@ from database import get_db
 from models.models import Character, User, UserNote
 from schemas.schemas import UserNoteCreateRequest, UserNoteDeleteResponse, UserNoteResponse
 from services.session_auth import require_current_user, require_same_user
+from services.user_timezone import local_day_utc_bounds
 
 router = APIRouter(prefix="/notes", tags=["notes"])
 
-KST = ZoneInfo("Asia/Seoul")
 DAILY_NOTE_LIMIT = 5
 CHARACTER_IDS = ("kyuhyun", "haneul", "sunwoo", "sangwoo", "yongwoo")
 
@@ -92,16 +91,6 @@ COPY = {
 }
 
 
-def _bounds_for_today() -> tuple[datetime, datetime]:
-    now = datetime.now(KST)
-    start = now.replace(hour=0, minute=0, second=0, microsecond=0)
-    end = start + timedelta(days=1)
-    return (
-        start.astimezone(timezone.utc).replace(tzinfo=None),
-        end.astimezone(timezone.utc).replace(tzinfo=None),
-    )
-
-
 def _mood(content: str) -> str:
     lowered = content.lower()
     affection = ("좋아", "사랑", "보고 싶", "멋있", "귀여", "love", "miss you", "好き", "愛", "喜欢", "รัก")
@@ -150,7 +139,11 @@ def create_note(
     if len(content) > 500:
         raise HTTPException(status_code=400, detail="메모는 500자까지 작성할 수 있어요.")
 
-    start, end = _bounds_for_today()
+    user = db.query(User).filter(User.id == req.user_id).first()
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
+
+    start, end = local_day_utc_bounds(user)
     count = db.query(UserNote.id).filter(
         UserNote.user_id == req.user_id,
         UserNote.created_at >= start,
@@ -158,10 +151,6 @@ def create_note(
     ).count()
     if count >= DAILY_NOTE_LIMIT:
         raise HTTPException(status_code=429, detail="오늘은 메모를 5개까지 남길 수 있어요.")
-
-    user = db.query(User).filter(User.id == req.user_id).first()
-    if not user:
-        raise HTTPException(status_code=404, detail="User not found")
 
     available_ids = [row[0] for row in db.query(Character.id).filter(Character.id.in_(CHARACTER_IDS)).all()]
     if not available_ids:
