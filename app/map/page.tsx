@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import BottomNav from "@/components/ui/BottomNav";
 import { MOCK_REGIONS, MOCK_ALL_PROGRESS, MOCK_ECONOMY, MOCK_USER, MOCK_CHARACTERS, getChaptersForCharacter } from "@/lib/db/mock";
-import { getEffectiveUserId } from "@/lib/auth/store";
+import { getAuthHeaders, getEffectiveUserId } from "@/lib/auth/store";
 import { useLanguage, type Language } from "@/components/LanguageContext";
 import type { Progress } from "@/types/database";
 import styles from "./map.module.css";
@@ -110,7 +110,7 @@ export default function MapPage() {
 
   const loadAttendance = async () => {
     const userId = getEffectiveUserId();
-    const response = await fetch(`${BACKEND_URL}/attendance/${userId}`);
+    const response = await fetch(`${BACKEND_URL}/attendance/${userId}`, { headers: getAuthHeaders() });
     if (!response.ok) throw new Error("attendance unavailable");
     const data: AttendanceStatus = await response.json();
     setAttendance(data);
@@ -120,12 +120,12 @@ export default function MapPage() {
   useEffect(() => {
     const userId = getEffectiveUserId();
 
-    fetch(`${BACKEND_URL}/user/${userId}`)
+    fetch(`${BACKEND_URL}/user/${userId}`, { headers: getAuthHeaders() })
       .then((res) => (res.ok ? res.json() : null))
       .then((data) => { if (data) { setCoins(data.coins); setMembership(data.membership); } })
       .catch(() => {});
 
-    fetch(`${BACKEND_URL}/attendance/${userId}`)
+    fetch(`${BACKEND_URL}/attendance/${userId}`, { headers: getAuthHeaders() })
       .then((res) => (res.ok ? res.json() : null))
       .then((data: AttendanceStatus | null) => {
         if (data) { setAttendance(data); setCoins(data.current_coins); }
@@ -134,7 +134,7 @@ export default function MapPage() {
 
     Promise.all(
       MOCK_CHARACTERS.map((c) =>
-        fetch(`${BACKEND_URL}/progress/${userId}/${c.id}`)
+        fetch(`${BACKEND_URL}/progress/${userId}/${c.id}`, { headers: getAuthHeaders() })
           .then((res) => (res.ok ? res.json() : null))
           .catch(() => null)
       )
@@ -151,7 +151,7 @@ export default function MapPage() {
     setAttendanceMessage("");
     try {
       const userId = getEffectiveUserId();
-      const response = await fetch(`${BACKEND_URL}/attendance/${userId}/claim`, { method: "POST" });
+      const response = await fetch(`${BACKEND_URL}/attendance/${userId}/claim`, { method: "POST", headers: getAuthHeaders() });
       if (!response.ok) throw new Error("claim failed");
       const data: AttendanceStatus = await response.json();
       setAttendance(data);

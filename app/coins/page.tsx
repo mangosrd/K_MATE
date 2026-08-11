@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import BottomNav from "@/components/ui/BottomNav";
 import { MOCK_ECONOMY } from "@/lib/db/mock";
-import { getEffectiveUserId } from "@/lib/auth/store";
+import { getAuthHeaders, getEffectiveUserId } from "@/lib/auth/store";
 import { useLanguage } from "@/components/LanguageContext";
 import {
   isPlayBillingAvailable, initPlayBilling, purchaseCoinPack, type CoinPackId,
@@ -55,7 +55,7 @@ export default function CoinsPage() {
       .then((res) => (res.ok ? res.json() : null))
       .then((data) => { if (data && data.length > 0) setPacks(data); })
       .catch(() => {}); // 실패해도 fallback 유지
-    fetch(`${BACKEND_URL}/user/${userId}`)
+    fetch(`${BACKEND_URL}/user/${userId}`, { headers: getAuthHeaders() })
       .then((res) => (res.ok ? res.json() : null))
       .then((data) => { if (data) setCoins(data.coins); })
       .catch(() => {});

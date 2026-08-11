@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { getAuthHeaders } from "@/lib/auth/store";
 
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
 const CACHE_PREFIX = "kmate_tr_";
@@ -59,7 +60,7 @@ export async function translateBatch(items: TranslatableItem[], targetLang: stri
     try {
       const res = await fetch(`${BACKEND_URL}/translate`, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", ...getAuthHeaders() },
         body: JSON.stringify({
           items: misses.map((m) => ({ text: m.item.text, context_ko: m.item.contextKo ?? null })),
           target_lang: targetLang,

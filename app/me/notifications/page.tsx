@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { getCurrentUser, getEffectiveUserId } from "@/lib/auth/store";
+import { getAuthHeaders, getCurrentUser, getEffectiveUserId } from "@/lib/auth/store";
 import { useLanguage } from "@/components/LanguageContext";
 import formStyles from "../settings-form.module.css";
 
@@ -27,7 +27,7 @@ export default function NotificationsPage() {
       setLoaded(true);
       return;
     }
-    fetch(`${BACKEND_URL}/user/${getEffectiveUserId()}/preferences`)
+    fetch(`${BACKEND_URL}/user/${getEffectiveUserId()}/preferences`, { headers: getAuthHeaders() })
       .then((res) => (res.ok ? res.json() : null))
       .then((data) => {
         if (data) {
@@ -50,7 +50,7 @@ export default function NotificationsPage() {
 
     fetch(`${BACKEND_URL}/user/${getEffectiveUserId()}/preferences`, {
       method: "PUT",
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json", ...getAuthHeaders() },
       body: JSON.stringify({ user_id: getEffectiveUserId(), [key]: next[key] }),
     })
       .then((res) => (res.ok ? res.json() : null))

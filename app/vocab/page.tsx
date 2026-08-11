@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import BottomNav from "@/components/ui/BottomNav";
 import { getLocalVocab, clearLocalVocab } from "@/lib/vocab/store";
-import { getEffectiveUserId } from "@/lib/auth/store";
+import { getAuthHeaders, getEffectiveUserId } from "@/lib/auth/store";
 import { useLanguage, type Language } from "@/components/LanguageContext";
 import { useTranslatedTexts } from "@/lib/translate/store";
 import { MOCK_CHARACTERS } from "@/lib/db/mock";
@@ -257,7 +257,7 @@ export default function VocabPage() {
     const local = getLocalVocab();
     setVocab(local);
 
-    fetch(`${BACKEND_URL}/vocab/${getEffectiveUserId()}`)
+    fetch(`${BACKEND_URL}/vocab/${getEffectiveUserId()}`, { headers: getAuthHeaders() })
       .then((res) => (res.ok ? res.json() : []))
       .then((remote: VocabItem[]) => {
         if (remote.length === 0) return;
@@ -278,6 +278,7 @@ export default function VocabPage() {
     try {
       const response = await fetch(`${BACKEND_URL}/vocab/${getEffectiveUserId()}`, {
         method: "DELETE",
+        headers: getAuthHeaders(),
       });
       if (!response.ok) throw new Error(`Vocabulary deletion failed (${response.status})`);
 

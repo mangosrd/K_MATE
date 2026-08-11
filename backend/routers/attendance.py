@@ -11,6 +11,7 @@ from database import get_db
 from models.models import User, WeeklyAttendanceClaim
 from services.wallet import change_coins, get_wallet
 from services.user_timezone import local_today
+from services.session_auth import require_current_user, require_same_user
 
 router = APIRouter(prefix="/attendance", tags=["attendance"])
 def _reward(day) -> int:
@@ -49,7 +50,8 @@ def _status(db: Session, user: User):
 
 
 @router.get("/{user_id}")
-def attendance_status(user_id: str, db: Session = Depends(get_db)):
+def attendance_status(user_id: str, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
+    require_same_user(current_user_id, user_id)
     user = db.query(User).filter(User.id == user_id).first()
     if not user:
         raise HTTPException(status_code=404, detail="User not found")
@@ -57,7 +59,8 @@ def attendance_status(user_id: str, db: Session = Depends(get_db)):
 
 
 @router.post("/{user_id}/claim")
-def claim_attendance(user_id: str, db: Session = Depends(get_db)):
+def claim_attendance(user_id: str, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
+    require_same_user(current_user_id, user_id)
     user = db.query(User).filter(User.id == user_id).first()
     if not user:
         raise HTTPException(status_code=404, detail="User not found")

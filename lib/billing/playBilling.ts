@@ -26,7 +26,7 @@
 // 결제 플로우를 직접 확인해야 한다.
 
 import { Capacitor } from "@capacitor/core";
-import { getEffectiveUserId } from "@/lib/auth/store";
+import { getAuthHeaders, getEffectiveUserId } from "@/lib/auth/store";
 
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
 
@@ -113,7 +113,7 @@ async function verifyOnBackend(transaction: PurchaseTransaction, callbacks: Play
   try {
     const res = await fetch(`${BACKEND_URL}${endpoint}`, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json", ...getAuthHeaders() },
       body: JSON.stringify({
         user_id: getEffectiveUserId(),
         product_id: productId,

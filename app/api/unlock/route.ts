@@ -12,7 +12,12 @@ export async function POST(req: NextRequest) {
 
     const res = await fetch(`${BACKEND_URL}/diary/unlock`, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+        ...(req.headers.get("authorization")
+          ? { Authorization: req.headers.get("authorization") as string }
+          : {}),
+      },
       body: JSON.stringify({
         user_id:  body.userId ?? body.user_id,
         diary_id: body.diaryId ?? body.diary_id,

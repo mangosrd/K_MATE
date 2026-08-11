@@ -8,13 +8,15 @@ from sqlalchemy.orm import Session
 from database import get_db
 from schemas.schemas import MemoryCreateRequest, MemoryCreateResponse, MemoryResponse
 from models.models import Memory
+from services.session_auth import require_current_user, require_same_user
 import uuid
 
 router = APIRouter(prefix="/memory", tags=["memory"])
 
 
 @router.post("", response_model=MemoryCreateResponse)
-def create_memories(req: MemoryCreateRequest, db: Session = Depends(get_db)):
+def create_memories(req: MemoryCreateRequest, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
+    require_same_user(current_user_id, req.user_id)
     """추출된 기억들을 저장한다"""
     saved: list[Memory] = []
     for m in req.memories:

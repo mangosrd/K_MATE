@@ -16,6 +16,7 @@ from services.access_control import check_character_access
 from services.ads import get_ad_watches_remaining
 from datetime import datetime, timedelta
 import uuid
+from services.session_auth import require_current_user, require_same_user
 
 router = APIRouter(tags=["progress"])
 
@@ -79,7 +80,8 @@ def recompute_user_level(db: Session, user: User) -> None:
 
 # ── 진도 ──────────────────────────────────────────────────
 @router.get("/progress/{user_id}/{character_id}", response_model=ProgressResponse)
-def get_progress(user_id: str, character_id: str, db: Session = Depends(get_db)):
+def get_progress(user_id: str, character_id: str, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
+    require_same_user(current_user_id, user_id)
     user = db.query(User).filter(User.id == user_id).first()
     if not user:
         raise HTTPException(status_code=404, detail=f"User '{user_id}' not found")
@@ -115,7 +117,8 @@ def get_progress(user_id: str, character_id: str, db: Session = Depends(get_db))
 
 
 @router.put("/progress", response_model=ProgressResponse)
-def update_progress(req: ProgressUpdate, db: Session = Depends(get_db)):
+def update_progress(req: ProgressUpdate, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
+    require_same_user(current_user_id, req.user_id)
     user = db.query(User).filter(User.id == req.user_id).first()
     if not user:
         raise HTTPException(status_code=404, detail=f"User '{req.user_id}' not found")
@@ -208,7 +211,8 @@ def get_region_characters(region_id: str, db: Session = Depends(get_db)):
 
 # ── 사용자 ────────────────────────────────────────────────
 @router.get("/user/{user_id}", response_model=UserResponse)
-def get_user(user_id: str, db: Session = Depends(get_db)):
+def get_user(user_id: str, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
+    require_same_user(current_user_id, user_id)
     user = db.query(User).filter(User.id == user_id).first()
     if not user:
         raise HTTPException(status_code=404, detail="User not found")

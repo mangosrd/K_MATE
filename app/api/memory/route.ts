@@ -42,7 +42,12 @@ export async function POST(req: NextRequest) {
     try {
       const res = await fetch(`${BACKEND_URL}/memory`, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          ...(req.headers.get("authorization")
+            ? { Authorization: req.headers.get("authorization") as string }
+            : {}),
+        },
         body: JSON.stringify({
           user_id: userId,
           character_id: characterId,

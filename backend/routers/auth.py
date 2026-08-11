@@ -21,7 +21,7 @@ from urllib.parse import urlencode
 import httpx
 from google.auth.transport import requests as google_requests
 from google.oauth2 import id_token as google_id_token
-from services.session_auth import issue_access_token
+from services.session_auth import issue_access_token, require_current_user, require_same_user
 
 router = APIRouter(prefix="/auth", tags=["auth"])
 
@@ -255,7 +255,8 @@ def login(req: LoginRequest, db: Session = Depends(get_db)):
 
 
 @router.post("/withdraw", response_model=WithdrawResponse)
-def withdraw(req: WithdrawRequest, db: Session = Depends(get_db)):
+def withdraw(req: WithdrawRequest, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
+    require_same_user(current_user_id, req.user_id)
     """
     회원 탈퇴.
 

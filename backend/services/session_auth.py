@@ -35,8 +35,10 @@ def require_current_user(authorization: str | None = Header(default=None)) -> st
     try:
         encoded, signature = authorization.removeprefix("Bearer ").split(".", 1)
         secret = get_settings().internal_api_secret
+        if not secret:
+            raise HTTPException(status_code=503, detail="Authentication is not configured")
         expected = hmac.new(secret.encode("utf-8"), encoded.encode("ascii"), hashlib.sha256).hexdigest()
-        if not secret or not hmac.compare_digest(signature, expected):
+        if not hmac.compare_digest(signature, expected):
             raise ValueError("invalid signature")
         padding = "=" * (-len(encoded) % 4)
         payload = json.loads(base64.urlsafe_b64decode(encoded + padding))
@@ -49,4 +51,4 @@ def require_current_user(authorization: str | None = Header(default=None)) -> st
 
 def require_same_user(current_user_id: str, requested_user_id: str) -> None:
     if not hmac.compare_digest(current_user_id, requested_user_id):
-        raise HTTPException(status_code=403, detail="You can only access your own letters")
+        raise HTTPException(status_code=403, detail="You can only access your own account data")

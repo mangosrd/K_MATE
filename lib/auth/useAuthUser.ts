@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { getCurrentUser, getEffectiveUserId, AuthUser } from "./store";
+import { getAuthHeaders, getCurrentUser, getEffectiveUserId, AuthUser } from "./store";
 import { MOCK_USER } from "@/lib/db/mock";
 
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
@@ -37,7 +37,7 @@ export function useMembership() {
 
   useEffect(() => {
     const userId = getEffectiveUserId();
-    fetch(`${BACKEND_URL}/user/${userId}`)
+    fetch(`${BACKEND_URL}/user/${userId}`, { headers: getAuthHeaders() })
       .then((res) => (res.ok ? res.json() : null))
       .then((data) => { if (data?.membership) setMembership(data.membership); })
       .catch(() => {})
@@ -57,7 +57,7 @@ export function useFreeCharSlots() {
 
   useEffect(() => {
     const userId = getEffectiveUserId();
-    fetch(`${BACKEND_URL}/user/${userId}`)
+    fetch(`${BACKEND_URL}/user/${userId}`, { headers: getAuthHeaders() })
       .then((res) => (res.ok ? res.json() : null))
       .then((data) => {
         if (Array.isArray(data?.free_char_slots)) setFreeSlots(data.free_char_slots);

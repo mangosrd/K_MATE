@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { getCurrentUser, getEffectiveUserId } from "@/lib/auth/store";
+import { getAuthHeaders, getCurrentUser, getEffectiveUserId } from "@/lib/auth/store";
 import { useLanguage } from "@/components/LanguageContext";
 import formStyles from "../settings-form.module.css";
 
@@ -38,7 +38,7 @@ export default function PaymentMethodsPage() {
       setLoaded(true);
       return;
     }
-    fetch(`${BACKEND_URL}/user/${getEffectiveUserId()}/payment-methods`)
+    fetch(`${BACKEND_URL}/user/${getEffectiveUserId()}/payment-methods`, { headers: getAuthHeaders() })
       .then((res) => (res.ok ? res.json() : []))
       .then((data) => setMethods(data ?? []))
       .catch(() => {})
@@ -55,7 +55,7 @@ export default function PaymentMethodsPage() {
     try {
       const res = await fetch(`${BACKEND_URL}/user/${getEffectiveUserId()}/payment-methods`, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", ...getAuthHeaders() },
         body: JSON.stringify({ user_id: getEffectiveUserId(), card_number: cardNumber }),
       });
       if (!res.ok) {
@@ -72,7 +72,7 @@ export default function PaymentMethodsPage() {
   };
 
   const handleRemove = async (id: string) => {
-    await fetch(`${BACKEND_URL}/payment-methods/${id}`, { method: "DELETE" }).catch(() => {});
+    await fetch(`${BACKEND_URL}/payment-methods/${id}`, { method: "DELETE", headers: getAuthHeaders() }).catch(() => {});
     setMethods((prev) => prev.filter((m) => m.id !== id));
   };
 

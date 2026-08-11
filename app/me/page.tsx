@@ -9,6 +9,7 @@ import { getLocalVocab } from "@/lib/vocab/store";
 import { getAllLocalDiaries } from "@/lib/diary/store";
 import {
   getEffectiveUserId,
+  getAuthHeaders,
   logout as clearSession,
   getPreferredCaptainId,
   setPreferredCaptainId,
@@ -91,7 +92,7 @@ export default function MePage() {
   useEffect(() => {
     const userId = getEffectiveUserId();
 
-    fetch(`${BACKEND_URL}/user/${userId}`)
+    fetch(`${BACKEND_URL}/user/${userId}`, { headers: getAuthHeaders() })
       .then((res) => (res.ok ? res.json() : null))
       .then((data) => {
         if (!data) return;
@@ -105,7 +106,7 @@ export default function MePage() {
 
   useEffect(() => {
     const userId = getEffectiveUserId();
-    fetch(`${BACKEND_URL}/progress/${userId}/${mateId}`)
+    fetch(`${BACKEND_URL}/progress/${userId}/${mateId}`, { headers: getAuthHeaders() })
       .then((res) => (res.ok ? res.json() : null))
       .then((data) => { if (data) setProgress(data); })
       .catch(() => {});
@@ -144,7 +145,7 @@ export default function MePage() {
       const userId = getEffectiveUserId();
       await fetch(`${BACKEND_URL}/user/${userId}/add-coins`, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", ...getAuthHeaders() },
         body: JSON.stringify({ coins: earnedCoins, reason: "ad_reward" }),
       });
     } catch { /* no-op — 백엔드 없으면 로컬값 유지 */ }

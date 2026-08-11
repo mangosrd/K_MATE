@@ -1,7 +1,7 @@
 "use client";
 
 import type { VocabItem } from "@/types/database";
-import { getEffectiveUserId } from "@/lib/auth/store";
+import { getAuthHeaders, getEffectiveUserId } from "@/lib/auth/store";
 
 const STORAGE_PREFIX = "kmate_vocab_";
 const VOCAB_RESET_KEY = "kmate_vocab_reset_v2"; // 이 버전이 없으면 단어장 전체 초기화
@@ -131,7 +131,7 @@ export function addVocabWord(input: AddVocabInput): VocabItem | null {
   // 백엔드가 켜져 있으면 함께 동기화 (실패해도 무시 — 로컬 저장이 우선)
   fetch(`${BACKEND_URL}/vocab`, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers: { "Content-Type": "application/json", ...getAuthHeaders() },
     body: JSON.stringify({
       user_id: userId,
       character_id: input.character_id,

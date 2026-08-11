@@ -14,12 +14,14 @@ from schemas.schemas import GalleryImageResponse, GalleryUnlockRequest, GalleryU
 from services.access_control import check_character_access
 from models.models import GalleryImage, UserGalleryUnlock, Economy, User, Character
 from services.wallet import change_coins
+from services.session_auth import require_current_user, require_same_user
 
 router = APIRouter(prefix="/gallery", tags=["gallery"])
 
 
 @router.get("/{character_id}", response_model=list[GalleryImageResponse])
-def get_gallery(character_id: str, user_id: str, db: Session = Depends(get_db)):
+def get_gallery(character_id: str, user_id: str, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
+    require_same_user(current_user_id, user_id)
     user = db.query(User).filter(User.id == user_id).first()
     if not user:
         raise HTTPException(status_code=404, detail=f"User '{user_id}' not found")
@@ -52,7 +54,8 @@ def get_gallery(character_id: str, user_id: str, db: Session = Depends(get_db)):
 
 
 @router.post("/unlock", response_model=GalleryUnlockResponse)
-def unlock_gallery_image(req: GalleryUnlockRequest, db: Session = Depends(get_db)):
+def unlock_gallery_image(req: GalleryUnlockRequest, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
+    require_same_user(current_user_id, req.user_id)
     image = db.query(GalleryImage).filter(GalleryImage.id == req.image_id).first()
     if not image:
         raise HTTPException(status_code=404, detail="이미지를 찾을 수 없습니다")

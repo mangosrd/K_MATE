@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { useLanguage } from "./LanguageContext";
-import { getCurrentUser, clearWithdrawnUserLocalData } from "@/lib/auth/store";
+import { getAuthHeaders, getCurrentUser, clearWithdrawnUserLocalData } from "@/lib/auth/store";
 import styles from "./WithdrawModal.module.css";
 
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
@@ -45,7 +45,7 @@ export default function WithdrawModal({ isOpen, onClose }: WithdrawModalProps) {
     try {
       const res = await fetch(`${BACKEND_URL}/auth/withdraw`, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", ...getAuthHeaders() },
         body: JSON.stringify({ user_id: user.id, password }),
       });
       const data = await res.json();

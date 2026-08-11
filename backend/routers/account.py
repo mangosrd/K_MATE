@@ -19,6 +19,7 @@ import bcrypt
 import uuid
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
+from services.session_auth import require_current_user, require_same_user
 
 router = APIRouter(tags=["account"])
 
@@ -51,7 +52,8 @@ def _to_auth_response(user: User) -> AuthUserResponse:
 
 # ── 개인정보 수정 ────────────────────────────────────────────
 @router.patch("/user/{user_id}/profile", response_model=AuthUserResponse)
-def update_profile(user_id: str, req: ProfileUpdateRequest, db: Session = Depends(get_db)):
+def update_profile(user_id: str, req: ProfileUpdateRequest, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
+    require_same_user(current_user_id, user_id)
     user = db.query(User).filter(User.id == user_id).first()
     if not user:
         raise HTTPException(status_code=404, detail="계정을 찾을 수 없습니다")
@@ -70,7 +72,8 @@ def update_profile(user_id: str, req: ProfileUpdateRequest, db: Session = Depend
 
 # ── 비밀번호 변경 ────────────────────────────────────────────
 @router.put("/auth/change-password", response_model=SimpleSuccessResponse)
-def change_password(req: ChangePasswordRequest, db: Session = Depends(get_db)):
+def change_password(req: ChangePasswordRequest, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
+    require_same_user(current_user_id, req.user_id)
     user = db.query(User).filter(User.id == req.user_id).first()
     if not user or not user.password_hash:
         raise HTTPException(status_code=404, detail="계정을 찾을 수 없습니다")
@@ -88,7 +91,8 @@ def change_password(req: ChangePasswordRequest, db: Session = Depends(get_db)):
 
 # ── 알림 / 테마 설정 ──────────────────────────────────────────
 @router.get("/user/{user_id}/preferences", response_model=PreferencesResponse)
-def get_preferences(user_id: str, db: Session = Depends(get_db)):
+def get_preferences(user_id: str, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
+    require_same_user(current_user_id, user_id)
     user = db.query(User).filter(User.id == user_id).first()
     if not user:
         raise HTTPException(status_code=404, detail="계정을 찾을 수 없습니다")
@@ -96,7 +100,8 @@ def get_preferences(user_id: str, db: Session = Depends(get_db)):
 
 
 @router.put("/user/{user_id}/preferences", response_model=PreferencesResponse)
-def update_preferences(user_id: str, req: PreferencesUpdateRequest, db: Session = Depends(get_db)):
+def update_preferences(user_id: str, req: PreferencesUpdateRequest, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
+    require_same_user(current_user_id, user_id)
     user = db.query(User).filter(User.id == user_id).first()
     if not user:
         raise HTTPException(status_code=404, detail="계정을 찾을 수 없습니다")
@@ -160,7 +165,8 @@ def _detect_brand(number: str) -> str:
 
 
 @router.get("/user/{user_id}/payment-methods", response_model=list[PaymentMethodResponse])
-def list_payment_methods(user_id: str, db: Session = Depends(get_db)):
+def list_payment_methods(user_id: str, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
+    require_same_user(current_user_id, user_id)
     methods = (
         db.query(PaymentMethod)
         .filter(PaymentMethod.user_id == user_id)
@@ -174,7 +180,8 @@ def list_payment_methods(user_id: str, db: Session = Depends(get_db)):
 
 
 @router.post("/user/{user_id}/payment-methods", response_model=PaymentMethodResponse)
-def add_payment_method(user_id: str, req: PaymentMethodCreateRequest, db: Session = Depends(get_db)):
+def add_payment_method(user_id: str, req: PaymentMethodCreateRequest, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
+    require_same_user(current_user_id, user_id)
     user = db.query(User).filter(User.id == user_id).first()
     if not user:
         raise HTTPException(status_code=404, detail="계정을 찾을 수 없습니다")
@@ -198,8 +205,10 @@ def add_payment_method(user_id: str, req: PaymentMethodCreateRequest, db: Sessio
 
 
 @router.delete("/payment-methods/{method_id}", response_model=SimpleSuccessResponse)
-def delete_payment_method(method_id: str, db: Session = Depends(get_db)):
+def delete_payment_method(method_id: str, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
     method = db.query(PaymentMethod).filter(PaymentMethod.id == method_id).first()
+    if method:
+        require_same_user(current_user_id, method.user_id)
     if not method:
         raise HTTPException(status_code=404, detail="결제 수단을 찾을 수 없습니다")
     db.delete(method)
@@ -212,8 +221,10 @@ def delete_payment_method(method_id: str, db: Session = Depends(get_db)):
 def create_support_ticket(
     req: SupportTicketRequest,
     background_tasks: BackgroundTasks,
+    current_user_id: str = Depends(require_current_user),
     db: Session = Depends(get_db),
 ):
+    require_same_user(current_user_id, req.user_id)
     ticket = SupportTicket(
         id=str(uuid.uuid4()),
         user_id=req.user_id,
@@ -250,7 +261,8 @@ class AddCoinsResponse(BaseModel):
     total_coins: int
 
 @router.post("/user/{user_id}/add-coins", response_model=AddCoinsResponse)
-def add_coins(user_id: str, req: AddCoinsRequest, db: Session = Depends(get_db)):
+def add_coins(user_id: str, req: AddCoinsRequest, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
+    require_same_user(current_user_id, user_id)
     raise HTTPException(
         status_code=410,
         detail="Ad rewards are unavailable until verified rewarded-ad delivery is enabled.",

@@ -14,6 +14,7 @@ from services.llm_service import load_persona, llm_chat
 from services.access_control import check_character_access
 from models.models import DiaryEntry, Economy, User, Character
 from services.wallet import change_coins
+from services.session_auth import require_current_user, require_same_user
 import uuid
 from datetime import datetime
 
@@ -40,7 +41,8 @@ Rules:
 
 
 @router.post("/generate", response_model=DiaryGenerateResponse)
-async def generate_diary(req: DiaryGenerateRequest, db: Session = Depends(get_db)):
+async def generate_diary(req: DiaryGenerateRequest, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
+    require_same_user(current_user_id, req.user_id)
     """기장 일기 생성"""
     user = db.query(User).filter(User.id == req.user_id).first()
     if not user:
@@ -96,7 +98,8 @@ async def generate_diary(req: DiaryGenerateRequest, db: Session = Depends(get_db
 
 
 @router.post("/unlock", response_model=DiaryUnlockResponse)
-def unlock_diary(req: DiaryUnlockRequest, db: Session = Depends(get_db)):
+def unlock_diary(req: DiaryUnlockRequest, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
+    require_same_user(current_user_id, req.user_id)
     """일기 해금 (코인 차감)"""
     entry = db.query(DiaryEntry).filter(DiaryEntry.id == req.diary_id).first()
     if not entry:
@@ -136,7 +139,8 @@ def unlock_diary(req: DiaryUnlockRequest, db: Session = Depends(get_db)):
 
 
 @router.get("/{user_id}/{character_id}", response_model=list[DiaryItemResponse])
-def get_diaries(user_id: str, character_id: str, db: Session = Depends(get_db)):
+def get_diaries(user_id: str, character_id: str, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
+    require_same_user(current_user_id, user_id)
     """캐릭터별 일기 목록 조회"""
     user = db.query(User).filter(User.id == user_id).first()
     if not user:

@@ -1,7 +1,7 @@
 "use client";
 
 import React, { createContext, useContext, useState, useEffect } from "react";
-import { getCurrentUser, getEffectiveUserId } from "@/lib/auth/store";
+import { getAuthHeaders, getCurrentUser, getEffectiveUserId } from "@/lib/auth/store";
 
 export type Theme = "light" | "dark";
 
@@ -33,7 +33,7 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     const authUser = getCurrentUser();
     if (!authUser) return;
 
-    fetch(`${BACKEND_URL}/user/${getEffectiveUserId()}/preferences`)
+    fetch(`${BACKEND_URL}/user/${getEffectiveUserId()}/preferences`, { headers: getAuthHeaders() })
       .then((res) => (res.ok ? res.json() : null))
       .then((data) => {
         if (data?.theme_pref === "light" || data?.theme_pref === "dark") {
@@ -58,7 +58,7 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     if (!authUser) return;
     fetch(`${BACKEND_URL}/user/${getEffectiveUserId()}/preferences`, {
       method: "PUT",
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json", ...getAuthHeaders() },
       body: JSON.stringify({ user_id: getEffectiveUserId(), theme_pref: next }),
     }).catch(() => {});
   };

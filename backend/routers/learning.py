@@ -16,6 +16,7 @@ from schemas.schemas import (
 )
 from services.access_control import check_character_access
 from services.wallet import change_coins, get_wallet
+from services.session_auth import require_current_user, require_same_user
 
 router = APIRouter(prefix="/learning", tags=["learning"])
 
@@ -62,7 +63,8 @@ def _story_access(db: Session, user_id: str, chapter_id: str) -> tuple[bool, str
 
 
 @router.get("/story-access/{user_id}/{chapter_id}", response_model=StoryAccessResponse)
-def get_story_access(user_id: str, chapter_id: str, db: Session = Depends(get_db)):
+def get_story_access(user_id: str, chapter_id: str, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
+    require_same_user(current_user_id, user_id)
     if not _is_story(chapter_id):
         raise HTTPException(status_code=400, detail="Only special story chapters can be checked here")
     if not db.query(User.id).filter(User.id == user_id).first():
@@ -72,7 +74,8 @@ def get_story_access(user_id: str, chapter_id: str, db: Session = Depends(get_db
 
 
 @router.post("/unlock-story", response_model=StoryUnlockResponse)
-def unlock_story(req: StoryUnlockRequest, db: Session = Depends(get_db)):
+def unlock_story(req: StoryUnlockRequest, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
+    require_same_user(current_user_id, req.user_id)
     if not _is_story(req.chapter_id):
         raise HTTPException(status_code=400, detail="Only special story chapters can be unlocked")
     user = db.query(User).filter(User.id == req.user_id).first()
@@ -91,7 +94,8 @@ def unlock_story(req: StoryUnlockRequest, db: Session = Depends(get_db)):
 
 
 @router.post("/start", response_model=LessonStartResponse)
-def start_lesson(req: LessonStartRequest, db: Session = Depends(get_db)):
+def start_lesson(req: LessonStartRequest, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
+    require_same_user(current_user_id, req.user_id)
     user = db.query(User).filter(User.id == req.user_id).first()
     character = db.query(Character).filter(Character.id == req.character_id).first()
     if not user or not character:
@@ -128,7 +132,8 @@ def start_lesson(req: LessonStartRequest, db: Session = Depends(get_db)):
 
 
 @router.post("/complete", response_model=LessonCompleteResponse)
-def complete_lesson(req: LessonCompleteRequest, db: Session = Depends(get_db)):
+def complete_lesson(req: LessonCompleteRequest, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
+    require_same_user(current_user_id, req.user_id)
     session = db.query(LessonSession).filter(
         LessonSession.id == req.session_id, LessonSession.user_id == req.user_id
     ).first()

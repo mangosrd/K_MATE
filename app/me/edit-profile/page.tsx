@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { setCurrentUser } from "@/lib/auth/store";
+import { getAuthHeaders, setCurrentUser } from "@/lib/auth/store";
 import { useAuthUser } from "@/lib/auth/useAuthUser";
 import { useLanguage } from "@/components/LanguageContext";
 import formStyles from "../settings-form.module.css";
@@ -36,7 +36,7 @@ export default function EditProfilePage() {
     try {
       const res = await fetch(`${BACKEND_URL}/user/${authUser.id}/profile`, {
         method: "PATCH",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", ...getAuthHeaders() },
         body: JSON.stringify({ user_id: authUser.id, name, email }),
       });
       if (!res.ok) {

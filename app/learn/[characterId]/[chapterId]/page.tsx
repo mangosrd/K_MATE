@@ -8,7 +8,7 @@ import styles from "./session.module.css";
 import LoadingSplash from "@/components/LoadingSplash";
 import { getChapterContent } from "@/lib/content/chapters";
 import { addVocabWord } from "@/lib/vocab/store";
-import { getEffectiveUserId } from "@/lib/auth/store";
+import { getAuthHeaders, getEffectiveUserId } from "@/lib/auth/store";
 import { useLanguage } from "@/components/LanguageContext";
 import { canAccessCharacter, isChapterUnlocked, getCharacterById } from "@/lib/db/mock";
 import { useMembership, useFreeCharSlots } from "@/lib/auth/useAuthUser";
@@ -467,7 +467,7 @@ export default function LearningSessionPage({
   const [storyAccessError, setStoryAccessError] = useState("");
 
   useEffect(() => {
-    fetch(`${BACKEND_URL}/progress/${getEffectiveUserId()}/${characterId}`)
+    fetch(`${BACKEND_URL}/progress/${getEffectiveUserId()}/${characterId}`, { headers: getAuthHeaders() })
       .then((res) => (res.ok ? res.json() : null))
       .then((data) => { if (data) setStamps(data.stamps ?? []); })
       .catch(() => {})
@@ -485,7 +485,7 @@ export default function LearningSessionPage({
       return;
     }
     setStoryAccess(null);
-    fetch(`${BACKEND_URL}/learning/story-access/${getEffectiveUserId()}/${chapterId}`)
+    fetch(`${BACKEND_URL}/learning/story-access/${getEffectiveUserId()}/${chapterId}`, { headers: getAuthHeaders() })
       .then((res) => (res.ok ? res.json() : null))
       .then((data) => setStoryAccess(Boolean(data?.has_access)))
       .catch(() => setStoryAccess(false));
@@ -497,7 +497,7 @@ export default function LearningSessionPage({
     try {
       const res = await fetch(`${BACKEND_URL}/learning/unlock-story`, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", ...getAuthHeaders() },
         body: JSON.stringify({ user_id: getEffectiveUserId(), chapter_id: chapterId }),
       });
       const data = await res.json().catch(() => ({}));
@@ -574,7 +574,7 @@ export default function LearningSessionPage({
       if (!lessonSessionId) return;
       fetch(`${BACKEND_URL}/learning/complete`, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", ...getAuthHeaders() },
         body: JSON.stringify({
           user_id: getEffectiveUserId(),
           session_id: lessonSessionId,
@@ -625,7 +625,7 @@ export default function LearningSessionPage({
       }
       const res = await fetch(`${BACKEND_URL}/learning/start`, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", ...getAuthHeaders() },
         body: JSON.stringify({ user_id: getEffectiveUserId(), character_id: characterId, chapter_id: chapterId }),
       });
       const data = await res.json().catch(() => ({}));

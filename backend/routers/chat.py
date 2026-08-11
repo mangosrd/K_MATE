@@ -12,6 +12,7 @@ from services.llm_service import (
 from models.models import Character, Memory, Progress, User, Economy
 from routers.progress import record_daily_affinity
 from services.access_control import check_character_access
+from services.session_auth import require_current_user, require_same_user
 import uuid
 
 router = APIRouter(prefix="/chat", tags=["chat"])
@@ -21,7 +22,8 @@ CHAT_COIN_COST = 2
 
 
 @router.post("", response_model=ChatResponse)
-async def chat(req: ChatRequest, db: Session = Depends(get_db)):
+async def chat(req: ChatRequest, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
+    require_same_user(current_user_id, req.user_id)
     """LLM 대화 엔드포인트"""
 
     # 1. 캐릭터 존재 확인

@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import BottomNav from "@/components/ui/BottomNav";
 import { MOCK_CHARACTERS, canAccessCharacter } from "@/lib/db/mock";
-import { getEffectiveUserId } from "@/lib/auth/store";
+import { getAuthHeaders, getEffectiveUserId } from "@/lib/auth/store";
 import { useMembership, useFreeCharSlots } from "@/lib/auth/useAuthUser";
 import { getAllLocalDiaries } from "@/lib/diary/store";
 import { useLanguage } from "@/components/LanguageContext";
@@ -26,7 +26,7 @@ export default function DiarySelectPage() {
 
     Promise.all(
       MOCK_CHARACTERS.map((c) =>
-        fetch(`${BACKEND_URL}/diary/${userId}/${c.id}`)
+        fetch(`${BACKEND_URL}/diary/${userId}/${c.id}`, { headers: getAuthHeaders() })
           .then((res) => (res.ok ? res.json() : []))
           .catch(() => [])
       )

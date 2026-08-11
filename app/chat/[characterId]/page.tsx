@@ -12,7 +12,7 @@ import styles from "./chat.module.css";
 import { MOCK_CHARACTERS, canAccessCharacter } from "@/lib/db/mock";
 import { addLocalDiary } from "@/lib/diary/store";
 import { getChatHistory, saveChatHistory, clearChatHistory } from "@/lib/chat/store";
-import { getEffectiveUserId, getCurrentUser, setPreferredCaptainId } from "@/lib/auth/store";
+import { getAuthHeaders, getEffectiveUserId, getCurrentUser, setPreferredCaptainId } from "@/lib/auth/store";
 import { useMembership, useFreeCharSlots } from "@/lib/auth/useAuthUser";
 import { useLanguage, type Language } from "@/components/LanguageContext";
 
@@ -205,7 +205,7 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
     try {
       const res = await fetch(`${BACKEND_URL}/chat`, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", ...getAuthHeaders() },
         body: JSON.stringify({
           character_id: characterId,
           user_message: userMessage,
@@ -273,7 +273,7 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
     // 1. 기억 추출 + 저장 (LLM 추출 후 백엔드 MySQL에 best-effort 저장)
     fetch("/api/memory", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json", ...getAuthHeaders() },
       body: JSON.stringify({
         userId,
         characterId,
@@ -294,7 +294,7 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
     try {
       const res = await fetch(`${BACKEND_URL}/diary/generate`, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", ...getAuthHeaders() },
         body: JSON.stringify({
           user_id: userId,
           character_id: characterId,

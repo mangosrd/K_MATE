@@ -81,7 +81,7 @@ export default function LettersPage({ params }: { params: Promise<{ characterId:
       })
       .catch(() => {});
 
-    fetch(`${BACKEND_URL}/user/${userId}`)
+    fetch(`${BACKEND_URL}/user/${userId}`, { headers: getAuthHeaders() })
       .then((res) => (res.ok ? res.json() : null))
       .then((data) => { if (data) setCoins(data.coins); })
       .catch(() => {});

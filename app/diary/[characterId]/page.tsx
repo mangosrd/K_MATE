@@ -8,7 +8,7 @@ import BottomNav from "@/components/ui/BottomNav";
 import LoadingSplash from "@/components/LoadingSplash";
 import { getCharacterById, MOCK_ECONOMY, canAccessCharacter } from "@/lib/db/mock";
 import { getLocalDiaries } from "@/lib/diary/store";
-import { getEffectiveUserId, setPreferredCaptainId } from "@/lib/auth/store";
+import { getAuthHeaders, getEffectiveUserId, setPreferredCaptainId } from "@/lib/auth/store";
 import { useLanguage } from "@/components/LanguageContext";
 import { useMembership, useFreeCharSlots } from "@/lib/auth/useAuthUser";
 import type { DiaryEntry } from "@/types/database";
@@ -47,7 +47,7 @@ export default function CharDiaryPage({ params }: { params: Promise<{ characterI
   useEffect(() => {
     const local = getLocalDiaries(characterId);
 
-    fetch(`${BACKEND_URL}/diary/${getEffectiveUserId()}/${characterId}`)
+    fetch(`${BACKEND_URL}/diary/${getEffectiveUserId()}/${characterId}`, { headers: getAuthHeaders() })
       .then((res) => (res.ok ? res.json() : []))
       .then((remote: DiaryEntry[]) => {
         const remoteIds = new Set(remote.map((d) => d.id));
@@ -78,7 +78,7 @@ export default function CharDiaryPage({ params }: { params: Promise<{ characterI
     try {
       const res = await fetch("/api/unlock", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", ...getAuthHeaders() },
         body: JSON.stringify({ userId: getEffectiveUserId(), diaryId: unlockModal.id, method: "coin" }),
       });
       const data = await res.json();

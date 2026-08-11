@@ -6,6 +6,7 @@ from database import get_db
 from models.models import PremiumStory, User, UserStoryUnlock
 from schemas.schemas import PremiumStoryItemResponse, PremiumStoryUnlockRequest, PremiumStoryUnlockResponse
 from services.wallet import change_coins, get_wallet
+from services.session_auth import require_current_user, require_same_user
 
 router = APIRouter(prefix="/backstories", tags=["backstories"])
 BACKSTORY_COST = 10
@@ -21,7 +22,8 @@ def _item(story: PremiumStory, unlocked: bool) -> PremiumStoryItemResponse:
 
 
 @router.get("/{character_id}", response_model=list[PremiumStoryItemResponse])
-def list_backstories(character_id: str, user_id: str, db: Session = Depends(get_db)):
+def list_backstories(character_id: str, user_id: str, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
+    require_same_user(current_user_id, user_id)
     if not db.query(User.id).filter(User.id == user_id).first():
         raise HTTPException(status_code=404, detail="User not found")
     stories = db.query(PremiumStory).filter(
@@ -32,7 +34,8 @@ def list_backstories(character_id: str, user_id: str, db: Session = Depends(get_
 
 
 @router.post("/{story_id}/unlock", response_model=PremiumStoryUnlockResponse)
-def unlock_backstory(story_id: str, req: PremiumStoryUnlockRequest, db: Session = Depends(get_db)):
+def unlock_backstory(story_id: str, req: PremiumStoryUnlockRequest, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
+    require_same_user(current_user_id, req.user_id)
     story = db.query(PremiumStory).filter(PremiumStory.id == story_id, PremiumStory.is_published.is_(True)).first()
     if not story:
         raise HTTPException(status_code=404, detail="Story not found")

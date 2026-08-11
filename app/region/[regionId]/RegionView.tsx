@@ -8,7 +8,7 @@ import {
   getCharactersForRegion, MOCK_ALL_PROGRESS,
   canAccessCharacter,
 } from "@/lib/db/mock";
-import { getEffectiveUserId } from "@/lib/auth/store";
+import { getAuthHeaders, getEffectiveUserId } from "@/lib/auth/store";
 import { useMembership, useFreeCharSlots } from "@/lib/auth/useAuthUser";
 import { useLanguage, type Language } from "@/components/LanguageContext";
 import type { Region, Progress } from "@/types/database";
@@ -132,7 +132,7 @@ export default function RegionView({ region }: { region: Region }) {
     const userId = getEffectiveUserId();
     Promise.all(
       characters.map((c) =>
-        fetch(`${BACKEND_URL}/progress/${userId}/${c.id}`)
+        fetch(`${BACKEND_URL}/progress/${userId}/${c.id}`, { headers: getAuthHeaders() })
           .then((res) => (res.ok ? res.json() : null))
           .catch(() => null)
       )

@@ -7,7 +7,7 @@ import Image from "next/image";
 import BottomNav from "@/components/ui/BottomNav";
 import LoadingSplash from "@/components/LoadingSplash";
 import { getCharacterById, MOCK_ECONOMY, canAccessCharacter } from "@/lib/db/mock";
-import { getEffectiveUserId } from "@/lib/auth/store";
+import { getAuthHeaders, getEffectiveUserId } from "@/lib/auth/store";
 import { useLanguage } from "@/components/LanguageContext";
 import { useMembership, useFreeCharSlots } from "@/lib/auth/useAuthUser";
 import styles from "./gallery.module.css";
@@ -46,12 +46,12 @@ export default function CharGalleryPage({ params }: { params: Promise<{ characte
 
   const loadGallery = () => {
     const userId = getEffectiveUserId();
-    fetch(`${BACKEND_URL}/gallery/${characterId}?user_id=${userId}`)
+    fetch(`${BACKEND_URL}/gallery/${characterId}?user_id=${userId}`, { headers: getAuthHeaders() })
       .then((res) => (res.ok ? res.json() : []))
       .then((data: GalleryImage[]) => setImages(data))
       .catch(() => {});
 
-    fetch(`${BACKEND_URL}/user/${userId}`)
+    fetch(`${BACKEND_URL}/user/${userId}`, { headers: getAuthHeaders() })
       .then((res) => (res.ok ? res.json() : null))
       .then((data) => { if (data) setCoins(data.coins); })
       .catch(() => {});
@@ -65,7 +65,7 @@ export default function CharGalleryPage({ params }: { params: Promise<{ characte
     try {
       const res = await fetch(`${BACKEND_URL}/gallery/unlock`, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", ...getAuthHeaders() },
         body: JSON.stringify({ user_id: getEffectiveUserId(), image_id: unlockTarget.id }),
       });
       const data = await res.json();

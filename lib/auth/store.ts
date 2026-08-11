@@ -28,7 +28,10 @@ export function getCurrentUser(): AuthUser | null {
 export function setCurrentUser(user: AuthUser) {
   if (typeof window === "undefined") return;
   localStorage.setItem(STORAGE_KEY, JSON.stringify(user));
-  if (user.access_token) localStorage.setItem(ACCESS_TOKEN_KEY, user.access_token);
+  if (user.access_token) {
+    localStorage.setItem(ACCESS_TOKEN_KEY, user.access_token);
+    document.cookie = `${ACCESS_TOKEN_KEY}=${encodeURIComponent(user.access_token)}; path=/; max-age=${SESSION_MAX_AGE_SECONDS}; samesite=lax`;
+  }
   // 서버 컴포넌트(예: /learn/[characterId])는 localStorage를 못 읽으므로,
   // 로그인 유저 id를 쿠키로도 남겨서 서버에서도 실제 멤버십을 확인할 수 있게 한다.
   document.cookie = `kmate_uid=${user.id}; path=/; max-age=${SESSION_MAX_AGE_SECONDS}; samesite=lax`;
@@ -41,6 +44,7 @@ export function logout() {
   localStorage.removeItem(STORAGE_KEY);
   localStorage.removeItem(ACCESS_TOKEN_KEY);
   document.cookie = "kmate_uid=; path=/; max-age=0";
+  document.cookie = `${ACCESS_TOKEN_KEY}=; path=/; max-age=0`;
 }
 
 export function getAuthHeaders(): Record<string, string> {
@@ -101,11 +105,23 @@ export function getEffectiveUserId(): string {
 // 게스트가 개별 구매한 캐릭터도 그 페이지에서만 계속 잠긴 것처럼 보인다.
 export async function ensureGuestAccount(): Promise<void> {
   if (typeof window === "undefined") return;
-  if (getCurrentUser()) return; // 로그인 계정이 있으면 게스트 발급 자체가 불필요
+  const currentUser = getCurrentUser();
+  if (currentUser) {
+    // 이전 앱 버전에서 로그인한 사용자도 서버 컴포넌트가 세션을 읽을 수 있게
+    // 브라우저 저장소의 기존 토큰을 쿠키로 한 번 마이그레이션한다.
+    const token = localStorage.getItem(ACCESS_TOKEN_KEY);
+    document.cookie = `kmate_uid=${currentUser.id}; path=/; max-age=${SESSION_MAX_AGE_SECONDS}; samesite=lax`;
+    if (token) {
+      document.cookie = `${ACCESS_TOKEN_KEY}=${encodeURIComponent(token)}; path=/; max-age=${SESSION_MAX_AGE_SECONDS}; samesite=lax`;
+    }
+    return;
+  }
 
   const existing = getCachedGuestId();
   if (existing && localStorage.getItem(ACCESS_TOKEN_KEY)) {
+    const token = localStorage.getItem(ACCESS_TOKEN_KEY)!;
     document.cookie = `kmate_uid=${existing}; path=/; max-age=${SESSION_MAX_AGE_SECONDS}; samesite=lax`;
+    document.cookie = `${ACCESS_TOKEN_KEY}=${encodeURIComponent(token)}; path=/; max-age=${SESSION_MAX_AGE_SECONDS}; samesite=lax`;
     return;
   }
 
@@ -118,6 +134,7 @@ export async function ensureGuestAccount(): Promise<void> {
       localStorage.setItem(GUEST_ID_KEY, data.id);
       localStorage.setItem(ACCESS_TOKEN_KEY, data.access_token);
       document.cookie = `kmate_uid=${data.id}; path=/; max-age=${SESSION_MAX_AGE_SECONDS}; samesite=lax`;
+      document.cookie = `${ACCESS_TOKEN_KEY}=${encodeURIComponent(data.access_token)}; path=/; max-age=${SESSION_MAX_AGE_SECONDS}; samesite=lax`;
     }
   } catch {
     /* no-op */

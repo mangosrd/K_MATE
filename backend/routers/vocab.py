@@ -8,19 +8,22 @@ from database import get_db
 from schemas.schemas import VocabItemCreate, VocabItemResponse, VocabReviewUpdate
 from models.models import VocabItem
 import uuid
+from services.session_auth import require_current_user, require_same_user
 
 router = APIRouter(prefix="/vocab", tags=["vocab"])
 
 
 @router.get("/{user_id}", response_model=list[VocabItemResponse])
-def get_all_vocab(user_id: str, db: Session = Depends(get_db)):
+def get_all_vocab(user_id: str, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
+    require_same_user(current_user_id, user_id)
     """전체 단어장 조회"""
     items = db.query(VocabItem).filter(VocabItem.user_id == user_id).all()
     return _serialize_list(items)
 
 
 @router.get("/{user_id}/region/{region_id}", response_model=list[VocabItemResponse])
-def get_vocab_by_region(user_id: str, region_id: str, db: Session = Depends(get_db)):
+def get_vocab_by_region(user_id: str, region_id: str, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
+    require_same_user(current_user_id, user_id)
     """지역별 단어장 조회"""
     items = (
         db.query(VocabItem)
@@ -31,7 +34,8 @@ def get_vocab_by_region(user_id: str, region_id: str, db: Session = Depends(get_
 
 
 @router.get("/{user_id}/character/{character_id}", response_model=list[VocabItemResponse])
-def get_vocab_by_character(user_id: str, character_id: str, db: Session = Depends(get_db)):
+def get_vocab_by_character(user_id: str, character_id: str, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
+    require_same_user(current_user_id, user_id)
     """캐릭터별 단어장 조회"""
     items = (
         db.query(VocabItem)
@@ -42,7 +46,8 @@ def get_vocab_by_character(user_id: str, character_id: str, db: Session = Depend
 
 
 @router.post("", response_model=VocabItemResponse, status_code=201)
-def add_vocab(req: VocabItemCreate, db: Session = Depends(get_db)):
+def add_vocab(req: VocabItemCreate, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
+    require_same_user(current_user_id, req.user_id)
     """단어 저장"""
     item = VocabItem(
         id=str(uuid.uuid4()),
@@ -65,7 +70,8 @@ def add_vocab(req: VocabItemCreate, db: Session = Depends(get_db)):
 
 
 @router.delete("/{user_id}", status_code=204)
-def delete_all_vocab(user_id: str, db: Session = Depends(get_db)):
+def delete_all_vocab(user_id: str, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
+    require_same_user(current_user_id, user_id)
     """단어장 전체 초기화 — 해당 유저의 모든 단어를 DB에서 삭제한다."""
     db.query(VocabItem).filter(VocabItem.user_id == user_id).delete()
     db.commit()
@@ -73,11 +79,12 @@ def delete_all_vocab(user_id: str, db: Session = Depends(get_db)):
 
 
 @router.put("/review", response_model=VocabItemResponse)
-def update_mastery(req: VocabReviewUpdate, db: Session = Depends(get_db)):
+def update_mastery(req: VocabReviewUpdate, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
     """단어 마스터리 업데이트"""
     item = db.query(VocabItem).filter(VocabItem.id == req.vocab_id).first()
     if not item:
         raise HTTPException(status_code=404, detail="Vocab item not found")
+    require_same_user(current_user_id, item.user_id)
     item.mastery = req.mastery
     item.review_count = (item.review_count or 0) + 1
     db.commit()

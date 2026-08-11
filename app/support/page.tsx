@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { getEffectiveUserId } from "@/lib/auth/store";
+import { getAuthHeaders, getEffectiveUserId } from "@/lib/auth/store";
 import { useAuthUser } from "@/lib/auth/useAuthUser";
 import { useLanguage } from "@/components/LanguageContext";
 import formStyles from "../me/settings-form.module.css";
@@ -38,9 +38,9 @@ export default function SupportPage() {
     try {
       const res = await fetch(`${BACKEND_URL}/support/tickets`, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", ...getAuthHeaders() },
         body: JSON.stringify({
-          user_id: authUser ? getEffectiveUserId() : null,
+          user_id: getEffectiveUserId(),
           name,
           email,
           category,

@@ -6,7 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "./learn.module.css";
 import { SPECIAL_CHAPTERS, MOCK_CHARACTERS, isChapterUnlocked } from "@/lib/db/mock";
-import { getEffectiveUserId, setPreferredCaptainId } from "@/lib/auth/store";
+import { getAuthHeaders, getEffectiveUserId, setPreferredCaptainId } from "@/lib/auth/store";
 import { useLanguage } from "@/components/LanguageContext";
 import { useTranslationMap, TranslatableItem } from "@/lib/translate/store";
 import type { Character, Chapter } from "@/types/database";
@@ -46,7 +46,7 @@ export default function LearnView({ char, chapters }: LearnViewProps) {
   }, [char.id]);
 
   useEffect(() => {
-    fetch(`${BACKEND_URL}/progress/${getEffectiveUserId()}/${char.id}`)
+    fetch(`${BACKEND_URL}/progress/${getEffectiveUserId()}/${char.id}`, { headers: getAuthHeaders() })
       .then((res) => (res.ok ? res.json() : null))
       .then((data) => {
         if (!data) return;

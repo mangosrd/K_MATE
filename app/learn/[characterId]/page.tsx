@@ -28,12 +28,14 @@ export default async function LearnPage({
   // 로그인 유저면 쿠키로 실제 계정 id를 알 수 있음 — 서버에서 실제 멤버십/무료 슬롯을 확인한다.
   const cookieStore = await cookies();
   const userId = cookieStore.get("kmate_uid")?.value ?? MOCK_USER.id;
+  const accessToken = cookieStore.get("kmate_access_token")?.value;
   let membership: string = MOCK_USER.membership;
   let freeCharSlots: string[] = MOCK_USER.free_character_slots;
   try {
     const res = await fetch(`${BACKEND_URL}/user/${userId}`, {
       cache: "no-store",
       signal: AbortSignal.timeout(800),
+      headers: accessToken ? { Authorization: `Bearer ${accessToken}` } : {},
     });
     if (res.ok) {
       const data = await res.json();

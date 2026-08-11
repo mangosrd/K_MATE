@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { useAuthUser } from "@/lib/auth/useAuthUser";
+import { getAuthHeaders } from "@/lib/auth/store";
 import { useLanguage } from "@/components/LanguageContext";
 import formStyles from "../settings-form.module.css";
 
@@ -39,7 +40,7 @@ export default function SecurityPage() {
     try {
       const res = await fetch(`${BACKEND_URL}/auth/change-password`, {
         method: "PUT",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", ...getAuthHeaders() },
         body: JSON.stringify({
           user_id: authUser.id,
           current_password: currentPassword,

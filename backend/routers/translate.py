@@ -16,6 +16,7 @@ from database import get_db
 from schemas.schemas import TranslateRequest, TranslateResponse, TranslateItem
 from models.models import TranslationCache
 from services.llm_service import llm_chat
+from services.session_auth import require_current_user
 
 router = APIRouter(tags=["translate"])
 
@@ -83,7 +84,7 @@ async def _translate_batch(items: list[TranslateItem], lang_name: str) -> list[s
 
 
 @router.post("/translate", response_model=TranslateResponse)
-async def translate_texts(req: TranslateRequest, db: Session = Depends(get_db)):
+async def translate_texts(req: TranslateRequest, _current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
     # items(문맥 포함)가 있으면 그걸 쓰고, 없으면 texts(하위 호환)로 문맥 없이 처리한다
     items = req.items if req.items else [TranslateItem(text=t) for t in req.texts]
 
