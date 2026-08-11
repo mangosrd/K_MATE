@@ -3,6 +3,7 @@ import sys
 import unittest
 from pathlib import Path
 
+from fastapi import HTTPException
 from pydantic import ValidationError
 
 
@@ -15,11 +16,24 @@ os.environ.setdefault("MYSQL_DB", "test")
 os.environ.setdefault("GEMINI_API_KEY", "test")
 
 from models.models import MembershipEnum, User
-from routers.account import _to_profile_response
+from routers.account import SUPPORT_USER_HOURLY_LIMIT, _to_profile_response, enforce_support_ticket_rate_limits
 from schemas.schemas import ChangePasswordRequest, PreferencesUpdateRequest, ProfileUpdateRequest
+from services.rate_limit import _reset_for_tests
 
 
 class AccountSecurityTests(unittest.TestCase):
+    def setUp(self):
+        _reset_for_tests()
+
+    def test_support_ticket_rate_limit_blocks_email_flood(self):
+        for _ in range(SUPPORT_USER_HOURLY_LIMIT):
+            enforce_support_ticket_rate_limits("user-1")
+
+        with self.assertRaises(HTTPException) as raised:
+            enforce_support_ticket_rate_limits("user-1")
+
+        self.assertEqual(raised.exception.status_code, 429)
+
     def test_profile_response_does_not_require_or_rotate_login_token(self):
         user = User(
             id="user-1",

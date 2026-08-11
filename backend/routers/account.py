@@ -25,8 +25,28 @@ from services.session_auth import (
     require_same_user,
     revoke_user_sessions,
 )
+from services.rate_limit import enforce_rate_limit
 
 router = APIRouter(tags=["account"])
+
+SUPPORT_USER_HOURLY_LIMIT = 5
+SUPPORT_GLOBAL_MINUTE_LIMIT = 60
+
+
+def enforce_support_ticket_rate_limits(user_id: str) -> None:
+    """Prevent authenticated accounts from flooding support email and storage."""
+    enforce_rate_limit(
+        "support-global",
+        "all",
+        limit=SUPPORT_GLOBAL_MINUTE_LIMIT,
+        window_seconds=60,
+    )
+    enforce_rate_limit(
+        "support-user",
+        user_id,
+        limit=SUPPORT_USER_HOURLY_LIMIT,
+        window_seconds=3600,
+    )
 
 
 def _timezone_can_change_at(user: User):
@@ -250,6 +270,7 @@ def create_support_ticket(
     db: Session = Depends(get_db),
 ):
     require_same_user(current_user_id, req.user_id)
+    enforce_support_ticket_rate_limits(current_user_id)
     ticket = SupportTicket(
         id=str(uuid.uuid4()),
         user_id=req.user_id,
