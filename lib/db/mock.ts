@@ -1,22 +1,9 @@
 // ============================================================
 // K-MATE Mock DB v2 — Supabase 연결 전 임시 데이터
 // ============================================================
-import type {
-  User, Character, Region, Memory, DiaryEntry,
-  Economy, VocabItem, Chapter, Membership,
-} from "@/types/database";
+import type { Character, Region, Chapter } from "@/types/database";
 
 // ── 사용자 ───────────────────────────────────────────────
-export const MOCK_USER: User = {
-  id: "user-001",
-  name: "Kim Traveler",
-  language: "en",
-  level: 1,
-  membership: "free",
-  free_character_slots: ["kyuhyun", "haneul"],
-  created_at: "2025-01-01T00:00:00Z",
-};
-
 // ── 캐릭터 ──────────────────────────────────────────────
 export const MOCK_CHARACTERS: Character[] = [
   {
@@ -414,12 +401,6 @@ export const SPECIAL_CHAPTERS: SpecialChapter[] = [
 
 
 // ── 경제 ────────────────────────────────────────────────
-export const MOCK_ECONOMY: Economy = {
-  id: "eco-001",
-  user_id: "user-001",
-  coins: 35,
-};
-
 // ── 헬퍼 함수 ────────────────────────────────────────────
 export function getCharacterById(id: string) {
   return MOCK_CHARACTERS.find((c) => c.id === id) ?? null;
