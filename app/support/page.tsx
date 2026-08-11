@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { getAuthHeaders, getEffectiveUserId } from "@/lib/auth/store";
 import { useAuthUser } from "@/lib/auth/useAuthUser";
@@ -14,22 +14,39 @@ type Category = "account" | "billing" | "bug" | "content" | "other";
 
 export default function SupportPage() {
   const { t } = useLanguage();
-  const { authUser } = useAuthUser();
+  const { authUser, authLoaded } = useAuthUser();
 
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
+  return (
+    <main className={styles.page}>
+      <div className={styles.inner}>
+        <Link href="/me" className={styles.backLink}>{t("backToMyPage")}</Link>
+        <div className={styles.card}>
+          <h1 className={styles.title}>{t("customerSupport")}</h1>
+          {!authLoaded ? (
+            <div className={styles.confirmBox} aria-hidden="true">⏳</div>
+          ) : (
+            <SupportForm
+              key={authUser?.id ?? "guest"}
+              initialName={authUser?.name ?? ""}
+              initialEmail={authUser?.email ?? ""}
+            />
+          )}
+        </div>
+      </div>
+    </main>
+  );
+}
+
+function SupportForm({ initialName, initialEmail }: { initialName: string; initialEmail: string }) {
+  const { t } = useLanguage();
+
+  const [name, setName] = useState(initialName);
+  const [email, setEmail] = useState(initialEmail);
   const [category, setCategory] = useState<Category>("other");
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [submitted, setSubmitted] = useState(false);
-
-  useEffect(() => {
-    if (authUser) {
-      setName(authUser.name);
-      setEmail(authUser.email);
-    }
-  }, [authUser]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -60,14 +77,7 @@ export default function SupportPage() {
     }
   };
 
-  return (
-    <main className={styles.page}>
-      <div className={styles.inner}>
-        <Link href="/me" className={styles.backLink}>{t("backToMyPage")}</Link>
-        <div className={styles.card}>
-          <h1 className={styles.title}>{t("customerSupport")}</h1>
-
-          {submitted ? (
+  return submitted ? (
             <div className={styles.confirmBox}>
               <p style={{ fontSize: 40, marginBottom: 12 }}>✅</p>
               <p className={formStyles.successMsg}>{t("ticketSubmittedMsg")}</p>
@@ -135,9 +145,5 @@ export default function SupportPage() {
                 </button>
               </form>
             </>
-          )}
-        </div>
-      </div>
-    </main>
   );
 }
