@@ -16,6 +16,7 @@ from database import get_db
 from schemas.schemas import TranslateRequest, TranslateResponse, TranslateItem
 from models.models import TranslationCache
 from services.llm_service import llm_chat
+from services.rate_limit import enforce_rate_limit
 from services.session_auth import require_current_user
 
 router = APIRouter(tags=["translate"])
@@ -24,6 +25,8 @@ MAX_TRANSLATION_ITEMS = 20
 MAX_TRANSLATION_TEXT_CHARS = 1000
 MAX_TRANSLATION_CONTEXT_CHARS = 1000
 MAX_TRANSLATION_TOTAL_CHARS = 5000
+TRANSLATION_USER_HOURLY_LIMIT = 120
+TRANSLATION_GLOBAL_MINUTE_LIMIT = 300
 
 LANG_NAMES = {
     "en": "English",
@@ -54,6 +57,22 @@ def validate_translation_items(items: list[TranslateItem]) -> None:
 
     if total_chars > MAX_TRANSLATION_TOTAL_CHARS:
         raise HTTPException(status_code=413, detail="Translation request is too large.")
+
+
+def enforce_translation_rate_limits(user_id: str) -> None:
+    """Keep one account or a traffic burst from creating unbounded LLM spend."""
+    enforce_rate_limit(
+        "translate-global",
+        "all",
+        limit=TRANSLATION_GLOBAL_MINUTE_LIMIT,
+        window_seconds=60,
+    )
+    enforce_rate_limit(
+        "translate-user",
+        user_id,
+        limit=TRANSLATION_USER_HOURLY_LIMIT,
+        window_seconds=3600,
+    )
 
 
 async def _translate_batch(items: list[TranslateItem], lang_name: str) -> list[str]:
@@ -105,7 +124,8 @@ async def _translate_batch(items: list[TranslateItem], lang_name: str) -> list[s
 
 
 @router.post("/translate", response_model=TranslateResponse)
-async def translate_texts(req: TranslateRequest, _current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
+async def translate_texts(req: TranslateRequest, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
+    enforce_translation_rate_limits(current_user_id)
     # items(문맥 포함)가 있으면 그걸 쓰고, 없으면 texts(하위 호환)로 문맥 없이 처리한다
     items = req.items if req.items else [TranslateItem(text=t) for t in req.texts]
     validate_translation_items(items)

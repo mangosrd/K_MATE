@@ -22,10 +22,15 @@ from routers.chat import (
     validate_chat_payload,
 )
 from routers.translate import MAX_TRANSLATION_ITEMS, validate_translation_items
+from routers.translate import TRANSLATION_USER_HOURLY_LIMIT, enforce_translation_rate_limits
 from schemas.schemas import ChatRequest, TranslateItem
+from services.rate_limit import _reset_for_tests
 
 
 class LlmRequestLimitTests(unittest.TestCase):
+    def setUp(self):
+        _reset_for_tests()
+
     def test_chat_rejects_oversized_message(self):
         request = ChatRequest(
             character_id="kyuhyun",
@@ -55,6 +60,15 @@ class LlmRequestLimitTests(unittest.TestCase):
             validate_translation_items(items)
 
         self.assertEqual(raised.exception.status_code, 413)
+
+    def test_translation_blocks_repeated_requests_from_one_account(self):
+        for _ in range(TRANSLATION_USER_HOURLY_LIMIT):
+            enforce_translation_rate_limits("user-1")
+
+        with self.assertRaises(HTTPException) as raised:
+            enforce_translation_rate_limits("user-1")
+
+        self.assertEqual(raised.exception.status_code, 429)
 
 
 if __name__ == "__main__":
