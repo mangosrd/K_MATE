@@ -299,6 +299,22 @@ export default function LearningSessionPage({
   params: Promise<{ characterId: string; chapterId: string }>;
 }) {
   const { characterId, chapterId } = use(params);
+  return (
+    <LearningSession
+      key={`${characterId}:${chapterId}`}
+      characterId={characterId}
+      chapterId={chapterId}
+    />
+  );
+}
+
+function LearningSession({
+  characterId,
+  chapterId,
+}: {
+  characterId: string;
+  chapterId: string;
+}) {
   const { t, language } = useLanguage();
   const { membership, membershipLoaded } = useMembership();
   const { freeSlots, freeSlotsLoaded } = useFreeCharSlots();
@@ -409,28 +425,7 @@ export default function LearningSessionPage({
   const [correctCount, setCorrectCount] = useState(0);
   const [wrongCount, setWrongCount] = useState(0);
 
-  // "다음 챕터" 버튼은 같은 페이지 템플릿(app/learn/[characterId]/[chapterId]) 안에서
-  // chapterId만 바뀌는 client-side 이동이라, Next.js가 이 컴포넌트를 재마운트하지 않고
-  // 재사용할 수 있다 — 그러면 phase/currentIdx/score 등이 이전 챕터 값 그대로 남아
-  // 새 챕터인데 완료 화면이나 엉뚱한 진행 상태가 뜬다. chapterId가 바뀔 때마다 세션
-  // 진행 상태를 명시적으로 초기화한다.
-  useEffect(() => {
-    setPhase("intro");
-    setCurrentIdx(0);
-    setStoryIdx(0);
-    setScore(0);
-    setCorrectCount(0);
-    setWrongCount(0);
-    setLessonSessionId(null);
-    setEntryError("");
-    setShowReading(false);
-  }, [chapterId]);
-
-  const totalExercises = exercises.length;
-  const currentEx = exercises[currentIdx];
-  const pct = Math.round((currentIdx / totalExercises) * 100);
-
-  useEffect(() => {
+  const resetExerciseState = () => {
     setSelectedOption(null);
     setSelectedTokenIndexes([]);
     setInputText("");
@@ -441,7 +436,16 @@ export default function LearningSessionPage({
     setIsSkipped(false);
     setFlipped(false);
     setIsListeningSTT(false);
-  }, [currentIdx]);
+  };
+
+  // "다음 챕터" 버튼은 같은 페이지 템플릿(app/learn/[characterId]/[chapterId]) 안에서
+  // chapterId만 바뀌는 client-side 이동이라, Next.js가 이 컴포넌트를 재마운트하지 않고
+  // 재사용할 수 있다 — 그러면 phase/currentIdx/score 등이 이전 챕터 값 그대로 남아
+  // 새 챕터인데 완료 화면이나 엉뚱한 진행 상태가 뜬다. chapterId가 바뀔 때마다 세션
+  // 진행 상태를 명시적으로 초기화한다.
+  const totalExercises = exercises.length;
+  const currentEx = exercises[currentIdx];
+  const pct = Math.round((currentIdx / totalExercises) * 100);
 
   // 챕터 순서 잠금(이전 챕터 완료 여부) 확인용 — 목록 페이지에서만 막던 걸 콘텐츠 페이지에서도
   // 다시 한번 검증한다. 목록의 Link가 href="#"로 막아주긴 하지만, URL을 직접 입력하면
@@ -567,6 +571,7 @@ export default function LearningSessionPage({
         })
         .catch(() => {});
     } else {
+      resetExerciseState();
       setCurrentIdx((i) => i + 1);
     }
   };
@@ -611,6 +616,7 @@ export default function LearningSessionPage({
   };
 
   const handleReplay = () => {
+    resetExerciseState();
     setPhase("intro");
     setCurrentIdx(0);
     setStoryIdx(0);
