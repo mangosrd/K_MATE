@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect, use } from "react";
+import { useState, useRef, useEffect, use, useMemo, useSyncExternalStore } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
@@ -79,6 +79,8 @@ const REGION_TRANSLATION_KEYS: Record<string, string> = {
   chungcheong: "chungcheongRoute",
   jeju: "jejuRoute",
 };
+
+const subscribeToLocalChatHistory = () => () => {};
 
 // The first line is shown before the API is called, so it must carry the same
 // character voice as the server prompt instead of falling back to an airline notice.
@@ -191,32 +193,28 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
   // Do not write the greeting to storage until we have checked for an existing
   // conversation. Otherwise the initial render can overwrite it before the
   // user gets a chance to press "continue".
-  const [resumeChoice, setResumeChoice] = useState<"checking" | "pending" | "resolved">("checking");
+  const [resumeResolvedFor, setResumeResolvedFor] = useState<string | null>(null);
+  const hasSavedConversation = useSyncExternalStore(
+    subscribeToLocalChatHistory,
+    () => Boolean(getChatHistory(characterId)?.some((message) => message.role === "user")),
+    () => false,
+  );
+  const resumePending = hasSavedConversation && resumeResolvedFor !== characterId;
+  const visibleMessages = useMemo(
+    () => messages.some((message) => message.role === "user")
+      ? messages
+      : [{ role: "assistant" as const, content: initialOpening }],
+    [initialOpening, messages],
+  );
 
-  // LanguageContext restores the saved language after hydration. Until the user
-  // actually sends a message, replace the temporary Korean greeting with the
-  // selected language rather than leaving a mismatched first bubble behind.
-  useEffect(() => {
-    if (resumeChoice !== "resolved") return;
-    setMessages((previous) => (
-      previous.some((message) => message.role === "user")
-        ? previous
-        : [{ role: "assistant", content: initialOpening }]
-    ));
-  }, [characterId, initialOpening, resumeChoice]);
-
-  useEffect(() => {
+  /*
     // 저장된 기록이 시작 인사말(캐릭터가 먼저 건 말) 하나뿐이면 "대화"라고 볼 수
     // 없다 — 아래 저장 effect가 인사말만 있어도 그대로 저장해버려서, 실제로 아무
     // 말도 안 하고 페이지만 열었다 나가도 다음 방문 때 계속 팝업이 떴었다.
     // 사용자가 실제로 메시지를 보낸 기록이 있을 때만 이어서 하기를 제안한다.
-    const history = getChatHistory(characterId);
-    if (history?.some((m) => m.role === "user")) {
-      setResumeChoice("pending");
-    } else {
-      setResumeChoice("resolved");
-    }
-  }, [characterId]);
+  */
+  // Reading saved history during render avoids two state-setting effects and
+  // keeps the localized opening in sync without an extra paint.
   const [isListening, setIsListening] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
@@ -224,19 +222,19 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
   const handleResume = () => {
     const history = getChatHistory(characterId);
     if (history) setMessages(history);
-    setResumeChoice("resolved");
+    setResumeResolvedFor(characterId);
   };
   const handleFreshStart = () => {
     clearChatHistory(characterId);
     setMessages(INITIAL_MESSAGES);
-    setResumeChoice("resolved");
+    setResumeResolvedFor(characterId);
   };
 
   // 대화 내용이 바뀔 때마다 로컬(브라우저)에 저장 — 재접속 시 이어서 할 수 있도록
   useEffect(() => {
-    if (resumeChoice !== "resolved") return;
-    saveChatHistory(characterId, messages);
-  }, [messages, resumeChoice, characterId]);
+    if (resumePending) return;
+    saveChatHistory(characterId, visibleMessages);
+  }, [characterId, resumePending, visibleMessages]);
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -250,7 +248,7 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
     setInput("");
 
     const newMessages: ChatMessage[] = [
-      ...messages,
+      ...visibleMessages,
       { role: "user", content: userMessage },
     ];
     setMessages(newMessages);
@@ -264,7 +262,7 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
         body: JSON.stringify({
           character_id: characterId,
           user_message: userMessage,
-          session_history: messages,
+          session_history: visibleMessages,
           user_id: getEffectiveUserId(),
           user_language: language,
         }),
@@ -488,7 +486,7 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
 
         {/* 메시지 영역 */}
         <div className={styles.messages} role="log" aria-live="polite">
-          {messages.map((msg, i) => (
+          {visibleMessages.map((msg, i) => (
             <div
               key={i}
               className={`${styles.msgRow} ${msg.role === "user" ? styles.msgRowUser : styles.msgRowAi}`}
@@ -573,7 +571,7 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
       )}
 
       {/* 이전 대화 이어서 하기 / 새로 시작하기 선택 */}
-      {resumeChoice === "pending" && (
+      {resumePending && (
         <div className="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-resume-title">
           <div className="modal-sheet" onClick={(e) => e.stopPropagation()}>
             <div className="modal-handle" />
