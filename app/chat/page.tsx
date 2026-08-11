@@ -254,14 +254,42 @@ export default function ChatSelectPage() {
   const { membership } = useMembership();
   const { freeSlots } = useFreeCharSlots();
   const [videoState, setVideoState] = useState<"loading" | "ready" | "failed">("loading");
+  const lobbyVideoRef = useRef<HTMLVideoElement | null>(null);
+  const lobbyVisibleRef = useRef(true);
   // Some Android WebViews stop instead of honoring the native `loop` attribute.
   // Explicitly restarting on the final frame keeps the lobby alive after 10 seconds.
   const restartLobbyVideo = useCallback((video: HTMLVideoElement) => {
+    if (document.hidden || !lobbyVisibleRef.current) return;
     video.currentTime = 0;
     void video.play().catch(() => {
       // A muted video is normally allowed to autoplay. If a device temporarily
       // blocks it, the next tap on a captain still proceeds to the chat route.
     });
+  }, []);
+
+  useEffect(() => {
+    const video = lobbyVideoRef.current;
+    if (!video) return;
+
+    const updatePlayback = () => {
+      if (document.hidden || !lobbyVisibleRef.current) {
+        video.pause();
+      } else {
+        void video.play().catch(() => {});
+      }
+    };
+    const observer = new IntersectionObserver(([entry]) => {
+      lobbyVisibleRef.current = entry.isIntersecting;
+      updatePlayback();
+    }, { threshold: 0.15 });
+
+    observer.observe(video);
+    document.addEventListener("visibilitychange", updatePlayback);
+    return () => {
+      observer.disconnect();
+      document.removeEventListener("visibilitychange", updatePlayback);
+      video.pause();
+    };
   }, []);
 
   return (
@@ -283,21 +311,16 @@ export default function ChatSelectPage() {
 
           <section className={styles.videoStage} aria-label={t("selectCaptain")}>
             <video
+              ref={lobbyVideoRef}
               className={`${styles.lobbyVideo} ${videoState === "ready" ? styles.lobbyVideoReady : ""}`}
               src="/media/captain-lobby.mp4"
               autoPlay
               muted
               playsInline
-              preload="auto"
+              preload="metadata"
               onCanPlay={() => setVideoState("ready")}
               onError={() => setVideoState("failed")}
               onEnded={(event) => restartLobbyVideo(event.currentTarget)}
-              onTimeUpdate={(event) => {
-                const video = event.currentTarget;
-                if (video.duration && video.currentTime >= video.duration - 0.08) {
-                  restartLobbyVideo(video);
-                }
-              }}
               aria-hidden="true"
             />
             {videoState !== "ready" && (
