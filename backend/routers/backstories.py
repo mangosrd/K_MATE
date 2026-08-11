@@ -3,9 +3,10 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 
 from database import get_db
-from models.models import PremiumStory, User, UserStoryUnlock
+from models.models import Character, PremiumStory, User, UserStoryUnlock
 from schemas.schemas import PremiumStoryItemResponse, PremiumStoryUnlockRequest, PremiumStoryUnlockResponse
 from services.wallet import change_coins, get_wallet
+from services.access_control import check_character_access
 from services.session_auth import require_current_user, require_same_user
 
 router = APIRouter(prefix="/backstories", tags=["backstories"])
@@ -24,8 +25,11 @@ def _item(story: PremiumStory, unlocked: bool) -> PremiumStoryItemResponse:
 @router.get("/{character_id}", response_model=list[PremiumStoryItemResponse])
 def list_backstories(character_id: str, user_id: str, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
     require_same_user(current_user_id, user_id)
-    if not db.query(User.id).filter(User.id == user_id).first():
-        raise HTTPException(status_code=404, detail="User not found")
+    user = db.query(User).filter(User.id == user_id).first()
+    character = db.query(Character).filter(Character.id == character_id).first()
+    if not user or not character:
+        raise HTTPException(status_code=404, detail="User or character not found")
+    check_character_access(user, character)
     stories = db.query(PremiumStory).filter(
         PremiumStory.character_id == character_id, PremiumStory.is_published.is_(True)
     ).order_by(PremiumStory.episode_number).all()
@@ -39,8 +43,11 @@ def unlock_backstory(story_id: str, req: PremiumStoryUnlockRequest, current_user
     story = db.query(PremiumStory).filter(PremiumStory.id == story_id, PremiumStory.is_published.is_(True)).first()
     if not story:
         raise HTTPException(status_code=404, detail="Story not found")
-    if not db.query(User.id).filter(User.id == req.user_id).first():
-        raise HTTPException(status_code=404, detail="User not found")
+    user = db.query(User).filter(User.id == req.user_id).first()
+    character = db.query(Character).filter(Character.id == story.character_id).first()
+    if not user or not character:
+        raise HTTPException(status_code=404, detail="User or character not found")
+    check_character_access(user, character)
     existing = db.query(UserStoryUnlock).filter(
         UserStoryUnlock.user_id == req.user_id, UserStoryUnlock.story_id == story_id
     ).first()
