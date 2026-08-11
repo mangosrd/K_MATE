@@ -186,3 +186,53 @@
   background: var(--bg-elevated);
   border-radius: var(--radius-lg);
 }
+
+.playBillingCard {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px;
+  background: var(--bg-base);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.playBillingIcon {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  flex: 0 0 52px;
+  border-radius: 16px;
+  color: #fff;
+  background: linear-gradient(145deg, #34a853 0 35%, #fbbc04 35% 58%, #ea4335 58% 78%, #4285f4 78%);
+  font-size: 22px;
+  line-height: 1;
+}
+
+.playBillingText {
+  min-width: 0;
+  color: var(--text-primary);
+}
+
+.playBillingText strong {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 17px;
+}
+
+.playBillingText p,
+.playBillingPrivacy {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.playBillingPrivacy {
+  padding: 14px;
+  text-align: center;
+  background: var(--bg-elevated);
+  border-radius: var(--radius-md);
+}

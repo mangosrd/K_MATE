@@ -166,6 +166,7 @@ def _detect_brand(number: str) -> str:
 
 @router.get("/user/{user_id}/payment-methods", response_model=list[PaymentMethodResponse])
 def list_payment_methods(user_id: str, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
+    raise HTTPException(status_code=410, detail="Card storage has been removed. Manage payments through Google Play.")
     require_same_user(current_user_id, user_id)
     methods = (
         db.query(PaymentMethod)
@@ -181,6 +182,7 @@ def list_payment_methods(user_id: str, current_user_id: str = Depends(require_cu
 
 @router.post("/user/{user_id}/payment-methods", response_model=PaymentMethodResponse)
 def add_payment_method(user_id: str, req: PaymentMethodCreateRequest, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
+    raise HTTPException(status_code=410, detail="Card storage has been removed. Manage payments through Google Play.")
     require_same_user(current_user_id, user_id)
     user = db.query(User).filter(User.id == user_id).first()
     if not user:
@@ -206,6 +208,7 @@ def add_payment_method(user_id: str, req: PaymentMethodCreateRequest, current_us
 
 @router.delete("/payment-methods/{method_id}", response_model=SimpleSuccessResponse)
 def delete_payment_method(method_id: str, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
+    raise HTTPException(status_code=410, detail="Card storage has been removed. Manage payments through Google Play.")
     method = db.query(PaymentMethod).filter(PaymentMethod.id == method_id).first()
     if method:
         require_same_user(current_user_id, method.user_id)

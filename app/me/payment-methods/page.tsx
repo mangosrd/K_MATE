@@ -1,141 +1,97 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import Link from "next/link";
-import { getAuthHeaders, getCurrentUser, getEffectiveUserId } from "@/lib/auth/store";
-import { useLanguage } from "@/components/LanguageContext";
+import { Language, useLanguage } from "@/components/LanguageContext";
 import formStyles from "../settings-form.module.css";
 
-const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
+const PLAY_SUBSCRIPTIONS_URL =
+  "https://play.google.com/store/account/subscriptions?package=com.kmate.app";
 
-const BRAND_ICON: Record<string, string> = {
-  "Visa": "💳",
-  "Mastercard": "💳",
-  "American Express": "💳",
-  "JCB / UnionPay": "💳",
-  "Card": "💳",
+const COPY: Record<
+  Language,
+  { title: string; description: string; privacy: string; manage: string }
+> = {
+  ko: {
+    title: "결제 및 구독",
+    description: "K-MATE의 결제와 구독은 Google Play에서 안전하게 처리됩니다.",
+    privacy: "K-MATE는 카드번호를 직접 수집하거나 저장하지 않습니다.",
+    manage: "Google Play에서 구독 관리",
+  },
+  en: {
+    title: "Payments & subscriptions",
+    description: "K-MATE payments and subscriptions are securely processed by Google Play.",
+    privacy: "K-MATE does not collect or store your card number.",
+    manage: "Manage on Google Play",
+  },
+  ru: {
+    title: "Платежи и подписки",
+    description: "Платежи и подписки K-MATE безопасно обрабатываются через Google Play.",
+    privacy: "K-MATE не собирает и не хранит номера банковских карт.",
+    manage: "Управлять в Google Play",
+  },
+  zh: {
+    title: "付款与订阅",
+    description: "K-MATE 的付款和订阅均由 Google Play 安全处理。",
+    privacy: "K-MATE 不会直接收集或保存您的银行卡号。",
+    manage: "在 Google Play 中管理订阅",
+  },
+  ja: {
+    title: "お支払いと定期購入",
+    description: "K-MATEのお支払いと定期購入はGoogle Playで安全に処理されます。",
+    privacy: "K-MATEがカード番号を直接収集・保存することはありません。",
+    manage: "Google Playで定期購入を管理",
+  },
+  "zh-TW": {
+    title: "付款與訂閱",
+    description: "K-MATE 的付款與訂閱均由 Google Play 安全處理。",
+    privacy: "K-MATE 不會直接收集或儲存您的信用卡號。",
+    manage: "在 Google Play 中管理訂閱",
+  },
+  th: {
+    title: "การชำระเงินและการสมัครสมาชิก",
+    description: "การชำระเงินและการสมัครสมาชิกของ K-MATE ดำเนินการอย่างปลอดภัยผ่าน Google Play",
+    privacy: "K-MATE จะไม่รวบรวมหรือจัดเก็บหมายเลขบัตรของคุณโดยตรง",
+    manage: "จัดการการสมัครสมาชิกใน Google Play",
+  },
 };
 
-interface PaymentMethod {
-  id: string;
-  brand: string;
-  last4: string;
-  created_at: string;
-}
-
 export default function PaymentMethodsPage() {
-  const { t } = useLanguage();
-  const authUser = getCurrentUser();
-
-  const [methods, setMethods] = useState<PaymentMethod[]>([]);
-  const [loaded, setLoaded] = useState(false);
-  const [cardNumber, setCardNumber] = useState("");
-  const [error, setError] = useState<string | null>(null);
-  const [adding, setAdding] = useState(false);
-
-  const loadMethods = () => {
-    if (!authUser) {
-      setLoaded(true);
-      return;
-    }
-    fetch(`${BACKEND_URL}/user/${getEffectiveUserId()}/payment-methods`, { headers: getAuthHeaders() })
-      .then((res) => (res.ok ? res.json() : []))
-      .then((data) => setMethods(data ?? []))
-      .catch(() => {})
-      .finally(() => setLoaded(true));
-  };
-
-  useEffect(loadMethods, []);
-
-  const handleAdd = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!authUser) return;
-    setError(null);
-    setAdding(true);
-    try {
-      const res = await fetch(`${BACKEND_URL}/user/${getEffectiveUserId()}/payment-methods`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json", ...getAuthHeaders() },
-        body: JSON.stringify({ user_id: getEffectiveUserId(), card_number: cardNumber }),
-      });
-      if (!res.ok) {
-        setError(t("invalidCardMsg"));
-        return;
-      }
-      setCardNumber("");
-      loadMethods();
-    } catch {
-      setError(t("invalidCardMsg"));
-    } finally {
-      setAdding(false);
-    }
-  };
-
-  const handleRemove = async (id: string) => {
-    await fetch(`${BACKEND_URL}/payment-methods/${id}`, { method: "DELETE", headers: getAuthHeaders() }).catch(() => {});
-    setMethods((prev) => prev.filter((m) => m.id !== id));
-  };
+  const { language, t } = useLanguage();
+  const copy = COPY[language];
 
   return (
     <div className="page-content">
       <header className="page-header">
         <div>
-          <Link href="/me" className={formStyles.backLink}>{t("backToMyPage")}</Link>
-          <h1 className="page-title">{t("paymentMethods")}</h1>
+          <Link href="/me" className={formStyles.backLink}>
+            {t("backToMyPage")}
+          </Link>
+          <h1 className="page-title">{copy.title}</h1>
         </div>
       </header>
 
-      {!loaded ? (
-        <div className={formStyles.form} aria-hidden="true">⏳</div>
-      ) : !authUser ? (
-        <div className={formStyles.form}>
-          <p className={formStyles.guestNotice}>{t("guestProfileNotice")}</p>
+      <section className={formStyles.form}>
+        <div className={formStyles.playBillingCard}>
+          <div className={formStyles.playBillingIcon} aria-hidden="true">
+            ▶
+          </div>
+          <div className={formStyles.playBillingText}>
+            <strong>Google Play</strong>
+            <p>{copy.description}</p>
+          </div>
         </div>
-      ) : (
-        <div className={formStyles.form}>
-          {methods.length === 0 ? (
-            <p className={formStyles.emptyState}>{t("noPaymentMethods")}</p>
-          ) : (
-            <div className={formStyles.cardList}>
-              {methods.map((m) => (
-                <div key={m.id} className={formStyles.cardItem}>
-                  <span className={formStyles.cardInfo}>
-                    {BRAND_ICON[m.brand] ?? "💳"} {m.brand} •••• {m.last4}
-                  </span>
-                  <button
-                    type="button"
-                    className={formStyles.removeBtn}
-                    onClick={() => handleRemove(m.id)}
-                  >
-                    {t("removeCardBtn")}
-                  </button>
-                </div>
-              ))}
-            </div>
-          )}
 
-          <form onSubmit={handleAdd} className={formStyles.field} style={{ marginTop: 8 }}>
-            <label className={formStyles.label} htmlFor="card-number">{t("cardNumberLabel")}</label>
-            <input
-              id="card-number"
-              inputMode="numeric"
-              className={formStyles.input}
-              placeholder={t("cardNumberPlaceholder")}
-              value={cardNumber}
-              onChange={(e) => setCardNumber(e.target.value)}
-              required
-              minLength={12}
-              maxLength={19}
-            />
-            {error && <p className={formStyles.errorMsg}>{error}</p>}
-            <button type="submit" className="btn btn-primary btn-lg" id="btn-add-card" disabled={adding} style={{ marginTop: 8 }}>
-              {adding ? t("savingBtn") : t("addCardBtn")}
-            </button>
-          </form>
+        <p className={formStyles.playBillingPrivacy}>{copy.privacy}</p>
 
-          <p className={formStyles.notice}>{t("paymentSimNotice")}</p>
-        </div>
-      )}
+        <a
+          className="btn btn-primary btn-lg"
+          href={PLAY_SUBSCRIPTIONS_URL}
+          target="_blank"
+          rel="noreferrer"
+        >
+          {copy.manage}
+        </a>
+      </section>
     </div>
   );
 }
