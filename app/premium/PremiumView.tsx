@@ -1,11 +1,11 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import { MOCK_CHARACTERS } from "@/lib/db/mock";
-import { getCurrentUser, setCurrentUser, getEffectiveUserId } from "@/lib/auth/store";
+import { getCurrentUser, setCurrentUser } from "@/lib/auth/store";
 import { useFreeCharSlots, useMembership } from "@/lib/auth/useAuthUser";
 import { useLanguage } from "@/components/LanguageContext";
 import {
@@ -15,8 +15,6 @@ import {
 import styles from "./premium.module.css";
 
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
-const PREMIUM_PRICE_KRW = 4900; // backend/routers/billing.py의 PREMIUM_PRICE_KRW와 반드시 일치
-
 const PERKS = [
   { icon: "🧑‍🤝‍🧑", ko: "모든 메이트 이용", key: "perkAllMates" },
   { icon: "📔", ko: "모든 일기 해금 가능", key: "perkAllDiaries" },
@@ -53,7 +51,11 @@ export default function PremiumView() {
   ];
 
   const [charPacks, setCharPacks] = useState<CharacterPack[]>(FALLBACK_CHAR_PACKS);
-  const [unlockedChars, setUnlockedChars] = useState<string[]>(freeSlots);
+  const [verifiedUnlockedChars, setVerifiedUnlockedChars] = useState<string[]>([]);
+  const unlockedChars = useMemo(
+    () => Array.from(new Set([...freeSlots, ...verifiedUnlockedChars])),
+    [freeSlots, verifiedUnlockedChars],
+  );
   const [buyingCharId, setBuyingCharId] = useState<string | null>(null);
 
   useEffect(() => {
@@ -62,8 +64,6 @@ export default function PremiumView() {
       .then((data) => { if (data && data.length > 0) setCharPacks(data); })
       .catch(() => {}); // 실패해도 fallback이 그대로 유지 — 백엔드가 꺼져있어도 UI는 보여줌
   }, []);
-
-  useEffect(() => setUnlockedChars(freeSlots), [freeSlots]);
 
   // 안드로이드 앱(Play 스토어)에서만 인앱결제 리스너를 연결한다 — 웹에서는 그냥 아무 일도 안 함
   useEffect(() => {
@@ -79,7 +79,7 @@ export default function PremiumView() {
       },
       onCoinsGranted: () => {}, // 이 화면에서는 코인 구매를 안 하므로 무시
       onCharacterUnlocked: (characterId, slots) => {
-        setUnlockedChars(slots);
+        setVerifiedUnlockedChars((current) => Array.from(new Set([...current, characterId, ...slots])));
         setBuyingCharId(null);
       },
       onError: (message) => {
@@ -99,8 +99,6 @@ export default function PremiumView() {
     // 실제로 백엔드에 존재하는 계정을 가리키므로, 구독 자체는 로그인 여부와 무관하게
     // 진행할 수 있다. 예전엔 로그인 안 했으면 무조건 /login으로 튕겨보냈는데, 게스트
     // 계정 도입 이후로는 그럴 필요가 없어졌다(오히려 버튼이 반응 없는 것처럼 보였다).
-    const authUser = getCurrentUser();
-
     setLoading(true);
     setError(null);
 
