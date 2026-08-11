@@ -15,12 +15,11 @@ import {
   setPreferredCaptainId,
 } from "@/lib/auth/store";
 import { useAuthUser } from "@/lib/auth/useAuthUser";
-import { useLanguage, type Language } from "@/components/LanguageContext";
+import { useLanguage } from "@/components/LanguageContext";
 import LanguageModal from "@/components/LanguageModal";
 import ThemeModal from "@/components/ThemeModal";
 import WithdrawModal from "@/components/WithdrawModal";
 import MateSelectModal from "@/components/MateSelectModal";
-import { getRemainingAds, completeAdView, MAX_ADS_PER_DAY, COINS_PER_AD } from "@/lib/ads/adStore";
 import type { Progress } from "@/types/database";
 import ProfileCard from "./components/ProfileCard";
 import PremiumCard from "./components/PremiumCard";
@@ -33,26 +32,13 @@ import styles from "./me.module.css";
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
 const APP_VERSION = "1.0.0";
 
-const AD_COPY: Record<Language, { title: string; sub: (remaining: number) => string; watch: string; done: string }> = {
-  ko: { title: "광고 보고 코인 받기", sub: (n) => `1회당 🪙 ${COINS_PER_AD}코인 · 오늘 ${n}회 남음`, watch: "보기", done: "완료" },
-  en: { title: "Watch an ad, earn coins", sub: (n) => `🪙 ${COINS_PER_AD} coins per ad · ${n} left today`, watch: "Watch", done: "Done" },
-  ru: { title: "Смотрите рекламу и получайте монеты", sub: (n) => `🪙 ${COINS_PER_AD} монет за рекламу · осталось ${n}`, watch: "Смотреть", done: "Готово" },
-  zh: { title: "观看广告赚取金币", sub: (n) => `每次 🪙 ${COINS_PER_AD} 金币 · 今天还剩 ${n} 次`, watch: "观看", done: "完成" },
-  ja: { title: "広告を見てコインを獲得", sub: (n) => `1回につき 🪙 ${COINS_PER_AD} コイン・残り ${n} 回`, watch: "見る", done: "完了" },
-  "zh-TW": { title: "觀看廣告賺取金幣", sub: (n) => `每次 🪙 ${COINS_PER_AD} 金幣 · 今天剩 ${n} 次`, watch: "觀看", done: "完成" },
-  th: { title: "ดูโฆษณาเพื่อรับเหรียญ", sub: (n) => `รับ 🪙 ${COINS_PER_AD} เหรียญต่อครั้ง · เหลือ ${n} ครั้งวันนี้`, watch: "ดู", done: "เสร็จแล้ว" },
-};
-
 export default function MePage() {
   const router = useRouter();
   const { language, t } = useLanguage();
-  const adCopy = AD_COPY[language];
   const [showLangModal, setShowLangModal] = useState(false);
   const [showThemeModal, setShowThemeModal] = useState(false);
   const [showWithdrawModal, setShowWithdrawModal] = useState(false);
   const [showMateModal, setShowMateModal] = useState(false);
-  const [showAdModal, setShowAdModal] = useState(false);
-  const [adRemaining, setAdRemaining] = useState(MAX_ADS_PER_DAY); // SSR safe default
 
   const { authUser } = useAuthUser();
   const [serverDisplayName, setServerDisplayName] = useState("");
@@ -89,7 +75,6 @@ export default function MePage() {
     setMasteredCount(vocab.filter((v) => v.mastery === "mastered").length);
     setUnlockedDiaries(diaries.filter((d) => d.unlocked).length);
     // 광고 남은 횟수 (localStorage → 클라이언트에서만)
-    setAdRemaining(getRemainingAds());
   }, []);
 
   // 메이트 카드에 표시할 기장 — 사용자가 마이페이지에서 바꾼 선호값(localStorage)을 따른다.
@@ -145,24 +130,6 @@ export default function MePage() {
     router.push("/login");
   };
 
-  const handleAdReward = async (earnedCoins: number) => {
-    // 1. 로컬 카운터 업데이트
-    completeAdView();
-    setAdRemaining(getRemainingAds());
-    // 2. 코인 즉시 반영 (낙관적 업데이트)
-    const newCoins = coins + earnedCoins;
-    setCoins(newCoins);
-    // 3. 백엔드 동기화 (실패해도 UX 영향 없음)
-    try {
-      const userId = getEffectiveUserId();
-      await fetch(`${BACKEND_URL}/user/${userId}/add-coins`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json", ...getAuthHeaders() },
-        body: JSON.stringify({ coins: earnedCoins, reason: "ad_reward" }),
-      });
-    } catch { /* no-op — 백엔드 없으면 로컬값 유지 */ }
-  };
-
   const getLangName = (lang: string) => {
     switch (lang) {
       case "en": return "English";
@@ -194,27 +161,6 @@ export default function MePage() {
             coins={coins}
             coinLabel={t("coins")}
           />
-
-          {/* 광고 보기 코인 배너 */}
-          <div className={styles.adBanner}>
-            <div className={styles.adBannerLeft}>
-              <span className={styles.adBannerIcon}>📺</span>
-              <div>
-                <p className={styles.adBannerTitle}>{adCopy.title}</p>
-                <p className={styles.adBannerSub}>
-                  {adCopy.sub(adRemaining)}
-                </p>
-              </div>
-            </div>
-            <button
-              id="btn-watch-ad"
-              className={`btn btn-sm ${styles.adBannerBtn}`}
-              disabled={adRemaining <= 0}
-              onClick={() => setShowAdModal(true)}
-            >
-              {adRemaining > 0 ? adCopy.watch : adCopy.done}
-            </button>
-          </div>
 
           <PremiumCard
             isPremium={membership === "premium"}
