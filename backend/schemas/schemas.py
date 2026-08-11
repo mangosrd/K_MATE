@@ -107,15 +107,15 @@ class DiaryItemResponse(BaseModel):
 
 # ── 단어장 ────────────────────────────────────────────────
 class VocabItemCreate(BaseModel):
-    user_id: str
-    character_id: str
-    region_id: Optional[str] = None
-    word: str
-    reading: Optional[str] = None
-    meaning: str
-    sentence: Optional[str] = None
-    sentence_translation: Optional[str] = None
-    tags: List[str] = []
+    user_id: str = Field(min_length=1, max_length=36)
+    character_id: str = Field(min_length=1, max_length=50)
+    region_id: Optional[str] = Field(default=None, max_length=50)
+    word: str = Field(min_length=1, max_length=100)
+    reading: Optional[str] = Field(default=None, max_length=200)
+    meaning: str = Field(min_length=1, max_length=500)
+    sentence: Optional[str] = Field(default=None, max_length=2000)
+    sentence_translation: Optional[str] = Field(default=None, max_length=2000)
+    tags: List[str] = Field(default_factory=list, max_length=10)
 
 
 class VocabItemResponse(BaseModel):
