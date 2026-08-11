@@ -230,6 +230,10 @@ def get_user(user_id: str, current_user_id: str = Depends(require_current_user),
 
 @router.put("/user/{user_id}/membership", response_model=UserResponse, dependencies=[Depends(require_internal_secret)])
 def upgrade_membership(user_id: str, db: Session = Depends(get_db)):
+    raise HTTPException(
+        status_code=410,
+        detail="Development membership upgrades are disabled. Use Google Play Billing.",
+    )
     """프리미엄 구독 시작 (결제 연동 전 시뮬레이션 — 무료 체험 시작과 동일하게 즉시 업그레이드)"""
     user = db.query(User).filter(User.id == user_id).first()
     if not user:

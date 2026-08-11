@@ -285,6 +285,10 @@ def verify_android_coin_purchase(req: AndroidPurchaseVerifyRequest, current_user
 
 @router.post("/web-coins-dev", response_model=CoinPurchaseResponse, dependencies=[Depends(require_internal_secret)])
 def web_coin_purchase_dev(req: AndroidPurchaseVerifyRequest, db: Session = Depends(get_db)):
+    raise HTTPException(
+        status_code=410,
+        detail="Development coin grants are disabled. Use Google Play Billing.",
+    )
     """웹(포트원 연동 전) 코인 구매 임시 시뮬레이션 — 프리미엄 구독의 웹 시뮬레이션과
     동일한 목적. 실제 결제 검증 없이 코인을 바로 지급한다. 포트원 붙이면 이 엔드포인트를
     실제 결제 검증 로직으로 교체해야 한다.
@@ -479,6 +483,10 @@ def verify_android_character_purchase(req: AndroidPurchaseVerifyRequest, current
 
 @router.post("/web-character-dev", response_model=CharacterPurchaseResponse, dependencies=[Depends(require_internal_secret)])
 def web_character_purchase_dev(req: AndroidPurchaseVerifyRequest, db: Session = Depends(get_db)):
+    raise HTTPException(
+        status_code=410,
+        detail="Development character grants are disabled. Use Google Play Billing.",
+    )
     """웹(포트원 연동 전) 캐릭터 개별 잠금해제 임시 시뮬레이션 — 코인/프리미엄 웹
     시뮬레이션과 동일한 목적. 포트원 붙이면 실제 결제 검증 로직으로 교체해야 한다.
     """
