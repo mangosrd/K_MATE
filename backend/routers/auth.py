@@ -7,7 +7,10 @@ from fastapi.responses import RedirectResponse
 from sqlalchemy.orm import Session
 from sqlalchemy.sql import func
 from database import get_db, get_settings
-from schemas.schemas import RegisterRequest, LoginRequest, AuthUserResponse, WithdrawRequest, WithdrawResponse
+from schemas.schemas import (
+    AuthUserResponse, GoogleExchangeRequest, GoogleNativeLoginRequest,
+    LoginRequest, RegisterRequest, WithdrawRequest, WithdrawResponse,
+)
 from models.models import User, Economy, Progress, Memory, DiaryEntry, VocabItem
 import bcrypt
 import uuid
@@ -24,6 +27,13 @@ from google.oauth2 import id_token as google_id_token
 from services.session_auth import issue_access_token, require_current_user, require_same_user
 
 router = APIRouter(prefix="/auth", tags=["auth"])
+
+
+def _normalize_email(value: str) -> str:
+    email = value.strip().lower()
+    if email.count("@") != 1 or email.startswith("@") or email.endswith("@"):
+        raise HTTPException(status_code=422, detail="A valid email address is required")
+    return email
 
 
 def _sign_payload(payload: dict) -> str:
@@ -71,10 +81,12 @@ def _find_or_create_google_user(profile: dict, db: Session) -> User:
     email = profile.get("email")
     if not email or not profile.get("email_verified"):
         raise HTTPException(status_code=400, detail="A verified Google email address is required.")
+    email = _normalize_email(str(email))
 
     user = db.query(User).filter(User.email == email).first()
     if not user:
-        user = User(id=str(uuid.uuid4()), name=profile.get("name") or email.split("@", 1)[0], email=email,
+        name = str(profile.get("name") or email.split("@", 1)[0]).strip()[:100] or "Google User"
+        user = User(id=str(uuid.uuid4()), name=name, email=email,
                     password_hash=None, language="ko", membership="free", free_char_slots=["kyuhyun", "haneul"])
         db.add(user)
         db.flush()
@@ -95,16 +107,14 @@ def google_client_id():
 
 
 @router.post("/google/native", response_model=AuthUserResponse)
-def google_native_login(payload: dict, db: Session = Depends(get_db)):
-    token = str(payload.get("id_token", ""))
-    if not token:
-        raise HTTPException(status_code=400, detail="Google ID token is required")
+def google_native_login(payload: GoogleNativeLoginRequest, db: Session = Depends(get_db)):
+    token = payload.id_token
     try:
         profile = google_id_token.verify_oauth2_token(token, google_requests.Request(), get_settings().google_client_id)
     except ValueError:
         raise HTTPException(status_code=401, detail="Google login verification failed")
-    nonce = str(payload.get("nonce", ""))
-    if not nonce or profile.get("nonce") != nonce:
+    nonce = payload.nonce
+    if profile.get("nonce") != nonce:
         raise HTTPException(status_code=401, detail="Google login verification failed")
     return _to_response(_find_or_create_google_user(profile, db))
 
@@ -174,8 +184,8 @@ def google_callback(code: str, state: str, request: Request, db: Session = Depen
 
 
 @router.post("/google/exchange", response_model=AuthUserResponse)
-def google_exchange(payload: dict, db: Session = Depends(get_db)):
-    handoff = _read_signed_payload(str(payload.get("oauth_code", "")))
+def google_exchange(payload: GoogleExchangeRequest, db: Session = Depends(get_db)):
+    handoff = _read_signed_payload(payload.oauth_code)
     user = db.query(User).filter(User.id == handoff.get("user_id")).first()
     if not user or user.is_withdrawn:
         raise HTTPException(status_code=401, detail="Google login has expired. Please try again.")
@@ -185,7 +195,11 @@ def google_exchange(payload: dict, db: Session = Depends(get_db)):
 @router.post("/register", response_model=AuthUserResponse)
 def register(req: RegisterRequest, db: Session = Depends(get_db)):
     """이메일 회원가입"""
-    existing = db.query(User).filter(User.email == req.email).first()
+    email = _normalize_email(req.email)
+    name = req.name.strip()
+    if not name:
+        raise HTTPException(status_code=422, detail="Name is required")
+    existing = db.query(User).filter(User.email == email).first()
     if existing:
         raise HTTPException(status_code=400, detail="이미 가입된 이메일입니다")
 
@@ -193,8 +207,8 @@ def register(req: RegisterRequest, db: Session = Depends(get_db)):
 
     user = User(
         id=str(uuid.uuid4()),
-        name=req.name,
-        email=req.email,
+        name=name,
+        email=email,
         password_hash=password_hash,
         language="ko",
         membership="free",
@@ -241,7 +255,8 @@ def create_guest(db: Session = Depends(get_db)):
 @router.post("/login", response_model=AuthUserResponse)
 def login(req: LoginRequest, db: Session = Depends(get_db)):
     """이메일 로그인"""
-    user = db.query(User).filter(User.email == req.email).first()
+    email = _normalize_email(req.email)
+    user = db.query(User).filter(User.email == email).first()
     if not user or not user.password_hash:
         raise HTTPException(status_code=401, detail="이메일 또는 비밀번호가 올바르지 않습니다")
 

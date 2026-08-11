@@ -259,14 +259,23 @@ class UserResponse(BaseModel):
 
 # ── 인증 ──────────────────────────────────────────────────
 class RegisterRequest(BaseModel):
-    email: str
-    password: str
-    name: str
+    email: str = Field(min_length=3, max_length=255)
+    password: str = Field(min_length=8, max_length=128)
+    name: str = Field(min_length=1, max_length=100)
 
 
 class LoginRequest(BaseModel):
-    email: str
-    password: str
+    email: str = Field(min_length=3, max_length=255)
+    password: str = Field(min_length=1, max_length=128)
+
+
+class GoogleNativeLoginRequest(BaseModel):
+    id_token: str = Field(min_length=100, max_length=10000)
+    nonce: str = Field(min_length=16, max_length=500)
+
+
+class GoogleExchangeRequest(BaseModel):
+    oauth_code: str = Field(min_length=20, max_length=4096)
 
 
 class AuthUserResponse(BaseModel):
@@ -279,8 +288,8 @@ class AuthUserResponse(BaseModel):
 
 
 class WithdrawRequest(BaseModel):
-    user_id: str
-    password: str
+    user_id: str = Field(min_length=1, max_length=36)
+    password: str = Field(min_length=1, max_length=128)
 
 
 class WithdrawResponse(BaseModel):
