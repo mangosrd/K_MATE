@@ -26,6 +26,60 @@ const REGION_NAMES: Record<string, string> = {
 
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
 
+type ChatUiCopy = {
+  chooseCaptain: string;
+  captain: string;
+  voiceInput: string;
+  listening: string;
+  inputPlaceholder: string;
+  resumeTitle: string;
+  resumeBody: (name: string) => string;
+  freshStart: string;
+  resume: string;
+  endTitle: string;
+  endBody: string;
+  keepChatting: string;
+  endAndDiary: string;
+};
+
+const CHAT_UI_COPY: Record<Language, ChatUiCopy> = {
+  ko: { chooseCaptain: "기장님 선택", captain: "기장", voiceInput: "한국어 음성 입력", listening: "듣고 있습니다… 한국어로 말씀하세요", inputPlaceholder: "한국어로 입력하거나 질문해 보세요…", resumeTitle: "이전 대화가 있어요", resumeBody: (name) => `${name} 기장님과 나눈 대화를 이어서 할까요, 새로 시작할까요?`, freshStart: "새로 시작하기", resume: "이어서 하기", endTitle: "대화가 끝났어요", endBody: "오늘의 대화를 바탕으로 메이트가 일기를 쓰기 시작해요. 종료하시겠어요?", keepChatting: "계속 대화하기", endAndDiary: "종료 및 일기 보기" },
+  en: { chooseCaptain: "Choose captain", captain: "Captain", voiceInput: "Korean voice input", listening: "Listening… Speak in Korean", inputPlaceholder: "Type in Korean or ask a question…", resumeTitle: "You have a previous chat", resumeBody: (name) => `Continue your chat with Captain ${name}, or start a new one?`, freshStart: "Start new", resume: "Continue", endTitle: "End this chat?", endBody: "Your mate will begin writing a diary from today's chat. Would you like to end it?", keepChatting: "Keep chatting", endAndDiary: "End and view diary" },
+  ru: { chooseCaptain: "Выбрать капитана", captain: "Капитан", voiceInput: "Голосовой ввод на корейском", listening: "Слушаю… Говорите по-корейски", inputPlaceholder: "Напишите по-корейски или задайте вопрос…", resumeTitle: "У вас есть предыдущий чат", resumeBody: (name) => `Продолжить разговор с капитаном ${name} или начать новый?`, freshStart: "Начать новый", resume: "Продолжить", endTitle: "Завершить разговор?", endBody: "На основе сегодняшнего разговора ваш спутник начнёт писать дневник. Завершить?", keepChatting: "Продолжить разговор", endAndDiary: "Завершить и открыть дневник" },
+  zh: { chooseCaptain: "选择机长", captain: "机长", voiceInput: "韩语语音输入", listening: "正在聆听… 请说韩语", inputPlaceholder: "请输入韩语或提出问题…", resumeTitle: "你有一段之前的对话", resumeBody: (name) => `要继续与${name}机长的对话，还是重新开始？`, freshStart: "重新开始", resume: "继续对话", endTitle: "要结束对话吗？", endBody: "你的伙伴会根据今天的对话开始写日记。确定结束吗？", keepChatting: "继续对话", endAndDiary: "结束并查看日记" },
+  ja: { chooseCaptain: "機長を選ぶ", captain: "機長", voiceInput: "韓国語の音声入力", listening: "聞いています… 韓国語で話してください", inputPlaceholder: "韓国語で入力するか、質問してください…", resumeTitle: "前回の会話があります", resumeBody: (name) => `${name}機長との会話を続けますか？ それとも新しく始めますか？`, freshStart: "新しく始める", resume: "続きから", endTitle: "会話を終了しますか？", endBody: "今日の会話をもとに、メイトが日記を書き始めます。終了しますか？", keepChatting: "会話を続ける", endAndDiary: "終了して日記を見る" },
+  "zh-TW": { chooseCaptain: "選擇機長", captain: "機長", voiceInput: "韓語語音輸入", listening: "正在聆聽… 請說韓語", inputPlaceholder: "請輸入韓語或提出問題…", resumeTitle: "你有一段先前的對話", resumeBody: (name) => `要繼續與${name}機長的對話，還是重新開始？`, freshStart: "重新開始", resume: "繼續對話", endTitle: "要結束對話嗎？", endBody: "你的夥伴會根據今天的對話開始寫日記。確定結束嗎？", keepChatting: "繼續對話", endAndDiary: "結束並查看日記" },
+  th: { chooseCaptain: "เลือกกัปตัน", captain: "กัปตัน", voiceInput: "ป้อนเสียงภาษาเกาหลี", listening: "กำลังฟัง… กรุณาพูดภาษาเกาหลี", inputPlaceholder: "พิมพ์ภาษาเกาหลีหรือถามคำถาม…", resumeTitle: "มีบทสนทนาก่อนหน้า", resumeBody: (name) => `ต้องการคุยต่อกับกัปตัน ${name} หรือเริ่มใหม่?`, freshStart: "เริ่มใหม่", resume: "คุยต่อ", endTitle: "จบบทสนทนาหรือไม่?", endBody: "เมทจะเริ่มเขียนไดอารีจากบทสนทนาวันนี้ ต้องการจบหรือไม่?", keepChatting: "คุยต่อ", endAndDiary: "จบและดูไดอารี" },
+};
+
+const CHAT_GENERIC_OPENING: Record<Language, string> = {
+  ko: "반가워요. 오늘은 어떤 이야기를 나누고 싶어요?",
+  en: "It is good to see you. What would you like to talk about today?",
+  ru: "Рад вас видеть. О чём вы хотели бы поговорить сегодня?",
+  zh: "很高兴见到你。今天想聊些什么？",
+  ja: "会えてうれしいです。今日は何について話したいですか？",
+  "zh-TW": "很高興見到你。今天想聊些什麼？",
+  th: "ดีใจที่ได้พบคุณ วันนี้อยากคุยเรื่องอะไรครับ",
+};
+
+const CHAT_RETRY_MESSAGE: Record<Language, string> = {
+  ko: "잠깐만요… 연결이 불안정해요. 다시 시도해 볼게요!",
+  en: "One moment… The connection is unstable. Let me try again!",
+  ru: "Минуточку… Соединение нестабильно. Попробуем ещё раз!",
+  zh: "请稍等… 网络连接不稳定。我们再试一次！",
+  ja: "少し待ってください… 接続が不安定です。もう一度試します！",
+  "zh-TW": "請稍等… 網路連線不穩定。我們再試一次！",
+  th: "รอสักครู่… การเชื่อมต่อไม่เสถียร ลองอีกครั้งนะครับ",
+};
+
+const REGION_TRANSLATION_KEYS: Record<string, string> = {
+  seoul: "seoulRoute",
+  jeonju: "jeonjuRoute",
+  busan: "busanRoute",
+  chungcheong: "chungcheongRoute",
+  jeju: "jejuRoute",
+};
+
 // The first line is shown before the API is called, so it must carry the same
 // character voice as the server prompt instead of falling back to an airline notice.
 const CAPTAIN_OPENINGS: Record<Language, Record<string, string>> = {
@@ -83,6 +137,7 @@ const CAPTAIN_OPENINGS: Record<Language, Record<string, string>> = {
 export default function ChatPage({ params }: { params: Promise<{ characterId: string }> }) {
   const { characterId } = use(params);
   const { language, t } = useLanguage();
+  const ui = CHAT_UI_COPY[language];
   const { membership, membershipLoaded } = useMembership();
   const { freeSlots, freeSlotsLoaded } = useFreeCharSlots();
   const router = useRouter();
@@ -113,14 +168,14 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
   }, [canAccess, char.requires_premium, freeSlotsLoaded, membershipLoaded, router]);
 
   const initialOpening =
-    CAPTAIN_OPENINGS[language][char.id] ?? "반가워요. 오늘은 어떤 이야기를 나누고 싶어요?";
+    CAPTAIN_OPENINGS[language][char.id] ?? CHAT_GENERIC_OPENING[language];
+  const routeLabel = t(REGION_TRANSLATION_KEYS[char.region_id] ?? "routeLabel");
   const INITIAL_MESSAGES: ChatMessage[] = [
     {
       role: "assistant",
-      content: `안녕하세요, 승객 여러분. 저는 ${char.name} 기장입니다. ${REGION_NAMES[char.region_id] ?? "한국"} 탑승을 환영합니다! ✈️ 안전한 여행을 위해 좌석 벨트를 착용해 주시기 바랍니다.`,
+      content: initialOpening,
     },
   ];
-  INITIAL_MESSAGES[0].content = initialOpening;
 
   const [messages, setMessages] = useState<ChatMessage[]>(INITIAL_MESSAGES);
   const [input, setInput] = useState("");
@@ -243,7 +298,7 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
     } catch {
       setMessages([
         ...newMessages,
-        { role: "assistant", content: "잠깐만요... 연결이 불안정해요. 다시 시도해볼게요! 😅" },
+        { role: "assistant", content: CHAT_RETRY_MESSAGE[language] },
       ]);
     } finally {
       setIsLoading(false);
@@ -392,15 +447,15 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
       <div className={styles.chatShell}>
         {/* 헤더 */}
         <header className={styles.chatHeader}>
-          <Link href="/chat" className={styles.backBtn} aria-label="기장님 선택으로 돌아가기">
+          <Link href="/chat" className={styles.backBtn} aria-label={ui.chooseCaptain}>
             <span aria-hidden="true">‹</span>
-            <span>기장님 선택</span>
+            <span>{ui.chooseCaptain}</span>
           </Link>
           <div className={styles.charInfo}>
             <div className={styles.charAvatar}>
               <Image
                 src={`/characters/${char.id}.png`}
-                alt={`${char.name} 기장`}
+                alt={`${ui.captain} ${char.name}`}
                 width={40}
                 height={40}
                 className={styles.charAvatarImg}
@@ -409,8 +464,8 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
               <span className={styles.charEmojiBack}>{char.emoji}</span>
             </div>
             <div>
-              <p className={styles.charName}>{char.name} 기장</p>
-              <p className={styles.charLocation}>✈️ {REGION_NAMES[char.region_id] ?? "한국 노선"}</p>
+              <p className={styles.charName}>{language === "ko" ? `${char.name} ${ui.captain}` : `${ui.captain} ${char.name}`}</p>
+              <p className={styles.charLocation}>✈️ {routeLabel}</p>
             </div>
           </div>
           <button
@@ -483,7 +538,7 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
             type="button"
             className={`${styles.micBtn} ${isListening ? styles.micBtnActive : ""}`}
             onClick={startListening}
-            title="한국어 음성 입력"
+            title={ui.voiceInput}
             aria-label="Speech recognition"
           >
             {isListening ? "🎙️" : "🎤"}
@@ -494,7 +549,7 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={handleKeyDown}
-            placeholder={isListening ? "듣고 있습니다... 한국어로 말씀하세요" : "한국어 또는 질문을 입력하세요..."}
+            placeholder={isListening ? ui.listening : ui.inputPlaceholder}
             aria-label="Chat message input"
             disabled={isLoading}
           />
@@ -523,17 +578,17 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
           <div className="modal-sheet" onClick={(e) => e.stopPropagation()}>
             <div className="modal-handle" />
             <h2 id="modal-resume-title" className={styles.modalTitle}>
-              이전 대화가 있어요
+              {ui.resumeTitle}
             </h2>
             <p className={styles.modalSub}>
-              {char.name} 기장님과 나눈 대화를 이어서 할까요, 새로 시작할까요?
+              {ui.resumeBody(char.name)}
             </p>
             <div className={styles.modalActions}>
               <button className={`btn btn-secondary btn-lg ${styles.pillBtn}`} onClick={handleFreshStart} id="btn-chat-fresh">
-                새로 시작하기
+                {ui.freshStart}
               </button>
               <button className={`btn btn-primary btn-lg ${styles.pillBtn}`} onClick={handleResume} id="btn-chat-resume">
-                이어서 하기
+                {ui.resume}
               </button>
             </div>
           </div>
@@ -584,10 +639,10 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
           <div className="modal-sheet" onClick={(e) => e.stopPropagation()}>
             <div className="modal-handle" />
             <h2 id="modal-end-title" className={styles.modalTitle}>
-              대화가 끝났어요
+              {ui.endTitle}
             </h2>
             <p className={styles.modalSub}>
-              오늘의 대화를 바탕으로 메이트가 일기를 쓰기 시작해요. 종료하시겠어요?
+              {ui.endBody}
             </p>
             <div className={styles.modalActions}>
               <button
@@ -595,14 +650,14 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
                 onClick={() => setShowEndModal(false)}
                 id="btn-keep-chatting"
               >
-                계속 대화하기
+                {ui.keepChatting}
               </button>
               <button
                 className={`btn btn-primary btn-lg ${styles.pillBtn}`}
                 onClick={handleSessionEnd}
                 id="btn-end-and-diary"
               >
-                📔 종료 및 일기 보기
+                {ui.endAndDiary}
               </button>
             </div>
           </div>
