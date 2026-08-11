@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound, redirect } from "next/navigation";
 import { cookies } from "next/headers";
 import BottomNav from "@/components/ui/BottomNav";
-import { getCharacterById, getChaptersForCharacter, canAccessCharacter, MOCK_USER } from "@/lib/db/mock";
+import { getCharacterById, getChaptersForCharacter, canAccessCharacter } from "@/lib/db/mock";
 import LearnView from "./LearnView";
 
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
@@ -27,15 +27,15 @@ export default async function LearnPage({
 
   // 로그인 유저면 쿠키로 실제 계정 id를 알 수 있음 — 서버에서 실제 멤버십/무료 슬롯을 확인한다.
   const cookieStore = await cookies();
-  const userId = cookieStore.get("kmate_uid")?.value ?? MOCK_USER.id;
+  const userId = cookieStore.get("kmate_uid")?.value;
   const accessToken = cookieStore.get("kmate_access_token")?.value;
-  let membership: string = MOCK_USER.membership;
-  let freeCharSlots: string[] = MOCK_USER.free_character_slots;
-  try {
+  let membership = "free";
+  let freeCharSlots: string[] = [];
+  if (userId && accessToken) try {
     const res = await fetch(`${BACKEND_URL}/user/${userId}`, {
       cache: "no-store",
-      signal: AbortSignal.timeout(800),
-      headers: accessToken ? { Authorization: `Bearer ${accessToken}` } : {},
+      signal: AbortSignal.timeout(5000),
+      headers: { Authorization: `Bearer ${accessToken}` },
     });
     if (res.ok) {
       const data = await res.json();
