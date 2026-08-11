@@ -19,6 +19,18 @@ from services.session_auth import require_current_user, require_same_user
 router = APIRouter(prefix="/gallery", tags=["gallery"])
 
 
+def _gallery_image_response(image: GalleryImage, unlocked: bool) -> GalleryImageResponse:
+    """Serialize gallery metadata without leaking a locked original URL."""
+    return GalleryImageResponse(
+        id=image.id,
+        image_url=image.image_url if unlocked else None,
+        title=image.title,
+        order=image.order,
+        unlock_cost=image.unlock_cost,
+        unlocked=unlocked,
+    )
+
+
 @router.get("/{character_id}", response_model=list[GalleryImageResponse])
 def get_gallery(character_id: str, user_id: str, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
     require_same_user(current_user_id, user_id)
@@ -41,12 +53,8 @@ def get_gallery(character_id: str, user_id: str, current_user_id: str = Depends(
         for u in db.query(UserGalleryUnlock).filter(UserGalleryUnlock.user_id == user_id).all()
     }
     return [
-        GalleryImageResponse(
-            id=img.id,
-            image_url=img.image_url,
-            title=img.title,
-            order=img.order,
-            unlock_cost=img.unlock_cost,
+        _gallery_image_response(
+            img,
             unlocked=(img.unlock_cost == 0) or (img.id in unlocked_ids),
         )
         for img in images

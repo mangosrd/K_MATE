@@ -16,7 +16,7 @@ const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:800
 
 interface GalleryImage {
   id: string;
-  image_url: string;
+  image_url: string | null;
   title: string | null;
   order: number;
   unlock_cost: number;
@@ -131,7 +131,7 @@ export default function CharGalleryPage({ params }: { params: Promise<{ characte
               <div className={styles.grid}>
                 {images.map((img) => (
                   <div key={img.id} className={styles.card}>
-                    {img.unlocked ? (
+                    {img.unlocked && img.image_url ? (
                       <button
                         type="button"
                         onClick={() => setViewing(img)}
@@ -142,7 +142,7 @@ export default function CharGalleryPage({ params }: { params: Promise<{ characte
                       </button>
                     ) : (
                       <>
-                        <Image src={img.image_url} alt="" width={300} height={400} className={styles.cardImgLocked} aria-hidden="true" />
+                        <div className={styles.lockedPlaceholder} aria-hidden="true" />
                         <div className={styles.lockOverlay}>
                           <span className={styles.lockIcon}>🔒</span>
                           <span className={styles.unlockCost}>🪙 {img.unlock_cost}</span>
@@ -162,7 +162,7 @@ export default function CharGalleryPage({ params }: { params: Promise<{ characte
       </div>
 
       {/* 확대 보기 */}
-      {viewing && (
+      {viewing?.image_url && (
         <div className={styles.viewer} role="dialog" aria-modal="true" onClick={() => setViewing(null)}>
           <button className={styles.viewerClose} onClick={() => setViewing(null)} aria-label="close">✕</button>
           <Image

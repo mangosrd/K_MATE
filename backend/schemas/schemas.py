@@ -390,7 +390,9 @@ class SupportTicketResponse(BaseModel):
 # ── 기장 사진첩 (코인으로 해금하는 스탠딩 일러스트) ────────────
 class GalleryImageResponse(BaseModel):
     id: str
-    image_url: str
+    # Locked originals must never be disclosed to the client.  The public URL
+    # becomes available only after the server has verified the user's unlock.
+    image_url: Optional[str] = None
     title: Optional[str] = None
     order: int
     unlock_cost: int
