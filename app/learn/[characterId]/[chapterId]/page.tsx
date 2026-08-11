@@ -465,15 +465,17 @@ function LearningSession({
   }, [characterId]);
 
   useEffect(() => {
-    if (!isSpecialStory) {
-      setStoryAccess(true);
-      return;
-    }
-    setStoryAccess(null);
+    if (!isSpecialStory) return;
+    let cancelled = false;
     fetch(`${BACKEND_URL}/learning/story-access/${getEffectiveUserId()}/${chapterId}`, { headers: getAuthHeaders() })
       .then((res) => (res.ok ? res.json() : null))
-      .then((data) => setStoryAccess(Boolean(data?.has_access)))
-      .catch(() => setStoryAccess(false));
+      .then((data) => {
+        if (!cancelled) setStoryAccess(Boolean(data?.has_access));
+      })
+      .catch(() => {
+        if (!cancelled) setStoryAccess(false);
+      });
+    return () => { cancelled = true; };
   }, [chapterId, isSpecialStory]);
 
   const unlockStory = async () => {
