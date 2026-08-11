@@ -1,7 +1,6 @@
 "use client";
 
 import React, { createContext, useContext, useState, useEffect } from "react";
-import { ensureGuestAccount } from "@/lib/auth/store";
 
 export type Language = "ko" | "en" | "ru" | "zh" | "ja" | "zh-TW" | "th";
 
@@ -2317,10 +2316,6 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
 
   // 앱 전체 최상단 Provider라 여기서 한 번만 실행 — 로그인 안 한 방문자별로 각자의
   // 게스트 계정을 발급받아둔다 (자세한 이유는 lib/auth/store.ts의 ensureGuestAccount 참고).
-  useEffect(() => {
-    ensureGuestAccount();
-  }, []);
-
   const setLanguage = (lang: Language) => {
     setLanguageState(lang);
     localStorage.setItem("kmate_lang", lang);

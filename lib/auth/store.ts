@@ -1,7 +1,5 @@
 "use client";
 
-import { MOCK_USER } from "@/lib/db/mock";
-
 const STORAGE_KEY = "kmate_auth_user";
 const ACCESS_TOKEN_KEY = "kmate_access_token";
 const SESSION_MAX_AGE_SECONDS = 60 * 60 * 24 * 365;
@@ -27,6 +25,7 @@ export function getCurrentUser(): AuthUser | null {
 
 export function setCurrentUser(user: AuthUser) {
   if (typeof window === "undefined") return;
+  localStorage.removeItem(GUEST_ID_KEY);
   localStorage.setItem(STORAGE_KEY, JSON.stringify(user));
   if (user.access_token) {
     localStorage.setItem(ACCESS_TOKEN_KEY, user.access_token);
@@ -43,6 +42,7 @@ export function logout() {
   window.dispatchEvent(new Event("kmate-auth-logging-out"));
   localStorage.removeItem(STORAGE_KEY);
   localStorage.removeItem(ACCESS_TOKEN_KEY);
+  localStorage.removeItem(GUEST_ID_KEY);
   document.cookie = "kmate_uid=; path=/; max-age=0";
   document.cookie = `${ACCESS_TOKEN_KEY}=; path=/; max-age=0`;
 }
@@ -92,7 +92,9 @@ function getCachedGuestId(): string | null {
 }
 
 export function getEffectiveUserId(): string {
-  return getCurrentUser()?.id ?? getCachedGuestId() ?? MOCK_USER.id;
+  const userId = getCurrentUser()?.id ?? getCachedGuestId();
+  if (!userId) throw new Error("K-MATE session is not ready");
+  return userId;
 }
 
 // 앱 최초 마운트 시 한 번 호출 — 로그인도 안 했고 게스트 id도 아직 없으면 백엔드에
@@ -103,8 +105,8 @@ export function getEffectiveUserId(): string {
 // 로그인 유저와 마찬가지로 kmate_uid 쿠키도 같이 남긴다 — /learn/[characterId]는 서버
 // 컴포넌트라 localStorage를 못 읽고 쿠키로만 실제 계정을 식별하는데, 이게 없으면
 // 게스트가 개별 구매한 캐릭터도 그 페이지에서만 계속 잠긴 것처럼 보인다.
-export async function ensureGuestAccount(): Promise<void> {
-  if (typeof window === "undefined") return;
+export async function ensureGuestAccount(): Promise<boolean> {
+  if (typeof window === "undefined") return false;
   const currentUser = getCurrentUser();
   if (currentUser) {
     // 이전 앱 버전에서 로그인한 사용자도 서버 컴포넌트가 세션을 읽을 수 있게
@@ -114,7 +116,7 @@ export async function ensureGuestAccount(): Promise<void> {
     if (token) {
       document.cookie = `${ACCESS_TOKEN_KEY}=${encodeURIComponent(token)}; path=/; max-age=${SESSION_MAX_AGE_SECONDS}; samesite=lax`;
     }
-    return;
+    return true;
   }
 
   const existing = getCachedGuestId();
@@ -122,21 +124,24 @@ export async function ensureGuestAccount(): Promise<void> {
     const token = localStorage.getItem(ACCESS_TOKEN_KEY)!;
     document.cookie = `kmate_uid=${existing}; path=/; max-age=${SESSION_MAX_AGE_SECONDS}; samesite=lax`;
     document.cookie = `${ACCESS_TOKEN_KEY}=${encodeURIComponent(token)}; path=/; max-age=${SESSION_MAX_AGE_SECONDS}; samesite=lax`;
-    return;
+    return true;
   }
 
   const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
   try {
     const res = await fetch(`${BACKEND_URL}/auth/guest`, { method: "POST" });
-    if (!res.ok) return;
+    if (!res.ok) return false;
     const data = await res.json();
     if (data.id && data.access_token) {
       localStorage.setItem(GUEST_ID_KEY, data.id);
       localStorage.setItem(ACCESS_TOKEN_KEY, data.access_token);
       document.cookie = `kmate_uid=${data.id}; path=/; max-age=${SESSION_MAX_AGE_SECONDS}; samesite=lax`;
       document.cookie = `${ACCESS_TOKEN_KEY}=${encodeURIComponent(data.access_token)}; path=/; max-age=${SESSION_MAX_AGE_SECONDS}; samesite=lax`;
+      window.dispatchEvent(new Event("kmate-auth-changed"));
+      return true;
     }
+    return false;
   } catch {
-    /* no-op */
+    return false;
   }
 }

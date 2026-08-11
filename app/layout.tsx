@@ -5,6 +5,7 @@ import { LanguageProvider } from "@/components/LanguageContext";
 import { ThemeProvider } from "@/components/ThemeContext";
 import PushNotificationSetup from "@/components/PushNotificationSetup";
 import TimezoneSync from "@/components/TimezoneSync";
+import SessionBootstrap from "@/components/SessionBootstrap";
 
 const dunggeunmiso = localFont({
   src: [
@@ -46,13 +47,15 @@ export default function RootLayout({
   return (
     <html lang="ko" className={dunggeunmiso.variable}>
       <body>
-        <ThemeProvider>
-          <LanguageProvider>
-            <div className="app-shell">{children}</div>
-            <PushNotificationSetup />
-            <TimezoneSync />
-          </LanguageProvider>
-        </ThemeProvider>
+        <SessionBootstrap>
+          <ThemeProvider>
+            <LanguageProvider>
+              <div className="app-shell">{children}</div>
+              <PushNotificationSetup />
+              <TimezoneSync />
+            </LanguageProvider>
+          </ThemeProvider>
+        </SessionBootstrap>
       </body>
     </html>
   );
