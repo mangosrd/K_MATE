@@ -10,7 +10,7 @@ import { getAllLocalDiaries } from "@/lib/diary/store";
 import {
   getEffectiveUserId,
   getAuthHeaders,
-  logout as clearSession,
+  logoutFromServer,
   getPreferredCaptainId,
   setPreferredCaptainId,
 } from "@/lib/auth/store";
@@ -125,9 +125,9 @@ export default function MePage() {
     setMateId(characterId);
   };
 
-  const handleLogout = () => {
-    clearSession();
-    router.push("/login");
+  const handleLogout = async () => {
+    await logoutFromServer();
+    router.replace("/login");
   };
 
   const getLangName = (lang: string) => {

@@ -12,14 +12,19 @@ from schemas.schemas import (
     PreferencesResponse, PreferencesUpdateRequest,
     PaymentMethodResponse, PaymentMethodCreateRequest,
     SupportTicketRequest, SupportTicketResponse,
-    ProfileResponse,
+    ProfileResponse, AuthUserResponse,
 )
 from models.models import User, PaymentMethod, SupportTicket
 import bcrypt
 import uuid
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
-from services.session_auth import require_current_user, require_same_user
+from services.session_auth import (
+    issue_access_token,
+    require_current_user,
+    require_same_user,
+    revoke_user_sessions,
+)
 
 router = APIRouter(tags=["account"])
 
@@ -79,7 +84,7 @@ def update_profile(user_id: str, req: ProfileUpdateRequest, current_user_id: str
 
 
 # ── 비밀번호 변경 ────────────────────────────────────────────
-@router.put("/auth/change-password", response_model=SimpleSuccessResponse)
+@router.put("/auth/change-password", response_model=AuthUserResponse)
 def change_password(req: ChangePasswordRequest, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
     require_same_user(current_user_id, req.user_id)
     user = db.query(User).filter(User.id == req.user_id).first()
@@ -93,8 +98,17 @@ def change_password(req: ChangePasswordRequest, current_user_id: str = Depends(r
         raise HTTPException(status_code=400, detail="새 비밀번호는 8자 이상이어야 합니다")
 
     user.password_hash = bcrypt.hashpw(req.new_password.encode("utf-8"), bcrypt.gensalt()).decode("utf-8")
+    revoke_user_sessions(user)
     db.commit()
-    return SimpleSuccessResponse(success=True, message="비밀번호가 변경되었습니다")
+    db.refresh(user)
+    return AuthUserResponse(
+        id=user.id,
+        name=user.name,
+        email=user.email,
+        language=user.language,
+        membership=user.membership.value if hasattr(user.membership, "value") else user.membership,
+        access_token=issue_access_token(user.id, int(user.auth_version or 0)),
+    )
 
 
 # ── 알림 / 테마 설정 ──────────────────────────────────────────

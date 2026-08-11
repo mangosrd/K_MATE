@@ -142,6 +142,8 @@ def initialize_database() -> bool:
                 connection.execute(text("ALTER TABLE users ADD COLUMN timezone_mode VARCHAR(10) NOT NULL DEFAULT 'auto'"))
             if "timezone_updated_at" not in user_columns:
                 connection.execute(text("ALTER TABLE users ADD COLUMN timezone_updated_at DATETIME NULL"))
+            if "auth_version" not in user_columns:
+                connection.execute(text("ALTER TABLE users ADD COLUMN auth_version INT NOT NULL DEFAULT 0"))
         regions = [
             ("seoul", "서울·경기", "Seoul & Gyeonggi", "SEL", False),
             ("jeonju", "전주·전라", "Jeonju & Jeolla", "JWJ", False),

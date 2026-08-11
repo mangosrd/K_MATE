@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { useAuthUser } from "@/lib/auth/useAuthUser";
-import { getAuthHeaders } from "@/lib/auth/store";
+import { getAuthHeaders, setCurrentUser } from "@/lib/auth/store";
 import { useLanguage } from "@/components/LanguageContext";
 import formStyles from "../settings-form.module.css";
 
@@ -52,6 +52,7 @@ export default function SecurityPage() {
         setError(data.detail === "계정을 찾을 수 없습니다" ? t("noPasswordAccountNotice") : data.detail);
         return;
       }
+      setCurrentUser(data);
       setSuccess(true);
       setCurrentPassword("");
       setNewPassword("");

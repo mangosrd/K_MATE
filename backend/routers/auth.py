@@ -10,6 +10,7 @@ from database import get_db, get_settings
 from schemas.schemas import (
     AuthUserResponse, GoogleExchangeRequest, GoogleNativeLoginRequest,
     GuestCreateRequest, LoginRequest, RegisterRequest, WithdrawRequest, WithdrawResponse,
+    SimpleSuccessResponse,
 )
 from models.models import User, Economy, GuestInstall, OAuthHandoff, Progress, Memory, DiaryEntry, VocabItem
 from sqlalchemy.exc import IntegrityError
@@ -26,7 +27,7 @@ from urllib.parse import urlencode
 import httpx
 from google.auth.transport import requests as google_requests
 from google.oauth2 import id_token as google_id_token
-from services.session_auth import issue_access_token, require_current_user, require_same_user
+from services.session_auth import issue_access_token, require_current_user, require_same_user, revoke_user_sessions
 from services.rate_limit import clear_rate_limit, enforce_rate_limit
 
 router = APIRouter(prefix="/auth", tags=["auth"])
@@ -91,8 +92,18 @@ def _to_response(user: User) -> AuthUserResponse:
         email=user.email,
         language=user.language,
         membership=user.membership.value if hasattr(user.membership, "value") else user.membership,
-        access_token=issue_access_token(user.id),
+        access_token=issue_access_token(user.id, int(user.auth_version or 0)),
     )
+
+
+@router.post("/logout", response_model=SimpleSuccessResponse)
+def logout(current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
+    user = db.query(User).filter(User.id == current_user_id).with_for_update().first()
+    if not user:
+        raise HTTPException(status_code=401, detail="This account is no longer available")
+    revoke_user_sessions(user)
+    db.commit()
+    return SimpleSuccessResponse(success=True, message="Signed out")
 
 
 def _find_or_create_google_user(profile: dict, db: Session) -> User:

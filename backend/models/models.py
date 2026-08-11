@@ -57,6 +57,9 @@ class User(Base):
     timezone_name       = Column(String(64), default="UTC", nullable=False)
     timezone_mode       = Column(String(10), default="auto", nullable=False)
     timezone_updated_at = Column(DateTime, nullable=True)
+    # Incrementing this value invalidates every access token issued before it.
+    # Existing accounts/tokens start at version 0 for a seamless migration.
+    auth_version      = Column(Integer, default=0, nullable=False)
     is_withdrawn    = Column(Boolean, default=False, nullable=False)
     withdrawn_at    = Column(DateTime, nullable=True)
     created_at      = Column(DateTime, server_default=func.now())

@@ -47,6 +47,19 @@ export function logout() {
   document.cookie = `${ACCESS_TOKEN_KEY}=; path=/; max-age=0`;
 }
 
+export async function logoutFromServer() {
+  if (typeof window === "undefined") return;
+  const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
+  const headers = getAuthHeaders();
+  try {
+    if (headers.Authorization) {
+      await fetch(`${BACKEND_URL}/auth/logout`, { method: "POST", headers });
+    }
+  } finally {
+    logout();
+  }
+}
+
 export function getAuthHeaders(): Record<string, string> {
   if (typeof window === "undefined") return {};
   const token = localStorage.getItem(ACCESS_TOKEN_KEY);
