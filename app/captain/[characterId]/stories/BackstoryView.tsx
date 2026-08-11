@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 import { getAuthHeaders, getEffectiveUserId } from "@/lib/auth/store";
 import { useLanguage } from "@/components/LanguageContext";
@@ -15,8 +15,12 @@ export default function BackstoryView({ characterId }: { characterId: string }) 
   const [stories, setStories] = useState<Story[]>([]);
   const [busy, setBusy] = useState("");
   const [error, setError] = useState("");
-  const load = () => fetch(`${API}/backstories/${characterId}?user_id=${getEffectiveUserId()}`, { headers: getAuthHeaders() }).then(r => r.ok ? r.json() : Promise.reject()).then(setStories).catch(() => setError("스토리를 불러오지 못했어요."));
-  useEffect(() => { void load(); }, [characterId]);
+  const load = useCallback(() => Promise.resolve()
+    .then(() => fetch(`${API}/backstories/${characterId}?user_id=${getEffectiveUserId()}`, { headers: getAuthHeaders() }))
+    .then(r => r.ok ? r.json() : Promise.reject())
+    .then(setStories)
+    .catch(() => setError("스토리를 불러오지 못했어요.")), [characterId]);
+  useEffect(() => { void load(); }, [load]);
   const unlock = async (story: Story) => {
     setBusy(story.id); setError("");
     const response = await fetch(`${API}/backstories/${story.id}/unlock`, { method:"POST", headers:{"Content-Type":"application/json", ...getAuthHeaders()}, body:JSON.stringify({user_id:getEffectiveUserId()}) });
