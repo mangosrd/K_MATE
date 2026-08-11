@@ -315,16 +315,18 @@ export default function LearningSessionPage({
 
   // 챕터 콘텐츠는 이제 챕터별로 쪼개진 청크를 동적 import로 그때그때 받아온다
   // (lib/content/chapters.ts 참고) — chapterId가 바뀔 때마다 새로 받아와야 한다.
-  const [content, setContent] = useState<ChapterContent | null>(null);
-  const [contentLoaded, setContentLoaded] = useState(false);
+  const [contentState, setContentState] = useState<{
+    chapterId: string;
+    content: ChapterContent | null;
+  } | null>(null);
+  const contentLoaded = contentState?.chapterId === chapterId;
+  const content = contentLoaded ? contentState.content : null;
 
   useEffect(() => {
     let cancelled = false;
-    setContentLoaded(false);
     getChapterContent(chapterId).then((data) => {
       if (cancelled) return;
-      setContent(data);
-      setContentLoaded(true);
+      setContentState({ chapterId, content: data });
     });
     return () => { cancelled = true; };
   }, [chapterId]);
@@ -333,22 +335,9 @@ export default function LearningSessionPage({
   // 그려지고 사라지는 "깜빡임"이 생긴다. 실제 로딩이 이보다 빨라도 화면은 최소 5초는
   // 붙잡아두고, "랜딩중..." → "랜딩 완료!" 2단계로 보여줘서 순간적으로 스쳐 지나가지
   // 않고 로딩 화면답게 보이도록 한다.
-  const [loadingPhase, setLoadingPhase] = useState<"landing" | "done">("landing");
-  const [minLoadingTimeElapsed, setMinLoadingTimeElapsed] = useState(false);
-  useEffect(() => {
-    setLoadingPhase("landing");
-    setMinLoadingTimeElapsed(false);
-    const doneTextTimer = setTimeout(() => setLoadingPhase("done"), 350);
-    const dismissTimer = setTimeout(() => setMinLoadingTimeElapsed(true), 650);
-    return () => {
-      clearTimeout(doneTextTimer);
-      clearTimeout(dismissTimer);
-    };
-  }, [chapterId]);
-
   const exercises = useMemo(
     () => (content ? generateExercises(content.words, content.sentences, content.dialogues ?? []) : []),
-    [chapterId, content]
+    [content]
   );
 
   // 단어 뜻/예문 번역/스토리 번역은 챕터 콘텐츠에 한국어+영어로만 준비돼 있어, 그 외
@@ -679,11 +668,11 @@ export default function LearningSessionPage({
   }
 
   if (
-    !stampsLoaded || !contentLoaded || !minLoadingTimeElapsed ||
+    !stampsLoaded || !contentLoaded ||
     (!isSpecialStory && requiresPremium && (!membershipLoaded || !freeSlotsLoaded)) ||
     (isSpecialStory && storyAccess === null)
   ) {
-    return <LoadingSplash message={t(loadingPhase === "landing" ? "loadingChapter" : "loadingChapterDone")} />;
+    return <LoadingSplash message={t("loadingChapter")} />;
   }
 
   // ── 프리미엄 접근 제어 ──────────────────────────────────
