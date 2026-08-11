@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import { getAuthHeaders, getCurrentUser, getEffectiveUserId, AuthUser } from "./store";
-import { MOCK_USER } from "@/lib/db/mock";
 
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
 
@@ -32,19 +31,24 @@ export function useAuthUser() {
 // 정상적으로 구독 처리했는데, 이 훅이 로그인 계정의 캐시된 membership만 보고 있어서
 // 게스트로 구독한 경우 영원히 반영이 안 됐다.
 export function useMembership() {
-  const [membership, setMembership] = useState<string>(MOCK_USER.membership);
+  // Never grant paid access from fixture data while the real account is loading.
+  const [membership, setMembership] = useState<string>("free");
   const [membershipLoaded, setMembershipLoaded] = useState(false);
+  const [membershipError, setMembershipError] = useState(false);
 
   useEffect(() => {
     const userId = getEffectiveUserId();
     fetch(`${BACKEND_URL}/user/${userId}`, { headers: getAuthHeaders() })
       .then((res) => (res.ok ? res.json() : null))
-      .then((data) => { if (data?.membership) setMembership(data.membership); })
-      .catch(() => {})
+      .then((data) => {
+        if (data?.membership) setMembership(data.membership);
+        else setMembershipError(true);
+      })
+      .catch(() => setMembershipError(true))
       .finally(() => setMembershipLoaded(true));
   }, []);
 
-  return { membership, membershipLoaded };
+  return { membership, membershipLoaded, membershipError };
 }
 
 // canAccessCharacter의 세 번째 인자(freeSlots) — 기본 무료 캐릭터(kyuhyun/haneul) 외에도
@@ -52,8 +56,11 @@ export function useMembership() {
 // 조회하지 않고 MOCK_USER.free_character_slots(항상 고정값)를 그대로 썼던 탓에, 캐릭터를
 // 개별 구매해도 대부분의 화면에서 여전히 잠긴 것처럼 보이는 문제가 있었다.
 export function useFreeCharSlots() {
-  const [freeSlots, setFreeSlots] = useState<string[]>(MOCK_USER.free_character_slots);
+  // An empty list is the fail-closed value. Non-premium captains remain
+  // available through their own `requires_premium` catalog flag.
+  const [freeSlots, setFreeSlots] = useState<string[]>([]);
   const [freeSlotsLoaded, setFreeSlotsLoaded] = useState(false);
+  const [freeSlotsError, setFreeSlotsError] = useState(false);
 
   useEffect(() => {
     const userId = getEffectiveUserId();
@@ -61,10 +68,11 @@ export function useFreeCharSlots() {
       .then((res) => (res.ok ? res.json() : null))
       .then((data) => {
         if (Array.isArray(data?.free_char_slots)) setFreeSlots(data.free_char_slots);
+        else setFreeSlotsError(true);
       })
-      .catch(() => {})
+      .catch(() => setFreeSlotsError(true))
       .finally(() => setFreeSlotsLoaded(true));
   }, []);
 
-  return { freeSlots, freeSlotsLoaded };
+  return { freeSlots, freeSlotsLoaded, freeSlotsError };
 }
