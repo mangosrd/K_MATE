@@ -7,9 +7,11 @@ import hmac
 import json
 import time
 
-from fastapi import Header, HTTPException
+from fastapi import Depends, Header, HTTPException
+from sqlalchemy.orm import Session
 
-from database import get_settings
+from database import get_db, get_settings
+from models.models import User
 
 # The app remains signed in between launches. Revocation is handled by logout or
 # account withdrawal; this token only authorizes the user-owned letter endpoints.
@@ -28,7 +30,7 @@ def issue_access_token(user_id: str) -> str:
     return f"{encoded}.{signature}"
 
 
-def require_current_user(authorization: str | None = Header(default=None)) -> str:
+def _read_access_token(authorization: str | None) -> str:
     if not authorization or not authorization.startswith("Bearer "):
         raise HTTPException(status_code=401, detail="Login is required")
 
@@ -47,6 +49,25 @@ def require_current_user(authorization: str | None = Header(default=None)) -> st
         return str(payload["sub"])
     except (ValueError, KeyError, TypeError, binascii.Error, json.JSONDecodeError):
         raise HTTPException(status_code=401, detail="Your login has expired. Please sign in again.")
+
+
+def require_current_user(
+    authorization: str | None = Header(default=None),
+    db: Session = Depends(get_db),
+) -> str:
+    """Validate both the signed token and the current account state.
+
+    Tokens are intentionally long-lived so the mobile app stays signed in, but a
+    withdrawn or deleted account must lose API access immediately.
+    """
+    user_id = _read_access_token(authorization)
+    active_user = db.query(User.id).filter(
+        User.id == user_id,
+        User.is_withdrawn.is_(False),
+    ).first()
+    if not active_user:
+        raise HTTPException(status_code=401, detail="This account is no longer available")
+    return user_id
 
 
 def require_same_user(current_user_id: str, requested_user_id: str) -> None:
