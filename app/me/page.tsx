@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useSyncExternalStore } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import BottomNav from "@/components/ui/BottomNav";
@@ -31,6 +31,7 @@ import styles from "./me.module.css";
 
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
 const APP_VERSION = "1.0.0";
+const subscribeToHydration = () => () => {};
 
 export default function MePage() {
   const router = useRouter();
@@ -65,24 +66,16 @@ export default function MePage() {
   // getLocalVocab/getAllLocalDiaries는 localStorage를 직접 읽는데, 서버는 항상 빈
   // 배열을 볼 수밖에 없어 렌더 본문에서 바로 부르면 하이드레이션 결과가 서버(0)와
   // 클라이언트(실제 값)에서 서로 달라 에러가 난다. 마운트 후에만(클라이언트에서만) 채운다.
-  const [vocabCount, setVocabCount] = useState(0);
-  const [masteredCount, setMasteredCount] = useState(0);
-  const [unlockedDiaries, setUnlockedDiaries] = useState(0);
-  useEffect(() => {
-    const vocab = getLocalVocab();
-    const diaries = getAllLocalDiaries();
-    setVocabCount(vocab.length);
-    setMasteredCount(vocab.filter((v) => v.mastery === "mastered").length);
-    setUnlockedDiaries(diaries.filter((d) => d.unlocked).length);
-    // 광고 남은 횟수 (localStorage → 클라이언트에서만)
-  }, []);
+  const clientReady = useSyncExternalStore(subscribeToHydration, () => true, () => false);
+  const vocab = clientReady ? getLocalVocab() : [];
+  const diaries = clientReady ? getAllLocalDiaries() : [];
+  const vocabCount = vocab.length;
+  const masteredCount = vocab.filter((item) => item.mastery === "mastered").length;
+  const unlockedDiaries = diaries.filter((diary) => diary.unlocked).length;
 
   // 메이트 카드에 표시할 기장 — 사용자가 마이페이지에서 바꾼 선호값(localStorage)을 따른다.
   // 서버에서 내려주는 값이 없으니 마운트 이후에만 실제 값으로 갱신해 하이드레이션 불일치를 피한다.
-  const [mateId, setMateId] = useState("kyuhyun");
-  useEffect(() => {
-    setMateId(getPreferredCaptainId());
-  }, []);
+  const mateId = clientReady ? getPreferredCaptainId() : "kyuhyun";
   const mate = MOCK_CHARACTERS.find((c) => c.id === mateId) ?? MOCK_CHARACTERS[0];
 
   useEffect(() => {
@@ -122,7 +115,6 @@ export default function MePage() {
 
   const handleSelectMate = (characterId: string) => {
     setPreferredCaptainId(characterId);
-    setMateId(characterId);
   };
 
   const handleLogout = async () => {
