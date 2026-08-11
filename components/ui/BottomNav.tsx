@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useSyncExternalStore } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useLanguage } from "@/components/LanguageContext";
@@ -89,15 +89,28 @@ const NAV_ICONS: Record<string, (props: { active: boolean }) => React.ReactEleme
   me:    IconMe,
 };
 
+function subscribeToPreferredCaptain(onStoreChange: () => void) {
+  window.addEventListener("kmate-preferred-captain-changed", onStoreChange);
+  window.addEventListener("kmate-auth-changed", onStoreChange);
+  window.addEventListener("storage", onStoreChange);
+  return () => {
+    window.removeEventListener("kmate-preferred-captain-changed", onStoreChange);
+    window.removeEventListener("kmate-auth-changed", onStoreChange);
+    window.removeEventListener("storage", onStoreChange);
+  };
+}
+
+const getLearnHref = () => `/learn/${getPreferredCaptainId()}`;
+const getServerLearnHref = () => "/learn/kyuhyun";
+
 export default function BottomNav() {
   const pathname = usePathname();
   const { t } = useLanguage();
-  // 선호 기장 ID를 localStorage에서 읽어 학습 탭 목적지로 사용 (SSR safe)
-  const [learnHref, setLearnHref] = useState("/learn/kyuhyun");
-  useEffect(() => {
-    const captainId = getPreferredCaptainId();
-    setLearnHref(`/learn/${captainId}`);
-  }, []);
+  const learnHref = useSyncExternalStore(
+    subscribeToPreferredCaptain,
+    getLearnHref,
+    getServerLearnHref,
+  );
 
   const navItems = [
     { href: "/map",      key: "map" },

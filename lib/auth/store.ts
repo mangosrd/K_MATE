@@ -122,12 +122,17 @@ const PREFERRED_CAPTAIN_KEY_PREFIX = "kmate_preferred_captain_";
 
 export function getPreferredCaptainId(): string {
   if (typeof window === "undefined") return "kyuhyun";
-  return localStorage.getItem(PREFERRED_CAPTAIN_KEY_PREFIX + getEffectiveUserId()) || "kyuhyun";
+  try {
+    return localStorage.getItem(PREFERRED_CAPTAIN_KEY_PREFIX + getEffectiveUserId()) || "kyuhyun";
+  } catch {
+    return "kyuhyun";
+  }
 }
 
 export function setPreferredCaptainId(id: string) {
   if (typeof window === "undefined") return;
   localStorage.setItem(PREFERRED_CAPTAIN_KEY_PREFIX + getEffectiveUserId(), id);
+  window.dispatchEvent(new Event("kmate-preferred-captain-changed"));
 }
 
 // 로그인 상태면 실제 계정 id를, 아니면 이 브라우저 전용으로 발급받은 게스트 id를,
