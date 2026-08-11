@@ -15,6 +15,7 @@ from schemas.schemas import (
     StoryAccessResponse, StoryUnlockRequest, StoryUnlockResponse,
 )
 from services.access_control import check_character_access
+from services.chapter_catalog import chapter_character_id, is_special_story
 from services.wallet import change_coins, get_wallet
 from services.session_auth import require_current_user, require_same_user
 
@@ -23,7 +24,7 @@ router = APIRouter(prefix="/learning", tags=["learning"])
 LESSON_ENTRY_COST = 3
 STORY_UNLOCK_COST = 5
 PREMIUM_PRODUCT_ID = "kmate_premium_monthly"
-STORY_PREFIXES = ("sp-rom-", "sp-day-", "sp-frd-")
+MAX_LESSON_STEP_DELTA = 30
 
 
 def _economy(db: Session, user_id: str) -> Economy:
@@ -33,10 +34,6 @@ def _economy(db: Session, user_id: str) -> Economy:
         db.add(economy)
         db.flush()
     return economy
-
-
-def _is_story(chapter_id: str) -> bool:
-    return chapter_id.startswith(STORY_PREFIXES)
 
 
 def _has_permanent_story_pass(db: Session, user_id: str) -> bool:
@@ -65,7 +62,7 @@ def _story_access(db: Session, user_id: str, chapter_id: str) -> tuple[bool, str
 @router.get("/story-access/{user_id}/{chapter_id}", response_model=StoryAccessResponse)
 def get_story_access(user_id: str, chapter_id: str, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
     require_same_user(current_user_id, user_id)
-    if not _is_story(chapter_id):
+    if not is_special_story(chapter_id):
         raise HTTPException(status_code=400, detail="Only special story chapters can be checked here")
     if not db.query(User.id).filter(User.id == user_id).first():
         raise HTTPException(status_code=404, detail="User not found")
@@ -76,7 +73,7 @@ def get_story_access(user_id: str, chapter_id: str, current_user_id: str = Depen
 @router.post("/unlock-story", response_model=StoryUnlockResponse)
 def unlock_story(req: StoryUnlockRequest, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
     require_same_user(current_user_id, req.user_id)
-    if not _is_story(req.chapter_id):
+    if not is_special_story(req.chapter_id):
         raise HTTPException(status_code=400, detail="Only special story chapters can be unlocked")
     user = db.query(User).filter(User.id == req.user_id).first()
     if not user:
@@ -100,7 +97,12 @@ def start_lesson(req: LessonStartRequest, current_user_id: str = Depends(require
     character = db.query(Character).filter(Character.id == req.character_id).first()
     if not user or not character:
         raise HTTPException(status_code=404, detail="User or character not found")
-    if _is_story(req.chapter_id):
+    owner_character_id = chapter_character_id(req.chapter_id)
+    if owner_character_id is None:
+        raise HTTPException(status_code=404, detail="Chapter not found")
+    if owner_character_id != req.character_id:
+        raise HTTPException(status_code=400, detail="Chapter does not belong to this character")
+    if is_special_story(req.chapter_id):
         has_access, _ = _story_access(db, user.id, req.chapter_id)
         if not has_access:
             raise HTTPException(status_code=403, detail="스토리를 먼저 해금해주세요.")
@@ -161,9 +163,10 @@ def complete_lesson(req: LessonCompleteRequest, current_user_id: str = Depends(r
         session.completed_at = datetime.now()
         if not is_replay:
             economy = change_coins(db, req.user_id, session.reward_coins, "lesson_reward", reference_type="lesson_session", reference_id=session.id)
-            prog.current_step = max(1, prog.current_step + max(0, req.step_delta))
-            if req.add_stamp and req.add_stamp not in (prog.stamps or []):
-                prog.stamps = (prog.stamps or []) + [req.add_stamp]
+            verified_step_delta = min(max(req.step_delta, 0), MAX_LESSON_STEP_DELTA)
+            prog.current_step = max(1, prog.current_step + verified_step_delta)
+            if session.chapter_id not in (prog.stamps or []):
+                prog.stamps = (prog.stamps or []) + [session.chapter_id]
             record_daily_affinity(prog)
             apply_streak(prog)
         user = db.query(User).filter(User.id == req.user_id).first()
