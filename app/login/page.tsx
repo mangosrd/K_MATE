@@ -6,6 +6,13 @@ export const metadata: Metadata = {
   description: "K-MATE에 로그인하고 AI 메이트와 함께 한국어 여행을 시작하세요.",
 };
 
-export default function LoginPage() {
-  return <LoginView />;
+export default async function LoginPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ oauth_code?: string | string[] }>;
+}) {
+  const oauthCodeParam = (await searchParams).oauth_code;
+  const oauthCode = typeof oauthCodeParam === "string" ? oauthCodeParam : null;
+
+  return <LoginView oauthCode={oauthCode} />;
 }

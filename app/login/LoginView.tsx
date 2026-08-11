@@ -26,7 +26,7 @@ const LOGIN_CAPTAINS = [
   { id: "yongwoo", name: "용우" },
 ];
 
-export default function LoginView() {
+export default function LoginView({ oauthCode }: { oauthCode: string | null }) {
   const { t } = useLanguage();
   const router = useRouter();
   const [mode, setMode] = useState<Mode>("start");
@@ -34,10 +34,9 @@ export default function LoginView() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState<string | null>(null);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(Boolean(oauthCode));
 
   useEffect(() => {
-    const oauthCode = new URLSearchParams(window.location.search).get("oauth_code");
     if (!oauthCode) {
       // The root route can be opened after an app restart. If this browser already
       // has a valid local session, never make the user sign in again just to enter.
@@ -45,7 +44,6 @@ export default function LoginView() {
       return;
     }
 
-    setLoading(true);
     fetch(`${BACKEND_URL}/auth/google/exchange`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -62,7 +60,7 @@ export default function LoginView() {
         setLoading(false);
         router.replace("/login");
       });
-  }, [router]);
+  }, [oauthCode, router]);
 
   const startGoogleLogin = async () => {
     setError(null);
