@@ -262,11 +262,3 @@ INSERT INTO characters (id, region_id, name, emoji, description, description_en,
   ('sangwoo', 'chungcheong', '상우', '🏛️', '충청·공주 노선 담당 기장', 'Captain of the Chungcheong route',       TRUE),
   ('yongwoo', 'jeju',        '용우', '🌋', '제주 노선 담당 기장',      'Captain of the Jeju Island route',       TRUE)
 ON DUPLICATE KEY UPDATE name=name;
-
--- ── 시드 데이터: 테스트 사용자 ──────────────────────────────
-INSERT INTO users (id, name, email, language, level, membership, free_char_slots) VALUES
-  ('user-001', 'Kim Traveler', 'test@kmate.app', 'en', 1, 'free', '["kyuhyun","haneul"]')
-ON DUPLICATE KEY UPDATE name=name;
-
-INSERT INTO economies (user_id, coins) VALUES ('user-001', 35)
-ON DUPLICATE KEY UPDATE coins=coins;
