@@ -14,9 +14,10 @@ os.environ.setdefault("MYSQL_USER", "test")
 os.environ.setdefault("MYSQL_PASSWORD", "test")
 os.environ.setdefault("MYSQL_DB", "test")
 os.environ.setdefault("GEMINI_API_KEY", "test")
+os.environ.setdefault("INTERNAL_API_SECRET", "test-secret")
 
-from routers.auth import _normalize_email
-from schemas.schemas import GoogleExchangeRequest, GoogleNativeLoginRequest, RegisterRequest
+from routers.auth import _guest_install_hash, _normalize_email
+from schemas.schemas import GuestCreateRequest, GoogleExchangeRequest, GoogleNativeLoginRequest, RegisterRequest
 
 
 class AuthInputSecurityTests(unittest.TestCase):
@@ -39,6 +40,22 @@ class AuthInputSecurityTests(unittest.TestCase):
             GoogleNativeLoginRequest(id_token="x" * 10001, nonce="n" * 32)
         with self.assertRaises(ValidationError):
             GoogleExchangeRequest(oauth_code="x" * 4097)
+
+    def test_guest_installation_identifier_is_bounded(self):
+        GuestCreateRequest(installation_id="a" * 32)
+        with self.assertRaises(ValidationError):
+            GuestCreateRequest(installation_id="short")
+        with self.assertRaises(ValidationError):
+            GuestCreateRequest(installation_id="a" * 129)
+        with self.assertRaises(ValidationError):
+            GuestCreateRequest(installation_id="a" * 31 + "!")
+
+    def test_guest_installation_identifier_is_keyed_before_storage(self):
+        first = _guest_install_hash("a" * 32)
+        second = _guest_install_hash("a" * 32)
+        self.assertEqual(first, second)
+        self.assertEqual(len(first), 64)
+        self.assertNotIn("a" * 32, first)
 
 
 if __name__ == "__main__":

@@ -85,6 +85,20 @@ export function setPreferredCaptainId(id: string) {
 // (예전엔 비로그인 방문자 전원이 공용 목업 id를 같이 써서, 무료 대화 10회 같은
 // 계정별 한도가 모든 비로그인 방문자에게 공유되는 문제가 있었다).
 const GUEST_ID_KEY = "kmate_guest_id";
+const GUEST_INSTALLATION_KEY = "kmate_guest_installation";
+
+function getOrCreateGuestInstallationId(): string {
+  const existing = localStorage.getItem(GUEST_INSTALLATION_KEY);
+  if (existing) return existing;
+
+  const installationId = typeof crypto.randomUUID === "function"
+    ? crypto.randomUUID()
+    : Array.from(crypto.getRandomValues(new Uint8Array(32)), (value) =>
+        value.toString(16).padStart(2, "0"),
+      ).join("");
+  localStorage.setItem(GUEST_INSTALLATION_KEY, installationId);
+  return installationId;
+}
 
 function getCachedGuestId(): string | null {
   if (typeof window === "undefined") return null;
@@ -129,7 +143,11 @@ export async function ensureGuestAccount(): Promise<boolean> {
 
   const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
   try {
-    const res = await fetch(`${BACKEND_URL}/auth/guest`, { method: "POST" });
+    const res = await fetch(`${BACKEND_URL}/auth/guest`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ installation_id: getOrCreateGuestInstallationId() }),
+    });
     if (!res.ok) return false;
     const data = await res.json();
     if (data.id && data.access_token) {

@@ -73,6 +73,15 @@ class User(Base):
     push_devices    = relationship("PushDevice", back_populates="user")
 
 
+class GuestInstall(Base):
+    __tablename__ = "guest_installs"
+
+    # Keep only a keyed digest; the browser identifier itself is not retained.
+    install_hash = Column(String(64), primary_key=True)
+    user_id      = Column(String(36), ForeignKey("users.id"), unique=True, nullable=False)
+    created_at   = Column(DateTime, server_default=func.now())
+
+
 # ── 권역 ──────────────────────────────────────────────────
 class Region(Base):
     __tablename__ = "regions"

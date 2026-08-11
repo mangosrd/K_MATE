@@ -9,9 +9,10 @@ from sqlalchemy.sql import func
 from database import get_db, get_settings
 from schemas.schemas import (
     AuthUserResponse, GoogleExchangeRequest, GoogleNativeLoginRequest,
-    LoginRequest, RegisterRequest, WithdrawRequest, WithdrawResponse,
+    GuestCreateRequest, LoginRequest, RegisterRequest, WithdrawRequest, WithdrawResponse,
 )
-from models.models import User, Economy, Progress, Memory, DiaryEntry, VocabItem
+from models.models import User, Economy, GuestInstall, Progress, Memory, DiaryEntry, VocabItem
+from sqlalchemy.exc import IntegrityError
 import bcrypt
 import uuid
 import base64
@@ -34,6 +35,17 @@ def _normalize_email(value: str) -> str:
     if email.count("@") != 1 or email.startswith("@") or email.endswith("@"):
         raise HTTPException(status_code=422, detail="A valid email address is required")
     return email
+
+
+def _guest_install_hash(installation_id: str) -> str:
+    secret = get_settings().internal_api_secret
+    if not secret:
+        raise HTTPException(status_code=503, detail="Authentication is not configured")
+    return hmac.new(
+        secret.encode("utf-8"),
+        installation_id.encode("utf-8"),
+        hashlib.sha256,
+    ).hexdigest()
 
 
 def _sign_payload(payload: dict) -> str:
@@ -225,7 +237,7 @@ def register(req: RegisterRequest, db: Session = Depends(get_db)):
 
 
 @router.post("/guest", response_model=AuthUserResponse)
-def create_guest(db: Session = Depends(get_db)):
+def create_guest(req: GuestCreateRequest, db: Session = Depends(get_db)):
     """비로그인 방문자용 익명 게스트 계정 생성.
 
     예전엔 로그인 안 한 방문자가 전부 고정된 공용 id(user-001)를 같이 썼는데, 그러면
@@ -233,6 +245,18 @@ def create_guest(db: Session = Depends(get_db)):
     10회"가 되어버린다. 프론트가 앱을 처음 띄울 때 이 엔드포인트를 한 번 불러서 방문자
     전용 id를 발급받아 localStorage에 저장해두고, 그 뒤로는 그 id를 계속 쓴다.
     """
+    install_hash = _guest_install_hash(req.installation_id)
+    existing_install = db.get(GuestInstall, install_hash)
+    if existing_install:
+        existing_user = db.query(User).filter(
+            User.id == existing_install.user_id,
+            User.is_withdrawn.is_(False),
+        ).first()
+        if existing_user:
+            return _to_response(existing_user)
+        db.delete(existing_install)
+        db.flush()
+
     user = User(
         id=str(uuid.uuid4()),
         name="Guest",
@@ -246,7 +270,21 @@ def create_guest(db: Session = Depends(get_db)):
     db.flush()
 
     db.add(Economy(id=str(uuid.uuid4()), user_id=user.id, coins=35))
-    db.commit()
+    db.add(GuestInstall(install_hash=install_hash, user_id=user.id))
+    try:
+        db.commit()
+    except IntegrityError:
+        # Two simultaneous app mounts can race on first launch. The unique
+        # installation hash selects one winner without creating two accounts.
+        db.rollback()
+        winner = db.get(GuestInstall, install_hash)
+        winner_user = db.query(User).filter(
+            User.id == winner.user_id,
+            User.is_withdrawn.is_(False),
+        ).first() if winner else None
+        if not winner_user:
+            raise HTTPException(status_code=503, detail="Guest account setup could not be completed")
+        return _to_response(winner_user)
     db.refresh(user)
 
     return _to_response(user)

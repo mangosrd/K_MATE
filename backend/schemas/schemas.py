@@ -269,6 +269,10 @@ class LoginRequest(BaseModel):
     password: str = Field(min_length=1, max_length=128)
 
 
+class GuestCreateRequest(BaseModel):
+    installation_id: str = Field(min_length=32, max_length=128, pattern=r"^[A-Za-z0-9_-]+$")
+
+
 class GoogleNativeLoginRequest(BaseModel):
     id_token: str = Field(min_length=100, max_length=10000)
     nonce: str = Field(min_length=16, max_length=500)
