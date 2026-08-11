@@ -15,7 +15,9 @@ os.environ.setdefault("MYSQL_DB", "test")
 os.environ.setdefault("GEMINI_API_KEY", "test")
 
 from fastapi import HTTPException
+from pydantic import ValidationError
 from routers import billing
+from schemas.schemas import AndroidPurchaseVerifyRequest
 from services import play_billing
 
 
@@ -60,6 +62,24 @@ class PlayBillingFinalizationTests(unittest.TestCase):
 
 
 class BillingOwnershipTests(unittest.TestCase):
+    @patch.object(billing, "get_settings")
+    def test_internal_secret_requires_exact_match(self, get_settings):
+        get_settings.return_value = SimpleNamespace(internal_api_secret="expected-secret")
+
+        billing.require_internal_secret("expected-secret")
+        with self.assertRaises(HTTPException) as raised:
+            billing.require_internal_secret("wrong-secret")
+
+        self.assertEqual(raised.exception.status_code, 401)
+
+    def test_google_receipt_input_is_bounded(self):
+        with self.assertRaises(ValidationError):
+            AndroidPurchaseVerifyRequest(
+                user_id="owner",
+                product_id="coin-pack",
+                purchase_token="x" * 501,
+            )
+
     def test_receipt_cannot_be_reused_by_another_user(self):
         purchase = SimpleNamespace(user_id="owner", product_id="coin_pack")
 

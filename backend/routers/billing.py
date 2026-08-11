@@ -3,6 +3,7 @@
 웹의 국내 결제(포트원)는 별도 라우터로 붙일 예정이라 여기서는 다루지 않는다.
 """
 import hashlib
+import hmac
 import uuid
 
 from fastapi import APIRouter, HTTPException, Depends, Header
@@ -76,7 +77,11 @@ def require_internal_secret(x_internal_secret: str | None = Header(default=None)
     이 엔드포인트를 직접 호출하는 가장 쉬운 악용 경로는 막는다.
     """
     settings = get_settings()
-    if not settings.internal_api_secret or x_internal_secret != settings.internal_api_secret:
+    if (
+        not settings.internal_api_secret
+        or not x_internal_secret
+        or not hmac.compare_digest(x_internal_secret, settings.internal_api_secret)
+    ):
         raise HTTPException(status_code=401, detail="Unauthorized")
 
 # 코인팩 — 일기(5코인)/사진첩(15코인) 언락 단가 기준으로 산정.

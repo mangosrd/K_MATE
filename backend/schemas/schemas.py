@@ -428,14 +428,14 @@ class TranslateResponse(BaseModel):
 
 # ── 결제 (안드로이드 앱 = Google Play 인앱결제) ─────────────────
 class AndroidPurchaseVerifyRequest(BaseModel):
-    user_id: str
-    product_id: str
-    purchase_token: str
+    user_id: str = Field(..., min_length=1, max_length=64)
+    product_id: str = Field(..., min_length=1, max_length=100)
+    purchase_token: str = Field(..., min_length=16, max_length=500)
 
 
 class PortonePaymentVerifyRequest(BaseModel):
-    user_id: str
-    payment_id: str
+    user_id: str = Field(..., min_length=1, max_length=64)
+    payment_id: str = Field(..., min_length=1, max_length=500)
     product_id: Optional[str] = None  # 프리미엄 구독 검증엔 상품 구분이 없어 생략 가능
 
 
