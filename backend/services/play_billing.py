@@ -63,15 +63,29 @@ def verify_subscription_purchase(product_id: str, purchase_token: str) -> bool:
     is_valid = payment_state in (1, 2) and expiry_ms > now_ms
 
     # Google 정책상 구독은 결제 후 3일 이내에 acknowledge하지 않으면 자동 환불된다.
-    if is_valid and result.get("acknowledgementState") == 0:
+    return is_valid
+
+
+def acknowledge_subscription_purchase(product_id: str, purchase_token: str) -> None:
+    """Acknowledge only after the entitlement has been committed locally."""
+    service = _get_play_service()
+    result = (
+        service.purchases()
+        .subscriptions()
+        .get(
+            packageName=settings.google_play_package_name,
+            subscriptionId=product_id,
+            token=purchase_token,
+        )
+        .execute()
+    )
+    if result.get("acknowledgementState") == 0:
         service.purchases().subscriptions().acknowledge(
             packageName=settings.google_play_package_name,
             subscriptionId=product_id,
             token=purchase_token,
             body={},
         ).execute()
-
-    return is_valid
 
 
 def verify_product_purchase(product_id: str, purchase_token: str) -> bool:
@@ -94,13 +108,51 @@ def verify_product_purchase(product_id: str, purchase_token: str) -> bool:
         .execute()
     )
 
-    is_valid = result.get("purchaseState") == 0
+    return result.get("purchaseState") == 0
 
-    if is_valid:
-        service.purchases().products().consume(
+
+def consume_product_purchase(product_id: str, purchase_token: str) -> None:
+    """Finalize a consumable only after its coins are committed locally."""
+    service = _get_play_service()
+    result = (
+        service.purchases()
+        .products()
+        .get(
             packageName=settings.google_play_package_name,
             productId=product_id,
             token=purchase_token,
-        ).execute()
+        )
+        .execute()
+    )
+    # Google may have consumed the item even if our following DB status update
+    # failed. Treat an already-consumed receipt as successfully finalized so a
+    # client retry can repair the local status instead of getting stuck.
+    if result.get("consumptionState") == 1:
+        return
+    service.purchases().products().consume(
+        packageName=settings.google_play_package_name,
+        productId=product_id,
+        token=purchase_token,
+    ).execute()
 
-    return is_valid
+
+def acknowledge_product_purchase(product_id: str, purchase_token: str) -> None:
+    """Finalize a non-consumable without making it purchasable again."""
+    service = _get_play_service()
+    result = (
+        service.purchases()
+        .products()
+        .get(
+            packageName=settings.google_play_package_name,
+            productId=product_id,
+            token=purchase_token,
+        )
+        .execute()
+    )
+    if result.get("acknowledgementState") == 0:
+        service.purchases().products().acknowledge(
+            packageName=settings.google_play_package_name,
+            productId=product_id,
+            token=purchase_token,
+            body={},
+        ).execute()

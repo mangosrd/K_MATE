@@ -2,6 +2,9 @@
 결제 검증 라우터 — 안드로이드 앱(Play 스토어)의 Google Play 인앱결제 전용.
 웹의 국내 결제(포트원)는 별도 라우터로 붙일 예정이라 여기서는 다루지 않는다.
 """
+import hashlib
+import uuid
+
 from fastapi import APIRouter, HTTPException, Depends, Header
 from sqlalchemy.orm import Session
 from database import get_db, get_settings
@@ -12,11 +15,16 @@ from schemas.schemas import (
 )
 from models.models import User, Purchase, Economy
 from services.membership import activate_monthly_premium
-from services.play_billing import verify_subscription_purchase, verify_product_purchase
+from services.play_billing import (
+    acknowledge_product_purchase,
+    acknowledge_subscription_purchase,
+    consume_product_purchase,
+    verify_product_purchase,
+    verify_subscription_purchase,
+)
 from services.portone import verify_payment
 from services.ads import grant_ad_reward, AD_COIN_REWARD
 from services.session_auth import require_current_user, require_same_user
-import uuid
 
 # 프리미엄 구독 가격 — app/premium/PremiumView.tsx의 표시 가격과 반드시 일치해야 한다
 # (여기 값이 실제 결제 검증 기준 금액이라, 프론트 표시와 어긋나면 결제가 거부된다).
@@ -24,6 +32,37 @@ PREMIUM_PRICE_KRW = 4900
 PREMIUM_WELCOME_COINS = 500
 
 router = APIRouter(prefix="/billing", tags=["billing"])
+
+
+def _validate_existing_purchase(
+    purchase: Purchase, *, user_id: str, product_id: str
+) -> None:
+    if purchase.user_id != user_id or purchase.product_id != product_id:
+        raise HTTPException(
+            status_code=409,
+            detail="This purchase receipt is already linked to another account or product.",
+        )
+
+
+def _finalize_google_purchase(db: Session, purchase: Purchase, kind: str) -> None:
+    """Notify Google only after the local entitlement and ledger are durable."""
+    if purchase.status == "finalized":
+        return
+    if kind == "subscription":
+        acknowledge_subscription_purchase(purchase.product_id, purchase.purchase_token)
+    elif kind == "consumable":
+        consume_product_purchase(purchase.product_id, purchase.purchase_token)
+    elif kind == "non_consumable":
+        acknowledge_product_purchase(purchase.product_id, purchase.purchase_token)
+    else:
+        raise ValueError(f"Unknown Google Play purchase kind: {kind}")
+    purchase.status = "finalized"
+    db.commit()
+
+
+def _receipt_reference(purchase_token: str) -> str:
+    """Return a safe, fixed-length ledger reference without exposing the receipt."""
+    return hashlib.sha256(purchase_token.encode("utf-8")).hexdigest()
 
 
 def require_internal_secret(x_internal_secret: str | None = Header(default=None)):
@@ -65,6 +104,9 @@ def verify_android_purchase(req: AndroidPurchaseVerifyRequest, current_user_id: 
     """안드로이드 앱에서 발생한 Google Play 구독 결제를 서버에서 검증하고,
     유효하면 프리미엄 멤버십으로 승격한다.
     """
+    if req.product_id != "kmate_premium_monthly":
+        raise HTTPException(status_code=400, detail="Unknown premium subscription product.")
+
     user = db.query(User).filter(User.id == req.user_id).with_for_update().first()
     if not user:
         raise HTTPException(status_code=404, detail="User not found")
@@ -77,6 +119,11 @@ def verify_android_purchase(req: AndroidPurchaseVerifyRequest, current_user_id: 
         .first()
     )
     if existing:
+        _validate_existing_purchase(existing, user_id=req.user_id, product_id=req.product_id)
+        try:
+            _finalize_google_purchase(db, existing, "subscription")
+        except Exception as e:
+            raise HTTPException(status_code=502, detail=f"Play purchase finalization failed: {e}")
         return PurchaseVerifyResponse(
             success=True, membership=user.membership, message="이미 처리된 결제입니다."
         )
@@ -91,9 +138,13 @@ def verify_android_purchase(req: AndroidPurchaseVerifyRequest, current_user_id: 
             success=False, membership=user.membership, message="유효하지 않은 결제입니다."
         )
 
-    _activate_premium_and_grant_welcome_coins(
+    purchase = _activate_premium_and_grant_welcome_coins(
         db, user, "google_play", req.product_id, req.purchase_token
     )
+    try:
+        _finalize_google_purchase(db, purchase, "subscription")
+    except Exception as e:
+        raise HTTPException(status_code=502, detail=f"Play purchase finalization failed: {e}")
 
     return PurchaseVerifyResponse(success=True, membership=user.membership, message="결제가 확인되었습니다.")
 
@@ -107,7 +158,9 @@ def list_coin_packs():
     ]
 
 
-def _grant_coins(db: Session, user_id: str, coins: int) -> int:
+def _grant_coins(
+    db: Session, user_id: str, coins: int, *, reference_id: str | None = None
+) -> int:
     """유저 코인 지갑에 코인을 더해준다. 지갑이 없으면 새로 만든다. 반환값은 지급 후 총 코인.
 
     with_for_update()로 행 잠금을 걸어서, 같은 유저가 거의 동시에 결제 2건을 완료해도
@@ -125,26 +178,39 @@ def _grant_coins(db: Session, user_id: str, coins: int) -> int:
         db.add(economy)
         db.flush()
     from services.wallet import change_coins
-    economy = change_coins(db, user_id, coins, "purchase_reward", reference_type="billing")
+    economy = change_coins(
+        db,
+        user_id,
+        coins,
+        "purchase_reward",
+        reference_type="billing",
+        reference_id=reference_id,
+    )
     return economy.coins
 
 
 def _activate_premium_and_grant_welcome_coins(
     db: Session, user: User, platform: str, product_id: str, purchase_token: str
-) -> int:
+) -> Purchase:
     """Apply a verified one-month premium purchase exactly once with its coin reward."""
     activate_monthly_premium(db, user, PREMIUM_PRICE_KRW)
-    total_coins = _grant_coins(db, user.id, PREMIUM_WELCOME_COINS)
-    db.add(Purchase(
+    _grant_coins(
+        db,
+        user.id,
+        PREMIUM_WELCOME_COINS,
+        reference_id=_receipt_reference(purchase_token),
+    )
+    purchase = Purchase(
         id=str(uuid.uuid4()),
         user_id=user.id,
         platform=platform,
         product_id=product_id,
         purchase_token=purchase_token,
         status="verified",
-    ))
+    )
+    db.add(purchase)
     db.commit()
-    return total_coins
+    return purchase
 
 
 @router.post("/verify-android-coins", response_model=CoinPurchaseResponse)
@@ -167,6 +233,11 @@ def verify_android_coin_purchase(req: AndroidPurchaseVerifyRequest, current_user
         .first()
     )
     if existing:
+        _validate_existing_purchase(existing, user_id=req.user_id, product_id=req.product_id)
+        try:
+            _finalize_google_purchase(db, existing, "consumable")
+        except Exception as e:
+            raise HTTPException(status_code=502, detail=f"Play purchase finalization failed: {e}")
         economy = db.query(Economy).filter(Economy.user_id == req.user_id).first()
         return CoinPurchaseResponse(
             success=True, coins_granted=0, total_coins=economy.coins if economy else 0,
@@ -185,16 +256,26 @@ def verify_android_coin_purchase(req: AndroidPurchaseVerifyRequest, current_user
             message="유효하지 않은 결제입니다.",
         )
 
-    total = _grant_coins(db, req.user_id, pack["coins"])
-    db.add(Purchase(
+    total = _grant_coins(
+        db,
+        req.user_id,
+        pack["coins"],
+        reference_id=_receipt_reference(req.purchase_token),
+    )
+    purchase = Purchase(
         id=str(uuid.uuid4()),
         user_id=req.user_id,
         platform="google_play",
         product_id=req.product_id,
         purchase_token=req.purchase_token,
         status="verified",
-    ))
+    )
+    db.add(purchase)
     db.commit()
+    try:
+        _finalize_google_purchase(db, purchase, "consumable")
+    except Exception as e:
+        raise HTTPException(status_code=502, detail=f"Play purchase finalization failed: {e}")
 
     return CoinPurchaseResponse(
         success=True, coins_granted=pack["coins"], total_coins=total,
@@ -353,6 +434,11 @@ def verify_android_character_purchase(req: AndroidPurchaseVerifyRequest, current
         .first()
     )
     if existing:
+        _validate_existing_purchase(existing, user_id=req.user_id, product_id=req.product_id)
+        try:
+            _finalize_google_purchase(db, existing, "non_consumable")
+        except Exception as e:
+            raise HTTPException(status_code=502, detail=f"Play purchase finalization failed: {e}")
         return CharacterPurchaseResponse(
             success=True, character_id=pack["character_id"],
             free_char_slots=user.free_char_slots or [], message="이미 처리된 결제입니다.",
@@ -370,15 +456,20 @@ def verify_android_character_purchase(req: AndroidPurchaseVerifyRequest, current
         )
 
     slots = _grant_character(db, req.user_id, pack["character_id"])
-    db.add(Purchase(
+    purchase = Purchase(
         id=str(uuid.uuid4()),
         user_id=req.user_id,
         platform="google_play",
         product_id=req.product_id,
         purchase_token=req.purchase_token,
         status="verified",
-    ))
+    )
+    db.add(purchase)
     db.commit()
+    try:
+        _finalize_google_purchase(db, purchase, "non_consumable")
+    except Exception as e:
+        raise HTTPException(status_code=502, detail=f"Play purchase finalization failed: {e}")
 
     return CharacterPurchaseResponse(
         success=True, character_id=pack["character_id"], free_char_slots=slots,
