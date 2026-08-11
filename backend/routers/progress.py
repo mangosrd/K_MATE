@@ -119,6 +119,14 @@ def get_progress(user_id: str, character_id: str, current_user_id: str = Depends
 @router.put("/progress", response_model=ProgressResponse)
 def update_progress(req: ProgressUpdate, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
     require_same_user(current_user_id, req.user_id)
+    raise HTTPException(
+        status_code=410,
+        detail="Direct progress updates are disabled. Use the learning or chat APIs.",
+    )
+
+    # Kept temporarily for request-schema compatibility with older app builds.
+    # This legacy path is intentionally unreachable because all progress must now
+    # come from server-verified learning or chat events.
     user = db.query(User).filter(User.id == req.user_id).first()
     if not user:
         raise HTTPException(status_code=404, detail=f"User '{req.user_id}' not found")
