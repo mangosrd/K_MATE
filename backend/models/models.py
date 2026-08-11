@@ -82,6 +82,16 @@ class GuestInstall(Base):
     created_at   = Column(DateTime, server_default=func.now())
 
 
+class OAuthHandoff(Base):
+    __tablename__ = "oauth_handoffs"
+
+    id          = Column(String(64), primary_key=True)
+    user_id     = Column(String(36), ForeignKey("users.id"), nullable=False)
+    expires_at  = Column(DateTime, nullable=False)
+    consumed_at = Column(DateTime, nullable=True)
+    created_at  = Column(DateTime, server_default=func.now())
+
+
 # ── 권역 ──────────────────────────────────────────────────
 class Region(Base):
     __tablename__ = "regions"

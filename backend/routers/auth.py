@@ -11,7 +11,7 @@ from schemas.schemas import (
     AuthUserResponse, GoogleExchangeRequest, GoogleNativeLoginRequest,
     GuestCreateRequest, LoginRequest, RegisterRequest, WithdrawRequest, WithdrawResponse,
 )
-from models.models import User, Economy, GuestInstall, Progress, Memory, DiaryEntry, VocabItem
+from models.models import User, Economy, GuestInstall, OAuthHandoff, Progress, Memory, DiaryEntry, VocabItem
 from sqlalchemy.exc import IntegrityError
 import bcrypt
 import uuid
@@ -21,6 +21,7 @@ import hmac
 import json
 import secrets
 import time
+from datetime import datetime, timedelta
 from urllib.parse import urlencode
 import httpx
 from google.auth.transport import requests as google_requests
@@ -47,6 +48,10 @@ def _guest_install_hash(installation_id: str) -> str:
         installation_id.encode("utf-8"),
         hashlib.sha256,
     ).hexdigest()
+
+
+def _oauth_handoff_hash(jti: str) -> str:
+    return hashlib.sha256(jti.encode("utf-8")).hexdigest()
 
 
 def _sign_payload(payload: dict) -> str:
@@ -193,7 +198,16 @@ def google_callback(code: str, state: str, request: Request, db: Session = Depen
 
     user = _find_or_create_google_user(profile, db)
 
-    handoff = _sign_payload({"user_id": user.id, "exp": time.time() + 120})
+    now = datetime.utcnow()
+    db.query(OAuthHandoff).filter(OAuthHandoff.expires_at < now).delete(synchronize_session=False)
+    jti = secrets.token_urlsafe(32)
+    db.add(OAuthHandoff(
+        id=_oauth_handoff_hash(jti),
+        user_id=user.id,
+        expires_at=now + timedelta(seconds=120),
+    ))
+    db.commit()
+    handoff = _sign_payload({"user_id": user.id, "jti": jti, "exp": time.time() + 120})
     response = RedirectResponse(f"{settings.frontend_url.rstrip('/')}/login?oauth_code={handoff}")
     response.delete_cookie("kmate_google_state")
     return response
@@ -203,9 +217,23 @@ def google_callback(code: str, state: str, request: Request, db: Session = Depen
 def google_exchange(payload: GoogleExchangeRequest, db: Session = Depends(get_db)):
     enforce_rate_limit("google-exchange-global", "all", limit=120, window_seconds=60)
     handoff = _read_signed_payload(payload.oauth_code)
-    user = db.query(User).filter(User.id == handoff.get("user_id")).first()
+    user_id = handoff.get("user_id")
+    jti = handoff.get("jti")
+    if not user_id or not jti:
+        raise HTTPException(status_code=401, detail="Google login has expired. Please try again.")
+    handoff_record = db.query(OAuthHandoff).filter(
+        OAuthHandoff.id == _oauth_handoff_hash(jti),
+        OAuthHandoff.user_id == user_id,
+        OAuthHandoff.consumed_at.is_(None),
+        OAuthHandoff.expires_at >= datetime.utcnow(),
+    ).with_for_update().first()
+    if not handoff_record:
+        raise HTTPException(status_code=401, detail="Google login has expired. Please try again.")
+    user = db.query(User).filter(User.id == user_id).first()
     if not user or user.is_withdrawn:
         raise HTTPException(status_code=401, detail="Google login has expired. Please try again.")
+    handoff_record.consumed_at = func.now()
+    db.commit()
     return _to_response(user)
 
 

@@ -16,7 +16,7 @@ os.environ.setdefault("MYSQL_DB", "test")
 os.environ.setdefault("GEMINI_API_KEY", "test")
 os.environ.setdefault("INTERNAL_API_SECRET", "test-secret")
 
-from routers.auth import _guest_install_hash, _normalize_email
+from routers.auth import _guest_install_hash, _normalize_email, _oauth_handoff_hash
 from schemas.schemas import GuestCreateRequest, GoogleExchangeRequest, GoogleNativeLoginRequest, RegisterRequest
 
 
@@ -56,6 +56,12 @@ class AuthInputSecurityTests(unittest.TestCase):
         self.assertEqual(first, second)
         self.assertEqual(len(first), 64)
         self.assertNotIn("a" * 32, first)
+
+    def test_oauth_handoff_identifier_is_hashed_before_storage(self):
+        jti = "temporary-oauth-handoff"
+        digest = _oauth_handoff_hash(jti)
+        self.assertEqual(len(digest), 64)
+        self.assertNotIn(jti, digest)
 
 
 if __name__ == "__main__":
