@@ -1,6 +1,6 @@
 "use client";
 
-import React, { createContext, useContext, useState, useEffect } from "react";
+import React, { createContext, useContext, useSyncExternalStore } from "react";
 
 export type Language = "ko" | "en" | "ru" | "zh" | "ja" | "zh-TW" | "th";
 
@@ -2303,22 +2303,35 @@ const LanguageContext = createContext<LanguageContextProps>({
   t: (key) => key,
 });
 
-export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [language, setLanguageState] = useState<Language>("ko");
+const VALID_LANGUAGES: Language[] = ["ko", "en", "ru", "zh", "ja", "zh-TW", "th"];
+const LANGUAGE_CHANGE_EVENT = "kmate-language-changed";
 
-  useEffect(() => {
-    const saved = localStorage.getItem("kmate_lang") as Language;
-    const validLangs: Language[] = ["ko", "en", "ru", "zh", "ja", "zh-TW", "th"];
-    if (saved && validLangs.includes(saved)) {
-      setLanguageState(saved);
-    }
-  }, []);
+function getLanguageSnapshot(): Language {
+  const saved = localStorage.getItem("kmate_lang") as Language | null;
+  return saved && VALID_LANGUAGES.includes(saved) ? saved : "ko";
+}
+
+function subscribeToLanguage(onStoreChange: () => void) {
+  window.addEventListener("storage", onStoreChange);
+  window.addEventListener(LANGUAGE_CHANGE_EVENT, onStoreChange);
+  return () => {
+    window.removeEventListener("storage", onStoreChange);
+    window.removeEventListener(LANGUAGE_CHANGE_EVENT, onStoreChange);
+  };
+}
+
+export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const language = useSyncExternalStore(
+    subscribeToLanguage,
+    getLanguageSnapshot,
+    (): Language => "ko",
+  );
 
   // 앱 전체 최상단 Provider라 여기서 한 번만 실행 — 로그인 안 한 방문자별로 각자의
   // 게스트 계정을 발급받아둔다 (자세한 이유는 lib/auth/store.ts의 ensureGuestAccount 참고).
   const setLanguage = (lang: Language) => {
-    setLanguageState(lang);
     localStorage.setItem("kmate_lang", lang);
+    window.dispatchEvent(new Event(LANGUAGE_CHANGE_EVENT));
   };
 
   const t = (key: string, vars?: Record<string, string | number>): string => {
