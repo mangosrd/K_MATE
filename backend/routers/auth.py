@@ -26,6 +26,7 @@ import httpx
 from google.auth.transport import requests as google_requests
 from google.oauth2 import id_token as google_id_token
 from services.session_auth import issue_access_token, require_current_user, require_same_user
+from services.rate_limit import clear_rate_limit, enforce_rate_limit
 
 router = APIRouter(prefix="/auth", tags=["auth"])
 
@@ -120,6 +121,7 @@ def google_client_id():
 
 @router.post("/google/native", response_model=AuthUserResponse)
 def google_native_login(payload: GoogleNativeLoginRequest, db: Session = Depends(get_db)):
+    enforce_rate_limit("google-native-global", "all", limit=60, window_seconds=60)
     token = payload.id_token
     try:
         profile = google_id_token.verify_oauth2_token(token, google_requests.Request(), get_settings().google_client_id)
@@ -134,6 +136,7 @@ def google_native_login(payload: GoogleNativeLoginRequest, db: Session = Depends
 @router.get("/google/start")
 def google_start():
     """Send the browser to Google using the configured OAuth web client."""
+    enforce_rate_limit("google-start-global", "all", limit=120, window_seconds=60)
     settings = get_settings()
     if not settings.google_client_id or not settings.google_client_secret:
         raise HTTPException(status_code=503, detail="Google login is not configured")
@@ -156,6 +159,7 @@ def google_start():
 @router.get("/google/callback")
 def google_callback(code: str, state: str, request: Request, db: Session = Depends(get_db)):
     """Verify Google's code, link the verified email to a K-MATE user, then return to Vercel."""
+    enforce_rate_limit("google-callback-global", "all", limit=60, window_seconds=60)
     settings = get_settings()
     cookie_state = request.cookies.get("kmate_google_state")
     if not cookie_state or not hmac.compare_digest(state, cookie_state):
@@ -197,6 +201,7 @@ def google_callback(code: str, state: str, request: Request, db: Session = Depen
 
 @router.post("/google/exchange", response_model=AuthUserResponse)
 def google_exchange(payload: GoogleExchangeRequest, db: Session = Depends(get_db)):
+    enforce_rate_limit("google-exchange-global", "all", limit=120, window_seconds=60)
     handoff = _read_signed_payload(payload.oauth_code)
     user = db.query(User).filter(User.id == handoff.get("user_id")).first()
     if not user or user.is_withdrawn:
@@ -208,6 +213,8 @@ def google_exchange(payload: GoogleExchangeRequest, db: Session = Depends(get_db
 def register(req: RegisterRequest, db: Session = Depends(get_db)):
     """이메일 회원가입"""
     email = _normalize_email(req.email)
+    enforce_rate_limit("register-global", "all", limit=30, window_seconds=60)
+    enforce_rate_limit("register-email", email, limit=3, window_seconds=3600)
     name = req.name.strip()
     if not name:
         raise HTTPException(status_code=422, detail="Name is required")
@@ -257,6 +264,9 @@ def create_guest(req: GuestCreateRequest, db: Session = Depends(get_db)):
         db.delete(existing_install)
         db.flush()
 
+    enforce_rate_limit("guest-create-global", "all", limit=30, window_seconds=60)
+    enforce_rate_limit("guest-create-install", install_hash, limit=2, window_seconds=600)
+
     user = User(
         id=str(uuid.uuid4()),
         name="Guest",
@@ -294,6 +304,8 @@ def create_guest(req: GuestCreateRequest, db: Session = Depends(get_db)):
 def login(req: LoginRequest, db: Session = Depends(get_db)):
     """이메일 로그인"""
     email = _normalize_email(req.email)
+    enforce_rate_limit("login-global", "all", limit=120, window_seconds=60)
+    enforce_rate_limit("login-email", email, limit=10, window_seconds=900)
     user = db.query(User).filter(User.email == email).first()
     if not user or not user.password_hash:
         raise HTTPException(status_code=401, detail="이메일 또는 비밀번호가 올바르지 않습니다")
@@ -304,6 +316,7 @@ def login(req: LoginRequest, db: Session = Depends(get_db)):
     if not bcrypt.checkpw(req.password.encode("utf-8"), user.password_hash.encode("utf-8")):
         raise HTTPException(status_code=401, detail="이메일 또는 비밀번호가 올바르지 않습니다")
 
+    clear_rate_limit("login-email", email)
     return _to_response(user)
 
 
