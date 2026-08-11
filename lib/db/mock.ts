@@ -2,7 +2,7 @@
 // K-MATE Mock DB v2 — Supabase 연결 전 임시 데이터
 // ============================================================
 import type {
-  User, Character, Region, Progress, Memory, DiaryEntry,
+  User, Character, Region, Memory, DiaryEntry,
   Economy, VocabItem, Chapter, Membership,
 } from "@/types/database";
 
@@ -149,44 +149,6 @@ export const MOCK_REGIONS: Region[] = [
 if (process.env.NEXT_PUBLIC_DEV_MODE === "true") {
   MOCK_REGIONS.forEach((r) => { r.is_locked = false; });
 }
-
-// ── 진도 (캐릭터별) ────────────────────────────────────
-export const MOCK_PROGRESS: Progress = {
-  id: "prog-001",
-  user_id: "user-001",
-  character_id: "kyuhyun",
-  affinity: 0,
-  stamps: [],
-  current_step: 1,
-  visited_places: [],
-  streak_days: 0,
-  last_active_at: new Date().toISOString(),
-};
-
-export const MOCK_ALL_PROGRESS: Record<string, Progress> = {
-  kyuhyun: {
-    id: "prog-001",
-    user_id: "user-001",
-    character_id: "kyuhyun",
-    affinity: 0,
-    stamps: [],
-    current_step: 1,
-    visited_places: [],
-    streak_days: 0,
-    last_active_at: new Date().toISOString(),
-  },
-  haneul: {
-    id: "prog-002",
-    user_id: "user-001",
-    character_id: "haneul",
-    affinity: 0,
-    stamps: [],
-    current_step: 1,
-    visited_places: [],
-    streak_days: 0,
-    last_active_at: new Date().toISOString(),
-  },
-};
 
 // ── 챕터 ────────────────────────────────────────────────
 // ── 챕터 (각 캐릭터별 10개 챕터 × 10단계 전통문화 커리큘럼) ────────

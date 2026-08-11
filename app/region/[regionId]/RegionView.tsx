@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import BottomNav from "@/components/ui/BottomNav";
 import {
-  getCharactersForRegion, MOCK_ALL_PROGRESS,
+  getCharactersForRegion,
   canAccessCharacter,
 } from "@/lib/db/mock";
 import { getAuthHeaders, getEffectiveUserId } from "@/lib/auth/store";
@@ -126,7 +126,7 @@ export default function RegionView({ region }: { region: Region }) {
   const characters = getCharactersForRegion(region.id);
   const regionCopy = REGION_COPY[language][region.id] ?? REGION_COPY.en[region.id];
   const highlights = REGION_HIGHLIGHTS[region.id] ?? [];
-  const [allProgress, setAllProgress] = useState<Record<string, Progress>>(MOCK_ALL_PROGRESS);
+  const [allProgress, setAllProgress] = useState<Record<string, Progress>>({});
 
   useEffect(() => {
     const userId = getEffectiveUserId();
@@ -139,7 +139,7 @@ export default function RegionView({ region }: { region: Region }) {
     ).then((results) => {
       const merged: Record<string, Progress> = {};
       results.forEach((p) => { if (p) merged[p.character_id] = p; });
-      if (Object.keys(merged).length > 0) setAllProgress(merged);
+      setAllProgress(merged);
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [region.id]);
