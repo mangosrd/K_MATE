@@ -165,8 +165,7 @@ export default function OnboardingPage() {
           {/* 캐릭터 리스트 */}
           <div className={styles.charGrid}>
             {CHARACTERS.map((char) => {
-              // 개발자 테스트 모드 — 프리미엄 잠금 무시 (.env.local의 NEXT_PUBLIC_DEV_MODE)
-              const isLocked = char.requires_premium && process.env.NEXT_PUBLIC_DEV_MODE !== "true";
+              const isLocked = char.requires_premium;
               return (
                 <button
                   key={char.id}

@@ -132,11 +132,6 @@ export const MOCK_REGIONS: Region[] = [
   },
 ];
 
-// 개발자 테스트 모드 — 지역 잠금도 캐릭터 잠금과 함께 전부 무시 (.env.local의 NEXT_PUBLIC_DEV_MODE)
-if (process.env.NEXT_PUBLIC_DEV_MODE === "true") {
-  MOCK_REGIONS.forEach((r) => { r.is_locked = false; });
-}
-
 // ── 챕터 ────────────────────────────────────────────────
 // ── 챕터 (각 캐릭터별 10개 챕터 × 10단계 전통문화 커리큘럼) ────────
 export const MOCK_CHAPTERS: Chapter[] = [
@@ -419,9 +414,6 @@ export function getChaptersForCharacter(characterId: string) {
 }
 
 export function canAccessCharacter(characterId: string, membership: string, freeSlots: string[]) {
-  // 개발자 테스트 모드 — 프리미엄 잠금 전부 무시 (.env.local의 NEXT_PUBLIC_DEV_MODE)
-  if (process.env.NEXT_PUBLIC_DEV_MODE === "true") return true;
-
   const char = getCharacterById(characterId);
   if (!char) return false;
   if (membership === "premium") return true;

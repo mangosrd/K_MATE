@@ -479,11 +479,6 @@ export default function LearningSessionPage({
       setStoryAccess(true);
       return;
     }
-    // DEV_MODE에서는 백엔드 없이도 스토리 접근 허용 (로컬 미리보기용)
-    if (process.env.NEXT_PUBLIC_DEV_MODE === "true") {
-      setStoryAccess(true);
-      return;
-    }
     setStoryAccess(null);
     fetch(`${BACKEND_URL}/learning/story-access/${getEffectiveUserId()}/${chapterId}`, { headers: getAuthHeaders() })
       .then((res) => (res.ok ? res.json() : null))
@@ -615,14 +610,6 @@ export default function LearningSessionPage({
     setEntryError("");
     setIsStarting(true);
     try {
-      // DEV_MODE에서는 백엔드 없이 스토리 바로 진입 (로컬 미리보기용)
-      if (process.env.NEXT_PUBLIC_DEV_MODE === "true") {
-        setLessonSessionId("dev-session");
-        setReplaySession(stamps.includes(chapterId));
-        setStoryIdx(0);
-        setPhase("story");
-        return;
-      }
       const res = await fetch(`${BACKEND_URL}/learning/start`, {
         method: "POST",
         headers: { "Content-Type": "application/json", ...getAuthHeaders() },
