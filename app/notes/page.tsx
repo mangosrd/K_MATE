@@ -7,6 +7,7 @@ import { useLanguage, type Language } from "@/components/LanguageContext";
 import BottomNav from "@/components/ui/BottomNav";
 import { getAuthHeaders, getEffectiveUserId } from "@/lib/auth/store";
 import { MOCK_CHARACTERS } from "@/lib/db/mock";
+import { cancelCaptainNoteComment, scheduleCaptainNoteComment } from "@/lib/notifications/captainNotes";
 import styles from "./notes.module.css";
 
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
@@ -76,6 +77,7 @@ export default function NotesPage() {
       const data = await res.json().catch(() => null);
       if (!res.ok) throw new Error(res.status === 429 ? copy.limit : (data?.detail ?? "Error"));
       setNotes((current) => [data, ...current]);
+      void scheduleCaptainNoteComment(data.id, data.comment_ready_at);
       setContent("");
     } catch (cause) {
       setError(cause instanceof Error ? cause.message : "Error");
@@ -95,7 +97,10 @@ export default function NotesPage() {
 
   async function deleteNote(id: string) {
     const res = await fetch(`${BACKEND_URL}/notes/${id}`, { method: "DELETE", headers: getAuthHeaders() });
-    if (res.ok) setNotes((current) => current.filter((note) => note.id !== id));
+    if (res.ok) {
+      void cancelCaptainNoteComment(id);
+      setNotes((current) => current.filter((note) => note.id !== id));
+    }
   }
 
   return (

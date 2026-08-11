@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import { Capacitor } from "@capacitor/core";
 import { PushNotifications } from "@capacitor/push-notifications";
+import { LocalNotifications } from "@capacitor/local-notifications";
 import { getAuthHeaders, getCurrentUser } from "@/lib/auth/store";
 
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
@@ -20,6 +21,15 @@ export default function PushNotificationSetup() {
     if (!Capacitor.isNativePlatform() || Capacitor.getPlatform() !== "android") return;
 
     let disposed = false;
+
+    const localAction = LocalNotifications.addListener(
+      "localNotificationActionPerformed",
+      ({ notification }) => {
+        if (notification.extra?.type === "captain-note-comment") {
+          window.location.href = "/notes";
+        }
+      },
+    );
 
     const saveToken = async (token: string) => {
       const user = getCurrentUser();
@@ -82,6 +92,7 @@ export default function PushNotificationSetup() {
 
     return () => {
       disposed = true;
+      void localAction.then((handle) => handle.remove());
       window.removeEventListener("kmate-auth-changed", retryActivation);
       window.removeEventListener("kmate-auth-logging-out", unregisterBeforeLogout);
     };
