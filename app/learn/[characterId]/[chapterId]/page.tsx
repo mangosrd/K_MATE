@@ -13,6 +13,7 @@ import { useLanguage } from "@/components/LanguageContext";
 import { canAccessCharacter, isChapterUnlocked, getCharacterById } from "@/lib/db/mock";
 import { useMembership, useFreeCharSlots } from "@/lib/auth/useAuthUser";
 import { useTranslationMap, substituteTranslations, TranslatableItem } from "@/lib/translate/store";
+import { getSpeechRecognitionConstructor } from "@/lib/browser/speechRecognition";
 
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
 import type { ChapterContent, ChapterWord as Word, ChapterSentence as Sentence, DialogueScene, DialogueTurn } from "@/types/content";
@@ -633,8 +634,7 @@ export default function LearningSessionPage({
 
   const handleStartSTT = () => {
     if (typeof window === "undefined") return;
-    const SpeechRecognition =
-      (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+    const SpeechRecognition = getSpeechRecognitionConstructor(window);
 
     if (!SpeechRecognition) {
       alert("브라우저가 음성 인식을 지원하지 않습니다.");
@@ -648,9 +648,9 @@ export default function LearningSessionPage({
       recognition.continuous = false;
 
       recognition.onstart = () => setIsListeningSTT(true);
-      recognition.onresult = (event: any) => {
+      recognition.onresult = (event) => {
         const transcript = Array.from(event.results)
-          .map((r: any) => r[0].transcript)
+          .map((result) => result[0].transcript)
           .join("");
         setInputText(transcript);
         handleCheckAnswer(transcript);

@@ -15,6 +15,7 @@ import { getChatHistory, saveChatHistory, clearChatHistory } from "@/lib/chat/st
 import { getAuthHeaders, getEffectiveUserId, getCurrentUser, setPreferredCaptainId } from "@/lib/auth/store";
 import { useMembership, useFreeCharSlots } from "@/lib/auth/useAuthUser";
 import { useLanguage, type Language } from "@/components/LanguageContext";
+import { getSpeechRecognitionConstructor } from "@/lib/browser/speechRecognition";
 
 const REGION_NAMES: Record<string, string> = {
   seoul: "서울·경기 노선",
@@ -380,8 +381,7 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
 
   const startListening = () => {
     if (typeof window === "undefined") return;
-    const SpeechRecognition =
-      (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+    const SpeechRecognition = getSpeechRecognitionConstructor(window);
 
     if (!SpeechRecognition) {
       setToast(t("sttNotSupportedToast"));
@@ -398,15 +398,15 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
         setIsListening(true);
       };
 
-      recognition.onresult = (event: any) => {
+      recognition.onresult = (event) => {
         const transcript = Array.from(event.results)
-          .map((result: any) => result[0])
-          .map((result: any) => result.transcript)
+          .map((result) => result[0])
+          .map((result) => result.transcript)
           .join("");
         setInput(transcript);
       };
 
-      recognition.onerror = (event: any) => {
+      recognition.onerror = (event) => {
         console.error("Speech error:", event.error);
         setIsListening(false);
       };
