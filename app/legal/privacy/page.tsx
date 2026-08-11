@@ -12,7 +12,7 @@ export default function PrivacyPage() {
         <Link href="/me" className={styles.backLink}>← 마이페이지로 돌아가기</Link>
 
         <h1 className={styles.title}>개인정보처리방침</h1>
-        <p className={styles.updated}>최종 개정일: 2026년 7월 29일</p>
+        <p className={styles.updated}>최종 개정일: 2026년 8월 11일</p>
 
         <section className={styles.section}>
           <h2 className={styles.heading}>1. 수집하는 개인정보 항목</h2>
@@ -21,7 +21,7 @@ export default function PrivacyPage() {
             <li>학습·이용 기록: 학습 진도, 호감도, 방문 장소, 연속 학습일, 단어장</li>
             <li>생성 콘텐츠: 메이트와의 대화 기억(메모리), 여행 일기</li>
             <li>재화 정보: 보유 코인, 멤버십(무료/프리미엄) 상태</li>
-            <li>결제 수단(시뮬레이션): 카드 브랜드, 카드 번호 끝 4자리 — 카드 전체 번호는 저장하지 않습니다</li>
+            <li>Google Play 결제 검증 정보: 상품 ID, 구매 토큰, 결제 상태</li>
             <li>고객 지원: 문의 시 남기신 이름, 이메일, 문의 내용</li>
             <li>환경설정: 알림 수신 여부, 화면 테마(라이트/다크)</li>
           </ul>
