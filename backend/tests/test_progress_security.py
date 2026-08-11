@@ -14,7 +14,9 @@ os.environ.setdefault("MYSQL_DB", "test")
 os.environ.setdefault("GEMINI_API_KEY", "test")
 
 from fastapi import HTTPException
+from routers.learning import LESSON_ENTRY_COST, VERIFIED_LESSON_STEP_DELTA
 from routers.progress import update_progress
+from schemas.schemas import LessonCompleteRequest
 
 
 class ProgressMutationSecurityTests(unittest.TestCase):
@@ -29,6 +31,19 @@ class ProgressMutationSecurityTests(unittest.TestCase):
             )
 
         self.assertEqual(raised.exception.status_code, 410)
+
+    def test_lesson_completion_ignores_client_authored_progress_and_rewards(self):
+        forged_request = LessonCompleteRequest(
+            user_id="owner",
+            session_id="session",
+            step_delta=9999,
+            add_stamp="forged-chapter",
+        )
+
+        self.assertEqual(LESSON_ENTRY_COST, 0)
+        self.assertEqual(VERIFIED_LESSON_STEP_DELTA, 1)
+        self.assertFalse(hasattr(forged_request, "step_delta"))
+        self.assertFalse(hasattr(forged_request, "add_stamp"))
 
 
 if __name__ == "__main__":

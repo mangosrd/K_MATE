@@ -176,8 +176,6 @@ class LessonStartResponse(BaseModel):
 class LessonCompleteRequest(BaseModel):
     user_id: str
     session_id: str
-    step_delta: int = 0
-    add_stamp: Optional[str] = None
 
 
 class LessonCompleteResponse(BaseModel):

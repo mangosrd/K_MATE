@@ -380,8 +380,6 @@ export default function LearningSessionPage({
   const [lessonSessionId, setLessonSessionId] = useState<string | null>(null);
   const [entryError, setEntryError] = useState("");
   const [isStarting, setIsStarting] = useState(false);
-  const [rewardCoins, setRewardCoins] = useState<number | null>(null);
-  const [replaySession, setReplaySession] = useState(false);
   const [currentIdx, setCurrentIdx] = useState(0);
   const [storyIdx, setStoryIdx] = useState(0);
   // 발음(로마자) 표시 여부 — 기본 숨김, 토글로 ON/OFF
@@ -435,8 +433,6 @@ export default function LearningSessionPage({
     setWrongCount(0);
     setLessonSessionId(null);
     setEntryError("");
-    setRewardCoins(null);
-    setReplaySession(false);
     setShowReading(false);
   }, [chapterId]);
 
@@ -573,16 +569,13 @@ export default function LearningSessionPage({
         body: JSON.stringify({
           user_id: getEffectiveUserId(),
           session_id: lessonSessionId,
-          step_delta: totalExercises,
-          add_stamp: chapterId,
         }),
       })
         .then((res) => (res.ok ? res.json() : Promise.reject()))
         .then((data) => {
-          setRewardCoins(data.reward_coins ?? 0);
           setStamps(data.stamps ?? []);
         })
-        .catch(() => setRewardCoins(0));
+        .catch(() => {});
     } else {
       setCurrentIdx((i) => i + 1);
     }
@@ -618,7 +611,6 @@ export default function LearningSessionPage({
       const data = await res.json().catch(() => ({}));
       if (!res.ok) throw new Error(data.detail || "학습을 시작할 수 없어요.");
       setLessonSessionId(data.session_id);
-      setReplaySession(Boolean(data.is_replay));
       setStoryIdx(0);
       setPhase("story");
     } catch (error) {
@@ -636,8 +628,6 @@ export default function LearningSessionPage({
     setCorrectCount(0);
     setWrongCount(0);
     setLessonSessionId(null);
-    setRewardCoins(null);
-    setReplaySession(true);
     setEntryError("");
   };
 
@@ -754,7 +744,6 @@ export default function LearningSessionPage({
 
   // ── 인트로 화면 ─────────────────────────────────────────
   if (phase === "intro") {
-    const hasCompletedChapter = stamps.includes(chapterId);
     return (
       <main className={styles.page}>
         <div className={styles.introCard}>
@@ -794,7 +783,7 @@ export default function LearningSessionPage({
             >
               {isStarting
                 ? "학습 준비 중…"
-                : `${hasCompletedChapter ? "↻ " : ""}${t("startLearn")} · 🪙 ${hasCompletedChapter ? 0 : 3}`}
+                : t("startLearn")}
             </button>
             {entryError && <p className={styles.introError}>{entryError}</p>}
             <Link href={backToListHref} className={styles.introMainLink}>
@@ -1025,8 +1014,8 @@ export default function LearningSessionPage({
               <span className={styles.rStatLabel}>{t("wrongLabel")}</span>
             </div>
             <div className={styles.resultStat}>
-              <span className={styles.rStatNum}>🪙 +{replaySession ? 0 : (rewardCoins ?? "…")}</span>
-              <span className={styles.rStatLabel}>{replaySession ? t("completed") : t("coinEarned")}</span>
+              <span className={styles.rStatNum}>{totalExercises}</span>
+              <span className={styles.rStatLabel}>{t("questionsLabel")}</span>
             </div>
           </div>
           <div className={styles.completeActions}>

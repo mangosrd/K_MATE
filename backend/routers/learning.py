@@ -1,6 +1,5 @@
 """Server-authoritative learning fees, rewards, and permanent story ownership."""
 
-import secrets
 import uuid
 from datetime import datetime
 
@@ -21,10 +20,10 @@ from services.session_auth import require_current_user, require_same_user
 
 router = APIRouter(prefix="/learning", tags=["learning"])
 
-LESSON_ENTRY_COST = 3
+LESSON_ENTRY_COST = 0
 STORY_UNLOCK_COST = 5
 PREMIUM_PRODUCT_ID = "kmate_premium_monthly"
-MAX_LESSON_STEP_DELTA = 30
+VERIFIED_LESSON_STEP_DELTA = 1
 
 
 def _economy(db: Session, user_id: str) -> Economy:
@@ -114,7 +113,7 @@ def start_lesson(req: LessonStartRequest, current_user_id: str = Depends(require
         LessonSession.chapter_id == req.chapter_id,
         LessonSession.completed.is_(True),
     ).first() is not None
-    entry_cost = 0 if is_replay else LESSON_ENTRY_COST
+    entry_cost = LESSON_ENTRY_COST
     if economy.coins < entry_cost:
         raise HTTPException(status_code=400, detail=f"코인이 부족합니다. 학습 시작에는 {LESSON_ENTRY_COST}코인이 필요합니다.")
     session = LessonSession(
@@ -158,13 +157,14 @@ def complete_lesson(req: LessonCompleteRequest, current_user_id: str = Depends(r
             LessonSession.completed.is_(True),
         ).first()
         is_replay = previous_completion is not None
-        session.reward_coins = 0 if is_replay else secrets.randbelow(3) + 1
+        # Learning is intentionally free and never mints coins. Progress is
+        # derived from the server-owned session/chapter, never from a delta
+        # supplied by the app.
+        session.reward_coins = 0
         session.completed = True
         session.completed_at = datetime.now()
         if not is_replay:
-            economy = change_coins(db, req.user_id, session.reward_coins, "lesson_reward", reference_type="lesson_session", reference_id=session.id)
-            verified_step_delta = min(max(req.step_delta, 0), MAX_LESSON_STEP_DELTA)
-            prog.current_step = max(1, prog.current_step + verified_step_delta)
+            prog.current_step = max(1, prog.current_step + VERIFIED_LESSON_STEP_DELTA)
             if session.chapter_id not in (prog.stamps or []):
                 prog.stamps = (prog.stamps or []) + [session.chapter_id]
             record_daily_affinity(prog)
