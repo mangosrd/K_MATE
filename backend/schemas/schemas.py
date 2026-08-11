@@ -287,6 +287,14 @@ class AuthUserResponse(BaseModel):
     access_token: str
 
 
+class ProfileResponse(BaseModel):
+    id: str
+    name: str
+    email: Optional[str] = None
+    language: str
+    membership: str
+
+
 class WithdrawRequest(BaseModel):
     user_id: str = Field(min_length=1, max_length=36)
     password: str = Field(min_length=1, max_length=128)
@@ -299,15 +307,15 @@ class WithdrawResponse(BaseModel):
 
 # ── 계정 설정 (개인정보/비밀번호/알림/테마) ───────────────────
 class ProfileUpdateRequest(BaseModel):
-    user_id: str
-    name: str
-    email: str
+    user_id: str = Field(min_length=1, max_length=36)
+    name: str = Field(min_length=1, max_length=100)
+    email: str = Field(min_length=3, max_length=255)
 
 
 class ChangePasswordRequest(BaseModel):
-    user_id: str
-    current_password: str
-    new_password: str
+    user_id: str = Field(min_length=1, max_length=36)
+    current_password: str = Field(min_length=1, max_length=128)
+    new_password: str = Field(min_length=8, max_length=128)
 
 
 class SimpleSuccessResponse(BaseModel):
@@ -326,12 +334,12 @@ class PreferencesResponse(BaseModel):
 
 
 class PreferencesUpdateRequest(BaseModel):
-    user_id: str
+    user_id: str = Field(min_length=1, max_length=36)
     theme_pref: Optional[Literal["light", "dark"]] = None
     notify_chat: Optional[bool] = None
     notify_diary: Optional[bool] = None
     notify_marketing: Optional[bool] = None
-    timezone_name: Optional[str] = None
+    timezone_name: Optional[str] = Field(default=None, min_length=1, max_length=64)
     timezone_mode: Optional[Literal["auto", "manual"]] = None
 
 
@@ -363,9 +371,9 @@ class PaymentMethodCreateRequest(BaseModel):
 
 # ── 고객 지원 ────────────────────────────────────────────────
 class SupportTicketRequest(BaseModel):
-    user_id: Optional[str] = None
-    name: str
-    email: str
+    user_id: Optional[str] = Field(default=None, max_length=36)
+    name: str = Field(min_length=1, max_length=100)
+    email: str = Field(min_length=3, max_length=255)
     category: Literal["account", "billing", "bug", "content", "other"] = "other"
     message: str = Field(..., min_length=5, max_length=2000)
 

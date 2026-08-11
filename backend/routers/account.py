@@ -12,7 +12,7 @@ from schemas.schemas import (
     PreferencesResponse, PreferencesUpdateRequest,
     PaymentMethodResponse, PaymentMethodCreateRequest,
     SupportTicketRequest, SupportTicketResponse,
-    AuthUserResponse,
+    ProfileResponse,
 )
 from models.models import User, PaymentMethod, SupportTicket
 import bcrypt
@@ -40,8 +40,8 @@ def _preferences_response(user: User) -> PreferencesResponse:
     )
 
 
-def _to_auth_response(user: User) -> AuthUserResponse:
-    return AuthUserResponse(
+def _to_profile_response(user: User) -> ProfileResponse:
+    return ProfileResponse(
         id=user.id,
         name=user.name,
         email=user.email,
@@ -51,23 +51,31 @@ def _to_auth_response(user: User) -> AuthUserResponse:
 
 
 # ── 개인정보 수정 ────────────────────────────────────────────
-@router.patch("/user/{user_id}/profile", response_model=AuthUserResponse)
+@router.patch("/user/{user_id}/profile", response_model=ProfileResponse)
 def update_profile(user_id: str, req: ProfileUpdateRequest, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
     require_same_user(current_user_id, user_id)
+    require_same_user(current_user_id, req.user_id)
     user = db.query(User).filter(User.id == user_id).first()
     if not user:
         raise HTTPException(status_code=404, detail="계정을 찾을 수 없습니다")
 
-    if req.email != user.email:
-        existing = db.query(User).filter(User.email == req.email, User.id != user_id).first()
+    name = req.name.strip()
+    email = req.email.strip().lower()
+    if not name:
+        raise HTTPException(status_code=422, detail="Name is required")
+    if email.count("@") != 1 or email.startswith("@") or email.endswith("@"):
+        raise HTTPException(status_code=422, detail="A valid email address is required")
+
+    if email != user.email:
+        existing = db.query(User).filter(User.email == email, User.id != user_id).first()
         if existing:
             raise HTTPException(status_code=400, detail="이미 사용 중인 이메일입니다")
 
-    user.name = req.name
-    user.email = req.email
+    user.name = name
+    user.email = email
     db.commit()
     db.refresh(user)
-    return _to_auth_response(user)
+    return _to_profile_response(user)
 
 
 # ── 비밀번호 변경 ────────────────────────────────────────────
