@@ -66,6 +66,7 @@ class User(Base):
     economy         = relationship("Economy", back_populates="user", uselist=False)
     payment_methods = relationship("PaymentMethod", back_populates="user")
     letters         = relationship("Letter", back_populates="user")
+    notes           = relationship("UserNote", back_populates="user")
     push_devices    = relationship("PushDevice", back_populates="user")
 
 
@@ -179,6 +180,22 @@ class Letter(Base):
 
     user      = relationship("User", back_populates="letters")
     character = relationship("Character", back_populates="letters")
+
+
+class UserNote(Base):
+    """A private player memo with a delayed, template-based captain comment."""
+    __tablename__ = "user_notes"
+
+    id                   = Column(String(36), primary_key=True)
+    user_id              = Column(String(36), ForeignKey("users.id"), nullable=False)
+    content              = Column(Text, nullable=False)
+    comment_character_id = Column(String(50), ForeignKey("characters.id"), nullable=False)
+    comment_content      = Column(Text, nullable=False)
+    comment_ready_at     = Column(DateTime, nullable=False)
+    is_comment_read      = Column(Boolean, default=False, nullable=False)
+    created_at           = Column(DateTime, server_default=func.now())
+
+    user = relationship("User", back_populates="notes")
 
 
 # ── 단어장 ────────────────────────────────────────────────

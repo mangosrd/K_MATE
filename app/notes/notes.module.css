@@ -1,0 +1,35 @@
+.page { min-height: 100dvh; padding-bottom: calc(96px + env(safe-area-inset-bottom)); background: radial-gradient(circle at 90% 0%, rgba(205,46,58,.09), transparent 28%), var(--bg-base); }
+.header { display: grid; grid-template-columns: 42px 1fr 38px; align-items: start; gap: 10px; padding: 24px 18px 18px; }
+.back { width: 40px; height: 40px; display: grid; place-items: center; border: 1px solid var(--border-subtle); border-radius: 50%; background: var(--bg-base); color: var(--text-primary); text-decoration: none; font-size: 28px; line-height: 1; }
+.heading { min-width: 0; }
+.eyebrow { color: var(--red); font-size: 10px !important; font-weight: 800; letter-spacing: .12em; }
+.heading h1 { margin-top: 3px; font-size: clamp(27px, 8vw, 34px); line-height: 1.15; color: var(--text-primary); }
+.heading > p:last-child { margin-top: 6px; font-size: 12px; color: var(--text-secondary); line-height: 1.5; }
+.unread { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; color: #fff; background: var(--red); font-size: 12px; font-weight: 800; }
+.composer { margin: 0 16px 20px; padding: 16px; border: 1px solid var(--border-subtle); border-radius: 24px; background: var(--bg-elevated); box-shadow: var(--shadow-sm); }
+.composer textarea { width: 100%; resize: none; border: 0; outline: none; color: var(--text-primary); background: transparent; font: inherit; font-size: 14px; line-height: 1.7; }
+.composer textarea::placeholder { color: var(--text-muted); }
+.composerBottom { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 10px; padding-top: 12px; border-top: 1px dashed var(--border-subtle); }
+.composerBottom span { font-size: 9px; color: var(--text-muted); }
+.composerBottom button { flex-shrink: 0; border: 0; border-radius: 999px; padding: 10px 15px; color: #fff; background: linear-gradient(135deg, #cd2e3a, #9c2130); font: inherit; font-size: 12px; font-weight: 800; }
+.composerBottom button:disabled { opacity: .45; }
+.error { margin-top: 9px; font-size: 11px; color: var(--color-error); }
+.noteList { display: flex; flex-direction: column; gap: 14px; padding: 0 16px 24px; }
+.noteCard { padding: 16px; border: 1px solid var(--border-subtle); border-radius: 22px; background: var(--bg-base); box-shadow: var(--shadow-xs); }
+.noteMeta { display: flex; align-items: center; justify-content: space-between; }
+.noteMeta time { font-size: 10px; color: var(--text-muted); }
+.noteMeta button { border: 0; padding: 4px; color: var(--text-muted); background: transparent; font: inherit; font-size: 10px; }
+.noteBody { padding: 15px 3px 17px; white-space: pre-wrap; overflow-wrap: anywhere; font-size: 14px; line-height: 1.75; color: var(--text-primary); }
+.pending { display: flex; align-items: center; gap: 8px; padding: 11px 13px; border-radius: 15px; color: var(--text-secondary); background: var(--bg-surface); font-size: 11px; }
+.pendingDots { letter-spacing: 3px; color: var(--red); animation: pulse 1.4s ease-in-out infinite; }
+.arrived { width: 100%; display: flex; align-items: center; gap: 10px; border: 1px solid rgba(205,46,58,.22); border-radius: 16px; padding: 10px 12px; text-align: left; color: var(--text-primary); background: var(--red-light); font: inherit; }
+.arrived img, .comment img { flex-shrink: 0; border-radius: 50%; object-fit: cover; }
+.arrived span { display: flex; flex-direction: column; gap: 2px; }
+.arrived strong { font-size: 12px; }
+.arrived small { color: var(--red); font-size: 10px; font-weight: 700; }
+.comment { display: flex; align-items: flex-start; gap: 11px; padding: 13px; border-radius: 17px; background: linear-gradient(135deg, var(--red-light), var(--bg-surface)); }
+.comment strong { font-size: 12px; color: var(--red); }
+.comment p { margin-top: 4px; font-size: 12px; line-height: 1.65; color: var(--text-primary); }
+.empty { display: grid; place-items: center; min-height: 180px; color: var(--text-muted); font-size: 34px; }
+.empty p { margin-top: 8px; font-size: 12px; }
+@keyframes pulse { 50% { opacity: .3; transform: translateY(-1px); } }

@@ -484,6 +484,26 @@ class LetterSendResponse(BaseModel):
     message: str
 
 
+class UserNoteCreateRequest(BaseModel):
+    user_id: str
+    content: str
+
+
+class UserNoteResponse(BaseModel):
+    id: str
+    content: str
+    comment_character_id: str
+    comment_content: Optional[str] = None
+    comment_ready_at: datetime
+    is_comment_ready: bool
+    is_comment_read: bool
+    created_at: datetime
+
+
+class UserNoteDeleteResponse(BaseModel):
+    success: bool
+
+
 # ── 헬스체크 ──────────────────────────────────────────────
 class HealthResponse(BaseModel):
     status: str

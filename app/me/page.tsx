@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 import BottomNav from "@/components/ui/BottomNav";
 import { MOCK_USER, MOCK_PROGRESS, MOCK_ECONOMY, MOCK_CHARACTERS, getChaptersForCharacter, getRegionById } from "@/lib/db/mock";
 import { getLocalVocab } from "@/lib/vocab/store";
@@ -221,6 +222,15 @@ export default function MePage() {
             changeLabel={t("changeMate")}
             onChangeClick={() => setShowMateModal(true)}
           />
+
+          <Link href="/notes" className={styles.noteFeatureCard} id="btn-captain-notes">
+            <span className={styles.noteFeatureIcon}>📝</span>
+            <span className={styles.noteFeatureCopy}>
+              <strong>{language === "ko" ? "기장 메모장" : language === "ja" ? "機長メモ" : language === "zh" ? "机长留言簿" : language === "zh-TW" ? "機長留言簿" : language === "ru" ? "Записки капитану" : language === "th" ? "สมุดโน้ตกัปตัน" : "Captain Notes"}</strong>
+              <small>{language === "ko" ? "마음을 남기면 다섯 기장 중 누군가 답해요" : language === "ja" ? "想いを残すと、5人の機長の誰かが返信します" : language === "zh" ? "留下心情，五位机长中的一位会回复" : language === "zh-TW" ? "留下心情，五位機長中的一位會回覆" : language === "ru" ? "Оставьте заметку — один из пяти капитанов ответит" : language === "th" ? "ฝากข้อความไว้ แล้วหนึ่งในห้ากัปตันจะมาตอบ" : "Leave a note and one of five captains will reply"}</small>
+            </span>
+            <span className={styles.noteFeatureArrow}>›</span>
+          </Link>
 
           <StatisticsGrid
             title={t("learningStats")}
