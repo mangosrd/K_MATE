@@ -19,12 +19,44 @@ router = APIRouter(prefix="/chat", tags=["chat"])
 
 FREE_CHAT_LIMIT = 10
 CHAT_COIN_COST = 2
+MAX_CHAT_MESSAGE_CHARS = 1000
+MAX_CHAT_HISTORY_ITEMS = 10
+MAX_CHAT_HISTORY_ITEM_CHARS = 2000
+MAX_CHAT_HISTORY_TOTAL_CHARS = 8000
+
+
+def validate_chat_payload(req: ChatRequest) -> None:
+    """Reject oversized prompts before they can consume paid LLM tokens."""
+    if not req.user_message.strip():
+        raise HTTPException(status_code=400, detail="Message cannot be empty.")
+    if len(req.user_message) > MAX_CHAT_MESSAGE_CHARS:
+        raise HTTPException(status_code=413, detail="Message is too long.")
+
+    recent_history = req.session_history[-MAX_CHAT_HISTORY_ITEMS:]
+    if any(len(item.content) > MAX_CHAT_HISTORY_ITEM_CHARS for item in recent_history):
+        raise HTTPException(status_code=413, detail="Conversation history item is too long.")
+    if sum(len(item.content) for item in recent_history) > MAX_CHAT_HISTORY_TOTAL_CHARS:
+        raise HTTPException(status_code=413, detail="Conversation history is too long.")
+
+
+def ensure_chat_is_affordable(db: Session, user: User) -> None:
+    """Fail before calling Gemini when a paid chat cannot be charged."""
+    if user.membership == "premium" or user.free_chat_count < FREE_CHAT_LIMIT:
+        return
+
+    economy = db.query(Economy).filter(Economy.user_id == user.id).first()
+    if not economy or economy.coins < CHAT_COIN_COST:
+        raise HTTPException(
+            status_code=402,
+            detail=f"Free messages are used. Each chat costs {CHAT_COIN_COST} coins.",
+        )
 
 
 @router.post("", response_model=ChatResponse)
 async def chat(req: ChatRequest, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
     require_same_user(current_user_id, req.user_id)
     """LLM 대화 엔드포인트"""
+    validate_chat_payload(req)
 
     # 1. 캐릭터 존재 확인
     character = db.query(Character).filter(Character.id == req.character_id).first()
@@ -40,6 +72,7 @@ async def chat(req: ChatRequest, current_user_id: str = Depends(require_current_
     # 1-1-1. 프리미엄 전용 캐릭터인데 이 유저는 접근 권한이 없으면 여기서 막는다 —
     # 프론트 잠금 화면은 API를 직접 호출하면 우회되므로 서버에서도 검증해야 한다.
     check_character_access(user, character)
+    ensure_chat_is_affordable(db, user)
 
     # 2. 기장 페르소나 로드
     persona = load_persona(req.character_id)
@@ -63,7 +96,7 @@ async def chat(req: ChatRequest, current_user_id: str = Depends(require_current_
 
     # 5. 메시지 구성
     messages = [{"role": "system", "content": system_prompt}]
-    for msg in req.session_history[-10:]:  # 최근 10개만
+    for msg in req.session_history[-MAX_CHAT_HISTORY_ITEMS:]:  # 최근 대화만
         messages.append({"role": msg.role, "content": msg.content})
     messages.append({"role": "user", "content": req.user_message})
 

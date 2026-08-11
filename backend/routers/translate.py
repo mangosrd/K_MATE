@@ -10,7 +10,7 @@
 import hashlib
 import re
 import uuid
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from database import get_db
 from schemas.schemas import TranslateRequest, TranslateResponse, TranslateItem
@@ -19,6 +19,11 @@ from services.llm_service import llm_chat
 from services.session_auth import require_current_user
 
 router = APIRouter(tags=["translate"])
+
+MAX_TRANSLATION_ITEMS = 20
+MAX_TRANSLATION_TEXT_CHARS = 1000
+MAX_TRANSLATION_CONTEXT_CHARS = 1000
+MAX_TRANSLATION_TOTAL_CHARS = 5000
 
 LANG_NAMES = {
     "en": "English",
@@ -33,6 +38,22 @@ LANG_NAMES = {
 
 def _hash_text(text: str) -> str:
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
+
+
+def validate_translation_items(items: list[TranslateItem]) -> None:
+    """Bound one request so an authenticated account cannot create unbounded LLM cost."""
+    if len(items) > MAX_TRANSLATION_ITEMS:
+        raise HTTPException(status_code=413, detail="Too many translation items.")
+
+    total_chars = 0
+    for item in items:
+        context = item.context_ko or ""
+        if len(item.text) > MAX_TRANSLATION_TEXT_CHARS or len(context) > MAX_TRANSLATION_CONTEXT_CHARS:
+            raise HTTPException(status_code=413, detail="Translation item is too long.")
+        total_chars += len(item.text) + len(context)
+
+    if total_chars > MAX_TRANSLATION_TOTAL_CHARS:
+        raise HTTPException(status_code=413, detail="Translation request is too large.")
 
 
 async def _translate_batch(items: list[TranslateItem], lang_name: str) -> list[str]:
@@ -87,6 +108,7 @@ async def _translate_batch(items: list[TranslateItem], lang_name: str) -> list[s
 async def translate_texts(req: TranslateRequest, _current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
     # items(문맥 포함)가 있으면 그걸 쓰고, 없으면 texts(하위 호환)로 문맥 없이 처리한다
     items = req.items if req.items else [TranslateItem(text=t) for t in req.texts]
+    validate_translation_items(items)
 
     lang_name = LANG_NAMES.get(req.target_lang)
     if not lang_name or not items:
