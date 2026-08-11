@@ -42,7 +42,7 @@ const RAW_TRACKS = [
   },
   {
     id: "yongwoo",
-    src: "/media/music/yongwoo.mp3",
+    src: "/media/music/yongwoo.mp3?v=20260811",
     ko: { title: "용우 테마", artist: "권용우 기장" },
     en: { title: "Yongwoo Theme", artist: "Captain Yongwoo" },
   },
