@@ -41,6 +41,15 @@ export function getCurrentUser(): AuthUser | null {
   }
 }
 
+export function getAuthStorageSnapshot(): string | null {
+  if (typeof window === "undefined") return null;
+  try {
+    return localStorage.getItem(STORAGE_KEY);
+  } catch {
+    return null;
+  }
+}
+
 export function setCurrentUser(user: AuthUser) {
   if (typeof window === "undefined") return;
   const previousUser = getCurrentUser();
@@ -73,6 +82,7 @@ export function logout() {
   localStorage.removeItem(GUEST_ID_KEY);
   document.cookie = "kmate_uid=; path=/; max-age=0";
   document.cookie = `${ACCESS_TOKEN_KEY}=; path=/; max-age=0`;
+  window.dispatchEvent(new Event("kmate-auth-changed"));
 }
 
 export async function logoutFromServer() {

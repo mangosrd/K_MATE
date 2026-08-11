@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { getAuthHeaders, getCurrentUser, getEffectiveUserId, AuthUser } from "./store";
+import { useEffect, useMemo, useState, useSyncExternalStore } from "react";
+import { getAuthHeaders, getAuthStorageSnapshot, getEffectiveUserId, type AuthUser } from "./store";
 
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
 
@@ -9,14 +9,33 @@ const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:800
 // localStorage의 실제 값) 로그인 여부에 따라 렌더 결과가 서버/클라이언트 간에 달라져
 // hydration mismatch가 난다. 항상 서버와 동일한 초기값(비로그인)으로 시작했다가,
 // 마운트 이후에만 실제 로그인 상태로 갱신한다.
-export function useAuthUser() {
-  const [authUser, setAuthUser] = useState<AuthUser | null>(null);
-  const [authLoaded, setAuthLoaded] = useState(false);
+function subscribeToAuth(onStoreChange: () => void) {
+  window.addEventListener("kmate-auth-changed", onStoreChange);
+  window.addEventListener("storage", onStoreChange);
+  return () => {
+    window.removeEventListener("kmate-auth-changed", onStoreChange);
+    window.removeEventListener("storage", onStoreChange);
+  };
+}
 
-  useEffect(() => {
-    setAuthUser(getCurrentUser());
-    setAuthLoaded(true);
-  }, []);
+const subscribeToHydration = () => () => {};
+const getServerAuthSnapshot = () => null;
+
+export function useAuthUser() {
+  const authSnapshot = useSyncExternalStore(
+    subscribeToAuth,
+    getAuthStorageSnapshot,
+    getServerAuthSnapshot,
+  );
+  const authLoaded = useSyncExternalStore(subscribeToHydration, () => true, () => false);
+  const authUser = useMemo<AuthUser | null>(() => {
+    if (!authSnapshot) return null;
+    try {
+      return JSON.parse(authSnapshot) as AuthUser;
+    } catch {
+      return null;
+    }
+  }, [authSnapshot]);
 
   return { authUser, authLoaded };
 }
