@@ -1,8 +1,8 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Link from "next/link";
-import { getAuthHeaders, setCurrentUser } from "@/lib/auth/store";
+import { getAuthHeaders, setCurrentUser, type AuthUser } from "@/lib/auth/store";
 import { useAuthUser } from "@/lib/auth/useAuthUser";
 import { useLanguage } from "@/components/LanguageContext";
 import formStyles from "../settings-form.module.css";
@@ -13,23 +13,38 @@ export default function EditProfilePage() {
   const { t } = useLanguage();
   const { authUser, authLoaded } = useAuthUser();
 
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
+  return (
+    <div className="page-content">
+      <header className="page-header">
+        <div>
+          <Link href="/me" className={formStyles.backLink}>{t("backToMyPage")}</Link>
+          <h1 className="page-title">{t("editProfile")}</h1>
+        </div>
+      </header>
+
+      {!authLoaded ? (
+        <div className={formStyles.form} aria-hidden="true">⏳</div>
+      ) : !authUser ? (
+        <div className={formStyles.form}>
+          <p className={formStyles.guestNotice}>{t("guestProfileNotice")}</p>
+        </div>
+      ) : (
+        <EditProfileForm key={authUser.id} authUser={authUser} />
+      )}
+    </div>
+  );
+}
+
+function EditProfileForm({ authUser }: { authUser: AuthUser }) {
+  const { t } = useLanguage();
+  const [name, setName] = useState(authUser.name);
+  const [email, setEmail] = useState(authUser.email);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState(false);
 
-  useEffect(() => {
-    if (authUser) {
-      setName(authUser.name);
-      setEmail(authUser.email);
-    }
-  }, [authUser]);
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!authUser) return;
-
     setLoading(true);
     setError(null);
     setSuccess(false);
@@ -55,22 +70,7 @@ export default function EditProfilePage() {
   };
 
   return (
-    <div className="page-content">
-      <header className="page-header">
-        <div>
-          <Link href="/me" className={formStyles.backLink}>{t("backToMyPage")}</Link>
-          <h1 className="page-title">{t("editProfile")}</h1>
-        </div>
-      </header>
-
-      {!authLoaded ? (
-        <div className={formStyles.form} aria-hidden="true">⏳</div>
-      ) : !authUser ? (
-        <div className={formStyles.form}>
-          <p className={formStyles.guestNotice}>{t("guestProfileNotice")}</p>
-        </div>
-      ) : (
-        <form className={formStyles.form} onSubmit={handleSubmit}>
+    <form className={formStyles.form} onSubmit={handleSubmit}>
           <div className={formStyles.field}>
             <label className={formStyles.label} htmlFor="profile-name">{t("nameLabel")}</label>
             <input
@@ -99,8 +99,6 @@ export default function EditProfilePage() {
           <button type="submit" className="btn btn-primary btn-lg" id="btn-save-profile" disabled={loading}>
             {loading ? t("savingBtn") : t("saveChangesBtn")}
           </button>
-        </form>
-      )}
-    </div>
+    </form>
   );
 }
