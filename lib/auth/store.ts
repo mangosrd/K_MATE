@@ -13,6 +13,24 @@ export interface AuthUser {
   access_token?: string;
 }
 
+function readAccessTokenUserId(token: string | null): string | null {
+  if (!token || typeof window === "undefined") return null;
+
+  try {
+    const encoded = token.split(".", 1)[0];
+    const base64 = encoded.replace(/-/g, "+").replace(/_/g, "/").padEnd(
+      encoded.length + ((4 - (encoded.length % 4)) % 4),
+      "=",
+    );
+    const payload = JSON.parse(window.atob(base64)) as { sub?: unknown; exp?: unknown };
+    if (typeof payload.sub !== "string" || !payload.sub) return null;
+    if (typeof payload.exp !== "number" || payload.exp * 1000 <= Date.now()) return null;
+    return payload.sub;
+  } catch {
+    return null;
+  }
+}
+
 export function getCurrentUser(): AuthUser | null {
   if (typeof window === "undefined") return null;
   try {
@@ -25,11 +43,21 @@ export function getCurrentUser(): AuthUser | null {
 
 export function setCurrentUser(user: AuthUser) {
   if (typeof window === "undefined") return;
+  const previousUser = getCurrentUser();
+  const previousToken = localStorage.getItem(ACCESS_TOKEN_KEY);
+  const accessToken = user.access_token
+    ?? (previousUser?.id === user.id && readAccessTokenUserId(previousToken) === user.id
+      ? previousToken
+      : null);
+
   localStorage.removeItem(GUEST_ID_KEY);
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(user));
-  if (user.access_token) {
-    localStorage.setItem(ACCESS_TOKEN_KEY, user.access_token);
-    document.cookie = `${ACCESS_TOKEN_KEY}=${encodeURIComponent(user.access_token)}; path=/; max-age=${SESSION_MAX_AGE_SECONDS}; samesite=lax`;
+  localStorage.setItem(STORAGE_KEY, JSON.stringify({ ...user, access_token: accessToken ?? undefined }));
+  if (accessToken && readAccessTokenUserId(accessToken) === user.id) {
+    localStorage.setItem(ACCESS_TOKEN_KEY, accessToken);
+    document.cookie = `${ACCESS_TOKEN_KEY}=${encodeURIComponent(accessToken)}; path=/; max-age=${SESSION_MAX_AGE_SECONDS}; samesite=lax`;
+  } else {
+    localStorage.removeItem(ACCESS_TOKEN_KEY);
+    document.cookie = `${ACCESS_TOKEN_KEY}=; path=/; max-age=0`;
   }
   // 서버 컴포넌트(예: /learn/[characterId])는 localStorage를 못 읽으므로,
   // 로그인 유저 id를 쿠키로도 남겨서 서버에서도 실제 멤버십을 확인할 수 있게 한다.
@@ -139,16 +167,22 @@ export async function ensureGuestAccount(): Promise<boolean> {
     // 이전 앱 버전에서 로그인한 사용자도 서버 컴포넌트가 세션을 읽을 수 있게
     // 브라우저 저장소의 기존 토큰을 쿠키로 한 번 마이그레이션한다.
     const token = localStorage.getItem(ACCESS_TOKEN_KEY);
-    document.cookie = `kmate_uid=${currentUser.id}; path=/; max-age=${SESSION_MAX_AGE_SECONDS}; samesite=lax`;
-    if (token) {
+    if (token && readAccessTokenUserId(token) === currentUser.id) {
+      document.cookie = `kmate_uid=${currentUser.id}; path=/; max-age=${SESSION_MAX_AGE_SECONDS}; samesite=lax`;
       document.cookie = `${ACCESS_TOKEN_KEY}=${encodeURIComponent(token)}; path=/; max-age=${SESSION_MAX_AGE_SECONDS}; samesite=lax`;
+      return true;
     }
-    return true;
+
+    localStorage.removeItem(STORAGE_KEY);
+    localStorage.removeItem(ACCESS_TOKEN_KEY);
+    document.cookie = "kmate_uid=; path=/; max-age=0";
+    document.cookie = `${ACCESS_TOKEN_KEY}=; path=/; max-age=0`;
   }
 
   const existing = getCachedGuestId();
-  if (existing && localStorage.getItem(ACCESS_TOKEN_KEY)) {
-    const token = localStorage.getItem(ACCESS_TOKEN_KEY)!;
+  const existingToken = localStorage.getItem(ACCESS_TOKEN_KEY);
+  if (existing && readAccessTokenUserId(existingToken) === existing) {
+    const token = existingToken!;
     document.cookie = `kmate_uid=${existing}; path=/; max-age=${SESSION_MAX_AGE_SECONDS}; samesite=lax`;
     document.cookie = `${ACCESS_TOKEN_KEY}=${encodeURIComponent(token)}; path=/; max-age=${SESSION_MAX_AGE_SECONDS}; samesite=lax`;
     return true;
