@@ -253,23 +253,31 @@ export default function VocabPage() {
   const [isResetting, setIsResetting] = useState(false);
   const [resetError, setResetError] = useState<string | null>(null);
 
-  const loadVocab = () => {
+  useEffect(() => {
+    const controller = new AbortController();
+    let active = true;
     const local = getLocalVocab();
-    setVocab(local);
+    Promise.resolve().then(() => {
+      if (active) setVocab(local);
+    });
 
-    fetch(`${BACKEND_URL}/vocab/${getEffectiveUserId()}`, { headers: getAuthHeaders() })
+    fetch(`${BACKEND_URL}/vocab/${getEffectiveUserId()}`, {
+      headers: getAuthHeaders(),
+      signal: controller.signal,
+    })
       .then((res) => (res.ok ? res.json() : []))
       .then((remote: VocabItem[]) => {
-        if (remote.length === 0) return;
-        const localWords = new Set(local.map((v) => `${v.character_id}:${v.word}`));
-        const merged = [...local, ...remote.filter((v) => !localWords.has(`${v.character_id}:${v.word}`))];
-        setVocab(merged);
+        if (!active || remote.length === 0) return;
+        setVocab((current) => {
+          const knownWords = new Set(current.map((v) => `${v.character_id}:${v.word}`));
+          return [...current, ...remote.filter((v) => !knownWords.has(`${v.character_id}:${v.word}`))];
+        });
       })
       .catch(() => {});
-  };
-
-  useEffect(() => {
-    loadVocab();
+    return () => {
+      active = false;
+      controller.abort();
+    };
   }, []);
 
   const handleReset = async () => {
@@ -393,7 +401,7 @@ export default function VocabPage() {
               <div className={styles.flashBack}>
                 <p className={styles.flashMeaning}>{translatedPracticeMeaning ?? word.meaning}</p>
                 <div className={styles.flashExample}>
-                  <p className={styles.flashSentence}>"{word.sentence}"</p>
+                  <p className={styles.flashSentence}>{`“${word.sentence}”`}</p>
                   <p className={styles.flashTrans}>{translatedPracticeTrans ?? word.sentence_translation}</p>
                 </div>
               </div>
@@ -568,7 +576,7 @@ export default function VocabPage() {
                       </div>
                       {item.sentence && (
                         <div className={styles.wordExample}>
-                          <p className={styles.wordSentence}>"{item.sentence}"</p>
+                          <p className={styles.wordSentence}>{`“${item.sentence}”`}</p>
                           {translation && (
                             <p className={styles.wordTranslation}>{translation}</p>
                           )}
