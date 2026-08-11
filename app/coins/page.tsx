@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import BottomNav from "@/components/ui/BottomNav";
-import { MOCK_ECONOMY } from "@/lib/db/mock";
 import { getAuthHeaders, getEffectiveUserId } from "@/lib/auth/store";
 import { useLanguage } from "@/components/LanguageContext";
 import {
@@ -38,7 +37,7 @@ export default function CoinsPage() {
   const { t } = useLanguage();
   const isNativeAndroid = isPlayBillingAvailable();
 
-  const [coins, setCoins] = useState(MOCK_ECONOMY.coins);
+  const [coins, setCoins] = useState(0);
   // 백엔드 연결 실패 시에도 팩이 보이도록 fallback 기본값 설정 — billing.py COIN_PACKS와 일치해야 한다.
   const FALLBACK_PACKS: CoinPack[] = [
     { product_id: "kmate_coins_small",  coins: 50,  price_krw: 1200, label: "코인 50개" },

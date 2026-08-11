@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import BottomNav from "@/components/ui/BottomNav";
-import { MOCK_REGIONS, MOCK_ALL_PROGRESS, MOCK_ECONOMY, MOCK_USER, MOCK_CHARACTERS, getChaptersForCharacter } from "@/lib/db/mock";
+import { MOCK_REGIONS, MOCK_CHARACTERS, getChaptersForCharacter } from "@/lib/db/mock";
 import { getAuthHeaders, getEffectiveUserId } from "@/lib/auth/store";
 import { useLanguage, type Language } from "@/components/LanguageContext";
 import type { Progress } from "@/types/database";
@@ -100,9 +100,9 @@ const TICKET_LABELS: Record<Language, { mate: string; gate: string; progress: st
 
 export default function MapPage() {
   const { t, language } = useLanguage();
-  const [coins, setCoins] = useState(MOCK_ECONOMY.coins);
-  const [membership, setMembership] = useState(MOCK_USER.membership);
-  const [allProgress, setAllProgress] = useState<Record<string, Progress>>(MOCK_ALL_PROGRESS);
+  const [coins, setCoins] = useState(0);
+  const [membership, setMembership] = useState("free");
+  const [allProgress, setAllProgress] = useState<Record<string, Progress>>({});
   const [attendance, setAttendance] = useState<AttendanceStatus | null>(null);
   const [attendanceOpen, setAttendanceOpen] = useState(false);
   const [attendanceLoading, setAttendanceLoading] = useState(false);

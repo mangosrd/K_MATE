@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import BottomNav from "@/components/ui/BottomNav";
 import LoadingSplash from "@/components/LoadingSplash";
-import { getCharacterById, MOCK_ECONOMY, canAccessCharacter } from "@/lib/db/mock";
+import { getCharacterById, canAccessCharacter } from "@/lib/db/mock";
 import { getLocalDiaries } from "@/lib/diary/store";
 import { getAuthHeaders, getEffectiveUserId, setPreferredCaptainId } from "@/lib/auth/store";
 import { useLanguage } from "@/components/LanguageContext";
@@ -35,7 +35,7 @@ export default function CharDiaryPage({ params }: { params: Promise<{ characterI
 
   const [tab, setTab] = useState<Tab>("all");
   const [diaries, setDiaries] = useState<DiaryEntry[]>([]);
-  const [coins, setCoins] = useState(MOCK_ECONOMY.coins);
+  const [coins, setCoins] = useState(0);
   const [unlockModal, setUnlockModal] = useState<DiaryEntry | null>(null);
   const [selected, setSelected] = useState<DiaryEntry | null>(null);
   const [unlockAnim, setUnlockAnim] = useState<string | null>(null);

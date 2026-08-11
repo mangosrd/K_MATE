@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import BottomNav from "@/components/ui/BottomNav";
-import { MOCK_USER, MOCK_PROGRESS, MOCK_ECONOMY, MOCK_CHARACTERS, getChaptersForCharacter, getRegionById } from "@/lib/db/mock";
+import { MOCK_CHARACTERS, getChaptersForCharacter, getRegionById } from "@/lib/db/mock";
 import { getLocalVocab } from "@/lib/vocab/store";
 import { getAllLocalDiaries } from "@/lib/diary/store";
 import {
@@ -55,15 +55,26 @@ export default function MePage() {
   const [adRemaining, setAdRemaining] = useState(MAX_ADS_PER_DAY); // SSR safe default
 
   const { authUser } = useAuthUser();
-  const displayName = authUser?.name ?? MOCK_USER.name;
+  const [serverDisplayName, setServerDisplayName] = useState("");
+  const displayName = authUser?.name || serverDisplayName || "Traveler";
   // 예전엔 레벨 시스템이 백엔드에 없어서 목업(MOCK_USER.level, 항상 1)을 그대로
   // 보여줬는데, 이제 실제로 챕터 진도에 비례해서 오르는 백엔드 값을 쓴다.
-  const [displayLevel, setDisplayLevel] = useState(MOCK_USER.level);
+  const [displayLevel, setDisplayLevel] = useState(1);
 
-  const [coins, setCoins] = useState(MOCK_ECONOMY.coins);
-  const [progress, setProgress] = useState<Progress>(MOCK_PROGRESS);
-  const [membership, setMembership] = useState(MOCK_USER.membership);
-  const [freeSlots, setFreeSlots] = useState(MOCK_USER.free_character_slots);
+  const [coins, setCoins] = useState(0);
+  const [progress, setProgress] = useState<Progress>({
+    id: "",
+    user_id: "",
+    character_id: "kyuhyun",
+    affinity: 0,
+    stamps: [],
+    current_step: 0,
+    visited_places: [],
+    streak_days: 0,
+    last_active_at: "",
+  });
+  const [membership, setMembership] = useState("free");
+  const [freeSlots, setFreeSlots] = useState<string[]>([]);
 
   // getLocalVocab/getAllLocalDiaries는 localStorage를 직접 읽는데, 서버는 항상 빈
   // 배열을 볼 수밖에 없어 렌더 본문에서 바로 부르면 하이드레이션 결과가 서버(0)와
@@ -96,6 +107,7 @@ export default function MePage() {
       .then((res) => (res.ok ? res.json() : null))
       .then((data) => {
         if (!data) return;
+        if (typeof data.name === "string") setServerDisplayName(data.name);
         setCoins(data.coins);
         if (data.membership) setMembership(data.membership);
         if (Array.isArray(data.free_char_slots)) setFreeSlots(data.free_char_slots);

@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import BottomNav from "@/components/ui/BottomNav";
 import LoadingSplash from "@/components/LoadingSplash";
-import { getCharacterById, MOCK_ECONOMY, canAccessCharacter } from "@/lib/db/mock";
+import { getCharacterById, canAccessCharacter } from "@/lib/db/mock";
 import { getAuthHeaders, getEffectiveUserId } from "@/lib/auth/store";
 import { useMembership, useFreeCharSlots } from "@/lib/auth/useAuthUser";
 import { useLanguage } from "@/components/LanguageContext";
@@ -48,7 +48,7 @@ export default function LettersPage({ params }: { params: Promise<{ characterId:
   }, [canAccess, char?.requires_premium, freeSlotsLoaded, membershipLoaded, router]);
 
   const [letters, setLetters] = useState<Letter[]>([]);
-  const [coins, setCoins] = useState(MOCK_ECONOMY.coins);
+  const [coins, setCoins] = useState(0);
   const [showCompose, setShowCompose] = useState(false);
   const [draft, setDraft] = useState("");
   const [sending, setSending] = useState(false);
