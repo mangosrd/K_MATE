@@ -17,8 +17,38 @@ from services.wallet import change_coins
 from services.session_auth import require_current_user, require_same_user
 import uuid
 from datetime import datetime
+from services.user_timezone import local_day_utc_bounds
 
 router = APIRouter(prefix="/diary", tags=["diary"])
+
+DIARY_UNLOCK_COST = 5
+MAX_DIARY_EVENTS = 20
+MAX_DIARY_EVENT_CHARS = 2000
+MAX_DIARY_TOTAL_EVENT_CHARS = 12000
+MAX_DIARY_NAME_CHARS = 100
+MAX_DIARY_PLACE_CHARS = 200
+
+
+def validate_diary_payload(req: DiaryGenerateRequest) -> None:
+    if len(req.session_events) > MAX_DIARY_EVENTS:
+        raise HTTPException(status_code=413, detail="Too many diary events.")
+    if any(len(event) > MAX_DIARY_EVENT_CHARS for event in req.session_events):
+        raise HTTPException(status_code=413, detail="Diary event is too long.")
+    if sum(len(event) for event in req.session_events) > MAX_DIARY_TOTAL_EVENT_CHARS:
+        raise HTTPException(status_code=413, detail="Diary conversation is too long.")
+    if req.user_name and len(req.user_name) > MAX_DIARY_NAME_CHARS:
+        raise HTTPException(status_code=413, detail="User name is too long.")
+    if len(req.place_name) > MAX_DIARY_PLACE_CHARS:
+        raise HTTPException(status_code=413, detail="Place name is too long.")
+
+
+def _diary_response(entry: DiaryEntry) -> DiaryGenerateResponse:
+    return DiaryGenerateResponse(
+        diary_id=entry.id,
+        body_ko=entry.body_ko if entry.unlocked else "",
+        place_name=entry.place_name or "",
+        created_at=entry.created_at.isoformat(),
+    )
 
 DIARY_SYSTEM_PROMPT = """You are a Korean airline captain writing a personal flight diary entry
 about today's passenger.
@@ -43,6 +73,7 @@ Rules:
 @router.post("/generate", response_model=DiaryGenerateResponse)
 async def generate_diary(req: DiaryGenerateRequest, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
     require_same_user(current_user_id, req.user_id)
+    validate_diary_payload(req)
     """기장 일기 생성"""
     user = db.query(User).filter(User.id == req.user_id).first()
     if not user:
@@ -51,6 +82,21 @@ async def generate_diary(req: DiaryGenerateRequest, current_user_id: str = Depen
     if not character:
         raise HTTPException(status_code=404, detail=f"Character '{req.character_id}' not found")
     check_character_access(user, character)
+
+    day_start, day_end = local_day_utc_bounds(user)
+    existing_entry = (
+        db.query(DiaryEntry)
+        .filter(
+            DiaryEntry.user_id == req.user_id,
+            DiaryEntry.character_id == req.character_id,
+            DiaryEntry.created_at >= day_start,
+            DiaryEntry.created_at < day_end,
+        )
+        .order_by(DiaryEntry.created_at.desc())
+        .first()
+    )
+    if existing_entry:
+        return _diary_response(existing_entry)
 
     persona = load_persona(req.character_id)
 
@@ -84,14 +130,14 @@ async def generate_diary(req: DiaryGenerateRequest, current_user_id: str = Depen
         body_ko=diary_body.strip(),
         place_name=req.place_name,
         unlocked=False,
-        unlock_cost=req.unlock_cost,
+        unlock_cost=DIARY_UNLOCK_COST,
     )
     db.add(entry)
     db.commit()
 
     return DiaryGenerateResponse(
         diary_id=diary_id,
-        body_ko=diary_body.strip(),
+        body_ko="",
         place_name=req.place_name,
         created_at=datetime.now().isoformat(),
     )
@@ -101,7 +147,11 @@ async def generate_diary(req: DiaryGenerateRequest, current_user_id: str = Depen
 def unlock_diary(req: DiaryUnlockRequest, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
     require_same_user(current_user_id, req.user_id)
     """일기 해금 (코인 차감)"""
-    entry = db.query(DiaryEntry).filter(DiaryEntry.id == req.diary_id).first()
+    entry = (
+        db.query(DiaryEntry)
+        .filter(DiaryEntry.id == req.diary_id, DiaryEntry.user_id == req.user_id)
+        .first()
+    )
     if not entry:
         raise HTTPException(status_code=404, detail="Diary entry not found")
 
@@ -122,7 +172,12 @@ def unlock_diary(req: DiaryUnlockRequest, current_user_id: str = Depends(require
         # 이미 해금된 일기를 다시 요청한 경우(연타 등) — 코인은 다시 차감하지 않되,
         # 실제 잔여 코인을 그대로 돌려줘야 한다. 예전엔 -1을 sentinel로 반환했는데,
         # 프론트에서 그 값을 그대로 코인 잔액에 표시해버려 🪙 -1이 뜨는 버그가 있었다.
-        return DiaryUnlockResponse(success=True, remaining_coins=economy.coins, message="이미 해금된 일기입니다")
+        return DiaryUnlockResponse(
+            success=True,
+            remaining_coins=economy.coins,
+            message="이미 해금된 일기입니다",
+            body_ko=entry.body_ko,
+        )
 
     if economy.coins < entry.unlock_cost:
         raise HTTPException(status_code=400, detail="코인이 부족합니다")
@@ -135,6 +190,7 @@ def unlock_diary(req: DiaryUnlockRequest, current_user_id: str = Depends(require
         success=True,
         remaining_coins=economy.coins,
         message=f"일기를 해금했습니다. 잔여 코인: {economy.coins}",
+        body_ko=entry.body_ko,
     )
 
 
@@ -160,7 +216,7 @@ def get_diaries(user_id: str, character_id: str, current_user_id: str = Depends(
         DiaryItemResponse(
             id=e.id,
             character_id=e.character_id,
-            body_ko=e.body_ko,
+            body_ko=e.body_ko if e.unlocked else "",
             place_name=e.place_name or "",
             unlocked=e.unlocked,
             unlock_cost=e.unlock_cost,

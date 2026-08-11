@@ -83,11 +83,13 @@ export default function CharDiaryPage({ params }: { params: Promise<{ characterI
       });
       const data = await res.json();
       if (data.success) {
-        setDiaries((prev) => prev.map((d) => d.id === unlockModal.id ? { ...d, unlocked: true } : d));
+        setDiaries((prev) => prev.map((d) => d.id === unlockModal.id
+          ? { ...d, unlocked: true, body_ko: data.bodyKo ?? d.body_ko }
+          : d));
         if (data.remainingCoins !== undefined) setCoins(data.remainingCoins);
         setUnlockAnim(unlockModal.id);
         setTimeout(() => setUnlockAnim(null), 800);
-        setSelected({ ...unlockModal, unlocked: true });
+        setSelected({ ...unlockModal, unlocked: true, body_ko: data.bodyKo ?? unlockModal.body_ko });
       }
     } catch { /* no-op */ }
     finally { setUnlockModal(null); }

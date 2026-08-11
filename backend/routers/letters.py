@@ -23,6 +23,7 @@ router = APIRouter(prefix="/letters", tags=["letters"])
 
 LETTER_COST = 10  # 코인 — 일기(5)보다 비싸고 사진첩 스탠딩 일러스트(15)보다 저렴
 REPLY_DELAY = timedelta(hours=24)
+MAX_LETTER_CONTENT_CHARS = 2000
 
 
 def _fallback_letter_reply(character_id: str) -> str:
@@ -77,6 +78,8 @@ def send_letter(req: LetterSendRequest, current_user_id: str = Depends(require_c
 
     if not req.content.strip():
         raise HTTPException(status_code=400, detail="편지 내용을 입력해주세요.")
+    if len(req.content) > MAX_LETTER_CONTENT_CHARS:
+        raise HTTPException(status_code=413, detail="편지 내용이 너무 깁니다.")
 
     # with_for_update로 잠가서 동시 요청에 의한 코인 차감 유실을 막는다(코인상점/일기/
     # 사진첩 언락과 동일한 패턴).

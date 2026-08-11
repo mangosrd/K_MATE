@@ -39,6 +39,7 @@ export async function POST(req: NextRequest) {
       success:        data.success,
       remainingCoins: data.remaining_coins,
       message:        data.message,
+      bodyKo:         data.body_ko,
     });
   } catch {
     return NextResponse.json({ success: false, message: "Failed to reach unlock service" }, { status: 502 });

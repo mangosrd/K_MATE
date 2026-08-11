@@ -92,6 +92,7 @@ class DiaryUnlockResponse(BaseModel):
     success: bool
     remaining_coins: int
     message: str
+    body_ko: Optional[str] = None
 
 
 class DiaryItemResponse(BaseModel):

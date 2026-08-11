@@ -309,7 +309,7 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
         addLocalDiary({
           id: data.diary_id,
           character_id: characterId,
-          body_ko: data.body_ko,
+          body_ko: "",
           place_name: data.place_name,
           unlocked: false,
           unlock_cost: 5,
