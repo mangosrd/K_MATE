@@ -20,6 +20,8 @@ import type { ChapterContent, ChapterWord as Word, ChapterSentence as Sentence, 
 
 // ── 기장별 전용 음성 톤 조절 함수 (TTS) ─────────────────────────
 async function playCaptainVoice(text: string, characterId: string) {
+  void text;
+  void characterId;
   // 음성 생성(TTS)은 유료 API 원가와 운영 복잡도를 늘리므로 현재 서비스에서 사용하지 않는다.
   // 기존 버튼은 숨겨 두었고, 이 조기 반환으로 ElevenLabs/브라우저 TTS는 호출되지 않는다.
   return;
@@ -1366,7 +1368,7 @@ function LearningSession({
 
                 {inputText && (
                   <p className={styles.recognizedText}>
-                    인식된 문장: <strong>"{inputText}"</strong>
+                    인식된 문장: <strong>&ldquo;{inputText}&rdquo;</strong>
                   </p>
                 )}
               </div>
