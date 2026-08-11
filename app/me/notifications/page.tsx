@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { getAuthHeaders, getCurrentUser, getEffectiveUserId } from "@/lib/auth/store";
+import { getAuthHeaders } from "@/lib/auth/store";
+import { useAuthUser } from "@/lib/auth/useAuthUser";
 import { useLanguage } from "@/components/LanguageContext";
 import formStyles from "../settings-form.module.css";
 
@@ -16,18 +17,42 @@ interface Prefs {
 
 export default function NotificationsPage() {
   const { t } = useLanguage();
-  const authUser = getCurrentUser();
+  const { authUser, authLoaded } = useAuthUser();
 
+  return (
+    <div className="page-content">
+      <header className="page-header">
+        <div>
+          <Link href="/me" className={formStyles.backLink}>{t("backToMyPage")}</Link>
+          <h1 className="page-title">{t("notificationSettings")}</h1>
+        </div>
+      </header>
+
+      {!authLoaded ? (
+        <div className={formStyles.form} aria-hidden="true">⏳</div>
+      ) : !authUser ? (
+        <div className={formStyles.form}>
+          <p className={formStyles.guestNotice}>{t("guestNotifyNotice")}</p>
+        </div>
+      ) : (
+        <NotificationPreferences key={authUser.id} userId={authUser.id} />
+      )}
+    </div>
+  );
+}
+
+function NotificationPreferences({ userId }: { userId: string }) {
+  const { t } = useLanguage();
   const [prefs, setPrefs] = useState<Prefs>({ notify_chat: true, notify_diary: true, notify_marketing: false });
   const [loaded, setLoaded] = useState(false);
   const [saved, setSaved] = useState(false);
 
   useEffect(() => {
-    if (!authUser) {
-      setLoaded(true);
-      return;
-    }
-    fetch(`${BACKEND_URL}/user/${getEffectiveUserId()}/preferences`, { headers: getAuthHeaders() })
+    const controller = new AbortController();
+    fetch(`${BACKEND_URL}/user/${userId}/preferences`, {
+      headers: getAuthHeaders(),
+      signal: controller.signal,
+    })
       .then((res) => (res.ok ? res.json() : null))
       .then((data) => {
         if (data) {
@@ -39,42 +64,33 @@ export default function NotificationsPage() {
         }
       })
       .catch(() => {})
-      .finally(() => setLoaded(true));
-  }, []);
+      .finally(() => {
+        if (!controller.signal.aborted) setLoaded(true);
+      });
+    return () => controller.abort();
+  }, [userId]);
 
   const handleToggle = (key: keyof Prefs) => {
-    if (!authUser) return;
     const next = { ...prefs, [key]: !prefs[key] };
     setPrefs(next);
     setSaved(false);
 
-    fetch(`${BACKEND_URL}/user/${getEffectiveUserId()}/preferences`, {
+    fetch(`${BACKEND_URL}/user/${userId}/preferences`, {
       method: "PUT",
       headers: { "Content-Type": "application/json", ...getAuthHeaders() },
-      body: JSON.stringify({ user_id: getEffectiveUserId(), [key]: next[key] }),
+      body: JSON.stringify({ user_id: userId, [key]: next[key] }),
     })
       .then((res) => (res.ok ? res.json() : null))
       .then((data) => { if (data) setSaved(true); })
       .catch(() => {});
   };
 
-  return (
-    <div className="page-content">
-      <header className="page-header">
-        <div>
-          <Link href="/me" className={formStyles.backLink}>{t("backToMyPage")}</Link>
-          <h1 className="page-title">{t("notificationSettings")}</h1>
-        </div>
-      </header>
+  if (!loaded) {
+    return <div className={formStyles.form} aria-hidden="true">⏳</div>;
+  }
 
-      {!loaded ? (
-        <div className={formStyles.form} aria-hidden="true">⏳</div>
-      ) : !authUser ? (
-        <div className={formStyles.form}>
-          <p className={formStyles.guestNotice}>{t("guestNotifyNotice")}</p>
-        </div>
-      ) : (
-        <div className={formStyles.form}>
+  return (
+    <div className={formStyles.form}>
           <div className={formStyles.toggleRow}>
             <div className={formStyles.toggleText}>
               <span className={formStyles.toggleLabel}>💬 {t("notifyChatLabel")}</span>
@@ -109,8 +125,6 @@ export default function NotificationsPage() {
           </div>
 
           {saved && <p className={formStyles.successMsg}>{t("notificationsSaved")}</p>}
-        </div>
-      )}
     </div>
   );
 }
