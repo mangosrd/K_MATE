@@ -67,8 +67,9 @@ export async function extractMemories(
       (m) =>
         validTypes.includes(m.type as MemoryType) &&
         typeof m.content === "string" &&
-        m.content.length > 0
-    );
+        m.content.trim().length > 0 &&
+        m.content.length <= 500
+    ).slice(0, 4);
   } catch {
     console.error("Memory extraction parse error:", response);
     return [];
