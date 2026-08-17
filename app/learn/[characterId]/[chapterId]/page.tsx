@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, use, useEffect, useMemo } from "react";
+import { useState, use, useEffect, useMemo, useRef } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
@@ -82,7 +82,7 @@ const CAPTAIN_SHORT_NAME: Record<string, string> = {
 };
 
 type Phase = "intro" | "story" | "vocab_review" | "session" | "complete";
-type ExerciseType = "flashcard" | "multiple_choice" | "fill_blank" | "sentence_match" | "sentence_builder" | "listening_choice" | "speaking_practice" | "dialogue_comprehension";
+type ExerciseType = "flashcard" | "multiple_choice" | "true_false" | "fill_blank" | "sentence_match" | "sentence_builder" | "listening_choice" | "speaking_practice" | "dialogue_comprehension";
 
 interface ExerciseItem {
   id: string;
@@ -95,6 +95,7 @@ interface ExerciseItem {
   explanation: string;
   options: string[];
   originalData: Word | Sentence | DialogueScene;
+  statementText?: string;
   dialogueTurns?: DialogueTurn[]; // dialogue_comprehension 전용
 }
 
@@ -124,6 +125,24 @@ function generateExercises(words: Word[], sentences: Sentence[], dialogues: Dial
     options: shuffle([w.word, ...shuffle(words.filter((x) => x.id !== w.id)).slice(0, 3).map((x) => x.word)]),
     originalData: w,
   }));
+  const trueFalse: ExerciseItem[] = words.map((w, index) => {
+    const isTrue = index % 2 === 0 || words.length < 2;
+    const shownMeaning = isTrue
+      ? w.meaning
+      : (words[(index + 1) % words.length]?.meaning ?? w.meaning);
+    return {
+      id: `tf-${w.id}`,
+      type: "true_false",
+      questionText: w.word,
+      reading: w.reading,
+      statementText: shownMeaning,
+      correctAnswer: isTrue ? "O" : "X",
+      hintText: w.example,
+      explanation: `${w.word} [${w.reading}] = ${w.meaning}`,
+      options: ["O", "X"],
+      originalData: w,
+    };
+  });
   const sentenceBuild: ExerciseItem[] = sentences.slice(0, 2).map((s) => ({
     id: `sentence-${s.id}`, type: "sentence_builder", questionText: s.en, reading: s.reading,
     correctAnswer: s.ko, hintText: s.reading,
@@ -134,7 +153,7 @@ function generateExercises(words: Word[], sentences: Sentence[], dialogues: Dial
   const sequence: ExerciseItem[] = [];
   const sentenceInsertAt = Math.max(0, Math.floor(words.length / 2));
   words.forEach((_, index) => {
-    sequence.push(review[index], meaningMatch[index]);
+    sequence.push(review[index], meaningMatch[index], trueFalse[index]);
     if (index === 0 && sentenceBuild[0]) sequence.push(sentenceBuild[0]);
     sequence.push(translationChoice[index]);
     if (index === sentenceInsertAt && sentenceBuild[1]) sequence.push(sentenceBuild[1]);
@@ -422,10 +441,75 @@ function LearningSession({
   const [isSkipped, setIsSkipped] = useState(false);
   const [flipped, setFlipped] = useState(false);
   const [isListeningSTT, setIsListeningSTT] = useState(false);
+  const [lastWrongOption, setLastWrongOption] = useState<string | null>(null);
+  const [showCorrectOption, setShowCorrectOption] = useState(false);
+  const [isTransitioning, setIsTransitioning] = useState(false);
+  const [soundEnabled, setSoundEnabled] = useState(true);
+  const audioContextRef = useRef<AudioContext | null>(null);
+  const interactionLockRef = useRef(false);
 
   const [score, setScore] = useState(0);
   const [correctCount, setCorrectCount] = useState(0);
   const [wrongCount, setWrongCount] = useState(0);
+
+  useEffect(() => {
+    const saved = window.localStorage.getItem("kmate-learning-sound");
+    if (saved === null) return;
+    const timer = window.setTimeout(() => setSoundEnabled(saved === "on"), 0);
+    return () => window.clearTimeout(timer);
+  }, []);
+
+  const vibrate = (pattern: number | number[]) => {
+    if (typeof navigator !== "undefined" && "vibrate" in navigator) navigator.vibrate(pattern);
+  };
+
+  const playUiSound = (kind: "tap" | "success" | "error") => {
+    if (!soundEnabled || typeof window === "undefined") return;
+    try {
+      const audio = audioContextRef.current ?? new AudioContext();
+      audioContextRef.current = audio;
+      const oscillator = audio.createOscillator();
+      const gain = audio.createGain();
+      const now = audio.currentTime;
+      oscillator.type = kind === "error" ? "triangle" : "sine";
+      oscillator.frequency.setValueAtTime(kind === "tap" ? 420 : kind === "success" ? 660 : 180, now);
+      if (kind === "success") oscillator.frequency.exponentialRampToValueAtTime(880, now + .12);
+      gain.gain.setValueAtTime(.035, now);
+      gain.gain.exponentialRampToValueAtTime(.001, now + (kind === "tap" ? .06 : .18));
+      oscillator.connect(gain).connect(audio.destination);
+      oscillator.start(now);
+      oscillator.stop(now + (kind === "tap" ? .07 : .2));
+    } catch { /* Sound is optional. */ }
+  };
+
+  const handleChoiceSelect = (option: string) => {
+    if (isSubmitted || interactionLockRef.current) return;
+    playUiSound("tap");
+    vibrate(10);
+    setSelectedOption(option);
+  };
+
+  const addSentenceToken = (tokenIndex: number) => {
+    if (isSubmitted || selectedTokenIndexes.includes(tokenIndex)) return;
+    playUiSound("tap");
+    vibrate(8);
+    setSelectedTokenIndexes((items) => [...items, tokenIndex]);
+  };
+
+  const removeSentenceToken = (tokenIndex: number) => {
+    if (isSubmitted) return;
+    playUiSound("tap");
+    vibrate(8);
+    setSelectedTokenIndexes((items) => items.filter((i) => i !== tokenIndex));
+  };
+
+  const toggleSound = () => {
+    setSoundEnabled((enabled) => {
+      const next = !enabled;
+      window.localStorage.setItem("kmate-learning-sound", next ? "on" : "off");
+      return next;
+    });
+  };
 
   const resetExerciseState = () => {
     setSelectedOption(null);
@@ -438,6 +522,9 @@ function LearningSession({
     setIsSkipped(false);
     setFlipped(false);
     setIsListeningSTT(false);
+    setLastWrongOption(null);
+    setShowCorrectOption(false);
+    interactionLockRef.current = false;
   };
 
   // "다음 챕터" 버튼은 같은 페이지 템플릿(app/learn/[characterId]/[chapterId]) 안에서
@@ -517,8 +604,11 @@ function LearningSession({
     const matches = cleanAnswer.length > 0 && cleanAnswer === cleanCorrect;
 
     if (matches) {
+      interactionLockRef.current = true;
       setIsCorrect(true);
       setIsSubmitted(true);
+      playUiSound("success");
+      vibrate([14, 24, 18]);
       setScore((s) => s + 10);
       setCorrectCount((c) => c + 1);
 
@@ -538,11 +628,17 @@ function LearningSession({
     } else {
       const nextAttempts = attempts + 1;
       setAttempts(nextAttempts);
+      setLastWrongOption(answer);
+      playUiSound("error");
+      vibrate([24, 28, 24]);
+      window.setTimeout(() => setLastWrongOption(null), 480);
 
-      if (nextAttempts >= 3) {
+      if (currentEx.type === "true_false" || nextAttempts >= 3) {
+        interactionLockRef.current = true;
         setIsCorrect(false);
         setIsSubmitted(true);
         setWrongCount((count) => count + 1);
+        window.setTimeout(() => setShowCorrectOption(true), 200);
       } else {
         setIsCorrect(false);
         setSelectedOption(null);
@@ -551,6 +647,10 @@ function LearningSession({
   };
 
   const handleNext = async () => {
+    if (isTransitioning) return;
+    setIsTransitioning(true);
+    playUiSound("tap");
+    await new Promise((resolve) => window.setTimeout(resolve, 190));
     if (currentIdx + 1 >= totalExercises) {
       setPhase("complete");
       // 로컬 stamps에도 바로 반영해둔다 — 안 하면 "다음 챕터" 버튼으로 바로 이동했을 때
@@ -577,6 +677,7 @@ function LearningSession({
     } else {
       resetExerciseState();
       setCurrentIdx((i) => i + 1);
+      window.setTimeout(() => setIsTransitioning(false), 20);
     }
   };
 
@@ -1059,7 +1160,27 @@ function LearningSession({
     <main className={styles.page}>
       {/* 헤더 진도 바 */}
       <div className={styles.sessionHeader}>
+        <div className={styles.sessionHeaderTop}>
         <Link href={backToListHref} className={styles.closeBtn} aria-label="닫기">✕</Link>
+        <div className={styles.sessionHeading}>
+          <strong>{
+            currentEx.type === "flashcard" ? "\uD50C\uB798\uC2DC\uCE74\uB4DC" :
+            currentEx.type === "multiple_choice" ? "\uAC1D\uAD00\uC2DD" :
+            currentEx.type === "true_false" ? "O / X \uD034\uC988" :
+            currentEx.type === "sentence_builder" ? "\uBB38\uC7A5 \uC870\uD569" :
+            currentEx.type === "sentence_match" ? "\uBB38\uC7A5 \uB9E4\uCE6D" :
+            currentEx.type === "fill_blank" ? "\uBE48\uCE78 \uCC44\uC6B0\uAE30" :
+            currentEx.type === "listening_choice" ? "\uB4E3\uAE30 \uC5F0\uC2B5" :
+            currentEx.type === "speaking_practice" ? "\uB9D0\uD558\uAE30 \uC5F0\uC2B5" :
+            "\uB300\uD654 \uC774\uD574"
+          }</strong>
+          <span className={styles.sessionCount}>{currentIdx + 1} / {totalExercises}</span>
+        </div>
+        <button type="button" className={styles.headerHintBtn} onClick={() => setShowHint(!showHint)}>
+          <span aria-hidden="true">💡</span>
+          {showHint ? t("hintCloseShort") : t("hintShort")}
+        </button>
+        </div>
         <div className={styles.sessionProgress}>
           <div className={styles.sessionBar}>
             <div className={styles.sessionFill} style={{ width: `${pct}%` }} />
@@ -1073,10 +1194,11 @@ function LearningSession({
 
       {/* 카드 문제 영역 */}
       <div className={styles.exerciseArea}>
-        <div className={styles.cardWrap}>
+        <div key={currentEx.id} className={`${styles.cardWrap} ${isTransitioning ? styles.exerciseLeaving : ""}`}>
           {/* 상단 문제 유형, 🔊 들어보기, 💡 힌트, ⏭️ 스킵 */}
           <div className={styles.cardHeaderRow}>
             <p className={styles.exType}>
+              {currentEx.type === "true_false" && "O / X \uD034\uC988 · True or False"}
               {currentEx.type === "flashcard" && "🃏 플래시카드 · Flashcard"}
               {currentEx.type === "multiple_choice" && "✅ 객관식 · Multiple Choice"}
               {currentEx.type === "fill_blank" && "✏️ 빈칸 채우기 · Fill in the Blank"}
@@ -1088,6 +1210,9 @@ function LearningSession({
             </p>
 
             <div className={styles.headerBtnGroup}>
+              <button type="button" className={styles.soundToggleBtn} onClick={toggleSound} aria-label={soundEnabled ? "Sound off" : "Sound on"}>
+                {soundEnabled ? "🔊" : "🔇"}
+              </button>
               <button
                 type="button"
                 className={styles.voicePlayBtn}
@@ -1142,6 +1267,7 @@ function LearningSession({
                   <p className={styles.flashHint}>탭해서 뒤집기 · Tap to flip</p>
                 </div>
                 <div className={styles.flashBack}>
+                  <p className={styles.flashWord}>{currentEx.questionText}</p>
                   <p className={styles.flashMeaning}>{tr(currentEx.correctAnswer)}</p>
                   <p className={styles.flashExample}>{(currentEx.originalData as Word).example}</p>
                   <p className={styles.flashReading}>[{(currentEx.originalData as Word).example_reading}]</p>
@@ -1165,14 +1291,14 @@ function LearningSession({
               <div className={styles.sentenceAnswer}>
                 {selectedTokenIndexes.length === 0 && <span>단어를 순서대로 눌러 문장을 완성하세요</span>}
                 {selectedTokenIndexes.map((tokenIndex) => (
-                  <button key={tokenIndex} onClick={() => !isSubmitted && setSelectedTokenIndexes((items) => items.filter((i) => i !== tokenIndex))}>
+                  <button key={tokenIndex} onClick={() => removeSentenceToken(tokenIndex)}>
                     {currentEx.options[tokenIndex]}
                   </button>
                 ))}
               </div>
               <div className={styles.tokenBank}>
                 {currentEx.options.map((token, tokenIndex) => (
-                  <button key={`${token}-${tokenIndex}`} disabled={isSubmitted || selectedTokenIndexes.includes(tokenIndex)} onClick={() => setSelectedTokenIndexes((items) => [...items, tokenIndex])}>{token}</button>
+                  <button key={`${token}-${tokenIndex}`} disabled={isSubmitted || selectedTokenIndexes.includes(tokenIndex)} onClick={() => addSentenceToken(tokenIndex)}>{token}</button>
                 ))}
               </div>
               {!isSubmitted && <button className="btn btn-primary btn-lg" disabled={!selectedTokenIndexes.length} onClick={() => handleCheckAnswer(selectedTokenIndexes.map((i) => currentEx.options[i]).join(" "))}>{t("checkAnswerWithCount", { n: 3 - attempts })}</button>}
@@ -1185,6 +1311,54 @@ function LearningSession({
           )}
 
           {/* 2. 객관식 & 문장 매칭 & 스킵된 듣기/말하기 */}
+          {currentEx.type === "true_false" && (
+            <>
+              <div className={`${styles.mcQuestion} ${styles.trueFalseQuestion}`}>
+                <h2 className={styles.mcWord}>{currentEx.questionText}</h2>
+                <button type="button" className={styles.inlineListenBtn} onClick={() => playCaptainVoice(currentEx.questionText, characterId)} aria-label="Listen">🔊</button>
+                {currentEx.reading && <p className={styles.mcReading}>[{currentEx.reading}]</p>}
+                <div className={styles.statementDivider} />
+                <p className={styles.trueFalseStatement}>{tr(currentEx.statementText ?? "")}</p>
+              </div>
+
+              <p className={styles.trueFalseInstruction}>{"\uC774 \uB0B4\uC6A9\uC774 \uB9DE\uC73C\uBA74 O, \uD2C0\uB9AC\uBA74 X\uB97C \uC120\uD0DD\uD558\uC138\uC694."}</p>
+
+              <div className={styles.trueFalseOptions}>
+                {["O", "X"].map((opt) => {
+                  let cls = `${styles.mcOption} ${styles.trueFalseOption}`;
+                  if (selectedOption === opt) cls += ` ${styles.mcSelected}`;
+                  if (lastWrongOption === opt) cls += ` ${styles.optionShake}`;
+                  if (isSubmitted && opt === currentEx.correctAnswer && (isCorrect || showCorrectOption)) cls += ` ${styles.mcCorrect} ${styles.optionPop}`;
+                  if (isSubmitted && selectedOption === opt && !isCorrect) cls += ` ${styles.mcWrong}`;
+                  return (
+                    <button key={opt} className={cls} onClick={() => handleChoiceSelect(opt)} disabled={isSubmitted}>
+                      <span>{opt}</span>
+                      {isSubmitted && opt === currentEx.correctAnswer && (isCorrect || showCorrectOption) && <i className={styles.answerIcon}>✓</i>}
+                      {isSubmitted && selectedOption === opt && !isCorrect && <i className={styles.answerIcon}>×</i>}
+                    </button>
+                  );
+                })}
+              </div>
+
+              {!isSubmitted ? (
+                <button className="btn btn-primary btn-lg" onClick={() => handleCheckAnswer()} disabled={!selectedOption}>
+                  {t("checkAnswerWithCount", { n: 1 })}
+                </button>
+              ) : (
+                <div className={`${styles.resultBox} ${isCorrect ? styles.resultSuccess : styles.resultError}`}>
+                  {isCorrect && <div className={styles.sparkles} aria-hidden="true"><i>✦</i><i>★</i><i>✦</i></div>}
+                  <p className={isCorrect ? styles.correctText : styles.wrongText}>
+                    <span className={styles.resultIcon}>{isCorrect ? "✓" : "×"}</span>
+                    {isCorrect ? "\uC815\uD655\uD574\uC694!" : "\uC544\uC26C\uC6CC\uC694!"}
+                  </p>
+                  <p className={styles.explanation}>{tr(currentEx.explanation)}</p>
+                  <p className={styles.characterReaction}>{isCorrect ? "\uC88B\uC544\uC694, \uC798\uD588\uC5B4\uC694." : "\uAD1C\uCC2E\uC544\uC694. \uB2E4\uC74C \uBB38\uC81C\uB85C \uC774\uC5B4\uAC00\uC694."}</p>
+                  <button className="btn btn-primary btn-lg" onClick={handleNext}>{t("nextQuestion")}</button>
+                </div>
+              )}
+            </>
+          )}
+
           {(currentEx.type === "multiple_choice" || currentEx.type === "sentence_match" || ((currentEx.type === "listening_choice" || currentEx.type === "speaking_practice") && isSkipped)) && (
             <>
               <div className={styles.mcQuestion}>
@@ -1211,9 +1385,10 @@ function LearningSession({
                 {currentEx.options.map((opt) => {
                   let cls = styles.mcOption;
                   if (selectedOption === opt) cls += " " + styles.mcSelected;
+                  if (lastWrongOption === opt) cls += " " + styles.optionShake;
 
                   if (isSubmitted) {
-                    if (opt === currentEx.correctAnswer) cls += " " + styles.mcCorrect;
+                    if (opt === currentEx.correctAnswer && (isCorrect || showCorrectOption)) cls += " " + styles.mcCorrect + " " + styles.optionPop;
                     else if (selectedOption === opt) cls += " " + styles.mcWrong;
                   }
 
@@ -1221,10 +1396,12 @@ function LearningSession({
                     <button
                       key={opt}
                       className={cls}
-                      onClick={() => !isSubmitted && setSelectedOption(opt)}
+                      onClick={() => handleChoiceSelect(opt)}
                       disabled={isSubmitted}
                     >
                       {tr(opt)}
+                      {isSubmitted && opt === currentEx.correctAnswer && (isCorrect || showCorrectOption) && <i className={styles.answerIcon}>✓</i>}
+                      {isSubmitted && selectedOption === opt && !isCorrect && <i className={styles.answerIcon}>×</i>}
                     </button>
                   );
                 })}
@@ -1247,13 +1424,15 @@ function LearningSession({
               )}
 
               {isSubmitted && (
-                <div className={styles.resultBox}>
+                <div className={`${styles.resultBox} ${isCorrect ? styles.resultSuccess : styles.resultError}`}>
+                  {isCorrect && <div className={styles.sparkles} aria-hidden="true"><i>✦</i><i>★</i><i>✦</i></div>}
                   {isCorrect ? (
                     <p className={styles.correctText}>{t("correctNotice")}</p>
                   ) : (
                     <p className={styles.wrongText}>{t("wrongFinalPrefix")} <strong>{tr(currentEx.correctAnswer)}</strong></p>
                   )}
                   <p className={styles.explanation}>{tr(currentEx.explanation)}</p>
+                  <p className={styles.characterReaction}>{isCorrect ? "\uC88B\uC544\uC694!" : "\uCC9C\uCC9C\uD788 \uB2E4\uC2DC \uBCF4\uBA74 \uB3FC\uC694."}</p>
                   <button className="btn btn-primary btn-lg" onClick={handleNext}>
                     {t("nextQuestion")}
                   </button>
@@ -1293,7 +1472,7 @@ function LearningSession({
                     <button
                       key={opt}
                       className={cls}
-                      onClick={() => !isSubmitted && setSelectedOption(opt)}
+                      onClick={() => handleChoiceSelect(opt)}
                       disabled={isSubmitted}
                     >
                       {tr(opt)}
@@ -1430,7 +1609,7 @@ function LearningSession({
                     <button
                       key={opt}
                       className={cls}
-                      onClick={() => !isSubmitted && setSelectedOption(opt)}
+                      onClick={() => handleChoiceSelect(opt)}
                       disabled={isSubmitted}
                     >
                       {tr(opt)}
@@ -1504,7 +1683,7 @@ function LearningSession({
                     <button
                       key={opt}
                       className={cls}
-                      onClick={() => !isSubmitted && setSelectedOption(opt)}
+                      onClick={() => handleChoiceSelect(opt)}
                       disabled={isSubmitted}
                     >
                       {tr(opt)}
