@@ -287,6 +287,21 @@ class CoinTransaction(Base):
     created_at       = Column(DateTime, server_default=func.now())
 
 
+class AdRewardClaim(Base):
+    """One short-lived, single-use rewarded-ad grant owned by one account."""
+    __tablename__ = "ad_reward_claims"
+
+    id             = Column(String(36), primary_key=True)
+    user_id        = Column(String(36), ForeignKey("users.id"), nullable=False)
+    reward_type    = Column(String(30), default="rewarded_ad", nullable=False)
+    reward_amount  = Column(Integer, nullable=False)
+    transaction_id = Column(String(100), nullable=True, unique=True)
+    status         = Column(String(20), default="pending", nullable=False)
+    expires_at     = Column(DateTime, nullable=False)
+    rewarded_at    = Column(DateTime, nullable=True)
+    created_at     = Column(DateTime, server_default=func.now())
+
+
 class WeeklyAttendanceClaim(Base):
     """One server-authoritative attendance reward per user and calendar day."""
     __tablename__ = "weekly_attendance_claims"
@@ -341,10 +356,35 @@ class Purchase(Base):
     platform        = Column(String(20), nullable=False)  # "google_play" | "portone"
     product_id      = Column(String(100), nullable=False)
     purchase_token  = Column(String(500), nullable=False)
+    order_id        = Column(String(100), nullable=True)
+    country_code    = Column(String(2), nullable=True)
+    currency        = Column(String(3), nullable=True)
+    price_micros    = Column(String(30), nullable=True)
     status          = Column(String(20), nullable=False, default="verified")
+    purchased_at    = Column(DateTime, nullable=True)
+    verified_at     = Column(DateTime, server_default=func.now(), nullable=True)
     created_at      = Column(DateTime, server_default=func.now())
 
     __table_args__ = (UniqueConstraint("platform", "purchase_token", name="uq_purchase_token"),)
+
+
+class Entitlement(Base):
+    """Server-side source of truth for paid content access."""
+    __tablename__ = "entitlements"
+    __table_args__ = (
+        UniqueConstraint("user_id", "entitlement_type", "character_id", "content_id", name="uq_user_entitlement"),
+    )
+
+    id                 = Column(String(36), primary_key=True)
+    user_id            = Column(String(36), ForeignKey("users.id"), nullable=False)
+    entitlement_type   = Column(String(30), nullable=False)
+    character_id       = Column(String(50), ForeignKey("characters.id"), nullable=True)
+    content_id         = Column(String(100), nullable=True)
+    source             = Column(String(30), nullable=False)
+    source_purchase_id = Column(String(36), ForeignKey("purchases.id"), nullable=True)
+    is_active          = Column(Boolean, default=True, nullable=False)
+    created_at         = Column(DateTime, server_default=func.now())
+    expires_at         = Column(DateTime, nullable=True)
 
 
 # ── 학습 경제 ──────────────────────────────────────────────
@@ -368,10 +408,13 @@ class LessonSession(Base):
 # 무료 유저도 원하는 스토리는 5코인으로 영구 해금할 수 있다.
 class StoryUnlock(Base):
     __tablename__ = "story_unlocks"
-    __table_args__ = (UniqueConstraint("user_id", "chapter_id", name="uq_story_unlock"),)
+    __table_args__ = (
+        UniqueConstraint("user_id", "character_id", "chapter_id", name="uq_story_unlock_character"),
+    )
 
     id          = Column(String(36), primary_key=True)
     user_id     = Column(String(36), ForeignKey("users.id"), nullable=False)
+    character_id = Column(String(50), ForeignKey("characters.id"), nullable=True)
     chapter_id  = Column(String(100), nullable=False)
     unlock_cost = Column(Integer, default=5, nullable=False)
     unlocked_at = Column(DateTime, server_default=func.now())

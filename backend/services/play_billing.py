@@ -10,7 +10,7 @@ Google Play 인앱결제(구독) 서버 검증
 2. 서비스 계정 생성 후 JSON 키 발급
 3. Play Console → 설정 → API 액세스에서 그 서비스 계정을 "본인 앱 관리자"로 연결
 4. 발급받은 JSON 키 파일 경로를 .env의 GOOGLE_PLAY_SERVICE_ACCOUNT_FILE에 지정
-5. Play Console에서 구독 상품(subscriptionId) 등록 — 예: "kmate_premium_monthly"
+5. Play Console에서 구독 상품(subscriptionId) 등록 — 예: "kmate_premium"
 """
 import time
 from google.oauth2 import service_account

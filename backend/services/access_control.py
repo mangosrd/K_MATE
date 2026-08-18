@@ -9,7 +9,7 @@
 """
 from fastapi import HTTPException
 from sqlalchemy.orm import object_session
-from models.models import User, Character
+from models.models import Entitlement, User, Character
 from services.membership import expire_premium_if_needed
 
 
@@ -26,6 +26,13 @@ def check_character_access(user: User, character: Character) -> None:
     if user.membership == "premium":
         return
     if character.id in (user.free_char_slots or []):
+        return
+    if session and session.query(Entitlement.id).filter(
+        Entitlement.user_id == user.id,
+        Entitlement.entitlement_type == "captain",
+        Entitlement.character_id == character.id,
+        Entitlement.is_active.is_(True),
+    ).first():
         return
     raise HTTPException(
         status_code=403,

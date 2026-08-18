@@ -5,6 +5,7 @@
 import hashlib
 import hmac
 import uuid
+from datetime import datetime, timedelta
 
 from fastapi import APIRouter, HTTPException, Depends, Header
 from sqlalchemy.orm import Session
@@ -12,9 +13,9 @@ from database import get_db, get_settings
 from schemas.schemas import (
     AndroidPurchaseVerifyRequest, PurchaseVerifyResponse, CoinPack, CoinPurchaseResponse,
     CharacterPack, CharacterPurchaseResponse, PortonePaymentVerifyRequest,
-    WatchAdRequest, WatchAdResponse,
+    WatchAdRequest, WatchAdResponse, AdRewardPrepareRequest, AdRewardPrepareResponse,
 )
-from models.models import User, Purchase, Economy
+from models.models import AdRewardClaim, Entitlement, User, Purchase, Economy
 from services.membership import activate_monthly_premium
 from services.play_billing import (
     acknowledge_product_purchase,
@@ -24,7 +25,7 @@ from services.play_billing import (
     verify_subscription_purchase,
 )
 from services.portone import verify_payment
-from services.ads import grant_ad_reward, AD_COIN_REWARD
+from services.ads import grant_ad_reward, get_ad_watches_remaining, AD_COIN_REWARD
 from services.session_auth import require_current_user, require_same_user
 
 # 프리미엄 구독 가격 — app/premium/PremiumView.tsx의 표시 가격과 반드시 일치해야 한다
@@ -109,7 +110,7 @@ def verify_android_purchase(req: AndroidPurchaseVerifyRequest, current_user_id: 
     """안드로이드 앱에서 발생한 Google Play 구독 결제를 서버에서 검증하고,
     유효하면 프리미엄 멤버십으로 승격한다.
     """
-    if req.product_id != "kmate_premium_monthly":
+    if req.product_id != "kmate_premium":
         raise HTTPException(status_code=400, detail="Unknown premium subscription product.")
 
     user = db.query(User).filter(User.id == req.user_id).with_for_update().first()
@@ -198,7 +199,7 @@ def _activate_premium_and_grant_welcome_coins(
     db: Session, user: User, platform: str, product_id: str, purchase_token: str
 ) -> Purchase:
     """Apply a verified one-month premium purchase exactly once with its coin reward."""
-    activate_monthly_premium(db, user, PREMIUM_PRICE_KRW)
+    expires_at = activate_monthly_premium(db, user, PREMIUM_PRICE_KRW)
     _grant_coins(
         db,
         user.id,
@@ -214,6 +215,12 @@ def _activate_premium_and_grant_welcome_coins(
         status="verified",
     )
     db.add(purchase)
+    db.flush()
+    db.add(Entitlement(
+        id=str(uuid.uuid4()), user_id=user.id, entitlement_type="premium",
+        source=platform, source_purchase_id=purchase.id, is_active=True,
+        expires_at=expires_at,
+    ))
     db.commit()
     return purchase
 
@@ -474,6 +481,12 @@ def verify_android_character_purchase(req: AndroidPurchaseVerifyRequest, current
         status="verified",
     )
     db.add(purchase)
+    db.flush()
+    db.add(Entitlement(
+        id=str(uuid.uuid4()), user_id=req.user_id, entitlement_type="captain",
+        character_id=pack["character_id"], source="google_play",
+        source_purchase_id=purchase.id, is_active=True,
+    ))
     db.commit()
     try:
         _finalize_google_purchase(db, purchase, "non_consumable")
@@ -612,19 +625,37 @@ async def verify_portone_membership(req: PortonePaymentVerifyRequest, current_us
         return PurchaseVerifyResponse(success=False, membership=user.membership, message="유효하지 않은 결제입니다.")
 
     _activate_premium_and_grant_welcome_coins(
-        db, user, "portone", "kmate_premium_monthly", req.payment_id
+        db, user, "portone", "kmate_premium", req.payment_id
     )
 
     return PurchaseVerifyResponse(success=True, membership=user.membership, message="결제가 확인되었습니다.")
 
 
+@router.post("/ads/prepare", response_model=AdRewardPrepareResponse)
+def prepare_ad_reward(req: AdRewardPrepareRequest, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
+    require_same_user(current_user_id, req.user_id)
+    user = db.query(User).filter(User.id == req.user_id).first()
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
+    remaining = get_ad_watches_remaining(db, user)
+    if remaining <= 0:
+        raise HTTPException(status_code=429, detail="오늘 받을 수 있는 광고 보상을 모두 받았어요.")
+    expires_at = datetime.now() + timedelta(minutes=10)
+    claim = AdRewardClaim(
+        id=str(uuid.uuid4()), user_id=user.id, reward_amount=AD_COIN_REWARD,
+        status="pending", expires_at=expires_at,
+    )
+    db.add(claim)
+    db.commit()
+    return AdRewardPrepareResponse(
+        claim_id=claim.id, reward_amount=AD_COIN_REWARD,
+        watches_remaining=remaining, expires_at=expires_at,
+    )
+
+
 @router.post("/ads/watch", response_model=WatchAdResponse)
 def watch_ad(req: WatchAdRequest, current_user_id: str = Depends(require_current_user), db: Session = Depends(get_db)):
     require_same_user(current_user_id, req.user_id)
-    raise HTTPException(
-        status_code=410,
-        detail="Ad rewards are unavailable until verified rewarded-ad delivery is enabled.",
-    )
     """보상형 광고 시청 완료 보상 — 1회당 5코인, 하루 최대 100코인(20회)까지.
 
     실제 광고 SDK가 붙기 전까지는 프론트가 시뮬레이션(카운트다운 모달) 재생 후 이
@@ -632,16 +663,30 @@ def watch_ad(req: WatchAdRequest, current_user_id: str = Depends(require_current
     콜백이 온 경우에만 이 엔드포인트를 호출하도록 프론트만 바꾸면 되고 서버 로직은
     그대로 재사용된다.
     """
-    user = db.query(User).filter(User.id == req.user_id).first()
-    if not user:
-        raise HTTPException(status_code=404, detail="User not found")
+    claim = db.query(AdRewardClaim).filter(AdRewardClaim.id == req.claim_id).with_for_update().first()
+    if not claim or claim.user_id != req.user_id:
+        raise HTTPException(status_code=404, detail="Reward claim not found")
+    if claim.status == "rewarded":
+        economy = db.query(Economy).filter(Economy.user_id == req.user_id).first()
+        user = db.query(User).filter(User.id == req.user_id).first()
+        return WatchAdResponse(success=True, coins_granted=0, total_coins=economy.coins if economy else 0, watches_remaining=get_ad_watches_remaining(db, user), message="이미 지급된 광고 보상이에요.")
+    if claim.status != "pending" or claim.expires_at < datetime.now():
+        raise HTTPException(status_code=409, detail="광고 보상 요청이 만료되었어요. 다시 시도해 주세요.")
+    duplicate = db.query(AdRewardClaim.id).filter(AdRewardClaim.transaction_id == req.reward_transaction_id).first()
+    if duplicate:
+        raise HTTPException(status_code=409, detail="이미 처리된 광고 보상입니다.")
+    claim.transaction_id = req.reward_transaction_id
+    claim.status = "rewarded"
+    claim.rewarded_at = datetime.now()
 
     try:
-        granted, remaining, total_coins = grant_ad_reward(db, req.user_id)
+        granted, remaining, total_coins = grant_ad_reward(db, req.user_id, req.reward_transaction_id)
     except ValueError:
         raise HTTPException(status_code=404, detail="User not found")
 
     if not granted:
+        claim.status = "rejected"
+        db.commit()
         return WatchAdResponse(
             success=False, coins_granted=0, total_coins=total_coins,
             watches_remaining=0, message="오늘 광고로 받을 수 있는 코인을 모두 받았어요. 내일 다시 시도해주세요.",

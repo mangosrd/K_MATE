@@ -462,6 +462,19 @@ class CoinPurchaseResponse(BaseModel):
 
 class WatchAdRequest(BaseModel):
     user_id: str
+    claim_id: str
+    reward_transaction_id: str
+
+
+class AdRewardPrepareRequest(BaseModel):
+    user_id: str
+
+
+class AdRewardPrepareResponse(BaseModel):
+    claim_id: str
+    reward_amount: int
+    watches_remaining: int
+    expires_at: datetime
 
 
 class WatchAdResponse(BaseModel):
@@ -514,6 +527,7 @@ class LetterSendResponse(BaseModel):
 class UserNoteCreateRequest(BaseModel):
     user_id: str
     content: str
+    captain_id: str
 
 
 class UserNoteResponse(BaseModel):

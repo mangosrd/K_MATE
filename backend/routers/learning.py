@@ -22,7 +22,7 @@ router = APIRouter(prefix="/learning", tags=["learning"])
 
 LESSON_ENTRY_COST = 0
 STORY_UNLOCK_COST = 5
-PREMIUM_PRODUCT_ID = "kmate_premium_monthly"
+PREMIUM_PRODUCT_ID = "kmate_premium"
 VERIFIED_LESSON_STEP_DELTA = 1
 
 
@@ -49,10 +49,15 @@ def _has_permanent_story_pass(db: Session, user_id: str) -> bool:
 
 
 def _story_access(db: Session, user_id: str, chapter_id: str) -> tuple[bool, str]:
+    owner_character_id = chapter_character_id(chapter_id)
+    if owner_character_id is None:
+        return False, "locked"
     if _has_permanent_story_pass(db, user_id):
         return True, "premium_permanent"
     if db.query(StoryUnlock.id).filter(
-        StoryUnlock.user_id == user_id, StoryUnlock.chapter_id == chapter_id
+        StoryUnlock.user_id == user_id,
+        StoryUnlock.character_id == owner_character_id,
+        StoryUnlock.chapter_id == chapter_id,
     ).first():
         return True, "coin_unlock"
     return False, "locked"
@@ -84,7 +89,11 @@ def unlock_story(req: StoryUnlockRequest, current_user_id: str = Depends(require
     if economy.coins < STORY_UNLOCK_COST:
         raise HTTPException(status_code=400, detail=f"코인이 부족합니다. 스토리 해금에는 {STORY_UNLOCK_COST}코인이 필요합니다.")
     economy = change_coins(db, user.id, -STORY_UNLOCK_COST, "special_story_unlock", reference_type="chapter", reference_id=req.chapter_id)
-    db.add(StoryUnlock(id=str(uuid.uuid4()), user_id=user.id, chapter_id=req.chapter_id, unlock_cost=STORY_UNLOCK_COST))
+    owner_character_id = chapter_character_id(req.chapter_id)
+    db.add(StoryUnlock(
+        id=str(uuid.uuid4()), user_id=user.id, character_id=owner_character_id,
+        chapter_id=req.chapter_id, unlock_cost=STORY_UNLOCK_COST,
+    ))
     db.commit()
     return StoryUnlockResponse(has_access=True, access_type="coin_unlock", unlock_cost=STORY_UNLOCK_COST, remaining_coins=economy.coins)
 

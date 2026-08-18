@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { useLanguage, type Language } from "@/components/LanguageContext";
 import BottomNav from "@/components/ui/BottomNav";
-import { getAuthHeaders, getEffectiveUserId } from "@/lib/auth/store";
+import { getAuthHeaders, getEffectiveUserId, getPreferredCaptainId } from "@/lib/auth/store";
 import { MOCK_CHARACTERS } from "@/lib/db/mock";
 import { cancelCaptainNoteComment, scheduleCaptainNoteComment } from "@/lib/notifications/captainNotes";
 import styles from "./notes.module.css";
@@ -44,6 +44,12 @@ export default function NotesPage() {
   const [loading, setLoading] = useState(true);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [captainId, setCaptainId] = useState("kyuhyun");
+
+  useEffect(() => {
+    const timer = window.setTimeout(() => setCaptainId(getPreferredCaptainId()), 0);
+    return () => window.clearTimeout(timer);
+  }, []);
 
   const loadNotes = useCallback(async () => {
     try {
@@ -72,7 +78,7 @@ export default function NotesPage() {
       const res = await fetch(`${BACKEND_URL}/notes`, {
         method: "POST",
         headers: { "Content-Type": "application/json", ...getAuthHeaders() },
-        body: JSON.stringify({ user_id: getEffectiveUserId(), content: content.trim() }),
+        body: JSON.stringify({ user_id: getEffectiveUserId(), captain_id: captainId, content: content.trim() }),
       });
       const data = await res.json().catch(() => null);
       if (!res.ok) throw new Error(res.status === 429 ? copy.limit : (data?.detail ?? "Error"));
@@ -118,6 +124,12 @@ export default function NotesPage() {
 
         <section className={styles.composer}>
           <form onSubmit={submitNote}>
+            <label className={styles.captainPickerLabel} htmlFor="note-captain">
+              {language === "ko" ? "답장을 받을 기장" : "Captain to reply"}
+            </label>
+            <select id="note-captain" className={styles.captainPicker} value={captainId} onChange={(event) => setCaptainId(event.target.value)}>
+              {MOCK_CHARACTERS.map((captain) => <option key={captain.id} value={captain.id}>{captain.name}</option>)}
+            </select>
             <textarea value={content} onChange={(event) => setContent(event.target.value.slice(0, 500))} placeholder={copy.placeholder} rows={5} />
             <div className={styles.composerBottom}>
               <span>{content.length}/500 · {copy.count}</span>

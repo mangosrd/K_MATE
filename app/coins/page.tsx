@@ -6,11 +6,22 @@ import BottomNav from "@/components/ui/BottomNav";
 import { getAuthHeaders, getEffectiveUserId } from "@/lib/auth/store";
 import { useLanguage } from "@/components/LanguageContext";
 import {
-  isPlayBillingAvailable, initPlayBilling, purchaseCoinPack, type CoinPackId,
+  isPlayBillingAvailable, initPlayBilling, purchaseCoinPack, type CoinPackId, type LocalizedProduct,
 } from "@/lib/billing/playBilling";
 import styles from "./coins.module.css";
+import { admobRewardAdService } from "@/lib/ads/rewardedAd";
 
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
+
+const REWARD_COPY = {
+  ko: { title: "무료 코인 받기", detail: "광고 1회당 5코인 · 하루 5회", used: "오늘 이용", button: "광고 보고 +5", loading: "불러오는 중…" },
+  en: { title: "Free coins", detail: "5 coins per ad · 5 daily", used: "Used today", button: "Watch +5", loading: "Loading…" },
+  ja: { title: "無料コイン", detail: "広告1回で5コイン・1日5回", used: "本日の利用", button: "広告を見て +5", loading: "読み込み中…" },
+  zh: { title: "免费金币", detail: "每次广告5金币・每天5次", used: "今日已使用", button: "观看广告 +5", loading: "加载中…" },
+  "zh-TW": { title: "免費金幣", detail: "每次廣告5金幣・每天5次", used: "今日已使用", button: "觀看廣告 +5", loading: "載入中…" },
+  ru: { title: "Бесплатные монеты", detail: "5 монет за рекламу · 5 раз в день", used: "Сегодня", button: "Смотреть +5", loading: "Загрузка…" },
+  th: { title: "รับเหรียญฟรี", detail: "โฆษณาละ 5 เหรียญ · วันละ 5 ครั้ง", used: "ใช้วันนี้", button: "ดูโฆษณา +5", loading: "กำลังโหลด…" },
+} as const;
 
 interface CoinPack {
   product_id: string;
@@ -34,7 +45,8 @@ const PACK_LABEL_KEYS: Record<string, string> = {
 };
 
 export default function CoinsPage() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  const rewardCopy = REWARD_COPY[language];
   const isNativeAndroid = isPlayBillingAvailable();
 
   const [coins, setCoins] = useState(0);
@@ -47,6 +59,10 @@ export default function CoinsPage() {
   const [packs, setPacks] = useState<CoinPack[]>(FALLBACK_PACKS);
   const [buyingId, setBuyingId] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [adBusy, setAdBusy] = useState(false);
+  const [adRemaining, setAdRemaining] = useState<number | null>(null);
+  const [adMessage, setAdMessage] = useState<string | null>(null);
+  const [storePrices, setStorePrices] = useState<Record<string, LocalizedProduct>>({});
 
   useEffect(() => {
     const userId = getEffectiveUserId();
@@ -75,10 +91,17 @@ export default function CoinsPage() {
         setError(message);
         setBuyingId(null);
       },
+      onProductsUpdated: (products) => {
+        setStorePrices(Object.fromEntries(products.map((product) => [product.productId, product])));
+      },
     });
   }, [isNativeAndroid]);
 
   const handleBuy = async (pack: CoinPack) => {
+    if (isNativeAndroid && !storePrices[pack.product_id]) {
+      setError(language === "ko" ? "현재 지역에서는 이 결제 상품을 이용할 수 없어요." : "This product is unavailable in your current store.");
+      return;
+    }
     setError(null);
     setBuyingId(pack.product_id);
 
@@ -95,6 +118,31 @@ export default function CoinsPage() {
     // 웹: 포트원(KG이니시스) 결제창을 띄우고, 결제가 실제로 확인되면 백엔드가 코인을 지급한다.
     setError("결제는 Android 앱의 Google Play에서만 이용할 수 있어요.");
     setBuyingId(null);
+  };
+
+  const handleRewardedAd = async () => {
+    if (adBusy) return;
+    setAdBusy(true); setError(null); setAdMessage(null);
+    try {
+      const userId = getEffectiveUserId();
+      const prepareRes = await fetch(`${BACKEND_URL}/billing/ads/prepare`, {
+        method: "POST", headers: { "Content-Type": "application/json", ...getAuthHeaders() },
+        body: JSON.stringify({ user_id: userId }),
+      });
+      const prepared = await prepareRes.json().catch(() => null);
+      if (!prepareRes.ok) throw new Error(prepared?.detail ?? "광고 보상을 준비하지 못했어요.");
+      setAdRemaining(prepared.watches_remaining);
+      const transactionId = await admobRewardAdService.show(userId, prepared.claim_id);
+      const rewardRes = await fetch(`${BACKEND_URL}/billing/ads/watch`, {
+        method: "POST", headers: { "Content-Type": "application/json", ...getAuthHeaders() },
+        body: JSON.stringify({ user_id: userId, claim_id: prepared.claim_id, reward_transaction_id: transactionId }),
+      });
+      const reward = await rewardRes.json().catch(() => null);
+      if (!rewardRes.ok) throw new Error(reward?.detail ?? "보상을 지급하지 못했어요.");
+      setCoins(reward.total_coins); setAdRemaining(reward.watches_remaining); setAdMessage(reward.message);
+    } catch (cause) {
+      setError(cause instanceof Error ? cause.message : "광고를 불러오지 못했어요.");
+    } finally { setAdBusy(false); }
   };
 
   return (
@@ -121,6 +169,18 @@ export default function CoinsPage() {
             </p>
           )}
 
+          <section className={styles.rewardCard}>
+            <div className={styles.rewardIcon}>▶</div>
+            <div className={styles.rewardCopy}>
+              <strong>{rewardCopy.title}</strong>
+              <span>{adRemaining === null ? rewardCopy.detail : `${rewardCopy.used} ${5 - adRemaining} / 5`}</span>
+            </div>
+            <button type="button" onClick={() => void handleRewardedAd()} disabled={adBusy || !admobRewardAdService.isAvailable()}>
+              {adBusy ? rewardCopy.loading : rewardCopy.button}
+            </button>
+          </section>
+          {adMessage && <p className={styles.rewardMessage}>{adMessage}</p>}
+
           <div className={styles.packList}>
             {packs.map((pack) => (
               <div key={pack.product_id} className={styles.packCard}>
@@ -128,13 +188,15 @@ export default function CoinsPage() {
                   <span className={styles.packIcon}>{PACK_ICONS[pack.product_id] ?? "🪙"}</span>
                   <div>
                     <p className={styles.packLabel}>{t(PACK_LABEL_KEYS[pack.product_id] ?? "coins")}</p>
-                    <p className={styles.packPrice}>₩{pack.price_krw.toLocaleString()}</p>
+                    <p className={styles.packPrice}>
+                      {storePrices[pack.product_id]?.localizedPrice ?? (isNativeAndroid ? t("processingBtn") : "—")}
+                    </p>
                   </div>
                 </div>
                 <button
                   className={`btn btn-gold btn-sm ${styles.buyBtn}`}
                   onClick={() => handleBuy(pack)}
-                  disabled={buyingId === pack.product_id}
+                  disabled={buyingId === pack.product_id || (isNativeAndroid && !storePrices[pack.product_id])}
                 >
                   {buyingId === pack.product_id ? t("processingBtn") : t("buyBtn")}
                 </button>

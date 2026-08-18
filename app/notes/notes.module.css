@@ -33,3 +33,22 @@
 .empty { display: grid; place-items: center; min-height: 180px; color: var(--text-muted); font-size: 34px; }
 .empty p { margin-top: 8px; font-size: 12px; }
 @keyframes pulse { 50% { opacity: .3; transform: translateY(-1px); } }
+.captainPickerLabel {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--navy);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.captainPicker {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 11px 13px;
+  border: 1px solid rgba(14, 52, 101, 0.16);
+  border-radius: 14px;
+  background: #f5f9ff;
+  color: var(--navy);
+  font: inherit;
+  font-weight: 700;
+}

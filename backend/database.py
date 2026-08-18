@@ -144,6 +144,46 @@ def initialize_database() -> bool:
                 connection.execute(text("ALTER TABLE users ADD COLUMN timezone_updated_at DATETIME NULL"))
             if "auth_version" not in user_columns:
                 connection.execute(text("ALTER TABLE users ADD COLUMN auth_version INT NOT NULL DEFAULT 0"))
+            purchase_columns = {
+                row[0] for row in connection.execute(
+                    text("""
+                        SELECT column_name FROM information_schema.columns
+                        WHERE table_schema = DATABASE() AND table_name = 'purchases'
+                    """)
+                ).all()
+            }
+            purchase_migrations = {
+                "order_id": "VARCHAR(100) NULL",
+                "country_code": "VARCHAR(2) NULL",
+                "currency": "VARCHAR(3) NULL",
+                "price_micros": "VARCHAR(30) NULL",
+                "purchased_at": "DATETIME NULL",
+                "verified_at": "DATETIME NULL",
+            }
+            for column_name, definition in purchase_migrations.items():
+                if column_name not in purchase_columns:
+                    connection.execute(text(f"ALTER TABLE purchases ADD COLUMN {column_name} {definition}"))
+            story_columns = {
+                row[0] for row in connection.execute(
+                    text("""
+                        SELECT column_name FROM information_schema.columns
+                        WHERE table_schema = DATABASE() AND table_name = 'story_unlocks'
+                    """)
+                ).all()
+            }
+            if "character_id" not in story_columns:
+                connection.execute(text("ALTER TABLE story_unlocks ADD COLUMN character_id VARCHAR(50) NULL AFTER user_id"))
+                connection.execute(text("CREATE INDEX ix_story_unlock_character ON story_unlocks (user_id, character_id, chapter_id)"))
+            connection.execute(text("""
+                UPDATE story_unlocks SET character_id = CASE
+                    WHEN chapter_id LIKE '%-kyuhyun-%' THEN 'kyuhyun'
+                    WHEN chapter_id LIKE '%-haneul-%' THEN 'haneul'
+                    WHEN chapter_id LIKE '%-sunwoo-%' THEN 'sunwoo'
+                    WHEN chapter_id LIKE '%-sangwoo-%' THEN 'sangwoo'
+                    WHEN chapter_id LIKE '%-yongwoo-%' THEN 'yongwoo'
+                    ELSE character_id END
+                WHERE character_id IS NULL
+            """))
         regions = [
             ("seoul", "서울·경기", "Seoul & Gyeonggi", "SEL", False),
             ("jeonju", "전주·전라", "Jeonju & Jeolla", "JWJ", False),

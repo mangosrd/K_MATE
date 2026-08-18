@@ -44,6 +44,15 @@
   gap: 12px;
 }
 
+.rewardCard { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; padding: 16px; border: 1px solid rgba(14,52,101,.14); border-radius: 20px; background: linear-gradient(145deg,#eef7ff,#fff); box-shadow: 0 8px 22px rgba(16,54,96,.08); }
+.rewardIcon { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 14px; background: #103c74; color: white; }
+.rewardCopy { display: flex; flex: 1; min-width: 0; flex-direction: column; gap: 3px; color: var(--text-primary); }
+.rewardCopy strong { font-size: 14px; }
+.rewardCopy span { color: var(--text-muted); font-size: 11px; }
+.rewardCard button { min-width: 104px; padding: 11px 12px; border: 0; border-radius: 14px; background: #e32636; color: #fff; font-weight: 800; }
+.rewardCard button:disabled { opacity: .48; }
+.rewardMessage { margin: -8px 0 14px; color: #16834f; text-align: center; font-size: 12px; font-weight: 700; }
+
 .packCard {
   display: flex;
   align-items: center;

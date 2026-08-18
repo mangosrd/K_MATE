@@ -1,4 +1,4 @@
-"""Private player notes with delayed, zero-LLM captain comments."""
+"""Private player notes with character-bound Gemini comments."""
 
 from datetime import datetime, timedelta
 import secrets
@@ -8,10 +8,11 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 
 from database import get_db
-from models.models import Character, User, UserNote
+from models.models import Character, Progress, User, UserNote
 from schemas.schemas import UserNoteCreateRequest, UserNoteDeleteResponse, UserNoteResponse
 from services.session_auth import require_current_user, require_same_user
 from services.user_timezone import local_day_utc_bounds
+from services.llm_service import llm_chat, load_persona
 
 router = APIRouter(prefix="/notes", tags=["notes"])
 
@@ -112,6 +113,34 @@ def _pick_comment(language: str, character_id: str, content: str) -> str:
     return secrets.choice(choices)
 
 
+async def _generate_comment(user: User, character: Character, content: str, affinity: int) -> str:
+    fallback = _pick_comment(user.language, character.id, content)
+    try:
+        reply = await llm_chat(
+            [
+                {
+                    "role": "system",
+                    "content": (
+                        f"{load_persona(character.id)}\n\n"
+                        "You are replying to a private note, not having a full chat. "
+                        f"Character id: {character.id}; name: {character.name}; region: {character.region_id}; "
+                        f"relationship affinity: {affinity}; user language: {user.language}. "
+                        "Reply directly to the note in the user's language in 1-3 short, natural sentences. "
+                        "Stay in this character's voice. Never mention or impersonate another captain. "
+                        "Do not add a heading, quotation marks, or metadata."
+                    ),
+                },
+                {"role": "user", "content": content},
+            ],
+            temperature=0.7,
+            max_tokens=120,
+        )
+        cleaned = " ".join(reply.strip().split())
+        return cleaned[:600] if cleaned else fallback
+    except Exception:
+        return fallback
+
+
 def _response(note: UserNote) -> UserNoteResponse:
     ready = datetime.now() >= note.comment_ready_at
     return UserNoteResponse(
@@ -127,7 +156,7 @@ def _response(note: UserNote) -> UserNoteResponse:
 
 
 @router.post("", response_model=UserNoteResponse)
-def create_note(
+async def create_note(
     req: UserNoteCreateRequest,
     current_user_id: str = Depends(require_current_user),
     db: Session = Depends(get_db),
@@ -152,17 +181,21 @@ def create_note(
     if count >= DAILY_NOTE_LIMIT:
         raise HTTPException(status_code=429, detail="오늘은 메모를 5개까지 남길 수 있어요.")
 
-    available_ids = [row[0] for row in db.query(Character.id).filter(Character.id.in_(CHARACTER_IDS)).all()]
-    if not available_ids:
-        raise HTTPException(status_code=503, detail="Captains are getting ready")
-    character_id = secrets.choice(available_ids)
+    if req.captain_id not in CHARACTER_IDS:
+        raise HTTPException(status_code=400, detail="Unknown captain")
+    character = db.query(Character).filter(Character.id == req.captain_id).first()
+    if not character:
+        raise HTTPException(status_code=503, detail="Captain is getting ready")
+    progress = db.query(Progress).filter(
+        Progress.user_id == user.id, Progress.character_id == character.id
+    ).first()
     delay_minutes = secrets.randbelow(111) + 10
     note = UserNote(
         id=str(uuid.uuid4()),
         user_id=req.user_id,
         content=content,
-        comment_character_id=character_id,
-        comment_content=_pick_comment(user.language, character_id, content),
+        comment_character_id=character.id,
+        comment_content=await _generate_comment(user, character, content, progress.affinity if progress else 0),
         comment_ready_at=datetime.now() + timedelta(minutes=delay_minutes),
         is_comment_read=False,
     )

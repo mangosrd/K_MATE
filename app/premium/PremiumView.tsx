@@ -10,7 +10,7 @@ import { useFreeCharSlots, useMembership } from "@/lib/auth/useAuthUser";
 import { useLanguage } from "@/components/LanguageContext";
 import {
   isPlayBillingAvailable, initPlayBilling, purchasePremium, purchaseCharacterPack,
-  type CharacterPackId,
+  type CharacterPackId, type LocalizedProduct,
 } from "@/lib/billing/playBilling";
 import styles from "./premium.module.css";
 
@@ -57,6 +57,7 @@ export default function PremiumView() {
     [freeSlots, verifiedUnlockedChars],
   );
   const [buyingCharId, setBuyingCharId] = useState<string | null>(null);
+  const [storePrices, setStorePrices] = useState<Record<string, LocalizedProduct>>({});
 
   useEffect(() => {
     fetch(`${BACKEND_URL}/billing/character-packs`)
@@ -87,6 +88,9 @@ export default function PremiumView() {
         setLoading(false);
         setBuyingCharId(null);
       },
+      onProductsUpdated: (products) => {
+        setStorePrices(Object.fromEntries(products.map((product) => [product.productId, product])));
+      },
     });
   }, [isNativeAndroid, router]);
 
@@ -94,6 +98,10 @@ export default function PremiumView() {
     // 이미 프리미엄인 계정이 또 결제창을 여는 걸 막는다 — 예전엔 이 체크가 없어서
     // 이미 구독 중인 계정이 버튼을 눌러도 아무 반응이 없는 것처럼 보였다.
     if (isAlreadyPremium) return;
+    if (isNativeAndroid && !storePrices.kmate_premium) {
+      setError(language === "ko" ? "현재 지역에서는 이 구독을 이용할 수 없어요." : "This subscription is unavailable in your current store.");
+      return;
+    }
 
     // 로그인 계정이든 게스트든(ensureGuestAccount로 발급된 계정) getEffectiveUserId()가
     // 실제로 백엔드에 존재하는 계정을 가리키므로, 구독 자체는 로그인 여부와 무관하게
@@ -132,6 +140,10 @@ export default function PremiumView() {
 
   const handleUnlockCharacter = async (pack: CharacterPack) => {
     if (unlockedChars.includes(pack.character_id)) return;
+    if (isNativeAndroid && !storePrices[pack.product_id]) {
+      setError(language === "ko" ? "현재 지역에서는 이 상품을 이용할 수 없어요." : "This product is unavailable in your current store.");
+      return;
+    }
 
     setError(null);
     setBuyingCharId(pack.character_id);
@@ -201,7 +213,7 @@ export default function PremiumView() {
           <div className={styles.priceTop}>
             <div>
               <p className={styles.priceLabel}>{t("monthlySub")}</p>
-              <p className={styles.priceAmount}>₩4,900<span className={styles.pricePer}>{t("perMonth")}</span></p>
+              <p className={styles.priceAmount}>{storePrices.kmate_premium?.localizedPrice ?? "—"}<span className={styles.pricePer}>{t("perMonth")}</span></p>
             </div>
             <div className={styles.priceBadge}>BEST</div>
           </div>
@@ -214,7 +226,7 @@ export default function PremiumView() {
           className={styles.ctaBtn}
           id="btn-subscribe"
           onClick={handleSubscribe}
-          disabled={loading || isAlreadyPremium}
+          disabled={loading || isAlreadyPremium || (isNativeAndroid && !storePrices.kmate_premium)}
         >
           {isAlreadyPremium ? t("alreadyPremiumBtn") : loading ? t("processingBtn") : t("startPremiumBtn")}
         </button>
@@ -249,9 +261,9 @@ export default function PremiumView() {
                       <button
                         className={`btn btn-secondary btn-sm ${styles.characterPackButton}`}
                         onClick={() => handleUnlockCharacter(pack)}
-                        disabled={buyingCharId === pack.character_id}
+                        disabled={buyingCharId === pack.character_id || (isNativeAndroid && !storePrices[pack.product_id])}
                       >
-                        {buyingCharId === pack.character_id ? t("processingBtn") : `₩${pack.price_krw.toLocaleString()}`}
+                        {buyingCharId === pack.character_id ? t("processingBtn") : (storePrices[pack.product_id]?.localizedPrice ?? "—")}
                       </button>
                     )}
                   </div>

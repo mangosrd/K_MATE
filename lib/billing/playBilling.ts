@@ -30,7 +30,7 @@ import { getAuthHeaders, getEffectiveUserId } from "@/lib/auth/store";
 
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
 
-export const PREMIUM_MONTHLY_PRODUCT_ID = "kmate_premium_monthly";
+export const PREMIUM_MONTHLY_PRODUCT_ID = "kmate_premium";
 
 // 백엔드 routers/billing.py의 COIN_PACKS와 반드시 동일하게 유지
 export const COIN_PACK_IDS = ["kmate_coins_small", "kmate_coins_medium", "kmate_coins_large"] as const;
@@ -51,12 +51,16 @@ interface PurchaseTransaction {
 }
 interface PurchaseOffer {
   order: () => Promise<unknown>;
+  pricingPhases?: { price: string; priceMicros: number; currency?: string }[];
 }
 interface PurchaseProduct {
   getOffer: (id?: string) => PurchaseOffer | undefined;
+  pricing?: { price: string; priceMicros: number; currency?: string };
+  offers?: PurchaseOffer[];
 }
 interface PurchaseWhen {
   approved: (cb: (transaction: PurchaseTransaction) => void) => PurchaseWhen;
+  productUpdated: (cb: (product: PurchaseProduct & { id: string }) => void) => PurchaseWhen;
 }
 interface PurchaseStore {
   register: (products: { id: string; type: string; platform: string }[]) => void;
@@ -80,6 +84,35 @@ interface PlayBillingCallbacks {
   onCoinsGranted: (totalCoins: number, coinsGranted: number) => void;
   onCharacterUnlocked: (characterId: string, freeCharSlots: string[]) => void;
   onError: (message: string) => void;
+  onProductsUpdated?: (products: LocalizedProduct[]) => void;
+}
+
+export interface LocalizedProduct {
+  productId: string;
+  localizedPrice: string;
+  currency?: string;
+  priceMicros?: number;
+}
+
+function localizedProduct(productId: string, product: PurchaseProduct): LocalizedProduct | null {
+  const pricing = product.pricing ?? product.offers?.[0]?.pricingPhases?.at(-1);
+  return pricing ? {
+    productId,
+    localizedPrice: pricing.price,
+    currency: pricing.currency,
+    priceMicros: pricing.priceMicros,
+  } : null;
+}
+
+function publishLocalizedProducts(store: PurchaseStore) {
+  const ids = [PREMIUM_MONTHLY_PRODUCT_ID, ...COIN_PACK_IDS, ...CHARACTER_PACK_IDS];
+  const products = ids
+    .map((id) => {
+      const product = store.get(id);
+      return product ? localizedProduct(id, product) : null;
+    })
+    .filter((item): item is LocalizedProduct => item !== null);
+  currentCallbacks?.onProductsUpdated?.(products);
 }
 
 let initialized = false;
@@ -158,12 +191,24 @@ export function initPlayBilling(callbacks: PlayBillingCallbacks) {
   store.when().approved((transaction) => {
     if (currentCallbacks) verifyOnBackend(transaction, currentCallbacks);
   });
+  store.when().productUpdated(() => publishLocalizedProducts(store));
 
   store.error((err) => {
     currentCallbacks?.onError(err?.message ?? "결제 처리 중 오류가 발생했습니다.");
   });
 
-  store.initialize(["android-playstore"]);
+  void store.initialize(["android-playstore"]).then(() => publishLocalizedProducts(store));
+}
+
+export function getLocalizedPlayProducts(): LocalizedProduct[] {
+  const store = getStore();
+  if (!store) return [];
+  return [PREMIUM_MONTHLY_PRODUCT_ID, ...COIN_PACK_IDS, ...CHARACTER_PACK_IDS]
+    .map((id) => {
+      const product = store.get(id);
+      return product ? localizedProduct(id, product) : null;
+    })
+    .filter((item): item is LocalizedProduct => item !== null);
 }
 
 /** 프리미엄 구독 결제 시작 */

@@ -7,14 +7,25 @@
 보여주고 바로 이 엔드포인트를 호출하는데, 나중에 실제 SDK를 붙이면 "보상 콜백이 온
 경우에만 이 엔드포인트를 호출"하도록 프론트만 바꾸면 되고 이 로직은 그대로 재사용된다.
 """
-from datetime import date
+from datetime import date, datetime, time, timedelta
 from sqlalchemy.orm import Session
-from models.models import User
+from models.models import AdRewardClaim, User
 from services.wallet import change_coins
 
 AD_COIN_REWARD = 5
-AD_DAILY_CAP = 100
-AD_MAX_WATCHES_PER_DAY = AD_DAILY_CAP // AD_COIN_REWARD  # 20
+AD_MAX_WATCHES_PER_DAY = 5
+AD_DAILY_CAP = AD_COIN_REWARD * AD_MAX_WATCHES_PER_DAY
+
+
+def _rewarded_today_count(db: Session, user_id: str) -> int:
+    start = datetime.combine(date.today(), time.min)
+    end = start + timedelta(days=1)
+    return db.query(AdRewardClaim.id).filter(
+        AdRewardClaim.user_id == user_id,
+        AdRewardClaim.status == "rewarded",
+        AdRewardClaim.rewarded_at >= start,
+        AdRewardClaim.rewarded_at < end,
+    ).count()
 
 
 def _reset_if_new_day(user: User) -> None:
@@ -26,12 +37,10 @@ def _reset_if_new_day(user: User) -> None:
 
 def get_ad_watches_remaining(db: Session, user: User) -> int:
     """오늘 남은 광고 시청 가능 횟수. 날짜가 바뀌었으면 그 자리에서 리셋하고 커밋한다."""
-    _reset_if_new_day(user)
-    db.commit()
-    return (AD_DAILY_CAP - user.ad_coins_today) // AD_COIN_REWARD
+    return max(0, AD_MAX_WATCHES_PER_DAY - _rewarded_today_count(db, user.id))
 
 
-def grant_ad_reward(db: Session, user_id: str) -> tuple[bool, int, int]:
+def grant_ad_reward(db: Session, user_id: str, reference_id: str | None = None) -> tuple[bool, int, int]:
     """광고 시청 보상을 지급한다. (성공 여부, 지급 후 오늘 남은 시청 가능 횟수, 지급 후 총 코인) 반환.
 
     with_for_update로 잠가서, 거의 동시에 두 번 눌러도(더블클릭 등) 하루 한도를
@@ -44,20 +53,23 @@ def grant_ad_reward(db: Session, user_id: str) -> tuple[bool, int, int]:
     if not user:
         raise ValueError("User not found")
 
-    _reset_if_new_day(user)
-
     economy = db.query(Economy).filter(Economy.user_id == user_id).with_for_update().first()
     if not economy:
         economy = Economy(id=str(uuid.uuid4()), user_id=user_id, coins=0)
         db.add(economy)
         db.flush()
 
-    if user.ad_coins_today + AD_COIN_REWARD > AD_DAILY_CAP:
+    rewarded_count = _rewarded_today_count(db, user_id)
+    if rewarded_count > AD_MAX_WATCHES_PER_DAY:
         db.commit()
-        return False, (AD_DAILY_CAP - user.ad_coins_today) // AD_COIN_REWARD, economy.coins
+        return False, 0, economy.coins
 
-    user.ad_coins_today += AD_COIN_REWARD
-    economy = change_coins(db, user_id, AD_COIN_REWARD, "ad_reward", reference_type="rewarded_ad")
+    user.ad_coins_date = date.today()
+    user.ad_coins_today = rewarded_count * AD_COIN_REWARD
+    economy = change_coins(
+        db, user_id, AD_COIN_REWARD, "ad_reward",
+        reference_type="rewarded_ad", reference_id=reference_id,
+    )
 
     db.commit()
-    return True, (AD_DAILY_CAP - user.ad_coins_today) // AD_COIN_REWARD, economy.coins
+    return True, max(0, AD_MAX_WATCHES_PER_DAY - rewarded_count), economy.coins
