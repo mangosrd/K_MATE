@@ -7,6 +7,7 @@ import { ensureGuestAccount } from "@/lib/auth/store";
 export default function SessionBootstrap({ children }: { children: React.ReactNode }) {
   const [ready, setReady] = useState(false);
   const [failed, setFailed] = useState(false);
+  const [minimumSplashElapsed, setMinimumSplashElapsed] = useState(false);
 
   const initialize = useCallback(async () => {
     setFailed(false);
@@ -21,7 +22,14 @@ export default function SessionBootstrap({ children }: { children: React.ReactNo
     void initialize();
   }, [initialize]);
 
-  if (!ready) {
+  useEffect(() => {
+    // Cached sessions can initialize in a single frame. Keep the launch screen
+    // visible just long enough to avoid an abrupt flash into the app.
+    const timer = window.setTimeout(() => setMinimumSplashElapsed(true), 700);
+    return () => window.clearTimeout(timer);
+  }, []);
+
+  if (!ready || (!failed && !minimumSplashElapsed)) {
     return (
       <main className="session-bootstrap" role="status" aria-live="polite">
         <div className="session-bootstrap__plane">✈</div>
@@ -40,5 +48,5 @@ export default function SessionBootstrap({ children }: { children: React.ReactNo
     );
   }
 
-  return children;
+  return <div className="session-bootstrap__ready">{children}</div>;
 }

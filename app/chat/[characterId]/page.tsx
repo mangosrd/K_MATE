@@ -218,6 +218,7 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
   // keeps the localized opening in sync without an extra paint.
   const [isListening, setIsListening] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const sendInFlightRef = useRef(false);
 
   // 이전 대화 이어서 하기 / 새로 시작하기 선택
   const handleResume = () => {
@@ -243,7 +244,9 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
 
 
   const sendMessage = async () => {
-    if (!input.trim() || isLoading) return;
+    if (!input.trim() || isLoading || sendInFlightRef.current) return;
+
+    sendInFlightRef.current = true;
 
     const userMessage = input.trim();
     setInput("");
@@ -253,6 +256,9 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
       { role: "user", content: userMessage },
     ];
     setMessages(newMessages);
+    // Persist synchronously so a quick app background/navigation cannot leave
+    // the resume record behind the UI state.
+    saveChatHistory(characterId, newMessages);
     setIsLoading(true);
     setCallbackMemory(null);
 
@@ -279,10 +285,15 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
 
       const data: ChatResponse = await res.json();
 
-      setMessages([
+      const completedMessages: ChatMessage[] = [
         ...newMessages,
         { role: "assistant", content: data.reply },
-      ]);
+      ];
+      setMessages(completedMessages);
+      // Do not rely only on the post-render effect: mobile WebViews may pause
+      // before it runs, making a reply that was visible appear to disappear on
+      // the next visit.
+      saveChatHistory(characterId, completedMessages);
       setFreeRemaining(data.free_messages_remaining ?? null);
 
       if (data.coins_spent) {
@@ -295,11 +306,14 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
       }
 
     } catch {
-      setMessages([
+      const failedMessages: ChatMessage[] = [
         ...newMessages,
         { role: "assistant", content: CHAT_RETRY_MESSAGE[language] },
-      ]);
+      ];
+      setMessages(failedMessages);
+      saveChatHistory(characterId, failedMessages);
     } finally {
+      sendInFlightRef.current = false;
       setIsLoading(false);
     }
   };

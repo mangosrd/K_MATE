@@ -754,11 +754,28 @@ html, body {
   font-weight: 700;
 }
 
+.session-bootstrap__ready {
+  min-height: 100dvh;
+  animation: session-content-enter 280ms cubic-bezier(0.2, 0.75, 0.25, 1) both;
+}
+
 @keyframes session-plane {
   from { transform: translate(-10px, 5px) rotate(-4deg); }
   to { transform: translate(10px, -5px) rotate(4deg); }
 }
 
+@keyframes session-content-enter {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .session-bootstrap__plane { animation: none; }
+  .session-bootstrap__ready { animation: none; }
 }

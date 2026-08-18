@@ -27,6 +27,12 @@ export function getChatHistory(characterId: string): ChatMessage[] | null {
 
 export function saveChatHistory(characterId: string, messages: ChatMessage[]) {
   if (typeof window === "undefined") return;
+  // A character greeting by itself is not a conversation. Keeping it in
+  // storage creates a misleading resume prompt on the next visit.
+  if (!messages.some((message) => message.role === "user")) {
+    localStorage.removeItem(key(characterId));
+    return;
+  }
   localStorage.setItem(key(characterId), JSON.stringify(messages));
 }
 
