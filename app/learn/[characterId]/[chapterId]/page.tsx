@@ -533,6 +533,7 @@ function LearningSession({
   // 새 챕터인데 완료 화면이나 엉뚱한 진행 상태가 뜬다. chapterId가 바뀔 때마다 세션
   // 진행 상태를 명시적으로 초기화한다.
   const totalExercises = exercises.length;
+  const totalGradedExercises = exercises.filter((exercise) => exercise.type !== "flashcard").length;
   const currentEx = exercises[currentIdx];
   const pct = Math.round((currentIdx / totalExercises) * 100);
 
@@ -1114,7 +1115,7 @@ function LearningSession({
               <span className={styles.rStatLabel}>{t("wrongLabel")}</span>
             </div>
             <div className={styles.resultStat}>
-              <span className={styles.rStatNum}>{totalExercises}</span>
+              <span className={styles.rStatNum}>{totalGradedExercises}</span>
               <span className={styles.rStatLabel}>{t("questionsLabel")}</span>
             </div>
           </div>

@@ -557,7 +557,8 @@
 
 .sessionHeaderTop {
   display: grid;
-  grid-template-columns: 74px minmax(0, 1fr) 74px;
+  grid-template-columns: 48px minmax(0, 1fr) max-content;
+  column-gap: 10px;
   align-items: center;
   min-height: 54px;
 }
@@ -598,7 +599,9 @@
 }
 
 .headerHintBtn {
-  min-width: 74px;
+  width: max-content;
+  max-width: 104px;
+  min-width: 82px;
   height: 40px;
   display: inline-flex;
   align-items: center;
@@ -612,6 +615,8 @@
   color: #071f45;
   font: inherit;
   font-size: 13px;
+  line-height: 1.15;
+  text-align: center;
   font-weight: 900;
   cursor: pointer;
   box-shadow: 0 2px 8px rgba(8, 43, 96, .04);
@@ -1454,7 +1459,8 @@
   }
 
   .sessionHeaderTop {
-    grid-template-columns: 48px minmax(0, 1fr) 72px;
+    grid-template-columns: 40px minmax(0, 1fr) max-content;
+    column-gap: 7px;
     min-height: 42px;
   }
 
@@ -1470,12 +1476,15 @@
   .sessionCount { font-size: 12px; }
 
   .headerHintBtn {
-    min-width: 68px;
+    width: 88px;
+    min-width: 0;
+    max-width: 88px;
     height: 36px;
-    padding: 0 9px;
+    padding: 0 7px;
     gap: 3px;
-    font-size: 12px;
-    white-space: nowrap;
+    font-size: 11px;
+    line-height: 1.1;
+    white-space: normal;
   }
 
   .sessionBar { height: 5px; }
@@ -1583,4 +1592,25 @@
     border-radius: 16px;
     font-size: 17px;
   }
+}
+
+/* Decorative aircraft must never overlap lesson copy. The travel theme is
+   already carried by the section icon and does not need an in-card overlay. */
+.flashCard::before,
+.mcQuestion::after {
+  content: none;
+  display: none;
+}
+
+.hintCard {
+  margin: 0;
+  padding: 12px 14px;
+  align-items: flex-start;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+
+.hintCard p {
+  min-width: 0;
+  margin: 0;
 }
