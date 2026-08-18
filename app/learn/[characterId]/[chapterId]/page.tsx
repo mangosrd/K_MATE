@@ -1284,7 +1284,7 @@ function LearningSession({
 
           {currentEx.type === "sentence_builder" && (
             <>
-              <div className={styles.mcQuestion}>
+              <div className={`${styles.mcQuestion} ${styles.sentenceBuilderQuestion}`}>
                 <h2 className={styles.mcWord}>{tr(currentEx.questionText)}</h2>
                 {currentEx.reading && <p className={styles.mcReading}>[{currentEx.reading}]</p>}
               </div>

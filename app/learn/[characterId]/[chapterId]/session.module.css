@@ -1442,3 +1442,145 @@
 @media (prefers-reduced-motion: reduce) {
   .confetti { display: none; }
 }
+
+/* Mobile lesson density ---------------------------------------------------
+   Keep every exercise inside the same 9:16 system. These rules intentionally
+   live last because older exercise styles above otherwise override the shared
+   reference layout. */
+@media (max-width: 480px) {
+  .sessionHeader {
+    gap: 9px;
+    padding: max(10px, env(safe-area-inset-top)) 16px 12px;
+  }
+
+  .sessionHeaderTop {
+    grid-template-columns: 48px minmax(0, 1fr) 72px;
+    min-height: 42px;
+  }
+
+  .closeBtn {
+    width: 36px;
+    height: 36px;
+    font-size: 31px;
+    line-height: 1;
+  }
+
+  .sessionHeading { gap: 0; }
+  .sessionHeading strong { font-size: 18px; line-height: 1.25; }
+  .sessionCount { font-size: 12px; }
+
+  .headerHintBtn {
+    min-width: 68px;
+    height: 36px;
+    padding: 0 9px;
+    gap: 3px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  .sessionBar { height: 5px; }
+
+  .exerciseArea {
+    padding: 14px 16px max(18px, env(safe-area-inset-bottom));
+  }
+
+  .cardWrap {
+    min-height: calc(100dvh - 102px);
+    gap: 12px;
+  }
+
+  .cardHeaderRow {
+    min-height: 30px;
+    flex-wrap: nowrap;
+    gap: 8px;
+  }
+
+  .exType {
+    min-width: 0;
+    font-size: clamp(13px, 3.9vw, 15px);
+    line-height: 1.3;
+    overflow-wrap: anywhere;
+  }
+
+  .exType::before {
+    width: 28px;
+    height: 28px;
+    margin-right: 7px;
+    font-size: 12px;
+  }
+
+  .headerBtnGroup { flex: 0 0 auto; }
+  .soundToggleBtn { width: 32px; height: 32px; }
+
+  .flashCard,
+  .mcQuestion {
+    min-height: 190px;
+    padding: 22px 18px;
+    border-radius: 20px;
+  }
+
+  .flashCard::before,
+  .mcQuestion::after {
+    top: 16px;
+    right: 18px;
+    font-size: 28px;
+  }
+
+  .flashWord,
+  .mcWord {
+    max-width: 100%;
+    font-size: clamp(28px, 8.5vw, 36px);
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+  .sentenceBuilderQuestion .mcWord {
+    font-size: clamp(24px, 7.2vw, 31px);
+    line-height: 1.25;
+  }
+
+  .flashReading,
+  .mcReading {
+    font-size: 12px;
+    line-height: 1.45;
+    overflow-wrap: anywhere;
+  }
+
+  .mcOptions { gap: 9px; }
+  .mcOption {
+    min-height: 52px;
+    padding: 11px 14px;
+    border-radius: 14px;
+    font-size: 15px;
+  }
+
+  .trueFalseQuestion {
+    min-height: 230px;
+    gap: 7px;
+  }
+
+  .statementDivider { margin: 10px auto 5px; }
+  .trueFalseStatement { font-size: 15px; line-height: 1.5; }
+  .trueFalseInstruction { font-size: 12px; }
+  .trueFalseOptions { gap: 10px; }
+  .trueFalseOption { min-height: 64px; font-size: 28px; }
+
+  .sentenceAnswer,
+  .tokenBank {
+    min-height: 56px;
+    gap: 7px;
+    padding: 10px;
+    border-radius: 15px;
+  }
+
+  .tokenBank { margin: 0; }
+  .sentenceAnswer button,
+  .tokenBank button { padding: 9px 11px; }
+
+  .cardWrap :global(.btn.btn-primary.btn-lg) {
+    min-height: 56px;
+    border-radius: 16px;
+    font-size: 17px;
+  }
+}
