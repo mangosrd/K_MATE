@@ -109,6 +109,9 @@ const REGION_COPY: Record<Language, Record<string, LocalRegionCopy>> = {
   },
 };
 
+/* Legacy inline captain profiles are retained here only as translation history.
+   Runtime copy now comes from lib/captainProfiles.ts. Remove this commented block
+   after the localization migration is confirmed in every supported language.
 const CAPTAIN_PROFILE: Record<Language, Record<string, { age: string; personality: string }>> = {
   ko: { kyuhyun: { age: "34세", personality: "능글맞고 다정한 베테랑" }, haneul: { age: "연하", personality: "다정한 원칙주의자" }, sunwoo: { age: "동갑", personality: "장난기 많은 소꿉친구" }, sangwoo: { age: "성인", personality: "FM 관제 기장" }, yongwoo: { age: "성인", personality: "츤데레 보호자" } },
   en: { kyuhyun: { age: "34", personality: "Mature, playful veteran" }, haneul: { age: "Younger", personality: "Warm rule-keeper" }, sunwoo: { age: "Same age", personality: "Playful childhood friend" }, sangwoo: { age: "Adult", personality: "Precise air-traffic captain" }, yongwoo: { age: "Adult", personality: "Caring tsundere" } },
@@ -117,7 +120,7 @@ const CAPTAIN_PROFILE: Record<Language, Record<string, { age: string; personalit
   ja: { kyuhyun: { age: "34歳", personality: "大人の余裕があるベテラン" }, haneul: { age: "年下", personality: "優しいルール重視派" }, sunwoo: { age: "同い年", personality: "いたずら好きな幼なじみ" }, sangwoo: { age: "成人", personality: "きっちりした管制キャプテン" }, yongwoo: { age: "成人", personality: "世話焼きなツンデレ" } },
   "zh-TW": { kyuhyun: { age: "34歲", personality: "成熟又風趣的資深機長" }, haneul: { age: "年下", personality: "溫柔的原則主義者" }, sunwoo: { age: "同齡", personality: "愛開玩笑的青梅竹馬" }, sangwoo: { age: "成年", personality: "嚴謹的管制機長" }, yongwoo: { age: "成年", personality: "嘴硬心軟的守護者" } },
   th: { kyuhyun: { age: "34 ปี", personality: "กัปตันมากประสบการณ์ อารมณ์ดี" }, haneul: { age: "อายุน้อยกว่า", personality: "อบอุ่นและยึดหลักการ" }, sunwoo: { age: "วัยเดียวกัน", personality: "เพื่อนวัยเด็กขี้เล่น" }, sangwoo: { age: "ผู้ใหญ่", personality: "กัปตันควบคุมการบินที่เคร่งครัด" }, yongwoo: { age: "ผู้ใหญ่", personality: "ซึนเดเระผู้คอยดูแล" } },
-};
+}; */
 
 export default function RegionView({ region }: { region: Region }) {
   const { t, language } = useLanguage();

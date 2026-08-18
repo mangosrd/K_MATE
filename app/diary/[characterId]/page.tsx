@@ -60,7 +60,6 @@ export default function CharDiaryPage({ params }: { params: Promise<{ characterI
       .catch(() => {
         setDiaries(local);
       });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [characterId]);
 
   const tabLabels: Record<Tab, string> = {
