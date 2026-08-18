@@ -13,6 +13,7 @@ import {
   type CharacterPackId, type LocalizedProduct,
 } from "@/lib/billing/playBilling";
 import styles from "./premium.module.css";
+import { FREE_BETA_MODE } from "@/lib/commerce/releaseMode";
 
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
 const PERKS = [
@@ -162,6 +163,36 @@ export default function PremiumView() {
     setError("결제는 Android 앱의 Google Play에서만 이용할 수 있어요.");
     setBuyingCharId(null);
   };
+
+  if (FREE_BETA_MODE) {
+    return (
+      <main className={styles.page}>
+        <div className={styles.topBg} aria-hidden="true" />
+        <div className={styles.inner}>
+          <div className={styles.badge}><span>✈️</span><span>K-MATE BETA</span></div>
+          <h1 className={styles.title}>지금은 무료 베타<br />모든 여행을 체험하세요</h1>
+          <p className={styles.subtitle}>결제 없이 모든 메이트와 학습 콘텐츠를 이용할 수 있어요.</p>
+          <div className={styles.charRow}>
+            {premiumChars.map((char) => (
+              <div key={char.id} className={styles.charChip}>
+                <span className={styles.charEmoji}>
+                  <Image src={`/characters/${char.id}.png`} alt={char.name} width={48} height={48} className={styles.charEmojiImg} />
+                </span>
+                <span className={styles.charName}>{char.name}</span>
+              </div>
+            ))}
+          </div>
+          <div className={styles.priceCard}>
+            <p className={styles.priceLabel}>비공개 테스트 혜택</p>
+            <p className={styles.priceSub}>정식 유료 서비스 전환 전까지 구매 기능 없이 전체 콘텐츠가 열려 있어요.</p>
+          </div>
+          <Link href="/map" className={styles.ctaBtn} style={{ display: "block", textAlign: "center", textDecoration: "none" }}>
+            무료 베타 시작하기
+          </Link>
+        </div>
+      </main>
+    );
+  }
 
   return (
     <main className={styles.page}>

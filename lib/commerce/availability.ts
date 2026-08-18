@@ -1,6 +1,7 @@
 import { Capacitor } from "@capacitor/core";
 import { isPlayBillingAvailable } from "@/lib/billing/playBilling";
 import { isRewardedAdAvailable } from "@/lib/ads/rewardedAd";
+import { FREE_BETA_MODE } from "@/lib/commerce/releaseMode";
 
 export interface CommerceAvailability {
   locale: string;
@@ -19,6 +20,6 @@ export function getCommerceAvailability(): CommerceAvailability {
     locale,
     paymentAvailable: isPlayBillingAvailable(),
     rewardAdAvailable: isRewardedAdAvailable(),
-    storeAvailable: nativeAndroid,
+    storeAvailable: nativeAndroid && !FREE_BETA_MODE,
   };
 }

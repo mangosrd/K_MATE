@@ -2,6 +2,7 @@
 // K-MATE Mock DB v2 — Supabase 연결 전 임시 데이터
 // ============================================================
 import type { Character, Region, Chapter } from "@/types/database";
+import { FREE_BETA_MODE } from "@/lib/commerce/releaseMode";
 
 // ── 사용자 ───────────────────────────────────────────────
 // ── 캐릭터 ──────────────────────────────────────────────
@@ -416,6 +417,7 @@ export function getChaptersForCharacter(characterId: string) {
 export function canAccessCharacter(characterId: string, membership: string, freeSlots: string[]) {
   const char = getCharacterById(characterId);
   if (!char) return false;
+  if (FREE_BETA_MODE) return true;
   if (membership === "premium") return true;
   if (!char.requires_premium) return true;
   return freeSlots.includes(characterId);

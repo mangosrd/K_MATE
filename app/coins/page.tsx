@@ -10,6 +10,7 @@ import {
 } from "@/lib/billing/playBilling";
 import styles from "./coins.module.css";
 import { admobRewardAdService } from "@/lib/ads/rewardedAd";
+import { FREE_BETA_MODE } from "@/lib/commerce/releaseMode";
 
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
 
@@ -181,7 +182,7 @@ export default function CoinsPage() {
           </section>
           {adMessage && <p className={styles.rewardMessage}>{adMessage}</p>}
 
-          <div className={styles.packList}>
+          {!FREE_BETA_MODE && <div className={styles.packList}>
             {packs.map((pack) => (
               <div key={pack.product_id} className={styles.packCard}>
                 <div className={styles.packLeft}>
@@ -202,9 +203,11 @@ export default function CoinsPage() {
                 </button>
               </div>
             ))}
-          </div>
+          </div>}
 
-          <p className={styles.notice}>{t("coinShopNotice")}</p>
+          <p className={styles.notice}>
+            {FREE_BETA_MODE ? "무료 베타에서는 코인 구매 없이 보상형 광고만 제공돼요." : t("coinShopNotice")}
+          </p>
         </div>
       </div>
       <BottomNav />

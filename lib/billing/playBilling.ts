@@ -26,6 +26,7 @@
 // 결제 플로우를 직접 확인해야 한다.
 
 import { Capacitor } from "@capacitor/core";
+import { PAYMENTS_ENABLED } from "@/lib/commerce/releaseMode";
 import { getAuthHeaders, getEffectiveUserId } from "@/lib/auth/store";
 
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
@@ -71,6 +72,7 @@ interface PurchaseStore {
 }
 
 export function isPlayBillingAvailable(): boolean {
+  if (!PAYMENTS_ENABLED) return false;
   return Capacitor.isNativePlatform() && Capacitor.getPlatform() === "android";
 }
 

@@ -7,10 +7,15 @@
 잠금 화면과 무관하게 콘텐츠가 그대로 생성/저장됐음). 여기서 서버 쪽에서도 똑같은
 규칙으로 한 번 더 검증한다.
 """
+import os
+
 from fastapi import HTTPException
 from sqlalchemy.orm import object_session
 from models.models import Entitlement, User, Character
 from services.membership import expire_premium_if_needed
+
+
+FREE_BETA_MODE = os.getenv("K_MATE_FREE_BETA_MODE", "true").lower() in {"1", "true", "yes"}
 
 
 def check_character_access(user: User, character: Character) -> None:
@@ -18,6 +23,8 @@ def check_character_access(user: User, character: Character) -> None:
     접근하려 하면 403을 던진다. requires_premium이 아닌 캐릭터(규현/하늘 등)는
     항상 통과한다.
     """
+    if FREE_BETA_MODE:
+        return
     session = object_session(user)
     if session:
         expire_premium_if_needed(session, user)
