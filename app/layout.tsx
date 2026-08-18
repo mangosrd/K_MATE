@@ -6,6 +6,7 @@ import { ThemeProvider } from "@/components/ThemeContext";
 import PushNotificationSetup from "@/components/PushNotificationSetup";
 import TimezoneSync from "@/components/TimezoneSync";
 import SessionBootstrap from "@/components/SessionBootstrap";
+import PwaSetup from "@/components/PwaSetup";
 
 const dunggeunmiso = localFont({
   src: [
@@ -30,6 +31,20 @@ export const metadata: Metadata = {
   description:
     "Travel virtual Korea with your AI mate, learn Korean naturally through conversation, and collect memories together.",
   keywords: ["Korean learning", "K-culture", "AI companion", "language app", "travel Korea"],
+  applicationName: "K-MATE",
+  manifest: "/manifest.webmanifest",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "K-MATE",
+  },
+  icons: {
+    icon: [
+      { url: "/icons/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icons/icon-512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: [{ url: "/icons/icon-192.png", sizes: "192x192", type: "image/png" }],
+  },
 };
 
 export const viewport: Viewport = {
@@ -53,6 +68,7 @@ export default function RootLayout({
               <div className="app-shell">{children}</div>
               <PushNotificationSetup />
               <TimezoneSync />
+              <PwaSetup />
             </LanguageProvider>
           </ThemeProvider>
         </SessionBootstrap>
