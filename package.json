@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "build:onestore": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/build-onestore.ps1"
   },
   "dependencies": {
     "@capacitor-community/admob": "^8.1.0",

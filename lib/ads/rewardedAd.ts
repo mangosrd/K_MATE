@@ -1,12 +1,17 @@
 import { Capacitor } from "@capacitor/core";
 import { AdMob, RewardAdPluginEvents } from "@capacitor-community/admob";
+import { isOneStoreBuild } from "@/lib/distribution/channel";
 
 const TEST_REWARDED_ID = "ca-app-pub-3940256099942544/5224354917";
 let initialized = false;
 let showing = false;
 
 export function isRewardedAdAvailable(): boolean {
-  return Capacitor.isNativePlatform() && Capacitor.getPlatform() === "android";
+  return (
+    !isOneStoreBuild() &&
+    Capacitor.isNativePlatform() &&
+    Capacitor.getPlatform() === "android"
+  );
 }
 
 export interface RewardAdService {

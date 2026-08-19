@@ -19,6 +19,7 @@
 
 # production
 /build
+/dist/onestore/*.apk
 
 # misc
 .DS_Store
