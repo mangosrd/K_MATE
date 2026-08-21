@@ -527,7 +527,8 @@ class LetterSendResponse(BaseModel):
 class UserNoteCreateRequest(BaseModel):
     user_id: str
     content: str
-    captain_id: str
+    # Optional only for backward compatibility. The server selects the responder.
+    captain_id: Optional[str] = None
 
 
 class UserNoteResponse(BaseModel):
