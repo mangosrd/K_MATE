@@ -535,7 +535,7 @@ function LearningSession({
   const totalExercises = exercises.length;
   const totalGradedExercises = exercises.filter((exercise) => exercise.type !== "flashcard").length;
   const currentEx = exercises[currentIdx];
-  const pct = Math.round((currentIdx / totalExercises) * 100);
+  const pct = totalExercises > 0 ? Math.round(((currentIdx + 1) / totalExercises) * 100) : 0;
 
   // 챕터 순서 잠금(이전 챕터 완료 여부) 확인용 — 목록 페이지에서만 막던 걸 콘텐츠 페이지에서도
   // 다시 한번 검증한다. 목록의 Link가 href="#"로 막아주긴 하지만, URL을 직접 입력하면
@@ -1275,6 +1275,11 @@ function LearningSession({
                   <p className={styles.flashExampleEn}>{tr((currentEx.originalData as Word).example_en)}</p>
                 </div>
               </button>
+              {!flipped && (
+                <button className="btn btn-primary btn-lg" type="button" disabled aria-disabled="true">
+                  {t("nextQuestion")}
+                </button>
+              )}
               {flipped && (
                 <button className="btn btn-primary btn-lg" onClick={handleFlashcardNext} id="btn-next-flash">
                   {t("nextQuestion")}

@@ -310,6 +310,8 @@ export default function ChatSelectPage() {
           </div>
 
           <section className={styles.videoStage} aria-label={t("selectCaptain")}>
+            {/* Keep the branded loading panel until playback starts. `canplay`
+                can fire before the browser paints its first decoded frame. */}
             <video
               ref={lobbyVideoRef}
               className={`${styles.lobbyVideo} ${videoState === "ready" ? styles.lobbyVideoReady : ""}`}
@@ -318,7 +320,7 @@ export default function ChatSelectPage() {
               muted
               playsInline
               preload="metadata"
-              onCanPlay={() => setVideoState("ready")}
+              onPlaying={() => setVideoState("ready")}
               onError={() => setVideoState("failed")}
               onEnded={(event) => restartLobbyVideo(event.currentTarget)}
               aria-hidden="true"

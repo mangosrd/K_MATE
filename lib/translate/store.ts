@@ -35,6 +35,34 @@ function cacheKey(item: TranslatableItem, lang: string): string {
 // gloss too. English remains the source language and does not need a request.
 const TRANSLATABLE_LANGS = new Set(["ko", "ru", "zh", "ja", "zh-TW", "th"]);
 
+// Keep client requests inside the backend's validation limits. A full chapter can
+// easily contain more than 20 text/context pairs, so sending every cache miss in
+// one request made non-English lessons silently fall back to English with HTTP 413.
+const MAX_TRANSLATION_ITEMS_PER_REQUEST = 20;
+const MAX_TRANSLATION_CHARS_PER_REQUEST = 5000;
+
+function translationChunks<T extends { item: TranslatableItem }>(items: T[]): T[][] {
+  const chunks: T[][] = [];
+  let current: T[] = [];
+  let currentChars = 0;
+
+  for (const entry of items) {
+    const chars = entry.item.text.length + (entry.item.contextKo?.length ?? 0);
+    if (
+      current.length > 0 &&
+      (current.length >= MAX_TRANSLATION_ITEMS_PER_REQUEST || currentChars + chars > MAX_TRANSLATION_CHARS_PER_REQUEST)
+    ) {
+      chunks.push(current);
+      current = [];
+      currentChars = 0;
+    }
+    current.push(entry);
+    currentChars += chars;
+  }
+  if (current.length > 0) chunks.push(current);
+  return chunks;
+}
+
 export async function translateBatch(items: TranslatableItem[], targetLang: string): Promise<string[]> {
   if ((!TRANSLATABLE_LANGS.has(targetLang) && !items.some((item) => item.force)) || typeof window === "undefined") {
     return items.map((i) => i.text);
@@ -58,17 +86,18 @@ export async function translateBatch(items: TranslatableItem[], targetLang: stri
 
   if (misses.length > 0) {
     try {
-      const res = await fetch(`${BACKEND_URL}/translate`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json", ...getAuthHeaders() },
-        body: JSON.stringify({
-          items: misses.map((m) => ({ text: m.item.text, context_ko: m.item.contextKo ?? null })),
-          target_lang: targetLang,
-        }),
-      });
-      if (res.ok) {
+      for (const chunk of translationChunks(misses)) {
+        const res = await fetch(`${BACKEND_URL}/translate`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json", ...getAuthHeaders() },
+          body: JSON.stringify({
+            items: chunk.map((m) => ({ text: m.item.text, context_ko: m.item.contextKo ?? null })),
+            target_lang: targetLang,
+          }),
+        });
+        if (!res.ok) continue;
         const data = await res.json();
-        misses.forEach((m, i) => {
+        chunk.forEach((m, i) => {
           const translated: string = data.translations?.[i] ?? m.item.text;
           results[m.idx] = translated;
           localStorage.setItem(cacheKey(m.item, targetLang), translated);

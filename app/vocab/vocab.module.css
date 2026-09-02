@@ -36,7 +36,10 @@
 /* ── 지역 탭 (가로 스크롤) ──────────────────────────────── */
 .regionTabs {
   display: flex; gap: var(--space-sm); overflow-x: auto;
-  padding-bottom: 4px; scrollbar-width: none;
+  padding: 0 8px 4px 0; scrollbar-width: none;
+  scroll-padding-inline: 0 16px;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: x proximity;
   -ms-overflow-style: none;
 }
 .regionTabs::-webkit-scrollbar { display: none; }
@@ -52,6 +55,7 @@
   transition: all var(--transition-fast);
   min-width: 72px;
   outline: none;
+  scroll-snap-align: start;
 }
 .regionTab:hover { border-color: var(--blue-mid); background: var(--blue-light); }
 .regionTabActive {
