@@ -200,7 +200,14 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
     () => Boolean(getChatHistory(characterId)?.some((message) => message.role === "user")),
     () => false,
   );
-  const resumePending = hasSavedConversation && resumeResolvedFor !== characterId;
+  const hasCurrentConversation = messages.some((message) => message.role === "user");
+  // Only offer to resume history when entering an otherwise fresh room. The
+  // first message of a brand-new conversation is saved immediately; without
+  // this guard that save made hasSavedConversation turn true during the chat
+  // and opened the resume modal over the conversation in progress.
+  const resumePending = hasSavedConversation
+    && resumeResolvedFor !== characterId
+    && !hasCurrentConversation;
   const visibleMessages = useMemo(
     () => messages.some((message) => message.role === "user")
       ? messages
