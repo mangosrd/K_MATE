@@ -343,9 +343,9 @@ export default function ChatSelectPage() {
               if (!char) return null;
 
               const canAccess = canAccessCharacter(char.id, membership, freeSlots);
-              // Open a free captain's room first; locked content still routes
-              // to the premium screen at the actual access point.
-              const href = canAccess ? `/captain/${char.id}` : "/premium";
+              // Keep captain details and actions in the shared region screen.
+              // Locked captains remain visible there with clear lock states.
+              const href = `/region/${char.region_id}`;
 
               return (
                 <Link
@@ -366,7 +366,7 @@ export default function ChatSelectPage() {
             })}
           </section>
 
-          <p className={styles.tapHint}>기장님을 탭하면 바로 대화를 시작할 수 있어요.</p>
+          <p className={styles.tapHint}>기장님을 탭해 학습·대화·일기·이야기를 선택해 보세요.</p>
 
           <MusicPlayer />
         </main>

@@ -2,9 +2,36 @@
 .passportCover {
   position: relative;
   background: linear-gradient(160deg, var(--blue-dark) 0%, var(--blue) 50%, #1a3a6e 100%);
-  padding: 14px var(--space-md) 0;
+  padding: 12px var(--space-lg) 0;
   overflow: hidden;
-  min-height: 160px;
+  min-height: 220px;
+  background-position: center;
+  background-size: cover;
+}
+.passportCover[data-region="seoul"] {
+  background-image:
+    linear-gradient(90deg, rgba(2,24,65,.9) 0%, rgba(4,45,105,.58) 58%, rgba(3,28,70,.34) 100%),
+    url("/regions/seoul-night-v1.png");
+}
+.passportCover[data-region="jeonju"] {
+  background-image:
+    linear-gradient(90deg, rgba(2,24,65,.93) 0%, rgba(5,43,91,.62) 58%, rgba(3,25,60,.25) 100%),
+    url("/regions/jeonju-night-v1.png");
+}
+.passportCover[data-region="busan"] {
+  background-image:
+    linear-gradient(90deg, rgba(2,24,65,.92) 0%, rgba(3,42,91,.58) 58%, rgba(1,29,66,.2) 100%),
+    url("/regions/busan-night-v1.png");
+}
+.passportCover[data-region="chungcheong"] {
+  background-image:
+    linear-gradient(90deg, rgba(2,24,65,.93) 0%, rgba(5,39,79,.6) 58%, rgba(3,29,59,.22) 100%),
+    url("/regions/chungcheong-night-v1.png");
+}
+.passportCover[data-region="jeju"] {
+  background-image:
+    linear-gradient(90deg, rgba(2,24,65,.93) 0%, rgba(2,42,86,.57) 58%, rgba(3,31,69,.18) 100%),
+    url("/regions/jeju-night-v1.png");
 }
 
 /* 여권 배경 무늬 (원형 패턴) */
@@ -19,36 +46,43 @@
     radial-gradient(circle at 60% 80%, #fff 1px, transparent 1px);
   background-size: 30px 30px, 40px 40px, 25px 25px;
 }
+.passportBg::after {
+  content: "✈";
+  position: absolute; right: 18%; top: 30px;
+  color: rgba(255,255,255,.18); font-size: 38px;
+  transform: rotate(-12deg);
+}
 
 .backBtn {
   font-size: 30px; color: rgba(255,255,255,0.8);
   line-height: 1; display: inline-block;
-  margin-bottom: var(--space-sm);
+  margin-bottom: 6px;
 }
 .backBtn:hover { color: #fff; }
 
 .passportHeader {
   display: flex; align-items: center; gap: var(--space-md);
-  padding-bottom: var(--space-md);
+  padding-top: 4px;
+  padding-bottom: 20px;
 }
 
 .passportEmblem {
-  width: 64px; height: 64px;
+  width: 88px; height: 88px;
   border-radius: 50%;
   border: 2px solid rgba(255,255,255,0.4);
   background: rgba(255,255,255,0.1);
   display: flex; align-items: center; justify-content: center;
   flex-shrink: 0;
 }
-.passportEmoji { font-size: 32px; }
+.passportEmoji { font-size: 42px; }
 
 .passportInfo { flex: 1; min-width: 0; }
 .passportCountry {
-  font-size: 9px; font-weight: 800; letter-spacing: 0.15em;
+  font-size: 11px; font-weight: 800; letter-spacing: 0.15em;
   color: rgba(255,255,255,0.55); margin-bottom: 3px;
 }
-.passportRegion   { font-size: 22px; font-weight: 900; color: #fff; letter-spacing: -0.01em; line-height: 1.2; overflow-wrap: anywhere; }
-.passportRegionEn { font-size: 12px; color: rgba(255,255,255,0.65); font-weight: 500; margin-top: 2px; overflow-wrap: anywhere; }
+.passportRegion   { font-size: 34px; font-weight: 900; color: #fff; letter-spacing: -0.01em; line-height: 1.2; overflow-wrap: anywhere; }
+.passportRegionEn { font-size: 15px; color: rgba(255,255,255,0.75); font-weight: 600; margin-top: 4px; overflow-wrap: anywhere; }
 
 /* 여권 하단 OCR 라인 */
 .passportFooter {
@@ -64,47 +98,49 @@
 
 /* ── 내부 ───────────────────────────────────────────────── */
 .inner {
-  padding: var(--space-md);
+  padding: 20px var(--space-md);
   display: flex; flex-direction: column; gap: var(--space-lg);
 }
 
 /* 지역 설명 */
 .regionDesc {
-  padding: var(--space-md);
+  padding: 20px;
   background: var(--blue-light);
   border-left: 4px solid var(--blue);
   border-radius: 0 var(--radius-md) var(--radius-md) 0;
 }
-.descKo { font-size: 14px; font-weight: 600; color: var(--blue); margin-bottom: 3px; }
+.descKo { font-size: 17px; font-weight: 800; color: var(--blue); margin-bottom: 3px; }
 .descEn { font-size: 12px; color: var(--blue-mid); }
 
 /* 섹션 타이틀 */
-.sectionTitle { font-size: 15px; font-weight: 800; color: var(--text-primary); margin-bottom: var(--space-md); }
+.sectionHeading { margin-bottom: var(--space-md); }
+.sectionTitle { font-size: 18px; font-weight: 900; color: var(--text-primary); margin-bottom: 2px; }
 .sectionSub   { font-size: 12px; font-weight: 500; color: var(--text-muted); }
 
 /* ── 캐릭터 카드 ─────────────────────────────────────────── */
 .characterList { display: flex; flex-direction: column; gap: 12px; }
 
 .charCard {
-  display: grid;
-  grid-template-columns: 76px minmax(0, 1fr);
-  gap: 14px;
-  align-items: start;
+  display: flex; flex-direction: column; gap: 16px;
   background: var(--bg-base);
   border: 1.5px solid var(--border-subtle);
   border-radius: var(--radius-xl);
-  padding: 16px;
+  padding: 18px 16px 16px;
   box-shadow: var(--shadow-sm);
   transition: box-shadow var(--transition-fast);
 }
+.cardLabelRow { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.cardLabel { font-size: 18px; font-weight: 900; color: var(--text-primary); }
+.otherMateLink { font-size: 12px; font-weight: 700; color: var(--text-muted); text-decoration: none; }
+.charTop { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 18px; align-items: center; }
 .charCard:hover:not(.charLocked) { box-shadow: var(--shadow-md); }
-.charLocked { opacity: 0.7; }
+.charLocked { background: linear-gradient(145deg, #fff 55%, #f7f9fc); }
 
 .charLeft { flex-shrink: 0; }
 
 .charAvatar {
-  width: 76px; height: 76px;
-  border-radius: var(--radius-lg);
+  width: 112px; height: 112px;
+  border-radius: 50%;
   background: var(--red-light);
   border: 2px solid var(--red-mid);
   display: flex; align-items: center; justify-content: center;
@@ -116,7 +152,7 @@
 .charImg {
   width: 100%; height: 100%;
   object-fit: cover;
-  border-radius: var(--radius-lg);
+  border-radius: 50%;
   position: absolute; inset: 0;
   z-index: 1;
 }
@@ -130,30 +166,57 @@
 .lockOverlay {
   position: absolute; inset: 0;
   background: rgba(0,0,0,0.4);
-  border-radius: var(--radius-lg);
+  border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
   font-size: 24px;
   z-index: 2;
 }
 
-.charInfo { min-width: 0; display: flex; flex-direction: column; gap: 8px; }
+.charInfo { min-width: 0; display: flex; flex-direction: column; gap: 7px; }
 .charNameRow { display: flex; align-items: center; gap: var(--space-sm); flex-wrap: wrap; }
-.charName    { font-size: 18px; font-weight: 800; color: var(--text-primary); }
+.charName    { font-size: 27px; font-weight: 900; color: var(--text-primary); letter-spacing: -.04em; }
 .charDescription { font-size: 13px; line-height: 1.55; color: var(--text-secondary); overflow-wrap: anywhere; }
 .charRegion { align-self: flex-start; font-size: 11px; color: var(--blue); background: var(--blue-light); border-radius: 999px; padding: 4px 8px; font-weight: 700; }
 
 .affinityRow { display: flex; align-items: center; gap: 2px; }
-.affinityNum { font-size: 11px; color: var(--text-muted); margin-left: 4px; }
+.affinityRow > span:not(.affinityNum) { font-size: 17px; }
+.affinityNum { font-size: 13px; font-weight: 700; color: var(--text-muted); margin-left: 5px; }
 
-.charActions { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; margin-top: 2px; }
-.charActions :global(.btn) { min-width: 0; padding-inline: 6px; white-space: nowrap; }
+.charActions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
+.actionTile {
+  min-width: 0; height: 70px; padding: 12px;
+  display: grid; grid-template-columns: 38px minmax(0, 1fr) 10px; align-items: center; gap: 8px;
+  border: 1px solid; border-radius: 16px; text-decoration: none;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.actionTile:hover, .actionTile:focus, .actionTile:visited,
+.actionTile * { text-decoration: none; }
+.actionTile:active { transform: scale(.97); }
+.study { color: #104d91; background: #eef6ff; border-color: #c9e1fb; }
+.chat { color: #a92f42; background: #fff1f3; border-color: #f6d3d9; }
+.diary { color: #8b651a; background: #fff9e9; border-color: #f2dfad; }
+.story { color: #25745f; background: #eefaf5; border-color: #cceade; }
+.actionIcon { width: 38px; height: 38px; display: grid; place-items: center; border-radius: 12px; background: rgba(255,255,255,.72); font-size: 20px; }
+.actionCopy { min-width: 0; display: flex; align-items: center; }
+.actionCopy strong { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 14px; font-weight: 900; color: var(--text-primary); }
+.actionCopy small { display: none; }
+.actionArrow { font-size: 22px; color: var(--text-muted); }
 
 @media (max-width: 380px) {
-  .charCard { grid-template-columns: 64px minmax(0, 1fr); gap: 11px; padding: 14px; }
-  .charAvatar { width: 64px; height: 64px; }
-  .charName { font-size: 17px; }
+  .passportCover { min-height: 204px; padding-inline: var(--space-md); }
+  .passportHeader { gap: 12px; padding-bottom: 16px; }
+  .passportEmblem { width: 74px; height: 74px; }
+  .passportEmoji { font-size: 36px; }
+  .passportRegion { font-size: 27px; }
+  .passportRegionEn { font-size: 13px; }
+  .charCard { gap: 12px; padding: 14px; }
+  .charTop { grid-template-columns: 88px minmax(0, 1fr); gap: 12px; }
+  .charAvatar { width: 88px; height: 88px; }
+  .charName { font-size: 22px; }
   .charDescription { font-size: 12px; }
-  .charActions :global(.btn) { font-size: 11px; }
+  .actionTile { height: 64px; padding: 9px; grid-template-columns: 32px minmax(0, 1fr) 8px; gap: 6px; }
+  .actionIcon { width: 32px; height: 32px; font-size: 17px; }
+  .actionCopy strong { font-size: 12px; line-height: 1.2; white-space: normal; }
 }
 
 /* ── 명소 그리드 ─────────────────────────────────────────── */
@@ -161,16 +224,17 @@
   display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-sm);
 }
 .placeChip {
-  display: flex; flex-direction: column; align-items: center; gap: 3px;
-  padding: var(--space-sm);
+  min-height: 116px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px;
+  padding: 16px 8px;
   background: var(--bg-base);
   border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-xs);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
   text-align: center;
 }
-.placeEmoji   { font-size: 22px; }
-.placeName    { font-size: 12px; font-weight: 700; color: var(--text-primary); }
+.placeEmoji   { font-size: 38px; }
+.placeName    { font-size: 14px; font-weight: 800; color: var(--text-primary); }
 .placeNameEn  { font-size: 10px; color: var(--text-muted); }
 
 [data-language="ru"] .passportRegion { font-size: 19px; }

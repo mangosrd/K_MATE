@@ -151,7 +151,7 @@ export default function RegionView({ region }: { region: Region }) {
     <>
       <div className="page-content" data-language={language}>
         {/* 헤더 (여권 표지 스타일) */}
-        <div className={styles.passportCover}>
+        <div className={styles.passportCover} data-region={region.id}>
           <Link href="/map" className={`${styles.backBtn} app-back-button`} aria-label={t("backToMap")}>‹</Link>
 
           {/* 여권 스탬프 무늬 */}
@@ -182,9 +182,10 @@ export default function RegionView({ region }: { region: Region }) {
 
           {/* 메이트 선택 */}
           <section>
-            <p className={styles.sectionTitle}>
-              {t("chooseMate")}
-            </p>
+            <div className={styles.sectionHeading}>
+              <p className={styles.sectionTitle}>{t("chooseMate")}</p>
+              <p className={styles.sectionSub}>{t("selectMateSub")}</p>
+            </div>
 
             <div className={styles.characterList}>
               {characters.map((char) => {
@@ -197,14 +198,19 @@ export default function RegionView({ region }: { region: Region }) {
 
                 return (
                   <div key={char.id} className={`${styles.charCard} ${!canAccess ? styles.charLocked : ""}`}>
+                    <div className={styles.cardLabelRow}>
+                      <span className={styles.cardLabel}>{t("chooseMate")}</span>
+                      <Link href="/map" className={styles.otherMateLink}>{t("backToMap")} ›</Link>
+                    </div>
+                    <div className={styles.charTop}>
                     {/* 왼쪽 — 아바타 */}
                     <div className={styles.charLeft}>
                       <div className={styles.charAvatar}>
                         <Image
                           src={`/characters/${char.id}.png`}
                           alt={`${char.name} 기장`}
-                          width={72}
-                          height={72}
+                          width={88}
+                          height={88}
                           className={styles.charImg}
                         />
                         <span className={styles.charEmojiBack}>{char.emoji}</span>
@@ -217,7 +223,7 @@ export default function RegionView({ region }: { region: Region }) {
                     {/* 오른쪽 — 정보 */}
                     <div className={styles.charInfo}>
                       <div className={styles.charNameRow}>
-                        <h2 className={styles.charName}>{char.name}</h2>
+                        <h2 className={styles.charName}>{displayProfile.name}</h2>
                         {char.requires_premium
                           ? <span className="badge badge-gold">{t("premiumBadge")}</span>
                           : <span className="badge badge-mint">{t("freeBadge")}</span>}
@@ -229,7 +235,7 @@ export default function RegionView({ region }: { region: Region }) {
                       {canAccess && (
                         <div className={styles.affinityRow}>
                           {Array.from({ length: 5 }).map((_, i) => (
-                            <span key={i} style={{ fontSize: 13 }}>
+                            <span key={i}>
                               {i < affinityStars ? "❤️" : "🤍"}
                             </span>
                           ))}
@@ -237,36 +243,30 @@ export default function RegionView({ region }: { region: Region }) {
                         </div>
                       )}
 
-                      {/* 액션 버튼 */}
-                      {canAccess ? (
-                        <div className={styles.charActions}>
-                          <Link
-                            href={`/chat/${char.id}`}
-                            className="btn btn-primary btn-sm"
-                            id={`btn-chat-${char.id}`}
-                          >
-                            {t("chatBtn")}
-                          </Link>
-                          <Link
-                            href={`/learn/${char.id}`}
-                            className="btn btn-blue btn-sm"
-                            id={`btn-learn-${char.id}`}
-                          >
-                            {t("studyBtn")}
-                          </Link>
-                          <Link
-                            href={`/diary/${char.id}`}
-                            className="btn btn-secondary btn-sm"
-                            id={`btn-diary-${char.id}`}
-                          >
-                            {t("diaryBtn")}
-                          </Link>
-                        </div>
-                      ) : (
-                        <Link href="/premium" className="btn btn-secondary btn-sm" id={`btn-unlock-${char.id}`}>
-                          {t("premiumLockedBtn")}
+                    </div>
+                    </div>
+
+                    {/* 액션 버튼 */}
+                    <div className={styles.charActions}>
+                      {[
+                        { href: `/learn/${char.id}`, icon: "📖", title: t("studyBtn"), sub: t("selectMateSub"), tone: "study" },
+                        { href: `/chat/${char.id}`, icon: "💬", title: t("chatBtn"), sub: displayProfile.description, tone: "chat" },
+                        { href: `/diary/${char.id}`, icon: "📔", title: t("diaryBtn"), sub: displayProfile.name, tone: "diary" },
+                        { href: `/captain/${char.id}/stories`, icon: "📚", title: t("romanceStory"), sub: "Premium Story · 3", tone: "story" },
+                      ].map((action) => (
+                        <Link
+                          key={action.tone}
+                          href={canAccess ? action.href : `/premium?character=${char.id}`}
+                          className={`${styles.actionTile} ${styles[action.tone]}`}
+                        >
+                          <span className={styles.actionIcon}>{canAccess ? action.icon : "🔒"}</span>
+                          <span className={styles.actionCopy}>
+                            <strong>{action.title.replace(/^[^\p{L}\p{N}]+/u, "")}</strong>
+                            <small>{canAccess ? action.sub : t("premiumLockedBtn")}</small>
+                          </span>
+                          <span className={styles.actionArrow}>›</span>
                         </Link>
-                      )}
+                      ))}
                     </div>
                   </div>
                 );

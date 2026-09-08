@@ -4,7 +4,9 @@ import { useState, useEffect } from "react";
 import { getAuthHeaders } from "@/lib/auth/store";
 
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
-const CACHE_PREFIX = "kmate_tr_";
+// v2 invalidates translations created before source-language filtering was
+// introduced. Some of those entries contained English output for Korean copy.
+const CACHE_PREFIX = "kmate_tr_v2_";
 
 // 챕터 콘텐츠(단어 뜻/예문 번역)는 한국어+영어로만 작성돼 있어, UI 언어가 그 외
 // 언어일 때 영어가 그대로 노출되는 문제가 있었다. 백엔드 /translate(LLM + DB 캐시)를
@@ -33,7 +35,21 @@ function cacheKey(item: TranslatableItem, lang: string): string {
 // 그 둘은 번역할 필요가 없다.
 // Vocabulary glosses are stored in English, so Korean users need a translated
 // gloss too. English remains the source language and does not need a request.
-const TRANSLATABLE_LANGS = new Set(["ko", "ru", "zh", "ja", "zh-TW", "th"]);
+const TRANSLATABLE_LANGS = new Set(["ko", "en", "ru", "zh", "ja", "zh-TW", "th"]);
+
+const hasHangul = (text: string) => /[가-힣]/.test(text);
+
+function needsTranslation(item: TranslatableItem, targetLang: string): boolean {
+  if (!item.text || !TRANSLATABLE_LANGS.has(targetLang)) return false;
+  // Korean UI: Korean source copy is already final. Only English glosses need
+  // translation. Sending Korean through the LLM again polluted the cache with
+  // occasional English output (most visibly in Haneul chapters 7–10).
+  if (targetLang === "ko") return !hasHangul(item.text);
+  // English UI: translate explicitly marked Korean source copy, while keeping
+  // the authored English title/gloss as-is.
+  if (targetLang === "en") return Boolean(item.force && hasHangul(item.text));
+  return true;
+}
 
 // Keep client requests inside the backend's validation limits. A full chapter can
 // easily contain more than 20 text/context pairs, so sending every cache miss in
@@ -64,7 +80,7 @@ function translationChunks<T extends { item: TranslatableItem }>(items: T[]): T[
 }
 
 export async function translateBatch(items: TranslatableItem[], targetLang: string): Promise<string[]> {
-  if ((!TRANSLATABLE_LANGS.has(targetLang) && !items.some((item) => item.force)) || typeof window === "undefined") {
+  if (!TRANSLATABLE_LANGS.has(targetLang) || typeof window === "undefined") {
     return items.map((i) => i.text);
   }
 
@@ -72,7 +88,7 @@ export async function translateBatch(items: TranslatableItem[], targetLang: stri
   const misses: { idx: number; item: TranslatableItem }[] = [];
 
   items.forEach((item, idx) => {
-    if (!item.text) {
+    if (!needsTranslation(item, targetLang)) {
       results[idx] = item.text;
       return;
     }

@@ -1,12 +1,13 @@
 "use client";
 
 import { useState, useEffect, useMemo } from "react";
-import { useSearchParams } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./learn.module.css";
-import { SPECIAL_CHAPTERS, MOCK_CHARACTERS, isChapterUnlocked } from "@/lib/db/mock";
+import { SPECIAL_CHAPTERS, MOCK_CHARACTERS, canAccessCharacter, isChapterUnlocked } from "@/lib/db/mock";
 import { getAuthHeaders, getEffectiveUserId, setPreferredCaptainId } from "@/lib/auth/store";
+import { useFreeCharSlots, useMembership } from "@/lib/auth/useAuthUser";
 import { useLanguage } from "@/components/LanguageContext";
 import { useTranslationMap, TranslatableItem } from "@/lib/translate/store";
 import type { Character, Chapter } from "@/types/database";
@@ -20,7 +21,10 @@ interface LearnViewProps {
 
 export default function LearnView({ char, chapters }: LearnViewProps) {
   const { t, language } = useLanguage();
+  const router = useRouter();
   const searchParams = useSearchParams();
+  const { membership, membershipLoaded } = useMembership();
+  const { freeSlots, freeSlotsLoaded } = useFreeCharSlots();
   // 스페셜 챕터 상세 화면에서 "챕터 목록으로"를 누르면 ?tab=special로 들어온다 — 그 경우 기본값
   // "regional"로 초기화해버리면 스페셜 탭을 보다 나간 사람이 엉뚱하게 지역 문화 탭을 보게 된다.
   const [tab, setTab] = useState<"regional" | "special">(
@@ -69,6 +73,22 @@ export default function LearnView({ char, chapters }: LearnViewProps) {
       (!sc.character_id || sc.character_id === activeCaptain.id)
   );
 
+  const handleCaptainSelect = (captainId: string, forRegional: boolean) => {
+    const captain = MOCK_CHARACTERS.find((item) => item.id === captainId);
+    if (!captain) return;
+
+    const accessLoaded = !captain.requires_premium || (membershipLoaded && freeSlotsLoaded);
+    const canAccess = accessLoaded && canAccessCharacter(captainId, membership, freeSlots);
+    if (!canAccess) {
+      router.push(`/premium?character=${captainId}`);
+      return;
+    }
+
+    setPreferredCaptainId(captainId);
+    setSelectedCaptainId(captainId);
+    if (forRegional && captainId !== char.id) router.push(`/learn/${captainId}`);
+  };
+
   return (
     <div className="page-content">
       {/* 헤더 */}
@@ -99,6 +119,39 @@ export default function LearnView({ char, chapters }: LearnViewProps) {
         {/* 1. 지역 문화 커리큘럼 탭 */}
         {tab === "regional" && (
           <>
+            <section className={styles.captainSelector} aria-label={t("selectMateTitle")}>
+              <div className={styles.selectorHeading}>
+                <div>
+                  <h2>{t("selectMateTitle")}</h2>
+                  <p>{t("selectMateSub")}</p>
+                </div>
+              </div>
+              <div className={styles.captainAvatarList}>
+                {MOCK_CHARACTERS.map((captain) => {
+                  const accessLoaded = !captain.requires_premium || (membershipLoaded && freeSlotsLoaded);
+                  const locked = captain.requires_premium && (!accessLoaded || !canAccessCharacter(captain.id, membership, freeSlots));
+                  const active = captain.id === char.id;
+                  return (
+                    <button
+                      key={captain.id}
+                      type="button"
+                      className={`${styles.captainAvatarButton} ${active ? styles.captainAvatarActive : ""}`}
+                      onClick={() => handleCaptainSelect(captain.id, true)}
+                      aria-label={`${captain.name} · ${locked ? t("locked") : t("selectMateTitle")}`}
+                      aria-pressed={active}
+                    >
+                      <span className={styles.captainAvatarWrap}>
+                        <Image src={`/characters/${captain.id}.png`} alt="" width={58} height={58} className={styles.selectorAvatar} />
+                        {active && <span className={styles.activePlane} aria-hidden="true">✈</span>}
+                        {locked && <span className={styles.lockBadge} aria-hidden="true">🔒</span>}
+                      </span>
+                      <span className={styles.selectorCaptainName}>{captain.name}</span>
+                    </button>
+                  );
+                })}
+              </div>
+            </section>
+
             <section className={styles.captainHub} aria-label={`${activeCaptain.name} ${t("learnTitle")}`}>
               <div className={styles.captainHubProfile}>
                 <Image
@@ -207,12 +260,9 @@ export default function LearnView({ char, chapters }: LearnViewProps) {
                   <button
                     key={c.id}
                     className={`${styles.captainPill} ${selectedCaptainId === c.id ? styles.captainActive : ""}`}
-                    onClick={() => {
-                      setSelectedCaptainId(c.id);
-                      setPreferredCaptainId(c.id);
-                    }}
+                    onClick={() => handleCaptainSelect(c.id, false)}
                   >
-                    <span>{c.emoji}</span>
+                    <span>{c.requires_premium && !canAccessCharacter(c.id, membership, freeSlots) ? "🔒" : c.emoji}</span>
                     <span>{c.name} {t("captainBadge")}</span>
                   </button>
                 ))}

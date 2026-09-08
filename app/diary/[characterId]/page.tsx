@@ -142,7 +142,7 @@ export default function CharDiaryPage({ params }: { params: Promise<{ characterI
             title={t("letterMailboxLinkTitle")}
           >
             <span style={{ fontSize: 14 }}>💌</span>
-            <span>편지함</span>
+            <span>{t("letterMailboxLinkTitle")}</span>
           </Link>
 
           {/* 포토앨범 pill 버튼 */}
@@ -153,7 +153,7 @@ export default function CharDiaryPage({ params }: { params: Promise<{ characterI
             title={t("galleryTitle")}
           >
             <span style={{ fontSize: 14 }}>🖼️</span>
-            <span>앨범</span>
+            <span>{t("galleryTitle")}</span>
           </Link>
 
           <div className="coin-badge">

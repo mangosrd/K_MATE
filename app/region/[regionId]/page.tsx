@@ -23,7 +23,9 @@ export default async function RegionPage({
 }) {
   const { regionId } = await params;
   const region = getRegionById(regionId);
-  if (!region || region.is_locked) notFound();
+  // Premium regions remain browsable so users can preview the route and its
+  // captain. Access is gated on the captain actions inside RegionView.
+  if (!region) notFound();
 
   return <RegionView region={region} />;
 }

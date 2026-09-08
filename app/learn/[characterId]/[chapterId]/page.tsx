@@ -798,12 +798,12 @@ function LearningSession({
       <main className={styles.page}>
         <div className={styles.introCard}>
           <div className={styles.introEmoji}>🔒</div>
-          <h1 className={styles.introTitle}>이 스토리는 아직 잠겨 있어요</h1>
-          <p className={styles.introTitleEn}>프리미엄을 결제하면 모든 스토리를 영구 소장할 수 있고, 이 스토리만 5코인으로 해금할 수도 있어요.</p>
+          <h1 className={styles.introTitle}>{t("lockedStoryTitle")}</h1>
+          <p className={styles.introTitleEn}>{t("lockedStorySub")}</p>
           <button className="btn btn-primary btn-lg" onClick={() => void unlockStory()} disabled={storyUnlocking}>
             {storyUnlocking ? "해금 중…" : "🪙 5코인으로 스토리 해금"}
           </button>
-          <Link href="/premium" className="btn btn-secondary btn-lg">⭐ 프리미엄 보기</Link>
+          <Link href="/premium" className="btn btn-secondary btn-lg">{t("viewPremium")}</Link>
           {storyAccessError && <p style={{ color: "var(--red)", textAlign: "center", fontWeight: 700 }}>{storyAccessError}</p>}
           <Link href={backToListHref} className="btn btn-text">{t("backToList")}</Link>
         </div>
@@ -1295,7 +1295,7 @@ function LearningSession({
                 {currentEx.reading && <p className={styles.mcReading}>[{currentEx.reading}]</p>}
               </div>
               <div className={styles.sentenceAnswer}>
-                {selectedTokenIndexes.length === 0 && <span>단어를 순서대로 눌러 문장을 완성하세요</span>}
+                {selectedTokenIndexes.length === 0 && <span>{t("sentenceBuilderPrompt")}</span>}
                 {selectedTokenIndexes.map((tokenIndex) => (
                   <button key={tokenIndex} onClick={() => removeSentenceToken(tokenIndex)}>
                     {currentEx.options[tokenIndex]}
@@ -1383,7 +1383,7 @@ function LearningSession({
                   <p className={styles.mcReading}>[{currentEx.reading}]</p>
                 )}
                 {isFallbackVisualQuiz && (
-                  <p className={styles.audioHint}>👆 🔊 버튼을 눌러 듣고 알맞은 답을 골라보세요</p>
+                  <p className={styles.audioHint}>{t("listeningChoicePrompt")}</p>
                 )}
               </div>
 
@@ -1600,7 +1600,7 @@ function LearningSession({
                 >
                   🔊 소리 듣기
                 </button>
-                <p className={styles.audioHint}>들리는 한국어 단어를 선택하세요</p>
+                <p className={styles.audioHint}>{t("listeningWordPrompt")}</p>
               </div>
 
               <div className={styles.mcOptions}>

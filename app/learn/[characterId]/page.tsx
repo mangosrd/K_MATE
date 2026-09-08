@@ -10,7 +10,11 @@ const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:800
 export async function generateMetadata({ params }: { params: Promise<{ characterId: string }> }): Promise<Metadata> {
   const { characterId } = await params;
   const char = getCharacterById(characterId);
-  return { title: `${char?.name ?? ""}와 공부하기 — K-MATE` };
+  const name = char?.name ?? "";
+  const lastCode = name.charCodeAt(name.length - 1);
+  const hasFinalConsonant = lastCode >= 0xac00 && lastCode <= 0xd7a3 && (lastCode - 0xac00) % 28 !== 0;
+  const particle = hasFinalConsonant ? "과" : "와";
+  return { title: `${name}${particle} 공부하기 — K-MATE` };
 }
 
 export default async function LearnPage({
