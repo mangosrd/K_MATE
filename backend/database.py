@@ -41,6 +41,7 @@ class Settings(BaseSettings):
     smtp_from_email: str = ""
     resend_api_key: str = ""
     support_from_email: str = ""
+    password_reset_token_minutes: int = 30
 
     class Config:
         env_file = ".env"

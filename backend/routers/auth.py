@@ -2,17 +2,18 @@
 인증 라우터 — POST /auth/register, /auth/login
 """
 
-from fastapi import APIRouter, HTTPException, Depends, Request
+from fastapi import APIRouter, BackgroundTasks, HTTPException, Depends, Request
 from fastapi.responses import RedirectResponse
 from sqlalchemy.orm import Session
 from sqlalchemy.sql import func
 from database import get_db, get_settings
 from schemas.schemas import (
     AuthUserResponse, GoogleExchangeRequest, GoogleNativeLoginRequest,
-    GuestCreateRequest, LoginRequest, RegisterRequest, WithdrawRequest, WithdrawResponse,
+    ForgotPasswordRequest, GuestCreateRequest, LoginRequest, RegisterRequest,
+    ResetPasswordRequest, WithdrawRequest, WithdrawResponse,
     SimpleSuccessResponse,
 )
-from models.models import User, Economy, GuestInstall, OAuthHandoff, Progress, Memory, DiaryEntry, VocabItem
+from models.models import User, Economy, GuestInstall, OAuthHandoff, PasswordResetToken, Progress, Memory, DiaryEntry, VocabItem
 from sqlalchemy.exc import IntegrityError
 import bcrypt
 import uuid
@@ -29,6 +30,7 @@ from google.auth.transport import requests as google_requests
 from google.oauth2 import id_token as google_id_token
 from services.session_auth import issue_access_token, require_current_user, require_same_user, revoke_user_sessions
 from services.rate_limit import clear_rate_limit, enforce_rate_limit
+from services.password_reset_email import send_password_reset_email
 
 router = APIRouter(prefix="/auth", tags=["auth"])
 
@@ -53,6 +55,10 @@ def _guest_install_hash(installation_id: str) -> str:
 
 def _oauth_handoff_hash(jti: str) -> str:
     return hashlib.sha256(jti.encode("utf-8")).hexdigest()
+
+
+def _password_reset_hash(token: str) -> str:
+    return hashlib.sha256(token.encode("utf-8")).hexdigest()
 
 
 def _sign_payload(payload: dict) -> str:
@@ -357,6 +363,85 @@ def login(req: LoginRequest, db: Session = Depends(get_db)):
 
     clear_rate_limit("login-email", email)
     return _to_response(user)
+
+
+@router.post("/forgot-password", response_model=SimpleSuccessResponse)
+def forgot_password(
+    payload: ForgotPasswordRequest,
+    request: Request,
+    background_tasks: BackgroundTasks,
+    db: Session = Depends(get_db),
+):
+    """Issue a short-lived reset link while keeping account existence private."""
+    email = _normalize_email(payload.email)
+    client_ip = request.client.host if request.client else "unknown"
+    enforce_rate_limit("password-reset-global", "all", limit=60, window_seconds=3600)
+    enforce_rate_limit("password-reset-ip", client_ip, limit=10, window_seconds=3600)
+    enforce_rate_limit("password-reset-email", email, limit=3, window_seconds=3600)
+
+    user = db.query(User).filter(
+        User.email == email,
+        User.password_hash.is_not(None),
+        User.is_withdrawn.is_(False),
+    ).first()
+    if user:
+        now = datetime.utcnow()
+        db.query(PasswordResetToken).filter(
+            (PasswordResetToken.user_id == user.id) | (PasswordResetToken.expires_at < now)
+        ).delete(synchronize_session=False)
+        raw_token = secrets.token_urlsafe(48)
+        token_hash = _password_reset_hash(raw_token)
+        db.add(PasswordResetToken(
+            id=token_hash,
+            user_id=user.id,
+            expires_at=now + timedelta(minutes=get_settings().password_reset_token_minutes),
+        ))
+        db.commit()
+        background_tasks.add_task(
+            send_password_reset_email,
+            email=email,
+            token=raw_token,
+            request_id=token_hash[:24],
+        )
+
+    return SimpleSuccessResponse(
+        success=True,
+        message="If the account exists, a password reset link has been sent.",
+    )
+
+
+@router.post("/reset-password", response_model=SimpleSuccessResponse)
+def reset_password(payload: ResetPasswordRequest, db: Session = Depends(get_db)):
+    token_hash = _password_reset_hash(payload.token)
+    enforce_rate_limit("password-reset-token", token_hash, limit=8, window_seconds=900)
+    now = datetime.utcnow()
+    grant = db.query(PasswordResetToken).filter(
+        PasswordResetToken.id == token_hash,
+        PasswordResetToken.consumed_at.is_(None),
+        PasswordResetToken.expires_at >= now,
+    ).with_for_update().first()
+    if not grant:
+        raise HTTPException(status_code=400, detail="This reset link is invalid or has expired.")
+
+    user = db.query(User).filter(
+        User.id == grant.user_id,
+        User.is_withdrawn.is_(False),
+    ).with_for_update().first()
+    if not user or not user.password_hash:
+        raise HTTPException(status_code=400, detail="This reset link is invalid or has expired.")
+
+    user.password_hash = bcrypt.hashpw(
+        payload.new_password.encode("utf-8"), bcrypt.gensalt()
+    ).decode("utf-8")
+    revoke_user_sessions(user)
+    grant.consumed_at = now
+    db.query(PasswordResetToken).filter(
+        PasswordResetToken.user_id == user.id,
+        PasswordResetToken.id != token_hash,
+    ).delete(synchronize_session=False)
+    db.commit()
+    clear_rate_limit("password-reset-token", token_hash)
+    return SimpleSuccessResponse(success=True, message="Password changed successfully.")
 
 
 @router.post("/withdraw", response_model=WithdrawResponse)

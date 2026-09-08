@@ -16,8 +16,8 @@ os.environ.setdefault("MYSQL_DB", "test")
 os.environ.setdefault("GEMINI_API_KEY", "test")
 os.environ.setdefault("INTERNAL_API_SECRET", "test-secret")
 
-from routers.auth import _guest_install_hash, _normalize_email, _oauth_handoff_hash
-from schemas.schemas import GuestCreateRequest, GoogleExchangeRequest, GoogleNativeLoginRequest, RegisterRequest
+from routers.auth import _guest_install_hash, _normalize_email, _oauth_handoff_hash, _password_reset_hash
+from schemas.schemas import ForgotPasswordRequest, GuestCreateRequest, GoogleExchangeRequest, GoogleNativeLoginRequest, RegisterRequest, ResetPasswordRequest
 
 
 class AuthInputSecurityTests(unittest.TestCase):
@@ -62,6 +62,22 @@ class AuthInputSecurityTests(unittest.TestCase):
         digest = _oauth_handoff_hash(jti)
         self.assertEqual(len(digest), 64)
         self.assertNotIn(jti, digest)
+
+    def test_password_reset_inputs_are_bounded(self):
+        ForgotPasswordRequest(email="user@example.com")
+        ResetPasswordRequest(token="x" * 32, new_password="new-password")
+        with self.assertRaises(ValidationError):
+            ResetPasswordRequest(token="short", new_password="new-password")
+        with self.assertRaises(ValidationError):
+            ResetPasswordRequest(token="x" * 513, new_password="new-password")
+        with self.assertRaises(ValidationError):
+            ResetPasswordRequest(token="x" * 32, new_password="short")
+
+    def test_password_reset_token_is_hashed_before_storage(self):
+        token = "secret-reset-token" * 4
+        digest = _password_reset_hash(token)
+        self.assertEqual(len(digest), 64)
+        self.assertNotIn(token, digest)
 
 
 if __name__ == "__main__":

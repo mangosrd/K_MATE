@@ -16,7 +16,7 @@ interface NativeGoogleAuthPlugin {
 }
 const NativeGoogleAuth = registerPlugin<NativeGoogleAuthPlugin>("NativeGoogleAuth");
 
-type Mode = "start" | "login" | "signup";
+type Mode = "start" | "login" | "signup" | "forgot";
 
 const LOGIN_CAPTAINS = [
   { id: "kyuhyun", name: "규현" },
@@ -35,6 +35,7 @@ export default function LoginView({ oauthCode }: { oauthCode: string | null }) {
   const [password, setPassword] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(Boolean(oauthCode));
+  const [recoverySent, setRecoverySent] = useState(false);
 
   useEffect(() => {
     if (!oauthCode) {
@@ -90,6 +91,7 @@ export default function LoginView({ oauthCode }: { oauthCode: string | null }) {
     setEmail("");
     setPassword("");
     setError(null);
+    setRecoverySent(false);
   };
 
   const switchMode = (next: Mode) => {
@@ -131,6 +133,28 @@ export default function LoginView({ oauthCode }: { oauthCode: string | null }) {
       router.push(mode === "signup" ? "/onboarding" : "/map");
     } catch {
       setError("서버에 연결할 수 없습니다. 잠시 후 다시 시도해주세요.");
+      setLoading(false);
+    }
+  };
+
+  const submitForgotPassword = async () => {
+    setError(null);
+    if (!email.trim()) {
+      setError("이메일을 입력해 주세요.");
+      return;
+    }
+    setLoading(true);
+    try {
+      const res = await fetch(`${BACKEND_URL}/auth/forgot-password`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: email.trim() }),
+      });
+      if (!res.ok) throw new Error();
+      setRecoverySent(true);
+    } catch {
+      setError("요청을 처리하지 못했습니다. 잠시 후 다시 시도해 주세요.");
+    } finally {
       setLoading(false);
     }
   };
@@ -254,6 +278,12 @@ export default function LoginView({ oauthCode }: { oauthCode: string | null }) {
               {mode === "signup" ? "회원가입" : "로그인"}
             </button>
 
+            {mode === "login" && (
+              <button type="button" className={styles.recoveryLink} onClick={() => switchMode("forgot")} id="btn-forgot-password">
+                비밀번호를 잊으셨나요?
+              </button>
+            )}
+
             <p className={styles.signupHint}>
               {mode === "signup" ? (
                 <>
@@ -273,6 +303,38 @@ export default function LoginView({ oauthCode }: { oauthCode: string | null }) {
             </p>
             <button type="button" className={styles.backLink} onClick={() => switchMode("start")} id="btn-auth-back">
               ← 뒤로
+            </button>
+          </>
+        )}
+
+        {mode === "forgot" && (
+          <>
+            <p className={styles.cardTitle}>비밀번호 찾기</p>
+            <p className={styles.recoveryDescription}>가입한 이메일로 30분 동안 유효한 재설정 링크를 보내드려요.</p>
+            {!recoverySent ? (
+              <>
+                <div className={styles.formFields}>
+                  <input
+                    className={styles.formInput}
+                    type="email"
+                    placeholder="이메일"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    onKeyDown={(e) => e.key === "Enter" && submitForgotPassword()}
+                    id="input-recovery-email"
+                    autoComplete="email"
+                  />
+                </div>
+                {error && <p className={styles.formError} role="alert">{error}</p>}
+                <button type="button" className="btn btn-primary btn-lg" onClick={submitForgotPassword} id="btn-send-reset-link">
+                  재설정 링크 보내기
+                </button>
+              </>
+            ) : (
+              <p className={styles.recoverySuccess} role="status">가입된 이메일이라면 재설정 링크를 보냈어요. 메일함과 스팸함을 확인해 주세요.</p>
+            )}
+            <button type="button" className={styles.backLink} onClick={() => switchMode("login")} id="btn-recovery-back">
+              ← 로그인으로 돌아가기
             </button>
           </>
         )}

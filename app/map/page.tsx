@@ -108,6 +108,15 @@ export default function MapPage() {
   const [attendanceLoading, setAttendanceLoading] = useState(false);
   const [attendanceMessage, setAttendanceMessage] = useState("");
 
+  useEffect(() => {
+    if (!attendanceOpen) return;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = previousOverflow;
+    };
+  }, [attendanceOpen]);
+
   const loadAttendance = async () => {
     const userId = getEffectiveUserId();
     const response = await fetch(`${BACKEND_URL}/attendance/${userId}`, { headers: getAuthHeaders() });

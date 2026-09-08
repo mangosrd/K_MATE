@@ -269,6 +269,15 @@ class LoginRequest(BaseModel):
     password: str = Field(min_length=1, max_length=128)
 
 
+class ForgotPasswordRequest(BaseModel):
+    email: str = Field(min_length=3, max_length=255)
+
+
+class ResetPasswordRequest(BaseModel):
+    token: str = Field(min_length=32, max_length=512)
+    new_password: str = Field(min_length=8, max_length=128)
+
+
 class GuestCreateRequest(BaseModel):
     installation_id: str = Field(min_length=32, max_length=128, pattern=r"^[A-Za-z0-9_-]+$")
 
