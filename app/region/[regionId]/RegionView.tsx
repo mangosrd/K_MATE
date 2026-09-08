@@ -152,7 +152,7 @@ export default function RegionView({ region }: { region: Region }) {
       <div className="page-content" data-language={language}>
         {/* 헤더 (여권 표지 스타일) */}
         <div className={styles.passportCover}>
-          <Link href="/map" className={styles.backBtn} aria-label={t("backToMap")}>‹</Link>
+          <Link href="/map" className={`${styles.backBtn} app-back-button`} aria-label={t("backToMap")}>‹</Link>
 
           {/* 여권 스탬프 무늬 */}
           <div className={styles.passportBg} aria-hidden="true" />

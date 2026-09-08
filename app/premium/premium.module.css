@@ -11,6 +11,31 @@
   clip-path: ellipse(120% 100% at 50% 0%);
 }
 
+.backButton {
+  position: absolute;
+  top: calc(16px + env(safe-area-inset-top, 0px));
+  left: 16px;
+  z-index: 3;
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255,255,255,.28);
+  border-radius: 50%;
+  background: rgba(255,255,255,.13);
+  color: #fff;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1;
+  text-decoration: none;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 6px 16px rgba(0,0,0,.12);
+  transition: transform var(--transition-fast), background var(--transition-fast);
+}
+.backButton:hover { background: rgba(255,255,255,.22); }
+.backButton:active { transform: scale(.94); }
+
 .inner {
   position: relative; z-index: 1;
   padding: var(--space-2xl) var(--space-lg) var(--space-2xl);

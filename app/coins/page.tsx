@@ -150,7 +150,7 @@ export default function CoinsPage() {
     <>
       <div className="page-content">
         <header className={styles.header}>
-          <Link href="/me" className={styles.backBtn}>‹</Link>
+          <Link href="/me" className={`${styles.backBtn} app-back-button`}>‹</Link>
           <p className={styles.title}>{t("coinShopTitle")}</p>
           <div className="coin-badge">
             <span className="coin-icon">🪙</span>

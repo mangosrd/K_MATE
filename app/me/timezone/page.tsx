@@ -61,7 +61,7 @@ export default function TimezonePage() {
   }
 
   return <div className="page-content">
-    <header className="page-header"><div><Link href="/me" className={formStyles.backLink}>{copy.back}</Link><h1 className="page-title">{copy.title}</h1></div></header>
+    <header className="page-header"><div><Link href="/me" className="app-back-button" aria-label={copy.back}>‹</Link><h1 className="page-title">{copy.title}</h1></div></header>
     <div className={formStyles.form}>
       <div className={styles.currentCard}><strong>{zone}</strong><span>{copy.detected} · {new Intl.DateTimeFormat(language, { dateStyle: "full", timeStyle: "short", timeZone: zone }).format(new Date())}</span></div>
       <div className={styles.actions}>

@@ -106,7 +106,7 @@ export default function NotesPage() {
     <>
       <main className={`page-content ${styles.page}`}>
         <header className={styles.header}>
-          <Link href="/me" className={styles.back} aria-label={copy.back}>‹</Link>
+          <Link href="/me" className={`${styles.back} app-back-button`} aria-label={copy.back}>‹</Link>
           <div className={styles.heading}>
             <p className={styles.eyebrow}>K-MATE PRIVATE LOG</p>
             <h1>{copy.title}</h1>

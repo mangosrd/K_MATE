@@ -423,7 +423,7 @@ export default function VocabPage() {
   return (
     <>
       <div className="page-content">
-        <header className="page-header">
+        <header className={`page-header ${styles.vocabHeader}`}>
           <div>
             <h1 className="page-title">{t("vocabTitle")}</h1>
             <p style={{ fontSize: 11, color: "var(--text-muted)", fontWeight: 500 }}>{t("vocabSub")}</p>
@@ -440,19 +440,20 @@ export default function VocabPage() {
             )}
             {/* 초기화 버튼 */}
             <button
-              className="btn btn-sm"
-              style={{ background: "var(--bg-elevated)", color: "var(--text-muted)", border: "1px solid var(--border-subtle)" }}
+              className={styles.resetButton}
               onClick={() => setShowResetModal(true)}
               id="btn-vocab-reset"
               title="단어장 초기화"
             >
-              🗑️
+              <span aria-hidden="true">♲</span>
             </button>
           </div>
         </header>
 
         <div className={styles.inner}>
           <section className={styles.studyHero}>
+            <span className={styles.heroOrbOne} aria-hidden="true" />
+            <span className={styles.heroOrbTwo} aria-hidden="true" />
             <div className={styles.studyHeroCopy}>
               <span className={styles.studyEyebrow}>✦ {t("practiceVocab")}</span>
               <h2>{filtered.length > 0 ? `${filtered.length} ${t("learnedWords")}` : t("vocabTitle")}</h2>
@@ -466,7 +467,12 @@ export default function VocabPage() {
                 {t("practiceVocab")} →
               </button>
             ) : (
-              <span className={styles.studyHeroEmoji}>📚</span>
+              <div className={styles.studyHeroArt} aria-hidden="true">
+                <span className={styles.heroSpark}>✦</span>
+                <span className={`${styles.heroBook} ${styles.heroBookBack}`} />
+                <span className={`${styles.heroBook} ${styles.heroBookMiddle}`} />
+                <span className={`${styles.heroBook} ${styles.heroBookFront}`} />
+              </div>
             )}
           </section>
 
@@ -511,27 +517,32 @@ export default function VocabPage() {
           {/* 통계 */}
           <div className={styles.statsRow}>
             <div className={styles.statItem}>
-              <span className={styles.statNum}>{filtered.length}</span>
-              <span className={styles.statKo}>{t("learnedWords")}</span>
+              <span className={`${styles.statIcon} ${styles.statIconBlue}`}>▤</span>
+              <span className={styles.statCopy}><strong className={styles.statNum}>{filtered.length}</strong><span className={styles.statKo}>{t("learnedWords")}</span></span>
             </div>
-            <div className={styles.statDivider} />
             <div className={styles.statItem}>
-              <span className={styles.statNum} style={{ color: "var(--mint)" }}>{mastered}</span>
-              <span className={styles.statKo}>{t("masteredWords")}</span>
+              <span className={`${styles.statIcon} ${styles.statIconMint}`}>✓</span>
+              <span className={styles.statCopy}><strong className={styles.statNum}>{mastered}</strong><span className={styles.statKo}>{t("masteredWords")}</span></span>
             </div>
-            <div className={styles.statDivider} />
             <div className={styles.statItem}>
-              <span className={styles.statNum} style={{ color: "var(--color-warning)" }}>{reviewing}</span>
-              <span className={styles.statKo}>{t("wordStatusReview")}</span>
+              <span className={`${styles.statIcon} ${styles.statIconOrange}`}>◷</span>
+              <span className={styles.statCopy}><strong className={styles.statNum}>{reviewing}</strong><span className={styles.statKo}>{t("wordStatusReview")}</span></span>
             </div>
           </div>
 
           {/* 단어 목록 */}
           {filtered.length === 0 ? (
             <div className={styles.empty}>
-              <p>📖</p>
-              <p>{t("vocabTitle")}</p>
-              <Link href="/map" className="btn btn-primary btn-sm">{t("travel")} →</Link>
+              <div className={styles.emptyIllustration} aria-hidden="true">
+                <span className={styles.emptyCloudLeft} />
+                <span className={styles.emptyBook}>📖</span>
+                <span className={styles.emptyCloudRight} />
+              </div>
+              <div className={styles.emptyCopy}>
+                <h2>{t("vocabTitle")}</h2>
+                <p>{t("vocabSub")}</p>
+              </div>
+              <Link href="/map" className={styles.emptyCta}>{t("travel")} <span>→</span></Link>
             </div>
           ) : (
             <div>
@@ -591,7 +602,7 @@ export default function VocabPage() {
         </div>
       </div>
 
-      <BottomNav />
+      {!showResetModal && <BottomNav />}
 
       {/* 초기화 확인 모달 */}
       {showResetModal && (

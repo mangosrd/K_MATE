@@ -104,7 +104,7 @@ export default function CharGalleryPage({ params }: { params: Promise<{ characte
     <>
       <div className="page-content">
         <header className={styles.header}>
-          <Link href={`/diary/${char.id}`} className={styles.backBtn}>‹</Link>
+          <Link href={`/diary/${char.id}`} className={`${styles.backBtn} app-back-button`}>‹</Link>
           <div className={styles.headerCenter}>
             <div className={styles.headerAvatar}>
               <Image src={char.avatar_url} alt={char.name} width={36} height={36} className={styles.headerAvatarImg} />

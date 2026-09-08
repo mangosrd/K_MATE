@@ -124,7 +124,7 @@ export default function CharDiaryPage({ params }: { params: Promise<{ characterI
       <div className="page-content">
         {/* 헤더 */}
         <header className={styles.header}>
-          <Link href="/diary" className={styles.backBtn}>‹</Link>
+          <Link href="/diary" className={`${styles.backBtn} app-back-button`}>‹</Link>
           <div className={styles.headerCenter}>
             <div className={styles.headerAvatar}>
               <Image src={`/characters/${char.id}.png`} alt={char.name} width={44} height={44} className={styles.headerAvatarImg} />

@@ -23,9 +23,7 @@ export default function DeleteAccountPage() {
   return (
     <main className={styles.page}>
       <header className={styles.header}>
-        <Link href="/" className={styles.backBtn}>
-          ‹ K-MATE 홈으로
-        </Link>
+        <Link href="/me" className="app-back-button" aria-label="마이페이지로 돌아가기">‹</Link>
         <h1 className={styles.title}>계정 및 데이터 삭제 요청</h1>
         <p className={styles.subtitle}>Account & Data Deletion Request</p>
       </header>

@@ -232,6 +232,32 @@ html, body {
   line-height: 1.2;
 }
 
+/* Every compact back control shares one tap target and visual weight. */
+.app-back-button {
+  width: 40px !important;
+  height: 40px !important;
+  min-width: 40px !important;
+  padding: 0 !important;
+  display: inline-grid !important;
+  place-items: center !important;
+  flex: 0 0 40px !important;
+  border: 1px solid rgba(8, 43, 96, .14) !important;
+  border-radius: 50% !important;
+  background: rgba(255, 255, 255, .94) !important;
+  color: #082b60 !important;
+  font-size: 31px !important;
+  font-weight: 500 !important;
+  line-height: .72 !important;
+  text-decoration: none !important;
+  box-shadow: 0 5px 14px rgba(8, 43, 96, .12) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  cursor: pointer;
+  transition: transform 120ms ease, box-shadow 160ms ease !important;
+}
+.app-back-button:hover { box-shadow: 0 7px 18px rgba(8, 43, 96, .17) !important; }
+.app-back-button:active { transform: scale(.94) !important; }
+
 .section-title {
   font-size: 16px;
   font-weight: 800;
@@ -241,10 +267,10 @@ html, body {
 
 /* ── 📱 하단 메인 바텀 네비게이션 (Bottom Navigation) ──────── */
 .bottom-nav {
-  position: fixed;
+  position: fixed !important;
   bottom: 0;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate3d(-50%, 0, 0);
   width: 100%;
   max-width: 480px;
   height: calc(68px + env(safe-area-inset-bottom, 0px)); /* 세이프에리어 포함 높이 지정 */

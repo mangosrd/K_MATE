@@ -15,7 +15,7 @@ from models.models import Entitlement, User, Character
 from services.membership import expire_premium_if_needed
 
 
-FREE_BETA_MODE = os.getenv("K_MATE_FREE_BETA_MODE", "true").lower() in {"1", "true", "yes"}
+FREE_BETA_MODE = os.getenv("K_MATE_FREE_BETA_MODE", "false").lower() in {"1", "true", "yes"}
 
 
 def check_character_access(user: User, character: Character) -> None:

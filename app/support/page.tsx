@@ -19,7 +19,7 @@ export default function SupportPage() {
   return (
     <main className={styles.page}>
       <div className={styles.inner}>
-        <Link href="/me" className={styles.backLink}>{t("backToMyPage")}</Link>
+        <Link href="/me" className="app-back-button" aria-label={t("backToMyPage")}>‹</Link>
         <div className={styles.card}>
           <h1 className={styles.title}>{t("customerSupport")}</h1>
           {!authLoaded ? (

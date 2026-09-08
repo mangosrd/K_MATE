@@ -27,7 +27,7 @@ export default function CaptainHubView({ character }: { character: Character }) 
   return (
     <main className="page-content">
       <header className="page-header">
-        <Link href="/map" className={styles.backButton} aria-label="Back to map">‹</Link>
+        <Link href="/map" className={`${styles.backButton} app-back-button`} aria-label="Back to map">‹</Link>
         <div>
           <h1 className="page-title">{profile.name}</h1>
           <p className={styles.subtitle}>{profile.description}</p>

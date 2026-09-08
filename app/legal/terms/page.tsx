@@ -9,7 +9,7 @@ export default function TermsPage() {
   return (
     <main className={styles.page}>
       <div className={styles.card}>
-        <Link href="/me" className={styles.backLink}>← 마이페이지로 돌아가기</Link>
+        <Link href="/me" className="app-back-button" aria-label="마이페이지로 돌아가기">‹</Link>
 
         <h1 className={styles.title}>이용약관</h1>
         <p className={styles.updated}>최종 개정일: 2026년 7월 29일</p>

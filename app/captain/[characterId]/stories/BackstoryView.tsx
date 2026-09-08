@@ -41,7 +41,7 @@ export default function BackstoryView({ characterId }: { characterId: string }) 
   const themeStyle = { "--story-from": theme.from, "--story-to": theme.to } as CSSProperties;
   return <main className={styles.page} style={themeStyle}>
     <header className={styles.topbar}>
-      <Link href={`/captain/${characterId}`} className={styles.back} aria-label="기장 페이지로 돌아가기">‹</Link>
+      <Link href={`/captain/${characterId}`} className={`${styles.back} app-back-button`} aria-label="기장 페이지로 돌아가기">‹</Link>
       <span>PREMIUM NOVEL</span><span className={styles.routeCode}>{theme.code}</span>
     </header>
     <section className={styles.hero}>

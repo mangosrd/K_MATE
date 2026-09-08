@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useSyncExternalStore } from "react";
+import { createPortal } from "react-dom";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useLanguage } from "@/components/LanguageContext";
@@ -106,6 +107,7 @@ const getServerLearnHref = () => "/learn/kyuhyun";
 export default function BottomNav() {
   const pathname = usePathname();
   const { t } = useLanguage();
+  const mounted = useSyncExternalStore(() => () => {}, () => true, () => false);
   const learnHref = useSyncExternalStore(
     subscribeToPreferredCaptain,
     getLearnHref,
@@ -120,7 +122,9 @@ export default function BottomNav() {
     { href: "/me",      key: "me" },
   ];
 
-  return (
+  if (!mounted) return null;
+
+  return createPortal(
     <nav className="bottom-nav" role="navigation" aria-label="Main navigation">
       {navItems.map((item) => {
         const baseHref = item.key === "learn" ? "/learn" : item.key === "chat" ? "/chat" : item.href;
@@ -143,6 +147,7 @@ export default function BottomNav() {
           </Link>
         );
       })}
-    </nav>
+    </nav>,
+    document.body,
   );
 }

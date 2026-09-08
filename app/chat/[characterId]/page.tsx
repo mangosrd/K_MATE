@@ -467,7 +467,7 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
         {/* 헤더 */}
         <header className={styles.chatHeader}>
           <Link href="/chat" className={styles.backBtn} aria-label={ui.chooseCaptain}>
-            <span aria-hidden="true">‹</span>
+            <span className="app-back-button" aria-hidden="true">‹</span>
             <span>{ui.chooseCaptain}</span>
           </Link>
           <div className={styles.charInfo}>

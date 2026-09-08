@@ -23,7 +23,7 @@ export default function NotificationsPage() {
     <div className="page-content">
       <header className="page-header">
         <div>
-          <Link href="/me" className={formStyles.backLink}>{t("backToMyPage")}</Link>
+          <Link href="/me" className="app-back-button" aria-label={t("backToMyPage")}>‹</Link>
           <h1 className="page-title">{t("notificationSettings")}</h1>
         </div>
       </header>

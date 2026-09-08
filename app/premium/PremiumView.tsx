@@ -32,6 +32,10 @@ interface CharacterPack {
   label: string;
 }
 
+const FALLBACK_PREMIUM_PRICE = "₩4,900";
+const formatFallbackCharacterPrice = (priceKrw: number) =>
+  `₩${priceKrw.toLocaleString("ko-KR")}`;
+
 export default function PremiumView() {
   const { t, language } = useLanguage();
   const router = useRouter();
@@ -168,6 +172,7 @@ export default function PremiumView() {
     return (
       <main className={styles.page}>
         <div className={styles.topBg} aria-hidden="true" />
+        <Link href="/map" className={`${styles.backButton} app-back-button`} aria-label="이전 화면으로 돌아가기">‹</Link>
         <div className={styles.inner}>
           <div className={styles.badge}><span>✈️</span><span>K-MATE BETA</span></div>
           <h1 className={styles.title}>지금은 무료 베타<br />모든 여행을 체험하세요</h1>
@@ -198,6 +203,7 @@ export default function PremiumView() {
     <main className={styles.page}>
       {/* 상단 배경 */}
       <div className={styles.topBg} aria-hidden="true" />
+      <Link href="/map" className={`${styles.backButton} app-back-button`} aria-label="이전 화면으로 돌아가기">‹</Link>
 
       <div className={styles.inner}>
         {/* 배지 */}
@@ -244,7 +250,7 @@ export default function PremiumView() {
           <div className={styles.priceTop}>
             <div>
               <p className={styles.priceLabel}>{t("monthlySub")}</p>
-              <p className={styles.priceAmount}>{storePrices.kmate_premium?.localizedPrice ?? "—"}<span className={styles.pricePer}>{t("perMonth")}</span></p>
+              <p className={styles.priceAmount}>{storePrices.kmate_premium?.localizedPrice ?? FALLBACK_PREMIUM_PRICE}<span className={styles.pricePer}>{t("perMonth")}</span></p>
             </div>
             <div className={styles.priceBadge}>BEST</div>
           </div>
@@ -294,7 +300,9 @@ export default function PremiumView() {
                         onClick={() => handleUnlockCharacter(pack)}
                         disabled={buyingCharId === pack.character_id || (isNativeAndroid && !storePrices[pack.product_id])}
                       >
-                        {buyingCharId === pack.character_id ? t("processingBtn") : (storePrices[pack.product_id]?.localizedPrice ?? "—")}
+                        {buyingCharId === pack.character_id
+                          ? t("processingBtn")
+                          : (storePrices[pack.product_id]?.localizedPrice ?? formatFallbackCharacterPrice(pack.price_krw))}
                       </button>
                     )}
                   </div>
