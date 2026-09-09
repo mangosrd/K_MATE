@@ -219,7 +219,9 @@ export default function LearnView({ char, chapters }: LearnViewProps) {
                             <div>
                               <p className={styles.chapterNum}>{t("totalChapters")} {chapter.order}</p>
                               <p className={styles.chapterTitle}>{tr(chapter.title)}</p>
-                              <p className={styles.chapterTitleEn}>{tr(chapter.title_en)}</p>
+                              {language !== "ko" && (
+                                <p className={styles.chapterTitleEn}>{tr(chapter.title_en)}</p>
+                              )}
                             </div>
                             {isActive && <span className="badge badge-red">{t("ongoing")}</span>}
                             {isCompleted && <span className="badge badge-mint">{t("completed")}</span>}
@@ -328,7 +330,9 @@ export default function LearnView({ char, chapters }: LearnViewProps) {
                           <div>
                             <p className={styles.chapterNum}>{t("tabSpecial")} {sc.order}</p>
                             <p className={styles.chapterTitle}>{tr(sc.title)}</p>
-                            <p className={styles.chapterTitleEn}>{tr(sc.title_en)}</p>
+                            {language !== "ko" && (
+                              <p className={styles.chapterTitleEn}>{tr(sc.title_en)}</p>
+                            )}
                           </div>
                           {isCompleted
                             ? <span className="badge badge-mint">{t("completed")}</span>

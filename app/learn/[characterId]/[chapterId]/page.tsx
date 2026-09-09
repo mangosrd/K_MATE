@@ -81,6 +81,19 @@ const CAPTAIN_SHORT_NAME: Record<string, string> = {
   kyuhyun: "규현", haneul: "하늘", sunwoo: "선우", sangwoo: "상우", yongwoo: "용우",
 };
 
+const CAPTAIN_REGION_BACKGROUND: Record<string, string> = {
+  kyuhyun: "/regions/seoul-night-v1.png",
+  haneul: "/regions/jeonju-night-v1.png",
+  sunwoo: "/regions/busan-night-v1.png",
+  sangwoo: "/regions/chungcheong-night-v1.png",
+  yongwoo: "/regions/jeju-night-v1.png",
+};
+
+function splitStoryBreaths(text: string): string[] {
+  const sentences = text.match(/[^.!?]+[.!?][\"'”’]?|[^.!?]+$/g);
+  return (sentences ?? [text]).map((sentence) => sentence.trim()).filter(Boolean);
+}
+
 type Phase = "intro" | "story" | "vocab_review" | "session" | "complete";
 type ExerciseType = "flashcard" | "multiple_choice" | "true_false" | "fill_blank" | "sentence_match" | "sentence_builder" | "listening_choice" | "speaking_practice" | "dialogue_comprehension";
 
@@ -341,7 +354,8 @@ function LearningSession({
   const { freeSlots, freeSlotsLoaded } = useFreeCharSlots();
   const router = useRouter();
   const isSpecialStory = chapterId.startsWith("sp-");
-  const requiresPremium = getCharacterById(characterId)?.requires_premium ?? false;
+  const character = getCharacterById(characterId);
+  const requiresPremium = character?.requires_premium ?? false;
   const canAccess = canAccessCharacter(characterId, membership, freeSlots);
 
   useEffect(() => {
@@ -411,6 +425,20 @@ function LearningSession({
   const [storyIdx, setStoryIdx] = useState(0);
   // 발음(로마자) 표시 여부 — 기본 숨김, 토글로 ON/OFF
   const [showReading, setShowReading] = useState(false);
+  const [readerFontSize, setReaderFontSize] = useState(1);
+
+  useEffect(() => {
+    const savedSize = Number(window.localStorage.getItem("kmate_story_font_size"));
+    if (savedSize < 0 || savedSize > 2) return;
+    const frame = window.requestAnimationFrame(() => setReaderFontSize(savedSize));
+    return () => window.cancelAnimationFrame(frame);
+  }, []);
+
+  const changeReaderFontSize = (nextSize: number) => {
+    const safeSize = Math.max(0, Math.min(2, nextSize));
+    setReaderFontSize(safeSize);
+    window.localStorage.setItem("kmate_story_font_size", String(safeSize));
+  };
 
   // 다음 챕터 ID 계산 (e.g. ch-k01 ➔ ch-k02, sp-rom-kyuhyun-01 ➔ sp-rom-kyuhyun-02)
   // 접두사 길이가 고정 4글자(ch-k01)라고 가정하면 sp-rom-{name}-01처럼 접두사 길이가
@@ -795,17 +823,45 @@ function LearningSession({
 
   if (isSpecialStory && !storyAccess) {
     return (
-      <main className={styles.page}>
-        <div className={styles.introCard}>
-          <div className={styles.introEmoji}>🔒</div>
-          <h1 className={styles.introTitle}>{t("lockedStoryTitle")}</h1>
-          <p className={styles.introTitleEn}>{t("lockedStorySub")}</p>
-          <button className="btn btn-primary btn-lg" onClick={() => void unlockStory()} disabled={storyUnlocking}>
-            {storyUnlocking ? "해금 중…" : "🪙 5코인으로 스토리 해금"}
-          </button>
-          <Link href="/premium" className="btn btn-secondary btn-lg">{t("viewPremium")}</Link>
-          {storyAccessError && <p style={{ color: "var(--red)", textAlign: "center", fontWeight: 700 }}>{storyAccessError}</p>}
-          <Link href={backToListHref} className="btn btn-text">{t("backToList")}</Link>
+      <main className={`${styles.page} ${styles.lockedPage}`}>
+        <div className={styles.lockedStoryCard}>
+          <div className={styles.lockArtwork} aria-hidden="true">
+            <span className={`${styles.lockSparkle} ${styles.lockSparkleLeft}`} />
+            <span className={`${styles.lockSparkle} ${styles.lockSparkleRight}`} />
+            <div className={styles.lockShackle} />
+            <div className={styles.lockBody}><span className={styles.lockKeyhole} /></div>
+          </div>
+
+          <div className={styles.lockedStoryCopy}>
+            <h1 className={styles.lockedStoryTitle}>
+              {language === "ko" ? (
+                <><span>이 스토리는</span><span>아직 잠겨 있어요</span></>
+              ) : t("lockedStoryTitle")}
+            </h1>
+            <p className={styles.lockedStoryDescription}>{t("lockedStorySub")}</p>
+          </div>
+
+          <div className={styles.lockedStoryActions}>
+            <button
+              className={styles.lockedStoryPrimary}
+              onClick={() => void unlockStory()}
+              disabled={storyUnlocking}
+            >
+              <span className={styles.lockedStoryActionIcon} aria-hidden="true">🪙</span>
+              <span>{storyUnlocking ? `${t("unlockBtn")}…` : `5 ${t("coins")} · ${t("unlockBtn")}`}</span>
+              <span className={styles.lockedStoryChevron} aria-hidden="true">›</span>
+            </button>
+            <Link href="/premium" className={styles.lockedStorySecondary}>
+              <span className={styles.lockedStoryActionIcon} aria-hidden="true">⭐</span>
+              <span>{t("viewPremium")}</span>
+              <span className={styles.lockedStoryChevron} aria-hidden="true">›</span>
+            </Link>
+          </div>
+
+          {storyAccessError && <p className={styles.lockedStoryError}>{storyAccessError}</p>}
+          <Link href={backToListHref} className={styles.lockedStoryBack}>
+            <span aria-hidden="true">‹</span> {t("backToList")}
+          </Link>
         </div>
       </main>
     );
@@ -846,13 +902,35 @@ function LearningSession({
   // ── 인트로 화면 ─────────────────────────────────────────
   if (phase === "intro") {
     return (
-      <main className={styles.page}>
-        <div className={styles.introCard}>
-          <section className={styles.introHero}>
-            <div className={styles.introEmoji}>{content.emoji}</div>
-            <div className={styles.introHeading}>
-              <span className={styles.introEyebrow}>{t("sessionTagline")}</span>
-              <h1 className={styles.introTitle}>{content.title}</h1>
+      <main className={`${styles.page} ${styles.introPage}`}>
+        <div
+          className={styles.introCard}
+          style={{ backgroundImage: `linear-gradient(rgba(205, 232, 255, .82), rgba(229, 244, 255, .9)), url(${CAPTAIN_REGION_BACKGROUND[characterId]})` }}
+        >
+          <header className={styles.introTopbar}>
+            <Link href={backToListHref} className={styles.introClose} aria-label={t("backToList")}>✕</Link>
+            <div className={styles.introChapterName}>
+              <span>{content.emoji}</span>
+              <strong>{content.title}</strong>
+            </div>
+          </header>
+
+          <section className={styles.introBriefing}>
+            {character?.avatar_url && (
+              <Image
+                src={character.avatar_url}
+                alt={character.name}
+                width={84}
+                height={84}
+                className={styles.introAvatar}
+              />
+            )}
+            <div className={styles.introCaptainCopy}>
+              <strong>{CAPTAIN_SHORT_NAME[characterId]} {t("captainBadge")}</strong>
+              <div className={styles.introSpeech}>
+                <h1>{content.title}</h1>
+                <p>{t("sessionTagline")}</p>
+              </div>
             </div>
           </section>
 
@@ -869,10 +947,6 @@ function LearningSession({
               <span className={styles.introStatNum}>{t("chancesCount")}</span>
               <span className={styles.introStatLabel}>{t("chancesLabel")}</span>
             </div>
-          </div>
-
-          <div className={styles.introRoute} aria-hidden="true">
-            <span>▣</span><i /><span>↔</span><i /><span>✓</span><i /><span>✎</span>
           </div>
 
           <div className={styles.introFooter}>
@@ -905,7 +979,13 @@ function LearningSession({
   if (phase === "story" && isNarrativeChapter) {
     return (
       <main className={styles.page}>
-        <div className={styles.novelCard}>
+        <div className={`${styles.novelCard} ${
+          readerFontSize === 0
+            ? styles.novelFontSmall
+            : readerFontSize === 2
+              ? styles.novelFontLarge
+              : styles.novelFontMedium
+        }`}>
           <div className={styles.storyHeader}>
             <Link href={backToListHref} className={styles.closeBtn} aria-label="닫기">✕</Link>
             <div className={styles.storyHeaderInfo}>
@@ -913,6 +993,26 @@ function LearningSession({
               <span className={styles.storyHeaderTitle}>{content.title}</span>
             </div>
             <div className={styles.storyHeaderRight}>
+              <div className={styles.readerFontControls} aria-label="글자 크기 조절">
+                <button
+                  type="button"
+                  onClick={() => changeReaderFontSize(readerFontSize - 1)}
+                  disabled={readerFontSize === 0}
+                  aria-label="글자 작게"
+                  title="글자 작게"
+                >
+                  가−
+                </button>
+                <button
+                  type="button"
+                  onClick={() => changeReaderFontSize(readerFontSize + 1)}
+                  disabled={readerFontSize === 2}
+                  aria-label="글자 크게"
+                  title="글자 크게"
+                >
+                  가+
+                </button>
+              </div>
               <button
                 className={`${styles.readingToggleBtn} ${showReading ? styles.readingToggleActive : ""}`}
                 onClick={() => setShowReading((v) => !v)}
@@ -931,11 +1031,17 @@ function LearningSession({
           <div className={styles.novelBody}>
             {content.story.map((bubble, i) => (
               <div key={i} className={styles.novelBlock}>
-                <p className={styles.novelPara}>{bubble.text}</p>
+                <p className={styles.novelPara}>
+                  {splitStoryBreaths(bubble.text).map((sentence, sentenceIndex) => (
+                    <span key={sentenceIndex} className={styles.novelSentence}>{sentence}</span>
+                  ))}
+                </p>
                 {bubble.reading && showReading && (
                   <p className={styles.novelReading}>[{bubble.reading}]</p>
                 )}
-                {bubble.en && <p className={styles.novelTranslation}>{tr(bubble.en)}</p>}
+                {language !== "ko" && bubble.en && (
+                  <p className={styles.novelTranslation}>{tr(bubble.en)}</p>
+                )}
               </div>
             ))}
           </div>
@@ -993,8 +1099,9 @@ function LearningSession({
                 <p className={styles.vocabReviewMeaning}>{tr(w.meaning)}</p>
                 <p className={styles.vocabReviewExample}>
                   {w.example}
-                  <br />
-                  {tr(w.example_en)}
+                  {language !== "ko" && (
+                    <><br />{tr(w.example_en)}</>
+                  )}
                 </p>
               </div>
             ))}
@@ -1064,7 +1171,9 @@ function LearningSession({
                       {bubble.reading && showReading && (
                         <p className={`${styles.storyReading} ${styles.readingReveal}`}>[{bubble.reading}]</p>
                       )}
-                      {bubble.en && <p className={styles.storyEn}>{tr(bubble.en)}</p>}
+                      {language !== "ko" && bubble.en && (
+                        <p className={styles.storyEn}>{tr(bubble.en)}</p>
+                      )}
                       {word && (
                         <div className={styles.storyWordChip}>
                           <span className={styles.storyWordChipWord}>{word.word}</span>
@@ -1102,6 +1211,9 @@ function LearningSession({
           <h1 className={styles.completeTitle}>{t("sessionComplete")}</h1>
           <p className={styles.completeSub}>{t("sessionTagline")}</p>
           <div className={styles.resultScore}>
+            <div className={styles.scoreBurst} aria-hidden="true">
+              {Array.from({ length: 12 }, (_, index) => <i key={index} />)}
+            </div>
             <span className={styles.scoreNum}>+{score}</span>
             <span className={styles.scoreLabel}>{t("scoreLabel")}</span>
           </div>
@@ -1120,17 +1232,17 @@ function LearningSession({
             </div>
           </div>
           <div className={styles.completeActions}>
-            <button type="button" className="btn btn-primary btn-lg" onClick={handleReplay}>
-              ↻ {t("startLearn")}
+            <button type="button" className={`${styles.completeAction} ${styles.completeActionPrimary}`} onClick={handleReplay}>
+              <span>🚀</span><strong>{t("startLearn")}</strong><b>›</b>
             </button>
-            <Link href={`/learn/${characterId}/${nextChapterId}`} className="btn btn-primary btn-lg" id="btn-next-chapter">
-              {t("nextChapter")} ({t("totalChapters")} {nextNum})
+            <Link href={`/learn/${characterId}/${nextChapterId}`} className={`${styles.completeAction} ${styles.completeActionPrimary}`} id="btn-next-chapter">
+              <span>▶️</span><strong>{t("nextChapter")} ({t("totalChapters")} {nextNum})</strong><b>›</b>
             </Link>
-            <Link href={backToListHref} className="btn btn-secondary btn-lg">
-              {t("backToChapterList")}
+            <Link href={backToListHref} className={`${styles.completeAction} ${styles.completeActionSecondary}`}>
+              <span>📖</span><strong>{t("backToChapterList")}</strong><b>›</b>
             </Link>
-            <Link href={`/chat/${characterId}`} className="btn btn-blue btn-lg">
-              {t("chatWithCaptain")}
+            <Link href={`/chat/${characterId}`} className={`${styles.completeAction} ${styles.completeActionChat}`}>
+              <span>💬</span><strong>{t("chatWithCaptain")}</strong><b>›</b>
             </Link>
           </div>
         </div>
@@ -1272,7 +1384,9 @@ function LearningSession({
                   <p className={styles.flashMeaning}>{tr(currentEx.correctAnswer)}</p>
                   <p className={styles.flashExample}>{(currentEx.originalData as Word).example}</p>
                   <p className={styles.flashReading}>[{(currentEx.originalData as Word).example_reading}]</p>
-                  <p className={styles.flashExampleEn}>{tr((currentEx.originalData as Word).example_en)}</p>
+                  {language !== "ko" && (
+                    <p className={styles.flashExampleEn}>{tr((currentEx.originalData as Word).example_en)}</p>
+                  )}
                 </div>
               </button>
               {!flipped && (
@@ -1463,7 +1577,9 @@ function LearningSession({
                   </button>
                 </div>
                 {currentEx.reading && <p className={styles.mcReading}>[{currentEx.reading}]</p>}
-                <p className={styles.fbTranslation}>{tr((currentEx.originalData as Sentence).en)}</p>
+                {language !== "ko" && (
+                  <p className={styles.fbTranslation}>{tr((currentEx.originalData as Sentence).en)}</p>
+                )}
               </div>
 
               <div className={styles.mcOptions}>
@@ -1535,7 +1651,9 @@ function LearningSession({
                   </button>
                 </div>
                 {currentEx.reading && <p className={styles.mcReading}>[{currentEx.reading}]</p>}
-                <p className={styles.audioHint}>{tr((currentEx.originalData as Sentence).en)}</p>
+                {language !== "ko" && (
+                  <p className={styles.audioHint}>{tr((currentEx.originalData as Sentence).en)}</p>
+                )}
                 <p className={styles.speakingInstruction}>
                   👇 아래 🎤 마이크 버튼을 누르고 위 문장을 한국어로 따라 읽으세요!
                 </p>
@@ -1666,7 +1784,9 @@ function LearningSession({
                     <div className={styles.dlgBubble}>
                       <p className={styles.dlgText}>{turn.text}</p>
                       {turn.reading && <p className={styles.dlgReading}>[{turn.reading}]</p>}
-                      {turn.en && <p className={styles.dlgEn}>{tr(turn.en)}</p>}
+                      {language !== "ko" && turn.en && (
+                        <p className={styles.dlgEn}>{tr(turn.en)}</p>
+                      )}
                     </div>
                   </div>
                 ))}
