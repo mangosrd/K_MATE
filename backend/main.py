@@ -9,8 +9,9 @@ Python 백엔드 진입점
 
 import sys
 from threading import Thread
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
+from starlette.middleware.base import BaseHTTPMiddleware
 from contextlib import asynccontextmanager
 from database import check_connection, get_settings, initialize_database
 from routers import chat, diary, vocab, progress, memory, auth, account, translate, gallery, billing, letters, notifications, learning, backstories, attendance, notes
@@ -21,6 +22,22 @@ if sys.stdout.encoding != "utf-8":
     sys.stdout.reconfigure(encoding="utf-8")
 
 settings = get_settings()
+
+
+class SecurityHeadersMiddleware(BaseHTTPMiddleware):
+    """Apply browser hardening headers and prevent auth data from being cached."""
+
+    async def dispatch(self, request: Request, call_next):
+        response = await call_next(request)
+        response.headers["X-Content-Type-Options"] = "nosniff"
+        response.headers["X-Frame-Options"] = "DENY"
+        response.headers["Referrer-Policy"] = "strict-origin-when-cross-origin"
+        response.headers["Permissions-Policy"] = "camera=(), geolocation=(), microphone=(self)"
+        response.headers["Cross-Origin-Resource-Policy"] = "same-site"
+        if request.url.path.startswith(("/auth", "/user")):
+            response.headers["Cache-Control"] = "no-store, max-age=0"
+            response.headers["Pragma"] = "no-cache"
+        return response
 
 
 @asynccontextmanager
@@ -48,13 +65,21 @@ app = FastAPI(
     lifespan=lifespan,
 )
 
+app.add_middleware(SecurityHeadersMiddleware)
+
 # CORS 설정 (Next.js 프론트엔드 허용)
+allowed_origins = {
+    settings.frontend_url.rstrip("/"),
+    "http://localhost:3000",
+    "http://localhost:3001",
+}
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[settings.frontend_url, "http://localhost:3000"],
+    allow_origins=sorted(origin for origin in allowed_origins if origin),
     allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_methods=["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+    allow_headers=["Authorization", "Content-Type", "X-Internal-Secret"],
+    max_age=600,
 )
 
 # 라우터 등록
