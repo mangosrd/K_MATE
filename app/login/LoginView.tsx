@@ -83,6 +83,9 @@ export default function LoginView({ oauthCode }: { oauthCode: string | null }) {
       }
       return;
     }
+    // Google OAuth starts on the separate FastAPI origin, so a full document
+    // navigation is required here; Next's client router only handles this app.
+    // eslint-disable-next-line @next/next/no-location-assign-relative-destination
     window.location.assign(`${BACKEND_URL}/auth/google/start`);
   };
 

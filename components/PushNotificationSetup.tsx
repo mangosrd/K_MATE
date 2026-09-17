@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { useRouter } from "next/navigation";
 import { Capacitor } from "@capacitor/core";
 import { PushNotifications } from "@capacitor/push-notifications";
 import { LocalNotifications } from "@capacitor/local-notifications";
@@ -14,6 +15,7 @@ const TOKEN_KEY = "kmate_fcm_token";
  * the Vercel web app deliberately does nothing here.
  */
 export default function PushNotificationSetup() {
+  const router = useRouter();
   const initialized = useRef(false);
   const activeUserId = useRef<string | null>(null);
 
@@ -26,7 +28,7 @@ export default function PushNotificationSetup() {
       "localNotificationActionPerformed",
       ({ notification }) => {
         if (notification.extra?.type === "captain-note-comment") {
-          window.location.href = "/notes";
+          router.push("/notes");
         }
       },
     );
@@ -96,7 +98,7 @@ export default function PushNotificationSetup() {
       window.removeEventListener("kmate-auth-changed", retryActivation);
       window.removeEventListener("kmate-auth-logging-out", unregisterBeforeLogout);
     };
-  }, []);
+  }, [router]);
 
   return null;
 }

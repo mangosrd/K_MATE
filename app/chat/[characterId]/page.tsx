@@ -341,7 +341,7 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
     const hasConversation = messages.some((m) => m.role === "user");
     if (!hasConversation) {
       clearChatHistory(characterId);
-      window.location.href = "/diary";
+      router.push("/diary");
       return;
     }
 
@@ -397,7 +397,7 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
 
     // 대화가 마무리됐으므로 다음에 들어오면 새 대화로 시작한다
     clearChatHistory(characterId);
-    window.location.href = "/diary";
+    router.push("/diary");
   };
 
   const startListening = () => {
