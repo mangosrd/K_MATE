@@ -43,7 +43,6 @@ export interface Region {
   airport_code: string;  // "SEL" (탑승권 스타일)
   description: string;
   description_en: string;
-  thumbnail_url: string;
   place_count: number;
   is_locked: boolean;    // 지역 자체 잠금 (서울만 기본 해금)
   character_ids: string[];
