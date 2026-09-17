@@ -64,13 +64,13 @@ const CHAT_GENERIC_OPENING: Record<Language, string> = {
 };
 
 const CHAT_RETRY_MESSAGE: Record<Language, string> = {
-  ko: "잠깐만요… 연결이 불안정해요. 다시 시도해 볼게요!",
-  en: "One moment… The connection is unstable. Let me try again!",
-  ru: "Минуточку… Соединение нестабильно. Попробуем ещё раз!",
-  zh: "请稍等… 网络连接不稳定。我们再试一次！",
-  ja: "少し待ってください… 接続が不安定です。もう一度試します！",
-  "zh-TW": "請稍等… 網路連線不穩定。我們再試一次！",
-  th: "รอสักครู่… การเชื่อมต่อไม่เสถียร ลองอีกครั้งนะครับ",
+  ko: "현재 채팅 서버에 연결할 수 없어요. 잠시 후 다시 보내 주세요.",
+  en: "The chat server is currently unavailable. Please try sending it again later.",
+  ru: "Сервер чата сейчас недоступен. Пожалуйста, попробуйте отправить сообщение позже.",
+  zh: "目前无法连接聊天服务器，请稍后重新发送。",
+  ja: "現在チャットサーバーに接続できません。しばらくしてからもう一度送信してください。",
+  "zh-TW": "目前無法連線聊天伺服器，請稍後重新傳送。",
+  th: "ขณะนี้ไม่สามารถเชื่อมต่อเซิร์ฟเวอร์แชตได้ โปรดลองส่งอีกครั้งในภายหลัง",
 };
 
 const REGION_TRANSLATION_KEYS: Record<string, string> = {
@@ -466,10 +466,7 @@ export default function ChatPage({ params }: { params: Promise<{ characterId: st
       <div className={styles.chatShell}>
         {/* 헤더 */}
         <header className={styles.chatHeader}>
-          <Link href="/chat" className={styles.backBtn} aria-label={ui.chooseCaptain}>
-            <span className="app-back-button" aria-hidden="true">‹</span>
-            <span>{ui.chooseCaptain}</span>
-          </Link>
+          <Link href="/chat" className={`app-back-button ${styles.backBtn}`} aria-label={ui.chooseCaptain}>‹</Link>
           <div className={styles.charInfo}>
             <div className={styles.charAvatar}>
               <Image

@@ -161,6 +161,15 @@ function getCachedGuestId(): string | null {
   return localStorage.getItem(GUEST_ID_KEY);
 }
 
+function startOfflineGuestSession(): void {
+  const offlineId = `offline-${getOrCreateGuestInstallationId()}`;
+  localStorage.setItem(GUEST_ID_KEY, offlineId);
+  localStorage.removeItem(ACCESS_TOKEN_KEY);
+  document.cookie = `kmate_uid=${offlineId}; path=/; max-age=${SESSION_MAX_AGE_SECONDS}; samesite=lax`;
+  document.cookie = `${ACCESS_TOKEN_KEY}=; path=/; max-age=0`;
+  window.dispatchEvent(new Event("kmate-auth-changed"));
+}
+
 export function getEffectiveUserId(): string {
   const userId = getCurrentUser()?.id ?? getCachedGuestId();
   if (!userId) throw new Error("K-MATE session is not ready");
@@ -210,7 +219,10 @@ export async function ensureGuestAccount(): Promise<boolean> {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ installation_id: getOrCreateGuestInstallationId() }),
     });
-    if (!res.ok) return false;
+    if (!res.ok) {
+      startOfflineGuestSession();
+      return true;
+    }
     const data = await res.json();
     if (data.id && data.access_token) {
       localStorage.setItem(GUEST_ID_KEY, data.id);
@@ -220,8 +232,14 @@ export async function ensureGuestAccount(): Promise<boolean> {
       window.dispatchEvent(new Event("kmate-auth-changed"));
       return true;
     }
-    return false;
+    startOfflineGuestSession();
+    return true;
   } catch {
-    return false;
+    // The beta can still expose its static travel and learning content while
+    // the optional API server is sleeping. API-backed actions show their own
+    // connection error and this temporary id is replaced after the server
+    // issues a signed guest session again.
+    startOfflineGuestSession();
+    return true;
   }
 }

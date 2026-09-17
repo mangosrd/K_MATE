@@ -758,11 +758,11 @@ html, body {
   padding: 32px;
   text-align: center;
   color: var(--text-primary);
-  background: var(--bg-primary);
+  background: var(--bg-base);
 }
 
 .session-bootstrap__plane {
-  color: var(--primary);
+  color: var(--blue);
   font-size: 44px;
   animation: session-plane 1.2s ease-in-out infinite alternate;
 }
@@ -775,7 +775,7 @@ html, body {
   border-radius: 999px;
   padding: 12px 24px;
   color: #fff;
-  background: var(--primary);
+  background: var(--blue);
   font: inherit;
   font-weight: 700;
 }

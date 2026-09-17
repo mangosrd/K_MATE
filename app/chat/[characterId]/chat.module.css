@@ -21,32 +21,18 @@
 }
 
 .backBtn {
-  display: inline-flex;
-  align-items: center;
-  gap: 2px;
-  min-height: 34px;
-  padding: 5px 8px;
-  border: 1px solid var(--border-default);
-  border-radius: var(--radius-full);
-  background: var(--bg-surface);
-  font-size: 11px;
-  font-weight: 700;
-  color: var(--text-secondary);
-  line-height: 1;
   flex-shrink: 0;
-  text-decoration: none;
-  white-space: nowrap;
 }
-
-.backBtn span:first-child { font-size: 25px; line-height: 0.7; }
-.backBtn:hover { color: var(--blue); border-color: var(--blue); }
 
 .charInfo {
   display: flex;
   align-items: center;
   gap: var(--space-sm);
   flex: 1;
+  min-width: 0;
 }
+
+.charInfo > div:last-child { min-width: 0; }
 
 .charAvatar {
   width: 40px;
@@ -79,6 +65,12 @@
   z-index: 0;
 }
 
+.charName,
+.charLocation {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .charName     { font-size: 16px; font-weight: 700; color: var(--text-primary); }
 .charLocation { font-size: 12px; color: var(--text-muted); }
 
@@ -96,6 +88,14 @@
   flex-shrink: 0;
 }
 .endBtn:hover { color: var(--red); border-color: var(--red); }
+
+@media (max-width: 380px) {
+  .chatHeader { gap: 6px; padding-inline: 10px; }
+  .charAvatar { width: 36px; height: 36px; }
+  .charName { font-size: 14px; }
+  .charLocation { font-size: 10px; }
+  .endBtn { max-width: 76px; padding-inline: 9px; font-size: 11px; overflow: hidden; text-overflow: ellipsis; }
+}
 
 /* 되짚기 */
 .callbackWrap { margin: var(--space-sm) var(--space-md); flex-shrink: 0; }
